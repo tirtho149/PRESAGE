@@ -1,0 +1,63 @@
+# LeafBench (Hugging Face: enalis/LeafBench) — VQA multiple-choice.
+# Requires: pip install datasets python-dotenv
+# Copy .env.example to .env and set HF_TOKEN (gated dataset).
+
+data:
+  parquet_path: null
+  directory_root: null
+  hf_dataset_id: "enalis/LeafBench"
+  hf_split: "test"
+  hf_max_examples: null
+  hf_seed: 42
+  # Gated repo: token read from HF_TOKEN in .env unless overridden:
+  hf_token: null
+  # One task type per run (see data/leafbench_hf.py): DC=disease (T3), PC=pathogen (T2), CSI=crop (T5)
+  leafbench_question_types: ["DC"]
+  image_col: "image_bytes"
+  id_col: "id"
+  label_cols:
+    T1: "symptom_type"
+    T2: "pathogen_class"
+    T3: "disease_name"
+    T4: "severity_class"
+    T5: "crop_species"
+  benchmark_col: "benchmark"
+  n_images: 5000
+  calibration_split_size: 500
+  stratify_by: ["disease_name"]
+  top_k_diseases: 80
+
+labels:
+  T1: null
+  T2: null
+  T3: null
+  T4: null
+  T5: null
+
+model:
+  backbone: "Qwen/Qwen3-VL-8B-Instruct"
+  replica_backbones:
+    - "microsoft/Phi-4-multimodal-instruct"
+    - "Qwen/Qwen2.5-VL-7B-Instruct"
+  temperature: 0.0
+  seed: 42
+  max_new_tokens: 512
+  image_size: 448
+  vllm_base_url: "http://localhost:8000/v1"
+  logprobs: true
+  guided_choice: true
+
+routing:
+  orchestrator: "autogen_swarm"
+  Tmax: 15
+  confidence_levels: ["high", "medium", "low"]
+  confidence_weights:
+    high: 3
+    medium: 2
+    low: 1
+  allow_backtrack: true
+  max_backtracks: 1
+
+calibration:
+  ece_bins: 15
+  conformal_alpha: 0.1

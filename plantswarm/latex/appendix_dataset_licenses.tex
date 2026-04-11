@@ -1,0 +1,60 @@
+% Four-row licence table for appendix (ACL two-column: table* + tabular; longtable is invalid here).
+% Requires: colortbl, array, xcolor, booktabs, hyperref (ACL loads hyperref).
+
+\begingroup
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.4}
+
+\definecolor{headerblue}{HTML}{1F4E79}
+\definecolor{rowodd}{HTML}{EBF3FB}
+\definecolor{roweven}{HTML}{FFFFFF}
+
+\newcolumntype{J}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\newcommand{\smallurl}[1]{\footnotesize\href{#1}{\textcolor{blue!70!black}{Link}}}
+
+\begin{table*}[t]
+  \centering
+  \caption{Dataset licence summary for the \textbf{four} evaluation benchmarks:
+    hosting, distribution rights, and primary citation.}
+  \label{tab:dataset_licenses}
+  \begin{tabular}{@{}J{0.14\textwidth}J{0.11\textwidth}J{0.58\textwidth}c@{}}
+    \toprule
+    \rowcolor{headerblue}
+    \color{white}\textbf{Dataset} &
+    \color{white}\textbf{Licence} &
+    \color{white}\textbf{Notes \& Citation} &
+    \color{white}\textbf{Link} \\
+    \midrule
+    \rowcolor{rowodd}
+    PlantVillage &
+    CC BY-SA 3.0 &
+    Attribution and ShareAlike required; derivatives must carry the same licence.
+    Hughes \& Salath\'{e}, arXiv:1511.08060, 2015; Mohanty et al., \textit{Front.\ Plant Sci.}\ 2016. &
+    \smallurl{https://www.kaggle.com/datasets/emmarex/plantdisease} \\
+    \rowcolor{roweven}
+    PlantDoc &
+    CC BY 4.0 &
+    Attribution required.
+    Singh et al., \textit{ACM IKDD CoDS \& COMAD}, 2020.
+    DOI: 10.1145/3371158.3371196. &
+    \smallurl{https://github.com/pratikkayal/PlantDoc-Dataset} \\
+    \rowcolor{rowodd}
+    PlantWild v2 &
+    CC BY-NC-ND 4.0 &
+    No commercial use; no derivatives permitted.
+    Wei et al., \textit{ACM MM}, 2024.
+    DOI: 10.1145/3664647.3680599. &
+    \smallurl{https://tqwei05.github.io/PlantWild/} \\
+    \rowcolor{roweven}
+    LeafBench &
+    CC BY 4.0 &
+    Released on Hugging Face as \texttt{enalis/LeafNet}; $\sim$70\% of data is public (training split only).
+    Quoc et al., arXiv:2602.13662, 2026. &
+    \smallurl{https://huggingface.co/datasets/enalis/LeafNet} \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+\endgroup

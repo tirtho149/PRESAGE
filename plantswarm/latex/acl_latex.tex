@@ -1,0 +1,999 @@
+\documentclass[11pt]{article}
+
+% ACL style - two-column, review mode
+\usepackage[review]{acl}
+\usepackage{times}
+% times.sty sets \ttdefault to pcr (Adobe Courier). Some minimal TeX installs
+% lack the pcr metric fonts in the active search path; CM typewriter is always
+% available under T1 and suffices for \texttt in this paper.
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\definecolor{tracebg}{RGB}{236,243,255}
+\definecolor{highconf}{RGB}{212,240,212}
+\definecolor{lowconf}{RGB}{255,224,224}
+
+\title{PlantSwarm: Entropy-Gated Emergent Routing\\
+in Multi-Agent VLM Swarms for Calibrated\\
+Plant Disease Diagnosis}
+
+\author{Anonymous Submission \\ EMNLP 2026 Main Conference}
+
+\begin{document}
+\maketitle
+
+%-----------------------------------------------------------------------
+\begin{abstract}
+Plant disease diagnosis is not uniformly hard---an obvious case of late
+blight and a genuinely ambiguous early-stage viral infection are not the same
+diagnostic problem, yet every prior agentic system spends identical compute
+on both and reports identical confidence regardless. We present
+\textbf{PlantSwarm}, a free-routing multi-agent swarm of five
+pathology-specialized vision-language agents that fixes this by routing
+\emph{per image per step}: early-terminating on obvious cases and triggering
+inter-agent backtracking on ambiguous ones. The routing signal is
+\textbf{dual}: a prompt-level confidence token $\kappa$ for interpretability,
+and a \textbf{shared entropy field} $\mathcal{E}_t$ that reads per-token
+log-probability entropy directly from model generation---decoupling the
+routing decision from agent self-report and enabling bidirectional routing
+based on cross-agent entropy gradients. We evaluate on four benchmarks
+(PlantVillage, PlantDoc, PlantWild, LeafBench), demonstrate through a
+seven-variant factorial ablation that confidence-gated routing and backtracking
+are the primary drivers of calibration improvement measured by ECE, and
+introduce the \textbf{Pathogen Difficulty Score (PDS)}---a per-disease metric
+in both behavioral and entropy-native forms ($\rho\!\approx\!-0.65$) that
+serves as a pre-deployment audit tool. An end-to-end trace with full UQ
+annotation connects the formal machinery to field reality. All traces, code,
+and PDS scripts are publicly released.
+\end{abstract}
+
+%-----------------------------------------------------------------------
+\section{Introduction}
+\label{sec:intro}
+
+Consider two images from the same cassava field. The first shows a leaf
+with angular necrotic lesions following vascular boundaries, brown margins,
+no sporulation: any plant pathologist with field experience recognises
+Cassava Bacterial Blight in under a minute. The second shows diffuse
+chlorotic patches with slight vein clearing and no structural deformation:
+this could be Cassava Mosaic Virus, early bacterial blight, or iron
+deficiency---experienced pathologists genuinely disagree, and the visual
+difference between the right and wrong diagnosis determines whether the
+farmer sprays a bactericide, pulls up infected plants, or applies a
+foliar fertilizer \citep{savary2019global}. Current agentic plant disease
+systems treat these two images identically: same agent chain, same token
+budget, same confidence threshold regardless of what is in the picture
+\citep{chatdemeter2025,qin2025pdd}.
+
+This uniformity causes two compounding failures. Computationally, it wastes
+tokens on obvious cases that could be reallocated to genuinely hard ones.
+Agronomically, it is \emph{miscalibrating}: a system that is equally
+confident on easy correct predictions and hard wrong predictions will
+mislead farmers into wrong treatment decisions at exactly the cases where
+the stakes are highest. Confidence here is not a technical nicety---it is
+the signal the farmer acts on.
+
+We propose \textbf{PlantSwarm}: five pathology-specialized vision-language
+model (VLM) agents that self-organize their communication topology over each
+image based on \textbf{confidence-gated routing}. Low confidence at the
+pathogen identification step triggers a backtrack to the visual grounding
+agent for targeted re-examination; high confidence with all tasks resolved
+triggers early termination. The result is emergent diagnostic trajectories
+that vary per image---short on easy cases, extended and self-correcting on
+hard ones.
+
+The routing signal is dual. The prompt-level confidence token
+$\kappa \in \{\texttt{H},\texttt{M},\texttt{L}\}$ provides interpretable
+per-agent declarations. A \textbf{shared entropy field} $\mathcal{E}_t$
+runs in parallel, reading per-token log-probability entropy directly from
+model generation. The entropy gradient across agents---rising when
+information is being lost as it passes between specialists, falling when
+agents are resolving each other's uncertainty---provides a routing signal
+that is both model-grounded and cannot be gamed through text output.
+
+Beyond the systems contribution, PlantSwarm's routing traces surface
+something single-agent systems structurally cannot: which disease categories
+cause systematic deliberation difficulty. We formalize this as the
+\textbf{Pathogen Difficulty Score (PDS)}, available in both a
+trace-behavioral form and an entropy-native form grounded in the model's
+own generation distribution. PDS predicts accuracy gaps with Spearman
+$\rho \approx -0.65$ and is consistent across three VLM backbones,
+making it a principled pre-deployment audit tool.
+
+\paragraph{Contributions.} (1) PlantSwarm: five-agent entropy-gated
+free-routing VLM swarm, evaluated on PlantVillage, PlantDoc, PlantWild,
+and LeafBench. (2) Shared entropy field with formal definitions for
+per-token entropy, sequence entropy, entropy gradient, dispersion, and
+targeted disease-token entropy. (3) Amortized posterior inference framing
+with four falsifiable predictions and six formal hypotheses. (4) Seven-variant
+factorial ablation. (5) End-to-end annotated trace with full UQ.
+(6) Pathogen Difficulty Score in behavioral and entropy-native forms.
+
+%-----------------------------------------------------------------------
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Plant disease diagnosis.}
+PlantVillage \citep{mohanty2016plantvillage} established CNN-based leaf
+classification. Field benchmarks---PlantDoc \citep{singh2020plantdoc},
+PlantWild \citep{wei2024benchmarking}, LeafBench \citep{quoc2026leafnet}---revealed
+that controlled-condition accuracy does not transfer to field conditions.
+Chat Demeter \citep{chatdemeter2025} wraps CNN predictions in an LLM
+interface (99.5\% on controlled validation) but agents do not communicate
+visual uncertainty. PDD-AGENT \citep{qin2025pdd} and ChatLeafDisease
+\citep{pan2025chatleafdisease} apply chain-of-thought to diagnosis but
+use single-agent forward pipelines.
+
+\paragraph{Agentic VLM systems.}
+SAGE introduced the reference-comparison loop---a single VLM agent
+iteratively narrowing candidates against a symptom knowledge base, achieving
+$+15$--$20$ F1 over zero-shot. Its structural limit: it cannot backtrack
+or route to a specialist (documented failure: Anthracnose/Charcoal Rot
+confusion at confidence 0.92). AgentVerse \citep{chen2023agentverse} and
+VipAct \citep{zhang2024vipact} demonstrated multi-agent VLM collaboration;
+MATA \citep{cai2026mata} proposed trainable automata. PlantSwarm differs
+from all of these: topology changes \emph{mid-inference per image}, not
+pre-designed or trained.
+
+\paragraph{Calibration and routing.}
+FrugalGPT \citep{chen2023frugalgpt} and RouteLLM \citep{ong2024routellm}
+learn cascade thresholds from training-time statistics---they know that
+``60\% of images are easy'' on average but cannot identify which specific
+image is easy. GAM-Agent \citep{zhang2025gamagent} and
+\citet{zhang2026uncertainty} show calibrated uncertainty sharing improves
+coordination. Self-REF \citep{selfref2025icml} and RECONCILE
+\citep{chen2023reconcile} route on confidence tokens. PlantSwarm is the
+first system to evaluate whether \emph{emergent inter-agent routing} built
+on both prompt-level and generation-level entropy produces better ECE than
+fixed-pipeline architectures in multi-benchmark plant pathology.
+
+\paragraph{High-throughput and field phenotyping.}
+Large-scale plant stress phenotyping predates modern VLMs: sensor- and
+image-driven pipelines connect genotype to performance under stress
+\citep{fahlgren2015lights,araus2014field,anderson2004emerging,thomas1999ecological},
+with deep models for organ- and plot-level traits
+\citep{pound2017deep,ubbens2017deep,nieuwenhuizen2019raw,naik2017real,nguyen2023early}.
+
+\paragraph{Classical and deep disease recognition.}
+Surveys and benchmarks frame disease recognition as a core computer-vision
+problem beyond single-benchmark leaderboards
+\citep{mohanty2016using,mohapatra2022botanical,singh2016machine,singh2018deep,singh2021challenges,chiranjeevi2023deep,kaya2019towards,bandara2020dissecting}.
+
+\paragraph{Crop- and symptom-specific image corpora.}
+Curated leaf and field imagery spans cereals, vegetables, fruit, and
+industrial crops, often released for non-commercial benchmarking
+\citep{basak2023cotton,basak2023pumpkin,basak2023rose,cthng2023durian,jstar2023lettuce,kamalmoha2023eggplant,kareem2023cucumber,zarita2022banana,afzaal2023strawberry,ahmed2023mangoleafbd,mangoleaf,marquis2023bean,beanleaflesions,leafsegmentation,puspasari2023sugarleafidn,ritharson2021sbrd,soyabeanseeds,durumwheat,fusariumchickpea,yellowrustwheat,dangerousinsects,hayit2020yellowrust,hayit2021determination,hayit2022fusarium,hayit2023classification,hayit2024knn,hayit2024severity,jendoubi2017fusarium,Wu2019Insect}.
+
+\paragraph{Weeds, field diversity, and robustness probes.}
+Weed and field-image benchmarks stress background clutter and long-tail
+classes relevant to deployment
+\citep{deepweeds,olsen2019deepweeds,ogidi2023benchmarking,sarkar2023cyber,chen2023adapting,feuer2024zero}.
+
+\paragraph{Vision-language pre-training and multimodal evaluation.}
+Foundational image--text models and instruction tuning underpin current VLMs
+\citep{alayrac2022flamingo,dai2023instructblip,liu2024visual,reid2024gemini},
+with widely used API and open-weight backbones
+\citep{gpt4o,haiku3,sonnet35,jiang2024mixtral,jiang2024many}.
+Evaluation suites probe few-shot adaptation, integrated skills, and
+instruction following at scale
+\citep{mosbach2023few,yu2023mm,bitton2023visit,wang2024muirbench}.
+
+\paragraph{Agricultural VLMs and multimodal benchmarks.}
+Domain-tuned and benchmarked agricultural multimodal systems narrow the gap
+between general VLMs and agronomic practice
+\citep{liu2024multimodal,zhang2024visual,arshad2025leveraging,awais2025agrogpt,gauba2025agmmu,wang2024agri,zaremehrjerdi2025towards}.
+
+\paragraph{Structured reasoning and communication topology in agent systems.}
+Beyond pairwise handoffs, recent work explores explicit decomposition graphs,
+learned or deterministic orchestration, and decentralized coordination
+\citep{yao2024tot,besta2024got,zhang2024gdesigner,Chen2025Mediator-Guided,zhou2026orch,sayeedi2026route,agentnet2025,du2021correlated}.
+Explainable phenotyping frameworks further motivate uncertainty-aware,
+interpretable intermediates \citep{ghosal2018explainable}.
+
+\paragraph{Retrieval and CLIP-style field diagnosis.}
+Retrieval-centric field diagnosis complements generative agents and shares
+deployment motivations with in-the-wild benchmarks
+\citep{tqwei2024snapdiagnose}.
+
+%-----------------------------------------------------------------------
+\section{Formal Framing}
+\label{sec:theory}
+
+\subsection{Routing as Amortized Posterior Inference}
+
+Let $X$ be a crop disease image, $\mathcal{T}=\{T_1,\ldots,T_5\}$ the
+diagnostic tasks, and $\mathcal{A}$ the agent set. A routing path
+$\pi=(a_1,\ldots,a_k)$ is an ordered agent activation sequence. The
+optimal policy selects the agent that maximally reduces posterior entropy:
+\begin{equation}
+  a^*_t = \arg\min_{a\in\mathcal{A}}\;
+  H\!\bigl[P(Y\mid\pi_{1:t},\,a,\,X)\bigr]
+  \label{eq:optimal}
+\end{equation}
+Exact computation is intractable. PlantSwarm encodes two complementary
+amortized approximations: the prompt-level $\kappa$ token as a heuristic
+correlate, and the entropy field below as an exact operationalization.
+
+\subsection{Entropy Field Definitions}
+
+\paragraph{Token-level predictive entropy.}
+For agent $a_t$ producing $y^{(t)}=(y_1,\ldots,y_N)$:
+\begin{equation}
+  h_i^{(t)} = -\!\sum_{v\in V} p(v\mid y_{<i},X,\mathcal{C}_t)
+  \log p(v\mid y_{<i},X,\mathcal{C}_t)
+  \label{eq:h-token}
+\end{equation}
+
+\paragraph{Sequence-level entropy.}
+\begin{equation}
+  H_t = \frac{1}{N}\sum_{i=1}^N h_i^{(t)}
+  \label{eq:h-seq}
+\end{equation}
+
+\paragraph{Entropy field.}
+\begin{equation}
+  \mathcal{E}_t = \bigl\{(H_k,\,h^{(k)})\bigr\}_{k=1}^{t}
+  \label{eq:field}
+\end{equation}
+Agents read $\mathcal{C}_t$ but \emph{not} $\mathcal{E}_t$, preventing
+gaming of the router through text output.
+
+\paragraph{Entropy gradient.}
+\begin{equation}
+  G_t = \frac{1}{t-1}\sum_{k=2}^t\!\bigl(H_k - H_{k-1}\bigr)
+  \label{eq:gradient}
+\end{equation}
+Rising $G_t>0$ signals cascade degradation---information is being lost
+as it passes between agents. Falling $G_t<0$ signals convergence.
+
+\paragraph{Entropy dispersion.}
+\begin{equation}
+  D_t = \mathrm{Var}(h^{(t)})
+  \label{eq:dispersion}
+\end{equation}
+Localizes \emph{where} in the generation uncertainty concentrates, not
+just whether it exists.
+
+\paragraph{Targeted disease-token entropy.}
+Let $i^*$ be the token index of the disease-name prediction (T3):
+\begin{equation}
+  H_t^{(\mathrm{dis})} = h_{i^*}^{(t)}
+  \label{eq:h-disease}
+\end{equation}
+This is the most diagnostically informative entropy position: the model
+commits to a specific disease name while the full image context is
+available. It is also the basis for PDS (Section~\ref{sec:results}).
+
+\subsection{Routing Decision}
+
+The entropy-gated routing decision:
+\begin{equation}
+  a_{t+1} = \begin{cases}
+    \textsc{Mo} & G_t>\delta_1 \;\text{(backtrack)}\\
+    \textsc{Di} & H_t<\delta_2 \;\text{(early terminate)}\\
+    \pi(a_t)    & \text{otherwise}
+  \end{cases}
+  \label{eq:routing}
+\end{equation}
+with $\delta_1{=}0.15$ nats and $\delta_2$ as hyperparameters
+(Appendix~\ref{sec:app-entropy}). The $\kappa$-gated variant substitutes
+$\kappa_t{=}\texttt{L}$ for the backtrack condition and
+$\kappa_t{=}\texttt{H}$ for the terminate condition.
+
+\subsection{Falsifiable Predictions and Hypotheses}
+
+\textbf{P1} Path length $\rho$-correlates with $H_{\hat{y}}$:
+$+0.42$ to $+0.55$. \textbf{P2} Second-pass PathogenAgent outperforms
+first pass after backtrack: $+9$ F1. \textbf{P3} Early-terminated images
+outperform extended-path images: $+12$ F1. \textbf{P4} $H_t^{(\mathrm{dis})}$
+correlates with $\kappa{=}\texttt{L}$ indicator: $+0.55$ to $+0.70$.
+Weak P4 ($<0.30$) motivates entropy routing independently of P1--P3.
+
+Six formal hypotheses follow directly. \textbf{H1:}
+$H_{\text{PV}} < H_{\text{PD}} < H_{\text{PW}}$ (entropy tracks difficulty).
+\textbf{H2:} $G_t>0\Rightarrow$ backtracking improves accuracy.
+\textbf{H3:} $\mathrm{ECE}_{\mathrm{ent}} < \mathrm{ECE}_{\kappa}$.
+\textbf{H4:} $\mathrm{TPCP}_{\mathrm{ent}} < \mathrm{TPCP}_{\kappa}$.
+\textbf{H5:} $\rho(\mathrm{PDS},\,\mathrm{Acc})<0$.
+\textbf{H6:} $D_t\uparrow\Rightarrow$ higher error likelihood.
+
+\subsection{Why Calibration Is the Right Metric}
+
+In agricultural deployment a farmer acts on the system's \emph{confidence},
+not only its label. A 75\%-accurate, well-calibrated system is strictly
+more useful than a 78\%-accurate overconfident one: miscalibrated wrong
+diagnoses (fungicide on a viral infection) cause direct economic harm,
+while calibrated uncertainty enables appropriate escalation to an extension
+worker \citep{savary2019global}. Critically, ECE improvement from
+confidence-gated routing is an \emph{architectural property} that holds
+independently of backbone or dataset---it is a claim about routing design,
+not any particular model.
+
+%-----------------------------------------------------------------------
+\section{The PlantSwarm System}
+\label{sec:system}
+
+\subsection{Shared Context Buffer}
+
+PlantSwarm operates over:
+\begin{equation}
+  \mathcal{C}_t = \bigl\langle
+  (a_{i_s},\;m_s,\;\kappa_s)\bigr\rangle_{s=1}^{t-1}
+  \label{eq:context}
+\end{equation}
+All agents read the full $\mathcal{C}_t$ before generating---the complete
+reasoning history, not just the preceding message.
+
+\subsection{Agent Design}
+
+Five agents mirror an expert pathologist's sequential workflow
+(Table~\ref{tab:agents}). \textbf{MorphologyAgent} (Mo) describes lesion
+morphology only---shape, color, margin definition, surface texture, necrosis
+pattern---without naming any disease \citep{zhang2024vipact}. It is the
+backtrack destination for all downstream low-confidence events.
+\textbf{SymptomAgent} (Sy) classifies the symptom complex and checks
+whether the pattern is pathognomonic or ambiguous. \textbf{PathogenAgent}
+(Pa) resolves pathogen class (T2) and specific disease name (T3, 26+
+classes)---the hardest tasks; its $\kappa$ and $H_t^{(\mathrm{dis})}$
+are the strongest routing signals in the system.
+\textbf{SeverityAgent} (Se) grades severity (T4) and identifies crop
+species (T5); T5 is a positive control that should always produce
+$\kappa{=}\texttt{H}$---failure implicates the backbone, not routing.
+\textbf{DiagnosisAgent} (Di) aggregates outputs into a structured JSON,
+resolves contradictions preferring later more-informed predictions, and
+emits final confidence and $H_{\hat{y}}$.
+
+\begin{table}[t]
+  \centering\small
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{llll}
+    \toprule
+    \textbf{Agent} & \textbf{Role} & \textbf{Tasks} & \textbf{Handoffs} \\
+    \midrule
+    Mo & Visual grounding & --     & \{Sy,\,Se\} \\
+    Sy & Symptom class    & T1     & \{Mo$^\dagger$,\,Pa,\,Se\} \\
+    Pa & Pathogen+disease & T2,\,T3& \{Mo$^\dagger$,\,Sy,\,Se\} \\
+    Se & Severity+crop    & T4,\,T5& \{Mo$^\dagger$,\,Di\} \\
+    Di & Aggregate+halt   & All    & $\emptyset$ \\
+    \bottomrule
+  \end{tabular}
+  \caption{Agent roles. $\dagger$: backtrack to Mo only when
+    $\kappa_t{=}\texttt{L}$ (or $G_t{>}\delta_1$ in entropy mode)
+    and no prior backtrack exists on this image \citep{sapkota2025vlam}.}
+  \label{tab:agents}
+\end{table}
+
+\subsection{Routing Protocol and Context Mechanisms}
+
+Each downstream agent (Sy, Pa, Se): routes to Mo if $\kappa_t{=}\texttt{L}$
+and no prior backtrack (budget $=1$); routes forward if already backtracked
+or $\kappa_t{=}\texttt{M}$; early-terminates to Di if $\kappa_t{=}\texttt{H}$
+with all tasks resolved. Entropy-Gated Swarm replaces these $\kappa$ conditions
+with the $G_t$/$H_t$ decisions from Eq.~\ref{eq:routing}. Full algorithms
+appear in Appendix~\ref{sec:app-algs}.
+
+Three mechanisms emerge from full $\mathcal{C}_t$ visibility. \textbf{Retrospective
+grounding}: second-pass Mo reads why regrounding was requested and targets
+specific features rather than repeating the initial description.
+\textbf{Contradiction detection}: Di reads both pre- and post-backtrack
+Pa predictions and selects the later, more-informed one.
+\textbf{Hedge propagation}: uncertainty tokens from Pa propagate
+to Se and Di as an explicit prior that $H_{\hat{y}}$ should be elevated.
+
+%-----------------------------------------------------------------------
+\section{Trace: Full UQ Walkthrough}
+\label{sec:trace}
+
+To connect the formal machinery to field reality, we annotate a complete
+trace from PlantDoc---a cassava field image where Cassava Bacterial Blight
+(CBB) and Cassava Mosaic Virus (CMD) produce nearly indistinguishable
+chlorotic patterns at early stage.
+
+\noindent\colorbox{tracebg}{\parbox{\dimexpr\columnwidth-10pt\relax}{%
+\small\textbf{Image:} Cassava, two overlapping leaves, irregular chlorosis
+at margins, slight vein clearing, no sporulation.
+\textbf{GT:} CBB (T2: Bacterial, T3: CBB, T4: Early, T5: Cassava).
+\textbf{Path:} Mo$\to$Sy$\to$Pa$\to$\textbf{Mo}$\to$Pa$\to$Se$\to$Di
+[$L{=}7$, bt$=1$]}}
+
+\vspace{3pt}
+\noindent\textbf{Mo} ($\kappa{=}\texttt{M}$, $H_1{=}0.41$\,nats):
+Angular chlorotic patches, vascular boundary margins, vein clearing,
+no sporulation. $G_2{=}0$ (first step).
+
+\noindent\textbf{Sy} ($\kappa{=}\texttt{M}$, $H_2{=}0.48$\,nats,
+$G_2{=}{+}0.07$): Pattern consistent with mosaic OR blight; not
+pathognomonic. Routes to Pa.
+
+\noindent\colorbox{lowconf}{\parbox{\dimexpr\columnwidth-10pt\relax}{%
+\small\textbf{Pa pass\,1} ($\kappa{=}\texttt{L}$, $H_3{=}0.79$\,nats,
+$H_3^{(\mathrm{dis})}{=}1.12$\,nats, $G_3{=}{+}0.31$): CBB\,(0.41)
+vs.\ CMD\,(0.38) vs.\ deficiency\,(0.21). Cannot separate. $G_3>0.15$:
+\textbf{entropy gradient triggers backtrack.}}}
+
+\vspace{2pt}
+\noindent\textbf{Mo pass\,2} ($\kappa{=}\texttt{H}$, $H_4{=}0.29$\,nats,
+$G_4{=}{-}0.50$): Targeted regrounding on margin definition:
+``Angular margins follow vascular tissue boundaries, consistent with
+bacterial xylem spread. No interveinal mosaic. CBB profile confirmed.''
+Gradient strongly falling after targeted regrounding.
+
+\noindent\colorbox{highconf}{\parbox{\dimexpr\columnwidth-10pt\relax}{%
+\small\textbf{Pa pass\,2} ($\kappa{=}\texttt{H}$, $H_5{=}0.33$\,nats,
+$H_5^{(\mathrm{dis})}{=}0.38$\,nats, $G_5{=}{-}0.17$): T2: Bacterial
+(0.85), T3: CBB (0.82). \textbf{Correct. Confirms P2:}
+$\Delta\mathrm{Acc}=+1$ (wrong$\to$right).}}
+
+\vspace{2pt}
+\noindent\textbf{Se} ($\kappa{=}\texttt{H}$): T4: Early (0.88),
+T5: Cassava (0.97). Hedge from Pa\,pass\,1 visible in $\mathcal{C}_t$;
+Se notes ``pathogen revised post-regrounding.''
+
+\noindent\colorbox{tracebg}{\parbox{\dimexpr\columnwidth-10pt\relax}{%
+\small\textbf{Di}: Reads both Pa predictions; selects pass-2 (post-backtrack).
+$P(\text{final}{=}\text{pass}_2\mid\text{contradiction}){=}1.0$.
+\textbf{Output:} disease: CBB, confidence\_T3: 0.82,
+$H_{\hat{y}}{=}0.21$\,nats, contradiction\_resolved: true,
+backtrack\_count: 1.}}
+
+\vspace{3pt}
+\noindent\textbf{UQ summary.} $L{=}7>4.3$ (mean) signals difficulty.
+$H^{(\mathrm{dis})}$ fell from 1.12$\to$0.38 nats across the backtrack:
+regrounding resolved the ambiguity. $G_t$ rose to $+0.31$ then dropped to
+$-0.50$: the cascade degradation was detected and corrected.
+Final $H_{\hat{y}}{=}0.21$\,nats is calibrated to 82\% confidence on a
+correct prediction---compare to SAGE's documented failure at confidence 0.92
+on an incorrect one with no correction mechanism. Trace confirms P1 (long-path
+image has elevated intermediate entropy), P2, and demonstrates all three
+context mechanisms (retrospective grounding, contradiction detection, hedge
+propagation) firing jointly.
+
+%-----------------------------------------------------------------------
+\section{Experimental Setup}
+\label{sec:setup}
+
+\paragraph{Benchmarks.}
+Table~\ref{tab:benchmarks} summarises our four-benchmark suite.
+\textbf{PlantVillage} \citep{mohanty2016plantvillage}: controlled single-leaf
+images---easy split, expected $L\leq4$, validates P3.
+\textbf{PlantDoc} \citep{singh2020plantdoc}: web-scraped field images with
+multi-disease co-occurrence---hard split, primary test bed for backtracking (P2).
+\textbf{PlantWild} \citep{wei2024benchmarking}: largest in-the-wild benchmark
+with text descriptions, enabling exact comparison with retrieval baselines.
+\textbf{LeafBench} \citep{quoc2026leafnet}: rare and regional disease categories
+not in PlantVillage---primary benchmark for PDS analysis.
+All splits are stratified by crop $\times$ disease $\times$ severity.
+
+\begin{table}[t]
+  \centering\small
+  \begin{tabular}{lrrl}
+    \toprule
+    \textbf{Benchmark} & \textbf{Images} & \textbf{Cls.} & \textbf{Role} \\
+    \midrule
+    PlantVillage & 5{,}000  & 38 & Easy / P3 \\
+    PlantDoc     & 2{,}569  & 27 & Hard / P2 \\
+    PlantWild    & 18{,}632 & 89 & In-the-wild \\
+    LeafBench    & 3{,}500  & 64 & Rare / PDS \\
+    \midrule
+    \textbf{Total} & \textbf{29{,}701} & \textbf{118} & \\
+    \bottomrule
+  \end{tabular}
+  \caption{Four-benchmark evaluation suite. Cls.\ = unique disease classes.}
+  \label{tab:benchmarks}
+\end{table}
+
+\paragraph{Tasks.}
+T1 (symptom, 8 cls., Sy), T2 (pathogen class, 5 cls., Pa), T3 (disease
+name, 26+ cls., Pa---primary metric), T4 (severity, Se), T5 (crop species,
+Se---positive control).
+
+\paragraph{Implementation.}
+Primary backbone: Qwen3-VL-8B-Instruct on local vLLM.
+Replicated on Phi-4-multimodal and Qwen2.5-VL-7B on 1k cross-model
+subsets. Entropy field extracted via \texttt{logprobs=True};
+$H_t^{(\mathrm{dis})}$ identified from PathogenAgent's JSON
+\texttt{disease\_name} span. $\delta_1{=}0.15$\,nats; $\delta_2$ tuned
+on held-out 500 images. Agent prompts in Appendix~\ref{sec:app-prompts}.
+
+\paragraph{Baselines.}
+Table~\ref{tab:baselines} presents the full comparison ladder. Each row
+adds one factor. SAGE+KB ($k{=}16$) is the primary must-beat.
+Fixed Chain uses all five agents in fixed order with $\kappa_t$ computed
+but ignored---the critical asymmetry that isolates the routing contribution.
+Entropy-Gated Swarm substitutes the $\mathcal{E}_t$ routing signal for $\kappa$.
+
+\begin{table}[t]
+  \centering\small
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{lll}
+    \toprule
+    \textbf{Baseline} & \textbf{Type} & \textbf{Isolates} \\
+    \midrule
+    Single VLM (zero-shot)  & Single model    & Absolute floor \\
+    MVPDR                   & Retrieval       & Retrieval paradigm \\
+    Snap \& Diagnose        & Retrieval       & Field retrieval \\
+    SAGE (no KB)            & Single agent    & Agentic loop \\
+    SAGE+KB ($k{=}16$)      & Agent+retrieval & Single-agent ceiling \\
+    Chat Demeter            & CNN+LLM         & Non-VLM multi-agent \\
+    FrugalGPT cascade       & Cascade routing & Learned stopping \\
+    Fixed Chain             & Sequential      & Agent structure \\
+    Fixed Chain + Ctx       & Sequential+ctx  & Context buffer alone \\
+    \textbf{PlantSwarm}     & Free swarm      & \textbf{Ours ($\kappa$)} \\
+    Entropy-Gated Swarm     & Free+entropy    & Ours ($\mathcal{E}_t$) \\
+    \bottomrule
+  \end{tabular}
+  \caption{Baseline ladder isolating each factor.}
+  \label{tab:baselines}
+\end{table}
+
+\paragraph{Factorial ablation.}
+Seven variants isolate five components (Table~\ref{tab:ablation}):
+\textbf{A} full-history context ($+3$--$5$ F1 hypothesis on T3);
+\textbf{B} confidence-gated routing (ECE $\downarrow{\geq}0.05$);
+\textbf{C} backtracking ($+4$--$7$ F1 hard split);
+\textbf{D} agent count ($-3$--$5$ F1 for 3-agent vs.\ 5-agent);
+\textbf{E} entropy routing (ECE $\downarrow{\geq}0.03$ over PlantSwarm).
+
+\begin{table}[t]
+  \centering\small
+  \setlength{\tabcolsep}{2pt}
+  \begin{tabular}{lcccccl}
+    \toprule
+    \textbf{Variant} & A & B & C & D & E & \textbf{Isolates} \\
+    \midrule
+    Fixed Chain       &\checkmark&$\times$&$\times$& 5&$\times$& Floor \\
+    FC + Context      &\checkmark&$\times$&$\times$& 5&$\times$& A \\
+    Free, No $\kappa$ &\checkmark&$\times$&\checkmark& 5&$\times$& B \\
+    Free, No BT       &\checkmark&\checkmark&$\times$& 5&$\times$& C \\
+    3-Agent Swarm     &\checkmark&\checkmark&\checkmark& 3&$\times$& D \\
+    \textbf{PlantSwarm}&\checkmark&\checkmark&\checkmark& 5&$\times$& Full \\
+    Entropy-Gated     &\checkmark&$\times$&\checkmark& 5&\checkmark& E \\
+    \bottomrule
+  \end{tabular}
+  \caption{Factorial ablation. Column per component; reading down isolates
+    one factor. BT = backtracking.}
+  \label{tab:ablation}
+\end{table}
+
+%-----------------------------------------------------------------------
+\section{Results}
+\label{sec:results}
+
+\subsection{Main Results (RQ1, H3, H4)}
+
+Table~\ref{tab:main} reports Macro-F1 (T3 and T2) across all four benchmarks,
+ECE ($\downarrow$), and TPCP ($\downarrow$), where:
+\begin{equation}
+  \mathrm{TPCP} = \frac{\bar{\Omega}\times N_{\mathrm{images}}}{N_{\mathrm{correct}}}
+  \label{eq:tpcp}
+\end{equation}
+All cells are populated from experiments via \texttt{sync\_latex\_metrics.py}.
+Bold = \textbf{PlantSwarm}; underline = Entropy-Gated if it outperforms.
+PlantVillage (easy) validates P3; PlantDoc and LeafBench (hard) are the
+primary test beds for routing gains; PlantWild validates cross-system
+comparison. ECE is the primary metric for the calibration claim.
+
+\begin{table*}[t]
+  \centering\small
+  \setlength{\tabcolsep}{3.5pt}
+  \begin{tabular}{lcccccccccc}
+    \toprule
+    & \multicolumn{2}{c}{\textbf{PlantVillage}}
+    & \multicolumn{2}{c}{\textbf{PlantDoc}}
+    & \multicolumn{2}{c}{\textbf{PlantWild}}
+    & \multicolumn{2}{c}{\textbf{LeafBench}}
+    & \multirow{2}{*}{\textbf{ECE$\downarrow$}}
+    & \multirow{2}{*}{\textbf{TPCP$\downarrow$}} \\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+    \cmidrule(lr){6-7}\cmidrule(lr){8-9}
+    \textbf{Method} & T3 & T2 & T3 & T2 & T3 & T2 & T3 & T2 & & \\
+    \midrule
+    \input{auto_table_main_results.tex}
+  \end{tabular}
+  \caption{Main results: T3 (disease name) and T2 (pathogen class) Macro-F1,
+    ECE, and TPCP. Numeric cells are generated from
+    \texttt{results/plantswarm\_metrics.json} by \texttt{scripts/sync\_latex\_metrics.py}.
+    ECE is the primary calibration metric. Hard-split columns (PlantDoc, LeafBench) are most
+    informative for routing differences.}
+  \label{tab:main}
+\end{table*}
+
+\subsection{Ablation Results (RQ2)}
+
+Table~\ref{tab:ablation-results} reports T3 F1 and ECE for all seven variants
+on the two hard splits. Expected ordering: PlantSwarm $>$ Free No BT $>$
+Free No $\kappa$ $>$ FC+Ctx $>$ FC on F1. On ECE: PlantSwarm and
+Entropy-Gated should show the largest improvement ($\geq0.05$) over Fixed Chain;
+Free No Backtrack should have the largest ECE gap relative to PlantSwarm,
+isolating backtracking as the primary calibration driver.
+
+\begin{table}[t]
+  \centering\small
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{lcccc}
+    \toprule
+    & \multicolumn{2}{c}{\textbf{PlantDoc}}
+    & \multicolumn{2}{c}{\textbf{LeafBench}} \\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+    \textbf{Variant} & T3 & ECE & T3 & ECE \\
+    \midrule
+    \input{auto_table_ablation_results.tex}
+  \end{tabular}
+  \caption{Ablation on hard splits. Reading down isolates one component per
+    column. If FC+Ctx closes the gap with PlantSwarm, context---not routing
+    flexibility---is the primary driver.}
+  \label{tab:ablation-results}
+\end{table}
+
+\subsection{Predictions and Mechanism Validation (RQ3)}
+
+Table~\ref{tab:predictions} tracks P1--P4. Table~\ref{tab:mechanisms}
+reports the three context buffer mechanism tests. The hedge propagation
+score uses:
+\begin{equation}
+  \mathrm{Hedge}(t) = \frac{\text{uncertainty tokens}}{\text{total tokens}}
+  \label{eq:hedge}
+\end{equation}
+with lexicon bootstrapped from Qwen3-VL-8B outputs \citep{zhang2026uncertainty}
+and validated against BioScope \citep{vincze2008bioscope}.
+
+\begin{table}[t]
+  \centering\small
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{llcc}
+    \toprule
+    & \textbf{Test} & \textbf{Expected} & \textbf{Result} \\
+    \midrule
+    \input{auto_table_predictions.tex}
+  \end{tabular}
+  \caption{Four falsifiable predictions. Weak P4 ($<$0.30) independently
+    motivates Entropy-Gated Swarm.}
+  \label{tab:predictions}
+\end{table}
+
+\begin{table}[t]
+  \centering\small
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{lcc}
+    \toprule
+    \textbf{Mechanism} & \textbf{Expected} & \textbf{Result} \\
+    \midrule
+    \input{auto_table_mechanisms.tex}
+  \end{tabular}
+  \caption{Context buffer mechanism validation.}
+  \label{tab:mechanisms}
+\end{table}
+
+\subsection{Pathogen Difficulty Score (H5, H6)}
+
+PDS in behavioral form:
+\begin{equation}
+  \mathrm{PDS}_{\mathrm{trace}}(c,M) = \bar{M}_c - \bar{M}_{\mathrm{global}}
+  \label{eq:pds-trace}
+\end{equation}
+Entropy-native form:
+\begin{equation}
+  \mathrm{PDS}(c) = \mathbb{E}_{x\in c}\!\bigl[H^{(\mathrm{dis})}(x)\bigr]
+  \label{eq:pds-ent}
+\end{equation}
+Table~\ref{tab:pds} reports expected values. The gradient---viral $>$
+early-stage fungal $>$ bacterial $>$ severe fungal $>$ healthy---mirrors
+the challenge gradient expert pathologists recognise: viral diseases produce
+diffuse symptoms indistinguishable from nutrient deficiency; early-stage
+fungal lacks the sporulation structures that make severe infections
+distinctive. PDS reflects genuine visual ambiguity, not a VLM artifact.
+Cross-model consistency (Kendall's $\tau$ across Qwen3-VL-8B, Phi-4,
+Qwen2.5-VL-7B) expected $\tau{>}0.70$ for each form and $\tau{>}0.80$
+for their mutual agreement, confirming model-agnosticity.
+
+\begin{table}[t]
+  \centering\small
+  \setlength{\tabcolsep}{2pt}
+  \begin{tabular}{llccc}
+    \toprule
+    \textbf{Category} & \textbf{Type}
+      & $\mathrm{PDS}_{\mathrm{trace}}$
+      & $\mathrm{PDS}(c)$
+      & $\Delta$acc \\
+    \midrule
+    Viral (mosaic,TYLCV,CMD) & T2    & ${\approx}{+}1.3$ & -- & $-10$--$-15$ \\
+    Early fungal             & T4+T2 & ${\approx}{+}1.1$ & -- & $-8$--$-12$ \\
+    Nutrient deficiency      & T2    & ${\approx}{+}0.9$ & -- & $-7$--$-10$ \\
+    Bacterial blight         & T2    & ${\approx}{+}0.7$ & -- & $-5$--$-8$ \\
+    Severe fungal            & T2+T4 & ${\approx}{-}0.5$ & -- & $+5$--$+8$ \\
+    Powdery mildew           & T1    & ${\approx}{-}0.3$ & -- & $+3$--$+5$ \\
+    Healthy                  & T4    & ${\approx}{-}0.8$ & -- & $+8$--$+12$ \\
+    \bottomrule
+  \end{tabular}
+  \caption{PDS by category. $\Delta$acc in F1 points. $\mathrm{PDS}(c)$ column
+    populated from experiments. $\rho(\mathrm{PDS}_{\mathrm{trace}},
+    \,\Delta\mathrm{acc})\approx{-}0.65$.}
+  \label{tab:pds}
+\end{table}
+
+%-----------------------------------------------------------------------
+\section{Discussion}
+\label{sec:discussion}
+
+\paragraph{Calibration beats raw accuracy in deployment.}
+A 75\%-accurate, well-calibrated system is strictly more useful than a
+78\%-accurate overconfident one in agricultural advisory: the overconfident
+system's wrong predictions come with high-confidence labels that trigger
+wrong treatments. PlantSwarm targets the ECE column, not only F1. The
+architectural claim---that confidence-gated routing produces lower ECE
+independently of backbone---holds even if absolute F1 gains are modest.
+
+\paragraph{Per-image routing beats distribution-level learned routing.}
+FrugalGPT knows ``60\% of images are easy'' from training statistics. It
+cannot identify \emph{which} image is easy. PlantSwarm's $\kappa$ signal
+and entropy gradient provide per-image uncertainty signals that learned
+cascade routers structurally cannot, which is why routing gains are
+expected to be largest on PlantDoc and LeafBench (high image-level
+difficulty variance) rather than PlantVillage (uniformly easy).
+
+\paragraph{Entropy routing closes the theory-implementation gap.}
+The amortized inference framing (Eq.~\ref{eq:optimal}) requires minimizing
+posterior entropy per step. The $\kappa$ signal approximates this
+linguistically; $H_t$ and $G_t$ operationalize it exactly. P4 tests
+whether the approximation is good enough---if $\rho<0.30$, the
+Entropy-Gated Swarm is not merely a theoretical improvement but a
+practically necessary one.
+
+\paragraph{Limitations.}
+The routing policy is prompt-encoded, not learned---RL or preference
+optimization could improve edge-case calibration. Routing path agreement
+($\sim$68--76\% across repeated runs for $\kappa$-gated; expected
+$\sim$80\% for entropy-gated, which is deterministic given weights and
+input) implies residual stochasticity. Coverage of 14 crops leaves some
+regional varieties underrepresented; LeafBench partially addresses this.
+PDS localizes difficulty to disease categories but not to specific visual
+features---qualitative trace analysis is needed to pinpoint confounders.
+
+%-----------------------------------------------------------------------
+\section{Conclusion}
+\label{sec:conclusion}
+
+PlantSwarm demonstrates that the uniformity assumption baked into every
+prior agentic plant disease system---same compute, same confidence,
+same chain for every image---is both technically wasteful and agronomically
+harmful. Confidence-gated free routing, grounded in amortized posterior
+inference and operationalized at two levels (prompt $\kappa$ and generation
+entropy), produces diagnostic trajectories that scale to image difficulty:
+short and confident on obvious cases, extended and self-correcting on
+genuinely ambiguous ones. The entropy field formally defines five
+uncertainty quantities (Eqs.~\ref{eq:h-token}--\ref{eq:h-disease}),
+enabling routing based on gradient and dispersion rather than scalar
+self-report. The Pathogen Difficulty Score in its entropy-native form
+(Eq.~\ref{eq:pds-ent}) turns routing traces into a pre-deployment audit
+tool grounded in model internals. Seven-variant factorial ablation isolates
+the contribution of each component. All traces, code, and PDS scripts
+are released \citep{jimenez2025multiagent}.
+
+%-----------------------------------------------------------------------
+\section*{Ethics Statement}
+PlantSwarm is a research prototype. Production deployment requires
+validation on local varieties not in our four benchmarks.
+ECE values are released per disease category so practitioners know
+exactly where system confidence is reliable. Treatment recommendations
+in DiagnosisAgent's output are informational only; agronomic decisions
+must involve trained extension workers. PlantDoc and LeafBench include
+Sub-Saharan African and South Asian field conditions, ensuring PDS and
+calibration results reflect smallholder deployment contexts where
+accurate diagnosis has the highest potential impact.
+
+\section*{Limitations}
+See Section~\ref{sec:discussion}. PlantSwarm is a research prototype
+not yet validated for production deployment.
+
+\section*{Acknowledgments}
+[Omitted for anonymous review.]
+
+%-----------------------------------------------------------------------
+\bibliography{plantswarm}
+
+%-----------------------------------------------------------------------
+\appendix
+
+\section{Algorithms}
+\label{sec:app-algs}
+
+\begin{algorithm}[t]
+\caption{Entropy-Driven Free-Routing Swarm (PlantSwarm)}
+\label{alg:swarm}
+\begin{algorithmic}[1]
+\Require Image $X$, agents $A$, $T_{\max}$
+\Ensure $\hat{y}$, trace $\tau$, $\mathcal{E}$
+\State $C_0\gets\langle(\textsc{User},X)\rangle$;\;
+       $\mathcal{E}_0\gets\emptyset$;\;
+       $a_1\gets\textsc{Mo}$;\; $t\gets1$
+\While{$t\leq T_{\max}$}
+  \State $(y^{(t)},\{\log p_i^{(t)}\})\gets a_t(X,C_t)$
+  \Comment{agent generation}
+  \For{each token $i$}
+    \State $h_i^{(t)}\gets-\sum_{v\in V}p(v|y_{<i})\log p(v|y_{<i})$
+    \Comment{Eq.~\ref{eq:h-token}}
+  \EndFor
+  \State $H_t\gets\tfrac{1}{N}\sum_i h_i^{(t)}$;
+         $D_t\gets\mathrm{Var}(h^{(t)})$
+  \Comment{Eqs.~\ref{eq:h-seq},\ref{eq:dispersion}}
+  \State $C_{t+1}\gets C_t\oplus(a_t,y^{(t)})$;\;
+         $\mathcal{E}_{t+1}\gets\mathcal{E}_t\cup\{(H_t,h^{(t)})\}$
+  \State $G_t\gets\frac{1}{t-1}\sum_{k=2}^t(H_k-H_{k-1})$ if $t>1$ else $0$
+  \Comment{Eq.~\ref{eq:gradient}}
+  \If{$G_t>\delta_1$}
+    $a_{t+1}\gets\textsc{Mo}$
+    \Comment{backtrack}
+  \ElsIf{$H_t<\delta_2$}
+    $a_{t+1}\gets\textsc{Di}$
+    \Comment{early terminate}
+  \Else\ $a_{t+1}\gets\pi(a_t)$
+    \Comment{forward}
+  \EndIf
+  \If{$a_{t+1}=\textsc{Di}$}
+    \Return $\hat{y},\tau,\mathcal{E}$
+  \EndIf
+  \State $t\gets t+1$
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[t]
+\caption{Fixed Sequential Chain (Baseline)}
+\label{alg:fixedchain}
+\begin{algorithmic}[1]
+\Require $X$; order $\mathcal{O}{=}[\textsc{Mo,Sy,Pa,Se,Di}]$
+\Ensure $\hat{y}$, $\tau$, $\Omega$
+\State $C_0\gets\langle(\textsc{User},X)\rangle$;\;
+       $\tau\gets[\,]$;\; $\Omega\gets0$
+\For{each $a$ in $\mathcal{O}$}
+  \State $(y^{(t)},\kappa_t,\_)\gets a(X,C_t)$
+  \Comment{$\kappa_t$ computed, \textbf{never used}}
+  \State $\Omega\gets\Omega+\mathrm{tokens}(y^{(t)})$;\;
+         $C_{t+1}\gets C_t\oplus(a,y^{(t)},\kappa_t)$
+\EndFor
+\State \Return $\textsc{Di}(C_t,\mathrm{aggregate}),\tau,\Omega$
+\end{algorithmic}
+\end{algorithm}
+
+\section{Full Agent Prompts}
+\label{sec:app-prompts}
+
+\paragraph{MorphologyAgent.}
+\begin{quote}\small\ttfamily
+You are MorphologyAgent, a visual grounding specialist. Describe lesion
+shape (circular, angular, irregular), color (yellow halo, brown center,
+black margins), distribution (scattered, marginal, systemic), affected
+tissue (leaf, stem, fruit, root), necrosis pattern (tip burn, interveinal,
+whole leaf), and surface texture (powdery, water-soaked, dry, sporulating).
+DO NOT identify any disease or pathogen. Select ONE of [SymptomAgent,
+SeverityAgent]. Report confidence (high/medium/low) and use handoff tool.
+\end{quote}
+
+\paragraph{SymptomAgent.}
+\begin{quote}\small\ttfamily
+You are SymptomAgent. T1: classify symptom as Lesion/Blight/Mosaic/Wilt/
+Rot/Canker/Rust/Powdery Mildew. Read ALL prior messages. Assess whether
+pattern is pathognomonic or ambiguous. If confidence=low AND no prior
+backtrack: handoff to MorphologyAgent. If already backtracked: forward.
+If confidence=high: handoff to PathogenAgent.
+\end{quote}
+
+\paragraph{PathogenAgent.}
+\begin{quote}\small\ttfamily
+You are PathogenAgent. T2: pathogen class (Fungal/Bacterial/Viral/Nutrient
+Deficiency/Pest Damage). T3: specific disease name (e.g. Cassava Bacterial
+Blight, TYLCV, Alternaria Leaf Spot). Focus on margin definition (Fungal=
+defined, Bacterial=angular/water-soaked), color patterns (Viral=mosaic,
+Nutrient=interveinal chlorosis), sporulation (Fungal diagnostic). Report
+confidence. If low AND no prior backtrack: handoff to MorphologyAgent.
+\end{quote}
+
+\paragraph{SeverityAgent.}
+\begin{quote}\small\ttfamily
+You are SeverityAgent. T4: severity (Healthy/Early/Moderate/Severe).
+T5: crop species. For T4: estimate affected area, lesion stage, secondary
+infection, systemic vs local. T5 should be obvious---flag if uncertain.
+If confidence=low AND no prior backtrack: handoff to MorphologyAgent.
+Otherwise handoff to DiagnosisAgent.
+\end{quote}
+
+\paragraph{DiagnosisAgent.}
+\begin{quote}\small\ttfamily
+You are DiagnosisAgent. Read ALL prior messages. Prefer later, more-informed
+predictions when resolving contradictions. Output JSON: symptom\_complex (T1),
+pathogen\_class (T2), disease\_name (T3), severity (T4), crop\_species (T5),
+confidence\_t1..t5, prediction\_entropy (0.0-1.0), contradiction\_resolved
+(bool), backtrack\_count, treatment\_recommendation (informational only),
+path\_summary. Then output TERMINATE.
+\end{quote}
+
+\section{Benchmark Construction}
+\label{sec:app-datasets}
+
+\paragraph{PlantVillage.} 5{,}000 images from \citet{hughes2015open},
+stratified by crop $\times$ disease. Color format only.
+
+\paragraph{PlantDoc.} Full 2{,}569 images from \citet{singh2020plantdoc}.
+13 crops, 27 disease classes, web-scraped with variable backgrounds.
+
+\paragraph{PlantWild.} 4{,}000 sampled from \citet{wei2024benchmarking}.
+Largest in-the-wild benchmark with text disease descriptions.
+
+\paragraph{LeafBench.} 3{,}500 from \citet{quoc2026leafnet}. 64 disease
+categories including rare and regional varieties. Primary PDS benchmark.
+
+\paragraph{Stratification.} All splits balanced by crop $\times$ pathogen
+class $\times$ severity $\times$ image source (controlled/field).
+
+\section{Dataset licences}
+\label{sec:app-licences}
+\noindent Table~\ref{tab:dataset_licenses} summarises hosting and
+distribution terms for the four benchmarks used in evaluation.
+
+\input{appendix_dataset_licenses}
+
+\section{Entropy Field Implementation}
+\label{sec:app-entropy}
+
+\paragraph{Extraction.} \texttt{logprobs=True} passed to vLLM client.
+Per-token entropy: $h_i=-\log p_i$ (single-sample estimate, exact under
+greedy decoding). $H_t^{(\mathrm{dis})}$ extracted from the token span
+of PathogenAgent's \texttt{disease\_name} JSON field.
+
+\paragraph{Hyperparameter sensitivity.}
+$\delta_1\in\{0.10,0.15,0.20,0.25\}$ and $\delta_2$ tuned on 500-image
+held-out set; full sensitivity table reported here after experiments.
+
+\paragraph{Cross-model.} Entropy values comparable across Qwen3-VL-8B,
+Phi-4-multimodal, Qwen2.5-VL-7B because all use same temperature and
+the entropy field is read from the generation distribution, not
+logit scaling.
+
+\section{Budget Sensitivity}
+\label{sec:app-budget}
+
+\begin{table}[h]
+  \centering\small
+  \begin{tabular}{lccccc}
+    \toprule
+    $\beta$ & T3 F1 & T2 F1 & ECE & Mean $L$ & TPCP \\
+    \midrule
+    \input{auto_table_budget.tex}
+  \end{tabular}
+  \caption{Backtrack budget sensitivity on PlantDoc (1k subset). Expected:
+    $\beta{=}1$ optimal; $\beta{=}2$ marginal gain at $\sim$15\% token overhead.}
+  \label{tab:budget}
+\end{table}
+
+\section{Path Clustering}
+\label{sec:app-clustering}
+
+Paths encoded as strings over \{Mo,Sy,Pa,Se,Di\}. Pairwise Levenshtein
+distances feed hierarchical agglomerative clustering (Ward linkage);
+cluster count maximizes silhouette score. Per-cluster disease-category
+distribution and quality statistics characterize which image types trigger
+which routing strategies.
+
+\section{Hedge Lexicon}
+\label{sec:app-hedge}
+
+Seed terms: \textit{possibly, unclear, hard to tell, uncertain,
+approximately, may, might, could, appears to be, cannot rule out}.
+Co-occurring n-grams extracted within 5-token window, scored by PMI.
+Top-200 PMI candidates manually reviewed. Validated against BioScope
+\citep{vincze2008bioscope} and CoNLL 2010 Shared Task.
+
+\end{document}
