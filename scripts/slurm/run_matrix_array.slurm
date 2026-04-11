@@ -3,22 +3,23 @@
 # Submit: sbatch scripts/slurm/run_matrix_array.slurm
 # Override: sbatch --export=ALL,CONFIG_PATH=configs/cyag_directory.yaml scripts/slurm/run_matrix_array.slurm
 #
-#SBATCH --job-name=ps-matrix
-#SBATCH --output=/work/mech-ai-scratch/tirtho/CyAg/PlantSwarm/logs/%x-%A_%a.out
-#SBATCH --error=/work/mech-ai-scratch/tirtho/CyAg/PlantSwarm/logs/%x-%A_%a.err
+#SBATCH --job-name=plantswarm_gpu
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=8
 #SBATCH --mem=32G
 #SBATCH --time=24:00:00
-#SBATCH --gres=gpu:1
 #SBATCH --partition=nova
+#SBATCH --gres=gpu:1
+#SBATCH --output=/work/mech-ai-scratch/tirtho/CyAg/logs/plantswarm-%A_%a.out
+#SBATCH --error=/work/mech-ai-scratch/tirtho/CyAg/logs/plantswarm-%A_%a.err
+#SBATCH --chdir=/work/mech-ai-scratch/tirtho/CyAg/PlantSwarm
 #SBATCH --mail-user=tirtho@iastate.edu
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --array=0-1
-#SBATCH --chdir=/work/mech-ai-scratch/tirtho/CyAg/PlantSwarm
 
 set -euo pipefail
+mkdir -p /work/mech-ai-scratch/tirtho/CyAg/logs
 
 WORKDIR="${WORKDIR:-/work/mech-ai-scratch/tirtho/CyAg/PlantSwarm}"
 ENV_PATH="${ENV_PATH:-/work/mech-ai-scratch/tirtho/gpu_env}"

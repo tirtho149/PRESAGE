@@ -1,20 +1,21 @@
 #!/bin/bash
 # 100-image partial run (same stack as run_all_tests.slurm) + LaTeX sync.
-#SBATCH --job-name=ps-100
-#SBATCH --output=/work/mech-ai-scratch/tirtho/CyAg/PlantSwarm/logs/%x-%j.out
-#SBATCH --error=/work/mech-ai-scratch/tirtho/CyAg/PlantSwarm/logs/%x-%j.err
+#SBATCH --job-name=plantswarm_gpu
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=8
 #SBATCH --mem=32G
 #SBATCH --time=24:00:00
-#SBATCH --gres=gpu:1
 #SBATCH --partition=nova
+#SBATCH --gres=gpu:1
+#SBATCH --output=/work/mech-ai-scratch/tirtho/CyAg/logs/plantswarm-%j.out
+#SBATCH --error=/work/mech-ai-scratch/tirtho/CyAg/logs/plantswarm-%j.err
+#SBATCH --chdir=/work/mech-ai-scratch/tirtho/CyAg/PlantSwarm
 #SBATCH --mail-user=tirtho@iastate.edu
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --chdir=/work/mech-ai-scratch/tirtho/CyAg/PlantSwarm
 
 set -euo pipefail
+mkdir -p /work/mech-ai-scratch/tirtho/CyAg/logs
 export SUBSET="${SUBSET:-100}"
 export ORCHESTRATOR="${ORCHESTRATOR:-autogen_swarm}"
 export CONFIG_PATH="${CONFIG_PATH:-configs/cyag_directory.yaml}"

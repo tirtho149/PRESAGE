@@ -230,7 +230,7 @@ Use `configs/plantdoc_github.yaml`: set `data.plantdoc_repo_root`, `data.plantdo
 
 ## Slurm full flow
 
-Cluster scripts share one **Nova / ISU scratch** template: `nodes=1`, `cpus-per-task=4`, `mem=32G`, `time=24:00:00`, `gres=gpu:1`, `partition=nova`, logs under `/work/mech-ai-scratch/tirtho/CyAg/PlantSwarm/logs/`, `chdir` to that `PlantSwarm` tree, and mail to `tirtho@iastate.edu`. Copy from `scripts/run_all_tests.slurm` or any `scripts/slurm/*.slurm` when adding jobs; only `--job-name`, optional `--array`, and `%j` vs `%A_%a` in log names differ.
+Cluster scripts share one **Nova / ISU scratch** template: `job-name=plantswarm_gpu`, `nodes=1`, `cpus-per-task=8`, `mem=32G`, `time=24:00:00`, `partition=nova`, `gres=gpu:1`, stdout/stderr under `/work/mech-ai-scratch/tirtho/CyAg/logs/plantswarm-*.out` (array jobs use `%A_%a`), `chdir=/work/mech-ai-scratch/tirtho/CyAg/PlantSwarm`, and mail to `tirtho@iastate.edu`. Copy from `scripts/run_all_tests.slurm` or any `scripts/slurm/*.slurm` when adding jobs.
 
 ### One allocation (vLLM + bundle on the same GPU node)
 
