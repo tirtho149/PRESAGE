@@ -4,7 +4,17 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 
-PYTHON="${PYTHON_BIN:-${ROOT}/.venv311/bin/python3}"
+# Resolution order: explicit PYTHON_BIN → PLANTSWARM_GPU_ENV (micromamba prefix) → ENV_PATH → .venv311 → python3
+PYTHON="${PYTHON_BIN:-}"
+if [[ -z "${PYTHON}" ]] && [[ -n "${PLANTSWARM_GPU_ENV:-}" ]] && [[ -x "${PLANTSWARM_GPU_ENV}/bin/python" ]]; then
+  PYTHON="${PLANTSWARM_GPU_ENV}/bin/python"
+fi
+if [[ -z "${PYTHON}" ]] && [[ -n "${ENV_PATH:-}" ]] && [[ -x "${ENV_PATH}/bin/python" ]]; then
+  PYTHON="${ENV_PATH}/bin/python"
+fi
+if [[ -z "${PYTHON}" ]]; then
+  PYTHON="${ROOT}/.venv311/bin/python3"
+fi
 if [[ ! -x "$PYTHON" ]]; then
   PYTHON="python3"
 fi

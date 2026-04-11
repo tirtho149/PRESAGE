@@ -15,19 +15,20 @@
 
 set -euo pipefail
 mkdir -p /work/mech-ai-scratch/tirtho/CyAg/logs
+_REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=slurm/env_gpu_defaults.sh
+source "${_REPO}/slurm/env_gpu_defaults.sh"
 
 # -------------------------------
 # CyAg / scratch layout (override with env if needed)
 # -------------------------------
 WORKDIR="${WORKDIR:-/work/mech-ai-scratch/tirtho/CyAg/PlantSwarm}"
-ENV_PATH="${ENV_PATH:-/work/mech-ai-scratch/tirtho/gpu_env}"
 # Root for leaf images (parquet image_path values are often relative to this)
 CYAG_IMAGE_ROOT="${CYAG_IMAGE_ROOT:-/work/mech-ai-scratch/tirtho/CyAg/Curated_Dataset/Images}"
 
 CONFIG_PATH="${CONFIG_PATH:-configs/cyag_directory.yaml}"
 ORCHESTRATOR="${ORCHESTRATOR:-autogen_swarm}"   # must be autogen_swarm (classic rejected in run_plantswarm)
 SUBSET="${SUBSET:-20}"                           # smoke-friendly subset
-PYTHON_BIN="${PYTHON_BIN:-python}"
 RUN_ID="$(date +%Y%m%d_%H%M%S)"
 RESULTS_DIR="${RESULTS_DIR:-results/slurm_${RUN_ID}}"
 
@@ -60,20 +61,8 @@ echo "CONFIG_PATH      : ${CONFIG_PATH}"
 echo "ORCHESTRATOR     : ${ORCHESTRATOR}"
 echo "SUBSET           : ${SUBSET}"
 echo "RESULTS_DIR      : ${RESULTS_DIR}"
+echo "PYTHON_BIN       : ${PYTHON_BIN}"
 echo
-
-if [[ -f "${ENV_PATH}/bin/activate" ]]; then
-  # shellcheck disable=SC1091
-  source "${ENV_PATH}/bin/activate"
-  PYTHON_BIN="${ENV_PATH}/bin/python"
-elif [[ -x "${ENV_PATH}/bin/python" ]]; then
-  PYTHON_BIN="${ENV_PATH}/bin/python"
-fi
-
-if ! command -v "${PYTHON_BIN}" >/dev/null 2>&1; then
-  echo "[FATAL] Python binary not found: ${PYTHON_BIN}"
-  exit 1
-fi
 
 # Optional server health check (non-fatal)
 if command -v curl >/dev/null 2>&1; then

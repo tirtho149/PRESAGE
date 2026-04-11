@@ -24,9 +24,11 @@
 
 set -euo pipefail
 mkdir -p /work/mech-ai-scratch/tirtho/CyAg/logs
+_SLURM_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=env_gpu_defaults.sh
+source "${_SLURM_DIR}/env_gpu_defaults.sh"
 
 WORKDIR="${WORKDIR:-/work/mech-ai-scratch/tirtho/CyAg/PlantSwarm}"
-ENV_PATH="${ENV_PATH:-/work/mech-ai-scratch/tirtho/gpu_env}"
 export CONFIG_PATH="${CONFIG_PATH:-configs/cyag_directory.yaml}"
 export SUBSET="${SUBSET:-}"
 export ORCHESTRATOR="${ORCHESTRATOR:-autogen_swarm}"
@@ -38,17 +40,7 @@ export VLLM_MODEL="${VLLM_MODEL:-Qwen/Qwen2.5-VL-7B-Instruct}"
 
 cd "${WORKDIR}"
 
-if [[ -f "${ENV_PATH}/bin/activate" ]]; then
-  # shellcheck disable=SC1091
-  source "${ENV_PATH}/bin/activate"
-  export PYTHON_BIN="${ENV_PATH}/bin/python"
-elif [[ -x "${ENV_PATH}/bin/python" ]]; then
-  export PYTHON_BIN="${ENV_PATH}/bin/python"
-else
-  export PYTHON_BIN="${PYTHON_BIN:-python3}"
-fi
-
 export CYAG_IMAGE_ROOT="${CYAG_IMAGE_ROOT:-/work/mech-ai-scratch/tirtho/CyAg/Curated_Dataset/Images}"
 
-echo "SINGLE ALLOCATION  VLLM_MODEL=${VLLM_MODEL}  CONFIG_PATH=${CONFIG_PATH}  RESULTS_DIR=${RESULTS_DIR}"
+echo "SINGLE ALLOCATION  ENV_PATH=${ENV_PATH}  PYTHON_BIN=${PYTHON_BIN}  VLLM_MODEL=${VLLM_MODEL}  CONFIG_PATH=${CONFIG_PATH}  RESULTS_DIR=${RESULTS_DIR}"
 bash scripts/run_single_allocation.sh

@@ -39,10 +39,13 @@ Repository root (your clone may be named e.g. `socioswarm` or `PlantSwarm`):
     ├── sync_latex_metrics.py  # results/*.json → plantswarm/latex/auto_*.tex
     ├── build_latex_pdf.sh      # acl_latex.tex → PDF (+ optional copy to --results-dir)
     ├── run_experiment_bundle.sh
-    └── smoke_test.sh           # compileall + sync + PDF (local / CI)
+    ├── smoke_test.sh                    # compileall + sync + PDF (local / CI)
+    ├── install_requirements_and_smoke.sh # pip install into gpu_env + smoke_test
+    ├── use_gpu_env.sh                   # source: same env as Slurm (via env_gpu_defaults.sh)
+    └── slurm/env_gpu_defaults.sh        # one shared PLANTSWARM_GPU_ENV / PYTHON_BIN for all jobs
 ```
 
-Optional Slurm drivers live under `scripts/slurm/` (paths inside those files are cluster-specific).
+Optional Slurm drivers live under `scripts/slurm/` (paths inside those files are cluster-specific). **`scripts/slurm/env_gpu_defaults.sh`** is the single definition of the micromamba GPU prefix (`/work/mech-ai-scratch/tirtho/gpu_env`); every `*.slurm` job sources it so `PYTHON_BIN` matches interactive `source scripts/use_gpu_env.sh`.
 
 If you maintain a second copy of the paper tree under `PlantSwarm/latex/`, it may be hard-linked to `plantswarm/latex/` on the same filesystem—edit one canonical path or verify with `ls -li`.
 
@@ -60,6 +63,20 @@ source .venv311/bin/activate   # Windows: .venv311\Scripts\activate
 pip install -r requirements.txt
 ```
 
+**ISU Nova / micromamba GPU env (default prefix `/work/mech-ai-scratch/tirtho/gpu_env`):** All Slurm batch files `source scripts/slurm/env_gpu_defaults.sh` (override with `PLANTSWARM_GPU_ENV` or `ENV_PATH` before submit). For interactive shells:
+
+```bash
+source scripts/use_gpu_env.sh   # same file as Slurm: sets PATH and PYTHON_BIN
+```
+
+One-shot **install dependencies into that prefix and run the smoke test** (creates nothing if the prefix is missing; create it first, e.g. `micromamba create -p /work/mech-ai-scratch/tirtho/gpu_env python=3.11 pip -y`):
+
+```bash
+bash scripts/install_requirements_and_smoke.sh
+```
+
+Optional: `INSTALL_TFDS=1` also installs `requirements-tfds.txt` when present; `SKIP_INSTALL=1` only runs smoke.
+
 ## Smoke test (recommended before a full run)
 
 Runs Python bytecode check, LaTeX metric sync, and PDF build (same stack as CI):
@@ -67,6 +84,8 @@ Runs Python bytecode check, LaTeX metric sync, and PDF build (same stack as CI):
 ```bash
 bash scripts/smoke_test.sh
 ```
+
+Interpreter resolution: `PYTHON_BIN` if set, else `PLANTSWARM_GPU_ENV/bin/python`, else `ENV_PATH/bin/python`, else `.venv311/bin/python3`, else `python3`.
 
 With a specific interpreter:
 
@@ -238,7 +257,7 @@ If you only have **one Slurm job** (one node, one GPU), you cannot run a separat
 
 Required environment variables: **`PYTHON_BIN`**, **`CONFIG_PATH`**, **`RESULTS_DIR`**, **`VLLM_MODEL`** (same Hugging Face id as **`model.backbone`** in your YAML). Optional: **`VLLM_EXTRA_ARGS`**, **`VLLM_READY_TIMEOUT_SEC`**, **`SINGLE_ALLOC_CMD`** (custom command instead of the full bundle).
 
-Slurm example (edit `WORKDIR`, `ENV_PATH`, `chdir`, logs, **`VLLM_MODEL`**):
+Slurm example (edit `WORKDIR`, `chdir`, logs, **`VLLM_MODEL`**; GPU env is `scripts/slurm/env_gpu_defaults.sh`):
 
 ```bash
 sbatch scripts/slurm/run_bundle_single_allocation.slurm

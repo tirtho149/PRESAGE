@@ -26,7 +26,16 @@
 
 set -euo pipefail
 
-: "${PYTHON_BIN:?Set PYTHON_BIN}"
+# Default to the same micromamba prefix as Slurm (scripts/slurm/env_gpu_defaults.sh) if unset.
+if [[ -z "${PYTHON_BIN:-}" ]]; then
+  _R="$(cd "$(dirname "$0")" && pwd)"
+  if [[ -f "${_R}/slurm/env_gpu_defaults.sh" ]]; then
+    # shellcheck source=slurm/env_gpu_defaults.sh
+    source "${_R}/slurm/env_gpu_defaults.sh"
+  fi
+fi
+
+: "${PYTHON_BIN:?Set PYTHON_BIN or place env at scripts/slurm/env_gpu_defaults.sh path}"
 : "${CONFIG_PATH:?Set CONFIG_PATH}"
 : "${RESULTS_DIR:?Set RESULTS_DIR}"
 

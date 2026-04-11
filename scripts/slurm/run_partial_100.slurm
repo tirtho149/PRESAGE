@@ -16,29 +16,22 @@
 
 set -euo pipefail
 mkdir -p /work/mech-ai-scratch/tirtho/CyAg/logs
+_SLURM_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=env_gpu_defaults.sh
+source "${_SLURM_DIR}/env_gpu_defaults.sh"
+
 export SUBSET="${SUBSET:-100}"
 export ORCHESTRATOR="${ORCHESTRATOR:-autogen_swarm}"
 export CONFIG_PATH="${CONFIG_PATH:-configs/cyag_directory.yaml}"
 WORKDIR="${WORKDIR:-/work/mech-ai-scratch/tirtho/CyAg/PlantSwarm}"
-ENV_PATH="${ENV_PATH:-/work/mech-ai-scratch/tirtho/gpu_env}"
 export CYAG_IMAGE_ROOT="${CYAG_IMAGE_ROOT:-/work/mech-ai-scratch/tirtho/CyAg/Curated_Dataset/Images}"
 RUN_ID="$(date +%Y%m%d_%H%M%S)"
 export RESULTS_DIR="${RESULTS_DIR:-${WORKDIR}/results/partial100_${RUN_ID}}"
-PYTHON_BIN="${PYTHON_BIN:-python}"
 
 mkdir -p "${WORKDIR}/logs" "${RESULTS_DIR}"
 cd "${WORKDIR}"
 export CYAG_IMAGE_ROOT
 
-if [[ -f "${ENV_PATH}/bin/activate" ]]; then
-  # shellcheck disable=SC1091
-  source "${ENV_PATH}/bin/activate"
-  PYTHON_BIN="${ENV_PATH}/bin/python"
-elif [[ -x "${ENV_PATH}/bin/python" ]]; then
-  PYTHON_BIN="${ENV_PATH}/bin/python"
-fi
-export PYTHON_BIN
-
-echo "PARTIAL-100  SUBSET=${SUBSET}  ORCHESTRATOR=${ORCHESTRATOR}  RESULTS_DIR=${RESULTS_DIR}"
+echo "PARTIAL-100  ENV_PATH=${ENV_PATH}  PYTHON_BIN=${PYTHON_BIN}  SUBSET=${SUBSET}  ORCHESTRATOR=${ORCHESTRATOR}  RESULTS_DIR=${RESULTS_DIR}"
 export ROUTING_SUBSET="${ROUTING_SUBSET:-${SUBSET}}"
 bash "${WORKDIR}/scripts/run_experiment_bundle.sh"
