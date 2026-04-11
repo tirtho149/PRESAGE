@@ -78,7 +78,7 @@ This expects `results/` (at least `plantswarm_metrics.json` may be partial) and 
 
 ## Google Colab (full pipeline)
 
-`colab/PlantSwarm_full_pipeline.ipynb` is ordered as: **Drive + HF/TFDS caches** → **one pip-install cell** → **clone repo** → **§4: all Hugging Face model IDs, `snapshot_download`, and in-notebook Transformers load** (including a Qwen3-VL demo) → **YAML config** (`PLANTSWARM_BACKBONE`, replicas) → **one mega cell** for `scripts/run_experiment_bundle.sh` order. You still need a reachable **OpenAI-compatible** server at `vllm_base_url` for HTTP inference steps. Upload to Colab or open from GitHub.
+`colab/PlantSwarm_full_pipeline.ipynb` is ordered as: **Drive + HF/TFDS caches** (and optional **`HF_TOKEN`** from Colab Secrets) → **one pip-install cell** → **clone** (defaults to `github.com/tirtho149/PlantSwarm`) → **§4: model IDs + resumable `snapshot_download` + Transformers smoke load** → **§5 YAML** (requires §4 globals) → **§6 scripts** (guard if cells were skipped). Use a **GPU** runtime; run cells **top to bottom**. You still need a reachable **OpenAI-compatible** server at `vllm_base_url` for HTTP inference steps. Upload to Colab or open from GitHub.
 
 ## Quick start
 
