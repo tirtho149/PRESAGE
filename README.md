@@ -40,6 +40,97 @@ python -c "from agents import *; from plantswarm import *; print('✓ Ready')"
 
 ---
 
+## 🚀 Running on Nova HPC (SLURM Scripts)
+
+For distributed GPU training on Nova HPC cluster, use the provided shell scripts. All scripts use SLURM with automatic dependency chaining.
+
+### Quick Start: Run All 5 Phases (30 hours total)
+
+```bash
+# On Nova HPC login node
+cd /work/mech-ai/tirtho/ObservePlantSwarm
+
+# Step 1: Download PlantWild dataset (2-4 hours, one-time only)
+sbatch scripts/submit_setup_plantwild.sh
+# Monitor: tail -f logs/setup_plantwild-*.out
+
+# Step 2: Submit all 5 phases with automatic dependency chaining
+bash scripts/submit_all_phases.sh
+
+# Step 3: Monitor jobs
+squeue -u $USER
+tail -f logs/phase*.out
+```
+
+### Individual Phase Scripts
+
+#### Phase 1: Generate Routing Traces (12-18 hours)
+```bash
+sbatch scripts/submit_phase1_plantswarm.sh
+# Generates: results/plant_village_tfds/traces/plantswarm_traces.jsonl
+# Log: logs/phase1_plantswarm-{JOBID}.out
+```
+
+#### Phase 2: Experiments (2-3 hours)
+```bash
+sbatch scripts/submit_phase2_experiments.sh
+# Runs: baselines, ablations, calibration, routing analysis
+# Log: logs/phase2_experiments-{JOBID}.out
+```
+
+#### Phase 3: Train OBSERVE (4-6 hours)
+```bash
+sbatch scripts/submit_phase3_observe_training.sh
+# Outputs: observe/checkpoints/observe_final.pt
+# Log: logs/phase3_observe_training-{JOBID}.out
+```
+
+#### Phase 4: OOD Evaluation (2-3 hours)
+```bash
+sbatch scripts/submit_phase4_ood_evaluation.sh
+# Evaluates PlantSwarm + OBSERVE on PlantWild
+# Log: logs/phase4_ood_eval-{JOBID}.out
+```
+
+#### Phase 5: LaTeX Sync (<1 minute)
+```bash
+sbatch scripts/submit_phase5_latex_sync.sh
+# Syncs metrics to: plantswarm/latex/auto_*.tex
+# Log: logs/phase5_latex_sync-{JOBID}.out
+```
+
+### Monitoring Jobs
+
+```bash
+# Check all your jobs
+squeue -u $USER
+
+# Monitor specific phase output (live)
+tail -f logs/phase1_plantswarm-*.out
+
+# Check for errors
+tail -f logs/phase1_plantswarm-*.err
+
+# See completed job info
+sacct -j <JOBID>
+```
+
+### Output & Syncing Results
+
+After jobs complete, sync results back to GitHub:
+
+```bash
+# On Nova HPC
+git add results/ observe/checkpoints/ plantswarm/latex/auto_* logs/
+git commit -m "Full pipeline results from Nova HPC"
+git push origin main
+
+# On local machine
+git pull origin main
+```
+
+---
+
 ### Phase 1: Generate Routing Traces (Training Data)
 
 **Goal:** Run PlantSwarm on PlantVillage (~10,000 images) to generate routing traces for OBSERVE training.
