@@ -395,40 +395,31 @@ ls -lh results/plant_village_tfds/traces/plantswarm_traces.jsonl
 # Should contain 8,000-10,000 routing traces
 ```
 
-#### Step 3b: Train OBSERVE Model
+#### Step 3b: Train OBSERVE Model (Nova HPC)
 ```bash
-# Smoke test (train on first 100 traces)
-python scripts/train_observe.py \
-  --traces results/plant_village_tfds/traces/plantswarm_traces.jsonl \
-  --output observe/checkpoints/observe_smoke.pt \
-  --epochs 2 \
-  --batch-size 8
+# Submit OBSERVE training job
+sbatch scripts/submit_phase3_observe_training.sh
 
-# Full training (~4-6 hours on single A100)
-python scripts/train_observe.py \
-  --traces results/plant_village_tfds/traces/plantswarm_traces.jsonl \
-  --output observe/checkpoints/observe_final.pt \
-  --epochs 50 \
-  --batch-size 8 \
-  --lr 1e-4
+# Monitor progress
+tail -f logs/phase3_observe_training-*.out
 ```
 
 **Training Details:**
+- **Time:** 4-6 hours on single A100 GPU
 - **Architecture:** Qwen2.5-VL-3B with LoRA (r=16, α=32, ~56M trainable params)
-- **Data:** 8,000 routing traces from PlantSwarm with epistemic/aleatoric labels
-- **Loss:** Weighted combination of routing (1.0) + calibration (0.4) + consistency (0.2) + belief (0.2)
-- **Output:** `observe/checkpoints/observe_final.pt` (model weights + training history)
+- **Data:** 8,000-10,000 routing traces from PlantSwarm
+- **Loss:** Weighted multi-task (routing 1.0 + calibration 0.4 + consistency 0.2 + belief 0.2)
+- **Optimizer:** AdamW with lr=1e-4, warmup 500 steps, cosine decay
 
 **Output:**
 - `observe/checkpoints/observe_final.pt` — trained model weights
 - `observe/checkpoints/training_history.json` — loss curves and metrics
 
 #### Step 3c: Evaluate OBSERVE on PlantVillage (ID)
+Evaluation runs automatically after training completes. Check results:
 ```bash
-python scripts/evaluate_observe.py \
-  --model observe/checkpoints/observe_final.pt \
-  --traces results/plant_village_tfds/traces/plantswarm_traces.jsonl \
-  --output results/plant_village_tfds/observe_evaluation.json
+cat observe/checkpoints/training_history.json
+cat results/plant_village_tfds/observe_evaluation.json
 ```
 
 #### Step 3d: Inference with OBSERVE
