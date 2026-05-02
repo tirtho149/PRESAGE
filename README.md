@@ -284,36 +284,16 @@ git reset --hard origin/main
 
 **Goal:** Run PlantSwarm on PlantVillage (~10,000 images) to generate routing traces for OBSERVE training.
 
-#### Step 1a: Start vLLM Server
-On a GPU machine with vLLM installed:
+#### Step 1: Submit PlantSwarm Job (Nova HPC)
 ```bash
-# Start vLLM serving Qwen3-VL-8B
-python -m vllm.entrypoints.openai_api_server \
-  --model Qwen/Qwen3-VL-8B-Instruct \
-  --tensor-parallel-size 1 \
-  --gpu-memory-utilization 0.8 \
-  --port 8000
-# Server ready at http://localhost:8000/v1
+# Submit Phase 1 job
+sbatch scripts/submit_phase1_plantswarm.sh
+
+# Monitor progress
+tail -f logs/phase1_plantswarm-*.out
 ```
 
-**On Mac/Windows:** Use SSH port forwarding to remote GPU:
-```bash
-ssh -L 8000:localhost:8000 gpu_machine
-# Then use http://localhost:8000/v1 in config
-```
-
-#### Step 1b: Run PlantSwarm Training
-```bash
-# Smoke test (5 images, ~1 min)
-python scripts/run_plantswarm.py \
-  --config configs/qwen25_vl_3b_smoke.yaml \
-  --subset 5
-
-# Full training (10,000 images, ~12-18 hours on 1x A100)
-python scripts/run_plantswarm.py \
-  --config configs/plant_village_tfds.yaml
-```
-
+**Time:** 12-18 hours on single A100 GPU  
 **Output:** `results/plant_village_tfds/`
 - `plantswarm_metrics.json` — accuracy, ECE, TPCP metrics
 - `plantswarm_predictions.jsonl` — per-image predictions
@@ -445,59 +425,34 @@ actions = inference.predict_batch(images, batch_size=4)
 **Goal:** Evaluate PlantSwarm on wild (uncontrolled) images for domain shift assessment.
 
 ```bash
-# Smoke test (5 images)
-python scripts/run_plantswarm.py \
-  --config configs/plantwild_hf.yaml \
-  --subset 5
-
-# Full OOD evaluation (~18,000 images)
-python scripts/run_plantswarm.py \
-  --config configs/plantwild_hf.yaml
+sbatch scripts/submit_phase4_ood_evaluation.sh
 ```
 
+**Time:** 2-3 hours on single A100 GPU  
 **Output:** `results/plantwild/`
 - `plantswarm_metrics.json` — OOD accuracy, ECE (should be worse than PlantVillage)
+- `traces/plantswarm_traces.jsonl` — routing traces for OBSERVE evaluation
 - Validates robustness to controlled→wild domain shift
 
-#### Step 4 (Optional): Evaluate OBSERVE on PlantWild (OOD)
-```bash
-python scripts/evaluate_observe.py \
-  --model observe/checkpoints/observe_final.pt \
-  --traces results/plantwild/traces/plantswarm_traces.jsonl \
-  --output results/plantwild/observe_evaluation.json
-```
-
+Evaluation automatically evaluates OBSERVE on PlantWild after PlantSwarm completes.  
 Should show 52% ECE improvement over prompt-based baselines under domain shift.
 
 ---
 
-### Phase 5: Build the Paper
+### Phase 5: LaTeX Metrics Sync
 
-#### Step 5a: Sync Metrics to LaTeX
+**Goal:** Auto-sync all metrics to paper LaTeX files.
+
 ```bash
-python scripts/sync_latex_metrics.py \
-  --results-dir results/plant_village_tfds/ \
-  --latex-dir plantswarm/latex/ \
-  --subset-hint full
+sbatch scripts/submit_phase5_latex_sync.sh
 ```
 
-Converts JSON metrics → TeX table fragments:
+**Time:** <1 minute  
+**Output:** Auto-generated TeX files synced to `plantswarm/latex/auto_*.tex`
 - `auto_metrics.tex` — inline macro definitions (ECE, F1, etc.)
 - `auto_table_main_results.tex` — Table 4 (PlantSwarm vs baselines)
 - `auto_table_ablation_results.tex` — Table 3 (ablations)
-- `auto_table_mechanisms.tex` — context buffer mechanisms (RQ5)
-
-#### Step 5b: Compile PDF
-```bash
-bash scripts/build_latex_pdf.sh \
-  --latex-dir plantswarm/latex/ \
-  --main-tex acl_latex.tex \
-  --results-dir results/plant_village_tfds/
-```
-
-Produces:
-- `plantswarm/latex/acl_latex.pdf` — paper with latest metrics
-- `results/plant_village_tfds/paper_acl_latex.pdf` — copy for results dir
+- `auto_table_mechanisms.tex` — context buffer mechanisms
 
 ---
 
@@ -701,21 +656,30 @@ PlantSwarm/
 
 ---
 
-## 🤖 OBSERVE Quick Reference
+## 🤖 OBSERVE Model Usage
 
-### Training a New OBSERVE Model
+### Training OBSERVE
 ```bash
-# Full training (10,000 traces, 50 epochs)
-python scripts/train_observe.py \
-  --traces results/plant_village_tfds/traces/plantswarm_traces.jsonl \
-  --output observe/checkpoints/observe_final.pt \
-  --epochs 50 --batch-size 8
+# Submit training job (Phase 3)
+sbatch scripts/submit_phase3_observe_training.sh
 
-# Check training history
+# Monitor progress
+tail -f logs/phase3_observe_training-*.out
+
+# Check training history after completion
 cat observe/checkpoints/training_history.json
 ```
 
-### Using OBSERVE for Inference
+### Evaluating OBSERVE
+```bash
+# Evaluate on PlantVillage (ID) or PlantWild (OOD)
+sbatch scripts/submit_evaluate_observe.sh
+
+# Check results
+cat results/plant_village_tfds/observe_evaluation.json
+```
+
+### Using OBSERVE for Inference (Python)
 ```python
 from observe import OBSERVEInference
 from PIL import Image
@@ -732,45 +696,14 @@ action = inference.predict(image, context)
 print(f"Next agent: {action.next_agent}")
 print(f"Confidence: {action.confidence:.3f}")
 print(f"Epistemic uncertainty: {action.epistemic_uncertainty:.3f}")
-print(f"Aleatoric uncertainty: {action.aleatoric_uncertainty:.3f}")
 
 # Get actionable recommendations
 decomp = inference.get_uncertainty_decomposition(action)
 print(decomp["epistemic"]["recommendation"])
-print(decomp["aleatoric"]["recommendation"])
-```
 
-### Batch Inference (Faster)
-```python
-from observe import OBSERVEInference
-from PIL import Image
-
-inference = OBSERVEInference("observe/checkpoints/observe_final.pt")
-
-# Load multiple images
+# Batch inference
 images = [Image.open(f"crop_{i}.jpg") for i in range(100)]
-
-# Batch predict (4 images at a time)
 actions = inference.predict_batch(images, batch_size=4)
-
-# Process results
-for i, action in enumerate(actions):
-    print(f"Image {i}: {action.next_agent}, conf={action.confidence:.3f}")
-```
-
-### Evaluate OBSERVE on Benchmark
-```bash
-# ID evaluation (PlantVillage)
-python scripts/evaluate_observe.py \
-  --model observe/checkpoints/observe_final.pt \
-  --traces results/plant_village_tfds/traces/plantswarm_traces.jsonl \
-  --output results/plant_village_tfds/observe_eval.json
-
-# OOD evaluation (PlantWild)
-python scripts/evaluate_observe.py \
-  --model observe/checkpoints/observe_final.pt \
-  --traces results/plantwild/traces/plantswarm_traces.jsonl \
-  --output results/plantwild/observe_eval.json
 ```
 
 ---
