@@ -131,6 +131,151 @@ git pull origin main
 
 ---
 
+## 🔄 Two-Way Sync Workflow (Local ↔ GitHub ↔ Nova)
+
+### Workflow Overview
+```
+Local Machine ──→ GitHub (code) ──→ Nova HPC (run jobs)
+Local Machine ←── GitHub (results) ←── Nova HPC (push results)
+```
+
+### Step 1: Push Code Changes (Local → GitHub)
+
+After making code changes locally:
+
+```bash
+# On local machine
+git status                          # See changes
+git add <file1> <file2> ...        # Stage specific files
+git commit -m "Description of changes"
+git push origin main               # Push to GitHub
+```
+
+### Step 2: Pull Code on Nova (GitHub → Nova)
+
+Before running jobs on Nova:
+
+```bash
+# On Nova HPC
+cd /work/mech-ai/tirtho/ObservePlantSwarm
+git fetch origin                   # Get latest from GitHub
+git pull origin main               # Update local clone
+```
+
+### Step 3: Submit Jobs and Wait
+
+```bash
+# On Nova HPC
+bash scripts/submit_all_phases.sh  # Start all 5 phases
+squeue -u $USER                    # Monitor jobs
+tail -f logs/phase1_plantswarm-*.out  # Watch progress
+```
+
+### Step 4: Push Results Back (Nova → GitHub)
+
+After jobs complete:
+
+```bash
+# On Nova HPC (in ObservePlantSwarm directory)
+git add results/ observe/checkpoints/ plantswarm/latex/auto_* logs/
+git commit -m "Results: Phase 1-5 pipeline (X hours, Y% accuracy)"
+git push origin main               # Push results to GitHub
+```
+
+### Step 5: Pull Results Locally (GitHub → Local)
+
+To get results on your local machine:
+
+```bash
+# On local machine
+git fetch origin                   # Get latest from GitHub
+git pull origin main               # Update with results
+ls -lh results/plant_village_tfds/ # Check results downloaded
+```
+
+### Full Daily Workflow Example
+
+```bash
+# DAY 1: Local Development
+# ========================
+# On local machine (~/Desktop/ObservePlantSwarm)
+git add configs/plant_village_tfds.yaml
+git commit -m "Adjust temperature scaling parameters"
+git push origin main
+
+# DAY 1: Nova Setup & Submit
+# ===========================
+# SSH to Nova login node
+ssh tirtho@hpc-login.iastate.edu
+cd /work/mech-ai/tirtho/ObservePlantSwarm
+git pull origin main               # Get latest code
+sbatch scripts/submit_setup_plantwild.sh  # One-time dataset download
+# Wait 2-4 hours...
+
+# DAY 2: Nova Pipeline Submission
+# ================================
+bash scripts/submit_all_phases.sh  # Submit all 5 phases (~30 hours)
+squeue -u $USER                    # Track progress
+
+# DAY 3-4: Nova Results Sync
+# ==========================
+# After jobs finish (30 hours later)
+git add results/ observe/checkpoints/ plantswarm/latex/auto_* logs/
+git commit -m "Full pipeline: 92.3% F1, 0.08 ECE on PlantVillage"
+git push origin main
+
+# DAY 4: Local Results Retrieval
+# ===============================
+# On local machine
+git pull origin main
+# Review results in results/plant_village_tfds/plantswarm_metrics.json
+cat results/plant_village_tfds/plantswarm_metrics.json | python -m json.tool
+```
+
+### Common Sync Issues
+
+**Issue:** "Your branch is ahead of origin"
+```bash
+# You have commits locally that aren't pushed
+git push origin main
+```
+
+**Issue:** "Your branch is behind origin"
+```bash
+# Nova has pushed results you haven't pulled
+git pull origin main
+```
+
+**Issue:** Merge conflict after pulling
+```bash
+# Edit the conflicted files manually
+git add <resolved_files>
+git commit -m "Resolve merge conflict"
+git push origin main
+```
+
+**Issue:** Want to discard local changes and use GitHub version
+```bash
+git fetch origin
+git reset --hard origin/main
+```
+
+### Best Practices
+
+✅ **Do:**
+- Commit frequently with clear messages
+- Push after each significant change
+- Pull before starting new work
+- Include job logs (.out, .err) in results commits
+
+❌ **Don't:**
+- Push large binary files directly (except trained models)
+- Force push to main (`git push --force`)
+- Edit files in parallel on local + Nova without syncing
+- Keep uncommitted changes for >1 day
+
+---
+
 ### Phase 1: Generate Routing Traces (Training Data)
 
 **Goal:** Run PlantSwarm on PlantVillage (~10,000 images) to generate routing traces for OBSERVE training.
