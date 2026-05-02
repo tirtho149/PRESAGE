@@ -134,21 +134,11 @@ def main():
     # Feature proxies from trace metadata (real features computed from images via CV)
     path_lengths = np.array([t["path_length"] for t in run1_traces])
 
-    # Placeholder features — replace with actual CV extraction in production
-    # (edge density, object count, geographic marker presence)
-    n = len(run1_traces)
-    feature_arrays = {
-        "edge_density": np.random.default_rng(42).uniform(0, 1, n),        # Replace with real
-        "object_count": np.random.default_rng(43).poisson(5, n).astype(float),
-        "geo_marker_presence": np.random.default_rng(44).binomial(1, 0.3, n).astype(float),
-    }
-
-    feat_corr = path_feature_correlations(run1_traces, feature_arrays, bootstrap_n=1000)
-    print("\n  Path feature correlations:")
-    for metric, feat_dict in feat_corr.items():
-        for feat, stats in feat_dict.items():
-            print(f"    {metric} ~ {feat}: ρ={stats['spearman_rho']:.3f} "
-                  f"[{stats['ci_lo']:.3f},{stats['ci_hi']:.3f}] p={stats['p_value']:.4f}")
+    # TODO: Image feature correlations require real CV extraction
+    # (edge density, object count, geographic marker presence from image bytes)
+    # For now, skip this analysis as random features produce meaningless correlations
+    print("\n  [SKIP] Path feature correlations (requires real CV feature extraction)")
+    print("        TODO: Extract features from image bytes using computer vision")
 
     # =========================================================
     # P1: path length ~ prediction entropy correlation

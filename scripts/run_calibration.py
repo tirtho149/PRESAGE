@@ -195,6 +195,34 @@ def main():
         }
 
     # =========================================================
+    # κ calibration: correctness by declared confidence level (§7)
+    # =========================================================
+    print("\n[κ Calibration] Per-level accuracy and monotonicity")
+    for task_id in ["T1", "T2"]:
+        labels = label_space[task_id]
+        all_probs, all_gts, all_confidences = [], [], []
+        for pred_rec in predictions:
+            gt = pred_rec.get("ground_truth", {}).get(task_id)
+            if gt is None:
+                continue
+            pred = pred_rec.get("predictions", {}).get(task_id, labels[0])
+            conf_str = pred_rec.get("confidence", {}).get(task_id, "medium")
+            probs = pred_rec.get("ensemble_probs", {}).get(task_id, {})
+            all_gts.append(gt)
+            all_probs.append(probs)
+            all_confidences.append(conf_str)
+
+        if all_gts:
+            correctness = np.array([1 if pred == gt else 0
+                                    for pred, gt in zip(
+                                        [p.get(g, 0) for p in all_probs for g in [list(labels)[0]]][:len(all_gts)],
+                                        all_gts
+                                    )])
+            kappa_report = kappa_calibration_report(all_confidences, correctness)
+            calibration_report[f"{task_id}_kappa"] = kappa_report
+            print(f"  {task_id}: {kappa_report}")
+
+    # =========================================================
     # Pareto frontier: F1 vs. mean tokens-per-image (§7)
     # =========================================================
     print("\n[Pareto] F1 vs. mean tokens-per-image (§7 supplementary)")

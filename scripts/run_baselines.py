@@ -192,46 +192,64 @@ def main():
     if args.baselines:
         baselines = {k: v for k, v in baselines.items() if k in args.baselines}
 
-    # Run all
+    # Run all baselines across all tasks
     all_results = {}
-    fixed_chain_correct = None
+    fixed_chain_correct = {}
+    task_ids = ["T1", "T2", "T3", "T4", "T5"]
 
     for name, baseline in baselines.items():
         print(f"\nRunning baseline: {name}")
-        result = run_baseline(name, baseline, records, label_space, task_id="T1")
-        if result is None:
-            continue
-        all_results[name] = result
+        baseline_results = {}
 
-        if name == "Fixed Chain":
-            fixed_chain_correct = result["correctness"]
+        for task_id in task_ids:
+            result = run_baseline(name, baseline, records, label_space, task_id=task_id)
+            if result is None:
+                continue
+            baseline_results[task_id] = result
 
-        print(f"  T1 Macro-F1={result['macro_f1_T1']:.1f} "
-              f"[{result['macro_f1_T1_ci'][0]:.1f},{result['macro_f1_T1_ci'][1]:.1f}] "
-              f"ECE={result['ece_T1']:.4f} TPCP={result['tpcp_T1']:.1f}")
+            if name == "Fixed Chain":
+                if task_id not in fixed_chain_correct:
+                    fixed_chain_correct[task_id] = result["correctness"]
+
+            f1_key = f"macro_f1_{task_id}"
+            ci_key = f"macro_f1_{task_id}_ci"
+            ece_key = f"ece_{task_id}"
+            tpcp_key = f"tpcp_{task_id}"
+
+            if f1_key in result:
+                print(f"  {task_id}: F1={result[f1_key]:.1f} "
+                      f"[{result[ci_key][0]:.1f},{result[ci_key][1]:.1f}] "
+                      f"ECE={result[ece_key]:.4f} TPCP={result[tpcp_key]:.1f}")
+
+        if baseline_results:
+            all_results[name] = baseline_results
 
     # McNemar's test vs. Fixed Chain (§6, Bonferroni corrected)
-    if fixed_chain_correct is not None:
-        n_comparisons = max(1, len(all_results) - 1)
+    if fixed_chain_correct:
+        n_comparisons = max(1, len(all_results) - 1) * len(task_ids)
         alpha_corrected = cfg["eval"]["mcnemar_alpha"] / n_comparisons \
             if cfg["eval"]["bonferroni_correct"] else cfg["eval"]["mcnemar_alpha"]
 
         print(f"\nMcNemar's test vs. Fixed Chain (α={alpha_corrected:.4f} Bonferroni-corrected):")
-        for name, result in all_results.items():
+        for name, baseline_results in all_results.items():
             if name == "Fixed Chain":
                 continue
-            p = mcnemar_test(fixed_chain_correct, result["correctness"])
-            sig = "***" if p < alpha_corrected / 10 else "**" if p < alpha_corrected else ""
-            print(f"  {name}: p={p:.4f} {sig}")
-            result["mcnemar_p_vs_fixed_chain"] = float(p)
-            result["significant"] = p < alpha_corrected
+            for task_id in task_ids:
+                if task_id not in baseline_results or task_id not in fixed_chain_correct:
+                    continue
+                p = mcnemar_test(fixed_chain_correct[task_id], baseline_results[task_id]["correctness"])
+                sig = "***" if p < alpha_corrected / 10 else "**" if p < alpha_corrected else ""
+                print(f"  {name} {task_id}: p={p:.4f} {sig}")
+                baseline_results[task_id]["mcnemar_p_vs_fixed_chain"] = float(p)
+                baseline_results[task_id]["significant"] = p < alpha_corrected
 
     # Save
-    saveable = {
-        name: {k: v.tolist() if hasattr(v, "tolist") else v
-               for k, v in res.items() if k != "correctness"}
-        for name, res in all_results.items()
-    }
+    saveable = {}
+    for name, baseline_results in all_results.items():
+        saveable[name] = {}
+        for task_id, res in baseline_results.items():
+            saveable[name][task_id] = {k: v.tolist() if hasattr(v, "tolist") else v
+                                       for k, v in res.items() if k != "correctness"}
     out_path = os.path.join(results_dir, "baseline_results.json")
     with open(out_path, "w") as f:
         json.dump(saveable, f, indent=2)

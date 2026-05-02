@@ -1,12 +1,8 @@
-# PlantVillage (TFDS: plant_village) — training configuration for PlantSwarm
-# Install: pip install tensorflow tensorflow-datasets
-# First download ~828 MiB; cached under ~/tensorflow_datasets
+# PlantWild HuggingFace configuration (OOD evaluation, §6 paper)
+# Load controlled-to-wild plant disease images from HuggingFace
 
 data:
-  tfds_name: "plant_village"
-  tfds_split: "train"
-  tfds_max_examples: 10000
-  tfds_seed: 42
+  hf_dataset_id: "rashikahura/plantWild"
   image_col: "image_bytes"
   id_col: "id"
   label_cols:
@@ -18,12 +14,13 @@ data:
   demographic_cols: {}
   quality_col: null
   quality_filter: null
-  n_images: 10000
+  n_images: 18000
   calibration_split_size: 500
-  stratify_by: ["crop_species", "disease_name"]
+  stratify_by: ["crop_species"]
   top_k_diseases: 50
   benchmark_col: "benchmark"
 
+# Label spaces (PlantSwarm Table: tasks); T3 extended with top-k from data
 labels:
   T1:
     - "Lesion"
@@ -62,6 +59,7 @@ labels:
     - "Soybean"
     - "Other"
 
+# vLLM / model (paper §Implementation)
 model:
   backbone: "Qwen/Qwen3-VL-8B-Instruct"
   replica_backbones:
@@ -78,6 +76,7 @@ model:
   strict_server_model: false
   top_logprobs: 20
 
+# PlantSwarm routing
 routing:
   orchestrator: "autogen_swarm"
   Tmax: 15
@@ -91,21 +90,25 @@ routing:
   entropy_delta1: 0.05
   entropy_delta2: 0.35
 
+# Calibration
 calibration:
   ece_bins: 15
   conformal_alpha: 0.1
   temperature_scaling: true
 
+# Evaluation
 eval:
   bootstrap_n: 1000
   mcnemar_alpha: 0.05
   bonferroni_correct: true
 
+# Routing analysis
 routing_analysis:
   subset_size: 500
   n_runs: 2
   expected_exact_match: 0.65
 
+# Bias analysis
 bias:
   reference_gender: "male"
   reference_region: "Americas"
@@ -113,8 +116,9 @@ bias:
   reml: true
   bonferroni_correct: true
 
+# Output
 output:
-  results_dir: "results/plant_village_tfds/"
-  traces_dir: "results/plant_village_tfds/traces/"
+  results_dir: "results/plantwild/"
+  traces_dir: "results/plantwild/traces/"
   save_traces: true
   save_probs: true

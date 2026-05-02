@@ -1,42 +1,28 @@
 # PlantSwarm default configuration (PlantSwarm paper / EMNLP 2026)
+# Uses PlantVillage (TFDS) for training trace generation
 
-# --- Data: parquet **or** folder tree (no CSV/parquet required) ---
-# If ``directory_root`` is set, images are discovered recursively and labels are read from
-# subdirectory names (see data/directory_index.py: depth 2 => crop / disease).
 data:
-  parquet_path: "data/plantdiagbench.parquet"
-  directory_root: null
-  directory_layout:
-    # Optional explicit mapping, one entry per folder level under directory_root, e.g. [T5, T3]
-    segment_tasks: null
-  image_extensions: [".jpg", ".jpeg", ".png", ".webp", ".bmp", ".tif", ".tiff"]
-  follow_symlinks: false
-  # Optional prefix if image_col holds paths relative to a dataset root (Slurm exports CYAG_IMAGE_ROOT).
-  image_root: null
+  # TensorFlow Datasets Plant Village (training)
+  tfds_name: "plant_village"
+  tfds_split: "train"
+  tfds_max_examples: 10000
+  tfds_seed: 42
+  image_col: "image_bytes"
   id_col: "id"
-  image_col: "image_path"
   label_cols:
     T1: "symptom_type"
     T2: "pathogen_class"
     T3: "disease_name"
     T4: "severity_class"
     T5: "crop_species"
-  # Optional bias-analysis columns (§8). Leave empty if your parquet has no group metadata.
   demographic_cols: {}
-  quality_col: "img_quality"
+  quality_col: null
   quality_filter: null
   n_images: 10000
   calibration_split_size: 500
-  stratify_by: ["crop_species", "severity_class"]
+  stratify_by: ["crop_species", "disease_name"]
   top_k_diseases: 50
-  # Optional: parquet column for benchmark id (plantvillage, plantdoc, plantwild, leafbench).
-  # Enables plantswarm_metrics.json["by_benchmark"] for the wide main-results LaTeX table.
-  benchmark_col: null
-  # Optional: Cropped PlantDoc from https://github.com/pratikkayal/PlantDoc-Dataset
-  # (overrides parquet when set; use with plantdoc_split: train | test).
-  plantdoc_repo_root: null
-  plantdoc_split: train
-  plantdoc_infer_crop_t5: true
+  benchmark_col: "benchmark"
 
 # --- Label spaces (PlantSwarm Table: tasks); T3 extended with top-k + Other from data ---
 labels:

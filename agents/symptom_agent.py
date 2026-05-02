@@ -42,7 +42,7 @@ class SymptomAgent(BaseAgent):
     ) -> Tuple[Dict[str, str], str, Optional[str]]:
         confidence = self._extract_confidence(text)
         label = self._extract_label(text, self._t1_labels) or self._t1_labels[-1]
-        all_tasks_covered = True
+        all_tasks_covered = False  # Only T1 covered; T2-T5 pending
         handoff = self._routing_decision(
             confidence=confidence,
             backtrack_count=backtrack_count,

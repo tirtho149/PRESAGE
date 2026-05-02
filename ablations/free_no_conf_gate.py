@@ -97,11 +97,7 @@ class FreeNoConfGateAblation:
             agent_confidences[current] = output.confidence
             t += 1
 
-            if current == "PathogenAgent" and bt == 0 and len(path) < 3:
-                next_agent = "MorphologyAgent"
-                bt += 1
-            else:
-                next_agent = FIXED_FORWARD.get(current, "DiagnosisAgent")
+            next_agent = FIXED_FORWARD.get(current, "DiagnosisAgent")
             current = next_agent
 
         synth = self.agents["DiagnosisAgent"]

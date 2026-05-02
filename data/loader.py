@@ -6,10 +6,8 @@ PlantDiagBench DataLoader (PlantSwarm paper).
 Data sources:
     * Parquet (``parquet_path``): file path or base64 column.
     * Directory tree (``directory_root``): labels from folder names; see ``data/directory_index.py``.
-    * Hugging Face (``hf_dataset_id``): e.g. ``enalis/LeafBench``; see ``data/leafbench_hf.py`` (set ``HF_TOKEN`` in ``.env``).
+    * Hugging Face (``hf_dataset_id``): e.g. ``rashikahura/plantWild``; see ``data/plantwild_hf.py`` (set ``HF_TOKEN`` in ``.env``).
     * TFDS (``tfds_name: plant_village``): TensorFlow Datasets Plant Village; see ``data/tfds_plant_village.py``.
-    * PlantDoc GitHub (``plantdoc_repo_root``): Cropped PlantDoc from
-      https://github.com/pratikkayal/PlantDoc-Dataset — see ``data/plantdoc_github.py``.
 """
 
 from __future__ import annotations
@@ -67,8 +65,8 @@ class PlantDiagBenchLoader:
     split : {'test', 'calibration', 'all'}
 
     Use ``cfg['directory_root']``, ``cfg['hf_dataset_id']``, ``cfg['tfds_name']``,
-    ``cfg['plantdoc_repo_root']``, or ``cfg['parquet_path']``.
-    Priority: directory > Hugging Face > TFDS > PlantDoc repo > parquet.
+    or ``cfg['parquet_path']``.
+    Priority: directory > Hugging Face > TFDS > parquet.
     """
 
     IMAGE_SIZE = 448
@@ -98,7 +96,6 @@ class PlantDiagBenchLoader:
         self._from_directory = bool(cfg.get("directory_root"))
         self._from_hf = bool(cfg.get("hf_dataset_id"))
         self._from_tfds = bool(cfg.get("tfds_name"))
-        self._from_plantdoc = bool(cfg.get("plantdoc_repo_root"))
         self.parquet_path: Optional[Path] = None
 
         if self._from_directory:
@@ -109,14 +106,12 @@ class PlantDiagBenchLoader:
             self._df_full = self._load_hf_dataframe()
         elif self._from_tfds:
             self._df_full = self._load_tfds_dataframe()
-        elif self._from_plantdoc:
-            self._df_full = self._load_plantdoc_dataframe()
         else:
             pq_path = cfg.get("parquet_path")
             if not pq_path:
                 raise ValueError(
                     "Set data.directory_root, data.hf_dataset_id, data.tfds_name, "
-                    "data.plantdoc_repo_root, or data.parquet_path."
+                    "or data.parquet_path."
                 )
             self.parquet_path = Path(pq_path)
             if not self.parquet_path.is_file():
@@ -168,20 +163,19 @@ class PlantDiagBenchLoader:
         load_project_dotenv()
 
         ds_id = (self.cfg.get("hf_dataset_id") or "").strip()
-        if ds_id == "enalis/LeafBench":
-            from data.leafbench_hf import build_leafbench_dataframe
+        if "plantwild" in ds_id.lower():
+            from data.plantwild_hf import build_plantwild_dataframe
 
-            return build_leafbench_dataframe(
+            result = build_plantwild_dataframe(
                 hf_dataset_id=ds_id,
-                hf_split=str(self.cfg.get("hf_split", "test")),
-                hf_token=self.cfg.get("hf_token"),
-                question_types=self.cfg.get("leafbench_question_types"),
+                split=str(self.cfg.get("hf_split", "test")),
                 max_examples=self.cfg.get("hf_max_examples"),
                 seed=int(self.cfg.get("hf_seed", 42)),
                 image_col=self.cfg.get("image_col", "image_bytes"),
-                benchmark=str(self.cfg.get("benchmark_name", "leafbench")),
-                use_index_ranges=bool(self.cfg.get("leafbench_use_index_ranges", True)),
+                jpeg_quality=int(self.cfg.get("hf_jpeg_quality", 95)),
             )
+            rows_data = result["rows"]
+            return pd.DataFrame(rows_data)
         raise ValueError(f"Unknown data.hf_dataset_id (no loader): {ds_id!r}")
 
     def _load_tfds_dataframe(self) -> pd.DataFrame:
@@ -277,7 +271,7 @@ class PlantDiagBenchLoader:
         raise FileNotFoundError(f"Cannot load image from row: {row.get(image_col)}")
 
     def _row_to_record(self, row: pd.Series) -> PlantRecord:
-        lc = self.cfg["label_cols"]
+        lc = self.cfg.get("label_cols", {})
 
         img, b64 = self._load_image(row)
 

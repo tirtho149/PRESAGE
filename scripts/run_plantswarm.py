@@ -333,7 +333,7 @@ def main():
             f"ECE={ece_val:.4f} TPCP={tpcp_val:.1f}"
         )
 
-        if cfg["calibration"]["temperature_scaling"] and task_id == "T1":
+        if cfg["calibration"]["temperature_scaling"]:
             cal_probs_list, cal_gts = [], []
             for cal_record in loader_cal:
                 gt_c = getattr(cal_record, gt_attr, None)

@@ -43,7 +43,7 @@ class PathogenAgent(BaseAgent):
         t2_labels = self.label_space.get("T2", [])
         pathogen = self._extract_label(text, t2_labels) or (t2_labels[-1] if t2_labels else "Other")
         disease = self._extract_label(text, self._t3_labels) or "Other"
-        all_tasks_covered = True
+        all_tasks_covered = False  # T1-T3 covered; T4-T5 pending
         handoff = self._routing_decision(
             confidence=confidence,
             backtrack_count=backtrack_count,
