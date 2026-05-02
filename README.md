@@ -71,10 +71,14 @@ sbatch scripts/submit_phase1_plantswarm.sh
 # Log: logs/phase1_plantswarm-{JOBID}.out
 ```
 
-#### Phase 2: Experiments (2-3 hours)
+##### Phase 2: Experiments (2-3 hours)
 ```bash
 sbatch scripts/submit_phase2_experiments.sh
-# Runs: baselines, ablations, calibration, routing analysis
+# Runs all 4 sub-phases sequentially:
+#   2a) Baselines (8 comparison models)
+#   2b) Ablations (6 factorial variants)
+#   2c) Calibration (ECE, temperature scaling, conformal)
+#   2d) Routing Analysis (P1-P4 predictions)
 # Log: logs/phase2_experiments-{JOBID}.out
 ```
 
@@ -348,12 +352,7 @@ Tests contribution of routing components (Table 3):
 **Output:** `results/plant_village_tfds/ablation_metrics_*.json`
 
 #### Step 2c: Calibration Analysis
-```bash
-python scripts/run_calibration.py \
-  --config configs/plant_village_tfds.yaml \
-  --predictions results/plant_village_tfds/plantswarm_predictions.jsonl
-```
-Analyzes uncertainty quantification:
+Included in Phase 2 experiments script. Analyzes uncertainty quantification:
 - ECE before/after temperature scaling
 - Reliability diagrams
 - Split conformal prediction
@@ -362,24 +361,13 @@ Analyzes uncertainty quantification:
 **Output:** `results/plant_village_tfds/calibration_report.json`
 
 #### Step 2d: Routing Analysis
-```bash
-python scripts/run_routing_analysis.py --config configs/plant_village_tfds.yaml
-```
-Tests falsifiable predictions (P1-P4):
+Included in Phase 2 experiments script. Tests falsifiable predictions (P1-P4):
 - P1: Path length ↔ entropy correlation
 - P2: Backtrack improves confidence
 - P3: Early termination accuracy
 - P4: OOD behavioral transfer
 
 **Output:** `results/plant_village_tfds/routing_analysis.json`
-
-#### Step 2e: Bias Analysis
-```bash
-python scripts/run_bias_analysis.py --config configs/plant_village_tfds.yaml
-```
-Examines demographic parity and confounding effects.
-
-**Output:** `results/plant_village_tfds/bias_analysis.json`
 
 ---
 
