@@ -8,9 +8,9 @@
 
 ```bash
 # 1. Clone to Nova
-cd /work/mech-ai/tirtho/
-git clone https://github.com/yourusername/ObservePlantSwarm.git
-cd ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/
+git clone https://github.com/yourusername/PlantSwarm.git
+cd PlantSwarm
 
 # 2. One-time setup
 module load python cuda/11.8
@@ -43,11 +43,11 @@ git push origin main
 ssh tirtho@hpc-login.iastate.edu
 
 # Navigate to work directory
-cd /work/mech-ai/tirtho/
+cd /work/mech-ai-scratch/tirtho/
 
 # Clone from GitHub (public repo)
-git clone https://github.com/yourusername/ObservePlantSwarm.git
-cd ObservePlantSwarm
+git clone https://github.com/yourusername/PlantSwarm.git
+cd PlantSwarm
 
 # Verify files
 ls -la scripts/submit_*.sh  # Should list 6 SLURM scripts
@@ -238,7 +238,7 @@ git push origin main
 ### 3. Pull on Local Machine
 ```bash
 # On your Mac/local
-cd ~/Desktop/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git pull origin main
 ls results/  # Should now have all results
 
@@ -261,7 +261,7 @@ module load python/3.10  # Load specific version
 ### "VENV permission denied"
 ```bash
 # Try absolute path
-/usr/bin/python3 -m venv /work/mech-ai/tirtho/ObservePlantSwarm/.venv
+/usr/bin/python3 -m venv /work/mech-ai-scratch/tirtho/PlantSwarm/.venv
 ```
 
 ### "Job failed: CUDA out of memory"
@@ -307,26 +307,26 @@ bash scripts/submit_all_phases.sh
 ### Push Local Code to Nova
 ```bash
 # On your Mac
-cd ~/Desktop/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git add -A
 git commit -m "New code changes"
 git push origin main
 
 # On Nova
-cd /work/mech-ai/tirtho/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git pull origin main
 ```
 
 ### Pull Nova Results to Local
 ```bash
 # On Nova
-cd /work/mech-ai/tirtho/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git add results/ observe/checkpoints/ plantswarm/latex/auto/
 git commit -m "Results from pipeline"
 git push origin main
 
 # On your Mac
-cd ~/Desktop/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git pull origin main
 ls results/  # Results now on your machine!
 ```
@@ -358,7 +358,7 @@ After successful pipeline completion:
 
 ```bash
 # Navigation
-cd /work/mech-ai/tirtho/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 source .venv/bin/activate
 
 # Submission

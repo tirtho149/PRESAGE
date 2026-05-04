@@ -6,9 +6,9 @@
 #SBATCH --mem=32G
 #SBATCH --time=06:00:00
 #SBATCH --partition=nova
-#SBATCH --chdir=/work/mech-ai/tirtho/ObservePlantSwarm
-#SBATCH --output=/work/mech-ai/tirtho/ObservePlantSwarm/logs/setup_plantwild-%j.out
-#SBATCH --error=/work/mech-ai/tirtho/ObservePlantSwarm/logs/setup_plantwild-%j.err
+#SBATCH --chdir=/work/mech-ai-scratch/tirtho/PlantSwarm
+#SBATCH --output=/work/mech-ai-scratch/tirtho/PlantSwarm/logs/setup_plantwild-%j.out
+#SBATCH --error=/work/mech-ai-scratch/tirtho/PlantSwarm/logs/setup_plantwild-%j.err
 #SBATCH --mail-user=tirtho@iastate.edu
 #SBATCH --mail-type=BEGIN,END,FAIL
 

@@ -7,9 +7,9 @@
 #SBATCH --time=08:00:00
 #SBATCH --partition=nova
 #SBATCH --gres=gpu:1
-#SBATCH --chdir=/work/mech-ai/tirtho/ObservePlantSwarm
-#SBATCH --output=/work/mech-ai/tirtho/ObservePlantSwarm/logs/phase3_observe_training-%j.out
-#SBATCH --error=/work/mech-ai/tirtho/ObservePlantSwarm/logs/phase3_observe_training-%j.err
+#SBATCH --chdir=/work/mech-ai-scratch/tirtho/PlantSwarm
+#SBATCH --output=/work/mech-ai-scratch/tirtho/PlantSwarm/logs/phase3_observe_training-%j.out
+#SBATCH --error=/work/mech-ai-scratch/tirtho/PlantSwarm/logs/phase3_observe_training-%j.err
 #SBATCH --mail-user=tirtho@iastate.edu
 #SBATCH --mail-type=BEGIN,END,FAIL
 
@@ -36,7 +36,7 @@ echo ""
 module load python cuda/11.8
 
 # Activate Python environment
-source /work/mech-ai/tirtho/ObservePlantSwarm/.venv/bin/activate
+source /work/mech-ai-scratch/tirtho/PlantSwarm/.venv/bin/activate
 
 # Create logs and checkpoints directories
 mkdir -p logs observe/checkpoints

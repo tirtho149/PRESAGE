@@ -65,8 +65,8 @@ If you use this code or paper, please cite:
 ```bash
 # 1. Clone and setup
 cd ~/Desktop
-git clone https://github.com/yourusername/ObservePlantSwarm.git
-cd ObservePlantSwarm
+git clone https://github.com/yourusername/PlantSwarm.git
+cd PlantSwarm
 
 # 2. Create environment
 python -m venv .venv
@@ -85,9 +85,9 @@ python -c "from observe import OBSERVE; print('✓ Ready')"
 ```bash
 # 1. Clone to Nova
 ssh tirtho@hpc-login.iastate.edu
-cd /work/mech-ai/tirtho/
-git clone https://github.com/yourusername/ObservePlantSwarm.git
-cd ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/
+git clone https://github.com/yourusername/PlantSwarm.git
+cd PlantSwarm
 
 # 2. Setup
 module load python cuda/11.8
@@ -120,7 +120,7 @@ tail -f logs/phase*.out
 ```bash
 # 1. Create free GitHub account: https://github.com/signup
 # 2. Create new repository: https://github.com/new
-#    Name: ObservePlantSwarm
+#    Name: PlantSwarm
 #    Visibility: Public
 
 # 3. Configure Git locally
@@ -136,12 +136,12 @@ git config --global --list
 ```bash
 # Clone the template
 cd ~/Desktop
-git clone https://github.com/yourusername/ObservePlantSwarm.git
-cd ObservePlantSwarm
+git clone https://github.com/yourusername/PlantSwarm.git
+cd PlantSwarm
 
 # Or if starting fresh:
-git init ObservePlantSwarm
-cd ObservePlantSwarm
+git init PlantSwarm
+cd PlantSwarm
 # Copy all code files here
 ```
 
@@ -201,17 +201,17 @@ This document covers:
 
 ```bash
 # ========== PUSH CODE TO GITHUB (Local → GitHub) ==========
-cd ~/Desktop/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git add -A                          # Stage all changes
 git commit -m "Description"         # Create commit
 git push origin main                # Send to GitHub
 
 # ========== PULL CODE ON NOVA (GitHub → Nova) ==========
-cd /work/mech-ai/tirtho/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git pull origin main                # Get latest code
 
 # ========== PUSH RESULTS (Nova → GitHub) ==========
-cd /work/mech-ai/tirtho/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git add results/                    # Add results
 git add observe/checkpoints/        # Add models
 git add plantswarm/latex/auto/      # Add synced tables
@@ -220,7 +220,7 @@ git commit -m "Pipeline results + logs"
 git push origin main
 
 # ========== PULL RESULTS (GitHub → Local) ==========
-cd ~/Desktop/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git pull origin main                # Get everything
 ```
 
@@ -249,11 +249,11 @@ git pull origin main                # Get everything
 ```bash
 # ========== STEP 1: SETUP (10 minutes) ==========
 ssh tirtho@hpc-login.iastate.edu
-cd /work/mech-ai/tirtho/
+cd /work/mech-ai-scratch/tirtho/
 
 # Clone from GitHub
-git clone https://github.com/yourusername/ObservePlantSwarm.git
-cd ObservePlantSwarm
+git clone https://github.com/yourusername/PlantSwarm.git
+cd PlantSwarm
 
 # Setup environment
 module load python cuda/11.8
@@ -293,7 +293,7 @@ git commit -m "Full pipeline results - $(date)"
 git push origin main
 
 # ========== STEP 6: RETRIEVE ON LOCAL ==========
-cd ~/Desktop/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git pull origin main
 # Results and model now on your machine!
 ```
@@ -574,7 +574,7 @@ See `DATASET_SETUP.md` for detailed information.
 ## Project Structure
 
 ```
-ObservePlantSwarm/
+PlantSwarm/
 ├── agents/                  # 5-agent swarm implementation
 │   ├── base_agent.py
 │   ├── morphology_agent.py

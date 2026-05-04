@@ -9,11 +9,11 @@ Complete guide for running PlantSwarm + OBSERVE on ISU Nova HPC cluster.
 ### 1. Clone to Nova & Setup (One-time)
 ```bash
 # On Nova login node
-cd /work/mech-ai/tirtho/
+cd /work/mech-ai-scratch/tirtho/
 
 # Clone from GitHub
-git clone https://github.com/yourusername/ObservePlantSwarm.git
-cd ObservePlantSwarm
+git clone https://github.com/yourusername/PlantSwarm.git
+cd PlantSwarm
 
 # Create logs directory
 mkdir -p logs
@@ -335,9 +335,9 @@ Key difference: Nova uses SLURM job scheduler; local runs directly.
 
 ```bash
 # 1. Clone and setup (once)
-cd /work/mech-ai/tirtho/
-git clone https://github.com/yourusername/ObservePlantSwarm.git
-cd ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/
+git clone https://github.com/yourusername/PlantSwarm.git
+cd PlantSwarm
 module load python cuda/11.8
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt

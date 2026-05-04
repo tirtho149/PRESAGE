@@ -6,9 +6,9 @@
 #SBATCH --mem=16G
 #SBATCH --time=00:30:00
 #SBATCH --partition=nova
-#SBATCH --chdir=/work/mech-ai/tirtho/ObservePlantSwarm
-#SBATCH --output=/work/mech-ai/tirtho/ObservePlantSwarm/logs/phase5_latex_sync-%j.out
-#SBATCH --error=/work/mech-ai/tirtho/ObservePlantSwarm/logs/phase5_latex_sync-%j.err
+#SBATCH --chdir=/work/mech-ai-scratch/tirtho/PlantSwarm
+#SBATCH --output=/work/mech-ai-scratch/tirtho/PlantSwarm/logs/phase5_latex_sync-%j.out
+#SBATCH --error=/work/mech-ai-scratch/tirtho/PlantSwarm/logs/phase5_latex_sync-%j.err
 #SBATCH --mail-user=tirtho@iastate.edu
 #SBATCH --mail-type=BEGIN,END,FAIL
 
@@ -33,7 +33,7 @@ echo ""
 module load python
 
 # Activate Python environment
-source /work/mech-ai/tirtho/ObservePlantSwarm/.venv/bin/activate
+source /work/mech-ai-scratch/tirtho/PlantSwarm/.venv/bin/activate
 
 # Create logs directory
 mkdir -p logs plantswarm/latex/auto

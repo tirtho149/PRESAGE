@@ -19,7 +19,7 @@ Instructions for setting up **PlantVillage** (training) and **PlantWild** (OOD e
 ### If download is slow:
 ```bash
 # Set cache directory to faster location
-export TFDS_DATA_DIR=/work/mech-ai/tirtho/ObservePlantSwarm/data/tfds_cache
+export TFDS_DATA_DIR=/work/mech-ai-scratch/tirtho/PlantSwarm/data/tfds_cache
 
 # Then run pipeline
 python scripts/run_plantswarm.py --config configs/plant_village_tfds.yaml
@@ -112,7 +112,7 @@ git clone https://huggingface.co/datasets/uqtwei2/PlantWild
 #### Step 0: Setup PlantWild (one-time, before running pipeline)
 ```bash
 # On Nova login node
-cd /work/mech-ai/tirtho/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 
 # Submit dataset download
 sbatch scripts/submit_setup_plantwild.sh
@@ -199,7 +199,7 @@ git clone https://huggingface.co/datasets/uqtwei2/PlantWild data/PlantWild
 ### Disk space issues
 ```bash
 # Check available space
-df -h /work/mech-ai/tirtho/
+df -h /work/mech-ai-scratch/tirtho/
 
 # PlantWild needs ~50GB
 # PlantVillage uses TFDS cache in ~/tensorflow_datasets/ (also ~50GB)
@@ -282,7 +282,7 @@ df = build_plantwild_dataframe(
 | PlantWild (HF) | ~15GB | ~50GB | - | ~50GB |
 | **Total** | **~35GB** | **~100GB** | - | **~100GB** |
 
-**Recommendation:** Have 150GB available on `/work/mech-ai/tirtho/` to be safe.
+**Recommendation:** Have 150GB available on `/work/mech-ai-scratch/tirtho/` to be safe.
 
 ---
 

@@ -59,7 +59,7 @@ sbatch scripts/submit_phase1_plantswarm.sh  # Or custom DataLoader job
 **Nova → GitHub:**
 ```bash
 # After DataLoader job completes
-cd /work/mech-ai/tirtho/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git add results/dataloader_experiment/
 git commit -m "DataLoader results: [dataset-name]"
 git push origin main
@@ -93,7 +93,7 @@ git config --global --list
 ```bash
 # Create free account: https://github.com/signup
 # Create repository: https://github.com/new
-# Name: ObservePlantSwarm
+# Name: PlantSwarm
 # Visibility: Public (easier) or Private
 ```
 
@@ -112,8 +112,8 @@ git config --global --list
 ```bash
 # On your Mac
 cd ~/Desktop
-git init ObservePlantSwarm
-cd ObservePlantSwarm
+git init PlantSwarm
+cd PlantSwarm
 
 # Copy all code files from this directory
 
@@ -127,13 +127,13 @@ git commit -m "Initial commit: PlantSwarm + OBSERVE implementation"
 # Create repo on GitHub (https://github.com/new)
 # Then:
 
-git remote add origin https://github.com/yourusername/ObservePlantSwarm.git
+git remote add origin https://github.com/yourusername/PlantSwarm.git
 git branch -M main
 git push -u origin main
 
 # Verify
 git remote -v
-# Should show: origin https://github.com/yourusername/ObservePlantSwarm.git
+# Should show: origin https://github.com/yourusername/PlantSwarm.git
 ```
 
 ### 0.3 Clone to Nova
@@ -141,13 +141,13 @@ git remote -v
 # On Nova login node
 ssh tirtho@hpc-login.iastate.edu
 
-cd /work/mech-ai/tirtho/
-git clone https://github.com/yourusername/ObservePlantSwarm.git
-cd ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/
+git clone https://github.com/yourusername/PlantSwarm.git
+cd PlantSwarm
 
 # Verify
 git remote -v
-# Should show: origin https://github.com/yourusername/ObservePlantSwarm.git
+# Should show: origin https://github.com/yourusername/PlantSwarm.git
 ```
 
 ---
@@ -159,7 +159,7 @@ When you make changes on your local machine and want to share with Nova:
 
 ```bash
 # 1. See what changed
-cd ~/Desktop/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git status
 
 # 2. Stage all changes
@@ -199,7 +199,7 @@ git commit -m "changes"
 ### Before Running Experiments
 ```bash
 # On Nova login node
-cd /work/mech-ai/tirtho/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 
 # 1. Get latest code from GitHub
 git pull origin main
@@ -304,7 +304,7 @@ watch -n 5 "squeue -u $USER"  # Update every 5 sec
 
 ```bash
 # On Nova
-cd /work/mech-ai/tirtho/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 
 # 1. Check what changed
 git status
@@ -388,7 +388,7 @@ git push origin main
 ### Get Experiments Results
 ```bash
 # On your Mac
-cd ~/Desktop/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 
 # 1. Pull from GitHub
 git pull origin main
@@ -439,7 +439,7 @@ EOF
 # ┌─────────────────────────────────────────────────┐
 # │ Morning: Prepare code on local machine          │
 # └─────────────────────────────────────────────────┘
-cd ~/Desktop/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git add -A
 git commit -m "Update config for tomorrow's experiments"
 git push origin main
@@ -448,7 +448,7 @@ git push origin main
 # │ Afternoon: Pull on Nova and run experiments     │
 # └─────────────────────────────────────────────────┘
 ssh tirtho@hpc-login.iastate.edu
-cd /work/mech-ai/tirtho/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git pull origin main
 bash scripts/submit_all_phases.sh
 
@@ -469,7 +469,7 @@ git push origin main
 # ┌─────────────────────────────────────────────────┐
 # │ Pull on local and analyze                       │
 # └─────────────────────────────────────────────────┘
-cd ~/Desktop/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git pull origin main
 # View results, compile paper, etc.
 ```
@@ -500,7 +500,7 @@ grep -l "error" logs/phase*.err | while read f; do echo "$f:"; grep "error" "$f"
 # Fix: Reduce batch size in script
 
 # In Nova terminal:
-cd /work/mech-ai/tirtho/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git pull origin main
 
 # Edit the script
@@ -701,12 +701,12 @@ git push origin main
 
 ```bash
 # LOCAL → GITHUB (Push code)
-cd ~/Desktop/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git add -A && git commit -m "Your message"
 git push origin main
 
 # GITHUB → NOVA (Pull code)
-cd /work/mech-ai/tirtho/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git pull origin main
 
 # Run experiments
@@ -718,7 +718,7 @@ git commit -m "Results from experiments"
 git push origin main
 
 # GITHUB → LOCAL (Pull results)
-cd ~/Desktop/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git pull origin main
 ```
 

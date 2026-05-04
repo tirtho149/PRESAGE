@@ -16,7 +16,7 @@
 ### Install & Test
 ```bash
 # 1. Clone and setup
-cd ObservePlantSwarm
+cd PlantSwarm
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -75,7 +75,7 @@ ssh tirtho@hpc-login.iastate.edu
 ### Step 2: Clone Repository
 ```bash
 # On Nova login node
-cd /work/mech-ai/tirtho/
+cd /work/mech-ai-scratch/tirtho/
 git clone https://github.com/tirtho149/PlantSwarm.git
 cd PlantSwarm
 ```
@@ -144,7 +144,7 @@ For distributed GPU training on Nova HPC cluster, use the provided shell scripts
 
 ```bash
 # On Nova HPC login node
-cd /work/mech-ai/tirtho/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 
 # Step 1: Download PlantWild dataset (2-4 hours, one-time only)
 sbatch scripts/submit_setup_plantwild.sh
@@ -257,7 +257,7 @@ Before running jobs on Nova:
 
 ```bash
 # On Nova HPC
-cd /work/mech-ai/tirtho/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git fetch origin                   # Get latest from GitHub
 git pull origin main               # Update local clone
 ```
@@ -276,7 +276,7 @@ tail -f logs/phase1_plantswarm-*.out  # Watch progress
 After jobs complete:
 
 ```bash
-# On Nova HPC (in ObservePlantSwarm directory)
+# On Nova HPC (in PlantSwarm directory)
 git add results/ observe/checkpoints/ plantswarm/latex/auto_* logs/
 git commit -m "Results: Phase 1-5 pipeline (X hours, Y% accuracy)"
 git push origin main               # Push results to GitHub
@@ -298,7 +298,7 @@ ls -lh results/plant_village_tfds/ # Check results downloaded
 ```bash
 # DAY 1: Local Development
 # ========================
-# On local machine (~/Desktop/ObservePlantSwarm)
+# On local machine (/work/mech-ai-scratch/tirtho/PlantSwarm)
 git add configs/plant_village_tfds.yaml
 git commit -m "Adjust temperature scaling parameters"
 git push origin main
@@ -307,7 +307,7 @@ git push origin main
 # ===========================
 # SSH to Nova login node
 ssh tirtho@hpc-login.iastate.edu
-cd /work/mech-ai/tirtho/ObservePlantSwarm
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
 git pull origin main               # Get latest code
 sbatch scripts/submit_setup_plantwild.sh  # One-time dataset download
 # Wait 2-4 hours...
