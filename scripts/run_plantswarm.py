@@ -27,6 +27,7 @@ from data.loader import PlantDiagBenchLoader
 from utils.env import load_project_dotenv
 from plantswarm.autogen_pipeline import AutoGenPlantSwarmPipeline, run_local_qwen_text_swarm_demo
 from plantswarm.entropy_pipeline import EntropyPlantSwarmPipeline
+from plantswarm.hf_pipeline import HFDirectPipeline
 from utils.metrics import macro_f1, tpcp
 from utils.routing_trace import save_traces
 from utils.vllm_client import (
@@ -34,6 +35,7 @@ from utils.vllm_client import (
     configure_vllm_client_from_yaml,
     validate_model_server_matches_config,
 )
+from utils.hf_client import HFClient
 
 
 GT_ATTR = {
@@ -126,9 +128,14 @@ def parse_args():
     parser.add_argument("--output_dir", default=None)
     parser.add_argument(
         "--orchestrator",
-        choices=["autogen_swarm", "entropy_routing", "classic"],
+        choices=["autogen_swarm", "entropy_routing", "classic", "hf_direct"],
         default=None,
-        help="autogen_swarm (default), entropy_routing (vLLM logprob entropy routing), or classic (rejected).",
+        help=(
+            "autogen_swarm (default, needs vLLM server + autogen), "
+            "hf_direct (single-GPU, no server required), "
+            "entropy_routing (vLLM logprob entropy routing), "
+            "or classic (rejected)."
+        ),
     )
     parser.add_argument(
         "--local-qwen-text-demo",
@@ -221,37 +228,57 @@ def main():
     label_space = loader_test.label_space
     print(f"  Test: {len(loader_test)} images | Cal: {len(loader_cal)} images")
 
-    client = VLLMClient(
-        base_url=cfg["model"]["vllm_base_url"],
-        model=cfg["model"]["backbone"],
-        temperature=cfg["model"]["temperature"],
-        seed=cfg["model"]["seed"],
-        max_new_tokens=cfg["model"]["max_new_tokens"],
-    )
-    configure_vllm_client_from_yaml(client, cfg.get("model"), orchestrator=orchestrator)
-
-    _check_openai_compatible_api(cfg["model"]["vllm_base_url"])
-    validate_model_server_matches_config(cfg)
-
     r_cfg = cfg.get("routing", {})
-    if orchestrator == "entropy_routing":
-        pipeline = EntropyPlantSwarmPipeline(
-            client=client,
-            label_space=label_space,
-            Tmax=r_cfg["Tmax"],
-            confidence_weights=r_cfg["confidence_weights"],
-            delta1=float(r_cfg.get("entropy_delta1", 0.05)),
-            delta2=float(r_cfg.get("entropy_delta2", 0.35)),
+
+    if orchestrator == "hf_direct":
+        # Single-GPU in-process mode — no vLLM server, no AutoGen required
+        # Uses Qwen2.5-VL-7B from replica_backbones (fits on 32 GB V100 in fp16)
+        replica_backbones = cfg["model"].get("replica_backbones", [])
+        hf_model = replica_backbones[0] if replica_backbones else cfg["model"]["backbone"]
+        print(f"  HF direct mode: loading {hf_model} in-process (no server needed)...")
+        client = HFClient(
+            model=hf_model,
+            temperature=cfg["model"]["temperature"],
+            seed=cfg["model"]["seed"],
+            max_new_tokens=cfg["model"]["max_new_tokens"],
         )
-    elif orchestrator == "autogen_swarm":
-        pipeline = AutoGenPlantSwarmPipeline(
+        pipeline = HFDirectPipeline(
             client=client,
             label_space=label_space,
             Tmax=r_cfg["Tmax"],
             confidence_weights=r_cfg["confidence_weights"],
         )
     else:
-        raise ValueError(f"Unknown orchestrator {orchestrator!r}.")
+        client = VLLMClient(
+            base_url=cfg["model"]["vllm_base_url"],
+            model=cfg["model"]["backbone"],
+            temperature=cfg["model"]["temperature"],
+            seed=cfg["model"]["seed"],
+            max_new_tokens=cfg["model"]["max_new_tokens"],
+        )
+        configure_vllm_client_from_yaml(client, cfg.get("model"), orchestrator=orchestrator)
+
+        _check_openai_compatible_api(cfg["model"]["vllm_base_url"])
+        validate_model_server_matches_config(cfg)
+
+        if orchestrator == "entropy_routing":
+            pipeline = EntropyPlantSwarmPipeline(
+                client=client,
+                label_space=label_space,
+                Tmax=r_cfg["Tmax"],
+                confidence_weights=r_cfg["confidence_weights"],
+                delta1=float(r_cfg.get("entropy_delta1", 0.05)),
+                delta2=float(r_cfg.get("entropy_delta2", 0.35)),
+            )
+        elif orchestrator == "autogen_swarm":
+            pipeline = AutoGenPlantSwarmPipeline(
+                client=client,
+                label_space=label_space,
+                Tmax=r_cfg["Tmax"],
+                confidence_weights=r_cfg["confidence_weights"],
+            )
+        else:
+            raise ValueError(f"Unknown orchestrator {orchestrator!r}.")
 
     all_traces = []
     predictions_output = []

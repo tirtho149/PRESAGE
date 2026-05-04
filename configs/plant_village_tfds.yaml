@@ -79,7 +79,7 @@ model:
   top_logprobs: 20
 
 routing:
-  orchestrator: "autogen_swarm"
+  orchestrator: "hf_direct"
   Tmax: 15
   confidence_levels: ["high", "medium", "low"]
   confidence_weights:

@@ -42,9 +42,11 @@ source /work/mech-ai-scratch/tirtho/PlantSwarm/.venv/bin/activate
 mkdir -p logs
 
 # Run Phase 1: PlantSwarm on PlantVillage (full dataset, 10K images)
+# hf_direct: runs Qwen2.5-VL-7B in-process — no separate vLLM server needed
 echo "Starting PlantSwarm generation..."
 python scripts/run_plantswarm.py \
-  --config configs/plant_village_tfds.yaml
+  --config configs/plant_village_tfds.yaml \
+  --orchestrator hf_direct
 
 echo ""
 echo "✓ Phase 1 Complete"
