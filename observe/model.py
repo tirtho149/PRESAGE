@@ -3,10 +3,14 @@ observe/model.py
 ================
 OBSERVE Vision-Language-Action model architecture.
 
-Fine-tuned from Qwen2.5-VL-3B with LoRA:
+Paper §7 (pathome_final). Fine-tuned from Qwen2.5-VL-7B with LoRA:
 - Per-step visual grounding (image present at every step)
-- Outputs structured epistemic actions
-- 56M trainable parameters (50M LoRA + 6M heads)
+- Inputs: image X, context buffer C_t, decision-graph node G_t,
+  GPS-derived phi_geo, top-3 geo-weighted PathomeDB references Ref_{1:3}
+- Outputs: routing softmax (5 classes), backtrack b_t (binary),
+  epistemic eps_t, aleatoric alpha_t, calibrated confidence c_t,
+  overconfidence flag OC_t, autoregressive belief s_t
+- LoRA r=16, alpha=32, target {q,k,v,o}_proj, ~56M trainable on 7B frozen
 """
 
 from __future__ import annotations
@@ -22,34 +26,42 @@ from transformers import AutoModelForVision2Seq, AutoProcessor
 
 @dataclass
 class EpistemicAction:
-    """Structured action output from OBSERVE."""
+    """Structured action output from OBSERVE (paper Eq. action)."""
     next_agent: str  # 5-class: MorphologyAgent, SymptomAgent, PathogenAgent, SeverityAgent, DiagnosisAgent
-    backtrack: bool  # Whether to backtrack to MorphologyAgent
-    epistemic_uncertainty: float  # ∈ [0, 1]: resolvable ambiguity (get better evidence)
-    aleatoric_uncertainty: float  # ∈ [0, 1]: irreducible difficulty (escalate to human)
-    confidence: float  # ∈ [0, 1]: calibrated confidence in prediction
-    belief_state: str  # Natural language belief (what agent thinks now)
+    backtrack: bool  # b_t: whether to backtrack to MorphologyAgent
+    epistemic_uncertainty: float  # eps_t ∈ [0, 1]: resolvable ambiguity → more evidence helps
+    aleatoric_uncertainty: float  # alpha_t ∈ [0, 1]: irreducible difficulty → escalate to human
+    confidence: float  # c_t ∈ [0, 1]: calibrated confidence in prediction
+    overconfidence: bool  # OC_t: agent claimed kappa=H but visual evidence weak (Eq. oc)
+    belief_state: str  # s_t: natural language belief about current situation
 
 
 class OBSERVE(nn.Module):
     """
-    Vision-Language-Action model for epistemic action selection.
+    Vision-Language-Action model for epistemic action selection (paper §7).
 
     Architecture:
-    - Backbone: Qwen2.5-VL-3B (frozen, ~2.95B params)
-    - LoRA: r=16, α=32, applied to q/k/v/o_proj (~50M trainable)
-    - Heads: routing (5-class), backtrack (binary), epistemic (scalar),
-             aleatoric (scalar), confidence (scalar), belief_text (autoregressive)
-    - Total trainable: ~56M / 3B (1.8%)
+    - Backbone: Qwen2.5-VL-7B (frozen, ~7B params)
+    - LoRA: r=16, alpha=32, applied to q/k/v/o_proj (~50M trainable)
+    - Heads (all on shared 512-dim representation):
+        * routing (5-class softmax)
+        * backtrack b_t (binary sigmoid)
+        * epistemic eps_t (scalar [0,1])
+        * aleatoric alpha_t (scalar [0,1])
+        * confidence c_t (scalar [0,1])
+        * overconfidence OC_t (binary sigmoid)        [NEW in pathome_final]
+        * belief text s_t (autoregressive via LM head)
+    - Total trainable: ~56M / 7B (~0.8%)
     """
 
     def __init__(
         self,
-        backbone: str = "Qwen/Qwen2.5-VL-3B-Instruct",
+        backbone: str = "Qwen/Qwen2.5-VL-7B-Instruct",
         lora_r: int = 16,
         lora_alpha: int = 32,
         lora_dropout: float = 0.05,
         agent_classes: Optional[list] = None,
+        oc_threshold: float = 0.55,
     ):
         super().__init__()
 
@@ -92,10 +104,14 @@ class OBSERVE(nn.Module):
 
         # Task-specific heads
         self.routing_head = nn.Linear(512, len(self.agent_classes))  # 5-class softmax
-        self.backtrack_head = nn.Linear(512, 1)  # Binary: sigmoid
-        self.epistemic_head = nn.Linear(512, 1)  # Scalar: sigmoid [0, 1]
-        self.aleatoric_head = nn.Linear(512, 1)  # Scalar: sigmoid [0, 1]
-        self.confidence_head = nn.Linear(512, 1)  # Scalar: sigmoid [0, 1]
+        self.backtrack_head = nn.Linear(512, 1)  # b_t: binary sigmoid
+        self.epistemic_head = nn.Linear(512, 1)  # eps_t: sigmoid [0, 1]
+        self.aleatoric_head = nn.Linear(512, 1)  # alpha_t: sigmoid [0, 1]
+        self.confidence_head = nn.Linear(512, 1)  # c_t: sigmoid [0, 1]
+        self.oc_head = nn.Linear(512, 1)  # OC_t: sigmoid [0, 1]  (Eq. oc, paper §7.2)
+
+        # Decision threshold for overconfidence flag (paper §7.2: tau_OC = 0.55)
+        self.oc_threshold = oc_threshold
 
         # Belief text autoregressive head (uses model's decoder)
         # Belief is generated via model decoder, not a separate head
@@ -150,6 +166,7 @@ class OBSERVE(nn.Module):
         epistemic_logits = self.epistemic_head(shared_repr)  # [batch, 1]
         aleatoric_logits = self.aleatoric_head(shared_repr)  # [batch, 1]
         confidence_logits = self.confidence_head(shared_repr)  # [batch, 1]
+        oc_logits = self.oc_head(shared_repr)  # [batch, 1]
 
         # Apply activations
         routing_probs = torch.softmax(routing_logits, dim=-1)  # [batch, 5]
@@ -157,6 +174,7 @@ class OBSERVE(nn.Module):
         epistemic = torch.sigmoid(epistemic_logits).squeeze(-1)  # [batch]
         aleatoric = torch.sigmoid(aleatoric_logits).squeeze(-1)  # [batch]
         confidence = torch.sigmoid(confidence_logits).squeeze(-1)  # [batch]
+        oc_prob = torch.sigmoid(oc_logits).squeeze(-1)  # [batch]
 
         # Generate belief text (autoregressive from decoder)
         belief_prompt = f"My belief state is: "
@@ -184,10 +202,14 @@ class OBSERVE(nn.Module):
                 "epistemic": epistemic,
                 "aleatoric": aleatoric,
                 "confidence": confidence,
+                "oc_prob": oc_prob,
                 "belief_text": belief_text,
             }
         else:
-            return (routing_probs, backtrack_prob, epistemic, aleatoric, confidence, belief_text)
+            return (
+                routing_probs, backtrack_prob, epistemic, aleatoric,
+                confidence, oc_prob, belief_text,
+            )
 
     def get_epistemic_action(
         self,
@@ -195,7 +217,7 @@ class OBSERVE(nn.Module):
         context_text: str,
         backtrack_threshold: float = 0.5,
     ) -> EpistemicAction:
-        """Get a single EpistemicAction from image and context."""
+        """Get a single EpistemicAction from image and context (paper §7.1)."""
         outputs = self.forward(image, context_text, return_dict=True)
 
         return EpistemicAction(
@@ -204,5 +226,6 @@ class OBSERVE(nn.Module):
             epistemic_uncertainty=outputs["epistemic"].item(),
             aleatoric_uncertainty=outputs["aleatoric"].item(),
             confidence=outputs["confidence"].item(),
+            overconfidence=outputs["oc_prob"].item() > self.oc_threshold,
             belief_state=outputs["belief_text"],
         )

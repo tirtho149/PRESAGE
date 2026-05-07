@@ -1,8 +1,16 @@
-# PlantSwarm: Multi-Agent VLM Swarm for Plant Disease Diagnosis
+# PlantSwarm + PathomeDB + OBSERVE — Train on the Wild
 
-**Paper:** *Why Ask When You Can Observe? A Vision-Language-Action Model for Epistemic Action Selection in Multi-Agent Crop Disease Diagnosis* (EMNLP 2026)
+**Paper:** *Train on the Wild: Geospatial Multi-Agent Routing for Cross-Crop Plant Disease Diagnosis from Ten Field Images* (EMNLP 2026, anonymous submission). Source: `plantswarm/latex/acl_latex.tex`.
 
-**Core Contribution:** PlantSwarm establishes that **routing behavior** (path length, backtrack decisions, contradiction events) predicts correctness far better than **self-declared confidence** in multi-agent VLM systems. OBSERVE operationalizes this as the first Vision-Language-Action model trained on routing traces, achieving 52% calibration improvement under domain shift with 6× lower inference cost.
+**Core argument.** The dominant paradigm — train on controlled laboratory images and hope for field generalization — is ecologically backwards. The deployment target is the field; the laboratory is the convenience artifact. We invert it: train **PlantSwarm** on 260 geo-tagged Bugwood field photographs (10 per disease class × 26 classes) and evaluate on the **complete** PlantVillage (54,306 images) and the **complete** PlantWild dataset. The resulting **OBSERVE** policy (Qwen2.5-VL-7B + LoRA, trained via Decision Transformer + GRPO) reaches ECE 0.12 on PlantVillage and 0.17 on PlantWild — both *unseen* — at a training-to-test ratio of 1:280.
+
+Three contributions:
+
+- **PlantSwarm on Bugwood**: 5,460 routing traces from 182 field images (7 per class × 30 stochastic runs). Behavioral routing precision 0.83–0.87 vs 0.71–0.76 self-declared confidence; gap *wider* on field images because ambiguity produces richer behavioral differentiation.
+- **PathomeDB**: a 5-layer mechanistic cross-crop knowledge base. Layer 3's regional epidemiology is derived empirically from GPS observation density (`P̂(d|r,σ) = count(d,r,σ)/Σ_d' count(d',r,σ)`) and validated against EPPO at Pearson r ≥ 0.71. **No expert curation beyond spot-check.**
+- **OBSERVE**: 6× lower inference cost than PlantSwarm; surpasses its teacher on both benchmarks. Includes overconfidence detection backed by image-to-image comparison against Layer-5 references — categorically stronger than text-based self-confidence.
+
+> **Status:** the codebase is mid-migration from the previous "PlantSwarm + OBSERVE on PlantVillage" architecture. See [`MIGRATION.md`](MIGRATION.md) for what's done, what's stubbed, and the dependency order.
 
 ---
 

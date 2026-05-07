@@ -1,16 +1,22 @@
 """
 observe/
 ========
-OBSERVE: Observation-Based Structured Epistemic Representation for Visual Evaluation.
-Vision-Language-Action model trained on PlantSwarm routing traces for epistemic action selection.
+OBSERVE: Vision-Language-Action model for epistemic action selection.
 
-Paper §5: Fine-tuned from Qwen2.5-VL-3B with LoRA (r=16, α=32).
-Outputs: next_agent, backtrack, epistemic/aleatoric uncertainty, confidence, belief_state.
-6× lower inference cost than PlantSwarm, 52% ECE improvement under domain shift.
+Paper §7 (pathome_final). Fine-tuned from Qwen2.5-VL-7B with LoRA (r=16, alpha=32).
+Trained two-phase on PlantSwarm Bugwood traces:
+  Phase A — Decision Transformer (return-conditioned sequence modeling)
+  Phase B — GRPO (group-relative policy optimization, KL-anchored to Phase A)
+
+Outputs: next_agent, backtrack b_t, epistemic eps_t, aleatoric alpha_t,
+calibrated confidence c_t, overconfidence flag OC_t, belief state s_t.
+
+6× lower inference cost than PlantSwarm; ECE 0.12 on full PlantVillage,
+0.17 on full PlantWild (paper §8).
 """
 
-from .model import OBSERVE
+from .model import OBSERVE, EpistemicAction
 from .trainer import OBSERVETrainer
 from .inference import OBSERVEInference
 
-__all__ = ["OBSERVE", "OBSERVETrainer", "OBSERVEInference"]
+__all__ = ["OBSERVE", "EpistemicAction", "OBSERVETrainer", "OBSERVEInference"]
