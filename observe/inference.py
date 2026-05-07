@@ -195,7 +195,9 @@ class OBSERVEInference:
 
     def get_uncertainty_decomposition(self, action: EpistemicAction) -> dict:
         """
-        Decompose uncertainty into epistemic (resolvable) and aleatoric (irreducible).
+        Decompose uncertainty into epistemic (resolvable) and aleatoric
+        (irreducible). Paper §7.2 — overconfidence flag now comes from the
+        OC head directly (image-to-image grounded), not from a heuristic.
 
         Args:
             action: EpistemicAction from prediction
@@ -218,5 +220,9 @@ class OBSERVEInference:
             },
             "total_uncertainty": total_uncertainty,
             "is_high_confidence": action.confidence > 0.8,
-            "is_overconfident": action.confidence > 0.8 and total_uncertainty > 0.5,
+            "is_overconfident": bool(action.overconfidence),
+            "overconfidence_action": (
+                "Force backtrack with targeted re-observation (paper §7.2)"
+                if action.overconfidence else None
+            ),
         }

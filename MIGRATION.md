@@ -71,18 +71,46 @@ and the **complete** PlantWild dataset.
 - **`observe/active_learning.py`** — epsilon-driven query ranking over
   unlabeled cross-crop pool; expected ~950 labels to converge.
 
-### Tier 4 — eval + scripts
-- **`scripts/run_pathome_pipeline.sh`** — end-to-end SLURM pipeline:
-  Bugwood ingest → PathomeDB build → trace generation (30 runs/image) →
-  Phase A → Phase B → full PV eval → full PW eval → LaTeX sync.
-- **`configs/bugwood_pathome.yaml`** — training config.
-- **`configs/plantvillage_full_eval.yaml`** — held-out PV eval.
-- **`configs/plantwild_full_eval.yaml`** — held-out PW eval.
+### Tier 4 — eval + scripts ✅ DONE
+- ✅ `scripts/build_pathome.py` — Bugwood ingest → PathomeDB build
+- ✅ `scripts/run_pathome_traces.py` — 30 runs/image trace generation with resume
+- ✅ `scripts/train_observe_pathome.py` — Phase A then Phase B
+- ✅ `scripts/evaluate_pathome.py` — held-out PV and PW eval w/ unseen-class slice
+- ✅ `scripts/submit_pathome_pipeline.sh` — end-to-end SLURM (vLLM in-job)
+- ✅ `plantswarm/observe_rollout.py` — GRPO `rollout_fn`
+- ✅ `agents/base_agent.py` — `pathome_db` parameter + Layer 4 / Layer 3 helpers
+- ✅ `plantswarm/{pipeline,autogen_pipeline}.py` — thread PathomeDB to agents
+- ✅ `scripts/run_plantswarm.py` — auto-loads PathomeDB from `cfg.pathome.load_dir`
 
-### Tier 5 — paper auto-sync (later)
-The new tables in `acl_latex.tex` are mostly hardcoded `---` placeholders.
-`scripts/sync_latex_metrics.py` will need to be retargeted to fill those in
-from `results/{plantvillage,plantwild}/observe_eval.json`.
+### Tier 5 — paper auto-sync ✅ DONE
+- ✅ `scripts/sync_pathome_metrics.py` — emits `auto_pathome_metrics.tex` with
+  macros (`\PathomePvECE`, `\PathomePwECE`, `\PathomePvTthreeF`,
+  `\PathomePwTthreeF`, `\PathomeUnseenTthreeF`, `\PathomePvTPCP`,
+  `\PathomePwTPCP`) for the hardcoded paper tables.
+
+## What's still genuinely open
+
+These items require either real Bugwood data or research decisions and
+cannot be stubbed productively:
+
+1. **OBSERVE.forward batching.** The current per-sample iteration in
+   `decision_transformer.py` works for correctness but is slow. A batched
+   forward needs the Qwen2.5-VL processor's pad_to_max_length plus careful
+   image-token handling.
+2. **GRPO rollout integration.** `plantswarm/observe_rollout.py` records
+   per-step log-probs by re-querying OBSERVE; ideal would be the swarm
+   itself emitting log-probs along the path. That requires AutoGen
+   handoff hooks not yet exposed.
+3. **EPPO validation table.** `RegionalEpidemiology.validate_against_eppo`
+   wants a `Dict[(disease, AEZ, month), float]` of historical prevalence;
+   pulling that from the EPPO API is a separate ingestion task.
+4. **Layer 1 / Layer 2 full coverage.** Now ships 10 pathogen genera +
+   19 host-pathogen entries — sufficient for the paper's 26-class subset
+   if your Bugwood folder uses these crops/diseases. Add new entries
+   directly in `pathome/layer{1,2}_*.py` or via `MechanisticPathway.save`.
+5. **Active learning oracle.** `observe/active_learning.py` selects
+   queries; the human-in-the-loop labelling backend is intentionally
+   left to deployment.
 
 ## Naming conventions in the new modules
 

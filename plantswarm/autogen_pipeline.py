@@ -130,6 +130,7 @@ class AutoGenPlantSwarmPipeline:
         label_space: Dict[str, List[str]],
         Tmax: int = 15,
         confidence_weights: Optional[Dict[str, int]] = None,
+        pathome_db: Optional[object] = None,
     ):
         if any(
             dep is None
@@ -151,13 +152,15 @@ class AutoGenPlantSwarmPipeline:
         self.label_space = label_space
         self.Tmax = Tmax
         self.confidence_weights = confidence_weights or {"high": 3, "medium": 2, "low": 1}
+        self.pathome_db = pathome_db
 
+        ag_kwargs = {"pathome_db": pathome_db} if pathome_db is not None else {}
         self.parsers: Dict[str, Any] = {
-            "MorphologyAgent": MorphologyAgent(client, label_space),
-            "SymptomAgent": SymptomAgent(client, label_space),
-            "PathogenAgent": PathogenAgent(client, label_space),
-            "SeverityAgent": SeverityAgent(client, label_space),
-            "DiagnosisAgent": DiagnosisAgent(client, label_space),
+            "MorphologyAgent": MorphologyAgent(client, label_space, **ag_kwargs),
+            "SymptomAgent": SymptomAgent(client, label_space, **ag_kwargs),
+            "PathogenAgent": PathogenAgent(client, label_space, **ag_kwargs),
+            "SeverityAgent": SeverityAgent(client, label_space, **ag_kwargs),
+            "DiagnosisAgent": DiagnosisAgent(client, label_space, **ag_kwargs),
         }
 
     def _build_swarm(self):

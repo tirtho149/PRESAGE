@@ -123,6 +123,212 @@ _register(MechanisticPathway(
 ))
 
 
+_register(MechanisticPathway(
+    pathogen_genus="Xanthomonas",
+    pathogen_class="Bacterial",
+    steps=[
+        PathwayStep(
+            stage="hydathode / wound entry",
+            trigger_conditions=["leaf wetness", "wounding", "T 25-30C"],
+            visual_features_increase=["water-soaked angular spots"],
+            causal_explanation="Bacteria enter through hydathodes, multiply in mesophyll.",
+            epistemic_implication="Angular margin (vein-bounded) → bacterial; high eps_t until margin confirmed.",
+        ),
+        PathwayStep(
+            stage="vascular invasion (if present)",
+            visual_features_increase=["yellow halo", "vein chlorosis"],
+            causal_explanation="Type III secretion suppresses host immunity; vascular spread.",
+            epistemic_implication="Halo around angular spot → diagnostic for many xanthomonads.",
+        ),
+        PathwayStep(
+            stage="bacterial ooze",
+            visual_features_increase=["sticky exudate on humid days"],
+            causal_explanation="Bacterial exudate at lesion in high humidity.",
+            epistemic_implication="Ooze test (squeeze + water) → SymptomAgent confirms bacterial.",
+        ),
+    ],
+    notes="Bacterial leaf spot/blight family. Angular margin is the single most informative feature.",
+))
+
+
+_register(MechanisticPathway(
+    pathogen_genus="Botrytis",
+    pathogen_class="Fungal",
+    steps=[
+        PathwayStep(
+            stage="conidial germination",
+            trigger_conditions=["high humidity", "senescing tissue", "T 18-23C"],
+            visual_features_increase=["pale necrotic spots on petals/fruit"],
+            causal_explanation="Conidia germinate on weakened tissue; require free moisture.",
+            epistemic_implication="Senescing-tissue affinity → SeverityAgent for stage cue.",
+        ),
+        PathwayStep(
+            stage="grey mould production",
+            visual_features_increase=["grey fuzzy sporulation"],
+            causal_explanation="Massed conidiophores produce diagnostic grey mould.",
+            epistemic_implication="Grey velvet on lesion → terminate routing immediately.",
+        ),
+        PathwayStep(
+            stage="sclerotium formation (late)",
+            visual_features_increase=["small black sclerotia"],
+            causal_explanation="Sclerotia are survival structures; appear late.",
+            epistemic_implication="Sclerotia confirm Botrytis even when grey mould absent.",
+        ),
+    ],
+    notes="B. cinerea grey mould — broad host range, temperate humid.",
+))
+
+
+_register(MechanisticPathway(
+    pathogen_genus="Puccinia",
+    pathogen_class="Fungal",
+    steps=[
+        PathwayStep(
+            stage="urediniospore landing",
+            trigger_conditions=["6-10h leaf wetness", "T 10-20C"],
+            visual_features_increase=["yellow flecks"],
+            causal_explanation="Obligate biotroph; needs wet leaf + cool conditions.",
+            epistemic_implication="Yellow flecks alone → high eps_t; confirm with pustule emergence.",
+        ),
+        PathwayStep(
+            stage="pustule eruption",
+            visual_features_increase=["orange/yellow/brown rust pustules"],
+            causal_explanation="Uredinia rupture epidermis releasing urediniospores.",
+            epistemic_implication="Powdery pustule colour → diagnostic for rust species.",
+        ),
+        PathwayStep(
+            stage="telium formation (late season)",
+            visual_features_increase=["black teliospores"],
+            causal_explanation="Overwintering teliospores form on senescing tissue.",
+            epistemic_implication="Black telia confirm rust even when uredinia have abscised.",
+        ),
+    ],
+    notes="P. striiformis on wheat; P. graminis cereal stem rust.",
+))
+
+
+_register(MechanisticPathway(
+    pathogen_genus="Alternaria",
+    pathogen_class="Fungal",
+    steps=[
+        PathwayStep(
+            stage="conidial germination + cuticle penetration",
+            trigger_conditions=["alternating wet-dry", "T 20-30C"],
+            visual_features_increase=["small dark spots"],
+            causal_explanation="Direct cuticle penetration via appressoria.",
+            epistemic_implication="Early indistinguishable from Anthracnose — backtrack required.",
+        ),
+        PathwayStep(
+            stage="lesion expansion with concentric rings",
+            visual_features_increase=["dark concentric rings (target spot)"],
+            causal_explanation="Cyclical sporulation produces target-pattern rings.",
+            epistemic_implication="Concentric rings → diagnostic for Alternaria.",
+        ),
+        PathwayStep(
+            stage="sporulation",
+            visual_features_increase=["dark velvety sporulation"],
+            causal_explanation="Beak-shaped conidia produced abundantly on lesion.",
+            epistemic_implication="Dark velvet plus rings → terminate routing.",
+        ),
+    ],
+    notes="A. solani early blight; A. brassicicola crucifer leaf spot.",
+))
+
+
+_register(MechanisticPathway(
+    pathogen_genus="Fusarium",
+    pathogen_class="Fungal",
+    steps=[
+        PathwayStep(
+            stage="root / crown infection",
+            trigger_conditions=["soil-borne inoculum", "host stress"],
+            visual_features_increase=["lower-leaf yellowing"],
+            causal_explanation="Vascular wilt — colonisation of xylem from root entry.",
+            epistemic_implication="Wilt without leaf-spot pattern → SeverityAgent + SymptomAgent.",
+        ),
+        PathwayStep(
+            stage="vascular discolouration",
+            visual_features_increase=["brown vascular streaks in stem cross-section"],
+            causal_explanation="Tylose formation + fungal blockage → brown streaks.",
+            epistemic_implication="Stem cross-section browning → diagnostic.",
+        ),
+        PathwayStep(
+            stage="aerial sporulation (late)",
+            visual_features_increase=["pink/orange sporulation on stem"],
+            causal_explanation="Macroconidia + sporodochia at advanced stage.",
+            epistemic_implication="Pink sporulation on dead tissue confirms Fusarium.",
+        ),
+    ],
+    notes="F. oxysporum vascular wilt across many hosts.",
+))
+
+
+_register(MechanisticPathway(
+    pathogen_genus="Cercospora",
+    pathogen_class="Fungal",
+    steps=[
+        PathwayStep(
+            stage="conidial deposition",
+            trigger_conditions=["leaf wetness", "T 25-30C"],
+            visual_features_increase=["small chlorotic spots"],
+            causal_explanation="Conidia germinate on leaf surface with free moisture.",
+            epistemic_implication="Generic chlorotic spotting → backtrack needed.",
+        ),
+        PathwayStep(
+            stage="leaf spot with grey center / dark border",
+            visual_features_increase=["frogeye lesion (grey center, dark margin)"],
+            causal_explanation="Cercosporin photo-toxin produces grey necrotic centre.",
+            epistemic_implication="Frogeye pattern → diagnostic for Cercospora.",
+        ),
+    ],
+    notes="C. zeae-maydis on corn; C. arachidicola on peanut.",
+))
+
+
+_register(MechanisticPathway(
+    pathogen_genus="Erysiphe",
+    pathogen_class="Fungal",
+    steps=[
+        PathwayStep(
+            stage="conidial germination on leaf surface",
+            trigger_conditions=["high humidity, no free water", "T 20-27C"],
+            visual_features_increase=["white powdery spots on leaf surface"],
+            causal_explanation="Obligate biotroph; superficial mycelium with haustoria.",
+            epistemic_implication="White powder on upper leaf → diagnostic for powdery mildew.",
+        ),
+        PathwayStep(
+            stage="cleistothecia formation (late)",
+            visual_features_increase=["small black fruiting bodies"],
+            causal_explanation="Sexual structures appear at season end.",
+            epistemic_implication="Cleistothecia confirm species when conidia abscised.",
+        ),
+    ],
+    notes="Powdery mildew family; many crops.",
+))
+
+
+_register(MechanisticPathway(
+    pathogen_genus="TomatoMosaic",
+    pathogen_class="Viral",
+    steps=[
+        PathwayStep(
+            stage="virion entry via wounding",
+            trigger_conditions=["mechanical contact", "vector pressure"],
+            visual_features_increase=["mosaic mottle on young leaves"],
+            causal_explanation="Tobamovirus particles enter through micro-wounds.",
+            epistemic_implication="Mosaic pattern, NO sporulation → viral; eps_t low.",
+        ),
+        PathwayStep(
+            stage="systemic spread",
+            visual_features_increase=["leaf curling, stunting", "vein clearing"],
+            causal_explanation="Phloem-borne systemic infection.",
+            epistemic_implication="Stunting + mosaic + no fungal/bacterial signs → terminate.",
+        ),
+    ],
+    notes="ToMV / TMV on Solanaceae. Mosaic complex includes many viruses.",
+))
+
+
 # ---------------------------------------------------------------------------
 # Persistence
 # ---------------------------------------------------------------------------

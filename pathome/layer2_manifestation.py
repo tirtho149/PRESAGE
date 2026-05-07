@@ -108,6 +108,7 @@ class CrossCropManifestation:
 # ---------------------------------------------------------------------------
 
 _BUILTIN_ENTRIES: List[ManifestationEntry] = [
+    # --- Colletotrichum ---
     ManifestationEntry(
         pathogen_genus="Colletotrichum",
         host_crop="Mango",
@@ -134,5 +135,158 @@ _BUILTIN_ENTRIES: List[ManifestationEntry] = [
         dominant_tissue="fruit",
         color_shift="red → light tan sunken with salmon mass",
         confusion_pairs=["Botrytis Fruit Rot"],
+    ),
+    # --- Phytophthora ---
+    ManifestationEntry(
+        pathogen_genus="Phytophthora",
+        host_crop="Tomato",
+        lesion_diameter_mm=(10.0, 30.0),
+        sporulation_time_days=(3, 6),
+        dominant_tissue="leaf",
+        color_shift="green → grey-green water-soaked → dark brown with white sporulation underside",
+        confusion_pairs=["Early Blight", "Septoria Leaf Spot"],
+    ),
+    ManifestationEntry(
+        pathogen_genus="Phytophthora",
+        host_crop="Potato",
+        lesion_diameter_mm=(10.0, 40.0),
+        sporulation_time_days=(3, 5),
+        dominant_tissue="leaf",
+        color_shift="green → grey-green → black-brown with white halo on underside",
+        confusion_pairs=["Early Blight", "Brown Spot"],
+    ),
+    # --- Xanthomonas ---
+    ManifestationEntry(
+        pathogen_genus="Xanthomonas",
+        host_crop="Tomato",
+        lesion_diameter_mm=(2.0, 5.0),
+        sporulation_time_days=(0, 0),
+        dominant_tissue="leaf",
+        color_shift="green → angular dark spots with yellow halo",
+        confusion_pairs=["Bacterial Speck (Pseudomonas)"],
+    ),
+    ManifestationEntry(
+        pathogen_genus="Xanthomonas",
+        host_crop="Pepper",
+        lesion_diameter_mm=(3.0, 7.0),
+        sporulation_time_days=(0, 0),
+        dominant_tissue="leaf",
+        color_shift="green → angular brown lesions with chlorotic margin",
+        confusion_pairs=["Bacterial Spot"],
+    ),
+    ManifestationEntry(
+        pathogen_genus="Xanthomonas",
+        host_crop="Rice",
+        lesion_diameter_mm=(0.0, 0.0),
+        sporulation_time_days=(0, 0),
+        dominant_tissue="leaf",
+        color_shift="green → yellow leaf-tip blight extending downward",
+        confusion_pairs=["Bacterial Leaf Streak"],
+    ),
+    # --- Botrytis ---
+    ManifestationEntry(
+        pathogen_genus="Botrytis",
+        host_crop="Strawberry",
+        lesion_diameter_mm=(5.0, 25.0),
+        sporulation_time_days=(2, 4),
+        dominant_tissue="fruit",
+        color_shift="red → tan with dense grey fuzz",
+        confusion_pairs=["Anthracnose Fruit Rot"],
+    ),
+    ManifestationEntry(
+        pathogen_genus="Botrytis",
+        host_crop="Grape",
+        lesion_diameter_mm=(0.0, 0.0),
+        sporulation_time_days=(2, 5),
+        dominant_tissue="fruit",
+        color_shift="purple → tan-brown with dense grey conidial mass",
+        confusion_pairs=["Black Rot"],
+    ),
+    # --- Puccinia ---
+    ManifestationEntry(
+        pathogen_genus="Puccinia",
+        host_crop="Wheat",
+        lesion_diameter_mm=(1.0, 3.0),
+        sporulation_time_days=(7, 14),
+        dominant_tissue="leaf",
+        color_shift="green → orange/yellow stripe of pustules",
+        confusion_pairs=["Leaf Rust", "Stem Rust"],
+    ),
+    # --- Alternaria ---
+    ManifestationEntry(
+        pathogen_genus="Alternaria",
+        host_crop="Tomato",
+        lesion_diameter_mm=(5.0, 15.0),
+        sporulation_time_days=(5, 8),
+        dominant_tissue="leaf",
+        color_shift="green → dark concentric rings with chlorotic halo (target spot)",
+        confusion_pairs=["Late Blight", "Septoria Leaf Spot"],
+    ),
+    ManifestationEntry(
+        pathogen_genus="Alternaria",
+        host_crop="Potato",
+        lesion_diameter_mm=(5.0, 12.0),
+        sporulation_time_days=(5, 8),
+        dominant_tissue="leaf",
+        color_shift="green → dark concentric rings with chlorotic halo",
+        confusion_pairs=["Late Blight"],
+    ),
+    # --- Fusarium ---
+    ManifestationEntry(
+        pathogen_genus="Fusarium",
+        host_crop="Tomato",
+        lesion_diameter_mm=(0.0, 0.0),
+        sporulation_time_days=(0, 0),
+        dominant_tissue="stem",
+        color_shift="green → unilateral wilt with brown vascular streaks",
+        confusion_pairs=["Verticillium Wilt"],
+    ),
+    ManifestationEntry(
+        pathogen_genus="Fusarium",
+        host_crop="Banana",
+        lesion_diameter_mm=(0.0, 0.0),
+        sporulation_time_days=(0, 0),
+        dominant_tissue="stem",
+        color_shift="green → progressive yellowing + brown vascular streak (Panama disease)",
+        confusion_pairs=["Bacterial Wilt"],
+    ),
+    # --- Cercospora ---
+    ManifestationEntry(
+        pathogen_genus="Cercospora",
+        host_crop="Corn",
+        lesion_diameter_mm=(2.0, 30.0),
+        sporulation_time_days=(7, 14),
+        dominant_tissue="leaf",
+        color_shift="green → tan rectangular lesions parallel to veins (grey leaf spot)",
+        confusion_pairs=["Northern Leaf Blight"],
+    ),
+    # --- Erysiphe ---
+    ManifestationEntry(
+        pathogen_genus="Erysiphe",
+        host_crop="Cucumber",
+        lesion_diameter_mm=(0.0, 0.0),
+        sporulation_time_days=(3, 5),
+        dominant_tissue="leaf",
+        color_shift="green → white powdery patches on upper leaf surface",
+        confusion_pairs=["Downy Mildew (Pseudoperonospora)"],
+    ),
+    ManifestationEntry(
+        pathogen_genus="Erysiphe",
+        host_crop="Apple",
+        lesion_diameter_mm=(0.0, 0.0),
+        sporulation_time_days=(3, 6),
+        dominant_tissue="leaf",
+        color_shift="green → white felty growth on shoots and leaves",
+        confusion_pairs=["Apple Scab (early)"],
+    ),
+    # --- Tomato Mosaic Virus ---
+    ManifestationEntry(
+        pathogen_genus="TomatoMosaic",
+        host_crop="Tomato",
+        lesion_diameter_mm=(0.0, 0.0),
+        sporulation_time_days=(0, 0),
+        dominant_tissue="leaf",
+        color_shift="uniform green → mosaic mottle, leaf curling, fern-leaf appearance",
+        confusion_pairs=["Cucumber Mosaic Virus", "Yellow Leaf Curl"],
     ),
 ]

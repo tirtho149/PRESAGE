@@ -228,6 +228,17 @@ def main():
     label_space = loader_test.label_space
     print(f"  Test: {len(loader_test)} images | Cal: {len(loader_cal)} images")
 
+    # Optional PathomeDB attachment (paper §6) — passed through to agents
+    pathome_db = None
+    pathome_dir = (cfg.get("pathome") or {}).get("load_dir")
+    if pathome_dir and os.path.isdir(pathome_dir):
+        try:
+            from pathome import PathomeDB
+            pathome_db = PathomeDB.load(pathome_dir)
+            print(f"  PathomeDB v{pathome_db.version} loaded from {pathome_dir}")
+        except Exception as e:  # noqa: BLE001
+            print(f"  [warn] PathomeDB load failed: {e}")
+
     r_cfg = cfg.get("routing", {})
 
     if orchestrator == "hf_direct":
@@ -251,6 +262,8 @@ def main():
             Tmax=r_cfg["Tmax"],
             confidence_weights=r_cfg["confidence_weights"],
         )
+        if pathome_db is not None:
+            pipeline.pathome_db = pathome_db
     else:
         client = VLLMClient(
             base_url=cfg["model"]["vllm_base_url"],
@@ -279,6 +292,7 @@ def main():
                 label_space=label_space,
                 Tmax=r_cfg["Tmax"],
                 confidence_weights=r_cfg["confidence_weights"],
+                pathome_db=pathome_db,
             )
         else:
             raise ValueError(f"Unknown orchestrator {orchestrator!r}.")

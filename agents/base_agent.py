@@ -94,10 +94,14 @@ class BaseAgent(abc.ABC):
         label_space: Dict[str, List[str]],
         *,
         sequence_entropy: bool = False,
+        pathome_db: Optional[object] = None,
     ):
         self.client = client
         self.label_space = label_space
         self.sequence_entropy = sequence_entropy
+        # Optional PathomeDB hook (paper §6). Agents that opt in consult Layer 4
+        # for targeted re-observation prompts and Layer 1/2 for mechanism cues.
+        self.pathome_db = pathome_db
 
     # ------------------------------------------------------------------
     # Public call interface
@@ -298,6 +302,38 @@ class BaseAgent(abc.ABC):
             if lbl.lower() in text_lower:
                 return lbl
         return None
+
+    # ------------------------------------------------------------------
+    # PathomeDB hooks (paper §6, opt-in)
+    # ------------------------------------------------------------------
+
+    def _pathome_reobservation_prompt(self, default: str = "") -> str:
+        """Pull a targeted re-observation prompt from PathomeDB Layer 4.
+
+        Agents that want richer backtracks can prepend this to their context
+        on a low-confidence step (instead of a generic "look again" retry).
+        Returns ``default`` when no PathomeDB is wired in.
+        """
+        db = getattr(self, "pathome_db", None)
+        if db is None:
+            return default
+        layer4 = getattr(db, "layer4", None)
+        root = layer4.root() if layer4 is not None else None
+        if root is None:
+            return default
+        return root.reobservation_prompt or default
+
+    def _pathome_geo_prior(self, disease: str, lat: Optional[float],
+                           lon: Optional[float], month: Optional[int]) -> Optional[float]:
+        """P̂(d|r,σ) shorthand. Returns None when DB or cell is unavailable."""
+        db = getattr(self, "pathome_db", None)
+        if db is None:
+            return None
+        try:
+            res = db.geo_prior(disease, lat, lon, month)
+        except Exception:
+            return None
+        return res.prior
 
     @staticmethod
     def _routing_decision(
