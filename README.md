@@ -160,12 +160,31 @@ tail -f logs/phase*.out
 
 ### Individual Phase Scripts
 
-#### Phase 1: Generate Routing Traces (12-18 hours)
+#### Phase 1: Generate Routing Traces (12-18 hours on A100)
 ```bash
+# Smoke test first (5 min) — confirms model load + a few traces hit disk
+sbatch --time=01:00:00 scripts/submit_phase1_plantswarm.sh
+PLANTSWARM_MODE=hf_direct python scripts/run_plantswarm.py \
+  --config configs/plant_village_tfds.yaml --orchestrator hf_direct --subset 20
+
+# Full run, hf_direct (single GPU, no server)
 sbatch scripts/submit_phase1_plantswarm.sh
-# Generates: results/plant_village_tfds/traces/plantswarm_traces.jsonl
+
+# Full run, vLLM in-job (faster — recommended for 10K images)
+PLANTSWARM_MODE=autogen_swarm sbatch scripts/submit_phase1_plantswarm.sh
+
+# If walltime kills the job mid-run, JUST RESUBMIT — already-saved
+# image_ids in plantswarm_traces.jsonl are skipped automatically.
+
+# Generates (appended incrementally with fsync, survives SIGKILL):
+#   results/plant_village_tfds/traces/plantswarm_traces.jsonl
+#   results/plant_village_tfds/plantswarm_predictions.jsonl
 # Log: logs/phase1_plantswarm-{JOBID}.out
 ```
+
+**SLURM defaults** (`scripts/submit_phase1_plantswarm.sh`): `--gres=gpu:a100:1`,
+`--time=72:00:00`, `--mem=64G`. V100 is much slower with `hf_direct` —
+use A100 or switch to `autogen_swarm`.
 
 ##### Phase 2: Experiments (2-3 hours)
 ```bash
@@ -380,20 +399,48 @@ git reset --hard origin/main
 
 **Goal:** Run PlantSwarm on PlantVillage (~10,000 images) to generate routing traces for OBSERVE training.
 
-#### Step 1: Submit PlantSwarm Job (Nova HPC)
+#### Step 1: Smoke test (always do this first)
 ```bash
-# Submit Phase 1 job
+# 50 images, ~10 min on A100 — verifies model loads and traces hit disk
+salloc --gres=gpu:a100:1 --time=00:30:00 --mem=64G
+source /work/mech-ai-scratch/tirtho/PlantSwarm/.venv/bin/activate
+python scripts/run_plantswarm.py \
+  --config configs/plant_village_tfds.yaml \
+  --orchestrator hf_direct \
+  --subset 50
+
+# Confirm traces file is being written
+wc -l results/plant_village_tfds/traces/plantswarm_traces.jsonl
+```
+
+#### Step 2: Submit Full Phase 1 Job (Nova HPC)
+```bash
+# hf_direct (default — simpler, slower)
 sbatch scripts/submit_phase1_plantswarm.sh
+
+# OR autogen_swarm (boots vLLM in-job — recommended for 10K images)
+PLANTSWARM_MODE=autogen_swarm sbatch scripts/submit_phase1_plantswarm.sh
 
 # Monitor progress
 tail -f logs/phase1_plantswarm-*.out
+watch -n 30 'wc -l results/plant_village_tfds/traces/plantswarm_traces.jsonl'
 ```
 
-**Time:** 12-18 hours on single A100 GPU  
+#### Step 3: If walltime kills the job — just resubmit
+Each trace is appended to `plantswarm_traces.jsonl` with `fsync` immediately
+after it's produced, so SLURM termination, OOM, or crash leaves a usable
+partial file. Resubmitting skips already-done image_ids automatically:
+```bash
+sbatch scripts/submit_phase1_plantswarm.sh   # picks up where it left off
+```
+
+**Time:** 12-18 hours on single A100 GPU (autogen_swarm). V100 with
+`hf_direct` is roughly 10× slower and not viable for the full 10K.
+
 **Output:** `results/plant_village_tfds/`
-- `plantswarm_metrics.json` — accuracy, ECE, TPCP metrics
-- `plantswarm_predictions.jsonl` — per-image predictions
-- `traces/plantswarm_traces.jsonl` — routing traces (training data for OBSERVE)
+- `plantswarm_metrics.json` — accuracy, ECE, TPCP metrics (computed on the most recent run's subset)
+- `plantswarm_predictions.jsonl` — per-image predictions (appended)
+- `traces/plantswarm_traces.jsonl` — routing traces, appended; training data for OBSERVE
 
 ---
 
@@ -866,6 +913,24 @@ python scripts/run_plantswarm.py --config configs/plant_village_tfds.yaml --subs
 # Reduce calibration split
 # In config: calibration_split_size: 100 (default 500)
 ```
+
+### Phase 1 job killed by SLURM walltime
+No action needed. Traces are appended to `plantswarm_traces.jsonl` with
+`fsync` after every image, so the partial file is safe. Just resubmit:
+```bash
+sbatch scripts/submit_phase1_plantswarm.sh   # auto-skips already-done image_ids
+wc -l results/plant_village_tfds/traces/plantswarm_traces.jsonl  # progress check
+```
+
+### Throughput much slower than 12-18 h estimate
+Check the GPU and the orchestrator:
+```bash
+# In the .out log:
+nvidia-smi      # should show A100, not V100
+grep orchestrator logs/phase1_plantswarm-*.out
+```
+If on V100 + `hf_direct`, you'll see ~10 min/image. Switch to A100 (edit
+`--gres=gpu:a100:1` in the SLURM script) or `PLANTSWARM_MODE=autogen_swarm`.
 
 ---
 
