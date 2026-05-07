@@ -39,27 +39,47 @@ def _load_model(model_name: str):
     import torch
     from transformers import AutoProcessor
 
-    # Only use Qwen2VLForConditionalGeneration for actual Qwen2/2.5-VL checkpoints.
-    # For anything else (Qwen3-VL, other architectures) fall through to AutoModelForCausalLM
-    # so we never load a non-Qwen model into the wrong class.
-    _is_qwen2vl = "Qwen2" in model_name or "Qwen2.5" in model_name
-    if _is_qwen2vl:
+    # ------------------------------------------------------------------ #
+    # FIX: Qwen2.5-VL uses Qwen2_5_VLForConditionalGeneration,           #
+    #      NOT Qwen2VLForConditionalGeneration.                           #
+    #      The two architectures have different hidden sizes              #
+    #      (e.g. 3584 vs 1280) and are NOT interchangeable.              #
+    # ------------------------------------------------------------------ #
+    _is_qwen25vl = "Qwen2.5" in model_name or "qwen2_5" in model_name.lower()
+    _is_qwen2vl  = ("Qwen2" in model_name) and not _is_qwen25vl
+
+    if _is_qwen25vl:
+        try:
+            from transformers import Qwen2_5_VLForConditionalGeneration  # FIX
+            model = Qwen2_5_VLForConditionalGeneration.from_pretrained(   # FIX
+                model_name,
+                dtype=torch.float16,      # FIX: torch_dtype is deprecated, use dtype
+                device_map="auto",
+            )
+        except (ImportError, OSError) as e:
+            raise RuntimeError(
+                f"Could not load {model_name} as Qwen2_5_VLForConditionalGeneration: {e}"
+            ) from e
+
+    elif _is_qwen2vl:
         try:
             from transformers import Qwen2VLForConditionalGeneration
             model = Qwen2VLForConditionalGeneration.from_pretrained(
                 model_name,
-                torch_dtype=torch.float16,
+                dtype=torch.float16,      # FIX: torch_dtype is deprecated, use dtype
                 device_map="auto",
             )
         except (ImportError, OSError) as e:
             raise RuntimeError(
                 f"Could not load {model_name} as Qwen2VLForConditionalGeneration: {e}"
             ) from e
+
     else:
-        from transformers import AutoModelForCausalLM
-        model = AutoModelForCausalLM.from_pretrained(
+        # Qwen3-VL or any other architecture — let AutoModel figure it out
+        from transformers import AutoModelForVision2Seq
+        model = AutoModelForVision2Seq.from_pretrained(
             model_name,
-            torch_dtype=torch.float16,
+            dtype=torch.float16,          # FIX: torch_dtype is deprecated, use dtype
             device_map="auto",
             trust_remote_code=True,
         )
