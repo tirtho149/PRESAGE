@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 """Shared infrastructure for disease registry pipelines.
 
 API helpers, JSON parsing, and Claude CLI wrappers used by both
@@ -20,23 +22,36 @@ from .utils import save_file
 
 _API_KEY: str | None = None
 _ANTHROPIC_CLIENT = None
+_API_KEY_PROBED = False
+
+
+def _probe_api_key() -> str | None:
+    """Look up ANTHROPIC_API_KEY without raising. Returns None when absent.
+
+    Used by api_query() to decide whether to dispatch to the Anthropic SDK
+    (key present) or to the claude -p subprocess fallback (key missing).
+    """
+    global _API_KEY, _API_KEY_PROBED
+    if _API_KEY_PROBED:
+        return _API_KEY
+    _API_KEY_PROBED = True
+    _API_KEY = os.environ.get("ANTHROPIC_API_KEY")
+    if not _API_KEY:
+        env_path = Path(__file__).parent.parent / ".env"
+        if env_path.exists():
+            for line in env_path.read_text().splitlines():
+                if line.startswith("ANTHROPIC_API_KEY="):
+                    _API_KEY = line.split("=", 1)[1].strip()
+                    break
+    return _API_KEY or None
 
 
 def _get_api_key() -> str:
     """Get cached API key (loaded once from environment or .env file)."""
-    global _API_KEY
-    if _API_KEY is None:
-        _API_KEY = os.environ.get("ANTHROPIC_API_KEY")
-        if not _API_KEY:
-            env_path = Path(__file__).parent.parent / ".env"
-            if env_path.exists():
-                for line in env_path.read_text().splitlines():
-                    if line.startswith("ANTHROPIC_API_KEY="):
-                        _API_KEY = line.split("=", 1)[1].strip()
-                        break
-        if not _API_KEY:
-            raise RuntimeError("ANTHROPIC_API_KEY not found in environment or .env file")
-    return _API_KEY
+    key = _probe_api_key()
+    if not key:
+        raise RuntimeError("ANTHROPIC_API_KEY not found in environment or .env file")
+    return key
 
 
 def _get_api_client():
@@ -74,11 +89,31 @@ def api_query(
     content_blocks: list | None = None,
     max_tokens: int | None = None,
 ) -> str | None:
-    """Call Anthropic API directly. Much faster than claude -p for tool-free tasks.
+    """Call Anthropic API for tool-free structured tasks.
 
-    If content_blocks is provided, they are prepended to the user message
-    (e.g., PDF document blocks). The prompt text is appended after them.
+    When ANTHROPIC_API_KEY is set, hits the SDK directly (faster, ~1 round trip
+    per call). When absent, falls back to ``claude -p`` so the pipeline runs
+    on Claude Code's CLI auth alone — slower (~5×) but no API key required.
+
+    ``content_blocks`` is only honoured by the SDK path (used by the local
+    PDF track for native document blocks). The CLI fallback ignores it; the
+    internet pipeline never passes content_blocks so this is fine in practice.
     """
+    if _probe_api_key() is None:
+        # CLI fallback — no API key available. Reuses claude_query so we
+        # inherit its env-stripping, JSON-schema enforcement, and timeout.
+        # max_turns=5 lets the model use a thinking turn before emitting the
+        # structured JSON; max_turns=1 was too tight for the reconciliation
+        # schema (~3 KB JSON, ~12 KB prompt) and produced empty results with
+        # "Reached maximum number of turns" as the only error.
+        return claude_query(
+            prompt=prompt,
+            system_prompt=system_prompt,
+            json_schema=json_schema,
+            max_turns=5,
+            timeout_secs=300,
+        )
+
     client = _get_api_client()
 
     if content_blocks:

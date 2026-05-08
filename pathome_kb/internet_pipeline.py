@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 """Internet Pipeline — Build disease registry from web sources.
 
 Inputs: crop name, disease name list (optional, for targeted discovery)
