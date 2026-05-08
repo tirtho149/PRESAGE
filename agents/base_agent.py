@@ -307,21 +307,35 @@ class BaseAgent(abc.ABC):
     # PathomeDB hooks (paper §6, opt-in)
     # ------------------------------------------------------------------
 
-    def _pathome_reobservation_prompt(self, default: str = "") -> str:
-        """Pull a targeted re-observation prompt from PathomeDB Layer 4.
+    def _pathome_reobservation_prompt(
+        self,
+        crop: Optional[str] = None,
+        disease: Optional[str] = None,
+        default: str = "",
+    ) -> str:
+        """Targeted re-examination prompt from the symptom profile.
 
-        Agents that want richer backtracks can prepend this to their context
-        on a low-confidence step (instead of a generic "look again" retry).
-        Returns ``default`` when no PathomeDB is wired in.
+        Agents prepend this to their context on a low-confidence step instead
+        of a generic "look again" retry. When ``crop``/``disease`` are
+        provided, the prompt is drawn from that specific profile's visual
+        block; otherwise we fall back to ``default``.
         """
         db = getattr(self, "pathome_db", None)
         if db is None:
             return default
+        # Symptom-centric API (current PathomeDB).
+        get_prompt = getattr(db, "reobservation_prompt", None)
+        if callable(get_prompt) and crop and disease:
+            try:
+                return get_prompt(crop, disease, default)
+            except Exception:
+                return default
+        # Backward-compat: old layered DBs that still expose layer4.
         layer4 = getattr(db, "layer4", None)
         root = layer4.root() if layer4 is not None else None
         if root is None:
             return default
-        return root.reobservation_prompt or default
+        return getattr(root, "reobservation_prompt", "") or default
 
     def _pathome_geo_prior(self, disease: str, lat: Optional[float],
                            lon: Optional[float], month: Optional[int]) -> Optional[float]:

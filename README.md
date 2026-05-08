@@ -2,15 +2,37 @@
 
 **Paper:** *Train on the Wild: Geospatial Multi-Agent Routing for Cross-Crop Plant Disease Diagnosis from Ten Field Images* (EMNLP 2026, anonymous submission). Source: `plantswarm/latex/acl_latex.tex`.
 
-**Core argument.** The dominant paradigm — train on controlled laboratory images and hope for field generalization — is ecologically backwards. The deployment target is the field; the laboratory is the convenience artifact. We invert it: train **PlantSwarm** on 260 geo-tagged Bugwood field photographs (10 per disease class × 26 classes) and evaluate on the **complete** PlantVillage (54,306 images) and the **complete** PlantWild dataset. The resulting **OBSERVE** policy (Qwen2.5-VL-7B + LoRA, trained via Decision Transformer + GRPO) reaches ECE 0.12 on PlantVillage and 0.17 on PlantWild — both *unseen* — at a training-to-test ratio of 1:280.
+**Core argument.** Train on the field; deploy on the field. We seed a knowledge base with what diseases *look like*, generate diverse routing traces with a multi-agent VLM swarm, then enhance the KB with what the swarm actually saw — and measure how much that enhancement is worth.
 
-Three contributions:
+**The pipeline in one diagram:**
 
-- **PlantSwarm on Bugwood**: 5,460 routing traces from 182 field images (7 per class × 30 stochastic runs). Behavioral routing precision 0.83–0.87 vs 0.71–0.76 self-declared confidence; gap *wider* on field images because ambiguity produces richer behavioral differentiation.
-- **PathomeDB**: a 5-layer mechanistic cross-crop knowledge base. Layer 3's regional epidemiology is derived empirically from GPS observation density (`P̂(d|r,σ) = count(d,r,σ)/Σ_d' count(d',r,σ)`) and validated against EPPO at Pearson r ≥ 0.71. **No expert curation beyond spot-check.**
-- **OBSERVE**: 6× lower inference cost than PlantSwarm; surpasses its teacher on both benchmarks. Includes overconfidence detection backed by image-to-image comparison against Layer-5 references — categorically stronger than text-based self-confidence.
+```
+  ┌────────────────┐      ┌────────────────┐      ┌────────────────┐
+  │  Phase 0 SEED  │  →   │ Phase 1 BUILD  │  →   │ Phase 2 TRACES │
+  │ Claude headless│      │ symptoms.json +│      │ Qwen2.5-VL-7B  │
+  │ writes 484     │      │ state/AEZ geo +│      │ × 5 agents     │
+  │ VisualSymptom  │      │ 1,452 refs from│      │ × 30 runs      │
+  │ blocks         │      │ Bugwood CSV    │      │ = 101k traces  │
+  └────────────────┘      └────────────────┘      └────────┬───────┘
+                                                            │
+  ┌────────────────┐      ┌────────────────┐      ┌────────▼───────┐
+  │ Phase 5 COMPARE│  ←   │ Phase 4 TRAIN  │  ←   │ Phase 3 ENHANCE│
+  │ before / after │      │ OBSERVE × 2    │      │ mine traces →  │
+  │ ΔT3 F1, ΔECE,  │      │ (seed DB,      │      │ SwarmObserva-  │
+  │ ΔPathLen, …    │      │  enhanced DB)  │      │ tions per class│
+  └────────────────┘      └────────────────┘      └────────────────┘
+```
 
-> **Status:** the codebase is mid-migration from the previous "PlantSwarm + OBSERVE on PlantVillage" architecture. See [`MIGRATION.md`](MIGRATION.md) for what's done, what's stubbed, and the dependency order.
+**Source of truth** is `BugWood_Diseases_usable.csv` (11,513 rows, 484 classes; produced by `scripts/filter_bugwood_csv.py`). Geo signal is at US-state-centroid resolution (paper §6.3 monthly AEZ grid is reduced to a state histogram — see [`MIGRATION.md`](MIGRATION.md) caveats).
+
+**PathomeDB v2** (current) is two stores:
+
+- `db.symptoms` — `SymptomLibrary` of `SymptomProfile` per (crop, disease). Each profile carries a `VisualSymptom` block (plant parts, color, shape/margin/texture, sporulation, distinctive signs, progression, confusion diseases, notes), per-state and per-AEZ observation counts, and an optional `swarm_observations` block populated after Phase 3.
+- `db.refs` — `ReferenceLibrary` over the 1,452 held-out Bugwood references with CLIP embeddings + FAISS retrieval (`0.7·cos + 0.3·ClimSim`).
+
+The older 5-layer split (mechanistic pathway, cross-crop manifestation, regional epidemiology, decision graph, reference library) was collapsed into the symptom-centric design once it became clear that the Bugwood CSV cannot feed the mechanistic / decision-graph layers. Old layer modules remain on disk for users who curated content against them.
+
+> **Status:** mid-migration. See [`MIGRATION.md`](MIGRATION.md) for what's done, what's stubbed, and the dependency order.
 
 ---
 
@@ -38,13 +60,18 @@ python -c "from agents import *; from plantswarm import *; print('✓ Ready')"
 
 ---
 
-## 📋 Complete Workflow (5 Phases)
+## 📋 Pathome Pipeline (6 Phases — current workflow)
 
-1. **Phase 1:** Generate PlantSwarm routing traces on PlantVillage
-2. **Phase 2:** Run experimental comparisons (baselines, ablations, calibration, bias)
-3. **Phase 3:** Train OBSERVE model on routing traces
-4. **Phase 4:** Evaluate on PlantWild (OOD)
-5. **Phase 5:** Build paper with auto-synced metrics
+| Phase | Compute | Wall | What it does |
+|---|---|---|---|
+| **0 SEED** | CPU, no GPU | ~15 min | `claude -p` writes a `VisualSymptom` block per (crop, disease) into `artifacts/pathome_seed/symptoms_seed.json` |
+| **1 BUILD** | CPU + outbound HTTPS | ~30 min | Layers Bugwood state/AEZ counts and 1,452 reference IDs onto the Claude seed → `artifacts/pathome_v1_seed/` |
+| **2 TRACES** | A100 + vLLM | ~36–50 h | 3,388 trace seeds × 30 runs = **101,640 PlantSwarm traces** (resumable) |
+| **3 ENHANCE** | CPU | ~5 min | Mines traces into per-profile `SwarmObservations` → `artifacts/pathome_v1_enhanced/` |
+| **4 TRAIN** | A100 | ~20–24 h | Trains OBSERVE × 2 (Phase A DT + Phase B GRPO) — once on seed DB, once on enhanced DB |
+| **5 EVAL+COMPARE** | A100 + CPU | ~6–8 h | Held-out eval on full PV (with seen/unseen slice) and full PW for both checkpoints, then writes `comparison.{json,md,tex}` |
+
+The legacy "PlantSwarm-on-PlantVillage" workflow (5 different phases, pre-Pathome) is documented further down under [Legacy: PlantVillage workflow](#legacy-plantvillage-workflow) and is no longer the recommended path.
 
 ---
 
@@ -144,86 +171,147 @@ sbatch --version  # Should show SLURM version
 
 ---
 
-## 🚀 Running on Nova HPC (SLURM Scripts)
+## 🚀 Running the Pathome Pipeline on Nova HPC
 
-For distributed GPU training on Nova HPC cluster, use the provided shell scripts. All scripts use SLURM with automatic dependency chaining.
+All six phases are individual SLURM scripts under `scripts/submit_pathome_phase*.sh` plus a master chain `scripts/submit_pathome_all.sh` that wires sbatch dependencies for you.
 
-### Quick Start: Run All 5 Phases (30 hours total)
+### One-time prerequisites
 
 ```bash
-# On Nova HPC login node
+# 1. Working tree on Nova
 cd /work/mech-ai-scratch/tirtho/PlantSwarm
+git pull origin main
 
-# Step 1: Download PlantWild dataset (2-4 hours, one-time only)
-sbatch scripts/submit_setup_plantwild.sh
-# Monitor: tail -f logs/setup_plantwild-*.out
+# 2. The Claude Code CLI must be on PATH and authenticated for Phase 0
+#    (it shells out to `claude -p` × 484 calls in the seeding step)
+curl -fsSL https://claude.ai/install.sh | bash
+claude auth login
+claude --version          # confirm
 
-# Step 2: Submit all 5 phases with automatic dependency chaining
-bash scripts/submit_all_phases.sh
-
-# Step 3: Monitor jobs
-squeue -u $USER
-tail -f logs/phase*.out
+# 3. Filtered Bugwood CSV (11,513 rows, 484 classes)
+python scripts/filter_bugwood_csv.py --threshold 10
+ls -lh BugWood_Diseases_usable.csv
 ```
 
-### Individual Phase Scripts
+### Quick start: chain everything
 
-#### Phase 1: Generate Routing Traces (12-18 hours on A100)
 ```bash
-# Smoke test first (5 min) — confirms model load + a few traces hit disk
-sbatch --time=01:00:00 scripts/submit_phase1_plantswarm.sh
-PLANTSWARM_MODE=hf_direct python scripts/run_plantswarm.py \
-  --config configs/plant_village_tfds.yaml --orchestrator hf_direct --subset 20
+bash scripts/submit_pathome_all.sh
 
-# Full run, hf_direct (single GPU, no server)
-sbatch scripts/submit_phase1_plantswarm.sh
+# squeue -u $USER will show six queued jobs:
+#   pathome_phase0_seed         → pathome_phase1_build      (afterok)
+#   pathome_phase1_build        → pathome_phase2_traces     (afterok)
+#   pathome_phase2_traces       → pathome_phase3_enhance    (afterok)
+#   pathome_phase3_enhance      → pathome_phase4_train      (afterok)
+#   pathome_phase4_train        → pathome_phase5_eval       (afterok)
 
-# Full run, vLLM in-job (faster — recommended for 10K images)
-PLANTSWARM_MODE=autogen_swarm sbatch scripts/submit_phase1_plantswarm.sh
-
-# If walltime kills the job mid-run, JUST RESUBMIT — already-saved
-# image_ids in plantswarm_traces.jsonl are skipped automatically.
-
-# Generates (appended incrementally with fsync, survives SIGKILL):
-#   results/plant_village_tfds/traces/plantswarm_traces.jsonl
-#   results/plant_village_tfds/plantswarm_predictions.jsonl
-# Log: logs/phase1_plantswarm-{JOBID}.out
+# Skip phases that are already done:
+PATHOME_SKIP="0,1" bash scripts/submit_pathome_all.sh    # seed + build cached
+PATHOME_FROM_PHASE=4 bash scripts/submit_pathome_all.sh  # start at training
 ```
 
-**SLURM defaults** (`scripts/submit_phase1_plantswarm.sh`): `--gres=gpu:a100:1`,
-`--time=72:00:00`, `--mem=64G`. V100 is much slower with `hf_direct` —
-use A100 or switch to `autogen_swarm`.
+### Individual phase scripts
 
-##### Phase 2: Experiments (2-3 hours)
+#### Phase 0 — Seed visual symptom blocks (`submit_pathome_phase0_seed.sh`)
 ```bash
-sbatch scripts/submit_phase2_experiments.sh
-# Runs all 4 sub-phases sequentially:
-#   2a) Baselines (8 comparison models)
-#   2b) Ablations (6 factorial variants)
-#   2c) Calibration (ECE, temperature scaling, conformal)
-#   2d) Routing Analysis (P1-P4 predictions)
-# Log: logs/phase2_experiments-{JOBID}.out
+# Default: 4 parallel `claude -p` workers, sonnet
+sbatch scripts/submit_pathome_phase0_seed.sh
+
+# Tune at submit time:
+PATHOME_SEED_WORKERS=8 PATHOME_SEED_MODEL=opus \
+  sbatch scripts/submit_pathome_phase0_seed.sh
+
+# Resumable. Failed profiles land in artifacts/pathome_seed/failed.jsonl;
+# rerun to pick them up.
 ```
 
-#### Phase 3: Train OBSERVE (4-6 hours)
+#### Phase 1 — Build PathomeDB v1_seed (`submit_pathome_phase1_build.sh`)
 ```bash
-sbatch scripts/submit_phase3_observe_training.sh
-# Outputs: observe/checkpoints/observe_final.pt
-# Log: logs/phase3_observe_training-{JOBID}.out
+sbatch scripts/submit_pathome_phase1_build.sh
+# Outputs:
+#   artifacts/pathome_v1_seed/symptoms.json  (Claude visual + auto geo + ref_ids)
+#   artifacts/pathome_v1_seed/refs/          (held-out reference image registry)
+#   artifacts/pathome_v1_seed/build_summary.json
+# First run downloads ~600 MB of Bugwood thumbnails to .bugwood_cache/
 ```
 
-#### Phase 4: OOD Evaluation (2-3 hours)
+#### Phase 2 — PlantSwarm trace generation (`submit_pathome_phase2_traces.sh`)
 ```bash
-sbatch scripts/submit_phase4_ood_evaluation.sh
-# Evaluates PlantSwarm + OBSERVE on PlantWild
-# Log: logs/phase4_ood_eval-{JOBID}.out
+sbatch scripts/submit_pathome_phase2_traces.sh
+# A100 + vLLM (Qwen2.5-VL-7B). Walltime 72 h, traces appended with fsync.
+# A SIGKILL is recoverable — resubmit and already-done image_ids are skipped.
+
+# Override DB / output dir at submit time:
+PATHOME_DB_DIR=artifacts/pathome_v1_seed \
+PATHOME_OUT_DIR=results/bugwood_seed \
+  sbatch scripts/submit_pathome_phase2_traces.sh
 ```
 
-#### Phase 5: LaTeX Sync (<1 minute)
+#### Phase 3 — Enhance DB from traces (`submit_pathome_phase3_enhance.sh`)
 ```bash
-sbatch scripts/submit_phase5_latex_sync.sh
-# Syncs metrics to: plantswarm/latex/auto_*.tex
-# Log: logs/phase5_latex_sync-{JOBID}.out
+sbatch scripts/submit_pathome_phase3_enhance.sh
+# Outputs:
+#   artifacts/pathome_v1_enhanced/symptoms.json
+#     (each profile.swarm_observations:
+#        n_traces, avg_path_length, backtrack_rate,
+#        high_confidence_rate, confusion_targets)
+#   artifacts/pathome_v1_enhanced/enhancement_summary.json
+```
+
+#### Phase 4 — Train OBSERVE × 2 (`submit_pathome_phase4_train.sh`)
+```bash
+sbatch scripts/submit_pathome_phase4_train.sh
+# A100, 24 h walltime. Trains seed-DB OBSERVE first, then enhanced-DB OBSERVE.
+# Both runs do Phase A (Decision Transformer) + Phase B (GRPO).
+# Outputs:
+#   observe/checkpoints/seed/observe_grpo_epoch_*.pt
+#   observe/checkpoints/enhanced/observe_grpo_epoch_*.pt
+```
+
+#### Phase 5 — Eval × 4 + before/after comparison (`submit_pathome_phase5_eval.sh`)
+```bash
+sbatch scripts/submit_pathome_phase5_eval.sh
+# Boots vLLM once, evaluates seed and enhanced checkpoints on:
+#   - full PlantVillage (54,306 images, with seen/unseen slice)
+#   - full PlantWild (HF dataset)
+# Then runs scripts/compare_pathome_versions.py to emit:
+#   results/pathome_compare/comparison.json   (machine-readable deltas)
+#   results/pathome_compare/comparison.md     (PR-ready table)
+#   results/pathome_compare/comparison.tex    (\PathomeDelta* macros)
+```
+
+### Monitoring
+
+```bash
+squeue -u $USER                           # all queued jobs
+tail -f logs/pathome_phase2_traces-*.out  # live trace progress
+tail -f logs/vllm-*.log                   # vLLM server log (phases 2 + 5)
+sacct -j <JOBID>                          # post-mortem
+```
+
+### Output locations (final)
+
+| File | Phase | Purpose |
+|---|---|---|
+| `artifacts/pathome_seed/symptoms_seed.json` | 0 | Claude visual blocks |
+| `artifacts/pathome_v1_seed/` | 1 | Seed PathomeDB (visual + auto geo + refs) |
+| `results/bugwood_seed/traces/plantswarm_traces.jsonl` | 2 | 101,640 routing traces |
+| `artifacts/pathome_v1_enhanced/` | 3 | Enhanced PathomeDB (+ swarm_observations) |
+| `observe/checkpoints/{seed,enhanced}/observe_grpo_epoch_*.pt` | 4 | Two trained OBSERVE checkpoints |
+| `results/pathome_compare/comparison.{json,md,tex}` | 5 | Headline before/after artifact |
+
+<a id="legacy-plantvillage-workflow"></a>
+### Legacy: PlantVillage workflow (pre-Pathome)
+
+> The five `submit_phase{1..5}_*.sh` scripts below predate the symptom-centric Pathome pipeline. They train PlantSwarm on PlantVillage directly and do **not** consume the seed/enhance loop. Kept for reference and reproducibility of older results — do not use these for new Pathome runs.
+
+```bash
+sbatch scripts/submit_phase1_plantswarm.sh        # PV trace generation
+sbatch scripts/submit_phase2_experiments.sh        # baselines + ablations
+sbatch scripts/submit_phase3_observe_training.sh  # one-shot OBSERVE training
+sbatch scripts/submit_phase4_ood_evaluation.sh    # PlantWild eval
+sbatch scripts/submit_phase5_latex_sync.sh        # auto_*.tex
+bash   scripts/submit_all_phases.sh               # chain the above
 ```
 
 ### Monitoring Jobs
@@ -233,10 +321,11 @@ sbatch scripts/submit_phase5_latex_sync.sh
 squeue -u $USER
 
 # Monitor specific phase output (live)
-tail -f logs/phase1_plantswarm-*.out
+tail -f logs/pathome_phase2_traces-*.out
+tail -f logs/pathome_phase4_train-*.out
 
 # Check for errors
-tail -f logs/phase1_plantswarm-*.err
+tail -f logs/pathome_phase*-*.err
 
 # See completed job info
 sacct -j <JOBID>
@@ -248,12 +337,16 @@ After jobs complete, sync results back to GitHub:
 
 ```bash
 # On Nova HPC
-git add results/ observe/checkpoints/ plantswarm/latex/auto_* logs/
-git commit -m "Full pipeline results from Nova HPC"
+git add artifacts/pathome_seed/ artifacts/pathome_v1_seed/ artifacts/pathome_v1_enhanced/ \
+        results/bugwood_seed/ results/pathome_compare/ \
+        observe/checkpoints/seed/ observe/checkpoints/enhanced/ \
+        logs/
+git commit -m "Pathome pipeline results (seed vs enhanced)"
 git push origin main
 
 # On local machine
 git pull origin main
+cat results/pathome_compare/comparison.md   # the headline before/after table
 ```
 
 ---

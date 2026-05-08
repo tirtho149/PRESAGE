@@ -3,15 +3,18 @@ utils/geo.py
 ============
 Geospatial utilities for Pathome (paper §6.3, Layer 3).
 
-Three concerns:
-1. Extracting GPS from EXIF metadata of Bugwood field photographs.
-2. Mapping (lat, lon) → FAO agro-ecological zone (AEZ) at 0.5° resolution.
+Concerns:
+1. Resolving the Bugwood CSV ``Location`` (US state name) to a
+   representative (lat, lon) centroid — this is the geo source actually
+   available in ``BugWood_Diseases.csv``. EXIF GPS extraction is retained
+   for the legacy folder-tree path.
+2. Mapping (lat, lon) → FAO agro-ecological zone (AEZ).
 3. Climate-zone vector + similarity for Layer-5 geo-weighted retrieval
    (Eq. retrieval: 0.7 · cos + 0.3 · ClimSim).
 
 The FAO AEZ shapefile is not bundled. Set ``PATHOME_AEZ_SHAPEFILE`` to a
 local path of FAO_AEZv4_50K.shp (download from FAO GAEZ portal). Without
-the shapefile, ``aez_lookup`` falls back to a 0.5° lat/lon grid bin.
+the shapefile, ``aez_lookup`` falls back to a coarse latitude band table.
 """
 
 from __future__ import annotations
@@ -196,3 +199,93 @@ def encode_phi_geo(lat: Optional[float], lon: Optional[float], month: Optional[i
         out[6] = math.sin(2.0 * math.pi * m / 12.0)
         out[7] = math.cos(2.0 * math.pi * m / 12.0)
     return out
+
+
+# ---------------------------------------------------------------------------
+# US-state centroid lookup (Bugwood CSV "Location" column)
+# ---------------------------------------------------------------------------
+#
+# Bugwood image records carry a US state name (e.g. "North Carolina") rather
+# than per-photo GPS, so the Layer-3 epidemiology grid is at state resolution.
+# Centroids are population-weighted geographic centers (US Census 2020) for
+# the 50 states + DC, plus US territories that occasionally appear in the
+# Bugwood feed. Used by data/bugwood_loader.py and downstream phi_geo /
+# aez_lookup calls when no finer GPS is available.
+
+US_STATE_CENTROID: dict = {
+    "alabama":              (32.806671,  -86.791130),
+    "alaska":               (61.370716, -152.404419),
+    "arizona":              (33.729759, -111.431221),
+    "arkansas":             (34.969704,  -92.373123),
+    "california":           (36.116203, -119.681564),
+    "colorado":             (39.059811, -105.311104),
+    "connecticut":          (41.597782,  -72.755371),
+    "delaware":             (39.318523,  -75.507141),
+    "district of columbia": (38.897438,  -77.026817),
+    "florida":              (27.766279,  -81.686783),
+    "georgia":              (33.040619,  -83.643074),
+    "hawaii":               (21.094318, -157.498337),
+    "idaho":                (44.240459, -114.478828),
+    "illinois":             (40.349457,  -88.986137),
+    "indiana":              (39.849426,  -86.258278),
+    "iowa":                 (42.011539,  -93.210526),
+    "kansas":               (38.526600,  -96.726486),
+    "kentucky":             (37.668140,  -84.670067),
+    "louisiana":            (31.169546,  -91.867805),
+    "maine":                (44.693947,  -69.381927),
+    "maryland":             (39.063946,  -76.802101),
+    "massachusetts":        (42.230171,  -71.530106),
+    "michigan":             (43.326618,  -84.536095),
+    "minnesota":            (45.694454,  -93.900192),
+    "mississippi":          (32.741646,  -89.678696),
+    "missouri":             (38.456085,  -92.288368),
+    "montana":              (46.921925, -110.454353),
+    "nebraska":             (41.125370,  -98.268082),
+    "nevada":               (38.313515, -117.055374),
+    "new hampshire":        (43.452492,  -71.563896),
+    "new jersey":           (40.298904,  -74.521011),
+    "new mexico":           (34.840515, -106.248482),
+    "new york":             (42.165726,  -74.948051),
+    "north carolina":       (35.630066,  -79.806419),
+    "north dakota":         (47.528912, -99.784012),
+    "ohio":                 (40.388783,  -82.764915),
+    "oklahoma":             (35.565342,  -96.928917),
+    "oregon":               (44.572021, -122.070938),
+    "pennsylvania":         (40.590752,  -77.209755),
+    "rhode island":         (41.680893,  -71.511780),
+    "south carolina":       (33.856892,  -80.945007),
+    "south dakota":         (44.299782,  -99.438828),
+    "tennessee":            (35.747845,  -86.692345),
+    "texas":                (31.054487,  -97.563461),
+    "utah":                 (40.150032, -111.862434),
+    "vermont":              (44.045876,  -72.710686),
+    "virginia":             (37.769337,  -78.169968),
+    "washington":           (47.400902, -121.490494),
+    "west virginia":        (38.491226,  -80.954453),
+    "wisconsin":            (44.268543,  -89.616508),
+    "wyoming":              (42.755966, -107.302490),
+    "puerto rico":          (18.220833,  -66.590149),
+    "guam":                 (13.444304, 144.793732),
+    "us virgin islands":    (18.335765,  -64.896335),
+}
+
+
+def state_to_latlon(state: Optional[str]) -> Tuple[Optional[float], Optional[float]]:
+    """Resolve a US state name to a (lat, lon) centroid.
+
+    Accepts free-form casing / whitespace. Returns ``(None, None)`` when the
+    state is unknown (foreign locations, blanks). The centroid is the state's
+    population-weighted center, which is sufficient for AEZ lookup at this
+    layer-3 grid resolution.
+    """
+    if not state:
+        return None, None
+    key = str(state).strip().lower()
+    if not key:
+        return None, None
+    hit = US_STATE_CENTROID.get(key)
+    if hit is not None:
+        return hit
+    # Tolerate "St." / "Saint" / hyphenation variants
+    cleaned = key.replace(".", "").replace("st ", "saint ")
+    return US_STATE_CENTROID.get(cleaned, (None, None))

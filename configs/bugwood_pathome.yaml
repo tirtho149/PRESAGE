@@ -2,18 +2,26 @@
 # ====================
 # Train-on-the-Wild config (paper §5, pathome_final).
 #
-# Generates 5,460 PlantSwarm routing traces from 7 Bugwood images per disease
-# class (26 classes -> 182 unique training images, 30 runs each at T=0.9).
-# The remaining 3 images per class -> PathomeDB Layer-5 reference library.
+# Source of truth is BugWood_Diseases.csv (Bugwood IPMNet export). For each
+# (crop, disease) class with >=min_per_class candidate rows, the loader keeps
+# the first per_class images (sorted by Image Number) and splits trace_split
+# -> trace generation, the remainder -> PathomeDB Layer-5 references. The
+# paper's 26-class subset is no longer enforced; the full Bugwood class
+# distribution is admitted.
 
 data:
-  bugwood_root: "/work/mech-ai-scratch/tirtho/Curated_Bugwood_Dataset/Images"
+  csv_path: "BugWood_Diseases_usable.csv"  # 484 classes, threshold>=10; regen via scripts/filter_bugwood_csv.py
+  image_cache_dir: ".bugwood_cache"
   per_class: 10
   trace_split: 7              # first 7 -> traces; remaining 3 -> Layer 5
+  min_per_class: 10           # filtered CSV already enforces this; kept as a guard
+  download:
+    enabled: true
+    timeout: 20
+    retries: 2
   quality_filters:
-    min_side: 512
-    max_gps_precision_km: 10.0
-    require_gps: true
+    min_side: 256             # Bugwood thumbnails go down to 768x512
+    require_state: true       # state -> centroid -> AEZ for Layer 3
     require_disease_label: true
 
   label_cols:

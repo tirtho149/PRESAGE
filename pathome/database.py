@@ -1,24 +1,33 @@
 """
 pathome/database.py
 ===================
-Top-level orchestrator for the five PathomeDB layers (paper §6).
+PathomeDB: a visual-symptom-centric, geo-aware knowledge base.
 
-Used by:
-  * ``PlantSwarmPipeline`` / ``AutoGenPlantSwarmPipeline`` — agents consult
-    Layer 4 for the next required visual feature; Layer 1+2 for mechanism
-    grounding; Layer 3 for the geo prior.
-  * ``OBSERVE`` (paper §7) — Layer 3 phi_geo, Layer 5 Ref_{1:3}, Layer 4
-    G_t are all inputs alongside image + context.
+Two stores. That's it.
+
+    db.symptoms : SymptomLibrary       what each (crop, disease) looks like,
+                                       plus state/AEZ observation counts
+    db.refs     : ReferenceLibrary     held-out images for visual retrieval
+
+Older versions of this file split knowledge across five layers (mechanistic
+pathway, cross-crop manifestation, regional epidemiology, decision graph,
+reference library). That layering was more confusing than helpful given the
+data we actually have — the Bugwood CSV doesn't carry the metadata the
+mechanistic / decision-graph layers were designed for. The new design keeps
+the two things the data does support — visual symptoms and geo-aware priors
+— and folds them into a single profile per (crop, disease).
 
 Build / load:
 
     from pathome import PathomeDB
-    db = PathomeDB.build_from_bugwood(records, layer1_path, ...)
+    db = PathomeDB.build_from_bugwood(trace_records, reference_records)
     db.save("artifacts/pathome_v1/")
 
     db = PathomeDB.load("artifacts/pathome_v1/")
-    prior = db.geo_prior(disease="Anthracnose", lat=6.5, lon=3.4, month=7)
-    refs = db.retrieve_references(image, lat=6.5, lon=3.4, top_k=3)
+    prior = db.geo_prior(disease="Anthracnose", lat=35.6, lon=-79.8)
+    refs  = db.retrieve_references(image, lat=35.6, lon=-79.8)
+
+Query API kept stable for ``agents/base_agent.py`` and the run scripts.
 """
 
 from __future__ import annotations
@@ -29,48 +38,64 @@ from typing import Iterable, List, Optional
 
 from PIL import Image
 
-from .layer1_pathway import (
-    MechanisticPathway,
-    all_builtin as _builtin_pathways,
-    load as _load_pathways,
-    save as _save_pathways,
-)
-from .layer2_manifestation import CrossCropManifestation
-from .layer3_geo import RegionalEpidemiology
-from .layer4_decision_graph import DiagnosticDecisionGraph, build_demo_graph
-from .layer5_references import ReferenceLibrary, ReferenceImage, RetrievalHit
-from utils.geo import aez_lookup
+from .layer5_references import ReferenceImage, ReferenceLibrary, RetrievalHit
+from .symptoms import SymptomLibrary, SymptomProfile, VisualSymptom
+from utils.geo import US_STATE_CENTROID, aez_lookup
 
+
+# ---------------------------------------------------------------------------
+# GeoPriorResult — return shape kept for API compatibility with old callers.
+# ---------------------------------------------------------------------------
 
 @dataclass
 class GeoPriorResult:
-    """What OBSERVE consumes when querying Layer 3."""
+    """What OBSERVE / agents consume when querying the geo-aware prior."""
     disease: str
+    state: Optional[str]            # resolved from (lat, lon) via state-centroid match
     aez_code: Optional[str]
-    month: Optional[int]
-    prior: Optional[float]      # P̂(d|r,σ); None when sparse → use ``global_prior``
+    prior: Optional[float]          # P(disease | state); None when sparse → use ``global_prior``
     global_prior: float
     is_sparse: bool
 
 
+# ---------------------------------------------------------------------------
+# Helpers
+# ---------------------------------------------------------------------------
+
+def _nearest_state(lat: Optional[float], lon: Optional[float]) -> Optional[str]:
+    """Reverse-geocode (lat, lon) to the nearest US state name.
+
+    The CSV ingest path uses state centroids, so this simply finds the
+    closest centroid. Returns the human-readable state (Title Case).
+    """
+    if lat is None or lon is None:
+        return None
+    best_state: Optional[str] = None
+    best_d = float("inf")
+    for state, (slat, slon) in US_STATE_CENTROID.items():
+        d = (slat - lat) ** 2 + (slon - lon) ** 2
+        if d < best_d:
+            best_d = d
+            best_state = state
+    return best_state.title() if best_state else None
+
+
+# ---------------------------------------------------------------------------
+# PathomeDB
+# ---------------------------------------------------------------------------
+
 class PathomeDB:
-    """All five layers behind one object."""
+    """Symptom-centric, geo-aware knowledge base."""
 
     def __init__(
         self,
-        layer1: Optional[List[MechanisticPathway]] = None,
-        layer2: Optional[CrossCropManifestation] = None,
-        layer3: Optional[RegionalEpidemiology] = None,
-        layer4: Optional[DiagnosticDecisionGraph] = None,
-        layer5: Optional[ReferenceLibrary] = None,
-        version: str = "v1.0",
+        symptoms: Optional[SymptomLibrary] = None,
+        refs: Optional[ReferenceLibrary] = None,
+        version: str = "v2.0",
     ):
         self.version = version
-        self.layer1: List[MechanisticPathway] = layer1 if layer1 is not None else _builtin_pathways()
-        self.layer2: CrossCropManifestation = layer2 if layer2 is not None else CrossCropManifestation()
-        self.layer3: RegionalEpidemiology = layer3 if layer3 is not None else RegionalEpidemiology()
-        self.layer4: DiagnosticDecisionGraph = layer4 if layer4 is not None else build_demo_graph()
-        self.layer5: ReferenceLibrary = layer5 if layer5 is not None else ReferenceLibrary()
+        self.symptoms: SymptomLibrary = symptoms if symptoms is not None else SymptomLibrary()
+        self.refs: ReferenceLibrary = refs if refs is not None else ReferenceLibrary()
 
     # ------------------------------------------------------------------
     # Build
@@ -81,67 +106,71 @@ class PathomeDB:
         cls,
         trace_records: Iterable,
         reference_records: Iterable,
-        layer1_path: Optional[str] = None,
-        layer2_path: Optional[str] = None,
-        version: str = "v1.0",
+        symptoms_path: Optional[str] = None,
+        version: str = "v2.0",
+        # Legacy kwargs accepted for backward compatibility with old call sites.
+        # They do not influence the build — Layer 1/2/4 are no longer separate.
+        layer1_path: Optional[str] = None,    # noqa: ARG003 (kept for compat)
+        layer2_path: Optional[str] = None,    # noqa: ARG003 (kept for compat)
     ) -> "PathomeDB":
-        """
-        Build a fresh PathomeDB from the 7-trace and 3-reference Bugwood splits.
+        """Build a fresh PathomeDB from the trace + reference Bugwood splits.
 
-        Layer 1 / Layer 2 come from the curated knowledge files; Layer 3 is
-        built directly from the trace records' GPS metadata; Layer 5 is built
-        from the reference records.
+        ``symptoms_path`` is an optional JSON of curator-authored visual
+        descriptions; auto-derived geo counts and reference IDs are layered
+        on top so the curated visual block is preserved.
         """
-        l1 = _load_pathways(layer1_path) if layer1_path else _builtin_pathways()
-        l2 = CrossCropManifestation.load(layer2_path) if layer2_path else CrossCropManifestation()
-        l3 = RegionalEpidemiology()
-        l3.ingest_records(trace_records)
-        l5 = ReferenceLibrary()
-        for r in reference_records:
-            ref = ReferenceImage(
+        symptoms = (
+            SymptomLibrary.load(symptoms_path)
+            if symptoms_path else SymptomLibrary()
+        )
+
+        # Materialise once so we can iterate twice (records may be a generator).
+        trace_list = list(trace_records)
+        ref_list = list(reference_records)
+
+        symptoms.update_from_records(trace_list, ref_list)
+        symptoms.finalize_reobservation_prompts()
+
+        refs = ReferenceLibrary()
+        for r in ref_list:
+            refs.add(ReferenceImage(
                 ref_id=r.image_id,
                 image_path=r.src_path,
                 crop_species=r.crop_species,
                 disease_name=r.disease_name,
                 lat=r.lat, lon=r.lon, aez_code=r.aez_code,
-            )
-            l5.add(ref)
-        return cls(layer1=l1, layer2=l2, layer3=l3, layer5=l5, version=version)
+            ))
+
+        return cls(symptoms=symptoms, refs=refs, version=version)
 
     # ------------------------------------------------------------------
-    # Query helpers used by PlantSwarm / OBSERVE
+    # Query — kept stable for agents/base_agent.py and run scripts
     # ------------------------------------------------------------------
-
-    def pathway(self, pathogen_genus: str) -> Optional[MechanisticPathway]:
-        for pw in self.layer1:
-            if pw.pathogen_genus.lower() == pathogen_genus.lower():
-                return pw
-        return None
-
-    def manifestation(self, pathogen_genus: str, host_crop: str):
-        return self.layer2.get(pathogen_genus, host_crop)
 
     def geo_prior(
         self,
         disease: str,
         lat: Optional[float],
         lon: Optional[float],
-        month: Optional[int],
+        month: Optional[int] = None,    # accepted for compat; ignored
     ) -> GeoPriorResult:
+        """P(disease | state) where ``state`` is the nearest US state centroid.
+
+        ``month`` is accepted for backward compatibility with the old
+        signature but is unused — the CSV has no capture date and the
+        symptom-centric library does not maintain a time axis.
+        """
+        state = _nearest_state(lat, lon)
         aez = aez_lookup(lat, lon) if (lat is not None and lon is not None) else None
         aez_code = aez.code if aez else None
-        prior = (
-            self.layer3.prior(disease, aez_code, month)
-            if (aez_code and month) else None
-        )
+        prior = self.symptoms.geo_prior(disease, state)
         return GeoPriorResult(
             disease=disease,
+            state=state,
             aez_code=aez_code,
-            month=month,
             prior=prior,
-            global_prior=self.layer3.global_prior(disease),
-            is_sparse=(aez_code is None or month is None
-                       or self.layer3.is_sparse(aez_code, month)),
+            global_prior=self.symptoms.global_prior(disease),
+            is_sparse=self.symptoms.is_sparse_in_state(disease, state),
         )
 
     def retrieve_references(
@@ -152,11 +181,28 @@ class PathomeDB:
         top_k: int = 3,
         constrain_disease: Optional[str] = None,
     ) -> List[RetrievalHit]:
-        return self.layer5.retrieve(
+        return self.refs.retrieve(
             query_image=query_image,
             query_lat=lat, query_lon=lon,
             top_k=top_k, constrain_disease=constrain_disease,
         )
+
+    def reobservation_prompt(
+        self, crop: str, disease: str, default: str = "",
+    ) -> str:
+        """Targeted re-examination text for low-confidence backtracks.
+
+        Replaces the old ``db.layer4.root().reobservation_prompt`` lookup
+        with a per-(crop, disease) prompt drawn from the symptom profile's
+        visual block.
+        """
+        return self.symptoms.reobservation_prompt(crop, disease, default)
+
+    def symptom_profile(self, crop: str, disease: str) -> Optional[SymptomProfile]:
+        return self.symptoms.get(crop, disease)
+
+    def prevalent_in_state(self, state: str, top_k: int = 5):
+        return self.symptoms.prevalent_in_state(state, top_k=top_k)
 
     # ------------------------------------------------------------------
     # Persistence
@@ -165,25 +211,26 @@ class PathomeDB:
     def save(self, dirpath: str) -> None:
         d = Path(dirpath)
         d.mkdir(parents=True, exist_ok=True)
-        _save_pathways(self.layer1, str(d / "layer1_pathways.json"))
-        self.layer2.save(str(d / "layer2_manifestations.json"))
-        self.layer3.save(str(d / "layer3_geo.json"))
-        self.layer4.save(str(d / "layer4_decision_graph.json"))
-        self.layer5.save(str(d / "layer5_refs"))
+        self.symptoms.save(str(d / "symptoms.json"))
+        self.refs.save(str(d / "refs"))
         with open(d / "version.txt", "w") as f:
             f.write(self.version + "\n")
 
     @classmethod
     def load(cls, dirpath: str) -> "PathomeDB":
         d = Path(dirpath)
-        l1 = _load_pathways(str(d / "layer1_pathways.json")) if (d / "layer1_pathways.json").exists() else _builtin_pathways()
-        l2 = (CrossCropManifestation.load(str(d / "layer2_manifestations.json"))
-              if (d / "layer2_manifestations.json").exists() else CrossCropManifestation())
-        l3 = (RegionalEpidemiology.load(str(d / "layer3_geo.json"))
-              if (d / "layer3_geo.json").exists() else RegionalEpidemiology())
-        l4 = (DiagnosticDecisionGraph.load(str(d / "layer4_decision_graph.json"))
-              if (d / "layer4_decision_graph.json").exists() else build_demo_graph())
-        l5 = (ReferenceLibrary.load(str(d / "layer5_refs"))
-              if (d / "layer5_refs").exists() else ReferenceLibrary())
-        version = (d / "version.txt").read_text().strip() if (d / "version.txt").exists() else "unknown"
-        return cls(layer1=l1, layer2=l2, layer3=l3, layer4=l4, layer5=l5, version=version)
+        symptoms_path = d / "symptoms.json"
+        refs_path = d / "refs"
+        symptoms = (
+            SymptomLibrary.load(str(symptoms_path))
+            if symptoms_path.exists() else SymptomLibrary()
+        )
+        refs = (
+            ReferenceLibrary.load(str(refs_path))
+            if refs_path.exists() else ReferenceLibrary()
+        )
+        version = (
+            (d / "version.txt").read_text().strip()
+            if (d / "version.txt").exists() else "unknown"
+        )
+        return cls(symptoms=symptoms, refs=refs, version=version)

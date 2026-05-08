@@ -42,8 +42,9 @@ def main() -> None:
         cfg = yaml.safe_load(f)
 
     out_dir = args.out_dir or cfg["pathome"]["out_dir"]
+    source = cfg["data"].get("csv_path") or cfg["data"].get("bugwood_root", "<unset>")
     print(f"Building PathomeDB → {out_dir}")
-    print(f"Source: {cfg['data']['bugwood_root']}")
+    print(f"Source: {source}")
 
     print("\nLoading Bugwood records...")
     trace_loader = BugwoodLoader(cfg["data"], split="trace")
@@ -75,18 +76,21 @@ def main() -> None:
     db = PathomeDB.build_from_bugwood(
         trace_records=trace_records,
         reference_records=ref_records,
-        layer1_path=cfg["pathome"].get("layer1_path"),
-        layer2_path=cfg["pathome"].get("layer2_path"),
-        version=cfg["pathome"].get("version", "v1.0"),
+        symptoms_path=cfg["pathome"].get("symptoms_path"),
+        version=cfg["pathome"].get("version", "v2.0"),
     )
 
-    print(f"  Layer 1 — {len(db.layer1)} pathogen pathways")
-    print(f"  Layer 2 — {len(db.layer2)} cross-crop manifestations")
-    region_cells = sum(1 for v in db.layer3._region_totals.values() if v > 0)
-    print(f"  Layer 3 — {region_cells} populated AEZ-month cells")
-    print(f"  Layer 4 — decision graph rooted at "
-          f"{db.layer4.root().node_id if db.layer4.root() else 'EMPTY'}")
-    print(f"  Layer 5 — {len(db.layer5)} reference images")
+    populated_states = {
+        s for prof in db.symptoms for s in prof.state_counts
+    }
+    profiles_with_visual = sum(
+        1 for prof in db.symptoms if not prof.visual.is_empty()
+    )
+    print(f"  symptoms : {len(db.symptoms)} (crop, disease) profiles "
+          f"({profiles_with_visual} with curated visual descriptions)")
+    print(f"  geo      : {len(populated_states)} states observed across "
+          f"{sum(p.total_observations for p in db.symptoms)} records")
+    print(f"  refs     : {len(db.refs)} held-out reference images")
 
     if args.dry_run:
         print("\n[dry-run] Skipping save.")
@@ -95,15 +99,16 @@ def main() -> None:
     db.save(out_dir)
     print(f"\nPathomeDB v{db.version} saved to {out_dir}")
 
-    # Manifest snapshot for traceability
     summary = {
         "version": db.version,
         "trace_records": len(trace_records),
         "reference_records": len(ref_records),
         "classes": len(classes),
         "gps_coverage": with_gps,
-        "layer3_cells": region_cells,
-        "layer5_size": len(db.layer5),
+        "symptom_profiles": len(db.symptoms),
+        "profiles_with_visual": profiles_with_visual,
+        "states_observed": len(populated_states),
+        "refs_size": len(db.refs),
     }
     with open(os.path.join(out_dir, "build_summary.json"), "w") as f:
         json.dump(summary, f, indent=2)
