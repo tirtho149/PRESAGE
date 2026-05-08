@@ -56,6 +56,16 @@ if [ ! -d "smoke/.bugwood_cache" ] || [ -z "$(ls -A smoke/.bugwood_cache 2>/dev/
   exit 1
 fi
 
+# Top up the cache so EVERY (crop, disease, state) tuple has an image.
+# Phase 1's loader only downloaded per_class=4 per (crop, disease); without
+# this top-up the image-fill stage skips ~58% of tuples for "no cached image".
+echo "================================================================="
+echo "  Pre-step: state-aware cache top-up"
+echo "================================================================="
+python3 scripts/ensure_state_image_cache.py \
+  --csv "$USABLE_CSV" \
+  --cache-dir "smoke/.bugwood_cache"
+
 echo "================================================================="
 echo "  Smoke Phase 0 — IMAGE-FILL pass (Tomato + Soybean, VLM)"
 echo "================================================================="
