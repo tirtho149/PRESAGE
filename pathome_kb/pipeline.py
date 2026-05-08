@@ -40,6 +40,7 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 
 from .internet_pipeline import run_internet_pipeline
+from .regional_extraction import build_state_image_map, run_regional_extraction
 from .symptoms_adapter import merge_registries_to_seed, write_seed_json
 from .utils import OUTPUT_DIR, get_crop_dir, load_json
 
@@ -130,6 +131,14 @@ def parse_args() -> argparse.Namespace:
                    help="ignore cached per-crop final_registry.json — re-run from scratch")
     p.add_argument("--seed-min-observations", type=int, default=3,
                    help="min_observations carried into the SymptomLibrary seed")
+    p.add_argument("--regional", action="store_true",
+                   help="after the cross-region run, do a per-state extraction "
+                        "pass that produces SymptomProfile.regional_visuals "
+                        "with image_id-tagged citations")
+    p.add_argument("--regional-only", action="store_true",
+                   help="skip the cross-region pipeline entirely; only run the "
+                        "per-state pass against cached raw_extractions.json. "
+                        "Useful when you've already produced final_registry.json")
     return p.parse_args()
 
 
@@ -157,20 +166,30 @@ def main() -> None:
     registries: List[Tuple[str, dict]] = []
     failures: List[str] = []
 
-    for i, crop in enumerate(crops, 1):
-        diseases = by_crop[crop]
-        print(f"\n[{i}/{len(crops)}] {crop}")
-        registry = run_one_crop(
-            crop=crop,
-            diseases=diseases,
-            quick=args.quick,
-            resume_from=args.resume_from,
-            keep_cached=keep_cached,
-        )
-        if registry is None:
-            failures.append(crop)
-            continue
-        registries.append((crop, registry))
+    if not args.regional_only:
+        for i, crop in enumerate(crops, 1):
+            diseases = by_crop[crop]
+            print(f"\n[{i}/{len(crops)}] {crop}")
+            registry = run_one_crop(
+                crop=crop,
+                diseases=diseases,
+                quick=args.quick,
+                resume_from=args.resume_from,
+                keep_cached=keep_cached,
+            )
+            if registry is None:
+                failures.append(crop)
+                continue
+            registries.append((crop, registry))
+    else:
+        # regional-only: load the cached final_registry.json for each crop
+        for crop in crops:
+            final_path = get_crop_dir(crop) / "final_registry.json"
+            if final_path.is_file():
+                registries.append((crop, load_json(
+                    "final_registry.json", output_dir=get_crop_dir(crop))))
+            else:
+                print(f"  [skip] no final_registry.json for {crop}")
 
     print(f"\nfinished {len(registries)}/{len(crops)} crops "
           f"in {time.time() - t0:.0f}s; failures: {len(failures)}")
@@ -178,9 +197,24 @@ def main() -> None:
         print("  failed crops: " + ", ".join(failures))
         print("  re-run pipeline.py to retry just the failed ones (cached crops skipped)")
 
+    # ---------------- Optional: regional (per-state) extraction ----------------
+    regional_by_crop: Dict[str, Dict[str, Dict[str, dict]]] = {}
+    if args.regional or args.regional_only:
+        print(f"\n{'='*60}\nREGIONAL (per-state) EXTRACTION STAGE\n{'='*60}")
+        state_image_map = build_state_image_map(csv_path)
+        for crop in crops:
+            diseases = by_crop[crop]
+            regional_by_crop[crop] = run_regional_extraction(
+                crop=crop,
+                diseases=diseases,
+                state_image_map=state_image_map,
+                quick=args.quick,
+            )
+
     seed_payload = merge_registries_to_seed(
         registries=registries,
         expected_classes=expected,
+        regional_by_crop=regional_by_crop,
         min_observations=args.seed_min_observations,
     )
     out_path = Path(args.out)
@@ -190,10 +224,14 @@ def main() -> None:
         1 for prof in seed_payload["profiles"]
         if (prof.get("visual") or {}).get("notes") or (prof.get("visual") or {}).get("distinctive_signs")
     )
+    n_with_regional = sum(
+        1 for prof in seed_payload["profiles"] if prof.get("regional_visuals")
+    )
     print(f"\nseed written: {out_path}")
-    print(f"  profiles total      : {len(seed_payload['profiles'])}")
-    print(f"  profiles with data  : {n_with_data}")
-    print(f"  profiles still empty: {len(seed_payload['profiles']) - n_with_data}")
+    print(f"  profiles total           : {len(seed_payload['profiles'])}")
+    print(f"  profiles w/ visual data  : {n_with_data}")
+    print(f"  profiles w/ regional data: {n_with_regional}")
+    print(f"  profiles still empty     : {len(seed_payload['profiles']) - n_with_data}")
 
 
 if __name__ == "__main__":

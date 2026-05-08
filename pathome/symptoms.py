@@ -43,14 +43,16 @@ class Citation:
     """A single (value, url, quote) record supporting one VisualSymptom field.
 
     Mirrors the SAGE/disease_registry provenance schema: the URL and the
-    verbatim quote from that URL that supports the field's value. Keeping
-    citations on the profile lets the paper claim "every visual fact is
-    traceable to a sourced extension-service or APS publication."
+    verbatim quote from that URL that supports the field's value. ``image_id``
+    optionally ties the citation to a Bugwood reference image (``bugwood::N``)
+    so downstream consumers can show the supporting field photograph next to
+    the source quote.
     """
 
     value: str = ""              # the extracted fact (string or "; "-joined list)
     url: str = ""                # source page / pdf://...
     quote: str = ""              # verbatim sentence supporting `value`
+    image_id: str = ""           # optional: Bugwood image ID grounding this citation
 
 
 @dataclass
@@ -80,6 +82,10 @@ class VisualSymptom:
     confusion_diseases: List[str] = field(default_factory=list)  # easily-confused diseases
     notes: str = ""
     sources: Dict[str, List[Citation]] = field(default_factory=dict)
+    # Bugwood image IDs that ground this visual block. For the per-state
+    # regional_visuals these are the images photographed in that state; for
+    # the cross-region default visual the list is empty.
+    reference_image_ids: List[str] = field(default_factory=list)
 
     def is_empty(self) -> bool:
         return not any([
@@ -144,6 +150,12 @@ class SymptomProfile:
     crop: str
     disease: str
     visual: VisualSymptom = field(default_factory=VisualSymptom)
+    # Per-state visual blocks. Keys are US state names (matching Location
+    # in the Bugwood CSV). Each VisualSymptom mirrors the cross-region
+    # block but its citations carry image_id pointers to Bugwood images
+    # photographed in that state. Empty by default; populated by the
+    # regional extraction pass in pathome_kb.
+    regional_visuals: Dict[str, VisualSymptom] = field(default_factory=dict)
     state_counts: Dict[str, int] = field(default_factory=dict)
     aez_counts: Dict[str, int] = field(default_factory=dict)
     total_observations: int = 0
@@ -175,10 +187,9 @@ class SymptomProfile:
         d = asdict(self)
         return d
 
-    @classmethod
-    def from_dict(cls, d: dict) -> "SymptomProfile":
-        v = dict(d.get("visual") or {})
-        # sources: {field: [Citation-like dict, ...]} → rehydrate Citations.
+    @staticmethod
+    def _hydrate_visual(raw: Optional[dict]) -> VisualSymptom:
+        v = dict(raw or {})
         raw_sources = v.get("sources") or {}
         rehydrated: Dict[str, List[Citation]] = {}
         for k, items in raw_sources.items():
@@ -189,17 +200,29 @@ class SymptomProfile:
                     value=str(it.get("value", "")),
                     url=str(it.get("url", "")),
                     quote=str(it.get("quote", "")),
+                    image_id=str(it.get("image_id", "")),
                 )
                 for it in items if isinstance(it, dict)
             ]
         v["sources"] = rehydrated
+        v["reference_image_ids"] = list(v.get("reference_image_ids") or [])
+        return VisualSymptom(**v)
+
+    @classmethod
+    def from_dict(cls, d: dict) -> "SymptomProfile":
+        regional_raw = d.get("regional_visuals") or {}
+        regional: Dict[str, VisualSymptom] = {
+            state: cls._hydrate_visual(blob)
+            for state, blob in regional_raw.items() if isinstance(blob, dict)
+        }
         sw_raw = d.get("swarm_observations")
         sw = SwarmObservations(**sw_raw) if isinstance(sw_raw, dict) else None
         return cls(
             profile_id=d["profile_id"],
             crop=d["crop"],
             disease=d["disease"],
-            visual=VisualSymptom(**v),
+            visual=cls._hydrate_visual(d.get("visual")),
+            regional_visuals=regional,
             state_counts=dict(d.get("state_counts") or {}),
             aez_counts=dict(d.get("aez_counts") or {}),
             total_observations=int(d.get("total_observations", 0)),

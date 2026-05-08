@@ -43,6 +43,8 @@ import json
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
+from .utils import save_json  # noqa: F401
+
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -140,6 +142,7 @@ def disease_to_profile_dict(
         "confusion_diseases": look_alikes,
         "notes": notes,
         "sources": sources,
+        "reference_image_ids": [],
     }
 
     return {
@@ -147,6 +150,7 @@ def disease_to_profile_dict(
         "crop": crop,
         "disease": disease,
         "visual": visual,
+        "regional_visuals": {},
         "state_counts": {},
         "aez_counts": {},
         "total_observations": 0,
@@ -160,9 +164,78 @@ def disease_to_profile_dict(
 # Merge per-crop registries → SymptomLibrary seed JSON
 # ---------------------------------------------------------------------------
 
+def regional_record_to_visual_dict(
+    state: str,
+    record: dict,
+) -> dict:
+    """Convert a per-state regional registry record (from
+    ``regional_extraction``) into a VisualSymptom-shaped dict, with
+    image_id-tagged citations and reference_image_ids populated.
+    """
+    summary = record.get("summary") or {}
+    diagnostic = record.get("diagnostic_features") or {}
+    affected = record.get("affected_parts") or {}
+    look = record.get("look_alikes") or {}
+    image_ids = list(record.get("__image_ids__") or [])
+    primary_image = image_ids[0] if image_ids else ""
+
+    plant_parts = _strs(_val(affected))
+    distinctive_signs = _strs(_val(diagnostic))
+    confusion_diseases = _strs(_val(look))
+    notes = str(_val(summary) or "")
+
+    sources: Dict[str, List[dict]] = {}
+
+    def _cite(field_dict: dict, ground_image: bool = True) -> Optional[dict]:
+        if not isinstance(field_dict, dict):
+            return None
+        v = field_dict.get("value")
+        if v in (None, "", []):
+            return None
+        if isinstance(v, list):
+            v = "; ".join(str(x) for x in v if x)
+        url = (field_dict.get("url") or "").strip()
+        quote = (field_dict.get("quote") or "").strip()
+        if not (url or quote):
+            return None
+        out = {"value": str(v), "url": url, "quote": quote}
+        if ground_image and primary_image:
+            out["image_id"] = primary_image
+        return out
+
+    cit = _cite(affected)
+    if cit and plant_parts:
+        sources["plant_parts"] = [cit]
+    cit = _cite(diagnostic)
+    if cit and distinctive_signs:
+        sources["distinctive_signs"] = [cit]
+    cit = _cite(look)
+    if cit and confusion_diseases:
+        sources["confusion_diseases"] = [cit]
+    cit = _cite(summary)
+    if cit and notes:
+        sources["notes"] = [cit]
+
+    return {
+        "plant_parts": plant_parts,
+        "color": [],
+        "shape": "",
+        "margin": "",
+        "texture": [],
+        "sporulation": [],
+        "distinctive_signs": distinctive_signs,
+        "progression": "",
+        "confusion_diseases": confusion_diseases,
+        "notes": notes,
+        "sources": sources,
+        "reference_image_ids": image_ids,
+    }
+
+
 def merge_registries_to_seed(
     registries: Iterable[Tuple[str, dict]],
     expected_classes: Iterable[Tuple[str, str]],
+    regional_by_crop: Optional[Dict[str, Dict[str, Dict[str, dict]]]] = None,
     min_observations: int = 3,
 ) -> dict:
     """Merge crop→registry pairs into the seed JSON.
@@ -170,6 +243,12 @@ def merge_registries_to_seed(
     For every (crop, disease) in ``expected_classes`` we emit one
     SymptomProfile. If the registry has data, we use it; otherwise we
     emit an empty profile so the build pass picks it up.
+
+    ``regional_by_crop`` is the optional output of
+    ``regional_extraction.run_regional_extraction``: a dict mapping
+    ``crop -> profile_id -> state -> regional_record``. When supplied,
+    each profile's ``regional_visuals[state]`` is populated alongside
+    the cross-region ``visual``.
     """
     by_crop_disease: Dict[Tuple[str, str], dict] = {}
     for crop, registry in registries:
@@ -181,10 +260,22 @@ def merge_registries_to_seed(
                 continue
             by_crop_disease[(crop, disease)] = d
 
+    regional_by_crop = regional_by_crop or {}
+
     profiles = []
     for crop, disease in expected_classes:
         record = by_crop_disease.get((crop, disease)) or {}
-        profiles.append(disease_to_profile_dict(crop, disease, record))
+        prof = disease_to_profile_dict(crop, disease, record)
+        # Attach regional_visuals[state] when we have a regional record.
+        crop_regional = regional_by_crop.get(crop) or {}
+        per_profile_regional = crop_regional.get(prof["profile_id"]) or {}
+        if per_profile_regional:
+            prof["regional_visuals"] = {
+                state: regional_record_to_visual_dict(state, rec)
+                for state, rec in per_profile_regional.items()
+                if isinstance(rec, dict)
+            }
+        profiles.append(prof)
 
     return {
         "min_observations": min_observations,
