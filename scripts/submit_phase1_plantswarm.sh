@@ -54,6 +54,14 @@ source /work/mech-ai-scratch/tirtho/PlantSwarm/.venv/bin/activate
 # Create logs directory
 mkdir -p logs
 
+# Avoid PyTorch caching-allocator fragmentation across many short generations.
+# expandable_segments lets the allocator return memory to the driver between
+# images instead of holding it as reserved-but-unallocated, which was the
+# root cause of the cross-image OOM in Job 10534378.
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+# Stop the HF tokenizer's worker threads from doubling tokenizer memory.
+export TOKENIZERS_PARALLELISM=false
+
 # ----------------------------------------------------------------------------
 # Mode A (default): hf_direct — single GPU, no server, simplest. Slow on V100.
 # Mode B: autogen_swarm — boots a vLLM server in this job, then runs the swarm.

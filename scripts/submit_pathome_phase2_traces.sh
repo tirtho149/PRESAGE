@@ -41,6 +41,10 @@ echo "================================"
 module load python cuda/11.8
 source /work/mech-ai-scratch/tirtho/PlantSwarm/.venv/bin/activate
 
+# Allocator hygiene — required for hf_direct fallback mode, harmless under vLLM.
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+export TOKENIZERS_PARALLELISM=false
+
 CONFIG="${PATHOME_CONFIG:-configs/bugwood_pathome.yaml}"
 DB_DIR="${PATHOME_DB_DIR:-artifacts/pathome_v1_seed}"
 OUT_DIR="${PATHOME_OUT_DIR:-results/bugwood_seed}"

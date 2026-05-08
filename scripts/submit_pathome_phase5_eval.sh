@@ -35,6 +35,10 @@ echo "================================"
 
 module load python cuda/11.8
 source /work/mech-ai-scratch/tirtho/PlantSwarm/.venv/bin/activate
+
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+export TOKENIZERS_PARALLELISM=false
+
 mkdir -p logs
 
 PV_CONFIG="${PATHOME_PV_CONFIG:-configs/plantvillage_full_eval.yaml}"

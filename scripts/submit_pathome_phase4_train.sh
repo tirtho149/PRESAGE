@@ -41,6 +41,9 @@ echo "================================"
 module load python cuda/11.8
 source /work/mech-ai-scratch/tirtho/PlantSwarm/.venv/bin/activate
 
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+export TOKENIZERS_PARALLELISM=false
+
 CONFIG="${PATHOME_CONFIG:-configs/bugwood_pathome.yaml}"
 SEED_DB="${PATHOME_SEED_DB:-artifacts/pathome_v1_seed}"
 ENH_DB="${PATHOME_ENHANCED_DB:-artifacts/pathome_v1_enhanced}"

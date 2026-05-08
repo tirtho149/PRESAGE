@@ -39,22 +39,32 @@ def _load_model(model_name: str):
     import torch
     from transformers import AutoProcessor
 
-    # ------------------------------------------------------------------ #
-    # FIX: Qwen2.5-VL uses Qwen2_5_VLForConditionalGeneration,           #
-    #      NOT Qwen2VLForConditionalGeneration.                           #
-    #      The two architectures have different hidden sizes              #
-    #      (e.g. 3584 vs 1280) and are NOT interchangeable.              #
-    # ------------------------------------------------------------------ #
+    # bf16 is the recommended dtype for Qwen2.5-VL on A100/H100 — same memory
+    # footprint as fp16 but stable attention numerics on long sequences.
+    # low_cpu_mem_usage avoids briefly holding the model in fp32 host memory
+    # before casting, which on tight nodes can OOM during load.
+    dtype = torch.bfloat16
+
+    # On a single GPU, prefer .to("cuda") over device_map="auto"; the
+    # accelerate hooks installed by device_map reserve hidden offload buffers
+    # we never use here.
+    use_device_map = torch.cuda.device_count() > 1
+
+    common_kwargs: Dict[str, Any] = dict(
+        dtype=dtype,
+        low_cpu_mem_usage=True,
+    )
+    if use_device_map:
+        common_kwargs["device_map"] = "auto"
+
     _is_qwen25vl = "Qwen2.5" in model_name or "qwen2_5" in model_name.lower()
-    _is_qwen2vl  = ("Qwen2" in model_name) and not _is_qwen25vl
+    _is_qwen2vl = ("Qwen2" in model_name) and not _is_qwen25vl
 
     if _is_qwen25vl:
         try:
-            from transformers import Qwen2_5_VLForConditionalGeneration  # FIX
-            model = Qwen2_5_VLForConditionalGeneration.from_pretrained(   # FIX
-                model_name,
-                dtype=torch.float16,      # FIX: torch_dtype is deprecated, use dtype
-                device_map="auto",
+            from transformers import Qwen2_5_VLForConditionalGeneration
+            model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+                model_name, **common_kwargs,
             )
         except (ImportError, OSError) as e:
             raise RuntimeError(
@@ -65,9 +75,7 @@ def _load_model(model_name: str):
         try:
             from transformers import Qwen2VLForConditionalGeneration
             model = Qwen2VLForConditionalGeneration.from_pretrained(
-                model_name,
-                dtype=torch.float16,      # FIX: torch_dtype is deprecated, use dtype
-                device_map="auto",
+                model_name, **common_kwargs,
             )
         except (ImportError, OSError) as e:
             raise RuntimeError(
@@ -75,27 +83,42 @@ def _load_model(model_name: str):
             ) from e
 
     else:
-        # Qwen3-VL or any other architecture — let AutoModel figure it out
         from transformers import AutoModelForVision2Seq
         model = AutoModelForVision2Seq.from_pretrained(
-            model_name,
-            dtype=torch.float16,          # FIX: torch_dtype is deprecated, use dtype
-            device_map="auto",
-            trust_remote_code=True,
+            model_name, trust_remote_code=True, **common_kwargs,
         )
+
+    if not use_device_map and torch.cuda.is_available():
+        model = model.to("cuda")
 
     model.eval()
     processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
     _hf_model = model
     _hf_processor = processor
     _hf_model_name = model_name
-    logger.info("Model loaded: %s", model_name)
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+    logger.info("Model loaded: %s (dtype=%s)", model_name, dtype)
     return _hf_model, _hf_processor
+
+
+# Cap the longer side of any input image. Qwen2.5-VL's vision tokenizer
+# emits tokens proportional to image area; uncapped 4 K photos can produce
+# 5k+ vision tokens per image and inflate the KV cache by an order of
+# magnitude. 1024 px keeps the tokens bounded while preserving lesion detail.
+_MAX_IMAGE_SIDE = 1024
 
 
 def _b64_to_pil(image_b64: str):
     from PIL import Image
-    return Image.open(io.BytesIO(base64.b64decode(image_b64))).convert("RGB")
+    img = Image.open(io.BytesIO(base64.b64decode(image_b64))).convert("RGB")
+    w, h = img.size
+    longer = max(w, h)
+    if longer > _MAX_IMAGE_SIDE:
+        scale = _MAX_IMAGE_SIDE / float(longer)
+        img = img.resize((max(1, int(w * scale)), max(1, int(h * scale))),
+                         Image.LANCZOS)
+    return img
 
 
 def _build_qwen_messages(
@@ -225,45 +248,61 @@ class HFClient:
 
         torch.manual_seed(self.seed)
         do_sample = self.temperature > 0.0
+        # Only request scores when the caller actually consumes them. The
+        # full per-step logits tensor (max_new_tokens x batch x vocab) is
+        # otherwise the dominant per-call GPU allocation and is the main
+        # cause of the cross-image leak.
+        want_scores = bool(self.chat_request_logprobs)
         gen_kwargs: Dict[str, Any] = dict(
             max_new_tokens=self.max_new_tokens,
             do_sample=do_sample,
             return_dict_in_generate=True,
-            output_scores=self.chat_request_logprobs,
+            output_scores=want_scores,
+            use_cache=True,
         )
         if do_sample:
             gen_kwargs["temperature"] = self.temperature
 
-        with torch.no_grad():
-            out = model.generate(**inputs, **gen_kwargs)
-
-        input_len = inputs["input_ids"].shape[1]
-        gen_ids = out.sequences[0][input_len:]
-        response_text = processor.decode(gen_ids, skip_special_tokens=True)
-        completion_tokens = int(gen_ids.shape[0])
-
         content_logprobs: Optional[List[Dict[str, Any]]] = None
         token_strings: List[str] = []
+        out = None
+        gen_ids = None
+        try:
+            with torch.inference_mode():
+                out = model.generate(**inputs, **gen_kwargs)
 
-        if self.chat_request_logprobs and out.scores:
-            content_logprobs = []
-            for step_idx, step_scores in enumerate(out.scores):
-                lp = torch.log_softmax(step_scores[0].float(), dim=-1)
-                tok_id = int(gen_ids[step_idx])
-                tok_str = processor.tokenizer.decode([tok_id])
-                token_strings.append(tok_str)
+            input_len = inputs["input_ids"].shape[1]
+            gen_ids = out.sequences[0][input_len:].detach()
+            response_text = processor.decode(gen_ids, skip_special_tokens=True)
+            completion_tokens = int(gen_ids.shape[0])
 
-                top_k = min(self.top_logprobs, lp.shape[-1])
-                top_vals, top_ids = torch.topk(lp, top_k)
-                top_lp = [
-                    {"token": processor.tokenizer.decode([int(tid)]), "logprob": float(tv)}
-                    for tid, tv in zip(top_ids.tolist(), top_vals.tolist())
-                ]
-                content_logprobs.append({
-                    "token": tok_str,
-                    "logprob": float(lp[tok_id]),
-                    "top_logprobs": top_lp,
-                })
+            if want_scores and out.scores:
+                content_logprobs = []
+                for step_idx, step_scores in enumerate(out.scores):
+                    lp = torch.log_softmax(step_scores[0].float(), dim=-1)
+                    tok_id = int(gen_ids[step_idx])
+                    tok_str = processor.tokenizer.decode([tok_id])
+                    token_strings.append(tok_str)
+
+                    top_k = min(self.top_logprobs, lp.shape[-1])
+                    top_vals, top_ids = torch.topk(lp, top_k)
+                    top_lp = [
+                        {"token": processor.tokenizer.decode([int(tid)]), "logprob": float(tv)}
+                        for tid, tv in zip(top_ids.tolist(), top_vals.tolist())
+                    ]
+                    content_logprobs.append({
+                        "token": tok_str,
+                        "logprob": float(lp[tok_id]),
+                        "top_logprobs": top_lp,
+                    })
+                    del lp, top_vals, top_ids
+        finally:
+            # Drop every GPU reference before the next call so the CUDA
+            # caching allocator can hand the memory back. Without these,
+            # the reserved-but-unallocated pool grows until OOM.
+            del out, gen_ids, inputs
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
 
         return ChatResult(
             text=response_text,
@@ -309,21 +348,26 @@ class HFClient:
         )
         inputs = {k: v.to(model.device) for k, v in inputs.items() if v is not None}
 
-        with torch.no_grad():
-            out = model(**inputs)
+        out = None
+        next_logits_cpu = None
+        try:
+            with torch.inference_mode():
+                out = model(**inputs)
+                # Pull the next-token distribution off the GPU before the
+                # full logits tensor goes out of scope.
+                next_logits_cpu = out.logits[0, -1, :].float().cpu()
 
-        # Logits at the last prompt position → next-token distribution
-        next_logits = out.logits[0, -1, :].float()
-
-        # Score each label by its first token's logit
-        log_scores: List[float] = []
-        for lbl in label_list:
-            # Try with a leading space (common tokenizer convention)
-            toks = processor.tokenizer.encode(" " + str(lbl), add_special_tokens=False)
-            if not toks:
-                toks = processor.tokenizer.encode(str(lbl), add_special_tokens=False)
-            first_tok = toks[0] if toks else 0
-            log_scores.append(float(next_logits[first_tok]))
+            log_scores: List[float] = []
+            for lbl in label_list:
+                toks = processor.tokenizer.encode(" " + str(lbl), add_special_tokens=False)
+                if not toks:
+                    toks = processor.tokenizer.encode(str(lbl), add_special_tokens=False)
+                first_tok = toks[0] if toks else 0
+                log_scores.append(float(next_logits_cpu[first_tok]))
+        finally:
+            del out, inputs, next_logits_cpu
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
 
         max_v = max(log_scores)
         exps = [math.exp(v - max_v) for v in log_scores]
