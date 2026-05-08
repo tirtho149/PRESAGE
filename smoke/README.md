@@ -1,8 +1,8 @@
 # Pathome smoke test (2 crops, full pipeline)
 
-A miniature end-to-end run of the Pathome pipeline on **Tomato + Soybean only** (~25 (crop, disease) classes after threshold≥15: 15 Tomato + 10 Soybean). Designed to validate every code path with as little compute as possible.
+A miniature end-to-end run of the Pathome pipeline on **Tomato + Soybean only** (~25 (crop, disease) classes after threshold ≥ 15: 15 Tomato + 10 Soybean). Designed to validate every code path with as little compute as possible.
 
-Override the threshold with `SMOKE_THRESHOLD=10 bash smoke/run_smoke.sh` for a wider smoke (~65 classes), or `SMOKE_THRESHOLD=20` for narrower (~15 classes).
+**Why smoke first.** The full pipeline costs ~$50–150 in API spend (Phase 0) plus ~36–50 hours of A100 time (Phase 2) plus ~24 hours of A100 time (Phase 4). A smoke run completes in ~60–90 minutes for ~$5 and exercises every phase, so plumbing issues surface before you commit to the full spend.
 
 ```
 smoke/
@@ -11,25 +11,29 @@ smoke/
 ├── bugwood_pathome_smoke.yaml         training config (small budgets)
 ├── plantvillage_smoke_eval.yaml       PV eval (200-image subset)
 ├── plantwild_smoke_eval.yaml          PW eval (200-image subset)
-├── run_smoke.sh                       Bash chain — runs all 6 phases as plain `python`
-├── submit_smoke.sh                    SLURM wrapper for Nova
+├── run_phase0_local.sh                LOCAL — Phase 0 wrapper
+├── run_smoke.sh                       Bash chain — every phase as plain `python`
+├── submit_smoke.sh                    NOVA SLURM wrapper (Phases 1–5)
 └── README.md                          (this file)
 
-Outputs (under smoke/, gitignored):
-  smoke/artifacts/pathome_seed/symptoms_seed.json
-  smoke/artifacts/pathome_v1_seed/{symptoms.json, refs/, ...}
-  smoke/artifacts/pathome_v1_enhanced/{symptoms.json, refs/, ...}
-  smoke/results/traces/plantswarm_traces.jsonl
-  smoke/observe/checkpoints/{seed,enhanced}/observe_grpo_epoch_*.pt
-  smoke/results/compare/comparison.{json,md,tex}
+Outputs (under smoke/, gitignored except seed):
+  smoke/artifacts/pathome_kb/<Crop>/...                  (LOCAL audit trail)
+  smoke/artifacts/pathome_seed/symptoms_seed.json        (LOCAL → push via git -f)
+  smoke/artifacts/pathome_v1_seed/{symptoms.json, refs/} (NOVA, Phase 1)
+  smoke/artifacts/pathome_v1_enhanced/{symptoms.json, …} (NOVA, Phase 3)
+  smoke/results/traces/plantswarm_traces.jsonl          (NOVA, Phase 2)
+  smoke/observe/checkpoints/{seed,enhanced}/...         (NOVA, Phase 4)
+  smoke/results/compare/comparison.{json,md,tex}        (NOVA, Phase 5)
 ```
+
+---
 
 ## What's downscaled vs production
 
 | Knob | Production | Smoke |
 |---|---|---|
 | Crops | 197 | 2 (Tomato + Soybean) |
-| Classes | 484 | ~25 (15 Tomato + 10 Soybean) |
+| Classes | 484 | ~25 (15 Tomato + 10 Soybean at threshold≥15) |
 | `per_class` / `trace_split` | 10 / 7 | 4 / 3 |
 | `runs_per_image` | 30 | 3 |
 | `max_new_tokens` | 512 | 256 |
@@ -38,31 +42,69 @@ Outputs (under smoke/, gitignored):
 | Phase 4 DT epochs | 50 | 3 |
 | Phase 4 GRPO epochs | 10 | 1 |
 | LoRA rank | 16 | 8 |
-| Phase 5 PV/PW eval images | 54,306 / 18,000 | 200 / 200 |
+| Phase 5 PV / PW eval images | 54,306 / 18,000 | 200 / 200 |
 | `bootstrap_n` | 1,000 | 100 |
 
 Total trace volume: ~25 classes × 3 trace seeds × 3 runs ≈ **225 traces**.
 
-## How to run
+Override the threshold with `SMOKE_THRESHOLD=10` for a wider smoke (~65 classes), or `SMOKE_THRESHOLD=20` for narrower (~15 classes).
 
-The smoke pipeline splits the same way as production: Phase 0 runs locally, the rest runs on Nova.
+---
 
-### Step 1 — Phase 0 on your local machine (~5 min)
+## Where each phase runs
+
+```
+   LOCAL machine                         GitHub               Nova compute
+   ─────────────                         ──────               ────────────
+
+   bash run_phase0_local.sh   ──push──→  git pull   ──→   sbatch submit_smoke.sh
+   (~5 min, claude -p)                   symptoms_seed.json    Phases 1–5 (~60-90 min)
+                                                              (single A100 job)
+```
+
+Same split as production: Phase 0 needs the `claude` CLI's OAuth login (Nova compute can't run it), everything else runs as ordinary GPU jobs.
+
+---
+
+## Step 1 — LOCAL: Phase 0 (~5 min)
+
+### Prerequisites
+
+```bash
+# Claude Code CLI auth'd
+claude --version
+claude auth login    # if not already done
+
+# Anthropic SDK key
+echo "ANTHROPIC_API_KEY=sk-ant-..." > .env       # at repo root
+```
+
+### Run
 
 ```bash
 bash smoke/run_phase0_local.sh
-# Produces: smoke/artifacts/pathome_seed/symptoms_seed.json (and per-crop
-# artefacts under smoke/artifacts/pathome_kb/<Crop>/)
 ```
 
-Then push the seed file to GitHub:
+This does:
+1. `filter_bugwood_csv.py` if `smoke/BugWood_Diseases_smoke_usable.csv` doesn't exist yet.
+2. `python -m pathome_kb --quick --only-crops "Tomato,Soybean"`.
+
+Output: `smoke/artifacts/pathome_seed/symptoms_seed.json` (the seed file Nova needs) plus per-crop audit artefacts under `smoke/artifacts/pathome_kb/{Tomato,Soybean}/`.
+
+### Push to GitHub
+
 ```bash
 git add -f smoke/artifacts/pathome_seed/symptoms_seed.json \
            smoke/BugWood_Diseases_smoke_usable.csv
-git commit -m "smoke phase 0 seed" && git push origin main
+git commit -m "smoke phase 0 seed"
+git push origin main
 ```
 
-### Step 2 — Phases 1–5 on Nova (~60–90 min, single A100)
+The wrapper script prints these exact commands when it finishes — copy-paste them.
+
+---
+
+## Step 2 — NOVA: Phases 1–5 (~60–90 min, single A100)
 
 ```bash
 ssh tirtho@hpc-login.iastate.edu
@@ -71,44 +113,82 @@ sbatch smoke/submit_smoke.sh
 tail -f logs/pathome_smoke-*.out
 ```
 
-The Nova job bails out with a clear error if the seed file isn't yet on disk — meaning your `git push` hasn't reached the remote, or you haven't `git pull`-ed on Nova.
+`submit_smoke.sh` is a single A100 job (4 h walltime budget) that internally chains Setup → Phase 1 → 2 → 3 → 4 → 5 by invoking `bash smoke/run_smoke.sh` with `SMOKE_SKIP_0=1` (Phase 0 already done locally).
 
-### Local-only debug (no Nova, no GPU)
+### Pre-flight
 
-If you don't have a GPU and just want to validate KB plumbing:
-```bash
-bash smoke/run_smoke.sh
-# Setup → Phase 0 (if claude is auth'd) → Phase 1 → Phase 3.
-# Phases 2/4/5 auto-skip on CPU-only machines.
-# ~10–15 min total.
-```
+The job bails out with a clear error message if `smoke/artifacts/pathome_seed/symptoms_seed.json` isn't on disk — meaning your `git push` hasn't reached the remote, or Nova hasn't `git pull`-ed yet.
 
-### Skip / resume / orchestrator
-
-```bash
-SMOKE_SKIP_0=1 bash smoke/run_smoke.sh        # skip Phase 0 (seed already present)
-SMOKE_SKIP_2=1 bash smoke/run_smoke.sh        # skip just Phase 2
-SMOKE_FROM=4 bash smoke/run_smoke.sh          # restart at training (assumes traces exist)
-SMOKE_ORCH=autogen_swarm bash smoke/run_smoke.sh   # use vLLM instead of hf_direct
-```
-
-## Auth requirements (local only)
-
-Phase 0 of the smoke (the SAGE-ported pathome_kb pipeline) runs **locally** and needs:
-
-1. The `claude` CLI on PATH and authenticated (`claude auth login`).
-2. `ANTHROPIC_API_KEY` in env or repo-root `.env` (used by the Anthropic SDK in the extraction + reconciliation stages).
-
-If either is missing, `smoke/run_phase0_local.sh` errors out with the install commands. The Nova-side `submit_smoke.sh` does **not** check for the CLI — it relies on the seed file already being on disk from a `git pull`.
-
-## What "success" looks like
+### What success looks like
 
 After a clean run:
-
 ```
 smoke/results/compare/comparison.md
 ```
+contains the seed-vs-enhanced delta table for the smoke-sized PV + PW evals. Numbers are tiny and not statistically meaningful (n=200 each, 1 GRPO epoch) — the pipeline producing the table end-to-end is the point.
 
-contains the seed-vs-enhanced delta table for the smoke-sized PV + PW evals. The numbers are tiny and not statistically meaningful (n=200 each, 1 GRPO epoch) — but the pipeline producing the table end-to-end is the point.
+If `comparison.md` is non-empty plus matching `.json` + `.tex` siblings, every phase wired correctly. From there, the production chain (`scripts/submit_pathome_all.sh`) runs the same code at full scale.
 
-If you see a non-empty `comparison.md` plus matching JSON + LaTeX siblings, every phase wired correctly. From there, the production chain (`scripts/submit_pathome_all.sh`) runs the same code at full scale.
+---
+
+## Local-only debug (no Nova, no GPU)
+
+If you don't have a GPU and just want to validate KB plumbing:
+
+```bash
+bash smoke/run_smoke.sh
+# Setup → Phase 0 (if claude is auth'd) → Phase 1 → Phase 3.
+# Phases 2/4/5 auto-skip on CPU-only machines with a clear [skip] message.
+# ~10–15 min total.
+```
+
+Useful for:
+- Confirming the SAGE port works against the Anthropic API
+- Smoke-testing changes to `pathome/symptoms.py`, `data/bugwood_loader.py`, the build/enhance scripts
+- Running on CI
+
+---
+
+## Skip / resume / orchestrator knobs
+
+```bash
+# Skip individual phases by ID:
+SMOKE_SKIP_0=1   bash smoke/run_smoke.sh    # skip Phase 0 (seed already on disk)
+SMOKE_SKIP_2=1   bash smoke/run_smoke.sh    # skip the trace generation
+SMOKE_SKIP_4=1   bash smoke/run_smoke.sh    # skip OBSERVE training
+SMOKE_SKIP_5=1   bash smoke/run_smoke.sh    # skip eval+compare
+
+# Restart from a specific phase:
+SMOKE_FROM=4     bash smoke/run_smoke.sh    # restart at training (assumes traces exist)
+
+# Switch trace orchestrator:
+SMOKE_ORCH=autogen_swarm bash smoke/run_smoke.sh   # use vLLM (default: hf_direct)
+
+# Adjust the Setup-stage class count threshold:
+SMOKE_THRESHOLD=10 bash smoke/run_smoke.sh   # wider smoke (~65 classes)
+SMOKE_THRESHOLD=20 bash smoke/run_smoke.sh   # narrower (~15 classes)
+```
+
+---
+
+## Auth requirements (LOCAL only)
+
+Phase 0 of the smoke (the SAGE-ported `pathome_kb` pipeline) needs:
+
+1. The `claude` CLI on PATH and authenticated (`claude auth login`).
+2. `ANTHROPIC_API_KEY` in env or `.env` at repo root (used by the Anthropic SDK in extraction + reconciliation).
+
+If either is missing, `smoke/run_phase0_local.sh` errors out with the install commands. The Nova-side `submit_smoke.sh` does **not** check for the CLI — it relies on the seed file already being on disk from a `git pull`.
+
+---
+
+## Troubleshooting
+
+| Symptom | Fix |
+|---|---|
+| `smoke/artifacts/pathome_seed/symptoms_seed.json not found` (Nova) | You forgot to `git push` the seed locally, or Nova hasn't `git pull`-ed. Run `git status` on Nova to confirm the file is present. |
+| `claude CLI not on PATH` (local) | `curl -fsSL https://claude.ai/install.sh \| bash` then `claude auth login` |
+| `ANTHROPIC_API_KEY not set` (local) | `echo "ANTHROPIC_API_KEY=sk-ant-..." > .env` at repo root |
+| Phase 2 hangs or OOMs on Nova | Try `SMOKE_ORCH=hf_direct` to bypass vLLM. The HFClient is patched against the cross-image OOM. |
+| Phase 4 fails to load checkpoint | The smoke is configured for 1 GRPO epoch; checkpoint name is `observe_grpo_epoch_01.pt`. If you bumped epochs, adjust `SEED_CKPT` / `ENH_CKPT` in `run_smoke.sh`. |
+| `comparison.md` only has the trace columns, no eval rows | Phase 5 was skipped (no GPU? no checkpoints?). Check the Phase 4 output and `logs/pathome_smoke-*.out`. |
