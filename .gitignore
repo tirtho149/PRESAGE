@@ -19,3 +19,13 @@ logs/
 # Pathome pipeline artifacts (generated, not source)
 .bugwood_cache/
 artifacts/
+
+# LaTeX build intermediates (compile from source)
+plantswarm/latex/*.aux
+plantswarm/latex/*.bbl
+plantswarm/latex/*.blg
+plantswarm/latex/*.fdb_latexmk
+plantswarm/latex/*.fls
+plantswarm/latex/*.out
+plantswarm/latex/pdflatex*.fls
+plantswarm/latex/*.synctex.gz
