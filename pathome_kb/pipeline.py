@@ -41,6 +41,7 @@ from typing import Dict, List, Tuple
 
 from .internet_pipeline import run_internet_pipeline
 from .regional_extraction import build_state_image_map, run_regional_extraction
+from .regional_image_fill import run_regional_image_fill
 from .symptoms_adapter import merge_registries_to_seed, write_seed_json
 from .utils import OUTPUT_DIR, get_crop_dir, load_json
 
@@ -139,6 +140,15 @@ def parse_args() -> argparse.Namespace:
                    help="skip the cross-region pipeline entirely; only run the "
                         "per-state pass against cached raw_extractions.json. "
                         "Useful when you've already produced final_registry.json")
+    p.add_argument("--regional-image-fill", action="store_true",
+                   help="after the regional text pass, look at each cached "
+                        "Bugwood image and fill in empty discrete visual "
+                        "fields (color, shape, margin, texture, sporulation, "
+                        "progression) via claude -p with the Read tool. Adds "
+                        "grounding=image citations.")
+    p.add_argument("--regional-image-only", action="store_true",
+                   help="skip everything except the image-fill stage. "
+                        "Requires regional_registries.json to already exist.")
     return p.parse_args()
 
 
@@ -166,7 +176,8 @@ def main() -> None:
     registries: List[Tuple[str, dict]] = []
     failures: List[str] = []
 
-    if not args.regional_only:
+    skip_full_pipeline = args.regional_only or args.regional_image_only
+    if not skip_full_pipeline:
         for i, crop in enumerate(crops, 1):
             diseases = by_crop[crop]
             print(f"\n[{i}/{len(crops)}] {crop}")
@@ -199,7 +210,9 @@ def main() -> None:
 
     # ---------------- Optional: regional (per-state) extraction ----------------
     regional_by_crop: Dict[str, Dict[str, Dict[str, dict]]] = {}
-    if args.regional or args.regional_only:
+    state_image_map = None
+    do_regional = args.regional or args.regional_only
+    if do_regional:
         print(f"\n{'='*60}\nREGIONAL (per-state) EXTRACTION STAGE\n{'='*60}")
         state_image_map = build_state_image_map(csv_path)
         for crop in crops:
@@ -210,11 +223,30 @@ def main() -> None:
                 state_image_map=state_image_map,
                 quick=args.quick,
             )
+    elif args.regional_image_only:
+        # Need state_image_map for the image-fill stage even if we're
+        # not running the text-grounded regional pass.
+        state_image_map = build_state_image_map(csv_path)
+
+    # ---------------- Optional: regional image-fill (VLM grounding) -----------
+    image_fills_by_crop: Dict[str, Dict[str, Dict[str, dict]]] = {}
+    do_image_fill = args.regional_image_fill or args.regional_image_only
+    if do_image_fill:
+        print(f"\n{'='*60}\nREGIONAL IMAGE-FILL STAGE (VLM)\n{'='*60}")
+        if state_image_map is None:
+            state_image_map = build_state_image_map(csv_path)
+        for crop in crops:
+            image_fills_by_crop[crop] = run_regional_image_fill(
+                crop=crop,
+                state_image_map=state_image_map,
+                quick=args.quick,
+            )
 
     seed_payload = merge_registries_to_seed(
         registries=registries,
         expected_classes=expected,
         regional_by_crop=regional_by_crop,
+        image_fills_by_crop=image_fills_by_crop,
         min_observations=args.seed_min_observations,
     )
     out_path = Path(args.out)

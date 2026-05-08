@@ -47,12 +47,20 @@ class Citation:
     optionally ties the citation to a Bugwood reference image (``bugwood::N``)
     so downstream consumers can show the supporting field photograph next to
     the source quote.
+
+    ``grounding`` distinguishes how the citation was produced:
+        "text"  — verbatim quote from a source URL (extension factsheet etc.)
+                  Default. Always carries (url, quote).
+        "image" — VLM observation grounded in a specific Bugwood image. The
+                  image_id is the primary witness; quote is a model-generated
+                  description; url may be empty.
     """
 
     value: str = ""              # the extracted fact (string or "; "-joined list)
     url: str = ""                # source page / pdf://...
-    quote: str = ""              # verbatim sentence supporting `value`
+    quote: str = ""              # verbatim sentence supporting `value` (text) or model description (image)
     image_id: str = ""           # optional: Bugwood image ID grounding this citation
+    grounding: str = "text"      # "text" | "image"
 
 
 @dataclass
@@ -201,6 +209,7 @@ class SymptomProfile:
                     url=str(it.get("url", "")),
                     quote=str(it.get("quote", "")),
                     image_id=str(it.get("image_id", "")),
+                    grounding=str(it.get("grounding", "text")) or "text",
                 )
                 for it in items if isinstance(it, dict)
             ]

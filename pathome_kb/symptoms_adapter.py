@@ -232,10 +232,50 @@ def regional_record_to_visual_dict(
     }
 
 
+def _merge_image_fill(
+    visual_dict: dict,
+    image_fill: dict,
+    primary_image_id: str,
+) -> dict:
+    """Layer image-grounded fields on top of the text-grounded visual dict.
+
+    Only fields currently empty in ``visual_dict`` are filled. Each
+    image-grounded entry adds a Citation with grounding="image".
+    """
+    array_keys = {"plant_parts", "color", "texture", "sporulation",
+                  "distinctive_signs", "confusion_diseases"}
+    for field, payload in image_fill.items():
+        if not isinstance(payload, dict):
+            continue
+        v = payload.get("value")
+        if v in (None, "", []):
+            continue
+        # Don't overwrite text-grounded content
+        existing = visual_dict.get(field)
+        if (field in array_keys and existing) or (field not in array_keys and existing):
+            continue
+        if isinstance(v, list):
+            visual_dict[field] = [str(x) for x in v if x]
+            display = "; ".join(visual_dict[field])
+        else:
+            visual_dict[field] = str(v)
+            display = visual_dict[field]
+        cit = {
+            "value": display,
+            "url": "",
+            "quote": str(payload.get("quote", "")).strip(),
+            "image_id": primary_image_id,
+            "grounding": "image",
+        }
+        visual_dict.setdefault("sources", {}).setdefault(field, []).append(cit)
+    return visual_dict
+
+
 def merge_registries_to_seed(
     registries: Iterable[Tuple[str, dict]],
     expected_classes: Iterable[Tuple[str, str]],
     regional_by_crop: Optional[Dict[str, Dict[str, Dict[str, dict]]]] = None,
+    image_fills_by_crop: Optional[Dict[str, Dict[str, Dict[str, dict]]]] = None,
     min_observations: int = 3,
 ) -> dict:
     """Merge crop→registry pairs into the seed JSON.
@@ -249,6 +289,12 @@ def merge_registries_to_seed(
     ``crop -> profile_id -> state -> regional_record``. When supplied,
     each profile's ``regional_visuals[state]`` is populated alongside
     the cross-region ``visual``.
+
+    ``image_fills_by_crop`` is the optional output of
+    ``regional_image_fill.run_regional_image_fill``: same shape, but
+    each record is a dict of image-grounded field fills. Fields are
+    layered on top of the regional text-grounded block when empty,
+    with grounding="image" citations.
     """
     by_crop_disease: Dict[Tuple[str, str], dict] = {}
     for crop, registry in registries:
@@ -261,6 +307,7 @@ def merge_registries_to_seed(
             by_crop_disease[(crop, disease)] = d
 
     regional_by_crop = regional_by_crop or {}
+    image_fills_by_crop = image_fills_by_crop or {}
 
     profiles = []
     for crop, disease in expected_classes:
@@ -269,12 +316,21 @@ def merge_registries_to_seed(
         # Attach regional_visuals[state] when we have a regional record.
         crop_regional = regional_by_crop.get(crop) or {}
         per_profile_regional = crop_regional.get(prof["profile_id"]) or {}
-        if per_profile_regional:
-            prof["regional_visuals"] = {
-                state: regional_record_to_visual_dict(state, rec)
-                for state, rec in per_profile_regional.items()
-                if isinstance(rec, dict)
-            }
+        crop_image_fills = image_fills_by_crop.get(crop) or {}
+        per_profile_fills = crop_image_fills.get(prof["profile_id"]) or {}
+        if per_profile_regional or per_profile_fills:
+            regional_visuals: Dict[str, dict] = {}
+            states = set(per_profile_regional.keys()) | set(per_profile_fills.keys())
+            for state in states:
+                rec = per_profile_regional.get(state) or {}
+                fill = per_profile_fills.get(state) or {}
+                visual_dict = regional_record_to_visual_dict(state, rec)
+                if fill:
+                    image_ids = visual_dict.get("reference_image_ids") or []
+                    primary_image = image_ids[0] if image_ids else ""
+                    _merge_image_fill(visual_dict, fill, primary_image)
+                regional_visuals[state] = visual_dict
+            prof["regional_visuals"] = regional_visuals
         profiles.append(prof)
 
     return {
