@@ -42,11 +42,13 @@ fi
 
 echo "================================================================="
 echo "  Smoke Phase 0 — pathome_kb (LOCAL machine, 2 crops)"
+echo "  Stages: cross-region (SAGE) + per-state regional_visuals"
 echo "================================================================="
 python -m pathome_kb \
   --csv     "$USABLE_CSV" \
   --out     "$OUT" \
   --quick \
+  --regional \
   --only-crops "Tomato,Soybean"
 
 echo
@@ -54,9 +56,14 @@ echo "================================================================="
 echo "  Smoke Phase 0 complete. Push the seeded KB to GitHub:"
 echo "================================================================="
 echo
-echo "  git add -f $OUT smoke/BugWood_Diseases_smoke_usable.csv"
-echo "  git commit -m 'smoke: phase 0 seed (\$(date -u +%Y-%m-%dT%H:%MZ))'"
+echo "  git add -f $OUT \\"
+echo "             smoke/BugWood_Diseases_smoke_usable.csv \\"
+echo "             artifacts/pathome_kb/Tomato/{discovery_results,final_registry,regional_registries}.json \\"
+echo "             artifacts/pathome_kb/Soybean/{discovery_results,final_registry,regional_registries}.json"
+echo "  git commit -m 'smoke: phase 0 seed'"
 echo "  git push origin main"
 echo
 echo "Then on Nova:"
-echo "  git pull && sbatch smoke/submit_smoke.sh"
+echo "  ssh tirtho@hpc-login.iastate.edu"
+echo "  cd /work/mech-ai-scratch/tirtho/PlantSwarm && git pull origin main"
+echo "  sbatch smoke/submit_smoke.sh"
