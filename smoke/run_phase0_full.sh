@@ -2,19 +2,29 @@
 # ============================================================================
 # smoke/run_phase0_full.sh
 # ============================================================================
-# Full Phase 0 for the smoke (Tomato + Soybean) — every stage end-to-end:
+# Full Phase 0 for the smoke (Tomato + Soybean) — every stage end-to-end,
+# default to MAXIMUM COVERAGE (no --quick caps).
 #
 #   1. Filter the smoke CSV  → BugWood_Diseases_smoke_usable.csv
 #   2. Discovery + extraction + reconciliation  (cross-region SAGE)
+#      → all 47 + 61 source URLs (not just first 3 per crop)
 #   3. Regional text extraction  (per-state, image_id-tagged)
-#   4. State-aware image cache top-up  (one image per (crop, disease, state))
-#   5. Image-grounded fill via claude -p + Read tool  (color/shape/margin/...)
+#      → all 118 (crop, disease, state) tuples (not just first 2/disease)
+#   4. State-aware image cache top-up (one image per (crop, disease, state))
+#   5. Image-grounded fill via claude -p + Read tool
+#      → all 8 visual fields per tuple (color, shape, margin, texture,
+#        sporulation, progression, plant_parts, distinctive_signs)
 #   6. Adapter merge → smoke/artifacts/pathome_seed/symptoms_seed.json
 #
-# Output: a fully state-aware, dual-grounded seed (text + image citations)
-# ready to push to GitHub for Nova consumption.
+# Output: a fully state-aware, dual-grounded seed (text + image citations).
 #
-# Walltime: ~15–25 min depending on web-fetch latency.
+# Walltime / cost (full coverage):
+#   ~45–90 min wall depending on web-fetch latency
+#   ~$5–15 in claude -p OAuth quota
+#
+# For fast iteration, drop coverage with FULL_QUICK=1:
+#   FULL_QUICK=1 bash smoke/run_phase0_full.sh
+#   → caps sources/disease at 3, states/disease at 2; ~15–25 min, ~$1–3
 #
 # Auth requirements:
 #   - claude CLI on PATH and authenticated (`claude auth login`)
@@ -54,6 +64,15 @@ step() {
   echo "================================================================="
 }
 
+# Optional --quick flag (default OFF = full coverage)
+QUICK_ARG=()
+if [ "${FULL_QUICK:-0}" = "1" ]; then
+  QUICK_ARG=(--quick)
+  echo "[mode] FULL_QUICK=1 — capping sources/states/fields for fast iteration"
+else
+  echo "[mode] FULL coverage — all sources, all states, all visual fields"
+fi
+
 # ----------------------------------------------------------------------------
 # 1. Setup — filter the smoke CSV
 # ----------------------------------------------------------------------------
@@ -74,9 +93,9 @@ if [ "${FULL_SKIP_KB:-0}" != "1" ]; then
   python3 -m pathome_kb \
     --csv "$USABLE_CSV" \
     --out "$OUT" \
-    --quick \
     --regional \
-    --only-crops "Tomato,Soybean"
+    --only-crops "Tomato,Soybean" \
+    "${QUICK_ARG[@]}"
 fi
 
 # ----------------------------------------------------------------------------
@@ -98,8 +117,8 @@ if [ "${FULL_SKIP_IMAGE:-0}" != "1" ]; then
     --csv "$USABLE_CSV" \
     --out "$OUT" \
     --regional-image-only \
-    --quick \
-    --only-crops "Tomato,Soybean"
+    --only-crops "Tomato,Soybean" \
+    "${QUICK_ARG[@]}"
 fi
 
 # ----------------------------------------------------------------------------
