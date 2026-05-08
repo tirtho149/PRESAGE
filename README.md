@@ -133,25 +133,65 @@ Add this to your `~/.bashrc` so it's picked up by every SLURM allocation. Withou
 
 ---
 
+## Where each phase runs
+
+The pipeline splits across two machines:
+
+```
+   ┌──────────────────────────┐                 ┌────────────────────────┐
+   │       LOCAL machine      │     GitHub      │     Nova compute       │
+   │  (laptop / workstation)  │      git        │  (SLURM-scheduled GPU) │
+   └──────────────────────────┘                 └────────────────────────┘
+
+   Phase 0  (Claude headless)  ────push──→
+       ↓
+   symptoms_seed.json                 ←─pull──   git pull origin main
+                                                     ↓
+                                                Phase 1  Build PathomeDB
+                                                Phase 2  PlantSwarm traces  (A100)
+                                                Phase 3  Enhance from traces
+                                                Phase 4  Train OBSERVE × 2  (A100)
+                                                Phase 5  Eval × 4 + compare
+```
+
+**Phase 0 cannot run on Nova.** Nova compute nodes block the OAuth login flow that the `claude` CLI needs, so the visual-symptom seed must be produced locally and synced via git. Phases 1–5 are pure compute (Python + Qwen2.5-VL-7B + PathomeDB) and run as normal SLURM jobs.
+
 ## Smoke test first (recommended)
 
 Before kicking off the multi-day full run, validate every code path on a 2-crop / ~25-class subset (~60–90 min on a single A100):
 
 ```bash
+# Local — Phase 0 only, ~5 min
+bash smoke/run_phase0_local.sh
+git add -f smoke/artifacts/pathome_seed/symptoms_seed.json \
+           smoke/BugWood_Diseases_smoke_usable.csv
+git commit -m "smoke phase 0 seed" && git push origin main
+
+# Nova — Phases 1-5, single A100 job, ~60-90 min
+ssh tirtho@hpc-login.iastate.edu
+cd /work/mech-ai-scratch/tirtho/PlantSwarm && git pull
 sbatch smoke/submit_smoke.sh
-# or, on a CUDA workstation / interactive Nova allocation:
-bash smoke/run_smoke.sh
 ```
 
 See [`smoke/README.md`](smoke/README.md) for what's downscaled, skip/resume knobs, and the expected outputs.
 
-## Quick start (chain everything)
+## Quick start (full pipeline)
 
 ```bash
-# On Nova login node
-cd /work/mech-ai-scratch/tirtho/PlantSwarm
-git pull origin main
+# === LOCAL (your laptop / workstation) ===
+bash scripts/run_phase0_local.sh
+# 12-20 h, ~$50-150 in Anthropic API spend; quick mode (PATHOME_SEED_QUICK=1) is
+# ~30 min and ~$5. Output: artifacts/pathome_seed/symptoms_seed.json
+
+git add -f artifacts/pathome_seed/symptoms_seed.json
+git commit -m "phase 0 seed" && git push origin main
+
+# === NOVA ===
+ssh tirtho@hpc-login.iastate.edu
+cd /work/mech-ai-scratch/tirtho/PlantSwarm && git pull origin main
 bash scripts/submit_pathome_all.sh
+# Setup → Phases 1-5 with sbatch dependencies. Final output:
+# results/pathome_compare/comparison.md
 ```
 
 This queues seven jobs with `--dependency=afterok` chains so each phase waits for the previous to finish:
@@ -205,9 +245,11 @@ sbatch scripts/submit_pathome_setup_filter.sh
 PATHOME_THRESHOLD=15 sbatch scripts/submit_pathome_setup_filter.sh
 ```
 
-### Phase 0 — Build the seed PathomeDB knowledge base (provenance-tracked)
+### Phase 0 — Build the seed PathomeDB knowledge base (LOCAL only)
 
-`scripts/submit_pathome_phase0_seed.sh` → `python -m pathome_kb`
+`scripts/run_phase0_local.sh` → `python -m pathome_kb`
+
+> ⚠ **This phase runs on your local machine, not on Nova.** Nova compute nodes don't permit the OAuth flow that `claude` headless needs. Run this locally, push the seed file to GitHub, then `git pull` on Nova before running Phases 1–5.
 
 This is the **SAGE-ported `disease_registry` internet track**, adapted to the 484 (crop, disease) classes from the filtered CSV. Three stages per crop:
 
@@ -230,34 +272,34 @@ The orchestrator groups the 484 classes by crop, runs the internet track once pe
 | | |
 |---|---|
 | **Purpose** | Build a provenance-tracked seed KB with `{value, url, quote}` per visual field. |
-| **Compute** | 8 CPUs, 16 GB RAM, no GPU, outbound HTTPS for `api.anthropic.com` + every per-source page fetch |
-| **Walltime** | 24 h budget. Quick mode (3 sources/crop): ~30 min. Full run (197 crops × ~5–15 sources each): typically 12–20 h depending on parallelism + page-fetch latency. |
+| **Where it runs** | Your **local** machine (laptop / workstation). Phase 0 needs the `claude` CLI's OAuth login, which Nova compute nodes do not support. |
+| **Walltime** | Quick mode (3 sources/crop): ~30 min. Full run (197 crops × ~5–15 sources each): 12–20 h depending on local CPU + network latency. |
 | **Inputs** | `BugWood_Diseases_usable.csv`, authenticated `claude` CLI on PATH, `ANTHROPIC_API_KEY` in environment or `.env` |
-| **Outputs** | `artifacts/pathome_kb/<Crop>/{discovery_results,raw_extractions,final_registry}.json` + `registry.md` + `internet.xlsx` per crop, plus the merged `artifacts/pathome_seed/symptoms_seed.json` for Phase 1 |
+| **Outputs** | `artifacts/pathome_kb/<Crop>/{discovery_results,raw_extractions,final_registry}.json` + `registry.md` + `internet.xlsx` per crop, plus the merged `artifacts/pathome_seed/symptoms_seed.json` |
+| **Handoff to Nova** | `git add -f artifacts/pathome_seed/symptoms_seed.json && git commit && git push origin main` — then `git pull` on Nova picks it up. |
 | **Knobs** | `PATHOME_SEED_QUICK=1` (smoke), `PATHOME_SEED_LIMIT=N` (first N crops), `PATHOME_SEED_ONLY_CROPS="Tomato,Soybean"`, `PATHOME_SEED_RESUME=discovery\|extraction\|reconciliation`, `PATHOME_SEED_NO_CACHE=1` |
 | **Resume** | Yes, two levels. (1) Per-crop: any crop with an existing `final_registry.json` is skipped on re-run unless `PATHOME_SEED_NO_CACHE=1`. (2) Per-stage within a crop: `--resume-from extraction` reuses cached `discovery_results.json` etc. |
-| **Cost** | ~$50–150 in Anthropic API spend for a full run; quick mode is ~$5. Per-source extraction is the dominant cost. |
+| **Cost** | ~$50–150 in Anthropic API spend for a full run; quick mode ~$5. Per-source extraction is the dominant cost. |
 
 ```bash
-# Smoke test on the top 3 crops (Tomato, Soybean, Corn) to validate auth + plumbing
+# Local — quick smoke (~30 min, ~$5) on Tomato + Soybean + Corn
 PATHOME_SEED_QUICK=1 PATHOME_SEED_ONLY_CROPS="Tomato,Soybean,Corn" \
-  sbatch scripts/submit_pathome_phase0_seed.sh
+  bash scripts/run_phase0_local.sh
 
-# Full run (12-20 h)
-sbatch scripts/submit_pathome_phase0_seed.sh
+# Local — full run (12-20 h, ~$50-150)
+bash scripts/run_phase0_local.sh
 
 # Resume only the reconciliation stage across crops that already have
 # raw_extractions.json on disk:
-PATHOME_SEED_RESUME=reconciliation sbatch scripts/submit_pathome_phase0_seed.sh
+PATHOME_SEED_RESUME=reconciliation bash scripts/run_phase0_local.sh
 
-# Force every crop to re-run from scratch:
-PATHOME_SEED_NO_CACHE=1 sbatch scripts/submit_pathome_phase0_seed.sh
-
-# Run locally (no Nova) — same flags, same outputs:
-python -m pathome_kb --csv BugWood_Diseases_usable.csv \
-  --out artifacts/pathome_seed/symptoms_seed.json \
-  --quick --only-crops "Tomato,Soybean"
+# Once finished, push the seed to GitHub:
+git add -f artifacts/pathome_seed/symptoms_seed.json
+git add -f artifacts/pathome_kb/         # optional: full per-crop audit trail
+git commit -m "phase 0 seed" && git push origin main
 ```
+
+The script prints the exact `git add` / `git commit` / `git push` lines at the end of a successful run — copy-paste them.
 
 **What lands in `symptoms_seed.json`** (per profile):
 

@@ -15,18 +15,41 @@
 
 # ============================================================================
 # Smoke-test the Pathome pipeline end-to-end on Nova in a single A100 job.
-# Wraps smoke/run_smoke.sh — same skip/from-phase env vars apply.
+# Skips Phase 0 (Claude headless — must be run locally beforehand and the
+# seed file pushed to git). Runs Setup + Phases 1-5 inside this allocation.
+#
+# Required input from local Phase 0:
+#   smoke/artifacts/pathome_seed/symptoms_seed.json (push from your laptop)
 #
 # Walltime budget: 4 h. Typical actual runtime on a single A100 is 60-90 min
-# (Phase 2 ~10-20 min for 70-100 traces; Phase 4 ~30-40 min × 2 checkpoints).
+# (Phase 2 ~10-20 min for 100-200 traces; Phase 4 ~30-40 min × 2 checkpoints).
 # ============================================================================
 
 set -e
 echo "================================"
-echo "Pathome smoke run"
+echo "Pathome smoke run (Nova)"
 echo "Job ID: $SLURM_JOB_ID  Start: $(date)"
 nvidia-smi || true
 echo "================================"
+
+# Pre-flight: confirm the local Phase 0 output is present
+SEED_FILE="smoke/artifacts/pathome_seed/symptoms_seed.json"
+if [ ! -f "$SEED_FILE" ]; then
+  echo "ERROR: $SEED_FILE not found."
+  echo
+  echo "Phase 0 needs the claude CLI which Nova compute nodes don't allow."
+  echo "Run Phase 0 on your laptop first, then push the seed:"
+  echo
+  echo "    # on your laptop"
+  echo "    bash smoke/run_phase0_local.sh"
+  echo "    git add -f $SEED_FILE smoke/BugWood_Diseases_smoke_usable.csv"
+  echo "    git commit -m 'smoke phase 0 seed' && git push"
+  echo
+  echo "    # on Nova"
+  echo "    git pull && sbatch smoke/submit_smoke.sh"
+  exit 1
+fi
+echo "  using seed file: $SEED_FILE"
 
 module load python cuda/11.8
 source /work/mech-ai-scratch/tirtho/PlantSwarm/.venv/bin/activate
@@ -36,7 +59,9 @@ export TOKENIZERS_PARALLELISM=false
 
 mkdir -p logs
 chmod +x smoke/run_smoke.sh
-bash smoke/run_smoke.sh
+
+# Skip Phase 0 inside run_smoke.sh — the seed file is already on disk.
+SMOKE_SKIP_0=1 bash smoke/run_smoke.sh
 
 echo
 echo "Smoke run complete: $(date)"

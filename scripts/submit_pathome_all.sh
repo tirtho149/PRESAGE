@@ -2,25 +2,36 @@
 # ============================================================================
 # submit_pathome_all.sh
 # ============================================================================
-# Master submission script for the symptom-centric Pathome pipeline.
-# Queues every step on Nova with sbatch dependency chains:
+# Master submission script for the symptom-centric Pathome pipeline on Nova.
+# Queues every NOVA step with sbatch dependency chains:
 #
 #   Setup   (CPU)       → filter BugWood_Diseases.csv → 484 classes
-#   Phase 0 (CPU)       → seed PathomeDB visual blocks via `claude -p`
 #   Phase 1 (CPU+net)   → build PathomeDB v1_seed (Claude visuals + geo + refs)
 #   Phase 2 (A100+vLLM) → 101,640 PlantSwarm routing traces (seed DB)
 #   Phase 3 (CPU)       → enhance DB from traces → v1_enhanced
 #   Phase 4 (A100)      → train OBSERVE × 2  (seed DB and enhanced DB)
 #   Phase 5 (A100+CPU)  → eval × 2 on PV + PW, then comparison.{json,md,tex}
 #
+# Phase 0 is **NOT** in this chain. Phase 0 needs the `claude` CLI's OAuth
+# login flow which Nova compute nodes do not allow. Run Phase 0 on your
+# local machine instead:
+#
+#     # local
+#     bash scripts/run_phase0_local.sh
+#     git add -f artifacts/pathome_seed/symptoms_seed.json
+#     git commit -m "phase 0 seed" && git push
+#
+#     # nova
+#     git pull && bash scripts/submit_pathome_all.sh
+#
 # Usage:
 #   bash scripts/submit_pathome_all.sh
 #
 # Override per-phase tunables via environment variables (see each script's
 # header). The chain-script itself accepts:
-#   PATHOME_SKIP="setup,0"       # skip the listed steps
-#   PATHOME_FROM_PHASE=2         # start from phase 2 (skip setup, 0, 1)
-# Step IDs accepted in PATHOME_SKIP: setup, 0, 1, 2, 3, 4, 5
+#   PATHOME_SKIP="setup"         # skip the listed steps
+#   PATHOME_FROM_PHASE=2         # start from phase 2 (skip setup, 1)
+# Step IDs accepted in PATHOME_SKIP: setup, 1, 2, 3, 4, 5
 # ============================================================================
 
 set -e
@@ -67,16 +78,37 @@ submit() {
 
 chmod +x scripts/submit_pathome_*.sh
 
+# ── Pre-flight: confirm the local Phase 0 output is present ────────────────
+SEED_FILE="${PATHOME_SEED_FILE:-artifacts/pathome_seed/symptoms_seed.json}"
+if [ ! -f "$SEED_FILE" ]; then
+  echo "ERROR: $SEED_FILE not found."
+  echo
+  echo "Phase 0 (Claude-headless KB seed) must run on your LOCAL machine,"
+  echo "not on Nova. After running it, push the seed file:"
+  echo
+  echo "    # on your laptop"
+  echo "    bash scripts/run_phase0_local.sh"
+  echo "    git add -f $SEED_FILE"
+  echo "    git commit -m 'phase 0 seed' && git push origin main"
+  echo
+  echo "    # on Nova"
+  echo "    git pull origin main"
+  echo "    bash scripts/submit_pathome_all.sh"
+  echo
+  echo "If you really want to run without a seed file (empty visual blocks),"
+  echo "create an empty seed and rerun:"
+  echo "    mkdir -p $(dirname "$SEED_FILE")"
+  echo "    echo '{\"min_observations\": 3, \"profiles\": []}' > $SEED_FILE"
+  exit 1
+fi
+echo "  using seed file: $SEED_FILE"
+echo
+
 PREV=""
 
 if phase_active setup; then
   echo "── Setup: filter Bugwood CSV (~30 s, CPU) ──"
   PREV=$(submit "Setup"   scripts/submit_pathome_setup_filter.sh "$PREV")
-fi
-
-if phase_active 0; then
-  echo "── Phase 0: Claude headless seed (~15-30 min, CPU) ──"
-  PREV=$(submit "Phase 0" scripts/submit_pathome_phase0_seed.sh "$PREV")
 fi
 
 if phase_active 1; then

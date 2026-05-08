@@ -45,47 +45,61 @@ Total trace volume: ~25 classes × 3 trace seeds × 3 runs ≈ **225 traces**.
 
 ## How to run
 
-### On Nova (one A100 job, ~60–90 min)
+The smoke pipeline splits the same way as production: Phase 0 runs locally, the rest runs on Nova.
+
+### Step 1 — Phase 0 on your local machine (~5 min)
+
+```bash
+bash smoke/run_phase0_local.sh
+# Produces: smoke/artifacts/pathome_seed/symptoms_seed.json (and per-crop
+# artefacts under smoke/artifacts/pathome_kb/<Crop>/)
+```
+
+Then push the seed file to GitHub:
+```bash
+git add -f smoke/artifacts/pathome_seed/symptoms_seed.json \
+           smoke/BugWood_Diseases_smoke_usable.csv
+git commit -m "smoke phase 0 seed" && git push origin main
+```
+
+### Step 2 — Phases 1–5 on Nova (~60–90 min, single A100)
 
 ```bash
 ssh tirtho@hpc-login.iastate.edu
-cd /work/mech-ai-scratch/tirtho/PlantSwarm && git pull
+cd /work/mech-ai-scratch/tirtho/PlantSwarm && git pull origin main
 sbatch smoke/submit_smoke.sh
 tail -f logs/pathome_smoke-*.out
 ```
 
-### Local (CPU laptop — Phases 2/4/5 auto-skip)
+The Nova job bails out with a clear error if the seed file isn't yet on disk — meaning your `git push` hasn't reached the remote, or you haven't `git pull`-ed on Nova.
 
+### Local-only debug (no Nova, no GPU)
+
+If you don't have a GPU and just want to validate KB plumbing:
 ```bash
 bash smoke/run_smoke.sh
-# Setup + Phase 0 + Phase 1 + Phase 3 only. Validates KB + DB plumbing
-# without GPU. ~10–15 min.
+# Setup → Phase 0 (if claude is auth'd) → Phase 1 → Phase 3.
+# Phases 2/4/5 auto-skip on CPU-only machines.
+# ~10–15 min total.
 ```
 
-### Local (CUDA workstation — full smoke)
+### Skip / resume / orchestrator
 
 ```bash
-export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
-bash smoke/run_smoke.sh
-# Full pipeline. ~60–120 min depending on GPU.
-```
-
-### Skip / resume
-
-```bash
+SMOKE_SKIP_0=1 bash smoke/run_smoke.sh        # skip Phase 0 (seed already present)
 SMOKE_SKIP_2=1 bash smoke/run_smoke.sh        # skip just Phase 2
 SMOKE_FROM=4 bash smoke/run_smoke.sh          # restart at training (assumes traces exist)
 SMOKE_ORCH=autogen_swarm bash smoke/run_smoke.sh   # use vLLM instead of hf_direct
 ```
 
-## Auth requirements
+## Auth requirements (local only)
 
-Phase 0 of the smoke (the SAGE-ported pathome_kb pipeline) needs both:
+Phase 0 of the smoke (the SAGE-ported pathome_kb pipeline) runs **locally** and needs:
 
 1. The `claude` CLI on PATH and authenticated (`claude auth login`).
 2. `ANTHROPIC_API_KEY` in env or repo-root `.env` (used by the Anthropic SDK in the extraction + reconciliation stages).
 
-If either is missing, Phase 0 is skipped with a clear message — Phases 1+ will still run, but the SymptomLibrary visual blocks will be empty (geo + reference data drives downstream behaviour either way, so this is an OK fallback for plumbing-only smoke runs).
+If either is missing, `smoke/run_phase0_local.sh` errors out with the install commands. The Nova-side `submit_smoke.sh` does **not** check for the CLI — it relies on the seed file already being on disk from a `git pull`.
 
 ## What "success" looks like
 
