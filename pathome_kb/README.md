@@ -1,16 +1,116 @@
-# `pathome_kb/` — How the KB is generated
+# `pathome_kb/` — How the KB looks and how it's built
 
-This module produces the **PathomeDB seed file** that Phase 1 (`scripts/build_pathome.py`) consumes. The seed file is a single JSON document containing one `SymptomProfile` per `(crop, disease)` class in your filtered Bugwood CSV, each with:
+This module produces the **PathomeDB seed** that Phase 1 (`scripts/build_pathome.py`) consumes. The seed is a single JSON document with one `SymptomProfile` per `(crop, disease)` class in your filtered Bugwood CSV.
 
-- a cross-region visual block (text from extension-service literature, with verbatim quotes)
-- per-state regional blocks (same text re-scoped + image-grounded enum fields from the Bugwood photo for that state)
-- citations tagged by **grounding** ∈ {`text`, `image`}
+The schema deliberately **separates** what's invariant about a disease from what a specific photo of that disease in a specific state actually shows:
 
-The whole pipeline runs locally (Nova compute nodes block claude OAuth). Output gets pushed to GitHub; Nova `git pull`s and consumes the seed via Phase 1 onward.
+```
+SymptomProfile
+   ├── canonical          ← cross-region, sourced from extension-service URLs
+   │     · summary, diagnostic_features, look_alikes
+   │     · treatments              (NEW)
+   │     · affected_parts, pathogen_scientific_name, type_of_disease
+   │     · sources : { field → [{ value, url, quote, grounding="text" }] }
+   │
+   └── regional_observations[state]   ← per-state, VLM-grounded in a photo
+         · image_ids                  ← Bugwood photographs from this state
+         · severity                   (mild | moderate | advanced | late-season)
+         · lesion_morphology          (one-sentence visual description)
+         · affected_organs            (what THIS image shows)
+         · spread_pattern             (lower canopy | scattered | uniform | …)
+         · variations_from_canonical  ← bullets: how this image diverges
+         · sources : { field → [{ value, image_id, quote, grounding="image" }] }
+```
+
+The earlier schema duplicated canonical text per state — the new split fixes that.
 
 ---
 
-## 30-second mental model
+## What the KB looks like (worked example, real numbers from the Tomato + Soybean smoke)
+
+```jsonc
+{
+  "profile_id": "Tomato::Early Blight",
+  "crop": "Tomato",
+  "disease": "Early Blight",
+
+  "canonical": {
+    "summary": "Lesions first develop on lower leaves as small, brownish-black
+                spots which can expand to about 1/4-1/2 inch in diameter,
+                often with concentric rings forming a target-board pattern.",
+    "diagnostic_features": ["concentric rings", "yellow halo", "lower leaves first"],
+    "look_alikes": ["Septoria leaf spot", "Late blight"],
+    "treatments": ["crop rotation", "copper-based fungicides",
+                   "remove infected plant debris", "resistant varieties"],
+    "affected_parts": ["Foliar", "Stem", "Pod", "Seed"],
+    "pathogen_scientific_name": "Alternaria linariae",
+    "type_of_disease": "Fungal",
+    "sources": {
+      "summary":            [{value, url: "https://content.ces.ncsu.edu/early-blight-of-tomato",
+                              quote: "verbatim from the page",
+                              grounding: "text"}],
+      "treatments":         [{value, url: "https://extension.umn.edu/...",
+                              quote: "...rotate with non-solanaceous crops...",
+                              grounding: "text"}],
+      "diagnostic_features":[ ... ],
+      ...
+    }
+  },
+
+  "regional_observations": {
+    "Alabama": {
+      "image_ids": ["bugwood::1568038"],
+      "severity": "late-season",
+      "lesion_morphology": "Individual lesions are not resolvable at field-scale
+                            distance; the canopy reads as wholesale browning and
+                            shrivelling, with bare brown stems exposed.",
+      "affected_organs": ["leaves", "stems"],
+      "spread_pattern": "uniform across row",
+      "variations_from_canonical": [
+        "Image shows whole-plant defoliation rather than the small 1/4–1/2
+         inch bulls-eye lesions on lower leaves the canonical describes",
+        "No yellow halo or concentric-ring detail visible at this scale —
+         disease is past the diagnostic-lesion stage",
+        "Fruit still appears intact and ripening on the vine; canonical
+         sunken calyx-end fruit lesions are not visible"
+      ],
+      "sources": {
+        "severity":   [{value:"late-season",
+                        quote:"canopy nearly defoliated...",
+                        image_id:"bugwood::1568038", grounding:"image"}],
+        "lesion_morphology": [{...same image, image-grounded...}],
+        "spread_pattern":    [{...}],
+        "variations_from_canonical": [{...}]
+      }
+    },
+
+    "Connecticut": {
+      "image_ids": ["bugwood::5559537"],
+      "severity": "moderate",
+      "lesion_morphology": "Roughly circular dark brown to black spots about
+                            5–10 mm across with faint concentric rings and a
+                            tan/gray center, some coalescing.",
+      "affected_organs": ["leaf"],
+      "spread_pattern": "scattered, lower canopy",
+      "variations_from_canonical": [
+        "Clear bulls-eye concentric ring pattern only weakly visible — rings
+         are FAINT rather than pronounced",
+        "Yellow halo around individual spots is subtle/absent on the central
+         leaflet — chlorosis appears more as broad leaf yellowing",
+        "Visible lesions are LARGER than canonical 1/4 inch (~6 mm) — the
+         tip lesion is a coalesced patch >2 cm across"
+      ],
+      "sources": { ... }
+    }
+  }
+}
+```
+
+The two regional blocks describe **different things in different photos** of the same disease — Alabama's image shows late-stage canopy collapse, Connecticut's image shows individual mid-stage lesions. Both flag concrete deltas vs the canonical text. The canonical block stays fixed across states.
+
+---
+
+## How it's built (5 stages)
 
 ```
                      YOU (laptop)                                              GitHub                  Nova
@@ -20,7 +120,7 @@ BugWood_Diseases_usable.csv
  ▼
 ┌──────────────────────────────────────────────────────────┐
 │ 1. DISCOVERY            claude -p WebSearch              │
-│    one search per disease (parallel) → ~100 candidate URLs│
+│    one search per disease (parallel)                      │
 │    → discovery_results.json                              │
 └──────────────────────────────────────────────────────────┘
  │
@@ -28,44 +128,41 @@ BugWood_Diseases_usable.csv
 ┌──────────────────────────────────────────────────────────┐
 │ 2. EXTRACTION           fetch URL + claude -p            │
 │    per-source extraction with VERBATIM quotes from page   │
-│    text. Never invents content.                          │
+│    text. Now also captures `treatments` (mgmt section).   │
 │    → raw_extractions.json (per crop)                     │
 └──────────────────────────────────────────────────────────┘
  │
  ▼
 ┌──────────────────────────────────────────────────────────┐
 │ 3. RECONCILIATION       claude -p (no API key needed)    │
-│    merge per-source records into canonical per-disease    │
-│    entries. Every field stays {value, url, quote}.       │
+│    merge per-source records into ONE canonical entry per  │
+│    disease. Every field stays {value, url, quote}.        │
 │    → final_registry.json (per crop)                      │
+│      → ❶ canonical block of every SymptomProfile         │
 └──────────────────────────────────────────────────────────┘
  │
  ▼
 ┌──────────────────────────────────────────────────────────┐
-│ 4. REGIONAL EXTRACTION  claude -p over cached records    │
-│    one call per (crop, disease, state) tuple where      │
-│    Bugwood has images. Honest: when sources don't        │
-│    mention the state, sets state_specific=false.         │
-│    → regional_registries.json (per crop)                 │
+│ 4a. STATE-AWARE IMAGE CACHE TOP-UP                        │
+│     scripts/ensure_state_image_cache.py downloads ONE     │
+│     Bugwood image per (crop, disease, state) tuple.       │
+│     → smoke/.bugwood_cache/<image_number>.jpg              │
+│                                                            │
+│ 4b. PER-STATE VLM OBSERVATION   claude -p + Read tool      │
+│     For each (crop, disease, state) with a cached image:   │
+│       reads the image,                                     │
+│       reads the canonical entry from step 3,               │
+│       emits: severity, lesion_morphology, affected_organs,│
+│               spread_pattern, variations_from_canonical    │
+│     → regional_observations.json (per crop)                │
+│       → ❷ regional_observations[state] of every profile   │
 └──────────────────────────────────────────────────────────┘
  │
  ▼
 ┌──────────────────────────────────────────────────────────┐
-│ 5. IMAGE-GROUNDED FILL  claude -p + Read tool            │
-│    looks at the cached Bugwood image and fills *empty*   │
-│    enum fields (color/shape/margin/texture/sporulation/  │
-│    progression) with grounding="image" citations.        │
-│    Text-grounded fields are LEFT UNTOUCHED.              │
-│    → regional_image_fills.json (per crop)                │
-└──────────────────────────────────────────────────────────┘
- │
- ▼
-┌──────────────────────────────────────────────────────────┐
-│ 6. ADAPTER + MERGE      merge_registries_to_seed         │
-│    layers all four artefacts into one SymptomProfile     │
-│    per (crop, disease). Each citation tagged with        │
-│    grounding ∈ {"text", "image"}.                       │
-│    → symptoms_seed.json                                  │
+│ 5. ADAPTER + MERGE      symptoms_adapter.merge…          │
+│    layers ❶ + ❷ into one SymptomProfile per (crop, disease)│
+│    → smoke/artifacts/pathome_seed/symptoms_seed.json     │
 └──────────────────────────────────────────────────────────┘
  │
  ▼ git push -f
@@ -74,249 +171,88 @@ BugWood_Diseases_usable.csv
                                                           └─────────┘                 (Nova A100)
 ```
 
-Stages 1–3 are the **SAGE port** (`internet_pipeline.py`). Stages 4–5 are the **Pathome additions** (`regional_extraction.py`, `regional_image_fill.py`). Stage 6 is the adapter (`symptoms_adapter.py`).
+Stages 1–3 are the **SAGE port** (`internet_pipeline.py`). Stage 4b is the **Pathome image-grounded observation** (`regional_observation.py`). Stage 5 is the adapter (`symptoms_adapter.py`).
 
 ---
 
 ## Where each stage lives
 
-| Stage | Code | Output (per crop) | Reads | Writes |
-|---|---|---|---|---|
-| Setup | `scripts/filter_bugwood_csv.py` | `BugWood_Diseases_usable.csv` | raw IPMNet CSV | filtered CSV + per-class report |
-| 1 Discovery | `internet_pipeline._run_targeted_discovery` | `discovery_results.json` | filtered CSV (disease names) | candidate URLs per disease |
-| 2 Extraction | `internet_pipeline._run_extraction` | `raw_extractions.json` | discovery results | per-source records with verbatim quotes |
-| 3 Reconciliation | `internet_pipeline._run_reconciliation` | `final_registry.json` | raw extractions | canonical disease entries (cross-region) |
-| 4 Regional | `regional_extraction.run_regional_extraction` | `regional_registries.json` | raw extractions + state image map | per-(disease, state) records |
-| 5 Image-fill | `regional_image_fill.run_regional_image_fill` | `regional_image_fills.json` | regional registries + cached Bugwood images | per-(disease, state) image-derived fields |
-| 6 Merge | `symptoms_adapter.merge_registries_to_seed` | `symptoms_seed.json` | all of the above | the seed Phase 1 consumes |
+| Stage | Code | Output | LLM input |
+|---|---|---|---|
+| 1 Discovery | `internet_pipeline._run_targeted_discovery` | `discovery_results.json` | (disease name) → `claude -p WebSearch` |
+| 2 Extraction | `internet_pipeline._run_extraction` | `raw_extractions.json` | (URL page text) → `claude -p` (no tools) → fields with verbatim quotes + treatments |
+| 3 Reconciliation | `internet_pipeline._run_reconciliation` | `final_registry.json` | (per-source records) → `claude -p` → canonical disease entry |
+| 4a Image cache | `scripts/ensure_state_image_cache.py` | `smoke/.bugwood_cache/` | (no LLM) — pure URL fetch |
+| 4b Regional observation | `regional_observation.run_regional_observation` | `regional_observations.json` | (image + canonical brief) → `claude -p --allowedTools Read` → severity/morphology/organs/spread/variations |
+| 5 Merge | `symptoms_adapter.merge_registries_to_seed` | `symptoms_seed.json` | (no LLM) — pure assembly |
 
 All per-crop artefacts land under `artifacts/pathome_kb/<Crop>/`. The merged seed lands at `smoke/artifacts/pathome_seed/symptoms_seed.json` (smoke) or `artifacts/pathome_seed/symptoms_seed.json` (production).
 
 ---
 
-## What each stage actually puts in the LLM
-
-### Stage 1 — Discovery (`claude -p` WebSearch)
+## What stage 4b actually puts in the LLM (the new VLM stage)
 
 ```
-   ┌─────────────────────────────────────────┐
-   │  Crop: Tomato                           │
-   │  Disease: Early Blight                  │  → claude -p
-   │  Tools: [WebSearch]                     │      WebSearch:
-   │  Schema: {url, title, source_type, ...} │      "Tomato Early Blight extension"
-   └─────────────────────────────────────────┘      "Tomato Early Blight UMN APS"
-                                                    ...
-                                              ◄─── 4-8 candidate URLs
-```
-
-One claude -p invocation per disease, parallel across 4 workers. Output: `candidate_sources` array per disease, deduplicated by URL.
-
-### Stage 2 — Extraction (`claude -p` per URL)
-
-```
-   For each candidate URL:
-   ┌─────────────────────────────────────────┐
-   │ httpx.get(url) → page_text (≤30 KB)     │
-   │ claude -p (no tools)                    │
-   │   "Extract every disease mentioned in   │ → claude -p (text-only)
-   │    this page. Use VERBATIM quotes from  │
-   │    the page. Never invent content."     │
-   │   Schema: {extractions: [...]}          │
-   └─────────────────────────────────────────┘
-                                              ◄─── disease records with
-                                                   {value, url, quote}
-                                                   per field
-```
-
-This is the **provenance backbone**. The LLM is forbidden from filling fields from its own knowledge; only verbatim sentences from the page text become evidence.
-
-### Stage 3 — Reconciliation (`claude -p` over batched extractions)
-
-```
-   ┌─────────────────────────────────────────┐
-   │ Group all per-source records for one    │
-   │ disease across ~3-5 source URLs:        │
-   │   [src1.early_blight,                   │ → claude -p (text-only)
-   │    src2.early_blight,                   │
-   │    src3.early_blight, ...]              │
-   │ "Merge into one canonical entry. Keep   │
-   │  per-field citations. Flag conflicts."  │
-   │ Schema: FINAL_REGISTRY_SCHEMA           │
-   └─────────────────────────────────────────┘
-                                              ◄─── canonical Disease record:
-                                                   {pathogen_scientific_name: {value,url,quote},
-                                                    affected_parts: ...,
-                                                    visual_symptoms: {summary, dx, look_alikes},
-                                                    confidence, num_sources, conflicts}
-```
-
-### Stage 4 — Regional extraction (per-state filter on cached records)
-
-```
-   For each (crop, disease, state) where Bugwood has images:
-   ┌─────────────────────────────────────────┐
-   │ Load cached raw_extractions.json (Stage │
-   │ 2 output). Filter to disease records.   │
-   │ claude -p (no tools, no web)            │
-   │   "Crop=Tomato Disease=Early Blight     │ → claude -p
-   │    State=Alabama. Extract symptoms      │
-   │    SPECIFIC TO Alabama using only       │
-   │    verbatim quotes from the records'    │
-   │    evidence fields."                    │
-   │   Honest output: state_specific=false   │
-   │   when no Alabama-mentioning text.      │
-   └─────────────────────────────────────────┘
-                                              ◄─── {state: "Alabama",
-                                                    state_specific: bool,
-                                                    summary, diagnostic_features,
-                                                    affected_parts, look_alikes}
-                                                   Each citation tagged with
-                                                   bugwood::N image_id from this state.
-```
-
-In practice `state_specific=false` is common because extension factsheets are written US-wide. The pass still produces a record per state — the difference is the **image_id** carried forward, not the text.
-
-### Stage 5 — Image-grounded fill (`claude -p` with Read tool)
-
-```
-   For each (crop, disease, state) with a cached Bugwood photo:
    ┌──────────────────────────────────────────────────────────┐
-   │ Empty fields in regional_visuals[state]?                  │
-   │ → typically: color, shape, margin, texture,               │
-   │   sporulation, progression                                │
-   │ claude -p --allowedTools "Read" --max-turns 5             │
-   │   "Read /path/to/bugwood_NNN.jpg via Read tool, then       │
-   │    fill these empty fields. State=Alabama Crop=Tomato      │ → claude -p (vision)
-   │    Disease=Early Blight. Be specific to this photo;        │
-   │    leave fields empty if you can't tell from the image."   │
-   │   Schema: {color, shape, margin, ...} each with            │
-   │           {value, quote: "<your visual description>"}      │
+   │ Image:    /Users/.../.bugwood_cache/1568038.jpg           │
+   │ Canonical: "Lesions first develop on lower leaves as       │
+   │             small, brownish-black spots ~1/4-1/2 inch with │
+   │             concentric rings forming a target-board…"     │
+   │                                                            │
+   │ claude -p --allowedTools Read --max-turns 5                 │
+   │   → reads image at the given path                           │
+   │   → emits JSON:                                             │
+   │     { severity, severity_quote,                             │
+   │       lesion_morphology, lesion_morphology_quote,           │
+   │       affected_organs, affected_organs_quote,               │
+   │       spread_pattern, spread_pattern_quote,                 │
+   │       variations_from_canonical: ["..." , "..."] }         │
+   │                                                            │
+   │ Honest empty: if a field can't be determined from a single │
+   │ photo (e.g. shape from a whole-canopy shot), the model     │
+   │ returns "" instead of guessing.                            │
    └──────────────────────────────────────────────────────────┘
-                                              ◄─── color: ["brown", "dark brown", "black"]
-                                                   progression: "advanced defoliation"
-                                                   shape: ""   ← honest empty
-                                                   margin: ""  ← honest empty
-                                                   each with quote = model's
-                                                   one-sentence visual description
 ```
 
-The model is allowed to refuse fields it can't determine from a single photo. The citations carry `grounding="image"` and the Bugwood `image_id`; `url` is empty since the image IS the witness.
-
-### Stage 6 — Adapter merge → SymptomProfile
-
-```
-SymptomProfile {
-  profile_id:  "Tomato::Early Blight",
-  crop:        "Tomato",
-  disease:     "Early Blight",
-
-  # Cross-region (Stage 3 product)
-  visual: {
-    plant_parts: ["leaf", "stem", "fruit"],
-    distinctive_signs: ["concentric rings on lesions", ...],
-    confusion_diseases: ["Septoria leaf spot", ...],
-    notes: "Small dark brown spots on lower leaves expand into ...",
-    sources: {
-      "plant_parts":   [{ value, url: ces.ncsu.edu/.../early-blight,
-                          quote: "...verbatim from page...",
-                          grounding: "text" }],
-      ...
-    }
-  },
-
-  # Per-state — this is what was missing in V1
-  regional_visuals: {
-    "Alabama": {
-      plant_parts: ["leaf", "fruit", "stem"],            ←── Stage 4 (text)
-      distinctive_signs: ["Brownish-black lesions ..."], ←── Stage 4 (text)
-      color: ["brown", "dark brown", "blackened"],       ←── Stage 5 (image)
-      texture: ["dry", "shriveled"],                     ←── Stage 5 (image)
-      reference_image_ids: ["bugwood::1568038"],
-      sources: {
-        "plant_parts": [
-          { value, url: ces.ncsu.edu/...,
-            quote: "...", image_id: "bugwood::1568038",
-            grounding: "text" }
-        ],
-        "color": [
-          { value: "brown; dark brown; blackened",
-            url: "",
-            quote: "Foliage across the staked tomato row appears
-                    uniformly brown to nearly black ...",
-            image_id: "bugwood::1568038",
-            grounding: "image" }
-        ]
-      }
-    },
-    "Connecticut": { ... different reference_image_ids, same structure ... }
-  },
-
-  # Empirical (filled later by build_pathome.py / enhance_pathome_from_traces.py)
-  state_counts: {"Alabama": 3, ...},
-  reference_ids: ["bugwood::..."],
-  swarm_observations: null
-}
-```
-
-**Two key invariants:**
-1. Every `Citation` has a `grounding` field — `text` (URL+quote from a real page) or `image` (model description grounded in a Bugwood photo).
-2. `image_id` is carried on EVERY regional citation regardless of grounding type. So a downstream consumer can always fetch the supporting Bugwood photograph.
+This is the only stage where the model is allowed to write text that isn't a verbatim quote — but every observation is anchored to the specific Bugwood image_id, and the `variations_from_canonical` bullets explicitly call out where the image disagrees with the canonical text.
 
 ---
 
-## Worked example (real numbers from the smoke run)
+## Aggregate (smoke; Tomato + Soybean, full coverage)
 
-For `Tomato::Early Blight / Alabama` after the full Phase 0 (stages 1–6):
+After running `bash smoke/run_phase0_full.sh`:
 
-| Field | grounding | source |
-|---|---|---|
-| `plant_parts: ["leaf", "fruit", "stem"]` | `text` | NC State Extension |
-| `distinctive_signs: [".. concentric rings .."]` | `text` | NC State Extension |
-| `confusion_diseases: ["Septoria leaf spot"]` | `text` | NC State Extension |
-| `notes: "Small dark brown spots on lower leaves..."` | `text` | NC State Extension |
-| `color: ["brown", "dark brown", "blackened"]` | `image` | bugwood::1568038 |
-| `texture: ["dry", "shriveled"]` | `image` | bugwood::1568038 |
-| `shape: ""` | _none_ | model honestly couldn't tell |
-| `margin: ""` | _none_ | model honestly couldn't tell |
+```
+profiles total                    : 25
+profiles w/ canonical summary     : 25
+profiles w/ canonical treatments  :  ~22  (varies by source coverage)
+profiles w/ regional observations : 25
+total per-state blocks            : ~45–60
+total variations bullets          : ~150–250
+text-grounded citations (canonical): ~400+
+image-grounded citations (regional): ~400+
+```
 
-For the same disease in Connecticut, `reference_image_ids = ["bugwood::5559537"]` and the image-grounded fields will reflect what's visible in *that* photo (potentially smaller lesions on younger plants, different host cultivar, etc.). The text-grounded fields are the same because the extension service text is US-wide.
+Each (crop, disease, state) tuple where Bugwood has a cached image
+gets one regional observation block; the rest of the seed is the
+shared canonical text.
 
 ---
 
-## Aggregate (smoke; Tomato + Soybean, 25 classes)
-
-After running all six stages:
+## Files on disk after a run
 
 ```
-profiles total           : 25
-profiles w/ visual data  : 17   (cross-region SAGE survived)
-profiles w/ regional data: 19   (per-state blocks present)
-per-state blocks         : 38
+artifacts/pathome_kb/Tomato/
+  ├── discovery_results.json     63 candidate URLs (claude -p WebSearch)
+  ├── raw_extractions.json       per-source extraction with verbatim quotes
+  ├── final_registry.json        14 canonical disease entries (with treatments)
+  └── regional_observations.json 27 per-state VLM observations + variations
 
-text-grounded citations  : 130
-image-grounded citations :  61
-```
+artifacts/pathome_kb/Soybean/
+  └── (same five files)
 
-The 8 still-empty profiles are mostly Soybean diseases whose canonical names didn't lex-match the disease records the LLM extracted (e.g. "Soybean Rust" vs "Phakopsora pachyrhizi"). Those need either tighter matching prompts or a second pass — out of scope for this run.
-
----
-
-## Reusable helpers in this module
-
-```python
-from pathome_kb.shared import claude_query, claude_query_with_image
-# claude_query: text-only claude -p with optional tools, JSON schema, system prompt.
-# claude_query_with_image: same but auto-prepends the image path and whitelists Read.
-
-from pathome_kb.regional_extraction import build_state_image_map
-# (crop, disease, state) → [bugwood::N, ...] from the filtered CSV
-
-from pathome_kb.symptoms_adapter import (
-    disease_to_profile_dict, regional_record_to_visual_dict,
-    merge_registries_to_seed,
-)
-# Adapter primitives — useful if you want to assemble a SymptomProfile dict
-# from a custom registry source (paper-supplement bibliography, etc.)
+smoke/.bugwood_cache/            ~118 JPEGs (one per (crop, disease, state) tuple)
+smoke/artifacts/pathome_seed/symptoms_seed.json    final assembled KB → Phase 1 input
 ```
 
 ---
@@ -324,35 +260,32 @@ from pathome_kb.symptoms_adapter import (
 ## CLI surface
 
 ```bash
-# Full Phase 0 from scratch
+# Single command — perfect-KB regenerate end-to-end
+bash smoke/run_phase0_full.sh
+
+# Direct pathome_kb invocation
 python -m pathome_kb \
   --csv BugWood_Diseases_usable.csv \
-  --out artifacts/pathome_seed/symptoms_seed.json
-
-# + per-state regional extraction (additive)
-python -m pathome_kb ... --regional
-
-# + image-grounded fill (additive)
-python -m pathome_kb ... --regional --regional-image-fill
-
-# Stages 4-5 only (assumes cached raw_extractions.json + final_registry.json)
-python -m pathome_kb ... --regional-only
-python -m pathome_kb ... --regional-image-only
+  --out artifacts/pathome_seed/symptoms_seed.json \
+  --regional                                  # turn on stage 4b
 
 # Restrict scope while iterating
-python -m pathome_kb ... --quick                          # cap sources/extractions
-python -m pathome_kb ... --only-crops "Tomato,Soybean"
-python -m pathome_kb ... --limit-crops 5
-python -m pathome_kb ... --resume-from extraction         # use cached upstream
-python -m pathome_kb ... --no-cache                       # ignore cached registries
+--quick                            # smaller per-stage caps
+--only-crops "Tomato,Soybean"      # crop allowlist
+--limit-crops 5                    # first N crops alphabetically
+--resume-from extraction           # use cached upstream artefacts
+--no-cache                         # re-run even if final_registry.json exists
+--regional-only                    # skip stages 1-3, just rerun stage 4b on
+                                   # cached final_registry.json
 ```
 
-The smoke directory wraps the common patterns:
+The smoke wrapper:
 
 ```bash
-bash smoke/run_phase0_local.sh           # Stages 1-4 (cross-region + regional text)
-bash smoke/run_phase0_regional_only.sh   # Stage 4 only (refresh per-state text)
-bash smoke/run_phase0_image_fill.sh      # Stage 5 only (refresh image-grounded)
+bash smoke/run_phase0_full.sh                      # full coverage, ~45-90 min, ~$5-15
+FULL_QUICK=1 bash smoke/run_phase0_full.sh         # fast, ~15-25 min, ~$1-3
+FULL_KEEP_CACHE=1 bash smoke/run_phase0_full.sh    # reuse cached registries
+FULL_SKIP_KB=1 bash smoke/run_phase0_full.sh       # only cache top-up + setup
 ```
 
 ---
@@ -361,11 +294,11 @@ bash smoke/run_phase0_image_fill.sh      # Stage 5 only (refresh image-grounded)
 
 | What | Why | Failure mode |
 |---|---|---|
-| `claude` CLI on PATH | Stages 1, 2, 4, 5 use `claude -p`; Stage 5 uses the Read tool | `pathome_kb` exits with "claude CLI not on PATH" |
-| `claude auth login` once | OAuth login for the CLI; CLI sessions reuse the token | First `claude -p` blocks for browser sign-in |
-| `ANTHROPIC_API_KEY` in env or `.env` (optional) | Stage 3 reconciliation can use the SDK directly when available — slightly faster than subprocess. Without it, reconciliation falls back to `claude -p` automatically. | None — the fallback is transparent |
+| `claude` CLI on PATH | Stages 1, 2, 3, 4b all use `claude -p`; 4b uses the Read tool | `pathome_kb` exits with "claude CLI not on PATH" |
+| `claude auth login` once | OAuth login for the CLI; sessions reuse the token | First `claude -p` blocks for browser sign-in |
+| `ANTHROPIC_API_KEY` (optional) | Stage 3 reconciliation can use the SDK directly when present — slightly faster than subprocess. Without it, reconciliation falls back to `claude -p` automatically. | None — the fallback is transparent |
 
-Nova compute nodes typically can't run `claude auth login`, which is why Phase 0 must run on a local machine and the seed file is shuttled through git.
+Nova compute nodes can't run `claude auth login`, which is why Phase 0 runs locally and the seed file is shuttled through git.
 
 ---
 
@@ -373,11 +306,21 @@ Nova compute nodes typically can't run `claude auth login`, which is why Phase 0
 
 | Run mode | LLM calls | Walltime | Cost (claude -p over OAuth) |
 |---|---|---|---|
-| Smoke `--quick` (2 crops) full | ~80 | ~10–15 min | ~$1–2 |
-| Smoke regional-only | ~38 | ~3–5 min | ~$0.5 |
-| Smoke image-fill only | ~16 | ~2 min | ~$0.5 |
-| Production (484 classes) full | ~1500 | ~12–20 h | ~$50–150 |
-| Production regional-only | ~700 | ~3–4 h | ~$10–20 |
-| Production image-fill only | ~700 | ~3–4 h | ~$15–25 |
+| Smoke `FULL_QUICK=1` (2 crops) | ~80 | ~15–25 min | ~$1–3 |
+| Smoke full (2 crops) | ~150 | ~45–90 min | ~$5–15 |
+| Production full (484 classes) | ~2500 | ~16–24 h | ~$60–180 |
 
 (Production estimates assume `MAX_PARALLEL_EXTRACTIONS=4` in `config.py` and Sonnet 4.6 default. Bigger parallelism reduces wall but not cost; OAuth quota is the practical ceiling.)
+
+---
+
+## What changed vs the previous schema
+
+| Previous | Now |
+|---|---|
+| `SymptomProfile.visual` (cross-region text + a few enum fields) | `SymptomProfile.canonical` — full canonical disease block with `treatments` |
+| `SymptomProfile.regional_visuals[state]` — duplicated canonical text per state | `SymptomProfile.regional_observations[state]` — VLM observation of THIS state's photo + `variations_from_canonical` deltas |
+| Two stages (`regional_extraction.py` + `regional_image_fill.py`) | One stage (`regional_observation.py`) |
+| Treatments field absent | Added to `extraction.py` and `reconciliation.py` prompts + schemas |
+| Citation `grounding` field optional | Required: `"text"` (canonical) or `"image"` (regional observation) |
+| Old artefacts: `regional_registries.json`, `regional_image_fills.json` | New artefact: `regional_observations.json` |
