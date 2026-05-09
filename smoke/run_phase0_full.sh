@@ -2,39 +2,46 @@
 # ============================================================================
 # smoke/run_phase0_full.sh
 # ============================================================================
-# Full Phase 0 for the smoke (Tomato + Soybean) — every stage end-to-end,
-# default to MAXIMUM COVERAGE (no --quick caps).
+# Single-command, perfect-KB regenerate for Tomato + Soybean.
 #
-#   1. Filter the smoke CSV  → BugWood_Diseases_smoke_usable.csv
-#   2. Discovery + extraction + reconciliation  (cross-region SAGE)
-#      → all 47 + 61 source URLs (not just first 3 per crop)
-#   3. Regional text extraction  (per-state, image_id-tagged)
-#      → all 118 (crop, disease, state) tuples (not just first 2/disease)
-#   4. State-aware image cache top-up (one image per (crop, disease, state))
-#   5. Image-grounded fill via claude -p + Read tool
-#      → all 8 visual fields per tuple (color, shape, margin, texture,
-#        sporulation, progression, plant_parts, distinctive_signs)
-#   6. Adapter merge → smoke/artifacts/pathome_seed/symptoms_seed.json
+# What runs (every stage end-to-end, default = MAXIMUM COVERAGE):
 #
-# Output: a fully state-aware, dual-grounded seed (text + image citations).
+#   1. Filter the smoke CSV               → BugWood_Diseases_smoke_usable.csv
+#   2. State-aware image cache top-up     → one image per (crop, disease, state)
+#   3. Cross-region SAGE pipeline:
+#        discovery (claude -p WebSearch)  → all candidate URLs per disease
+#        extraction (claude -p)           → verbatim quotes + treatments
+#        reconciliation (claude -p)       → canonical entries with treatments
+#        → final_registry.json per crop
+#   4. Per-state VLM observation:
+#        claude -p + Read tool looks at each cached Bugwood image
+#        + reads canonical reference from step 3
+#        → severity / lesion_morphology / affected_organs /
+#          spread_pattern / variations_from_canonical
+#        → regional_observations.json per crop
+#   5. Adapter merge → smoke/artifacts/pathome_seed/symptoms_seed.json
+#
+# Output schema:
+#   SymptomProfile {
+#     canonical: CanonicalDisease           # one block per disease (text)
+#     regional_observations: {state: ...}   # per-state VLM observations + variations
+#   }
 #
 # Walltime / cost (full coverage):
-#   ~45–90 min wall depending on web-fetch latency
-#   ~$5–15 in claude -p OAuth quota
+#   ~45–90 min wall, ~$5–15 in claude -p OAuth quota
 #
-# For fast iteration, drop coverage with FULL_QUICK=1:
-#   FULL_QUICK=1 bash smoke/run_phase0_full.sh
-#   → caps sources/disease at 3, states/disease at 2; ~15–25 min, ~$1–3
+# Knobs:
+#   FULL_QUICK=1         caps sources/states for fast iteration (~15-25 min, ~$1-3)
+#   FULL_KEEP_CACHE=1    skip clearing the cached final_registry.json — reuse
+#                        existing cross-region run (treatments may be missing
+#                        if the cache predates the prompt update)
+#   FULL_SKIP_SETUP=1    CSV already filtered
+#   FULL_SKIP_CACHE=1    image cache already topped up
+#   FULL_SKIP_KB=1       skip the python -m pathome_kb call (no-op smoke)
 #
 # Auth requirements:
 #   - claude CLI on PATH and authenticated (`claude auth login`)
-#   - ANTHROPIC_API_KEY optional (the pipeline auto-falls-back to claude -p)
-#
-# Skip individual stages:
-#   FULL_SKIP_SETUP=1   bash smoke/run_phase0_full.sh   # CSV already filtered
-#   FULL_SKIP_KB=1      bash smoke/run_phase0_full.sh   # cross-region + regional already on disk
-#   FULL_SKIP_CACHE=1   bash smoke/run_phase0_full.sh   # cache already topped-up
-#   FULL_SKIP_IMAGE=1   bash smoke/run_phase0_full.sh   # image-fill already done
+#   - ANTHROPIC_API_KEY optional (auto-falls-back to claude -p)
 # ============================================================================
 
 set -e
@@ -47,9 +54,6 @@ USABLE_CSV="smoke/BugWood_Diseases_smoke_usable.csv"
 OUT="smoke/artifacts/pathome_seed/symptoms_seed.json"
 CACHE_DIR="smoke/.bugwood_cache"
 
-# ----------------------------------------------------------------------------
-# Auth pre-flight
-# ----------------------------------------------------------------------------
 if ! command -v claude >/dev/null 2>&1; then
   echo "ERROR: 'claude' CLI not on PATH"
   echo "Install: curl -fsSL https://claude.ai/install.sh | bash"
@@ -64,17 +68,16 @@ step() {
   echo "================================================================="
 }
 
-# Optional --quick flag (default OFF = full coverage)
 QUICK_ARG=()
 if [ "${FULL_QUICK:-0}" = "1" ]; then
   QUICK_ARG=(--quick)
-  echo "[mode] FULL_QUICK=1 — capping sources/states/fields for fast iteration"
+  echo "[mode] FULL_QUICK=1 — capping sources/states for fast iteration"
 else
-  echo "[mode] FULL coverage — all sources, all states, all visual fields"
+  echo "[mode] FULL coverage — every source URL, every state, every visual field"
 fi
 
 # ----------------------------------------------------------------------------
-# 1. Setup — filter the smoke CSV
+# 1. Filter the smoke CSV
 # ----------------------------------------------------------------------------
 if [ "${FULL_SKIP_SETUP:-0}" != "1" ]; then
   step "1. Setup — filter smoke CSV"
@@ -86,37 +89,41 @@ if [ "${FULL_SKIP_SETUP:-0}" != "1" ]; then
 fi
 
 # ----------------------------------------------------------------------------
-# 2 + 3. Cross-region (SAGE) + regional text extraction
-# ----------------------------------------------------------------------------
-if [ "${FULL_SKIP_KB:-0}" != "1" ]; then
-  step "2+3. Cross-region SAGE pipeline + regional text extraction"
-  python3 -m pathome_kb \
-    --csv "$USABLE_CSV" \
-    --out "$OUT" \
-    --regional \
-    --only-crops "Tomato,Soybean" \
-    "${QUICK_ARG[@]}"
-fi
-
-# ----------------------------------------------------------------------------
-# 4. State-aware image cache top-up
+# 2. State-aware image cache top-up
 # ----------------------------------------------------------------------------
 if [ "${FULL_SKIP_CACHE:-0}" != "1" ]; then
-  step "4. State-aware image cache top-up"
+  step "2. State-aware image cache top-up"
   python3 scripts/ensure_state_image_cache.py \
     --csv "$USABLE_CSV" \
     --cache-dir "$CACHE_DIR"
 fi
 
 # ----------------------------------------------------------------------------
-# 5. Image-grounded fill + final merge
+# 3. Optionally drop stale per-crop registries so the new prompts run
+#    (treatments was added to the extraction/reconciliation prompts; cached
+#    registries from before that change won't have treatments populated).
 # ----------------------------------------------------------------------------
-if [ "${FULL_SKIP_IMAGE:-0}" != "1" ]; then
-  step "5. Image-grounded fill (VLM via claude -p Read)"
+if [ "${FULL_KEEP_CACHE:-0}" != "1" ]; then
+  step "3a. Clearing stale registries to re-run with treatments prompt"
+  for crop in Tomato Soybean; do
+    rm -f "artifacts/pathome_kb/$crop/raw_extractions.json" \
+          "artifacts/pathome_kb/$crop/final_registry.json" \
+          "artifacts/pathome_kb/$crop/registry.md" \
+          "artifacts/pathome_kb/$crop/internet.xlsx"
+  done
+  echo "  (kept discovery_results.json — re-using cached URLs)"
+fi
+
+# ----------------------------------------------------------------------------
+# 4 + 5. Cross-region SAGE + per-state VLM observation + merge
+# ----------------------------------------------------------------------------
+if [ "${FULL_SKIP_KB:-0}" != "1" ]; then
+  step "3b. Cross-region SAGE pipeline + per-state VLM observation"
   python3 -m pathome_kb \
     --csv "$USABLE_CSV" \
     --out "$OUT" \
-    --regional-image-only \
+    --regional \
+    --resume-from extraction \
     --only-crops "Tomato,Soybean" \
     "${QUICK_ARG[@]}"
 fi
@@ -129,32 +136,38 @@ python3 -c "
 import json
 s = json.load(open('$OUT'))
 profiles = s['profiles']
+n_canon = sum(1 for p in profiles if (p.get('canonical') or {}).get('summary'))
+n_reg   = sum(1 for p in profiles if p.get('regional_observations'))
+n_blocks = sum(len(p.get('regional_observations') or {}) for p in profiles)
+n_with_treat = sum(1 for p in profiles if (p.get('canonical') or {}).get('treatments'))
 n_text = n_image = 0
-n_blocks = 0
+n_variations = 0
 for p in profiles:
-    rv = p.get('regional_visuals') or {}
-    n_blocks += len(rv)
-    for state, v in rv.items():
-        for field, cits in (v.get('sources') or {}).items():
+    for f, cits in ((p.get('canonical') or {}).get('sources') or {}).items():
+        for c in cits:
+            n_text += 1 if c.get('grounding','text') == 'text' else 0
+    for state, obs in (p.get('regional_observations') or {}).items():
+        n_variations += len(obs.get('variations_from_canonical') or [])
+        for f, cits in (obs.get('sources') or {}).items():
             for c in cits:
-                if c.get('grounding') == 'image': n_image += 1
-                else: n_text += 1
-print(f'profiles total:            {len(profiles)}')
-print(f'profiles w/ visual data:   {sum(1 for p in profiles if (p.get(\"visual\") or {}).get(\"notes\") or (p.get(\"visual\") or {}).get(\"distinctive_signs\"))}')
-print(f'profiles w/ regional data: {sum(1 for p in profiles if p.get(\"regional_visuals\"))}')
-print(f'per-state blocks:          {n_blocks}')
-print(f'text-grounded citations:   {n_text}')
-print(f'image-grounded citations:  {n_image}')
+                n_image += 1 if c.get('grounding') == 'image' else 0
+print(f'profiles total                   : {len(profiles)}')
+print(f'profiles w/ canonical summary    : {n_canon}')
+print(f'profiles w/ canonical treatments : {n_with_treat}')
+print(f'profiles w/ regional observations: {n_reg}')
+print(f'total per-state blocks           : {n_blocks}')
+print(f'total variations bullets         : {n_variations}')
+print(f'text-grounded citations (canonical): {n_text}')
+print(f'image-grounded citations (regional): {n_image}')
 "
 
 echo
 echo "Push the seed to GitHub:"
-echo
 echo "  git add -f $OUT \\"
 echo "             $USABLE_CSV \\"
-echo "             artifacts/pathome_kb/Tomato/{discovery_results,final_registry,regional_registries,regional_image_fills}.json \\"
-echo "             artifacts/pathome_kb/Soybean/{discovery_results,final_registry,regional_registries,regional_image_fills}.json"
-echo "  git commit -m 'smoke: full state-aware phase 0'"
+echo "             artifacts/pathome_kb/Tomato/{discovery_results,final_registry,regional_observations}.json \\"
+echo "             artifacts/pathome_kb/Soybean/{discovery_results,final_registry,regional_observations}.json"
+echo "  git commit -m 'smoke: regenerate state-aware KB'"
 echo "  git push origin main"
 echo
 echo "Then on Nova:"
