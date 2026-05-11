@@ -95,6 +95,19 @@ def build_plant_village_dataframe(
     _require_tfds()
     import tensorflow as tf
 
+    # CRITICAL: TF eagerly grabs ~all available GPU memory on first op,
+    # which on a shared A100 starves the PyTorch caching allocator and
+    # triggers OOM on every Qwen2.5-VL inference (see logs/phase1_plantswarm-*.err
+    # → "Tried to allocate 1.02 GiB ... 79.19 GiB memory in use" with
+    # PyTorch reporting only ~350 MiB allocated). TFDS is pure CPU work
+    # for this codepath (TFRecord → numpy decode), so hide GPUs from TF
+    # entirely. Must be done BEFORE the first TF op runs.
+    try:
+        tf.config.set_visible_devices([], "GPU")
+    except RuntimeError:
+        # Devices already initialized in this process — ignore.
+        pass
+
     tf.random.set_seed(seed)
 
     import tensorflow_datasets as tfds

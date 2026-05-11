@@ -203,8 +203,16 @@ _log("  Importing TensorFlow/tfds (can take 1–2 min) ...")
 try:
     import tensorflow_datasets as tfds
     import tensorflow as tf
+    # CRITICAL: TF would otherwise eagerly grab ~all available GPU memory
+    # on first op, starving the PyTorch caching allocator and OOM-ing
+    # every per-image Qwen2.5-VL inference (see logs/phase1_plantswarm-*.err).
+    # TFDS is pure CPU work here, so hide GPUs from TF before the first op.
+    try:
+        tf.config.set_visible_devices([], "GPU")
+    except RuntimeError:
+        pass
     TFDS_AVAILABLE = True
-    _log("  TensorFlow/tfds ready.")
+    _log("  TensorFlow/tfds ready (GPU hidden from TF; PyTorch keeps full GPU).")
 except ImportError:
     TFDS_AVAILABLE = False
     _log("  TensorFlow/tfds not installed (PlantVillage will be skipped).")

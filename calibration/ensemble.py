@@ -80,5 +80,9 @@ def ensemble_probabilities(
 
 
 def argmax_label(probs: Dict[str, float]) -> str:
-    """Return the label with highest ensemble probability."""
+    """Return the label with highest ensemble probability, or "" if no
+    probabilities are available (e.g., task missing from the ensemble or
+    label_list empty)."""
+    if not probs:
+        return ""
     return max(probs, key=lambda k: probs[k])

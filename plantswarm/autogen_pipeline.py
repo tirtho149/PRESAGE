@@ -345,13 +345,23 @@ class AutoGenPlantSwarmPipeline:
                 confidence_weights=self.confidence_weights,
             )
 
+        # Lazy ensemble-argmax fallback. dict.get(k, default) ALWAYS evaluates
+        # default — using it directly would call argmax_label() five times per
+        # trace even when the synthesizer already produced a prediction, and
+        # argmax_label({}) used to raise ValueError. Guard each lookup
+        # explicitly so the ensemble fallback only fires when needed.
         synth_preds = synth_output.predictions
+        def _pred(synth_key: str, task_id: str) -> str:
+            v = synth_preds.get(synth_key)
+            if v:
+                return v
+            return argmax_label(ensemble_probs.get(task_id, {}))
         final_predictions = {
-            "T1": synth_preds.get("symptom_type", argmax_label(ensemble_probs.get("T1", {}))),
-            "T2": synth_preds.get("pathogen_class", argmax_label(ensemble_probs.get("T2", {}))),
-            "T3": synth_preds.get("disease_name", argmax_label(ensemble_probs.get("T3", {}))),
-            "T4": synth_preds.get("severity_class", argmax_label(ensemble_probs.get("T4", {}))),
-            "T5": synth_preds.get("crop_species", argmax_label(ensemble_probs.get("T5", {}))),
+            "T1": _pred("symptom_type",  "T1"),
+            "T2": _pred("pathogen_class","T2"),
+            "T3": _pred("disease_name",  "T3"),
+            "T4": _pred("severity_class","T4"),
+            "T5": _pred("crop_species",  "T5"),
         }
 
         revisits = len(path) - len(set(path))
