@@ -1,0 +1,614 @@
+{
+  "crop": "Tomato",
+  "candidate_sources": [
+    {
+      "url": "https://extension.umn.edu/disease-management/bacterial-canker-tomato",
+      "title": "Bacterial canker of tomato | UMN Extension",
+      "snippet": "Bacterial canker of tomato caused by Clavibacter michiganensis subsp. michiganensis. Symptoms include unilateral leaflet wilt, marginal leaf necrosis, stem and petiole cankers. Fruit may have small raised white spots with tan/brown centers (bird's eye spot). Management includes certified pathogen-free seed, seed treatment with bleach and hot water, sanitation, and removal of infected plants.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial canker of tomato",
+        "Clavibacter michiganensis subsp. michiganensis"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/bacterial-canker-of-tomato",
+      "title": "Bacterial Canker of Tomato | NC State Extension Publications",
+      "snippet": "Bacterial canker of tomato caused by Clavibacter michiganensis subsp. michiganensis is a seedborne pathogen that systemically colonizes tomato xylem leading to wilt, leaf necrosis, stem cankers, and plant death. Splash dispersal causes bird's-eye lesions on fruit characterized by necrotic centers surrounded by white halos.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial canker of tomato",
+        "Clavibacter michiganensis subsp. michiganensis"
+      ]
+    },
+    {
+      "url": "https://www.mda.state.mn.us/plants/plantdiseases/cmm",
+      "title": "Bacterial Canker of Tomato | Minnesota Department of Agriculture",
+      "snippet": "Bacterial canker of tomato (Clavibacter michiganensis subsp. michiganensis, Cmm) symptoms include leaflet margins becoming yellow and necrotic appearing burned on edges, tan to brown streaks on infected stems with internal brown discoloration, and bird's-eye lesions on fruit. Disease development is favored by warm (75-90F), moist conditions.",
+      "source_type": "USDA",
+      "diseases_mentioned": [
+        "Bacterial canker of tomato",
+        "Clavibacter michiganensis subsp. michiganensis",
+        "Cmm"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.15338",
+      "title": "Clavibacter michiganensis (bacterial canker of tomato) | CABI Compendium",
+      "snippet": "CABI datasheet on Clavibacter michiganensis, the causal agent of bacterial canker of tomato. Includes information on the pathogen, symptoms, distribution, host range, biology, epidemiology, and management of this economically damaging seedborne disease.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Bacterial canker of tomato",
+        "Clavibacter michiganensis"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-08-20-1732-FE",
+      "title": "Bacterial Canker of Tomato: Revisiting a Global and Economically Damaging Seedborne Pathogen | Plant Disease",
+      "snippet": "Review article on bacterial canker of tomato caused by Clavibacter michiganensis. Discusses the global economic impact, seedborne transmission, systemic colonization of xylem, symptoms including wilt and canker, and management challenges of this pathogen.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Bacterial canker of tomato",
+        "Clavibacter michiganensis"
+      ]
+    },
+    {
+      "url": "https://hort.extension.wisc.edu/articles/bacterial-speck-of-tomato/",
+      "title": "Bacterial Speck of Tomato – Wisconsin Horticulture",
+      "snippet": "On tomato leaves, bacterial speck leads to small, angular (i.e., straight-edged) spots with yellow haloes. On fruit, there are dark superficial specks on green fruit; specks on ripe fruit may become sunken, and are surrounded by a zone of delayed ripening. The bacterium is typically brought into a garden on contaminated tomato seeds or transplants, and thrives in cool (63°F to 75°F), wet weather.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial speck of tomato",
+        "Pseudomonas syringae pv. tomato"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/tomato/bacterial-speck/",
+      "title": "Bacterial Speck / Tomato / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Bacterial speck of tomato, caused by Pseudomonas syringae pv. tomato. Symptoms include brown-black leaf spots sometimes surrounded by chlorotic margin; dark superficial specks on green fruit; specks on ripe fruit may become sunken, and are surrounded by a zone of delayed ripening. Delay planting in spring to avoid cool wet conditions. Copper-containing bactericides provide partial disease control.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Bacterial speck",
+        "Pseudomonas syringae pv. tomato"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/tomato-bacterial-speck",
+      "title": "Tomato, Bacterial Speck : Vegetable : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Tomato bacterial speck caused by Pseudomonas syringae pv. tomato. Pathogen-free seed and transplants, resistant and tolerant cultivars, and sanitation, rotation, and drip irrigation to reduce leaf wetness are recommended. Copper-containing bactericides applied before rainfall and repeated at 10- to 14-day intervals.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial speck",
+        "Pseudomonas syringae pv. tomato"
+      ]
+    },
+    {
+      "url": "https://extension.msstate.edu/publications/bacterial-speck-and-bacterial-spot-tomatoes",
+      "title": "Bacterial Speck and Bacterial Spot in Tomatoes | Mississippi State University Extension Service",
+      "snippet": "Bacterial speck and bacterial spot are two common bacterial diseases of tomato. Bacterial speck is caused by Pseudomonas syringae pv. tomato and produces small dark spots with yellow haloes on leaves and small dark specks on fruit.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial speck",
+        "Bacterial spot",
+        "Pseudomonas syringae pv. tomato"
+      ]
+    },
+    {
+      "url": "https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.species.45020",
+      "title": "Pseudomonas syringae pv. tomato (bacterial speck)",
+      "snippet": "CABI datasheet on Pseudomonas syringae pv. tomato, the causal agent of bacterial speck of tomato. Includes distribution, hosts, symptoms, biology, and control measures.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Bacterial speck",
+        "Pseudomonas syringae pv. tomato"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/vegetable/fact-sheets/cucumber-mosaic-virus",
+      "title": "Vegetable: Cucumber Mosaic Virus - UMass Extension",
+      "snippet": "The most characteristic symptom of CMV in tomato is filiformity, or the development of thin, shoestring-like leaves. In early stages of infection, foliage will also turn yellow and plants will become bushy and stunted with mottled leaves. Severely affected plants often do not produce fruit, and any fruit that does form remains small, becomes mottled or necrotic, and has delayed maturity. CMV is vectored by at least 75 species of aphid in a non-persistent manner.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucumber Mosaic Virus",
+        "CMV"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/tomato/mosaic-virus-diseases-caused-by-cucumoviruses/",
+      "title": "Mosaic Virus Diseases Caused by Cucumoviruses / Tomato / UC IPM Pest Management Guidelines",
+      "snippet": "Mosaic Virus Diseases Caused by Cucumoviruses on Tomato. Pest Management Guidelines from UC Statewide IPM Program covering symptoms, identification, and management of CMV (Cucumber mosaic virus) and related cucumoviruses in tomato production.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Cucumber Mosaic Virus",
+        "Cucumoviruses",
+        "CMV"
+      ]
+    },
+    {
+      "url": "https://extension.psu.edu/cucumber-mosaic-virus",
+      "title": "Cucumber Mosaic Virus - Penn State Extension",
+      "snippet": "Cucumber Mosaic Virus (CMV) can cause severe losses in vegetables, legumes, and ornamentals. It has a host range of more than 1,200 species and is transmitted by many species of aphids. Symptoms in tomato include shoestring-like leaves (filiformity), yellowing, stunting, mottling, and reduced fruit production.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucumber Mosaic Virus",
+        "CMV"
+      ]
+    },
+    {
+      "url": "https://ipm.cahnr.uconn.edu/mosaic-diseases-of-tomatoes/",
+      "title": "Mosaic Diseases of Tomatoes | UConn Integrated Pest Management",
+      "snippet": "Mosaic diseases of tomatoes including Cucumber Mosaic Virus (CMV), Tobacco Mosaic Virus (TMV), and Tomato Mosaic Virus (ToMV). Information on symptoms, transmission, and management strategies for these viral diseases in tomato production.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucumber Mosaic Virus",
+        "Tobacco Mosaic Virus",
+        "Tomato Mosaic Virus",
+        "CMV",
+        "TMV",
+        "ToMV"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/early-blight-of-tomato",
+      "title": "Early Blight of Tomato | NC State Extension Publications",
+      "snippet": "Early blight is caused by the fungus Alternaria solani. Early blight occurs on the foliage, stem, and fruit of tomato, first appearing as small brown to black lesions on older foliage that develop concentric rings giving them a 'bull's eye' or 'target-spot' appearance.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Early Blight"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/early-blight-tomato-and-potato",
+      "title": "Early blight in tomato and potato | UMN Extension",
+      "snippet": "Early blight can be caused by two closely related species: Alternaria tomatophila and Alternaria solani. Disease develops at moderate to warm (59 to 80°F) temperatures; 82 to 86°F is its optimum temperature range. Management includes mulch, drip irrigation, staking, crop rotation, resistant cultivars, and fungicides scheduled with TOM-CAST.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Early blight"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/vegetable/fact-sheets/solanaceous-early-blight",
+      "title": "Vegetable: Solanaceous, Early Blight - UMass Extension",
+      "snippet": "Extension factsheet on early blight of solanaceous crops (tomato, potato) caused by Alternaria solani, with symptoms, disease cycle, and management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Early Blight"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/Alternaria_solani_(Early_blight_of_tomato)",
+      "title": "Alternaria solani (Early blight of tomato) - Bugwoodwiki",
+      "snippet": "Bugwoodwiki entry on Alternaria solani, the pathogen causing early blight of tomato, with information on biology, symptoms, and host range.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Early blight of tomato"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/botrytis-gray-mold-of-tomato",
+      "title": "Botrytis Gray Mold of Tomato | NC State Extension Publications",
+      "snippet": "Botrytis gray mold is caused by the ubiquitous asexual fungus Botrytis cinerea. Tomato leaf and stem lesions are tan to brown in color. Leaves have irregular to V-shaped brown blotches, often starting at the margin of the leaf. Botrytis produces a dense velvety gray brown spore mass on infected tissue which when disturbed releases a cloud of spores.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Botrytis Gray Mold",
+        "gray mold"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/gray-mold-tomatoes",
+      "title": "Gray mold of tomatoes | UMN Extension",
+      "snippet": "Gray mold appears on young plants as gray-brown velvety mold covering stems or leaves. Infections that girdle the stem cause wilting above the infected area. In the field gray spores cover dying flowers and the calyx of fruit. Caused by Botrytis cinerea.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "gray mold",
+        "Botrytis"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/tomato/gray-mold/",
+      "title": "Gray Mold / Tomato / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Gray mold (Botrytis cinerea) on tomato. Infected fruit develop a pale, soft, watery rot, or have white rings or halos on the fruit, called ghost spots. Management includes cultural and chemical controls. Stem infections occur during periods of high humidity through leaf scars, cracks, and pruning wounds.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gray Mold",
+        "Botrytis cinerea",
+        "ghost spots"
+      ]
+    },
+    {
+      "url": "https://ipm.ifas.ufl.edu/pdfs/Gray_Mold.pdf",
+      "title": "105 DISEASE MANAGEMENT: Gray Mold on Tomato and Ghost Spot on Pepper",
+      "snippet": "University of Florida IFAS extension factsheet on gray mold (Botrytis cinerea) management on tomato and related ghost spot symptoms on pepper. Covers symptoms, disease cycle, and integrated management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gray Mold",
+        "Ghost Spot",
+        "Botrytis cinerea"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/tomato-late-blight",
+      "title": "Tomato Late Blight | NC State Extension Publications",
+      "snippet": "The first symptoms of late blight on tomato leaves are irregularly shaped, water-soaked lesions, often with a lighter halo or ring around them; these lesions are typically found on the younger, more succulent leaves in the top portion of the plant canopy. Tomato late blight is caused by the oomycete pathogen Phytophthora infestans.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Late Blight",
+        "Phytophthora infestans"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/late-blight",
+      "title": "Late blight of tomato and potato | UMN Extension",
+      "snippet": "Late blight is caused by Phytophthora infestans, a pathogen that is a member of a group of organisms often referred to as oomycetes or water molds. The pathogen is favored by cool, wet weather; nights in the 50s/60s and days in the 80s accompanied by rain, fog or heavy dew are ideal for late blight infection.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Late Blight",
+        "Phytophthora infestans"
+      ]
+    },
+    {
+      "url": "https://vegpath.plantpath.wisc.edu/diseases/tomato-late-blight/",
+      "title": "Tomato Late Blight - UW Vegetable Pathology",
+      "snippet": "Tomato fruits with late blight develop large, often sunken, golden- to chocolate-brown, firm spots with distinct rings. All parts of the plants are susceptible, and leaves, stems, and fruit can be infected.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Late Blight",
+        "Phytophthora infestans"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/tomato/late-blight/",
+      "title": "Late Blight / Tomato / UC IPM Pest Management Guidelines",
+      "snippet": "Leaf symptoms first appear as small, water-soaked areas that rapidly enlarge to form purple-brown, oily-appearing blotches; on the lower side of leaves, rings of grayish white mycelium and spore-forming structures may appear. Late blight is found when humid conditions coincide with mild temperatures for prolonged periods.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Late Blight",
+        "Phytophthora infestans"
+      ]
+    },
+    {
+      "url": "https://www.ctahr.hawaii.edu/oc/freepubs/pdf/PD-45.pdf",
+      "title": "Late Blight of Tomato (Phytophthora infestans) - CTAHR Hawaii",
+      "snippet": "Detailed factsheet on late blight of tomato caused by Phytophthora infestans, including symptoms, disease cycle, and management strategies.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Late Blight",
+        "Phytophthora infestans"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight/",
+      "title": "Phytophthora Blight | Cornell Vegetables",
+      "snippet": "Phytophthora blight, caused by Phytophthora capsici, affects tomato fruit and stems. Brown, greasy stem lesions and water-soaked fruit lesions with white fluffy growth are characteristic. Management includes crop rotation, raised beds, and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora blight",
+        "Buckeye rot"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/phytophthora-blight",
+      "title": "Phytophthora Blight : Vegetable : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Phytophthora capsici causes Phytophthora blight on tomato, pepper, and cucurbits. Symptoms include foliar lesions, stem cankers, and fruit rot. Cultural management with raised beds, drainage, and rotation is essential.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora blight"
+      ]
+    },
+    {
+      "url": "https://extension.illinois.edu/plant-problems/phytophthora-blight",
+      "title": "Phytophthora Blight | Plant Problems | Illinois Extension | UIUC",
+      "snippet": "Phytophthora blight is caused by Phytophthora capsici and affects tomatoes, peppers, and cucurbits. Symptoms include water-soaked lesions on fruit and stems with white fungal growth. Crop rotation of three years minimum and avoiding waterlogged soils help manage the disease.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora blight"
+      ]
+    },
+    {
+      "url": "https://blogs.cornell.edu/livegpath/gallery/tomato/phytophthora-blight-on-tomato/",
+      "title": "Phytophthora blight on tomato | Long Island Vegetable Health",
+      "snippet": "Phytophthora capsici causes Phytophthora blight on tomato with greasy, purple-brown stem lesions and fruit rot. The pathogen survives in soil and is spread by water splash and runoff after heavy rains.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Phytophthora blight",
+        "Buckeye fruit rot"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Buckeye_rot_of_tomato",
+      "title": "Buckeye rot of tomato - Wikipedia",
+      "snippet": "Buckeye rot of tomato is caused by several Phytophthora species including P. capsici, P. nicotianae, and P. drechsleri. Symptoms include brownish-black concentric ring lesions on fruit resembling bull's-eye markings.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Buckeye rot",
+        "Phytophthora blight"
+      ]
+    },
+    {
+      "url": "https://edis.ifas.ufl.edu/publication/HS131",
+      "title": "HS866/HS131: Guide to Identifying and Controlling Postharvest Tomato Diseases in Florida",
+      "snippet": "On tomatoes, Rhizopus rot appears water-soaked and may exude a clear liquid, with the lesion surface possibly covered with thin, cotton-like fungal structures (especially under humid conditions). The lesions start with water soaked areas that are rapidly softened as the diseased lesion gradually expands.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rhizopus soft rot",
+        "postharvest tomato diseases"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11031825/",
+      "title": "Rhizopus stolonifer and related control strategies in postharvest fruit: A review",
+      "snippet": "Disease symptoms that characterize R. stolonifer infection are watery areas quickly covered by coarse, gray hairy mycelia forming a mass of black sporangia at their tips. Symptoms originate at a wounded area and consist of a soft, watery rot. R. stolonifer is controlled using synthetic fungicides; among the various registered fungicides are thiabendazole, benomyl, imazalil, propiconazole and thiocarbamates.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Rhizopus soft rot",
+        "Rhizopus stolonifer postharvest rot"
+      ]
+    },
+    {
+      "url": "https://www.mdpi.com/1660-4601/16/15/2754",
+      "title": "Effectiveness of Chemical and Thermal Treatments on Control Rhizopus stolonifer Fruit Infection Comparing Tomato Cultivars with Different Sensitivities to Cracking",
+      "snippet": "It is estimated that 30% of tomato yield is lost due to postharvest rot due to Rhizopus stolonifer, a fungus which requires lesions to initiate the infectious process. Tomato fruit cracking is a physiopathy which causes significant economic losses, since cracking is the door used by the fungus.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Rhizopus stolonifer fruit infection",
+        "tomato postharvest rot"
+      ]
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/pdf/10.1080/12298093.2001.12015783",
+      "title": "Rhizopus Soft Rot on Cherry Tomato Caused by Rhizopus stolonifer",
+      "snippet": "The lesions start with water soaked areas that are rapidly softened as the diseased lesion gradually expands, and the mycelia grow vigorously on the surface of fruits and form stolons. Reports first occurrence on cherry tomato.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Rhizopus soft rot",
+        "cherry tomato Rhizopus stolonifer"
+      ]
+    },
+    {
+      "url": "https://ipm.missouri.edu/mpg/2015/8/timber-rot-on-tomato/",
+      "title": "Timber Rot on Tomato - Missouri Produce Growers Bulletin, University of Missouri IPM",
+      "snippet": "Tomato timber rot, also known as sclerotinia stem rot, is a fungal disease caused by Sclerotinia sclerotiorum. Symptoms begin as water-soaked areas from the stem axils or stem joints, either at or above the soil level, with white fuzzy mold growing both inside and outside the plant. Encouraged by prolonged periods of cool, wet conditions; sclerotia can survive in soil for up to 10 years.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Timber Rot",
+        "Sclerotinia stem rot",
+        "Sclerotinia sclerotiorum"
+      ]
+    },
+    {
+      "url": "https://u.osu.edu/vegetablediseasefacts/tomato-diseases/high-tunnel-diseases/sclerotinia-white-mold/",
+      "title": "Sclerotinia White Mold - Vegetable Disease Facts, The Ohio State University",
+      "snippet": "Sclerotinia White Mold (also called timber rot) on tomato is caused by Sclerotinia sclerotiorum. Watery soft rots and bleached areas develop on leaf axils and stems, followed by a white fuzzy mold and the formation of black sclerotia within 7-10 days. Disease is favored by cool (59-70 degF), wet weather and high humidity.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sclerotinia White Mold",
+        "Timber Rot",
+        "Sclerotinia sclerotiorum"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/tomato/white-mold/",
+      "title": "White Mold / Tomato / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "White mold (also known as timber rot or Sclerotinia stem rot) of tomato is caused by Sclerotinia sclerotiorum. The pathogen produces sclerotia that survive in soil for many years and germinate to form apothecia that release ascospores infecting senescing tissues. Management includes crop rotation, irrigation management, and fungicide applications.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "White Mold",
+        "Timber Rot",
+        "Sclerotinia stem rot",
+        "Sclerotinia sclerotiorum"
+      ]
+    },
+    {
+      "url": "https://www.lsuagcenter.com/MCMS/RelatedFiles/%7B9B6046C8-7CC0-4B49-A85B-C78D3C7EB74E%7D/PPCP-VEG-002-Timber-Rot.pdf",
+      "title": "Integrated Disease Management of Timber Rot of Tomatoes - LSU AgCenter",
+      "snippet": "Integrated disease management strategies for timber rot of tomatoes caused by Sclerotinia sclerotiorum, including cultural practices, fungicide options (Endura/boscalid, Fontelis/penthiopyrad, Botran/dicloran), and biological control with Coniothyrium minitans.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Timber Rot",
+        "Sclerotinia sclerotiorum"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/septoria-leaf-spot-of-tomato",
+      "title": "Septoria Leaf Spot of Tomato | NC State Extension Publications",
+      "snippet": "Septoria leaf spot is caused by the fungus Septoria lycopersici. Circular, tan to gray lesions develop on the lower leaves and stems. Lesions have a dark-brown perimeter and a yellow halo. Small dark pycnidia appear in the center of the lesion.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Septoria Leaf Spot"
+      ]
+    },
+    {
+      "url": "https://extension.illinois.edu/plant-problems/septoria-leaf-spot-tomato",
+      "title": "Septoria Leaf Spot of Tomato | Plant Problems | Illinois Extension | UIUC",
+      "snippet": "Septoria leaf spot of tomato caused by Septoria lycopersici. Disease is particularly destructive in seasons of moderate temperature and abundant rainfall. Optimal temperature range is between 68°F and 77°F.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Septoria Leaf Spot"
+      ]
+    },
+    {
+      "url": "https://vegpath.plantpath.wisc.edu/diseases/tomato-septoria-leaf-spot/",
+      "title": "Tomato Septoria Leaf Spot - University of Wisconsin Vegetable Pathology",
+      "snippet": "Septoria lycopersici causes circular or angular lesions on older, lower leaves measuring 2-5 mm in diameter with greyish center and brown margins. Pycnidia in center aid pathogen identification. Management includes crop rotation, removing crop debris, avoiding overhead irrigation, and fungicide applications of chlorothalonil or mancozeb.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Septoria Leaf Spot"
+      ]
+    },
+    {
+      "url": "https://portal.ct.gov/caes/fact-sheets/plant-pathology/septoria-leaf-spot-of-tomato",
+      "title": "Septoria Leaf Spot of Tomato - Connecticut Agricultural Experiment Station",
+      "snippet": "Fact sheet on Septoria leaf spot of tomato caused by Septoria lycopersici. Covers symptoms, disease cycle, and management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Septoria Leaf Spot"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/bacterial-wilt-of-tomatoes",
+      "title": "Bacterial Wilt of Tomato | NC State Extension Publications",
+      "snippet": "Southern bacterial wilt of tomato is caused by the soil-borne bacterium Ralstonia solanacearum (formerly Pseudomonas solanacearum). Initial symptoms include wilting of youngest leaves while plants remain green; brown vascular discoloration; white bacterial ooze from cut stems in water. Disease develops in high temperatures (>85F) and moist soils. Management includes 4-year crop rotation and grafted resistant rootstocks (Armada, Bowman, RST-05-113-TE).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern bacterial wilt",
+        "Bacterial wilt",
+        "Ralstonia solanacearum"
+      ]
+    },
+    {
+      "url": "https://extension.umd.edu/resource/southern-bacterial-wilt-tomato-found",
+      "title": "Southern Bacterial Wilt of Tomato Found | University of Maryland Extension",
+      "snippet": "University of Maryland Extension report on Southern Bacterial Wilt of tomato caused by Ralstonia solanacearum, including diagnostic symptoms, the streaming bacterial ooze test, and management recommendations for the disease in mid-Atlantic tomato production.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern bacterial wilt",
+        "Ralstonia solanacearum"
+      ]
+    },
+    {
+      "url": "https://extension.psu.edu/bacterial-wilt-ralstonia-solanacearum",
+      "title": "Bacterial Wilt - Ralstonia solanacearum | Penn State Extension",
+      "snippet": "Penn State Extension factsheet on bacterial wilt caused by Ralstonia solanacearum in tomato and other solanaceous crops. Covers pathogen biology, host range, symptom progression (wilting of young leaves, vascular browning, bacterial streaming), disease cycle favored by warm wet soils, and integrated management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial wilt",
+        "Ralstonia solanacearum",
+        "Southern bacterial wilt"
+      ]
+    },
+    {
+      "url": "https://www.invasivespeciesinfo.gov/terrestrial/pathogens-and-diseases/southern-bacterial-wilt",
+      "title": "Southern Bacterial Wilt | National Invasive Species Information Center",
+      "snippet": "USDA National Invasive Species Information Center page on Southern Bacterial Wilt (Ralstonia solanacearum), including links to identification, distribution, and management resources for this soilborne pathogen affecting tomato, potato, and other solanaceous hosts.",
+      "source_type": "USDA",
+      "diseases_mentioned": [
+        "Southern bacterial wilt",
+        "Ralstonia solanacearum"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/southern-blight-of-vegetable-crops",
+      "title": "Southern Blight of Tomato and Pepper | NC State Extension Publications",
+      "snippet": "Southern blight, caused by the fungus Sclerotium rolfsii, affects tomato and pepper, causing rapid wilt with stem lesions at the soil line, white mycelium, and tan to reddish-brown sclerotia. Management includes crop rotation, sanitation, deep plowing, and fungicide applications.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern Blight"
+      ]
+    },
+    {
+      "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/southern-blight-of-tomato.html",
+      "title": "Southern Blight of Tomato | Oklahoma State University",
+      "snippet": "Initial symptoms of southern blight are rapid wilting of the entire plant, with a water-soaked lesion on the stem near the soil line that rapidly expands, turns brown, and girdles the stem. White mold (mycelium) covers the stem lesion and small round sclerotia, resembling mustard seeds, form on the mycelium. Caused by Sclerotium rolfsii. Favored by high humidity, soil moisture, and warm temperatures (85-95 F).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern Blight"
+      ]
+    },
+    {
+      "url": "https://hort.extension.wisc.edu/articles/southern-blight/",
+      "title": "Southern Blight - Wisconsin Horticulture",
+      "snippet": "Southern blight is a common, often lethal disease that affects over 500 plant species including tomato. Caused by Sclerotium rolfsii (also called Athelia rolfsii). Symptoms include yellowing/wilting of leaves and a white, cottony fungal growth at the base of stems with round, tan to dark brown sclerotia. Management includes removing infested soil, crop rotation, and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern Blight"
+      ]
+    },
+    {
+      "url": "https://plant-pest-advisory.rutgers.edu/diagnosing-southern-blight-and-white-mold-in-tomato-and-pepper-2-2/",
+      "title": "Diagnosing Southern Blight and White Mold in Tomato and Pepper - Rutgers Plant & Pest Advisory",
+      "snippet": "Diagnostic comparison of Southern Blight (Sclerotium rolfsii) and White Mold (Sclerotinia sclerotiorum) in tomato and pepper, including symptoms, sclerotia morphology, and field management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern Blight",
+        "White Mold"
+      ]
+    },
+    {
+      "url": "https://ipm.ifas.ufl.edu/pdfs/Southern_Blight.pdf",
+      "title": "Disease Management: Southern Blight Sclerotium rolfsii - University of Florida IFAS",
+      "snippet": "UF IFAS IPM disease management guide for Southern blight caused by Sclerotium rolfsii in vegetable crops including tomato. Covers host range, symptoms, disease cycle, environmental conditions, and integrated management approaches.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern Blight"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/tomato-leaf-mold",
+      "title": "Tomato leaf mold | UMN Extension",
+      "snippet": "Leaf mold is caused by the fungus Passalora fulva (previously called Fulvia fulva or Cladosporium fulvum). It is not known to be pathogenic on any plant other than tomato. Symptoms begin as pale green or yellowish spots without well defined margins on the upper leaf surface which turn a distinctive yellow. An olive, green mold on the lower leaf surface is visible.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tomato leaf mold"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/tomato-leaf-mold/",
+      "title": "Tomato Leaf Mold | Cornell Vegetables",
+      "snippet": "Tomato Leaf Mold disease factsheet from Cornell Vegetables covering symptoms, pathogen biology (Passalora fulva / Cladosporium fulvum), and management of this disease which is most common in high tunnels and greenhouses due to high humidity requirements.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tomato Leaf Mold"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/vegetable/fact-sheets/tomato-leaf-mold",
+      "title": "Tomato, Leaf Mold : Vegetable : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Pale greenish-yellow spots, usually less than 1/4 inch, with no definite margins, form on the upper sides of leaves, and olive-green to brown velvety mold forms on the lower leaf surface below leaf spots. The oldest leaves are infected first. Leaf spots grow together and turn brown, and leaves wither and die but often remain attached to the plant.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tomato Leaf Mold"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.24580",
+      "title": "Passalora fulva (tomato leaf mould) | CABI Compendium",
+      "snippet": "CABI datasheet for Passalora fulva, the causal agent of tomato leaf mould (also known as Fulvia fulva, Cladosporium fulvum). Covers identity, distribution, host range, biology, symptoms, and control measures.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "tomato leaf mould",
+        "Passalora fulva"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/tomato-spotted-wilt-virus-on-tomato-and-pepper",
+      "title": "Tomato Spotted Wilt Virus on Tomato and Pepper | NC State Extension Publications",
+      "snippet": "Tomato spotted wilt virus (TSWV) is an important pathogen that causes disease in numerous crops, especially tomatoes and peppers. TSWV is a member of the genus Orthotospovirus—a group of plant viruses vectored by arthropods, usually thrips. The pathogen infects more than 1,000 plant species among 85 families.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tomato spotted wilt virus",
+        "TSWV"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/TomatoSpottedWilt.aspx",
+      "title": "Tomato spotted wilt - APS Plant Disease Lesson",
+      "snippet": "APS publication on Tomato spotted wilt virus, covering pathogen biology (Orthotospovirus), thrips vectors, symptoms and management — an authoritative single-disease lesson page from the American Phytopathological Society.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Tomato spotted wilt",
+        "TSWV"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/tomato/tomato-spotted-wilt/",
+      "title": "Tomato Spotted Wilt / Tomato / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "UC IPM Pest Management Guidelines page dedicated to Tomato Spotted Wilt on tomato, with symptoms (bronzing of upper leaves, necrotic spots, yellow ringspots and brown necrotic sunken areas on fruit), thrips vector biology, and management strategies including resistant varieties and thrips control.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Tomato spotted wilt",
+        "TSWV"
+      ]
+    },
+    {
+      "url": "https://plantclinic.nmsu.edu/documents/tswv-factsheet.pdf",
+      "title": "Extension Plant Pathology - Tomato Spotted Wilt Virus (NMSU)",
+      "snippet": "NMSU Extension Plant Pathology factsheet on Tomato Spotted Wilt Virus covering symptoms on tomato (bronzed upper leaves, brown lesions, fruit ringspots), pathogen identity, thrips vector transmission, and management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tomato Spotted Wilt Virus",
+        "TSWV"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}
