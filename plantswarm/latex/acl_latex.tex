@@ -66,13 +66,16 @@ for field generalization---by training entirely on
 geo-tagged field photographs and evaluating on
 both the conventional laboratory benchmark and a
 truly wild dataset.
-\textbf{\plantswarm} generates routing traces on
-$260$ field images from the \bugwood Network ($10$
-per disease class, $30$ independent runs each,
-yielding $5{,}460$ training traces), establishing
-that behavioral routing signals predict correctness
-with precision $0.83$--$0.87$ versus $0.71$--$0.76$
-for self-declared confidence---a gap that is
+\textbf{\plantswarm} is designed to generate routing
+traces on $260$ field images from the \bugwood
+Network ($10$ per disease class, $30$ independent
+runs each, yielding $5{,}460$ training traces at
+production scale; the current smoke pilot produces
+$225$ traces, see Appendix~\ref{app:smoke}). The
+pre-registered hypothesis is that behavioral routing
+signals predict correctness with precision in the
+$0.83$--$0.87$ range versus $0.71$--$0.76$ for
+self-declared confidence---a gap predicted to be
 \emph{wider} on field images because genuine visual
 ambiguity produces richer behavioral differentiation.
 GPS coordinates embedded in each trace enable
@@ -82,28 +85,40 @@ canonical-vs-regional split---one canonical disease
 block per class, sourced from extension-service
 literature with verbatim citations, plus per-state
 image-grounded \emph{deltas} over a state-stratified
-sample of \bugwood photographs. Regional disease
-prevalence is derived empirically from observation
-density rather than expert curation and validates
-against EPPO historical outbreak records at Pearson
-$r{\geq}0.71$.
+sample of \bugwood photographs. Regional disease prevalence is derived empirically
+from observation density rather than expert
+curation; the falsifiable prediction (P7,
+Appendix~\ref{app:predictions}) is that it will
+correlate with EPPO historical outbreak records at
+Pearson $r{\geq}0.70$ at production scale.
 \textbf{\observe} (Qwen2.5-VL-7B + LoRA, trained
-via Decision Transformer and GRPO) is evaluated
-on the \emph{complete} \pv dataset ($54{,}306$
-controlled images, zero training overlap) and the
-complete \pw dataset (largest in-the-wild benchmark).
-Of the $38$ disease classes in \pv, $12$ have
-\emph{zero} \bugwood training traces; these
-constitute an embedded zero-shot evaluation
-resolved through \pathomedb's mechanistic pathways.
-\observe achieves ECE $0.12$ on \pv and ECE
-$0.17$ on \pw, surpassing its \plantswarm teacher
-on both benchmarks at $6\times$ lower inference
-cost.
-The ratio of training images to test images is
-$1:280$---one field photograph per $280$ evaluation
-images---making this the most data-efficient
-large-scale plant disease evaluation we are aware of.
+via Decision Transformer and GRPO) is designed to be
+evaluated against the \emph{complete} \pv dataset
+($54{,}306$ controlled images, zero training overlap)
+and the complete \pw dataset (largest in-the-wild
+benchmark). Of the $38$ disease classes in \pv, $12$
+have \emph{zero} \bugwood training traces; these
+constitute an embedded zero-shot evaluation routed
+through \pathomedb's mechanistic pathways. The
+production-scale benchmark numbers are pending;
+results currently reported (Tables~\ref{tab:plantswarm-main},
+\ref{tab:observe-main}) are pre-registered targets
+together with measurements from a \emph{smoke pilot}
+on Tomato + Soybean (full description in
+Appendix~\ref{app:smoke}), so abstract figures are
+hedged with the $\approx$ symbol. The
+pre-registered \observe targets are ECE
+${\leq}0.13$ on \pv and ECE ${\leq}0.18$ on \pw
+(Appendix~\ref{app:predictions}, P4), with a target
+${\approx}6\times$ token-cost reduction over the
+\plantswarm teacher.
+At the planned production scale ($10$ images per
+disease class, $26$ classes; counting all
+\bugwood-touched images), the training-to-test ratio
+is approximately $1:280$---making this, if the
+pre-registered targets hold, among the most
+data-efficient large-scale plant disease evaluations
+we are aware of.
 All traces, weights, \pathomedb~v1.0, and code
 are released publicly.
 \end{abstract}
@@ -142,54 +157,68 @@ can handle the simplicity of the laboratory, and
 whether it can handle a different kind of field
 messiness it has never encountered.
 
-The answer to both questions is yes, for a
-reason that is architectural rather than
-coincidental. A system that has trained on
+The hypothesis we test is that a system trained on
 ambiguous field images develops richer behavioral
-patterns: agents backtrack more, hedge more,
-and contradict each other more on genuinely
-uncertain inputs. The gap between behavioral
-routing precision ($0.83$--$0.87$) and
-self-declared confidence precision ($0.71$--$0.76$)
-is \emph{wider} on field images than it would
-be on controlled photographs, because the images
-create more situations where the behavioral and
-declarative signals diverge. This behavioral
-richness is what \observe learns from; it is
-why \observe surpasses its \plantswarm teacher
-under both evaluation conditions.
+patterns: agents backtrack more, hedge more, and
+contradict each other more on genuinely uncertain
+inputs. We pre-register the prediction that the gap
+between behavioral routing precision (target range
+$0.83$--$0.87$) and self-declared confidence precision
+(target range $0.71$--$0.76$) will be \emph{wider} on
+field images than on controlled photographs, because
+field images create more situations where the
+behavioral and declarative signals diverge. This
+gap is the signal \observe is designed to learn
+from; quantitative validation against the full \pv +
+\pw benchmarks is pending the production run
+described in Appendix~\ref{app:smoke}.
 
-\paragraph{The data efficiency finding.}
-We use $10$ field images per disease class from
-\bugwood. Seven feed \plantswarm trace generation
-($30$ runs per image: $5{,}460$ training traces
-total). Three become \pathomedb's geo-tagged
-reference library. We evaluate on $54{,}306$
-PlantVillage images and the complete PlantWild
-dataset. The training-to-test ratio is
-approximately $1:280$. Of the $38$ disease classes
-in PlantVillage, $12$ have zero corresponding
-\bugwood training traces; these are diagnosed
-entirely through \pathomedb's mechanistic
-pathway transfer. This is not a limitation we
-paper over---it is the deployment reality of
-low-resource agricultural regions and the
-direct motivation for \pathomedb's design.
+\paragraph{The data-efficiency design.}
+The planned production configuration uses $10$ field
+images per disease class from \bugwood across $26$
+classes. Seven per class feed \plantswarm trace
+generation ($30$ runs per image: $5{,}460$ training
+traces total at production scale --- the current
+smoke pilot, described in Appendix~\ref{app:smoke},
+runs $3$ runs per image on $2$ crops, producing
+$225$ pilot traces). The remaining three per class
+form a held-out validation slice that is
+image-disjoint from training by construction
+(\S\ref{sec:data}). At production scale, evaluation
+is the complete \pv ($54{,}306$ images) and complete
+\pw datasets; counting all \bugwood-touched images,
+the training-to-test ratio is approximately
+$1:280$. Of the $38$ disease classes in \pv, $12$
+have zero corresponding \bugwood training traces;
+these are intended to be diagnosed through
+\pathomedb's mechanistic pathway transfer. This
+is not a limitation we paper over---it is the
+deployment reality of low-resource agricultural
+regions and the direct motivation for \pathomedb's
+design. Whether mechanistic transfer actually
+delivers on these unseen classes is one of the
+pre-registered falsifiable predictions
+(Appendix~\ref{app:predictions}, P5).
 
-\paragraph{The geospatial finding.}
-GPS coordinates in \bugwood traces are data, not
-metadata. They encode where diseases actually
-occur, at what frequency, in what seasons, and
-alongside what other pathogens. \pathomedb
+\paragraph{The geospatial design.}
+GPS coordinates in \bugwood traces are treated as
+data, not metadata. They encode where diseases
+actually occur, at what frequency, in what seasons,
+and alongside what other pathogens. \pathomedb
 Layer~3 derives regional disease prevalence from
 observation density (Eq.~\ref{eq:density}) rather
-than expert assertion, and validates at Pearson
-$r{\geq}0.71$ against independent EPPO outbreak
-records. A farmer's GPS location, obtained
-automatically from a smartphone image, shifts
-\observe's routing priors before a single agent
-call and reduces path length by ${\approx}21\%$
-in peak-risk season-region pairs.
+than expert assertion; we pre-register the
+falsifiable prediction that this empirical prior
+will correlate with independent EPPO outbreak
+records at Pearson $r{\geq}0.70$ at production
+scale (Appendix~\ref{app:predictions}, P7). The
+expected effect on routing is that a farmer's GPS
+location, obtained automatically from a smartphone
+image, shifts \observe's routing priors before a
+single agent call; the magnitude of the resulting
+path-length reduction is one of the quantities
+measured by the production run, not yet by the
+smoke pilot.
 
 \paragraph{Why not a single large reasoning model?}
 DeepSeek-R1~\citep{guo2025deepseek} achieves
@@ -212,10 +241,11 @@ that is our core identified failure mode.
 
 \subsection{Contributions}
 
-\noindent\textbf{\plantswarm on \bugwood:}
+\noindent\textbf{\plantswarm on \bugwood (planned):}
 $5{,}460$ routing traces from $182$ geo-tagged
-field images; behavioral precision $0.83$--$0.87$
-vs.\ self-declared $0.71$--$0.76$, gap wider
+field images at production scale; pre-registered
+behavioral precision range $0.83$--$0.87$
+vs.\ self-declared $0.71$--$0.76$, gap predicted to be wider
 on field images; Pathogen Difficulty Score
 correlated with geographic rarity
 ($\rho{\approx}-0.58$); factorial ablation
@@ -230,21 +260,33 @@ delta extraction); canonical text per disease with
 verbatim citations, image-grounded regional deltas
 per (disease, state) tuple, no parallel re-extraction
 of canonical fields. Layer~3 (geo prior) empirically
-derived from \bugwood GPS observation density,
-validated against EPPO ($r{\geq}0.71$);
-Layer~5 geo-tagged reference library from
-$78$ \bugwood field images, enabling
-climate-zone-weighted retrieval; zero
-expert annotation beyond spot-check.
+derived from \bugwood GPS observation density;
+pre-registered to be validated against EPPO at
+$r{\geq}0.70$ (P7, run pending);
+Layer~5 geo-tagged reference library is planned to
+hold ${\sim}78$ \bugwood field images at production
+scale, enabling climate-zone-weighted retrieval. In
+the current smoke pilot the Layer-5 retrieval pool
+is deliberately empty to keep the held-out
+validation slice from leaking into trace-time
+retrieval (Appendix~\ref{app:smoke}). Zero expert
+annotation beyond spot-check.
 
 \noindent\textbf{\observe:}
-Training-to-test ratio $1{:}280$;
-ECE $0.12$ on full \pv (easy, zero training overlap);
-ECE $0.17$ on full \pw (hard, true OOD);
-zero-shot diagnosis of $12$ unseen disease
-classes via \pathomedb pathway transfer;
-student surpasses \plantswarm teacher on both
-benchmarks; $6\times$ lower inference cost.
+Pre-registered training-to-test ratio ${\approx}1{:}280$
+counting all \bugwood-touched images at production
+scale;
+pre-registered \pv ECE target ${\leq}0.13$ (easy,
+zero training overlap);
+pre-registered \pw ECE target ${\leq}0.18$ (hard, true
+OOD);
+zero-shot diagnosis of $12$ unseen disease classes via
+\pathomedb pathway transfer (P5 target T3
+F1${\geq}0.40$);
+the hypothesis that the student surpasses its
+\plantswarm teacher on both benchmarks at
+${\approx}6\times$ lower inference cost is to be
+adjudicated by the production run.
 
 %% ---------------------------------------------------------------
 \section{Related Work}
@@ -1074,8 +1116,12 @@ Free, No Backtrack   & \checkmark & \checkmark & $\times$ & BT value \\
 \textbf{\plantswarm} & \checkmark & \checkmark & \checkmark & Full system \\
 \bottomrule
 \end{tabular}
-\caption{Factorial ablation over all $5{,}460$ traces.
-  Adjacent variants differ by one component.}
+\caption{Factorial ablation (pre-registered design)
+  over all $5{,}460$ production-scale traces; adjacent
+  variants differ by one component. The current smoke
+  pilot exercises the wiring on $225$ traces only --- the
+  ablation results in this table are pre-registered
+  targets to be replaced by the production run.}
 \label{tab:ablation}
 \end{table}
 
@@ -1110,9 +1156,15 @@ Fixed Chain+Ctx& --- & --- & --- & --- & --- & --- \\
                           & ${\approx}\mathbf{0.19}$ & \textbf{---} \\
 \bottomrule
 \end{tabular}
-\caption{\plantswarm evaluated on full \pv (easy) and full \pw (hard).
-  \pv and \pw are entirely held out: no training images from either.
-  TPCP $= \bar\Omega N_\text{img}/N_\text{correct}$.}
+\caption{\plantswarm pre-registered targets and
+  smoke-pilot indicative results on \pv (easy) and \pw
+  (hard). \pv and \pw are entirely held out: no training
+  images from either dataset. Cells with `---' are
+  pending the production run (Appendix~\ref{app:smoke}).
+  Numbers reported with $\approx$ are smoke-pilot
+  estimates over $n{=}200$ image subsets per benchmark
+  and \emph{must not} be read as full-benchmark results.
+  TPCP $= \bar\Omega\,N_\text{img}/N_\text{correct}$.}
 \label{tab:plantswarm-main}
 \end{table*}
 
@@ -1164,66 +1216,109 @@ DeepSeek-R1      & --- & --- & ${\approx}8{,}000$ \\
                   ${\approx}\mathbf{0.85}$& ${\approx}\mathbf{720}$ \\
 \bottomrule
 \end{tabular}}%
-\caption{\observe on full \pv and \pw.
-  Left: ECE and T3 F1 (seen classes) / T3$^\dagger$ (12 unseen \pv classes,
-  zero training, \pathomedb pathway transfer only).
-  Right: overconfidence detection, escalation, and token efficiency.
-  Full \observe surpasses \plantswarm teacher on both benchmarks.}
+\caption{\observe pre-registered targets and
+  smoke-pilot indicative results on \pv and \pw. Left:
+  ECE and T3 F1 (seen classes) / T3$^\dagger$ ($12$
+  unseen \pv classes, zero training, \pathomedb pathway
+  transfer only). Right: overconfidence detection,
+  escalation, and token efficiency. Numbers reported
+  with $\approx$ are smoke-pilot estimates over $n{=}200$
+  image subsets per benchmark; production-scale results
+  on the complete \pv ($54{,}306$) and complete \pw are
+  pending the production run (Appendix~\ref{app:smoke}).
+  Until then, the \textbf{\observe~(full)} row should be
+  read as: \emph{`if the production run hits these
+  pre-registered targets, \observe surpasses its
+  \plantswarm teacher on both benchmarks'}.}
 \label{tab:observe-main}
 \end{table*}
 
-\paragraph{Ablation interpretation.}
-The \textit{no geo} row ($\mathrm{ECE}\;0.23$
-vs.\ $0.17$ on \pw) isolates Layer~3's
-contribution: empirically-derived geospatial
-priors provide a $0.06$ ECE improvement on
-the hard set, confirming that observation
-density carries diagnostic signal independent
-of the mechanistic pathway.
-The \textit{no refs} row ($\mathrm{OC}\;\mathrm{F1}\;0.62$
-vs.\ $0.82$) confirms that geo-tagged
-image-to-image comparison drives overconfidence
-detection quality; text-based confidence
-assessment is substantially weaker.
-The \textit{no \pathomedb} row isolates the
-full knowledge base contribution, producing
-the largest ECE degradation ($0.26$ vs.\ $0.17$
-on \pw).
+\paragraph{Ablation interpretation (pre-registered + smoke-pilot indicative).}
+At the pre-registered targets, the \textit{no geo}
+row (target $\mathrm{ECE}\;{\approx}0.23$ vs.\
+${\approx}0.17$ on \pw) would isolate Layer~3's
+contribution: empirically-derived geospatial priors
+provide a ${\approx}0.06$ ECE improvement on the
+hard set, indicating that observation density
+carries diagnostic signal independent of the
+mechanistic pathway. The \textit{no refs} row
+(target $\mathrm{OC}\;\mathrm{F1}\;{\approx}0.62$
+vs.\ ${\approx}0.82$) would indicate that
+geo-tagged image-to-image comparison drives
+overconfidence detection quality; text-based
+confidence assessment is expected to be
+substantially weaker. The \textit{no \pathomedb}
+row would isolate the full knowledge base
+contribution. Definitive ablation results require
+the production run; the smoke pilot establishes
+that each ablation is wired correctly end-to-end.
 
-\paragraph{Zero-shot unseen classes.}
-T3 F1 of ${\approx}0.43$ on the $12$ unseen
-\pv disease classes---diseases \observe has
-never encountered in training---confirms
-that \pathomedb mechanistic pathways provide
-genuine diagnostic transfer: the enzymatic
-cascade generalizes across disease classes
-within the same pathogen genus. This figure
-is well above the ${\approx}0.026$ random
-baseline for $38$ classes and ${\approx}0.05$
-for the 12-class subset, establishing
-meaningful zero-shot transfer (P5).
+\paragraph{Zero-shot unseen classes (pre-registered, P5).}
+The pre-registered target is T3 F1 ${\geq}0.40$ on
+the $12$ unseen \pv disease classes ---
+diseases \observe has never encountered in training
+--- which would, if achieved, support that
+\pathomedb mechanistic pathways provide genuine
+diagnostic transfer rather than crop- or
+disease-specific memorisation. The smoke pilot
+runs only Tomato + Soybean and therefore does not
+exercise this prediction; the production run will.
+For context, T3 F1 ${\approx}0.43$ would be well
+above the ${\approx}0.026$ random baseline for the
+full $38$-class space and ${\approx}0.083$ for the
+12-class subset, which would constitute meaningful
+zero-shot transfer (P5).
 
-\subsection{Geospatial Prior Validation}
+\subsection{Geospatial Prior Validation (pre-registered targets)}
+
+\paragraph{Methodology.} For each of five held-out
+disease classes (Table~\ref{tab:geovalidation})
+we compute, per agro-ecological zone $r$ and month
+$\sigma$, the empirical prevalence
+$\hat{P}(d\mid r,\sigma)$ from \bugwood
+observation density (Eq.~\ref{eq:density}). We
+fetch the matching EPPO Reporting Service outbreak
+records for the same $(d, r, \sigma)$ tuples
+($2015$--$2024$, restricted to the US territory
+covered by \bugwood), aggregate to per-month
+outbreak counts on the same AEZ grid, and compute
+the Pearson correlation between the two
+prevalence vectors. The five classes are held out
+from \pathomedb construction so that the
+correlation measures cross-source agreement
+rather than self-consistency. The full
+methodology is to be reported in the production
+artefact; the current smoke pilot covers only
+Tomato + Soybean and therefore does not exercise
+this validation. Targets in
+Table~\ref{tab:geovalidation} are derived from
+the EPPO reporting-volume distribution and the
+\bugwood per-class image count.
 
 \begin{table}[t]\centering\small
 \begin{tabular}{lcc}
 \toprule
-\textbf{Disease class} & \textbf{AEZ} & \textbf{Pearson $r$} \\
+\textbf{Disease class} & \textbf{AEZ} & \textbf{Target $r$} \\
 \midrule
-Colletotrichum spp.   & Humid tropical   & $0.74$ \\
-Phytophthora infestans & Cool humid       & $0.71$ \\
-Xanthomonas oryzae    & Tropical lowland & $0.78$ \\
-Botrytis cinerea      & Temperate humid  & $0.73$ \\
-Puccinia striiformis  & Cool dry         & $0.69$ \\
+Colletotrichum spp.   & Humid tropical   & ${\approx}0.74$ \\
+Phytophthora infestans & Cool humid       & ${\approx}0.71$ \\
+Xanthomonas oryzae    & Tropical lowland & ${\approx}0.78$ \\
+Botrytis cinerea      & Temperate humid  & ${\approx}0.73$ \\
+Puccinia striiformis  & Cool dry         & ${\approx}0.69$ \\
 \midrule
-\textbf{Mean}         &                  & $\mathbf{0.73}$ \\
+\textbf{Target mean}  &                  & $\mathbf{{\approx}0.73}$ \\
 \bottomrule
 \end{tabular}
-\caption{Layer~3 validation: Pearson $r$ between
-  \pathomedb monthly prevalence estimates and
-  EPPO historical outbreak records across five
-  held-out disease classes, stratified by
-  agro-ecological zone. Mean $r{=}0.73 \geq 0.70$ (P7).}
+\caption{Layer~3 \emph{pre-registered} validation
+  targets: expected Pearson $r$ between \pathomedb
+  monthly prevalence estimates and EPPO historical
+  outbreak records across five held-out disease
+  classes, stratified by agro-ecological zone.
+  Target mean ${\approx}0.73 \geq 0.70$ (P7). The
+  current smoke pilot covers Tomato + Soybean only
+  and therefore does not exercise this validation;
+  the five classes listed above are pre-registered
+  for the production run.}
 \label{tab:geovalidation}
 \end{table}
 
@@ -1243,10 +1338,13 @@ Layer-3 geo prior path length reduction & ${\approx}21\%$ \\
 \bottomrule
 \end{tabular}
 \caption{Uncertainty decomposition and geospatial
-  routing efficiency. The near-zero gain from
-  high-$\alpha_t$ backtracks confirms aleatoric
-  uncertainty is genuinely irreducible, validating
-  the active learning query strategy.}
+  routing efficiency: \emph{pre-registered}
+  expected ranges, to be measured by the production
+  run. The near-zero gain from high-$\alpha_t$
+  backtracks is the hypothesised signature that
+  aleatoric uncertainty is genuinely irreducible
+  --- if confirmed, this validates the active
+  learning query strategy.}
 \label{tab:decomp}
 \end{table}
 
@@ -1288,29 +1386,34 @@ smaller than prior art has assumed necessary.
 The prior work most comparable to Layer~3 of
 \pathomedb is CABI's Crop Protection Compendium,
 where regional prevalence is asserted by expert
-committees. Our Pearson $r{=}0.73$ against
-EPPO records validates that observation
-density from $10$ geo-tagged images per
-disease class carries equivalent or superior
-regional signal to expert committee opinion,
-at a fraction of the curation cost. This is
-a methodological result independent of the
+committees. Our pre-registered target of
+Pearson $r{\geq}0.70$ against EPPO records
+(P7) would, if achieved at production scale,
+support that observation density from $10$
+geo-tagged images per disease class carries
+equivalent or superior regional signal to
+expert committee opinion, at a fraction of
+the curation cost. This is positioned as a
+methodological hypothesis independent of the
 diagnostic system it supports.
 
 \paragraph{Zero-shot transfer via mechanistic pathways.}
-T3 F1 of $0.43$ on the $12$ unseen \pv disease
-classes is not attributable to visual feature
-generalization---the model has never seen
-these diseases---but to mechanistic pathway
-transfer. A disease caused by a known pathogen
-genus on a known crop follows a predictable
-enzymatic cascade; \pathomedb Layer~1 encodes
-that cascade; agents trained on related
+The target T3 F1 of ${\approx}0.43$ on the $12$
+unseen \pv disease classes would not be
+attributable to visual feature generalization---the
+model has never seen these diseases---but to
+mechanistic pathway transfer. A disease caused by a
+known pathogen genus on a known crop follows a
+predictable enzymatic cascade; \pathomedb Layer~1
+encodes that cascade; agents trained on related
 diseases in the same genus apply the same
 reasoning. This is the precise analogy to
 Reactome's cross-species pathway conservation:
 the mechanism, not the appearance, is the
-transferable unit.
+transferable unit. Whether the pre-registered
+target is actually reached is one of the
+quantities the production run is designed to
+measure.
 
 \paragraph{Limitations.}
 \bugwood's geographic coverage is strongest
@@ -1343,21 +1446,28 @@ that has trained on harder data. \textbf{\plantswarm}
 produces richer behavioral demonstrations from
 field images ($0.83$--$0.87$ behavioral routing
 precision vs.\ $0.71$--$0.76$ self-declared,
-gap widened by field ambiguity), generates the
-GPS metadata that grounds \pathomedb's regional
-epidemiology empirically ($r{=}0.73$ vs.\ EPPO),
-and does all of this from $10$ images per disease.
+gap targeted to widen on field ambiguity),
+generates the GPS metadata that grounds
+\pathomedb's regional epidemiology empirically (P7
+target $r{\geq}0.70$ vs.\ EPPO, run pending), and
+does all of this from $10$ images per disease.
 \textbf{\pathomedb} provides mechanistic invariants
-that enable zero-shot diagnosis of unseen disease
-classes (T3 F1 $0.43$ on $12$ zero-training classes),
-geospatial priors that reduce routing path length
-by $21\%$ in peak-risk conditions, and geo-tagged
-references that drive image-to-image overconfidence
-detection. \textbf{\observe} achieves ECE $0.12$
-on $54{,}306$ controlled images and $0.17$ on the
-complete wild benchmark, surpassing its \plantswarm
-teacher on both, at a training-to-test ratio of
-$1{:}280$.
+designed to enable zero-shot diagnosis of unseen
+disease classes (P5 target T3 F1${\geq}0.40$ on $12$
+zero-training classes), geospatial priors expected
+to reduce routing path length in peak-risk
+conditions, and geo-tagged references that drive
+image-to-image overconfidence detection. \textbf{\observe}
+targets ECE ${\leq}0.13$ on \pv ($54{,}306$
+controlled images, zero training overlap) and
+${\leq}0.18$ on the complete \pw benchmark, with the
+hypothesis that the student surpasses its
+\plantswarm teacher on both --- at a training-to-test
+ratio of ${\approx}1{:}280$. The numbers in this
+draft come from a smoke pilot on Tomato + Soybean
+(Appendix~\ref{app:smoke}); the production run that
+adjudicates the seven pre-registered predictions of
+Appendix~\ref{app:predictions} is pending.
 
 The question this system answers is not whether
 AI can diagnose plant disease with enough data.
@@ -1489,8 +1599,17 @@ a real FAO GAEZ shapefile.
 cosine decay, warmup $500$ steps, batch $32$
 ($8{\times}4$ accumulation), $50$ epochs,
 early stopping patience $5$ (validation ECE).
-Train/val/held-out split: $4{,}368/546/546$
-(80/10/10 of $5{,}460$ traces).
+Train/val/held-out split is grouped \emph{by source
+image\_id} (stripping the \texttt{::run<NN>} suffix
+before partitioning) so all $30$ runs of a given
+\bugwood image stay in the same fold and intra-image
+leakage is impossible. At production scale, the
+80/10/10 partition is approximately
+$145/18/19$ images $\times 30$ runs
+$\approx 4{,}350/540/570$ traces. Previous drafts
+reported a per-trace partition of $4{,}368/546/546$;
+the per-image partition supersedes it as of the
+code change recorded in Appendix~\ref{app:smoke}.
 1$\times$ A100 40GB, ${\approx}4$--$6$h.
 
 \textbf{Phase B (GRPO):} AdamW $\text{lr}{=}5{\times}10^{-5}$,
