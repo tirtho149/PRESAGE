@@ -7,9 +7,15 @@ runs per training image at temperature 0.9.
 For 7 training images per class × 26 classes × 30 runs = 5,460 traces.
 
 Each trace is appended to ``traces/plantswarm_traces.jsonl`` with fsync
-(resume-friendly per the existing pipeline). The Bugwood loader injects
-GPS / AEZ / month into ``record.meta`` and the trace records carry these
-through unchanged.
+(resume-friendly per the existing pipeline) AND mirrored as a pretty-
+printed per-image JSON at ``traces/per_image/<image_id>__run<NN>.json``
+for live visual inspection. The JSONL is the canonical training corpus
+consumed by Phase 3/4; the per-image files are a human-readable mirror
+written atomically (tmp + rename) so a kill mid-write leaves no partial
+files.
+
+The Bugwood loader injects GPS / AEZ / month into ``record.meta`` and
+the trace records carry these through unchanged.
 
 Usage:
     python scripts/run_pathome_traces.py --config configs/bugwood_pathome.yaml
@@ -76,8 +82,10 @@ def main() -> None:
 
     results_dir = cfg["output"]["results_dir"]
     traces_dir = cfg["output"]["traces_dir"]
+    per_image_dir = os.path.join(traces_dir, "per_image")
     os.makedirs(results_dir, exist_ok=True)
     os.makedirs(traces_dir, exist_ok=True)
+    os.makedirs(per_image_dir, exist_ok=True)
 
     print("Loading Bugwood trace split...")
     loader = BugwoodLoader(cfg["data"], split="trace")
@@ -190,16 +198,32 @@ def main() -> None:
             from utils.routing_trace import _trace_to_record  # type: ignore
             record = _trace_to_record(trace)
             record["bugwood_meta"] = meta
+
+            # (1) Canonical training corpus — append to single JSONL.
             with open(os.path.join(traces_dir, traces_filename), "a") as f:
                 f.write(json.dumps(record) + "\n")
                 f.flush()
                 os.fsync(f.fileno())
+
+            # (2) Per-image mirror — one pretty-printed JSON per (image, run).
+            # Atomic write: tmp file + rename, so a kill mid-write never
+            # leaves a corrupt partial file. Sanitise "::" out of the
+            # trace_id ("bugwood::N::runNN" → "bugwood_N_runNN").
+            safe_id = trace_id.replace("::", "_")
+            final_path = os.path.join(per_image_dir, f"{safe_id}.json")
+            tmp_path = final_path + ".tmp"
+            with open(tmp_path, "w") as pf:
+                json.dump(record, pf, indent=2, sort_keys=True)
+                pf.flush()
+                os.fsync(pf.fileno())
+            os.replace(tmp_path, final_path)
         except Exception as e:  # noqa: BLE001
             tqdm.write(f"  [warn] persist fail {trace_id}: {e}")
 
     if n_failed:
         print(f"  {n_failed} runs skipped due to errors.")
     print(f"\nTraces written to {os.path.join(traces_dir, traces_filename)}")
+    print(f"Per-image JSON mirror: {per_image_dir}/<image_id>__run<NN>.json")
 
 
 if __name__ == "__main__":

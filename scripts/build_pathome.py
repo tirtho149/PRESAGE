@@ -48,12 +48,17 @@ def main() -> None:
 
     print("\nLoading Bugwood records...")
     trace_loader = BugwoodLoader(cfg["data"], split="trace")
-    ref_loader = BugwoodLoader(cfg["data"], split="reference")
+    val_loader = BugwoodLoader(cfg["data"], split="val")
 
     trace_records = list(trace_loader)
-    ref_records = list(ref_loader)
-    print(f"  trace split: {len(trace_records)} images")
-    print(f"  reference split: {len(ref_records)} images")
+    val_records = list(val_loader)
+    print(f"  trace split (train): {len(trace_records)} images")
+    print(f"  val   split        : {len(val_records)} images  (held-out, image-disjoint)")
+
+    # Image-overlap audit — should always be zero by construction.
+    overlap = set(r.image_id for r in trace_records) & set(r.image_id for r in val_records)
+    if overlap:
+        raise SystemExit(f"train/val image overlap detected: {sorted(overlap)[:5]}")
 
     if not trace_records:
         raise SystemExit("No Bugwood images found — check bugwood_root in config.")
@@ -73,12 +78,25 @@ def main() -> None:
           f"({100*with_gps/max(len(trace_records),1):.1f}%)")
 
     print("\nBuilding PathomeDB...")
+    # val records are NOT passed as `reference_records` — that would seed
+    # PathomeDB Layer-5 (CLIP exemplar pool) with held-out images and leak
+    # val visuals into trace-time retrieval. Layer-5 is left empty; the val
+    # split is reserved for in-domain evaluation only.
     db = PathomeDB.build_from_bugwood(
         trace_records=trace_records,
-        reference_records=ref_records,
+        reference_records=[],
         symptoms_path=cfg["pathome"].get("symptoms_path"),
         version=cfg["pathome"].get("version", "v2.0"),
     )
+
+    # Persist the val manifest so downstream eval can find the held-out
+    # Bugwood image IDs without re-running the loader.
+    val_manifest = [
+        {"image_id": r.image_id, "crop": r.crop_species,
+         "disease": r.disease_name, "state": (r.meta or {}).get("state"),
+         "src_path": r.src_path}
+        for r in val_records
+    ]
 
     populated_states = {
         s for prof in db.symptoms for s in prof.state_counts
@@ -90,19 +108,23 @@ def main() -> None:
           f"({profiles_with_visual} with curated visual descriptions)")
     print(f"  geo      : {len(populated_states)} states observed across "
           f"{sum(p.total_observations for p in db.symptoms)} records")
-    print(f"  refs     : {len(db.refs)} held-out reference images")
+    print(f"  refs     : {len(db.refs)} (Layer-5 disabled — val is held-out, not exemplar pool)")
+    print(f"  val      : {len(val_records)} held-out Bugwood images for in-domain eval")
 
     if args.dry_run:
         print("\n[dry-run] Skipping save.")
         return
 
     db.save(out_dir)
+    with open(os.path.join(out_dir, "bugwood_val_manifest.json"), "w") as f:
+        json.dump(val_manifest, f, indent=2)
     print(f"\nPathomeDB v{db.version} saved to {out_dir}")
+    print(f"Val manifest    : {out_dir}/bugwood_val_manifest.json")
 
     summary = {
         "version": db.version,
         "trace_records": len(trace_records),
-        "reference_records": len(ref_records),
+        "val_records": len(val_records),
         "classes": len(classes),
         "gps_coverage": with_gps,
         "symptom_profiles": len(db.symptoms),

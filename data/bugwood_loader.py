@@ -221,11 +221,23 @@ class BugwoodLoader:
         an existing directory, the loader falls back to the original
         per-folder discovery path that uses EXIF GPS.
 
-    split : {"trace", "reference", "all"}
+    split : {"trace", "val", "reference", "all"}
+        - "trace"     — first ``trace_split`` images per class (training pool
+                        for Phase 2 stochastic Qwen-VL trace generation).
+        - "val"       — held-out Bugwood images for in-domain evaluation;
+                        guaranteed image-disjoint from "trace" by Image
+                        Number slicing.
+        - "reference" — back-compat alias for "val" (older configs).
+        - "all"       — every kept image, no split semantics.
     """
 
     def __init__(self, cfg: dict, split: str = "trace"):
-        if split not in {"trace", "reference", "all"}:
+        # Back-compat: older configs called the held-out split "reference"
+        # (it doubled as the PathomeDB Layer-5 exemplar pool). The split is
+        # now exposed as "val" — same slice, new semantics.
+        if split == "reference":
+            split = "val"
+        if split not in {"trace", "val", "all"}:
             raise ValueError(f"unknown split {split!r}")
         self.cfg = cfg
         self.split = split
@@ -306,6 +318,18 @@ class BugwoodLoader:
         # Second pass: cap per class, materialise records.
         records: List[BugwoodRecord] = []
         for (crop, disease), rows in groups.items():
+            # Deduplicate by image_number — the raw Bugwood CSV occasionally
+            # has the same (image, crop, disease) row twice (different
+            # descriptor codes). Keeping both makes the deterministic
+            # trace/val slice produce the same image_id in both halves.
+            seen_numbers: set = set()
+            unique_rows = []
+            for row in rows:
+                n = row["image_number"]
+                if n and n not in seen_numbers:
+                    seen_numbers.add(n)
+                    unique_rows.append(row)
+            rows = unique_rows
             if len(rows) < self.min_per_class:
                 continue
             # Stable ordering: by Image Number ascending so the 7/3 split is
@@ -497,7 +521,7 @@ class BugwoodLoader:
         for _key, group in by_class.items():
             if self.split == "trace":
                 yield from group[: self.trace_split]
-            else:  # reference
+            else:  # "val" — held-out, image-disjoint from "trace"
                 yield from group[self.trace_split : self.per_class]
 
     def __len__(self) -> int:

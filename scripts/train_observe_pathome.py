@@ -21,6 +21,7 @@ import json
 import os
 import sys
 from pathlib import Path
+from typing import Dict, List
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -105,14 +106,45 @@ def main() -> None:
             belief_state="",
         ))
 
-    # 80/10/10 split (paper Appendix C)
-    n = len(annotations)
-    n_train = int(0.8 * n)
-    n_val = int(0.1 * n)
-    train_anns = annotations[:n_train]
-    val_anns = annotations[n_train:n_train + n_val]
-    held_anns = annotations[n_train + n_val:]
-    print(f"  split: train={len(train_anns)}, val={len(val_anns)}, held={len(held_anns)}")
+    # 80/10/10 split grouped by source image_id (paper Appendix C).
+    # Trace IDs are "<image_id>::run<NN>" — all runs of the same source
+    # image must stay in the same fold to avoid intra-image leakage between
+    # train/val/held. We shuffle unique source image_ids with a fixed seed
+    # so the split is deterministic across runs.
+    import random as _random
+
+    def _source_id(trace_image_id: str) -> str:
+        return trace_image_id.split("::run", 1)[0]
+
+    by_image: Dict[str, List[TraceAnnotation]] = {}
+    for ann in annotations:
+        by_image.setdefault(_source_id(ann.image_id), []).append(ann)
+
+    unique_images = sorted(by_image.keys())
+    rng = _random.Random(cfg["model"].get("seed", 42))
+    rng.shuffle(unique_images)
+    n_img = len(unique_images)
+    n_train_img = int(0.8 * n_img)
+    n_val_img = int(0.1 * n_img)
+    train_imgs = set(unique_images[:n_train_img])
+    val_imgs = set(unique_images[n_train_img:n_train_img + n_val_img])
+    held_imgs = set(unique_images[n_train_img + n_val_img:])
+    assert not (train_imgs & val_imgs), "train/val image leak"
+    assert not (train_imgs & held_imgs), "train/held image leak"
+    assert not (val_imgs & held_imgs), "val/held image leak"
+
+    train_anns: List[TraceAnnotation] = []
+    val_anns: List[TraceAnnotation] = []
+    held_anns: List[TraceAnnotation] = []
+    for img_id, anns in by_image.items():
+        if img_id in train_imgs:
+            train_anns.extend(anns)
+        elif img_id in val_imgs:
+            val_anns.extend(anns)
+        else:
+            held_anns.extend(anns)
+    print(f"  images: {n_img} ({len(train_imgs)} train / {len(val_imgs)} val / {len(held_imgs)} held)")
+    print(f"  traces: train={len(train_anns)}, val={len(val_anns)}, held={len(held_anns)}")
 
     # ------------------------------------------------------------------
     # Model
