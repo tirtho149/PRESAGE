@@ -440,6 +440,124 @@ tests, no GPU required for the swarm-logic tests.
 
 ---
 
+## End-to-end pipeline (one command)
+
+The pipeline splits across LOCAL (Claude OAuth) and a GPU host (vLLM
++ Qwen). Each phase has its own dedicated shell wrapper; three umbrella
+scripts chain them; one master orchestrator drives the whole loop over
+SSH.
+
+```
+LOCAL    e2e_local.sh          # Setup + image cache + Phase 0 canonical
+   |                           # then git push canonical artefacts
+   v   git push
+GitHub
+   |   git pull on Nova
+   v
+NOVA     e2e_nova.sh           # Phase 0R + OBSERVE train + OBSERVE eval
+   |                           # via sbatch --wait, then git push results
+   v   git push
+GitHub
+   |   git pull on LOCAL
+   v
+LOCAL    e2e_visualize.sh      # all viz + paper figures + LaTeX snippets
+                               # + (optional) PDF build
+```
+
+Run the whole loop in one shot with:
+
+```bash
+export PATHOME_NOVA_HOST=tirtho@hpc-login.iastate.edu
+export PATHOME_NOVA_REPO=/work/mech-ai-scratch/tirtho/PlantSwarm
+bash scripts/e2e_full.sh
+```
+
+Or run each leg manually:
+
+```bash
+# LOCAL
+bash scripts/e2e_local.sh
+
+# NOVA (ssh in, then:)
+bash scripts/e2e_nova.sh
+
+# LOCAL again
+bash scripts/e2e_visualize.sh
+```
+
+Outputs land at:
+- `artifacts/pathome_seed/symptoms_seed.json`  — KB
+- `observe/checkpoints/observe_best.pt`        — student
+- `results/observe_eval.json`                  — metrics
+- `results/figures/*.png`                      — paper figures
+- `plantswarm/latex/auto_*.tex`                — paper LaTeX snippets
+
+---
+
+## Script reference
+
+Every phase has one dedicated `.sh`. The umbrellas in the previous
+section just chain these.
+
+### Setup
+
+| Script | Purpose | Inputs | Outputs |
+|---|---|---|---|
+| `scripts/submit_pathome_setup_filter.sh` | Filter the raw Bugwood CSV (Nova SBATCH) | `BugWood_Diseases.csv` | `BugWood_Diseases_usable.csv`, `bugwood_classes_report.tsv` |
+| `scripts/setup_image_cache.sh` | Top up `.bugwood_cache/` per (crop, disease, state) | filtered CSV | per-image JPGs in `.bugwood_cache/` |
+
+### Phase 0 — canonical KB (LOCAL, Claude)
+
+| Script | Purpose | Inputs | Outputs |
+|---|---|---|---|
+| `scripts/run_phase0_local.sh` | Run Claude discovery + extraction + reconciliation per crop | filtered CSV, Claude CLI | `artifacts/pathome_kb/<Crop>/final_registry.json`, `symptoms_seed.json` |
+
+### Phase 0R — regional deltas (Nova, Qwen + Claude verifier)
+
+| Script | Purpose | Inputs | Outputs |
+|---|---|---|---|
+| `scripts/submit_phase0r_regional.sh` | Nova SBATCH: boot vLLM, run Qwen swarm (Algorithm 1), agreement filter, Claude web-search verifier, conservative merge | canonical KB, image cache | regional deltas merged into `final_registry.json`; `symptoms_seed.json`; `phase0r_traces.jsonl` if `PATHOME_TRACE_DIR` set |
+
+### OBSERVE — distilled student (Nova, CUDA)
+
+| Script | Purpose | Inputs | Outputs |
+|---|---|---|---|
+| `scripts/submit_observe_train.sh` | Train OBSERVE on Phase 0R trace JSONL (BC + multi-task loss) | `phase0r_traces.jsonl` | `observe/checkpoints/{observe_best,observe_last}.pt`, `history.json` |
+| `scripts/submit_evaluate_observe.sh` | Held-out eval: routing acc + κ ECE + per-class breakdown | checkpoint, traces | `results/observe_eval.json` |
+
+### Visualization (LOCAL)
+
+| Script | Purpose | Inputs | Outputs |
+|---|---|---|---|
+| `scripts/viz_kb.sh` | KB stats: per-status pie, field-count bar, support histogram, per-state coverage | `symptoms_seed.json` | `results/figures/kb_*.png`, `plantswarm/latex/auto_kb_stats.tex` |
+| `scripts/viz_observe.sh` | OBSERVE training curves + held-out eval bar | `history.json`, `observe_eval.json` | `results/figures/observe_*.png`, `plantswarm/latex/auto_observe_{curves,eval}.tex` |
+| `scripts/viz_traces.sh` | Phase 0R trace stats: path lengths, κ-by-agent | `phase0r_traces.jsonl` | `results/figures/trace_*.png`, `plantswarm/latex/auto_trace_stats.tex` |
+| `scripts/viz_all.sh` | Run all three viz scripts in sequence | — | — |
+| `scripts/build_latex_pdf.sh` | Compile the paper PDF (`acl_latex.tex`) | the `auto_*.tex` snippets above | `plantswarm/latex/acl_latex.pdf` |
+
+### Umbrellas
+
+| Script | Drives |
+|---|---|
+| `scripts/e2e_local.sh` | Setup + image cache + Phase 0 canonical + git push |
+| `scripts/e2e_nova.sh` | git pull + Phase 0R + OBSERVE train + OBSERVE eval + git push |
+| `scripts/e2e_visualize.sh` | git pull + all viz + paper PDF |
+| `scripts/e2e_full.sh` | The three above, with SSH for the Nova leg |
+
+### Skipping legs
+
+Every umbrella respects skip-knobs so you can re-run only the parts you
+need:
+
+```bash
+PATHOME_SKIP_NOVA=1 bash scripts/e2e_full.sh        # local-only smoke
+PATHOME_SKIP_VIZ=1  bash scripts/e2e_full.sh        # generate data only
+PATHOME_SKIP_PUSH=1 bash scripts/e2e_local.sh       # commit but no push
+PATHOME_SKIP_PHASE0R=1 bash scripts/e2e_nova.sh     # train + eval only
+```
+
+---
+
 ## Consuming the seed JSON downstream
 
 ```python

@@ -602,14 +602,39 @@ PlantSwarm/
 |-- data/bugwood_loader.py                 _clean_disease + _map_crop (Setup)
 |
 |-- scripts/
-|   |-- filter_bugwood_csv.py              Setup
-|   |-- ensure_state_image_cache.py        image cache
+|   |-- filter_bugwood_csv.py              Setup CLI
+|   |-- ensure_state_image_cache.py        image cache CLI
 |   |-- registry_to_excel.py               final_registry.json to xlsx
-|   |-- run_phase0_local.sh                LOCAL canonical-only Phase 0
-|   |-- submit_pathome_setup_filter.sh     Nova filter CSV
-|   |-- submit_phase0r_regional.sh         Nova boot vLLM + Phase 0R
-|   |-- train_observe.py                   train OBSERVE on Phase 0R traces
-|   `-- submit_observe_train.sh            Nova train OBSERVE
+|   |-- evaluate_observe.py                OBSERVE held-out eval CLI
+|   |-- train_observe.py                   OBSERVE training CLI
+|   |
+|   |--- per-phase shells -----------------
+|   |-- submit_pathome_setup_filter.sh     Nova: Setup
+|   |-- setup_image_cache.sh               LOCAL/Nova: image cache
+|   |-- run_phase0_local.sh                LOCAL: Phase 0 canonical
+|   |-- submit_phase0r_regional.sh         Nova: Phase 0R (vLLM + swarm + verifier)
+|   |-- submit_observe_train.sh            Nova: OBSERVE training
+|   |-- submit_evaluate_observe.sh         Nova: OBSERVE held-out eval
+|   |
+|   |--- viz shells -----------------------
+|   |-- viz_kb.sh                          KB stats PNGs + tex
+|   |-- viz_observe.sh                     OBSERVE curves + eval PNGs + tex
+|   |-- viz_traces.sh                      Phase 0R trace PNGs + tex
+|   |-- viz_all.sh                         run every viz in sequence
+|   |-- build_latex_pdf.sh                 compile the paper
+|   |
+|   |--- umbrellas ------------------------
+|   |-- e2e_local.sh                       LOCAL leg: setup + cache + P0 + push
+|   |-- e2e_nova.sh                        Nova leg: pull + P0R + OBS + push
+|   |-- e2e_visualize.sh                   LOCAL post: pull + viz + paper
+|   |-- e2e_full.sh                        the umbrella that drives all three
+|   |
+|   `-- viz/                               Python visualizers
+|       |-- kb_stats.py                    canonical+regional summary
+|       |-- observe_curves.py              training-history curves
+|       |-- observe_eval.py                held-out eval tables + bar
+|       |-- trace_stats.py                 Phase 0R trace stats
+|       `-- _common.py                     shared output / matplotlib helpers
 |
 `-- smoke/                                 2-crop happy path
     |-- run_phase0_full.sh                 LOCAL P0 + tunneled P0R
