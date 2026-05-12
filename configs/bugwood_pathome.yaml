@@ -20,16 +20,31 @@ data:
 # ------------------------------------------------------------------
 # Phase 0R — Qwen swarm
 # ------------------------------------------------------------------
-# The vLLM client picks up these defaults; they are overridable via the
-# VLLM_BASE_URL / VLLM_MODEL / VLLM_TIMEOUT / VLLM_TEMPERATURE env vars
-# (see plantswarm.delta_pipeline.build_client_from_env).
+# These YAML values are reference documentation; the pipeline reads them
+# at runtime via the VLLM_* env vars (see
+# plantswarm.delta_pipeline.build_client_from_env). The SLURM submitter
+# can set them at sbatch time.
 model:
-  backbone: "Qwen/Qwen2.5-VL-7B-Instruct"
-  temperature: 0.2                           # JSON-faithful, low variance
-  max_new_tokens: 512
-  vllm_base_url: "http://localhost:8000/v1"
-  vllm_timeout: 180                          # seconds per HTTP call
+  backbone:        "Qwen/Qwen2.5-VL-7B-Instruct"
+  temperature:     0.8                  # paper §5.3 used T=0.9 for 30 runs;
+                                        # 0.8 trades a little diversity for
+                                        # better JSON fidelity
+  max_new_tokens:  512
+  vllm_base_url:   "http://localhost:8000/v1"
+  vllm_timeout:    180                  # seconds per HTTP call
 
+# ------------------------------------------------------------------
+# Algorithm 1 / N-run swarm
+# ------------------------------------------------------------------
+# Each (crop, disease, state) tuple runs N stochastic routed traces.
+# After all N finish, deltas are clustered by (field, image_shows Jaccard)
+# and clusters with support ≥ K distinct runs are kept. K-of-N agreement
+# is what filters hallucinations vs real visual observations.
 swarm:
-  max_parallel: 4                            # outer parallelism: (crop,disease,state) tuples
-  parallel_specialists: true                 # inner: 4 specialists per tuple in parallel
+  n_runs:                10           # stochastic traces per tuple (paper: 30)
+  agreement_min:         3            # K — keep deltas surviving ≥3-of-N runs
+  similarity_threshold:  0.4          # Jaccard threshold for delta clustering
+  Tmax:                  15           # max path length per trace (paper §5.3)
+  max_backtracks:        1            # paper §5.3
+  max_parallel_tuples:   4            # outer concurrency: tuples in parallel
+  parallel_runs_per_tuple: true       # inner: N runs of one tuple in parallel

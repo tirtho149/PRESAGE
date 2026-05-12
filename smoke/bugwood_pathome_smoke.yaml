@@ -17,14 +17,19 @@ data:
     require_state: true
     require_disease_label: true
 
-# Phase 0R — Qwen swarm (same defaults as production; overridable via env vars).
 model:
-  backbone: "Qwen/Qwen2.5-VL-7B-Instruct"
-  temperature: 0.2
-  max_new_tokens: 256                        # halved from production
-  vllm_base_url: "http://localhost:8000/v1"
-  vllm_timeout: 180
+  backbone:       "Qwen/Qwen2.5-VL-7B-Instruct"
+  temperature:    0.8
+  max_new_tokens: 256                  # halved from production
+  vllm_base_url:  "http://localhost:8000/v1"
+  vllm_timeout:   180
 
+# Smoke uses smaller N + K so a 2-crop run finishes in ~30 min on one A100.
 swarm:
-  max_parallel: 2                            # smaller than production (~50 tuples total)
-  parallel_specialists: true
+  n_runs:                5             # production: 10
+  agreement_min:         2             # K — keep ≥2-of-5
+  similarity_threshold:  0.4
+  Tmax:                  8             # halved from 15
+  max_backtracks:        1
+  max_parallel_tuples:   2
+  parallel_runs_per_tuple: true

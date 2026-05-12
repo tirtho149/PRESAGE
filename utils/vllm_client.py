@@ -76,12 +76,22 @@ class VLLMClient:
         messages: List[Dict],
         image_b64: Optional[str] = None,
         system_prompt: Optional[str] = None,
+        seed: Optional[int] = None,
+        temperature: Optional[float] = None,
     ) -> Tuple[str, int]:
-        """Send a chat request. Returns (response_text, tokens_used)."""
+        """Send a chat request. Returns (response_text, tokens_used).
+
+        ``seed`` and ``temperature`` override the client-level defaults
+        for this single call — needed for the stochastic N-run swarm
+        where each run must use a distinct seed to actually sample
+        differently.
+        """
         r = self.chat_with_logprobs(
             messages=messages,
             image_b64=image_b64,
             system_prompt=system_prompt,
+            seed=seed,
+            temperature=temperature,
         )
         return r.text, r.completion_tokens
 
@@ -90,6 +100,8 @@ class VLLMClient:
         messages: List[Dict],
         image_b64: Optional[str] = None,
         system_prompt: Optional[str] = None,
+        seed: Optional[int] = None,
+        temperature: Optional[float] = None,
     ) -> ChatResult:
         """
         Chat completion with per-token logprobs (``logprobs.content``) for entropy H_t, h_i.
@@ -118,8 +130,8 @@ class VLLMClient:
         payload: Dict[str, Any] = {
             "model": self.model,
             "messages": full_messages,
-            "temperature": self.temperature,
-            "seed": self.seed,
+            "temperature": self.temperature if temperature is None else float(temperature),
+            "seed": self.seed if seed is None else int(seed),
             "max_tokens": self.max_new_tokens,
         }
         if self.chat_request_logprobs:

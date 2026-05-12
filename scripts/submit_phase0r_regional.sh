@@ -33,6 +33,14 @@
 # Override at submit time:
 #   PATHOME_USABLE_CSV=...  PATHOME_SEED_FILE=...  sbatch this script.sh
 #   PATHOME_ONLY_CROPS="Soybean,Tomato"  for a smoke-sized run.
+#
+# Swarm knobs (env vars consumed by plantswarm.delta_pipeline):
+#   VLLM_N_RUNS=10        stochastic traces per (crop, disease, state) tuple
+#   VLLM_AGREEMENT_MIN=3  K-of-N agreement to keep a delta
+#   VLLM_TEMPERATURE=0.8  per-call sampling temperature
+#   VLLM_TMAX=15          max path length per trace
+#   VLLM_MAX_BACKTRACKS=1 paper §5.3
+#   VLLM_SIM_THRESHOLD=0.4 Jaccard threshold for cross-run delta clustering
 # ============================================================================
 
 set -e
@@ -49,6 +57,16 @@ CSV="${PATHOME_USABLE_CSV:-BugWood_Diseases_usable.csv}"
 OUT="${PATHOME_SEED_FILE:-artifacts/pathome_seed/symptoms_seed.json}"
 MODEL="${VLLM_MODEL:-Qwen/Qwen2.5-VL-7B-Instruct}"
 PORT="${VLLM_PORT:-8000}"
+
+# Swarm knobs — propagate to plantswarm.delta_pipeline via env.
+export VLLM_N_RUNS="${VLLM_N_RUNS:-10}"
+export VLLM_AGREEMENT_MIN="${VLLM_AGREEMENT_MIN:-3}"
+export VLLM_TEMPERATURE="${VLLM_TEMPERATURE:-0.8}"
+export VLLM_TMAX="${VLLM_TMAX:-15}"
+export VLLM_MAX_BACKTRACKS="${VLLM_MAX_BACKTRACKS:-1}"
+export VLLM_SIM_THRESHOLD="${VLLM_SIM_THRESHOLD:-0.4}"
+export VLLM_TIMEOUT="${VLLM_TIMEOUT:-180}"
+echo "[swarm] N=$VLLM_N_RUNS K=$VLLM_AGREEMENT_MIN T=$VLLM_TEMPERATURE Tmax=$VLLM_TMAX bt=$VLLM_MAX_BACKTRACKS sim>=$VLLM_SIM_THRESHOLD"
 
 VLLM_LOG="logs/vllm-${SLURM_JOB_ID}.log"
 

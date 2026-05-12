@@ -1,18 +1,15 @@
 """
 agents/diagnosis_agent.py
 =========================
-DiagnosisAgent — the delta consolidator.
+DiagnosisAgent — terminal aggregator for one routed trace.
 
-Takes the union of the four specialists' candidate deltas plus the FULL
-canonical KB and the image, then:
+Runs once at the end of every trace. Reads the full context buffer
+(every specialist's deltas + confidence + reasoning), the full canonical
+KB, and the image. Returns the trace's final delta list — deduped, with
+restatements of canonical dropped.
 
-  1. DEDUPES overlapping fields (e.g. diagnostic_features is claimed by
-     both MorphologyAgent and SymptomAgent).
-  2. DROPS deltas that restate canonical text — restating is forbidden.
-  3. KEEPS deltas that add or contradict canonical with image evidence.
-
-Returns the final consolidated list in the same delta schema the
-specialists emit.
+Cross-run aggregation (N stochastic traces → final delta set) is handled
+by ``plantswarm.delta_pipeline._agreement_filter``, not by this agent.
 """
 
 from __future__ import annotations
@@ -21,23 +18,26 @@ from typing import Any, Dict, List
 
 from agents.base_agent import (
     ALLOWED_DELTA_FIELDS,
+    AgentDeltaOutput,
     BaseAgent,
     _clean,
-    _parse_delta_json,
+    parse_agent_output,
 )
 
 
 CONSOLIDATOR_PROMPT = """\
-You are the consolidator. Four specialist agents have looked at the
-photograph and emitted candidate deltas. Produce the FINAL delta list by:
+You are the consolidator for one routed swarm trace. Below is the
+context buffer for this trace — every specialist that ran, in order,
+with the deltas it emitted and its confidence. Your job is to produce
+the FINAL delta list for THIS trace by:
 
-  1. Deduping overlapping fields — when two candidates target the same
-     field with overlapping content, keep the more specific / better-
-     grounded one.
-  2. Dropping any candidate that just restates canonical text. Restating
-     is forbidden.
-  3. Keeping candidates that add or contradict canonical with image
-     evidence.
+  (1) Deduping overlapping fields — when two specialists target the
+      same field with overlapping content, keep the more specific /
+      better-grounded one.
+  (2) Dropping any candidate that just restates canonical text.
+      Restating canonical is forbidden.
+  (3) Keeping candidates that add or contradict canonical with image
+      evidence.
 
 Crop:    {crop}
 Disease: {disease}
@@ -46,42 +46,47 @@ State:   {state}
 FULL CANONICAL KB:
 {canonical_full}
 
-CANDIDATE DELTAS (from specialists):
-{candidates}
+TRACE CONTEXT BUFFER:
+{context_buffer}
 
 Output STRICT JSON, no markdown fences, no preamble:
 {{
   "deltas": [
     {{
       "field":          "<one of: {allowed_fields}>",
-      "canonical_says": "<short quote from canonical above on this field, or '(not specified)'>",
+      "canonical_says": "<short quote from canonical above, or '(not specified)'>",
       "image_shows":    "<state-specific addition or contradiction — one sentence>",
-      "image_quote":    "<one-sentence visual evidence — what you see>"
+      "image_quote":    "<one-sentence visual evidence>"
     }}
-  ]
+  ],
+  "confidence":     "high" | "medium" | "low",
+  "handoff_target": null,
+  "reasoning":      "<one-line summary of what survived>"
 }}
 
-If every candidate is a redundant restatement, return {{"deltas": []}}.
+If every candidate is a redundant restatement, return
+{{"deltas": [], "confidence": "...", "handoff_target": null, "reasoning": "..."}}.
 """
 
 
 class DiagnosisAgent(BaseAgent):
     AGENT_NAME = "DiagnosisAgent"
-    # The consolidator can emit deltas for any field — it just dedupes the
-    # union of the specialists.
+    # Consolidator can emit any allowed field; HANDOFF_MENU is empty since it
+    # always terminates the trace.
     OWNED_FIELDS = [f for f in ALLOWED_DELTA_FIELDS if f != "other"] + ["other"]
+    HANDOFF_MENU: List[str] = []
+    DEFAULT_FORWARD = ""
 
     SYSTEM_PROMPT = (
-        "You are DiagnosisAgent, a plant pathology delta consolidator. "
-        "Read the candidate deltas, dedupe overlapping fields, drop "
-        "restatements of canonical, and return only deltas that add or "
-        "contradict canonical with image evidence. Output strict JSON "
-        "only — no prose, no markdown."
+        "You are DiagnosisAgent, the terminal consolidator for one trace. "
+        "Read the context buffer, dedupe overlapping fields, drop "
+        "restatements of canonical, and return the final trace delta "
+        "list. Output strict JSON only — no prose, no markdown."
     )
 
-    def extract_deltas(self, **_kwargs):  # noqa: D401
+    def extract_with_routing(self, **_kwargs):  # noqa: D401
         raise NotImplementedError(
-            "DiagnosisAgent uses consolidate(), not extract_deltas()."
+            "DiagnosisAgent uses consolidate(), not extract_with_routing()."
         )
 
     def consolidate(
@@ -92,14 +97,17 @@ class DiagnosisAgent(BaseAgent):
         state: str,
         canonical: Dict[str, Any],
         image_b64: str,
-        candidates: List[Dict[str, str]],
-    ) -> List[Dict[str, str]]:
+        context_buffer: List[AgentDeltaOutput],
+        seed: int = 0,
+        temperature: float = 0.2,
+    ) -> AgentDeltaOutput:
+        """Run once at the end of a trace; return the trace's final deltas."""
         user_prompt = CONSOLIDATOR_PROMPT.format(
             crop=crop,
             disease=disease,
             state=state,
             canonical_full=self._format_canonical_full(canonical),
-            candidates=self._format_candidates(candidates),
+            context_buffer=self._format_context_buffer(context_buffer),
             allowed_fields=", ".join(ALLOWED_DELTA_FIELDS),
         )
         messages = [{
@@ -113,9 +121,28 @@ class DiagnosisAgent(BaseAgent):
             ],
         }]
         text, _tokens = self.client.chat(
-            messages=messages, system_prompt=self.SYSTEM_PROMPT
+            messages=messages,
+            system_prompt=self.SYSTEM_PROMPT,
+            seed=seed,
+            temperature=temperature,
         )
-        return _parse_delta_json(text, set(ALLOWED_DELTA_FIELDS))
+        deltas, confidence, _handoff, reasoning = parse_agent_output(
+            text=text,
+            owned_fields=list(ALLOWED_DELTA_FIELDS),
+            handoff_menu=[],
+        )
+        return AgentDeltaOutput(
+            agent_name=self.AGENT_NAME,
+            deltas=deltas,
+            confidence=confidence,
+            handoff_target=None,    # always terminates
+            reasoning=reasoning,
+            raw_text=text,
+        )
+
+    # ------------------------------------------------------------------
+    # Rendering helpers
+    # ------------------------------------------------------------------
 
     @staticmethod
     def _format_canonical_full(canonical: Dict[str, Any]) -> str:
@@ -133,15 +160,22 @@ class DiagnosisAgent(BaseAgent):
         ])
 
     @staticmethod
-    def _format_candidates(candidates: List[Dict[str, str]]) -> str:
-        if not candidates:
-            return "  (none)"
+    def _format_context_buffer(buf: List[AgentDeltaOutput]) -> str:
+        if not buf:
+            return "  (empty)"
         lines: List[str] = []
-        for i, d in enumerate(candidates, 1):
-            lines.append(
-                f"  [{i}] field={d.get('field', '')} | "
-                f"canonical_says={d.get('canonical_says', '')!s} | "
-                f"image_shows={d.get('image_shows', '')!s} | "
-                f"image_quote={d.get('image_quote', '')!s}"
-            )
+        for step, out in enumerate(buf, 1):
+            lines.append(f"  [{step}] {out.agent_name} (confidence={out.confidence})")
+            if out.reasoning:
+                lines.append(f"      reasoning: {out.reasoning}")
+            if not out.deltas:
+                lines.append("      (no deltas emitted)")
+                continue
+            for d in out.deltas:
+                lines.append(
+                    f"      delta[{d.get('field','')}]"
+                    f" canonical={d.get('canonical_says','')!s}"
+                    f" image={d.get('image_shows','')!s}"
+                    f" evidence={d.get('image_quote','')!s}"
+                )
         return "\n".join(lines)

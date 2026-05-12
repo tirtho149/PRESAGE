@@ -284,28 +284,44 @@ schema, the SAGE prompts, and a worked example.
 | Inputs           | `artifacts/pathome_kb/<Crop>/final_registry.json` (canonical, from Phase 0), `BugWood_..._usable.csv`, `.bugwood_cache/` |
 | Outputs          | regional deltas embedded into `final_registry.json[*].regional_observations[state]`; merged `symptoms_seed.json`  |
 
-Inside one (crop, disease, state) call:
+Inside one (crop, disease, state) call (paper §4 / Algorithm 1, adapted):
 
 1. `flatten_canonical()` reduces the SAGE-shaped record to plain values.
-2. Four specialists run **in parallel** on the cached image (each sees
-   its slice of canonical + the photo, emits candidate deltas for its
-   owned fields):
-   - **MorphologyAgent** — `lesion_morphology, affected_organs, diagnostic_features`
-   - **SymptomAgent** — `spread_pattern, diagnostic_features`
-   - **PathogenAgent** — `look_alikes, type_of_disease`
-   - **SeverityAgent** — `severity, treatments`
-3. **DiagnosisAgent** consolidator runs once on the union: dedupes
-   overlapping fields, drops restatements of canonical, returns the
-   final delta list.
+2. **N stochastic routed traces** run independently (default N=10, T=0.8;
+   smoke uses N=5). Each trace is a sequential traversal:
+   - Entry: `MorphologyAgent` (visual grounding).
+   - Each agent emits `{deltas, confidence (κ), handoff_target, reasoning}`
+     and sees prior agents' output in its context buffer.
+   - **Algorithm 1 routing** overrides the model's choice when:
+     - κ=low + no prior backtrack → `MorphologyAgent` (regrounding)
+     - κ=low + already backtracked → default forward (loop guard)
+     - κ=high + all 4 specialists ran → `DiagnosisAgent` (early terminate)
+   - `Tmax=15` caps the path; if reached, force a terminal `DiagnosisAgent` call.
+   - Each trace ends with `DiagnosisAgent` consolidating its own context
+     buffer into that trace's final delta list.
+3. **Cross-run agreement filter**: deltas from the N traces are clustered
+   by (`field`, Jaccard similarity over `image_shows` tokens). Clusters
+   whose support covers ≥ K distinct runs (default K=3; smoke K=2) are
+   kept; everything else is dropped as likely hallucination.
 
-The vLLM endpoint is read from env at client-build time
-(see `plantswarm.delta_pipeline.build_client_from_env`):
+Agent ownership (each agent's `OWNED_FIELDS`):
+- **MorphologyAgent** — `lesion_morphology, affected_organs, diagnostic_features`
+- **SymptomAgent** — `spread_pattern, diagnostic_features`
+- **PathogenAgent** — `look_alikes, type_of_disease`
+- **SeverityAgent** — `severity, treatments`
+
+The vLLM endpoint and swarm knobs are read from env at client-build time:
 
 ```bash
 VLLM_BASE_URL       default http://localhost:8000/v1
 VLLM_MODEL          default Qwen/Qwen2.5-VL-7B-Instruct
 VLLM_TIMEOUT        seconds per HTTP call (default 180)
-VLLM_TEMPERATURE    default 0.2 — JSON-faithful, low variance
+VLLM_TEMPERATURE    per-call sampling temp (default 0.8; paper §5.3 used 0.9)
+VLLM_N_RUNS         stochastic traces per tuple (default 10; smoke 5)
+VLLM_AGREEMENT_MIN  K-of-N agreement to keep a delta (default 3; smoke 2)
+VLLM_TMAX           max path length per trace (default 15; smoke 8)
+VLLM_MAX_BACKTRACKS paper §5.3 (default 1)
+VLLM_SIM_THRESHOLD  Jaccard threshold for delta clustering (default 0.4)
 ```
 
 ---
