@@ -129,6 +129,183 @@ PlantSwarm/
 
 ---
 
+## Run the whole pipeline (step-by-step runbook)
+
+This is the master walkthrough — a fresh user clones the repo and
+follows these commands top to bottom to go from raw IPMNet CSV to a
+compiled paper PDF with figures and tables filled in. If you already
+have `e2e_full.sh` configured you can skip to the **One-command path**
+at the end of this section.
+
+### 0. What you need
+
+| | LOCAL | GPU host (Nova) |
+|---|---|---|
+| Python 3.10+ | yes | yes |
+| `git` | yes | yes |
+| `claude` CLI (OAuth) | yes | no |
+| `ANTHROPIC_API_KEY` | optional, ~5x faster | yes (for verifier) |
+| CUDA + A100-class GPU | no | yes |
+| vLLM + Qwen2.5-VL-7B | no | yes |
+| `latexmk` or `pdflatex` | yes (for paper) | no |
+
+### 1. LOCAL — clone + install + auth Claude
+
+```bash
+git clone https://github.com/tirtho149/PlantSwarm.git
+cd PlantSwarm
+
+python -m venv .venv && source .venv/bin/activate
+pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
+pip install matplotlib                     # for visualization PNGs
+
+# Claude CLI for Phase 0 canonical KB + Phase 0R verifier
+curl -fsSL https://claude.ai/install.sh | bash
+claude auth login                           # OAuth in browser
+echo "ANTHROPIC_API_KEY=sk-ant-..." > .env  # optional but recommended
+```
+
+Place the raw IPMNet export at `BugWood_Diseases.csv` (already in the
+repo; pull a fresh export from Bugwood if needed).
+
+### 2. LOCAL — Phase 0 canonical KB (Claude)
+
+```bash
+# Filter the CSV + top up the per-(crop, disease, state) image cache
+# + run Claude discovery / extraction / reconciliation + git push.
+bash scripts/e2e_local.sh
+```
+
+What this does:
+1. `scripts/filter_bugwood_csv.py` → `BugWood_Diseases_usable.csv` (484 classes at threshold ≥ 10).
+2. `scripts/setup_image_cache.sh` → `.bugwood_cache/<image>.jpg`.
+3. `scripts/run_phase0_local.sh` → `artifacts/pathome_kb/<Crop>/final_registry.json` per crop (canonical only).
+4. `git add -f` canonical artefacts + `git commit` + `git push origin main`.
+
+**Smoke variant** (2 crops, ~30 min, ~$2–5 in API quota):
+```bash
+SMOKE_CROPS="Soybean,Tomato" bash smoke/run_phase0_local.sh
+git add -f smoke/artifacts/pathome_seed/symptoms_seed.json \
+           artifacts/pathome_kb/{Soybean,Tomato}/*.json
+git commit -m "smoke: phase 0 canonical" && git push
+```
+
+### 3. GPU host (Nova) — one-time install
+
+```bash
+ssh you@hpc-login.iastate.edu
+cd /work/<your-scratch>/
+git clone https://github.com/tirtho149/PlantSwarm.git
+cd PlantSwarm
+mkdir -p logs
+
+module load python cuda/11.8
+python -m venv .venv && source .venv/bin/activate
+pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
+pip install "vllm>=0.4.0" "transformers>=4.40.0" "torch>=2.1.0" \
+            "peft>=0.4.0" "accelerate>=0.30.0"
+echo "ANTHROPIC_API_KEY=sk-ant-..." > .env   # for the verifier
+```
+
+### 4. Nova — Phase 0R + OBSERVE train + OBSERVE eval
+
+```bash
+# back on Nova
+cd /work/<your-scratch>/PlantSwarm
+git pull origin main
+
+# Run all three SBATCH-submitted Nova phases, chained via sbatch --wait.
+PATHOME_TRACE_DIR=artifacts/observe_traces \
+  bash scripts/e2e_nova.sh
+```
+
+What this does:
+1. `git pull` (gets the canonical artefacts you pushed in step 2).
+2. `sbatch --wait scripts/submit_phase0r_regional.sh` — boots vLLM, runs the Qwen swarm (N stochastic traces × Algorithm 1 routing), the K-of-N agreement filter, the Claude+WebSearch verifier, and the conservative merge with existing KB. Writes per-trace records to `artifacts/observe_traces/phase0r_traces.jsonl`. Updates `final_registry.json` and `symptoms_seed.json` with the regional deltas and their verification status + `web_support` citations.
+3. `sbatch --wait scripts/submit_observe_train.sh` — trains the OBSERVE student on the trace JSONL. Writes `observe/checkpoints/observe_best.pt` and `history.json`.
+4. `sbatch --wait scripts/submit_evaluate_observe.sh` — held-out evaluation. Writes `results/observe_eval.json`.
+5. `git add -f` the results + `git commit` + `git push origin main`.
+
+**Smoke variant** (2 crops):
+```bash
+PATHOME_ONLY_CROPS="Soybean,Tomato" \
+  PATHOME_SEED_QUICK=1 \
+  PATHOME_USABLE_CSV=smoke/BugWood_Diseases_smoke_usable.csv \
+  PATHOME_SEED_FILE=smoke/artifacts/pathome_seed/symptoms_seed.json \
+  PATHOME_TRACE_DIR=artifacts/observe_traces \
+  bash scripts/e2e_nova.sh
+```
+
+Walltime: smoke ~30–60 min, production ~16–30 h on one A100.
+
+### 5. LOCAL — pull results + visualize + build PDF
+
+```bash
+# back on your LOCAL machine
+cd /path/to/PlantSwarm
+bash scripts/e2e_visualize.sh
+```
+
+What this does:
+1. `git pull origin main` (gets the results Nova pushed in step 4).
+2. `scripts/viz_kb.sh` → KB summary figures + `auto_kb_stats.tex`.
+3. `scripts/viz_observe.sh` → training curves + eval bar + `auto_observe_{curves,eval}.tex`.
+4. `scripts/viz_traces.sh` → trace stats + `auto_trace_stats.tex`.
+5. `scripts/build_latex_pdf.sh` → `plantswarm/latex/acl_latex.pdf` with auto-generated tables and figures included.
+
+Open the result:
+```bash
+open plantswarm/latex/acl_latex.pdf            # macOS
+xdg-open plantswarm/latex/acl_latex.pdf        # Linux
+```
+
+### 6. One-command path
+
+If you've set `PATHOME_NOVA_HOST` and `PATHOME_NOVA_REPO` and your
+local machine has key-based SSH to Nova, run the whole pipeline in
+one shot:
+
+```bash
+export PATHOME_NOVA_HOST=tirtho@hpc-login.iastate.edu
+export PATHOME_NOVA_REPO=/work/mech-ai-scratch/tirtho/PlantSwarm
+bash scripts/e2e_full.sh
+```
+
+`e2e_full.sh` runs `e2e_local.sh`, then SSHs to Nova and runs
+`e2e_nova.sh` there, then comes back and runs `e2e_visualize.sh`.
+
+### 7. Re-running only some phases
+
+Every umbrella respects skip-knobs:
+
+```bash
+PATHOME_SKIP_NOVA=1        bash scripts/e2e_full.sh        # local-only
+PATHOME_SKIP_VIZ=1         bash scripts/e2e_full.sh        # no paper rebuild
+PATHOME_SKIP_PUSH=1        bash scripts/e2e_local.sh       # commit but no push
+PATHOME_SKIP_PHASE0R=1     bash scripts/e2e_nova.sh        # train + eval only
+PATHOME_SKIP_TRAIN=1       bash scripts/e2e_nova.sh        # eval only
+PATHOME_USE_VERIFIER=0     bash scripts/e2e_nova.sh        # skip web verifier
+PATHOME_SKIP_PDF=1         bash scripts/e2e_visualize.sh   # figures only
+```
+
+### 8. Where the outputs end up
+
+```
+artifacts/pathome_kb/<Crop>/final_registry.json     canonical + regional KB
+artifacts/pathome_seed/symptoms_seed.json           merged seed (terminal deliverable)
+artifacts/observe_traces/phase0r_traces.jsonl       OBSERVE training data
+observe/checkpoints/observe_best.pt                 trained student
+observe/checkpoints/history.json                    training history
+results/observe_eval.json                           held-out metrics
+results/figures/*.png                               figures for the paper
+plantswarm/latex/auto_*.tex                         LaTeX snippets the paper \input{}s
+plantswarm/latex/acl_latex.pdf                      compiled paper PDF
+```
+
+---
+
 ## One-time prerequisites
 
 ### LOCAL
