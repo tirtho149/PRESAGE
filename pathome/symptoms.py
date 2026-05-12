@@ -112,18 +112,41 @@ class RegionalDelta:
     """One image-grounded observation that ADDS to or CONTRADICTS the
     canonical KB. The set of these per state IS the regional KB.
 
-    ``support`` is the K-of-N agreement count from the Qwen swarm — how
-    many of the N stochastic traces produced a delta that clustered into
-    this one. ``support`` accumulates across iterative Phase 0R re-runs
-    via the conservative merge in ``plantswarm.delta_pipeline``.
+    Provenance fields
+    -----------------
+    ``swarm_support`` is the K-of-N agreement count from the Qwen swarm
+    — how many of N stochastic traces produced a delta that clustered
+    into this one. Accumulates across iterative Phase 0R re-runs via the
+    conservative merge in ``plantswarm.delta_pipeline``.
+
+    ``verification_status`` records how the delta survived the
+    Claude-headless web-search verifier:
+
+        "verified"            strong external (web) support; web_support populated
+        "weakly_supported"    partial or indirect support
+        "provisional"         no evidence found but plausible
+        "novel_plausible"     no evidence but coherent with canonical
+        "unverified"          verifier disabled or unavailable (offline)
+        "contradictory"       contradicted by external evidence (rare; usually dropped)
+
+    ``web_support`` is the list of (url, quote) citations the verifier
+    attached. ``reasoning`` is a one-sentence justification.
+
+    ``support`` is kept as a legacy alias for ``swarm_support`` so old
+    seed JSONs (pre-verifier) still hydrate cleanly.
     """
 
-    field: str = ""             # which canonical field this delta refines
-    canonical_says: str = ""    # short quote from canonical, or "(not specified)"
-    image_shows: str = ""       # what the image adds or contradicts
-    image_quote: str = ""       # one-sentence visual evidence
-    image_id: str = ""          # bugwood::N — primary witness
-    support: int = 0            # agreement count (0 = legacy / pre-swarm)
+    field: str = ""
+    canonical_says: str = ""
+    image_shows: str = ""
+    image_quote: str = ""
+    image_id: str = ""
+    swarm_support: int = 0
+    verification_status: str = "unverified"
+    web_support: List[Dict[str, str]] = field(default_factory=list)
+    reasoning: str = ""
+    # Legacy alias, mirrors swarm_support on hydration.
+    support: int = 0
 
 
 @dataclass
@@ -160,8 +183,12 @@ class RegionalObservation:
             return ""
         lines = [f"State: {self.state}"]
         for d in self.deltas:
-            lines.append(f"  • [{d.field or 'other'}]"
-                         + (f" (support={d.support})" if d.support else ""))
+            sup = d.swarm_support or d.support
+            tag = f" (status={d.verification_status}"
+            if sup:
+                tag += f", support={sup}"
+            tag += ")"
+            lines.append(f"  • [{d.field or 'other'}]{tag}")
             if d.canonical_says:
                 lines.append(f"      canonical: {d.canonical_says}")
             if d.image_shows:
@@ -171,6 +198,9 @@ class RegionalObservation:
                 if len(q) > max_quote_chars:
                     q = q[:max_quote_chars].rstrip() + "…"
                 lines.append(f"      evidence:  \"{q}\"")
+            for s in d.web_support[:2]:    # cap rendering at 2 citations
+                if s.get("url"):
+                    lines.append(f"      web cite:  {s['url']}")
         return "\n".join(lines)
 
 
@@ -293,17 +323,36 @@ class SymptomProfile:
         for d in (r.get("deltas") or []):
             if not isinstance(d, dict):
                 continue
+            # Support: read whichever key is present (new schema, legacy
+            # bracketed key, or the older "support" alias).
             try:
-                support = int(d.get("support", d.get("__support__", 0)) or 0)
+                swarm_support = int(
+                    d.get("swarm_support",
+                          d.get("__support__",
+                                d.get("support", 0))) or 0
+                )
             except (TypeError, ValueError):
-                support = 0
+                swarm_support = 0
+            # Web support: list of {url, quote}. Coerce gracefully.
+            web_support: List[Dict[str, str]] = []
+            for s in d.get("web_support") or []:
+                if not isinstance(s, dict):
+                    continue
+                url   = str(s.get("url")   or "").strip()
+                quote = str(s.get("quote") or "").strip()
+                if url or quote:
+                    web_support.append({"url": url, "quote": quote})
             deltas.append(RegionalDelta(
                 field=str(d.get("field", "")),
                 canonical_says=str(d.get("canonical_says", "")),
                 image_shows=str(d.get("image_shows", "")),
                 image_quote=str(d.get("image_quote", "")),
                 image_id=str(d.get("image_id", "")),
-                support=support,
+                swarm_support=swarm_support,
+                verification_status=str(d.get("verification_status") or "unverified"),
+                web_support=web_support,
+                reasoning=str(d.get("reasoning") or "").strip(),
+                support=swarm_support,    # legacy alias
             ))
         swarm_meta = r.get("swarm_meta") or r.get("__swarm_meta__")
         if not isinstance(swarm_meta, dict):

@@ -165,11 +165,12 @@ def observation_to_regional_dict(state: str, record: dict) -> dict:
             "image_quote":    _str(d.get("image_quote")),
             "image_id":       _str(d.get("image_id")) or primary,
         }
-        # Telemetry: agreement count + cluster size from the swarm filter.
-        support = d.get("__support__", d.get("support"))
+        # Telemetry: agreement count (renamed to swarm_support on the way
+        # out; cluster size also kept).
+        support = d.get("__support__", d.get("swarm_support", d.get("support")))
         if support is not None:
             try:
-                out["support"] = int(support)
+                out["swarm_support"] = int(support)
             except (TypeError, ValueError):
                 pass
         cluster = d.get("__cluster_size__", d.get("cluster_size"))
@@ -178,6 +179,25 @@ def observation_to_regional_dict(state: str, record: dict) -> dict:
                 out["cluster_size"] = int(cluster)
             except (TypeError, ValueError):
                 pass
+        # Verifier provenance.
+        vs = d.get("verification_status")
+        if vs:
+            out["verification_status"] = _str(vs)
+        web_support = d.get("web_support")
+        if isinstance(web_support, list) and web_support:
+            cleaned: List[dict] = []
+            for s in web_support:
+                if not isinstance(s, dict):
+                    continue
+                url   = _str(s.get("url"))
+                quote = _str(s.get("quote"))
+                if url or quote:
+                    cleaned.append({"url": url, "quote": quote})
+            if cleaned:
+                out["web_support"] = cleaned
+        reasoning = d.get("reasoning")
+        if reasoning:
+            out["reasoning"] = _str(reasoning)
         deltas.append(out)
 
     result: Dict[str, Any] = {

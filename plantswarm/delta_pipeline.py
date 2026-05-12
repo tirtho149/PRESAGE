@@ -452,6 +452,24 @@ def _agreement_filter(
 # Conservative merge with existing KB
 # ---------------------------------------------------------------------------
 
+def _support_of(d: Dict[str, Any]) -> int:
+    """Read swarm support from any of the legacy keys."""
+    for k in ("swarm_support", "__support__", "support"):
+        if k in d:
+            try:
+                return int(d[k] or 0)
+            except (TypeError, ValueError):
+                pass
+    return 1
+
+
+def _set_support(d: Dict[str, Any], val: int) -> None:
+    """Write swarm support to BOTH the new and legacy keys for
+    consumer compatibility."""
+    d["swarm_support"] = int(val)
+    d["__support__"]   = int(val)
+
+
 def _merge_with_existing(
     *,
     existing: List[Dict[str, Any]],
@@ -465,12 +483,17 @@ def _merge_with_existing(
       - A new delta is added iff no existing delta in the same field has
         Jaccard ≥ ``similarity_threshold`` on ``image_shows``.
       - When a new delta overlaps with an existing one, the existing's
-        ``__support__`` is incremented by the new's ``__support__``
-        (or 1 if absent). The new delta itself is dropped.
-
-    Returns (merged_list, counts).
+        ``swarm_support`` is incremented by the new's ``swarm_support``.
+        The new delta itself is dropped, BUT if the new delta is
+        "verified" and the existing wasn't, we upgrade the existing's
+        ``verification_status`` and merge in the new ``web_support``
+        citations.
     """
     merged: List[Dict[str, Any]] = [dict(e) for e in existing]
+    # Promote legacy __support__ to swarm_support on the way in.
+    for e in merged:
+        _set_support(e, _support_of(e))
+
     by_field: Dict[str, List[int]] = defaultdict(list)
     for i, e in enumerate(merged):
         by_field[e.get("field", "other")].append(i)
@@ -480,6 +503,12 @@ def _merge_with_existing(
         "n_new_candidates":  len(new),
         "n_added":           0,
         "n_overlaps_bumped": 0,
+        "n_upgraded":        0,
+    }
+
+    _STATUS_RANK = {
+        "verified": 5, "weakly_supported": 4, "provisional": 3,
+        "novel_plausible": 2, "unverified": 1, "contradictory": 0,
     }
 
     for n in new:
@@ -494,12 +523,25 @@ def _merge_with_existing(
                 break
         if overlap_idx is not None:
             e = merged[overlap_idx]
-            bump = int(n.get("__support__", 1) or 1)
-            e["__support__"] = int(e.get("__support__", 1) or 1) + bump
+            _set_support(e, _support_of(e) + _support_of(n))
             counts["n_overlaps_bumped"] += 1
+            # If the new candidate has stronger verification, upgrade.
+            n_status = n.get("verification_status", "unverified")
+            e_status = e.get("verification_status", "unverified")
+            if _STATUS_RANK.get(n_status, 0) > _STATUS_RANK.get(e_status, 0):
+                e["verification_status"] = n_status
+                counts["n_upgraded"] += 1
+            # Merge web_support citations (dedupe by URL).
+            existing_urls = {(s or {}).get("url", "") for s in (e.get("web_support") or [])}
+            for s in n.get("web_support") or []:
+                if (s or {}).get("url", "") not in existing_urls:
+                    e.setdefault("web_support", []).append(s)
+                    existing_urls.add(s.get("url", ""))
         else:
             n_copy = dict(n)
-            n_copy.setdefault("__support__", 1)
+            _set_support(n_copy, _support_of(n_copy))
+            n_copy.setdefault("verification_status", "unverified")
+            n_copy.setdefault("web_support", [])
             merged.append(n_copy)
             by_field[n_field].append(len(merged) - 1)
             counts["n_added"] += 1
@@ -667,7 +709,7 @@ def run_for_state(
             except Exception as e:
                 print(f"    [trace_writer] error: {type(e).__name__}: {e}")
 
-    # Cross-run agreement → candidates.
+    # Cross-run agreement → proposal-confidence prior.
     per_run_final = [t["final_deltas"] for t in traces]
     candidates = _agreement_filter(
         per_run_final,
@@ -675,10 +717,61 @@ def run_for_state(
         similarity_threshold=similarity_threshold,
     )
 
+    # Claude-headless web-search verifier — retrieval-grounded validation.
+    # K-of-N agreement is a NOISE FILTER, not a truth criterion: candidates
+    # that survive agreement are sent to a Claude verifier which judges
+    # each one against extension/pathology web sources before merging.
+    use_verifier = os.environ.get("PATHOME_USE_VERIFIER", "1") not in ("0", "false", "False")
+    verifier_meta: Dict[str, Any] = {"enabled": use_verifier}
+    if use_verifier and candidates:
+        from pathome_kb.verifier import verify_candidates
+        v_timeout = _int_env("PATHOME_VERIFIER_TIMEOUT", 600)
+        v_turns   = _int_env("PATHOME_VERIFIER_MAX_TURNS", 30)
+        try:
+            verdict = verify_candidates(
+                crop=crop, disease=disease, state=state,
+                canonical=canonical,
+                existing_kb_deltas=existing,
+                candidates=candidates,
+                primary_image_id=primary_image_id,
+                timeout_secs=v_timeout,
+                max_turns=v_turns,
+            )
+        except Exception as e:
+            print(f"    [verifier] failure ({type(e).__name__}: {e}); "
+                  f"passing candidates through as 'unverified'")
+            verdict = {
+                "verified":               [],
+                "provisional":            [dict(c, verification_status="unverified",
+                                                  web_support=[]) for c in candidates],
+                "contradictory":          [],
+                "duplicates_of_existing": [],
+                "accepted":               [dict(c, verification_status="unverified",
+                                                  web_support=[]) for c in candidates],
+            }
+        new_for_merge = verdict.get("accepted", [])
+        verifier_meta.update({
+            "n_verified":           len(verdict.get("verified", [])),
+            "n_provisional":        len(verdict.get("provisional", [])),
+            "n_contradictory":      len(verdict.get("contradictory", [])),
+            "n_duplicates_existing": len(verdict.get("duplicates_of_existing", [])),
+        })
+    else:
+        # Pure agreement path (verifier disabled or no candidates). Carry
+        # support count into the schema's swarm_support key so the storage
+        # layer stays uniform.
+        new_for_merge = []
+        for c in candidates:
+            cc = dict(c)
+            cc.setdefault("swarm_support", cc.get("__support__", 1))
+            cc.setdefault("verification_status", "unverified")
+            cc.setdefault("web_support", [])
+            new_for_merge.append(cc)
+
     # Conservative merge with existing KB.
     merged, merge_counts = _merge_with_existing(
         existing=existing,
-        new=candidates,
+        new=new_for_merge,
         similarity_threshold=similarity_threshold,
     )
 
@@ -703,6 +796,7 @@ def run_for_state(
             "early_terminated":     [t["early_terminated"] for t in traces],
             "n_raw_per_run":        [len(t["final_deltas"]) for t in traces],
             "n_after_agreement":    len(candidates),
+            "verifier":             verifier_meta,
             "merge":                merge_counts,
         },
     }
@@ -782,12 +876,19 @@ def run_batch(
             completed += 1
             meta = record.get("__swarm_meta__", {})
             mg = (meta.get("merge") or {})
+            vf = (meta.get("verifier") or {})
             n_deltas = len(record.get("deltas") or [])
             tag = "✓" if n_deltas else "·"
+            v_summary = (
+                f"vfy={vf.get('n_verified', 0)}/{vf.get('n_provisional', 0)}/"
+                f"{vf.get('n_contradictory', 0)}, "
+                if vf.get("enabled") else ""
+            )
             print(
                 f"    [{completed}/{total}] {tag} {profile_id} / {state}  "
                 f"deltas={n_deltas} (N={meta.get('n_runs')}, "
                 f"K≥{meta.get('agreement_min')}, "
+                f"{v_summary}"
                 f"existing={mg.get('n_existing', 0)}, "
                 f"added={mg.get('n_added', 0)}, "
                 f"bumped={mg.get('n_overlaps_bumped', 0)})"

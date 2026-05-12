@@ -121,7 +121,7 @@ Run via `python -m pathome_kb --regional-only`. The orchestrator is
 `plantswarm.delta_pipeline.run_for_state`, called once per
 (crop, disease, state, cached image) tuple.
 
-### 3a. Per-tuple flow (iterative KB loop)
+### 3a. Per-tuple flow (iterative KB loop with web-grounded verifier)
 
 ```mermaid
 flowchart TD
@@ -132,9 +132,10 @@ flowchart TD
     T1[Trace 1<br/>seed=42]
     T2[Trace 2<br/>seed=142]
     TN[Trace N<br/>seed=42+N*100]
-    AGR[Cross-run agreement filter<br/>cluster by field plus Jaccard ge tau<br/>keep clusters covering ge K distinct runs]
-    MERGE[Conservative merge with existing<br/>existing preserved<br/>new added if no Jaccard overlap<br/>overlap bumps existing support]
-    OUT[Merged record<br/>state, deltas, image_ids, swarm_meta]
+    AGR[K-of-N agreement<br/>noise filter / proposal-confidence prior<br/>NOT a truth criterion]
+    VERIFY[Claude verifier + WebSearch<br/>retrieval-grounded validation<br/>per-candidate verification_status<br/>+ web_support citations]
+    MERGE[Conservative merge with existing<br/>verified + provisional accepted<br/>contradictory dropped<br/>overlap bumps support + upgrades status]
+    OUT[Merged record<br/>state, deltas, swarm_meta + verifier_meta]
 
     INPUT --> LOAD
     INPUT --> FLAT
@@ -151,21 +152,35 @@ flowchart TD
     T1 --> AGR
     T2 --> AGR
     TN --> AGR
+    AGR --> VERIFY
+    LOAD -.context.-> VERIFY
+    FLAT -.context.-> VERIFY
     LOAD --> MERGE
-    AGR --> MERGE
+    VERIFY --> MERGE
     MERGE --> OUT
 
     classDef input fill:#ffd,stroke:#660
     classDef ctx fill:#dff,stroke:#066
     classDef trace fill:#fde,stroke:#a06
     classDef agg fill:#eef,stroke:#33a
+    classDef verify fill:#fef,stroke:#606,stroke-width:2px
     classDef out fill:#efe,stroke:#060,stroke-width:2px
     class INPUT input
     class LOAD,FLAT,URL ctx
     class T1,T2,TN trace
     class AGR,MERGE agg
+    class VERIFY verify
     class OUT out
 ```
+
+**Epistemic note.** Multi-run agreement from a single base model is
+correlated, not orthogonal evidence — K-of-N agreement filters one-off
+hallucinations but does not establish truth. The verifier stage adds
+external-evidence support: Claude searches extension factsheets, APS /
+CABI references, and peer-reviewed sources, then judges each candidate
+against retrieved evidence. The KB therefore evolves like a scientific
+observation system: the Qwen swarm is a high-recall **hypothesis
+generator**, Claude is a retrieval-grounded **evidence reconciler**.
 
 After every tuple finishes, `_embed_into_registry` merges its per-state
 record back into the disease's `regional_observations` dict — **states
@@ -295,6 +310,28 @@ Trace N-1 final_deltas  [...]
        candidates (K-of-N survivors), each tagged
        with __support__ and __cluster_size__
 ```
+
+### 3d2. Web-grounded verifier (Claude headless + WebSearch)
+
+After the K-of-N agreement filter produces candidate observations, the
+pipeline calls `pathome_kb.verifier.verify_candidates`. Claude receives
+the full candidate batch plus canonical KB plus existing regional KB,
+runs WebSearch queries against extension / APS / CABI / peer-reviewed
+sources, and assigns each candidate a verification status:
+
+| Status | Meaning | Goes into KB? |
+|---|---|---|
+| verified | strong external support; ≥1 high-quality citation | yes |
+| weakly_supported | partial or indirect support | yes |
+| provisional | no evidence but plausible, not contradicted | yes (with status flag) |
+| novel_plausible | no evidence but coherent with canonical | yes (with status flag) |
+| contradictory | external evidence contradicts | dropped (audit trail kept) |
+| duplicate_existing | restates an already-stored regional delta | dropped; existing's support bumped |
+
+Each accepted delta carries a `web_support` list of (url, quote)
+citations and a one-sentence `reasoning` string. The verifier is opt-out
+via `PATHOME_USE_VERIFIER=0`; the offline fallback marks every candidate
+as `verification_status="unverified"` and lets the pipeline keep running.
 
 ### 3e. Conservative merge with existing KB
 
@@ -513,6 +550,7 @@ PlantSwarm/
 |   |-- pipeline.py                        per-crop orchestrator (CLI)
 |   |-- internet_pipeline.py               Claude discovery + extraction + reconciliation
 |   |-- regional_observation.py            per-tuple Qwen-swarm caller
+|   |-- verifier.py                        Claude web-search verifier (Phase 0R)
 |   |-- symptoms_adapter.py                registry to SymptomProfile JSON
 |   |-- prompts/                           canonical-stage prompts
 |   `-- shared.py / utils.py / config.py
@@ -595,6 +633,9 @@ PlantSwarm/
 | VLLM_TMAX | 15 (smoke: 8) | Max path length per trace |
 | VLLM_MAX_BACKTRACKS | 1 | Max backtracks (actually honored) |
 | VLLM_SIM_THRESHOLD | 0.4 | Jaccard threshold for clustering + merge |
+| PATHOME_USE_VERIFIER | 1 | Set to 0 to skip the Claude web-search verifier and pass candidates straight to merge as `unverified` |
+| PATHOME_VERIFIER_TIMEOUT | 600 | Verifier `claude -p` timeout (seconds) |
+| PATHOME_VERIFIER_MAX_TURNS | 30 | Verifier max turns (for WebSearch loops) |
 | PATHOME_IMAGE_CACHE_DIR | — | Prepended to default cache search path |
 | PATHOME_TRACE_DIR | — | When set, Phase 0R appends per-trace records to `<dir>/phase0r_traces.jsonl` |
 | PATHOME_TRACE_FILE | phase0r_traces.jsonl | Trace JSONL filename within `PATHOME_TRACE_DIR` |

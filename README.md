@@ -316,16 +316,32 @@ with iterative KB evolution):
    - Each trace ends with `DiagnosisAgent` consolidating its own context
      buffer (specialists' deltas) plus the canonical + existing-KB blocks
      into that trace's final delta list.
-4. **Cross-run agreement filter**: deltas from the N traces are clustered
+4. **K-of-N agreement filter**: deltas from the N traces are clustered
    by (`field`, Jaccard similarity over `image_shows` tokens). Clusters
    whose support covers ≥ K distinct runs (default K=3; smoke K=2) are
-   kept; everything else is dropped as likely hallucination.
-5. **Conservative merge with existing KB**:
+   kept; the rest are dropped as likely hallucination. K-of-N is a
+   *proposal-confidence prior*, not a truth criterion — it filters
+   one-off noise so the verifier doesn't waste API spend on weak
+   candidates.
+5. **Web-grounded verifier** (Claude headless + WebSearch): every
+   surviving candidate is sent to `pathome_kb/verifier.py`, which
+   searches extension / APS / CABI / peer-reviewed sources for
+   evidence and tags each delta with a `verification_status` in
+   `{verified, weakly_supported, provisional, novel_plausible,
+   contradictory, duplicate_existing}` plus a `web_support` list of
+   `(url, quote)` citations. Verified + provisional pass into the
+   merge; contradictory ones are dropped (with audit trail);
+   duplicates bump the existing entry's support instead of adding a
+   row. Opt-out via `PATHOME_USE_VERIFIER=0`.
+6. **Conservative merge with existing KB**:
    - Every existing delta is preserved (idempotent re-runs).
    - A new delta is added iff no existing same-field delta has Jaccard
      ≥ τ on `image_shows`.
    - When a new delta overlaps with an existing one, the existing's
-     `__support__` counter is bumped (not duplicated).
+     `swarm_support` counter is bumped (not duplicated), and its
+     `verification_status` is upgraded if the new candidate has stronger
+     external support (e.g. `unverified → verified`). The new delta's
+     `web_support` citations are merged in (dedupe by URL).
    - Contradictions (same field, low-Jaccard `image_shows`) are kept as
      additional entries — downstream consumers see both and can weigh them.
 
@@ -350,6 +366,9 @@ VLLM_AGREEMENT_MIN  K-of-N agreement to keep a delta (default 3; smoke 2)
 VLLM_TMAX           max path length per trace (default 15; smoke 8)
 VLLM_MAX_BACKTRACKS paper §5.3 (default 1)
 VLLM_SIM_THRESHOLD  Jaccard threshold for delta clustering AND merge dedup (default 0.4)
+PATHOME_USE_VERIFIER     enable Claude web-search verifier (default 1; 0 = skip)
+PATHOME_VERIFIER_TIMEOUT verifier claude -p timeout in seconds (default 600)
+PATHOME_VERIFIER_MAX_TURNS verifier max turns for WebSearch (default 30)
 PATHOME_IMAGE_CACHE_DIR  optional override prepended to the cache search path
 ```
 
