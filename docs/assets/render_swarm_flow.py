@@ -200,9 +200,9 @@ STAGES = [
         "Final regional_observations entry for this state — each delta carries its support and provenance.", None),
 ]
 
-FRAMES_PER_STAGE = 8        # → 8/12 = 0.67 s per stage
-FPS = 12
-HOLD_FRAMES = FPS * 2
+FRAMES_PER_STAGE = 8        # → 8/6 ≈ 1.33 s per stage (slow enough to read)
+FPS = 6
+HOLD_FRAMES = FPS * 3       # ~3 s end hold
 
 # ----------------------------------------------------------------------
 # Drawing helpers
