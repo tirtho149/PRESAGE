@@ -117,15 +117,26 @@ healthy class uses the synthetic healthy template.
 
 ### PlantWild (evaluation set, in-the-wild — hard OOD)
 
-A separately collected in-the-wild benchmark released in 2024 with
-**89 classes and ~18,500 images**. Tomato-relevant classes overlap
-the PlantVillage disease vocabulary but the images themselves are
-taken in real field conditions — cluttered backgrounds, variable
-lighting, non-isolated leaves, smartphone capture. The Tomato slice
-typically covers the same 8-10 disease classes as PlantVillage
-(exact set depends on the release version). Per-class image counts
-are read directly from the dataset root at evaluation time, since
-the released folder layout is what the loader operates on.
+A separately collected in-the-wild benchmark with **89 classes**
+split into **56 diseased + 33 healthy** classes (PlantWild paper,
+Figure 3). Per-class image counts are **highly imbalanced**: the
+largest class has 589 images, the smallest has 44, with most classes
+between 100 and 300. The dataset is heavy-tailed; the long tail of
+small classes is where in-the-wild OOD generalization is hardest.
+
+Images are taken in real field conditions — cluttered backgrounds,
+variable lighting, non-isolated leaves, smartphone capture — making
+this the harder of the two evaluation sets. The Tomato slice covers
+roughly the same disease vocabulary as PlantVillage (Early Blight,
+Late Blight, Leaf Mold, Septoria Leaf Spot, Bacterial Spot, Target
+Spot, Yellow Leaf Curl Virus, Mosaic Virus, healthy, and a generic
+"tomato leaf" healthy bucket); per-class image counts are read
+directly from the dataset root at evaluation time, since the
+released folder layout is what the loader operates on.
+
+The 4 vs 5 KB-known vs zero-shot split that holds for PlantVillage
+Tomato classes carries over to PlantWild — the same 4 Tomato classes
+have full KB profiles, the same 5 fall back to zero-shot prompts.
 
 ### Why both PlantVillage and PlantWild
 
