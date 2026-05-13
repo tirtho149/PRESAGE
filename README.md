@@ -1,8 +1,10 @@
-# PlantSwarm + PathomeDB — Canonical KB + Qwen-Swarm Regional Deltas + OBSERVE OOD classifier
+# PlantSwarm + PathomeDB — Canonical KB + Qwen-Swarm Regional Deltas + BioCAP-on-Bugwood
 
 A three-stage pipeline that produces an image-grounded plant disease
-knowledge base for the 484 Bugwood IPMNet classes, plus a small
-KB-augmented classifier evaluated under heavy cross-domain shift:
+knowledge base for the 484 Bugwood IPMNet classes, plus a full BioCAP
+([Zhang et al., arXiv:2510.20095](https://arxiv.org/abs/2510.20095))
+two-projector CLIP trained on Bugwood images with **KB-derived hybrid
+captions** (canonical KB text + per-state regional deltas):
 
 1. **Phase 0  — canonical KB** (LOCAL, Claude). Discovery →
    extraction → reconciliation produces a text-grounded
@@ -14,22 +16,23 @@ KB-augmented classifier evaluated under heavy cross-domain shift:
    photograph, and emits state-specific deltas — additions or
    contradictions backed by image evidence. Deltas never restate
    canonical.
-3. **Phase OBSERVE — KB-augmented OOD classifier**
-   (SigLIP-2 + LoRA). Image -> SigLIP-2 vision tower (frozen base +
-   LoRA q/k/v) -> embedding; class prototypes built from
-   canonical + regional KB blocks (PathomeDB) are encoded once by the
-   frozen SigLIP-2 text tower. Prediction is the argmax cosine
-   similarity. Trained on Bugwood (field photos, Tomato by default),
-   evaluated on PlantVillage (lab cutouts — easy OOD) and PlantWild
-   (in-the-wild — hard OOD). Open-vocabulary: any disease with a KB
-   prototype can be scored, including diseases never seen as training
-   images.
+3. **Phase BIOCAP — KB-grounded CLIP training**
+   ([BioCAP paper](https://arxiv.org/abs/2510.20095)). The KB seed +
+   per-image state-specific deltas are rendered into captions by
+   `plantswarm/captioning.py::build_disease_caption`. Bugwood images +
+   those captions are packaged as WebDataset shards and used to train
+   an OpenCLIP fork with **two visual projectors** — one aligned to the
+   short label text ("Tomato Early Blight"), one to the long
+   descriptive caption. Evaluation reproduces every reproducible BioCAP
+   paper table on PlantVillage / PlantWild / PlantDoc + a Bugwood
+   held-out retrieval bench. See [PIPELINE.md](PIPELINE.md) for the
+   paper-table → PlantSwarm artifact map.
 
-The terminal deliverable from the KB side is **`symptoms_seed.json`**
-(canonical text + image-grounded deltas per state). The OBSERVE
-checkpoint at **`observe/checkpoints/observe_best.pt`** is the
-secondary deliverable — a cheap text-conditioned image classifier
-that benefits from PathomeDB's KB at zero extra training cost.
+The KB-side terminal deliverable is `artifacts/pathome_kb/<crop>/final_registry.json`
+(canonical text + image-grounded deltas per state). The BioCAP-side
+terminal deliverable is `results/biocap_report.md` — a paper-style
+markdown report reproducing Tables 1, 2, 3, 4, 6, 8, 13, 17, 18, 19, 20
+and Figure 3 on Bugwood data.
 
 ```
   ┌─────────────────────┐       ┌─────────────────────┐       ┌─────────────────────┐
@@ -215,23 +218,39 @@ pip install "vllm>=0.4.0" "transformers>=4.40.0" "torch>=2.1.0" \
 echo "ANTHROPIC_API_KEY=sk-ant-..." > .env   # for the verifier
 ```
 
-### 4. Nova — Phase 0R + OBSERVE train + OBSERVE eval
+### 4. Nova — Phase 0R + BioCAP matrix + paper-table reproduction
 
 ```bash
 # back on Nova
 cd /work/<your-scratch>/PlantSwarm
 git pull origin main
 
-# Run all three SBATCH-submitted Nova phases, chained via sbatch --wait.
+# Run the full GPU-host pipeline (8 phases chained with sbatch --wait).
 bash scripts/e2e_nova.sh
 ```
 
-What this does:
-1. `git pull` (gets the canonical artefacts you pushed in step 2).
-2. `sbatch --wait scripts/submit_phase0r_regional.sh` — boots vLLM, runs the Qwen swarm (N stochastic passes; 4 specialists run in parallel and DiagnosisAgent consolidates per pass), the K-of-N cross-pass agreement filter, the Claude+WebSearch verifier, and the conservative merge with existing KB. Updates `final_registry.json` and `symptoms_seed.json` with the regional deltas and their `verification_status` + `web_support` citations.
-3. `sbatch --wait scripts/submit_observe_train.sh` — trains the OBSERVE classifier on Bugwood (Tomato by default). Uses the KB seed JSON for per-class text prototypes; the SigLIP-2 vision tower with LoRA on q/k/v is the only trainable part. Writes `observe/checkpoints/observe_best.pt` and `history.json`.
-4. `sbatch --wait scripts/submit_evaluate_observe.sh` — runs the trained classifier on PlantVillage and/or PlantWild (set `PV_ROOT` / `PW_ROOT`). Writes `results/observe_eval.json` with per-dataset top-1, top-5, macro F1, and per-class accuracy split by KB-known vs zero-shot classes.
-5. `git add -f` the results + `git commit` + `git push origin main`.
+What this does (see `scripts/e2e_nova.sh` for full source):
+1. `git pull` — fetches canonical artefacts you pushed in step 2.
+2. `sbatch --wait scripts/submit_phase0r_regional.sh` — Phase 0R: vLLM
+   boot, Qwen swarm (4 specialists + consolidator), K-of-N agreement
+   filter, Claude+WebSearch verifier, conservative merge. Updates
+   `final_registry.json` with `regional_observations.<state>.deltas[]`.
+3. **BioCAP captions + shards** — for each unique strategy in the
+   variant matrix (`scripts/biocap_variants.sh`), runs
+   `scripts/build_biocap_captions.py` + `scripts/build_biocap_shards.py`.
+4. **BioCAP training matrix** — 11 variants (T01–T11) covering caption
+   ablation (Table 3), #-deltas ablation (Table 6), covered/non-covered
+   split (Table 4), and projector / epoch ablation (Fig 3). Each variant
+   sbatches a separate ViT-B/16 dual-projector run from OpenAI init.
+5. **Baseline cache** — `scripts/fetch_baselines.py` warms the HF hub
+   cache for the 7 off-shelf models in Tables 1, 2, 17, 18, 19, 20.
+6. **Eval suite** — for every variant + baseline, runs
+   `evaluate_biocap.py` (zero-shot PV/PW/PlantDoc), `evaluate_biocap_retrieval.py`
+   (Bugwood held-out R@k), `evaluate_biocap_fewshot.py` (1- and 5-shot).
+7. **Aggregate paper tables** — `scripts/aggregate_biocap_tables.py`
+   walks `results/biocap_eval/<run_id>/*.json` and writes 11 paper-table
+   markdown files under `results/tables/` plus a master `results/biocap_report.md`.
+8. `git add -f` + `git commit` + `git push origin main`.
 
 **Smoke variant** (2 crops):
 ```bash
@@ -255,8 +274,8 @@ bash scripts/e2e_visualize.sh
 What this does:
 1. `git pull origin main` (gets the results Nova pushed in step 4).
 2. `scripts/viz_kb.sh` → KB summary figures + `auto_kb_stats.tex`.
-3. `scripts/viz_observe.sh` → training curves + eval bar + `auto_observe_{curves,eval}.tex`.
-4. `scripts/viz_traces.sh` → trace stats + `auto_trace_stats.tex`.
+3. `scripts/viz_traces.sh` → trace stats + `auto_trace_stats.tex`.
+4. `scripts/aggregate_biocap_tables.py` → BioCAP paper-table reproduction at `results/biocap_report.md` + per-table markdown under `results/tables/`.
 5. `scripts/build_latex_pdf.sh` → `plantswarm/latex/acl_latex.pdf` with auto-generated tables and figures included.
 
 Open the result:
@@ -288,23 +307,31 @@ Every umbrella respects skip-knobs:
 PATHOME_SKIP_NOVA=1        bash scripts/e2e_full.sh        # local-only
 PATHOME_SKIP_VIZ=1         bash scripts/e2e_full.sh        # no paper rebuild
 PATHOME_SKIP_PUSH=1        bash scripts/e2e_local.sh       # commit but no push
-PATHOME_SKIP_PHASE0R=1     bash scripts/e2e_nova.sh        # train + eval only
+PATHOME_SKIP_PHASE0R=1     bash scripts/e2e_nova.sh        # captions + train + eval only
+PATHOME_SKIP_CAPTIONS=1    bash scripts/e2e_nova.sh        # skip caption + shard rebuild
 PATHOME_SKIP_TRAIN=1       bash scripts/e2e_nova.sh        # eval only
-PATHOME_USE_VERIFIER=0     bash scripts/e2e_nova.sh        # skip web verifier
+PATHOME_SKIP_EVAL=1        bash scripts/e2e_nova.sh        # train but no eval
+PATHOME_SKIP_BASELINES=1   bash scripts/e2e_nova.sh        # no off-shelf baseline cache fill
+PATHOME_USE_VERIFIER=0     bash scripts/e2e_nova.sh        # skip web verifier in Phase 0R
 PATHOME_SKIP_PDF=1         bash scripts/e2e_visualize.sh   # figures only
 ```
 
 ### 8. Where the outputs end up
 
 ```
-artifacts/pathome_kb/<Crop>/final_registry.json     canonical + regional KB
-artifacts/pathome_seed/symptoms_seed.json           merged seed (terminal deliverable)
-observe/checkpoints/observe_best.pt                 trained KB-augmented OOD classifier
-observe/checkpoints/history.json                    training history
-results/observe_eval.json                           PV / PW eval metrics
-results/figures/*.png                               figures for the paper
-plantswarm/latex/auto_*.tex                         LaTeX snippets the paper \input{}s
-plantswarm/latex/acl_latex.pdf                      compiled paper PDF
+artifacts/pathome_kb/<Crop>/final_registry.json        canonical + regional KB (terminal KB deliverable)
+data/bugwood_captions/<crop>_<strategy>.parquet        per-image (taxon, caption) text rows
+data/wds_shards/<crop>_<strategy>/{train,val,holdout}/ WebDataset .tar shards for BioCAP training
+train_and_eval/checkpoints/<VARIANT>/                   one trained ViT-B/16 per variant (T01..T11)
+results/biocap_eval/<run_id>/{plantvillage,plantwild,plantdoc,retrieval,fewshot_*}.json
+                                                       raw per-eval JSON for every (variant, dataset) cell
+results/tables/table_{01,02,03,04,06,08,13,17,18,19,20}.md
+                                                       paper-table markdown (one file per reproduced table)
+results/tables/figure_03.md                            recipe-ablation bar table (Figure 3)
+results/biocap_report.md                               master report — paper-style summary
+results/figures/*.png                                  KB + trace figures for the paper
+plantswarm/latex/auto_*.tex                            LaTeX snippets the paper \input{}s
+plantswarm/latex/acl_latex.pdf                         compiled paper PDF
 ```
 
 ---
@@ -544,81 +571,78 @@ PATHOME_VERIFIER_MAX_TURNS verifier max turns for WebSearch (default 30)
 PATHOME_IMAGE_CACHE_DIR  optional override prepended to the cache search path
 ```
 
-### Phase OBSERVE — KB-augmented OOD classifier
+### Phase BIOCAP — KB-grounded CLIP training on Bugwood
 
-OBSERVE is a cheap SigLIP-2 + LoRA classifier whose class labels come
-from PathomeDB text prototypes. Image -> SigLIP-2 vision tower (frozen
-base + LoRA on vision q/k/v) -> embedding; class prototypes built
-from canonical + regional KB blocks are encoded once by the frozen
-SigLIP-2 text tower. Prediction is the argmax cosine similarity. The
-classifier is trained on Bugwood (Tomato by default, ~600 field
-photos, 14 classes that match the KB) and evaluated zero/few-shot on
-PlantVillage and PlantWild.
+BioCAP ([arXiv:2510.20095](https://arxiv.org/abs/2510.20095)) is an
+OpenCLIP fork that adds **two visual projectors** on top of a shared
+visual encoder: one is contrastively aligned to short label text
+(`"Tomato Early Blight"`), the other to long descriptive captions. We
+adapt BioCAP to Bugwood by synthesising the long captions from
+PathomeDB — `plantswarm/captioning.py::build_disease_caption` packs the
+canonical visual_symptoms summary + diagnostic features + look-alikes +
+affected parts + the top-K state-specific regional deltas into a
+multi-sentence caption per image.
+
+The variant matrix (`scripts/biocap_variants.sh`) trains 11 models
+(T01–T11) that reproduce every reproducible BioCAP paper table on
+Bugwood. See [PIPELINE.md](PIPELINE.md) for the paper-table → variant map.
 
 |                  |                                                                                                |
 |------------------|------------------------------------------------------------------------------------------------|
-| Where it runs    | GPU host with CUDA (A100-class)                                                                |
-| Compute          | 1× A100, 8 CPUs, 64 GB RAM                                                                     |
-| Walltime         | ~30–90 min on Tomato (~600 images, 10 epochs)                                                  |
-| Inputs           | `$PATHOME_SEED_JSON` (KB), `$PATHOME_BUGWOOD_CSV` (training rows), `$PATHOME_BUGWOOD_CACHE`    |
-| Outputs          | `observe/checkpoints/{observe_best, observe_last}.pt`, `history.json`                          |
+| Where it runs    | GPU host with CUDA (A100/H100-class)                                                           |
+| Compute          | 1× A100 per variant, 8 CPUs, 64 GB RAM                                                         |
+| Walltime         | ~2–4 h per variant; ~30 GPU-h for the full 11-variant matrix                                   |
+| Architecture     | ViT-B/16 dual-projector (single-projector ablation in T08); openai pretrained init             |
+| Inputs           | KB seed (`artifacts/pathome_kb/<crop>/final_registry.json`), `BugWood_Diseases_usable.csv`, `.bugwood_cache/` |
+| Outputs          | `train_and_eval/checkpoints/<VARIANT>/` per variant, `results/biocap_report.md` master report  |
 
-**Train**:
+**Build captions + shards** (one bundle per unique caption strategy):
 ```bash
-sbatch scripts/submit_observe_train.sh
-# or directly:
-python scripts/train_observe.py \
-    --seed artifacts/pathome_seed/symptoms_seed.json \
-    --bugwood-csv BugWood_Diseases_usable.csv \
-    --cache-dir .bugwood_cache \
-    --crop Tomato \
-    --backbone google/siglip-base-patch16-224 \
-    --include-healthy \
-    --epochs 10 --batch-size 32 --lora-r 8
+python scripts/build_biocap_captions.py --strategy canonical_deltas_3 --crop Tomato
+python scripts/build_biocap_shards.py \
+    --captions data/bugwood_captions/Tomato_canonical_deltas_3.parquet \
+    --out-dir  data/wds_shards/Tomato_canonical_deltas_3
 ```
 
-What the trainer does:
-- Loads the seed JSON and builds one text prototype per KB profile for
-  the requested crop. Each prototype packs canonical summary +
-  diagnostic features + look-alikes + affected parts + top-K verified
-  regional deltas into a single multi-sentence prompt for the SigLIP-2
-  text tower.
-- Optionally appends a synthetic `<crop>::healthy` prototype so the
-  classifier can recognise non-disease leaves (PathomeDB itself
-  doesn't cover healthy).
-- Loads Bugwood field photos via the filtered usable CSV +
-  `.bugwood_cache/<image_number>.jpg`, filters to the requested crop,
-  drops rows whose disease isn't in the KB.
-- Stratified train / val split (default 15% val).
-- Per epoch: encode the class prototypes once with the frozen text
-  tower, then train the LoRA-adapted vision tower to minimise softmax
-  cross-entropy over cosine·temperature logits.
-- Saves the best checkpoint by val top-1 plus full history.
-
-**Inference**: `OBSERVEInference(ckpt).classify(image, topk=5)` returns
-a `ClassificationResult` with top-k labels and softmax probabilities.
-
-**Evaluation** — `scripts/evaluate_observe.py` (and
-`scripts/submit_evaluate_observe.sh`) loads a checkpoint and runs it
-against PlantVillage and/or PlantWild folder-per-class datasets:
+**Train one variant**:
 ```bash
-OBSERVE_CKPT=observe/checkpoints/observe_best.pt \
-  PV_ROOT=/path/to/PlantVillage \
-  PW_ROOT=/path/to/PlantWild \
-  sbatch scripts/submit_evaluate_observe.sh
+# Single variant — locally with one GPU
+python scripts/train_biocap.py --variant T04 --crop Tomato
+# Or under SLURM:
+VARIANT=T04 sbatch scripts/submit_biocap_train.sh
+# All 11 variants in one matrix:
+bash scripts/submit_biocap_matrix.sh
 ```
-The evaluator extends the trained class index with any PV/PW classes
-not seen at training time, synthesising a minimal `"A field photograph
-of <crop> affected by <disease>."` prototype for each. Per dataset it
-reports top-1, top-5, macro F1, and per-class accuracy with a
-KB-known vs zero-shot flag.
+
+**Evaluate** (zero-shot classification + retrieval + few-shot):
+```bash
+python scripts/evaluate_biocap.py \
+    --model train_and_eval/checkpoints/T04/.../epoch_50.pt \
+    --pv-root /path/to/PlantVillage \
+    --pw-root /path/to/PlantWild \
+    --plantdoc-root data/eval/PlantDoc/test \
+    --crop Tomato --out-dir results/biocap_eval/T04
+```
+
+**Aggregate paper tables** (after eval is done):
+```bash
+python scripts/aggregate_biocap_tables.py
+# -> results/tables/{table_01,...,figure_03}.md + results/biocap_report.md
+```
+
+**Skipped paper tables** (and why): Tables 5, 11, 21 (human raters
+needed), Table 7 (MLLM-captioner ablation — user chose KB-only path),
+Table 14 (CUB localization — Bugwood has no bounding boxes),
+Tables 15, 16 (format-example ablations — N/A for KB path). See the
+master report for the full list.
 
 **Tests** — `pytest tests/` covers the parser, agreement filter,
 conservative merge (incl. idempotency + status upgrades),
-existing-deltas extraction, the Claude verifier (mocked), the
-OBSERVE prototype + dataset machinery, and the visualization
-pipeline. The OBSERVE tests require `torch` to be installed; the
-swarm-logic tests don't.
+existing-deltas extraction, the Claude verifier (mocked),
+`plantswarm/captioning.py` (all 7 strategies, delta-gate hard-fail),
+the shard packager, and the visualization pipeline. None of these
+require torch or open_clip locally; the train/eval scripts use lazy
+imports so the test suite runs on the laptop.
 
 ---
 
@@ -636,13 +660,15 @@ LOCAL    e2e_local.sh          # Setup + image cache + Phase 0 canonical
 GitHub
    |   git pull on Nova
    v
-NOVA     e2e_nova.sh           # Phase 0R + OBSERVE train + OBSERVE eval
+NOVA     e2e_nova.sh           # Phase 0R + BioCAP captions + shards
+   |                           # + 11-variant training matrix + baseline
+   |                           # cache + eval suite + paper tables;
    |                           # via sbatch --wait, then git push results
    v   git push
 GitHub
    |   git pull on LOCAL
    v
-LOCAL    e2e_visualize.sh      # all viz + paper figures + LaTeX snippets
+LOCAL    e2e_visualize.sh      # KB + trace viz + paper-table aggregation
                                # + (optional) PDF build
 ```
 
@@ -668,11 +694,12 @@ bash scripts/e2e_visualize.sh
 ```
 
 Outputs land at:
-- `artifacts/pathome_seed/symptoms_seed.json`  — KB
-- `observe/checkpoints/observe_best.pt`        — student
-- `results/observe_eval.json`                  — metrics
-- `results/figures/*.png`                      — paper figures
-- `plantswarm/latex/auto_*.tex`                — paper LaTeX snippets
+- `artifacts/pathome_kb/<Crop>/final_registry.json`  — KB (canonical + per-state deltas)
+- `train_and_eval/checkpoints/<VARIANT>/`            — one trained CLIP per variant (T01..T11)
+- `results/biocap_eval/<run_id>/*.json`              — per-eval JSON for every (model, dataset) cell
+- `results/tables/*.md` + `results/biocap_report.md` — paper-table reproduction
+- `results/figures/*.png`                            — KB + trace figures
+- `plantswarm/latex/auto_*.tex`                      — paper LaTeX snippets
 
 ---
 
@@ -700,21 +727,31 @@ section just chain these.
 |---|---|---|---|
 | `scripts/submit_phase0r_regional.sh` | Nova SBATCH: boot vLLM, run Qwen swarm (4 specialists in parallel + DiagnosisAgent consolidator, N stochastic passes), K-of-N agreement filter, Claude web-search verifier, conservative merge | canonical KB, image cache | regional deltas merged into `final_registry.json`; `symptoms_seed.json`; `phase0r_traces.jsonl` if `PATHOME_TRACE_DIR` set |
 
-### OBSERVE — KB-augmented OOD classifier (Nova, CUDA)
+### BioCAP — KB-grounded CLIP training (Nova, CUDA)
 
 | Script | Purpose | Inputs | Outputs |
 |---|---|---|---|
-| `scripts/submit_observe_train.sh` | Train SigLIP-2 + LoRA on Bugwood (Tomato by default) against KB text prototypes | `symptoms_seed.json`, filtered CSV, `.bugwood_cache/` | `observe/checkpoints/{observe_best,observe_last}.pt`, `history.json` |
-| `scripts/submit_evaluate_observe.sh` | Eval on PV / PW: top-1 / top-5 / macro F1 + per-class accuracy, with KB-known vs zero-shot split | checkpoint, `PV_ROOT` and/or `PW_ROOT` | `results/observe_eval.json` |
+| `scripts/build_biocap_captions.py` | Build per-image (taxon, caption) rows from KB + CSV for one caption strategy | `BugWood_Diseases_usable.csv`, `artifacts/pathome_kb/<crop>/final_registry.json` | `data/bugwood_captions/<crop>_<strategy>.parquet` |
+| `scripts/build_biocap_shards.py` | Package (image, taxon.txt, caption.txt) tuples into WebDataset .tar shards | caption parquet, `.bugwood_cache/` | `data/wds_shards/<crop>_<strategy>/{train,val,holdout}/shard-*.tar` |
+| `scripts/train_biocap.py` | Thin wrapper that resolves a variant tag → torchrun -m open_clip_train.main with the right flags | shards, variant tag (T01..T11) | `train_and_eval/checkpoints/<VARIANT>/...` |
+| `scripts/submit_biocap_train.sh` | SLURM submitter for ONE variant (takes VARIANT env var) | shards + variant tag | per-variant checkpoint + logs |
+| `scripts/submit_biocap_matrix.sh` | Build captions + shards once per strategy, sbatch all 11 variants | KB + CSV + image cache | per-variant checkpoints |
+| `scripts/biocap_variants.sh` | Canonical 11-variant matrix definition (T01..T11) | — | — |
+| `scripts/fetch_baselines.py` | Pre-cache the 7 off-shelf baselines (CLIP, SigLIP, FG-CLIP, BioTrove, BioCLIP, BioCLIP-2, BioCAP-HF) | — | warmed HF hub cache |
+| `scripts/evaluate_biocap.py` | Zero-shot classification eval on PV / PW / PlantDoc folder structures, programmatic call to BioCAP's `evaluation.zero_shot_iid` | model ckpt, eval root | `results/biocap_eval/<run_id>/{plantvillage,plantwild,plantdoc}.json` |
+| `scripts/evaluate_biocap_retrieval.py` | Bugwood held-out R@k retrieval (Table 2 analog) | model + captions parquet with `split=holdout` rows | `results/biocap_eval/<run_id>/retrieval.json` |
+| `scripts/evaluate_biocap_fewshot.py` | Prototype-mean K-shot eval (Tables 18, 20) | model ckpt, eval roots | `results/biocap_eval/<run_id>/fewshot_*.json` |
+| `scripts/setup_plantdoc.py` | One-shot clone of the public PlantDoc dataset (Table 19 source) | git clone access | `data/eval/PlantDoc/{train,test}/` |
+| `scripts/aggregate_biocap_tables.py` | Walk all `results/biocap_eval/*/` JSONs → paper-table markdown | per-eval JSONs | `results/tables/{table_01..figure_03}.md`, `results/biocap_report.md` |
 
 ### Visualization (LOCAL)
 
 | Script | Purpose | Inputs | Outputs |
 |---|---|---|---|
 | `scripts/viz_kb.sh` | KB stats: per-status pie, field-count bar, support histogram, per-state coverage | `symptoms_seed.json` | `results/figures/kb_*.png`, `plantswarm/latex/auto_kb_stats.tex` |
-| `scripts/viz_observe.sh` | OBSERVE training loss + top-1 curves + PV / PW per-class bars | `history.json`, `observe_eval.json` | `results/figures/observe_*.png`, `plantswarm/latex/auto_observe_{curves,eval}.tex` |
 | `scripts/viz_traces.sh` | Phase 0R trace stats: path lengths, κ-by-agent | `phase0r_traces.jsonl` | `results/figures/trace_*.png`, `plantswarm/latex/auto_trace_stats.tex` |
-| `scripts/viz_all.sh` | Run all three viz scripts in sequence | — | — |
+| `scripts/viz_all.sh` | Run KB + trace viz scripts in sequence | — | — |
+| `scripts/aggregate_biocap_tables.py` | Paper-table markdown summary (re-runnable any time) | `results/biocap_eval/*/` | `results/biocap_report.md` |
 | `scripts/build_latex_pdf.sh` | Compile the paper PDF (`acl_latex.tex`) | the `auto_*.tex` snippets above | `plantswarm/latex/acl_latex.pdf` |
 
 ### Umbrellas
@@ -722,8 +759,8 @@ section just chain these.
 | Script | Drives |
 |---|---|
 | `scripts/e2e_local.sh` | Setup + image cache + Phase 0 canonical + git push |
-| `scripts/e2e_nova.sh` | git pull + Phase 0R + OBSERVE train + OBSERVE eval + git push |
-| `scripts/e2e_visualize.sh` | git pull + all viz + paper PDF |
+| `scripts/e2e_nova.sh` | git pull + Phase 0R + BioCAP captions+shards + 11-variant train + baselines + eval suite + paper tables + git push |
+| `scripts/e2e_visualize.sh` | git pull + KB/trace viz + paper-table aggregation + (optional) PDF |
 | `scripts/e2e_full.sh` | The three above, with SSH for the Nova leg |
 
 ### Skipping legs

@@ -100,52 +100,6 @@ def _make_seed(tmp_path: Path) -> Path:
     return p
 
 
-def _make_history(tmp_path: Path) -> Path:
-    history = [
-        {"epoch": 1, "train": {"loss": 1.4, "top1": 0.25},
-                     "val":   {"loss": 1.3, "top1": 0.30}},
-        {"epoch": 2, "train": {"loss": 0.9, "top1": 0.55},
-                     "val":   {"loss": 0.95, "top1": 0.52}},
-        {"epoch": 3, "train": {"loss": 0.6, "top1": 0.72},
-                     "val":   {"loss": 0.70, "top1": 0.68}},
-    ]
-    p = tmp_path / "history.json"
-    p.write_text(json.dumps(history))
-    return p
-
-
-def _make_eval(tmp_path: Path) -> Path:
-    ev = {
-        "crop": "Tomato",
-        "evals": {
-            "plantvillage": {
-                "n_samples":     200,
-                "top1_accuracy": 0.62,
-                "top5_accuracy": 0.91,
-                "macro_f1":      0.57,
-                "per_class": {
-                    "Tomato::Early Blight":      {"support": 100, "correct": 70, "accuracy": 0.70, "in_kb": True},
-                    "Tomato::Late Blight":       {"support": 60,  "correct": 38, "accuracy": 0.63, "in_kb": True},
-                    "Tomato::Septoria Leaf Spot":{"support": 40,  "correct": 16, "accuracy": 0.40, "in_kb": False},
-                },
-            },
-            "plantwild": {
-                "n_samples":     50,
-                "top1_accuracy": 0.40,
-                "top5_accuracy": 0.78,
-                "macro_f1":      0.36,
-                "per_class": {
-                    "Tomato::Early Blight": {"support": 30, "correct": 14, "accuracy": 0.47, "in_kb": True},
-                    "Tomato::Late Blight":  {"support": 20, "correct": 6,  "accuracy": 0.30, "in_kb": True},
-                },
-            },
-        },
-    }
-    p = tmp_path / "eval.json"
-    p.write_text(json.dumps(ev))
-    return p
-
-
 def _make_traces(tmp_path: Path) -> Path:
     p = tmp_path / "traces.jsonl"
     lines = []
@@ -202,35 +156,6 @@ def test_kb_stats_emits_tex(tmp_path, monkeypatch):
     tex = (tmp_path / "tex" / "auto_kbtest.tex").read_text()
     assert "PathomeDB seed summary" in tex
     assert "Profiles" in tex
-
-
-def test_observe_curves_emits_tex(tmp_path, monkeypatch):
-    from scripts.viz import observe_curves, _common
-    history = _make_history(tmp_path)
-    monkeypatch.setattr(_common, "FIG_DIR", tmp_path / "figs")
-    monkeypatch.setattr(_common, "TEX_DIR", tmp_path / "tex")
-    monkeypatch.setattr("sys.argv",
-                        ["observe_curves", "--history", str(history),
-                         "--name", "ocurves"])
-    observe_curves.main()
-    tex = (tmp_path / "tex" / "auto_ocurves.tex").read_text()
-    assert "OBSERVE training history" in tex
-    assert "Epoch" in tex
-
-
-def test_observe_eval_emits_tex(tmp_path, monkeypatch):
-    from scripts.viz import observe_eval, _common
-    ev = _make_eval(tmp_path)
-    monkeypatch.setattr(_common, "FIG_DIR", tmp_path / "figs")
-    monkeypatch.setattr(_common, "TEX_DIR", tmp_path / "tex")
-    monkeypatch.setattr("sys.argv",
-                        ["observe_eval", "--eval", str(ev), "--name", "oeval"])
-    observe_eval.main()
-    tex = (tmp_path / "tex" / "auto_oeval.tex").read_text()
-    assert "Top-1 accuracy" in tex
-    assert "Macro F1"      in tex
-    assert "plantvillage"  in tex
-    assert "plantwild"     in tex
 
 
 def test_trace_stats_emits_tex(tmp_path, monkeypatch):

@@ -1,20 +1,11 @@
-"""PlantSwarm: Qwen-driven regional delta extraction for PathomeDB.
+"""PlantSwarm package.
 
-The Qwen swarm reads canonical KB text plus a single Bugwood field
-photograph and emits state-specific deltas — additions or contradictions
-backed by image evidence. See ``plantswarm.delta_pipeline``.
+Submodules:
+    delta_pipeline   Qwen-driven regional delta extraction for PathomeDB
+    captioning       KB-derived caption builder for BioCAP-on-Bugwood training
+
+Both submodules are imported explicitly by their consumers (e.g.
+``from plantswarm.delta_pipeline import run_batch``); nothing is
+re-exported at the package level so that environments needing only
+one submodule do not have to install the other's dependencies.
 """
-
-from .delta_pipeline import (
-    build_client_from_env,
-    flatten_canonical,
-    run_batch,
-    run_for_state,
-)
-
-__all__ = [
-    "build_client_from_env",
-    "flatten_canonical",
-    "run_batch",
-    "run_for_state",
-]

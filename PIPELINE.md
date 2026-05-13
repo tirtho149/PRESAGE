@@ -1,4 +1,4 @@
-# PathomeDB and the Knowledge-Augmented OOD Classifier — Pipeline Overview
+# PathomeDB and BioCAP-on-Bugwood — Pipeline Overview
 
 This document is a self-contained walkthrough of the three-stage
 pipeline. It is written for a reader who wants to understand *what* is
@@ -10,10 +10,15 @@ The system has two interlocking deliverables:
    text-grounded canonical descriptions (from extension-service
    literature) with image-grounded regional observations (from
    field photographs).
-2. **OBSERVE** — a small, cheap image classifier whose class labels
-   are *defined* by descriptions taken from PathomeDB. The classifier
-   is trained on field photographs and evaluated on two
-   out-of-distribution image domains.
+2. **BioCAP-on-Bugwood** — a faithful adaptation of
+   [BioCAP (Zhang et al., 2025)](https://arxiv.org/abs/2510.20095)
+   to crop disease. BioCAP is an OpenCLIP fork with **two visual
+   projectors** — one aligned to the short label text, one to a long
+   descriptive caption. PathomeDB renders the long caption per image
+   (canonical KB text + the image's state-specific regional deltas);
+   Bugwood provides the images. Eleven training variants (T01–T11)
+   reproduce every reproducible BioCAP paper table — see [paper-table
+   map](#paper-table-map) below.
 
 ```mermaid
 flowchart LR
@@ -22,15 +27,19 @@ flowchart LR
     K[(Canonical KB<br/>text-grounded, one block per disease)]
     R[(Regional KB<br/>image-grounded deltas per state)]
     DB[(PathomeDB<br/>canonical + regional<br/>per crop, disease, state)]
-    C[OBSERVE classifier<br/>SigLIP-2 + LoRA<br/>image vs KB text prototypes]
-    E[Evaluation<br/>PlantVillage + PlantWild]
+    CAP[KB → caption<br/>plantswarm/captioning.py<br/>build_disease_caption]
+    SH[WebDataset shards<br/>image + taxon.txt + caption.txt]
+    C[BioCAP CLIP<br/>ViT-B/16 dual-projector<br/>open_clip_train.main]
+    E[Eval suite<br/>PV / PW / PlantDoc<br/>+ Bugwood retrieval<br/>+ few-shot]
 
     A --> K
     B --> R
     K --> DB
     R --> DB
-    DB --> C
-    B -- training images --> C
+    DB --> CAP
+    B --> SH
+    CAP --> SH
+    SH --> C
     C --> E
 
     classDef src fill:#dff,stroke:#066
@@ -448,93 +457,94 @@ this disease here* (regional).
 
 ---
 
-## Phase 3 — OBSERVE: KB-Augmented OOD Classifier
+## Phase 3 — BioCAP: KB-grounded Two-Projector CLIP
 
-**Goal.** Build a small, cheap image classifier that holds up under
-severe distribution shift. The classifier is trained on field
-photographs of one image domain (Bugwood — extension-service field
-photos), and evaluated on two completely different image domains
-(PlantVillage — controlled studio cutouts; PlantWild — a different
-in-the-wild dataset).
+**Goal.** Train a CLIP-style foundation model from BioCAP
+([Zhang et al., 2025](https://arxiv.org/abs/2510.20095)) on Bugwood
+images, with descriptive captions synthesised from PathomeDB. Then
+evaluate it on PlantVillage / PlantWild / PlantDoc plus a Bugwood
+held-out retrieval bench, reproducing every reproducible BioCAP paper
+table.
 
-The key idea is to make classification *go through* the knowledge
-base. Instead of learning a direct mapping from pixels to class
-indices, the model learns to embed images into the same space as
-text descriptions of diseases, and classifies by similarity. The text
-descriptions come from PathomeDB.
+The key idea, faithful to the BioCAP paper, is that images and
+captions are two noisy projections of the same latent species/disease
+trait vector. Contrastive training over both views encourages the
+image embedding to align with *diagnostic* characters and suppress
+visual nuisance (pose, lighting, background). BioCAP's architectural
+contribution is **two separate visual projectors** on top of the
+shared visual encoder: one is contrastively aligned to short
+taxonomic labels, the other to long descriptive captions. Heterogeneous
+supervision (labels are precise but trait-thin; captions are noisy but
+trait-rich) is routed through separate heads to avoid interference.
 
 ### Architecture
 
 ```mermaid
 flowchart TB
-    LOSS["Cross-entropy loss (100%):<br/>• softmax over<br/>  cosine × temperature<br/>• trains LoRA adapters<br/>  + temperature only"]
-    HEAD["Cosine-similarity head<br/>× learnable temperature<br/>argmax over classes<br/>→ predicted class"]
-    NOTE["Open vocabulary:<br/>• any class with a KB<br/>  description can be scored<br/>• zero-shot prototypes are<br/>  added at test time only"]
-
-    VIS["Image Encoder<br/>SigLIP-2 vision tower<br/>(frozen backbone<br/>+ LoRA on q, k, v)"]
-    TXT["Text Encoder<br/>SigLIP-2 text tower<br/>(fully frozen)"]
-
     IMG([image])
-    PROMPT([KB-derived class<br/>description prompt])
+    LBL([taxon text:<br/>"Tomato Early Blight"])
+    CAP([KB caption:<br/>"A field photograph of Tomato<br/>affected by Early Blight ...<br/>Regional variations: in TX, ..."])
+
+    VIS["Visual Encoder<br/>ViT-B/16<br/>(OpenAI pretrained init)"]
+    PTAX["Projector_tax<br/>(label-aligned)"]
+    PCAP["Projector_caption<br/>(caption-aligned)"]
+    TXT["Text Encoder<br/>(shared CLIP text tower)"]
+
+    LOSS_TAX["Contrastive loss<br/>InfoNCE<br/>(image_tax ↔ taxon text)"]
+    LOSS_CAP["Contrastive loss<br/>InfoNCE<br/>(image_cap ↔ caption)"]
 
     IMG --> VIS
-    PROMPT --> TXT
-    VIS  -- "image embedding"                         --> HEAD
-    TXT  -- "class prototype<br/>(encoded once, cached)" --> HEAD
+    VIS --> PTAX
+    VIS --> PCAP
+    LBL --> TXT --> LOSS_TAX
+    CAP --> TXT --> LOSS_CAP
+    PTAX --> LOSS_TAX
+    PCAP --> LOSS_CAP
 
-    LOSS -.- HEAD
-    NOTE -.- HEAD
-
-    classDef loss fill:#fde2c8,stroke:#c63,stroke-width:1px
-    classDef note fill:#cfead0,stroke:#063,stroke-width:1px
-    classDef enc  fill:#c5dcec,stroke:#266,stroke-width:2px
+    classDef enc fill:#c5dcec,stroke:#266,stroke-width:2px
     classDef head fill:#dddddd,stroke:#333,stroke-width:2px
-    classDef io   fill:#ffffff,stroke:#666
-
-    class LOSS loss
-    class NOTE note
+    classDef loss fill:#fde2c8,stroke:#c63,stroke-width:1px
+    classDef io fill:#ffffff,stroke:#666
     class VIS,TXT enc
-    class HEAD head
-    class IMG,PROMPT io
+    class PTAX,PCAP head
+    class LOSS_TAX,LOSS_CAP loss
+    class IMG,LBL,CAP io
 ```
 
-**Figure.** OBSERVE keeps both SigLIP-2 encoders frozen and adds
-small LoRA adapters on the query / key / value projections of the
-vision tower's attention layers. The text tower is never touched.
-Class prototypes — one rich text passage per disease, drawn from
-PathomeDB — are encoded by the frozen text tower once and cached.
-Each minibatch only runs the adapted vision tower; the prediction is
-the argmax cosine similarity (scaled by a learnable temperature)
-between the image embedding and the cached prototypes. Cross-entropy
-on the cosine logits is the sole training objective; only the LoRA
-adapters and the temperature receive gradients. Because the
-classifier has no fixed-size class head, new classes can be added
-at evaluation time simply by encoding their description prompt — this
-is what enables open-vocabulary OOD evaluation on diseases the model
-never saw images of during training.
+**Figure.** ViT-B/16 from OpenAI's pretrained CLIP is the visual
+backbone. On top, two linear projectors emit two image embeddings.
+The shared text tower encodes both the short label and the long
+caption. Each batch draws a random text type per sample (`--text-type
+random`) and routes that sample's loss through the matching
+projector. The base BioCAP recipe trains for 50 epochs with AdamW,
+warmup 500, lr 1e-4, weight decay 0.2 (Tables 9 and 10 in the paper).
+Bugwood is much smaller than TreeOfLife-10M, so our wrapper drops the
+per-GPU batch size to 256 and removes multi-node rendezvous (one GPU
+is enough).
 
-The backbone is **SigLIP-2**, a vision-language model that was
-pretrained on a very large corpus of image-caption pairs with a
-sigmoid contrastive objective. It already knows how to align images
-and text in a shared embedding space — we just need to nudge it
-toward agricultural imagery and toward the kind of text PathomeDB
-emits.
+The 11-variant training matrix below covers every reproducible
+ablation in the paper. The matrix lives in
+`scripts/biocap_variants.sh` and is mirrored in
+`scripts/train_biocap.py::VARIANTS`.
 
-The training scheme is deliberately minimal:
+| Variant | Strategy | Projector | Epochs | Subset | Paper tables |
+|---|---|---|---|---|---|
+| T01 | label_only | dual | 50 | all | Table 3 row "None" |
+| T02 | summary_only | dual | 50 | all | Table 3 |
+| T03 | canonical_full | dual | 50 | all | Table 3 |
+| **T04** | **canonical_deltas_3** | **dual** | **50** | **all** | **Tables 1, 3, 17, 18, 19, 20 (MAIN METHOD)** |
+| T05 | canonical_deltas_1 | dual | 50 | all | Table 6 |
+| T06 | canonical_deltas_5 | dual | 50 | all | Table 6 |
+| T07 | canonical_deltas_7 | dual | 50 | all | Table 6 |
+| T08 | canonical_deltas_3 | single | 50 | all | Figure 3 |
+| T09 | canonical_deltas_3 | dual | 100 | all | Figure 3 |
+| T10 | canonical_deltas_3 | dual | 50 | covered | Table 4 |
+| T11 | canonical_deltas_3 | dual | 50 | non_covered | Table 4 |
 
-| Component | What we do | Why |
-|---|---|---|
-| Vision tower (≈400M parameters) | Backbone frozen; **LoRA** adapters added to the query, key, and value projections of the attention layers (≈5M trainable parameters) | A small, low-rank adjustment is enough to specialize for plant disease imagery without forgetting the pretraining |
-| Text tower | Frozen, no adaptation | The KB text is already well within the domain SigLIP-2 was pretrained on; touching the text side would risk damaging the alignment |
-| Temperature | One learnable scalar (the cosine logit scale) | Lets the model calibrate how peaky its similarity distribution is |
-| Class head | None | Classification is done by argmax cosine similarity against text prototypes; no fixed-size class layer means new classes can be added at test time without retraining |
+### Caption synthesis
 
-### Class Prototypes
-
-A *class prototype* is a single text passage that describes one
-disease in enough detail that the text tower can produce a meaningful
-embedding for it. We assemble each prototype from a fixed
-template that pulls from PathomeDB:
+A *caption* in BioCAP-on-Bugwood is a long descriptive passage
+emitted by `plantswarm/captioning.py::build_disease_caption`:
 
 ```
 A field photograph of {crop} affected by {disease}
@@ -543,104 +553,77 @@ A field photograph of {crop} affected by {disease}
 Diagnostic features: {diagnostic features}.
 May be confused with: {look-alikes}.
 Affected parts: {affected plant parts}.
-Regional variations: {top-K verified deltas across states}.
+Regional variations: {top-K verified deltas for THIS image's state}.
 ```
 
-For "healthy" leaves (which the KB does not cover — extension
-literature only describes diseases), we use a synthetic template:
+The state-aware delta selection is the key adaptation of BioCAP to
+crop disease: each image's caption is biased toward the *state
+where this image was taken*, falling back to top-K cross-state deltas
+when the image's state has none. This makes the caption *image-grouping
+specific* (per (disease, state)) without needing a per-image MLLM —
+the user explicitly chose this KB-only path over running InternVL3 on
+Bugwood.
 
-```
-A healthy {crop} leaf with no visible disease symptoms — uniform
-green color, no lesions, no spots, no wilting, no chlorosis,
-no necrosis.
-```
+For "healthy" rows (Bugwood is disease-only, so this only applies if a
+healthy class is added to eval), the synthetic template `"A healthy
+{crop} leaf with no visible disease symptoms — uniform green color,
+no lesions, no spots, no wilting, no chlorosis, no necrosis."` is used.
 
-Every class prototype is encoded **once** by the frozen text tower at
-the start of training and cached. Training never re-encodes them.
-This is what makes the classifier cheap to train: each minibatch only
-runs the vision tower (plus the small LoRA adapters), then a single
-matrix multiplication against the cached prototypes.
+The seven caption strategies in `STRATEGIES` correspond to the rows of
+paper Table 3 (caption ablation) and Table 6 (#-of-deltas ablation).
 
-### Training and Evaluation Flow
+### Paper-table map
 
-```mermaid
-flowchart TD
-    DB[(PathomeDB<br/>canonical + regional)]
-    PROTO[Class prototype passages<br/>one per disease,<br/>+ synthetic healthy template]
-    PROTOEMB[Prototype embeddings<br/>cached]
-    TRAIN_IMG[(Training images:<br/>field photographs)]
-    TRAIN[Training loop<br/>encode image,<br/>softmax cross-entropy<br/>over cosine x temperature]
-    CKPT[(Trained classifier)]
-    PV[(PlantVillage<br/>lab cutouts<br/>easy OOD)]
-    PW[(PlantWild<br/>in-the-wild<br/>hard OOD)]
-    EXT[Extend class set<br/>add zero-shot prototypes<br/>for classes not in training set]
-    EVAL[Evaluate<br/>top-1, top-5, macro F1,<br/>per-class accuracy]
+`scripts/aggregate_biocap_tables.py` walks the per-variant eval JSONs
+and produces these markdown tables. Each cell reads from
+`results/biocap_eval/<run_id>/{plantvillage,plantwild,plantdoc,retrieval,fewshot_*}.json`.
 
-    DB --> PROTO --> PROTOEMB
-    TRAIN_IMG --> TRAIN
-    PROTOEMB --> TRAIN --> CKPT
-    PV --> EXT
-    PW --> EXT
-    PROTO --> EXT
-    EXT --> EVAL
-    CKPT --> EVAL
+| Paper table | Reproduced by | Variants needed |
+|---|---|---|
+| Table 1 — Zero-shot classification | `evaluate_biocap.py` on PV+PW | T04 + 7 baselines |
+| Table 2 — Natural-language retrieval | `evaluate_biocap_retrieval.py` on Bugwood holdout | T04 + 7 baselines |
+| Table 3 — Caption-strategy ablation | `evaluate_biocap.py` over T01–T04 | T01, T02, T03, T04, T05, T06, T07 |
+| Table 4 — Covered vs non-covered split | `evaluate_biocap.py` over T10/T11 | T04, T10, T11 |
+| Table 6 — Number-of-deltas ablation | `evaluate_biocap.py` over delta count | T04, T05, T06, T07 |
+| Table 8 — KB coverage (descriptive) | reads `artifacts/pathome_kb/*/final_registry.json` | — |
+| Table 13 — Eval dataset stats (descriptive) | walks `data/eval/{PlantVillage,PlantWild,PlantDoc}/` | — |
+| Table 17 — Underrepresented species groups | re-slice of `evaluate_biocap.py` results | T04 + 7 baselines |
+| Table 18 — Few-shot top-1 | `evaluate_biocap_fewshot.py`, k∈{1,5} | T04 + 7 baselines |
+| Table 19 — Beyond classification (PlantDoc) | `evaluate_biocap.py --plantdoc-root` | T04 + 7 baselines |
+| Table 20 — Caption × few-shot | combine Table 3 variants with few-shot eval | T01..T07 |
+| Figure 3 — Recipe ablation | T04 vs T08 vs T09 | T04, T08, T09 |
 
-    classDef kb fill:#ffe,stroke:#660
-    classDef img fill:#dff,stroke:#066
-    classDef stage fill:#eef,stroke:#33a
-    classDef deliv fill:#efe,stroke:#060,stroke-width:2px
-    class DB,PROTO,PROTOEMB kb
-    class TRAIN_IMG,PV,PW img
-    class TRAIN,EXT,EVAL stage
-    class CKPT deliv
-```
+**Skipped paper tables and why**:
 
-What this loop optimizes per minibatch:
+| Table | Reason |
+|---|---|
+| 5, 21 | Human-evaluator win-rate / inter-rater agreement — needs human raters |
+| 7 | MLLM-captioner family/size ablation — user chose KB-only path (no MLLM) |
+| 11 | GPT-4o / Gemini agreement for *bird behaviors* — not applicable to crop disease |
+| 12 | Retrieval bench stats — equivalent info already in Table 2 |
+| 14 | CUB localization (energy-pointing game) — Bugwood has no bounding boxes |
+| 15 | Class-level vs order-level format-examples — N/A for KB path |
+| 16 | Stability across regenerated format-example sets — N/A for KB path |
 
-```
-image_embedding   = vision_tower_with_LoRA(image)           # one vector
-prototype_matrix  = (cached text embeddings)                # one row per class
-similarity        = exp(temperature) * (image_embedding · prototype_matrix)
-loss              = cross_entropy(similarity, true_class_index)
-```
+### Evaluation surfaces
 
-At evaluation time, two important behaviors emerge:
+For each (model, eval-dataset) cell, three evaluators run:
 
-- **Open vocabulary.** The test class set is allowed to be *different*
-  from the training class set. If PlantVillage includes a disease that
-  the model never saw images of during training, we just add its KB
-  prototype to the cache. If PlantVillage includes a disease that is
-  not in PathomeDB at all, we fall back to a one-line synthetic prompt
-  ("A field photograph of {crop} affected by {disease}."). Both kinds
-  of new classes can be scored without retraining.
-- **Distribution shift is the point.** The training domain
-  (Bugwood — geo-tagged field photographs taken by extension workers
-  and researchers) is visually very different from the test domains.
-  PlantVillage is studio-quality cutouts on uniform backgrounds;
-  PlantWild is a separately collected in-the-wild dataset. The
-  hypothesis is that a classifier conditioned on KB text
-  descriptions is invariant to visual-style shifts in a way that a
-  pure-pixel classifier is not, because the disease *identity* is
-  carried by the text geometry rather than the pixel statistics.
+1. **`evaluate_biocap.py`** — zero-shot classification. Walks PV/PW/PlantDoc
+   folder structures into a BioCAP-format CSV (idx, filepath, class)
+   and calls `evaluation.zero_shot_iid.zero_shot_eval` programmatically.
+   Reports top-1, top-3 (when ≥3 classes), top-5 (when ≥5).
+2. **`evaluate_biocap_retrieval.py`** — Bugwood held-out R@k. Reads
+   the `split=holdout` rows from a captions parquet, encodes images +
+   captions with the chosen model, computes I2T and T2I R@{1,5,10}.
+3. **`evaluate_biocap_fewshot.py`** — prototype-mean K-shot protocol
+   on PV/PW/PlantDoc. For each of 5 seeds, samples K shots per class,
+   computes class-mean features, predicts argmax cosine over the rest,
+   reports mean ± std over seeds for K∈{1, 5}.
 
-### What is reported
-
-For each evaluation dataset (PlantVillage, PlantWild), we report:
-
-- **Top-1 accuracy** — fraction of images whose top predicted class
-  matches the true class.
-- **Top-5 accuracy** — fraction of images whose true class is among
-  the top five predictions.
-- **Macro F1** — class-balanced F1 across the test classes.
-- **Per-class accuracy**, with each class flagged as either
-  *KB-known* (its prototype came from a full PathomeDB entry that
-  the model saw at training time) or *zero-shot* (the prototype was
-  added at evaluation time only).
-
-The split between KB-known and zero-shot classes is what makes this
-an honest test of open-vocabulary classification: any uplift the
-model shows on zero-shot classes is uplift it gets from the KB text
-geometry rather than from having seen images of that class.
+All three accept either an HF hub path (`hf-hub:imageomics/biocap`)
+or a local checkpoint, so the same scripts evaluate trained variants
+and off-shelf baselines.
 
 ---
 
@@ -653,34 +636,43 @@ flowchart LR
     P1[Phase 1<br/>Canonical KB<br/>web search +<br/>verbatim citations]
     P2[Phase 2<br/>Regional Deltas<br/>vision swarm +<br/>web verifier]
     DB[(PathomeDB)]
-    P3[Phase 3<br/>OBSERVE classifier<br/>SigLIP-2 + LoRA<br/>image vs KB text]
+    CAP[KB → caption<br/>plantswarm/captioning.py]
+    SH[WebDataset shards]
+    P3[Phase 3<br/>BioCAP training<br/>ViT-B/16 dual-projector<br/>11-variant matrix]
     PV[(PlantVillage)]
     PW[(PlantWild)]
-    OUT[(Per-dataset top-1,<br/>top-5, macro F1,<br/>per-class breakdown)]
+    PD[(PlantDoc)]
+    HO[(Bugwood held-out<br/>retrieval bench)]
+    OUT[(Paper-table reproduction<br/>results/biocap_report.md)]
 
     L --> P1 --> DB
     F --> P2 --> DB
-    DB --> P3
-    F -- training images --> P3
+    DB --> CAP
+    F --> SH
+    CAP --> SH
+    SH --> P3
     P3 --> OUT
-    PV --> P3
-    PW --> P3
+    PV --> OUT
+    PW --> OUT
+    PD --> OUT
+    HO --> OUT
 
     classDef src fill:#dff,stroke:#066
     classDef stage fill:#fef,stroke:#606
     classDef kb fill:#ffe,stroke:#660
     classDef eval fill:#fde,stroke:#a06
     classDef out fill:#efe,stroke:#060,stroke-width:2px
-    class L,F,PV,PW src
+    class L,F,PV,PW,PD,HO src
     class P1,P2,P3 stage
-    class DB kb
+    class DB,CAP,SH kb
     class OUT out
 ```
 
 In one sentence: Phase 1 builds a text-grounded knowledge base from
 extension-service literature, Phase 2 grounds the KB in field
 photographs by emitting per-state image-supported additions and
-contradictions, and Phase 3 trains a small classifier that uses the
-KB descriptions as its class labels and tests whether the resulting
-classifier generalizes across two very different out-of-distribution
-image domains.
+contradictions, and Phase 3 — BioCAP-on-Bugwood — synthesises a
+per-image caption from the KB, packages images + captions as
+WebDataset shards, trains 11 ViT-B/16 dual-projector variants covering
+every reproducible ablation in the BioCAP paper, and emits a master
+`results/biocap_report.md` with the reproduced paper tables.
