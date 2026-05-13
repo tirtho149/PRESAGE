@@ -278,71 +278,24 @@ before.
 
 ### Diagram
 
-![Phase 2 handoff swarm — animated flow](docs/assets/swarm_flow.gif)
+![Phase 2 handoff swarm — animated walkthrough](docs/assets/swarm_flow.gif)
 
-*One run of the handoff swarm. Triage picks the first specialist;
+*A four-act walkthrough of one Phase 2 tuple. **Act I** introduces
+the static context (a canonical KB block and a field photograph) and
+the agent line-up, with each specialist's owned-fields shown.
+**Act II** runs a single pass: Triage picks the first specialist;
 each specialist reads the running delta log on the right, writes its
-own delta, and hands off to the next agent. The Verifier consults
-the open web for each delta; one delta (shown in red) is rejected
-and handed back to its originating specialist, which refines and
-re-submits. Once every delta is verified, the Verifier hands off to
-the Consolidator, which deduplicates and emits the final delta set.
-The diagram below is the same flow as a static reference.*
-
-```mermaid
-flowchart TD
-    STATIC[Static context<br/>canonical KB + field photograph]
-    LOG[(Running delta log<br/>shared, append-only)]
-    T[Triage agent<br/>picks first specialist]
-    M[Morphology specialist<br/>lesion shape, color, organs]
-    S[Symptom specialist<br/>spread pattern, diagnostic features]
-    P[Pathogen specialist<br/>look-alikes, disease type]
-    SV[Severity specialist<br/>severity, treatments]
-    V[Verifier<br/>Claude headless + web search<br/>verified / weak / rejected]
-    C[Consolidator<br/>dedupe, drop restatements,<br/>terminate]
-    AGREE[Cross-run agreement filter<br/>repeat N times, keep K-of-N]
-    MERGE[Conservative merge with existing KB]
-    OUT[(Regional deltas for this state)]
-
-    STATIC --> T
-    T -->|handoff| M
-    T -->|handoff| S
-    T -->|handoff| P
-    T -->|handoff| SV
-    M -->|handoff| S
-    M -->|handoff| V
-    S -->|handoff| P
-    S -->|handoff| V
-    P -->|handoff| SV
-    P -->|handoff| V
-    SV -->|handoff| V
-    V -->|verified or weak| C
-    V -.->|rejected, retry| M
-    V -.->|rejected, retry| S
-    V -.->|rejected, retry| P
-    V -.->|rejected, retry| SV
-    M -.append.-> LOG
-    S -.append.-> LOG
-    P -.append.-> LOG
-    SV -.append.-> LOG
-    LOG -.read.-> M
-    LOG -.read.-> S
-    LOG -.read.-> P
-    LOG -.read.-> SV
-    LOG -.read.-> V
-    C --> AGREE --> MERGE --> OUT
-
-    classDef ctx fill:#eef,stroke:#33a
-    classDef agent fill:#fef,stroke:#606
-    classDef stage fill:#fde,stroke:#a06
-    classDef store fill:#ffd,stroke:#660
-    classDef out fill:#efe,stroke:#060,stroke-width:2px
-    class STATIC ctx
-    class LOG store
-    class T,M,S,P,SV,V,C agent
-    class AGREE,MERGE stage
-    class OUT out
-```
+own delta, and hands off to the next agent; the Verifier consults
+the open web for every delta, rejects one as under-specified (it
+turns red), hands it back to the originating specialist for
+refinement (it returns in green); the Consolidator deduplicates and
+emits the final delta set. **Act III** zooms out: the whole swarm
+runs N=5 times with different seeds; the K-of-N agreement filter
+keeps only deltas that appear in at least K independent runs. **Act
+IV** shows the conservative merge with the existing KB record and
+the final JSON shape — each delta carries its support count,
+verification status, web citations, and the handoff chain that
+produced it.*
 
 ### Agents
 
