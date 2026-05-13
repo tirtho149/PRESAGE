@@ -1,11 +1,11 @@
 """
-scripts/evaluate_biocap_retrieval.py
+scripts/evaluate_pathomeood_retrieval.py
 ====================================
 Bugwood text↔image retrieval mini-bench (paper Table 2 analog).
 
 Bench construction
 ------------------
-At caption-build time, ``scripts/build_biocap_captions.py --holdout-state X``
+At caption-build time, ``scripts/build_pathomeood_captions.py --holdout-state X``
 marks all rows from state ``X`` as ``split=holdout``. Those rows form
 the retrieval bench: each held-out image's caption (KB-canonical +
 its state's deltas) is the query, and the model must retrieve the
@@ -23,10 +23,10 @@ What this script does
   5. Writes I2T + T2I R@{1,5,10} to a JSON file
 
 Usage:
-    python scripts/evaluate_biocap_retrieval.py \\
+    python scripts/evaluate_pathomeood_retrieval.py \\
         --model    hf-hub:imageomics/biocap \\
         --captions data/bugwood_captions/Tomato_canonical_deltas_3.parquet \\
-        --out-dir  results/biocap_eval/biocap_hf
+        --out-dir  results/pathomeood_eval/pathomeood_hf
 """
 
 from __future__ import annotations
@@ -46,7 +46,7 @@ def parse_args() -> argparse.Namespace:
                    help="HF hub path or open_clip model name (passed to create_model_and_transforms)")
     p.add_argument("--pretrained", default="")
     p.add_argument("--captions",   required=True,
-                   help="parquet/TSV produced by build_biocap_captions.py")
+                   help="parquet/TSV produced by build_pathomeood_captions.py")
     p.add_argument("--out-dir",    required=True)
     p.add_argument("--device",     default=None)
     return p.parse_args()
@@ -81,7 +81,7 @@ def main() -> None:
     rows = [r for r in _read_captions(captions_path) if r.get("split") == "holdout"]
     if not rows:
         raise SystemExit(
-            f"no holdout rows in {captions_path}. Re-run build_biocap_captions.py "
+            f"no holdout rows in {captions_path}. Re-run build_pathomeood_captions.py "
             f"with --holdout-state <S>."
         )
 
@@ -95,7 +95,7 @@ def main() -> None:
         w.writerow(["id", "captions", "image_path"])
         for r in rows:
             w.writerow([r["image_id"], r["caption_text"], r["image_path"]])
-    print(f"=== evaluate_biocap_retrieval ===")
+    print(f"=== evaluate_pathomeood_retrieval ===")
     print(f"  captions      : {captions_path}")
     print(f"  holdout pairs : {len(rows)}")
     print(f"  bench CSV     : {csv_path}")

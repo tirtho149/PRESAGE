@@ -1,7 +1,7 @@
 """
-scripts/evaluate_biocap_fewshot.py
+scripts/evaluate_pathomeood_fewshot.py
 ==================================
-Few-shot classification eval for BioCAP-on-Bugwood (paper Tables 18, 20).
+Few-shot classification eval for PathomeOOD (paper Tables 18, 20).
 
 Standard "prototype-mean" K-shot protocol:
     1. Encode every image in the eval set with the frozen visual encoder.
@@ -14,15 +14,15 @@ Standard "prototype-mean" K-shot protocol:
 
 Supports any model accepted by ``open_clip.create_model_and_transforms``
 (HF hub paths, local checkpoints). The same folder normalizers used by
-``scripts/evaluate_biocap.py`` apply.
+``scripts/evaluate_pathomeood.py`` apply.
 
 Usage:
-    python scripts/evaluate_biocap_fewshot.py \\
+    python scripts/evaluate_pathomeood_fewshot.py \\
         --model    hf-hub:imageomics/biocap \\
         --pv-root  /path/to/PlantVillage \\
         --pw-root  /path/to/PlantWild \\
         --crop     Tomato --shots 1 5 --n-seeds 5 \\
-        --out-dir  results/biocap_eval/biocap_hf
+        --out-dir  results/pathomeood_eval/pathomeood_hf
 """
 
 from __future__ import annotations
@@ -39,7 +39,7 @@ from typing import Dict, List, Optional, Tuple
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from scripts.evaluate_biocap import (
+from scripts.evaluate_pathomeood import (
     normalize_pv_folder, normalize_pw_folder, normalize_plantdoc_folder,
 )
 

@@ -1,17 +1,20 @@
 """
 scripts/fetch_baselines.py
 ==========================
-Pre-download all off-shelf CLIP-style baselines compared in BioCAP
-paper Tables 1, 2, 17, 18, 19, 20. Running this once on the GPU host
-warms the open_clip / HF hub cache so subsequent eval jobs don't pay
-the per-job download cost.
+Pre-download off-shelf CLIP-style baselines for PathomeOOD evaluation.
+Running this once on the GPU host warms the open_clip / HF hub cache so
+subsequent eval jobs don't pay the per-job download cost.
 
-Each entry below is exactly the (model, pretrained) tuple that the
-eval scripts will pass to ``open_clip.create_model_and_transforms``.
+Each entry is exactly the (model, pretrained) tuple that the eval
+scripts will pass to ``open_clip.create_model_and_transforms``.
 
-To add or remove baselines, edit BASELINES below — keep the canonical
-list in this single spot so the aggregator (scripts/aggregate_biocap_tables.py)
-can iterate the same set.
+To add or remove baselines, edit BASELINES below — the aggregator
+(scripts/aggregate_pathomeood_tables.py) iterates the same set.
+
+NOTE: imageomics/biocap is intentionally NOT in this list — PathomeOOD's
+research claim is that we train our own model from neutral (openai-CLIP)
+init using KB-grounded supervision on Bugwood, so comparing against a
+warm-started variant of the same model would be tautological.
 
 Usage:
     python scripts/fetch_baselines.py [--skip-if-cached]
@@ -33,7 +36,6 @@ BASELINES = [
     ("biotrove",      "hf-hub:BGLab/BioTrove-CLIP",       "",       "T1,T2,T17,T19"),
     ("bioclip",       "hf-hub:imageomics/bioclip",        "",       "T1,T2,T17,T18,T19,T20"),
     ("bioclip2",      "hf-hub:imageomics/bioclip-2",      "",       "T1,T2,T18,T19"),
-    ("biocap_hf",     "hf-hub:imageomics/biocap",         "",       "T1,T2,T17,T18,T19,T20"),
 ]
 
 

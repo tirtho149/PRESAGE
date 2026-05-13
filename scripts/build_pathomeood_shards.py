@@ -1,10 +1,10 @@
 """
-scripts/build_biocap_shards.py
+scripts/build_pathomeood_shards.py
 ==============================
 Package per-image (image bytes, taxon text, caption text) tuples into
 WebDataset-compatible .tar shards for BioCAP training.
 
-Input: the parquet/TSV produced by ``scripts/build_biocap_captions.py``.
+Input: the parquet/TSV produced by ``scripts/build_pathomeood_captions.py``.
 Output layout:
     data/wds_shards/<crop>_<strategy>/train/shard-000000.tar
     data/wds_shards/<crop>_<strategy>/val/shard-000000.tar
@@ -20,7 +20,7 @@ The shard format is plain tar (stdlib ``tarfile``); BioCAP's
 which expects exactly this layout.
 
 Usage:
-    python scripts/build_biocap_shards.py \\
+    python scripts/build_pathomeood_shards.py \\
         --captions data/bugwood_captions/Tomato_canonical_deltas_3.parquet \\
         --out-dir  data/wds_shards/Tomato_canonical_deltas_3 \\
         [--shard-size-mb 256]
@@ -42,7 +42,7 @@ from typing import Dict, Iterable, List
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__.split("\n")[1])
     p.add_argument("--captions", required=True,
-                   help="parquet or TSV from scripts/build_biocap_captions.py")
+                   help="parquet or TSV from scripts/build_pathomeood_captions.py")
     p.add_argument("--out-dir", required=True,
                    help="root dir for shards (one subdir per split)")
     p.add_argument("--shard-size-mb", type=int, default=256,
@@ -156,7 +156,7 @@ def main() -> None:
         by_split.setdefault(r["split"] or "train", []).append(r)
 
     target_bytes = args.shard_size_mb * 1024 * 1024
-    print(f"=== build_biocap_shards ===")
+    print(f"=== build_pathomeood_shards ===")
     print(f"  captions  : {args.captions}  ({len(rows)} rows)")
     print(f"  out_dir   : {out_root}")
     print(f"  splits    : {dict((k, len(v)) for k, v in by_split.items())}")

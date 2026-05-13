@@ -6,9 +6,9 @@
 # stats. Each writes both a PNG figure and a LaTeX snippet under
 # plantswarm/latex/auto_*.tex for the paper to \input.
 #
-# The BioCAP-on-Bugwood paper-table reproduction is produced separately by
-# scripts/aggregate_biocap_tables.py (writes markdown under results/tables/
-# and a master results/biocap_report.md).
+# The PathomeOOD paper-table reproduction is produced separately by
+# scripts/aggregate_pathomeood_tables.py (writes markdown under results/tables/
+# and a master results/pathomeood_report.md).
 # ============================================================================
 set -euo pipefail
 
@@ -26,5 +26,5 @@ echo
 echo "All viz outputs:"
 echo "  results/figures/*.png"
 echo "  plantswarm/latex/auto_*.tex"
-echo "  results/tables/*.md  (run scripts/aggregate_biocap_tables.py)"
-echo "  results/biocap_report.md"
+echo "  results/tables/*.md  (run scripts/aggregate_pathomeood_tables.py)"
+echo "  results/pathomeood_report.md"

@@ -7,7 +7,7 @@ benchmark used in BioCAP paper Table 19.
 PlantDoc is hosted as a public GitHub repository
 (https://github.com/pratikkayal/PlantDoc-Dataset) with folder-per-class
 images in ``train/`` and ``test/`` subdirs. We clone it once into
-``data/eval/PlantDoc/`` so that ``scripts/evaluate_biocap.py
+``data/eval/PlantDoc/`` so that ``scripts/evaluate_pathomeood.py
 --plantdoc-root data/eval/PlantDoc/test`` works.
 
 Usage:
@@ -75,7 +75,7 @@ def main() -> None:
 
     print()
     print("  Use with:")
-    print(f"    python scripts/evaluate_biocap.py --plantdoc-root {test} ...")
+    print(f"    python scripts/evaluate_pathomeood.py --plantdoc-root {test} ...")
 
 
 if __name__ == "__main__":

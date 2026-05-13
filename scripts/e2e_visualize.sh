@@ -44,11 +44,11 @@ echo "[3/4] Phase 0R trace visualizations"
 bash scripts/viz_traces.sh || echo "  (skipped)"
 
 echo
-echo "[3.5/4] BioCAP paper-table reproduction"
-python scripts/aggregate_biocap_tables.py \
-    --results-dir results/biocap_eval \
+echo "[3.5/4] PathomeOOD paper-style table aggregation"
+python scripts/aggregate_pathomeood_tables.py \
+    --results-dir results/pathomeood_eval \
     --out-dir     results/tables \
-    --report      results/biocap_report.md || echo "  (skipped — no biocap eval results yet)"
+    --report      results/pathomeood_report.md || echo "  (skipped — no pathomeood eval results yet)"
 
 # ---- 4. LaTeX build -------------------------------------------------------
 if [ "${PATHOME_SKIP_PDF:-0}" != "1" ]; then

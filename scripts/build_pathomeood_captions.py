@@ -1,13 +1,13 @@
 """
-scripts/build_biocap_captions.py
+scripts/build_pathomeood_captions.py
 ================================
-Build per-image (taxon, caption) text rows for BioCAP-on-Bugwood training.
+Build per-image (taxon, caption) text rows for PathomeOOD training.
 
 For each Bugwood row in ``BugWood_Diseases_usable.csv`` whose
 (NormCrop, NormDisease) has a KB profile in
 ``artifacts/pathome_kb/<crop>/final_registry.json``, emit one record
 under the chosen caption strategy. Output is a Parquet table consumed
-by ``scripts/build_biocap_shards.py``.
+by ``scripts/build_pathomeood_shards.py``.
 
 Strategies (see plantswarm/captioning.STRATEGIES):
     label_only          Table 3 row "None" baseline
@@ -22,7 +22,7 @@ Delta strategies HARD-FAIL when any matched profile has no
 ``regional_observations`` populated — Phase 0R must run first.
 
 Usage:
-    python scripts/build_biocap_captions.py \\
+    python scripts/build_pathomeood_captions.py \\
         --strategy canonical_deltas_3 \\
         [--crop Tomato] \\
         [--csv BugWood_Diseases_usable.csv] \\
@@ -121,7 +121,7 @@ def main() -> None:
             f"(crop_filter={crop_filter}). Did Phase 0 run?"
         )
     crops_with_kb = sorted({c for c, _ in profiles})
-    print(f"=== build_biocap_captions ===")
+    print(f"=== build_pathomeood_captions ===")
     print(f"  strategy       : {args.strategy}")
     print(f"  KB profiles    : {len(profiles)} across crops {crops_with_kb}")
     print(f"  CSV            : {args.csv}")

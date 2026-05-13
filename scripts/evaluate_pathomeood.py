@@ -1,7 +1,7 @@
 """
-scripts/evaluate_biocap.py
+scripts/evaluate_pathomeood.py
 ==========================
-Zero-shot classification eval for BioCAP-on-Bugwood (paper Tables 1, 3,
+Zero-shot classification eval for PathomeOOD (paper Tables 1, 3,
 4, 17, 19, 20 — anything that boils down to top-1/top-5 on a
 folder-per-class image set).
 
@@ -10,7 +10,7 @@ For each (model, eval_dataset) pair, this script:
      ``DatasetFromFile`` format: index, filepath, class.
   2. Invokes ``evaluation.zero_shot_iid.zero_shot_eval`` programmatically
      using the produced CSV and writes per-class metrics to
-     ``results/biocap_eval/<run_id>/<dataset>.json``.
+     ``results/pathomeood_eval/<run_id>/<dataset>.json``.
 
 Supported eval datasets:
   - plantvillage : folder-per-class like ``Tomato___Early_blight``
@@ -23,12 +23,12 @@ Models can be:
   - Local CKPTS:   ``checkpoints/T04/T04/checkpoints/epoch_50.pt``
 
 Usage (single model, multiple datasets):
-    python scripts/evaluate_biocap.py \\
+    python scripts/evaluate_pathomeood.py \\
         --model    hf-hub:imageomics/biocap \\
         --pv-root  /path/to/PlantVillage \\
         --pw-root  /path/to/PlantWild \\
         --crop     Tomato \\
-        --out-dir  results/biocap_eval/biocap_hf
+        --out-dir  results/pathomeood_eval/pathomeood_hf
 """
 
 from __future__ import annotations

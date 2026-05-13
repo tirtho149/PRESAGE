@@ -1,4 +1,4 @@
-# PathomeDB and BioCAP-on-Bugwood — Pipeline Overview
+# PathomeDB and PathomeOOD — Pipeline Overview
 
 This document is a self-contained walkthrough of the three-stage
 pipeline. It is written for a reader who wants to understand *what* is
@@ -10,7 +10,7 @@ The system has two interlocking deliverables:
    text-grounded canonical descriptions (from extension-service
    literature) with image-grounded regional observations (from
    field photographs).
-2. **BioCAP-on-Bugwood** — a faithful adaptation of
+2. **PathomeOOD** — a faithful adaptation of
    [BioCAP (Zhang et al., 2025)](https://arxiv.org/abs/2510.20095)
    to crop disease. BioCAP is an OpenCLIP fork with **two visual
    projectors** — one aligned to the short label text, one to a long
@@ -524,8 +524,8 @@ is enough).
 
 The 11-variant training matrix below covers every reproducible
 ablation in the paper. The matrix lives in
-`scripts/biocap_variants.sh` and is mirrored in
-`scripts/train_biocap.py::VARIANTS`.
+`scripts/pathomeood_variants.sh` and is mirrored in
+`scripts/train_pathomeood.py::VARIANTS`.
 
 | Variant | Strategy | Projector | Epochs | Subset | Paper tables |
 |---|---|---|---|---|---|
@@ -543,7 +543,7 @@ ablation in the paper. The matrix lives in
 
 ### Caption synthesis
 
-A *caption* in BioCAP-on-Bugwood is a long descriptive passage
+A *caption* in PathomeOOD is a long descriptive passage
 emitted by `plantswarm/captioning.py::build_disease_caption`:
 
 ```
@@ -574,22 +574,22 @@ paper Table 3 (caption ablation) and Table 6 (#-of-deltas ablation).
 
 ### Paper-table map
 
-`scripts/aggregate_biocap_tables.py` walks the per-variant eval JSONs
+`scripts/aggregate_pathomeood_tables.py` walks the per-variant eval JSONs
 and produces these markdown tables. Each cell reads from
-`results/biocap_eval/<run_id>/{plantvillage,plantwild,plantdoc,retrieval,fewshot_*}.json`.
+`results/pathomeood_eval/<run_id>/{plantvillage,plantwild,plantdoc,retrieval,fewshot_*}.json`.
 
 | Paper table | Reproduced by | Variants needed |
 |---|---|---|
-| Table 1 — Zero-shot classification | `evaluate_biocap.py` on PV+PW | T04 + 7 baselines |
-| Table 2 — Natural-language retrieval | `evaluate_biocap_retrieval.py` on Bugwood holdout | T04 + 7 baselines |
-| Table 3 — Caption-strategy ablation | `evaluate_biocap.py` over T01–T04 | T01, T02, T03, T04, T05, T06, T07 |
-| Table 4 — Covered vs non-covered split | `evaluate_biocap.py` over T10/T11 | T04, T10, T11 |
-| Table 6 — Number-of-deltas ablation | `evaluate_biocap.py` over delta count | T04, T05, T06, T07 |
+| Table 1 — Zero-shot classification | `evaluate_pathomeood.py` on PV+PW | T04 + 7 baselines |
+| Table 2 — Natural-language retrieval | `evaluate_pathomeood_retrieval.py` on Bugwood holdout | T04 + 7 baselines |
+| Table 3 — Caption-strategy ablation | `evaluate_pathomeood.py` over T01–T04 | T01, T02, T03, T04, T05, T06, T07 |
+| Table 4 — Covered vs non-covered split | `evaluate_pathomeood.py` over T10/T11 | T04, T10, T11 |
+| Table 6 — Number-of-deltas ablation | `evaluate_pathomeood.py` over delta count | T04, T05, T06, T07 |
 | Table 8 — KB coverage (descriptive) | reads `artifacts/pathome_kb/*/final_registry.json` | — |
 | Table 13 — Eval dataset stats (descriptive) | walks `data/eval/{PlantVillage,PlantWild,PlantDoc}/` | — |
-| Table 17 — Underrepresented species groups | re-slice of `evaluate_biocap.py` results | T04 + 7 baselines |
-| Table 18 — Few-shot top-1 | `evaluate_biocap_fewshot.py`, k∈{1,5} | T04 + 7 baselines |
-| Table 19 — Beyond classification (PlantDoc) | `evaluate_biocap.py --plantdoc-root` | T04 + 7 baselines |
+| Table 17 — Underrepresented species groups | re-slice of `evaluate_pathomeood.py` results | T04 + 7 baselines |
+| Table 18 — Few-shot top-1 | `evaluate_pathomeood_fewshot.py`, k∈{1,5} | T04 + 7 baselines |
+| Table 19 — Beyond classification (PlantDoc) | `evaluate_pathomeood.py --plantdoc-root` | T04 + 7 baselines |
 | Table 20 — Caption × few-shot | combine Table 3 variants with few-shot eval | T01..T07 |
 | Figure 3 — Recipe ablation | T04 vs T08 vs T09 | T04, T08, T09 |
 
@@ -609,14 +609,14 @@ and produces these markdown tables. Each cell reads from
 
 For each (model, eval-dataset) cell, three evaluators run:
 
-1. **`evaluate_biocap.py`** — zero-shot classification. Walks PV/PW/PlantDoc
+1. **`evaluate_pathomeood.py`** — zero-shot classification. Walks PV/PW/PlantDoc
    folder structures into a BioCAP-format CSV (idx, filepath, class)
    and calls `evaluation.zero_shot_iid.zero_shot_eval` programmatically.
    Reports top-1, top-3 (when ≥3 classes), top-5 (when ≥5).
-2. **`evaluate_biocap_retrieval.py`** — Bugwood held-out R@k. Reads
+2. **`evaluate_pathomeood_retrieval.py`** — Bugwood held-out R@k. Reads
    the `split=holdout` rows from a captions parquet, encodes images +
    captions with the chosen model, computes I2T and T2I R@{1,5,10}.
-3. **`evaluate_biocap_fewshot.py`** — prototype-mean K-shot protocol
+3. **`evaluate_pathomeood_fewshot.py`** — prototype-mean K-shot protocol
    on PV/PW/PlantDoc. For each of 5 seeds, samples K shots per class,
    computes class-mean features, predicts argmax cosine over the rest,
    reports mean ± std over seeds for K∈{1, 5}.
@@ -643,7 +643,7 @@ flowchart LR
     PW[(PlantWild)]
     PD[(PlantDoc)]
     HO[(Bugwood held-out<br/>retrieval bench)]
-    OUT[(Paper-table reproduction<br/>results/biocap_report.md)]
+    OUT[(Paper-table reproduction<br/>results/pathomeood_report.md)]
 
     L --> P1 --> DB
     F --> P2 --> DB
@@ -671,8 +671,8 @@ flowchart LR
 In one sentence: Phase 1 builds a text-grounded knowledge base from
 extension-service literature, Phase 2 grounds the KB in field
 photographs by emitting per-state image-supported additions and
-contradictions, and Phase 3 — BioCAP-on-Bugwood — synthesises a
+contradictions, and Phase 3 — PathomeOOD — synthesises a
 per-image caption from the KB, packages images + captions as
 WebDataset shards, trains 11 ViT-B/16 dual-projector variants covering
 every reproducible ablation in the BioCAP paper, and emits a master
-`results/biocap_report.md` with the reproduced paper tables.
+`results/pathomeood_report.md` with the reproduced paper tables.

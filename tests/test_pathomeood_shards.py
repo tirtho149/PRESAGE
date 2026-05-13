@@ -1,7 +1,7 @@
 """
-tests/test_biocap_shards.py
+tests/test_pathomeood_shards.py
 ===========================
-Smoke tests for ``scripts/build_biocap_shards.py``.
+Smoke tests for ``scripts/build_pathomeood_shards.py``.
 
 Builds a tiny TSV pointing at synthetic JPEGs in a tmp dir, runs the
 shard packager, and asserts the resulting tar contains exactly the
@@ -70,7 +70,7 @@ def smoke_inputs(tmp_path: Path):
 
 
 def test_shard_builder_produces_expected_tar_layout(smoke_inputs):
-    script = Path(__file__).parent.parent / "scripts" / "build_biocap_shards.py"
+    script = Path(__file__).parent.parent / "scripts" / "build_pathomeood_shards.py"
     result = subprocess.run(
         [sys.executable, str(script),
          "--captions",      str(smoke_inputs["captions_tsv"]),
@@ -119,7 +119,7 @@ def test_shard_builder_skips_missing_images(tmp_path: Path):
     tsv = tmp_path / "captions.tsv"
     _write_captions_tsv(tsv, rows)
     out_dir = tmp_path / "shards"
-    script = Path(__file__).parent.parent / "scripts" / "build_biocap_shards.py"
+    script = Path(__file__).parent.parent / "scripts" / "build_pathomeood_shards.py"
     result = subprocess.run(
         [sys.executable, str(script),
          "--captions",      str(tsv),

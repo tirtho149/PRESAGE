@@ -9,15 +9,15 @@
 #                (populates artifacts/pathome_kb/<crop>/final_registry.json
 #                 with regional_observations / deltas — required by 0deltas
 #                 caption strategies)
-#   3. BioCAP captions + shards build (one (caption, shard) bundle per
+#   3. PathomeOOD captions + shards build (one (caption, shard) bundle per
 #      unique strategy across the variant matrix)
-#   4. BioCAP training matrix — variants T01..T11 (paper Tables 3, 4, 6,
+#   4. PathomeOOD training matrix — variants T01..T11 (Tables 3, 4, 6,
 #      17, 18, 19, 20 + Fig 3)
 #   5. Off-shelf baseline cache (CLIP, SigLIP, FG-CLIP, BioTrove-CLIP,
-#      BioCLIP, BioCLIP-2, BioCAP-HF)
-#   6. BioCAP eval suite — zero-shot classification on PV/PW/PlantDoc +
+#      BioCLIP, BioCLIP-2) — imageomics/biocap intentionally excluded
+#   6. PathomeOOD eval suite — zero-shot classification on PV/PW/PlantDoc +
 #      retrieval bench + few-shot, for every variant + baseline
-#   7. Aggregate paper tables -> results/biocap_report.md
+#   7. Aggregate paper tables -> results/pathomeood_report.md
 #   8. git push results
 #
 # This script uses `sbatch --wait` so each phase blocks until completion.
@@ -40,10 +40,10 @@ CROP="${CROP:-Tomato}"
 PV_ROOT="${PV_ROOT:-data/eval/PlantVillage}"
 PW_ROOT="${PW_ROOT:-data/eval/PlantWild}"
 PLANTDOC_ROOT="${PLANTDOC_ROOT:-data/eval/PlantDoc/test}"
-RESULTS_DIR="${RESULTS_DIR:-results/biocap_eval}"
+RESULTS_DIR="${RESULTS_DIR:-results/pathomeood_eval}"
 
 echo "================================================================="
-echo "  e2e_nova : pull + Phase 0R + BioCAP matrix + eval + push"
+echo "  e2e_nova : pull + Phase 0R + PathomeOOD matrix + eval + push"
 echo "================================================================="
 
 # ---- 1. git pull ----------------------------------------------------------
@@ -61,40 +61,40 @@ else
   echo "  [skip] PATHOME_SKIP_PHASE0R=1"
 fi
 
-# ---- 3. BioCAP captions + shards (per strategy, one-shot) -----------------
+# ---- 3. PathomeOOD captions + shards (per strategy, one-shot) -----------------
 if [ "${PATHOME_SKIP_CAPTIONS:-0}" != "1" ]; then
   echo
-  echo "[3/8] BioCAP captions + shards (foreground)"
+  echo "[3/8] PathomeOOD captions + shards (foreground)"
   # Pre-bake every strategy referenced in the variant matrix.
   # shellcheck disable=SC1091
-  source scripts/biocap_variants.sh
+  source scripts/pathomeood_variants.sh
   declare -A SEEN=()
-  for v in "${BIOCAP_VARIANTS[@]}"; do
-    biocap_parse_variant "$v"
+  for v in "${PATHOMEOOD_VARIANTS[@]}"; do
+    pathomeood_parse_variant "$v"
     if [ -n "${SEEN[$STRATEGY]:-}" ]; then continue; fi
     SEEN[$STRATEGY]=1
     capt="data/bugwood_captions/${CROP}_${STRATEGY}.parquet"
     shards="data/wds_shards/${CROP}_${STRATEGY}"
     if [ ! -f "$capt" ] && [ ! -f "${capt%.parquet}.tsv" ]; then
       echo "  [captions] strategy=$STRATEGY"
-      python scripts/build_biocap_captions.py --strategy "$STRATEGY" --crop "$CROP" --out "$capt"
+      python scripts/build_pathomeood_captions.py --strategy "$STRATEGY" --crop "$CROP" --out "$capt"
     fi
     if [ ! -d "$shards/train" ]; then
       caps_path="$capt"
       [ -f "$caps_path" ] || caps_path="${capt%.parquet}.tsv"
       echo "  [shards] strategy=$STRATEGY"
-      python scripts/build_biocap_shards.py --captions "$caps_path" --out-dir "$shards"
+      python scripts/build_pathomeood_shards.py --captions "$caps_path" --out-dir "$shards"
     fi
   done
 else
   echo "  [skip] PATHOME_SKIP_CAPTIONS=1"
 fi
 
-# ---- 4. BioCAP training matrix --------------------------------------------
+# ---- 4. PathomeOOD training matrix --------------------------------------------
 if [ "${PATHOME_SKIP_TRAIN:-0}" != "1" ]; then
   echo
-  echo "[4/8] BioCAP training matrix (sbatch --wait, sequential)"
-  PATHOME_WAIT=1 PATHOME_SKIP_CAPTIONS=1 CROP="$CROP" bash scripts/submit_biocap_matrix.sh
+  echo "[4/8] PathomeOOD training matrix (sbatch --wait, sequential)"
+  PATHOME_WAIT=1 PATHOME_SKIP_CAPTIONS=1 CROP="$CROP" bash scripts/submit_pathomeood_matrix.sh
 else
   echo "  [skip] PATHOME_SKIP_TRAIN=1"
 fi
@@ -111,13 +111,13 @@ fi
 # ---- 6. Eval matrix -------------------------------------------------------
 if [ "${PATHOME_SKIP_EVAL:-0}" != "1" ]; then
   echo
-  echo "[6/8] BioCAP eval suite (zero-shot + retrieval + few-shot)"
+  echo "[6/8] PathomeOOD eval suite (zero-shot + retrieval + few-shot)"
   # All variants + baselines × {zero-shot PV/PW/PlantDoc, retrieval, few-shot}
   ALL_RUNS=()
   # shellcheck disable=SC1091
-  source scripts/biocap_variants.sh
-  for v in "${BIOCAP_VARIANTS[@]}"; do
-    biocap_parse_variant "$v"
+  source scripts/pathomeood_variants.sh
+  for v in "${PATHOMEOOD_VARIANTS[@]}"; do
+    pathomeood_parse_variant "$v"
     ALL_RUNS+=("$VARIANT_TAG:checkpoints/$VARIANT_TAG/$VARIANT_TAG/checkpoints/epoch_50.pt")
   done
   # Baselines: name + tag (paired)
@@ -126,31 +126,30 @@ if [ "${PATHOME_SKIP_EVAL:-0}" != "1" ]; then
                   "fgclip:hf-hub:qihoo360/fg-clip-base:"
                   "biotrove:hf-hub:BGLab/BioTrove-CLIP:"
                   "bioclip:hf-hub:imageomics/bioclip:"
-                  "bioclip2:hf-hub:imageomics/bioclip-2:"
-                  "biocap_hf:hf-hub:imageomics/biocap:")
+                  "bioclip2:hf-hub:imageomics/bioclip-2:")
   for bspec in "${BASELINES_LIST[@]}"; do
     IFS=':' read -r run_id model pretrained <<<"$bspec"
     out_dir="$RESULTS_DIR/$run_id"
     mkdir -p "$out_dir"
-    python scripts/evaluate_biocap.py --model "$model" --pretrained "$pretrained" \
+    python scripts/evaluate_pathomeood.py --model "$model" --pretrained "$pretrained" \
         --crop "$CROP" \
         --pv-root "$PV_ROOT" --pw-root "$PW_ROOT" --plantdoc-root "$PLANTDOC_ROOT" \
         --out-dir "$out_dir" || true
     # Retrieval (needs holdout split — only run if any captions parquet has holdout)
     for capt in data/bugwood_captions/${CROP}_*.parquet; do
       [ -f "$capt" ] || continue
-      python scripts/evaluate_biocap_retrieval.py --model "$model" --pretrained "$pretrained" \
+      python scripts/evaluate_pathomeood_retrieval.py --model "$model" --pretrained "$pretrained" \
           --captions "$capt" --out-dir "$out_dir" || true
       break
     done
-    python scripts/evaluate_biocap_fewshot.py --model "$model" --pretrained "$pretrained" \
+    python scripts/evaluate_pathomeood_fewshot.py --model "$model" --pretrained "$pretrained" \
         --crop "$CROP" \
         --pv-root "$PV_ROOT" --pw-root "$PW_ROOT" --plantdoc-root "$PLANTDOC_ROOT" \
         --shots 1 5 --out-dir "$out_dir" || true
   done
   # Trained variants (local ckpts)
-  for v in "${BIOCAP_VARIANTS[@]}"; do
-    biocap_parse_variant "$v"
+  for v in "${PATHOMEOOD_VARIANTS[@]}"; do
+    pathomeood_parse_variant "$v"
     ckpt_dir="train_and_eval/checkpoints/$VARIANT_TAG/$VARIANT_TAG/checkpoints"
     last_ckpt=$(ls "$ckpt_dir"/epoch_*.pt 2>/dev/null | sort -V | tail -n 1 || true)
     if [ -z "$last_ckpt" ]; then
@@ -159,11 +158,11 @@ if [ "${PATHOME_SKIP_EVAL:-0}" != "1" ]; then
     fi
     out_dir="$RESULTS_DIR/$VARIANT_TAG"
     mkdir -p "$out_dir"
-    python scripts/evaluate_biocap.py --model "$last_ckpt" \
+    python scripts/evaluate_pathomeood.py --model "$last_ckpt" \
         --crop "$CROP" \
         --pv-root "$PV_ROOT" --pw-root "$PW_ROOT" --plantdoc-root "$PLANTDOC_ROOT" \
         --out-dir "$out_dir" || true
-    python scripts/evaluate_biocap_fewshot.py --model "$last_ckpt" \
+    python scripts/evaluate_pathomeood_fewshot.py --model "$last_ckpt" \
         --crop "$CROP" \
         --pv-root "$PV_ROOT" --pw-root "$PW_ROOT" --plantdoc-root "$PLANTDOC_ROOT" \
         --shots 1 5 --out-dir "$out_dir" || true
@@ -175,20 +174,20 @@ fi
 # ---- 7. Aggregate paper tables --------------------------------------------
 echo
 echo "[7/8] Aggregating paper tables"
-python scripts/aggregate_biocap_tables.py --results-dir "$RESULTS_DIR" \
-    --out-dir results/tables --report results/biocap_report.md
+python scripts/aggregate_pathomeood_tables.py --results-dir "$RESULTS_DIR" \
+    --out-dir results/tables --report results/pathomeood_report.md
 
 # ---- 8. git push results --------------------------------------------------
 echo
 echo "[8/8] Git push results"
-git add -f results/biocap_report.md \
+git add -f results/pathomeood_report.md \
            results/tables/*.md \
            "$RESULTS_DIR"/*/*.json \
            artifacts/pathome_kb/*/final_registry.json 2>/dev/null || true
 if git diff --cached --quiet; then
   echo "  no result artefacts changed; skipping commit"
 else
-  git commit -m "BioCAP-on-Bugwood: results ($(date -u +%Y-%m-%dT%H:%MZ))"
+  git commit -m "PathomeOOD: results ($(date -u +%Y-%m-%dT%H:%MZ))"
 fi
 if [ "${PATHOME_SKIP_PUSH:-0}" = "1" ]; then
   echo "  PATHOME_SKIP_PUSH=1 — committed but not pushing"
@@ -198,4 +197,4 @@ fi
 
 echo
 echo "e2e_nova complete."
-echo "Master report -> results/biocap_report.md"
+echo "Master report -> results/pathomeood_report.md"

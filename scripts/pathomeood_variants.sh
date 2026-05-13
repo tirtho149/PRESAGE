@@ -1,6 +1,6 @@
-# scripts/biocap_variants.sh
+# scripts/pathomeood_variants.sh
 # ============================================================================
-# Single source of truth for the BioCAP-on-Bugwood training matrix.
+# Single source of truth for the PathomeOOD training matrix.
 #
 # Each variant declares the caption STRATEGY, the projector mode, the
 # epoch count, and any data-subset filter. The strategy maps directly
@@ -8,9 +8,9 @@
 # subdir name under data/wds_shards/ and a job name in SLURM.
 #
 # Used by:
-#   scripts/submit_biocap_train.sh     -- single variant submission
-#   scripts/submit_biocap_matrix.sh    -- sbatches all variants
-#   scripts/aggregate_biocap_tables.py -- collates results by tag
+#   scripts/submit_pathomeood_train.sh     -- single variant submission
+#   scripts/submit_pathomeood_matrix.sh    -- sbatches all variants
+#   scripts/aggregate_pathomeood_tables.py -- collates results by tag
 #
 # Each variant is a bash array via `eval` indirection to keep the file
 # portable to older bashes. Conceptual fields:
@@ -24,7 +24,7 @@
 # Variant order matters for sbatch array indexing (#SBATCH --array=0-NN).
 # Comment-only diff between variants makes the matrix audit-friendly.
 
-BIOCAP_VARIANTS=(
+PATHOMEOOD_VARIANTS=(
     # Caption-strategy ablation (paper Table 3)
     "T01:label_only:dual:50:all:T3"             # Table 3 row "None"
     "T02:summary_only:dual:50:all:T3"           # KB summary only
@@ -43,8 +43,8 @@ BIOCAP_VARIANTS=(
 )
 
 # Helper for shell consumers.
-biocap_parse_variant() {
-    # Usage: biocap_parse_variant "T04:..."
+pathomeood_parse_variant() {
+    # Usage: pathomeood_parse_variant "T04:..."
     # Sets globals: VARIANT_TAG STRATEGY PROJ EPOCHS SUBSET PAPER_TABLES
     local IFS=':'
     read -r VARIANT_TAG STRATEGY PROJ EPOCHS SUBSET PAPER_TABLES <<<"$1"

@@ -1,9 +1,9 @@
 """
-scripts/aggregate_biocap_tables.py
+scripts/aggregate_pathomeood_tables.py
 ==================================
-Walk ``results/biocap_eval/<run_id>/*.json`` from all variants and
+Walk ``results/pathomeood_eval/<run_id>/*.json`` from all variants and
 baselines, and produce a per-paper-table markdown summary under
-``results/tables/`` plus a master ``results/biocap_report.md`` that
+``results/tables/`` plus a master ``results/pathomeood_report.md`` that
 maps directly to the BioCAP paper's tables.
 
 Tables reproduced (Bugwood/KB analog of each paper table):
@@ -28,7 +28,7 @@ Skipped (and explained in the report):
     Tables 15, 16     — format-example ablations, N/A for KB path
 
 Usage:
-    python scripts/aggregate_biocap_tables.py [--results-dir results/biocap_eval]
+    python scripts/aggregate_pathomeood_tables.py [--results-dir results/pathomeood_eval]
 """
 
 from __future__ import annotations
@@ -40,7 +40,7 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 
-# Variant tag → caption strategy (mirror of scripts/train_biocap.py)
+# Variant tag → caption strategy (mirror of scripts/train_pathomeood.py)
 VARIANTS: Dict[str, Dict[str, object]] = {
     "T01": dict(strategy="label_only",         proj="dual",   epochs=50,  subset="all"),
     "T02": dict(strategy="summary_only",       proj="dual",   epochs=50,  subset="all"),
@@ -56,7 +56,7 @@ VARIANTS: Dict[str, Dict[str, object]] = {
 }
 
 BASELINES = ["clip_vitb16", "siglip_vitb16", "fgclip", "biotrove",
-             "bioclip", "bioclip2", "biocap_hf"]
+             "bioclip", "bioclip2", "pathomeood_hf"]
 
 # Paper-canonical column order for zero-shot results
 EVAL_DATASETS_T1 = ["plantvillage", "plantwild"]
@@ -65,9 +65,9 @@ EVAL_DATASETS_T19 = ["plantdoc"]
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__.split("\n")[1])
-    p.add_argument("--results-dir", default="results/biocap_eval")
+    p.add_argument("--results-dir", default="results/pathomeood_eval")
     p.add_argument("--out-dir", default="results/tables")
-    p.add_argument("--report", default="results/biocap_report.md")
+    p.add_argument("--report", default="results/pathomeood_report.md")
     return p.parse_args()
 
 
@@ -123,7 +123,7 @@ def _fmt_mean_std(d: Optional[dict]) -> str:
 
 def build_table_01(results_dir: Path) -> str:
     rows: List[List[str]] = [["Model", "PlantVillage", "PlantWild", "Mean"]]
-    runs = BASELINES + ["T04"]   # main BioCAP-on-Bugwood = T04
+    runs = BASELINES + ["T04"]   # main PathomeOOD = T04
     for r in runs:
         pv = _zero_shot_top1(results_dir, r, "plantvillage")
         pw = _zero_shot_top1(results_dir, r, "plantwild")
@@ -331,7 +331,7 @@ def main() -> None:
     report = Path(args.report)
     report.parent.mkdir(parents=True, exist_ok=True)
     header = (
-        "# BioCAP-on-Bugwood — paper-table reproduction\n"
+        "# PathomeOOD — paper-table reproduction\n"
         "\n"
         "This report reproduces every reproducible table from the BioCAP paper\n"
         "(Zhang et al., arXiv:2510.20095) on PlantSwarm's Bugwood + PathomeDB-KB\n"

@@ -1,5 +1,5 @@
 """
-tests/test_biocap_captions.py
+tests/test_pathomeood_captions.py
 =============================
 Unit tests for ``plantswarm.captioning``.
 

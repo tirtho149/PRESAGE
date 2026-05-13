@@ -1,7 +1,7 @@
 """
 plantswarm/captioning.py
 ========================
-Build per-image captions for BioCAP-on-Bugwood training.
+Build per-image captions for PathomeOOD training.
 
 Two text fields are emitted per image, matching BioCAP's two-projector
 design:

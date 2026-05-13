@@ -1,4 +1,4 @@
-# PlantSwarm + PathomeDB — Canonical KB + Qwen-Swarm Regional Deltas + BioCAP-on-Bugwood
+# PlantSwarm + PathomeDB — Canonical KB + Qwen-Swarm Regional Deltas + PathomeOOD
 
 A three-stage pipeline that produces an image-grounded plant disease
 knowledge base for the 484 Bugwood IPMNet classes, plus a full BioCAP
@@ -16,7 +16,7 @@ captions** (canonical KB text + per-state regional deltas):
    photograph, and emits state-specific deltas — additions or
    contradictions backed by image evidence. Deltas never restate
    canonical.
-3. **Phase BIOCAP — KB-grounded CLIP training**
+3. **Phase PathomeOOD — KB-grounded CLIP training**
    ([BioCAP paper](https://arxiv.org/abs/2510.20095)). The KB seed +
    per-image state-specific deltas are rendered into captions by
    `plantswarm/captioning.py::build_disease_caption`. Bugwood images +
@@ -29,8 +29,8 @@ captions** (canonical KB text + per-state regional deltas):
    paper-table → PlantSwarm artifact map.
 
 The KB-side terminal deliverable is `artifacts/pathome_kb/<crop>/final_registry.json`
-(canonical text + image-grounded deltas per state). The BioCAP-side
-terminal deliverable is `results/biocap_report.md` — a paper-style
+(canonical text + image-grounded deltas per state). The PathomeOOD
+terminal deliverable is `results/pathomeood_report.md` — a paper-style
 markdown report reproducing Tables 1, 2, 3, 4, 6, 8, 13, 17, 18, 19, 20
 and Figure 3 on Bugwood data.
 
@@ -236,8 +236,8 @@ What this does (see `scripts/e2e_nova.sh` for full source):
    filter, Claude+WebSearch verifier, conservative merge. Updates
    `final_registry.json` with `regional_observations.<state>.deltas[]`.
 3. **BioCAP captions + shards** — for each unique strategy in the
-   variant matrix (`scripts/biocap_variants.sh`), runs
-   `scripts/build_biocap_captions.py` + `scripts/build_biocap_shards.py`.
+   variant matrix (`scripts/pathomeood_variants.sh`), runs
+   `scripts/build_pathomeood_captions.py` + `scripts/build_pathomeood_shards.py`.
 4. **BioCAP training matrix** — 11 variants (T01–T11) covering caption
    ablation (Table 3), #-deltas ablation (Table 6), covered/non-covered
    split (Table 4), and projector / epoch ablation (Fig 3). Each variant
@@ -245,11 +245,11 @@ What this does (see `scripts/e2e_nova.sh` for full source):
 5. **Baseline cache** — `scripts/fetch_baselines.py` warms the HF hub
    cache for the 7 off-shelf models in Tables 1, 2, 17, 18, 19, 20.
 6. **Eval suite** — for every variant + baseline, runs
-   `evaluate_biocap.py` (zero-shot PV/PW/PlantDoc), `evaluate_biocap_retrieval.py`
-   (Bugwood held-out R@k), `evaluate_biocap_fewshot.py` (1- and 5-shot).
-7. **Aggregate paper tables** — `scripts/aggregate_biocap_tables.py`
-   walks `results/biocap_eval/<run_id>/*.json` and writes 11 paper-table
-   markdown files under `results/tables/` plus a master `results/biocap_report.md`.
+   `evaluate_pathomeood.py` (zero-shot PV/PW/PlantDoc), `evaluate_pathomeood_retrieval.py`
+   (Bugwood held-out R@k), `evaluate_pathomeood_fewshot.py` (1- and 5-shot).
+7. **Aggregate paper tables** — `scripts/aggregate_pathomeood_tables.py`
+   walks `results/pathomeood_eval/<run_id>/*.json` and writes 11 paper-table
+   markdown files under `results/tables/` plus a master `results/pathomeood_report.md`.
 8. `git add -f` + `git commit` + `git push origin main`.
 
 **Smoke variant** (2 crops):
@@ -275,7 +275,7 @@ What this does:
 1. `git pull origin main` (gets the results Nova pushed in step 4).
 2. `scripts/viz_kb.sh` → KB summary figures + `auto_kb_stats.tex`.
 3. `scripts/viz_traces.sh` → trace stats + `auto_trace_stats.tex`.
-4. `scripts/aggregate_biocap_tables.py` → BioCAP paper-table reproduction at `results/biocap_report.md` + per-table markdown under `results/tables/`.
+4. `scripts/aggregate_pathomeood_tables.py` → BioCAP paper-table reproduction at `results/pathomeood_report.md` + per-table markdown under `results/tables/`.
 5. `scripts/build_latex_pdf.sh` → `plantswarm/latex/acl_latex.pdf` with auto-generated tables and figures included.
 
 Open the result:
@@ -323,12 +323,12 @@ artifacts/pathome_kb/<Crop>/final_registry.json        canonical + regional KB (
 data/bugwood_captions/<crop>_<strategy>.parquet        per-image (taxon, caption) text rows
 data/wds_shards/<crop>_<strategy>/{train,val,holdout}/ WebDataset .tar shards for BioCAP training
 train_and_eval/checkpoints/<VARIANT>/                   one trained ViT-B/16 per variant (T01..T11)
-results/biocap_eval/<run_id>/{plantvillage,plantwild,plantdoc,retrieval,fewshot_*}.json
+results/pathomeood_eval/<run_id>/{plantvillage,plantwild,plantdoc,retrieval,fewshot_*}.json
                                                        raw per-eval JSON for every (variant, dataset) cell
 results/tables/table_{01,02,03,04,06,08,13,17,18,19,20}.md
                                                        paper-table markdown (one file per reproduced table)
 results/tables/figure_03.md                            recipe-ablation bar table (Figure 3)
-results/biocap_report.md                               master report — paper-style summary
+results/pathomeood_report.md                               master report — paper-style summary
 results/figures/*.png                                  KB + trace figures for the paper
 plantswarm/latex/auto_*.tex                            LaTeX snippets the paper \input{}s
 plantswarm/latex/acl_latex.pdf                         compiled paper PDF
@@ -571,7 +571,7 @@ PATHOME_VERIFIER_MAX_TURNS verifier max turns for WebSearch (default 30)
 PATHOME_IMAGE_CACHE_DIR  optional override prepended to the cache search path
 ```
 
-### Phase BIOCAP — KB-grounded CLIP training on Bugwood
+### Phase PathomeOOD — KB-grounded CLIP training on Bugwood
 
 BioCAP ([arXiv:2510.20095](https://arxiv.org/abs/2510.20095)) is an
 OpenCLIP fork that adds **two visual projectors** on top of a shared
@@ -583,7 +583,7 @@ canonical visual_symptoms summary + diagnostic features + look-alikes +
 affected parts + the top-K state-specific regional deltas into a
 multi-sentence caption per image.
 
-The variant matrix (`scripts/biocap_variants.sh`) trains 11 models
+The variant matrix (`scripts/pathomeood_variants.sh`) trains 11 models
 (T01–T11) that reproduce every reproducible BioCAP paper table on
 Bugwood. See [PIPELINE.md](PIPELINE.md) for the paper-table → variant map.
 
@@ -594,12 +594,12 @@ Bugwood. See [PIPELINE.md](PIPELINE.md) for the paper-table → variant map.
 | Walltime         | ~2–4 h per variant; ~30 GPU-h for the full 11-variant matrix                                   |
 | Architecture     | ViT-B/16 dual-projector (single-projector ablation in T08); openai pretrained init             |
 | Inputs           | KB seed (`artifacts/pathome_kb/<crop>/final_registry.json`), `BugWood_Diseases_usable.csv`, `.bugwood_cache/` |
-| Outputs          | `train_and_eval/checkpoints/<VARIANT>/` per variant, `results/biocap_report.md` master report  |
+| Outputs          | `train_and_eval/checkpoints/<VARIANT>/` per variant, `results/pathomeood_report.md` master report  |
 
 **Build captions + shards** (one bundle per unique caption strategy):
 ```bash
-python scripts/build_biocap_captions.py --strategy canonical_deltas_3 --crop Tomato
-python scripts/build_biocap_shards.py \
+python scripts/build_pathomeood_captions.py --strategy canonical_deltas_3 --crop Tomato
+python scripts/build_pathomeood_shards.py \
     --captions data/bugwood_captions/Tomato_canonical_deltas_3.parquet \
     --out-dir  data/wds_shards/Tomato_canonical_deltas_3
 ```
@@ -607,27 +607,27 @@ python scripts/build_biocap_shards.py \
 **Train one variant**:
 ```bash
 # Single variant — locally with one GPU
-python scripts/train_biocap.py --variant T04 --crop Tomato
+python scripts/train_pathomeood.py --variant T04 --crop Tomato
 # Or under SLURM:
-VARIANT=T04 sbatch scripts/submit_biocap_train.sh
+VARIANT=T04 sbatch scripts/submit_pathomeood_train.sh
 # All 11 variants in one matrix:
-bash scripts/submit_biocap_matrix.sh
+bash scripts/submit_pathomeood_matrix.sh
 ```
 
 **Evaluate** (zero-shot classification + retrieval + few-shot):
 ```bash
-python scripts/evaluate_biocap.py \
+python scripts/evaluate_pathomeood.py \
     --model train_and_eval/checkpoints/T04/.../epoch_50.pt \
     --pv-root /path/to/PlantVillage \
     --pw-root /path/to/PlantWild \
     --plantdoc-root data/eval/PlantDoc/test \
-    --crop Tomato --out-dir results/biocap_eval/T04
+    --crop Tomato --out-dir results/pathomeood_eval/T04
 ```
 
 **Aggregate paper tables** (after eval is done):
 ```bash
-python scripts/aggregate_biocap_tables.py
-# -> results/tables/{table_01,...,figure_03}.md + results/biocap_report.md
+python scripts/aggregate_pathomeood_tables.py
+# -> results/tables/{table_01,...,figure_03}.md + results/pathomeood_report.md
 ```
 
 **Skipped paper tables** (and why): Tables 5, 11, 21 (human raters
@@ -696,8 +696,8 @@ bash scripts/e2e_visualize.sh
 Outputs land at:
 - `artifacts/pathome_kb/<Crop>/final_registry.json`  — KB (canonical + per-state deltas)
 - `train_and_eval/checkpoints/<VARIANT>/`            — one trained CLIP per variant (T01..T11)
-- `results/biocap_eval/<run_id>/*.json`              — per-eval JSON for every (model, dataset) cell
-- `results/tables/*.md` + `results/biocap_report.md` — paper-table reproduction
+- `results/pathomeood_eval/<run_id>/*.json`              — per-eval JSON for every (model, dataset) cell
+- `results/tables/*.md` + `results/pathomeood_report.md` — paper-table reproduction
 - `results/figures/*.png`                            — KB + trace figures
 - `plantswarm/latex/auto_*.tex`                      — paper LaTeX snippets
 
@@ -731,18 +731,18 @@ section just chain these.
 
 | Script | Purpose | Inputs | Outputs |
 |---|---|---|---|
-| `scripts/build_biocap_captions.py` | Build per-image (taxon, caption) rows from KB + CSV for one caption strategy | `BugWood_Diseases_usable.csv`, `artifacts/pathome_kb/<crop>/final_registry.json` | `data/bugwood_captions/<crop>_<strategy>.parquet` |
-| `scripts/build_biocap_shards.py` | Package (image, taxon.txt, caption.txt) tuples into WebDataset .tar shards | caption parquet, `.bugwood_cache/` | `data/wds_shards/<crop>_<strategy>/{train,val,holdout}/shard-*.tar` |
-| `scripts/train_biocap.py` | Thin wrapper that resolves a variant tag → torchrun -m open_clip_train.main with the right flags | shards, variant tag (T01..T11) | `train_and_eval/checkpoints/<VARIANT>/...` |
-| `scripts/submit_biocap_train.sh` | SLURM submitter for ONE variant (takes VARIANT env var) | shards + variant tag | per-variant checkpoint + logs |
-| `scripts/submit_biocap_matrix.sh` | Build captions + shards once per strategy, sbatch all 11 variants | KB + CSV + image cache | per-variant checkpoints |
-| `scripts/biocap_variants.sh` | Canonical 11-variant matrix definition (T01..T11) | — | — |
+| `scripts/build_pathomeood_captions.py` | Build per-image (taxon, caption) rows from KB + CSV for one caption strategy | `BugWood_Diseases_usable.csv`, `artifacts/pathome_kb/<crop>/final_registry.json` | `data/bugwood_captions/<crop>_<strategy>.parquet` |
+| `scripts/build_pathomeood_shards.py` | Package (image, taxon.txt, caption.txt) tuples into WebDataset .tar shards | caption parquet, `.bugwood_cache/` | `data/wds_shards/<crop>_<strategy>/{train,val,holdout}/shard-*.tar` |
+| `scripts/train_pathomeood.py` | Thin wrapper that resolves a variant tag → torchrun -m open_clip_train.main with the right flags | shards, variant tag (T01..T11) | `train_and_eval/checkpoints/<VARIANT>/...` |
+| `scripts/submit_pathomeood_train.sh` | SLURM submitter for ONE variant (takes VARIANT env var) | shards + variant tag | per-variant checkpoint + logs |
+| `scripts/submit_pathomeood_matrix.sh` | Build captions + shards once per strategy, sbatch all 11 variants | KB + CSV + image cache | per-variant checkpoints |
+| `scripts/pathomeood_variants.sh` | Canonical 11-variant matrix definition (T01..T11) | — | — |
 | `scripts/fetch_baselines.py` | Pre-cache the 7 off-shelf baselines (CLIP, SigLIP, FG-CLIP, BioTrove, BioCLIP, BioCLIP-2, BioCAP-HF) | — | warmed HF hub cache |
-| `scripts/evaluate_biocap.py` | Zero-shot classification eval on PV / PW / PlantDoc folder structures, programmatic call to BioCAP's `evaluation.zero_shot_iid` | model ckpt, eval root | `results/biocap_eval/<run_id>/{plantvillage,plantwild,plantdoc}.json` |
-| `scripts/evaluate_biocap_retrieval.py` | Bugwood held-out R@k retrieval (Table 2 analog) | model + captions parquet with `split=holdout` rows | `results/biocap_eval/<run_id>/retrieval.json` |
-| `scripts/evaluate_biocap_fewshot.py` | Prototype-mean K-shot eval (Tables 18, 20) | model ckpt, eval roots | `results/biocap_eval/<run_id>/fewshot_*.json` |
+| `scripts/evaluate_pathomeood.py` | Zero-shot classification eval on PV / PW / PlantDoc folder structures, programmatic call to BioCAP's `evaluation.zero_shot_iid` | model ckpt, eval root | `results/pathomeood_eval/<run_id>/{plantvillage,plantwild,plantdoc}.json` |
+| `scripts/evaluate_pathomeood_retrieval.py` | Bugwood held-out R@k retrieval (Table 2 analog) | model + captions parquet with `split=holdout` rows | `results/pathomeood_eval/<run_id>/retrieval.json` |
+| `scripts/evaluate_pathomeood_fewshot.py` | Prototype-mean K-shot eval (Tables 18, 20) | model ckpt, eval roots | `results/pathomeood_eval/<run_id>/fewshot_*.json` |
 | `scripts/setup_plantdoc.py` | One-shot clone of the public PlantDoc dataset (Table 19 source) | git clone access | `data/eval/PlantDoc/{train,test}/` |
-| `scripts/aggregate_biocap_tables.py` | Walk all `results/biocap_eval/*/` JSONs → paper-table markdown | per-eval JSONs | `results/tables/{table_01..figure_03}.md`, `results/biocap_report.md` |
+| `scripts/aggregate_pathomeood_tables.py` | Walk all `results/pathomeood_eval/*/` JSONs → paper-table markdown | per-eval JSONs | `results/tables/{table_01..figure_03}.md`, `results/pathomeood_report.md` |
 
 ### Visualization (LOCAL)
 
@@ -751,7 +751,7 @@ section just chain these.
 | `scripts/viz_kb.sh` | KB stats: per-status pie, field-count bar, support histogram, per-state coverage | `symptoms_seed.json` | `results/figures/kb_*.png`, `plantswarm/latex/auto_kb_stats.tex` |
 | `scripts/viz_traces.sh` | Phase 0R trace stats: path lengths, κ-by-agent | `phase0r_traces.jsonl` | `results/figures/trace_*.png`, `plantswarm/latex/auto_trace_stats.tex` |
 | `scripts/viz_all.sh` | Run KB + trace viz scripts in sequence | — | — |
-| `scripts/aggregate_biocap_tables.py` | Paper-table markdown summary (re-runnable any time) | `results/biocap_eval/*/` | `results/biocap_report.md` |
+| `scripts/aggregate_pathomeood_tables.py` | Paper-table markdown summary (re-runnable any time) | `results/pathomeood_eval/*/` | `results/pathomeood_report.md` |
 | `scripts/build_latex_pdf.sh` | Compile the paper PDF (`acl_latex.tex`) | the `auto_*.tex` snippets above | `plantswarm/latex/acl_latex.pdf` |
 
 ### Umbrellas
