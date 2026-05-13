@@ -12,7 +12,7 @@ Sections
    - 3b. [Inside one trace (routed swarm)](#3b-inside-one-trace-routed-swarm)
    - 3d. [Cross-pass K-of-N agreement filter](#3d-cross-run-k-of-n-agreement-filter)
    - 3e. [Conservative merge with existing KB](#3e-conservative-merge-with-existing-kb)
-4. [Phase OBSERVE — distilled student](#4-phase-observe--distilled-student)
+4. [Phase OBSERVE — KB-augmented OOD classifier](#4-phase-observe--kb-augmented-ood-classifier)
 5. [Data shape evolution](#5-data-shape-evolution)
 6. [File map](#6-file-map)
 7. [Env var reference](#7-env-var-reference)
