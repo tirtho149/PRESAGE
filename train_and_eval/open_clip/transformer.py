@@ -631,6 +631,16 @@ class VisionTransformer(nn.Module):
         for param in self.parameters():
             param.requires_grad = False
 
+        # PlantSwarm/BioCAP: the projection heads (`proj` and `caption_proj`
+        # when --dual-projector is set) are the trainable surface in the
+        # small-data regime. Always keep them gradient-enabled when the
+        # backbone is locked — otherwise --lock-image would freeze the entire
+        # model and training would be a no-op.
+        if hasattr(self, "proj") and isinstance(self.proj, nn.Parameter):
+            self.proj.requires_grad = True
+        if hasattr(self, "caption_proj") and isinstance(self.caption_proj, nn.Parameter):
+            self.caption_proj.requires_grad = True
+
         if unlocked_groups != 0:
             groups = [
                 [

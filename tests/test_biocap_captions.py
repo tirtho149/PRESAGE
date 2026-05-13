@@ -190,22 +190,61 @@ def test_caption_for_row_healthy_path(synthetic_profile_no_deltas):
     """healthy diseases bypass the KB and use the static template."""
     from plantswarm.captioning import caption_for_row
     profiles = {("Tomato", "Early Blight"): synthetic_profile_no_deltas}
-    out = caption_for_row(
+    out, used_kb = caption_for_row(
         crop="Tomato", disease="healthy", state=None,
         profiles=profiles, strategy="canonical_deltas_3",
     )
     assert "healthy Tomato" in out
     assert "no visible disease" in out.lower()
+    assert used_kb is False
 
 
-def test_caption_for_row_unknown_disease(synthetic_profile_no_deltas):
+def test_caption_for_row_fallback_when_no_kb_profile(synthetic_profile_no_deltas):
+    """Unknown (crop, disease) pairs get the fallback template, NOT a KeyError.
+    This is what lets full Bugwood (459 non-KB pairs) join training."""
     from plantswarm.captioning import caption_for_row
     profiles = {("Tomato", "Early Blight"): synthetic_profile_no_deltas}
-    with pytest.raises(KeyError):
-        caption_for_row(
-            crop="Tomato", disease="Not In KB", state=None,
-            profiles=profiles, strategy="canonical_full",
-        )
+    out, used_kb = caption_for_row(
+        crop="Apple", disease="Cedar Apple Rust", state=None,
+        profiles=profiles, strategy="canonical_full",
+    )
+    assert out == "A field photograph of Apple affected by Cedar Apple Rust."
+    assert used_kb is False
+
+
+def test_fallback_label_only_returns_taxon_text(synthetic_profile_no_deltas):
+    from plantswarm.captioning import caption_for_row
+    profiles = {("Tomato", "Early Blight"): synthetic_profile_no_deltas}
+    out, used_kb = caption_for_row(
+        crop="Apple", disease="Scab", state=None,
+        profiles=profiles, strategy="label_only",
+    )
+    assert out == "Apple Scab"
+    assert used_kb is False
+
+
+def test_fallback_used_kb_flag_true_when_profile_matched(synthetic_profile_no_deltas):
+    from plantswarm.captioning import caption_for_row
+    profiles = {("Tomato", "Early Blight"): synthetic_profile_no_deltas}
+    out, used_kb = caption_for_row(
+        crop="Tomato", disease="Early Blight", state=None,
+        profiles=profiles, strategy="canonical_full",
+    )
+    assert "Diagnostic features" in out
+    assert used_kb is True
+
+
+def test_fallback_does_not_require_deltas(synthetic_profile_no_deltas):
+    """A delta strategy on a non-KB pair must NOT raise — fallback caption
+    has no delta dependency."""
+    from plantswarm.captioning import caption_for_row
+    profiles = {("Tomato", "Early Blight"): synthetic_profile_no_deltas}
+    out, used_kb = caption_for_row(
+        crop="Apple", disease="Scab", state="CA",
+        profiles=profiles, strategy="canonical_deltas_3",
+    )
+    assert out == "A field photograph of Apple affected by Scab."
+    assert used_kb is False
 
 
 # ---------------------------------------------------------------------------

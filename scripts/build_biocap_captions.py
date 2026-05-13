@@ -134,7 +134,9 @@ def main() -> None:
     # 3. Walk CSV ------------------------------------------------------------
     cache_dir = Path(args.cache_dir)
     rows: List[Dict[str, str]] = []
-    skipped_no_kb: Counter = Counter()
+    fallback_pairs: Counter = Counter()
+    n_kb: int = 0
+    n_fallback: int = 0
     skipped_no_state: int = 0
 
     with open(args.csv, newline="", encoding="utf-8") as f:
@@ -142,12 +144,9 @@ def main() -> None:
         for r in reader:
             crop    = (r.get("NormCrop")    or "").strip()
             disease = (r.get("NormDisease") or "").strip()
+            if not crop or not disease:
+                continue
             if args.crop and crop != args.crop:
-                continue
-            if crop not in crops_with_kb:
-                continue
-            if (crop, disease) not in profiles:
-                skipped_no_kb[(crop, disease)] += 1
                 continue
             image_id = (r.get("Image Number") or "").strip()
             if not image_id:
@@ -156,14 +155,18 @@ def main() -> None:
             if state is None:
                 skipped_no_state += 1
             try:
-                caption = caption_for_row(
+                caption, used_kb = caption_for_row(
                     crop=crop, disease=disease, state=state,
                     profiles=profiles, strategy=args.strategy,
                 )
             except ValueError as e:
-                # Per-profile delta absence — should have been caught above,
-                # but be robust.
+                # Per-profile delta absence on a KB-covered class.
                 raise SystemExit(f"caption build failed for {image_id}: {e}")
+            if used_kb:
+                n_kb += 1
+            else:
+                n_fallback += 1
+                fallback_pairs[(crop, disease)] += 1
             split = "holdout" if (args.holdout_state and state == args.holdout_state) else None
             rows.append({
                 "image_id":     image_id,
@@ -173,6 +176,7 @@ def main() -> None:
                 "state":        state or "",
                 "taxon_text":   taxon_text(crop, disease),
                 "caption_text": caption,
+                "used_kb":      "1" if used_kb else "0",
                 "split":        split or "",  # filled in step 4
             })
 
@@ -189,15 +193,18 @@ def main() -> None:
     # 5. Stats + write -------------------------------------------------------
     split_counts = Counter(r["split"] for r in rows)
     per_class = Counter((r["crop"], r["disease"]) for r in rows)
-    print(f"  rows kept      : {len(rows)}")
-    print(f"  split          : {dict(split_counts)}")
-    print(f"  classes        : {len(per_class)}")
-    print(f"  skipped no-KB  : {sum(skipped_no_kb.values())} rows "
-          f"across {len(skipped_no_kb)} (crop,disease) pairs")
-    for (c, d), n in skipped_no_kb.most_common(8):
-        print(f"      - {c}/{d}: {n}")
+    print(f"  rows kept           : {len(rows)}")
+    print(f"  split               : {dict(split_counts)}")
+    print(f"  classes             : {len(per_class)}")
+    print(f"  with KB caption     : {n_kb} rows")
+    print(f"  with fallback cap   : {n_fallback} rows "
+          f"across {len(fallback_pairs)} (crop,disease) pairs")
+    if fallback_pairs:
+        print("  top fallback pairs (no KB profile):")
+        for (c, d), n in fallback_pairs.most_common(8):
+            print(f"      - {c}/{d}: {n}")
     if skipped_no_state:
-        print(f"  rows w/ no state: {skipped_no_state}")
+        print(f"  rows w/ no state    : {skipped_no_state}")
 
     # Output path
     if args.out:

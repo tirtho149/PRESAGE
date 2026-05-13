@@ -328,6 +328,27 @@ def assert_deltas_populated(
 # High-level convenience: one (crop, disease, state) → caption per strategy
 # ---------------------------------------------------------------------------
 
+FALLBACK_TEMPLATE = "A field photograph of {crop} affected by {disease}."
+
+
+def build_fallback_caption(crop: str, disease: str, strategy: str) -> str:
+    """Minimal caption for (crop, disease) pairs that have no KB profile.
+
+    Bugwood spans 484 (crop, disease) pairs, but PathomeDB currently
+    only has profiles for two crops (Tomato + Soybean = 25 pairs). The
+    remaining 459 pairs ride on this fallback so they can still join
+    training and so PV/PlantDoc/PlantWild can be evaluated on every
+    matching class — not just the KB-covered ones.
+
+    The fallback intentionally mirrors the open-vocabulary template the
+    original OBSERVE eval used for unseen PV classes, so the eval-time
+    text geometry matches train-time supervision for non-KB classes.
+    """
+    if strategy == "label_only":
+        return taxon_text(crop, disease)
+    return FALLBACK_TEMPLATE.format(crop=crop, disease=disease)
+
+
 def caption_for_row(
     *,
     crop: str,
@@ -335,17 +356,22 @@ def caption_for_row(
     state: Optional[str],
     profiles: Dict[Tuple[str, str], Dict[str, Any]],
     strategy: str,
-) -> str:
+) -> Tuple[str, bool]:
     """Resolve the right disease record and emit one caption.
 
-    'healthy' diseases bypass the registry and use the static template.
+    Returns ``(caption_text, used_kb)``. ``used_kb`` is True when the
+    (crop, disease) had a KB profile and full ``build_disease_caption``
+    was used; False when the row fell back to the minimal template.
+
+    Bypasses the KB for 'healthy' diseases (PathomeDB is disease-only).
     """
     if disease.lower() == "healthy":
-        return build_healthy_caption(crop)
+        return build_healthy_caption(crop), False
     rec = profiles.get((crop, disease))
     if rec is None:
-        raise KeyError(f"no KB profile for ({crop!r}, {disease!r})")
-    return build_disease_caption(
+        return build_fallback_caption(crop, disease, strategy), False
+    cap = build_disease_caption(
         crop=crop, disease=disease,
         disease_record=rec, strategy=strategy, state=state,
     )
+    return cap, True
