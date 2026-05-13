@@ -278,6 +278,17 @@ before.
 
 ### Diagram
 
+![Phase 2 handoff swarm — animated flow](docs/assets/swarm_flow.gif)
+
+*One run of the handoff swarm. Triage picks the first specialist;
+each specialist reads the running delta log on the right, writes its
+own delta, and hands off to the next agent. The Verifier consults
+the open web for each delta; one delta (shown in red) is rejected
+and handed back to its originating specialist, which refines and
+re-submits. Once every delta is verified, the Verifier hands off to
+the Consolidator, which deduplicates and emits the final delta set.
+The diagram below is the same flow as a static reference.*
+
 ```mermaid
 flowchart TD
     STATIC[Static context<br/>canonical KB + field photograph]
