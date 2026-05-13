@@ -102,72 +102,171 @@ canonical description as Charcoal Rot in Alabama.
 
 ---
 
-## Phase 2 — Regional Image-Grounded Deltas
+## Phase 2 — Regional Image-Grounded Deltas (Handoff Swarm)
 
 **Goal.** For every (crop, disease, state) tuple that has at least one
 field photograph available, identify how the disease *presents in the
-field in that state* and emit any image-supported observations that go
-beyond what the canonical block already says — additions or
-contradictions, never restatements.
+field in that state* and emit image-supported deltas that go beyond
+what the canonical block already says — additions or contradictions,
+never restatements.
 
-This is where geography enters the knowledge base. The same disease
-can look different in the field depending on cultivar, climate, soil,
-or co-occurring stresses. Canonical text rarely captures this; field
-photographs do.
+### What changed from the previous design
 
-The process for one (crop, disease, state) tuple is a small swarm of
-specialist agents that share a vision-language model, plus a
-verification step:
+The previous design ran four specialists in parallel against the
+canonical block and the image. They never read each other's output.
+A consolidator merged the four streams at the end, then an agreement
+filter removed per-run hallucinations, then a web-search verifier
+filtered the survivors. This was ensemble sampling with a cleanup
+step, not a swarm.
+
+The new design is a real handoff swarm. Specialists run sequentially.
+Each one reads a shared running log of the deltas previous specialists
+have already written. Each one decides which agent runs next. The
+verifier is part of the loop, not a post-filter — it can hand a
+rejected delta back to the originating specialist for refinement.
+
+### Shared context
+
+Every agent in the swarm reads two things.
+
+A **static reference**. The canonical KB block for this disease, plus
+the field photograph for this state. Neither changes during the run.
+
+A **running log**. The deltas written so far in this run, in order,
+each tagged with the agent that wrote it. Every agent appends to the
+log when it finishes its turn. Every later agent reads it before
+writing.
+
+The running log is what makes the handoffs meaningful. Without it,
+sequential specialists do the same thing as parallel specialists. With
+it, each specialist builds on, refines, or contradicts what came
+before.
+
+### Diagram
 
 ```mermaid
 flowchart TD
-    CTX[Canonical KB block<br/>+ field photograph for this state]
+    STATIC[Static context<br/>canonical KB + field photograph]
+    LOG[(Running delta log<br/>shared, append-only)]
+    T[Triage agent<br/>picks first specialist]
     M[Morphology specialist<br/>lesion shape, color, organs]
     S[Symptom specialist<br/>spread pattern, diagnostic features]
     P[Pathogen specialist<br/>look-alikes, disease type]
     SV[Severity specialist<br/>severity, treatments]
-    CONS[Consolidator<br/>dedupe, drop restatements,<br/>keep image-grounded additions]
-    AGREE[Cross-pass agreement filter<br/>repeat N times with different seeds<br/>keep only deltas seen in K passes]
-    VER[Web-search verifier<br/>does an external source<br/>support each surviving delta?]
-    MERGE[Conservative merge<br/>with existing KB]
+    V[Verifier<br/>Claude headless + web search<br/>verified / weak / rejected]
+    C[Consolidator<br/>dedupe, drop restatements,<br/>terminate]
+    AGREE[Cross-run agreement filter<br/>repeat N times, keep K-of-N]
+    MERGE[Conservative merge with existing KB]
     OUT[(Regional deltas for this state)]
 
-    CTX --> M --> CONS
-    CTX --> S --> CONS
-    CTX --> P --> CONS
-    CTX --> SV --> CONS
-    CONS --> AGREE --> VER --> MERGE --> OUT
+    STATIC --> T
+    T -->|handoff| M
+    T -->|handoff| S
+    T -->|handoff| P
+    T -->|handoff| SV
+    M -->|handoff| S
+    M -->|handoff| V
+    S -->|handoff| P
+    S -->|handoff| V
+    P -->|handoff| SV
+    P -->|handoff| V
+    SV -->|handoff| V
+    V -->|verified or weak| C
+    V -.->|rejected, retry| M
+    V -.->|rejected, retry| S
+    V -.->|rejected, retry| P
+    V -.->|rejected, retry| SV
+    M -.append.-> LOG
+    S -.append.-> LOG
+    P -.append.-> LOG
+    SV -.append.-> LOG
+    LOG -.read.-> M
+    LOG -.read.-> S
+    LOG -.read.-> P
+    LOG -.read.-> SV
+    LOG -.read.-> V
+    C --> AGREE --> MERGE --> OUT
 
     classDef ctx fill:#eef,stroke:#33a
     classDef agent fill:#fef,stroke:#606
     classDef stage fill:#fde,stroke:#a06
+    classDef store fill:#ffd,stroke:#660
     classDef out fill:#efe,stroke:#060,stroke-width:2px
-    class CTX ctx
-    class M,S,P,SV,CONS agent
-    class AGREE,VER,MERGE stage
+    class STATIC ctx
+    class LOG store
+    class T,M,S,P,SV,V,C agent
+    class AGREE,MERGE stage
     class OUT out
 ```
 
-A few details worth highlighting:
+### Agents
 
-- **Four specialists run in parallel.** Each owns a different slice
-  of the symptom space, so they don't redundantly comment on the same
-  field. A fifth agent (the consolidator) deduplicates their outputs
-  and drops any "delta" that merely restates the canonical block.
-- **Stochastic re-runs and agreement filtering.** The whole pass is
-  repeated with different random seeds. A delta only survives if it
-  appears in at least *K* out of *N* independent passes — this
-  removes per-run hallucinations.
-- **External verification.** Every surviving delta is then checked
-  against the open web by a separate verifier with web-search access.
-  A delta that the verifier finds external support for is marked
-  *verified*; one with weak or no support is marked accordingly.
-  Only verified or weakly-supported deltas are merged into the KB.
-- **Conservative merge.** New deltas are added to the existing
-  regional record without overwriting; overlapping deltas increase
-  the support count rather than replacing the entry.
+**Triage.** Reads the static context only. Decides which specialist
+should run first based on what looks most off about the leaf. Hands
+off to one of the four specialists. Writes nothing to the log.
 
-The output for one disease, after this phase, looks like:
+**Morphology specialist.** Lesion shape, color, distribution on the
+organ. Reads static context and running log. Writes morphology deltas.
+Picks the next agent.
+
+**Symptom specialist.** Spread pattern, systemic versus local,
+diagnostic visual features. Reads static context and running log.
+Writes symptom deltas. Picks the next agent.
+
+**Pathogen specialist.** Look-alikes, confusion risks, disease-type
+clues visible in the image. Reads static context and running log.
+Writes look-alike deltas. Picks the next agent.
+
+**Severity specialist.** Severity rating and treatment-relevant
+observations. Reads static context and running log. Writes severity
+deltas. Picks the next agent.
+
+**Verifier.** Claude headless with web search. Reads the canonical
+block, the image, and every delta written so far. For each unverified
+delta, runs a web search and assigns one of three labels: *verified*,
+*weakly supported*, or *rejected*. On verified or weakly supported,
+marks the delta and hands off to the Consolidator. On rejected, hands
+back to the specialist that wrote the delta with an explanation.
+
+**Consolidator.** Reads everything. Deduplicates. Drops any delta that
+merely restates the canonical block. Emits the final delta set and
+terminates the run.
+
+### Handoff rules
+
+A specialist cannot hand off to itself.
+
+A specialist may hand off to the Verifier mid-run if it wants its
+deltas checked before later specialists depend on them.
+
+The Verifier may hand back to any specialist for refinement, but a
+single delta can be re-verified at most twice. On the third rejection
+the Consolidator drops it.
+
+The Consolidator is the only agent that can terminate. It terminates
+when every delta has been labeled and no specialist has outstanding
+work.
+
+A maximum-turns cap (20 turns per run) prevents pathological loops.
+
+### Stochastic re-runs
+
+The whole sequential swarm is run N times with different random seeds.
+Agent ordering, specialist routing, and per-agent generation are all
+stochastic. The agreement filter keeps only deltas that appear in at
+least K out of N independent runs. This removes per-run hallucinations
+the same way the previous design did, but now over runs of the full
+handoff sequence rather than over parallel single-shot calls.
+
+### Conservative merge
+
+Same as the previous design. New deltas are added to the existing
+regional record without overwriting; overlapping deltas increase the
+support count rather than replacing the entry.
+
+### Output
+
+The output format is unchanged.
 
 ```jsonc
 {
@@ -185,14 +284,64 @@ The output for one disease, after this phase, looks like:
           "verification_status": "verified",
           "web_support": [
             { "url": "https://...", "quote": "..." }
+          ],
+          "handoff_provenance": [
+            "morphology", "symptom", "pathogen", "verifier"
           ]
         }
       ]
-    },
-    "Iowa": { "deltas": [ /* ... */ ] }
+    }
   }
 }
 ```
+
+The new `handoff_provenance` field records the chain of agents that
+contributed to each delta. This is what enables the diagnostic metrics
+below.
+
+### Metrics that justify the design
+
+Three diagnostic numbers prove the handoffs are doing real work.
+
+1. **Reference rate.** For every delta written by a specialist that
+   ran after position one, check whether the delta builds on a
+   previous specialist's delta. A small LLM judge labels this. If the
+   rate is near zero, specialists are ignoring the running log and the
+   handoff design is decoration.
+
+2. **Duplicate rate.** Number of deltas flagged as duplicates by the
+   Consolidator, divided by total deltas, compared against the
+   parallel-specialist baseline. Should drop sharply because later
+   specialists can avoid restating what earlier ones already covered.
+
+3. **Order sensitivity.** Run the swarm with three different starting
+   orders on the same tuples. If verified deltas per tuple shift with
+   order, the sequencing matters. If they do not, the handoffs are not
+   doing useful work and the design should be parallelized.
+
+Three bottom-line numbers go in the paper.
+
+4. **Verified deltas per tuple.** Run the handoff swarm and the
+   parallel-specialist design on the same N tuples. Count surviving
+   deltas. Report mean, standard deviation, and a paired t-test.
+
+5. **Verifier survival rate by agent position.** Plot the fraction of
+   each agent's deltas that survive the verifier against the agent's
+   position in the sequence. In a working handoff swarm, the curve
+   rises across positions because later agents have more context. A
+   flat curve means later agents are not using the running log.
+
+6. **Verified deltas per dollar.** Total compute cost (tokens plus GPU
+   seconds for Qwen plus Claude verifier tokens) divided by verified
+   deltas. The number that defends against the "your method is just
+   expensive" critique.
+
+The honest failure cases are worth naming. If reference rate is near
+zero, collapse to parallel. If duplicate rate does not drop, the
+running log is not helping. If order does not matter, parallelize and
+reclaim the speed. If verified deltas per dollar tie the parallel
+design, report it honestly — the contribution is then the architecture,
+not the numbers.
 
 Together, the canonical block plus all per-state delta sets are what
 we call **PathomeDB**. Each disease's entry separates *what is true
