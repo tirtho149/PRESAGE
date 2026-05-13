@@ -52,91 +52,112 @@ the pipeline actually sees on disk.
 
 Three datasets feed the pipeline. **Bugwood** provides the training
 images for the classifier; **PlantVillage** and **PlantWild** are the
-two out-of-distribution evaluation sets. All numbers below are for
-the Tomato slice — the current scope of the OBSERVE classifier.
+two out-of-distribution evaluation sets. The numbers below describe
+each dataset at full scope.
 
 ### Bugwood (training set, in-the-wild)
 
 Geo-tagged field photographs from the IPMNet image library, captured
 by extension agents and researchers. After filtering to usable rows
-with a resolved crop, disease, and state, the Tomato slice has
-**605 images across 18 disease classes and 14 US states**. The matrix
-below gives per-(state, class) counts for the top five classes; the
-remaining 13 Tomato classes are grouped under "Others".
+with a resolved crop, disease, and state, the full dataset has
+**11,513 images across 484 (crop, disease) classes, 197 crops, and 47
+US states**.
 
-| State            | TSWV | Late Blight | Early Blight | Leaf Mould | Septoria | Others | **Total** |
-|------------------|---:|---:|---:|---:|---:|---:|---:|
-| North Carolina   |  90 |  50 |  17 |   0 |   0 | 115 |   **272** |
-| Kentucky         |  14 |   0 |   8 |  15 |   9 |  37 |    **83** |
-| Alabama          |   8 |  26 |   2 |   2 |   0 |  42 |    **80** |
-| Maine            |   0 |  12 |  12 |  10 |  13 |  12 |    **59** |
-| Virginia         |   2 |  23 |   0 |   5 |   1 |   9 |    **40** |
-| Mississippi      |   0 |   0 |   4 |   6 |   0 |  20 |    **30** |
-| Smaller (8 sts)  |   9 |   8 |   5 |   1 |   2 |  16 |    **41** |
-| **Total**        | **123** | **119** | **48** | **39** | **25** | **251** | **605** |
+Per-state distribution (top 20 states by image count):
 
-The eight smaller states (New York, Louisiana, Delaware, South
-Carolina, Connecticut, Georgia, Florida, Kansas) each contribute
-fewer than 12 Tomato images. North Carolina alone supplies 45% of
-the training images, and four classes — Tomato Spotted Wilt Virus
-(TSWV), Late Blight, Early Blight, Leaf Mould — account for 71% of
-the total. This concentration is the data-imbalance reality the
-classifier has to handle; it's also why the Phase 2 regional deltas
-are dominated by a few states (NC, KY, AL, ME, VA) and most other
-states will end up with empty regional blocks for now.
+| State            | Images | State            | Images |
+|------------------|---:|------------------|---:|
+| North Carolina   | 3,771 | New York         |   204 |
+| Maine            | 2,047 | Oregon           |   177 |
+| Kentucky         |   786 | Iowa             |   175 |
+| California       |   756 | Arizona          |   170 |
+| Alabama          |   444 | Indiana          |   161 |
+| Virginia         |   302 | Louisiana        |   144 |
+| Colorado         |   279 | Mississippi      |   142 |
+| Florida          |   279 | Georgia          |   136 |
+| Wisconsin        |   127 | Montana          |   109 |
+| Idaho            |   104 | South Carolina   |   104 |
+
+Per-crop distribution (top 15 crops by image count, out of 197 total):
+
+| Crop          | Images | Crop          | Images |
+|---------------|---:|---------------|---:|
+| Cucumber      |   672 | Wheat         |   382 |
+| Sweet Potato  |   618 | Melon         |   362 |
+| Tomato        |   605 | Corn          |   265 |
+| Watermelon    |   594 | Potato        |   252 |
+| Squash        |   529 | Pepper        |   242 |
+| Soybean       |   397 | Hops          |   222 |
+| Lettuce       |   386 | Oak           |   185 |
+| Strawberry    |   177 |               |       |
+
+Per-class size distribution (484 (crop, disease) classes total):
+
+| Class size  | # of classes |
+|-------------|---:|
+| 10–19 images   | 320 |
+| 20–49 images   | 126 |
+| 50–99 images   |  28 |
+| 100–199 images |   8 |
+| ≥200 images    |   2 |
+
+The dataset is **heavy-tailed**: 66% of classes have fewer than 20
+images, the median class size is in the teens, and the top two states
+(North Carolina + Maine) supply 50% of all photographs. This
+imbalance is the central data reality the classifier has to handle.
 
 ### PlantVillage (evaluation set, lab cutouts — easy OOD)
 
 The widely used PlantVillage benchmark — controlled studio
 photographs of single leaves on uniform backgrounds. The full dataset
-has **38 classes across 14 crops and 54,306 images**; the Tomato
-slice has **10 classes and 18,160 images**. Per-class breakdown for
-the Tomato slice (counts from the canonical PV release):
+has **38 classes across 14 crops and 54,306 images** in the canonical
+release. Per-crop class breakdown:
 
-| PV class                            | Images | In PathomeDB | Prototype source |
-|-------------------------------------|---:|:--:|:--|
-| Tomato Bacterial Spot               | 2,127 | no  | zero-shot prompt |
-| Tomato Early Blight                 | 1,000 | yes | KB block |
-| Tomato Late Blight                  | 1,909 | yes | KB block |
-| Tomato Leaf Mold                    |   952 | yes | KB block |
-| Tomato Septoria Leaf Spot           | 1,771 | yes | KB block |
-| Tomato Spider Mites (Two-spotted)   | 1,676 | no  | zero-shot prompt |
-| Tomato Target Spot                  | 1,404 | no  | zero-shot prompt |
-| Tomato Yellow Leaf Curl Virus       | 5,357 | no  | zero-shot prompt |
-| Tomato Mosaic Virus                 |   373 | no  | zero-shot prompt |
-| Tomato healthy                      | 1,591 | template | synthetic healthy prompt |
-| **Total**                           | **18,160** | 4 KB + 1 template | |
+| Crop        | Classes |     | Crop        | Classes |
+|-------------|---:|---|-------------|---:|
+| Tomato      | 10 |   | Cherry      |  2 |
+| Apple       |  4 |   | Peach       |  2 |
+| Corn        |  4 |   | Bell Pepper |  2 |
+| Grape       |  4 |   | Strawberry  |  2 |
+| Potato      |  3 |   | Blueberry   |  1 |
+|             |    |   | Orange      |  1 |
+|             |    |   | Raspberry   |  1 |
+|             |    |   | Soybean     |  1 |
+|             |    |   | Squash      |  1 |
 
-The "In PathomeDB" column drives the KB-known vs zero-shot split in
-the evaluation. Four of the ten Tomato classes have a full KB
-profile from Phase 1+2 (so the classifier has both training images
-*and* a rich KB prototype). Five classes fall back to a one-line
-synthesised prompt at evaluation time (no KB block, no training
-images — pure zero-shot through the SigLIP-2 text geometry). The
-healthy class uses the synthetic healthy template.
+Each PV class is one of three *kinds*: a disease (most classes), a
+healthy reference (14 classes — one per crop except where the crop
+only has a healthy version), or a pest (1 class — Tomato Spider
+Mites). Per-class image counts range from a few hundred (e.g.
+Tomato Mosaic Virus ≈ 373) to several thousand (e.g. Tomato Yellow
+Leaf Curl Virus ≈ 5,357) in the canonical release; the dataset is
+heavily biased toward common diseases of staple crops.
+
+At evaluation time each PV class is mapped to either a **KB
+prototype** (the class has a full PathomeDB entry from Phase 1+2),
+a **synthetic healthy template** (for the 14 healthy classes, since
+extension literature only describes diseases), or a **one-line
+zero-shot prompt** (for classes with no KB entry). The KB-known vs
+zero-shot split is reported per class in the evaluation output.
 
 ### PlantWild (evaluation set, in-the-wild — hard OOD)
 
 A separately collected in-the-wild benchmark with **89 classes**
 split into **56 diseased + 33 healthy** classes (PlantWild paper,
-Figure 3). Per-class image counts are **highly imbalanced**: the
-largest class has 589 images, the smallest has 44, with most classes
-between 100 and 300. The dataset is heavy-tailed; the long tail of
-small classes is where in-the-wild OOD generalization is hardest.
+Figure 3). Per-class image counts are highly imbalanced: the largest
+class has **589 images**, the smallest has **44**, and most classes
+fall between 100 and 300. The dataset is heavy-tailed; the long tail
+of small classes is where in-the-wild OOD generalization is hardest.
 
 Images are taken in real field conditions — cluttered backgrounds,
 variable lighting, non-isolated leaves, smartphone capture — making
-this the harder of the two evaluation sets. The Tomato slice covers
-roughly the same disease vocabulary as PlantVillage (Early Blight,
-Late Blight, Leaf Mold, Septoria Leaf Spot, Bacterial Spot, Target
-Spot, Yellow Leaf Curl Virus, Mosaic Virus, healthy, and a generic
-"tomato leaf" healthy bucket); per-class image counts are read
-directly from the dataset root at evaluation time, since the
-released folder layout is what the loader operates on.
-
-The 4 vs 5 KB-known vs zero-shot split that holds for PlantVillage
-Tomato classes carries over to PlantWild — the same 4 Tomato classes
-have full KB profiles, the same 5 fall back to zero-shot prompts.
+this the harder of the two evaluation sets. The class vocabulary
+overlaps PlantVillage but is broader (89 vs 38 classes); many of
+PlantWild's classes are not in PathomeDB at all, so the proportion
+of zero-shot prompts is higher on PW than on PV. The same KB vs
+zero-shot mapping applies — classes with a KB entry get the rich
+KB-derived prototype, classes without one fall back to a one-line
+synthesized prompt assembled from the (crop, disease) folder name.
 
 ### Why both PlantVillage and PlantWild
 
@@ -149,13 +170,13 @@ never seen?" — but at different difficulties.
   the easier shift and tests style-invariance.
 - **PlantWild** shifts the *collection itself* (Bugwood field photos
   → a different in-the-wild dataset). The visual style is closer to
-  Bugwood but the photographer pool, camera distribution, and
-  geographic coverage are different. It is the harder shift and
-  tests collection-invariance.
+  Bugwood but the photographer pool, camera distribution, geographic
+  coverage, and class vocabulary are different. It is the harder
+  shift and tests collection-invariance.
 
 The KB-known vs zero-shot per-class split is reported on both,
 isolating how much of any accuracy gap is due to the model having a
-KB prototype for the class versus going through the synthesised
+KB prototype for the class versus going through the synthesized
 fallback prompt.
 
 ---
