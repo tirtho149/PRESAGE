@@ -58,6 +58,50 @@ extraction.
 
 ---
 
+## Quickstart (Nova)
+
+```bash
+# 0. one-time GPU-host install (see "GPU host only" section at the bottom
+#    of requirements.txt for the full list of CUDA-side deps)
+pip install -r requirements.txt
+pip install torch open_clip_torch webdataset huggingface_hub
+
+# 1. (prereq) Phase 0R must populate regional_observations in the KB so
+#    delta-based captions work for KB-covered classes.
+sbatch --wait scripts/submit_phase0r_regional.sh
+
+# 2. Build captions + WebDataset shards for every variant strategy.
+#    --crop is omitted on purpose: captions span ALL Bugwood crops, with
+#    KB-rich text for the 25 KB-covered classes and a minimal fallback
+#    ("A field photograph of {crop} affected by {disease}.") for the rest.
+for s in label_only summary_only canonical_full \
+         canonical_deltas_1 canonical_deltas_3 \
+         canonical_deltas_5 canonical_deltas_7; do
+  python scripts/build_pathomeood_captions.py --strategy "$s"
+  python scripts/build_pathomeood_shards.py \
+    --captions data/bugwood_captions/all_${s}.parquet \
+    --out-dir  data/wds_shards/all_${s}
+done
+
+# 3. Train the 11-variant matrix (T01..T11). Each variant warm-starts from
+#    BioCLIP, trains projectors only, 50 epochs, ~30-60 min per variant
+#    on one A100.
+CROP=all bash scripts/submit_pathomeood_matrix.sh
+
+# 4. Eval suite on PV/PD/PW + Bugwood held-out retrieval + few-shot.
+#    Also pulls 5 off-shelf baselines (CLIP, SigLIP, FG-CLIP, BioTrove-CLIP,
+#    BioCLIP, BioCLIP-2) for comparison. imageomics/biocap is intentionally
+#    excluded — see scripts/fetch_baselines.py for the reasoning.
+python scripts/setup_plantdoc.py
+python scripts/fetch_baselines.py
+bash scripts/e2e_nova.sh   # phases 5-7 (eval + table aggregation + push)
+```
+
+The master report lands at `results/pathomeood_report.md`. Skipped paper
+tables (5, 7, 11, 14, 15, 16, 21) are listed there with reasons.
+
+---
+
 ## Where each phase runs
 
 | Phase  | Host             | What it needs                                       | Compute        |

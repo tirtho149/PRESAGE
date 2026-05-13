@@ -1,13 +1,14 @@
 # PlantSwarm runtime dependencies.
 # Pipeline:
-#   Phase 0       pathome_kb     — Claude-driven canonical KB build (LOCAL)
-#   Phase 0R      plantswarm     — Qwen-swarm regional delta extraction
-#                                  (needs an OpenAI-compatible vLLM endpoint
-#                                   serving Qwen2.5-VL-7B-Instruct)
-#   Phase OBSERVE observe        — Qwen2.5-VL-7B + LoRA student trained on
-#                                  Phase 0R traces (skip the N-trace swarm
-#                                  at inference; A100-class GPU host)
+#   Phase 0          pathome_kb        — Claude-driven canonical KB build (LOCAL)
+#   Phase 0R         plantswarm        — Qwen-swarm regional delta extraction
+#                                        (needs an OpenAI-compatible vLLM
+#                                         endpoint serving Qwen2.5-VL-7B-Instruct)
+#   Phase PathomeOOD train_and_eval    — BioCLIP-init two-projector CLIP trained
+#                                        on Bugwood with KB-grounded captions
+#                                        (A100/H100-class GPU host)
 
+# ---- LOCAL + light GPU host installs --------------------------------------
 # Setup + image cache
 numpy>=1.24.0
 Pillow>=10.0.0
@@ -23,13 +24,23 @@ tqdm>=4.66.0
 # Config loading
 pyyaml>=6.0
 
-# Phase 0R server + Phase OBSERVE training (CUDA-only; install on the GPU
-# host, not the client). Uncomment to install:
-#   vllm>=0.4.0
-#   transformers>=4.40.0
-#   torch>=2.1.0
-#   peft>=0.4.0
-#   accelerate>=0.30.0
+# Captions parquet + paper-table aggregation
+pandas>=2.0.0
+pyarrow>=14.0.0
 
 # Tests
 pytest>=7.0.0
+
+
+# ---- GPU host only --------------------------------------------------------
+# Install these on Nova / any A100-class host. Kept under a comment so the
+# laptop venv can `pip install -r requirements.txt` without dragging in CUDA.
+#
+#   vllm>=0.4.0                # Phase 0R: Qwen2.5-VL-7B server
+#   torch>=2.1.0               # PathomeOOD: training + eval
+#   transformers>=4.40.0
+#   accelerate>=0.30.0
+#   open_clip_torch>=2.29.0    # CLIP factory + tokenizer (lib that
+#                              # train_and_eval/open_clip/ is forked from)
+#   webdataset>=0.2.86         # tar-shard streaming during training
+#   huggingface_hub>=0.24.0    # HF hub init (e.g. imageomics/bioclip)
