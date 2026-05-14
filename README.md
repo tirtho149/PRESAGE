@@ -284,6 +284,25 @@ results/pathomeood_report.md                        paper-style master report
 | 4 | NOVA | `sh_04_train_encoder_nova.sh` | BioCAP-style ViT-B/16 dual-projector CLIP encoder fine-tuned on Bugwood + KB-grounded captions (warm-started from BioCLIP) |
 | 5 | LOCAL | `sh_05_tabpfn_local.sh` | 7 frozen encoders (6 off-shelf + your step-4 trained one) emit image_emb + KB-caption_emb + crop_text_emb + state_text_emb; TabPFN classifies; Grad-CAM; eval on PV / PD / PW |
 
+Each step script does its own `git pull --ff-only` at the start and
+`git push` at the end, so a normal end-to-end run never needs the
+helpers below. They exist for manual hand-offs — e.g. after a step
+crashes mid-run, or when you want to refresh Nova before sbatching:
+
+| Direction | Script | What |
+|---|---|---|
+| LOCAL → GitHub or NOVA → GitHub | `sh_push_to_github.sh` | Stage relevant artifacts (KB, judgement, results, figures, tables, usable CSV) + commit + push. `PATHOME_PUSH_PATHS=...` to override the glob list, `COMMIT_MSG=...` for the message, `PATHOME_DRY_RUN=1` to preview. |
+| GitHub → LOCAL or GitHub → NOVA | `sh_pull_from_github.sh` | Fast-forward `git pull`. Refuses to clobber uncommitted local edits (tells you to commit / stash first). |
+
+```bash
+# Push current state to GitHub (from either host):
+bash scripts/sh_push_to_github.sh
+COMMIT_MSG="hand-off after partial swarm run" bash scripts/sh_push_to_github.sh
+
+# Pull on the other host:
+bash scripts/sh_pull_from_github.sh
+```
+
 ---
 
 ## Skip-knobs (re-run only some steps)
@@ -659,6 +678,8 @@ PlantSwarm/
 │   │                                       encoder fine-tune
 │   ├── sh_05_tabpfn_local.sh              STEP 5 — LOCAL: frozen-encoder
 │   │                                       forward + TabPFN + Grad-CAM + push
+│   ├── sh_push_to_github.sh               manual hand-off: LOCAL/NOVA → GitHub
+│   ├── sh_pull_from_github.sh             manual hand-off: GitHub → LOCAL/NOVA
 │   ├── validate_kb.py                     step-3 driver (Claude verifier)
 │   │
 │   ├── build_pathomeood_captions.py       KB → captions parquet
