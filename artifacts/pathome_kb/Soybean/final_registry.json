@@ -1,0 +1,1123 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Cercospora Blight",
+      "pathogen_scientific_name": {
+        "value": "Cercospora kikuchii",
+        "url": "https://extension.umn.edu/soybean-pest-management/cercospora-leaf-blight-and-purple-seed-stain-soybean",
+        "quote": "Cercospora leaf blight is caused by the fungus  Cercospora kikuchii .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.umn.edu/soybean-pest-management/cercospora-leaf-blight-and-purple-seed-stain-soybean",
+        "quote": "Cercospora leaf blight is caused by the fungus  Cercospora kikuchii ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Pod",
+          "Seed"
+        ],
+        "url": "https://extension.umn.edu/soybean-pest-management/cercospora-leaf-blight-and-purple-seed-stain-soybean",
+        "quote": "Reddish-purple lesions may also occur on petioles, stems, and pods."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Light purple spots and areas develop on the top surface of leaves and expand to reddish-purple or bronze; infected leaves appear leathery and 'sunburned,' with red-brown spots that may coalesce into large necrotic areas leading to defoliation.",
+          "url": "https://extension.umn.edu/soybean-pest-management/cercospora-leaf-blight-and-purple-seed-stain-soybean",
+          "quote": "The first symptom of Cercospora leaf blight is the development of light purple spots and areas on the top surface of leaves exposed to light. The discolored areas expand and deepen in color to a reddish-purple or bronze. The infected leaves appear leathery and 'sunburned'. Red-brown spots may develop on both leaf surfaces. The spots may coalesce to form large necrotic areas on leaves, which eventually results in defoliation of infected leaves in the upper canopy."
+        },
+        "diagnostic_features": {
+          "value": "Purplish or bronzed discoloration on the uppermost leaves with a leathery, shiny appearance, typically during the late reproductive stages (R5-R6); reddish-purple lesions also occur on petioles, stems, and pods.",
+          "url": "https://www.ndsu.edu/agriculture/extension/publications/cercospora-leaf-blight-and-purple-seed-stain-soybean",
+          "quote": "The most distinctive symptom of CLB is the purplish or bronzed discoloration that appears on the uppermost leaves of infected plants, typically during the late reproductive stages (R5-R6). This discoloration gives the affected leaves a leathery, shiny appearance."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant pathogen-free seed and partially resistant varieties with low susceptibility",
+          "Crop rotation with nonhost crops (such as corn or small grains)",
+          "Tillage to break down soybean residue and reduce inoculum",
+          "Foliar fungicide applications",
+          "Seed treatment fungicides to protect seed lots intended for planting",
+          "Regular scouting and field monitoring during reproductive stages"
+        ],
+        "url": "https://www.ndsu.edu/agriculture/extension/publications/cercospora-leaf-blight-and-purple-seed-stain-soybean",
+        "quote": "Managing CLB requires an integrated approach, combining cultural practices, resistant varieties and fungicide applications. ... some varieties show partial resistance to CLB and purple seed stain. ... crop rotation with nonhost crops (such as corn or small grains) can help reduce inoculum levels in the field. Additionally, practices like tillage can help break down soybean residue ... Fungicides can be an effective tool for managing CLB ... Regular scouting is critical for early detection of CLB. ... seed treatments may be necessary to protect seed lots intended for planting."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem, Pod, Seed (union)",
+          "alternative_value": "UMN reports Foliar, Stem, Pod; NDSU reports Foliar, Seed",
+          "alternative_source_url": "https://www.ndsu.edu/agriculture/extension/publications/cercospora-leaf-blight-and-purple-seed-stain-soybean",
+          "note": "Sources provide complementary rather than contradictory information; union taken as canonical."
+        }
+      ]
+    },
+    {
+      "disease_name": "Charcoal Rot",
+      "pathogen_scientific_name": {
+        "value": "Macrophomina phaseolina",
+        "url": "https://content.ces.ncsu.edu/soybean-charcoal-rot",
+        "quote": "Charcoal rot, caused by the soil- and seed-borne fungus Macrophomina phaseolina",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://content.ces.ncsu.edu/soybean-charcoal-rot",
+        "quote": "Macrophomina phaseolina is an Ascomycete fungus."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Root",
+          "Pod",
+          "Vascular"
+        ],
+        "url": "https://content.ces.ncsu.edu/soybean-charcoal-rot",
+        "quote": "At the seedling stage, typical symptoms include , brown to dark spots on cotyledons. At the unifoliate leaf stage (VC), circular to oblong, reddish-brown, lesions that eventually turn dark brown to black may be observed. Mid to late season aboveground symptoms include light brown to grey superficial lesions in the stem. A characteristic sign of the pathogen on soybean is the presence of microsclerotia in the vascular tissue, in the pith, and mature and dry pods. Cross-sections of the lower stem and taproot may become streaked with gray hyphae and microsclerotia"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Infected plants are wilted and stunted with small leaflets that turn brown; brown to dark spots appear on cotyledons at seedling stage, reddish-brown to black lesions on unifoliate leaves, and light brown to grey superficial lesions on stems mid to late season, with reddish-brown discoloration in the pith and vascular tissues.",
+          "url": "https://extension.umn.edu/pest-management/charcoal-rot-soybean",
+          "quote": "Infected plants may die prematurely and are often wilted and stunted ... leaflets on infected plants may be small and ultimately wilt and turn brown. The taproot and lower stem may become streaked with light gray. Small black specks may form beneath the epidermis and inside the lower stem and taproot to give them a charcoal-sprinkled appearance. Reddish-brown discoloration can also develop in the pith and vascular tissues of the root and stem."
+        },
+        "diagnostic_features": {
+          "value": "Small black specks (microsclerotia) form beneath the epidermis and inside the lower stem and taproot, giving them a charcoal-sprinkled, marbled appearance; microsclerotia also present in vascular tissue, pith, and mature and dry pods.",
+          "url": "https://content.ces.ncsu.edu/soybean-charcoal-rot",
+          "quote": "A characteristic sign of the pathogen on soybean is the presence of microsclerotia in the vascular tissue, in the pith, and mature and dry pods. Cross-sections of the lower stem and taproot may become streaked with gray hyphae and microsclerotia, giving a marbled appearance"
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Manage fields to reduce or avoid drought stress (drought-stress mitigation through irrigation when needed)",
+          "Crop rotation with non-hosts or crops with relatively low susceptibility (such as cereal grains) to limit fungal survival in soils",
+          "Reduced tillage may reduce charcoal rot, perhaps due to cooler soils and less moisture stress",
+          "Reduced seeding rates may reduce drought stress and charcoal rot",
+          "Soybean cultivars may exhibit different levels of susceptibility, but none are fully resistant",
+          "Fungicides are not typically recommended for managing charcoal rot"
+        ],
+        "url": "https://extension.umn.edu/pest-management/charcoal-rot-soybean",
+        "quote": "Manage fields to reduce or avoid drought stress. Reduced tillage may reduce charcoal rot, perhaps due to cooler soils and less moisture stress. Rotation with crops that have relatively low susceptibility to charcoal rot, such as cereal grains, may be beneficial. Reduced seeding rates may also reduce drought stress and charcoal rot. Soybean cultivars may exhibit different levels of susceptibility, but none are fully resistant to this disease."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Downy Mildew",
+      "pathogen_scientific_name": {
+        "value": "Peronospora manshurica",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-soybean",
+        "quote": "Downy mildew is caused by the oomycete Peronospora manshurica .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Oomycete",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-soybean",
+        "quote": "Downy mildew is caused by the oomycete Peronospora manshurica ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Pod",
+          "Seed"
+        ],
+        "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-soybean",
+        "quote": "Lesions occur on upper leaf surfaces as irregularly shaped, pale green to light yellow spots ... Downy mildew-infected pods show no external symptoms, but the inside of the pod and seed may be covered with a dried, whitish fungal mass"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Irregularly shaped pale green to light yellow spots appear on upper leaf surfaces, enlarging into pale to bright yellow spots; older lesions turn brown with yellow-green margins and eventually become necrotic spots; fuzzy, gray tufts may be visible on the leaf underside.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-soybean",
+          "quote": "Lesions occur on upper leaf surfaces as irregularly shaped, pale green to light yellow spots that enlarge into pale to bright yellow spots. Older lesions turn brown with yellow-green margins. ... On the leaf underside, fuzzy, gray tufts may be seen growing from lesions"
+        },
+        "diagnostic_features": {
+          "value": "Fuzzy, gray tufts (sporulation) growing from lesions on the leaf underside, particularly when humidity is high or leaves are wet (e.g., early in the morning); infected seeds may be smaller, dull white, with cracks in the seed coat, and the inside of the pod can be covered with a dried, whitish crusty fungal mass.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-soybean",
+          "quote": "On the leaf underside, fuzzy, gray tufts may be seen growing from lesions, particularly when humidity is high or leaves are wet (e.g., early in the morning). ... Infected seed can be smaller, appear dull white and have cracks in the seed coat."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant resistant varieties — many sources of resistance are available",
+          "Crop rotation",
+          "Burial of infested crop residue to reduce pathogen levels",
+          "Typically no fungicide management is warranted; most foliar fungicides available for soybeans are not labeled for downy mildew and have very limited effect"
+        ],
+        "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-soybean",
+        "quote": "Many sources of resistance are available. Crop rotation and burial of infested crop residue can reduce pathogen levels."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Bacterial Pustule Of Soybean Disease",
+      "pathogen_scientific_name": {
+        "value": "Xanthomonas axonopodis pv. glycines",
+        "url": "https://cropwatch.unl.edu/plant-disease/soybean/bacterial-pustule/",
+        "quote": "Bacterial pustule is caused by the bacterium Xanthomonas axonopodis pv. glycines .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://cropwatch.unl.edu/plant-disease/soybean/bacterial-pustule/",
+        "quote": "Bacterial pustule is caused by the bacterium Xanthomonas axonopodis pv. glycines ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Pod"
+        ],
+        "url": "https://soybeanresearchinfo.com/soybean-disease/bacterial-pustule/",
+        "quote": "Light-colored, raised blisters (pustules) often develop in the center of lesions on both the upper and lower surface of leaves. The lesions can grow together into large, irregular patches of dead tissue. Loss of tissue in the infected areas may give the leaves a ragged appearance like bacterial blight. Small raised spots may also develop on pods."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Symptoms begin as small, light green spots without water-soaking, with light-colored, raised blisters (pustules) developing in the center of lesions on both upper and lower surfaces of leaves; lesions may coalesce into large, irregular patches of dead tissue and small raised spots may also develop on pods.",
+          "url": "https://soybeanresearchinfo.com/soybean-disease/bacterial-pustule/",
+          "quote": "Symptoms begin as small, light green spots (without water-soaking). Light-colored, raised blisters (pustules) often develop in the center of lesions on both the upper and lower surface of leaves. The lesions can grow together into large, irregular patches of dead tissue. Loss of tissue in the infected areas may give the leaves a ragged appearance like bacterial blight. Small raised spots may also develop on pods."
+        },
+        "diagnostic_features": {
+          "value": "Bacterial pustule lesions lack the opening on top and spores that mature soybean rust pustules have; if an opening is present, it is typically a linear crack across the surface of the pustule (visible only under 20X magnification). Unlike bacterial blight, bacterial pustule lesions do not appear water soaked and will have raised centers.",
+          "url": "https://cropwatch.unl.edu/plant-disease/soybean/bacterial-pustule/",
+          "quote": "Bacterial pustule lesions lack the opening on top and spores. If an opening is present, it is typically a linear crack across the surface of the pustule. These features can only be seen under magnification (20X or higher recommended). Bacterial pustule symptoms are also similar to those of bacterial blight but lesions do not appear water soaked and will have raised centers."
+        },
+        "look_alikes": {
+          "value": [
+            "soybean rust",
+            "bacterial blight"
+          ],
+          "url": "https://cropwatch.unl.edu/plant-disease/soybean/bacterial-pustule/",
+          "quote": "This disease can easily be confused with soybean rust. Mature soybean rust pustules have a small opening at the top for spore release. Bacterial pustule lesions lack the opening on top and spores... Bacterial pustule symptoms are also similar to those of bacterial blight but lesions do not appear water soaked and will have raised centers."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant resistant varieties in fields with a history of the disease",
+          "Use disease-free, certified seed since the disease can be seed borne",
+          "Crop rotation to avoid inoculum from a previously infected crop; rotate fields out of soybeans until all infested debris has decomposed",
+          "Incorporate crop residue by tillage to reduce inoculum (where soil erosion is not an issue)",
+          "Limit cultivation/scouting to times when foliage is dry to prevent the spread of disease",
+          "Foliar fungicides are not effective against bacterial pustule because it is caused by a bacterial pathogen, not a fungus"
+        ],
+        "url": "https://soybeanresearchinfo.com/soybean-disease/bacterial-pustule/",
+        "quote": "There are high levels of resistance to bacterial pustule in most soybean varieties. Should bacterial pustule develop in a field, a note of the variety should be made, and it should be replaced in future years with resistant ones. Since the disease can be seed borne, it is important to use disease-free, certified seed. If a field develops bacteria pustule, it should be rotated out of soybeans until all infested debris has decomposed. Tillage can shorten the length of rotation where soil erosion is not an issue. Avoid moving equipment through fields or scouting when the foliage is wet. Foliar fungicides are not effective against bacterial pustule because it is caused by a bacterial pathogen, not a fungus."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Xanthomonas axonopodis pv. glycines",
+          "alternative_value": "Xanthomonas campestris pv. glycines",
+          "alternative_source_url": "https://soybeanresearchinfo.com/soybean-disease/bacterial-pustule/",
+          "note": "Both sources are extension/research network (equal authority rank 5). 'X. campestris pv. glycines' is the older taxonomic designation; 'X. axonopodis pv. glycines' is the more recent reclassification. No taxonomy validation was provided in input."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Pod",
+          "alternative_value": "Foliar",
+          "alternative_source_url": "https://cropwatch.unl.edu/plant-disease/soybean/bacterial-pustule/",
+          "note": "UNL CropWatch describes only foliar symptoms ('typically present on the upper leaves'); soybeanresearchinfo additionally documents pod symptoms ('Small raised spots may also develop on pods'). Union taken."
+        }
+      ]
+    },
+    {
+      "disease_name": "Brown Stem Rot",
+      "pathogen_scientific_name": {
+        "value": "Cadophora gregata",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/brown-stem-rot-of-soybean",
+        "quote": "Brown stem rot (BSR) is caused by the fungus Cadophora gregata .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/brown-stem-rot-of-soybean",
+        "quote": "Brown stem rot (BSR) is caused by the fungus Cadophora gregata ."
+      },
+      "affected_parts": {
+        "value": [
+          "Stem",
+          "Foliar",
+          "Root",
+          "Vascular"
+        ],
+        "url": "https://extension.umn.edu/soybean-pest-management/brown-stem-rot-bsr-soybean",
+        "quote": "The BSR fungus infects through the roots and stem early in the growing season... BSR causes browning of the pith in the center of the stem... leaves may also develop brown and yellow discoloration between the veins."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Characteristic foliar symptoms include chlorosis and necrosis between leaf veins, followed by leaf curling and leaf death; externally infected stems look healthy but split stems show internal browning of vascular tissue and pith, especially at nodes and in the lower stem.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/brown-stem-rot-of-soybean",
+          "quote": "Characteristic foliar symptoms of BSR include chlorosis and necrosis between leaf veins, followed by leaf curling and leaf death. ... Externally, infected stems look healthy. However, when stems are split lengthwise, internal browning of vascular tissue and pith is evident, especially at nodes and in the lower stem."
+        },
+        "diagnostic_features": {
+          "value": "When stems are split lengthwise, internal browning of vascular tissue and pith is evident, especially at nodes and in the lower stem (pith is white in healthy stems); pith color in the lower stem differentiates BSR from sudden death syndrome (SDS).",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/brown-stem-rot-of-soybean",
+          "quote": "when stems are split lengthwise, internal browning of vascular tissue and pith is evident, especially at nodes and in the lower stem."
+        },
+        "look_alikes": {
+          "value": [
+            "sudden death syndrome (SDS)",
+            "stem canker"
+          ],
+          "url": "https://cropprotectionnetwork.org/encyclopedia/brown-stem-rot-of-soybean",
+          "quote": "Foliar symptoms can be similar to those of sudden death syndrome and stem canker and appear after early pod set."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use resistant soybean varieties (the most efficient way to manage BSR)",
+          "Crop rotation to non-host crops such as corn, small grains, and forage legumes will reduce pathogen levels",
+          "Many soybean varieties with PI 88788-derived SCN resistance also have BSR resistance, so SCN resistance may also help reduce BSR"
+        ],
+        "url": "https://cropprotectionnetwork.org/encyclopedia/brown-stem-rot-of-soybean",
+        "quote": "The pathogen has a limited host range, so crop rotation to a non-host crop (corn, small grains, and forage legumes) will reduce pathogen levels. The most efficient way to manage BSR is using resistant varieties. Soybean cyst nematode (SCN) breaks resistance to BSR in most BSR-resistant varieties. However, many soybean varieties with PI 88788-derived SCN resistance also have BSR resistance."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Cadophora gregata",
+          "alternative_value": "Phialophora gregata",
+          "alternative_source_url": "https://extension.umn.edu/soybean-pest-management/brown-stem-rot-bsr-soybean",
+          "note": "UMN Extension uses 'Phialophora gregata' but explicitly notes 'also named Cadophora gregata'; CPN uses 'Cadophora gregata' (the current accepted name) directly. Both sources confirm the synonymy; Cadophora gregata chosen as canonical."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Stem, Foliar, Root, Vascular",
+          "alternative_value": "Foliar, Stem, Vascular",
+          "alternative_source_url": "https://cropprotectionnetwork.org/encyclopedia/brown-stem-rot-of-soybean",
+          "note": "UMN documents root infection ('infects through the roots and stem early in the growing season'); CPN emphasizes foliar/stem/vascular. Union taken."
+        }
+      ]
+    },
+    {
+      "disease_name": "Bacterial Blight",
+      "pathogen_scientific_name": {
+        "value": "Pseudomonas syringae pv. glycinea",
+        "url": "https://content.ces.ncsu.edu/bacterial-blight-of-soybean",
+        "quote": "Pseudomonas syringae pv. glycinea is the causal agent of bacterial blight in soybean.",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/bacterial-blight-of-soybean",
+        "quote": "Bacterial blight is caused by Pseudomonas savastanoi pv. glycinea"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Pod",
+          "Seed"
+        ],
+        "url": "https://extension.umn.edu/soybean-pest-management/bacterial-blight-soybean",
+        "quote": "Bacterial blight can occur on all above ground plant parts, but is most evident on leaves in the mid to upper canopy. ... Infection can also occur on stems, petioles, pods, and seeds in infected pods."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Infections begin as small, angular, water-soaked spots that turn yellow and then brown as the tissue dies, surrounded by yellowish-green halos; spots often merge into large irregular dead patches, and the dead tissue may fall out giving leaves a ragged or tattered appearance.",
+          "url": "https://extension.umn.edu/soybean-pest-management/bacterial-blight-soybean",
+          "quote": "Infections begin as small, angular, water-soaked spots that turn yellow and then brown as the tissue dies. The spots darken and are surrounded by yellowish-green halos. Spots often merge to form large, dead patches on the leaves. The dead tissue may fall out giving the leaves a ragged appearance."
+        },
+        "diagnostic_features": {
+          "value": "Distinguished from Septoria brown spot by the presence of a yellow/yellowish-green halo around lesions and by the absence of fungal structures within lesions; bacterial blight is most common on young leaves in the upper canopy, whereas brown spot is typically seen on older, lower leaves.",
+          "url": "https://extension.umn.edu/soybean-pest-management/bacterial-blight-soybean",
+          "quote": "The two diseases can be distinguished by the presence of a halo around bacterial blight lesions. Both diseases can occur together on the same plants, but bacterial blight is most common on young leaves whereas brown spot is usually seen on older, lower leaves in the plant."
+        },
+        "look_alikes": {
+          "value": [
+            "Septoria brown spot (Septoria glycines)"
+          ],
+          "url": "https://content.ces.ncsu.edu/bacterial-blight-of-soybean",
+          "quote": "Bacterial blight closely resembles brown spot ( Septoria glycines )"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant resistant soybean varieties / cultivars not highly susceptible to the disease",
+          "Use pathogen-free (certified) seed",
+          "Rotate with non-host crops (alfalfa, corn, small grains)",
+          "Incorporate crop residue via tillage to reduce bacterial survival in debris (deep tillage in chronically affected fields)",
+          "Avoid field cultivation when foliage is wet to prevent spread",
+          "Copper fungicides labeled for bacterial blight, applied early in the disease cycle"
+        ],
+        "url": "https://extension.umn.edu/soybean-pest-management/bacterial-blight-soybean",
+        "quote": "Plant resistant soybean varieties and rotate with non-host crops. Always use pathogen-free seed. Field cultivation should be avoided when the foliage is wet. Deep tillage may help in the rare fields where this disease is frequently severe."
+      },
+      "confidence": "high",
+      "num_sources": 4,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Pseudomonas syringae pv. glycinea",
+          "alternative_value": "Pseudomonas savastanoi pv. glycinea",
+          "alternative_source_url": "https://cropprotectionnetwork.org/encyclopedia/bacterial-blight-of-soybean",
+          "note": "Crop Protection Network uses the more recent taxonomic placement of this pathovar within the P. savastanoi species group. NCSU and UMN extensions use the historically established P. syringae pv. glycinea. No taxonomy validation data was supplied to resolve the synonymy."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Pseudomonas syringae pv. glycinea",
+          "alternative_value": "Pseudomonas savastanoi",
+          "alternative_source_url": "https://cropwatch.unl.edu/plant-disease/soybean/bacterial-blight/",
+          "note": "UNL CropWatch lists only the species name (Pseudomonas savastanoi) without the pv. glycinea pathovar designation."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem, Pod, Seed",
+          "alternative_value": "Foliar only",
+          "alternative_source_url": "https://content.ces.ncsu.edu/bacterial-blight-of-soybean",
+          "note": "NCSU and Crop Protection Network describe symptoms only on foliage; UMN explicitly reports infection of stems, petioles, pods, and seeds; UNL adds cotyledon/whole-plant involvement in early-season infections."
+        }
+      ]
+    },
+    {
+      "disease_name": "Rhizoctonia Damping-Off, Blight And Rot",
+      "pathogen_scientific_name": {
+        "value": "Rhizoctonia solani",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/rhizoctonia-seedling-blight-and-root-rot-of-soybean",
+        "quote": "Rhizoctonia seedling blight and root rot is caused by the fungus Rhizoctonia solani .",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/rhizoctonia-seedling-blight-and-root-rot-of-soybean",
+        "quote": "caused by the fungus Rhizoctonia solani"
+      },
+      "affected_parts": {
+        "value": [
+          "Stem",
+          "Root",
+          "Whole plant"
+        ],
+        "url": "https://cropprotectionnetwork.org/encyclopedia/rhizoctonia-seedling-blight-and-root-rot-of-soybean",
+        "quote": "Infected seedlings have reddish-brown lesions on the hypocotyls at the soil line. ... The root rot phase may persist into late vegetative to early reproductive growth stages. ... Pre- and postemergence damping off can occur."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Pre- and postemergence damping off occurs; infected seedlings show sunken, firm, dry reddish-brown (rusty-brown) lesions on the hypocotyls/stems and roots near the soil line; lateral roots may decay; plants may become stunted, yellow, and may wilt, and may remain stunted even if they grow out of root rot.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/rhizoctonia-seedling-blight-and-root-rot-of-soybean",
+          "quote": "Pre- and postemergence damping off can occur. Infected seedlings have reddish-brown lesions on the hypocotyls at the soil line. These lesions are sunken and remain firm and dry. ... Symptoms may disappear if infected plants grow out of the root rot problems, although plants may remain stunted."
+        },
+        "diagnostic_features": {
+          "value": "Sunken, firm, dry rusty/reddish-brown lesions on stems (hypocotyls) and roots near the soil line; lesions can girdle the stem and kill or stunt plants.",
+          "url": "https://extension.umn.edu/soybean-pest-management/rhizoctonia-root-and-stem-rot-soybean",
+          "quote": "Rusty-brown, dry sunken lesions on stems and roots near the soil line are a characteristic symptom of  Rhizoctonia  infection."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Encourage seedling health with good agronomic practices and the use of high quality seed",
+          "Avoid or reduce plant stress, for example from herbicide injury and SCN infection",
+          "Crop rotation and tillage may be of value where disease has been severe",
+          "Fungicide seed treatments may reduce Rhizoctonia infection for a few weeks after planting",
+          "Soybean cultivars may have different levels of tolerance, but none are fully resistant"
+        ],
+        "url": "https://extension.umn.edu/soybean-pest-management/rhizoctonia-root-and-stem-rot-soybean",
+        "quote": "Encourage seedling health with good agronomic practices and the use of high quality seed. Avoid or reduce plant stress, for example from herbicide injury and SCN infection. Crop rotation and tillage may be of value where disease has been severe. Some seed treatment fungicides may reduce  Rhizoctonia  infection for a few weeks after planting. Soybean cultivars may have different levels of tolerance, but none are fully resistant to this disease."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Rhizoctonia root and stem rot",
+          "alternative_value": "Rhizoctonia Seedling Blight and Root Rot of Soybean",
+          "alternative_source_url": "https://cropprotectionnetwork.org/encyclopedia/rhizoctonia-seedling-blight-and-root-rot-of-soybean",
+          "note": "CPN includes the seedling blight phase in the name; canonical retains the shorter UMN form which is also used by APS Compendium nomenclature."
+        },
+        {
+          "field": "visual_symptoms.diagnostic_features.lesion_color",
+          "canonical_value": "rusty-brown (UMN) / reddish-brown (CPN)",
+          "alternative_value": "reddish-brown",
+          "alternative_source_url": "https://cropprotectionnetwork.org/encyclopedia/rhizoctonia-seedling-blight-and-root-rot-of-soybean",
+          "note": "Both descriptors refer to the same lesion appearance; merged in canonical summary."
+        }
+      ]
+    },
+    {
+      "disease_name": "Root And Stem Rot",
+      "pathogen_scientific_name": {
+        "value": "Phytophthora sojae",
+        "url": "https://content.ces.ncsu.edu/phytopthora-root-and-stem-rot-of-soybean",
+        "quote": "Phytophthora root and stem rot of soybean is caused by Phytophthora sojae .",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Oomycete",
+        "url": "https://content.ces.ncsu.edu/phytopthora-root-and-stem-rot-of-soybean",
+        "quote": "P. sojae is not a true fungus, but belongs to a group of fungal like organisms called oomycetes (water molds)."
+      },
+      "affected_parts": {
+        "value": [
+          "Seed",
+          "Root",
+          "Stem",
+          "Foliar",
+          "Vascular",
+          "Whole plant"
+        ],
+        "url": "https://content.ces.ncsu.edu/phytopthora-root-and-stem-rot-of-soybean",
+        "quote": "Infections begin in the roots and then spreads upward to the lower nodes of the plant. Plants may be stunted and chlorotic early in the disease cycle. The roots and lower stem turn a dark brown color, the leaves of the plant turn yellow and necrotic. ... As P. sojae colonizes the plant, the vascular system and lower stem tissues can occur on the lower stems."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Early season symptoms include seed rot and pre- and postemergence damping off. At seedling and later vegetative stages, infected stems appear bruised and soft with a dark chocolate-brown discoloration extending from below the soil line upward into lower parts of the plant, often reaching several nodes and girdling the stem; secondary roots rot, leaves turn yellow and wilt, plants may be stunted and chlorotic, and are often killed in patches or in sections of rows with wilted leaves typically staying attached after plant death.",
+          "url": "https://extension.umn.edu/soybean-pest-management/phytophthora-root-and-stem-rot-soybean",
+          "quote": "At seedling and later vegetative stages, infected stems appear bruised and are soft, secondary roots are rotted, the leaves turn yellow, and brown and plants can wilt and die... On infected plants, brown lesions form on the roots, the roots rot and degrade, and a dark chocolate-brown discoloration of the stem often extends from below the soil line upward into lower parts of the plant. Leaves turn yellow, wilt, and typically stay attached after plant death. Plants are often killed in patches or in sections of rows."
+        },
+        "diagnostic_features": {
+          "value": "A dark chocolate-brown lesion on the lower stem extending from below the soil line upward from the taproot, often reaching several nodes and girdling the stem; wilted leaves typically remain attached after plant death; plants killed in patches or sections of rows.",
+          "url": "https://extension.umn.edu/soybean-pest-management/phytophthora-root-and-stem-rot-soybean",
+          "quote": "a dark chocolate-brown discoloration of the stem often extends from below the soil line upward into lower parts of the plant. Leaves turn yellow, wilt, and typically stay attached after plant death. Plants are often killed in patches or in sections of rows."
+        },
+        "look_alikes": {
+          "value": [
+            "Pythium (seed and seedling damage)",
+            "Stem canker"
+          ],
+          "url": "https://extension.umn.edu/soybean-pest-management/phytophthora-root-and-stem-rot-soybean",
+          "quote": "It is important to recognize that Pythium is a related pathogen that causes similar damage and symptoms on seeds and seedlings... This disease can be confused with stem canker, which usually starts at a node and spreads up and down the stems of infected plants."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant resistant cultivars; widely effective Rps resistance genes include Rps 1c and 1k, with Rps 1a, Rps 3 and others also effective in some regions",
+          "Where Rps genes are overcome by local pathogen races, plant cultivars with high levels of field tolerance (partial resistance, polygenic)",
+          "Create field environment that reduces the likelihood of saturated soil by improving drainage where possible",
+          "Use seed treatments or soil-applied fungicides targeting oomycetes; mefenoxam (Apron XL) or metalaxyl (Apron) at the highest labeled rates are effective",
+          "Crop rotation and tillage may be of some benefit"
+        ],
+        "url": "https://extension.umn.edu/soybean-pest-management/phytophthora-root-and-stem-rot-soybean",
+        "quote": "Try to create a field environment that reduces the likelihood of saturated soil by taking steps to increase drainage where possible. Treatment of seed with the highest labeled rates of fungicidal compounds such as mefenoxam (Apron XL®) or metalaxyl (Apron®) can be beneficial. In all areas where Phytophthora root and stem rot has been a problem, resistant cultivars should be planted. The most common resistance genes that are widely effective are Rps 1c and 1k. Rps1a can be effective, but is not as effective in many areas as the other genes. Rps 3 and other genes can also be effective. For areas where the Rps genes are not working well due to the presence of pathogen races that overcome the resistance, cultivars with high levels of field tolerance (or partial resistance) should be planted. Crop rotation and tillage may be of some benefit."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "type_of_disease",
+          "canonical_value": "Oomycete",
+          "alternative_value": "fungal-like pathogen (descriptor only; no explicit type given)",
+          "alternative_source_url": "https://extension.umn.edu/soybean-pest-management/phytophthora-root-and-stem-rot-soybean",
+          "note": "UMN describes P. sojae as 'a fungal-like pathogen' without classifying it formally; NC State and CPN both explicitly classify it as an oomycete (water mold), which is canonical."
+        },
+        {
+          "field": "visual_symptoms.diagnostic_features.stem_color",
+          "canonical_value": "dark chocolate-brown (UMN)",
+          "alternative_value": "dark brown (NC State, CPN)",
+          "alternative_source_url": "https://cropprotectionnetwork.org/encyclopedia/phytophthora-root-and-stem-rot-of-soybean",
+          "note": "Descriptions refer to the same lesion; UMN gives the most specific color descriptor."
+        }
+      ]
+    },
+    {
+      "disease_name": "Frogeye Leaf Spot",
+      "pathogen_scientific_name": {
+        "value": "Cercospora sojina",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/frogeye-leaf-spot-of-soybean",
+        "quote": "Frogeye leaf spot is caused by the fungus Cercospora sojina .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/frogeye-leaf-spot-of-soybean",
+        "quote": "Frogeye leaf spot is caused by the fungus Cercospora sojina ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Pod",
+          "Seed"
+        ],
+        "url": "https://cropprotectionnetwork.org/publications/an-overview-of-cercospora-leaf-blight-of-soybean",
+        "quote": "Severe cases lead to premature leaf drop and can spread to stems and pods. The fungus that causes frogeye leaf spot may also cause purple petiole lesions (Figure 9) and infect seed."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Leaf lesions are small, irregular to circular, gray with reddish-brown borders, occurring most commonly on the upper leaf surface; lesions start as dark, water-soaked spots (generally 1-5 mm) and as they age the central area becomes gray to light brown with dark, red-brown margins; in severe cases the disease causes premature leaf drop and spreads to stems and pods.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/frogeye-leaf-spot-of-soybean",
+          "quote": "Leaf lesions are small, irregular to circular in shape, and gray with reddish-brown borders. Most commonly occurring on the upper leaf surface, lesions start as dark, water-soaked spots that vary in size. As lesions age, the central area becomes gray to light brown with dark, red-brown margins."
+        },
+        "diagnostic_features": {
+          "value": "Reddish-purple margins surround the gray centers on mature lesions; on some varieties, lesions may have light green to yellow halos; fuzzy, gray sporulation (conidia) can occur in lesions on the leaf underside; small black dots that resemble fine ground pepper (fungal spores) may be visible in the middle of lesions. Stem lesions are elongated gray with purple margins; pod lesions are circular, gray with purple margins.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/frogeye-leaf-spot-of-soybean",
+          "quote": "Reddish purple margins surround the gray centers on mature frogeye leaf spot lesions. ... On some soybean varieties, frogeye leaf spot lesions may have light green to yellow halos. Fuzzy, gray sporulation (conidia) can sometimes occur in lesions on the leaf underside."
+        },
+        "look_alikes": {
+          "value": [
+            "Cercospora leaf blight"
+          ],
+          "url": "https://cropprotectionnetwork.org/publications/an-overview-of-cercospora-leaf-blight-of-soybean",
+          "quote": "How to distinguish frogeye leaf spot from CLB: The foliar phase of FLS is usually severe and easily distinguishable from CLB when FLS petiole lesions occur."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant resistant soybean varieties (varieties with resistance to all known races are available)",
+          "Rotate to non-host crops (e.g., corn, sorghum, wheat, alfalfa, small grains) to reduce survival of C. sojina",
+          "Tillage / deep tillage to encourage breakdown of crop debris and reduce fungal overwintering",
+          "Plant certified, disease-free seed to reduce seedborne infections",
+          "Apply foliar fungicides between R3 and R5 growth stages (late flowering to pod filling)",
+          "Avoid strobilurin (QoI) fungicides as solo applications due to widespread fungicide resistance",
+          "Rotate fungicide chemistries or use products with multiple modes of action when spraying multiple times per season"
+        ],
+        "url": "https://content.ces.ncsu.edu/frogeye-leaf-spot-of-soybean-1",
+        "quote": "Crop rotation with non-host crops (e.g. corn, sorghum, wheat) is encouraged to limit fungal build-up in the field. Practices that encourage the breakdown of crop debris (tillage, deep tillage) help to reduce fungal overwintering. While seed infections are rare, planting certified, disease-free seed may reduce the potential for seedborne infections. Host resistance is the most economical way to reduce losses from FLS. ... Fungicide applications are most effective between R3 and R5 growth stages. Fungicide resistant FLS populations have been identified broadly in North Carolina, and strobilurin fungicides should be avoided as solo applications. To reduce losses of control, rotate fungicide chemistries when spraying multiple times within a season or use a fungicide with multiple modes of action."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Septoria Leaf Spot",
+      "pathogen_scientific_name": {
+        "value": "Septoria glycines",
+        "url": "https://extension.umn.edu/soybean-pest-management/septoria-brown-spot",
+        "quote": "Septoria glycines is a fungus that survives on crop residue and may be seed transmitted.",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://content.ces.ncsu.edu/brown-spot-of-soybean",
+        "quote": "caused by the fungal pathogen Septoria glycines ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://extension.umn.edu/soybean-pest-management/septoria-brown-spot",
+        "quote": "Septoria brown spot (also called brown spot) is common leaf disease of soybean across the Midwestern U.S."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Initial symptoms are small dark brown spots (less than 1/8 inch) on lower leaves that enlarge and grow together into irregular brown areas, often associated with yellow patches concentrated more on one side of the leaf than another; light to dark brown necrotic regions develop on lower leaves with chlorosis surrounding the necrotic region, and defoliation of lower and middle canopy can occur in severe cases.",
+          "url": "https://extension.umn.edu/soybean-pest-management/septoria-brown-spot",
+          "quote": "Initial symptoms are small dark brown spots (less than 1/8 inch in size). It can develop on the first true leaves early in the season. The brown spots often enlarge and grow together into irregular brown areas, which often are associated with yellow patches concentrated more on one side of the leaf than another."
+        },
+        "diagnostic_features": {
+          "value": "The brown areas can contain tiny raised specks called pycnidia (visible with a hand lens) where spores are produced; infection usually begins in the lower and middle canopy and may progress upward.",
+          "url": "https://extension.umn.edu/soybean-pest-management/septoria-brown-spot",
+          "quote": "The brown areas can contain tiny raised specks called pycnidia (visible with a hand lens) where spores are produced."
+        },
+        "look_alikes": {
+          "value": [
+            "soybean rust",
+            "Bacterial blight (Pseudomonas syringae pv. glycinea)"
+          ],
+          "url": "https://content.ces.ncsu.edu/brown-spot-of-soybean",
+          "quote": "Bacterial blight ( Pseudomonas syringae pv. glycinea ) . Bacterial blight lesions tend to remain small and multiply across the leaf surface with the chlorosis spreading only a short distance from the spots, and no fungal signs are present in the lesions."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Rotation with non-legume crops",
+          "Tillage practices that favor rapid breakdown of crop residues",
+          "Destroying crop debris",
+          "Foliar fungicides applied between R3 and R5",
+          "Select fungicides with different modes of action to limit fungicide resistance"
+        ],
+        "url": "https://content.ces.ncsu.edu/brown-spot-of-soybean",
+        "quote": "Since the disease overwinters in crop residue, destroying crop debris is an important control method for continuously cropped soybean fields. Tillage practices that favor rapid breakdown of crop residues are also beneficial to limiting losses from disease. Crop rotation to non-host crops may also help to reduce inoculum build up in the field. ... Fungicides applied between R3 and R5 provide the most impact on yield. ... If multiple fungicide applications are needed, selecting fungicides with different modes of action is important to limit fungicide resistance development."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Septoria brown spot",
+          "alternative_value": "Brown Spot of Soybean",
+          "alternative_source_url": "https://content.ces.ncsu.edu/brown-spot-of-soybean",
+          "note": "NC State uses 'Brown Spot of Soybean' as the primary heading; the source itself notes the synonymy: 'Soybean brown spot, also known as septoria brown spot'."
+        }
+      ]
+    },
+    {
+      "disease_name": "Sclerotinia Timber Rot",
+      "pathogen_scientific_name": {
+        "value": "Sclerotinia sclerotiorum",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-soy-3",
+        "quote": "Sclerotinia stem rot of soybean is caused by the fungus Sclerotinia sclerotiorum .",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/white-mold-of-soybean",
+        "quote": "Caused by the fungus Sclerotinia sclerotiorum"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Pod",
+          "Seed"
+        ],
+        "url": "https://extension.umn.edu/soybean-pest-management/sclerotinia-stem-rot-white-mold-soybean",
+        "quote": "Lesions usually develop first at stem nodes during or after flowering. The lesions expand and the tops of the plants become grayish-green and then wilt and die. Infected stems often become soft and watery, and become covered with white moldy growth in moist conditions. Dry, dead stems can develop a bleached, white appearance. Hard, black sclerotia that look similar to rodent droppings develop on or inside infected stems and pods. ... Seed lots can be contaminated with sclerotia, and seeds can be infected with the pathogen."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Initial gray to white lesions develop at the nodes (R3 to R6), rapidly progressing above and below the nodes and sometimes girdling the stem; white, fluffy mold soon covers the infected area, especially during periods of high relative humidity. Leaf tissue between major veins turns a gray-green cast and eventually leaves die and turn completely brown while remaining attached to the stem.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/white-mold-of-soybean",
+          "quote": "Initial symptoms generally develop from R3 to R6 as gray to white lesions at the nodes. Lesions rapidly progress above and below the nodes, sometimes girdling the stem. White, fluffy mold soon covers the infected area, especially during periods of high relative humidity. Characteristic black sclerotia eventually are visible and embedded within mold on stem lesions, and inside the stem as the plant approaches death. Initial foliar symptoms include leaf tissues between major veins turning a gray-green cast; eventually leaves die and turn completely brown while remaining attached to the stem."
+        },
+        "diagnostic_features": {
+          "value": "Fluffy white mold growth on stems with characteristic black sclerotia (hard, irregular, with a pink to white center, resembling rodent droppings) embedded in the mold on stem lesions and inside the stem; wilted dead leaves remain attached to stems; affected pods contain smaller, lighter, white, cottony seeds that may be replaced by sclerotia.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/white-mold-of-soybean",
+          "quote": "white mold is often recognized by fluffy, white growth on soybean stems. ... Characteristic black sclerotia eventually are visible and embedded within mold on stem lesions, and inside the stem as the plant approaches death. ... Wilted, dead leaves remain attached to stems of white mold infected plants. ... Pods affected by white mold generally contain seeds that are smaller, lighter, white, and cottony. Seeds may be replaced by sclerotia."
+        },
+        "look_alikes": {
+          "value": [
+            "Bird's nest fungi (can be confused with white mold apothecia)"
+          ],
+          "url": "https://cropprotectionnetwork.org/encyclopedia/white-mold-of-soybean",
+          "quote": "Bird's nest fungi can be confused with white mold apothecia."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Select cultivars with high levels of partial resistance and an open canopy of upright leaves (no soybean variety is completely resistant)",
+          "Long-term crop rotation (2-3+ years) with non-host crops such as corn and wheat to minimize inoculum build-up; avoid rotation with beans, peas, sunflowers, and cole crops (Brassicaceae)",
+          "Tillage (moldboard plowing) to bury sclerotia at least 10 cm for fields with first occurrence; reduced tillage for fields with a long history of the disease",
+          "Reduce seeding rate and increase row spacing (e.g., 30-inch rows) to improve air circulation and avoid complete canopy closure",
+          "Where irrigation is used, reduce irrigation frequency during flowering",
+          "Weed control, as many broadleaf weeds are hosts of the pathogen",
+          "Foliar fungicides applied immediately before infection (timing is critical); boscalid has shown good efficacy; avoid thiophanate methyl and strobilurin fungicides such as pyraclostrobin; rotate active ingredients",
+          "Herbicides such as lactofen to modify soybean canopy, delay flowering, and induce systemic acquired resistance; some herbicides may also suppress the fungus or disrupt germination of sclerotia",
+          "Biological control with the fungus Coniothyrium minitans, incorporated to a depth of about 2 inches (5 cm)",
+          "Use Sclerotinia-free seed; clean seed lots with spiral separators and gravity tables; apply seed treatments with fungicides for infected seed; avoid harvesting heavily infested fields until end of season"
+        ],
+        "url": "https://ohioline.osu.edu/factsheet/plpath-soy-3",
+        "quote": "Host resistance: There is no complete resistance reported for Sclerotinia stem rot of soybean. However, cultivars with high levels of partial resistance are commercially available. ... Use of long crop rotation ... Corn and wheat can be used in crop rotation with soybean to minimize inoculum build-up over time. ... Tillage is recommended for fields with first occurrence of Sclerotinia stem rot in order to bury the sclerotia, while reduced tillage is preferred for fields with a long history of the disease. ... Reduction of seeding rate may improve air circulation ... increasing row spacing to 30 inch rows may avoid complete canopy closure. ... Chemical control with fungicides ... Boscalid has provided good efficacy ... Chemical control with herbicides: Lactofen is an herbicide able to modify soybean canopy, delay flowering and induce systemic acquired resistance ... Biological control with the fungus Coniothyrium minitans has been used in other crops systems to reduce inoculum levels in the field. ... Avoid introduction of sclerotia in the field ... Seed-lots can be cleaned by spiral separators and gravity tables. ... Seed treatments with fungicides could be used to treat infected seed."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Sclerotinia stem rot (white mold) of soybean",
+          "alternative_value": "White Mold of Soybean",
+          "alternative_source_url": "https://cropprotectionnetwork.org/encyclopedia/white-mold-of-soybean",
+          "note": "Crop Protection Network titles the disease 'White Mold of Soybean'; the source confirms synonymy: 'White mold (also called Sclerotinia stem rot)'."
+        },
+        {
+          "field": "disease_name",
+          "canonical_value": "Sclerotinia stem rot (white mold) of soybean",
+          "alternative_value": "Sclerotinia Stem Rot (White Mold) of Soybean",
+          "alternative_source_url": "https://ohioline.osu.edu/factsheet/plpath-soy-3",
+          "note": "Ohioline (OSU) uses title-case variant; same disease, same pathogen."
+        }
+      ]
+    },
+    {
+      "disease_name": "Southern Blight",
+      "pathogen_scientific_name": {
+        "value": "Agroathelia rolfsii",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/southern-blight-of-soybeans",
+        "quote": "Southern blight is caused by Agroathelia rolfsii , a soilborne fungus",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://content.ces.ncsu.edu/southern-blight-of-soybean",
+        "quote": "Southern blight of soybean is caused by the fungus Sclerotium rolfsii."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Root",
+          "Whole plant"
+        ],
+        "url": "https://cropprotectionnetwork.org/encyclopedia/southern-blight-of-soybeans",
+        "quote": "entire plants may become yellow and wilt, with leaves turning brown and often remaining attached to the plant. A dark brown lesion that girdles the stem occurs at the soil surface."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Seedling infection causes pre- or post-emergence damping-off; later in the season entire plants yellow and wilt with leaves turning brown and remaining attached, accompanied by a dark brown girdling lesion at the soil surface and white fanlike mycelium with small round sclerotia on the lower stem.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/southern-blight-of-soybeans",
+          "quote": "Seedling infection results in pre- or post-emergence damping-off. Later in the season, entire plants may become yellow and wilt, with leaves turning brown and often remaining attached to the plant. A dark brown lesion that girdles the stem occurs at the soil surface. This lesion is generally accompanied by the development of conspicuous white, fanlike mats of fungal mycelium that form on the base of the stem, on leaf residue, and on the soil surface around infected plants. Numerous, small round fungal bodies that are about the size of mustard seeds (called sclerotia) form on these fungal mats and on the lower stem."
+        },
+        "diagnostic_features": {
+          "value": "Conspicuous white, fanlike mats of fungal mycelium at the base of the stem with numerous mustard-seed-sized sclerotia that progress from yellow-tan to reddish-brown to dark brown at maturity.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/southern-blight-of-soybeans",
+          "quote": "conspicuous white, fanlike mats of fungal mycelium that form on the base of the stem, on leaf residue, and on the soil surface around infected plants. Numerous, small round fungal bodies that are about the size of mustard seeds (called sclerotia) form on these fungal mats and on the lower stem. Initially, sclerotia are yellow-tan then progress to a reddish-brown color and finally dark brown at maturity."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Crop rotations to non-host crops like corn, grain sorghum, or wheat, for two or more years can be beneficial to reduce fungal build-up in the soil.",
+          "Deep cultivation practices that bury sclerotia may also be beneficial to reduce the longevity of the fungus, but may not be available to all farming systems.",
+          "Fungicides are not recommended for managing Southern blight."
+        ],
+        "url": "https://content.ces.ncsu.edu/southern-blight-of-soybean",
+        "quote": "Crop rotations to non-host crops like corn, grain sorghum, or wheat, for two or more years can be beneficial to reduce fungal build-up in the soil. Deep cultivation practices that bury sclerotia may also be beneficial to reduce the longevity of the fungus, but may not be available to all farming systems. Fungicides are not recommended for managing Southern blight."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Agroathelia rolfsii",
+          "alternative_value": "Sclerotium rolfsii",
+          "alternative_source_url": "https://content.ces.ncsu.edu/southern-blight-of-soybean",
+          "note": "Sclerotium rolfsii is the older/asexual-stage name used by NC State Extension; Agroathelia rolfsii is the more recent accepted name used by Crop Protection Network. Selected current name per source authority rule for taxonomy; no NCBI/MycoBank validation provided in this run."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem, Root, Whole plant",
+          "alternative_value": "Foliar, Stem, Root",
+          "alternative_source_url": "https://content.ces.ncsu.edu/southern-blight-of-soybean",
+          "note": "NC State lists Foliar, Stem, Root (mentions hyphae invade plant roots or lower stems); Crop Protection Network adds whole-plant yellowing/wilt. Union retained."
+        }
+      ]
+    },
+    {
+      "disease_name": "Soybean Rust",
+      "pathogen_scientific_name": {
+        "value": "Phakopsora pachyrhizi",
+        "url": "https://content.ces.ncsu.edu/asian-soybean-rust",
+        "quote": "The causal agent is the basidiomycete fungus, Phakopsora pachyrhizi.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://content.ces.ncsu.edu/asian-soybean-rust",
+        "quote": "Asian soybean rust, caused by the fungus Phakopsora pachyrhizi"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Pod"
+        ],
+        "url": "https://content.ces.ncsu.edu/asian-soybean-rust",
+        "quote": "Lesions tend to be angular with 2-5 mm diameter, and can affect not only leaves, but may be observed on petioles, pods, and stems"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Symptoms begin on leaves in the lower plant canopy with gray-green, tan to dark-brown, or reddish-brown angular lesions (2-5 mm diameter) developing first on the underside of leaves; small pustules form in the lesions and break open to release masses of tan spores; lesions may also appear on petioles, pods, and stems.",
+          "url": "https://content.ces.ncsu.edu/asian-soybean-rust",
+          "quote": "A common symptom of soybean rust is the formation of gray-green, tan to dark-brown, or reddish-brown lesions that may become erumpant under the lesions on leaflets. Lesions tend to be angular with 2-5 mm diameter, and can affect not only leaves, but may be observed on petioles, pods, and stems"
+        },
+        "diagnostic_features": {
+          "value": "Angular lesions 2-5 mm in diameter that are gray-green, tan to dark-brown, or reddish-brown, with small pustules (blisters) that develop in the lesions and break open to release masses of tan spores; lesions and pustules can be seen with a 20X hand lens.",
+          "url": "https://extension.umn.edu/soybean-pest-management/soybean-rust",
+          "quote": "Small pustules (blisters) develop in the lesions, which break open and release masses of tan spores. The lesions and pustules, which can be seen with a 20X hand lens, may also appear on pods and stems."
+        },
+        "look_alikes": {
+          "value": [
+            "other common leaf diseases on soybean"
+          ],
+          "url": "https://extension.umn.edu/soybean-pest-management/soybean-rust",
+          "quote": "Early symptoms of soybean rust (before pustules develop) are difficult to distinguish from other common leaf diseases on soybean."
+        }
+      },
+      "treatments": {
+        "value": [
+          "The primary management of rust is through the use of fungicide applications.",
+          "Fungicide applications made between R3 and R5 may provide the most yield protection for soybeans.",
+          "Different modes of action should be used if more than one fungicide is needed in a growing season.",
+          "Fungicides are likely not needed if soybean rust is not within 100 miles of a field.",
+          "Regularly scouting fields throughout the growing season is important to monitor for foliar diseases like rust.",
+          "Scout the lower canopy of fields weekly, especially during wet weather after soybeans begin to flower.",
+          "Soybean rust must be diagnosed at an early stage to be successfully managed.",
+          "Soybean varieties that are resistant to soybean rust are in development."
+        ],
+        "url": "https://content.ces.ncsu.edu/asian-soybean-rust",
+        "quote": "The primary management of rust is through the use of fungicide applications. Fungicide applications made between R3 and R5 may provide the most yield protection for soybeans. Several fungicides are effective at reducing damages caused by rust, and efficacy can be found on the NC State Soybean Extension portal . Fungicide resistance is a concern with foliar pathogens, and different modes of action should be used if more than one fungicide is needed in a growing season. Fungicides are likely not needed if soybean rust is not within 100 miles of a field."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Asian Soybean Rust",
+          "alternative_value": "Soybean rust",
+          "alternative_source_url": "https://extension.umn.edu/soybean-pest-management/soybean-rust",
+          "note": "Common name varies between 'Asian Soybean Rust' (NC State) and 'Soybean rust' (UMN). Both refer to the same disease caused by Phakopsora pachyrhizi; canonical chosen as the more specific name distinguishing it from P. meibomiae."
+        }
+      ]
+    },
+    {
+      "disease_name": "Genus Diaporthe",
+      "pathogen_scientific_name": {
+        "value": "Diaporthe phaseolorum var. sojae",
+        "url": "https://extension.umn.edu/soybean-pest-management/pod-and-stem-blight-and-phomopsis-seed-decay-soybean",
+        "quote": "Pod and stem blight is caused by the fungus  Diaporthe phaseolorum var.  sojae",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.umn.edu/soybean-pest-management/pod-and-stem-blight-and-phomopsis-seed-decay-soybean",
+        "quote": "Pod and stem blight is caused by the fungus  Diaporthe phaseolorum var.  sojae"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Pod",
+          "Seed"
+        ],
+        "url": "https://extension.umn.edu/soybean-pest-management/pod-and-stem-blight-and-phomopsis-seed-decay-soybean",
+        "quote": "The pathogen can infect all aerial parts of plant, but does not cause distinct lesions. Signs of infection appear on fallen petioles in mid-season and on pods and stems of plants nearing maturity."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Infected pods may turn a light brown color; small black pycnidia form in linear rows on pods and along dead stem areas; on leaves the infection often starts at the tip or edges and spreads toward the center with the green color fading and black fungal structures appearing on pale tissue; in wet seasons, pycnidia may cover the entire plant at maturity and upper portions of infected plants may turn yellow and die.",
+          "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-03-25-0096-DG",
+          "quote": "Infected pods may turn a light brown color, which makes it hard to differentiate them from healthy, mature ones... the fungus can spread and produce small black spots, called pycnidia, on the pods... On leaves, the infection does not show obvious spots. Instead, it often starts at the tip or edges and spreads toward the center. As it progresses, the green color fades, and black fungal structures may appear on the pale tissue"
+        },
+        "diagnostic_features": {
+          "value": "Linear alignment (rows) of black pycnidia on stems distinguish pod and stem blight from anthracnose stem blight and charcoal rot, which have randomly scattered black fruiting bodies. Black zone lines may be visible when the stem is sectioned transversely or longitudinally.",
+          "url": "https://cropprotectionnetwork.org/publications/an-overview-of-pod-and-stem-blight-and-phomopsis-seed-decay",
+          "quote": "Look for the linear alignment (rows) of black pycnidia. These rows will distinguish pod and stem blight from anthracnose stem blight and charcoal rot, both of which have randomly scattered black fruiting bodies on soybean stems. The Diaporthe species of pod and stem blight produce black zone lines that are visible when the stem is sectioned transversely or longitudinally"
+        },
+        "look_alikes": {
+          "value": [
+            "Anthracnose stem blight (Colletotrichum truncatum)",
+            "Charcoal rot (Macrophomina phaseolina)",
+            "Saprophytic fungi"
+          ],
+          "url": "https://cropprotectionnetwork.org/publications/an-overview-of-pod-and-stem-blight-and-phomopsis-seed-decay",
+          "quote": "The pod and stem blight fungus produces black pycnidia in linear rows on mature soybean stems; however, these can be confused with symptoms of other soybean diseases. Anthracnose Stem Blight ( Colletotrichum truncatum ) ... Charcoal Rot ( Macrophomina phaseolina ) ... Saprophytic Fungi"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Rotate soybean with non-hosts such as wheat or corn",
+          "Use high quality, pathogen-free seed",
+          "Choose varieties with the best resistance package; some soybean varieties may differ in resistance",
+          "Tillage and plowing under infected residue",
+          "Control alternate host weeds such as Abutilon theophrasti and Euphorbia nutans to reduce inoculum sources",
+          "Adjust planting dates and density, and ensure timely harvest",
+          "Harvest seed quickly after it matures to reduce risk of seed decay and preserve seed quality",
+          "Foliar fungicide applications between R3 (beginning pod) and R5 (beginning seed) may reduce stem and seed infection, especially in seed production fields",
+          "Seed treatments containing fungicide active ingredients such as fludioxonil, ipconazole, pyraclostrobin, and thiabendazole may be effective against Diaporthe species"
+        ],
+        "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-03-25-0096-DG",
+        "quote": "Key cultural practices include using high-quality seed ( Haafke 2021 ), adjusting planting dates and density, and ensuring timely harvest... Crop rotation with non-hosts such as wheat ( Triticum aestivum L.), tillage, and plowing under infected residue are also important... In the United States, seed treatment and foliar applications of labeled fungicides have been recommended against seed decay and pod and stem blight... Seed treatments containing fungicide active ingredients such as fludioxonil, ipconazole, pyraclostrobin, and thiabendazole may be effective against Diaporthe species"
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Diaporthe phaseolorum var. sojae",
+          "alternative_value": "Diaporthe longicolla and Diaporthe sojae",
+          "alternative_source_url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-03-25-0096-DG",
+          "note": "APS Diagnostic Guide attributes pod and stem blight to multiple Diaporthe species (D. longicolla, D. sojae) using current taxonomy, while UMN Extension uses the older varietal name 'Diaporthe phaseolorum var. sojae'. D. sojae is the elevated species name for the previous variety."
+        }
+      ]
+    },
+    {
+      "disease_name": "Taproot Decline On Soybean",
+      "pathogen_scientific_name": {
+        "value": "Xylaria necrophora",
+        "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-03-22-0021-RS",
+        "quote": "A root-associated pathogen, Xylaria necrophora , has been described recently as the causal agent of TRD.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-03-22-0021-RS",
+        "quote": "X. necrophora is a fungal species in the family Xylariaceae"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Root",
+          "Stem",
+          "Seed",
+          "Whole plant"
+        ],
+        "url": "https://www.lsuagcenter.com/profiles/aiverson/articles/page1627567471819",
+        "quote": "Symptoms of TRD are generally most notable during the beginning of pod fill to full seed growth stages (R3-R6), during which small clusters of infected plants exhibiting foliar yellowing (interveinal chlorosis) and death (necrosis) are observed... stems often break at the crown... roots exhibit rot and are typically embedded with black fungal tissue (stroma) along the primary root and less frequently on lateral roots"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Infected plants in small clusters show foliar interveinal chlorosis followed by necrosis (foliar yellowing and death), with root rot, premature plant death, and stems that break at the crown when pulled; roots remaining attached are embedded with black fungal stroma along the primary root.",
+          "url": "https://www.lsuagcenter.com/profiles/aiverson/articles/page1627567471819",
+          "quote": "small clusters of infected plants exhibiting foliar yellowing (interveinal chlorosis) and death (necrosis) are observed... When infected plants are roughly pulled from the soil, stems often break at the crown. However, when infected plants are carefully removed from the soil, roots exhibit rot and are typically embedded with black fungal tissue (stroma) along the primary root and less frequently on lateral roots"
+        },
+        "diagnostic_features": {
+          "value": "Black fungal tissue (stroma) along the primary root (and less frequently on lateral roots), white cottony fungal growth (mycelia) within the pith when roots are split longitudinally, and reproductive stromata (\"dead man's fingers\") on infected soybean debris and at the plant base under humid conditions — white at the tip (sometimes pinkish when young) turning black at maturity.",
+          "url": "https://www.lsuagcenter.com/profiles/aiverson/articles/page1627567471819",
+          "quote": "roots exhibit rot and are typically embedded with black fungal tissue (stroma) along the primary root and less frequently on lateral roots... When roots are split longitudinally, white cottony fungal growth (mycelia) can often be evident within the pith... The fungus produces reproductive structures (stromata, Figure 3A-C), sometimes referred to as \"dead man's fingers,\" on infected soybean roots and debris. These reproductive structures are usually white at the tip but are sometimes pinkish when young and turn black at maturity."
+        },
+        "look_alikes": {
+          "value": [
+            "brown stem rot",
+            "charcoal stem rot",
+            "southern blight",
+            "stem canker",
+            "red crown rot",
+            "sudden death syndrome (SDS)",
+            "soybean root-knot nematode",
+            "target spot",
+            "chemical phytotoxicity (herbicide, insecticide, fungicide)",
+            "nutrient deficiency"
+          ],
+          "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-03-22-0021-RS",
+          "quote": "Soybean diseases such as brown and charcoal stem rot, southern blight, stem canker, red crown rot, sudden death syndrome (SDS), soybean root-knot nematode, and target spot can produce symptoms that resemble those of TRD on the soybean foliage"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Practice crop rotation — rotation to cotton, corn, grain sorghum, rice or sugarcane will likely reduce the incidence and severity of TRD",
+          "Till fields after harvest/before planting (reduced or conventional) to facilitate breakdown of soybean debris and reduce inoculum",
+          "Use resistant cultivars — some commercially available soybean cultivars have shown resistance in greenhouse and field experiments",
+          "Differences in soybean variety susceptibility to TRD have been observed",
+          "Follow good sanitation practices — avoid moving soil from infested to non-infested fields, and clean soil and crop debris from machinery, clothes, boots, tools",
+          "Certain fungicides applied in-furrow have been observed to be beneficial (no fungicides are currently labeled for management of taproot decline)"
+        ],
+        "url": "https://www.lsuagcenter.com/profiles/aiverson/articles/page1627567471819",
+        "quote": "Practice crop rotation. Rotation to cotton, corn, grain sorghum, rice or sugarcane will likely result in reducing the incidence and severity of TRD... Till fields after harvest/before planting... Use resistant cultivars. Some commercially available soybean cultivars have shown resistance to TRD in greenhouse and field experiments... Follow good sanitation practices. Avoid moving soil from fields where the disease has been observed to fields where it has not been observed. Clean soil and crop debris from machinery, clothes, boots, tools, etc."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Root, Stem, Seed, Whole plant (union)",
+          "alternative_value": "Foliar, Root, Seed, Whole plant (CPN — omits Stem)",
+          "alternative_source_url": "https://cropprotectionnetwork.org/encyclopedia/taproot-decline-of-soybean",
+          "note": "CPN lists Foliar/Root/Seed/Whole plant and notes seedling death and seed rot; LSU explicitly notes stems breaking at the crown; APS lists only Root/Foliar. Union taken as canonical."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Root, Stem, Seed, Whole plant (union)",
+          "alternative_value": "Root, Foliar (APS Plant Health Progress)",
+          "alternative_source_url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-03-22-0021-RS",
+          "note": "APS Plant Health Progress mentions only roots and foliage; broader symptom listing comes from the extension sources."
+        }
+      ]
+    },
+    {
+      "disease_name": "Bean Pod Mottle Virus",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Soybean Vein Necrosis Virus",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    }
+  ],
+  "crop": "Soybean",
+  "generated_date": "2026-05-14"
+}

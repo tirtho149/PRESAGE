@@ -1,0 +1,1303 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Cucumber Mosaic Virus",
+      "pathogen_scientific_name": {
+        "value": "",
+        "url": "",
+        "quote": "",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Viral",
+        "url": "https://veggiescout.ca.uky.edu/cucumber-mosaic-virus-tomato",
+        "quote": "Cucumber mosaic virus (CMV) symptoms on tomato"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Whole plant"
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/tomato/mosaic-virus-diseases-caused-by-cucumoviruses/",
+        "quote": "Generally, plants appear lighter in color and are bushy and stunted. Close up symptoms include a mosaic (alternating light and dark green areas) on at least some leaves, especially on the younger leaves. Leaves may exhibit a shoestring-like appearance. Fruit production is greatly reduced."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Plants appear lighter in color and are bushy and stunted, with a mosaic pattern of alternating light and dark green areas on leaves (especially younger leaves), and leaves may have a shoestring-like or 'strappy' appearance; fruit production is greatly reduced.",
+          "url": "https://ipm.ucanr.edu/agriculture/tomato/mosaic-virus-diseases-caused-by-cucumoviruses/",
+          "quote": "Symptoms on plants infected with cucumoviruses can vary. Generally, plants appear lighter in color and are bushy and stunted. Close up symptoms include a mosaic (alternating light and dark green areas) on at least some leaves, especially on the younger leaves. Leaves may exhibit a shoestring-like appearance. Fruit production is greatly reduced."
+        },
+        "diagnostic_features": {
+          "value": "Leaves becoming 'strappy' or having a 'shoestring' appearance is the symptom most identified with CMV.",
+          "url": "https://veggiescout.ca.uky.edu/cucumber-mosaic-virus-tomato",
+          "quote": "Leaves may become “strappy” or have a “shoestring” appearance; this is the symptom most identified with CMV."
+        },
+        "look_alikes": {
+          "value": [
+            "tobacco mosaic virus"
+          ],
+          "url": "https://ipm.ucanr.edu/agriculture/tomato/mosaic-virus-diseases-caused-by-cucumoviruses/",
+          "quote": "These symptoms can be confused with those caused by tobacco mosaic virus ."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use silver reflective polyethylene mulches on planting beds before seeding or transplanting to delay aphid-borne virus infection and reduce disease incidence/severity by repelling aphid vectors",
+          "Promptly remove and destroy diseased plant material",
+          "Plant barrier crops and manage weeds (potential alternative hosts)",
+          "Insecticides directed at aphid vectors are ineffective because they cannot kill aphids before transmission occurs",
+          "No good sources of cucumber mosaic resistance in tomatoes are currently available; resistant cultivar development is underway through traditional breeding and biotechnology"
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/tomato/mosaic-virus-diseases-caused-by-cucumoviruses/",
+        "quote": "The use of silver reflective mulches may delay the infection by aphid-borne viruses and reduces the incidence and severity of these diseases by repelling aphids that transmit them. Place reflective polyethylene mulches on planting beds before seeding or transplanting to reduce aphid landing and virus transmission. The mulches lose their effectiveness when more than 60% of the surface is covered by tomato plant foliage. No good sources of cucumber mosaic resistance in tomatoes are currently available. Efforts are underway to develop resistant cultivars, both through traditional plant breeding and biotechnological approaches. No pesticide strategies are effective. Insecticides directed at controlling the aphid vectors are ineffective because they cannot kill the aphids before transmission occurs."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Cucumber Mosaic Virus",
+          "alternative_value": "Mosaic Virus Diseases Caused by Cucumoviruses",
+          "alternative_source_url": "https://ipm.ucanr.edu/agriculture/tomato/mosaic-virus-diseases-caused-by-cucumoviruses/",
+          "note": "UC IPM uses the broader genus-level title 'Mosaic Virus Diseases Caused by Cucumoviruses'; UKY uses the species-specific 'Cucumber Mosaic Virus of Tomato'. Merged under the more standard name 'Cucumber Mosaic Virus'."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "",
+          "alternative_value": "",
+          "note": "Neither source provides an explicit scientific (Latin binomial) name for the pathogen; both refer to it by the common name 'cucumber mosaic virus' / 'cucumoviruses'. Field left empty rather than inferred."
+        }
+      ]
+    },
+    {
+      "disease_name": "Early Blight",
+      "pathogen_scientific_name": {
+        "value": "Alternaria linariae",
+        "url": "https://content.ces.ncsu.edu/early-blight-of-tomato",
+        "quote": "Early blight of tomato is caused primarily by the fungus Alternaria linariae (= A. tomatophila ; formerly known as A. solani)",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://content.ces.ncsu.edu/early-blight-of-tomato",
+        "quote": "Early blight of tomato is caused primarily by the fungus Alternaria linariae"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://content.ces.ncsu.edu/early-blight-of-tomato",
+        "quote": "The leaves, fruit, and stem may be affected by Alternaria linariae ."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Lesions first develop on lower leaves as small brownish-black spots that expand to 1/4-1/2 inch with characteristic concentric rings producing a 'bull's eye' or 'target-spot' appearance; surrounding tissue may yellow and entire leaves may become chlorotic, with dark sunken fruit lesions also showing concentric rings.",
+          "url": "https://content.ces.ncsu.edu/early-blight-of-tomato",
+          "quote": "Lesions first develop on lower leaves as small, brownish-black spots which can expand to about 1 ⁄ 4 - 1 ⁄ 2 -inch in diameter with characteristic concentric rings in the darkened area. The area surrounding the lesions may become yellow and, as disease progresses, the entire leaf may turn yellow."
+        },
+        "diagnostic_features": {
+          "value": "Characteristic concentric rings in the darkened lesion area giving a 'bull's eye' or 'target-spot' appearance on lower leaves; on fruit, lesions are sunken, leathery, dark brown to black with concentric rings, often entering through the calyx around the stem attachment; potato tuber lesions are dark, sunken, circular, often bordered by purple to gray raised tissue with dry, leathery, brown underlying flesh.",
+          "url": "https://ag.umass.edu/vegetable/fact-sheets/solanaceous-early-blight",
+          "quote": "As the lesions enlarge, they often develop concentric rings giving them a ‘bull’s eye’ or ‘target-spot’ appearance... Lesions can become quite large, involve the whole fruit, and have characteristic concentric rings... Tuber lesions are dark, sunken, and circular often bordered by a purple to gray raised tissue. The underlying flesh is dry, leathery, and brown."
+        },
+        "look_alikes": {
+          "value": [
+            "Septoria leaf spot",
+            "Gray leaf spot",
+            "Late blight",
+            "Bacterial spot"
+          ],
+          "url": "https://content.ces.ncsu.edu/early-blight-of-tomato",
+          "quote": "Septoria leaf spot produces smaller lesions with tan or light gray centers. Gray leaf spot also produces smaller and lighter brown lesions than what you would see with early blight... Late blight produces lighter tan colored lesions that typically have a light green halo... Bacterial spot also may be confused with early blight"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Maintain plant vigor through adequate fertilization to reduce host susceptibility",
+          "Remove volunteer weeds and volunteer tomatoes that serve as an inoculum source",
+          "Rotate every 2-3 years away from tomato to reduce inoculum density",
+          "Use resistant or tolerant cultivars (e.g., 'Mountain Magic', 'Mountain Fresh Plus F1', 'Bush Celebrity Hybrid', 'Big Beef Hybrid', 'Celebrity Hybrid', 'Rutgers', 'Juliet F1', 'Tommy Toe', 'Old Brooks', 'Cabernet F1')",
+          "Start with disease-free seed, transplants, and seed tubers",
+          "Control susceptible weeds (e.g., horsenettle) and eliminate cull piles",
+          "Plow under plant debris after harvest",
+          "Time irrigation to avoid late afternoon or evening; use proper plant spacing to reduce leaf wetness duration",
+          "Stake or trellis plants to improve air circulation and reduce soil contact; use mulch to prevent spore splash",
+          "Avoid working plants when they are wet; prune the bottom-most leaves as the plant grows",
+          "Apply fungicides preventatively (7-14 day intervals) — e.g., azoxystrobin + chlorothalonil (Quadris Opti), azoxystrobin + difenoconazole (Quadris Top), boscalid (Endura), chlorothalonil (Bravo), cyprodinil + fludioxinil (Switch), difenoconazole + benzovindiflupyr (Aprovia Top), difenoconazole + cyprodinil (Inspire Super), fenamidone (Reason), flutriafol (Rhyme), fluopyram + trifloxystrobin (Luna Sensation), fluopyram + pyrimethanil (Luna Tranquility), fluxaypyroxad + pyraclostrobin (Priaxor), mandipropamid + difenoconazole (Revus Top), penthiopyrad (Fontelis), pydiflumetofen + fludioxonil (Miravis Prime), pyrimethanil (Scala), strobilurin products (Quadris, Cabrio, Gem, Evito)",
+          "Schedule spray applications using spore trapping or forecasting systems (TOM-CAST)",
+          "Organic options: Bacillus amyloliquefaciens strain D747 (Double Nickel 55), Bacillus mycoides isolate J (LifeGard WG), Bacillus pumilus strain QST 2808 (Sonata), Bacillus subtilis strain IAB/BS03 (AVIV), Bacillus subtilis strain QST 713 (Cease, Serenade ASO, Serenade Opti), extract of Reynoutria sachalinensis (Regalia), fixed copper, polyoxin D zinc salt (OSO 5%SC), potassium bicarbonate (Carb-O-Nator), Streptomyces lydicus WYEC 108 (Actinovate AG)"
+        ],
+        "url": "https://content.ces.ncsu.edu/early-blight-of-tomato",
+        "quote": "Maintain plant vigor. Maintaining adequate fertilization and improving host vigor can reduce susceptibility to early blight. Remove volunteer weeds. Removing volunteer tomatoes can reduce disease as they can serve as an inoculum source. Rotate every 2-3 years. Rotating away from tomato can reduce inoculum density in a field. Apply fungicides preventatively. Plant tolerant varieties."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Alternaria linariae",
+          "alternative_value": "Alternaria solani",
+          "alternative_source_url": "https://ag.umass.edu/vegetable/fact-sheets/solanaceous-early-blight",
+          "note": "NC State source explicitly notes that A. solani is the formerly used name; A. linariae (= A. tomatophila) is the currently accepted name. UMass factsheet still uses A. solani."
+        }
+      ]
+    },
+    {
+      "disease_name": "Gray Mold",
+      "pathogen_scientific_name": {
+        "value": "Botrytis cinerea",
+        "url": "https://extension.umn.edu/disease-management/gray-mold-tomatoes",
+        "quote": "Gray mold is caused by the fungus Botrytis cinerea",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.umn.edu/disease-management/gray-mold-tomatoes",
+        "quote": "Gray mold is caused by the fungus Botrytis cinerea"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Whole plant"
+        ],
+        "url": "https://content.ces.ncsu.edu/botrytis-gray-mold-of-tomato",
+        "quote": "Botrytis can affect all aboveground plant parts of tomato in both the greenhouse and field. This fungus occurs as both a pathogen and a saprophyte causing diseases such as damping off, stem girdling, foliar blighting, and postharvest rots."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "In high humidity, a dense velvety gray-brown spore mass covers infected plant parts and releases a cloud of spores when disturbed; leaves develop irregular to V-shaped tan to brown blotches starting at margins, stems develop brown oval girdling lesions, and fruit develop a pale soft watery rot or whitish 'ghost spot' rings.",
+          "url": "https://content.ces.ncsu.edu/botrytis-gray-mold-of-tomato",
+          "quote": "Botrytis produces a dense velvety gray brown spore mass on infected tissue which when disturbed releases a cloud of spores ( Figure 1 ). Tomato leaf and stem lesions are tan to brown in color."
+        },
+        "diagnostic_features": {
+          "value": "Dense velvety gray-brown spore mass that releases a cloud of spores when disturbed; light brown-gray spores on black stalks; V-shaped brown blotches starting at leaf margins; brown oval stem lesions that may expand in concentric rings to girdle the entire stem; small 3-8 mm whitish rings (ghost spots) on the fruit surface from aborted infections.",
+          "url": "https://content.ces.ncsu.edu/botrytis-gray-mold-of-tomato",
+          "quote": "Small 3-8 mm whitish rings on the fruit surface are aborted botrytis infections known as ghost spots which reduce market quality."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Keep humidity and leaf wetness low by rolling up high tunnel sides, increasing ventilation and avoiding overhead irrigation",
+          "Ventilate greenhouses to maintain relative humidity below 90%",
+          "Space plants well (20-24 inches between plants and 4-5 feet between rows) to avoid excess humidity in dense canopies",
+          "Remove infected stems, leaves, and fruit; place in a plastic bag and remove from the field",
+          "Clean up leaf debris on the ground; remove all plant debris at the end of the season",
+          "Prune plants in the early afternoon when dew has dried so wounds can dry quickly",
+          "Do not work on wet plants",
+          "Maintain consistent and adequate soil moisture and adequate calcium for healthy tissue",
+          "Practice good greenhouse sanitation; scout, bag, and remove infected plants",
+          "Apply fungicides preventatively prior to dense canopy growth; rotate fungicide groups or tank mix to manage resistance",
+          "Fungicide options: boscalid (Endura), chlorothalonil + cymoxanil (Ariston), difenoconazole + cyprodinil (Inspire Super 2.09SC), fluxapyroxad + pyraclostrobin (Priaxor), potassium phosphite + chlorothalonil (Catamaran), dicloran (Botran), chlorothalonil (Bravo)"
+        ],
+        "url": "https://content.ces.ncsu.edu/botrytis-gray-mold-of-tomato",
+        "quote": "Apply fungicides preventatively prior to dense canopy growth, rotate fungicides to manage resistance Avoid overhead irrigation, minimize plant wetness Do not work on wet plants, prune plants in the early afternoon allowing wounds to dry quickly Ventilate greenhouses to maintain relative humidity at less than 90% Temperatures above 70&deg;F discourage Botrytis development Practice good greenhouse sanitation, scout, bag, and remove infected plants"
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Septoria Leaf Spot",
+      "pathogen_scientific_name": {
+        "value": "Septoria lycopersici",
+        "url": "https://content.ces.ncsu.edu/septoria-leaf-spot-of-tomato",
+        "quote": "Septoria leaf spot is caused by the fungus Septoria lycopersici .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://content.ces.ncsu.edu/septoria-leaf-spot-of-tomato",
+        "quote": "Septoria leaf spot is caused by the fungus Septoria lycopersici ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Seed",
+          "Whole plant"
+        ],
+        "url": "https://vegpath.plantpath.wisc.edu/diseases/tomato-septoria-leaf-spot/",
+        "quote": "Symptoms appear on the leaves as circular, tan-to-gray spots... Stem lesions appear similar to leaf lesions, but are often darker. Fruit lesions are uncommon... also infected seeds and equipment... in severe cases the death of an entire plant."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Circular, tan to gray lesions develop on the lower leaves and stems of the plant, typically small (<1/8 in), with a dark-brown perimeter and often a yellow halo; small dark pycnidia may appear in the center of the lesion. Disease begins on lower leaves and progresses upward.",
+          "url": "https://content.ces.ncsu.edu/septoria-leaf-spot-of-tomato",
+          "quote": "Circular, tan to gray, lesions develop on the lower leaves and stems of the plant. Lesions are typically small (<1/8 in), but as lesions become more numerous the entire leaf may become blighted. The lesions generally have a dark-brown perimeter and a yellow halo may develop around the leaf lesions. Small dark spots may appear in the center of the lesion – these are pycnidia, the fruiting body of the fungus where spores are produced."
+        },
+        "diagnostic_features": {
+          "value": "Small (<1/8 in) circular tan-to-gray lesions with a dark-brown perimeter and yellow halo, containing small dark raised pycnidia in the center; on the underside of the leaves, spots may appear as a darker green or water-soaked color. Disease progresses from older (lower) growth to younger (upper) growth.",
+          "url": "https://content.ces.ncsu.edu/septoria-leaf-spot-of-tomato",
+          "quote": "Small dark spots may appear in the center of the lesion – these are pycnidia, the fruiting body of the fungus where spores are produced. On the underside of the leaves, spots may appear as a darker green color or \"water-soaked.\" As the disease progresses, traveling from older growth to younger growth, spots may coalesce and the leaves may become entirely blighted."
+        },
+        "look_alikes": {
+          "value": [
+            "Early blight",
+            "Gray leaf spot (Stemphylium spp.)"
+          ],
+          "url": "https://content.ces.ncsu.edu/septoria-leaf-spot-of-tomato",
+          "quote": "Lesions caused by the early blight pathogen will be larger and darker brown than Septoria leaf spots and will have concentric rings. Gray leaf spot, caused by species of Stemphylium , will be very similar to Septoria leaf spots where they are small, circular, with a tan or light brown center, but the center part of the lesion tends to crack open or fall out in gray leaf spot lesions."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Rotate away from tomato (or susceptible solanaceous crops) for 1-2 or more years",
+          "Control presence of horsenettle and other host weeds",
+          "Remove crop debris from planting areas (particularly tomato crop debris); destroy infested plant debris",
+          "Reduce the amount of time plants are wet, when possible; avoid over-irrigating",
+          "Stake or trellis plants to improve air circulation and drying of leaves",
+          "Use mulches or plastic to reduce contact between leaves and soil; mulch the garden to prevent watersplash",
+          "Avoid working in fields when leaves are wet",
+          "Scout plants often and remove infected plants/leaves",
+          "Clean tools and equipment after leaving a field; disinfect stakes and cages",
+          "Maintain proper spacing between plants",
+          "Plant resistant varieties",
+          "Remove 'suckers' or lowest lateral tomato plant growth",
+          "Use raised beds and rotate which bed has tomatoes from year to year",
+          "Conventional fungicides applied preventively: azoxystrobin (Quadris), chlorothalonil (Bravo), chlorothalonil + cymoxanil (Ariston), difenoconazole + cyprodinil (Inspire Super), penthiopyrad (Fontelis), famoxadone + cymoxanil (Tanos), fluopyram + trifloxystrobin (Luna Sensation), fluxapyroxad + pyraclostrobin (Priaxor), fixed copper (Kocide), mancozeb (Penncozeb), mancozeb + fixed copper (ManKocide), mancozeb + zoxamide (Gavel), mandipropamid + difenoconazole (Revus Top), zinc dimethyldithiocarbamate (Ziram)",
+          "Organic fungicides: fixed copper, potassium bicarbonate (Carb-O-Nator)",
+          "Preventative applications of fungicides containing copper or chlorothalonil are useful in areas with chronic Septoria lycopersici infections; they only provide preventative protection and must be applied before disease occurs"
+        ],
+        "url": "https://content.ces.ncsu.edu/septoria-leaf-spot-of-tomato",
+        "quote": "Rotate away from tomato for 2 or more years Control presence of horsenettle and other weeds Remove crop debris from planting areas (particularly tomato crop debris) Reduce the amount of time plants are wet, when possible Stake plants to improve air circulation and drying of leaves Use mulches or plastic to reduce contact between leaves and soil Avoid working in fields when leaves are wet Scout plants often and remove infected plants Clean tools and equipment after leaving a field Use fungicides listed as effective against Septoria leaf spot"
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem, Seed, Whole plant",
+          "alternative_value": "Foliar, Stem",
+          "alternative_source_url": "https://content.ces.ncsu.edu/septoria-leaf-spot-of-tomato",
+          "note": "NC State lists only foliar and stem; Wisconsin extension lists the broader set including seed and whole-plant (severe cases). Canonical adopts the broader Wisconsin enumeration; the two are non-contradictory."
+        }
+      ]
+    },
+    {
+      "disease_name": "Bacterial Speck Of Tomato",
+      "pathogen_scientific_name": {
+        "value": "Pseudomonas syringae pv. tomato",
+        "url": "https://hort.extension.wisc.edu/articles/bacterial-speck-of-tomato/",
+        "quote": "Bacterial speck of tomato is caused by the bacterium  Pseudomonas syringae  pv.  tomato .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://hort.extension.wisc.edu/articles/bacterial-speck-of-tomato/",
+        "quote": "Bacterial speck of tomato is caused by the bacterium  Pseudomonas syringae  pv.  tomato ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Seed"
+        ],
+        "url": "https://hort.extension.wisc.edu/articles/bacterial-speck-of-tomato/",
+        "quote": "Leaf symptoms of bacterial speck consist of small black spots ... The bacterium is typically brought into a garden on contaminated tomato seeds or transplants"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Small black spots (⅛ to ¼ inch) on leaves, often more prominent on the undersides, sometimes developing a yellow halo; on fruit, very small pinpoint-like spots ranging from brown to black, which may be raised, flat or sunken, with darker green haloes on green fruit and subtle yellow haloes on ripe fruit.",
+          "url": "https://hort.extension.wisc.edu/articles/bacterial-speck-of-tomato/",
+          "quote": "Leaf symptoms of bacterial speck consist of small black spots (approximately ⅛ to ¼ inch in diameter) that often are more prominent on the undersides of leaves.  As the spots age, a yellow halo may develop around the edge.  Spots on fruit are very small (almost pinpoint-like) and do not penetrate very deeply into the tissue.  The spots can be raised, flat or sunken, and range in color from brown to black.  On unripe, green fruits, the spots often have darker green haloes, while on ripe fruits the spots can have subtle, yellow haloes."
+        },
+        "diagnostic_features": {
+          "value": "Small, angular (straight-edged) spots with yellow haloes on leaves; pinpoint-like superficial spots on fruit that do not penetrate deeply into the tissue.",
+          "url": "https://hort.extension.wisc.edu/articles/bacterial-speck-of-tomato/",
+          "quote": "On tomato leaves, bacterial speck leads to small, angular (i.e., straight-edged) spots with yellow haloes."
+        },
+        "look_alikes": {
+          "value": [
+            "Bacterial spot",
+            "tomato spotted wilt",
+            "bacterial canker of tomato"
+          ],
+          "url": "https://hort.extension.wisc.edu/articles/bacterial-speck-of-tomato/",
+          "quote": "Bacterial spot, (see UW Plant Disease Facts D0012,  Bacterial Spot of Tomato ) and tomato spotted wilt (a viral disease) may cause similar leaf symptoms."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Start by using high quality, pathogen-free seed or transplants from a reputable seed supplier or garden center",
+          "Consider treating the seed in hot water prior to planting to eliminate the pathogen",
+          "DO NOT use a sprinkler to water; instead use a soaker or drip hose to water at the bases of plants",
+          "Only work with tomato plants when they are dry",
+          "Routinely disinfect garden tools with 10% bleach or 70% alcohol (e.g., rubbing alcohol)",
+          "Remove contaminated tomato debris from the garden at the end of the growing season (deep bury, burn where allowed, or hot compost)",
+          "DO NOT replant tomatoes in the same area the following growing season; practice non-host crop rotation (three-year field rotations)",
+          "As a last resort, apply chemical treatments with a copper-based product labeled for tomatoes; apply first treatment before symptoms develop and repeat every 10–14 days while cool, moist conditions continue",
+          "Sanitize all greenhouses, equipment, flats and trellising stakes at the end of the season",
+          "Practice irrigation control to minimize leaf wetness during cooler periods",
+          "Remain vigilant/scout: remove diseased plants and a few of the surrounding plants once symptoms are observed; plow under infected areas/fields",
+          "Few resistant varieties are available"
+        ],
+        "url": "https://hort.extension.wisc.edu/articles/bacterial-speck-of-tomato/",
+        "quote": "Start by using high quality, pathogen-free seed or transplants from a reputable seed supplier or garden center. ... consider treating the seed in hot water prior to planting to eliminate the pathogen. ... DO NOT use a sprinkler to water; instead use a soaker or drip hose to water at the bases of plants.  Also, only work with tomato plants when they are dry, and consider routinely disinfecting garden tools with 10% bleach or (better due to its less corrosive properties) 70% alcohol (e.g., rubbing alcohol). ... remove contaminated tomato debris from your garden at the end of the growing season.  This material can be deep buried, burned (where allowed by local ordinance) or hot composted.  DO NOT replant tomatoes in the same area the following growing season; instead grow a nonsusceptible vegetable crop.  This approach is referred to as non-host crop rotation. ... As a last resort, consider chemical treatments for bacterial speck control. ... use a product that is labeled for use on tomatoes and that contains copper as the active ingredient.  To be most effective, the first treatment must be applied before symptoms have developed.  Apply additional treatments every 10 to 14 days as long as cool, moist conditions continue."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Seed",
+          "alternative_value": "Foliar",
+          "alternative_source_url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/bacterial-speck/",
+          "note": "Cornell factsheet emphasizes foliar/fruit lesions; Wisconsin extension additionally documents seed-borne transmission. Canonical takes the union."
+        },
+        {
+          "field": "disease_name",
+          "canonical_value": "Bacterial Speck of Tomato",
+          "alternative_value": "Bacterial Speck",
+          "alternative_source_url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/bacterial-speck/",
+          "note": "Cornell uses the shorter form; canonical retains the host qualifier 'of Tomato' for specificity."
+        }
+      ]
+    },
+    {
+      "disease_name": "Bacterial Canker And Wilt Of Tomato",
+      "pathogen_scientific_name": {
+        "value": "Clavibacter michiganensis subsp. michiganensis",
+        "url": "https://extension.umn.edu/disease-management/bacterial-canker-tomato",
+        "quote": "The disease is caused by the bacterial pathogen Clavibacter michiganensis subspecies michiganensis .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://content.ces.ncsu.edu/bacterial-canker-of-tomato",
+        "quote": "Clavibacter michiganensis is an aerobic, non-motile, non-spore forming, non-acid-fast, unencapsulated, gram-positive bacteria."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Vascular",
+          "Seed",
+          "Whole plant"
+        ],
+        "url": "https://extension.umn.edu/disease-management/bacterial-canker-tomato",
+        "quote": "Seedlings Small, white, raised spots may form on leaves. ... Stem Internal stem discoloration caused by bacterial canker. Brown streaks can be seen in the vascular system when the stem is cut open. ... This bacterial disease is suspected to be seedborne ... Entire plant may collapse and die."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Symptoms include small white raised spots and yellow-to-tan interveinal patches on leaves with brown burned-looking margins, one-sided wilting of lower leaves, brown streaks in the vascular system with stem cankers that may exude yellow sticky fluid, and 'bird's eye' spots (small ~1/4 inch raised white spots with tan/brown centers and cream-colored halos) on fruit.",
+          "url": "https://extension.umn.edu/disease-management/bacterial-canker-tomato",
+          "quote": "Small, white, raised spots may form on leaves. Leaf edge discoloration and wilting. ... Yellow to tan patches form between veins. Edges of leaf turn brown, with a yellow border. ... Lower leaves wilt, often only on one side. ... Brown streaks can be seen in the vascular system when the stem is cut open. Stem splits, forming long, brown cankers. Yellow sticky fluid may emerge from cut stem when squeezed. ... Fruit may have small (1/4 inch), raised, white spots with tan or brown centers (called bird's eye spot)."
+        },
+        "diagnostic_features": {
+          "value": "Bird's eye spot on fruit (small ~1/4 inch raised white spots with tan/brown centers surrounded by a light yellow or cream-colored halo); brown streaks in the vascular system visible when stem is cut, with mealy pith; yellow sticky fluid exuding from squeezed cut stem; one-sided wilting of lower leaves; marginal leaf browning that looks burned on the edges; dark sunken leaf veins on young greenhouse plants.",
+          "url": "https://extension.umn.edu/disease-management/bacterial-canker-tomato",
+          "quote": "Fruit may have small (1/4 inch), raised, white spots with tan or brown centers (called bird's eye spot). ... Brown streaks can be seen in the vascular system when the stem is cut open. ... Yellow sticky fluid may emerge from cut stem when squeezed. ... Lower leaves wilt, often only on one side."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Remove leaves with symptoms",
+          "Crop rotation to a non-host crop for 3-4 years (no tomato, potato, pepper, or eggplant); UMN also notes a shorter 2-3 year option",
+          "Plant certified pathogen-free seed from a reputable supplier; do not save seeds from infected plants",
+          "Treat saved seed before planting: soak in 1 part germicidal bleach to 4 parts water for 1 minute, then rinse in water for 5 minutes",
+          "Hot water seed treatment: soak seeds in 122°F water for 25 minutes",
+          "Seed may also be treated with dilute solutions of sodium hypochlorite",
+          "Purchase healthy transplants from a reputable grower; inspect and avoid transplants with spots, discoloration, or that have been pruned or cut back",
+          "Keep tomato leaves as dry as possible — water with drip irrigation or a soaker hose, in the morning so leaves dry quickly",
+          "Use filtered and/or treated irrigation water",
+          "Space plants so that air flows between them",
+          "Stake or cage plants, and clean and sanitize stakes/cages each year",
+          "Dispose of wooden stakes from an infested field; discard strings and wooden stakes",
+          "Disinfect tools and equipment between seasons with a commercial greenhouse sanitizer or a 1:9 bleach:water solution for 1-5 minutes",
+          "Regularly clean pruning tools; alternate between two pruners between plants to allow proper soaking time",
+          "Wash re-used pots and trays to remove crop debris, then sanitize; use new potting media stored in a sanitary environment",
+          "Wash hands, exposed clothing, and boots regularly; designate specific boots and clothes for each greenhouse or bay; wash hands before and after moving between greenhouses",
+          "Eliminate or reduce weeds (especially Solanaceae such as nightshades) and volunteer tomato/pepper plants during rotation",
+          "Avoid working in fields when the foliage is wet with rain, irrigation, or dew",
+          "Immediately remove and destroy all diseased material; in greenhouse/high tunnel production, bag and remove infected plants including roots, plus adjacent plants even if they appear healthy",
+          "Remove symptomatic plants and adjacent plants during transplant production",
+          "Remove or plow in remaining plant debris immediately after harvest to encourage decomposition",
+          "Switch to hydroponic tomato production where the pathogen has built up in the soil and rotation is a challenge",
+          "Regular, preventative spraying of copper compounds provides some protection from bacterial canker",
+          "Sprays during transplant production are more effective in prevention than sprays post-transplanting or once symptoms appear in the field"
+        ],
+        "url": "https://extension.umn.edu/disease-management/bacterial-canker-tomato",
+        "quote": "Remove leaves with symptoms. Cultural controls Plant tomatoes where no tomatoes, potatoes, peppers or eggplants have been for the past 3-4 years. ... Plant certified pathogen-free seed from a reputable supplier. ... Soak seeds in a solution of 1 part germicidal bleach to 4 parts water for 1 minute. Rinse in water for 5 minutes. Soak seeds in 122°F water for 25 minutes. ... Disinfect tools and equipment between seasons with a commercial greenhouse sanitizer ... Rotate away from tomato and related crops for two to three years. ... Sprays during transplant production are more effective in prevention than sprays post-transplanting or when symptoms appear in the field."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Clavibacter michiganensis subsp. michiganensis",
+          "alternative_value": "Clavibacter michiganensis",
+          "alternative_source_url": "https://content.ces.ncsu.edu/bacterial-canker-of-tomato",
+          "note": "NC State uses the species-level name only; UMN uses the more precise subspecies designation, which is the canonical name for the tomato bacterial canker pathogen."
+        },
+        {
+          "field": "treatments.rotation_duration",
+          "canonical_value": "3-4 years rotation to non-host",
+          "alternative_value": "2-3 years rotation",
+          "alternative_source_url": "https://extension.umn.edu/disease-management/bacterial-canker-tomato",
+          "note": "UMN states '3-4 years' in cultural controls but also says 'Rotate away from tomato and related crops for two to three years'; NC State recommends 3-4 years."
+        }
+      ]
+    },
+    {
+      "disease_name": "Southern Bacterial Wilt",
+      "pathogen_scientific_name": {
+        "value": "Ralstonia solanacearum",
+        "url": "https://content.ces.ncsu.edu/bacterial-wilt-of-tomatoes",
+        "quote": "Southern bacterial wilt of tomato is caused by the soil-borne bacterium Ralstonia solanacearum (formerly known as Pseudomonas solanacearum ).",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://content.ces.ncsu.edu/bacterial-wilt-of-tomatoes",
+        "quote": "caused by the soil-borne bacterium Ralstonia solanacearum"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Root",
+          "Vascular",
+          "Whole plant"
+        ],
+        "url": "https://content.ces.ncsu.edu/bacterial-wilt-of-tomatoes",
+        "quote": "Initial stages of the disease include a wilted appearance of the youngest leaves... the base of the plant may show brown cankers, root rot, and a cross section of an infected stem may show a brown discoloration of the vascular tissue... The plant eventually becomes permanently wilted and death occurs."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Plants show a wilted appearance of the youngest leaves while still green, with wilting that can appear suddenly; as the disease progresses, the base of the plant may show brown cankers, root rot, and brown discoloration of the vascular tissue in the stem.",
+          "url": "https://content.ces.ncsu.edu/bacterial-wilt-of-tomatoes",
+          "quote": "Initial stages of the disease include a wilted appearance of the youngest leaves. Typically, plants affected by bacterial wilt will show wilting symptoms while the plant is still green and can appear to come on suddenly. As the disease progresses, the base of the plant may show brown cankers, root rot, and a cross section of an infected stem may show a brown discoloration of the vascular tissue."
+        },
+        "diagnostic_features": {
+          "value": "A freshly cut stem at the base of the plant placed in water shows a stream of white slimy substance (bacterial streaming) — a strong indicator of the bacterium in the vascular tissue; the interior of the stem will be a light brown color in the pith area. Plants wilt while still green and may appear to recover overnight only to wilt again in the afternoon.",
+          "url": "https://content.ces.ncsu.edu/bacterial-wilt-of-tomatoes",
+          "quote": "A freshly cut stem at the base of the plant placed in water can also show a stream of a white slimy substance that is a strong indicator of the bacterium present in the vascular tissue. The interior of the stem will be a light brown color in the pith area."
+        },
+        "look_alikes": {
+          "value": [
+            "Southern blight on tomato",
+            "Fusarium wilt of tomato",
+            "Verticillium wilt"
+          ],
+          "url": "https://content.ces.ncsu.edu/bacterial-wilt-of-tomatoes",
+          "quote": "Bacterial wilt on tomato may be confused with other wilt or root rot diseases. Southern blight on tomato will also wilt, but affected plants will have a crown rot with white strands or mycelium growing up the stem from the soil line. Small, tan to brown \"bebe\" sized round structures (sclerotia) are typically present. Fusarium wilt of tomato will typically have one-sided leaf yellowing or wilting. Verticillium wilt typically causes V-shaped lesions on the leaflets and does not wilt as suddenly."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Crop rotation and planting cover crops of non-susceptible plants (i.e. corn, rye, beans, cabbage) can reduce soilborne populations of the pathogen",
+          "If bacterial wilt is present in a field, remove infected plants immediately",
+          "Plants can be placed into a garbage bag or another container so as to not spread soil and bacteria to other plants",
+          "Use bacterial wilt resistant rootstocks (example rootstocks: 'Armada', 'Shincheonggang', and 'HNX12870564')"
+        ],
+        "url": "https://content.ces.ncsu.edu/bacterial-wilt-of-tomatoes",
+        "quote": "Cultural practices can provide some control of disease incidence. Crop rotation and planting cover crops of non-susceptible plants (i.e. corn, rye, beans, cabbage) can reduce soilborne populations of the pathogen. If bacterial wilt is present in a field, remove infected plants immediately . Plants can be placed into a garbage bag or another container so as to not spread soil and bacteria to other plants... The use of bacterial wilt resistant rootstocks has been used successfully in fields where bacterial wilt is prevalent or widespread... Example rootstocks that are resistant to bacterial wilt include 'Armada', 'Shincheonggang', and 'HNX12870564'."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Anthracnose",
+      "pathogen_scientific_name": {
+        "value": "Colletotrichum coccodes",
+        "url": "https://ipm.ucanr.edu/agriculture/tomato/anthracnose/",
+        "quote": "Anthracnose Colletotrichum coccodes",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ipm.cahnr.uconn.edu/tomato-anthracnose/",
+        "quote": "Tomato anthracnose (ripe rot) is a fungal disease caused by several species of the fungus Colletotrichum"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Root",
+          "Seed",
+          "Pod"
+        ],
+        "url": "https://ipm.cahnr.uconn.edu/tomato-anthracnose/",
+        "quote": "Fruit : Initially small, circular, water-soaked spots that are slightly sunken will appear on over ripened tomatoes. ... Leaves and Stems : This type of infection is not as common. However, small, dark spots with yellow halos may appear on older leaves, and tiny lesions may occur on stems. ... Roots : Less commonly identified are root infections. ... The fungus can also be seed-borne."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Depressed, circular lesions about 0.5 inch (1.2 cm) in diameter appear on ripe fruit; with age the lesions become tan and dotted with small black specks (microsclerotia). Lesions can form concentric rings, become sunken and darker, and under humid conditions display a salmon pink spore appearance in the center.",
+          "url": "https://ipm.ucanr.edu/agriculture/tomato/anthracnose/",
+          "quote": "Depressed, circular lesions about 0.5 inch (1.2 cm) in diameter appear on ripe fruit. With age the lesions become tan and dotted with small black specks (microsclerotia)."
+        },
+        "diagnostic_features": {
+          "value": "Dark, needle-like spines (setae) surround the microsclerotia and acervuli (cushion-shaped fruiting bodies) that erupt through the plant tissue; during moist weather, masses of salmon-colored sausage-shaped spores may form on the lesion surface. Root infections produce brown lesions dotted with microsclerotia and often a completely rotted cortex.",
+          "url": "https://ipm.ucanr.edu/agriculture/tomato/anthracnose/",
+          "quote": "Dark, needle-like spines, called setae, surround the microsclerotia and acervuli, cushion-shaped fruiting bodies that erupt through the plant tissue. During moist weather, masses of salmon-colored sausage-shaped spores may form on the lesion surface."
+        },
+        "look_alikes": {
+          "value": [
+            "Blossom End Rot",
+            "Late Blight"
+          ],
+          "url": "https://ipm.cahnr.uconn.edu/tomato-anthracnose/",
+          "quote": "Not to be Confused with: Blossom End Rot - Water-soaked lesions, usually form on the lower side of the tomato fruit Late Blight - Sunken spots on tomato fruit are less circular in appearance"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Rotate with nonsolanaceous crops (e.g., corn, beans, cover crop) at least every other year; 3-4 years recommended to reduce fungal buildup in soil",
+          "Use drip irrigation and avoid overhead/sprinkler irrigation, especially when fruit begin to ripen",
+          "Grow tomatoes in a covered structure",
+          "Avoid harvesting or pruning wet plants",
+          "Stake plants upright and mulch underneath to improve air circulation and minimize soil splash contact",
+          "Hot water seed treatment (122 °F for 25 minutes) to reduce early disease pressure",
+          "Apply fungicides according to a disease forecasting system",
+          "azoxystrobin plus difenoconazole (Quadris Top) Groups 11 & 3",
+          "chlorothalonil (Bravo Weather Stik) Group M05",
+          "mancozeb (Dithane F45) Group M03",
+          "polyoxin D zinc salt (OSO 5%SC OG / Veggie Turbo 5 SC OG) Group 19 — organic-approved",
+          "hydrogen dioxide plus peroxyacetic acid (Zerotol OG) Group NC — organic-approved",
+          "Resistant varieties: Chef's Choice FI (orange) and Chef's Choice (red)",
+          "Fungicides labeled for black mold are effective against anthracnose fruit rot"
+        ],
+        "url": "https://ipm.cahnr.uconn.edu/tomato-anthracnose/",
+        "quote": "There are two slicer-type tomato varieties that are resistant to anthracnose: Chef's Choice FI (orange) and Chef's Choice (red). Cultural: Use drip irrigation and avoid overhead irrigation Grow tomatoes in a covered structure Avoid harvesting or pruning wet plants Practice crop rotation with non-solanaceous crops (e.g., corn, beans, or cover crop) for 3-4 years to reduce fungal buildup in soil Stake plants upright and mulch underneath to help improve air circulation and minimize soil splash contact Hot water seed treatment (122 °F for 25 minutes) can help reduce early disease pressure. Chemical: Apply fungicides according to a disease forecasting system. Here are some examples of fungicides you can use: azoxystrobin plus difenoconazole (Quadris Top) Groups 11 & 3, chlorothalonil (Bravo Weather Stik) Group M05, and mancozeb (Dithane F45), Group M03 . Additional fungicides labeled for organic production are polyoxin D zinc salt (OSO 5%SC OG , AKA Veggie Turbo 5 SC OG ) Group 19 and hydrogen dioxide plus peroxyacetic acid (Zerotol OG ) Group NC."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Anthracnose",
+          "alternative_value": "Tomato Anthracnose (Ripe Rot)",
+          "alternative_source_url": "https://ipm.cahnr.uconn.edu/tomato-anthracnose/",
+          "note": "UConn IPM uses the synonym 'Ripe Rot' alongside Anthracnose; UC IPM uses the simpler form 'Anthracnose'."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "[Foliar, Stem, Root, Seed, Pod]",
+          "alternative_value": "[Foliar, Stem, Root]",
+          "alternative_source_url": "https://ipm.ucanr.edu/agriculture/tomato/anthracnose/",
+          "note": "UC IPM lists only stems, leaves, and roots; UConn adds fruit (Pod) and notes the fungus can be seed-borne."
+        },
+        {
+          "field": "treatments.fungicide_necessity",
+          "canonical_value": "Fungicides may be applied per a disease forecasting system",
+          "alternative_value": "Fungicides are generally not required",
+          "alternative_source_url": "https://ipm.ucanr.edu/agriculture/tomato/anthracnose/",
+          "note": "UC IPM states fungicides are generally not required for California production; UConn IPM recommends applying fungicides per a forecasting system for humid Northeast conditions."
+        }
+      ]
+    },
+    {
+      "disease_name": "Bacterial Wilt",
+      "pathogen_scientific_name": {
+        "value": "Ralstonia solanacearum",
+        "url": "https://extension.psu.edu/bacterial-wilt-ralstonia-solanacearum",
+        "quote": "Bacterial Wilt - Ralstonia solanacearum",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://extension.psu.edu/bacterial-wilt-ralstonia-solanacearum",
+        "quote": "Bacteria called Ralstonia solanacearum attack almost 200 plant species in 33 different plant families."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Root",
+          "Vascular",
+          "Whole plant"
+        ],
+        "url": "https://extension.psu.edu/bacterial-wilt-ralstonia-solanacearum",
+        "quote": "The bacteria can infect through roots and through any fresh wounds... Above-ground symptoms include wilting of 1-2 leaves on young plants... Internal symptoms include light tan to yellow-brown discoloration of the vascular tissue. Long sections of infected stems reveal dark brown to black streaking in the vascular tissue"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Wilting of 1-2 leaves on young plants during the heat of the day, with recovery at night; affected leaves turn yellow and remain wilted, and internal vascular tissue shows light tan to yellow-brown discoloration progressing to dark brown to black streaking.",
+          "url": "https://extension.psu.edu/bacterial-wilt-ralstonia-solanacearum",
+          "quote": "Above-ground symptoms include wilting of 1-2 leaves on young plants during the heat of the day. Such plants tend to recover at night... Affected leaves turn yellow and remain wilted after a time... Internal symptoms include light tan to yellow-brown discoloration of the vascular tissue. Long sections of infected stems reveal dark brown to black streaking in the vascular tissue as the disease progresses."
+        },
+        "diagnostic_features": {
+          "value": "Slimy, sticky ooze forms tan-white to brownish beads where the vascular tissue is cut; when an infected cut stem end is suspended in clear water, bacterial ooze forms a thread in the water. On large-leafed plants only the tissue on one side of the mid-vein may wilt. Ralstonia does not cause leaf spotting (unlike Xanthomonas).",
+          "url": "https://extension.psu.edu/bacterial-wilt-ralstonia-solanacearum",
+          "quote": "Slimy, sticky ooze forms tan-white to brownish beads where the vascular tissue is cut. When an infected stem is cut across and the cut ends held together for a few seconds, a thin thread of ooze can be seen as the cut ends are slowly separated. If one of the cut ends is suspended in a clear container of clean water, bacterial ooze will form a thread in the water... On large-leafed plants, only the tissue on one side of the mid-vein may wilt... However, while Xcp can cause leaf spotting, Ralstonia does not."
+        },
+        "look_alikes": {
+          "value": [
+            "bacterial blight (Xanthomonas campestris pv. pelargonii) in geraniums"
+          ],
+          "url": "https://extension.psu.edu/bacterial-wilt-ralstonia-solanacearum",
+          "quote": "Symptoms in geraniums are very similar to those caused by the bacterial blight pathogen, Xanthomonas campestris pv. pelargonii ( Xcp )."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Grow and propagate from pathogen-free plant material",
+          "Use pathogen-free potting soil or other media",
+          "Establish stock plants tested and known to be free of the bacteria",
+          "Train workers in procedures that prevent pathogen contamination of stock plants and potting soil",
+          "Discard infected plants as soon as possible",
+          "Isolate all new, incoming plants as if their health were unknown, even if certified healthy",
+          "Do not commingle or disperse new plants with other plants in the greenhouse",
+          "Practice weed control (weeds can serve as alternative hosts)",
+          "Practice crop rotation for at least 4 years",
+          "Plant cover crops of non-susceptible plants (e.g., corn, beans, cabbage)",
+          "Use tomato plants grafted with bacterial wilt-resistant rootstocks (e.g., Armada, Bowman, RST-05-113-TE)"
+        ],
+        "url": "https://extension.umd.edu/resource/southern-bacterial-wilt-tomato-found",
+        "quote": "Weeds can serve as alternative hosts for this pathogen, so weed control is important in disease management. Crop rotation (for at least 4 years) and planting cover crops of non-susceptible plants (i.e., corn, beans, cabbage) may help reduce populations of the pathogen in the soil. Growers can use tomato plants grafted with bacterial wilt resistant rootstocks in fields where bacterial wilt is present. A list of resistant rootstocks is available on the USDA tomato rootstock page and includes such examples as Armada, Bowman and RST-05-113-TE rootstocks."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Bacterial Wilt",
+          "alternative_value": "Southern Bacterial Wilt of Tomato",
+          "alternative_source_url": "https://extension.umd.edu/resource/southern-bacterial-wilt-tomato-found",
+          "note": "UMD source frames the disease as 'Southern Bacterial Wilt of Tomato' (caused by R. solanacearum Race 1); Penn State uses the broader name 'Bacterial Wilt'. Same pathogen."
+        }
+      ]
+    },
+    {
+      "disease_name": "Late Blight",
+      "pathogen_scientific_name": {
+        "value": "Phytophthora infestans",
+        "url": "https://content.ces.ncsu.edu/tomato-late-blight",
+        "quote": "Tomato late blight is caused by the oomycete pathogen Phytophthora infestans ( P. infestans ).",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Oomycete",
+        "url": "https://content.ces.ncsu.edu/tomato-late-blight",
+        "quote": "Tomato late blight is caused by the oomycete pathogen Phytophthora infestans"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://extension.umn.edu/disease-management/late-blight",
+        "quote": "Late blight is a potentially devastating disease of tomato and potato, infecting leaves, stems, tomato fruit, and potato tubers."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Leaves develop large dark brown blotches with a green-gray edge (not confined by major leaf veins); irregularly shaped water-soaked lesions often with a lighter halo appear on younger leaves at the top of the canopy; stems show firm dark brown infections; tomato fruits develop firm, dark brown, greasy-to-leathery circular spots. In high humidity, thin powdery white fungal growth (sporangia) appears on infected tissue, especially the leaf underside.",
+          "url": "https://extension.umn.edu/disease-management/late-blight",
+          "quote": "Leaves have large, dark brown blotches with a green gray edge; not confined by major leaf veins. Infections progress through leaflets and petioles, resulting in large sections of dry brown foliage. Stem infections are firm and dark brown with a rounded edge. In cool, wet weather, entire fields turn brown and wilted as if hit by frost. In tomatoes, firm, dark brown, circular spots grow to cover large parts of fruits. Spots may become mushy as secondary bacteria invade. In high humidity, thin powdery white fungal growth appears on infected leaves, tomato fruit and stems."
+        },
+        "diagnostic_features": {
+          "value": "Lesions occur on new growth at the top of the canopy (unlike early blight which starts on lower leaves), are light brown or tan (vs. dark brown with concentric rings for early blight); large dark brown leaf blotches have a green-gray edge that is not confined by major leaf veins; produces white cottony/powdery sporulation on the leaf underside under high humidity.",
+          "url": "https://content.ces.ncsu.edu/tomato-late-blight",
+          "quote": "Late blight can be differentiated from early blight on tomato and other foliar fungal diseases by where they occur on the plant. Lesions caused by late blight can be found anywhere on the plant, but are mostly found on the new growth whereas early blight typically starts on the lower leaves and slowly moves up the plant. Also, lesions caused by late blight tend to be light brown or tan in color while lesions caused by early blight tend to be dark brown in color with concentric rings."
+        },
+        "look_alikes": {
+          "value": [
+            "Phytophthora nicotianae",
+            "Phytophthora capsici",
+            "early blight"
+          ],
+          "url": "https://content.ces.ncsu.edu/tomato-late-blight",
+          "quote": "Other species of Phytophthora , specifically P. nicotianae and P. capsici, can also cause lesions on tomato and tomato fruit similar to those caused by late blight... Late blight can be differentiated from early blight on tomato and other foliar fungal diseases by where they occur on the plant."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant tomatoes where no tomatoes, potatoes, peppers or eggplants have been for the past 3-4 years",
+          "Plant early in the season to escape high disease pressure later in the season",
+          "Keep leaves as dry as possible; water with drip irrigation or a soaker hose; water in the morning so leaves dry quickly",
+          "Stake or cage plants and space plants so that air flows between them",
+          "Remove or bury plants at the end of the season; manage cull piles so culls break down over winter",
+          "Scout plants often and remove infected plants, infected fruit, volunteers and weeds",
+          "Destroy potato cull piles before the growing season begins by burying, incorporating into fields, or feeding to livestock",
+          "Control volunteer potato plants, as infected plants can grow from infected tubers",
+          "Plant certified potato seed",
+          "Inspect tomato transplants for late blight symptoms prior to purchase and/or planting",
+          "If infection is found in only a few plants within a field, remove, disc-under, kill with herbicide or flame-kill infected plants to avoid spreading",
+          "Sign up to receive alerts at the USAblight website",
+          "Plant resistant varieties when possible (will still show some symptoms under highly favorable conditions)",
+          "Apply fungicides specific to water molds prior to infection when environmental conditions favor disease, repeated according to label instructions",
+          "Before disease occurs, apply fungicides at 7-10 day intervals; after disease is detected in your area, apply at 5-7 day intervals",
+          "Rotate fungicide groups and/or tank mix fungicides (e.g., with chlorothalonil) to avoid producing fungicide-resistant isolates",
+          "Fluopicolide (Presidio 4FL)",
+          "Oxathiapiprolin + chlorothalonil (Orondis Opti)",
+          "Oxathiapiprolin + mandipropamid (Orondis Ultra)",
+          "Propamocarb (Previcur Flex)",
+          "Cyazofamid (Ranman 3.6SC)",
+          "Ametoctradin + dimethomorph (Zampro)",
+          "Mandipropamid + difenoconazole (Revus Top)",
+          "Dimethomorph (Acrobat 50WP)",
+          "Cymoxanil (Curzate 60DF)",
+          "Mefenoxam + chlorothalonil (Ridomil Gold Bravo)",
+          "Mancozeb + zoxamide (Gavel 75WG)",
+          "Mancozeb (Dithane)",
+          "Chlorothalonil (Bravo)",
+          "Fixed copper formulations (OMRI-labeled option for organic growers)",
+          "Products containing copper or chlorothalonil (recommended for home gardeners)"
+        ],
+        "url": "https://content.ces.ncsu.edu/tomato-late-blight",
+        "quote": "Plant early in the season to escape high disease pressure later in the season Do not allow water to remain on leaves for long periods of time Scout plants often and remove infected plants, infected fruit, volunteers and weeds Sign up to recieve alerts at the USAblight website Plant resistant varieties when possible. Protect the crop with fungicides... Before disease occurs, apply fungicides at 7-10 day intervals. After disease is detected in your area, apply fungicides at 5-7 day intervals. Alternate products and tank mix with chlorothalonil to avoid generating fungicide-resistant strains."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Late blight",
+          "alternative_value": "Tomato Late Blight",
+          "alternative_source_url": "https://content.ces.ncsu.edu/tomato-late-blight",
+          "note": "NC State titles the page 'Tomato Late Blight'; UMN uses 'Late blight'. Same disease."
+        }
+      ]
+    },
+    {
+      "disease_name": "Phytophthora Blight",
+      "pathogen_scientific_name": {
+        "value": "Phytophthora capsici",
+        "url": "https://blogs.cornell.edu/livegpath/gallery/tomato/phytophthora-blight-on-tomato/",
+        "quote": "The soil-borne pathogen that causes Phytophthora blight, Phytophthora capsici , is commonly seen affecting foliar tissue and fruit of pepper and cucurbits .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "",
+        "url": "",
+        "quote": ""
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://blogs.cornell.edu/livegpath/gallery/tomato/phytophthora-blight-on-tomato/",
+        "quote": "Foliar as well as fruit symptoms on tomato were observed in July 2021"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "",
+          "url": "",
+          "quote": ""
+        },
+        "diagnostic_features": {
+          "value": "",
+          "url": "",
+          "quote": ""
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Fungicides labeled for buckeye fruit rot and late blight likely will suppress foliar infection by Phytophthora capsici when applied before a storm with potential to cause flooding."
+        ],
+        "url": "https://blogs.cornell.edu/livegpath/gallery/tomato/phytophthora-blight-on-tomato/",
+        "quote": "Fungicides labeled for buckeye fruit rot and late blight likely will suppress foliar infection by Phytophthora capsici when applied before a storm with potential to cause flooding."
+      },
+      "confidence": "low",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Rhizopus Soft Rots",
+      "pathogen_scientific_name": {
+        "value": "Rhizopus stolonifer",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6696333/",
+        "quote": "postharvest rot due to Rhizopus stolonifer , a fungus which requires lesions to initiate the infectious process",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6696333/",
+        "quote": "Rhizopus stolonifer , a fungus which requires lesions to initiate the infectious process"
+      },
+      "affected_parts": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Postharvest rot of tomato fruits caused by Rhizopus stolonifer, which initiates infection through lesions such as cracks, insect bites or injuries.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6696333/",
+          "quote": "30% of tomato yield is lost due to postharvest rot due to Rhizopus stolonifer , a fungus which requires lesions to initiate the infectious process"
+        },
+        "diagnostic_features": {
+          "value": "Visual signs of the presence of the fungus and rot on fruits, commonly associated with fruit cracking that serves as the entry door for the fungus.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6696333/",
+          "quote": "three cultivars, SV, EXP and AR, did not show signs of rot or visual signs of the presence of the fungus, despite being inoculated"
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Thermal treatments (TT) which include high and low temperatures",
+          "Chemical treatments (CT)",
+          "UV-C radiation (UV-C)",
+          "Biological control (BC)",
+          "Chitosan, nitrous oxide, essential oils and other volatile organic compounds",
+          "Dipping in hot water at 20, 40 and 60 °C for 20 s",
+          "Spraying 0.6% of Hydrogen Peroxide 23% + Peracetic acid 15%",
+          "Commercial bleach at 0.5%",
+          "2% Hydrogen Peroxide 50%",
+          "Hot water rinse brushing (HWRB)",
+          "Disinfection with chlorinated water"
+        ],
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6696333/",
+        "quote": "Methods proposed for this control include, among others: thermal treatments (TT) which include high and low temperatures, chemical treatments (CT), UV-C radiation (UV-C), biological control (BC) and chemical treatments (CT), which include treatments-applying different chemical compounds like chitosan, nitrous oxide, essential oils and other volatile organic compounds"
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Sclerotinia Timber Rot",
+      "pathogen_scientific_name": {
+        "value": "Sclerotinia sclerotiorum and S. minor",
+        "url": "https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/stems/timber-rot/",
+        "quote": "Timber Rot Sclerotinia sclerotiorum and S. minor",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "",
+        "url": "",
+        "quote": ""
+      },
+      "affected_parts": {
+        "value": [
+          "Stem",
+          "Whole plant"
+        ],
+        "url": "https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/stems/timber-rot/",
+        "quote": "Lesions on the stem show hollow pith when cut open, and white moldy growth is usually visible at the edges of the lesions. ... Timber rot causes loss of plant vigor, followed by wilting and eventual death of the plant."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Timber rot causes loss of plant vigor, wilting, and eventual plant death; stem lesions show hollow pith with white moldy growth and small black sclerotia.",
+          "url": "https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/stems/timber-rot/",
+          "quote": "Timber rot causes loss of plant vigor, followed by wilting and eventual death of the plant. Lesions on the stem show hollow pith when cut open, and white moldy growth is usually visible at the edges of the lesions. Small black spherical fruiting bodies (sclerotia) are usually observed in or on the lesion."
+        },
+        "diagnostic_features": {
+          "value": "Stem lesions with hollow pith when cut open, white moldy growth at the edges of lesions, and small black spherical fruiting bodies (sclerotia) in or on the lesion.",
+          "url": "https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/stems/timber-rot/",
+          "quote": "Lesions on the stem show hollow pith when cut open, and white moldy growth is usually visible at the edges of the lesions. Small black spherical fruiting bodies (sclerotia) are usually observed in or on the lesion."
+        },
+        "look_alikes": {
+          "value": [
+            "Sclerotinia",
+            "white mold"
+          ],
+          "url": "https://extension.psu.edu/frequently-asked-questions-about-timber-rot-on-tomato",
+          "quote": "Timber rot, also known as Sclerotinia or white mold"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Soil sterilization is effective on a small plot basis",
+          "Good cultural practices and attention to sanitation and crop rotation is important in the commercial setting",
+          "Avoid planting tomatoes after susceptible crops such as lettuce, cabbage, beans, peppers or eggplants"
+        ],
+        "url": "https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/tomato-problem-solver/stems/timber-rot/",
+        "quote": "Sclerotinia occurs when tomatoes are planted after susceptible crops such as lettuce, cabbage, beans, peppers or eggplants. Soil sterilization is effective on a small plot basis, but good cultural practices and attention to sanitation and crop rotation is important in the commercial setting."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Southern Blight",
+      "pathogen_scientific_name": {
+        "value": "Agroathelia rolfsii",
+        "url": "https://content.ces.ncsu.edu/southern-blight-of-vegetable-crops",
+        "quote": "Southern blight is caused by the soil-born fungus Agroathelia rolfsii (= Sclerotium rolfsii ).",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://content.ces.ncsu.edu/southern-blight-of-vegetable-crops",
+        "quote": "Southern blight is caused by the soil-born fungus Agroathelia rolfsii (= Sclerotium rolfsii )."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Whole plant"
+        ],
+        "url": "https://www.pubs.ext.vt.edu/SPES/SPES-325/SPES-325.html",
+        "quote": "plants with early infections have pale green leaves that cluster and cup upwards. Eventually the whole plant wilts... Often a white mat of mycelium is observed at the base of the stem at the soil line"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "A brown-to-black lesion develops on the lower stem at the soil line and can girdle the stem, causing sudden permanent wilt of above-ground parts; under moist conditions a white mycelial mat (often fan-shaped) appears at the stem base, followed by tan to reddish-brown spherical sclerotia (1-2 mm); fruit in contact with soil develop sunken, water-soaked, star-shaped lesions that collapse within 3-4 days.",
+          "url": "https://content.ces.ncsu.edu/southern-blight-of-vegetable-crops",
+          "quote": "Initially, a brown to black lesion usually develops on the stem near the soil line. The lesion will develop rapidly and can completely girdle the stem, which will cause a sudden and permanent wilt of all above ground parts. Young plants may fall over at the soil line. Under moist conditions, white mycelium will typically develop on stem lesions and can sometimes extend several centimeters up the stem of tomato and pepper plants. After a few days, tan to reddish-brown, spherical sclerotia (1 to 2 mm in diameter) can appear on the mat of mycelia."
+        },
+        "diagnostic_features": {
+          "value": "White mycelial mat with a distinct fan-shaped pattern plus tan to reddish-brown spherical sclerotia (1-2 mm / 0.04-0.08 inch) at the stem base near the soil line; fruit lesions are sunken, water-soaked, soft, and star-shaped with no offensive odor, distinguishing it from other soilborne wilt diseases.",
+          "url": "https://ipm.missouri.edu/meg/2017/8/southernBlight/",
+          "quote": "Under moist conditions, abundant white mycelium that often has a distinct fan-shaped pattern will develop on or around these lesions. If conditions continue to favor infection, a tan to reddish-brown 0.04-0.08 inch (1-2 mm) diameter, spherical sclerotium (plural sclerotia) forms on the mycelial mat."
+        },
+        "look_alikes": {
+          "value": [
+            "Fusarium wilt",
+            "Verticillium wilt",
+            "bacterial wilt"
+          ],
+          "url": "https://www.pubs.ext.vt.edu/SPES/SPES-325/SPES-325.html",
+          "quote": "Field distribution occurs in a patchy pattern, which could be confused with symptoms of other soilborne diseases, such as Fusarium wilt, Verticillium wilt , or bacterial wilt"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Avoid planting in fields with a history of southern blight",
+          "Crop rotation with non-host plants such as corn, wheat, barley, and other small grains/grasses; wait 5-6 years before returning with the same crop family",
+          "Deep plowing (>4-8 inches) to bury infected plant debris and sclerotia (pathogen is highly aerobic)",
+          "Ensure the previous crop residue is fully decomposed prior to planting",
+          "Sanitation: early detection and removal of symptomatic plants, crop residues, and weeds; use protective gloves, boots, and disinfectants",
+          "Use certified, pathogen-free seed and transplants",
+          "Modify planting dates to avoid wet/warm conditions favorable to disease (77-95°F)",
+          "Wider plant spacing to improve airflow",
+          "Maintain or raise soil pH by liming (lower pH encourages disease)",
+          "Avoid injuring plants during cultivation",
+          "Use physical barriers (aluminum foil or plastic bags around the stem at the soil line for home gardeners; plastic mulch in commercial fields/tunnels)",
+          "Apply straw mulch to the soil",
+          "Use grafted tomato rootstocks tolerant to southern blight ('Maxifort', 'Big Power', 'Beaufort')",
+          "Use ammonium-source nitrogen instead of nitrate",
+          "Soil solarization (raise soil temperatures to 50-55°C / 122-131°F for up to 6 hours)",
+          "Anaerobic soil disinfestation",
+          "Biological control: Trichoderma harzianum, Trichoderma viride, certain mycorrhizal fungi, Penicillium spp., Gliocladium virens, Bacillus subtilis (often combined with soil solarization)",
+          "Soil fumigants: chloropicrin, metam-sodium (sodium metam), allyl isothiocyanate",
+          "Pre-plant fungicide: pentachloronitrobenzene (PCNB / Terraclor) applied as a transplant solution or in-furrow soil spray; flutolanil",
+          "Strobilurin fungicides: pyraclostrobin (Cabrio EG), azoxystrobin, fluoxastrobin (Aftershock, Evito 480 SC)",
+          "SDHI fungicides: fluxapyroxad + pyraclostrobin (Priaxor 500 SC), penthiopyrad (Fontelis)",
+          "Triazole fungicides: tebuconazole, prothioconazole",
+          "Difenoconazole + benzovindiflupyr (Aprovia Top)"
+        ],
+        "url": "https://content.ces.ncsu.edu/southern-blight-of-vegetable-crops",
+        "quote": "Avoid planting in fields with a history of southern blight. Rotate host crops with corn, wheat, barley, or other non-host crops to reduce inoculum levels in soil. Modify planting dates to avoid conditions that favor disease development, when possible. Inoculum levels can be reduced by burying infected plant debris and sclerotia via deep plowing to invert the soil. Ensure the previous crop is decomposed prior to planting... Remove symptomatic plants and reduce or eliminate weed populations. Maintain adequate soil pH for optimum plant growth. Lower soil pH will encourage disease. Tomato varieties grafted onto tomato rootstocks 'Maxifort', 'Big Power', and 'Beaufort' have been shown to maintain high yields in southern-blight infested fields in one study. ... Several fungicides are labeled for use on tomato and pepper to manage southern blight (Table 1). ... The fumigation of soils with broad spectrum chemicals such as chloropicrin and sodium metam sodium can reduce disease incidence"
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Agroathelia rolfsii",
+          "alternative_value": "Sclerotium rolfsii",
+          "alternative_source_url": "https://www.pubs.ext.vt.edu/SPES/SPES-325/SPES-325.html",
+          "note": "NC State (most recent extension publication) gives the current accepted name as Agroathelia rolfsii (= Sclerotium rolfsii). Virginia Tech uses Sclerotium rolfsii Sacc. with synonym Athelia rolfsii (Curzi) Tu & Kimbrough. University of Missouri uses Sclerotium rolfsii. No taxonomy validation was supplied; Sclerotium rolfsii is treated as a synonym of the canonical name."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Agroathelia rolfsii",
+          "alternative_value": "Sclerotium rolfsii",
+          "alternative_source_url": "https://ipm.missouri.edu/meg/2017/8/southernBlight/",
+          "note": "University of Missouri Integrated Pest Management uses the older binomial Sclerotium rolfsii throughout."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem, Whole plant",
+          "alternative_value": "Stem, Whole plant",
+          "alternative_source_url": "https://content.ces.ncsu.edu/southern-blight-of-vegetable-crops",
+          "note": "NC State and Missouri describe stem-line lesions and whole-plant wilt without emphasizing leaf symptoms; Virginia Tech additionally notes pale-green leaf clustering and cupping in early infections, so foliar involvement is included as canonical."
+        }
+      ]
+    },
+    {
+      "disease_name": "Tomato Leaf Mould",
+      "pathogen_scientific_name": {
+        "value": "Passalora fulva",
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/tomato-leaf-mold/",
+        "quote": "Tomato leaf mold is caused by a fungal pathogen called Passalora fulva (syn. Cladosporium fulvum)",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/tomato-leaf-mold/",
+        "quote": "Tomato leaf mold is caused by a fungal pathogen called Passalora fulva"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Seed"
+        ],
+        "url": "https://ag.umass.edu/vegetable/fact-sheets/tomato-leaf-mold",
+        "quote": "Foliage is usually the only tissue affected. ... Blossoms, stems, and fruit are occasionally attacked ... Seed can be contaminated and serve as the initial source of disease."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Pale green or yellowish spots without well defined margins appear on the upper leaf surface and turn a distinctive yellow, with an olive-green mold visible on the lower leaf surface; lesions coalesce when disease is severe, foliage curls, withers, and may drop; symptoms appear first on lower leaves and progress upward, and olive-green asexual conidia eventually emerge as spots become necrotic.",
+          "url": "https://ag.umass.edu/vegetable/fact-sheets/tomato-leaf-mold",
+          "quote": "Symptoms begin as pale green or yellowish spots without well defined margins on the upper leaf surface which turn a distinctive yellow. Lesions coalesce when disease is severe and the foliage dies. An olive, green mold on the lower leaf surface is visible.  Infected foliage curls and withers and may drop from the plant."
+        },
+        "diagnostic_features": {
+          "value": "An olive-green mold on the lower leaf surface paired with distinctive yellow spots on the upper leaf surface; fruit symptoms consist of a dark, leathery rot at the stem ends; spots are more discrete than those caused by nutrient deficiency, and disease progresses from the bottom to the top of plants.",
+          "url": "https://ag.umass.edu/vegetable/fact-sheets/tomato-leaf-mold",
+          "quote": "An olive, green mold on the lower leaf surface is visible.  ... Fruit symptoms consist of a dark, leathery rot at the stem ends."
+        },
+        "look_alikes": {
+          "value": [
+            "magnesium deficiency",
+            "beginning stages of other diseases"
+          ],
+          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/tomato-leaf-mold/",
+          "quote": "Abiotic conditions such as magnesium deficiency and the beginning stages of other diseases can produce similar symptoms to tomato leaf mold."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant resistant varieties (Determinant: Red Mountain, Primo Red, Mountain Spring, Florida 97; Indeterminant: Geronimo, Trust, Boa; Heirloom: Cherokee Purple, Amish Paste, Prudens Purple)",
+          "Remove diseased plants and surrounding plants to prevent pathogen spread",
+          "Remove and destroy crop residue after harvest",
+          "Dispose of infected plant material and sterilize all equipment used in the greenhouse",
+          "Sanitize greenhouse thoroughly between crop cycles",
+          "Rotate crops and move high tunnels regularly",
+          "Start with certified, disease-free seed from a reputable source, or treat seed with hot water",
+          "Minimize long periods of leaf wetness by avoiding wetting the foliage and using fans to circulate air",
+          "Stake and prune to increase ventilation and reduce disease spread",
+          "Maintain night temperatures in the greenhouse higher than outside temperatures",
+          "Apply Champ 30 WG or Zonix for organic control",
+          "Apply Quadris Top (azoxystrobin and difenoconazole) for conventional control",
+          "Apply Bravo Weather Stik (chlorothalonil) for conventional control"
+        ],
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/tomato-leaf-mold/",
+        "quote": "Plant resistant varieties Determinant varieties-A high tunnel trial at Cornell AgriTech showed the most resistant varieties to be Red Mountain and Primo Red. Mountain Spring and Florida 97 have also shown some resistance. Indeterminant varieties: Geronimo, Trust, Boa Heirloom varieties: Cherokee Purple, Amish Paste, Prudens Purple. Cultural practices If you observe symptoms in the greenhouse, remove the diseased plants and surrounding plants to prevent pathogen spread. Dispose of infected plant material and sterilize all equipment that was used in that greenhouse. Nutrients and disease pressures can build up in high tunnels, so rotate crops and move tunnels regularly. Make sure seed is clean and purchased from a reputable source. Applying chemical treatments In ongoing field studies, Champ 30 WG and Zonix showed the best control of tomato leaf mold in organic trials that took place in 2017 and 2018. Control methods for conventional growers include the Quadris Top product, containing azoxystrobin and difenoconazole or products such as Bravo Weather Stik, containing chlorothalonil."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Passalora fulva",
+          "alternative_value": "Cladosporium fulvum",
+          "alternative_source_url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/tomato-leaf-mold/",
+          "note": "Cladosporium fulvum is given as the synonym (former name) by Cornell"
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Passalora fulva",
+          "alternative_value": "Fulvia fulva",
+          "alternative_source_url": "https://ag.umass.edu/vegetable/fact-sheets/tomato-leaf-mold",
+          "note": "Fulvia fulva is given as the previous name by UMass"
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem, Seed",
+          "alternative_value": "Foliar",
+          "alternative_source_url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/tomato-leaf-mold/",
+          "note": "Cornell describes the disease as primarily foliar; UMass additionally documents that stems and seed can be affected, so the union is taken as canonical"
+        }
+      ]
+    },
+    {
+      "disease_name": "Tomato Spotted Wilt Virus",
+      "pathogen_scientific_name": {
+        "value": "",
+        "url": "",
+        "quote": "",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Viral",
+        "url": "https://content.ces.ncsu.edu/tomato-spotted-wilt-virus-on-tomato-and-pepper",
+        "quote": "TSWV is a member of the genus, Orthotospovirus— a group of plant viruses vectored by arthropods, usually thrips."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Whole plant"
+        ],
+        "url": "https://pubs.nmsu.edu/_h/H242/",
+        "quote": "Young leaves turn bronze in color • Leaves develop numerous small, dark spots • Plants appear wilted • Tips die back • Dark streaking of the terminal stems • Stunting"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "On tomatoes, uppermost leaves appear bronzed with small brown lesions; on peppers, small brown necrotic spots and/or chlorotic ring spots form on foliage. Infected foliage may brown, roll, and wilt; seedlings show a 'shepherd's crook' appearance and die; fruit shows yellow ringspots and brown necrotic sunken areas.",
+          "url": "https://content.ces.ncsu.edu/tomato-spotted-wilt-virus-on-tomato-and-pepper",
+          "quote": "On tomatoes infected with TSWV, the uppermost leaves appear bronzed with small brown lesions (Figure 1). Infected peppers form small brown necrotic spots and/or chlorotic ring spots on the foliage (Figure 2). Infected foliage on both tomatoes and peppers may become covered with so many spots that the entire leaf browns, rolls, and wilts. Infected seedlings form a \"shepherd's crook\" appearance and die (Figure 3). ... Symptoms on the fruit of both tomatoes and peppers typically include yellow ringspots and brown necrotic sunken areas (Figures 4 and 5)."
+        },
+        "diagnostic_features": {
+          "value": "Lesions caused by TSWV have blurred margins, while the margins of lesions caused by other diseases are definite.",
+          "url": "https://content.ces.ncsu.edu/tomato-spotted-wilt-virus-on-tomato-and-pepper",
+          "quote": "Symptoms of TSWV may also resemble symptoms of early blight or other leaf spot diseases; however, lesions caused by TSWV have blurred margins, while the margins of lesions caused by other diseases are definite."
+        },
+        "look_alikes": {
+          "value": [
+            "early blight",
+            "other leaf spot diseases",
+            "other plant viruses"
+          ],
+          "url": "https://content.ces.ncsu.edu/tomato-spotted-wilt-virus-on-tomato-and-pepper",
+          "quote": "Symptoms of TSWV may also resemble symptoms of early blight or other leaf spot diseases; however, lesions caused by TSWV have blurred margins, while the margins of lesions caused by other diseases are definite. ... Keep in mind that some of these symptoms overlap with other plant viruses so it is important to get an accurate diagnosis for effective management."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Deploy TSWV resistant varieties (Sw-5 gene in tomatoes and Tsw gene in peppers)",
+          "Treat transplants with imidacloprid just before setting in the field",
+          "Use reflective mulch",
+          "Control weeds such as dandelions, sow thistle, chickweed, buttercup, and plantain",
+          "Segregate externally sourced plant material; quarantine newly purchased plants; inspect transplants and discard symptomatic plants",
+          "Use biological control with Minute pirate bugs (Orius insidious) and big-eyed bugs (Geocoris punctipes) as thrips predators",
+          "Use thrips-proof screening (less than 169 microns, or mesh with no more than 100 holes per square inch) on greenhouse air intakes and vents; double door entries",
+          "Monitor thrips with sticky yellow card traps and apply insecticides when populations grow",
+          "Avoid growing ornamentals and vegetables in the same greenhouse",
+          "Home gardeners: spray tomatoes early in the season with neem oil or other botanical insecticides; summer oil or insecticidal soap",
+          "Remove all infected plants",
+          "Crop rotation",
+          "Check seed sources for tolerant cultivars",
+          "Start with virus-free plant material",
+          "Control thrips with pyrethroids, carbamates, chlorinated hydrocarbons, organophosphates, and soaps",
+          "Rotate insecticide class to prevent thrips resistance",
+          "Apply insecticides in the morning when thrips are most active",
+          "In greenhouses, cover doors and air intakes with fine mesh (400 mesh) cloth"
+        ],
+        "url": "https://content.ces.ncsu.edu/tomato-spotted-wilt-virus-on-tomato-and-pepper",
+        "quote": "Deploy TSWV resistant varieties. When purchasing tomatoes and peppers, select varieties with the Sw-5 and Tsw genes, respectively. ... Treating transplants with imidacloprid just before setting in the field is one of the most effective approaches to suppress primary spread ... Use reflective mulch. ... Control weeds. ... We specifically recommend controlling weeds such as dandelions, sow thistle, chickweed, buttercup, and plantain. ... Minute pirate bugs (Orius insidious) and big-eyed bugs (Geocoris punctipes) are predators of thrips and can be effective biological control agents on peppers. ... Holes in screening must be less than 169 micros, or mesh with no more than 100 holes per square inch. ... double door entries add another layer of protection. ... Spraying tomatoes early in the season with neem oil or other botanical insecticides may help control thrips. Additionally, summer oil or insecticidal soap may be used."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Verticillium Wilts",
+      "pathogen_scientific_name": {
+        "value": "Verticillium dahliae",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/tomato-solanum-lycopersicum-verticillium-wilt",
+        "quote": "Cause Verticillium dahliae , a fungus that survives in soil and cause wilt symptoms.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://content.ces.ncsu.edu/verticillium-wilt-of-tomato-and-eggplant",
+        "quote": "Verticillium wilt is caused by two different species of a soilborne fungus"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Vascular",
+          "Root",
+          "Whole plant"
+        ],
+        "url": "https://content.ces.ncsu.edu/verticillium-wilt-of-tomato-and-eggplant",
+        "quote": "Initial symptoms of Verticillium wilt include yellowing of the lower leaves, wilting, stunted growth, and v-shaped lesions that extend inward from the margin of the leaf... Because the pathogen affects the vascular tissue (water and nutrient conducting vessels)... longitudinal light brown to cream colored streaks can be seen underneath the outside stem tissue... Openings or wounds in the roots caused by cultivation... eventually leading to plant death."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Older/lower leaves yellow (often on one side) with V-shaped areas narrowing from the leaf margin; plants wilt during the hot part of the day but recover in the evening, eventually leaves shrivel, turn brown, and die; light tan discoloration develops in the vascular tissue near the base of the plant; growth is retarded and yields are low.",
+          "url": "https://ipm.ucanr.edu/agriculture/tomato/verticillium-wilt/",
+          "quote": "Older leaves on tomato plants infected with Verticillium appear as yellow, V-shaped areas that narrow from the margin. The leaf progressively turns from yellow to brown and eventually dies. Older and lower leaves are the most affected... A light tan discoloration develops in the vascular tissue, especially near the base of the plant."
+        },
+        "diagnostic_features": {
+          "value": "V-shaped leaf lesions are distinctive of Verticillium wilt; vascular streaking can also be observed in the leaves, which is a characteristic symptom.",
+          "url": "https://content.ces.ncsu.edu/verticillium-wilt-of-tomato-and-eggplant",
+          "quote": "However, V-shaped leaf lesions are distinctive of Verticillium wilt... Vascular streaking can also be observed in the leaves, and this is a characteristic symptom of Verticillium wilt."
+        },
+        "look_alikes": {
+          "value": [
+            "Fusarium wilt",
+            "bacterial wilt",
+            "southern blight",
+            "Lack of moisture",
+            "Fusarium foot rot"
+          ],
+          "url": "https://content.ces.ncsu.edu/verticillium-wilt-of-tomato-and-eggplant",
+          "quote": "Look alike diseases: Lack of moisture or symptoms of other wilt diseases including bacterial wilt , Fusarium wilt , and southern blight may be confused with symptoms of Verticillium wilt."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use resistant cultivars effective against Race 1 (marked with V for Verticillium resistance)",
+          "Sanitation, especially washing equipment to prevent movement of infested soil",
+          "Rotation to nonsusceptible crops such as small grains and corn",
+          "Incorporate crop rotations to non-host plants at 4-5 year intervals (4-6 years for tomatoes)",
+          "Remove and destroy all infected plant material, including roots",
+          "Soil solarization — heating the top six inches of soil to high temperatures",
+          "Sanitize pots and tools with water and treat for at least 30 seconds in a 10% bleach solution or 70% alcohol",
+          "Grow early-maturing varieties",
+          "Control weeds",
+          "Use mulch from resistant trees (conifers, beech, hickory, white oak, and poplar)",
+          "Soil fumigants such as chloropicrin and metam sodium applied before planting (conventional growers)",
+          "Provide ample amounts of nutrients and water (organic growers)",
+          "Regalia Biofungicide (Group P5) at 1 to 3 quarts/100 gal water for soil drenches on 10- to 14-day intervals or 1 to 4 quarts/A for in-furrow spray applications",
+          "Bexfond at 7 to 28 fl oz/A",
+          "Stargus at 6 to 8 fl oz per 1,000 ft row as in-furrow treatment, or 3 to 4 quarts/A as a soil drench on 10- to 21-day intervals"
+        ],
+        "url": "https://content.ces.ncsu.edu/verticillium-wilt-of-tomato-and-eggplant",
+        "quote": "Select resistant varieties . Planting resistant varieties will help inhibit severe symptoms of disease... Incorporate crop rotations . Rotating to non-host plants at 4-5 year intervals is advised for disease control... Discard infected plant material ... The immediate removal of infected plants is necessary... Soil solarization . Heating the top six inches of soil to high temperatures... Sanitize equipment and tools . Tractors and other equipment that travel between fields should be cleaned frequently... Rinse pots and tools thoroughly with water and treat for at least 30 seconds in a 10% bleach solution or 70% alcohol. ... soil fumigants such as chloropicrin and metam sodium can reduce the amount of pathogen present in the soil if applied before planting... Providing ample amounts of nutrients and water may encourage certain plants to persist in spite of infection."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Verticillium dahliae",
+          "alternative_value": "Verticillium albo-atrum and Verticillium dahliae",
+          "alternative_source_url": "https://content.ces.ncsu.edu/verticillium-wilt-of-tomato-and-eggplant",
+          "note": "NC State Extension lists both V. albo-atrum and V. dahliae as causal agents of Verticillium wilt on tomato and eggplant; UC IPM and PNW Handbook list only V. dahliae for tomato. V. dahliae is selected as canonical because two of three sources, including UC IPM (peer-reviewed extension authority), identify it as the sole causal agent on tomato."
+        }
+      ]
+    },
+    {
+      "disease_name": "Gray Molds",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    }
+  ],
+  "crop": "Tomato",
+  "generated_date": "2026-05-14"
+}
