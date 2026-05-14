@@ -1,11 +1,11 @@
 #!/bin/bash
 # ============================================================================
-# scripts/sh_04_tabpfn_local.sh         STEP 4 — LOCAL (or any small-GPU host)
+# scripts/sh_05_tabpfn_local.sh         STEP 5 — LOCAL (or any small-GPU host)
 # ============================================================================
-# Replaces the old sh_04_finetune_nova.sh CLIP training step with the
-# TabPFN-based pipeline. Frozen encoder + KB-derived caption embeddings +
-# crop one-hot, classified by TabPFN. Designed for the small-data regime
-# (~11K Bugwood images).
+# Frozen encoders + KB-grounded caption embeddings + text-embedded crop/state
+# metadata, classified by TabPFN. Designed for the small-data regime
+# (~11K Bugwood images). Consumes step 4's locally-trained encoder
+# (sh_04_train_encoder_nova.sh output) alongside 6 off-shelf encoders.
 #
 # Pipeline
 #   1. git pull verified KB (step 3 output)
@@ -60,7 +60,7 @@ STRATEGIES="${STRATEGIES:-label_only,summary_only,canonical_full,canonical_delta
 GRADCAM_PER_CLASS="${GRADCAM_PER_CLASS:-3}"
 
 echo "================================================================="
-echo " STEP 4 — TabPFN classification over PathomeOOD features"
+echo " STEP 5 — TabPFN classification over PathomeOOD features"
 echo "================================================================="
 echo "  CROP_TAG     : $CROP_TAG"
 echo "  ENCODERS     : $ENCODERS"
@@ -200,5 +200,5 @@ else
 fi
 
 echo
-echo "STEP 4 done."
+echo "STEP 5 done."
 echo "  Master report: results/pathomeood_report.md"

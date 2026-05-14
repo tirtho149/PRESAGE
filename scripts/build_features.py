@@ -84,16 +84,38 @@ from scripts.evaluate_pathomeood import (
 
 
 # ---------------------------------------------------------------------------
-# Encoder registry (6 visual+text encoders for the importance ablation)
+# Encoder registry — 6 off-shelf + 1 LOCALLY-TRAINED PathomeOOD encoder
 # ---------------------------------------------------------------------------
+#
+# Each entry maps a user-facing tag to (open_clip model arch, pretrained
+# tag). For local checkpoints the "pretrained tag" is a filesystem path
+# to a .pt file produced by sh_04_train_encoder_nova.sh; open_clip
+# accepts a path here and loads the state_dict directly.
+#
+# The pathomeood_v1 entry is special: it's the BioCLIP-init dual-
+# projector ViT-B/16 that step 4 trains on Bugwood + KB captions. The
+# checkpoint path can be overridden via the PATHOMEOOD_CKPT env var
+# (default below points at the canonical T04 main-variant output).
+
+import os as _os
+
+_DEFAULT_PATHOMEOOD_CKPT = _os.environ.get(
+    "PATHOMEOOD_CKPT",
+    "train_and_eval/checkpoints/T04/T04/checkpoints/epoch_50.pt",
+)
 
 ENCODERS: Dict[str, Tuple[str, Optional[str]]] = {
+    # Off-shelf reference set (used for encoder importance ablation).
     "bioclip":         ("hf-hub:imageomics/bioclip",        None),
     "bioclip2":        ("hf-hub:imageomics/bioclip-2",      None),
     "clip_vitb16":     ("ViT-B-16",                         "openai"),
     "siglip_vitb16":   ("hf-hub:timm/ViT-B-16-SigLIP-256",  None),
     "fgclip":          ("hf-hub:qihoo360/fg-clip-base",     None),
     "biotrove":        ("hf-hub:BGLab/BioTrove-CLIP",       None),
+    # YOUR locally-trained encoder (sh_04_train_encoder_nova.sh output).
+    # ViT-B/16 init from BioCLIP, then BioCAP-style fine-tuned on
+    # Bugwood + KB-grounded captions. Loaded from a local .pt file.
+    "pathomeood_v1":   ("ViT-B-16",                         _DEFAULT_PATHOMEOOD_CKPT),
 }
 
 

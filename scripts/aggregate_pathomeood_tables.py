@@ -61,16 +61,20 @@ VARIANTS: Dict[str, Dict[str, object]] = {
     "T12": dict(encoder="biotrove",      strategy="canonical_deltas_3", subset="all"),
     "T13": dict(encoder="bioclip",       strategy="canonical_deltas_3", subset="covered"),
     "T14": dict(encoder="bioclip",       strategy="canonical_deltas_3", subset="non_covered"),
+    # YOUR locally-trained encoder (sh_04_train_encoder_nova.sh output).
+    "T15": dict(encoder="pathomeood_v1", strategy="canonical_deltas_3", subset="all"),
 }
 
-# Off-shelf zero-shot baselines (cosine-sim against class-name templates;
-# no TabPFN). One per encoder. Produced by tabpfn_eval.py --include-baselines.
+# Off-shelf zero-shot baselines + your trained encoder zero-shot.
+# Produced by tabpfn_eval.py --include-baselines.
 BASELINES = ["clip_vitb16_zs", "siglip_vitb16_zs", "bioclip_zs",
-             "bioclip2_zs", "fgclip_zs", "biotrove_zs"]
+             "bioclip2_zs", "fgclip_zs", "biotrove_zs",
+             "pathomeood_v1_zs"]
 
 # Encoders used in Grad-CAM (Table 14 + qualitative figures).
 GRADCAM_ENCODERS = ["bioclip", "bioclip2", "clip_vitb16",
-                    "siglip_vitb16", "fgclip", "biotrove"]
+                    "siglip_vitb16", "fgclip", "biotrove",
+                    "pathomeood_v1"]
 
 # Paper-canonical column order for zero-shot results
 EVAL_DATASETS_T1 = ["plantvillage", "plantwild"]
@@ -237,22 +241,26 @@ def build_table_20(results_dir: Path) -> str:
 
 
 def build_figure_03(results_dir: Path) -> str:
-    """Encoder importance: 6 frozen encoders on the canonical-deltas_3
-    caption strategy. Replaces the paper's "projector mode × epochs"
-    Figure 3 (which is meaningless for the TabPFN pipeline)."""
+    """Encoder importance: 6 off-shelf encoders + YOUR trained encoder
+    (T15 = pathomeood_v1) on the canonical-deltas_3 caption strategy.
+    Replaces the paper's "projector mode × epochs" Figure 3 (which is
+    meaningless for the TabPFN pipeline)."""
     rows = [["Variant", "Encoder", "PlantVillage", "PlantDoc", "PlantWild", "Mean"]]
-    for v in ["T04", "T08", "T09", "T10", "T11", "T12"]:
+    for v in ["T04", "T08", "T09", "T10", "T11", "T12", "T15"]:
         info = VARIANTS[v]
         pv = _zero_shot_top1(results_dir, v, "plantvillage")
         pd = _zero_shot_top1(results_dir, v, "plantdoc")
         pw = _zero_shot_top1(results_dir, v, "plantwild")
         vals = [v_ for v_ in (pv, pd, pw) if v_ is not None]
         mean = sum(vals) / len(vals) if vals else None
+        name = str(info["encoder"])
+        if v == "T15":
+            name = "**" + name + "** (ours, trained)"
         rows.append([
-            v, str(info["encoder"]),
+            v, name,
             _fmt_pct(pv), _fmt_pct(pd), _fmt_pct(pw), _fmt_pct(mean),
         ])
-    return _md_table("Figure 3 — Encoder importance (TabPFN, %)", rows)
+    return _md_table("Figure 3 — Encoder importance (TabPFN, %) — incl. our trained PathomeOOD-v1", rows)
 
 
 def build_table_14(results_dir: Path) -> str:

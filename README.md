@@ -1,6 +1,6 @@
-# PlantSwarm + PathomeDB — KB build + KB-grounded CLIP fine-tune
+# PlantSwarm + PathomeDB — KB build + dual-track encoder evaluation
 
-Four-step pipeline. Each step runs in a fixed place (LOCAL or NOVA) and
+Five-step pipeline. Each step runs in a fixed place (LOCAL or NOVA) and
 hands off to the next step via `git push` / `git pull`:
 
 ```
@@ -28,18 +28,34 @@ hands off to the next step via `git push` / `git pull`:
                  │                provisional / contradictory etc.) │
                  └──────────────────┬───────────────────────────────┘
                                     │
-                 ┌──────────────── STEP 4 ─ LOCAL ──────────────────┐
-                 │ scripts/sh_04_tabpfn_local.sh                    │
+                 ┌──────────────── STEP 4 ─ NOVA  ──────────────────┐
+                 │ scripts/sh_04_train_encoder_nova.sh   (NEW)      │
                  │   git pull verified KB                           │
+                 │   build KB-grounded captions + WebDataset shards │
+                 │   train BioCAP-style ViT-B/16 dual-projector     │
+                 │     CLIP encoder warm-started from BioCLIP       │
+                 │   (default: ONE variant T04; TRAIN_FULL_MATRIX=1 │
+                 │    sbatches all 11 BioCAP-style training         │
+                 │    variants)                                     │
+                 │   → epoch_50.pt checkpoint (~600 MB)             │
+                 └──────────────────┬───────────────────────────────┘
+                                    │
+                 ┌──────────────── STEP 5 ─ LOCAL ──────────────────┐
+                 │ scripts/sh_05_tabpfn_local.sh                    │
+                 │   git pull verified KB + step-4 checkpoint       │
                  │   build captions (per strategy)                  │
-                 │   FROZEN encoder forward (BioCLIP / CLIP /       │
-                 │     SigLIP) over Bugwood + PV + PD + PW          │
+                 │   FROZEN encoder forward (BioCLIP / BioCLIP-2 /  │
+                 │     CLIP / SigLIP / FG-CLIP / BioTrove / ours-T15│
+                 │     = the step-4 trained encoder) over Bugwood + │
+                 │     PV + PD + PW                                 │
                  │   feature vec = [image_emb | caption_emb |       │
-                 │                  crop_onehot]                    │
-                 │   TabPFN classifier over 11-variant feature      │
+                 │                  crop_text_emb | state_text_emb] │
+                 │   TabPFN classifier over 15-variant feature      │
                  │     ablation matrix (zero trained params on      │
                  │     visual side; TabPFN is a meta-learned        │
                  │     tabular foundation model)                    │
+                 │   Grad-CAM (BioCAP §C.3 reproduction; energy-    │
+                 │     pointing-game if bbox CSV provided)          │
                  │   eval on PV + PD + PW                           │
                  │   aggregate paper-style tables                   │
                  │   → git push results                             │
@@ -48,15 +64,16 @@ hands off to the next step via `git push` / `git pull`:
 
 The split is deliberate. **Nova has the GPU** but no `claude` CLI;
 **LOCAL has Claude** but no A100. Each step runs on the host that has
-the right tool.
+the right tool. Steps 1 & 3 need Claude (LOCAL); steps 2 & 4 need GPUs
+(NOVA); step 5 is small enough to run on LOCAL or any single-GPU host.
 
 Two command sets are documented below. They differ only by which crops
 are processed:
 
 | Set | Crops | Wall-clock | API spend | Use case |
 |---|---|---|---|---|
-| **A. 2-crop (smoke)** | Soybean + Tomato | ~4-8 h end-to-end | ~$5-15 | first-time run, validates the pipeline, fits in a day |
-| **B. all-crop (production)** | All 484 (crop, disease) pairs in `BugWood_Diseases_usable.csv` | ~4-7 days end-to-end | ~$80-300 | the real paper run |
+| **A. 2-crop (smoke)** | Soybean + Tomato | ~6-10 h end-to-end | ~$5-15 | first-time run, validates the pipeline, fits in a day |
+| **B. all-crop (production)** | All 484 (crop, disease) pairs in `BugWood_Diseases_usable.csv` | ~5-8 days end-to-end | ~$80-300 | the real paper run |
 
 ---
 
@@ -96,17 +113,34 @@ CROPS=smoke bash scripts/sh_03_validate_local.sh
 # pushes verified KB back to GitHub.
 
 # ============================================================
-# STEP 4 — LOCAL (frozen encoder + TabPFN classifier)
+# STEP 4 — NOVA (BioCAP-style encoder fine-tune)
+# ============================================================
+ssh tirtho@hpc-login.iastate.edu
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
+git pull origin main
+CROPS=smoke bash scripts/sh_04_train_encoder_nova.sh
+# ≈ 30-60 min on one A100 (default = ONE variant T04, 50 epochs,
+# projectors-only). Writes
+#   train_and_eval/checkpoints/T04/<run-id>/checkpoints/epoch_50.pt
+# Set TRAIN_FULL_MATRIX=1 to sbatch all 11 BioCAP-style training
+# variants (~5 GPU-h). Set PATHOME_PUSH_CHECKPOINT=1 to git-push
+# the checkpoint (large — ~600 MB), or scp it back to LOCAL
+# manually for the next step.
+
+# ============================================================
+# STEP 5 — LOCAL (frozen encoders + TabPFN classifier + Grad-CAM)
 # ============================================================
 # (back on your laptop / any small-GPU host)
 cd ~/Desktop/PlantSwarm
 git pull origin main
-CROPS=smoke bash scripts/sh_04_tabpfn_local.sh
-# ≈ 30-60 min (frozen encoder forward on Tomato images + PV/PD/PW
-# + TabPFN inference over the 11-variant feature ablation matrix).
-# No CLIP training; TabPFN is meta-learned. Runs on a small GPU
-# for the encoder forward + CPU for TabPFN. Pushes paper-style
-# tables to GitHub.
+# point at your step-4 checkpoint (or rely on the default path)
+export PATHOMEOOD_CKPT=train_and_eval/checkpoints/T04/T04/checkpoints/epoch_50.pt
+CROPS=smoke bash scripts/sh_05_tabpfn_local.sh
+# ≈ 1-2 h (frozen forward on Tomato images + PV/PD/PW for 7 encoders
+# × 7 caption strategies + TabPFN inference for 15 variants + Grad-CAM
+# for qualitative figures). No CLIP training in this step; TabPFN is
+# meta-learned. Runs on a small GPU for the encoder forward + CPU
+# for TabPFN. Pushes paper-style tables to GitHub.
 ```
 
 Final outputs after Set A:
@@ -114,9 +148,11 @@ Final outputs after Set A:
 ```
 artifacts/pathome_kb/Soybean/final_registry.json    canonical + verified deltas
 artifacts/pathome_kb/Tomato/final_registry.json     canonical + verified deltas
+train_and_eval/checkpoints/T04/.../epoch_50.pt     your trained encoder (step 4)
 data/bugwood_features/<encoder>_<strategy>.npz     frozen-encoder Bugwood features
 data/eval_features/<encoder>_<strategy>_<set>.npz  frozen-encoder PV/PD/PW features
 results/pathomeood_eval/<variant>/{plantvillage,plantdoc,plantwild}.json   TabPFN results
+results/figures/gradcam/<encoder>/<set>/<class>/*.png  Grad-CAM triptychs
 results/tables/{table_01,...,figure_03}.md          paper-style markdown
 results/pathomeood_report.md                        master report
 ```
@@ -161,24 +197,43 @@ CROPS=all bash scripts/sh_03_validate_local.sh
 # caption path).
 
 # ============================================================
-# STEP 4 — LOCAL (frozen encoder + TabPFN on full Bugwood)
+# STEP 4 — NOVA (BioCAP-style encoder fine-tune over full Bugwood)
+# ============================================================
+ssh tirtho@hpc-login.iastate.edu
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
+git pull origin main
+CROPS=all TRAIN_FULL_MATRIX=1 \
+  bash scripts/sh_04_train_encoder_nova.sh
+# ≈ 5-10 GPU-h with TRAIN_FULL_MATRIX=1 (11 variants × ~30 min each
+# on one A100). Drop TRAIN_FULL_MATRIX to train just T04, the main
+# variant, in ~30-60 min. Outputs land under
+#   train_and_eval/checkpoints/T*/<run-id>/checkpoints/epoch_50.pt
+# scp the T04 checkpoint back to LOCAL for the next step, or set
+# PATHOME_PUSH_CHECKPOINT=1 to commit + push it (large object).
+
+# ============================================================
+# STEP 5 — LOCAL (frozen encoders + TabPFN over full Bugwood)
 # ============================================================
 cd ~/Desktop/PlantSwarm
 git pull origin main
-CROPS=all bash scripts/sh_04_tabpfn_local.sh
-# ≈ 2-4 h on a single small GPU. Encoder forward for ~12K Bugwood
-# images + PV/PD/PW, for each of 3 encoders × 7 caption strategies,
-# then TabPFN inference for all 11 variants on CPU. TabPFN scales
-# O(N²) in train rows; we cap at 10K via stratified subsample.
+export PATHOMEOOD_CKPT=train_and_eval/checkpoints/T04/T04/checkpoints/epoch_50.pt
+CROPS=all bash scripts/sh_05_tabpfn_local.sh
+# ≈ 4-8 h on a single small GPU. Encoder forward for ~12K Bugwood
+# images + PV/PD/PW, for each of 7 encoders (6 off-shelf + your
+# step-4-trained T15 encoder) × 7 caption strategies, then TabPFN
+# inference for all 15 variants on CPU. TabPFN scales O(N²) in
+# train rows; we cap at 10K via stratified subsample.
 ```
 
 Final outputs after Set B:
 
 ```
 artifacts/pathome_kb/*/final_registry.json          197 crop registries
-data/bugwood_features/*.npz                        frozen-encoder features
-data/eval_features/*.npz                           frozen-encoder eval features
-results/pathomeood_eval/<variant>/*.json           TabPFN results (11 variants × 3 sets + 4 baselines)
+train_and_eval/checkpoints/T*/*.pt                  your BioCAP-style trained encoder(s)
+data/bugwood_features/*.npz                         frozen-encoder features (7 encoders)
+data/eval_features/*.npz                            frozen-encoder eval features
+results/pathomeood_eval/<variant>/*.json            TabPFN results (15 variants × 3 sets + 7 baselines)
+results/figures/gradcam/<encoder>/<set>/<class>/*.png   Grad-CAM triptychs (BioCAP §C.3)
 results/pathomeood_report.md                        paper-style master report
 ```
 
@@ -191,7 +246,8 @@ results/pathomeood_report.md                        paper-style master report
 | 1 | LOCAL | `sh_01_phase0_local.sh` | Claude builds the canonical (text-grounded, NON-visual) KB per crop |
 | 2 | NOVA | `sh_02_swarm_nova.sh` | 24-agent 2-round Qwen2.5-VL real swarm extracts image-grounded visual deltas (verifier OFF) |
 | 3 | LOCAL | `sh_03_validate_local.sh` | Claude+WebSearch verifies each delta against extension / APS / CABI |
-| 4 | LOCAL | `sh_04_tabpfn_local.sh` | Frozen encoder (BioCLIP / CLIP / SigLIP) emits image_emb + KB-caption_emb + crop one-hot; TabPFN classifies; eval on PV / PD / PW |
+| 4 | NOVA | `sh_04_train_encoder_nova.sh` | BioCAP-style ViT-B/16 dual-projector CLIP encoder fine-tuned on Bugwood + KB-grounded captions (warm-started from BioCLIP) |
+| 5 | LOCAL | `sh_05_tabpfn_local.sh` | 7 frozen encoders (6 off-shelf + your step-4 trained one) emit image_emb + KB-caption_emb + crop_text_emb + state_text_emb; TabPFN classifies; Grad-CAM; eval on PV / PD / PW |
 
 ---
 
@@ -214,13 +270,24 @@ VLLM_AGREEMENT_MIN=2             # K-of-N floor (default 3)
 MAX_TUPLES=50                    # cap on (crop, disease, state) tuples
 DRY_RUN=1                        # print plan without calling Claude
 
-# Step 4 (TabPFN path; default)
+# Step 4 (BioCAP-style encoder train on NOVA)
+TRAIN_VARIANT=T04                # single variant to train (default)
+TRAIN_FULL_MATRIX=1              # sbatch all 11 training variants instead
+PATHOME_SKIP_CAPTIONS=1          # captions already built
+PATHOME_SKIP_SHARDS=1            # WebDataset shards already built
+PATHOME_SKIP_TRAIN=1             # skip training (just push existing ckpts)
+PATHOME_PUSH_CHECKPOINT=1        # git-push the checkpoint after training
+
+# Step 5 (TabPFN + Grad-CAM on LOCAL; default)
+PATHOMEOOD_CKPT=path/to/epoch_50.pt   # locally-trained encoder (T15)
 PATHOME_SKIP_CAPTIONS=1          # captions already built
 PATHOME_SKIP_FEATURES=1          # encoder forwards already cached
 PATHOME_SKIP_TABPFN=1            # TabPFN matrix already run (re-aggregate only)
+PATHOME_SKIP_GRADCAM=1           # skip Grad-CAM figures
 PATHOME_SKIP_AGG=1               # skip aggregation
-ENCODERS="bioclip,clip_vitb16"   # which encoders to extract features for
+ENCODERS="bioclip,pathomeood_v1" # which encoders to extract features for
 STRATEGIES="canonical_deltas_3"  # which caption strategies to extract
+BBOX_CSV=path/to/bboxes.csv      # enables energy-pointing-game score
 ```
 
 ---
@@ -318,44 +385,80 @@ WebSearch. Each delta gets:
 | `contradictory` | sources contradict the claim | ✗ (dropped) |
 | `duplicate_existing` | matches an existing delta | merged (support++) |
 
-### Phase PathomeOOD — frozen encoder + TabPFN classifier (LOCAL, step 4)
+### Phase PathomeOOD — BioCAP-style encoder fine-tune (NOVA, step 4)
 
-For the small-data regime (~10–12K Bugwood images), the current step 4
-**replaces full CLIP fine-tuning with a frozen-encoder + tabular
-foundation classifier setup**. Zero trained parameters on the visual
-side; the classifier is meta-learned [TabPFN](https://arxiv.org/abs/2207.01848).
+This step trains your OWN encoder, BioCAP-style, so that the next step
+can compare it against 6 off-shelf encoders as the **T15** entry in the
+encoder-importance ablation.
 
-**Feature vector per image**:
+**Model**: ViT-B/16 dual-projector CLIP, warm-started from BioCLIP.
+Two visual projectors are trained jointly: one against the class-name
+text tower (label supervision), one against the KB-grounded caption
+text tower (canonical visual_symptoms + per-state regional deltas).
+
+**Default**: one variant `T04` (= `canonical_deltas_3` caption,
+projectors-only, 50 epochs). One A100, ~30-60 min, one checkpoint.
+
+**Full ablation**: `TRAIN_FULL_MATRIX=1` sbatches all 11 caption-
+strategy / projector-mode / epoch-count variants
+(`scripts/pathomeood_variants.sh::PATHOMEOOD_VARIANTS`). ~5 GPU-h
+total. Useful when you want to reproduce the full BioCAP-paper-style
+ablation by training rather than by post-hoc TabPFN.
+
+**Output**: `train_and_eval/checkpoints/<VARIANT>/<run-id>/checkpoints/epoch_50.pt`.
+Either set `PATHOME_PUSH_CHECKPOINT=1` to commit + push it to GitHub
+(checkpoints are ~600 MB; large for git but workable for one or two),
+or `scp` it back to LOCAL before step 5.
+
+### Phase PathomeOOD — frozen encoders + TabPFN classifier + Grad-CAM (LOCAL, step 5)
+
+For the small-data regime (~10–12K Bugwood images), step 5
+**replaces full CLIP fine-tuning at evaluation time with a frozen-
+encoder + tabular foundation classifier setup**. Zero trained
+parameters on the visual side; the classifier is meta-learned
+[TabPFN](https://arxiv.org/abs/2207.01848). The encoder pool includes
+**your own step-4 trained encoder** alongside 6 off-shelf encoders.
+
+**Feature vector per image** (all four blocks come from each encoder's
+paired text tower — no one-hot anywhere):
 ```
-x = [ image_emb          (frozen visual encoder)        ≈ 512–1024 dim
-    | caption_emb        (frozen text encoder on KB
-                          -derived caption for this row) ≈ 512      dim
-    | crop_onehot        (Bugwood crop vocabulary)       ≈ 50–200   dim ]
+x = [ image_emb       (frozen visual encoder)              ≈ 512–1024 dim
+    | caption_emb     (text tower on the KB-derived
+                       caption for this row)                ≈ 512      dim
+    | crop_text_emb   (text tower on
+                       "a photograph of a <crop> plant.")   ≈ 512      dim
+    | state_text_emb  (text tower on
+                       "a photograph taken in <state>.")    ≈ 512      dim ]
 ```
-PCA-reduced to ~256 + crop one-hot before TabPFN, keeping it well
-under the TabPFNv2 feature-count limit.
+PCA-reduced before TabPFN, keeping it well under the TabPFNv2
+feature-count limit. Text-embedded metadata generalizes to unseen
+crops at test time, unlike one-hot.
 
-**11-variant feature ablation matrix** (`scripts/tabpfn_eval.py::VARIANTS`):
+**15-variant feature ablation matrix** (`scripts/tabpfn_eval.py::VARIANTS`):
 T01–T07 vary the caption strategy (label_only → canonical_deltas_7);
-T08–T09 swap the encoder (BioCLIP → CLIP-openai → SigLIP); T10–T11
-restrict the train set to KB-covered / non-covered classes. **Zero
-training per variant** — TabPFN does in-context learning over the
-support set in one forward pass.
+T08–T12 swap the encoder (CLIP / SigLIP / BioCLIP-2 / FG-CLIP /
+BioTrove); T13–T14 restrict the train set to KB-covered / non-covered
+classes; **T15 = `pathomeood_v1` = your step-4 trained encoder**.
+**Zero training per variant** — TabPFN does in-context learning over
+the support set in one forward pass.
 
-Plus 4 off-shelf zero-shot baselines (CLIP / SigLIP / BioCLIP /
-BioCLIP-2) computed by straight cosine-sim against class-name
-templates.
+Plus 7 off-shelf zero-shot baselines (CLIP / SigLIP / BioCLIP /
+BioCLIP-2 / FG-CLIP / BioTrove / `pathomeood_v1`) computed by straight
+cosine-sim against class-name templates.
+
+**Grad-CAM** (`scripts/gradcam_eval.py`, BioCAP §C.3 reproduction):
+forward + backward hooks on the final ViT transformer block. The
+cosine logit `s = (V·T) / (||V|| ||T||)` is backpropagated;
+`ReLU(mean_grad · feature_map)` is upsampled to a 2-D heatmap. Saves
+PNG triptychs (input | heatmap | overlay) per encoder × eval set ×
+class. With `--bbox-csv` it also computes the energy-pointing-game
+score for Table 14.
 
 Eval: top-1 / top-5 on PlantVillage, PlantDoc, PlantWild — same three
 test sets as the original BioCAP-style table reproduction. Outputs
 written to `results/pathomeood_eval/<variant>/{plantvillage,plantdoc,plantwild}.json`
 and aggregated into `results/pathomeood_report.md` (same paper-style
-table set as before).
-
-**Legacy fine-tuning path** (`scripts/sh_04_finetune_nova.sh`,
-`scripts/train_pathomeood.py`, `scripts/submit_pathomeood_*.sh`,
-`train_and_eval/` subtree) is still in the repo but no longer on the
-critical path. The TabPFN path is the default for small data.
+table set as BioCAP).
 
 Master report: `results/pathomeood_report.md`.
 
@@ -429,14 +532,15 @@ PlantSwarm/
 │   │                                      LookAlikeCoT + Severity
 │   └── diagnosis_agent.py                 VisualDiagnosisAgent CoT consolidator
 │
-├── train_and_eval/                        (legacy) dual-projector CLIP code —
-│                                          OFF the critical path; kept for
-│                                          reference. The current step 4 uses
-│                                          frozen encoder + TabPFN instead.
+├── train_and_eval/                        BioCAP-style dual-projector CLIP code
+│                                          used by STEP 4 (sh_04_train_encoder)
+│                                          to fine-tune your own encoder
+│                                          (warm-start from BioCLIP).
 │   ├── open_clip/                         model + two visual projectors
 │   ├── open_clip_train/                   torchrun entry (data + train adapted)
 │   ├── evaluation/                        zero_shot_iid + retrieval + metrics
-│   └── imageomics/                        naming_eval + disk + helpers
+│   ├── imageomics/                        naming_eval + disk + helpers
+│   └── checkpoints/<VARIANT>/.../epoch_50.pt    step-4 trained encoder(s)
 │
 ├── plantswarm/                            swarm orchestrator + captioner
 │   ├── delta_pipeline.py                  2-round real swarm: run_for_state,
@@ -472,28 +576,31 @@ PlantSwarm/
 │   ├── sh_01_phase0_local.sh              STEP 1 — LOCAL: Phase 0 + push
 │   ├── sh_02_swarm_nova.sh                STEP 2 — NOVA: swarm + push
 │   ├── sh_03_validate_local.sh            STEP 3 — LOCAL: validate + push
-│   ├── sh_04_tabpfn_local.sh              STEP 4 — LOCAL: frozen encoder
-│   │                                       + TabPFN classifier + push
-│   ├── sh_04_finetune_nova.sh              (legacy) NOVA dual-projector
-│   │                                       CLIP fine-tune; kept for reference
+│   ├── sh_04_train_encoder_nova.sh        STEP 4 — NOVA: BioCAP-style
+│   │                                       encoder fine-tune
+│   ├── sh_05_tabpfn_local.sh              STEP 5 — LOCAL: frozen-encoder
+│   │                                       forward + TabPFN + Grad-CAM + push
 │   ├── validate_kb.py                     step-3 driver (Claude verifier)
 │   │
 │   ├── build_pathomeood_captions.py       KB → captions parquet
-│   ├── build_features.py                  frozen encoder forward → image_emb
-│   │                                       + caption_emb + crop one-hot npz
-│   ├── tabpfn_eval.py                     TabPFN classifier over the 11-variant
-│   │                                       feature ablation matrix + 4 baselines
-│   ├── aggregate_pathomeood_tables.py     result JSONs → paper-style table .md
-│   │                                       (works for both TabPFN + legacy paths)
-│   │   ----- legacy (off critical path) ---------------------------------------
-│   ├── build_pathomeood_shards.py         parquet → WebDataset shards
+│   ├── build_pathomeood_shards.py         parquet → WebDataset shards (step 4)
 │   ├── pathomeood_variants.sh             T01..T11 training-matrix definition
 │   ├── train_pathomeood.py                wrapper around open_clip_train.main
-│   ├── submit_pathomeood_train.sh         SLURM: one variant
-│   ├── submit_pathomeood_matrix.sh        SLURM: sbatch all 11 variants
-│   ├── evaluate_pathomeood.py             zero-shot eval on PV/PD/PW
-│   ├── evaluate_pathomeood_retrieval.py   Bugwood held-out R@k
-│   ├── evaluate_pathomeood_fewshot.py     prototype-mean K-shot
+│   ├── submit_pathomeood_train.sh         SLURM: one training variant
+│   ├── submit_pathomeood_matrix.sh        SLURM: sbatch all 11 training variants
+│   ├── build_features.py                  frozen encoder forward → image_emb
+│   │                                       + caption_emb + crop_text_emb +
+│   │                                       state_text_emb npz (7 encoders incl.
+│   │                                       your step-4 trained pathomeood_v1)
+│   ├── tabpfn_eval.py                     TabPFN classifier over the 15-variant
+│   │                                       feature ablation matrix + 7 baselines
+│   ├── gradcam_eval.py                    Grad-CAM (BioCAP §C.3 reproduction);
+│   │                                       --bbox-csv enables energy-pointing
+│   ├── aggregate_pathomeood_tables.py     result JSONs → paper-style table .md
+│   │
+│   ├── evaluate_pathomeood.py             (optional) zero-shot eval on PV/PD/PW
+│   ├── evaluate_pathomeood_retrieval.py   (optional) Bugwood held-out R@k
+│   ├── evaluate_pathomeood_fewshot.py     (optional) prototype-mean K-shot
 │   ├── fetch_baselines.py                 cache 5 off-shelf CLIP baselines
 │   ├── setup_plantdoc.py                  clone PlantDoc to data/eval/
 │   │
@@ -537,13 +644,19 @@ correct state.
 # Re-validate only (re-pulls Nova's deltas, re-runs verifier):
 CROPS=smoke bash scripts/sh_03_validate_local.sh
 
-# Re-train + eval without rebuilding shards:
+# Re-train encoder only (skip captions + shards if already built):
 ssh tirtho@hpc-login.iastate.edu
-PATHOME_SKIP_CAPTIONS=1 bash scripts/sh_04_tabpfn_local.sh
+PATHOME_SKIP_CAPTIONS=1 PATHOME_SKIP_SHARDS=1 \
+  bash scripts/sh_04_train_encoder_nova.sh
 
-# Just re-aggregate tables (eval results already on disk):
-PATHOME_SKIP_CAPTIONS=1 PATHOME_SKIP_TRAIN=1 PATHOME_SKIP_EVAL=1 \
-  bash scripts/sh_04_tabpfn_local.sh
+# Re-run TabPFN matrix only (encoder features already cached):
+PATHOME_SKIP_CAPTIONS=1 PATHOME_SKIP_FEATURES=1 \
+  bash scripts/sh_05_tabpfn_local.sh
+
+# Just re-aggregate tables (TabPFN results already on disk):
+PATHOME_SKIP_CAPTIONS=1 PATHOME_SKIP_FEATURES=1 \
+PATHOME_SKIP_TABPFN=1 PATHOME_SKIP_GRADCAM=1 \
+  bash scripts/sh_05_tabpfn_local.sh
 ```
 
 ---

@@ -85,12 +85,19 @@ VARIANTS: List[Tuple[str, str, str, str]] = [
     # KB-coverage subset ablation (paper Table 4)
     ("T13", "bioclip", "canonical_deltas_3", "covered"),
     ("T14", "bioclip", "canonical_deltas_3", "non_covered"),
+    # YOUR locally-trained encoder (sh_04_train_encoder_nova.sh output).
+    # ViT-B/16 init from BioCLIP, fine-tuned BioCAP-style on Bugwood +
+    # KB-grounded captions. The fairest "our method" entry — it's the
+    # only encoder in the matrix that actually saw Bugwood at training
+    # time, so it should beat the off-shelf BioCLIP baseline by some
+    # margin if the fine-tune worked.
+    ("T15", "pathomeood_v1", "canonical_deltas_3", "all"),
 ]
 
 
 # All encoders we have features for (zero-shot baselines).
 ALL_ENCODERS = ["bioclip", "bioclip2", "clip_vitb16",
-                "siglip_vitb16", "fgclip", "biotrove"]
+                "siglip_vitb16", "fgclip", "biotrove", "pathomeood_v1"]
 
 
 # ---------------------------------------------------------------------------
