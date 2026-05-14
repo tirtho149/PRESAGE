@@ -10,7 +10,7 @@
 #
 # Outputs:
 #   results/figures/trace_*.png
-#   plantswarm/latex/auto_trace_stats.tex
+#   paper/auto_trace_stats.tex
 #
 # Documented in README under "Script reference".
 # ============================================================================

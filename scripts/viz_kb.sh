@@ -9,7 +9,7 @@
 #
 # Outputs:
 #   results/figures/kb_*.png
-#   plantswarm/latex/auto_kb_stats.tex
+#   paper/auto_kb_stats.tex
 #
 # Documented in README under "Script reference".
 # ============================================================================

@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Build plantswarm/latex/acl_latex.tex into PDF.
+# Build paper/plantswarm_paper.tex into PDF.
 # - Uses latexmk if available, else pdflatex/bibtex fallback.
 # - Copies PDF to results dir when --results-dir is provided.
 set -euo pipefail
 
-LATEX_DIR="plantswarm/latex"
-MAIN_TEX="acl_latex.tex"
+LATEX_DIR="paper"
+MAIN_TEX="plantswarm_paper.tex"
 RESULTS_DIR=""
 
 while [[ $# -gt 0 ]]; do
@@ -24,7 +24,7 @@ while [[ $# -gt 0 ]]; do
       ;;
     *)
       echo "[ERROR] Unknown arg: $1"
-      echo "Usage: $0 [--latex-dir plantswarm/latex] [--main-tex acl_latex.tex] [--results-dir results/<run>]"
+      echo "Usage: $0 [--latex-dir paper] [--main-tex plantswarm_paper.tex] [--results-dir results/<run>]"
       exit 2
       ;;
   esac

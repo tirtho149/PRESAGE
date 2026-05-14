@@ -9,11 +9,11 @@
 \usepackage{courier}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
-% Auto-generated figures live in ../../results/figures/ at the repo root;
-% LaTeX is compiled from plantswarm/latex/. The \graphicspath below lets
-% the snippets emitted by scripts/viz/* reference figures/<name>.png
+% Auto-generated figures live in ../results/figures/ at the repo root;
+% LaTeX is compiled from paper/. The \graphicspath below lets the
+% snippets emitted by scripts/viz/* reference figures/<name>.png
 % without knowing the build location.
-\graphicspath{{../../results/}{./}{figures/}}
+\graphicspath{{../results/}{./}{figures/}}
 \usepackage{booktabs,multirow,array}
 \usepackage{xcolor}
 \usepackage[font=small,labelfont=bf,skip=4pt]{caption}
@@ -1835,8 +1835,62 @@ regressions before committing to the full spend.
 
 The figures and tables below are regenerated from each
 end-to-end run by \texttt{bash scripts/viz\_all.sh}; the
-LaTeX snippets land at \texttt{plantswarm/latex/auto\_*.tex}
+LaTeX snippets land at \texttt{paper/auto\_*.tex}
 and the PNGs at \texttt{results/figures/}.
+
+\subsection{Six-step pipeline (current implementation)}
+\label{app:pipeline-six-step}
+
+The repository ships a one-shell-script-per-step pipeline. Each
+step runs on its proper host (LOCAL for Claude calls, NOVA for
+GPU-bound work) and hands off to the next via \texttt{git push} /
+\texttt{git pull}. The full flow:
+
+\begin{enumerate}
+  \item \textbf{Step 0 (LOCAL)} ---
+        \texttt{scripts/sh\_00\_setup\_local.sh}: filter the raw
+        Bugwood CSV by per-class threshold; optionally apply the
+        Claude two-layer label judge
+        (\texttt{disease\_label\_judge.py}: LAYER 1 = crop decision
+        tree; LAYER 2 = disease CORRECT / INCORRECT / QUESTIONABLE)
+        to drop INVALID / NON\_CROP crops and INCORRECT diseases,
+        and canonicalise MISSPELLED crop names in place.
+        Sidecar JSON report at
+        \texttt{artifacts/bugwood\_judgement.json} (resumable).
+  \item \textbf{Step 1 (LOCAL)} ---
+        \texttt{scripts/sh\_01\_phase0\_local.sh}: Phase 0
+        canonical KB construction via headless \texttt{claude -p}
+        (discovery $\to$ extraction $\to$ reconciliation).
+  \item \textbf{Step 2 (NOVA)} ---
+        \texttt{scripts/sh\_02\_swarm\_nova.sh}: 24-agent
+        2-round Qwen2.5-VL visual-symptom swarm with a shared
+        blackboard and cross-talk (\texttt{support} / \texttt{challenge}
+        / \texttt{withdraw}) and a five-step CoT consolidator.
+  \item \textbf{Step 3 (LOCAL)} ---
+        \texttt{scripts/sh\_03\_validate\_local.sh}: Claude +
+        WebSearch verifier over each unverified delta against
+        extension / APS / CABI / peer-reviewed sources.
+  \item \textbf{Step 4 (NOVA)} ---
+        \texttt{scripts/sh\_04\_train\_encoder\_nova.sh}: BioCAP-style
+        ViT-B/16 dual-projector CLIP encoder fine-tuned on
+        Bugwood + KB-grounded captions, warm-started from BioCLIP.
+        Output checkpoint is the \texttt{pathomeood\_v1} encoder
+        consumed by step 5.
+  \item \textbf{Step 5 (LOCAL)} ---
+        \texttt{scripts/sh\_05\_tabpfn\_local.sh}: seven frozen
+        encoders (six off-shelf + your step-4 \texttt{pathomeood\_v1}
+        as variant T15) emit
+        \texttt{[image\_emb $\mid$ caption\_emb $\mid$ crop\_text\_emb
+        $\mid$ state\_text\_emb]} features. TabPFN classifies over
+        the 15-variant ablation matrix; Grad-CAM (BioCAP
+        \S{}C.3 reproduction) emits qualitative figures and the
+        energy-pointing-game score (with \texttt{--bbox-csv}).
+\end{enumerate}
+
+Steps 0--3 build \pathomedb. Steps 4--5 are the
+\emph{PathomeOOD} evaluation harness: step 4 contributes a
+domain-specialised encoder; step 5 evaluates it alongside
+six off-shelf encoders.
 
 \subsection{PathomeDB seed summary}
 \IfFileExists{auto_kb_stats.tex}{\input{auto_kb_stats}}{%

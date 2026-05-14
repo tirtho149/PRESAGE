@@ -63,5 +63,5 @@ echo
 echo "e2e_visualize complete."
 echo "Outputs:"
 echo "  results/figures/*.png"
-echo "  plantswarm/latex/auto_*.tex"
-echo "  plantswarm/latex/acl_latex.pdf  (if PDF build succeeded)"
+echo "  paper/auto_*.tex"
+echo "  paper/plantswarm_paper.pdf  (if PDF build succeeded)"

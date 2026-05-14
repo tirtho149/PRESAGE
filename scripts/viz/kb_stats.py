@@ -12,7 +12,7 @@ Summary visualizations for the KB seed JSON:
 
 Outputs:
   results/figures/kb_*.png
-  plantswarm/latex/auto_kb_stats.tex     (table + \\includegraphics blocks)
+  paper/auto_kb_stats.tex     (table + \\includegraphics blocks)
 
 Usage:
   python scripts/viz/kb_stats.py --seed artifacts/pathome_seed/symptoms_seed.json

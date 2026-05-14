@@ -11,7 +11,7 @@ Trajectory statistics from Phase 0R trace JSONL:
 Outputs:
   results/figures/trace_path_lengths.png
   results/figures/trace_kappa_by_agent.png
-  plantswarm/latex/auto_trace_stats.tex
+  paper/auto_trace_stats.tex
 
 Usage:
   python scripts/viz/trace_stats.py --traces artifacts/observe_traces/phase0r_traces.jsonl

@@ -1,9 +1,21 @@
 # PlantSwarm + PathomeDB — KB build + dual-track encoder evaluation
 
-Five-step pipeline. Each step runs in a fixed place (LOCAL or NOVA) and
+Six-step pipeline. Each step runs in a fixed place (LOCAL or NOVA) and
 hands off to the next step via `git push` / `git pull`:
 
 ```
+                 ┌──────────────── STEP 0 ─ LOCAL  ─────────────────┐
+                 │ scripts/sh_00_setup_local.sh                     │
+                 │   filter raw Bugwood CSV by per-class threshold  │
+                 │   + Claude 2-layer label judge                   │
+                 │     LAYER 1: crop decision tree                  │
+                 │     LAYER 2: per-disease CORRECT/INCORRECT/      │
+                 │              QUESTIONABLE                        │
+                 │   drops INVALID/NON_CROP crops + INCORRECT       │
+                 │   diseases; canonicalises MISSPELLED crops       │
+                 │   → BugWood_Diseases_usable.csv + git push       │
+                 └──────────────────┬───────────────────────────────┘
+                                    │
                  ┌──────────────── STEP 1 ─ LOCAL  ─────────────────┐
                  │ scripts/sh_01_phase0_local.sh                    │
                  │   Claude Phase 0 canonical KB build              │
@@ -64,8 +76,9 @@ hands off to the next step via `git push` / `git pull`:
 
 The split is deliberate. **Nova has the GPU** but no `claude` CLI;
 **LOCAL has Claude** but no A100. Each step runs on the host that has
-the right tool. Steps 1 & 3 need Claude (LOCAL); steps 2 & 4 need GPUs
-(NOVA); step 5 is small enough to run on LOCAL or any single-GPU host.
+the right tool. Steps 0, 1, 3 need Claude (LOCAL); steps 2 & 4 need
+GPUs (NOVA); step 5 is small enough to run on LOCAL or any single-GPU
+host.
 
 Two command sets are documented below. They differ only by which crops
 are processed:
@@ -82,6 +95,19 @@ are processed:
 Start here. End-to-end in under a day; ~$5-15 in Claude API spend.
 
 ```bash
+# ============================================================
+# STEP 0 — LOCAL (filter raw CSV + Claude label judge)
+# ============================================================
+cd ~/Desktop/PlantSwarm
+JUDGE_LABELS=1 bash scripts/sh_00_setup_local.sh
+# ≈ 10-30 min. Filters BugWood_Diseases.csv into the threshold-
+# satisfying BugWood_Diseases_usable.csv, then runs the Claude
+# two-layer judge over the surviving (NormCrop, NormDisease) pairs
+# and rewrites the CSV without INVALID/NON_CROP crops or INCORRECT
+# diseases (MISSPELLED crops are canonicalised in place). Sidecar
+# JSON report at artifacts/bugwood_judgement.json is resume-keyed.
+# Skip the judge: JUDGE_LABELS=0 bash scripts/sh_00_setup_local.sh
+
 # ============================================================
 # STEP 1 — LOCAL (Phase 0 canonical KB via Claude)
 # ============================================================
@@ -161,10 +187,18 @@ results/pathomeood_report.md                        master report
 
 ## Set B — all-crop production (484 classes)
 
-The real run. ~4-7 days end-to-end; ~$80-300 in Claude API spend.
+The real run. ~5-8 days end-to-end; ~$80-300 in Claude API spend.
 Recommended only after Set A has succeeded end-to-end.
 
 ```bash
+# ============================================================
+# STEP 0 — LOCAL (filter raw CSV + Claude label judge)
+# ============================================================
+cd ~/Desktop/PlantSwarm
+JUDGE_LABELS=1 bash scripts/sh_00_setup_local.sh
+# ≈ 1-2 h on full Bugwood (~$3-10 Claude spend for the judge).
+# Produces the cleaned BugWood_Diseases_usable.csv consumed by step 1.
+
 # ============================================================
 # STEP 1 — LOCAL (Phase 0 canonical KB for ALL 197 crops)
 # ============================================================
@@ -243,6 +277,7 @@ results/pathomeood_report.md                        paper-style master report
 
 | # | Where | Script | What |
 |---|---|---|---|
+| 0 | LOCAL | `sh_00_setup_local.sh` | Filter raw Bugwood CSV by per-class threshold + Claude 2-layer label judge (drops INVALID/NON_CROP crops, INCORRECT diseases; canonicalises MISSPELLED crops) |
 | 1 | LOCAL | `sh_01_phase0_local.sh` | Claude builds the canonical (text-grounded, NON-visual) KB per crop |
 | 2 | NOVA | `sh_02_swarm_nova.sh` | 24-agent 2-round Qwen2.5-VL real swarm extracts image-grounded visual deltas (verifier OFF) |
 | 3 | LOCAL | `sh_03_validate_local.sh` | Claude+WebSearch verifies each delta against extension / APS / CABI |
@@ -256,6 +291,13 @@ results/pathomeood_report.md                        paper-style master report
 Each shell script reads env vars for partial runs:
 
 ```bash
+# Step 0
+THRESHOLD=10                     # min rows per (crop, disease) class
+JUDGE_LABELS=0                   # 1 = also run Claude judge (default 1)
+DROP_QUESTIONABLE=1              # also drop QUESTIONABLE diseases
+PER_CLASS=200                    # optional cap on rows per class (0 = none)
+PATHOME_RAW_CSV=BugWood_Diseases.csv
+
 # Step 1
 PATHOME_USABLE_CSV=other.csv     # override input CSV
 PATHOME_SKIP_PUSH=1              # commit but don't push
@@ -573,10 +615,18 @@ PlantSwarm/
 │   ├── delta_pipeline.py                  2-round real swarm: run_for_state,
 │   │                                      run_batch, _agreement_filter,
 │   │                                      _merge_with_existing
-│   ├── captioning.py                      build_disease_caption (7 strategies),
-│   │                                      _top_regional_deltas (state-aware),
-│   │                                      load_kb_profiles, caption_for_row
-│   └── latex/                             paper sources
+│   └── captioning.py                      build_disease_caption (7 strategies),
+│                                          _top_regional_deltas (state-aware),
+│                                          load_kb_profiles, caption_for_row
+│
+├── paper/                                 paper sources (renamed from
+│   │                                       plantswarm/latex/)
+│   ├── plantswarm_paper.tex                main paper (renamed from acl_latex.tex)
+│   ├── plantswarm_paper_lualatex.tex       lualatex variant
+│   ├── auto_*.tex                          viz-script-emitted snippets
+│   ├── appendix_dataset_licenses.tex       dataset licensing appendix
+│   ├── plantswarm.bib / pathome3.bib       bibliographies
+│   └── acl.sty / acl_natbib.bst            ACL style (vendored)
 │
 ├── pathome_kb/                            Phase 0 + verifier
 │   ├── pipeline.py                        per-crop orchestrator (CLI)
@@ -600,6 +650,8 @@ PlantSwarm/
 ├── data/bugwood_loader.py                 crop / disease normalization (Setup)
 │
 ├── scripts/
+│   ├── sh_00_setup_local.sh               STEP 0 — LOCAL: filter raw CSV
+│   │                                       + Claude 2-layer label judge + push
 │   ├── sh_01_phase0_local.sh              STEP 1 — LOCAL: Phase 0 + push
 │   ├── sh_02_swarm_nova.sh                STEP 2 — NOVA: swarm + push
 │   ├── sh_03_validate_local.sh            STEP 3 — LOCAL: validate + push

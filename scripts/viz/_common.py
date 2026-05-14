@@ -4,7 +4,7 @@ scripts/viz/_common.py
 Shared utilities for visualization scripts.
 
 - Output paths: PNG figures to results/figures/, LaTeX snippets to
-  plantswarm/latex/auto_<name>.tex.
+  paper/auto_<name>.tex.
 - Soft matplotlib import — viz scripts degrade gracefully to text-only
   LaTeX tables if matplotlib isn't installed.
 """

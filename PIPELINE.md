@@ -24,31 +24,39 @@ The system has two interlocking deliverables:
 flowchart LR
     A[Extension-service literature<br/>web sources]
     B[Field photographs<br/>geo-tagged, per state]
+    JUDGE[(Step 0 LOCAL<br/>Claude 2-layer label judge<br/>cleans the Bugwood CSV)]
     K[(Canonical KB<br/>text-grounded, one block per disease)]
     R[(Regional KB<br/>image-grounded deltas per state)]
-    DB[(PathomeDB<br/>canonical + regional<br/>per crop, disease, state)]
+    V[(Step 3 LOCAL<br/>Claude+WebSearch verifier<br/>verified / provisional / contradictory)]
+    DB[(PathomeDB<br/>canonical + verified regional<br/>per crop, disease, state)]
     CAP[KB → caption<br/>plantswarm/captioning.py<br/>build_disease_caption]
     SH[WebDataset shards<br/>image + taxon.txt + caption.txt]
-    C[BioCAP CLIP<br/>ViT-B/16 dual-projector<br/>open_clip_train.main]
-    E[Eval suite<br/>PV / PW / PlantDoc<br/>+ Bugwood retrieval<br/>+ few-shot]
+    C[Step 4 NOVA<br/>BioCAP-style CLIP fine-tune<br/>= pathomeood_v1 encoder]
+    T[Step 5 LOCAL<br/>7 frozen encoders + TabPFN<br/>15-variant matrix + Grad-CAM]
+    E[Eval suite<br/>PV / PW / PlantDoc<br/>+ 7 baselines]
 
+    JUDGE --> A
+    JUDGE --> B
     A --> K
     B --> R
+    R --> V --> DB
     K --> DB
-    R --> DB
     DB --> CAP
     B --> SH
     CAP --> SH
     SH --> C
-    C --> E
+    DB --> T
+    B --> T
+    C --> T
+    T --> E
 
     classDef src fill:#dff,stroke:#066
     classDef kb fill:#ffe,stroke:#660
     classDef model fill:#efd,stroke:#060
     classDef eval fill:#fde,stroke:#a06
     class A,B src
-    class K,R,DB kb
-    class C model
+    class JUDGE,V,K,R,DB kb
+    class C,T model
     class E eval
 ```
 
@@ -632,43 +640,49 @@ and off-shelf baselines.
 
 ---
 
-## End-to-End Summary
+## End-to-End Summary — 6-step pipeline
 
 ```mermaid
 flowchart LR
     L[Extension-service<br/>literature]
     F[Field photographs<br/>geo-tagged]
-    P1[Phase 1<br/>Canonical KB<br/>web search +<br/>verbatim citations]
-    P2[Phase 2<br/>Regional Deltas<br/>vision swarm +<br/>web verifier]
+    S0[Step 0 LOCAL<br/>sh_00_setup_local.sh<br/>filter CSV + Claude label judge]
+    S1[Step 1 LOCAL<br/>sh_01_phase0_local.sh<br/>canonical KB via claude -p]
+    S2[Step 2 NOVA<br/>sh_02_swarm_nova.sh<br/>24-agent 2-round Qwen swarm]
+    S3[Step 3 LOCAL<br/>sh_03_validate_local.sh<br/>Claude+WebSearch verifier]
     DB[(PathomeDB)]
     CAP[KB → caption<br/>plantswarm/captioning.py]
     SH[WebDataset shards]
-    P3[Phase 3<br/>BioCAP training<br/>ViT-B/16 dual-projector<br/>11-variant matrix]
+    S4[Step 4 NOVA<br/>sh_04_train_encoder_nova.sh<br/>BioCAP-style CLIP fine-tune<br/>= pathomeood_v1]
+    S5[Step 5 LOCAL<br/>sh_05_tabpfn_local.sh<br/>7 frozen encoders + TabPFN<br/>+ Grad-CAM, 15-variant matrix]
     PV[(PlantVillage)]
     PW[(PlantWild)]
     PD[(PlantDoc)]
-    HO[(Bugwood held-out<br/>retrieval bench)]
-    OUT[(Paper-table reproduction<br/>results/pathomeood_report.md)]
+    OUT[(Paper-table reproduction<br/>results/pathomeood_report.md<br/>+ Grad-CAM triptychs)]
 
-    L --> P1 --> DB
-    F --> P2 --> DB
+    S0 --> L
+    S0 --> F
+    L --> S1 --> DB
+    F --> S2 --> S3 --> DB
     DB --> CAP
     F --> SH
     CAP --> SH
-    SH --> P3
-    P3 --> OUT
+    SH --> S4
+    S4 --> S5
+    DB --> S5
+    F --> S5
+    S5 --> OUT
     PV --> OUT
     PW --> OUT
     PD --> OUT
-    HO --> OUT
 
     classDef src fill:#dff,stroke:#066
     classDef stage fill:#fef,stroke:#606
     classDef kb fill:#ffe,stroke:#660
     classDef eval fill:#fde,stroke:#a06
     classDef out fill:#efe,stroke:#060,stroke-width:2px
-    class L,F,PV,PW,PD,HO src
-    class P1,P2,P3 stage
+    class L,F,PV,PW,PD src
+    class S0,S1,S2,S3,S4,S5 stage
     class DB,CAP,SH kb
     class OUT out
 ```
@@ -676,8 +690,11 @@ flowchart LR
 In one sentence: Phase 1 builds a text-grounded knowledge base from
 extension-service literature, Phase 2 grounds the KB in field
 photographs by emitting per-state image-supported additions and
-contradictions, and Phase 3 — PathomeOOD — synthesises a
-per-image caption from the KB, packages images + captions as
-WebDataset shards, trains 11 ViT-B/16 dual-projector variants covering
-every reproducible ablation in the BioCAP paper, and emits a master
-`results/pathomeood_report.md` with the reproduced paper tables.
+contradictions, and the PathomeOOD pipeline (steps 4–5) synthesises
+a per-image caption from the KB, packages images + captions as
+WebDataset shards, fine-tunes a BioCAP-style ViT-B/16 dual-projector
+encoder (`pathomeood_v1`), and runs a TabPFN classifier over a
+15-variant feature ablation matrix on top of seven frozen encoders
+(six off-shelf + `pathomeood_v1` as T15) with Grad-CAM (BioCAP §C.3)
+on PlantVillage, PlantDoc, and PlantWild. The master
+`results/pathomeood_report.md` reproduces every paper-style table.

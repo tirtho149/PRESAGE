@@ -4,7 +4,7 @@
 # ============================================================================
 # Run every visualization script in sequence: KB stats and Phase 0R trace
 # stats. Each writes both a PNG figure and a LaTeX snippet under
-# plantswarm/latex/auto_*.tex for the paper to \input.
+# paper/auto_*.tex for the paper to \input.
 #
 # The PathomeOOD paper-table reproduction is produced separately by
 # scripts/aggregate_pathomeood_tables.py (writes markdown under results/tables/
@@ -25,6 +25,6 @@ bash scripts/viz_traces.sh || echo "  viz_traces.sh failed (continuing)"
 echo
 echo "All viz outputs:"
 echo "  results/figures/*.png"
-echo "  plantswarm/latex/auto_*.tex"
+echo "  paper/auto_*.tex"
 echo "  results/tables/*.md  (run scripts/aggregate_pathomeood_tables.py)"
 echo "  results/pathomeood_report.md"

@@ -23,52 +23,47 @@ Sections
 
 ## 1. Top-level pipeline
 
-LOCAL machine → GitHub → GPU host. Three terminal deliverables.
+LOCAL machine ⇄ GitHub ⇄ NOVA. One shell script per step, six steps
+in total, hand-off via `git push` / `git pull`.
 
 ```mermaid
 flowchart TD
-    SETUP[Setup<br/>filter_bugwood_csv.py<br/>raw CSV to filtered CSV]
-    CACHE[Image cache<br/>ensure_state_image_cache.py<br/>per crop disease state photo]
-    P0[Phase 0 - canonical KB<br/>pathome_kb via Claude<br/>discovery / extraction / reconciliation<br/>everything NON-visual: pathogen + treatments + parts]
-    PUSH([git push canonical artifacts])
-    PULL([git pull on GPU host])
+    S0[STEP 0 LOCAL<br/>sh_00_setup_local.sh<br/>filter raw CSV + Claude 2-layer label judge<br/>drops INVALID/NON_CROP crops + INCORRECT diseases]
+    S1[STEP 1 LOCAL<br/>sh_01_phase0_local.sh<br/>Phase 0 canonical KB via headless claude -p<br/>discovery / extraction / reconciliation]
+    PUSH1([git push canonical KB])
+    PULL1([git pull on Nova])
     VLLM[vLLM serves Qwen2.5-VL-7B-Instruct<br/>booted in-job]
-    P0R[Phase 0R - visual-symptom swarm<br/>24 specialists in parallel per pass<br/>+ VisualDiagnosisAgent CoT consolidator]
-    REG([artifacts/pathome_kb/Crop/final_registry.json<br/>canonical + regional_observations - KB deliverable])
-    BUGWOOD[(Bugwood field photos<br/>filtered CSV + .bugwood_cache<br/>11,513 imgs / 484 classes)]
-    CAP[build_pathomeood_captions.py<br/>KB-grounded captions per image<br/>state-aware delta selection]
-    SH[build_pathomeood_shards.py<br/>WebDataset tar shards<br/>image + taxon.txt + caption.txt]
-    TRAIN[Train PathomeOOD<br/>ViT-B/16 dual-projector from BioCLIP init<br/>projectors-only - 800K trainable params<br/>11-variant matrix T01..T11]
-    CKPT([train_and_eval/checkpoints/Tnn/...<br/>model deliverable])
-    EVAL[Evaluate PathomeOOD<br/>scripts/evaluate_pathomeood.py<br/>zero-shot + retrieval + few-shot<br/>vs 5 off-shelf CLIP baselines]
-    METRICS([results/pathomeood_report.md<br/>paper-style table reproduction])
+    S2[STEP 2 NOVA<br/>sh_02_swarm_nova.sh<br/>24-agent 2-round visual-symptom swarm<br/>+ VisualDiagnosisAgent CoT consolidator<br/>cross_refs: support / challenge / withdraw]
+    PUSH2([git push unverified KB])
+    S3[STEP 3 LOCAL<br/>sh_03_validate_local.sh<br/>Claude+WebSearch verifier over each delta]
+    REG([artifacts/pathome_kb/Crop/final_registry.json<br/>canonical + verified regional_observations<br/>— KB deliverable])
+    PUSH3([git push verified KB])
+    PULL2([git pull on Nova])
+    S4[STEP 4 NOVA<br/>sh_04_train_encoder_nova.sh<br/>BioCAP-style ViT-B/16 dual-projector CLIP<br/>warm-started from BioCLIP<br/>variant T04 default; TRAIN_FULL_MATRIX=1 = all 11]
+    CKPT([train_and_eval/checkpoints/T*/epoch_50.pt<br/>— pathomeood_v1 encoder])
+    S5[STEP 5 LOCAL<br/>sh_05_tabpfn_local.sh<br/>7 frozen encoders × 7 caption strategies<br/>image + caption + crop_text + state_text features<br/>TabPFN 15-variant matrix + Grad-CAM BioCAP §C.3]
+    METRICS([results/pathomeood_report.md<br/>+ Grad-CAM PNG triptychs<br/>— paper-style table reproduction])
 
-    SETUP --> CACHE --> P0
-    P0 --> PUSH --> PULL --> P0R
-    VLLM -.serves.-> P0R --> REG
-    REG --> CAP
-    BUGWOOD --> CAP --> SH --> TRAIN
-    TRAIN --> CKPT --> EVAL --> METRICS
+    S0 --> S1 --> PUSH1 --> PULL1 --> S2
+    VLLM -.serves.-> S2 --> PUSH2 --> S3 --> REG --> PUSH3 --> PULL2 --> S4
+    S4 --> CKPT --> S5 --> METRICS
 
     classDef local fill:#dff,stroke:#066,stroke-width:1px
     classDef gpu fill:#fde,stroke:#a06,stroke-width:1px
-    classDef student fill:#eef,stroke:#33a,stroke-width:1px
     classDef terminal fill:#efe,stroke:#060,stroke-width:2px
-    class SETUP,CACHE,P0 local
-    class VLLM,P0R gpu
-    class BUGWOOD,CAP,SH,TRAIN,EVAL student
+    class S0,S1,S3,S5 local
+    class VLLM,S2,S4 gpu
     class REG,CKPT,METRICS terminal
 ```
 
-| Stage | Host | Compute | Walltime |
-|---|---|---|---|
-| Setup | LOCAL or Nova | CPU, &lt; 1 min | trivial |
-| Image cache | LOCAL or Nova | network only | smoke ~2 min |
-| Phase 0 (Claude — NON-visual KB only) | LOCAL only (OAuth) | CPU + Anthropic API | smoke ~30 min / prod 16-24 h |
-| Phase 0R (24-agent Qwen visual swarm) | GPU host with vLLM | 1x A100-80GB | smoke ~20-40 min / prod 10-20 h |
-| PathomeOOD captions + shards | GPU host (CPU work) | CPU, minutes | a few minutes per strategy |
-| PathomeOOD training | GPU host with CUDA | 1x A100 | ~30-60 min per variant; ~5 GPU-h for 11-variant matrix |
-| PathomeOOD eval | GPU host with CUDA | 1x A100 | ~2 GPU-h for all variants + 5 baselines |
+| # | Step | Host | Compute | Walltime |
+|---|---|---|---|---|
+| 0 | Filter CSV + Claude label judge | LOCAL | Claude (headless) | smoke ~10-30 min / prod ~1-2 h |
+| 1 | Phase 0 canonical KB | LOCAL | Claude (headless) | smoke ~30-45 min / prod 16-24 h |
+| 2 | 24-agent Qwen visual swarm | NOVA | 1× A100-80GB + vLLM | smoke ~3-6 h / prod 24-48 h |
+| 3 | Claude+WebSearch verifier | LOCAL | Claude (headless) | smoke ~30-60 min / prod 1-3 days |
+| 4 | BioCAP-style encoder fine-tune | NOVA | 1× A100 | ~30-60 min per variant; ~5 GPU-h for T01..T11 |
+| 5 | Frozen-encoder + TabPFN + Grad-CAM | LOCAL | 1× small GPU + CPU | smoke ~1-2 h / prod ~4-8 h |
 
 ---
 
@@ -465,13 +460,17 @@ Properties:
 
 ---
 
-## 4. Phase PathomeOOD — KB-grounded CLIP training
+## 4. Phase PathomeOOD — step 4 encoder train + step 5 TabPFN eval
 
-PathomeOOD is a two-projector CLIP (BioCAP-inspired architecture) warm-
-started from BioCLIP and trained on Bugwood with KB-grounded captions
-synthesised from PathomeDB. Evaluated zero-shot on PlantVillage,
-PlantDoc, and PlantWild — three heavy cross-domain distribution shifts
-(field photos → lab cutouts → in-the-wild → mixed field).
+PathomeOOD is the dual-track evaluation harness. **Step 4 (NOVA)**
+fine-tunes a BioCAP-style two-projector CLIP (warm-started from
+BioCLIP) on Bugwood with KB-grounded captions to produce a
+domain-specialised encoder we call `pathomeood_v1`. **Step 5 (LOCAL)**
+uses seven frozen encoders — six off-shelf plus `pathomeood_v1` —
+to emit features for a TabPFN classifier over a 15-variant ablation
+matrix, with Grad-CAM (BioCAP §C.3) for qualitative + quantitative
+attribution. All three test sets are out-of-distribution: PlantVillage,
+PlantDoc, and PlantWild.
 
 ```mermaid
 flowchart TD
@@ -659,7 +658,7 @@ PlantSwarm/
 |   |                                       _agreement_filter,
 |   |                                       existing_deltas_for_state,
 |   |                                       _TraceWriter (PATHOME_TRACE_DIR)
-|   `-- latex/                             EMNLP 2026 paper sources
+|   (paper sources live at the repo-root in paper/, see below)
 |
 |-- train_and_eval/                        Phase PathomeOOD training + eval
 |   |-- open_clip/                         BioCAP fork of open_clip with TWO
@@ -702,11 +701,18 @@ PlantSwarm/
 |   |                                       _agreement_filter, _merge_with_existing,
 |   |                                       existing_deltas_for_state,
 |   |                                       SPECIALIST_CLASSES = SPECIALIST_AGENTS (24)
-|   |-- captioning.py                      build_disease_caption (7 strategies),
-|   |                                       _top_regional_deltas (state-aware),
-|   |                                       load_kb_profiles, caption_for_row
-|   |                                       (returns (caption, used_kb))
-|   `-- latex/                             paper sources
+|   `-- captioning.py                      build_disease_caption (7 strategies),
+|                                           _top_regional_deltas (state-aware),
+|                                           load_kb_profiles, caption_for_row
+|                                           (returns (caption, used_kb))
+|
+|-- paper/                                 paper sources (renamed from
+|   |                                       plantswarm/latex/)
+|   |-- plantswarm_paper.tex                main paper (renamed from acl_latex.tex)
+|   |-- plantswarm_paper_lualatex.tex       lualatex variant
+|   |-- auto_*.tex                          \input{...} fragments from scripts/viz/*
+|   |-- plantswarm.bib / pathome3.bib       bibliographies
+|   `-- acl.sty / acl_natbib.bst            ACL style (vendored)
 |
 |-- pathome/                               schema for the KB
 |   `-- symptoms.py                        SymptomLibrary, SymptomProfile,
@@ -720,32 +726,39 @@ PlantSwarm/
 |-- data/bugwood_loader.py                 _clean_disease + _map_crop (Setup)
 |
 |-- scripts/
-|   |-- filter_bugwood_csv.py              Setup CLI
+|   |
+|   |--- 6-step pipeline (one .sh per step) ---
+|   |-- sh_00_setup_local.sh               STEP 0 LOCAL: filter CSV + Claude judge
+|   |-- sh_01_phase0_local.sh              STEP 1 LOCAL: Phase 0 canonical KB
+|   |-- sh_02_swarm_nova.sh                STEP 2 NOVA: 24-agent swarm
+|   |-- sh_03_validate_local.sh            STEP 3 LOCAL: Claude+WebSearch verifier
+|   |-- sh_04_train_encoder_nova.sh        STEP 4 NOVA: BioCAP-style encoder train
+|   |-- sh_05_tabpfn_local.sh              STEP 5 LOCAL: TabPFN + Grad-CAM + tables
+|   |
+|   |--- supporting CLIs ------------------
+|   |-- filter_bugwood_csv.py              Step 0 driver (--judge flag)
 |   |-- ensure_state_image_cache.py        image cache CLI
+|   |-- validate_kb.py                     Step 3 driver (Claude verifier)
 |   |-- registry_to_excel.py               final_registry.json to xlsx
 |   |
-|   |--- PathomeOOD pipeline --------------
+|   |--- PathomeOOD pipeline (steps 4 & 5) ----
 |   |-- build_pathomeood_captions.py       KB -> per-image (taxon, caption) parquet
-|   |-- build_pathomeood_shards.py         parquet -> WebDataset tar shards
-|   |-- pathomeood_variants.sh             T01..T11 variant matrix (the canonical
-|   |                                       single source of truth)
+|   |-- build_pathomeood_shards.py         parquet -> WebDataset tar shards (step 4)
+|   |-- pathomeood_variants.sh             T01..T11 training variant matrix
 |   |-- train_pathomeood.py                Python wrapper around open_clip_train.main
 |   |-- submit_pathomeood_train.sh         SLURM: one variant
-|   |-- submit_pathomeood_matrix.sh        SLURM: sbatch all 11 variants
-|   |-- evaluate_pathomeood.py             zero-shot classification on PV/PD/PW
-|   |-- evaluate_pathomeood_retrieval.py   Bugwood held-out R@k
-|   |-- evaluate_pathomeood_fewshot.py     prototype-mean K-shot
+|   |-- submit_pathomeood_matrix.sh        SLURM: sbatch all 11 training variants
+|   |-- build_features.py                  frozen-encoder forward → image_emb
+|   |                                       + caption_emb + crop_text_emb +
+|   |                                       state_text_emb npz (7 encoders)
+|   |-- tabpfn_eval.py                     TabPFN over 15-variant matrix
+|   |-- gradcam_eval.py                    Grad-CAM (BioCAP §C.3 reproduction)
+|   |-- aggregate_pathomeood_tables.py     results/ JSONs → paper-style tables
+|   |-- evaluate_pathomeood.py             (optional) zero-shot eval on PV/PD/PW
+|   |-- evaluate_pathomeood_retrieval.py   (optional) Bugwood held-out R@k
+|   |-- evaluate_pathomeood_fewshot.py     (optional) prototype-mean K-shot
 |   |-- setup_plantdoc.py                  clone PlantDoc to data/eval/PlantDoc/
-|   |-- fetch_baselines.py                 cache 5 off-shelf CLIP-style baselines
-|   |                                       (CLIP / SigLIP / FG-CLIP / BioTrove /
-|   |                                        BioCLIP / BioCLIP-2; biocap excluded)
-|   |-- aggregate_pathomeood_tables.py     walk results/ JSONs -> 11 paper-table .md
-|   |
-|   |--- per-phase shells -----------------
-|   |-- submit_pathome_setup_filter.sh     Nova: Setup
-|   |-- setup_image_cache.sh               LOCAL/Nova: image cache
-|   |-- run_phase0_local.sh                LOCAL: Phase 0 canonical (Claude)
-|   |-- submit_phase0r_regional.sh         Nova: Phase 0R (24-agent visual swarm)
+|   |-- fetch_baselines.py                 cache 7 off-shelf CLIP-style baselines
 |   |
 |   |--- viz shells -----------------------
 |   |-- viz_kb.sh                          KB stats PNGs + tex
