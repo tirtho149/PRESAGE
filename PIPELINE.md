@@ -287,24 +287,22 @@ before.
 
 ### Diagram
 
-![Phase 2 handoff swarm — animated walkthrough](docs/assets/swarm_flow.gif)
+![Phase 0R 24-specialist visual-symptom swarm — animated walkthrough](docs/assets/swarm_flow.gif)
 
-*A four-act walkthrough of one Phase 2 tuple. **Act I** introduces
-the static context (a canonical KB block and a field photograph) and
-the agent line-up, with each specialist's owned-fields shown.
-**Act II** runs a single pass: Triage picks the first specialist;
-each specialist reads the running delta log on the right, writes its
-own delta, and hands off to the next agent; the Verifier consults
-the open web for every delta, rejects one as under-specified (it
-turns red), hands it back to the originating specialist for
-refinement (it returns in green); the Consolidator deduplicates and
-emits the final delta set. **Act III** zooms out: the whole swarm
-runs N=5 times with different seeds; the K-of-N agreement filter
-keeps only deltas that appear in at least K independent runs. **Act
-IV** shows the conservative merge with the existing KB record and
-the final JSON shape — each delta carries its support count,
-verification status, web citations, and the handoff chain that
-produced it.*
+*A four-act walkthrough of one (crop, disease, state) pass.
+**Act 1** introduces the static context (canonical KB block + field
+photograph) and the 7 organ-family group cards that name all 24
+specialists.
+**Act 2** runs the parallel fan-out: every specialist examines the
+photograph against canonical KB; the running log on the right
+accumulates deltas tagged by their owned field.
+**Act 3** shows VisualDiagnosisAgent walking its 4-step decision-graph
+CoT: triage which organs are visible → decisive forks (e.g. white pith
++ bare petioles + blue roots → SDS, not BSR) → dedup → emit final
+deltas with a CoT trace.
+**Act 4** runs the cross-pass K-of-N agreement filter, the Claude
+web verifier, and the conservative merge into
+`final_registry.json[*].regional_observations[<state>].deltas[]`.*
 
 ### Agents
 

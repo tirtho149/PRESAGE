@@ -315,13 +315,20 @@ pass is unchanged from the legacy 5-call layout (~30–60 s).
 
 ![Phase 0R visual-symptom swarm — animated walkthrough](docs/assets/swarm_flow.gif)
 
-*The animation predates the 24-agent expansion (it shows the previous
-5-agent layout for legibility), but the structural intent is unchanged:
-specialists examine the photograph against canonical KB, the verifier
-consults the web per delta, and the running log accumulates only
-image-grounded deltas that survive both swarm agreement and web
-verification. The current implementation runs the same loop with 24
-specialists grouped into 7 organ families, all parallel.*
+*A four-act walkthrough of one (crop, disease, state) pass.
+**Act 1** introduces the static context (canonical KB block + field
+photograph) and the 7 organ-family group cards listing all 24
+specialists.
+**Act 2** runs the parallel fan-out: every specialist examines the
+photo against canonical KB; the running log on the right accumulates
+deltas tagged by field.
+**Act 3** shows VisualDiagnosisAgent walking its 4-step decision-graph
+CoT — triage which organs are visible → decisive forks (white pith,
+bare petioles, blue roots → SDS) → dedup → emit final deltas plus a
+CoT trace.
+**Act 4** runs the cross-pass K-of-N agreement filter, then the
+Claude web verifier, then conservatively merges the survivors into
+`final_registry.json[*].regional_observations[<state>].deltas[]`.*
 
 ### 3d. Cross-run K-of-N agreement filter
 
