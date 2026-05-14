@@ -287,20 +287,27 @@ before.
 
 ### Diagram
 
-![Phase 0R 24-specialist visual-symptom swarm — animated walkthrough](docs/assets/swarm_flow.gif)
+![Phase 0R real swarm — 5-act walkthrough](docs/assets/swarm_flow.gif)
 
-*A four-act walkthrough of one (crop, disease, state) pass.
-**Act 1** introduces the static context (canonical KB block + field
-photograph) and the 7 organ-family group cards that name all 24
-specialists.
-**Act 2** runs the parallel fan-out: every specialist examines the
-photograph against canonical KB; the running log on the right
-accumulates deltas tagged by their owned field.
-**Act 3** shows VisualDiagnosisAgent walking its 4-step decision-graph
-CoT: triage which organs are visible → decisive forks (e.g. white pith
-+ bare petioles + blue roots → SDS, not BSR) → dedup → emit final
-deltas with a CoT trace.
-**Act 4** runs the cross-pass K-of-N agreement filter, the Claude
+*Five acts walking through ONE (crop, disease, state) pass through
+the 2-round real swarm.
+**Act 1** sets up: static context (canonical KB + field photo) and
+the 7 organ-family group cards that hold all 24 specialists.
+**Act 2 (Round 1)** runs the independent fan-out — each of the 24
+specialists examines the photo without knowing what its peers think;
+deltas accumulate in the running log.
+**Act 3 (Round 2, the real-swarm round)** publishes all round-1
+outputs to a shared blackboard and re-runs every specialist with the
+blackboard visible. Animated cross-arrows fire on screen:
+green `SUPPORT`, red `CHALLENGE`, gray `WITHDRAW`. You watch
+StemPithAgent SUPPORT DefoliationAgent (both → SDS), ColorPaletteAgent
+CHALLENGE LeafLesionColorAgent ("tan, not brown"), and
+LeafLesionColorAgent WITHDRAW its round-1 call after the challenge.
+**Act 4** shows VisualDiagnosisAgent walking the 5-step CoT — triage
+visible organs → decisive forks (white pith + bare petioles + blue
+roots → SDS) → adjudicate cross_refs → dedup → emit final deltas
+with a CoT trace.
+**Act 5** runs the cross-pass K-of-N agreement filter, the Claude
 web verifier, and the conservative merge into
 `final_registry.json[*].regional_observations[<state>].deltas[]`.*
 

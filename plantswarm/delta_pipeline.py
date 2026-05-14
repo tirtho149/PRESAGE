@@ -201,55 +201,114 @@ def _run_single_pass(
     seed: int,
     temperature: float,
     parallel_specialists: bool = True,
+    swarm_rounds: int = 2,
 ) -> Dict[str, Any]:
-    """One pass = 4 specialists in parallel + DiagnosisAgent consolidator."""
+    """One pass through the REAL swarm:
+
+      Round 1  : 24 specialists run in parallel, each on (image,
+                 canonical, existing KB). No inter-agent visibility.
+      Blackboard: built from round-1 outputs.
+      Round 2  : 24 specialists run AGAIN in parallel — each now sees
+                 the full blackboard (every peer's round-1 output)
+                 and may REFINE its delta, emit a NEW delta prompted
+                 by peer observations, or declare SUPPORT / CHALLENGE
+                 / WITHDRAW cross_refs against peers.
+      Consolidator: VisualDiagnosisAgent sees BOTH rounds and walks
+                 the look-alike decision-graph CoT.
+
+    ``swarm_rounds`` controls how many rounds run. Setting it to 1
+    falls back to the legacy single-round parallel-ensemble. Default 2
+    enables the stigmergy round; can be overridden via
+    ``VLLM_SWARM_ROUNDS`` env var in ``run_for_state``.
+    """
     specialists: List[BaseAgent] = [cls(client) for cls in SPECIALIST_CLASSES]
+    n_specialists = len(specialists)
 
-    def _run_one(idx_agent: Tuple[int, BaseAgent]) -> AgentDeltaOutput:
-        i, ag = idx_agent
-        try:
-            return ag.extract_deltas(
-                crop=crop, disease=disease, state=state,
-                canonical=canonical, image_data_url=image_data_url,
-                existing_kb_deltas=existing_deltas,
-                seed=seed + i,                # vary seed across specialists
-                temperature=temperature,
-            )
-        except Exception as e:
-            print(f"    [{ag.AGENT_NAME}] error: {type(e).__name__}: {e}")
-            return AgentDeltaOutput(agent_name=ag.AGENT_NAME)
+    def _run_round(
+        round_idx: int,
+        blackboard: Optional[Dict[str, AgentDeltaOutput]],
+    ) -> List[AgentDeltaOutput]:
+        def _run_one(idx_agent: Tuple[int, BaseAgent]) -> AgentDeltaOutput:
+            i, ag = idx_agent
+            try:
+                return ag.extract_deltas(
+                    crop=crop, disease=disease, state=state,
+                    canonical=canonical, image_data_url=image_data_url,
+                    existing_kb_deltas=existing_deltas,
+                    # Round 2 uses a different seed offset so the
+                    # model genuinely re-thinks, doesn't just emit
+                    # the cached round-1 answer.
+                    seed=seed + i + (10_000 if round_idx == 2 else 0),
+                    temperature=temperature,
+                    blackboard=blackboard,
+                    round_idx=round_idx,
+                )
+            except Exception as e:
+                print(f"    [round {round_idx}] [{ag.AGENT_NAME}] "
+                      f"error: {type(e).__name__}: {e}")
+                return AgentDeltaOutput(
+                    agent_name=ag.AGENT_NAME, round_idx=round_idx,
+                )
 
-    pairs = list(enumerate(specialists))
-    if parallel_specialists and len(pairs) > 1:
-        with ThreadPoolExecutor(max_workers=len(pairs)) as pool:
-            specialist_outputs = list(pool.map(_run_one, pairs))
-    else:
-        specialist_outputs = [_run_one(p) for p in pairs]
+        pairs = list(enumerate(specialists))
+        if parallel_specialists and n_specialists > 1:
+            with ThreadPoolExecutor(max_workers=n_specialists) as pool:
+                return list(pool.map(_run_one, pairs))
+        return [_run_one(p) for p in pairs]
+
+    # --- Round 1: independent observation ----------------------------------
+    round1_outputs = _run_round(1, blackboard=None)
+
+    # --- Build the shared blackboard ---------------------------------------
+    blackboard: Dict[str, AgentDeltaOutput] = {
+        o.agent_name: o for o in round1_outputs if o.agent_name
+    }
+
+    # --- Round 2 (default): stigmergy refinement ---------------------------
+    round2_outputs: List[AgentDeltaOutput] = []
+    if swarm_rounds >= 2:
+        round2_outputs = _run_round(2, blackboard=blackboard)
+
+    # --- Pick which set the consolidator sees ------------------------------
+    # The consolidator gets BOTH rounds — it can read each agent's
+    # round-1 baseline + round-2 refinement + cross_refs and pick the
+    # better-grounded one per field. For backwards-compat callers that
+    # expect a flat list, we also expose `specialist_outputs` as
+    # round-2 (if it ran) else round-1.
+    all_specialist_outputs: List[AgentDeltaOutput] = (
+        round1_outputs + round2_outputs
+    )
+    primary_outputs = round2_outputs if round2_outputs else round1_outputs
 
     consolidator = DiagnosisAgent(client)
     try:
         consolidator_output = consolidator.consolidate(
             crop=crop, disease=disease, state=state,
             canonical=canonical, image_data_url=image_data_url,
-            specialist_outputs=specialist_outputs,
+            specialist_outputs=all_specialist_outputs,
             existing_kb_deltas=existing_deltas,
-            seed=seed + 1000, temperature=temperature,
+            seed=seed + 100_000, temperature=temperature,
         )
     except Exception as e:
         print(f"    [DiagnosisAgent] consolidation failed "
-              f"({type(e).__name__}: {e}); using specialist union")
+              f"({type(e).__name__}: {e}); using primary-round union")
         union: List[Dict[str, str]] = []
-        for s in specialist_outputs:
+        for s in primary_outputs:
             union.extend(s.deltas)
         consolidator_output = AgentDeltaOutput(
             agent_name="DiagnosisAgent",
             deltas=union, confidence="low",
-            reasoning="consolidator failed; using specialist union",
+            reasoning="consolidator failed; using primary-round union",
         )
 
     return {
         "pass_idx":            pass_idx,
-        "specialist_outputs":  specialist_outputs,
+        "swarm_rounds":        swarm_rounds,
+        "round1_outputs":      round1_outputs,
+        "round2_outputs":      round2_outputs,
+        # Back-compat: tests + traces expect a flat list of all
+        # specialist outputs from this pass. Includes both rounds.
+        "specialist_outputs":  all_specialist_outputs,
         "consolidator_output": consolidator_output,
         "final_deltas":        consolidator_output.deltas,
     }
@@ -499,6 +558,9 @@ def run_for_state(
     if agreement_min       is None: agreement_min       = _int_env  ("VLLM_AGREEMENT_MIN",    3)
     if temperature         is None: temperature         = _float_env("VLLM_TEMPERATURE",      0.8)
     if similarity_threshold is None: similarity_threshold = _float_env("VLLM_SIM_THRESHOLD",  0.4)
+    # 2-round real-swarm protocol by default. Set VLLM_SWARM_ROUNDS=1
+    # to fall back to the legacy parallel-ensemble single-round mode.
+    swarm_rounds = max(1, _int_env("VLLM_SWARM_ROUNDS", 2))
 
     n_runs              = max(1, int(n_runs))
     agreement_min       = max(1, min(int(agreement_min), n_runs))
@@ -516,6 +578,7 @@ def run_for_state(
             pass_idx=i, seed=seed_base + i * 100,
             temperature=temperature,
             parallel_specialists=parallel_specialists,
+            swarm_rounds=swarm_rounds,
         )
 
     passes: List[Dict[str, Any]] = []

@@ -188,13 +188,32 @@ After every tuple finishes, `_embed_into_registry` merges its per-state
 record back into the disease's `regional_observations` dict — **states
 not processed this run are preserved verbatim**.
 
-### 3b. Inside one pass (24 visual specialists + CoT consolidator)
+### 3b. Inside one pass (REAL swarm: 2 rounds × 24 specialists + CoT consolidator)
 
-Each of the N stochastic passes runs **24 single-feature visual
-specialists** in parallel on the same (image, canonical-KB, existing-KB)
-input, then `VisualDiagnosisAgent` consolidates the union by walking
-the look-alike decision-graph CoT documented in
-`DR.Arti.docx`.
+Each of the N stochastic passes runs a **2-round real swarm**:
+
+  - **Round 1 (independent observation)** — 24 single-feature visual
+    specialists run in parallel on (image, canonical KB, existing KB).
+    No inter-agent visibility. Each writes a delta to a per-agent
+    output.
+
+  - **Blackboard** — all round-1 outputs are collected into a shared
+    blackboard keyed by `AGENT_NAME`. This is the stigmergy substrate
+    that makes the swarm a real swarm and not just a parallel ensemble.
+
+  - **Round 2 (cross-talk)** — the same 24 specialists run AGAIN in
+    parallel, but this time each sees the FULL blackboard from round 1.
+    A specialist may:
+      - `REFINE` its own round-1 delta given peer evidence
+      - emit a `NEW` delta prompted by what peers reported
+      - `SUPPORT` a peer with a `cross_ref` (raises peer's effective confidence)
+      - `CHALLENGE` a peer with a `cross_ref` (the consolidator adjudicates)
+      - `WITHDRAW` its own round-1 delta (declares a self-targeted cross_ref)
+
+  - **VisualDiagnosisAgent (consolidator)** — sees BOTH rounds plus
+    the full cross-ref digest, walks the 5-step decision-graph CoT
+    from `DR.Arti.docx`, emits the pass's final deltas.
+
 The swarm focuses **exclusively on visual symptoms** — pathogen, type,
 treatments and other non-visual KB are owned by Claude in Phase 0 and
 never re-emitted by the swarm.
@@ -299,35 +318,46 @@ flowchart TD
     class DONE done
 ```
 
-Each specialist emits `{deltas, confidence (κ), reasoning}` for the
-ONE field it owns. The consolidator sees all 24 outputs **rendered
-grouped by organ family** (so the model sees the same anatomical
-clustering humans use when diagnosing), walks a 4-step chain-of-thought
-(triage → decisive forks → dedup → emit), and produces the pass's
-final delta list plus a CoT trace string. Validation against external
-evidence happens in the §3d2 verifier stage after K-of-N agreement.
+Each specialist emits `{deltas, confidence (κ), reasoning}` in round 1
+and `{deltas, confidence, reasoning, cross_refs}` in round 2 for the
+ONE field it owns. The consolidator sees all outputs **rendered
+grouped by organ family** AND **split by round** (so the model can
+compare round-1 baselines against round-2 refinements), plus a
+flattened cross-ref digest grouped by action (`CHALLENGE`, `SUPPORT`,
+`WITHDRAW`). It walks a 5-step chain-of-thought (triage → decisive
+forks → adjudicate cross_refs → dedup → emit), and produces the
+pass's final delta list plus a CoT trace string. Validation against
+external evidence happens in the §3d2 verifier stage after K-of-N
+agreement.
 
-**Per-pass LLM calls** = 24 specialists + 1 consolidator = **25 calls**.
-Qwen2.5-VL-7B handles ~50–100 concurrent on one A100, so wall-clock per
-pass is unchanged from the legacy 5-call layout (~30–60 s).
+**Per-pass LLM calls** = 24 (round 1) + 24 (round 2) + 1 consolidator
+= **49 calls** by default (set `VLLM_SWARM_ROUNDS=1` to fall back to
+the legacy 25-call single-round mode). Qwen2.5-VL-7B handles ~50–100
+concurrent on one A100, so wall-clock per pass roughly doubles to
+~60–120 s — the cost of real swarm behavior.
 
 ### 3c. Animated walkthrough
 
-![Phase 0R visual-symptom swarm — animated walkthrough](docs/assets/swarm_flow.gif)
+![Phase 0R real swarm — 5-act walkthrough](docs/assets/swarm_flow.gif)
 
-*A four-act walkthrough of one (crop, disease, state) pass.
-**Act 1** introduces the static context (canonical KB block + field
-photograph) and the 7 organ-family group cards listing all 24
-specialists.
-**Act 2** runs the parallel fan-out: every specialist examines the
-photo against canonical KB; the running log on the right accumulates
-deltas tagged by field.
-**Act 3** shows VisualDiagnosisAgent walking its 4-step decision-graph
-CoT — triage which organs are visible → decisive forks (white pith,
-bare petioles, blue roots → SDS) → dedup → emit final deltas plus a
-CoT trace.
-**Act 4** runs the cross-pass K-of-N agreement filter, then the
-Claude web verifier, then conservatively merges the survivors into
+*A five-act walkthrough of ONE (crop, disease, state) pass through
+the real swarm.
+**Act 1** introduces the static context (canonical KB + field photo)
+and the 7 organ-family group cards listing all 24 specialists.
+**Act 2** runs Round 1: every specialist examines the photo
+independently and writes a delta to the running log — no peer
+visibility yet.
+**Act 3** is the **real-swarm round** — every round-1 output goes onto
+a shared blackboard, all 24 specialists run again with the blackboard
+visible, and animated cross-arrows fire: green `SUPPORT`, red
+`CHALLENGE`, gray `WITHDRAW`. You see StemPithAgent SUPPORT
+DefoliationAgent, ColorPaletteAgent CHALLENGE LeafLesionColorAgent,
+LeafLesionColorAgent WITHDRAW after the color-encoder challenge, etc.
+**Act 4** shows VisualDiagnosisAgent walking its 5-step CoT — triage
+visible organs → decisive forks → adjudicate cross_refs → dedup →
+emit final deltas + CoT trace.
+**Act 5** runs the cross-pass K-of-N agreement filter, the Claude
+web verifier, and the conservative merge into
 `final_registry.json[*].regional_observations[<state>].deltas[]`.*
 
 ### 3d. Cross-run K-of-N agreement filter

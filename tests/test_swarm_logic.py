@@ -40,7 +40,7 @@ def test_parse_agent_output_well_formed():
         "confidence": "high",
         "reasoning": "clear evidence",
     })
-    deltas, conf, why = parse_agent_output(
+    deltas, conf, why, _refs = parse_agent_output(
         text=text, owned_fields=["lesion_morphology"],
     )
     assert len(deltas) == 1
@@ -51,7 +51,7 @@ def test_parse_agent_output_well_formed():
 def test_parse_agent_output_markdown_fenced():
     from agents.base_agent import parse_agent_output
     text = '```json\n{"deltas": [], "confidence": "low"}\n```'
-    deltas, conf, _ = parse_agent_output(
+    deltas, conf, _, _refs = parse_agent_output(
         text=text, owned_fields=["severity"],
     )
     assert deltas == []
@@ -64,7 +64,7 @@ def test_parse_agent_output_off_domain_field_coerced():
         "deltas": [{"field": "look_alikes", "image_shows": "X"}],
         "confidence": "medium",
     })
-    deltas, _, _ = parse_agent_output(
+    deltas, _, _, _refs = parse_agent_output(
         text=text, owned_fields=["severity"],
     )
     assert deltas[0]["field"] == "other"
@@ -76,7 +76,7 @@ def test_parse_agent_output_empty_image_shows_dropped():
         "deltas": [{"field": "severity", "image_shows": ""}],
         "confidence": "medium",
     })
-    deltas, _, _ = parse_agent_output(
+    deltas, _, _, _refs = parse_agent_output(
         text=text, owned_fields=["severity"],
     )
     assert deltas == []
@@ -87,7 +87,7 @@ def test_parse_agent_output_kappa_word_boundary():
     text = json.dumps({
         "deltas": [], "confidence": "highly uncertain",
     })
-    _, conf, _ = parse_agent_output(
+    _, conf, _, _ = parse_agent_output(
         text=text, owned_fields=["severity"],
     )
     assert conf == "medium"

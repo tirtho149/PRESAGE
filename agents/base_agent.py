@@ -132,6 +132,20 @@ class AgentDeltaOutput:
     confidence: str = "medium"
     reasoning: str = ""
     raw_text: str = ""
+    # Round-2 only: actions this agent took against peers' round-1
+    # outputs (stigmergy). Empty in round 1.
+    cross_refs: List[Dict[str, str]] = field(default_factory=list)
+    # Which swarm round produced this output (1-indexed).
+    round_idx: int = 1
+
+
+# Alias for clarity — the shared blackboard is a dict from agent name
+# to that agent's most recent AgentDeltaOutput. Round 2 sees this.
+Blackboard = Dict[str, AgentDeltaOutput]
+
+
+# Valid actions an agent can declare against a peer's round-1 output.
+CROSS_REF_ACTIONS = ("support", "challenge", "withdraw")
 
 
 # ---------------------------------------------------------------------------
@@ -174,17 +188,44 @@ def _coerce_confidence(c: Any) -> str:
     return "medium"
 
 
+def _validate_cross_ref(d: Any) -> Optional[Dict[str, str]]:
+    """Validate one cross-reference action (round-2 only).
+
+    Schema:
+      {"action": "<support|challenge|withdraw>",
+       "target_agent": "<peer AGENT_NAME or null>",
+       "rationale":    "<one sentence>"}
+    """
+    if not isinstance(d, dict):
+        return None
+    action = _clean(d.get("action")).lower()
+    if action not in CROSS_REF_ACTIONS:
+        return None
+    rationale = _clean(d.get("rationale"))
+    if not rationale:
+        return None
+    return {
+        "action":       action,
+        "target_agent": _clean(d.get("target_agent")),  # "" allowed for self-withdraw
+        "rationale":    rationale,
+    }
+
+
 def parse_agent_output(
     text: str,
     owned_fields: List[str],
-) -> Tuple[List[Dict[str, str]], str, str]:
-    """Return (deltas, confidence, reasoning).
+) -> Tuple[List[Dict[str, str]], str, str, List[Dict[str, str]]]:
+    """Return (deltas, confidence, reasoning, cross_refs).
 
     Accepts strict JSON, JSON wrapped in markdown fences, or a JSON
     object embedded in surrounding prose (best-effort regex pull).
+
+    ``cross_refs`` is round-2 only — agents may declare ``support``,
+    ``challenge``, or ``withdraw`` actions against round-1 peers.
+    Always returned as a list (empty in round 1).
     """
     if not text:
-        return [], "medium", ""
+        return [], "medium", "", []
     s = text.strip()
     if s.startswith("```"):
         s = re.sub(r"^```(?:json)?\s*", "", s)
@@ -200,16 +241,21 @@ def parse_agent_output(
             except json.JSONDecodeError:
                 obj = None
     if not isinstance(obj, dict):
-        return [], "medium", ""
+        return [], "medium", "", []
     allowed_fields = set(owned_fields) | {"other"}
     deltas: List[Dict[str, str]] = []
     for d in obj.get("deltas") or []:
         v = _validate_delta(d, allowed_fields)
         if v is not None:
             deltas.append(v)
+    cross_refs: List[Dict[str, str]] = []
+    for d in obj.get("cross_refs") or []:
+        v = _validate_cross_ref(d)
+        if v is not None:
+            cross_refs.append(v)
     confidence = _coerce_confidence(obj.get("confidence"))
     reasoning  = _clean(obj.get("reasoning"))
-    return deltas, confidence, reasoning
+    return deltas, confidence, reasoning, cross_refs
 
 
 # ---------------------------------------------------------------------------
@@ -270,6 +316,87 @@ If the photo confirms canonical AND existing KB exactly, return
 """
 
 
+# Round-2 prompt: the agent sees the BLACKBOARD (every peer's round-1
+# output) and may now refine, support a peer, challenge a peer, or
+# withdraw its own round-1 delta. This is the "real swarm" behavior —
+# stigmergy via a shared trace plus cross-agent coordination.
+DELTA_USER_PROMPT_R2 = """\
+You are looking at the SAME Bugwood Network field photograph you saw
+in round 1. This is ROUND 2 of the swarm pass.
+
+Crop:    {crop}
+Disease: {disease}
+State:   {state}
+
+CANONICAL KB (visual_symptoms slice for {agent_name} — do NOT restate):
+{canonical_slice}
+{existing_kb_block}\
+
+PEER BLACKBOARD (every specialist's round-1 output is below — read
+these carefully; they are observations from siblings looking at the
+SAME photograph through different organ-family lenses):
+{blackboard_block}
+
+Your specialty owns these delta fields: {owned_fields}
+Your focused question (unchanged from round 1):
+
+    {focus_question}
+
+Round-2 chain-of-thought:
+  1. Re-examine the photograph for YOUR specialty.
+  2. Read the BLACKBOARD. Do any peer observations strengthen,
+     contradict, or contextualize your round-1 finding?
+       - Example STRENGTHEN: StemPithAgent says "white pith";
+         DefoliationAgent says "bare petioles attached" — both point
+         to SDS. If you're LookAlikeCoTAgent, this strengthens an
+         SDS-over-BSR challenge.
+       - Example CONTRADICT: you reported "tan lesion centers" but
+         ColorPaletteAgent reports "olive-green dominant" — you
+         should challenge them, withdraw, or refine.
+  3. Decide:
+       - REFINE: emit a tighter / better-grounded delta replacing
+         your round-1 output. Set "deltas" to the new version.
+       - WITHDRAW: leave "deltas" empty; declare a withdraw
+         cross_ref against your own AGENT_NAME with a rationale.
+       - NEW: emit a NEW delta you missed in round 1, prompted by
+         what a peer observed.
+       - SUPPORT a peer: add a cross_ref with action "support" and
+         target_agent = the peer's AGENT_NAME.
+       - CHALLENGE a peer: add a cross_ref with action "challenge"
+         and target_agent = the peer's AGENT_NAME.
+
+Restating canonical OR another agent's exact observation is FORBIDDEN.
+Your round-2 deltas must add information beyond what canonical and the
+blackboard already say.
+
+Output STRICT JSON, no markdown fences, no preamble:
+{{
+  "deltas": [
+    {{
+      "field":          "<one of: {owned_fields}>",
+      "canonical_says": "<short quote from canonical above, or '(not specified)'>",
+      "image_shows":    "<what the photo shows — one sentence>",
+      "image_quote":    "<one-sentence visual evidence>"
+    }}
+  ],
+  "cross_refs": [
+    {{
+      "action":       "support" | "challenge" | "withdraw",
+      "target_agent": "<peer AGENT_NAME (e.g. StemPithAgent), or your OWN name for withdraw>",
+      "rationale":    "<one-sentence justification>"
+    }}
+  ],
+  "confidence": "high" | "medium" | "low",
+  "reasoning":  "<one-line CoT trace: peer X said Y so I now Z>"
+}}
+
+If round-2 reading of the blackboard yields nothing to refine,
+challenge, or support — emit an empty deltas + empty cross_refs and
+return confidence "medium" with a rationale that points at the
+unchanged round-1 output.
+"""
+
+
 # ---------------------------------------------------------------------------
 # Base agent
 # ---------------------------------------------------------------------------
@@ -307,20 +434,43 @@ class BaseAgent(abc.ABC):
         existing_kb_deltas: Optional[List[Dict[str, Any]]] = None,
         seed: Optional[int] = None,
         temperature: Optional[float] = None,
+        blackboard: Optional[Blackboard] = None,
+        round_idx: int = 1,
     ) -> AgentDeltaOutput:
-        """One specialist pass — returns deltas + confidence + reasoning."""
+        """One specialist pass — returns deltas + confidence + reasoning
+        (+ cross_refs in round 2).
+
+        Round 1 (``blackboard=None``, ``round_idx=1``): independent
+        observation. Standard prompt.
+
+        Round 2 (``blackboard`` populated): stigmergy round. The agent
+        sees every peer's round-1 output and may refine its own delta,
+        emit a new delta prompted by peer observations, or declare
+        support / challenge / withdraw cross_refs.
+        """
         canonical_slice = self._format_canonical_slice(canonical)
         existing_block  = self._format_existing_kb(existing_kb_deltas or [], state)
         owned_list      = ", ".join(self.OWNED_FIELDS) or "other"
 
-        user_prompt = DELTA_USER_PROMPT.format(
-            crop=crop, disease=disease, state=state,
-            agent_name=self.AGENT_NAME,
-            canonical_slice=canonical_slice,
-            existing_kb_block=existing_block,
-            owned_fields=owned_list,
-            focus_question=self.FOCUS_QUESTION,
-        )
+        if blackboard:
+            user_prompt = DELTA_USER_PROMPT_R2.format(
+                crop=crop, disease=disease, state=state,
+                agent_name=self.AGENT_NAME,
+                canonical_slice=canonical_slice,
+                existing_kb_block=existing_block,
+                blackboard_block=self._format_blackboard(blackboard, exclude=self.AGENT_NAME),
+                owned_fields=owned_list,
+                focus_question=self.FOCUS_QUESTION,
+            )
+        else:
+            user_prompt = DELTA_USER_PROMPT.format(
+                crop=crop, disease=disease, state=state,
+                agent_name=self.AGENT_NAME,
+                canonical_slice=canonical_slice,
+                existing_kb_block=existing_block,
+                owned_fields=owned_list,
+                focus_question=self.FOCUS_QUESTION,
+            )
         messages = [{
             "role": "user",
             "content": [
@@ -332,13 +482,15 @@ class BaseAgent(abc.ABC):
             messages=messages, system_prompt=self.SYSTEM_PROMPT,
             seed=seed, temperature=temperature,
         )
-        deltas, confidence, reasoning = parse_agent_output(
+        deltas, confidence, reasoning, cross_refs = parse_agent_output(
             text=text, owned_fields=self.OWNED_FIELDS,
         )
         return AgentDeltaOutput(
             agent_name=self.AGENT_NAME,
             deltas=deltas, confidence=confidence, reasoning=reasoning,
             raw_text=text,
+            cross_refs=cross_refs,
+            round_idx=round_idx,
         )
 
     # Backwards-compat alias for tests / external callers.
@@ -363,6 +515,39 @@ class BaseAgent(abc.ABC):
             if v:
                 lines.append(f"  {visual_key}: {_clean(v)}")
         return "\n".join(lines) if lines else "  (canonical visual_symptoms not available)"
+
+    @staticmethod
+    def _format_blackboard(
+        blackboard: Blackboard,
+        *,
+        exclude: Optional[str] = None,
+    ) -> str:
+        """Render every peer's round-1 output for the round-2 prompt.
+
+        ``exclude`` is the calling agent's own AGENT_NAME, so a
+        specialist doesn't have to read its own round-1 output back
+        verbatim (it's already in conversation context).
+        """
+        lines: List[str] = []
+        for name in sorted(blackboard):
+            if exclude and name == exclude:
+                continue
+            out = blackboard[name]
+            tag = f"(confidence={out.confidence})"
+            lines.append(f"  - {name} {tag}")
+            if out.reasoning:
+                lines.append(f"      reasoning: {out.reasoning}")
+            if not out.deltas:
+                lines.append("      (no deltas in round 1)")
+                continue
+            for d in out.deltas:
+                lines.append(
+                    f"      [{d.get('field','')}] "
+                    f"{d.get('image_shows','')!s}"
+                )
+        if not lines:
+            return "  (blackboard is empty)"
+        return "\n".join(lines)
 
     @staticmethod
     def _format_existing_kb(

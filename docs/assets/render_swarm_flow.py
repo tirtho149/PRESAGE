@@ -2,32 +2,34 @@
 docs/assets/render_swarm_flow.py
 ================================
 Render an animated GIF that walks a viewer through the current Phase 0R
-24-specialist visual-symptom swarm.
+**real swarm** — 24 specialists running TWO rounds with a shared
+blackboard, cross-talk (support / challenge / withdraw), and a CoT
+consolidator.
 
-Four acts:
+Five acts:
 
     Act 1 — Setup
             Static context (canonical KB + field photograph + state)
             7 organ-family group cards introduce the 24 specialists
-            VisualDiagnosisAgent consolidator at the bottom
 
-    Act 2 — Parallel fan-out
-            All 24 specialists run simultaneously on the same input
-            Each emits a delta into the running log on the right
-            Per-pass cost: 24 specialists + 1 consolidator = 25 LLM calls
+    Act 2 — Round 1: independent observation
+            All 24 specialists fan out in parallel
+            Each writes its delta to the running log
+            No inter-agent visibility yet
 
-    Act 3 — CoT consolidator
-            VisualDiagnosisAgent walks the 4-step decision-graph CoT:
-              (1) triage — which organs are visible
-              (2) decisive forks — e.g. stem-pith color, petiole
-                  attachment, leg color, bract length
-              (3) dedup — drop overlapping / canonical-restating items
-              (4) emit — final deltas + CoT trace
+    Act 3 — Blackboard cross-talk (round 2 — the "real swarm" round)
+            Every round-1 output is published to a shared blackboard
+            All 24 specialists run AGAIN with the blackboard visible
+            Animated cross-arrows show SUPPORT (green), CHALLENGE
+            (red), and WITHDRAW (gray) actions between specialists
 
-    Act 4 — K-of-N + Merge + Output
-            Cross-pass agreement filter keeps deltas that survive
-            K-of-N runs; conservative merge into the existing KB;
-            final regional_observations JSON for this state.
+    Act 4 — CoT consolidator (VisualDiagnosisAgent)
+            5-step CoT: triage -> decisive forks -> adjudicate
+            cross-refs -> dedup -> emit final deltas + trace
+
+    Act 5 — K-of-N + Merge + Output
+            Cross-pass agreement filter, Claude web verifier,
+            conservative merge into final_registry.json
 
 Output: docs/assets/swarm_flow.gif
 """
@@ -171,12 +173,26 @@ KOFN_DROPPED_INDEX = {1}     # leaf_necrosis tip-and-margin dropped
 # ----------------------------------------------------------------------
 
 FPS = 6
-ACT1_FRAMES   = 18   # ~3 s
-ACT2_FRAMES   = 30   # ~5 s
-ACT3_FRAMES   = 24   # ~4 s
-ACT4_FRAMES   = 18   # ~3 s
-HOLD_FRAMES   = 12   # ~2 s end hold
-TOTAL_FRAMES  = ACT1_FRAMES + ACT2_FRAMES + ACT3_FRAMES + ACT4_FRAMES + HOLD_FRAMES
+ACT1_FRAMES   = 18   # ~3 s  Setup
+ACT2_FRAMES   = 24   # ~4 s  Round 1: independent fan-out
+ACT3_FRAMES   = 30   # ~5 s  Round 2: blackboard cross-talk (the "real swarm" round)
+ACT4_FRAMES   = 24   # ~4 s  CoT consolidator
+ACT5_FRAMES   = 18   # ~3 s  K-of-N + merge + output
+HOLD_FRAMES   = 12   # ~2 s  end hold
+TOTAL_FRAMES  = (ACT1_FRAMES + ACT2_FRAMES + ACT3_FRAMES + ACT4_FRAMES
+                 + ACT5_FRAMES + HOLD_FRAMES)
+
+
+# Cross-ref actions to animate in Act 3 (round 2).
+# Each tuple: (from_group, to_group, action, rationale_short)
+CROSS_REFS = [
+    ("STEM",  "PAT",   "support",   "StemPith white → SDS; supports Defoliation's bare-petiole SDS call"),
+    ("BELOW", "STEM",  "support",   "Root sees blue masses → SDS; confirms StemPith"),
+    ("DIAG",  "LEAF",  "challenge", "ColorPalette: tan dominant, not brown — challenge LeafLesionColor"),
+    ("DIAG",  "STEM",  "support",   "LookAlikeCoT walks: pith + petiole + roots all → SDS"),
+    ("LEAF",  None,    "withdraw",  "LeafLesionColor withdraws round-1 'brown' after ColorPalette challenge"),
+    ("PAT",   "BELOW", "support",   "Wilting pattern hemispheric → consistent with SDS root rot"),
+]
 
 
 # ----------------------------------------------------------------------
@@ -402,7 +418,7 @@ def _act2_frames(step: int) -> List:
 
     for i in range(ACT2_FRAMES):
         fig, ax = _setup_axes()
-        _draw_title(ax, "Act 2 — 24 specialists fan out in parallel")
+        _draw_title(ax, "Act 2 — Round 1: 24 specialists fan out in parallel (independent observation)")
         # First 4 frames: all 7 groups light up simultaneously.
         if i < 4:
             actives = list(GROUPS) if i >= 1 else []
@@ -433,61 +449,157 @@ def _act2_frames(step: int) -> List:
     return out
 
 
+def _draw_cross_ref_arrow(ax, from_gid: str, to_gid: str, action: str, *, alpha=0.9):
+    """Curved arrow between two group cards illustrating a round-2
+    support / challenge / withdraw action."""
+    if from_gid not in GROUPS:
+        return
+    sx, sy, sw, sh = GROUPS[from_gid]["pos"]
+    if to_gid and to_gid in GROUPS:
+        dx, dy, dw, dh = GROUPS[to_gid]["pos"]
+    else:
+        # Self-withdraw → draw a loop staying on the from_gid card.
+        dx, dy = sx + 0.045, sy - 0.05
+    color = {"support": "#16a34a",
+             "challenge": "#dc2626",
+             "withdraw": "#6b7280"}.get(action, "#94a3b8")
+    style = "->,head_length=5,head_width=4"
+    # Use a curved patch so multiple arrows don't overlap badly.
+    ax.add_patch(FancyArrowPatch(
+        (sx, sy), (dx, dy),
+        connectionstyle=f"arc3,rad={0.18 if to_gid else 0.6}",
+        arrowstyle=style, color=color, alpha=alpha,
+        linewidth=2.0, mutation_scale=14, zorder=4,
+    ))
+
+
 def _act3_frames(step: int) -> List:
-    """CoT consolidator: VisualDiagnosisAgent walks 4 steps."""
+    """Round 2 — Blackboard cross-talk. Specialists see each other's
+    round-1 outputs and emit support / challenge / withdraw actions."""
+    out = []
+    n_deltas = len(DELTAS)
+    captions = [
+        "Round 2 begins. Every round-1 output has been published to a shared blackboard.",
+        "All 24 specialists run AGAIN — each now reads peers' findings on the blackboard.",
+        "Cross-talk #1: StemPithAgent (white pith → SDS) SUPPORTS DefoliationAgent (bare petioles).",
+        "Cross-talk #2: RootAgent (blue masses) SUPPORTS StemPithAgent — converging on SDS.",
+        "Cross-talk #3: ColorPaletteAgent CHALLENGES LeafLesionColorAgent — 'tan dominant, not brown'.",
+        "Cross-talk #4: LookAlikeCoTAgent SUPPORTS StemPith — decisive SDS-vs-BSR fork.",
+        "Cross-talk #5: LeafLesionColorAgent WITHDRAWS round-1 'brown' after the color-encoder challenge.",
+        "Cross-talk #6: WiltingAgent SUPPORTS RootAgent — hemispheric wilt matches SDS root rot.",
+        "Round 2 complete. The blackboard now carries refined deltas + 4 SUPPORTS, 1 CHALLENGE, 1 WITHDRAW.",
+    ]
+    per_cap = max(1, ACT3_FRAMES // len(captions))
+
+    # Each cross-ref animation lasts 3 frames.
+    cross_ref_schedule: List[Tuple[int, int]] = []
+    n_refs = len(CROSS_REFS)
+    for i in range(n_refs):
+        start = 6 + i * 3
+        cross_ref_schedule.append((start, start + 3))
+
+    for i in range(ACT3_FRAMES):
+        cap_idx = min(i // per_cap, len(captions) - 1)
+        fig, ax = _setup_axes()
+        _draw_title(ax, "Act 3 — Round 2: blackboard cross-talk (the 'real swarm' round)")
+
+        # Round-2 log: round-1 entries + cross_ref annotations.
+        entries: List[Tuple[str, str]] = []
+        for k in range(n_deltas):
+            gid, text = DELTAS[k]
+            color = GROUPS[gid]["color"]
+            entries.append((text, color))
+        # Append cross-ref entries as they fire.
+        for ridx, (start, stop) in enumerate(cross_ref_schedule):
+            if i >= start:
+                src, tgt, action, rationale = CROSS_REFS[ridx]
+                ack = {"support": "✓ SUPPORT",
+                       "challenge": "⚠ CHALLENGE",
+                       "withdraw": "↩ WITHDRAW"}[action]
+                arrow = f"{src} → {tgt or 'self'}" if tgt is not None else f"{src} → self"
+                col = {"support": "#16a34a",
+                       "challenge": "#dc2626",
+                       "withdraw": "#6b7280"}[action]
+                entries.append((f"  {ack}  {arrow}: {rationale}", col))
+
+        # Active groups: anything currently involved in a cross-ref or
+        # all groups during the second half.
+        actives = []
+        for ridx, (start, stop) in enumerate(cross_ref_schedule):
+            if start <= i < stop:
+                src, tgt, _, _ = CROSS_REFS[ridx]
+                actives.extend([g for g in (src, tgt) if g])
+        if i >= 24:
+            actives = list(GROUPS)
+        _common_skeleton(ax, active_groups=set(actives))
+
+        # Live cross-ref arrows for the current animation window.
+        for ridx, (start, stop) in enumerate(cross_ref_schedule):
+            if start <= i < stop:
+                src, tgt, action, _rationale = CROSS_REFS[ridx]
+                _draw_cross_ref_arrow(ax, src, tgt, action, alpha=0.95)
+
+        _draw_log(ax, entries)
+        _draw_caption(ax, captions[cap_idx], step + i)
+        out.append(_finalize(fig))
+    return out
+
+
+def _act4_frames_cot(step: int) -> List:
+    """CoT consolidator: VisualDiagnosisAgent walks 5 steps."""
     out = []
     n_deltas = len(DELTAS)
     cot_captions = [
         "Step 1 — Triage: which organs are visible? leaf ✓, cut stem ✓, root ✓, flower ✗.",
         "Step 2 — Decisive forks: white pith + bare-petioles + blue roots → SDS, not BSR.",
-        "Step 3 — Dedup: drop overlapping items and anything that just restates canonical.",
-        "Step 4 — Emit final deltas plus a CoT trace explaining the decision.",
+        "Step 3 — Adjudicate cross_refs: SUPPORTS raise confidence; CHALLENGE/WITHDRAW resolved.",
+        "Step 4 — Dedup: drop overlapping items and anything that just restates canonical.",
+        "Step 5 — Emit final deltas plus a CoT trace explaining the decision.",
     ]
-    per_step = ACT3_FRAMES // 4
+    per_step = ACT4_FRAMES // 5
 
-    for i in range(ACT3_FRAMES):
-        step_idx = min(i // per_step, 3)
+    for i in range(ACT4_FRAMES):
+        step_idx = min(i // per_step, 4)
         fig, ax = _setup_axes()
-        _draw_title(ax, "Act 3 — VisualDiagnosisAgent walks the decision-graph CoT")
+        _draw_title(ax, "Act 4 — VisualDiagnosisAgent walks the decision-graph CoT")
 
         entries: List[Tuple[str, str]] = []
         for k in range(n_deltas):
             gid, text = DELTAS[k]
             color = GROUPS[gid]["color"]
-            # Step 3 dims dropped entries; Step 4 keeps survivors only.
-            if step_idx >= 2 and k in DROPPED_INDEX:
+            # Step 4 dims dropped entries; Step 5 keeps survivors only.
+            if step_idx >= 3 and k in DROPPED_INDEX:
                 color = "#9ca3af"
                 text = text + "  ← drop (overlaps / not new)"
-            if step_idx >= 3 and k in DROPPED_INDEX:
+            if step_idx >= 4 and k in DROPPED_INDEX:
                 continue
             entries.append((text, color))
 
-        _common_skeleton(ax, active_groups=[],
-                         consol_active=True)
+        _common_skeleton(ax, active_groups=[], consol_active=True)
         _draw_log(ax, entries)
         _draw_caption(ax, cot_captions[step_idx], step + i)
         out.append(_finalize(fig))
     return out
 
 
-def _act4_frames(step: int) -> List:
+def _act5_frames(step: int) -> List:
     """K-of-N filter + merge + final JSON output."""
     out = []
     survived = [d for k, d in enumerate(DELTAS)
                 if k not in DROPPED_INDEX and k not in KOFN_DROPPED_INDEX]
     captions = [
-        "Act 4 — Cross-pass K-of-N agreement filter (passes run with N seeds, e.g. N=10, K=3).",
+        "Act 5 — Cross-pass K-of-N agreement filter (passes run with N seeds, e.g. N=10, K=3).",
         "Spurious per-pass hallucinations dropped; survivors are robust across seeds.",
         "Claude web verifier checks each survivor against extension / APS / CABI sources.",
         "Conservative merge into final_registry.json — existing deltas preserved, support bumped on overlap.",
         "Result: final regional_observations[<state>].deltas[] entry for this (crop, disease) profile.",
     ]
-    per_cap = ACT4_FRAMES // len(captions)
+    per_cap = ACT5_FRAMES // len(captions)
 
-    for i in range(ACT4_FRAMES):
+    for i in range(ACT5_FRAMES):
         cap_idx = min(i // per_cap, len(captions) - 1)
         fig, ax = _setup_axes()
-        _draw_title(ax, "Act 4 — K-of-N agreement + web verifier + merge → KB")
+        _draw_title(ax, "Act 5 — K-of-N agreement + web verifier + merge → KB")
 
         entries: List[Tuple[str, str]] = []
         for gid, text in survived:
@@ -547,7 +659,8 @@ def main():
     frames.extend(_act1_frames(step));         step += ACT1_FRAMES
     frames.extend(_act2_frames(step));         step += ACT2_FRAMES
     frames.extend(_act3_frames(step));         step += ACT3_FRAMES
-    frames.extend(_act4_frames(step));         step += ACT4_FRAMES
+    frames.extend(_act4_frames_cot(step));     step += ACT4_FRAMES
+    frames.extend(_act5_frames(step));         step += ACT5_FRAMES
     # End-hold: repeat last frame.
     frames.extend([frames[-1]] * HOLD_FRAMES)
 

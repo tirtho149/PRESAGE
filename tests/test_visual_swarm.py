@@ -118,7 +118,7 @@ def test_parse_agent_output_accepts_new_field_name():
         "confidence": "high",
         "reasoning":  "decisive SDS fork",
     })
-    deltas, conf, why = parse_agent_output(raw, owned_fields=["stem_pith"])
+    deltas, conf, why, _refs = parse_agent_output(raw, owned_fields=["stem_pith"])
     assert len(deltas) == 1
     assert deltas[0]["field"] == "stem_pith"
     assert conf == "high"
@@ -140,6 +140,6 @@ def test_parse_agent_output_demotes_unknown_field_to_other():
         "confidence": "medium",
         "reasoning":  "off-topic",
     })
-    deltas, _conf, _why = parse_agent_output(raw, owned_fields=["leaf_lesion_shape"])
+    deltas, _conf, _why, _refs = parse_agent_output(raw, owned_fields=["leaf_lesion_shape"])
     assert len(deltas) == 1
     assert deltas[0]["field"] == "other"
