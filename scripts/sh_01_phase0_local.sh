@@ -71,11 +71,13 @@ if ! command -v claude >/dev/null 2>&1; then
   exit 2
 fi
 
-# Run Phase 0.
+# Run Phase 0. `pathome_kb` honours --only-crops on the CLI; the env
+# var alone is NOT enough.
 echo "[1/3] Running Phase 0 (Claude discovery -> extraction -> reconciliation)"
 if [ -n "$PATHOME_ONLY_CROPS" ]; then
-  PATHOME_ONLY_CROPS="$PATHOME_ONLY_CROPS" \
-    "$PY" -m pathome_kb --csv "$PATHOME_USABLE_CSV"
+  echo "  --only-crops $PATHOME_ONLY_CROPS"
+  "$PY" -m pathome_kb --csv "$PATHOME_USABLE_CSV" \
+                       --only-crops "$PATHOME_ONLY_CROPS"
 else
   "$PY" -m pathome_kb --csv "$PATHOME_USABLE_CSV"
 fi
