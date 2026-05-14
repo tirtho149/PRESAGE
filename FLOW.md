@@ -194,7 +194,7 @@ Each of the N stochastic passes runs **24 single-feature visual
 specialists** in parallel on the same (image, canonical-KB, existing-KB)
 input, then `VisualDiagnosisAgent` consolidates the union by walking
 the look-alike decision-graph CoT documented in
-`Look alike Diseases, weeds and Insect COT with decision graph.docx`.
+`DR.Arti.docx`.
 The swarm focuses **exclusively on visual symptoms** — pathogen, type,
 treatments and other non-visual KB are owned by Claude in Phase 0 and
 never re-emitted by the swarm.

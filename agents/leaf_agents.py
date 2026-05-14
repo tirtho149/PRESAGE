@@ -3,7 +3,7 @@ agents/leaf_agents.py
 =====================
 Eight leaf-feature specialists. Each owns ONE delta field and asks ONE
 focused visual question, following the CoT pattern from
-``Look alike Diseases, weeds and Insect COT with decision graph.docx``
+``DR.Arti.docx``
 (e.g., "Look at several mid-canopy leaves. Are they diamond-shaped with
 petioles ≥ leaf length? Then Palmer amaranth.").
 

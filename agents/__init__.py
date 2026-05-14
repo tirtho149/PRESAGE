@@ -6,7 +6,7 @@ ONE laser-focused question about the photograph. All run in PARALLEL
 on the same (image, canonical-KB, existing-KB) input. ``DiagnosisAgent``
 (VisualDiagnosisAgent) consolidates the union by walking the look-alike
 decision-graph CoT documented in
-``Look alike Diseases, weeds and Insect COT with decision graph.docx``.
+``DR.Arti.docx``.
 
 Non-visual KB fields (pathogen, type_of_disease, treatments, …) are
 handled exclusively by Claude in Phase 0; the swarm never emits deltas

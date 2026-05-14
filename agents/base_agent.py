@@ -13,7 +13,7 @@ The swarm is decomposed into **24 single-feature specialists** + one
 ``VisualDiagnosisAgent`` consolidator. Each specialist owns ONE delta
 field and asks a single laser-focused question about the photograph,
 following the chain-of-thought pattern documented in
-``Look alike Diseases, weeds and Insect COT with decision graph.docx``
+``DR.Arti.docx``
 (per-step decisive forks, e.g. "Is the lower stem pith white or brown?
 white -> SDS, brown -> BSR").
 
