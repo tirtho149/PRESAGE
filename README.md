@@ -603,16 +603,23 @@ python scripts/filter_bugwood_csv.py \
 
 ```bash
 ssh tirtho@hpc-login.iastate.edu
+module load python cuda/11.8
+
+# (a) put the venv where the submitters expect it — either inside the
+# repo (.venv) or one level above (the sbatch scripts auto-detect both).
 cd /work/<your-scratch>/
+python -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip setuptools wheel
+
+# (b) clone the repo
 git clone https://github.com/tirtho149/PlantSwarm.git
 cd PlantSwarm
 
-# Standard deps:
+# (c) base deps + GPU stack (vllm, torch, open_clip_torch, transformers,
+# webdataset, accelerate, huggingface_hub — see requirements-gpu.txt)
 pip install -r requirements.txt
-
-# GPU-only deps (see requirements.txt's "GPU host only" section):
-pip install vllm torch open_clip_torch webdataset huggingface_hub \
-            transformers accelerate
+pip install -r requirements-gpu.txt
 ```
 
 ---

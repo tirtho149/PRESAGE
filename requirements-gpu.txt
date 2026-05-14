@@ -1,0 +1,24 @@
+# PlantSwarm GPU-host extras.
+# Install AFTER `pip install -r requirements.txt`.
+#
+# What this pulls in:
+#   vllm                Phase 0R Qwen2.5-VL-7B server (step 2)
+#   torch               step 4 encoder fine-tune + step 5 frozen forward
+#   transformers        tokenisers + HF model loaders
+#   open_clip_torch     CLIP factory for all 7 step-5 encoders
+#                       (BioCLIP, BioCLIP-2, CLIP, SigLIP, FG-CLIP,
+#                        BioTrove, your trained pathomeood_v1)
+#   huggingface_hub     hf-hub:imageomics/bioclip etc. fetch
+#   webdataset          step 4 tar shard loader
+#   accelerate          step 4 distributed train wrapper
+#
+# Multi-GB install. CPU-only LOCAL doesn't need this file — step 5 will
+# run on CPU (slower) if torch is missing the CUDA build.
+
+vllm>=0.4.0
+torch>=2.1.0
+transformers>=4.40.0
+open_clip_torch>=2.29.0
+huggingface_hub>=0.24.0
+webdataset>=0.2.86
+accelerate>=0.30.0

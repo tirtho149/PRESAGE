@@ -29,28 +29,36 @@ pyyaml>=6.0
 pandas>=2.0.0
 pyarrow>=14.0.0
 
-# Step 4 — TabPFN tabular foundation classifier
-# (frozen encoder + KB-caption + crop metadata -> TabPFN; replaces the
-#  old dual-projector CLIP fine-tune path).
+# Step 5 — TabPFN tabular foundation classifier
+# (frozen encoder + KB-caption + crop_text + state_text -> TabPFN over a
+#  15-variant feature ablation matrix on top of 7 encoders.)
 tabpfn>=2.0.0
 scikit-learn>=1.4.0       # PCA reducer + utilities
+
+# Step 5 — Grad-CAM (BioCAP §C.3 reproduction) + figure triptychs.
+matplotlib>=3.8.0
 
 # Tests
 pytest>=7.0.0
 
 
-# ---- GPU host only (encoder forward pass + Phase 0R vLLM) -----------------
-# Install these on the host that does the encoder forward (LOCAL with a
-# small GPU is enough — frozen forward is much cheaper than training) and
-# on Nova (Phase 0R vLLM endpoint).
+# ---- GPU host only (Phase 0R vLLM + step 4 encoder fine-tune +
+#                    step 5 frozen-encoder forward) -----------------------
+# These are installed manually on the host that does GPU work — NOT
+# auto-installed by `pip install -r requirements.txt` because they pull
+# in CUDA wheels (multi-GB). On Nova:
 #
-#   vllm>=0.4.0                # Phase 0R only: Qwen2.5-VL-7B server
-#   torch>=2.1.0               # frozen encoder forward in build_features.py
-#   transformers>=4.40.0
-#   open_clip_torch>=2.29.0    # CLIP factory + tokenizer for the encoders
-#   huggingface_hub>=0.24.0    # HF hub model fetch (imageomics/bioclip etc.)
+#   pip install vllm                  # Phase 0R (step 2) only:
+#                                     #   Qwen2.5-VL-7B server
+#   pip install torch                 # step 4 train, step 5 forward
+#   pip install transformers          # tokenizers + HF model loaders
+#   pip install open_clip_torch       # CLIP factory + tokenizer for all
+#                                     #   7 encoders in step 5
+#   pip install huggingface_hub       # hf-hub:imageomics/bioclip etc.
+#   pip install webdataset accelerate # step 4 BioCAP-style encoder
+#                                     #   fine-tune (sh_04_train_encoder)
 #
-# The legacy dual-projector training path (train_and_eval/ subtree +
-# scripts/train_pathomeood.py / submit_pathomeood_*.sh / evaluate_pathomeood_*.py)
-# also needs webdataset>=0.2.86 and accelerate>=0.30.0 — but the TabPFN
-# path replaces it and neither is required for the canonical pipeline.
+# Minimum versions:
+#   vllm>=0.4.0  torch>=2.1.0  transformers>=4.40.0
+#   open_clip_torch>=2.29.0  huggingface_hub>=0.24.0
+#   webdataset>=0.2.86  accelerate>=0.30.0
