@@ -486,6 +486,25 @@ pip install -r requirements.txt
 # All Claude calls in this pipeline go through the headless `claude -p`
 # CLI — there is no Anthropic API key path. Your Claude Code
 # subscription is the only billing surface.
+
+# ---- Build BugWood_Diseases_usable.csv (one-time) ----
+# Plain (threshold-only) build:
+python scripts/filter_bugwood_csv.py \
+    --input  BugWood_Diseases.csv \
+    --output BugWood_Diseases_usable.csv \
+    --threshold 10
+
+# Optional: also run the Claude two-layer label judge over the
+# surviving (NormCrop, NormDisease) pairs and drop INVALID / NON_CROP
+# crops and INCORRECT diseases (also canonicalises MISSPELLED crop
+# names in place). One Claude call per crop + one per crop-disease
+# block; ~$5-15 total on Bugwood, fully resumable.
+python scripts/filter_bugwood_csv.py \
+    --input  BugWood_Diseases.csv \
+    --output BugWood_Diseases_usable.csv \
+    --threshold 10 --judge
+# Add --judge-drop-questionable to also drop QUESTIONABLE labels.
+# Sidecar report (resume key): artifacts/bugwood_judgement.json
 ```
 
 ### NOVA (one-time GPU-host install)
@@ -518,6 +537,14 @@ PlantSwarm/
 │
 ├── BugWood_Diseases.csv                   raw IPMNet export
 ├── BugWood_Diseases_usable.csv            filtered (Setup output)
+│
+├── disease_label_judge.py                 Claude 2-layer crop / disease
+│                                          label judge (LAYER 1 = crop
+│                                          decision tree; LAYER 2 = per-
+│                                          disease CORRECT / INCORRECT /
+│                                          QUESTIONABLE). Importable +
+│                                          standalone CLI; wired into
+│                                          filter_bugwood_csv.py via --judge.
 │
 ├── agents/                                24-specialist visual-symptom swarm
 │   ├── base_agent.py                      Blackboard, CROSS_REF_ACTIONS,

@@ -59,6 +59,22 @@ def parse_args() -> argparse.Namespace:
                    help="optional cap on rows per class (0 = unlimited)")
     p.add_argument("--report", default=None,
                    help="optional path to write a per-class report TSV")
+    p.add_argument("--judge", action="store_true",
+                   help="after threshold filtering, run the Claude "
+                        "two-layer label judge (disease_label_judge.py) "
+                        "over the surviving (NormCrop, NormDisease) "
+                        "pairs and re-filter using its verdicts.")
+    p.add_argument("--judge-report",
+                   default="artifacts/bugwood_judgement.json",
+                   help="JSON judgement report path "
+                        "(resumes on re-run; default "
+                        "artifacts/bugwood_judgement.json)")
+    p.add_argument("--judge-progress",
+                   default="artifacts/bugwood_judgement_progress.txt",
+                   help="progress text path for the judge")
+    p.add_argument("--judge-drop-questionable", action="store_true",
+                   help="under --judge, also drop QUESTIONABLE diseases "
+                        "(default: keep them).")
     return p.parse_args()
 
 
@@ -126,20 +142,69 @@ def main() -> None:
     kept_indices.sort()
 
     # ------------------------------------------------------------------
-    # Write filtered CSV
+    # Build the surviving row list (pre-judge) so we can either write
+    # it directly or hand it to the Claude judge.
     # ------------------------------------------------------------------
     out_fields = fieldnames + [c for c in EXTRA_COLS if c not in fieldnames]
+    survivors = [enriched[i] for i in kept_indices]
+
+    # ------------------------------------------------------------------
+    # Optional: Claude two-layer label judge.
+    # ------------------------------------------------------------------
+    judge_stats = None
+    if args.judge:
+        # Lazy import so the existing filter path doesn't require the
+        # judge module to be present.
+        from pathlib import Path as _Path
+        import sys as _sys
+        _sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        from disease_label_judge import (  # noqa: E402
+            apply_judgement_to_rows,
+            judge_crop_disease_map,
+        )
+
+        # Build {NormCrop -> [NormDisease...]} from the surviving rows.
+        crop_disease_map: Dict[str, List[str]] = defaultdict(list)
+        for r in survivors:
+            c = (r.get("NormCrop") or "").strip()
+            d = (r.get("NormDisease") or "").strip()
+            if not c or not d:
+                continue
+            if d not in crop_disease_map[c]:
+                crop_disease_map[c].append(d)
+        crop_disease_map = dict(crop_disease_map)
+
+        print(f"\n[judge] running Claude two-layer judge over "
+              f"{len(crop_disease_map)} crops, "
+              f"{sum(len(v) for v in crop_disease_map.values())} (crop, disease) pairs...\n")
+        judgements = judge_crop_disease_map(
+            crop_disease_map,
+            output_json=_Path(args.judge_report),
+            progress_path=_Path(args.judge_progress) if args.judge_progress else None,
+        )
+        judge_stats = apply_judgement_to_rows(
+            survivors,
+            judgements,
+            crop_col="NormCrop",
+            disease_col="NormDisease",
+            drop_questionable=args.judge_drop_questionable,
+        )
+        survivors = judge_stats["kept"]
+
+    # ------------------------------------------------------------------
+    # Write filtered CSV
+    # ------------------------------------------------------------------
     with open(args.output, "w", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(fh, fieldnames=out_fields)
         writer.writeheader()
-        for i in kept_indices:
-            writer.writerow(enriched[i])
+        for r in survivors:
+            writer.writerow(r)
 
     # ------------------------------------------------------------------
     # Console summary
     # ------------------------------------------------------------------
     print(f"input:  {args.input} ({total} rows)")
-    print(f"output: {args.output} ({len(kept_indices)} rows, {classes_kept} classes)")
+    print(f"output: {args.output} ({len(survivors)} rows, {classes_kept} classes)")
     print()
     print("Drop reasons:")
     print(f"  no crop / non-crop host : {drop_no_crop}")
@@ -152,6 +217,12 @@ def main() -> None:
         cap_dropped = sum(max(0, len(v) - args.per_class) for v in by_class.values()
                           if len(v) >= args.threshold)
         print(f"  per-class cap @ {args.per_class}      : {cap_dropped} rows trimmed")
+    if judge_stats is not None:
+        print(f"  judge: bad crop          : {judge_stats['dropped_invalid_crop']}")
+        print(f"  judge: INCORRECT disease : {judge_stats['dropped_incorrect']}")
+        if args.judge_drop_questionable:
+            print(f"  judge: QUESTIONABLE      : {judge_stats['dropped_questionable']}")
+        print(f"  judge: crop renames      : {judge_stats['renamed_crops']}")
 
     # ------------------------------------------------------------------
     # Optional per-class report
