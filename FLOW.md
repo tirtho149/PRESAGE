@@ -7,12 +7,13 @@ viewer); data shapes are ASCII for stable layout.
 Sections
 1. [Top-level pipeline](#1-top-level-pipeline)
 2. [Phase 0 — canonical KB (Claude)](#2-phase-0--canonical-kb-claude)
-3. [Phase 0R — regional deltas (Qwen swarm)](#3-phase-0r--regional-deltas-qwen-swarm)
+3. [Phase 0R — regional deltas (Qwen visual-symptom swarm)](#3-phase-0r--regional-deltas-qwen-swarm)
    - 3a. [Per-tuple flow (iterative KB loop)](#3a-per-tuple-flow-iterative-kb-loop)
-   - 3b. [Inside one trace (routed swarm)](#3b-inside-one-trace-routed-swarm)
+   - 3b. [Inside one pass (24 visual specialists + CoT consolidator)](#3b-inside-one-pass-24-visual-specialists--cot-consolidator)
+   - 3c. [Animated walkthrough](#3c-animated-walkthrough)
    - 3d. [Cross-pass K-of-N agreement filter](#3d-cross-run-k-of-n-agreement-filter)
    - 3e. [Conservative merge with existing KB](#3e-conservative-merge-with-existing-kb)
-4. [Phase OBSERVE — KB-augmented OOD classifier](#4-phase-observe--kb-augmented-ood-classifier)
+4. [Phase PathomeOOD — KB-grounded CLIP training](#4-phase-pathomeood--kb-grounded-clip-training)
 5. [Data shape evolution](#5-data-shape-evolution)
 6. [File map](#6-file-map)
 7. [Env var reference](#7-env-var-reference)
@@ -28,44 +29,46 @@ LOCAL machine → GitHub → GPU host. Three terminal deliverables.
 flowchart TD
     SETUP[Setup<br/>filter_bugwood_csv.py<br/>raw CSV to filtered CSV]
     CACHE[Image cache<br/>ensure_state_image_cache.py<br/>per crop disease state photo]
-    P0[Phase 0 - canonical KB<br/>pathome_kb via Claude<br/>discovery to extraction to reconciliation]
+    P0[Phase 0 - canonical KB<br/>pathome_kb via Claude<br/>discovery / extraction / reconciliation<br/>everything NON-visual: pathogen + treatments + parts]
     PUSH([git push canonical artifacts])
     PULL([git pull on GPU host])
     VLLM[vLLM serves Qwen2.5-VL-7B-Instruct<br/>booted in-job]
-    P0R[Phase 0R - regional deltas<br/>Qwen swarm<br/>load existing then N traces then agreement then merge]
-    ADAPT[Adapter merge<br/>symptoms_adapter.py]
-    SEED([symptoms_seed.json<br/>KB deliverable])
-    BUGWOOD[(Bugwood field photos<br/>filtered CSV + .bugwood_cache<br/>Tomato by default)]
-    TRAIN[Train OBSERVE<br/>SigLIP-2 + LoRA on vision q/k/v<br/>cosine sim against KB text prototypes]
-    CKPT([observe_best.pt<br/>model deliverable])
-    EVAL[Evaluate OBSERVE<br/>scripts/evaluate_observe.py<br/>PV + PW top-1 / top-5 / macro F1]
-    METRICS([results/observe_eval.json<br/>metrics deliverable])
+    P0R[Phase 0R - visual-symptom swarm<br/>24 specialists in parallel per pass<br/>+ VisualDiagnosisAgent CoT consolidator]
+    REG([artifacts/pathome_kb/Crop/final_registry.json<br/>canonical + regional_observations - KB deliverable])
+    BUGWOOD[(Bugwood field photos<br/>filtered CSV + .bugwood_cache<br/>11,513 imgs / 484 classes)]
+    CAP[build_pathomeood_captions.py<br/>KB-grounded captions per image<br/>state-aware delta selection]
+    SH[build_pathomeood_shards.py<br/>WebDataset tar shards<br/>image + taxon.txt + caption.txt]
+    TRAIN[Train PathomeOOD<br/>ViT-B/16 dual-projector from BioCLIP init<br/>projectors-only - 800K trainable params<br/>11-variant matrix T01..T11]
+    CKPT([train_and_eval/checkpoints/Tnn/...<br/>model deliverable])
+    EVAL[Evaluate PathomeOOD<br/>scripts/evaluate_pathomeood.py<br/>zero-shot + retrieval + few-shot<br/>vs 5 off-shelf CLIP baselines]
+    METRICS([results/pathomeood_report.md<br/>paper-style table reproduction])
 
     SETUP --> CACHE --> P0
     P0 --> PUSH --> PULL --> P0R
-    VLLM -.serves.-> P0R --> ADAPT --> SEED
-    SEED --> TRAIN
-    BUGWOOD --> TRAIN --> CKPT
-    CKPT --> EVAL --> METRICS
+    VLLM -.serves.-> P0R --> REG
+    REG --> CAP
+    BUGWOOD --> CAP --> SH --> TRAIN
+    TRAIN --> CKPT --> EVAL --> METRICS
 
     classDef local fill:#dff,stroke:#066,stroke-width:1px
     classDef gpu fill:#fde,stroke:#a06,stroke-width:1px
     classDef student fill:#eef,stroke:#33a,stroke-width:1px
     classDef terminal fill:#efe,stroke:#060,stroke-width:2px
     class SETUP,CACHE,P0 local
-    class VLLM,P0R,ADAPT gpu
-    class BUGWOOD,TRAIN,EVAL student
-    class SEED,CKPT,METRICS terminal
+    class VLLM,P0R gpu
+    class BUGWOOD,CAP,SH,TRAIN,EVAL student
+    class REG,CKPT,METRICS terminal
 ```
 
 | Stage | Host | Compute | Walltime |
 |---|---|---|---|
 | Setup | LOCAL or Nova | CPU, &lt; 1 min | trivial |
 | Image cache | LOCAL or Nova | network only | smoke ~2 min |
-| Phase 0 (Claude) | LOCAL only (OAuth) | CPU + Anthropic API | smoke ~30 min / prod 16-24 h |
-| Phase 0R (Qwen) | GPU host with vLLM | 1x A100-80GB | smoke ~20-40 min / prod 10-20 h |
-| Adapter merge | Same as Phase 0R | CPU, seconds | trivial |
-| Phase OBSERVE (train) | GPU host with CUDA | 1x A100 | ~30-90 min on Tomato (~600 imgs, 10 epochs) |
+| Phase 0 (Claude — NON-visual KB only) | LOCAL only (OAuth) | CPU + Anthropic API | smoke ~30 min / prod 16-24 h |
+| Phase 0R (24-agent Qwen visual swarm) | GPU host with vLLM | 1x A100-80GB | smoke ~20-40 min / prod 10-20 h |
+| PathomeOOD captions + shards | GPU host (CPU work) | CPU, minutes | a few minutes per strategy |
+| PathomeOOD training | GPU host with CUDA | 1x A100 | ~30-60 min per variant; ~5 GPU-h for 11-variant matrix |
+| PathomeOOD eval | GPU host with CUDA | 1x A100 | ~2 GPU-h for all variants + 5 baselines |
 
 ---
 
@@ -185,45 +188,140 @@ After every tuple finishes, `_embed_into_registry` merges its per-state
 record back into the disease's `regional_observations` dict — **states
 not processed this run are preserved verbatim**.
 
-### 3b. Inside one pass (parallel specialists + consolidator)
+### 3b. Inside one pass (24 visual specialists + CoT consolidator)
 
-Each of the N stochastic passes is the same fixed structure: four
-specialists run in PARALLEL on (image, canonical, existing KB), then
-DiagnosisAgent consolidates the union. No routing, no κ-gated handoff,
-no backtrack — passes are stochastic but the agent graph is fixed.
+Each of the N stochastic passes runs **24 single-feature visual
+specialists** in parallel on the same (image, canonical-KB, existing-KB)
+input, then `VisualDiagnosisAgent` consolidates the union by walking
+the look-alike decision-graph CoT documented in
+`Look alike Diseases, weeds and Insect COT with decision graph.docx`.
+The swarm focuses **exclusively on visual symptoms** — pathogen, type,
+treatments and other non-visual KB are owned by Claude in Phase 0 and
+never re-emitted by the swarm.
+
+Specialists are grouped by organ family. Each owns ONE delta field
+and asks ONE laser-focused question.
 
 ```mermaid
 flowchart TD
-    INPUT([image + canonical + existing KB])
-    MA[MorphologyAgent<br/>owned: lesion_morphology<br/>affected_organs<br/>diagnostic_features]
-    SA[SymptomAgent<br/>owned: spread_pattern<br/>diagnostic_features]
-    PA[PathogenAgent<br/>owned: look_alikes<br/>type_of_disease]
-    SV[SeverityAgent<br/>owned: severity<br/>treatments]
-    DA[DiagnosisAgent<br/>consolidator: dedupe overlapping fields<br/>drop restatements of canonical + existing KB]
-    DONE([per-pass final deltas + kappa])
+    INPUT([image + canonical visual_symptoms + existing KB])
 
-    INPUT --> MA
-    INPUT --> SA
-    INPUT --> PA
-    INPUT --> SV
-    MA --> DA
-    SA --> DA
-    PA --> DA
-    SV --> DA
-    DA --> DONE
+    subgraph LEAF["LEAF (8 specialists)"]
+      direction LR
+      L1[LeafLesionShapeAgent<br/>leaf_lesion_shape]
+      L2[LeafLesionColorAgent<br/>leaf_lesion_color]
+      L3[LeafLesionTextureAgent<br/>leaf_lesion_texture]
+      L4[LeafChlorosisAgent<br/>leaf_chlorosis]
+      L5[LeafNecrosisAgent<br/>leaf_necrosis]
+      L6[LeafCurlAgent<br/>leaf_curl]
+      L7[LeafVeinPatternAgent<br/>leaf_vein_pattern]
+      L8[LeafGeometryAgent<br/>leaf_geometry]
+    end
+
+    subgraph STEM["STEM (4 specialists)"]
+      direction LR
+      S1[StemLesionAgent<br/>stem_lesion]
+      S2[StemPithAgent<br/>stem_pith<br/>DECISIVE SDS-vs-BSR fork]
+      S3[StemSurfaceAgent<br/>stem_surface]
+      S4[StemDiscolorationAgent<br/>stem_discoloration]
+    end
+
+    subgraph BELOW["BELOW-GROUND (2)"]
+      direction LR
+      R1[RootAgent<br/>root_visible<br/>cysts SCN / blue masses SDS]
+      R2[CrownCollarAgent<br/>crown_collar]
+    end
+
+    subgraph REPRO["REPRODUCTIVE (2)"]
+      direction LR
+      F1[FlowerAgent<br/>flower]
+      F2[FruitAgent<br/>fruit]
+    end
+
+    subgraph SIGNS["PATHOGEN SIGNS (1)"]
+      G1[SporulationAgent<br/>sporulation]
+    end
+
+    subgraph PAT["WHOLE-PLANT PATTERNS (3)"]
+      direction LR
+      P1[WiltingAgent<br/>wilting]
+      P2[DefoliationAgent<br/>defoliation<br/>petioles-attached SDS fork]
+      P3[SpatialPatternAgent<br/>spatial_pattern]
+    end
+
+    subgraph DIAG["DIAGNOSTIC CROSS-CUTTERS (4)"]
+      direction LR
+      D1[ConcentricPatternAgent<br/>concentric_pattern]
+      D2[ColorPaletteAgent<br/>color_palette<br/>color encoder]
+      D3[LookAlikeCoTAgent<br/>look_alikes_visual<br/>decision-graph CoT]
+      D4[SeverityVisualAgent<br/>severity_visible]
+    end
+
+    CONSOL[VisualDiagnosisAgent<br/>CoT consolidator<br/>1 triage / 2 decisive forks /<br/>3 dedup / 4 emit + CoT trace]
+    DONE([per-pass final deltas + kappa + CoT trace])
+
+    INPUT --> LEAF
+    INPUT --> STEM
+    INPUT --> BELOW
+    INPUT --> REPRO
+    INPUT --> SIGNS
+    INPUT --> PAT
+    INPUT --> DIAG
+
+    LEAF --> CONSOL
+    STEM --> CONSOL
+    BELOW --> CONSOL
+    REPRO --> CONSOL
+    SIGNS --> CONSOL
+    PAT --> CONSOL
+    DIAG --> CONSOL
+    CONSOL --> DONE
 
     classDef input fill:#ffd,stroke:#660
-    classDef agent fill:#fde,stroke:#a06
+    classDef leaf fill:#dfd,stroke:#060
+    classDef stem fill:#fde,stroke:#a06
+    classDef below fill:#fed,stroke:#a60
+    classDef repro fill:#fef,stroke:#606
+    classDef signs fill:#dff,stroke:#066
+    classDef pat fill:#eef,stroke:#33a
+    classDef diag fill:#fdf,stroke:#909
+    classDef consol fill:#cfead0,stroke:#063,stroke-width:2px
     classDef done fill:#efe,stroke:#060,stroke-width:2px
     class INPUT input
-    class MA,SA,PA,SV,DA agent
+    class L1,L2,L3,L4,L5,L6,L7,L8 leaf
+    class S1,S2,S3,S4 stem
+    class R1,R2 below
+    class F1,F2 repro
+    class G1 signs
+    class P1,P2,P3 pat
+    class D1,D2,D3,D4 diag
+    class CONSOL consol
     class DONE done
 ```
 
 Each specialist emits `{deltas, confidence (κ), reasoning}` for the
-fields it owns. The consolidator's output (deltas + κ) becomes that
-pass's final delta list. Validation against external evidence happens
-in the §3d2 verifier stage after K-of-N agreement.
+ONE field it owns. The consolidator sees all 24 outputs **rendered
+grouped by organ family** (so the model sees the same anatomical
+clustering humans use when diagnosing), walks a 4-step chain-of-thought
+(triage → decisive forks → dedup → emit), and produces the pass's
+final delta list plus a CoT trace string. Validation against external
+evidence happens in the §3d2 verifier stage after K-of-N agreement.
+
+**Per-pass LLM calls** = 24 specialists + 1 consolidator = **25 calls**.
+Qwen2.5-VL-7B handles ~50–100 concurrent on one A100, so wall-clock per
+pass is unchanged from the legacy 5-call layout (~30–60 s).
+
+### 3c. Animated walkthrough
+
+![Phase 0R visual-symptom swarm — animated walkthrough](docs/assets/swarm_flow.gif)
+
+*The animation predates the 24-agent expansion (it shows the previous
+5-agent layout for legibility), but the structural intent is unchanged:
+specialists examine the photograph against canonical KB, the verifier
+consults the web per delta, and the running log accumulates only
+image-grounded deltas that survive both swarm agreement and web
+verification. The current implementation runs the same loop with 24
+specialists grouped into 7 organ families, all parallel.*
 
 ### 3d. Cross-run K-of-N agreement filter
 
@@ -241,10 +339,10 @@ Trace N-1 final_deltas  [...]
                   |  group by field
                   v
        +--------------------------+
-       | lesion_morphology:       |
+       | stem_pith:               |
        |   (0, d_00) (2, d_20)    |
        |   (5, d_50)              |
-       | severity:                |
+       | leaf_chlorosis:          |
        |   (0, d_01) (1, d_10)    |
        |   ...                    |
        +-------------+------------+
@@ -252,15 +350,15 @@ Trace N-1 final_deltas  [...]
                      |  greedy Jaccard cluster within each field
                      v
        +-------------------------------------------+
-       | lesion_morphology Cluster A:              |
-       |   (0, "pustular lesions w/ halos")        |
-       |   (2, "halos around pustules")            |
-       |   (5, "pustules surrounded by yellow")    |
+       | stem_pith Cluster A:                      |
+       |   (0, "white pith with brown vascular")   |
+       |   (2, "split stem: pith stays white")     |
+       |   (5, "white center, chocolate cortex")   |
        |   distinct_runs = {0, 2, 5}               |
        |   support = 3                             |   keep (>= K)
        |                                           |
-       | severity Cluster B:                       |
-       |   (0, "carrot-shaped fronds")             |
+       | leaf_chlorosis Cluster B:                 |
+       |   (0, "scattered yellow speckling")       |
        |   distinct_runs = {0}                     |
        |   support = 1                             |   drop  (< K)
        +-------------------------------------------+
@@ -330,68 +428,98 @@ Properties:
 
 ---
 
-## 4. Phase OBSERVE — KB-augmented OOD classifier
+## 4. Phase PathomeOOD — KB-grounded CLIP training
 
-A cheap text-conditioned image classifier whose class set is defined
-by PathomeDB. Trained on Bugwood (Tomato by default), evaluated on
-PlantVillage and PlantWild — two heavy cross-domain distribution
-shifts (field photos to lab cutouts to in-the-wild).
+PathomeOOD is a two-projector CLIP (BioCAP-inspired architecture) warm-
+started from BioCLIP and trained on Bugwood with KB-grounded captions
+synthesised from PathomeDB. Evaluated zero-shot on PlantVillage,
+PlantDoc, and PlantWild — three heavy cross-domain distribution shifts
+(field photos → lab cutouts → in-the-wild → mixed field).
 
 ```mermaid
 flowchart TD
-    SEED[(symptoms_seed.json<br/>canonical + regional)]
-    PROTO[build_disease_prototype<br/>+ build_healthy_prototype<br/>one text prompt per class]
-    CSV[(BugWood_Diseases_usable.csv<br/>+ .bugwood_cache/)]
-    DS[BugwoodTomatoDataset<br/>filter NormCrop = Tomato<br/>drop missing images / classes]
-    MODEL[OBSERVE model<br/>SigLIP-2 + LoRA on vision q,k,v<br/>frozen text tower + learnable logit_scale]
-    TRAIN[OBSERVETrainer<br/>encode prototypes once per epoch<br/>softmax CE over cosine x temperature]
-    CKPT[(observe_best.pt)]
-    PV[(PlantVillage<br/>Tomato folder per class)]
-    PW[(PlantWild<br/>Tomato folder per class)]
-    EVAL[evaluate_observe.py<br/>extend class set with PV / PW classes<br/>synthesise zero-shot prototypes]
-    METRICS[(observe_eval.json<br/>top-1 / top-5 / macro F1<br/>per-class KB vs zero-shot)]
+    REG[(artifacts/pathome_kb/Crop/final_registry.json<br/>canonical + per-state deltas)]
+    CAP[build_pathomeood_captions.py<br/>KB-rich for 25 covered classes<br/>fallback template for 459 others<br/>state-aware delta selection]
+    PARQ[(data/bugwood_captions/all_strategy.parquet<br/>11,513 rows / 484 classes)]
+    SH[build_pathomeood_shards.py<br/>tar shard packager]
+    SHARDS[(data/wds_shards/all_strategy/<br/>train/val/holdout tar shards<br/>image + taxon.txt + caption.txt)]
+    BIO[BioCLIP HF init<br/>TreeOfLife-10M pretrained<br/>no caption supervision yet]
+    MODEL[PathomeOOD model<br/>ViT-B/16 with two visual projectors<br/>proj_tax + proj_caption<br/>~800K trainable params]
+    TRAIN[open_clip_train.main<br/>lock-image lock-text<br/>InfoNCE per text type<br/>11-variant matrix T01..T11]
+    CKPT[(train_and_eval/checkpoints/Tnn/...)]
+    PV[(PlantVillage<br/>~38 classes)]
+    PD[(PlantDoc<br/>~27 classes)]
+    PW[(PlantWild<br/>~17 classes)]
+    HO[(Bugwood holdout<br/>retrieval bench)]
+    EVAL[evaluate_pathomeood.py<br/>+ evaluate_pathomeood_retrieval.py<br/>+ evaluate_pathomeood_fewshot.py]
+    BASE[5 off-shelf baselines<br/>CLIP / SigLIP / FG-CLIP /<br/>BioTrove / BioCLIP / BioCLIP-2]
+    AGG[aggregate_pathomeood_tables.py<br/>walks all eval JSONs<br/>11 paper-style table markdowns]
+    RPT[(results/pathomeood_report.md<br/>master report)]
 
-    SEED --> PROTO --> MODEL
-    CSV --> DS --> TRAIN
+    REG --> CAP --> PARQ --> SH --> SHARDS
+    BIO --> MODEL
+    SHARDS --> TRAIN
     MODEL --> TRAIN --> CKPT
     CKPT --> EVAL
+    BASE --> EVAL
     PV --> EVAL
+    PD --> EVAL
     PW --> EVAL
-    EVAL --> METRICS
+    HO --> EVAL
+    EVAL --> AGG --> RPT
 
-    classDef src fill:#fde,stroke:#a06
+    classDef kb fill:#ffe,stroke:#660
     classDef stage fill:#eef,stroke:#33a
     classDef model fill:#efd,stroke:#060
+    classDef src fill:#fde,stroke:#a06
     classDef deliv fill:#efe,stroke:#060,stroke-width:2px
-    class SEED,CSV,PV,PW src
-    class PROTO,DS,TRAIN,EVAL stage
-    class MODEL model
-    class CKPT,METRICS deliv
+    class REG,PARQ,SHARDS kb
+    class CAP,SH,TRAIN,EVAL,AGG stage
+    class BIO,MODEL model
+    class PV,PD,PW,HO,BASE src
+    class CKPT,RPT deliv
 ```
+
+The 11-variant training matrix (`scripts/pathomeood_variants.sh`) covers
+every reproducible BioCAP-paper-style ablation on Bugwood:
+
+| ID | Caption strategy | Projector | Epochs | Subset |
+|---|---|---|---|---|
+| T01 | label_only | dual | 50 | all |
+| T02 | summary_only | dual | 50 | all |
+| T03 | canonical_full | dual | 50 | all |
+| **T04** | **canonical_deltas_3 (MAIN)** | **dual** | **50** | **all** |
+| T05 | canonical_deltas_1 | dual | 50 | all |
+| T06 | canonical_deltas_5 | dual | 50 | all |
+| T07 | canonical_deltas_7 | dual | 50 | all |
+| T08 | canonical_deltas_3 | single | 50 | all |
+| T09 | canonical_deltas_3 | dual | 100 | all |
+| T10 | canonical_deltas_3 | dual | 50 | covered |
+| T11 | canonical_deltas_3 | dual | 50 | non_covered |
 
 What the trainer optimises per minibatch:
 
 ```
-img_embeds = vision_tower_with_LoRA(pixel_values)          # [B, D]
-proto      = text_tower(class_prototype_texts)             # [C, D]  (cached)
-logits     = exp(logit_scale) * (img_embeds @ proto.T)     # [B, C]
-loss       = cross_entropy(logits, class_id)
+img_tax, img_cap   = visual_encoder(images, dual_projector=True)   # frozen + two heads
+text_emb           = text_encoder(taxon_or_caption_text)            # shared, frozen
+if text_type == 'taxon':
+    logits = logit_scale     * img_tax @ text_emb.T
+else:  # caption
+    logits = logit_scale_cap * img_cap @ text_emb.T
+loss   = info_nce(logits, identity_target)
 ```
 
-Why this design for Bugwood -> PV / PW OOD:
+Why this design at the ~11K-image Bugwood scale:
 
-- The style gap (field photo -> lab cutout -> in-the-wild) is huge,
-  but the disease identity is the same. Conditioning classification
-  on textual disease descriptions makes the classifier invariant to
-  visual-style shifts in a way a pure vision classifier isn't.
-- SigLIP-2 is already contrastively pretrained on web-scale image +
-  text pairs. LoRA on the vision attention projections is the cheap
-  intervention that nudges it toward agricultural imagery without
-  forgetting that pretraining.
-- Open vocabulary: any disease with a KB prototype can be scored,
-  including PV / PW classes the model never saw images of during
-  training. The evaluator synthesises a one-line prototype for PV
-  classes not in the trained set.
+- BioCLIP already supplies bio-vocab features from TreeOfLife-10M
+  pretraining. Projectors-only training learns the routing into label-
+  side vs caption-side embedding spaces without disturbing the
+  pretrained encoder weights — appropriate when you have ~24 imgs/class.
+- KB-grounded captions are STATE-AWARE: per-image caption includes the
+  top-K regional deltas for the image's state, so two images of the
+  same disease taken in different states get different captions.
+- Eval covers PV (lab), PD (mixed), PW (in-wild) so distribution-
+  invariance is a real test, not a same-distribution score.
 
 ---
 
@@ -427,48 +555,42 @@ What lives where, and what gets preserved between layers.
                   | }                                         |
                   +-------------------------------------------+
                                   |
-                                  v   symptoms_adapter.py
+                                  v   plantswarm/captioning.py::load_kb_profiles
+                                  |   (reads per-crop final_registry.json directly)
+                                  v
+                  scripts/build_pathomeood_captions.py
+                  +-------------------------------------------+
+                  | per-image rows:                           |
+                  |   image_id, image_path, crop, disease,    |
+                  |   state, taxon_text, caption_text,        |
+                  |   used_kb (KB-rich vs fallback template), |
+                  |   split (train / val / holdout)           |
+                  +-------------------------------------------+
                                   |
-                      artifacts/pathome_seed/symptoms_seed.json
-                      +-------------------------------------------+
-                      | {                                         |
-                      |   "min_observations": 3,                  |
-                      |   "profiles": [{                          |
-                      |     "profile_id": "Soybean::Charcoal Rot",|
-                      |     "crop": "Soybean",                    |
-                      |     "disease": "Charcoal Rot",            |
-                      |     "canonical": {...},                   |
-                      |     "regional_observations": {            |
-                      |       "Alabama": {                        |
-                      |         state, image_ids,                 |
-                      |         deltas: [{                        |
-                      |           field, canonical_says,          |
-                      |           image_shows, image_quote,       |
-                      |           image_id,                       |
-                      |           support,         <- __support__ |
-                      |           cluster_size                    |
-                      |         }],                               |
-                      |         swarm_meta: {...}  <- __swarm__   |
-                      |       }                                   |
-                      |     },                                    |
-                      |     state_counts, aez_counts,             |
-                      |     reference_ids                         |
-                      |   }, ...]                                 |
-                      | }                                         |
-                      +-------------------------------------------+
+                                  v   scripts/build_pathomeood_shards.py
+                                  v
+                  data/wds_shards/<crop>_<strategy>/
+                  +-------------------------------------------+
+                  | {train,val,holdout}/shard-{NNNNNN}.tar    |
+                  |   <key>.jpg                               |
+                  |   <key>.taxon.txt                         |
+                  |   <key>.caption.txt                       |
+                  +-------------------------------------------+
                                   |
-                                  v   pathome.SymptomLibrary.load()
-                                  |
-                                consumers
+                                  v   open_clip_train.main (training loop)
+                                  v
+                              consumers
 ```
 
-The adapter strips the `__` prefix from telemetry keys but preserves
-the content — consumers see `support`, `cluster_size`, `swarm_meta` as
-clean keys.
+Legacy adapter: `pathome_kb/symptoms_adapter.py` can still produce
+`artifacts/pathome_seed/symptoms_seed.json` (merged seed) for downstream
+consumers that want it — but the PathomeOOD pipeline reads each
+`final_registry.json` directly via `load_kb_profiles`, so the seed
+file is no longer on the critical path.
 
 When `PATHOME_TRACE_DIR` is set, Phase 0R also writes per-pass trace
 records (`phase0r_traces.jsonl`) for diagnostics and the
-`viz_traces.sh` aggregator. These are not consumed by OBSERVE.
+`viz_traces.sh` aggregator. These are not consumed by PathomeOOD.
 
 ---
 
@@ -502,41 +624,60 @@ PlantSwarm/
 |   |                                       _TraceWriter (PATHOME_TRACE_DIR)
 |   `-- latex/                             EMNLP 2026 paper sources
 |
-|-- observe/                               Phase OBSERVE KB-augmented classifier
-|   |-- model.py                           SigLIP-2 + LoRA (q,k,v on vision tower)
-|   |                                       + learnable logit_scale, no class head
-|   |-- prototypes.py                      build_disease_prototype,
-|   |                                       build_healthy_prototype,
-|   |                                       load_seed_prototypes
-|   |-- dataset.py                         ClassIndex, BugwoodTomatoDataset,
-|   |                                       PVFolderDataset, PWFolderDataset
-|   |-- trainer.py                         encode_class_prototypes, ImageCollator,
-|   |                                       OBSERVETrainer, split_indices
-|   |-- loss.py                            softmax_classification_loss +
-|   |                                       sigmoid_pairwise_loss (SigLIP-style)
-|   `-- inference.py                       OBSERVEInference single-image classify
+|-- train_and_eval/                        Phase PathomeOOD training + eval
+|   |-- open_clip/                         BioCAP fork of open_clip with TWO
+|   |                                       visual projectors (proj + caption_proj);
+|   |                                       VisualTransformer.lock keeps both
+|   |                                       projectors trainable under --lock-image
+|   |-- open_clip_train/                   main.py / train.py / data.py — torchrun
+|   |                                       entry, adapted to 2-field shards
+|   |                                       (taxon.txt + caption.txt)
+|   |-- evaluation/                        zero_shot_iid.py + retrieval_openclip.py
+|   |                                       + metrics, params, utils, data
+|   `-- imageomics/                        naming_eval + disk + helpers
+|                                           (minimum imageomics subset our eval needs)
 |
-|-- agents/                                5 delta-extraction agents
-|   |-- base_agent.py                      DELTA_USER_PROMPT,
-|   |                                       parse_agent_output,
-|   |                                       AgentDeltaOutput,
-|   |                                       _format_existing_kb,
-|   |                                       _format_prior_context
-|   |-- morphology_agent.py                lesion_morphology, affected_organs, diagnostic_features
-|   |-- symptom_agent.py                   spread_pattern, diagnostic_features
-|   |-- pathogen_agent.py                  look_alikes, type_of_disease
-|   |-- severity_agent.py                  severity, treatments
-|   `-- diagnosis_agent.py                 per-trace consolidator
+|-- agents/                                24 visual-symptom specialists +
+|   |                                       VisualDiagnosisAgent CoT consolidator
+|   |-- base_agent.py                      DELTA_USER_PROMPT (with CoT scaffold),
+|   |                                       ALLOWED_DELTA_FIELDS (25 visual fields),
+|   |                                       parse_agent_output, AgentDeltaOutput,
+|   |                                       BaseAgent (FOCUS_QUESTION field)
+|   |-- leaf_agents.py                     8 leaf specialists (lesion shape/color/
+|   |                                       texture, chlorosis, necrosis, curl,
+|   |                                       vein pattern, geometry)
+|   |-- stem_agents.py                     4 stem specialists (lesion, pith,
+|   |                                       surface, discoloration)
+|   |-- root_agents.py                     RootAgent + CrownCollarAgent
+|   |-- reproductive_agents.py             FlowerAgent + FruitAgent
+|   |-- sign_agents.py                     SporulationAgent (pathogen signs)
+|   |-- pattern_agents.py                  Wilting + Defoliation + SpatialPattern
+|   |-- diagnostic_agents.py               ConcentricPattern + ColorPalette (color
+|   |                                       encoder) + LookAlikeCoT (decision-graph)
+|   |                                       + SeverityVisual
+|   `-- diagnosis_agent.py                 VisualDiagnosisAgent — CoT consolidator
+|                                           (class name DiagnosisAgent kept for
+|                                            back-compat; AGENT_NAME is
+|                                            "VisualDiagnosisAgent")
 |
-|-- pathome/                               schema for symptoms_seed.json
+|-- plantswarm/
+|   |-- delta_pipeline.py                  run_for_state, run_batch,
+|   |                                       _agreement_filter, _merge_with_existing,
+|   |                                       existing_deltas_for_state,
+|   |                                       SPECIALIST_CLASSES = SPECIALIST_AGENTS (24)
+|   |-- captioning.py                      build_disease_caption (7 strategies),
+|   |                                       _top_regional_deltas (state-aware),
+|   |                                       load_kb_profiles, caption_for_row
+|   |                                       (returns (caption, used_kb))
+|   `-- latex/                             paper sources
+|
+|-- pathome/                               schema for the KB
 |   `-- symptoms.py                        SymptomLibrary, SymptomProfile,
 |                                           CanonicalDisease, RegionalObservation,
 |                                           RegionalDelta, Citation
 |
 |-- utils/
 |   |-- vllm_client.py                     OpenAI-compatible vLLM client
-|   |                                       (per-call seed + temperature,
-|   |                                        thread-safe guided fallback)
 |   `-- geo.py                             state centroid + AEZ (Setup)
 |
 |-- data/bugwood_loader.py                 _clean_disease + _map_crop (Setup)
@@ -545,34 +686,45 @@ PlantSwarm/
 |   |-- filter_bugwood_csv.py              Setup CLI
 |   |-- ensure_state_image_cache.py        image cache CLI
 |   |-- registry_to_excel.py               final_registry.json to xlsx
-|   |-- evaluate_observe.py                OBSERVE held-out eval CLI
-|   |-- train_observe.py                   OBSERVE training CLI
+|   |
+|   |--- PathomeOOD pipeline --------------
+|   |-- build_pathomeood_captions.py       KB -> per-image (taxon, caption) parquet
+|   |-- build_pathomeood_shards.py         parquet -> WebDataset tar shards
+|   |-- pathomeood_variants.sh             T01..T11 variant matrix (the canonical
+|   |                                       single source of truth)
+|   |-- train_pathomeood.py                Python wrapper around open_clip_train.main
+|   |-- submit_pathomeood_train.sh         SLURM: one variant
+|   |-- submit_pathomeood_matrix.sh        SLURM: sbatch all 11 variants
+|   |-- evaluate_pathomeood.py             zero-shot classification on PV/PD/PW
+|   |-- evaluate_pathomeood_retrieval.py   Bugwood held-out R@k
+|   |-- evaluate_pathomeood_fewshot.py     prototype-mean K-shot
+|   |-- setup_plantdoc.py                  clone PlantDoc to data/eval/PlantDoc/
+|   |-- fetch_baselines.py                 cache 5 off-shelf CLIP-style baselines
+|   |                                       (CLIP / SigLIP / FG-CLIP / BioTrove /
+|   |                                        BioCLIP / BioCLIP-2; biocap excluded)
+|   |-- aggregate_pathomeood_tables.py     walk results/ JSONs -> 11 paper-table .md
 |   |
 |   |--- per-phase shells -----------------
 |   |-- submit_pathome_setup_filter.sh     Nova: Setup
 |   |-- setup_image_cache.sh               LOCAL/Nova: image cache
-|   |-- run_phase0_local.sh                LOCAL: Phase 0 canonical
-|   |-- submit_phase0r_regional.sh         Nova: Phase 0R (vLLM + swarm + verifier)
-|   |-- submit_observe_train.sh            Nova: OBSERVE training
-|   |-- submit_evaluate_observe.sh         Nova: OBSERVE held-out eval
+|   |-- run_phase0_local.sh                LOCAL: Phase 0 canonical (Claude)
+|   |-- submit_phase0r_regional.sh         Nova: Phase 0R (24-agent visual swarm)
 |   |
 |   |--- viz shells -----------------------
 |   |-- viz_kb.sh                          KB stats PNGs + tex
-|   |-- viz_observe.sh                     OBSERVE curves + eval PNGs + tex
 |   |-- viz_traces.sh                      Phase 0R trace PNGs + tex
 |   |-- viz_all.sh                         run every viz in sequence
 |   |-- build_latex_pdf.sh                 compile the paper
 |   |
 |   |--- umbrellas ------------------------
 |   |-- e2e_local.sh                       LOCAL leg: setup + cache + P0 + push
-|   |-- e2e_nova.sh                        Nova leg: pull + P0R + OBS + push
-|   |-- e2e_visualize.sh                   LOCAL post: pull + viz + paper
+|   |-- e2e_nova.sh                        Nova leg: pull + P0R + PathomeOOD
+|   |                                       captions/shards/train/eval + push
+|   |-- e2e_visualize.sh                   LOCAL post: pull + viz + aggregate + paper
 |   |-- e2e_full.sh                        the umbrella that drives all three
 |   |
 |   `-- viz/                               Python visualizers
 |       |-- kb_stats.py                    canonical+regional summary
-|       |-- observe_curves.py              training-history curves
-|       |-- observe_eval.py                held-out eval tables + bar
 |       |-- trace_stats.py                 Phase 0R trace stats
 |       `-- _common.py                     shared output / matplotlib helpers
 |
@@ -602,16 +754,15 @@ PlantSwarm/
 | PATHOME_IMAGE_CACHE_DIR | — | Prepended to default cache search path |
 | PATHOME_TRACE_DIR | — | When set, Phase 0R appends per-trace records to `<dir>/phase0r_traces.jsonl` |
 | PATHOME_TRACE_FILE | phase0r_traces.jsonl | Trace JSONL filename within `PATHOME_TRACE_DIR` |
-| OBSERVE_EPOCHS | 5 | Training epochs |
-| OBSERVE_BATCH | 4 | Training batch size |
-| OBSERVE_LR | 1e-4 | AdamW learning rate |
-| OBSERVE_LORA_R / OBSERVE_LORA_ALPHA | 16 / 32 | LoRA config |
-| OBSERVE_SAVE_DIR | observe/checkpoints/ | Checkpoint output |
 | ANTHROPIC_API_KEY | — (optional) | Speeds up Phase 0 reconciliation; falls back to `claude -p` |
 | PATHOME_ONLY_CROPS | — | Comma-separated crop allowlist |
 | PATHOME_USABLE_CSV | BugWood_Diseases_usable.csv | Filtered CSV path |
 | PATHOME_SEED_FILE | artifacts/pathome_seed/symptoms_seed.json | Output seed JSON path |
 | PATHOME_SEED_QUICK | 0 | Cap states per disease for fast iteration |
+| CROP | Tomato | Crop tag for PathomeOOD captions + shards (use `all` for full Bugwood) |
+| PV_ROOT, PW_ROOT, PLANTDOC_ROOT | data/eval/{PlantVillage,PlantWild,PlantDoc/test} | Eval-set roots for `evaluate_pathomeood*.py` |
+| PATHOME_SKIP_PHASE0R / _CAPTIONS / _TRAIN / _BASELINES / _EVAL / _PUSH | 0 | Skip-knobs for `scripts/e2e_nova.sh` phases |
+| PATHOME_WAIT | 0 | Set to 1 to use `sbatch --wait` per training variant (sequential) |
 
 ---
 
