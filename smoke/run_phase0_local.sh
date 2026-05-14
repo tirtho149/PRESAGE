@@ -9,8 +9,8 @@
 # regional deltas) is skipped and can be run later on a GPU host.
 #
 # Prerequisites:
-#   - `claude` CLI authed (`claude auth login`)
-#   - ANTHROPIC_API_KEY in env or .env at repo root (faster, optional)
+#   - `claude` CLI authed (run `claude` once interactively to log in).
+#     ALL Claude calls use the `claude -p` headless CLI — no API key.
 #
 # For the full smoke (canonical + regional), use smoke/run_phase0_full.sh.
 # ============================================================================
@@ -28,11 +28,6 @@ if ! command -v claude >/dev/null 2>&1; then
   echo "ERROR: 'claude' CLI not on PATH"
   echo "Install: curl -fsSL https://claude.ai/install.sh | bash"
   exit 1
-fi
-
-if [ -z "${ANTHROPIC_API_KEY:-}" ] && [ ! -f .env ]; then
-  echo "WARNING: ANTHROPIC_API_KEY not set and no .env at repo root."
-  echo "         Phase 0 will use the claude -p CLI fallback (~5x slower)."
 fi
 
 if [ ! -f "$USABLE_CSV" ]; then

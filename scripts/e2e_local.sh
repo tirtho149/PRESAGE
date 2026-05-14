@@ -9,8 +9,8 @@
 #   4. git add / commit / push canonical artefacts
 #
 # Prerequisites:
-#   - `claude` CLI authed (`claude auth login`)
-#   - ANTHROPIC_API_KEY in env or .env at repo root (optional but faster)
+#   - `claude` CLI authed (run `claude` once interactively). All Claude
+#     calls go through `claude -p` headless — no API key path.
 #   - Git working tree clean (or you accept the auto-commit)
 #
 # Knobs (env vars; safe defaults shown):

@@ -219,9 +219,7 @@ def _render_candidates(candidates: List[Dict[str, Any]]) -> str:
 # ---------------------------------------------------------------------------
 
 def _claude_available() -> bool:
-    """Heuristic: ``claude`` CLI on PATH OR ANTHROPIC_API_KEY in env."""
-    if os.environ.get("ANTHROPIC_API_KEY"):
-        return True
+    """``claude`` CLI on PATH (headless mode; no API key path)."""
     for p in (os.environ.get("PATH") or "").split(os.pathsep):
         try:
             if os.path.exists(os.path.join(p, "claude")):

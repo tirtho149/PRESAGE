@@ -10,8 +10,9 @@
 # deltas via the Qwen swarm) — that needs a GPU host with vLLM.
 #
 # Prerequisites
-#   - `claude` CLI authed (`claude auth login`)
-#   - ANTHROPIC_API_KEY in env or .env at repo root (faster, optional)
+#   - `claude` CLI authed (`claude` then login interactively). ALL Claude
+#     calls go through the headless `claude -p` CLI. There is no API-key
+#     path — the pipeline runs entirely on your Claude Code subscription.
 #   - Filtered CSV at BugWood_Diseases_usable.csv
 #       (generate with `python scripts/filter_bugwood_csv.py --threshold 10`)
 #
@@ -48,11 +49,6 @@ if ! command -v claude >/dev/null 2>&1; then
   echo "Install: curl -fsSL https://claude.ai/install.sh | bash"
   echo "Then:    claude auth login"
   exit 1
-fi
-
-if [ -z "${ANTHROPIC_API_KEY:-}" ] && [ ! -f .env ]; then
-  echo "WARNING: ANTHROPIC_API_KEY not set and no .env at repo root."
-  echo "         Phase 0 will use the claude -p CLI fallback (~5x slower)."
 fi
 
 ARGS=("--csv" "$CSV" "--out" "$OUT")

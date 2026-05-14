@@ -344,7 +344,7 @@ FULL_SKIP_KB=1 bash smoke/run_phase0_full.sh                # only cache top-up 
 |---|---|---|
 | `claude` CLI on PATH | Stages 1, 2, 3 use `claude -p` for canonical KB build | `pathome_kb` exits with "claude CLI not on PATH" |
 | `claude auth login` once | OAuth login for the CLI; sessions reuse the token | First `claude -p` blocks for browser sign-in |
-| `ANTHROPIC_API_KEY` (optional) | Stage 3 reconciliation can use the SDK directly when present — slightly faster than subprocess. Without it, reconciliation falls back to `claude -p` automatically. | None — fallback is transparent |
+| (no API key) | All Claude calls (stages 1, 2, 3 and the verifier) go through the headless `claude -p` CLI. No Anthropic API key path — the pipeline runs entirely on the user's Claude Code subscription. | n/a |
 | vLLM endpoint serving Qwen2.5-VL-7B-Instruct | Stage 4b runs the Qwen swarm via this endpoint (default `http://localhost:8000/v1`; configurable via `VLLM_BASE_URL`) | Phase 0R fails with a vLLM connection error |
 
 Stages 1–3 (canonical) need Claude OAuth, which Nova compute nodes can't grant — those run LOCAL. Stage 4b (regional) needs a GPU, which is the opposite split — that runs on Nova (or any host with vLLM). The seed file is shuttled through git in between.

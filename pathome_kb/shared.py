@@ -4,6 +4,11 @@ from __future__ import annotations
 
 API helpers, JSON parsing, and Claude CLI wrappers used by both
 local and internet pipelines.
+
+ALL Claude interactions go through the `claude -p` headless CLI
+(authenticated via `claude` login). No Anthropic API key path. This
+keeps the pipeline runnable without any third-party billing setup and
+lets users rely entirely on their Claude Code subscription.
 """
 
 import json
@@ -18,69 +23,7 @@ from .config import API_MODEL, API_MAX_TOKENS
 from .utils import save_file
 
 
-# ─── Anthropic API ──────────────────────────────────────────────────────────
-
-_API_KEY: str | None = None
-_ANTHROPIC_CLIENT = None
-_API_KEY_PROBED = False
-
-
-def _probe_api_key() -> str | None:
-    """Look up ANTHROPIC_API_KEY without raising. Returns None when absent.
-
-    Used by api_query() to decide whether to dispatch to the Anthropic SDK
-    (key present) or to the claude -p subprocess fallback (key missing).
-    """
-    global _API_KEY, _API_KEY_PROBED
-    if _API_KEY_PROBED:
-        return _API_KEY
-    _API_KEY_PROBED = True
-    _API_KEY = os.environ.get("ANTHROPIC_API_KEY")
-    if not _API_KEY:
-        env_path = Path(__file__).parent.parent / ".env"
-        if env_path.exists():
-            for line in env_path.read_text().splitlines():
-                if line.startswith("ANTHROPIC_API_KEY="):
-                    _API_KEY = line.split("=", 1)[1].strip()
-                    break
-    return _API_KEY or None
-
-
-def _get_api_key() -> str:
-    """Get cached API key (loaded once from environment or .env file)."""
-    key = _probe_api_key()
-    if not key:
-        raise RuntimeError("ANTHROPIC_API_KEY not found in environment or .env file")
-    return key
-
-
-def _get_api_client():
-    """Get cached Anthropic client (instantiated once)."""
-    global _ANTHROPIC_CLIENT
-    if _ANTHROPIC_CLIENT is None:
-        import anthropic
-        _ANTHROPIC_CLIENT = anthropic.Anthropic(api_key=_get_api_key())
-    return _ANTHROPIC_CLIENT
-
-
-def _add_additional_properties_false(schema: dict) -> dict:
-    """Recursively add additionalProperties: false to all object types."""
-    if not isinstance(schema, dict):
-        return schema
-    result = dict(schema)
-    schema_type = result.get("type")
-    # Handle both "type": "object" and "type": ["object", "null"]
-    is_object = schema_type == "object" or (
-        isinstance(schema_type, list) and "object" in schema_type
-    )
-    if is_object:
-        result["additionalProperties"] = False
-        if "properties" in result:
-            result["properties"] = {k: _add_additional_properties_false(v) for k, v in result["properties"].items()}
-    if "items" in result and isinstance(result["items"], dict):
-        result["items"] = _add_additional_properties_false(result["items"])
-    return result
-
+# ─── Claude headless wrapper (no API key) ───────────────────────────────────
 
 def api_query(
     prompt: str,
@@ -89,52 +32,25 @@ def api_query(
     content_blocks: list | None = None,
     max_tokens: int | None = None,
 ) -> str | None:
-    """Call Anthropic API for tool-free structured tasks.
+    """Run a tool-free structured Claude query via the headless ``claude -p``
+    CLI. No Anthropic API key — uses the user's Claude Code logged-in
+    account.
 
-    When ANTHROPIC_API_KEY is set, hits the SDK directly (faster, ~1 round trip
-    per call). When absent, falls back to ``claude -p`` so the pipeline runs
-    on Claude Code's CLI auth alone — slower (~5×) but no API key required.
-
-    ``content_blocks`` is only honoured by the SDK path (used by the local
-    PDF track for native document blocks). The CLI fallback ignores it; the
-    internet pipeline never passes content_blocks so this is fine in practice.
+    ``content_blocks`` is preserved for interface compatibility with
+    callers (e.g. local PDF track) but ignored — the headless CLI takes
+    a single prompt string. Callers that need image / PDF blocks should
+    embed them into the prompt or use a different code path.
     """
-    if _probe_api_key() is None:
-        # CLI fallback — no API key available. Reuses claude_query so we
-        # inherit its env-stripping, JSON-schema enforcement, and timeout.
-        # max_turns=5 lets the model use a thinking turn before emitting the
-        # structured JSON; max_turns=1 was too tight for the reconciliation
-        # schema (~3 KB JSON, ~12 KB prompt) and produced empty results with
-        # "Reached maximum number of turns" as the only error.
-        return claude_query(
-            prompt=prompt,
-            system_prompt=system_prompt,
-            json_schema=json_schema,
-            max_turns=5,
-            timeout_secs=300,
-        )
-
-    client = _get_api_client()
-
-    if content_blocks:
-        user_content = content_blocks + [{"type": "text", "text": prompt}]
-    else:
-        user_content = prompt
-
-    kwargs = {
-        "model": API_MODEL,
-        "max_tokens": max_tokens or API_MAX_TOKENS,
-        "system": system_prompt,
-        "messages": [{"role": "user", "content": user_content}],
-    }
-
-    if json_schema:
-        kwargs["output_config"] = {
-            "format": {"type": "json_schema", "schema": _add_additional_properties_false(json_schema)}
-        }
-
-    response = client.messages.create(**kwargs)
-    return response.content[0].text if response.content else None
+    return claude_query(
+        prompt=prompt,
+        system_prompt=system_prompt,
+        json_schema=json_schema,
+        # max_turns=5 lets the model use a thinking turn before emitting
+        # the structured JSON; max_turns=1 was too tight for the
+        # reconciliation schema (~3 KB JSON, ~12 KB prompt).
+        max_turns=5,
+        timeout_secs=300,
+    )
 
 
 # ─── Claude CLI wrapper ─────────────────────────────────────────────────────
@@ -196,7 +112,11 @@ def claude_query(
             k: v for k, v in os.environ.items()
             if not any(k.startswith(p) for p in _strip_prefixes)
         }
-        env.pop("ANTHROPIC_API_KEY", None)  # use logged-in account, not API key
+        # Defensive: strip ANTHROPIC_API_KEY from the subprocess env so
+        # `claude -p` always uses the logged-in CLI session, regardless of
+        # whatever env vars happen to be set on this host. (The pipeline
+        # has no API-key path — see the module docstring.)
+        env.pop("ANTHROPIC_API_KEY", None)
 
         print("  Running claude -p ...", flush=True)
 

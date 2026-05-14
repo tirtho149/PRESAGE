@@ -21,7 +21,8 @@
 #   5. Adapter merge                → symptoms_seed.json
 #
 # Auth requirements:
-#   Phase 0    `claude` CLI on PATH, `claude auth login` (or ANTHROPIC_API_KEY)
+#   Phase 0    `claude` CLI on PATH, logged in (headless `claude -p` only;
+#              no API key path).
 #   Phase 0R   OpenAI-compatible vLLM endpoint serving Qwen2.5-VL-7B-Instruct
 #              Reachable at $VLLM_BASE_URL (default http://localhost:8000/v1).
 #              On a Mac, point this at a remote vLLM via SSH tunnel:

@@ -15,7 +15,8 @@ setup(
     packages=find_packages(),
     python_requires=">=3.10",
     install_requires=[
-        "anthropic>=0.40.0",
+        # All Claude calls go through the headless `claude -p` CLI;
+        # no Anthropic Python SDK dependency.
         "httpx>=0.27.0",
         "openpyxl>=3.1.0",
         "numpy>=1.24.0",

@@ -231,9 +231,10 @@ For each (crop, disease) pair in `BugWood_Diseases_usable.csv`:
    `affected_parts`, `visual_symptoms.summary`,
    `visual_symptoms.diagnostic_features`,
    `visual_symptoms.look_alikes`, `treatments`).
-3. **Reconciliation** — Anthropic SDK (or `claude -p` fallback) merges
-   the per-source extractions into one canonical record with URL +
-   verbatim quote per field.
+3. **Reconciliation** — `claude -p` (headless CLI, JSON-schema mode)
+   merges the per-source extractions into one canonical record with
+   URL + verbatim quote per field. No Anthropic API key path —
+   everything runs on the user's Claude Code subscription.
 
 Output: `artifacts/pathome_kb/<Crop>/final_registry.json` with the
 top-level `diseases[]` array. `regional_observations` is empty at this
@@ -345,9 +346,10 @@ pip install -r requirements.txt
 # Claude CLI for Phase 0 + verifier
 # (install from https://claude.com/code; run `claude` once interactively
 # to authenticate)
-
-# Optional: speeds up Phase 0 reconciliation
-echo "ANTHROPIC_API_KEY=sk-ant-..." > .env
+#
+# All Claude calls in this pipeline go through the headless `claude -p`
+# CLI — there is no Anthropic API key path. Your Claude Code
+# subscription is the only billing surface.
 ```
 
 ### NOVA (one-time GPU-host install)

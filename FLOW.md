@@ -82,7 +82,7 @@ flowchart LR
     CSV[(BugWood_Diseases_usable.csv)]
     D[Stage 1 Discovery<br/>internet_pipeline.py<br/>claude -p with WebSearch<br/>per-disease URL list]
     E[Stage 2 Extraction<br/>internet_pipeline.py<br/>claude -p per URL<br/>verbatim quotes plus treatments]
-    R[Stage 3 Reconciliation<br/>internet_pipeline.py<br/>Anthropic SDK or claude -p<br/>per-field merge with citations]
+    R[Stage 3 Reconciliation<br/>internet_pipeline.py<br/>claude -p headless<br/>per-field merge with citations]
     REG[(final_registry.json<br/>canonical only<br/>per crop)]
 
     CSV --> D --> E --> R --> REG
@@ -791,7 +791,7 @@ PlantSwarm/
 | PATHOME_IMAGE_CACHE_DIR | — | Prepended to default cache search path |
 | PATHOME_TRACE_DIR | — | When set, Phase 0R appends per-trace records to `<dir>/phase0r_traces.jsonl` |
 | PATHOME_TRACE_FILE | phase0r_traces.jsonl | Trace JSONL filename within `PATHOME_TRACE_DIR` |
-| ANTHROPIC_API_KEY | — (optional) | Speeds up Phase 0 reconciliation; falls back to `claude -p` |
+| (no ANTHROPIC_API_KEY) | — | All Claude calls go through the headless `claude -p` CLI. Authentication is via `claude` login; no API key path. |
 | PATHOME_ONLY_CROPS | — | Comma-separated crop allowlist |
 | PATHOME_USABLE_CSV | BugWood_Diseases_usable.csv | Filtered CSV path |
 | PATHOME_SEED_FILE | artifacts/pathome_seed/symptoms_seed.json | Output seed JSON path |

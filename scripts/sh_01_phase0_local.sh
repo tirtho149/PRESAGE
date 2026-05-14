@@ -15,9 +15,10 @@
 #                                                          will be empty here)
 #
 # Pre-reqs
-#   - `claude` CLI authenticated (run `claude` once interactively)
-#   - optional ANTHROPIC_API_KEY in .env (speeds up the Anthropic-SDK
-#     reconciliation step)
+#   - `claude` CLI authenticated (run `claude` once interactively).
+#     ALL Claude calls go through the headless `claude -p` CLI — no
+#     API key path. Phase 0 (and the verifier in step 3) run entirely
+#     on the user's Claude Code subscription.
 #   - BugWood_Diseases_usable.csv present
 #
 # Knobs (env vars)
