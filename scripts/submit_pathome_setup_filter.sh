@@ -36,7 +36,25 @@ echo "Job ID: $SLURM_JOB_ID  Start: $(date)"
 echo "================================"
 
 module load python
-source "$PATHOME_REPO/.venv/bin/activate"
+
+# Resolve the venv. Default: $PATHOME_REPO/.venv (in-repo). Override with
+# PATHOME_VENV=/path/to/venv (e.g. one level above the repo, shared
+# across projects). Falls back to ../.venv if neither exists.
+VENV="${PATHOME_VENV:-$PATHOME_REPO/.venv}"
+if [ ! -f "$VENV/bin/activate" ]; then
+  if [ -f "$(dirname "$PATHOME_REPO")/.venv/bin/activate" ]; then
+    VENV="$(dirname "$PATHOME_REPO")/.venv"
+  else
+    echo "ERROR: no venv found. Tried:"
+    echo "  $PATHOME_VENV (PATHOME_VENV)"
+    echo "  $PATHOME_REPO/.venv"
+    echo "  $(dirname "$PATHOME_REPO")/.venv"
+    echo "Set PATHOME_VENV=/path/to/venv and re-sbatch."
+    exit 2
+  fi
+fi
+echo "venv: $VENV"
+source "$VENV/bin/activate"
 mkdir -p logs
 
 THRESHOLD="${PATHOME_THRESHOLD:-10}"
