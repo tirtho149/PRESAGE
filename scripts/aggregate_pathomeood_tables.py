@@ -40,23 +40,28 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 
-# Variant tag → caption strategy (mirror of scripts/train_pathomeood.py)
+# Variant tag → feature-ablation config (TabPFN matrix; mirrors
+# scripts/tabpfn_eval.py::VARIANTS). Axes are FEATURE-LEVEL ablations:
+# encoder choice + caption strategy + KB-covered/non-covered subset.
+# No training-loop variants anymore (the trained-CLIP path is
+# deprecated; everything goes through frozen-encoder + TabPFN now).
 VARIANTS: Dict[str, Dict[str, object]] = {
-    "T01": dict(strategy="label_only",         proj="dual",   epochs=50,  subset="all"),
-    "T02": dict(strategy="summary_only",       proj="dual",   epochs=50,  subset="all"),
-    "T03": dict(strategy="canonical_full",     proj="dual",   epochs=50,  subset="all"),
-    "T04": dict(strategy="canonical_deltas_3", proj="dual",   epochs=50,  subset="all"),
-    "T05": dict(strategy="canonical_deltas_1", proj="dual",   epochs=50,  subset="all"),
-    "T06": dict(strategy="canonical_deltas_5", proj="dual",   epochs=50,  subset="all"),
-    "T07": dict(strategy="canonical_deltas_7", proj="dual",   epochs=50,  subset="all"),
-    "T08": dict(strategy="canonical_deltas_3", proj="single", epochs=50,  subset="all"),
-    "T09": dict(strategy="canonical_deltas_3", proj="dual",   epochs=100, subset="all"),
-    "T10": dict(strategy="canonical_deltas_3", proj="dual",   epochs=50,  subset="covered"),
-    "T11": dict(strategy="canonical_deltas_3", proj="dual",   epochs=50,  subset="non_covered"),
+    "T01": dict(encoder="bioclip",       strategy="label_only",         subset="all"),
+    "T02": dict(encoder="bioclip",       strategy="summary_only",       subset="all"),
+    "T03": dict(encoder="bioclip",       strategy="canonical_full",     subset="all"),
+    "T04": dict(encoder="bioclip",       strategy="canonical_deltas_3", subset="all"),   # MAIN
+    "T05": dict(encoder="bioclip",       strategy="canonical_deltas_1", subset="all"),
+    "T06": dict(encoder="bioclip",       strategy="canonical_deltas_5", subset="all"),
+    "T07": dict(encoder="bioclip",       strategy="canonical_deltas_7", subset="all"),
+    "T08": dict(encoder="clip_vitb16",   strategy="canonical_deltas_3", subset="all"),   # encoder ablation
+    "T09": dict(encoder="siglip_vitb16", strategy="canonical_deltas_3", subset="all"),   # encoder ablation
+    "T10": dict(encoder="bioclip",       strategy="canonical_deltas_3", subset="covered"),
+    "T11": dict(encoder="bioclip",       strategy="canonical_deltas_3", subset="non_covered"),
 }
 
-BASELINES = ["clip_vitb16", "siglip_vitb16", "fgclip", "biotrove",
-             "bioclip", "bioclip2", "pathomeood_hf"]
+# Off-shelf zero-shot baselines (cosine-sim against class-name templates;
+# no TabPFN). Produced by scripts/tabpfn_eval.py --include-baselines.
+BASELINES = ["clip_vitb16_zs", "siglip_vitb16_zs", "bioclip_zs", "bioclip2_zs"]
 
 # Paper-canonical column order for zero-shot results
 EVAL_DATASETS_T1 = ["plantvillage", "plantwild"]
@@ -221,19 +226,24 @@ def build_table_20(results_dir: Path) -> str:
 
 
 def build_figure_03(results_dir: Path) -> str:
-    """Recipe ablation: T04 (dual, 50ep), T08 (single, 50ep), T09 (dual, 100ep)."""
-    rows = [["Variant", "Projector", "Epochs", "PlantVillage", "PlantWild", "I2T R@10", "T2I R@10"]]
+    """Encoder ablation: T04 (BioCLIP), T08 (CLIP-openai), T09 (SigLIP).
+
+    Replaces the original BioCAP "projector mode × epochs" ablation
+    (which is meaningless for the TabPFN pipeline since there's no
+    projector or training loop) with the more useful encoder-choice
+    ablation.
+    """
+    rows = [["Variant", "Encoder", "Strategy", "PlantVillage", "PlantDoc", "PlantWild"]]
     for v in ["T04", "T08", "T09"]:
         info = VARIANTS[v]
         pv = _zero_shot_top1(results_dir, v, "plantvillage")
+        pd = _zero_shot_top1(results_dir, v, "plantdoc")
         pw = _zero_shot_top1(results_dir, v, "plantwild")
-        rt = _retrieval(results_dir, v) or {}
         rows.append([
-            v, str(info["proj"]), str(info["epochs"]),
-            _fmt_pct(pv), _fmt_pct(pw),
-            _fmt_pct(rt.get("i2t_r10")), _fmt_pct(rt.get("t2i_r10")),
+            v, str(info["encoder"]), str(info["strategy"]),
+            _fmt_pct(pv), _fmt_pct(pd), _fmt_pct(pw),
         ])
-    return _md_table("Figure 3 — Recipe ablation: projector mode × epochs (%)", rows)
+    return _md_table("Figure 3 — Encoder ablation (frozen + TabPFN, %)", rows)
 
 
 def build_table_08() -> str:

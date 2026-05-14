@@ -29,19 +29,28 @@ pyyaml>=6.0
 pandas>=2.0.0
 pyarrow>=14.0.0
 
+# Step 4 — TabPFN tabular foundation classifier
+# (frozen encoder + KB-caption + crop metadata -> TabPFN; replaces the
+#  old dual-projector CLIP fine-tune path).
+tabpfn>=2.0.0
+scikit-learn>=1.4.0       # PCA reducer + utilities
+
 # Tests
 pytest>=7.0.0
 
 
-# ---- GPU host only --------------------------------------------------------
-# Install these on Nova / any A100-class host. Kept under a comment so the
-# laptop venv can `pip install -r requirements.txt` without dragging in CUDA.
+# ---- GPU host only (encoder forward pass + Phase 0R vLLM) -----------------
+# Install these on the host that does the encoder forward (LOCAL with a
+# small GPU is enough — frozen forward is much cheaper than training) and
+# on Nova (Phase 0R vLLM endpoint).
 #
-#   vllm>=0.4.0                # Phase 0R: Qwen2.5-VL-7B server
-#   torch>=2.1.0               # PathomeOOD: training + eval
+#   vllm>=0.4.0                # Phase 0R only: Qwen2.5-VL-7B server
+#   torch>=2.1.0               # frozen encoder forward in build_features.py
 #   transformers>=4.40.0
-#   accelerate>=0.30.0
-#   open_clip_torch>=2.29.0    # CLIP factory + tokenizer (lib that
-#                              # train_and_eval/open_clip/ is forked from)
-#   webdataset>=0.2.86         # tar-shard streaming during training
-#   huggingface_hub>=0.24.0    # HF hub init (e.g. imageomics/bioclip)
+#   open_clip_torch>=2.29.0    # CLIP factory + tokenizer for the encoders
+#   huggingface_hub>=0.24.0    # HF hub model fetch (imageomics/bioclip etc.)
+#
+# The legacy dual-projector training path (train_and_eval/ subtree +
+# scripts/train_pathomeood.py / submit_pathomeood_*.sh / evaluate_pathomeood_*.py)
+# also needs webdataset>=0.2.86 and accelerate>=0.30.0 — but the TabPFN
+# path replaces it and neither is required for the canonical pipeline.
