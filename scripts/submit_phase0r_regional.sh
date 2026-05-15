@@ -30,10 +30,11 @@ cd "$PATHOME_REPO"
 #          artifacts/pathome_seed/symptoms_seed.json          (merged seed)
 #
 # Workflow on this node:
-#   1. boot vLLM serving Qwen/Qwen2.5-VL-7B-Instruct on :8000
-#   2. wait for /v1/models to respond
-#   3. run `python -m pathome_kb --regional-only ...`
-#   4. tear down vLLM on exit
+#   1. top up .bugwood_cache with one image per (crop, disease, state) tuple
+#   2. boot vLLM serving Qwen/Qwen2.5-VL-7B-Instruct on :8000
+#   3. wait for /v1/models to respond
+#   4. run `python -m pathome_kb --regional-only ...`
+#   5. tear down vLLM on exit
 #
 # Override at submit time:
 #   PATHOME_USABLE_CSV=...  PATHOME_SEED_FILE=...  sbatch this script.sh
@@ -54,7 +55,7 @@ echo "Phase 0R: regional deltas (qwen swarm)"
 echo "Job ID: $SLURM_JOB_ID  Start: $(date)"
 echo "================================"
 
-module load python cuda/11.8
+module load python cuda/12.8
 
 # Resolve the venv. Default: $PATHOME_REPO/.venv (in-repo). Override with
 # PATHOME_VENV=/path/to/venv (e.g. one level above the repo, shared
@@ -91,6 +92,20 @@ export VLLM_SIM_THRESHOLD="${VLLM_SIM_THRESHOLD:-0.4}"
 export VLLM_TIMEOUT="${VLLM_TIMEOUT:-180}"
 echo "[swarm] N=$VLLM_N_RUNS K=$VLLM_AGREEMENT_MIN T=$VLLM_TEMPERATURE Tmax=$VLLM_TMAX bt=$VLLM_MAX_BACKTRACKS sim>=$VLLM_SIM_THRESHOLD"
 
+# ---- ensure Bugwood image cache is populated -------------------------------
+# Phase 0R's regional-observation stage only READS from the cache — it does
+# not download. The pipeline drops 100% of tuples (logging "[skipped: no
+# cached image for N tuples]") when the cache is empty. ensure_state_image_cache.py
+# is idempotent: existing files are no-ops, so re-runs are cheap.
+export PATHOME_IMAGE_CACHE_DIR="${PATHOME_IMAGE_CACHE_DIR:-$PATHOME_REPO/.bugwood_cache}"
+mkdir -p "$PATHOME_IMAGE_CACHE_DIR"
+echo "[cache] populating $PATHOME_IMAGE_CACHE_DIR from $CSV"
+python scripts/ensure_state_image_cache.py \
+    --csv "$CSV" \
+    --cache-dir "$PATHOME_IMAGE_CACHE_DIR" \
+  || { echo "[cache] FAILED — aborting before vLLM boot"; exit 2; }
+echo "[cache] populated: $(ls "$PATHOME_IMAGE_CACHE_DIR" | wc -l) files"
+
 VLLM_LOG="logs/vllm-${SLURM_JOB_ID}.log"
 
 # ---- boot vLLM in the background ------------------------------------------
@@ -115,8 +130,11 @@ for i in $(seq 1 60); do
   sleep 10
 done
 if ! curl -sf --max-time 5 "$VLLM_BASE_URL/models" >/dev/null 2>&1; then
-  echo "[vllm] FAILED to come up — tail of $VLLM_LOG:"
-  tail -n 40 "$VLLM_LOG"
+  echo "[vllm] FAILED to come up — full $VLLM_LOG context:"
+  echo "---- head -n 80 ----"
+  head -n 80 "$VLLM_LOG"
+  echo "---- tail -n 200 ----"
+  tail -n 200 "$VLLM_LOG"
   exit 1
 fi
 
