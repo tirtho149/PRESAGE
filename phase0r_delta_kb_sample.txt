@@ -1,194 +1,157 @@
 ================================================================================
 PHASE 0R — DELTA KB CONTRIBUTION: WORKED SAMPLE
+5 generalized VISUAL-SYMPTOM group agents (visual-only, KB-grounded)
 ================================================================================
 
 WHAT THIS FILE IS
-  A faithful, illustrative sample of what the redesigned DR.Arti 5-stage
-  agent swarm contributes per (crop, disease, state) tuple, plus the
-  aggregate capacity estimate.
+  A faithful, illustrative sample of what the swarm contributes per
+  (crop, disease, state) tuple, plus the aggregate capacity estimate.
 
-  This is a PROJECTION, not a live run. The real swarm needs a GPU +
-  in-process vLLM (Qwen2.5-VL-7B); it cannot run on the local CPU host.
-  The stage outputs below are written to match exactly:
-    - the ACTUAL canonical KB text in
+  PROJECTION, not a live run. The real swarm needs a GPU + in-process
+  vLLM (Qwen2.5-VL-7B); it cannot run on the local CPU host. The agent
+  outputs below match exactly:
+    - the ACTUAL canonical visual_symptoms text in
       artifacts/pathome_kb/Soybean/final_registry.json (Brown Stem Rot)
-    - the ACTUAL DR.Arti.docx SDS-vs-BSR decision-graph CoT
     - the ACTUAL delta JSON schema the pipeline consumes
-  so it shows the true shape and volume of the contribution.
+    - the ACTUAL roster + machinery (5 visual-symptom group agents,
+      parallel + blackboard round-2 + VisualDiagnosisAgent consolidator)
+
+SCOPE RULES (enforced by the agent prompts)
+  - VISUAL SYMPTOMS ONLY. Agents describe what is visible and compare
+    it to canonical visual_symptoms. No pathogen / disease-type /
+    cause / treatment claims (those are Claude's Phase 1 job).
+  - GENERALIZED. No crop/disease-specific forks. DR.Arti.docx informs
+    the reasoning STYLE only (short discriminative visual CoT), not a
+    literal pipeline.
+  - KB-GROUNDED. A delta is emitted only where the photo ADDS to or
+    CONTRADICTS canonical visual_symptoms; restating canonical is
+    forbidden.
 
 CURRENT STATE ON DISK (before any re-run)
   Soybean regional deltas : 0
   Tomato  regional deltas : 0
-  => the delta KB contributes NOTHING today. Last NOVA run zeroed out
-     (silent HTTP 400). One Phase 0R re-run with the in-process vLLM +
-     5-stage chain is required to populate it.
+  => delta KB contributes NOTHING today (last NOVA run zeroed out via
+     silent HTTP 400). One Phase 0R re-run with in-process vLLM + the
+     5 visual-symptom agents populates it.
+
+================================================================================
+THE 5 AGENTS  (partition of all 24 visual delta fields, no overlap)
+================================================================================
+  LeafSymptomAgent        8  leaf_lesion_shape/color/texture,
+                             leaf_chlorosis, leaf_necrosis, leaf_curl,
+                             leaf_vein_pattern, leaf_geometry
+  StemRootSymptomAgent    6  stem_lesion, stem_pith, stem_surface,
+                             stem_discoloration, root_visible,
+                             crown_collar
+  FruitFlowerSignAgent    3  flower, fruit, sporulation
+  WholePlantSymptomAgent  3  wilting, defoliation, spatial_pattern
+  DiagnosticVisualAgent   5  concentric_pattern, color_palette,
+                             look_alikes_visual, severity_visible, other
 
 ================================================================================
 SAMPLE TUPLE
 ================================================================================
-  crop     : Soybean
-  disease  : Brown Stem Rot                 (the canonical "C0")
-  state    : Iowa
-  image    : one Bugwood field photograph for this tuple
-  look_alikes (from canonical KB, the discrimination set):
-     L1 = sudden death syndrome (SDS)
-     L2 = stem canker
+  crop = Soybean | disease = Brown Stem Rot | state = Iowa
+  image = one Bugwood field photograph (mid-canopy foliage:
+          interveinal chlorosis + necrosis; no stem split in frame)
 
-  CANONICAL KB (verbatim from final_registry.json):
-    pathogen : Cadophora gregata   (Fungal)
-    summary  : "Characteristic foliar symptoms include chlorosis and
-                necrosis between leaf veins, followed by leaf curling
-                and leaf death; externally infected stems look healthy
-                but split stems show internal browning of vascular
-                tissue and pith, especially at nodes and in the lower
-                stem."
-    diagnostic: "When stems are split lengthwise, internal browning of
-                vascular tissue and pith is evident ... pith color in
-                the lower stem differentiates BSR from sudden death
-                syndrome (SDS)."
+  CANONICAL visual_symptoms (verbatim from final_registry.json):
+    summary    : "Characteristic foliar symptoms include chlorosis and
+                  necrosis between leaf veins, followed by leaf curling
+                  and leaf death; externally infected stems look
+                  healthy but split stems show internal browning of
+                  vascular tissue and pith..."
+    diagnostic : "When stems are split lengthwise, internal browning
+                  ... pith color in the lower stem differentiates BSR
+                  from sudden death syndrome (SDS)."
+    look_alikes: ["sudden death syndrome (SDS)", "stem canker"]
 
 ================================================================================
-ONE STOCHASTIC PASS THROUGH THE 5-STAGE CHAIN  (5 LLM calls)
-  Photo in this pass: mid-canopy foliage, interveinal chlorosis +
-  necrosis visible; NO stem has been split in the frame.
+ONE STOCHASTIC PASS  (round 1: 5 agents in parallel)
 ================================================================================
 
-STAGE 1 — ContextStage  (timing / site / field-history priors)
-  {
-    "stage": "context",
-    "leans": [
-      {"candidate":"C0","name":"Brown Stem Rot","lean":"favored",
-       "why":"mid-late reproductive foliar interveinal chlorosis in a
-              Midwest (Iowa) field is consistent with BSR timing"},
-      {"candidate":"L1","name":"sudden death syndrome (SDS)",
-       "lean":"favored",
-       "why":"SDS produces visually identical interveinal chlorosis;
-              cannot be excluded on context alone"},
-      {"candidate":"L2","name":"stem canker","lean":"against",
-       "why":"stem canker is primarily a stem-lesion disease, less
-              consistent with a pure foliar presentation"}
-    ],
-    "candidates_remaining":["C0","L1"],
-    "confidence":"medium",
-    "reasoning":"Context favors BSR or SDS over stem canker; BSR vs SDS
-                 still open."
-  }
+LeafSymptomAgent
+  {"deltas":[
+    {"field":"leaf_chlorosis",
+     "canonical_says":"chlorosis and necrosis between leaf veins",
+     "image_shows":"interveinal chlorosis in Iowa shows sharply
+                    green-retained veins with early upward cupping
+                    before necrosis sets in",
+     "image_quote":"yellow interveinal bands, crisp green veins,
+                    leaflet tips beginning to roll"}],
+   "confidence":"high","reasoning":"saw interveinal pattern; canonical
+   says it generically; adds the green-vein + early-cupping detail"}
 
-STAGE 2 — GrossSymptomStage  (dominant foliar/gross symptom)
-  {
-    "stage":"gross_symptoms",
-    "dominant_symptom":"interveinal chlorosis and necrosis with green
-                        veins on mid-canopy leaves, some leaf curling",
-    "per_candidate":[
-      {"candidate":"C0","name":"Brown Stem Rot",
-       "consistency":"consistent",
-       "why":"matches canonical 'chlorosis and necrosis between leaf
-              veins, followed by leaf curling'"},
-      {"candidate":"L1","name":"sudden death syndrome (SDS)",
-       "consistency":"non_discriminating",
-       "why":"SDS foliar symptoms are visually identical at this stage"}
-    ],
-    "candidates_remaining":["C0","L1"],
-    "still_ambiguous":true,
-    "confidence":"medium",
-    "reasoning":"Foliar symptoms cannot separate BSR from SDS — continue
-                 to the decisive fork."
-  }
+StemRootSymptomAgent
+  {"deltas":[],"confidence":"low",
+   "reasoning":"no stem split or roots visible in this frame; the
+   decisive split-stem pith fork cannot be answered — emit nothing"}
 
-STAGE 3 — DecisiveForkStage  (the ONE decisive visual fork)
-  {
-    "stage":"decisive_fork",
-    "fork_question":"Split the lower stem: is the pith WHITE (=> SDS)
-                     or BROWN/continuous through nodes (=> BSR)?",
-    "fork_visible":false,
-    "observed":"no stem is split in this photograph; only intact
-                foliage is framed",
-    "points_to":"none",
-    "points_to_name":"",
-    "candidates_remaining":["C0","L1"],
-    "confidence":"low",
-    "reasoning":"The decisive structure (split lower-stem pith) is not
-                 visible in this photo; BSR vs SDS cannot be resolved
-                 from pixels alone."
-  }
+FruitFlowerSignAgent
+  {"deltas":[],"confidence":"low",
+   "reasoning":"no flowers, fruit, or pathogen signs visible"}
 
-STAGE 4 — SupportingEvidenceStage  (corroborating, non-decisive)
-  {
-    "stage":"supporting_evidence",
-    "supports":[
-      {"feature":"leaf curling following interveinal necrosis",
-       "for_candidate":"C0","strength":"weak",
-       "image_quote":"upper leaflets cupping with brown interveinal
-                      tissue"},
-      {"feature":"no bare-petiole skeletons / no premature defoliation",
-       "for_candidate":"C0","strength":"weak",
-       "image_quote":"petioles and blades still attached; argues mildly
-                      against the rapid SDS defoliation pattern"}
-    ],
-    "conflicts_with_fork":"",
-    "confidence":"low",
-    "reasoning":"Supporting cues lean weakly to BSR but cannot
-                 substitute for the missing decisive fork."
-  }
+WholePlantSymptomAgent
+  {"deltas":[
+    {"field":"defoliation",
+     "canonical_says":"followed by leaf curling and leaf death",
+     "image_shows":"blades curling but still attached; no
+                    bare-petiole skeletons",
+     "image_quote":"petioles and blades intact across the canopy"}],
+   "confidence":"medium","reasoning":"curl-before-drop pattern adds
+   detail canonical does not specify"}
 
-STAGE 5 — VerdictStage  (final reasoning + the ONLY delta-emitting stage)
-  {
-    "stage":"verdict",
-    "verdict":"ambiguous",
-    "matched_look_alike":"",
-    "recommended_followup":"split the lower stem at the nodes and
-                            inspect pith color (white => SDS;
-                            continuous brown => BSR)",
-    "deltas":[
-      {"field":"leaf_chlorosis",
-       "canonical_says":"chlorosis and necrosis between leaf veins",
-       "image_shows":"interveinal chlorosis in Iowa presents with
-                      sharply green-retained veins and early upward
-                      leaf cupping before full necrosis",
-       "image_quote":"mid-canopy leaflets show yellow interveinal
-                      bands with crisp green veins and slight cupping"},
-      {"field":"leaf_curl",
-       "canonical_says":"followed by leaf curling and leaf death",
-       "image_shows":"curling begins at leaflet tips while interveinal
-                      tissue is still chlorotic (not yet necrotic)",
-       "image_quote":"leaflet tips rolled upward over still-yellow
-                      interveinal areas"}
-    ],
-    "confidence":"medium",
-    "reasoning":"Because the foliar pattern matches BSR/SDS equally and
-                 the decisive split-stem pith is not visible, I cannot
-                 distinguish BSR from SDS from this photo; recommend a
-                 lower-stem split. Foliar deltas are still emitted."
-  }
+DiagnosticVisualAgent
+  {"deltas":[
+    {"field":"look_alikes_visual",
+     "canonical_says":"differentiates BSR from sudden death syndrome",
+     "image_shows":"foliar pattern is visually indistinguishable from
+                    SDS in this photo; the decisive split-stem pith
+                    is not visible, so visual ID is ambiguous here",
+     "image_quote":"interveinal chlorosis identical to SDS; no stem
+                    cross-section in frame"},
+    {"field":"color_palette",
+     "canonical_says":"(not specified)",
+     "image_shows":"affected tissue palette is lemon-yellow
+                    interveinal grading to tan-brown necrosis",
+     "image_quote":"yellow + tan-brown dominate the damaged areas"}],
+   "confidence":"medium","reasoning":"visual look-alike + palette add
+   beyond canonical; no pathogen/cause claim made"}
 
-  PASS RESULT: 2 raw deltas (leaf_chlorosis, leaf_curl);
-               look_alike_verdict = ambiguous + recommended_followup.
+ROUND 2 (blackboard visible — stigmergy)
+  - WholePlantSymptomAgent SUPPORTs DiagnosticVisualAgent's
+    "visually ambiguous vs SDS" (no bare petioles weakly favors BSR
+    but does not resolve it visually).
+  - StemRootSymptomAgent confirms the decisive fork is simply not
+    in-frame (no delta to refine or withdraw).
+  Net round-2: deltas refined, no contradictions.
+
+CONSOLIDATOR (VisualDiagnosisAgent)
+  Emits the pass's final visual deltas (dedup, no canonical restate):
+    leaf_chlorosis, defoliation, look_alikes_visual, color_palette
+  -> 4 raw deltas this pass.
 
 ================================================================================
-ACROSS N=10 STOCHASTIC PASSES  ->  K-of-N (K=3)  ->  VERIFIER  ->  MERGE
+ACROSS N=10 PASSES -> K-of-N (K=3) -> VERIFIER -> MERGE
 ================================================================================
-  - leaf_chlorosis  "interveinal ... green-retained veins, early
-                      cupping"          recurs in 8/10 passes  -> KEEP
-  - leaf_curl       "tip curl before necrosis"
-                                        recurs in 5/10 passes  -> KEEP
-  - one-off noise deltas (e.g. a spurious "stem_lesion")
-                                        appear in 1/10          -> DROP
-  - look_alike_verdict: 7/10 "ambiguous (split stem)",
-                        3/10 "canonical"  -> recorded in
-                        __swarm_meta__.look_alike_verdicts
+  leaf_chlorosis     "green-retained veins + early cupping"  9/10  KEEP
+  look_alikes_visual "visually ambiguous vs SDS w/o split"   7/10  KEEP
+  color_palette      "lemon-yellow -> tan-brown"             5/10  KEEP
+  defoliation        "curl-before-drop, petioles attached"   4/10  KEEP
+  one-off noise (spurious stem_lesion)                       1/10  DROP
 
-  Claude web verifier: both survivors -> "weakly_supported"/"verified"
-  with extension-factsheet citations; none contradictory.
-  Conservative merge (cold start): both ADDED with __support__ counts.
+  Verifier: survivors -> verified / weakly_supported with extension
+  citations; none contradictory.
+  Conservative merge (cold start): all added with __support__ counts.
 
-  NET CONTRIBUTION, THIS TUPLE: ~2 verified regional deltas
-  + a recorded "needs split-stem follow-up" diagnostic flag.
+  NET CONTRIBUTION, THIS TUPLE: ~3-4 verified VISUAL deltas.
 
 ================================================================================
 AGGREGATE CAPACITY  (same model, all tuples)
 ================================================================================
   Per-tuple net (defaults N=10, K=3): ~1.5-2.5 deltas (central ~2);
   0 for low-information photos (the real ceiling, not the swarm).
+  Visual-rich tuples (like the one above) land at the high end (~3-4).
 
   Tuples (from BugWood_Diseases_usable.csv):
     Soybean           76 tuples  (17 diseases, 19 states)
@@ -205,7 +168,7 @@ AGGREGATE CAPACITY  (same model, all tuples)
 
   BOTTOM LINE
     Now        : 0 deltas (KB = canonical text only)
-    Achievable : ~290 deltas for built Soybean+Tomato
+    Achievable : ~290 visual deltas for built Soybean+Tomato
                  (~150 worst / ~590 best); ~2,070 full Bugwood
     Limiter    : image informativeness, not the swarm. N trades
                  recall, K trades precision, around that ceiling.

@@ -253,71 +253,74 @@ canonical description as Charcoal Rot in Alabama.
 
 ---
 
-## Phase 2 — Regional Image-Grounded Deltas (DR.Arti 5-stage chain)
+## Phase 2 — Regional Image-Grounded Deltas (5 visual-symptom agents)
 
 **Goal.** For every (crop, disease, state) tuple that has at least one
 field photograph available, identify how the disease *presents in the
-field in that state* and emit image-supported deltas that go beyond
-what the canonical block already says — additions or contradictions,
-never restatements.
+field in that state* and emit image-supported **visual-symptom** deltas
+that go beyond what the canonical `visual_symptoms` block already says
+— additions or contradictions, never restatements.
 
-### The design: a look-alike decision-graph, not a feature ensemble
+### The design: 5 generalized visual-symptom group agents
 
-`DR.Arti.docx` is the methodological reference. It is **not** a
-feature-extraction spec — it is a set of pairwise *look-alike
-discrimination* chains-of-thought (SDS vs BSR, IDC vs SCN, Palmer vs
-waterhemp, corn rootworm vs cucumber beetle). Every one walks the same
-five ordered stages, where one stage is a single **decisive fork** and
-the last stage is allowed to say *"cannot tell from this photo —
-recommend a specific test"*. Phase 2 implements that chain.
+The swarm is **visual-symptoms only**. Each agent describes what is
+*visible in the photograph* and compares it to the canonical KB
+`visual_symptoms` block (summary / diagnostic_features / look_alikes).
+No agent emits pathogen, disease-type, cause, or treatment claims —
+those are produced by Claude in Phase 1 and are out of scope here.
+Nothing is crop- or disease-specific: each agent generalizes from
+whatever canonical `visual_symptoms` text it is handed.
 
-Per (crop, disease, state) tuple the swarm runs **5 stage agents in
-sequence** (not a parallel ensemble). The candidates being
-discriminated are the canonical disease vs its Phase-1 `look_alikes`
-list. Each stage sees the canonical KB, the field photograph, and
-every prior stage's structured output:
+`DR.Arti.docx` informs only the *reasoning style* — a short, ordered,
+discriminative visual chain-of-thought ("look at X; is it A or B; does
+that match canonical or a visual look-alike?"). Its SDS/BSR, IDC/SCN,
+Palmer/waterhemp, rootworm/cucumber-beetle cases are worked examples of
+that style, **not** a literal pipeline. There are no hardcoded forks.
+
+The 24 visual delta fields are partitioned across 5 group agents (no
+overlap, no omission):
 
 ```mermaid
-flowchart LR
-    CTX[1. ContextStage<br/>timing / site / field-history priors<br/>→ lean X]
-    GRO[2. GrossSymptomStage<br/>dominant foliar/gross symptom<br/>→ continue if ambiguous]
-    FRK[3. DecisiveForkStage<br/>the ONE decisive visual fork<br/>split-stem pith / root cysts /<br/>petiole-vs-blade / leg color<br/>→ diagnostic, or 'not visible']
-    SUP[4. SupportingEvidenceStage<br/>corroborating non-decisive cues<br/>→ adjusts confidence only]
-    VER[5. VerdictStage<br/>canonical | look_alike:NAME |<br/>ambiguous + recommended test<br/>→ emits the schema deltas]
+flowchart TB
+    IMG([field photo + canonical visual_symptoms slice])
+    L[LeafSymptomAgent<br/>8 leaf fields: lesion shape/color/texture,<br/>chlorosis, necrosis, curl, vein, geometry]
+    S[StemRootSymptomAgent<br/>6 fields: stem lesion/pith/surface/<br/>discoloration, root, crown-collar]
+    F[FruitFlowerSignAgent<br/>3 fields: flower, fruit, sporulation signs]
+    W[WholePlantSymptomAgent<br/>3 fields: wilting, defoliation, spatial]
+    D[DiagnosticVisualAgent<br/>5 fields: concentric, color palette,<br/>visual look-alikes, severity, other]
+    C[VisualDiagnosisAgent<br/>CoT consolidator]
 
-    CTX --> GRO --> FRK --> SUP --> VER
+    IMG --> L & S & F & W & D
+    L & S & F & W & D --> C
 
-    classDef s fill:#fef,stroke:#606
-    class CTX,GRO,FRK,SUP,VER s
+    classDef a fill:#fef,stroke:#606
+    class L,S,F,W,D,C a
 ```
 
-Only **VerdictStage** emits schema deltas (`field`, `canonical_says`,
-`image_shows`, `image_quote`). It is the consolidator — there is no
-separate consolidator agent. Stages 1–4 carry their findings forward
-in their reasoning; they do not emit deltas. VerdictStage also records
-a per-pass look-alike verdict (`canonical` / `look_alike:<name>` /
-`ambiguous` + recommended follow-up) into
-`__swarm_meta__.look_alike_verdicts`. This is **5 LLM calls per pass**.
+These run through the **same proven machinery** as the legacy
+specialists: parallel fan-out → shared blackboard → round 2
+(stigmergy: each agent sees peers' round-1 output and may refine /
+support / challenge / withdraw) → `VisualDiagnosisAgent` consolidator.
+A delta is emitted only where the photo ADDS to or CONTRADICTS
+canonical `visual_symptoms` for a field the agent owns; restating
+canonical is forbidden. Per-pass cost = 5 + 5 + 1 = **11 LLM calls**
+(2-round default) or 6 (single round) — vs 49 for the legacy roster.
 
-When a disease has no `look_alikes` in the canonical KB, the chain
-degrades gracefully to image-vs-canonical discrepancy capture — it
-still emits deltas.
-
-> **Legacy roster.** The earlier 24-specialist, 2-round parallel
-> ensemble + `DiagnosisAgent` consolidator (≈49 calls/pass) is still
-> in the codebase and is selected with `SWARM_GRANULARITY=specialists`.
-> The default is the 5-stage chain (`SWARM_GRANULARITY=stages`).
+> **Legacy roster.** The earlier 24 single-feature specialists are
+> still in the codebase, selected with `SWARM_GRANULARITY=specialists`
+> (≈49 calls/pass). The default is `grouped` — the 5 visual-symptom
+> group agents. Identical blackboard / round-2 / consolidator wiring
+> either way; only the roster size changes.
 
 ### Stochastic re-runs and agreement
 
-The whole 5-stage chain is run **N times** (`VLLM_N_RUNS`, default 10)
-with different seeds — each stage gets a distinct seed offset so a
-re-run genuinely re-walks the graph rather than replaying a cached
-answer. The K-of-N agreement filter (`VLLM_AGREEMENT_MIN`, default 3)
-groups VerdictStage deltas by `field`, clusters them on `image_shows`
-Jaccard similarity, and keeps only clusters that recur across at least
-K of the N passes. This removes per-pass hallucinations: a real
-salient feature recurs across stochastic re-walks; noise does not.
+The whole pass is run **N times** (`VLLM_N_RUNS`, default 10) with
+different seeds. The K-of-N agreement filter (`VLLM_AGREEMENT_MIN`,
+default 3) groups the consolidated deltas by `field`, clusters them on
+`image_shows` Jaccard similarity, and keeps only clusters that recur
+across at least K of the N passes. This removes per-pass
+hallucinations: a real salient visual feature recurs across stochastic
+re-runs; noise does not.
 
 ### Web-grounded verifier and conservative merge
 
@@ -350,11 +353,9 @@ the existing one's support count instead of duplicating it.
         }
       ],
       "__swarm_meta__": {
-        "granularity": "stages",
-        "look_alike_verdicts": [
-          {"verdict": "canonical", "matched_look_alike": "",
-           "recommended_followup": ""}
-        ]
+        "granularity": "grouped",
+        "n_runs": 10, "agreement_min": 3,
+        "n_after_agreement": 1
       }
     }
   }
@@ -367,7 +368,7 @@ The numbers below are computed from `BugWood_Diseases_usable.csv`
 (10,877 usable rows; columns `NormCrop`, `NormDisease`,
 `Location (State)`). One **tuple** = one (crop, disease, state) with at
 least one cached image; the swarm grounds each tuple in one primary
-photograph and runs N stochastic chain passes over it.
+photograph and runs N stochastic passes over it.
 
 | Scope | Tuples | (crop,disease) classes |
 |---|---:|---:|
@@ -379,7 +380,7 @@ photograph and runs N stochastic chain passes over it.
 Per-tuple yield model (defaults N=10, K=3):
 
 ```
-raw deltas / pass        R   ≈ 2–6   (VerdictStage; ~0 for blurry /
+raw deltas / pass        R   ≈ 2–6   (consolidated; ~0 for blurry /
                                        wrong-organ / uninformative photos)
 after K-of-N agreement       ≈ 1–4   per tuple (noise collapses; a
                                        fraction of tuples yield 0)
@@ -594,7 +595,7 @@ flowchart LR
     F[Field photographs<br/>geo-tagged]
     S0[Step 0 LOCAL<br/>sh_00_setup_local.sh<br/>filter CSV + Claude label judge]
     S1[Step 1 LOCAL<br/>sh_01_phase0_local.sh<br/>canonical KB via claude -p]
-    S2[Step 2 NOVA<br/>sh_02_swarm_nova.sh<br/>DR.Arti 5-stage Qwen chain<br/>in-process vLLM]
+    S2[Step 2 NOVA<br/>sh_02_swarm_nova.sh<br/>5 visual-symptom group agents<br/>in-process vLLM]
     S3[Step 3 LOCAL<br/>sh_03_validate_local.sh<br/>Claude+WebSearch verifier]
     DB[(PathomeDB)]
     CAP[KB → caption<br/>plantswarm/captioning.py]

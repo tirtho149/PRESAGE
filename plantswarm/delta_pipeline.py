@@ -67,32 +67,35 @@ from dataclasses import asdict
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, NamedTuple, Optional, Tuple
 
-from agents import SPECIALIST_AGENTS, STAGE_CHAIN
+from agents import SPECIALIST_AGENTS, VISUAL_GROUP_AGENTS
 from agents.base_agent import AgentDeltaOutput, BaseAgent
 from agents.diagnosis_agent import DiagnosisAgent
-from agents.stage_agents import StageAgent
 from utils.vllm_client import VLLMClient
 from utils.vllm_inproc import InProcessVLLMClient, get_inproc_client
 
 
-# Legacy roster: 24 visual-symptom specialists, parallel-invoked per
-# pass (used when SWARM_GRANULARITY=specialists). See agents/__init__.py
-# for the breakdown by organ family.
+# Roster selection. Default 'grouped' = 5 generalized VISUAL-SYMPTOM
+# group agents (LeafSymptomAgent, StemRootSymptomAgent,
+# FruitFlowerSignAgent, WholePlantSymptomAgent, DiagnosticVisualAgent),
+# each comparing the photo to the canonical visual_symptoms KB. They
+# run through the SAME machinery as the legacy specialists: parallel
+# fan-out → shared blackboard → round 2 → DiagnosisAgent consolidator.
+#
+# 'specialists' restores the legacy 24 single-feature specialists.
 SPECIALIST_CLASSES: Tuple[type, ...] = SPECIALIST_AGENTS
 
 
 def _swarm_granularity() -> str:
-    """Which roster runs. Default 'stages' = the DR.Arti.docx 5-stage
-    look-alike decision-graph chain (ContextStage → GrossSymptomStage →
-    DecisiveForkStage → SupportingEvidenceStage → VerdictStage), run
-    sequentially, 5 LLM calls/pass.
+    v = os.environ.get("SWARM_GRANULARITY", "grouped").strip().lower()
+    return "specialists" if v in ("specialists", "specialist", "24") else "grouped"
 
-    Set ``SWARM_GRANULARITY=specialists`` to restore the legacy
-    24-specialist parallel ensemble + DiagnosisAgent consolidator
-    (2-round, ~49 calls/pass).
-    """
-    v = os.environ.get("SWARM_GRANULARITY", "stages").strip().lower()
-    return "specialists" if v in ("specialists", "specialist", "24") else "stages"
+
+def _active_roster() -> Tuple[type, ...]:
+    """The agent classes the swarm fans out per pass, per
+    ``SWARM_GRANULARITY``. Default = 5 visual-symptom group agents."""
+    if _swarm_granularity() == "specialists":
+        return SPECIALIST_AGENTS
+    return VISUAL_GROUP_AGENTS
 
 
 # ---------------------------------------------------------------------------
@@ -251,7 +254,7 @@ def _run_single_pass(
     enables the stigmergy round; can be overridden via
     ``VLLM_SWARM_ROUNDS`` env var in ``run_for_state``.
     """
-    specialists: List[BaseAgent] = [cls(client) for cls in SPECIALIST_CLASSES]
+    specialists: List[BaseAgent] = [cls(client) for cls in _active_roster()]
     n_specialists = len(specialists)
 
     def _run_round(
@@ -341,64 +344,6 @@ def _run_single_pass(
         "specialist_outputs":  all_specialist_outputs,
         "consolidator_output": consolidator_output,
         "final_deltas":        consolidator_output.deltas,
-    }
-
-
-def _run_single_pass_chain(
-    *,
-    crop: str,
-    disease: str,
-    state: str,
-    canonical: Dict[str, Any],
-    image_data_url: str,
-    existing_deltas: List[Dict[str, Any]],
-    client: VLLMClient,
-    pass_idx: int,
-    seed: int,
-    temperature: float,
-    **_ignored: Any,
-) -> Dict[str, Any]:
-    """One pass through the DR.Arti.docx 5-stage decision-graph chain.
-
-    Stages run SEQUENTIALLY (not a parallel ensemble): each consumes
-    the canonical KB, the photo, and every prior stage's structured
-    output. ``VerdictStage`` (stage 5) is the consolidator — it emits
-    the schema-compliant ``deltas`` and a look-alike verdict. 5 LLM
-    calls per pass.
-
-    Returns the SAME dict keys as :func:`_run_single_pass` so the
-    cross-pass agreement filter, trace serializer, and merge are
-    unchanged.
-    """
-    stages: List[StageAgent] = [cls(client) for cls in STAGE_CHAIN]
-    prior: List[AgentDeltaOutput] = []
-    for i, stg in enumerate(stages):
-        out = stg.run_stage(
-            crop=crop, disease=disease, state=state,
-            canonical=canonical, image_data_url=image_data_url,
-            existing_kb_deltas=existing_deltas,
-            prior_stages=prior,
-            # Each stage gets a distinct seed offset so a stochastic
-            # re-run genuinely re-walks the graph.
-            seed=seed + i,
-            temperature=temperature,
-        )
-        prior.append(out)
-
-    verdict_output = prior[-1]  # VerdictStage
-    look_alike_verdict = getattr(verdict_output, "look_alike_verdict", None)
-
-    return {
-        "pass_idx":            pass_idx,
-        "swarm_rounds":        1,
-        # Keep the trace/serializer keys populated. The 5 stage outputs
-        # double as "specialist_outputs"; round2 is unused here.
-        "round1_outputs":      list(prior),
-        "round2_outputs":      [],
-        "specialist_outputs":  list(prior),
-        "consolidator_output": verdict_output,
-        "final_deltas":        verdict_output.deltas,
-        "look_alike_verdict":  look_alike_verdict,
     }
 
 
@@ -659,13 +604,9 @@ def run_for_state(
     image_data_url = _load_image_data_url(image_path)
 
     granularity = _swarm_granularity()
-    pass_fn = (
-        _run_single_pass_chain if granularity == "stages"
-        else _run_single_pass
-    )
 
     def _one(i: int) -> Dict[str, Any]:
-        return pass_fn(
+        return _run_single_pass(
             crop=crop, disease=disease, state=state,
             canonical=canonical, image_data_url=image_data_url,
             existing_deltas=existing, client=client,
@@ -770,8 +711,6 @@ def run_for_state(
             "kappa_per_pass":       [p["consolidator_output"].confidence for p in passes],
             "n_raw_per_pass":       [len(p["final_deltas"]) for p in passes],
             "n_after_agreement":    len(candidates),
-            # DR.Arti look-alike verdicts (stages mode only; None-safe).
-            "look_alike_verdicts":  [p.get("look_alike_verdict") for p in passes],
             "verifier":             verifier_meta,
             "merge":                merge_counts,
         },

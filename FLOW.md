@@ -33,7 +33,7 @@ flowchart TD
     PUSH1([git push canonical KB])
     PULL1([git pull on Nova])
     VLLM[vLLM Qwen2.5-VL-7B-Instruct<br/>loaded IN-PROCESS<br/>utils/vllm_inproc.py<br/>no HTTP server]
-    S2[STEP 2 NOVA<br/>sh_02_swarm_nova.sh<br/>DR.Arti 5-stage look-alike chain<br/>Context→Gross→DecisiveFork→Support→Verdict<br/>SWARM_GRANULARITY=specialists for legacy 24-agent]
+    S2[STEP 2 NOVA<br/>sh_02_swarm_nova.sh<br/>5 visual-symptom group agents vs canonical visual_symptoms<br/>parallel + blackboard round-2 + VisualDiagnosisAgent<br/>SWARM_GRANULARITY=specialists for legacy 24-agent]
     PUSH2([git push unverified KB])
     S3[STEP 3 LOCAL<br/>sh_03_validate_local.sh<br/>Claude+WebSearch verifier over each delta]
     REG([artifacts/pathome_kb/Crop/final_registry.json<br/>canonical + verified regional_observations<br/>— KB deliverable])
@@ -68,7 +68,7 @@ flowchart TD
 |---|---|---|---|---|
 | 0 | Filter CSV + Claude label judge | LOCAL | Claude (headless) | smoke ~10-30 min / prod ~1-2 h |
 | 1 | Phase 0 canonical KB | LOCAL | Claude (headless) | smoke ~30-45 min / prod 16-24 h |
-| 2 | DR.Arti 5-stage Qwen chain (in-process vLLM) | NOVA | 1× A100-80GB | smoke ~0.5-1 h / prod ~3-6 h (5 calls/pass; ≈49 in legacy specialists mode) |
+| 2 | 5 visual-symptom group-agent Qwen swarm (in-process vLLM) | NOVA | 1× A100-80GB | smoke ~0.5-1 h / prod ~3-6 h (11 calls/pass 2-round; ≈49 in legacy 24-specialist mode) |
 | 3 | Claude+WebSearch verifier | LOCAL | Claude (headless) | smoke ~30-60 min / prod 1-3 days |
 | 4 | BioCAP-style encoder fine-tune | NOVA | 1× A100 | ~30-60 min per variant; ~5 GPU-h for T01..T11 |
 | 5 | Frozen-encoder + TabPFN + Grad-CAM | LOCAL | 1× small GPU + CPU | smoke ~1-2 h / prod ~4-8 h |
@@ -126,33 +126,41 @@ Run via `python -m pathome_kb --regional-only`. The orchestrator is
 `plantswarm.delta_pipeline.run_for_state`, called once per
 (crop, disease, state, cached image) tuple.
 
-> **Default roster: the DR.Arti.docx 5-stage decision-graph chain.**
-> Per pass the swarm runs **5 stage agents in sequence**, faithful to
-> the pairwise look-alike CoTs in `DR.Arti.docx`:
+> **Default roster: 5 generalized visual-symptom group agents.**
+> The swarm is **visual-symptoms only** — it describes what is visible
+> in the photograph and compares it to the canonical KB
+> `visual_symptoms` block (summary / diagnostic_features /
+> look_alikes). It never emits pathogen, disease-type, or treatment
+> claims (those are Claude's Phase 0 job). Nothing is crop- or
+> disease-specific; every agent generalizes from whatever canonical
+> `visual_symptoms` text it is given. `DR.Arti.docx` informs only the
+> *reasoning style* — a short, ordered, discriminative visual
+> chain-of-thought — not a literal pipeline.
 >
-> 1. **ContextStage** — timing / site / field-history priors → "lean X"
-> 2. **GrossSymptomStage** — dominant foliar/gross symptom; continue if ambiguous
-> 3. **DecisiveForkStage** — the single decisive visual fork the photo
->    can answer (split-stem pith, root cysts, petiole-vs-blade, leg
->    color…); explicit "structure not visible" allowed
-> 4. **SupportingEvidenceStage** — corroborating, non-decisive features
->    (adjusts confidence only, never overturns the fork)
-> 5. **VerdictStage** — explicit final reasoning: *canonical* /
->    *look_alike:&lt;name&gt;* / *ambiguous + recommended follow-up
->    test*. This stage is the consolidator and the only one that emits
->    schema `deltas`.
+> The 24 visual delta fields are partitioned across 5 group agents
+> (no overlap, no omission):
 >
-> The discrimination set is the canonical disease vs its Phase-0
-> `look_alikes`. Stages run sequentially, each seeing all prior stage
-> output → **5 LLM calls/pass** (vs 49 for the legacy ensemble). The
-> K-of-N agreement filter, Claude verifier, and conservative merge
-> (§3a, §3d, §3e) are **unchanged** — they consume `VerdictStage`'s
-> deltas exactly as before. The look-alike verdict per pass is recorded
-> in `__swarm_meta__.look_alike_verdicts`.
+> 1. **LeafSymptomAgent** — 8 leaf fields (lesion shape/color/texture,
+>    chlorosis, necrosis, curl, vein pattern, geometry)
+> 2. **StemRootSymptomAgent** — 6 fields (stem lesion/pith/surface/
+>    discoloration, root, crown-collar) — split-stem pith is the
+>    decisive fork when visible
+> 3. **FruitFlowerSignAgent** — 3 fields (flower, fruit, sporulation
+>    signs)
+> 4. **WholePlantSymptomAgent** — 3 fields (wilting, defoliation,
+>    spatial pattern)
+> 5. **DiagnosticVisualAgent** — 5 fields (concentric pattern, color
+>    palette, visual look-alikes, severity, other)
 >
-> `SWARM_GRANULARITY=specialists` restores the legacy 24-specialist
-> 2-round parallel ensemble + `DiagnosisAgent` consolidator described
-> in §3b (≈49 calls/pass).
+> These run through the **same machinery** as the legacy specialists:
+> parallel fan-out → shared blackboard → round 2 (stigmergy +
+> cross_refs) → `VisualDiagnosisAgent` consolidator → K-of-N agreement
+> → Claude verifier → conservative merge (§3a–§3e all unchanged).
+> Per-pass cost = 5 + 5 + 1 = **11 calls** (2-round) or 6 (single
+> round), vs 49 for the legacy 24-specialist roster.
+>
+> `SWARM_GRANULARITY=specialists` restores the legacy 24 single-feature
+> specialists (the §3b roster); the default is `grouped`.
 
 ### 3a. Per-tuple flow (iterative KB loop with web-grounded verifier)
 
@@ -223,7 +231,9 @@ not processed this run are preserved verbatim**.
 
 > The diagram and call-count below describe the **legacy** 24-specialist
 > ensemble, now opt-in via `SWARM_GRANULARITY=specialists`. The default
-> path is the 5-stage chain documented in the box above §3a.
+> path runs the same diagram but with the 5 visual-symptom group
+> agents (box above §3a) instead of these 24 single-feature
+> specialists — identical blackboard / round-2 / consolidator wiring.
 
 Each of the N stochastic passes runs a **2-round real swarm**:
 
@@ -367,7 +377,8 @@ agreement.
 
 **Per-pass LLM calls (specialists mode)** = 24 (round 1) + 24 (round 2)
 + 1 consolidator = **49 calls** (set `VLLM_SWARM_ROUNDS=1` for the
-25-call single-round mode). The default `stages` roster is **5 calls**. Qwen2.5-VL-7B handles ~50–100
+25-call single-round mode). The default `grouped` roster is **11
+calls** (5 + 5 + 1, 2-round) or 6 (single-round). Qwen2.5-VL-7B handles ~50–100
 concurrent on one A100, so wall-clock per pass roughly doubles to
 ~60–120 s — the cost of real swarm behavior.
 
@@ -770,7 +781,7 @@ PlantSwarm/
 |   |--- 6-step pipeline (one .sh per step) ---
 |   |-- sh_00_setup_local.sh               STEP 0 LOCAL: filter CSV + Claude judge
 |   |-- sh_01_phase0_local.sh              STEP 1 LOCAL: Phase 0 canonical KB
-|   |-- sh_02_swarm_nova.sh                STEP 2 NOVA: DR.Arti 5-stage chain
+|   |-- sh_02_swarm_nova.sh                STEP 2 NOVA: 5 visual-symptom group agents
 |   |-- sh_03_validate_local.sh            STEP 3 LOCAL: Claude+WebSearch verifier
 |   |-- sh_04_train_encoder_nova.sh        STEP 4 NOVA: BioCAP-style encoder train
 |   |-- sh_05_tabpfn_local.sh              STEP 5 LOCAL: TabPFN + Grad-CAM + tables
@@ -831,7 +842,7 @@ PlantSwarm/
 
 | Env var | Default | Controls |
 |---|---|---|
-| SWARM_GRANULARITY | stages | `stages` (default) = DR.Arti.docx 5-stage decision-graph chain, 5 calls/pass. `specialists` = legacy 24-agent 2-round ensemble + DiagnosisAgent (§3b), ≈49 calls/pass. |
+| SWARM_GRANULARITY | grouped | `grouped` (default) = 5 generalized visual-symptom group agents vs canonical visual_symptoms (11 calls/pass 2-round). `specialists` = legacy 24 single-feature specialists (§3b), ≈49 calls/pass. Same blackboard/consolidator machinery either way. |
 | VLLM_INPROCESS | 1 | When 1 (default), `delta_pipeline.build_client_from_env` returns the `utils/vllm_inproc.InProcessVLLMClient` (no HTTP). Set to 0 to fall back to the legacy `VLLMClient` + external `vllm serve` (debug only). |
 | VLLM_MODEL | Qwen/Qwen2.5-VL-7B-Instruct | Model id loaded into the in-process engine |
 | VLLM_MAX_MODEL_LEN | 32768 | In-process engine context window |

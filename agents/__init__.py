@@ -68,14 +68,15 @@ from .diagnostic_agents import (
     LookAlikeCoTAgent,
     SeverityVisualAgent,
 )
-# DR.Arti.docx 5-stage look-alike decision-graph chain (default roster).
-from .stage_agents import (
-    ContextStage,
-    GrossSymptomStage,
-    DecisiveForkStage,
-    SupportingEvidenceStage,
-    VerdictStage,
-    STAGE_CHAIN,
+# Default roster: 5 generalized VISUAL-SYMPTOM group agents (compare
+# the photo to the canonical visual_symptoms KB; visual-only).
+from .visual_group_agents import (
+    LeafSymptomAgent,
+    StemRootSymptomAgent,
+    FruitFlowerSignAgent,
+    WholePlantSymptomAgent,
+    DiagnosticVisualAgent,
+    VISUAL_GROUP_AGENTS,
 )
 
 
@@ -128,7 +129,8 @@ __all__ = [
     # diagnostic cross-cutters
     "ConcentricPatternAgent", "ColorPaletteAgent",
     "LookAlikeCoTAgent", "SeverityVisualAgent",
-    # DR.Arti 5-stage decision-graph chain
-    "ContextStage", "GrossSymptomStage", "DecisiveForkStage",
-    "SupportingEvidenceStage", "VerdictStage", "STAGE_CHAIN",
+    # default roster — 5 visual-symptom group agents
+    "LeafSymptomAgent", "StemRootSymptomAgent", "FruitFlowerSignAgent",
+    "WholePlantSymptomAgent", "DiagnosticVisualAgent",
+    "VISUAL_GROUP_AGENTS",
 ]
