@@ -52,6 +52,7 @@ class VLLMClient:
         seed: int = 42,
         max_new_tokens: int = 512,
         timeout: int = 120,
+        api_key: Optional[str] = None,
     ):
         self.base_url = base_url.rstrip("/")
         self.model = model
@@ -59,6 +60,7 @@ class VLLMClient:
         self.seed = seed
         self.max_new_tokens = max_new_tokens
         self.timeout = timeout
+        self.api_key = api_key
         self.top_logprobs = 20
         # When False, chat requests omit logprobs (saves bandwidth; entropy_routing forces True).
         self.chat_request_logprobs: bool = True
@@ -143,7 +145,12 @@ class VLLMClient:
             json=payload,
             timeout=self.timeout,
         )
-        resp.raise_for_status()
+        if resp.status_code >= 400:
+            body = (resp.text or "")[:600].replace("\n", " ")
+            raise requests.HTTPError(
+                f"{resp.status_code} {resp.reason} for {resp.url} :: {body}",
+                response=resp,
+            )
         data = resp.json()
 
         choice = data["choices"][0]

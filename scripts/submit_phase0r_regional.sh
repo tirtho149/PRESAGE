@@ -113,11 +113,20 @@ echo "[cache] populated: $(find "$PATHOME_IMAGE_CACHE_DIR" -maxdepth 1 -type f |
 VLLM_LOG="logs/vllm-${SLURM_JOB_ID}.log"
 
 # ---- boot vLLM in the background ------------------------------------------
-echo "[vllm] booting $MODEL on :$PORT ..."
+# Qwen2.5-VL on a full-res Bugwood image can emit 2-4k image tokens. With a
+# multi-KB agent prompt + 512 reserved for output, 8192 overflows → vLLM 400.
+# Bump max-model-len AND cap image-token count via Qwen's recommended
+# mm-processor knobs (max_pixels=1003520 ≈ 1024px on the long side).
+MAX_MODEL_LEN="${VLLM_MAX_MODEL_LEN:-32768}"
+MM_KWARGS_DEFAULT='{"min_pixels":50176,"max_pixels":1003520}'
+MM_KWARGS="${VLLM_MM_KWARGS:-$MM_KWARGS_DEFAULT}"
+echo "[vllm] booting $MODEL on :$PORT (max_model_len=$MAX_MODEL_LEN) ..."
 python -m vllm.entrypoints.openai.api_server \
   --model "$MODEL" \
   --port  "$PORT" \
-  --max-model-len 8192 \
+  --max-model-len "$MAX_MODEL_LEN" \
+  --mm-processor-kwargs "$MM_KWARGS" \
+  --limit-mm-per-prompt image=1 \
   --trust-remote-code \
   > "$VLLM_LOG" 2>&1 &
 VLLM_PID=$!
