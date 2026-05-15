@@ -70,7 +70,18 @@ echo "Phase 0R: regional deltas (qwen swarm, in-process vLLM)"
 echo "Job ID: $SLURM_JOB_ID  Start: $(date)"
 echo "================================"
 
-module load python cuda/12.8
+# pip-installed torch BUNDLES its own CUDA runtime; it needs only the
+# NVIDIA kernel driver, NOT a system CUDA toolkit. Loading a system
+# `cuda/12.8` module shadows torch's bundled libcudart with a
+# mismatched one -> "CUDA unknown error ... Setting the available
+# devices to be zero" on the very first torch CUDA init. So by default
+# we load ONLY python. Set PATHOME_LOAD_CUDA_MODULE=1 to restore the
+# old behaviour if your torch was built against the system toolkit.
+if [ "${PATHOME_LOAD_CUDA_MODULE:-0}" = "1" ]; then
+  module load python cuda/12.8
+else
+  module load python
+fi
 
 # Resolve the venv. Default: $PATHOME_REPO/.venv (in-repo). Override with
 # PATHOME_VENV=/path/to/venv (e.g. one level above the repo, shared
@@ -91,6 +102,31 @@ fi
 echo "venv: $VENV"
 source "$VENV/bin/activate"
 mkdir -p logs
+
+# ---- CUDA preflight: fail fast with a CLEAR diagnostic ---------------------
+# torch._C._cuda_init() was raising "CUDA unknown error ... Setting the
+# available devices to be zero" deep inside model load. Surface the real
+# state here before anything heavy runs.
+echo "---- CUDA preflight ----"
+echo "CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES:-<unset>}"
+echo "SLURM_JOB_GPUS=${SLURM_JOB_GPUS:-<unset>}  SLURM_GPUS=${SLURM_GPUS:-<unset>}"
+nvidia-smi -L 2>&1 || echo "  nvidia-smi -L failed (no GPU bound to this job?)"
+python - <<'PY' || { echo "[preflight] torch cannot init CUDA — aborting before model load. See hints below."; \
+  echo "  1) Is a GPU actually allocated? (sbatch has --gres=gpu:a100:1; check 'squeue --me' / nvidia-smi above)"; \
+  echo "  2) System CUDA module vs pip-torch bundled CUDA mismatch — this script now loads ONLY 'python' by default."; \
+  echo "  3) torch built without CUDA: python -c 'import torch;print(torch.version.cuda)'"; \
+  echo "  4) Try an interactive node: srun --gres=gpu:a100:1 --partition=nova --pty bash, then the same python check."; \
+  exit 3; }
+import sys, torch
+print("torch", torch.__version__, "| torch.version.cuda", torch.version.cuda)
+ok = torch.cuda.is_available()
+print("torch.cuda.is_available():", ok, "| device_count:", torch.cuda.device_count() if ok else 0)
+if not ok:
+    sys.exit(1)
+torch.zeros(1).cuda()          # force a real CUDA context now
+print("CUDA preflight OK:", torch.cuda.get_device_name(0))
+PY
+echo "------------------------"
 
 CSV="${PATHOME_USABLE_CSV:-BugWood_Diseases_usable.csv}"
 OUT="${PATHOME_SEED_FILE:-artifacts/pathome_seed/symptoms_seed.json}"
