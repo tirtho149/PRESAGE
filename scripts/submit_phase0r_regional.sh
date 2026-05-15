@@ -18,6 +18,18 @@
 PATHOME_REPO="${PATHOME_REPO:-$(pwd)}"
 cd "$PATHOME_REPO"
 
+# ---- guaranteed persistent log --------------------------------------------
+# The #SBATCH --output=logs/... path is RELATIVE to the submit dir and is
+# opened by SLURM at job start — before this script can `mkdir -p logs`.
+# If that dir doesn't exist at submit time the SLURM log is lost. So we
+# ALSO tee everything to an absolute path under $PATHOME_REPO/logs that
+# we create right now. Override dir with PATHOME_LOG_DIR.
+PATHOME_LOG_DIR="${PATHOME_LOG_DIR:-$PATHOME_REPO/logs}"
+mkdir -p "$PATHOME_LOG_DIR"
+RUNLOG="$PATHOME_LOG_DIR/phase0r_${SLURM_JOB_ID:-manual}_$(date +%Y%m%d_%H%M%S).log"
+exec > >(tee -a "$RUNLOG") 2>&1
+echo "[log] full job output is being stored at: $RUNLOG"
+
 # ============================================================================
 # Phase 0R — Qwen-swarm regional delta extraction (Nova A100, in-process vLLM)
 # ============================================================================
