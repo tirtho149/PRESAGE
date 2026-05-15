@@ -111,6 +111,12 @@ echo "---- CUDA preflight ----"
 echo "CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES:-<unset>}"
 echo "SLURM_JOB_GPUS=${SLURM_JOB_GPUS:-<unset>}  SLURM_GPUS=${SLURM_GPUS:-<unset>}"
 nvidia-smi -L 2>&1 || echo "  nvidia-smi -L failed (no GPU bound to this job?)"
+# Driver version vs torch's bundled CUDA is the usual culprit: a
+# cu128 torch needs driver >= R570. Log the driver's max CUDA so the
+# right torch wheel is obvious from the log alone.
+nvidia-smi --query-gpu=driver_version --format=csv,noheader 2>/dev/null \
+  | sed 's/^/  NVIDIA driver: /' || true
+nvidia-smi 2>/dev/null | grep -m1 "CUDA Version" | sed 's/^/  /' || true
 python - <<'PY' || { echo "[preflight] torch cannot init CUDA — aborting before model load. See hints below."; \
   echo "  1) Is a GPU actually allocated? (sbatch has --gres=gpu:a100:1; check 'squeue --me' / nvidia-smi above)"; \
   echo "  2) System CUDA module vs pip-torch bundled CUDA mismatch — this script now loads ONLY 'python' by default."; \
