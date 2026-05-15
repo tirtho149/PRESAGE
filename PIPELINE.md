@@ -253,7 +253,7 @@ canonical description as Charcoal Rot in Alabama.
 
 ---
 
-## Phase 2 — Regional Image-Grounded Deltas (Handoff Swarm)
+## Phase 2 — Regional Image-Grounded Deltas (DR.Arti 5-stage chain)
 
 **Goal.** For every (crop, disease, state) tuple that has at least one
 field photograph available, identify how the disease *presents in the
@@ -261,132 +261,76 @@ field in that state* and emit image-supported deltas that go beyond
 what the canonical block already says — additions or contradictions,
 never restatements.
 
-### What changed from the previous design
+### The design: a look-alike decision-graph, not a feature ensemble
 
-The previous design ran four specialists in parallel against the
-canonical block and the image. They never read each other's output.
-A consolidator merged the four streams at the end, then an agreement
-filter removed per-run hallucinations, then a web-search verifier
-filtered the survivors. This was ensemble sampling with a cleanup
-step, not a swarm.
+`DR.Arti.docx` is the methodological reference. It is **not** a
+feature-extraction spec — it is a set of pairwise *look-alike
+discrimination* chains-of-thought (SDS vs BSR, IDC vs SCN, Palmer vs
+waterhemp, corn rootworm vs cucumber beetle). Every one walks the same
+five ordered stages, where one stage is a single **decisive fork** and
+the last stage is allowed to say *"cannot tell from this photo —
+recommend a specific test"*. Phase 2 implements that chain.
 
-The new design is a real handoff swarm. Specialists run sequentially.
-Each one reads a shared running log of the deltas previous specialists
-have already written. Each one decides which agent runs next. The
-verifier is part of the loop, not a post-filter — it can hand a
-rejected delta back to the originating specialist for refinement.
+Per (crop, disease, state) tuple the swarm runs **5 stage agents in
+sequence** (not a parallel ensemble). The candidates being
+discriminated are the canonical disease vs its Phase-1 `look_alikes`
+list. Each stage sees the canonical KB, the field photograph, and
+every prior stage's structured output:
 
-### Shared context
+```mermaid
+flowchart LR
+    CTX[1. ContextStage<br/>timing / site / field-history priors<br/>→ lean X]
+    GRO[2. GrossSymptomStage<br/>dominant foliar/gross symptom<br/>→ continue if ambiguous]
+    FRK[3. DecisiveForkStage<br/>the ONE decisive visual fork<br/>split-stem pith / root cysts /<br/>petiole-vs-blade / leg color<br/>→ diagnostic, or 'not visible']
+    SUP[4. SupportingEvidenceStage<br/>corroborating non-decisive cues<br/>→ adjusts confidence only]
+    VER[5. VerdictStage<br/>canonical | look_alike:NAME |<br/>ambiguous + recommended test<br/>→ emits the schema deltas]
 
-Every agent in the swarm reads two things.
+    CTX --> GRO --> FRK --> SUP --> VER
 
-A **static reference**. The canonical KB block for this disease, plus
-the field photograph for this state. Neither changes during the run.
+    classDef s fill:#fef,stroke:#606
+    class CTX,GRO,FRK,SUP,VER s
+```
 
-A **running log**. The deltas written so far in this run, in order,
-each tagged with the agent that wrote it. Every agent appends to the
-log when it finishes its turn. Every later agent reads it before
-writing.
+Only **VerdictStage** emits schema deltas (`field`, `canonical_says`,
+`image_shows`, `image_quote`). It is the consolidator — there is no
+separate consolidator agent. Stages 1–4 carry their findings forward
+in their reasoning; they do not emit deltas. VerdictStage also records
+a per-pass look-alike verdict (`canonical` / `look_alike:<name>` /
+`ambiguous` + recommended follow-up) into
+`__swarm_meta__.look_alike_verdicts`. This is **5 LLM calls per pass**.
 
-The running log is what makes the handoffs meaningful. Without it,
-sequential specialists do the same thing as parallel specialists. With
-it, each specialist builds on, refines, or contradicts what came
-before.
+When a disease has no `look_alikes` in the canonical KB, the chain
+degrades gracefully to image-vs-canonical discrepancy capture — it
+still emits deltas.
 
-### Diagram
+> **Legacy roster.** The earlier 24-specialist, 2-round parallel
+> ensemble + `DiagnosisAgent` consolidator (≈49 calls/pass) is still
+> in the codebase and is selected with `SWARM_GRANULARITY=specialists`.
+> The default is the 5-stage chain (`SWARM_GRANULARITY=stages`).
 
-![Phase 0R real swarm — 5-act walkthrough](docs/assets/swarm_flow.gif)
+### Stochastic re-runs and agreement
 
-*Five acts walking through ONE (crop, disease, state) pass through
-the 2-round real swarm.
-**Act 1** sets up: static context (canonical KB + field photo) and
-the 7 organ-family group cards that hold all 24 specialists.
-**Act 2 (Round 1)** runs the independent fan-out — each of the 24
-specialists examines the photo without knowing what its peers think;
-deltas accumulate in the running log.
-**Act 3 (Round 2, the real-swarm round)** publishes all round-1
-outputs to a shared blackboard and re-runs every specialist with the
-blackboard visible. Animated cross-arrows fire on screen:
-green `SUPPORT`, red `CHALLENGE`, gray `WITHDRAW`. You watch
-StemPithAgent SUPPORT DefoliationAgent (both → SDS), ColorPaletteAgent
-CHALLENGE LeafLesionColorAgent ("tan, not brown"), and
-LeafLesionColorAgent WITHDRAW its round-1 call after the challenge.
-**Act 4** shows VisualDiagnosisAgent walking the 5-step CoT — triage
-visible organs → decisive forks (white pith + bare petioles + blue
-roots → SDS) → adjudicate cross_refs → dedup → emit final deltas
-with a CoT trace.
-**Act 5** runs the cross-pass K-of-N agreement filter, the Claude
-web verifier, and the conservative merge into
-`final_registry.json[*].regional_observations[<state>].deltas[]`.*
+The whole 5-stage chain is run **N times** (`VLLM_N_RUNS`, default 10)
+with different seeds — each stage gets a distinct seed offset so a
+re-run genuinely re-walks the graph rather than replaying a cached
+answer. The K-of-N agreement filter (`VLLM_AGREEMENT_MIN`, default 3)
+groups VerdictStage deltas by `field`, clusters them on `image_shows`
+Jaccard similarity, and keeps only clusters that recur across at least
+K of the N passes. This removes per-pass hallucinations: a real
+salient feature recurs across stochastic re-walks; noise does not.
 
-### Agents
+### Web-grounded verifier and conservative merge
 
-**Triage.** Reads the static context only. Decides which specialist
-should run first based on what looks most off about the leaf. Hands
-off to one of the four specialists. Writes nothing to the log.
-
-**Morphology specialist.** Lesion shape, color, distribution on the
-organ. Reads static context and running log. Writes morphology deltas.
-Picks the next agent.
-
-**Symptom specialist.** Spread pattern, systemic versus local,
-diagnostic visual features. Reads static context and running log.
-Writes symptom deltas. Picks the next agent.
-
-**Pathogen specialist.** Look-alikes, confusion risks, disease-type
-clues visible in the image. Reads static context and running log.
-Writes look-alike deltas. Picks the next agent.
-
-**Severity specialist.** Severity rating and treatment-relevant
-observations. Reads static context and running log. Writes severity
-deltas. Picks the next agent.
-
-**Verifier.** Claude headless with web search. Reads the canonical
-block, the image, and every delta written so far. For each unverified
-delta, runs a web search and assigns one of three labels: *verified*,
-*weakly supported*, or *rejected*. On verified or weakly supported,
-marks the delta and hands off to the Consolidator. On rejected, hands
-back to the specialist that wrote the delta with an explanation.
-
-**Consolidator.** Reads everything. Deduplicates. Drops any delta that
-merely restates the canonical block. Emits the final delta set and
-terminates the run.
-
-### Handoff rules
-
-A specialist cannot hand off to itself.
-
-A specialist may hand off to the Verifier mid-run if it wants its
-deltas checked before later specialists depend on them.
-
-The Verifier may hand back to any specialist for refinement, but a
-single delta can be re-verified at most twice. On the third rejection
-the Consolidator drops it.
-
-The Consolidator is the only agent that can terminate. It terminates
-when every delta has been labeled and no specialist has outstanding
-work.
-
-A maximum-turns cap (20 turns per run) prevents pathological loops.
-
-### Stochastic re-runs
-
-The whole sequential swarm is run N times with different random seeds.
-Agent ordering, specialist routing, and per-agent generation are all
-stochastic. The agreement filter keeps only deltas that appear in at
-least K out of N independent runs. This removes per-run hallucinations
-the same way the previous design did, but now over runs of the full
-handoff sequence rather than over parallel single-shot calls.
-
-### Conservative merge
-
-Same as the previous design. New deltas are added to the existing
-regional record without overwriting; overlapping deltas increase the
-support count rather than replacing the entry.
+K-of-N survivors go to the Claude headless + WebSearch verifier
+(`PATHOME_USE_VERIFIER=1`), which assigns each candidate one of:
+*verified*, *weakly_supported*, *provisional*, *novel_plausible*,
+*contradictory* (dropped), or *duplicate_existing* (dropped, existing
+support bumped). Accepted deltas carry `web_support` citations. The
+conservative merge then folds them into the existing per-state record:
+existing deltas are never overwritten; an overlapping new delta bumps
+the existing one's support count instead of duplicating it.
 
 ### Output
-
-The output format is unchanged.
 
 ```jsonc
 {
@@ -396,72 +340,74 @@ The output format is unchanged.
     "Alabama": {
       "deltas": [
         {
-          "field": "lesion_morphology",
+          "field": "concentric_pattern",
           "canonical_says": "(not specified)",
           "image_shows": "yellow halos around dark sunken lesions",
-          "image_evidence_id": "<photograph id>",
-          "swarm_support": 4,
+          "image_id": "<photograph id>",
+          "__support__": 4,
           "verification_status": "verified",
-          "web_support": [
-            { "url": "https://...", "quote": "..." }
-          ],
-          "handoff_provenance": [
-            "morphology", "symptom", "pathogen", "verifier"
-          ]
+          "web_support": [ { "url": "https://...", "quote": "..." } ]
         }
-      ]
+      ],
+      "__swarm_meta__": {
+        "granularity": "stages",
+        "look_alike_verdicts": [
+          {"verdict": "canonical", "matched_look_alike": "",
+           "recommended_followup": ""}
+        ]
+      }
     }
   }
 }
 ```
 
-The new `handoff_provenance` field records the chain of agents that
-contributed to each delta. This is what enables the diagnostic metrics
-below.
+### Delta capacity — how much regional KB this can produce
 
-### Metrics that justify the design
+The numbers below are computed from `BugWood_Diseases_usable.csv`
+(10,877 usable rows; columns `NormCrop`, `NormDisease`,
+`Location (State)`). One **tuple** = one (crop, disease, state) with at
+least one cached image; the swarm grounds each tuple in one primary
+photograph and runs N stochastic chain passes over it.
 
-Three diagnostic numbers prove the handoffs are doing real work.
+| Scope | Tuples | (crop,disease) classes |
+|---|---:|---:|
+| Soybean (built) | 76 | 17 |
+| Tomato (built) | 71 | 18 |
+| Soybean + Tomato | 147 | 35 |
+| **Full Bugwood (usable)** | **1,035** | **453** |
 
-1. **Reference rate.** For every delta written by a specialist that
-   ran after position one, check whether the delta builds on a
-   previous specialist's delta. A small LLM judge labels this. If the
-   rate is near zero, specialists are ignoring the running log and the
-   handoff design is decoration.
+Per-tuple yield model (defaults N=10, K=3):
 
-2. **Duplicate rate.** Number of deltas flagged as duplicates by the
-   Consolidator, divided by total deltas, compared against the
-   parallel-specialist baseline. Should drop sharply because later
-   specialists can avoid restating what earlier ones already covered.
+```
+raw deltas / pass        R   ≈ 2–6   (VerdictStage; ~0 for blurry /
+                                       wrong-organ / uninformative photos)
+after K-of-N agreement       ≈ 1–4   per tuple (noise collapses; a
+                                       fraction of tuples yield 0)
+after verifier               × ~0.85 (drops contradictory; cold-start
+                                       pass-through is high)
+after conservative merge     cold start → all added;
+                             warm re-run → overlaps bump support, not count
+------------------------------------------------------------------
+expected NET new deltas / tuple ≈ 1.5 – 2.5   (central ≈ 2)
+```
 
-3. **Order sensitivity.** Run the swarm with three different starting
-   orders on the same tuples. If verified deltas per tuple shift with
-   order, the sequencing matters. If they do not, the handoffs are not
-   doing useful work and the design should be parallelized.
+Projected first-cold-run regional-KB size (deltas):
 
-Three bottom-line numbers go in the paper.
+| Scope | Low (≈1/tuple) | Central (≈2/tuple) | High (≈4/tuple) |
+|---|---:|---:|---:|
+| Soybean | ~75 | ~150 | ~300 |
+| Tomato | ~70 | ~140 | ~285 |
+| Soybean + Tomato | ~150 | ~290 | ~590 |
+| Full Bugwood | ~1,000 | ~2,070 | ~4,140 |
 
-4. **Verified deltas per tuple.** Run the handoff swarm and the
-   parallel-specialist design on the same N tuples. Count surviving
-   deltas. Report mean, standard deviation, and a paired t-test.
-
-5. **Verifier survival rate by agent position.** Plot the fraction of
-   each agent's deltas that survive the verifier against the agent's
-   position in the sequence. In a working handoff swarm, the curve
-   rises across positions because later agents have more context. A
-   flat curve means later agents are not using the running log.
-
-6. **Verified deltas per dollar.** Total compute cost (tokens plus GPU
-   seconds for Qwen plus Claude verifier tokens) divided by verified
-   deltas. The number that defends against the "your method is just
-   expensive" critique.
-
-The honest failure cases are worth naming. If reference rate is near
-zero, collapse to parallel. If duplicate rate does not drop, the
-running log is not helping. If order does not matter, parallelize and
-reclaim the speed. If verified deltas per dollar tie the parallel
-design, report it honestly — the contribution is then the architecture,
-not the numbers.
+These are *additive across re-runs only up to saturation*: the merge
+is idempotent on shape, so re-running a converged tuple bumps support
+counts rather than inflating delta count. The knobs that move the
+total: `VLLM_N_RUNS` (more passes → more stable recall, diminishing
+after ~10), `VLLM_AGREEMENT_MIN` (higher K → fewer but higher-precision
+deltas), and image informativeness (the dominant real-world factor —
+many Bugwood tuples have a single low-information photo and will yield
+0 deltas regardless of N).
 
 Together, the canonical block plus all per-state delta sets are what
 we call **PathomeDB**. Each disease's entry separates *what is true
@@ -648,7 +594,7 @@ flowchart LR
     F[Field photographs<br/>geo-tagged]
     S0[Step 0 LOCAL<br/>sh_00_setup_local.sh<br/>filter CSV + Claude label judge]
     S1[Step 1 LOCAL<br/>sh_01_phase0_local.sh<br/>canonical KB via claude -p]
-    S2[Step 2 NOVA<br/>sh_02_swarm_nova.sh<br/>24-agent 2-round Qwen swarm]
+    S2[Step 2 NOVA<br/>sh_02_swarm_nova.sh<br/>DR.Arti 5-stage Qwen chain<br/>in-process vLLM]
     S3[Step 3 LOCAL<br/>sh_03_validate_local.sh<br/>Claude+WebSearch verifier]
     DB[(PathomeDB)]
     CAP[KB → caption<br/>plantswarm/captioning.py]

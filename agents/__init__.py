@@ -68,6 +68,15 @@ from .diagnostic_agents import (
     LookAlikeCoTAgent,
     SeverityVisualAgent,
 )
+# DR.Arti.docx 5-stage look-alike decision-graph chain (default roster).
+from .stage_agents import (
+    ContextStage,
+    GrossSymptomStage,
+    DecisiveForkStage,
+    SupportingEvidenceStage,
+    VerdictStage,
+    STAGE_CHAIN,
+)
 
 
 # Canonical 24-specialist roster, parallel-invoked by
@@ -119,4 +128,7 @@ __all__ = [
     # diagnostic cross-cutters
     "ConcentricPatternAgent", "ColorPaletteAgent",
     "LookAlikeCoTAgent", "SeverityVisualAgent",
+    # DR.Arti 5-stage decision-graph chain
+    "ContextStage", "GrossSymptomStage", "DecisiveForkStage",
+    "SupportingEvidenceStage", "VerdictStage", "STAGE_CHAIN",
 ]

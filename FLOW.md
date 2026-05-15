@@ -32,8 +32,8 @@ flowchart TD
     S1[STEP 1 LOCAL<br/>sh_01_phase0_local.sh<br/>Phase 0 canonical KB via headless claude -p<br/>discovery / extraction / reconciliation]
     PUSH1([git push canonical KB])
     PULL1([git pull on Nova])
-    VLLM[vLLM serves Qwen2.5-VL-7B-Instruct<br/>booted in-job]
-    S2[STEP 2 NOVA<br/>sh_02_swarm_nova.sh<br/>24-agent 2-round visual-symptom swarm<br/>+ VisualDiagnosisAgent CoT consolidator<br/>cross_refs: support / challenge / withdraw]
+    VLLM[vLLM Qwen2.5-VL-7B-Instruct<br/>loaded IN-PROCESS<br/>utils/vllm_inproc.py<br/>no HTTP server]
+    S2[STEP 2 NOVA<br/>sh_02_swarm_nova.sh<br/>DR.Arti 5-stage look-alike chain<br/>Context→Gross→DecisiveFork→Support→Verdict<br/>SWARM_GRANULARITY=specialists for legacy 24-agent]
     PUSH2([git push unverified KB])
     S3[STEP 3 LOCAL<br/>sh_03_validate_local.sh<br/>Claude+WebSearch verifier over each delta]
     REG([artifacts/pathome_kb/Crop/final_registry.json<br/>canonical + verified regional_observations<br/>— KB deliverable])
@@ -56,11 +56,19 @@ flowchart TD
     class REG,CKPT,METRICS terminal
 ```
 
+> **vLLM is in-process.** Phase 0R does not run `vllm serve`. The swarm
+> imports `vllm.LLM` directly via `utils/vllm_inproc.py` and the engine
+> lives in the same Python process that runs the agents. There is no
+> HTTP boundary, no port, and no separate server process to wait on or
+> tear down. This replaces the earlier `vllm serve` + OpenAI-compatible
+> HTTP client architecture, which produced silent `HTTPError: 400`
+> failures that zeroed out every tuple of an earlier Nova run.
+
 | # | Step | Host | Compute | Walltime |
 |---|---|---|---|---|
 | 0 | Filter CSV + Claude label judge | LOCAL | Claude (headless) | smoke ~10-30 min / prod ~1-2 h |
 | 1 | Phase 0 canonical KB | LOCAL | Claude (headless) | smoke ~30-45 min / prod 16-24 h |
-| 2 | 24-agent Qwen visual swarm | NOVA | 1× A100-80GB + vLLM | smoke ~3-6 h / prod 24-48 h |
+| 2 | DR.Arti 5-stage Qwen chain (in-process vLLM) | NOVA | 1× A100-80GB | smoke ~0.5-1 h / prod ~3-6 h (5 calls/pass; ≈49 in legacy specialists mode) |
 | 3 | Claude+WebSearch verifier | LOCAL | Claude (headless) | smoke ~30-60 min / prod 1-3 days |
 | 4 | BioCAP-style encoder fine-tune | NOVA | 1× A100 | ~30-60 min per variant; ~5 GPU-h for T01..T11 |
 | 5 | Frozen-encoder + TabPFN + Grad-CAM | LOCAL | 1× small GPU + CPU | smoke ~1-2 h / prod ~4-8 h |
@@ -117,6 +125,34 @@ Output shape (one disease entry):
 Run via `python -m pathome_kb --regional-only`. The orchestrator is
 `plantswarm.delta_pipeline.run_for_state`, called once per
 (crop, disease, state, cached image) tuple.
+
+> **Default roster: the DR.Arti.docx 5-stage decision-graph chain.**
+> Per pass the swarm runs **5 stage agents in sequence**, faithful to
+> the pairwise look-alike CoTs in `DR.Arti.docx`:
+>
+> 1. **ContextStage** — timing / site / field-history priors → "lean X"
+> 2. **GrossSymptomStage** — dominant foliar/gross symptom; continue if ambiguous
+> 3. **DecisiveForkStage** — the single decisive visual fork the photo
+>    can answer (split-stem pith, root cysts, petiole-vs-blade, leg
+>    color…); explicit "structure not visible" allowed
+> 4. **SupportingEvidenceStage** — corroborating, non-decisive features
+>    (adjusts confidence only, never overturns the fork)
+> 5. **VerdictStage** — explicit final reasoning: *canonical* /
+>    *look_alike:&lt;name&gt;* / *ambiguous + recommended follow-up
+>    test*. This stage is the consolidator and the only one that emits
+>    schema `deltas`.
+>
+> The discrimination set is the canonical disease vs its Phase-0
+> `look_alikes`. Stages run sequentially, each seeing all prior stage
+> output → **5 LLM calls/pass** (vs 49 for the legacy ensemble). The
+> K-of-N agreement filter, Claude verifier, and conservative merge
+> (§3a, §3d, §3e) are **unchanged** — they consume `VerdictStage`'s
+> deltas exactly as before. The look-alike verdict per pass is recorded
+> in `__swarm_meta__.look_alike_verdicts`.
+>
+> `SWARM_GRANULARITY=specialists` restores the legacy 24-specialist
+> 2-round parallel ensemble + `DiagnosisAgent` consolidator described
+> in §3b (≈49 calls/pass).
 
 ### 3a. Per-tuple flow (iterative KB loop with web-grounded verifier)
 
@@ -183,7 +219,11 @@ After every tuple finishes, `_embed_into_registry` merges its per-state
 record back into the disease's `regional_observations` dict — **states
 not processed this run are preserved verbatim**.
 
-### 3b. Inside one pass (REAL swarm: 2 rounds × 24 specialists + CoT consolidator)
+### 3b. Inside one pass — LEGACY specialists mode (`SWARM_GRANULARITY=specialists`)
+
+> The diagram and call-count below describe the **legacy** 24-specialist
+> ensemble, now opt-in via `SWARM_GRANULARITY=specialists`. The default
+> path is the 5-stage chain documented in the box above §3a.
 
 Each of the N stochastic passes runs a **2-round real swarm**:
 
@@ -325,9 +365,9 @@ pass's final delta list plus a CoT trace string. Validation against
 external evidence happens in the §3d2 verifier stage after K-of-N
 agreement.
 
-**Per-pass LLM calls** = 24 (round 1) + 24 (round 2) + 1 consolidator
-= **49 calls** by default (set `VLLM_SWARM_ROUNDS=1` to fall back to
-the legacy 25-call single-round mode). Qwen2.5-VL-7B handles ~50–100
+**Per-pass LLM calls (specialists mode)** = 24 (round 1) + 24 (round 2)
++ 1 consolidator = **49 calls** (set `VLLM_SWARM_ROUNDS=1` for the
+25-call single-round mode). The default `stages` roster is **5 calls**. Qwen2.5-VL-7B handles ~50–100
 concurrent on one A100, so wall-clock per pass roughly doubles to
 ~60–120 s — the cost of real swarm behavior.
 
@@ -730,7 +770,7 @@ PlantSwarm/
 |   |--- 6-step pipeline (one .sh per step) ---
 |   |-- sh_00_setup_local.sh               STEP 0 LOCAL: filter CSV + Claude judge
 |   |-- sh_01_phase0_local.sh              STEP 1 LOCAL: Phase 0 canonical KB
-|   |-- sh_02_swarm_nova.sh                STEP 2 NOVA: 24-agent swarm
+|   |-- sh_02_swarm_nova.sh                STEP 2 NOVA: DR.Arti 5-stage chain
 |   |-- sh_03_validate_local.sh            STEP 3 LOCAL: Claude+WebSearch verifier
 |   |-- sh_04_train_encoder_nova.sh        STEP 4 NOVA: BioCAP-style encoder train
 |   |-- sh_05_tabpfn_local.sh              STEP 5 LOCAL: TabPFN + Grad-CAM + tables
@@ -791,13 +831,20 @@ PlantSwarm/
 
 | Env var | Default | Controls |
 |---|---|---|
-| VLLM_BASE_URL | http://localhost:8000/v1 | OpenAI-compatible vLLM endpoint |
-| VLLM_MODEL | Qwen/Qwen2.5-VL-7B-Instruct | Served model id |
-| VLLM_TIMEOUT | 180 | Per-HTTP-call timeout (s) |
+| SWARM_GRANULARITY | stages | `stages` (default) = DR.Arti.docx 5-stage decision-graph chain, 5 calls/pass. `specialists` = legacy 24-agent 2-round ensemble + DiagnosisAgent (§3b), ≈49 calls/pass. |
+| VLLM_INPROCESS | 1 | When 1 (default), `delta_pipeline.build_client_from_env` returns the `utils/vllm_inproc.InProcessVLLMClient` (no HTTP). Set to 0 to fall back to the legacy `VLLMClient` + external `vllm serve` (debug only). |
+| VLLM_MODEL | Qwen/Qwen2.5-VL-7B-Instruct | Model id loaded into the in-process engine |
+| VLLM_MAX_MODEL_LEN | 32768 | In-process engine context window |
+| VLLM_MIN_PIXELS / VLLM_MAX_PIXELS | 50176 / 1003520 | Qwen-VL multimodal pixel cap (~224 / ~1024 px on a side) |
+| VLLM_MAX_NEW_TOKENS | 512 | Per-call generation cap |
+| VLLM_GPU_MEMORY_UTIL | 0.90 | vLLM engine GPU mem fraction |
+| VLLM_DTYPE | auto | vLLM engine dtype |
 | VLLM_TEMPERATURE | 0.8 | Per-call sampling temperature |
 | VLLM_N_RUNS | 10 (smoke: 5) | Stochastic traces per tuple |
 | VLLM_AGREEMENT_MIN | 3 (smoke: 2) | K-of-N agreement floor |
 | VLLM_SIM_THRESHOLD | 0.4 | Jaccard threshold for clustering + merge |
+| VLLM_BASE_URL | http://localhost:8000/v1 | **HTTP fallback only** (`VLLM_INPROCESS=0`). OpenAI-compatible endpoint. |
+| VLLM_TIMEOUT | 180 | **HTTP fallback only**. Per-call timeout (s). |
 | PATHOME_USE_VERIFIER | 1 | Set to 0 to skip the Claude web-search verifier and pass candidates straight to merge as `unverified` |
 | PATHOME_VERIFIER_TIMEOUT | 600 | Verifier `claude -p` timeout (seconds) |
 | PATHOME_VERIFIER_MAX_TURNS | 30 | Verifier max turns (for WebSearch loops) |

@@ -2,7 +2,11 @@
 # Install AFTER `pip install -r requirements.txt`.
 #
 # What this pulls in:
-#   vllm                Phase 0R Qwen2.5-VL-7B server (step 2)
+#   vllm                Phase 0R Qwen2.5-VL-7B engine (step 2).
+#                       Loaded IN-PROCESS via utils/vllm_inproc.py; no
+#                       `vllm serve` boot. Pin >=0.7.0 because that's the
+#                       first release with native Qwen2.5-VL support and
+#                       the LLM.chat() multimodal-messages API.
 #   torch               step 4 encoder fine-tune + step 5 frozen forward
 #   transformers        tokenisers + HF model loaders
 #   open_clip_torch     CLIP factory for all 7 step-5 encoders
@@ -15,7 +19,7 @@
 # Multi-GB install. CPU-only LOCAL doesn't need this file — step 5 will
 # run on CPU (slower) if torch is missing the CUDA build.
 
-vllm>=0.4.0
+vllm>=0.7.0
 torch>=2.1.0
 transformers>=4.40.0
 open_clip_torch>=2.29.0

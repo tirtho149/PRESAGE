@@ -19,10 +19,9 @@ PATHOME_REPO="${PATHOME_REPO:-$(pwd)}"
 cd "$PATHOME_REPO"
 
 # ============================================================================
-# Phase 0R — Qwen-swarm regional delta extraction (Nova A100 + vLLM)
+# Phase 0R — Qwen-swarm regional delta extraction (Nova A100, in-process vLLM)
 # ============================================================================
-# Reads:   artifacts/pathome_kb/<Crop>/final_registry.json   (canonical KB,
-#                                                             pushed from LOCAL)
+# Reads:   artifacts/pathome_kb/<Crop>/final_registry.json   (canonical KB)
 #          .bugwood_cache/                                    (cached images)
 #          BugWood_Diseases_usable.csv                        (filtered CSV)
 # Writes:  artifacts/pathome_kb/<Crop>/final_registry.json   (deltas embedded
@@ -31,10 +30,16 @@ cd "$PATHOME_REPO"
 #
 # Workflow on this node:
 #   1. top up .bugwood_cache with one image per (crop, disease, state) tuple
-#   2. boot vLLM serving Qwen/Qwen2.5-VL-7B-Instruct on :8000
-#   3. wait for /v1/models to respond
-#   4. run `python -m pathome_kb --regional-only ...`
-#   5. tear down vLLM on exit
+#   2. run `python -m pathome_kb --regional-only ...`
+#      — the swarm loads vllm.LLM IN-PROCESS via utils/vllm_inproc.py
+#      — NO `vllm serve` boot, NO HTTP, NO port to wait on
+#
+# Why no HTTP server: the original architecture booted `vllm serve` and
+# talked to it from the same job over OpenAI-compatible JSON. On Nova this
+# produced silent `HTTPError: 400 Client Error` on every specialist call
+# under certain (image, prompt) combinations and zeroed out every tuple.
+# An HTTP boundary inside a single-node job has no benefit; the engine is
+# now embedded.
 #
 # Override at submit time:
 #   PATHOME_USABLE_CSV=...  PATHOME_SEED_FILE=...  sbatch this script.sh
@@ -47,11 +52,21 @@ cd "$PATHOME_REPO"
 #   VLLM_TMAX=15          max path length per trace
 #   VLLM_MAX_BACKTRACKS=1 paper §5.3
 #   VLLM_SIM_THRESHOLD=0.4 Jaccard threshold for cross-run delta clustering
+#
+# In-process model knobs (utils/vllm_inproc.get_inproc_client):
+#   VLLM_MODEL=Qwen/Qwen2.5-VL-7B-Instruct
+#   VLLM_MAX_MODEL_LEN=32768
+#   VLLM_MIN_PIXELS=50176   ~224 px on the short side
+#   VLLM_MAX_PIXELS=1003520 ~1024 px on the long side
+#   VLLM_MAX_NEW_TOKENS=512
+#   VLLM_GPU_MEMORY_UTIL=0.90
+#   VLLM_DTYPE=auto
+#   VLLM_INPROCESS=1        default; set 0 to use the legacy HTTP client
 # ============================================================================
 
 set -e
 echo "================================"
-echo "Phase 0R: regional deltas (qwen swarm)"
+echo "Phase 0R: regional deltas (qwen swarm, in-process vLLM)"
 echo "Job ID: $SLURM_JOB_ID  Start: $(date)"
 echo "================================"
 
@@ -79,8 +94,6 @@ mkdir -p logs
 
 CSV="${PATHOME_USABLE_CSV:-BugWood_Diseases_usable.csv}"
 OUT="${PATHOME_SEED_FILE:-artifacts/pathome_seed/symptoms_seed.json}"
-MODEL="${VLLM_MODEL:-Qwen/Qwen2.5-VL-7B-Instruct}"
-PORT="${VLLM_PORT:-8000}"
 
 # Swarm knobs — propagate to plantswarm.delta_pipeline via env.
 export VLLM_N_RUNS="${VLLM_N_RUNS:-10}"
@@ -89,8 +102,18 @@ export VLLM_TEMPERATURE="${VLLM_TEMPERATURE:-0.8}"
 export VLLM_TMAX="${VLLM_TMAX:-15}"
 export VLLM_MAX_BACKTRACKS="${VLLM_MAX_BACKTRACKS:-1}"
 export VLLM_SIM_THRESHOLD="${VLLM_SIM_THRESHOLD:-0.4}"
-export VLLM_TIMEOUT="${VLLM_TIMEOUT:-180}"
 echo "[swarm] N=$VLLM_N_RUNS K=$VLLM_AGREEMENT_MIN T=$VLLM_TEMPERATURE Tmax=$VLLM_TMAX bt=$VLLM_MAX_BACKTRACKS sim>=$VLLM_SIM_THRESHOLD"
+
+# In-process vLLM knobs.
+export VLLM_INPROCESS="${VLLM_INPROCESS:-1}"
+export VLLM_MODEL="${VLLM_MODEL:-Qwen/Qwen2.5-VL-7B-Instruct}"
+export VLLM_MAX_MODEL_LEN="${VLLM_MAX_MODEL_LEN:-32768}"
+export VLLM_MIN_PIXELS="${VLLM_MIN_PIXELS:-50176}"
+export VLLM_MAX_PIXELS="${VLLM_MAX_PIXELS:-1003520}"
+export VLLM_MAX_NEW_TOKENS="${VLLM_MAX_NEW_TOKENS:-512}"
+export VLLM_GPU_MEMORY_UTIL="${VLLM_GPU_MEMORY_UTIL:-0.90}"
+export VLLM_DTYPE="${VLLM_DTYPE:-auto}"
+echo "[vllm-inproc] model=$VLLM_MODEL max_model_len=$VLLM_MAX_MODEL_LEN pixels=[$VLLM_MIN_PIXELS..$VLLM_MAX_PIXELS] gpu_mem=$VLLM_GPU_MEMORY_UTIL"
 
 # ---- ensure Bugwood image cache is populated -------------------------------
 # Phase 0R's regional-observation runner tries every image_id per (crop,
@@ -107,49 +130,16 @@ python scripts/ensure_state_image_cache.py \
     --cache-dir "$PATHOME_IMAGE_CACHE_DIR" \
     --all-rows \
     --workers "$CACHE_WORKERS" \
-  || { echo "[cache] FAILED — aborting before vLLM boot"; exit 2; }
+  || { echo "[cache] FAILED — aborting before swarm"; exit 2; }
 echo "[cache] populated: $(find "$PATHOME_IMAGE_CACHE_DIR" -maxdepth 1 -type f | wc -l) files"
 
-VLLM_LOG="logs/vllm-${SLURM_JOB_ID}.log"
-
-# ---- boot vLLM in the background ------------------------------------------
-# Qwen2.5-VL on a full-res Bugwood image can emit 2-4k image tokens. With a
-# multi-KB agent prompt + 512 reserved for output, 8192 overflows → vLLM 400.
-# Bump max-model-len AND cap image-token count via Qwen's recommended
-# mm-processor knobs (max_pixels=1003520 ≈ 1024px on the long side).
-MAX_MODEL_LEN="${VLLM_MAX_MODEL_LEN:-32768}"
-MM_KWARGS_DEFAULT='{"min_pixels":50176,"max_pixels":1003520}'
-MM_KWARGS="${VLLM_MM_KWARGS:-$MM_KWARGS_DEFAULT}"
-echo "[vllm] booting $MODEL on :$PORT (max_model_len=$MAX_MODEL_LEN) ..."
-python -m vllm.entrypoints.openai.api_server \
-  --model "$MODEL" \
-  --port  "$PORT" \
-  --max-model-len "$MAX_MODEL_LEN" \
-  --mm-processor-kwargs "$MM_KWARGS" \
-  --limit-mm-per-prompt image=1 \
-  --trust-remote-code \
-  > "$VLLM_LOG" 2>&1 &
-VLLM_PID=$!
-trap 'echo "[trap] killing vllm pid=$VLLM_PID"; kill $VLLM_PID 2>/dev/null || true' EXIT
-
-# ---- wait until /v1/models responds ----------------------------------------
-export VLLM_BASE_URL="http://localhost:${PORT}/v1"
-echo "[vllm] waiting for $VLLM_BASE_URL/models ..."
-for i in $(seq 1 60); do
-  if curl -sf --max-time 5 "$VLLM_BASE_URL/models" >/dev/null 2>&1; then
-    echo "[vllm] up after ${i} * 10s = $((i*10))s"
-    break
-  fi
-  sleep 10
-done
-if ! curl -sf --max-time 5 "$VLLM_BASE_URL/models" >/dev/null 2>&1; then
-  echo "[vllm] FAILED to come up — full $VLLM_LOG context:"
-  echo "---- head -n 80 ----"
-  head -n 80 "$VLLM_LOG"
-  echo "---- tail -n 200 ----"
-  tail -n 200 "$VLLM_LOG"
-  exit 1
-fi
+# ---- enable trace writer so we can diagnose if deltas end up empty ---------
+# When PATHOME_TRACE_DIR is set, plantswarm/delta_pipeline appends one JSONL
+# record per stochastic trace under <dir>/phase0r_traces.jsonl. Cheap; keeps
+# the post-mortem possible without a re-run.
+export PATHOME_TRACE_DIR="${PATHOME_TRACE_DIR:-$PATHOME_REPO/artifacts/phase0r_traces}"
+mkdir -p "$PATHOME_TRACE_DIR"
+echo "[trace] PATHOME_TRACE_DIR=$PATHOME_TRACE_DIR"
 
 # ---- run Phase 0R ----------------------------------------------------------
 ARGS=("--regional-only" "--csv" "$CSV" "--out" "$OUT")
