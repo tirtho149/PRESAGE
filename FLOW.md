@@ -33,7 +33,7 @@ flowchart TD
     PUSH1([git push canonical KB])
     PULL1([git pull on Nova])
     VLLM[vLLM Qwen2.5-VL-7B-Instruct<br/>loaded IN-PROCESS<br/>utils/vllm_inproc.py<br/>no HTTP server]
-    S2[STEP 2 NOVA<br/>sh_02_swarm_nova.sh<br/>5 visual-symptom group agents vs canonical visual_symptoms<br/>parallel + blackboard round-2 + VisualDiagnosisAgent<br/>SWARM_GRANULARITY=specialists for legacy 24-agent]
+    S2[STEP 2 NOVA<br/>sh_02_swarm_nova.sh<br/>OrganDetectionAgent → route to that organ's deep specialists<br/>parallel + blackboard round-2 + VisualDiagnosisAgent<br/>grouped/specialists modes via SWARM_GRANULARITY]
     PUSH2([git push unverified KB])
     S3[STEP 3 LOCAL<br/>sh_03_validate_local.sh<br/>Claude+WebSearch verifier over each delta]
     REG([artifacts/pathome_kb/Crop/final_registry.json<br/>canonical + verified regional_observations<br/>— KB deliverable])
@@ -68,7 +68,7 @@ flowchart TD
 |---|---|---|---|---|
 | 0 | Filter CSV + Claude label judge | LOCAL | Claude (headless) | smoke ~10-30 min / prod ~1-2 h |
 | 1 | Phase 0 canonical KB | LOCAL | Claude (headless) | smoke ~30-45 min / prod 16-24 h |
-| 2 | 5 visual-symptom group-agent Qwen swarm (in-process vLLM) | NOVA | 1× A100-80GB | smoke ~0.5-1 h / prod ~3-6 h (11 calls/pass 2-round; ≈49 in legacy 24-specialist mode) |
+| 2 | Organ-routed deep-specialist Qwen swarm (in-process vLLM) | NOVA | 1× A100-80GB | smoke ~0.5-1 h / prod ~2-5 h (≈12–28 calls/pass by organ; 11 in `grouped`, ≈49 in legacy `specialists`) |
 | 3 | Claude+WebSearch verifier | LOCAL | Claude (headless) | smoke ~30-60 min / prod 1-3 days |
 | 4 | BioCAP-style encoder fine-tune | NOVA | 1× A100 | ~30-60 min per variant; ~5 GPU-h for T01..T11 |
 | 5 | Frozen-encoder + TabPFN + Grad-CAM | LOCAL | 1× small GPU + CPU | smoke ~1-2 h / prod ~4-8 h |
@@ -126,41 +126,44 @@ Run via `python -m pathome_kb --regional-only`. The orchestrator is
 `plantswarm.delta_pipeline.run_for_state`, called once per
 (crop, disease, state, cached image) tuple.
 
-> **Default roster: 5 generalized visual-symptom group agents.**
-> The swarm is **visual-symptoms only** — it describes what is visible
-> in the photograph and compares it to the canonical KB
-> `visual_symptoms` block (summary / diagnostic_features /
-> look_alikes). It never emits pathogen, disease-type, or treatment
-> claims (those are Claude's Phase 0 job). Nothing is crop- or
-> disease-specific; every agent generalizes from whatever canonical
-> `visual_symptoms` text it is given. `DR.Arti.docx` informs only the
-> *reasoning style* — a short, ordered, discriminative visual
-> chain-of-thought — not a literal pipeline.
+> **Default mode: organ-routed decision tree (`SWARM_GRANULARITY=routed`).**
+> Each Bugwood photo shows essentially ONE structure — a leaf shot is
+> just a leaf. Running every agent on every image is wasteful and
+> vague. So the swarm is a DR.Arti-style decision tree:
 >
-> The 24 visual delta fields are partitioned across 5 group agents
-> (no overlap, no omission):
+> 1. **OrganDetectionAgent** (1 visual call) classifies the dominant
+>    organ: `leaf | stem | root | crown | flower | fruit |
+>    whole_plant | other`. Pure visual triage — no KB, no diagnosis.
+> 2. **`route_for_organ()`** activates ONLY that organ's DEEP
+>    single-feature specialists (the original 24 are the deep agents,
+>    now gated) plus always-on cross-cutters (`ColorPaletteAgent` —
+>    the dedicated colour agent — `SeverityVisualAgent`,
+>    `LookAlikeCoTAgent`, `SporulationAgent`):
+>    - leaf → 8 leaf specialists + concentric + 4 cross-cutters = **13**
+>    - stem → 4 stem specialists + cross-cutters = **8**
+>    - root / crown / flower → 1 + cross-cutters = **5**
+>    - fruit → fruit + concentric + cross-cutters = **6**
+>    - whole_plant → wilting + defoliation + spatial + cross = **7**
+>    - other (unsure) → **all 24** (safe full-coverage fallback)
+> 3. The activated branch fans out through the **same machinery**:
+>    parallel → shared blackboard → round 2 (stigmergy + cross_refs)
+>    → `VisualDiagnosisAgent` consolidator → K-of-N → Claude verifier
+>    → conservative merge (§3a–§3e all unchanged).
 >
-> 1. **LeafSymptomAgent** — 8 leaf fields (lesion shape/color/texture,
->    chlorosis, necrosis, curl, vein pattern, geometry)
-> 2. **StemRootSymptomAgent** — 6 fields (stem lesion/pith/surface/
->    discoloration, root, crown-collar) — split-stem pith is the
->    decisive fork when visible
-> 3. **FruitFlowerSignAgent** — 3 fields (flower, fruit, sporulation
->    signs)
-> 4. **WholePlantSymptomAgent** — 3 fields (wilting, defoliation,
->    spatial pattern)
-> 5. **DiagnosticVisualAgent** — 5 fields (concentric pattern, color
->    palette, visual look-alikes, severity, other)
+> Visual-symptoms only: every routed agent compares the photo to the
+> canonical `visual_symptoms` slice and emits nothing about pathogen /
+> type / treatment (Claude's Phase 0 job). Fully generalized — no
+> crop/disease-specific forks; `DR.Arti.docx` informs only the
+> decision-tree *shape* and reasoning style.
 >
-> These run through the **same machinery** as the legacy specialists:
-> parallel fan-out → shared blackboard → round 2 (stigmergy +
-> cross_refs) → `VisualDiagnosisAgent` consolidator → K-of-N agreement
-> → Claude verifier → conservative merge (§3a–§3e all unchanged).
-> Per-pass cost = 5 + 5 + 1 = **11 calls** (2-round) or 6 (single
-> round), vs 49 for the legacy 24-specialist roster.
+> Per-pass cost ≈ 1 (detector) + |route|×rounds + 1 (consolidator) —
+> e.g. a leaf photo ≈ 1 + 13×2 + 1 = **28** (2-round) / 15 (1-round),
+> a root photo ≈ 1 + 5×2 + 1 = **12**. The detected organ and active
+> agent count are recorded per pass in `__swarm_meta__`.
 >
-> `SWARM_GRANULARITY=specialists` restores the legacy 24 single-feature
-> specialists (the §3b roster); the default is `grouped`.
+> Other modes: `SWARM_GRANULARITY=grouped` = 5 visual-symptom group
+> agents (all run; 11 calls/pass); `=specialists` = legacy all-24
+> (§3b; ≈49 calls/pass). Default is `routed`.
 
 ### 3a. Per-tuple flow (iterative KB loop with web-grounded verifier)
 
@@ -377,8 +380,9 @@ agreement.
 
 **Per-pass LLM calls (specialists mode)** = 24 (round 1) + 24 (round 2)
 + 1 consolidator = **49 calls** (set `VLLM_SWARM_ROUNDS=1` for the
-25-call single-round mode). The default `grouped` roster is **11
-calls** (5 + 5 + 1, 2-round) or 6 (single-round). Qwen2.5-VL-7B handles ~50–100
+25-call single-round mode). The default `routed` mode is **≈12–28
+calls** (1 detector + |organ route|×rounds + 1 consolidator);
+`grouped` is 11 (5+5+1). Qwen2.5-VL-7B handles ~50–100
 concurrent on one A100, so wall-clock per pass roughly doubles to
 ~60–120 s — the cost of real swarm behavior.
 
@@ -781,7 +785,7 @@ PlantSwarm/
 |   |--- 6-step pipeline (one .sh per step) ---
 |   |-- sh_00_setup_local.sh               STEP 0 LOCAL: filter CSV + Claude judge
 |   |-- sh_01_phase0_local.sh              STEP 1 LOCAL: Phase 0 canonical KB
-|   |-- sh_02_swarm_nova.sh                STEP 2 NOVA: 5 visual-symptom group agents
+|   |-- sh_02_swarm_nova.sh                STEP 2 NOVA: organ-routed deep-specialist swarm
 |   |-- sh_03_validate_local.sh            STEP 3 LOCAL: Claude+WebSearch verifier
 |   |-- sh_04_train_encoder_nova.sh        STEP 4 NOVA: BioCAP-style encoder train
 |   |-- sh_05_tabpfn_local.sh              STEP 5 LOCAL: TabPFN + Grad-CAM + tables
@@ -842,7 +846,7 @@ PlantSwarm/
 
 | Env var | Default | Controls |
 |---|---|---|
-| SWARM_GRANULARITY | grouped | `grouped` (default) = 5 generalized visual-symptom group agents vs canonical visual_symptoms (11 calls/pass 2-round). `specialists` = legacy 24 single-feature specialists (§3b), ≈49 calls/pass. Same blackboard/consolidator machinery either way. |
+| SWARM_GRANULARITY | routed | `routed` (default) = OrganDetectionAgent → activate only that organ's deep specialists + cross-cutters (≈12–28 calls/pass depending on organ). `grouped` = 5 visual-symptom group agents, all run (11 calls/pass). `specialists` = legacy all-24 (§3b), ≈49 calls/pass. Same blackboard/consolidator machinery in every mode. |
 | VLLM_INPROCESS | 1 | When 1 (default), `delta_pipeline.build_client_from_env` returns the `utils/vllm_inproc.InProcessVLLMClient` (no HTTP). Set to 0 to fall back to the legacy `VLLMClient` + external `vllm serve` (debug only). |
 | VLLM_MODEL | Qwen/Qwen2.5-VL-7B-Instruct | Model id loaded into the in-process engine |
 | VLLM_MAX_MODEL_LEN | 32768 | In-process engine context window |

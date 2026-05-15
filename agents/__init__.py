@@ -78,6 +78,14 @@ from .visual_group_agents import (
     DiagnosticVisualAgent,
     VISUAL_GROUP_AGENTS,
 )
+# DR.Arti decision-tree router: detect organ -> activate only that
+# organ's deep specialists. This is the default swarm mode.
+from .organ_router import (
+    OrganDetectionAgent,
+    ORGAN_ROUTES,
+    route_for_organ,
+    normalize_organ,
+)
 
 
 # Canonical 24-specialist roster, parallel-invoked by
@@ -129,8 +137,11 @@ __all__ = [
     # diagnostic cross-cutters
     "ConcentricPatternAgent", "ColorPaletteAgent",
     "LookAlikeCoTAgent", "SeverityVisualAgent",
-    # default roster — 5 visual-symptom group agents
+    # 5 visual-symptom group agents (SWARM_GRANULARITY=grouped)
     "LeafSymptomAgent", "StemRootSymptomAgent", "FruitFlowerSignAgent",
     "WholePlantSymptomAgent", "DiagnosticVisualAgent",
     "VISUAL_GROUP_AGENTS",
+    # organ-routing decision tree (default mode)
+    "OrganDetectionAgent", "ORGAN_ROUTES", "route_for_organ",
+    "normalize_organ",
 ]

@@ -253,7 +253,7 @@ canonical description as Charcoal Rot in Alabama.
 
 ---
 
-## Phase 2 — Regional Image-Grounded Deltas (5 visual-symptom agents)
+## Phase 2 — Regional Image-Grounded Deltas (organ-routed decision tree)
 
 **Goal.** For every (crop, disease, state) tuple that has at least one
 field photograph available, identify how the disease *presents in the
@@ -261,56 +261,69 @@ field in that state* and emit image-supported **visual-symptom** deltas
 that go beyond what the canonical `visual_symptoms` block already says
 — additions or contradictions, never restatements.
 
-### The design: 5 generalized visual-symptom group agents
+### The design: detect the organ, then deep-dive only that branch
 
-The swarm is **visual-symptoms only**. Each agent describes what is
-*visible in the photograph* and compares it to the canonical KB
-`visual_symptoms` block (summary / diagnostic_features / look_alikes).
-No agent emits pathogen, disease-type, cause, or treatment claims —
-those are produced by Claude in Phase 1 and are out of scope here.
-Nothing is crop- or disease-specific: each agent generalizes from
-whatever canonical `visual_symptoms` text it is handed.
-
-`DR.Arti.docx` informs only the *reasoning style* — a short, ordered,
-discriminative visual chain-of-thought ("look at X; is it A or B; does
-that match canonical or a visual look-alike?"). Its SDS/BSR, IDC/SCN,
-Palmer/waterhemp, rootworm/cucumber-beetle cases are worked examples of
-that style, **not** a literal pipeline. There are no hardcoded forks.
-
-The 24 visual delta fields are partitioned across 5 group agents (no
-overlap, no omission):
+Each Bugwood photo shows essentially ONE structure — a leaf shot is
+just a leaf, a stem shot is just a stem. Running every agent on every
+image is wasteful and vague (a fruit agent on a leaf photo only ever
+says "no fruit visible"). So Phase 2 is a **DR.Arti-style decision
+tree**: a routing root node, then a deep dive down exactly one branch.
 
 ```mermaid
 flowchart TB
-    IMG([field photo + canonical visual_symptoms slice])
-    L[LeafSymptomAgent<br/>8 leaf fields: lesion shape/color/texture,<br/>chlorosis, necrosis, curl, vein, geometry]
-    S[StemRootSymptomAgent<br/>6 fields: stem lesion/pith/surface/<br/>discoloration, root, crown-collar]
-    F[FruitFlowerSignAgent<br/>3 fields: flower, fruit, sporulation signs]
-    W[WholePlantSymptomAgent<br/>3 fields: wilting, defoliation, spatial]
-    D[DiagnosticVisualAgent<br/>5 fields: concentric, color palette,<br/>visual look-alikes, severity, other]
+    IMG([one field photo])
+    OD[OrganDetectionAgent<br/>1 visual call — which organ dominates?]
+    LF[leaf → 8 deep leaf specialists<br/>+ concentric + cross-cutters = 13]
+    ST[stem → 4 deep stem specialists<br/>+ cross-cutters = 8]
+    RT[root / crown / flower → 1<br/>+ cross-cutters = 5]
+    FR[fruit → fruit + concentric<br/>+ cross-cutters = 6]
+    WP[whole_plant → wilting + defoliation<br/>+ spatial + cross-cutters = 7]
+    OT[other / unsure → all 24<br/>safe full-coverage fallback]
     C[VisualDiagnosisAgent<br/>CoT consolidator]
 
-    IMG --> L & S & F & W & D
-    L & S & F & W & D --> C
+    IMG --> OD
+    OD -->|leaf| LF
+    OD -->|stem| ST
+    OD -->|root/crown/flower| RT
+    OD -->|fruit| FR
+    OD -->|whole_plant| WP
+    OD -->|other| OT
+    LF & ST & RT & FR & WP & OT --> C
 
     classDef a fill:#fef,stroke:#606
-    class L,S,F,W,D,C a
+    class OD,LF,ST,RT,FR,WP,OT,C a
 ```
 
-These run through the **same proven machinery** as the legacy
-specialists: parallel fan-out → shared blackboard → round 2
-(stigmergy: each agent sees peers' round-1 output and may refine /
+The "deep" agents are the original 24 single-feature specialists
+(leaf-lesion-shape, leaf-colour, stem-pith, …) — they are reused, just
+**gated** so only the relevant branch is ever active. Four cross-cutters
+ride along on every route because they apply to any organ: the
+dedicated colour encoder (`ColorPaletteAgent`), `SeverityVisualAgent`,
+the look-alike decision-graph (`LookAlikeCoTAgent`), and pathogen signs
+(`SporulationAgent`). The detector is pure visual triage — no KB, no
+diagnosis, no pathogen naming.
+
+Everything is **visual-symptoms only**: each routed specialist compares
+the photo to the canonical `visual_symptoms` slice and emits nothing
+about pathogen / disease-type / cause / treatment (Claude's Phase 1
+job). Fully generalized — no crop/disease-specific forks; `DR.Arti.docx`
+informs only the decision-tree *shape* and reasoning style, not any
+literal content.
+
+The activated branch fans out through the **same proven machinery**:
+parallel fan-out → shared blackboard → round 2 (stigmergy: refine /
 support / challenge / withdraw) → `VisualDiagnosisAgent` consolidator.
 A delta is emitted only where the photo ADDS to or CONTRADICTS
-canonical `visual_symptoms` for a field the agent owns; restating
-canonical is forbidden. Per-pass cost = 5 + 5 + 1 = **11 LLM calls**
-(2-round default) or 6 (single round) — vs 49 for the legacy roster.
+canonical `visual_symptoms`; restating canonical is forbidden. Per-pass
+cost ≈ 1 (detector) + |route|×rounds + 1 (consolidator): a leaf photo
+≈ 28 (2-round) / 15 (1-round); a root photo ≈ 12. The detected organ
+and active-agent count are recorded per pass in `__swarm_meta__`.
 
-> **Legacy roster.** The earlier 24 single-feature specialists are
-> still in the codebase, selected with `SWARM_GRANULARITY=specialists`
-> (≈49 calls/pass). The default is `grouped` — the 5 visual-symptom
-> group agents. Identical blackboard / round-2 / consolidator wiring
-> either way; only the roster size changes.
+> **Other modes.** `SWARM_GRANULARITY=grouped` runs 5 visual-symptom
+> group agents (all fire, 11 calls/pass); `=specialists` runs the
+> legacy all-24 (≈49 calls/pass). Default is `routed`. Identical
+> blackboard / round-2 / consolidator wiring in every mode — only the
+> active roster differs.
 
 ### Stochastic re-runs and agreement
 
@@ -353,7 +366,9 @@ the existing one's support count instead of duplicating it.
         }
       ],
       "__swarm_meta__": {
-        "granularity": "grouped",
+        "granularity": "routed",
+        "detected_organ_per_pass": ["leaf", "leaf", "leaf", "..."],
+        "n_active_agents_per_pass": [13, 13, 13, "..."],
         "n_runs": 10, "agreement_min": 3,
         "n_after_agreement": 1
       }
@@ -595,7 +610,7 @@ flowchart LR
     F[Field photographs<br/>geo-tagged]
     S0[Step 0 LOCAL<br/>sh_00_setup_local.sh<br/>filter CSV + Claude label judge]
     S1[Step 1 LOCAL<br/>sh_01_phase0_local.sh<br/>canonical KB via claude -p]
-    S2[Step 2 NOVA<br/>sh_02_swarm_nova.sh<br/>5 visual-symptom group agents<br/>in-process vLLM]
+    S2[Step 2 NOVA<br/>sh_02_swarm_nova.sh<br/>organ-routed deep-specialist swarm<br/>in-process vLLM]
     S3[Step 3 LOCAL<br/>sh_03_validate_local.sh<br/>Claude+WebSearch verifier]
     DB[(PathomeDB)]
     CAP[KB → caption<br/>plantswarm/captioning.py]

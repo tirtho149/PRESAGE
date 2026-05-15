@@ -68,6 +68,7 @@ from pathlib import Path
 from typing import Any, Dict, Iterable, List, NamedTuple, Optional, Tuple
 
 from agents import SPECIALIST_AGENTS, VISUAL_GROUP_AGENTS
+from agents.organ_router import OrganDetectionAgent, route_for_organ
 from agents.base_agent import AgentDeltaOutput, BaseAgent
 from agents.diagnosis_agent import DiagnosisAgent
 from utils.vllm_client import VLLMClient
@@ -86,13 +87,25 @@ SPECIALIST_CLASSES: Tuple[type, ...] = SPECIALIST_AGENTS
 
 
 def _swarm_granularity() -> str:
-    v = os.environ.get("SWARM_GRANULARITY", "grouped").strip().lower()
-    return "specialists" if v in ("specialists", "specialist", "24") else "grouped"
+    """Roster mode:
+      'routed'      (default) — OrganDetectionAgent picks the organ,
+                    then only that organ's deep single-feature
+                    specialists + always-on cross-cutters fire
+                    (DR.Arti decision tree).
+      'grouped'     — 5 visual-symptom group agents (all run).
+      'specialists' — legacy 24 single-feature specialists (all run).
+    """
+    v = os.environ.get("SWARM_GRANULARITY", "routed").strip().lower()
+    if v in ("specialists", "specialist", "24"):
+        return "specialists"
+    if v in ("grouped", "group", "5"):
+        return "grouped"
+    return "routed"
 
 
 def _active_roster() -> Tuple[type, ...]:
-    """The agent classes the swarm fans out per pass, per
-    ``SWARM_GRANULARITY``. Default = 5 visual-symptom group agents."""
+    """Non-routed rosters (organ routing is resolved per-image inside
+    ``_run_single_pass``, so it is not expressible here)."""
     if _swarm_granularity() == "specialists":
         return SPECIALIST_AGENTS
     return VISUAL_GROUP_AGENTS
@@ -254,7 +267,20 @@ def _run_single_pass(
     enables the stigmergy round; can be overridden via
     ``VLLM_SWARM_ROUNDS`` env var in ``run_for_state``.
     """
-    specialists: List[BaseAgent] = [cls(client) for cls in _active_roster()]
+    # DR.Arti decision tree: detect the organ first, then activate
+    # ONLY that organ's deep specialists. One image = one organ, so
+    # this avoids running (and paying for) agents that can only ever
+    # say "not visible".
+    detected_organ: Optional[Dict[str, str]] = None
+    if _swarm_granularity() == "routed":
+        detected_organ = OrganDetectionAgent(client).detect(
+            image_data_url, seed=seed, temperature=temperature,
+        )
+        roster = route_for_organ(detected_organ["organ"])
+    else:
+        roster = _active_roster()
+
+    specialists: List[BaseAgent] = [cls(client) for cls in roster]
     n_specialists = len(specialists)
 
     def _run_round(
@@ -344,6 +370,8 @@ def _run_single_pass(
         "specialist_outputs":  all_specialist_outputs,
         "consolidator_output": consolidator_output,
         "final_deltas":        consolidator_output.deltas,
+        "detected_organ":      detected_organ,
+        "active_agents":       [a.AGENT_NAME for a in specialists],
     }
 
 
@@ -710,6 +738,12 @@ def run_for_state(
             "similarity_threshold": similarity_threshold,
             "kappa_per_pass":       [p["consolidator_output"].confidence for p in passes],
             "n_raw_per_pass":       [len(p["final_deltas"]) for p in passes],
+            "detected_organ_per_pass": [
+                (p.get("detected_organ") or {}).get("organ") for p in passes
+            ],
+            "n_active_agents_per_pass": [
+                len(p.get("active_agents") or []) for p in passes
+            ],
             "n_after_agreement":    len(candidates),
             "verifier":             verifier_meta,
             "merge":                merge_counts,

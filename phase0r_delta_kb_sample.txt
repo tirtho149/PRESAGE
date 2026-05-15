@@ -1,6 +1,6 @@
 ================================================================================
 PHASE 0R — DELTA KB CONTRIBUTION: WORKED SAMPLE
-5 generalized VISUAL-SYMPTOM group agents (visual-only, KB-grounded)
+Organ-routed decision tree (detect organ -> deep specialists only)
 ================================================================================
 
 WHAT THIS FILE IS
@@ -8,45 +8,48 @@ WHAT THIS FILE IS
   (crop, disease, state) tuple, plus the aggregate capacity estimate.
 
   PROJECTION, not a live run. The real swarm needs a GPU + in-process
-  vLLM (Qwen2.5-VL-7B); it cannot run on the local CPU host. The agent
+  vLLM (Qwen2.5-VL-7B); it cannot run on the local CPU host. The
   outputs below match exactly:
     - the ACTUAL canonical visual_symptoms text in
       artifacts/pathome_kb/Soybean/final_registry.json (Brown Stem Rot)
     - the ACTUAL delta JSON schema the pipeline consumes
-    - the ACTUAL roster + machinery (5 visual-symptom group agents,
-      parallel + blackboard round-2 + VisualDiagnosisAgent consolidator)
+    - the ACTUAL routing table + machinery (OrganDetectionAgent ->
+      route_for_organ -> deep specialists -> blackboard round-2 ->
+      VisualDiagnosisAgent consolidator)
 
-SCOPE RULES (enforced by the agent prompts)
-  - VISUAL SYMPTOMS ONLY. Agents describe what is visible and compare
-    it to canonical visual_symptoms. No pathogen / disease-type /
-    cause / treatment claims (those are Claude's Phase 1 job).
-  - GENERALIZED. No crop/disease-specific forks. DR.Arti.docx informs
-    the reasoning STYLE only (short discriminative visual CoT), not a
-    literal pipeline.
-  - KB-GROUNDED. A delta is emitted only where the photo ADDS to or
-    CONTRADICTS canonical visual_symptoms; restating canonical is
-    forbidden.
+THE DESIGN (DR.Arti-style decision tree)
+  One Bugwood photo = one organ. Detect it once, then activate ONLY
+  that organ's DEEP single-feature specialists (the original 24, now
+  gated) + always-on cross-cutters. Not all agents fire — only the
+  routed branch.
+
+  Cross-cutters on EVERY route (apply to any organ):
+    ColorPaletteAgent  (the dedicated colour agent)
+    SeverityVisualAgent
+    LookAlikeCoTAgent   (look-alike decision graph)
+    SporulationAgent    (pathogen signs)
+
+  Routes:
+    leaf        -> 8 leaf specialists + concentric + 4 cross = 13
+    stem        -> 4 stem specialists + 4 cross               = 8
+    root        -> RootAgent + 4 cross                         = 5
+    crown       -> CrownCollarAgent + 4 cross                  = 5
+    flower      -> FlowerAgent + 4 cross                       = 5
+    fruit       -> FruitAgent + concentric + 4 cross           = 6
+    whole_plant -> wilting+defoliation+spatial + 3 cross       = 7
+    other       -> all 24 (safe full-coverage fallback)
+
+  Visual-symptoms only. Every routed agent compares the photo to the
+  canonical visual_symptoms slice; none emits pathogen / type /
+  treatment (Claude Phase 1's job). Fully generalized — no
+  crop/disease-specific forks.
 
 CURRENT STATE ON DISK (before any re-run)
   Soybean regional deltas : 0
   Tomato  regional deltas : 0
   => delta KB contributes NOTHING today (last NOVA run zeroed out via
      silent HTTP 400). One Phase 0R re-run with in-process vLLM + the
-     5 visual-symptom agents populates it.
-
-================================================================================
-THE 5 AGENTS  (partition of all 24 visual delta fields, no overlap)
-================================================================================
-  LeafSymptomAgent        8  leaf_lesion_shape/color/texture,
-                             leaf_chlorosis, leaf_necrosis, leaf_curl,
-                             leaf_vein_pattern, leaf_geometry
-  StemRootSymptomAgent    6  stem_lesion, stem_pith, stem_surface,
-                             stem_discoloration, root_visible,
-                             crown_collar
-  FruitFlowerSignAgent    3  flower, fruit, sporulation
-  WholePlantSymptomAgent  3  wilting, defoliation, spatial_pattern
-  DiagnosticVisualAgent   5  concentric_pattern, color_palette,
-                             look_alikes_visual, severity_visible, other
+     organ-routed swarm populates it.
 
 ================================================================================
 SAMPLE TUPLE
@@ -59,90 +62,94 @@ SAMPLE TUPLE
     summary    : "Characteristic foliar symptoms include chlorosis and
                   necrosis between leaf veins, followed by leaf curling
                   and leaf death; externally infected stems look
-                  healthy but split stems show internal browning of
-                  vascular tissue and pith..."
+                  healthy but split stems show internal browning..."
     diagnostic : "When stems are split lengthwise, internal browning
                   ... pith color in the lower stem differentiates BSR
                   from sudden death syndrome (SDS)."
     look_alikes: ["sudden death syndrome (SDS)", "stem canker"]
 
 ================================================================================
-ONE STOCHASTIC PASS  (round 1: 5 agents in parallel)
+STEP 0 — OrganDetectionAgent  (1 visual call, the routing root)
 ================================================================================
+  {"organ":"leaf","confidence":"high",
+   "why":"mid-canopy leaflets fill the frame; no stem/root/fruit"}
 
-LeafSymptomAgent
-  {"deltas":[
-    {"field":"leaf_chlorosis",
-     "canonical_says":"chlorosis and necrosis between leaf veins",
-     "image_shows":"interveinal chlorosis in Iowa shows sharply
-                    green-retained veins with early upward cupping
-                    before necrosis sets in",
-     "image_quote":"yellow interveinal bands, crisp green veins,
-                    leaflet tips beginning to roll"}],
-   "confidence":"high","reasoning":"saw interveinal pattern; canonical
-   says it generically; adds the green-vein + early-cupping detail"}
+  -> route_for_organ("leaf") activates 13 DEEP agents:
+     LeafLesionShapeAgent, LeafLesionColorAgent, LeafLesionTextureAgent,
+     LeafChlorosisAgent, LeafNecrosisAgent, LeafCurlAgent,
+     LeafVeinPatternAgent, LeafGeometryAgent, ConcentricPatternAgent,
+     ColorPaletteAgent, SeverityVisualAgent, LookAlikeCoTAgent,
+     SporulationAgent
+  The 11 stem/root/fruit/flower/whole-plant agents STAY DORMANT.
 
-StemRootSymptomAgent
-  {"deltas":[],"confidence":"low",
-   "reasoning":"no stem split or roots visible in this frame; the
-   decisive split-stem pith fork cannot be answered — emit nothing"}
+================================================================================
+ONE STOCHASTIC PASS  (round 1: the 13 routed agents, parallel)
+================================================================================
+  (only the agents that found something are shown)
 
-FruitFlowerSignAgent
-  {"deltas":[],"confidence":"low",
-   "reasoning":"no flowers, fruit, or pathogen signs visible"}
+  LeafChlorosisAgent
+    {"deltas":[{"field":"leaf_chlorosis",
+      "canonical_says":"chlorosis and necrosis between leaf veins",
+      "image_shows":"interveinal chlorosis in Iowa shows sharply
+                     green-retained veins with early upward cupping
+                     before necrosis",
+      "image_quote":"yellow interveinal bands, crisp green veins"}],
+     "confidence":"high","reasoning":"adds green-vein + early-cupping"}
 
-WholePlantSymptomAgent
-  {"deltas":[
-    {"field":"defoliation",
-     "canonical_says":"followed by leaf curling and leaf death",
-     "image_shows":"blades curling but still attached; no
-                    bare-petiole skeletons",
-     "image_quote":"petioles and blades intact across the canopy"}],
-   "confidence":"medium","reasoning":"curl-before-drop pattern adds
-   detail canonical does not specify"}
+  LeafNecrosisAgent
+    {"deltas":[{"field":"leaf_necrosis",
+      "canonical_says":"necrosis between leaf veins",
+      "image_shows":"necrosis starts as discrete interveinal flecks
+                     coalescing outward, not marginal",
+      "image_quote":"brown flecks mid-blade between green veins"}],
+     "confidence":"medium","reasoning":"spatial detail beyond canonical"}
 
-DiagnosticVisualAgent
-  {"deltas":[
-    {"field":"look_alikes_visual",
-     "canonical_says":"differentiates BSR from sudden death syndrome",
-     "image_shows":"foliar pattern is visually indistinguishable from
-                    SDS in this photo; the decisive split-stem pith
-                    is not visible, so visual ID is ambiguous here",
-     "image_quote":"interveinal chlorosis identical to SDS; no stem
-                    cross-section in frame"},
-    {"field":"color_palette",
-     "canonical_says":"(not specified)",
-     "image_shows":"affected tissue palette is lemon-yellow
-                    interveinal grading to tan-brown necrosis",
-     "image_quote":"yellow + tan-brown dominate the damaged areas"}],
-   "confidence":"medium","reasoning":"visual look-alike + palette add
-   beyond canonical; no pathogen/cause claim made"}
+  ColorPaletteAgent (cross-cutter — the colour agent)
+    {"deltas":[{"field":"color_palette",
+      "canonical_says":"(not specified)",
+      "image_shows":"affected tissue is lemon-yellow grading to
+                     tan-brown necrosis",
+      "image_quote":"yellow + tan-brown dominate damaged areas"}],
+     "confidence":"medium","reasoning":"palette not in canonical"}
 
-ROUND 2 (blackboard visible — stigmergy)
-  - WholePlantSymptomAgent SUPPORTs DiagnosticVisualAgent's
-    "visually ambiguous vs SDS" (no bare petioles weakly favors BSR
-    but does not resolve it visually).
-  - StemRootSymptomAgent confirms the decisive fork is simply not
-    in-frame (no delta to refine or withdraw).
-  Net round-2: deltas refined, no contradictions.
+  LookAlikeCoTAgent (cross-cutter — decision graph)
+    {"deltas":[{"field":"look_alikes_visual",
+      "canonical_says":"differentiates BSR from SDS",
+      "image_shows":"foliar pattern visually identical to SDS; the
+                     decisive split-stem pith is NOT in this frame, so
+                     visual ID is ambiguous here",
+      "image_quote":"interveinal chlorosis indistinguishable from SDS;
+                     no stem cross-section visible"}],
+     "confidence":"medium","reasoning":"visual look-alike ambiguity"}
+
+  LeafLesionShape/Texture/Curl/Vein/Geometry, Concentric, Severity,
+  Sporulation: mostly empty deltas / low confidence on this image.
+
+ROUND 2 (blackboard visible — stigmergy, same 13 agents)
+  - LeafNecrosisAgent SUPPORTs LeafChlorosisAgent (same interveinal
+    progression seen from two lenses).
+  - LookAlikeCoTAgent notes ColorPalette's tan-brown is consistent
+    with both BSR and SDS -> ambiguity stands.
 
 CONSOLIDATOR (VisualDiagnosisAgent)
-  Emits the pass's final visual deltas (dedup, no canonical restate):
-    leaf_chlorosis, defoliation, look_alikes_visual, color_palette
+  Final pass deltas (dedup, no canonical restate):
+    leaf_chlorosis, leaf_necrosis, color_palette, look_alikes_visual
   -> 4 raw deltas this pass.
 
 ================================================================================
 ACROSS N=10 PASSES -> K-of-N (K=3) -> VERIFIER -> MERGE
 ================================================================================
   leaf_chlorosis     "green-retained veins + early cupping"  9/10  KEEP
+  leaf_necrosis      "interveinal flecks coalescing"         6/10  KEEP
   look_alikes_visual "visually ambiguous vs SDS w/o split"   7/10  KEEP
   color_palette      "lemon-yellow -> tan-brown"             5/10  KEEP
-  defoliation        "curl-before-drop, petioles attached"   4/10  KEEP
-  one-off noise (spurious stem_lesion)                       1/10  DROP
+  one-off noise                                              1/10  DROP
 
-  Verifier: survivors -> verified / weakly_supported with extension
-  citations; none contradictory.
-  Conservative merge (cold start): all added with __support__ counts.
+  (organ detection was "leaf" in 10/10 passes -> recorded in
+   __swarm_meta__.detected_organ_per_pass; 13 active agents/pass)
+
+  Verifier: survivors -> verified / weakly_supported w/ citations;
+  none contradictory. Conservative merge (cold start): all added.
 
   NET CONTRIBUTION, THIS TUPLE: ~3-4 verified VISUAL deltas.
 
@@ -151,7 +158,10 @@ AGGREGATE CAPACITY  (same model, all tuples)
 ================================================================================
   Per-tuple net (defaults N=10, K=3): ~1.5-2.5 deltas (central ~2);
   0 for low-information photos (the real ceiling, not the swarm).
-  Visual-rich tuples (like the one above) land at the high end (~3-4).
+  Visual-rich tuples (like this one) land at the high end (~3-4).
+
+  Routing also cuts cost: a leaf photo runs ~28 calls/pass (1+13x2+1)
+  vs 49 for all-24 — same recall on the organ that's actually present.
 
   Tuples (from BugWood_Diseases_usable.csv):
     Soybean           76 tuples  (17 diseases, 19 states)
@@ -170,6 +180,7 @@ AGGREGATE CAPACITY  (same model, all tuples)
     Now        : 0 deltas (KB = canonical text only)
     Achievable : ~290 visual deltas for built Soybean+Tomato
                  (~150 worst / ~590 best); ~2,070 full Bugwood
-    Limiter    : image informativeness, not the swarm. N trades
-                 recall, K trades precision, around that ceiling.
+    Limiter    : image informativeness, not the swarm. Organ routing
+                 removes wasted calls without lowering recall on the
+                 organ that is actually in the photo.
 ================================================================================
