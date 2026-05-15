@@ -56,7 +56,27 @@ from packaging.version import Version
 sys.exit(0 if Version(transformers.__version__)>=Version('$REQ_TF') else 1)"
 }
 
-# ---- FAST PATH: already healthy -> nothing to do --------------------------
+# Show the REAL CUDA error (never hide it behind 2>/dev/null).
+cuda_probe_error() {
+  python - <<'PY' 2>&1
+import torch
+try:
+    torch.cuda.init()
+    torch.zeros(1).cuda()
+    print("CUDA_PROBE_OK", torch.cuda.get_device_name(0))
+except BaseException as e:
+    print(f"CUDA_PROBE_FAIL {type(e).__name__}: {e}")
+PY
+}
+
+# ---- transformers (safe, CPU-only, fixes Qwen2.5-VL import) ----------------
+if py "import transformers" && tf_ok; then :; else
+  echo "[env] installing transformers>=$REQ_TF (+accelerate, pillow) ..."
+  pip install --quiet --upgrade "transformers>=${REQ_TF}" accelerate pillow packaging \
+    || echo "[env] WARN: transformers install failed (no internet here?)"
+fi
+
+# ---- FAST PATH: torch CUDA already works ----------------------------------
 if py "import torch" && cuda_ok && tf_ok; then
   echo "[env] OK — torch=$(py 'import torch;print(torch.__version__)') " \
        "cuda=$(py 'import torch;print(torch.version.cuda)') " \
@@ -64,73 +84,79 @@ if py "import torch" && cuda_ok && tf_ok; then
        "device=$(py 'import torch;print(torch.cuda.get_device_name(0))')"
   exit 0
 fi
-echo "[env] environment needs healing (torch.cuda or transformers not ready)"
 
-# ---- detect the driver's max CUDA -----------------------------------------
-# HPC reality: login node = internet, NO nvidia-smi; compute node = GPU
-# + (on Nova) internet. So:
-#   - no nvidia-smi AND no forced wheel  -> not the place to heal. Exit
-#     0 (NOT an error): the sbatch runs this again ON the GPU node where
-#     it can both detect and install. Don't block / don't look broken.
-#   - no nvidia-smi BUT PATHOME_FORCE_TORCH set -> user already knows the
-#     wheel; install here (login node has internet).
-if ! command -v nvidia-smi >/dev/null 2>&1; then
-  if [ -z "${PATHOME_FORCE_TORCH:-}" ]; then
-    echo "[env] no nvidia-smi here (login node) and no PATHOME_FORCE_TORCH."
-    echo "[env] Nothing to do here — the sbatch re-runs this ON the GPU"
-    echo "      node (which has nvidia-smi AND internet) and heals there."
-    echo "      Just: sbatch scripts/submit_phase0r_regional.sh"
-    echo "      To pre-install from a login node instead, first check the"
-    echo "      driver:  srun --gres=gpu:a100:1 --partition=nova nvidia-smi | head -4"
-    echo "      then:    PATHOME_FORCE_TORCH=cu121 bash scripts/setup_env.sh"
-    exit 0
-  fi
-  echo "[env] no nvidia-smi but PATHOME_FORCE_TORCH=$PATHOME_FORCE_TORCH — "
-  echo "      installing that wheel here (login node has internet)."
-  DRIVER="(unknown — login node)"
-  MAXCUDA=""
-else
+TORCH_PRESENT=0; py "import torch" && TORCH_PRESENT=1
+TORCH_CUDA="$(py 'import torch;print(torch.version.cuda or "")')"   # "" if CPU-only
+echo "[env] torch present=$TORCH_PRESENT  torch.version.cuda='${TORCH_CUDA:-none}'"
+
+# Is this a PACKAGE problem (no torch / CPU-only torch / bundled CUDA
+# NEWER than the driver) or a NODE problem (packages fine, CUDA still
+# dead)? Decide before touching pip — reinstalling can't fix a node.
+DRIVER=""; MAXCUDA=""
+if command -v nvidia-smi >/dev/null 2>&1; then
   DRIVER="$(nvidia-smi --query-gpu=driver_version --format=csv,noheader 2>/dev/null | head -1 | tr -d ' ')"
   MAXCUDA="$(nvidia-smi 2>/dev/null | grep -m1 -oE 'CUDA Version: [0-9]+\.[0-9]+' | grep -oE '[0-9]+\.[0-9]+')"
   echo "[env] NVIDIA driver: ${DRIVER:-?}   driver max CUDA: ${MAXCUDA:-?}"
 fi
 
-# Map driver-max-CUDA -> the highest torch wheel index it can run.
-choose_wheel() {
-  local mc="${1:-}"
-  [ -z "$mc" ] && { echo "cu121"; return; }   # safe default
-  local major minor n
-  major="${mc%%.*}"; minor="${mc##*.}"
-  n=$((major * 10 + minor))                   # 12.4 -> 124
-  if   [ "$n" -ge 128 ]; then echo "cu128"
-  elif [ "$n" -ge 126 ]; then echo "cu126"
-  elif [ "$n" -ge 124 ]; then echo "cu124"
-  elif [ "$n" -ge 121 ]; then echo "cu121"
-  elif [ "$n" -ge 118 ]; then echo "cu118"
-  else                        echo "cu121"    # very old driver: best effort
-  fi
-}
-WHEEL="${PATHOME_FORCE_TORCH:-$(choose_wheel "$MAXCUDA")}"
-echo "[env] selected torch wheel index: $WHEEL  (override with PATHOME_FORCE_TORCH=cuXXX)"
+_cuda_int() { local v="${1:-}"; [ -z "$v" ] && { echo 0; return; }
+  echo $(( ${v%%.*} * 10 + ${v##*.} )); }   # 12.8 -> 128
 
-# ---- (re)install matching torch + Phase 0R deps ---------------------------
-IDX="https://download.pytorch.org/whl/${WHEEL}"
-echo "[env] pip install torch/torchvision from $IDX (needs internet — login node)"
-if ! pip install --quiet --force-reinstall torch torchvision --index-url "$IDX"; then
-  echo "[env] ERROR: torch install failed (no internet on this node? run on a login node)."
-  exit 3
+NEED_REINSTALL=0
+if [ "$TORCH_PRESENT" = 0 ] || [ -z "$TORCH_CUDA" ]; then
+  NEED_REINSTALL=1                           # missing or CPU-only torch
+elif [ -n "$MAXCUDA" ] && \
+     [ "$(_cuda_int "$TORCH_CUDA")" -gt "$(_cuda_int "$MAXCUDA")" ]; then
+  NEED_REINSTALL=1                           # torch CUDA newer than driver
 fi
-# Phase 0R model deps (Qwen2.5-VL needs transformers>=4.49 + accelerate + PIL)
-pip install --quiet --upgrade "transformers>=${REQ_TF}" accelerate pillow "packaging" || true
 
-# ---- verify a real CUDA context ------------------------------------------
-if py "import torch; assert torch.cuda.is_available(); torch.zeros(1).cuda()"; then
+if [ "$NEED_REINSTALL" = 1 ]; then
+  if ! command -v nvidia-smi >/dev/null 2>&1 && [ -z "${PATHOME_FORCE_TORCH:-}" ]; then
+    echo "[env] torch needs (re)install but no nvidia-smi here (login node)"
+    echo "      and no PATHOME_FORCE_TORCH. The sbatch heals on the GPU"
+    echo "      node automatically — just: sbatch scripts/submit_phase0r_regional.sh"
+    exit 0
+  fi
+  choose_wheel() { local mc="${1:-}"; [ -z "$mc" ] && { echo cu121; return; }
+    local n; n="$(_cuda_int "$mc")"
+    if   [ "$n" -ge 128 ]; then echo cu128
+    elif [ "$n" -ge 126 ]; then echo cu126
+    elif [ "$n" -ge 124 ]; then echo cu124
+    elif [ "$n" -ge 121 ]; then echo cu121
+    else                        echo cu118; fi; }
+  WHEEL="${PATHOME_FORCE_TORCH:-$(choose_wheel "$MAXCUDA")}"
+  echo "[env] (re)installing torch/torchvision from cu wheel: $WHEEL"
+  pip install --quiet --force-reinstall torch torchvision \
+    --index-url "https://download.pytorch.org/whl/${WHEEL}" \
+    || { echo "[env] ERROR: torch install failed (no internet on this node?)"; exit 3; }
+else
+  echo "[env] torch package looks correct for this driver — NOT reinstalling"
+  echo "      (the real torch was already cu${TORCH_CUDA//./} and the driver"
+  echo "       supports CUDA ${MAXCUDA:-?}; a reinstall cannot fix a node fault)."
+fi
+
+# ---- verify a real CUDA context, showing the ACTUAL error -----------------
+PROBE="$(cuda_probe_error)"
+echo "[env] CUDA probe: $PROBE"
+if echo "$PROBE" | grep -q "CUDA_PROBE_OK"; then
   echo "[env] HEALED — torch=$(py 'import torch;print(torch.__version__)') " \
-       "cuda=$(py 'import torch;print(torch.version.cuda)') " \
-       "device=$(py 'import torch;print(torch.cuda.get_device_name(0))')"
+       "cuda=$(py 'import torch;print(torch.version.cuda)')"
   exit 0
 fi
-echo "[env] ERROR: CUDA still not usable after reinstall."
-echo "      driver=${DRIVER:-?} maxCUDA=${MAXCUDA:-?} wheel=$WHEEL"
-echo "      Try a lower wheel: PATHOME_FORCE_TORCH=cu118 bash scripts/setup_env.sh"
+
+# Still dead AND we did not need a reinstall => NODE-LEVEL CUDA FAULT.
+echo "[env] ====================================================================="
+echo "[env] NODE CUDA FAULT — packages are fine, the GPU node cannot init CUDA."
+echo "[env]   driver=${DRIVER:-?} (supports CUDA ${MAXCUDA:-?}); torch cuda=${TORCH_CUDA:-none}"
+echo "[env]   nvidia-smi works but the CUDA runtime does not -> typically a"
+echo "[env]   missing/unhealthy /dev/nvidia-uvm or an Xid'd GPU on THIS node."
+echo "[env]   Quick checks on the node:"
+echo "[env]     ls -l /dev/nvidia*            # is /dev/nvidia-uvm present?"
+echo "[env]     nvidia-smi -q | grep -iE 'Xid|Pending|ECC mode|MIG'"
+echo "[env]   Most reliable fix: resubmit so SLURM lands on a HEALTHY node,"
+echo "[env]   and exclude this one, e.g.:"
+echo "[env]     sbatch --exclude=\$SLURMD_NODENAME scripts/submit_phase0r_regional.sh"
+echo "[env]   If many nodes fail the same way, it is a cluster issue -> contact"
+echo "[env]   Nova support with the CUDA probe error above."
+echo "[env] ====================================================================="
 exit 3

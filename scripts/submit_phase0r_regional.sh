@@ -123,8 +123,12 @@ mkdir -p logs
 # `bash scripts/setup_env.sh` on a login node, and we abort early.
 if [ "${PATHOME_SKIP_ENV_SETUP:-0}" != "1" ]; then
   if ! PATHOME_VENV="$VENV" bash "$PATHOME_REPO/scripts/setup_env.sh"; then
-    echo "[env] environment not ready. Run this on a LOGIN node, then re-sbatch:"
-    echo "      PATHOME_VENV=$VENV bash $PATHOME_REPO/scripts/setup_env.sh"
+    echo "[env] environment not ready on node ${SLURMD_NODENAME:-?}."
+    echo "      If setup_env reported a NODE CUDA FAULT (packages fine,"
+    echo "      GPU node can't init CUDA), resubmit excluding this node:"
+    echo "        sbatch --exclude=${SLURMD_NODENAME:-<thisnode>} scripts/submit_phase0r_regional.sh"
+    echo "      If it was a missing-package issue, run on a login node:"
+    echo "        PATHOME_VENV=$VENV bash $PATHOME_REPO/scripts/setup_env.sh"
     exit 3
   fi
 fi
