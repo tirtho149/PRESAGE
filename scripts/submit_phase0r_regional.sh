@@ -121,6 +121,22 @@ mkdir -p logs
 # Set PATHOME_SKIP_ENV_SETUP=1 to skip. Compute nodes often have no
 # internet — if a heal is actually needed it will say to run
 # `bash scripts/setup_env.sh` on a login node, and we abort early.
+# ---- HuggingFace cache on /work (NOT $HOME) + fast downloads ---------------
+# $HOME on HPC is small/quota'd; a 16GB Qwen2.5-VL download there stalls
+# or fills the quota. Put the HF cache on the big shared /work fs so it
+# (a) never hits a home quota and (b) is reused across nodes/runs (one
+# download ever). hf_transfer makes the pull much faster; the
+# unauthenticated rate-limit is the usual "stuck at 20%" cause — set
+# HF_TOKEN to remove it.
+export HF_HOME="${HF_HOME:-$PATHOME_REPO/.hf_cache}"
+export HUGGINGFACE_HUB_CACHE="${HUGGINGFACE_HUB_CACHE:-$HF_HOME/hub}"
+mkdir -p "$HF_HOME"
+export HF_HUB_ENABLE_HF_TRANSFER="${HF_HUB_ENABLE_HF_TRANSFER:-1}"
+python -c "import hf_transfer" 2>/dev/null || \
+  pip install --quiet hf_transfer 2>/dev/null || \
+  export HF_HUB_ENABLE_HF_TRANSFER=0   # fall back if the pkg can't install
+echo "[hf] HF_HOME=$HF_HOME  hf_transfer=$HF_HUB_ENABLE_HF_TRANSFER  token=$([ -n "${HF_TOKEN:-}" ] && echo set || echo unset)"
+
 if [ "${PATHOME_SKIP_ENV_SETUP:-0}" != "1" ]; then
   if ! PATHOME_VENV="$VENV" bash "$PATHOME_REPO/scripts/setup_env.sh"; then
     echo "[env] environment not ready on node ${SLURMD_NODENAME:-?}."
