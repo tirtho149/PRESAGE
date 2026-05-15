@@ -113,7 +113,13 @@ export VLLM_MAX_PIXELS="${VLLM_MAX_PIXELS:-1003520}"
 export VLLM_MAX_NEW_TOKENS="${VLLM_MAX_NEW_TOKENS:-512}"
 export VLLM_GPU_MEMORY_UTIL="${VLLM_GPU_MEMORY_UTIL:-0.90}"
 export VLLM_DTYPE="${VLLM_DTYPE:-auto}"
-echo "[vllm-inproc] model=$VLLM_MODEL max_model_len=$VLLM_MAX_MODEL_LEN pixels=[$VLLM_MIN_PIXELS..$VLLM_MAX_PIXELS] gpu_mem=$VLLM_GPU_MEMORY_UTIL"
+# Run vLLM's engine core IN-PROCESS (no EngineCore subprocess). The
+# subprocess path failed on Nova with "CUDA unknown error ... Setting
+# the available devices to be zero" and then retry-stormed. Keep the
+# engine in the same process; spawn for any residual worker.
+export VLLM_ENABLE_V1_MULTIPROCESSING="${VLLM_ENABLE_V1_MULTIPROCESSING:-0}"
+export VLLM_WORKER_MULTIPROC_METHOD="${VLLM_WORKER_MULTIPROC_METHOD:-spawn}"
+echo "[vllm-inproc] model=$VLLM_MODEL max_model_len=$VLLM_MAX_MODEL_LEN pixels=[$VLLM_MIN_PIXELS..$VLLM_MAX_PIXELS] gpu_mem=$VLLM_GPU_MEMORY_UTIL v1mp=$VLLM_ENABLE_V1_MULTIPROCESSING"
 
 # ---- ensure Bugwood image cache is populated -------------------------------
 # Phase 0R's regional-observation runner tries every image_id per (crop,

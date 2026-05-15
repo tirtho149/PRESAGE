@@ -615,6 +615,14 @@ def run_for_state(
     if client is None:
         client = build_client_from_env()
 
+    # vLLM must be constructed on the MAIN thread, ONCE, before any
+    # ThreadPoolExecutor (passes / specialists) spawns — building it
+    # lazily inside a worker thread caused the EngineCore CUDA-init
+    # failure + retry-storm. Warm it here, on the calling thread.
+    _warmup = getattr(client, "warmup", None)
+    if callable(_warmup):
+        _warmup()
+
     if n_runs              is None: n_runs              = _int_env  ("VLLM_N_RUNS",          10)
     if agreement_min       is None: agreement_min       = _int_env  ("VLLM_AGREEMENT_MIN",    3)
     if temperature         is None: temperature         = _float_env("VLLM_TEMPERATURE",      0.8)
@@ -780,6 +788,16 @@ def run_batch(
         trace_writer = _trace_writer_from_env()
         if trace_writer is not None:
             print(f"    [trace_writer] writing to {trace_writer.path}")
+
+    # Build the vLLM engine HERE — on the main thread, once, before the
+    # batch ThreadPoolExecutor below submits run_for_state into worker
+    # threads. vLLM's engine core must not be constructed off the main
+    # thread (that triggered the CUDA-init failure + retry-storm).
+    _warmup = getattr(client, "warmup", None)
+    if callable(_warmup):
+        print("    [vllm_inproc] warming engine on main thread ...")
+        _warmup()
+        print("    [vllm_inproc] engine ready")
 
     items = list(work_items)
     results: Dict[str, Dict[str, Dict[str, Any]]] = {}
