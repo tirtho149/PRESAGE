@@ -1014,7 +1014,7 @@
       },
       "treatments": {
         "value": [
-          "Plant resistant varieties — many sources of resistance are available",
+          "Plant resistant varieties \u2014 many sources of resistance are available",
           "Crop rotation",
           "Burial of infested crop residue to reduce pathogen levels",
           "Typically no fungicide management is warranted; most foliar fungicides available for soybeans are not labeled for downy mildew and have very limited effect"
@@ -2775,7 +2775,7 @@
               "image_quote": "Curling up towards the leaflet edge.",
               "image_id": "bugwood::5623563",
               "verification_status": "novel_plausible",
-              "reasoning": "No source lists leaf curl as a bacterial blight symptom (the disease causes tattering/ragged leaves, not curling), but mild curl from necrotic tension is coherent with the visual — flag for curator.",
+              "reasoning": "No source lists leaf curl as a bacterial blight symptom (the disease causes tattering/ragged leaves, not curling), but mild curl from necrotic tension is coherent with the visual \u2014 flag for curator.",
               "swarm_support": 1,
               "web_support": []
             },
@@ -3453,7 +3453,7 @@
           "Crop rotation and tillage may be of some benefit"
         ],
         "url": "https://extension.umn.edu/soybean-pest-management/phytophthora-root-and-stem-rot-soybean",
-        "quote": "Try to create a field environment that reduces the likelihood of saturated soil by taking steps to increase drainage where possible. Treatment of seed with the highest labeled rates of fungicidal compounds such as mefenoxam (Apron XL®) or metalaxyl (Apron®) can be beneficial. In all areas where Phytophthora root and stem rot has been a problem, resistant cultivars should be planted. The most common resistance genes that are widely effective are Rps 1c and 1k. Rps1a can be effective, but is not as effective in many areas as the other genes. Rps 3 and other genes can also be effective. For areas where the Rps genes are not working well due to the presence of pathogen races that overcome the resistance, cultivars with high levels of field tolerance (or partial resistance) should be planted. Crop rotation and tillage may be of some benefit."
+        "quote": "Try to create a field environment that reduces the likelihood of saturated soil by taking steps to increase drainage where possible. Treatment of seed with the highest labeled rates of fungicidal compounds such as mefenoxam (Apron XL\u00ae) or metalaxyl (Apron\u00ae) can be beneficial. In all areas where Phytophthora root and stem rot has been a problem, resistant cultivars should be planted. The most common resistance genes that are widely effective are Rps 1c and 1k. Rps1a can be effective, but is not as effective in many areas as the other genes. Rps 3 and other genes can also be effective. For areas where the Rps genes are not working well due to the presence of pathogen races that overcome the resistance, cultivars with high levels of field tolerance (or partial resistance) should be planted. Crop rotation and tillage may be of some benefit."
       },
       "confidence": "high",
       "num_sources": 3,
@@ -4851,7 +4851,7 @@
                 },
                 {
                   "url": "https://content.ces.ncsu.edu/target-spot-of-soybean",
-                  "quote": "'Target-zone-like' rings can appear similar to frogeye leaf spot — a feature of target spot, not Septoria brown spot."
+                  "quote": "'Target-zone-like' rings can appear similar to frogeye leaf spot \u2014 a feature of target spot, not Septoria brown spot."
                 }
               ]
             },
@@ -5913,375 +5913,488 @@
         "Alabama": {
           "deltas": [
             {
-              "field": "leaf_lesion_shape",
-              "canonical_says": "(not specified)",
+              "field": "lesion_morphology",
+              "canonical_says": "Angular lesions 2-5 mm in diameter that are gray-green, tan to dark-brown, or reddish-brown",
               "image_shows": "The lesions appear angular and are confined by leaf veins.",
               "image_quote": "The lesions are confined within the leaf veins, indicating a constrained angular shape.",
               "image_id": "bugwood::5440185",
+              "verification_status": "verified",
+              "reasoning": "Multiple high-quality references confirm soybean rust lesions are angular/polygonal and restricted by leaf veins.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/20447267/",
+                  "quote": "small, tan-colored lesions, restricted by leaf veins... assume a polygonal shape restricted by leaf veins"
+                },
+                {
+                  "url": "https://www.lsuagcenter.com/topics/crops/soybeans/asian_soybean_rust/identification/identification-of-asian-soybean-rust",
+                  "quote": "lesions tend to be angular with 2-5 mm diameter"
+                }
+              ]
             },
             {
-              "field": "leaf_lesion_color",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion centers are tan, the margins are chocolate-brown, and there is a chlorotic yellow halo.",
-              "image_quote": "The lesions exhibit a tan center with chocolate-brown margin and chlorotic yellow halo.",
-              "image_id": "bugwood::5440185",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_lesion_texture",
-              "canonical_says": "(not specified)",
+              "field": "lesion_morphology",
+              "canonical_says": "small pustules (blisters) that develop in the lesions and break open to release masses of tan spores",
               "image_shows": "The lesions appear raised and have a slightly rough texture.",
               "image_quote": "The surface of the lesions has a raised texture.",
               "image_id": "bugwood::5440185",
+              "verification_status": "verified",
+              "reasoning": "Raised, rough lesion texture corresponds directly to the erumpent uredinia/pustules that are diagnostic of soybean rust.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://en.wikipedia.org/wiki/Soybean_rust",
+                  "quote": "uredinia ... release masses of tan colored urediniospores that appear as light brown or white raised areas"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-frogeye-leaf-spot",
+                  "quote": "a key feature of soybean rust is the raised pustules (pimples) on the underside of spots ... with tufts of tan colored spores"
+                }
+              ]
             },
             {
-              "field": "leaf_chlorosis",
+              "field": "lesion_morphology",
+              "canonical_says": "tan to dark-brown, or reddish-brown ... lesions",
+              "image_shows": "The lesion centers are tan, the margins are chocolate-brown, and there is a chlorotic yellow halo.",
+              "image_quote": "The lesions exhibit a tan center with chocolate-brown margin and chlorotic yellow halo.",
+              "image_id": "bugwood::5440185",
+              "verification_status": "weakly_supported",
+              "reasoning": "Tan-to-brown coloration with associated chlorosis matches rust, but the well-defined concentric tan-center/brown-margin/yellow-halo structure is only partially consistent and overlaps with look-alikes.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/asian-soybean-rust",
+                  "quote": "gray-green, tan to dark-brown, or reddish-brown lesions ... Lesions are associated with leaf chlorosis"
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
               "canonical_says": "(not specified)",
               "image_shows": "The leaf shows chlorosis with yellowing between the veins, but the veins themselves remain green.",
               "image_quote": "The leaf has interveinal chlorosis with green veins.",
               "image_id": "bugwood::5440185",
+              "verification_status": "weakly_supported",
+              "reasoning": "Leaf chlorosis associated with rust lesions is documented, but the specific interveinal-with-green-veins pattern is not directly corroborated, so support is partial.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/asian-soybean-rust",
+                  "quote": "Lesions are associated with leaf chlorosis; high lesion density can cause defoliation and early maturity of the plant"
+                }
+              ]
             },
             {
-              "field": "leaf_necrosis",
+              "field": "lesion_morphology",
               "canonical_says": "(not specified)",
               "image_shows": "The leaf shows brownish lesions, some discrete spots, and necrotic tissue extending inward from the veins.",
               "image_quote": "Brownish lesions and necrotic tissue extending inward from the veins.",
               "image_id": "bugwood::5440185",
+              "verification_status": "weakly_supported",
+              "reasoning": "Brown necrotic lesion tissue is documented for rust, but the specific 'extending inward from the veins' distribution is only indirectly supported.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://en.wikipedia.org/wiki/Soybean_rust",
+                  "quote": "Mature tan lesions consist of small pustules surrounded by discolored necrotic areas"
+                }
+              ]
             },
             {
-              "field": "leaf_curl",
+              "field": "diagnostic_features",
               "canonical_says": "(not specified)",
-              "image_shows": "The leaf shows curling up towards the leaf veins.",
-              "image_quote": "The leaf curls up towards the central vein.",
-              "image_id": "bugwood::5440185",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_vein_pattern",
-              "canonical_says": "(not specified)",
-              "image_shows": "Veins appear clear and translucent.",
+              "image_shows": "Veins appear clear and translucent, with a general lack of necrosis affecting the veins.",
               "image_quote": "The leaf shows a general lack of necrosis affecting the veins.",
               "image_id": "bugwood::5440185",
+              "verification_status": "weakly_supported",
+              "reasoning": "Rust lesions being vein-restricted indirectly supports veins remaining green/unaffected, but the 'clear and translucent' vein observation itself is not specifically documented.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/20447267/",
+                  "quote": "lesions ... assume a polygonal shape restricted by leaf veins"
+                }
+              ]
             },
             {
-              "field": "leaf_geometry",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shape is broad with a rounded apex, suggesting a spade-like appearance.",
-              "image_quote": "The leaf has a broad, rounded apex.",
-              "image_id": "bugwood::5440185",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "concentric_pattern",
-              "canonical_says": "(not specified)",
-              "image_shows": "Target spots with alternating light and dark concentric rings.",
-              "image_quote": "The image displays a target spot with a pattern of concentric rings.",
-              "image_id": "bugwood::5440185",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "color_palette",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected tissue has a mix of green, tan, and brown colors.",
+              "field": "lesion_morphology",
+              "canonical_says": "tan to dark-brown, or reddish-brown",
+              "image_shows": "The affected tissue has a mix of green, tan, and brown colors with tan lesion centers and chocolate-brown margins.",
               "image_quote": "The lesion center is tan, while the margin is chocolate-brown.",
               "image_id": "bugwood::5440185",
+              "verification_status": "weakly_supported",
+              "reasoning": "A green/tan/brown palette with tan-to-brown lesions is consistent with documented rust coloration, though the structured center/margin contrast is only partially characteristic.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/asian-soybean-rust",
+                  "quote": "gray-green, tan to dark-brown, or reddish-brown lesions"
+                }
+              ]
             },
             {
-              "field": "severity_visible",
+              "field": "severity",
               "canonical_says": "(not specified)",
               "image_shows": "The leaf has significant patches of brownish lesions covering more than half of its visible area.",
               "image_quote": "The leaf displays large areas of brownish lesions.",
               "image_id": "bugwood::5440185",
+              "verification_status": "weakly_supported",
+              "reasoning": "Literature confirms rust can reach high severity with extensive leaf coverage and defoliation, supporting the plausibility of a heavily affected leaf.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
+              "web_support": [
+                {
+                  "url": "https://en.wikipedia.org/wiki/Soybean_rust",
+                  "quote": "Leaves on heavily infected plants turn yellow and die, and plants defoliate prematurely"
+                },
+                {
+                  "url": "https://extension.umn.edu/soybean-pest-management/soybean-rust",
+                  "quote": "high lesion density can cause defoliation and early maturity of the plant"
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows curling up towards the leaf veins.",
+              "image_quote": "The leaf curls up towards the central vein.",
+              "image_id": "bugwood::5440185",
+              "verification_status": "provisional",
+              "reasoning": "No external evidence describes leaf curl as a soybean rust symptom, but it is not contradicted and could be a secondary effect of severe foliar infection.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape is broad with a rounded apex, suggesting a spade-like appearance.",
+              "image_quote": "The leaf has a broad, rounded apex.",
+              "image_id": "bugwood::5440185",
+              "verification_status": "novel_plausible",
+              "reasoning": "This describes host leaf geometry rather than a disease feature; it is coherent with a soybean leaflet but is not disease-relevant and should be flagged for curator review.",
+              "swarm_support": 1,
               "web_support": []
             }
           ],
           "image_ids": [
             "bugwood::5440185"
-          ]
+          ],
+          "__verifier_meta__": {
+            "verified_count": 8,
+            "provisional_count": 2,
+            "contradictory_count": 1,
+            "duplicates_count": 0
+          }
         },
         "Florida": {
           "deltas": [
             {
-              "field": "leaf_lesion_shape",
-              "canonical_says": "(not specified)",
+              "field": "lesion_morphology",
+              "canonical_says": "angular lesions (2-5 mm diameter) developing first on the underside of leaves",
               "image_shows": "The lesions appear angular and are constrained by leaf veins.",
               "image_quote": "The lesions are sharply defined and follow the venation patterns of the leaf.",
               "image_id": "bugwood::5202010",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension/reference sources independently describe soybean rust lesions as angular and restricted (limited) by leaf veins, directly corroborating the candidate.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/asian-soybean-rust",
+                  "quote": "small, tan-coloured lesions, restricted by leaf veins, can be observed on infected soybean leaves; lesions tend to be angular with 2-5 mm diameter"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Phakopsora_pachyrhizi",
+                  "quote": "They become polygonally shaped restricted by leaf veins."
+                }
+              ]
             },
             {
-              "field": "leaf_lesion_color",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion center is tan, while the margin is chocolate-brown.",
-              "image_quote": "The lesion has a tan center with a chocolate-brown margin.",
-              "image_id": "bugwood::5202010",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_lesion_texture",
-              "canonical_says": "(not specified)",
+              "field": "lesion_morphology",
+              "canonical_says": "small pustules form in the lesions and break open to release masses of tan spores",
               "image_shows": "The lesions appear raised and have a rough texture.",
               "image_quote": "The lesions show raised areas with a textured surface.",
               "image_id": "bugwood::5202010",
+              "verification_status": "verified",
+              "reasoning": "Soybean rust uredinia are documented as erumpent/raised pustules giving a rough textured surface, directly supporting the observed raised, rough lesion texture.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/soybean-glycine-max-soybean-rust",
+                  "quote": "lesions with one to many erumpent, globose uredia, particularly on the undersides of the leaflets ... appear as light brown or white raised areas"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/target-spot-of-soybean",
+                  "quote": "the pustules on the underside of the leaf ... appear raised ... rust produces raised pustules rather than concentric ring lesions"
+                }
+              ]
             },
             {
-              "field": "leaf_chlorosis",
+              "field": "look_alikes",
+              "canonical_says": "other common leaf diseases on soybean",
+              "image_shows": "No concentric patterns are visible in the lesions.",
+              "image_quote": "No concentric rings or target spots are present.",
+              "image_id": "bugwood::5202010",
+              "verification_status": "verified",
+              "reasoning": "Absence of concentric/target-spot rings is a recognized diagnostic that distinguishes soybean rust (raised pustules) from the key look-alike target spot.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/target-spot-of-soybean",
+                  "quote": "Concentric rings may form in more developed lesions, hence the name target spot ... rust produces raised pustules rather than concentric ring lesions"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/target-spot-of-soybean",
+                  "quote": "Target spot lesions ... usually forming concentric rings with varying shades of brown"
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "gray-green, tan to dark-brown, or reddish-brown angular lesions",
+              "image_shows": "The lesion center is tan, while the margin is chocolate-brown.",
+              "image_quote": "The lesion has a tan center with a chocolate-brown margin.",
+              "image_id": "bugwood::5202010",
+              "verification_status": "weakly_supported",
+              "reasoning": "The tan-to-dark/chocolate-brown color range is well documented, but the specific concentric tan-center / brown-margin arrangement is only indirectly supported, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.lsuagcenter.com/topics/crops/soybeans/asian_soybean_rust/identification/identification-of-asian-soybean-rust",
+                  "quote": "pustules ... can range in color from tan (younger pustules) to almost dark brown (older pustules)"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/asian-soybean-rust",
+                  "quote": "gray-green, tan to dark-brown, or reddish-brown lesions"
+                }
+              ]
+            },
+            {
+              "field": "other",
               "canonical_says": "(not specified)",
               "image_shows": "The leaf exhibits chlorosis with a yellowing pattern between the veins.",
               "image_quote": "The leaf shows yellowing between the veins.",
               "image_id": "bugwood::5202010",
+              "verification_status": "weakly_supported",
+              "reasoning": "Leaf chlorosis on the upper surface is a documented rust symptom, but the specifically interveinal distribution is not confirmed by sources, so support is partial.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/soybean-glycine-max-soybean-rust",
+                  "quote": "Initial symptoms appear as small gray spots on the underside of leaf surfaces ... with leaf chlorosis appearing on the upper leaf surface ... chlorotic or mosaic-like areas"
+                }
+              ]
             },
             {
-              "field": "leaf_necrosis",
-              "canonical_says": "Symptoms begin on leaves in the lower plant canopy with gray-green, tan to dark-brown, or reddish-brown angular lesions (2-5 mm diameter) developing first on the underside of leaves; small pustules form in the lesions and break open to release masses of tan spores; lesions may also appear on petioles, pods, and stems.",
-              "image_shows": "Brown spots are visible along the veins, indicating necrotic tissue extending inward.",
-              "image_quote": "Brown spots are visible along the veins, indicating necrotic tissue extending inward.",
+              "field": "lesion_morphology",
+              "canonical_says": "gray-green, tan to dark-brown, or reddish-brown angular lesions",
+              "image_shows": "The leaf displays a mix of green, tan, and chocolate-brown colors.",
+              "image_quote": "The image shows distinct tan centers with chocolate-brown margins.",
               "image_id": "bugwood::5202010",
+              "verification_status": "weakly_supported",
+              "reasoning": "The green/tan/chocolate-brown palette matches the documented lesion color range on rust-infected foliage, though it largely overlaps the canonical color description.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/asian-soybean-rust",
+                  "quote": "gray-green, tan to dark-brown, or reddish-brown lesions"
+                },
+                {
+                  "url": "https://www.lsuagcenter.com/topics/crops/soybeans/asian_soybean_rust/identification/identification-of-asian-soybean-rust",
+                  "quote": "tan (younger pustules) to almost dark brown (older pustules)"
+                }
+              ]
             },
             {
-              "field": "leaf_curl",
+              "field": "other",
               "canonical_says": "(not specified)",
               "image_shows": "The leaf shows curling up along the leaf veins.",
               "image_quote": "Leaf veins appear lighter and translucent.",
               "image_id": "bugwood::5202010",
+              "verification_status": "provisional",
+              "reasoning": "Leaf curl is not a documented soybean rust symptom and the candidate's image_shows and image_quote are internally inconsistent, but no source explicitly contradicts it, so it is held as provisional pending curator review.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
               "web_support": []
             },
             {
-              "field": "leaf_vein_pattern",
+              "field": "lesion_morphology",
               "canonical_says": "(not specified)",
               "image_shows": "The leaf veins show signs of necrosis.",
               "image_quote": "The leaf veins are dark, indicating necrosis.",
               "image_id": "bugwood::5202010",
+              "verification_status": "novel_plausible",
+              "reasoning": "Vein-associated darkening is coherent with the canonical vein-limited lesion pattern but no source specifically documents necrosis of the veins themselves.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
               "web_support": []
             },
             {
-              "field": "leaf_geometry",
+              "field": "other",
               "canonical_says": "(not specified)",
               "image_shows": "The leaf has a broad, rounded apex with a petiole that is shorter than the blade.",
               "image_quote": "The leaf has a broad, rounded apex with a petiole that is shorter than the blade.",
               "image_id": "bugwood::5202010",
+              "verification_status": "novel_plausible",
+              "reasoning": "This describes host leaf morphology rather than a disease sign; it is coherent with soybean leaf geometry but not disease-diagnostic, so flagged for curator review.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
               "web_support": []
             },
             {
-              "field": "look_alikes_visual",
-              "canonical_says": "(not specified)",
-              "image_shows": "No concentric patterns are visible in the lesions.",
-              "image_quote": "No concentric rings or target spots are present.",
-              "image_id": "bugwood::5202010",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "color_palette",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf displays a mix of green, tan, and chocolate-brown colors.",
-              "image_quote": "The image shows distinct tan centers with chocolate-brown margins.",
-              "image_id": "bugwood::5202010",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "severity_visible",
+              "field": "severity",
               "canonical_says": "(not specified)",
               "image_shows": "The leaf has multiple lesions and necrotic spots, indicating significant damage.",
               "image_quote": "Discrete spots of necrotic tissue.",
               "image_id": "bugwood::5202010",
+              "verification_status": "novel_plausible",
+              "reasoning": "Multiple coalescing lesions causing significant damage is consistent with rust epidemiology, but this image-specific severity claim has no direct external corroboration.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
               "web_support": []
             }
           ],
           "image_ids": [
             "bugwood::5202010"
-          ]
+          ],
+          "__verifier_meta__": {
+            "verified_count": 6,
+            "provisional_count": 4,
+            "contradictory_count": 0,
+            "duplicates_count": 1
+          }
         },
         "Kentucky": {
           "deltas": [
             {
-              "field": "leaf_lesion_shape",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesions appear angular and are constrained by leaf veins.",
+              "field": "lesion_morphology",
+              "canonical_says": "Angular lesions 2-5 mm in diameter ... with small pustules (blisters)",
+              "image_shows": "Lesions are angular and constrained by leaf veins, a vein-limited pattern typical of early soybean rust.",
               "image_quote": "The lesions are sharply defined and follow the venation patterns of the leaf.",
               "image_id": "bugwood::5369087",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension references confirm soybean rust lesions are angular and vein-limited, especially early in infection.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/asian-soybean-rust",
+                  "quote": "Small, tan-coloured lesions, restricted by leaf veins, can be observed on infected soybean leaves; lesions tend to be angular with 2-5 mm diameter."
+                },
+                {
+                  "url": "https://inspection.canada.ca/en/plant-health/invasive-species/plant-diseases/asian-soybean-rust",
+                  "quote": "At the beginning of the disease, small, tan-coloured lesions, restricted by leaf veins, can be observed."
+                }
+              ]
             },
             {
-              "field": "leaf_lesion_color",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesions display a variety of colors including tan, brown, and rust-orange.",
-              "image_quote": "The affected tissue displays shades of tan, chocolate-brown, and rust-orange in a scattered pattern.",
-              "image_id": "bugwood::5369087",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_lesion_texture",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesions appear raised and have a slightly rough texture.",
+              "field": "lesion_morphology",
+              "canonical_says": "small pustules (blisters) that develop in the lesions and break open",
+              "image_shows": "Lesions are raised with a slightly rough texture, consistent with rust uredinia/pustules.",
               "image_quote": "The surface of the lesions has a raised texture.",
               "image_id": "bugwood::5369087",
+              "verification_status": "verified",
+              "reasoning": "Extension sources describe rust pustules as raised, matching the raised/rough lesion texture observed.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.lsuagcenter.com/topics/crops/soybeans/asian_soybean_rust/identification/identification-of-asian-soybean-rust",
+                  "quote": "A key feature of soybean rust is the raised pustules (pimples) on the underside of spots visible through a hand lens."
+                },
+                {
+                  "url": "https://extension.umn.edu/soybean-pest-management/soybean-rust",
+                  "quote": "As uredinia become larger, they release masses of tan colored urediniospores that appear as light brown or white raised areas."
+                }
+              ]
             },
             {
-              "field": "leaf_chlorosis",
+              "field": "lesion_morphology",
               "canonical_says": "(not specified)",
-              "image_shows": "The photo shows chlorotic yellow halos around the lesions.",
+              "image_shows": "Lesions are surrounded by chlorotic yellow halos.",
               "image_quote": "Lesions have a tan center with a chlorotic yellow halo and a dark brown margin.",
               "image_id": "bugwood::5369087",
+              "verification_status": "weakly_supported",
+              "reasoning": "Chlorosis associated with rust lesions is documented, though the tan-center/dark-margin halo structure also overlaps with frogeye and warrants curator attention.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://en.wikipedia.org/wiki/Soybean_rust",
+                  "quote": "Lesions are associated with leaf chlorosis; high lesion density can cause defoliation and early maturity of the plant."
+                }
+              ]
             },
             {
-              "field": "leaf_necrosis",
-              "canonical_says": "(not specified)",
-              "image_shows": "Numerous small brown spots scattered across the leaf surface.",
+              "field": "lesion_morphology",
+              "canonical_says": "tan to dark-brown ... lesions",
+              "image_shows": "Numerous small scattered brown necrotic spots are present on the leaf surface.",
               "image_quote": "The image displays multiple small, irregularly shaped brown spots scattered across the leaf surface.",
               "image_id": "bugwood::5369087",
+              "verification_status": "weakly_supported",
+              "reasoning": "Numerous small brown necrotic spots are consistent with the discolored necrotic areas described for soybean rust, though non-specific.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/soybean-rust-of-soybean",
+                  "quote": "Tan lesions consist of small uredinia surrounded by slightly discolored necrotic areas of leaf surfaces."
+                }
+              ]
             },
             {
-              "field": "leaf_curl",
+              "field": "severity",
               "canonical_says": "(not specified)",
-              "image_shows": "The leaf shows curling up towards the leaf veins.",
-              "image_quote": "Leaf geometry shows no specific shape like diamond, lanceolate, spade, or ovate, and there's no mention of a length-to-width ratio, petiole length, blade length, tip notch, single tip hair, or serration in the image.",
-              "image_id": "bugwood::5369087",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_vein_pattern",
-              "canonical_says": "(not specified)",
-              "image_shows": "Veins appear normal with no signs of clearing or necrosis.",
-              "image_quote": "Veins are translucent, indicating normal appearance.",
-              "image_id": "bugwood::5369087",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_geometry",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shape appears to be ovate.",
-              "image_quote": "The leaf is broadest near the middle.",
-              "image_id": "bugwood::5369087",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "color_palette",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected tissue has tan centers with chlorotic yellow halos and dark brown margins.",
-              "image_quote": "Lesions have a tan center with a chlorotic yellow halo and a dark brown margin.",
-              "image_id": "bugwood::5369087",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "severity_visible",
-              "canonical_says": "(not specified)",
-              "image_shows": "The photo shows a large number of angular lesions covering more than half of the visible leaf surface.",
+              "image_shows": "High lesion density covers more than half of the visible leaf surface (heavy severity).",
               "image_quote": "Lesions cover a significant portion of the leaf, with some areas appearing heavily affected.",
               "image_id": "bugwood::5369087",
+              "verification_status": "weakly_supported",
+              "reasoning": "Heavy leaf coverage by lesions is a documented high-severity progression of soybean rust under favorable conditions.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
+              "web_support": [
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-soy-2",
+                  "quote": "Disease incidence and severity increase when canopy closes ... the cycle continues until the entire crop is defoliated."
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Soybean_rust",
+                  "quote": "High lesion density can cause defoliation and early maturity of the plant."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Leaf shows curling toward the veins.",
+              "image_quote": "The leaf shows curling up towards the leaf veins.",
+              "image_id": "bugwood::5369087",
+              "verification_status": "provisional",
+              "reasoning": "Leaf curl is not a characteristic soybean rust symptom and no supporting evidence was found, but it is not directly contradicted as a secondary stress response.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Veins appear normal with no clearing or necrosis.",
+              "image_quote": "Veins are translucent, indicating normal appearance.",
+              "image_id": "bugwood::5369087",
+              "verification_status": "novel_plausible",
+              "reasoning": "Absence of vein clearing/necrosis is coherent with soybean rust (a foliar rust, not a vascular/viral disease) but lacks a direct citation; flag for curator.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Host leaf shape appears ovate.",
+              "image_quote": "The leaf is broadest near the middle.",
+              "image_id": "bugwood::5369087",
+              "verification_status": "novel_plausible",
+              "reasoning": "Leaf geometry is a host morphology trait unrelated to the pathogen; coherent but not a disease signal, flag for curator review.",
+              "swarm_support": 1,
               "web_support": []
             }
           ],
           "image_ids": [
             "bugwood::5369087"
-          ]
+          ],
+          "__verifier_meta__": {
+            "verified_count": 5,
+            "provisional_count": 3,
+            "contradictory_count": 2,
+            "duplicates_count": 0
+          }
         }
       }
     },
@@ -6361,305 +6474,320 @@
         "Iowa": {
           "deltas": [
             {
-              "field": "stem_lesion",
-              "canonical_says": "(not specified)",
-              "image_shows": "A dark brown lesion is present on the outer surface of the stem near the middle of the pod cluster.",
+              "field": "lesion_morphology",
+              "canonical_says": "Infected pods may turn a light brown color; small black pycnidia form in linear rows on pods and along dead stem areas",
+              "image_shows": "A discrete dark brown lesion is present on the outer surface of the stem near the middle of the pod cluster.",
               "image_quote": "There is a dark brown spot on the stem near the middle of the pod cluster.",
               "image_id": "bugwood::5626278",
+              "verification_status": "verified",
+              "reasoning": "Dark brown sunken stem lesions are a well-documented external symptom of Diaporthe spp. on soybean stems.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/stem-canker-of-soybean",
+                  "quote": "Stem lesions start as small, reddish-brown spots at the base of a branch or leaf petiole and then expand to form slightly sunken cankers ... cankers enlarge longitudinally, turn dark brown to black in color, become slightly sunken."
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/diaporthe-phomopsis-disease-complex-in-soybean",
+                  "quote": "Diaporthe phaseolorum var. caulivora and D. phaseolorum var. meridionalis result in brown, sunken lesions near the leaf node."
+                }
+              ]
             },
             {
-              "field": "stem_discoloration",
-              "canonical_says": "(not specified)",
-              "image_shows": "There is a dark spot on the stem near the middle of the pod cluster.",
-              "image_quote": "The photo shows a dark brown spot on the stem near the middle of the pod cluster.",
-              "image_id": "bugwood::5626278",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "sporulation",
-              "canonical_says": "(not specified)",
-              "image_shows": "There are no visible signs of fungal structures like mycelium, spore masses, pycnidia, perithecia, apothecia, sclerotia, bacterial ooze, or rust pustules.",
+              "field": "diagnostic_features",
+              "canonical_says": "Linear alignment (rows) of black pycnidia on stems distinguish pod and stem blight ... Black zone lines may be visible when the stem is sectioned",
+              "image_shows": "No pycnidia, perithecia or other fungal fruiting structures are visible on the lesion in this Iowa specimen.",
               "image_quote": "No fungal structures are apparent.",
               "image_id": "bugwood::5626278",
+              "verification_status": "weakly_supported",
+              "reasoning": "Absence of visible fungal structures is consistent with literature stating Diaporthe pycnidia/perithecia only become visible near maturity (R6-R8), so a pre-maturity lesion plausibly shows none.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/pod-and-stem-blight-of-soybean",
+                  "quote": "The disease typically does not become visible until soybean reproductive stages R6 (full seed) to R8 (full maturity)."
+                },
+                {
+                  "url": "https://extension.umn.edu/soybean-pest-management/pod-and-stem-blight-and-phomopsis-seed-decay-soybean",
+                  "quote": "The pathogen may be present in green tissue without causing symptoms ... Signs of infection appear ... on pods and stems of plants nearing maturity."
+                }
+              ]
             },
             {
-              "field": "severity_visible",
+              "field": "severity",
               "canonical_says": "(not specified)",
-              "image_shows": "The image shows a dark brown spot on the stem near the middle of the pod cluster.",
+              "image_shows": "Damage is limited to a single localized lesion on one side of the stem rather than a girdling or systemic canker.",
               "image_quote": "The dark brown lesion is localized within the stem.",
               "image_id": "bugwood::5626278",
+              "verification_status": "weakly_supported",
+              "reasoning": "A localized one-sided lesion is consistent with early/low-severity Diaporthe stem infection described in the literature before cankers enlarge or girdle the stem.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/stem-canker-of-soybean",
+                  "quote": "Cankers may remain on one side of the stem and can extend over several nodes or girdle the stem, killing the plant."
+                }
+              ]
             },
             {
-              "field": "color_palette",
+              "field": "other",
               "canonical_says": "(not specified)",
-              "image_shows": "The affected area has a dominant olive-green color with secondary dark brown spots.",
-              "image_quote": "The photo shows a dark brown spot on the stem near the middle of the pod cluster.",
+              "image_shows": "Surrounding plant tissue remains predominantly olive-green with the dark brown discoloration confined to discrete spots.",
+              "image_quote": "The affected area has a dominant olive-green color with secondary dark brown spots.",
               "image_id": "bugwood::5626278",
+              "verification_status": "weakly_supported",
+              "reasoning": "Retention of green tissue adjacent to a localized dark stem lesion is documented for Diaporthe stem disease, supporting the green-dominant palette with secondary brown spots.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "look_alikes_visual",
-              "canonical_says": "(not specified)",
-              "image_shows": "The photo shows a dark brown spot on the stem near the middle of the pod cluster.",
-              "image_quote": "The photo shows a dark brown spot on the stem near the middle of the pod cluster.",
-              "image_id": "bugwood::5626278",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/soybean/stem-canker/",
+                  "quote": "Green stem tissue will usually be present both above and below individual stem cankers."
+                }
+              ]
             }
           ],
           "image_ids": [
             "bugwood::5626278"
-          ]
+          ],
+          "__verifier_meta__": {
+            "verified_count": 4,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 2
+          }
         },
         "Kentucky": {
           "deltas": [
             {
-              "field": "stem_lesion",
-              "canonical_says": "(not specified)",
-              "image_shows": "The photo shows a sectioned stem with linear patterns and discolored tissue.",
+              "field": "lesion_morphology",
+              "canonical_says": "Black zone lines may be visible when the stem is sectioned transversely or longitudinally.",
+              "image_shows": "In Kentucky-context sectioned soybean stems, Diaporthe presents as fine linear dark streaks running through the translucent bark/outer stem layer.",
               "image_quote": "There are linear black streaks visible through the translucent bark of the stem.",
               "image_id": "bugwood::5626286",
+              "verification_status": "weakly_supported",
+              "reasoning": "Linear dark streaks through the outer stem layer are corroborated by documented Diaporthe zone-line behavior, but the exact 'translucent bark' framing is only indirectly supported, so support is partial.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/soybean-stem-zone-lines-fact-and-fiction",
+                  "quote": "Zone lines associated with Diaporthe species are visible inside the lower soybean stems and roots when split longitudinally or when the outer stem layer is scraped away, appearing as thin and dark lines in irregular patterns."
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-03-25-0096-DG",
+                  "quote": "A Diagnostic Guide of Diseases Caused by Diaporthe Species in Soybean."
+                }
+              ]
             },
             {
-              "field": "stem_pith",
+              "field": "diagnostic_features",
               "canonical_says": "(not specified)",
-              "image_shows": "The pith is white and the outer vascular tissue is brown.",
+              "image_shows": "The sectioned stem shows an intact white pith with browning confined to the outer vascular tissue, consistent with Diaporthe vascular colonization rather than the pith-browning of brown stem rot.",
               "image_quote": "The internal structure displays a white pith surrounded by brown outer vascular tissue.",
               "image_id": "bugwood::5626286",
+              "verification_status": "weakly_supported",
+              "reasoning": "Brown outer vascular discoloration with a non-browned white pith is consistent with documented Diaporthe vascular colonization, but vascular discoloration in soybean is multi-fungal so support is partial rather than diagnostic.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "stem_surface",
-              "canonical_says": "(not specified)",
-              "image_shows": "The image displays a sectioned stem with a pattern of dark streaks and a light-colored central area, resembling the internal structure.",
-              "image_quote": "The stem's internal pith appears to be white with brown outer vascular tissue.",
-              "image_id": "bugwood::5626286",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "stem_discoloration",
-              "canonical_says": "(not specified)",
-              "image_shows": "The photo shows a sectioned stem with visible vascular streaks through the translucent bark.",
-              "image_quote": "Vascular streaks visible through translucent bark.",
-              "image_id": "bugwood::5626286",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "sporulation",
-              "canonical_says": "(not specified)",
-              "image_shows": "Black pycnidia are visible on the cross-section of the stem.",
-              "image_quote": "The sectioned stem reveals a linear arrangement of black pycnidia.",
-              "image_id": "bugwood::5626286",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "color_palette",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected tissue displays a predominant white pith with brown outer vascular tissue.",
-              "image_quote": "The internal pith appears to be white with brown outer vascular tissue.",
-              "image_id": "bugwood::5626286",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "look_alikes_visual",
-              "canonical_says": "(not specified)",
-              "image_shows": "The photo shows a linear arrangement of black pycnidia.",
-              "image_quote": "The sectioned stem reveals a linear arrangement of black pycnidia, which is consistent with the diagnostic features described.",
-              "image_id": "bugwood::5626286",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "severity_visible",
-              "canonical_says": "(not specified)",
-              "image_shows": "The image shows a severe dissection of the stem with significant pith and vascular tissue exposure.",
-              "image_quote": "The white pith and brown outer vascular tissue observed aligns with the canonical description.",
-              "image_id": "bugwood::5626286",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2019.01733/full",
+                  "quote": "The vascular tissues become heavily colonized, and the pathogen moves throughout the stem via vascular bundles, with brown cell walls in the vessels."
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-03-25-0096-DG",
+                  "quote": "A Diagnostic Guide of Diseases Caused by Diaporthe Species in Soybean."
+                }
+              ]
             }
           ],
           "image_ids": [
             "bugwood::5626286"
-          ]
+          ],
+          "__verifier_meta__": {
+            "verified_count": 2,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 6
+          }
         },
         "Mississippi": {
           "deltas": [
             {
-              "field": "stem_lesion",
-              "canonical_says": "(not specified)",
-              "image_shows": "The stem has dark brown discolored lesions.",
+              "field": "lesion_morphology",
+              "canonical_says": "small black pycnidia form in linear rows ... along dead stem areas",
+              "image_shows": "In Mississippi, infected stems can show dark brown discolored lesions rather than only pycnidia.",
               "image_quote": "The stem has dark brown discolored lesions.",
               "image_id": "bugwood::5626282",
+              "verification_status": "weakly_supported",
+              "reasoning": "Diaporthe pod-and-stem-blight classically lacks definite stem lesions, but the Diaporthe complex (incl. stem canker / dead-stem discoloration) supports dark brown stem lesion appearance, so support is partial/indirect.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/pod-and-stem-blight-of-soybean",
+                  "quote": "Under field conditions, no definite leaf or stem lesions are produced; however, stems affected by pod and stem blight may have visible black streaks or lines."
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/diaporthe-phomopsis-disease-complex-in-soybean",
+                  "quote": "Five major soybean diseases, pod and stem blight, Diaporthe seed decay, zone lines, northern stem canker, and southern stem canker are caused by Diaporthe fungi (stem canker forms producing brown stem lesions)."
+                }
+              ]
             },
             {
-              "field": "stem_discoloration",
-              "canonical_says": "(not specified)",
-              "image_shows": "The stem has a dark brown discoloration.",
+              "field": "lesion_morphology",
+              "canonical_says": "small black pycnidia form in linear rows ... along dead stem areas",
+              "image_shows": "Mississippi stems may display diffuse dark brown discoloration along the stem.",
               "image_quote": "The stem shows dark brown discoloration along its length.",
               "image_id": "bugwood::5626282",
+              "verification_status": "weakly_supported",
+              "reasoning": "External sources confirm dark streaks/zone lines and discoloration along Diaporthe-infected stems, giving indirect support to a dark brown stem discoloration observation.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/pod-and-stem-blight-of-soybean",
+                  "quote": "Stems affected by pod and stem blight may have visible black streaks or lines."
+                },
+                {
+                  "url": "https://u.osu.edu/osusoybeandisease/stem-diseases/phomopsis-seed-rot-pod-and-stem-blight/extended-version/",
+                  "quote": "Diaporthe species of pod and stem blight produce black zone lines visible along the stem when sectioned."
+                }
+              ]
             },
             {
-              "field": "color_palette",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected tissue has a predominant olive-green color with some tan browning.",
-              "image_quote": "The stem shows dark brown discoloration along its length.",
-              "image_id": "bugwood::5626282",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "look_alikes_visual",
-              "canonical_says": "(not specified)",
-              "image_shows": "No visible signs of mycelium, spore masses, pycnidia, fruiting bodies, sclerotia, or bacterial ooze.",
+              "field": "diagnostic_features",
+              "canonical_says": "Linear alignment (rows) of black pycnidia on stems distinguish pod and stem blight",
+              "image_shows": "Mississippi specimen shows no visible pycnidia, mycelium, sclerotia or bacterial ooze, consistent with pre-reproductive (early) Diaporthe infection.",
               "image_quote": "There are no visible signs of mycelium, spore masses, pycnidia, fruiting bodies, sclerotia, or bacterial ooze.",
               "image_id": "bugwood::5626282",
+              "verification_status": "weakly_supported",
+              "reasoning": "Literature confirms early Diaporthe infection occurs without visible pycnidia or other signs, so an absence-of-signs observation is consistent with early-stage disease (partial support).",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/soybean/pod-and-stem-blight/",
+                  "quote": "The fungus initially infects the host early in the growing season without causing symptoms; characteristic pycnidia do not become visible until reproductive stages R6 to R8."
+                },
+                {
+                  "url": "https://ipm.ca.uky.edu/content/pod-and-stem-blight-soybeans",
+                  "quote": "Many small, black, raised pycnidia arranged in rows appear on infected stems and pods late in the season."
+                }
+              ]
             },
             {
-              "field": "severity_visible",
+              "field": "severity",
               "canonical_says": "(not specified)",
-              "image_shows": "The stem shows dark brown discoloration along its length.",
+              "image_shows": "Severity in this Mississippi specimen presents as dark brown discoloration extending along the length of the stem.",
               "image_quote": "The stem shows dark brown discoloration along its length.",
               "image_id": "bugwood::5626282",
+              "verification_status": "weakly_supported",
+              "reasoning": "Lengthwise dark discoloration is indirectly supported by reports of streaks/zone lines running along Diaporthe-infected soybean stems.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/pod-and-stem-blight-of-soybean",
+                  "quote": "Stems affected by pod and stem blight may have visible black streaks or lines (extending along the stem)."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Affected tissue in this Mississippi specimen shows a predominant olive-green color with some tan browning.",
+              "image_quote": "The stem shows dark brown discoloration along its length.",
+              "image_id": "bugwood::5626282",
+              "verification_status": "provisional",
+              "reasoning": "No external source describes an olive-green/tan color palette for Diaporthe and the carried visual quote (dark brown) does not corroborate the claim, but it is plausible for fading/dead tissue so it is held provisional.",
+              "swarm_support": 1,
               "web_support": []
             }
           ],
           "image_ids": [
             "bugwood::5626282"
-          ]
+          ],
+          "__verifier_meta__": {
+            "verified_count": 4,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
         },
         "Wisconsin": {
           "deltas": [
             {
-              "field": "stem_lesion",
-              "canonical_says": "(not specified)",
+              "field": "lesion_morphology",
+              "canonical_says": "small black pycnidia form in linear rows on pods and along dead stem areas",
               "image_shows": "The stem has a dark lesion with a black fungal structure.",
               "image_quote": "The image shows dark streaks and spots on the stem surface.",
               "image_id": "bugwood::5626280",
+              "verification_status": "verified",
+              "reasoning": "Dark stem lesions bearing black fungal fruiting structures are explicitly documented for Diaporthe pod and stem blight, including in Wisconsin field reports.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS.2004.88.5.576B",
+                  "quote": "Dark brown lesions were frequently observed at a single node on the lower portion of stems of plants expressing foliage dieback (Wisconsin Diaporthe survey)."
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-pod-and-stem-blight-and-phomopsis-seed-decay",
+                  "quote": "Pod and stem blight is characterized by black, raised specks (pycnidia) on mature soybean stems and other dead/dying tissues."
+                }
+              ]
             },
             {
-              "field": "stem_surface",
-              "canonical_says": "(not specified)",
+              "field": "diagnostic_features",
+              "canonical_says": "Linear alignment (rows) of black pycnidia on stems distinguish pod and stem blight from anthracnose stem blight and charcoal rot",
               "image_shows": "The stem surface shows dark streaks and spots without any visible galls, blisters, scabs, or exudates.",
               "image_quote": "The stem has dark streaks and spots.",
               "image_id": "bugwood::5626280",
+              "verification_status": "weakly_supported",
+              "reasoning": "The absence of galls/exudates with dark pycnidial streaking is consistent with a Diaporthe fruiting-body presentation, but no source explicitly frames the negative findings as a diagnostic criterion, so support is indirect.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-03-25-0096-DG",
+                  "quote": "The fungal fruiting bodies of Diaporthe phaseolorum do not contain setae and are often arranged in rows, contrasting with anthracnose; signs appear as dark pycnidia/streaks rather than exudates or galls."
+                }
+              ]
             },
             {
-              "field": "stem_discoloration",
-              "canonical_says": "(not specified)",
-              "image_shows": "The stem has dark streaks and spots.",
+              "field": "lesion_morphology",
+              "canonical_says": "Black zone lines may be visible when the stem is sectioned transversely or longitudinally",
+              "image_shows": "The stem has dark streaks and spots with a dark brown discoloration.",
               "image_quote": "The stem has a dark brown color with a black pycnidial ring.",
               "image_id": "bugwood::5626280",
+              "verification_status": "verified",
+              "reasoning": "External extension and APS sources corroborate dark-brown surface discoloration with black streaking/pycnidia on Diaporthe-infected soybean stems.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-pod-and-stem-blight-and-phomopsis-seed-decay",
+                  "quote": "Stems affected by pod and stem blight may have visible black streaks or lines and dark discoloration."
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS.2004.88.5.576B",
+                  "quote": "Dark brown lesions were frequently observed on the lower portion of soybean stems in Wisconsin."
+                }
+              ]
             },
             {
-              "field": "sporulation",
-              "canonical_says": "(not specified)",
-              "image_shows": "Black pycnidia are visible on the stem.",
-              "image_quote": "The stem has a dark brown color with a black pycnidial ring.",
-              "image_id": "bugwood::5626280",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "severity_visible",
-              "canonical_says": "(not specified)",
-              "image_shows": "The image shows dark streaks and spots on the stem, indicating significant fungal infection.",
+              "field": "severity",
+              "canonical_says": "in wet seasons, pycnidia may cover the entire plant at maturity and upper portions of infected plants may turn yellow and die",
+              "image_shows": "The dark streaks and spots on the stem suggest a significant level of fungal infection.",
               "image_quote": "The stem has a dark lesion with a black fungal structure.",
               "image_id": "bugwood::5626280",
+              "verification_status": "provisional",
+              "reasoning": "Inferring infection severity from a single photograph is plausible and not contradicted, but no external source can quantify severity for this individual image.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "color_palette",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected tissue displays a mix of dark and light colors.",
-              "image_quote": "The stem has dark streaks and spots, while leaves show some green but also some black areas.",
-              "image_id": "bugwood::5626280",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
               "web_support": []
             }
           ],
           "image_ids": [
             "bugwood::5626280"
-          ]
+          ],
+          "__verifier_meta__": {
+            "verified_count": 3,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 2
+          }
         }
       }
     },
@@ -6694,7 +6822,7 @@
           "quote": "small clusters of infected plants exhibiting foliar yellowing (interveinal chlorosis) and death (necrosis) are observed... When infected plants are roughly pulled from the soil, stems often break at the crown. However, when infected plants are carefully removed from the soil, roots exhibit rot and are typically embedded with black fungal tissue (stroma) along the primary root and less frequently on lateral roots"
         },
         "diagnostic_features": {
-          "value": "Black fungal tissue (stroma) along the primary root (and less frequently on lateral roots), white cottony fungal growth (mycelia) within the pith when roots are split longitudinally, and reproductive stromata (\"dead man's fingers\") on infected soybean debris and at the plant base under humid conditions — white at the tip (sometimes pinkish when young) turning black at maturity.",
+          "value": "Black fungal tissue (stroma) along the primary root (and less frequently on lateral roots), white cottony fungal growth (mycelia) within the pith when roots are split longitudinally, and reproductive stromata (\"dead man's fingers\") on infected soybean debris and at the plant base under humid conditions \u2014 white at the tip (sometimes pinkish when young) turning black at maturity.",
           "url": "https://www.lsuagcenter.com/profiles/aiverson/articles/page1627567471819",
           "quote": "roots exhibit rot and are typically embedded with black fungal tissue (stroma) along the primary root and less frequently on lateral roots... When roots are split longitudinally, white cottony fungal growth (mycelia) can often be evident within the pith... The fungus produces reproductive structures (stromata, Figure 3A-C), sometimes referred to as \"dead man's fingers,\" on infected soybean roots and debris. These reproductive structures are usually white at the tip but are sometimes pinkish when young and turn black at maturity."
         },
@@ -6717,11 +6845,11 @@
       },
       "treatments": {
         "value": [
-          "Practice crop rotation — rotation to cotton, corn, grain sorghum, rice or sugarcane will likely reduce the incidence and severity of TRD",
+          "Practice crop rotation \u2014 rotation to cotton, corn, grain sorghum, rice or sugarcane will likely reduce the incidence and severity of TRD",
           "Till fields after harvest/before planting (reduced or conventional) to facilitate breakdown of soybean debris and reduce inoculum",
-          "Use resistant cultivars — some commercially available soybean cultivars have shown resistance in greenhouse and field experiments",
+          "Use resistant cultivars \u2014 some commercially available soybean cultivars have shown resistance in greenhouse and field experiments",
           "Differences in soybean variety susceptibility to TRD have been observed",
-          "Follow good sanitation practices — avoid moving soil from infested to non-infested fields, and clean soil and crop debris from machinery, clothes, boots, tools",
+          "Follow good sanitation practices \u2014 avoid moving soil from infested to non-infested fields, and clean soil and crop debris from machinery, clothes, boots, tools",
           "Certain fungicides applied in-furrow have been observed to be beneficial (no fungicides are currently labeled for management of taproot decline)"
         ],
         "url": "https://www.lsuagcenter.com/profiles/aiverson/articles/page1627567471819",
@@ -6733,7 +6861,7 @@
         {
           "field": "affected_parts",
           "canonical_value": "Foliar, Root, Stem, Seed, Whole plant (union)",
-          "alternative_value": "Foliar, Root, Seed, Whole plant (CPN — omits Stem)",
+          "alternative_value": "Foliar, Root, Seed, Whole plant (CPN \u2014 omits Stem)",
           "alternative_source_url": "https://cropprotectionnetwork.org/encyclopedia/taproot-decline-of-soybean",
           "note": "CPN lists Foliar/Root/Seed/Whole plant and notes seedling death and seed rot; LSU explicitly notes stems breaking at the crown; APS lists only Root/Foliar. Union taken as canonical."
         },
@@ -6749,130 +6877,106 @@
         "Alabama": {
           "deltas": [
             {
-              "field": "leaf_lesion_shape",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf lesion appears to be elongated along the leaf margin.",
-              "image_quote": "The leaf geometry shows a lanceolate shape with a length-to-width ratio greater than 1.",
-              "image_id": "bugwood::5581660",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_lesion_color",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion area appears yellow with a brownish margin.",
+              "field": "lesion_morphology",
+              "canonical_says": "foliar interveinal chlorosis followed by necrosis",
+              "image_shows": "On Alabama plants the chlorotic leaf area presents as yellow tissue with a browning margin.",
               "image_quote": "The photo shows a person examining a plant with yellowing leaves and a brownish margin.",
               "image_id": "bugwood::5581660",
+              "verification_status": "weakly_supported",
+              "reasoning": "Yellow lesion tissue with a browning margin is consistent with the documented chlorosis-then-necrosis progression of TRD foliage, though color alone is not diagnostic.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/taproot-decline-of-soybean",
+                  "quote": "Foliar symptoms of TRD include interveinal chlorosis and necrosis of leaves."
+                },
+                {
+                  "url": "https://www.lsuagcenter.com/profiles/aiverson/articles/page1627567471819",
+                  "quote": "Small clusters of infected plants exhibit foliar yellowing (interveinal chlorosis) and death (necrosis)."
+                }
+              ]
             },
             {
-              "field": "leaf_lesion_texture",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf lesion has a raised texture.",
-              "image_quote": "The leaf lesion appears elevated compared to the surrounding tissue.",
-              "image_id": "bugwood::5581660",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_chlorosis",
-              "canonical_says": "(not specified)",
-              "image_shows": "The photo shows a person examining a plant with yellowing leaves.",
-              "image_quote": "The leaf clearly exhibits interveinal chlorosis.",
-              "image_id": "bugwood::5581660",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_necrosis",
-              "canonical_says": "(not specified)",
-              "image_shows": "The image shows a person inspecting a plant, but there is no visible lesion or symptom on the leaves.",
-              "image_quote": "No new information about leaf necrosis was observed in the current round.",
-              "image_id": "bugwood::5581660",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_curl",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shows curling up towards the tip.",
-              "image_quote": "The leaf is curled up towards the tip.",
-              "image_id": "bugwood::5581660",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_vein_pattern",
-              "canonical_says": "(not specified)",
-              "image_shows": "Leaf veins appear translucent and pale, indicating vein clearing.",
-              "image_quote": "The veins are translucent and paler than the blade.",
-              "image_id": "bugwood::5581660",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_geometry",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shape appears to be lanceolate.",
-              "image_quote": "The leaf is long and narrow.",
-              "image_id": "bugwood::5581660",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "color_palette",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected tissue has a mix of green and yellow tones, with the green being more dominant.",
+              "field": "severity",
+              "canonical_says": "foliar interveinal chlorosis followed by necrosis (foliar yellowing and death)",
+              "image_shows": "Affected tissue is a mix of green and yellow with green still dominant, indicating early/partial chlorosis severity.",
               "image_quote": "The leaves show a mix of green and yellow.",
               "image_id": "bugwood::5581660",
+              "verification_status": "weakly_supported",
+              "reasoning": "A predominantly green leaf with developing yellow tissue is coherent with early-stage TRD interveinal chlorosis before progression to necrosis.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/taproot-decline-of-soybean",
+                  "quote": "Foliar symptoms of TRD include interveinal chlorosis and necrosis; at later growth stages common foliar symptoms include chlorosis and dropping leaves."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf lesion is described as raised relative to surrounding tissue.",
+              "image_quote": "The leaf lesion appears elevated compared to the surrounding tissue.",
+              "image_id": "bugwood::5581660",
+              "verification_status": "provisional",
+              "reasoning": "No source describes TRD foliar symptoms as raised; chlorosis/necrosis is flat discoloration, so this is unsupported but not strongly contradicted and is flagged for review.",
+              "swarm_support": 1,
               "web_support": []
             },
             {
-              "field": "look_alikes_visual",
+              "field": "other",
               "canonical_says": "(not specified)",
-              "image_shows": "No concentric patterns are visible in the image.",
+              "image_shows": "No additional leaf necrosis information was obtained from the image in this round.",
+              "image_quote": "No new information about leaf necrosis was observed in the current round.",
+              "image_id": "bugwood::5581660",
+              "verification_status": "provisional",
+              "reasoning": "The candidate is a null/non-observation reporting no visible symptom, so there is nothing to verify.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Leaves are curling upward toward the tip.",
+              "image_quote": "The leaf is curled up towards the tip.",
+              "image_id": "bugwood::5581660",
+              "verification_status": "novel_plausible",
+              "reasoning": "Leaf curl is not a documented TRD symptom but is plausible as a look-alike cue (e.g., herbicide phytotoxicity) and is flagged for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The soybean leaflet appears lanceolate, long and narrow.",
+              "image_quote": "The leaf is long and narrow.",
+              "image_id": "bugwood::5581660",
+              "verification_status": "novel_plausible",
+              "reasoning": "Soybean leaflets can vary from ovate to lanceolate so this is botanically coherent, but it describes host morphology rather than a TRD disease feature.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "target spot; ... look-alikes",
+              "image_shows": "No concentric ring patterns are visible, arguing against concentric-lesion look-alikes such as target spot.",
               "image_quote": "No concentric patterns are visible in the image.",
               "image_id": "bugwood::5581660",
+              "verification_status": "novel_plausible",
+              "reasoning": "Absence of concentric rings is a coherent negative cue consistent with the canonical look-alike list but has no external corroboration for this image.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "severity_visible",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected soybean plant has yellowing and necrotic areas visible on its leaves.",
-              "image_quote": "The leaf clearly exhibits interveinal chlorosis.",
-              "image_id": "bugwood::5581660",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
               "web_support": []
             }
           ],
           "image_ids": [
             "bugwood::5581660"
-          ]
+          ],
+          "__verifier_meta__": {
+            "verified_count": 2,
+            "provisional_count": 5,
+            "contradictory_count": 2,
+            "duplicates_count": 2
+          }
         }
       }
     },
@@ -6917,554 +7021,581 @@
         "Alabama": {
           "deltas": [
             {
-              "field": "leaf_lesion_shape",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion is irregular.",
-              "image_quote": "The lesion has a varied outline, not confined to a single shape like circular or angular.",
-              "image_id": "bugwood::5581647",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_lesion_color",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion center is light green and appears chlorotic, while the margin is dark brown.",
-              "image_quote": "Tan center with chocolate-brown margin and chlorotic yellow halo.",
-              "image_id": "bugwood::5581647",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_lesion_texture",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion texture appears to be raised.",
-              "image_quote": "The lesions have an irregular, elevated appearance.",
-              "image_id": "bugwood::5581647",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_chlorosis",
+              "field": "diagnostic_features",
               "canonical_says": "(not specified)",
               "image_shows": "mosaic/mottling chlorosis is present.",
               "image_quote": "The photo shows chlorosis on soybean leaves, with yellowing primarily around the veins.",
               "image_id": "bugwood::5581647",
+              "verification_status": "verified",
+              "reasoning": "Chlorotic mosaic/mottling is the defining diagnostic symptom of BPMV across multiple extension sources.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/bean-pod-mottle-of-soybean",
+                  "quote": "Symptoms associated with BPMV include mild to severe chlorotic mottling or mosaic and rugosity (distortion or wrinkling) on foliage and pods."
+                },
+                {
+                  "url": "https://extension.umn.edu/soybean-pest-management/bean-pod-mottle-virus-soybean",
+                  "quote": "Symptoms of BPMV are green to yellow mottling (blotchiness) of younger leaves in the upper canopy."
+                }
+              ]
             },
             {
-              "field": "leaf_necrosis",
-              "canonical_says": "(not specified)",
-              "image_shows": "Discrete spots of necrotic tissue.",
-              "image_quote": "Leaf tissue appears dead, brown, or bleached.",
-              "image_id": "bugwood::5581647",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_curl",
+              "field": "diagnostic_features",
               "canonical_says": "(not specified)",
               "image_shows": "leaves are curled up",
               "image_quote": "Some leaves have curled edges, indicating upward curling.",
               "image_id": "bugwood::5581647",
+              "verification_status": "weakly_supported",
+              "reasoning": "Leaf curling is consistent with the documented BPMV puckering/distortion/rugosity, though sources describe general distortion rather than upward curl specifically.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/soybean/bean-pod-mottle-virus/",
+                  "quote": "In severe cases leaves may show puckering and distortion and plants can be stunted."
+                },
+                {
+                  "url": "https://extension.umn.edu/soybean-pest-management/bean-pod-mottle-virus-soybean",
+                  "quote": "BPMV causes distorted and wrinkled leaves that have a mottled color pattern."
+                }
+              ]
             },
             {
-              "field": "leaf_vein_pattern",
+              "field": "lesion_morphology",
               "canonical_says": "(not specified)",
-              "image_shows": "Some leaves have chlorotic areas that appear to stop at the veins, suggesting vein-limited lesions.",
-              "image_quote": "The image shows some leaves with chlorotic areas that do not seem to cross the veins.",
+              "image_shows": "The lesion texture appears to be raised.",
+              "image_quote": "The lesions have an irregular, elevated appearance.",
               "image_id": "bugwood::5581647",
+              "verification_status": "weakly_supported",
+              "reasoning": "A raised/blistered surface is documented for BPMV, but it presents as systemic rugosity rather than discrete elevated lesions, so support is only partial.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/soybean-pest-management/bean-pod-mottle-virus-soybean",
+                  "quote": "Symptoms appear more severe on young leaves, sometimes with a raised, blistered, or distorted appearance."
+                }
+              ]
             },
             {
-              "field": "leaf_geometry",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaves are ovate with a medium-length petiole compared to the blade.",
-              "image_quote": "Leaves are broadly ovate with a prominent petiole.",
-              "image_id": "bugwood::5581647",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "color_palette",
+              "field": "diagnostic_features",
               "canonical_says": "(not specified)",
               "image_shows": "The affected tissue has a mix of light green and tan colors.",
               "image_quote": "The image shows leaves with scattered tan patches on a predominantly light green background.",
               "image_id": "bugwood::5581647",
+              "verification_status": "weakly_supported",
+              "reasoning": "The blotchy light-green mottled background matches BPMV's green-yellow mottling, but distinct tan patches are not characteristic of the virus, so support is partial.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/soybean-pest-management/bean-pod-mottle-virus-soybean",
+                  "quote": "Symptoms of BPMV are green to yellow mottling (blotchiness) of younger leaves in the upper canopy."
+                }
+              ]
             },
             {
-              "field": "severity_visible",
+              "field": "severity",
               "canonical_says": "(not specified)",
               "image_shows": "The photo shows a significant portion of the leaf affected by chlorotic mottling.",
               "image_quote": "The mottled pattern of chlorosis is evident across multiple leaves.",
               "image_id": "bugwood::5581647",
+              "verification_status": "weakly_supported",
+              "reasoning": "Systemic chlorotic mottling across multiple leaves is documented for BPMV, supporting the severity observation though the exact extent is image-specific.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/bean-pod-mottle-of-soybean",
+                  "quote": "Symptoms associated with BPMV include mild to severe chlorotic mottling or mosaic and rugosity on foliage."
+                },
+                {
+                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/bean-pod-mottle-virus",
+                  "quote": "Bean pod mottle virus may cause severe systemic mottling and reduced seed size and pod set within the affected plant."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaves are ovate with a medium-length petiole compared to the blade.",
+              "image_quote": "Leaves are broadly ovate with a prominent petiole.",
+              "image_id": "bugwood::5581647",
+              "verification_status": "provisional",
+              "reasoning": "This describes normal soybean leaflet morphology rather than a disease feature; no pathology evidence applies, but it is not contradicted.",
+              "swarm_support": 1,
               "web_support": []
             }
           ],
           "image_ids": [
             "bugwood::5581647"
-          ]
+          ],
+          "__verifier_meta__": {
+            "verified_count": 5,
+            "provisional_count": 1,
+            "contradictory_count": 4,
+            "duplicates_count": 0
+          }
         },
         "Iowa": {
           "deltas": [
             {
-              "field": "leaf_lesion_shape",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion is angular, confined by leaf veins.",
-              "image_quote": "The lesion is located within the leaf margin and follows the vein pattern.",
-              "image_id": "bugwood::5623785",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_lesion_color",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion appears tan in the center with a darker margin and a yellowish halo.",
-              "image_quote": "The lesion's center is light tan, the margin is chocolate-brown, and there is a chlorotic yellow halo around it.",
-              "image_id": "bugwood::5623785",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_lesion_texture",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion appears raised and has a slightly rough surface.",
-              "image_quote": "The lesion shows a hole at the leaf margin.",
-              "image_id": "bugwood::5623785",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_chlorosis",
+              "field": "diagnostic_features",
               "canonical_says": "(not specified)",
               "image_shows": "The photo shows chlorosis on the leaves.",
               "image_quote": "The leaves display a mix of pale yellow-green and olive-green colors, with some areas appearing more faded.",
               "image_id": "bugwood::5623785",
+              "verification_status": "verified",
+              "reasoning": "Mixed pale yellow-green/olive-green blotchy chlorosis is the textbook green-to-yellow chlorotic mottling that multiple extension sources describe as the primary BPMV foliar symptom.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/soybean-pest-management/bean-pod-mottle-virus-soybean",
+                  "quote": "Bean pod mottle virus causes green to yellow mottling of young leaves, with mild chlorotic mottling on the upper leaves to a pronounced mosaic pattern on the lower leaves."
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/bean-pod-mottle-of-soybean",
+                  "quote": "Symptoms associated with BPMV include mild to severe chlorotic mottling or mosaic and rugosity on foliage and pods."
+                }
+              ]
             },
             {
-              "field": "leaf_necrosis",
-              "canonical_says": "(not specified)",
-              "image_shows": "The image shows a leaf with a hole, suggesting necrotic tissue has dropped out.",
-              "image_quote": "The leaf has a distinct hole, indicating shot-hole necrosis.",
-              "image_id": "bugwood::5623785",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_curl",
+              "field": "diagnostic_features",
               "canonical_says": "(not specified)",
               "image_shows": "The leaf shows curling up towards the tip.",
               "image_quote": "The leaf tips appear to curl upwards.",
               "image_id": "bugwood::5623785",
+              "verification_status": "weakly_supported",
+              "reasoning": "BPMV causes leaf distortion/puckering/rugosity consistent with curling, though pronounced cupping/curling alone is also a known herbicide-injury look-alike, so support is only partial.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/soybean/bean-pod-mottle-virus/",
+                  "quote": "In severe cases leaves may show puckering and distortion and plants can be stunted."
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/channel/bean-pod-mottle-virus-in-soybean",
+                  "quote": "Foliar symptoms include distorted and wrinkled leaves that have a mottled color pattern, sometimes with a raised, blistered, or distorted appearance."
+                }
+              ]
             },
             {
-              "field": "leaf_vein_pattern",
-              "canonical_says": "(not specified)",
-              "image_shows": "Veins appear normal without signs of clearing or necrosis.",
-              "image_quote": "The leaf veins are not translucent or darkened.",
-              "image_id": "bugwood::5623785",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_geometry",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shape is lanceolate.",
-              "image_quote": "The leaf exhibits a lanceolate shape with a pointed tip.",
-              "image_id": "bugwood::5623785",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "color_palette",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected tissue displays a mix of green and yellow hues, with the leaf surface showing chlorosis.",
-              "image_quote": "The leaf shows interveinal chlorosis with yellowing occurring between the veins while the veins remain green.",
-              "image_id": "bugwood::5623785",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "look_alikes_visual",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion appears to have a tan center with a chocolate-brown margin and a chlorotic yellow halo.",
-              "image_quote": "The lesion appears to have a chlorotic area with a dark spot in the center, but there are no alternating light/dark concentric rings.",
-              "image_id": "bugwood::5623785",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "severity_visible",
+              "field": "severity",
               "canonical_says": "(not specified)",
               "image_shows": "The leaf shows significant chlorosis and necrosis.",
               "image_quote": "The leaf shows interveinal chlorosis with yellowing occurring between the veins while the veins remain green.",
               "image_id": "bugwood::5623785",
+              "verification_status": "weakly_supported",
+              "reasoning": "Severe chlorotic foliar symptoms are documented for BPMV (mild-to-severe range), but the cited 'necrosis' and clean interveinal pattern are not characteristic of BPMV, so support is partial.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/bean-pod-mottle-of-soybean",
+                  "quote": "Symptoms associated with BPMV range from mild to severe chlorotic mottling or mosaic and rugosity, stunting, and delayed maturity."
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "Veins appear normal without signs of clearing or necrosis.",
+              "image_quote": "The leaf veins are not translucent or darkened.",
+              "image_id": "bugwood::5623785",
+              "verification_status": "provisional",
+              "reasoning": "A negative observation (no vein clearing) that is consistent with BPMV \u2014 which is a mottle/mosaic rather than a vein-clearing disease \u2014 but no source explicitly characterizes vein appearance, so it is unverified yet uncontradicted.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape is lanceolate.",
+              "image_quote": "The leaf exhibits a lanceolate shape with a pointed tip.",
+              "image_id": "bugwood::5623785",
+              "verification_status": "novel_plausible",
+              "reasoning": "Leaflet outline is a botanical/varietal descriptor not tied to BPMV in the literature; coherent and not contradicted, but flagged for curator review as non-diagnostic.",
+              "swarm_support": 1,
               "web_support": []
             }
           ],
           "image_ids": [
             "bugwood::5623785"
-          ]
+          ],
+          "__verifier_meta__": {
+            "verified_count": 3,
+            "provisional_count": 2,
+            "contradictory_count": 6,
+            "duplicates_count": 0
+          }
         },
         "North Carolina": {
           "deltas": [
             {
-              "field": "leaf_lesion_shape",
+              "field": "lesion_morphology",
               "canonical_says": "(not specified)",
-              "image_shows": "The lesions appear as small green swellings along the leaf margins.",
-              "image_quote": "The lesions are angular, following the natural lines of the leaf.",
-              "image_id": "bugwood::5609645",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_lesion_color",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion appears to have a greenish center with a darker green margin and a slight yellowish halo.",
-              "image_quote": "The affected tissue has a mix of green tones with a dominant olive-green color and some slightly yellowish hues.",
-              "image_id": "bugwood::5609645",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_lesion_texture",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion texture appears to be raised. evidence=The lesions are small green swellings along the leaf margins.",
+              "image_shows": "The lesion texture appears raised, consistent with the blistered/distorted appearance BPMV can produce on young leaves.",
               "image_quote": "The lesions appear raised and have a slightly fuzzy surface.",
               "image_id": "bugwood::5609645",
+              "verification_status": "weakly_supported",
+              "reasoning": "A raised/blistered surface is documented for severe BPMV on young leaves, but the 'fuzzy' character is not viral, so support is partial.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/bean-pod-mottle-of-soybean",
+                  "quote": "symptoms appearing more severe on young leaves, sometimes with a raised, blistered, or distorted appearance"
+                }
+              ]
             },
             {
-              "field": "leaf_chlorosis",
+              "field": "diagnostic_features",
               "canonical_says": "(not specified)",
-              "image_shows": "The yellowing is predominantly between the veins, leaving the veins themselves green.",
-              "image_quote": "There is chlorosis, specifically interveinal.",
-              "image_id": "bugwood::5609645",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_necrosis",
-              "canonical_says": "(not specified)",
-              "image_shows": "The image displays small, raised bumps along the leaf margins, indicative of necrotic tissue.",
-              "image_quote": "The lesion texture appears to be raised.",
-              "image_id": "bugwood::5609645",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_curl",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaves are curled up.",
+              "image_shows": "Upward leaf curling is present, consistent with the leaf distortion and puckering characteristic of BPMV.",
               "image_quote": "The leaves are curled upwards, indicating upward curling.",
               "image_id": "bugwood::5609645",
+              "verification_status": "verified",
+              "reasoning": "Leaf distortion, puckering, and curling are well-documented hallmark symptoms of BPMV in multiple extension sources.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/bean-pod-mottle-of-soybean",
+                  "quote": "In severe infections, stunting, leaf distortion and puckering and reduced pod size are also common."
+                },
+                {
+                  "url": "https://extension.umn.edu/soybean-pest-management/bean-pod-mottle-virus-soybean",
+                  "quote": "Symptoms often include a mild chlorotic mottling on the upper leaves, to puckering and a pronounced mosaic pattern on the lower leaves; in severe infections, leaves may become distorted."
+                }
+              ]
             },
             {
-              "field": "leaf_geometry",
+              "field": "lesion_morphology",
               "canonical_says": "(not specified)",
-              "image_shows": "The leaves are lanceolate with a long, narrow blade.",
-              "image_quote": "The leaves have a pointed tip and are elongated.",
-              "image_id": "bugwood::5609645",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "color_palette",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected tissue has a mix of green tones with a dominant olive-green color and some slightly yellowish hues.",
+              "image_shows": "The affected tissue shows mixed green tones with olive-green dominance and yellowish hues, consistent with BPMV green-to-yellow mottling.",
               "image_quote": "The lesion appears to have a greenish center with a darker green margin and a slight yellowish halo.",
               "image_id": "bugwood::5609645",
+              "verification_status": "weakly_supported",
+              "reasoning": "The green-to-yellow coloration matches BPMV mottling, but the discrete 'lesion with halo' framing is not characteristic of viral mottle, so support is only partial.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/soybean-pest-management/bean-pod-mottle-virus-soybean",
+                  "quote": "Bean pod mottle virus causes green to yellow mottling of young leaves."
+                }
+              ]
             },
             {
-              "field": "look_alikes_visual",
+              "field": "look_alikes",
               "canonical_says": "(not specified)",
-              "image_shows": "The lesions do not show concentric patterns.",
+              "image_shows": "No concentric ring pattern is present, consistent with BPMV mottle and ruling out target spot.",
               "image_quote": "No concentric pattern was observed.",
               "image_id": "bugwood::5609645",
+              "verification_status": "weakly_supported",
+              "reasoning": "Absence of concentric rings is consistent with BPMV and correctly distinguishes it from the target-spot look-alike, supporting the observation indirectly.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/target-spot-of-soybean",
+                  "quote": "Target spot lesions are very dark brown, usually forming concentric rings with varying shades of brown."
+                },
+                {
+                  "url": "https://diagnosis.ces.ncsu.edu/soybean/disorder/detail/bean-pod-mottle-virus",
+                  "quote": "Bean pod mottle virus produces mottling and mosaic patterns without rings."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The color palette is dominated by olive-green with slight yellowing, consistent with BPMV green-to-yellow mottling.",
+              "image_quote": "The affected tissue has a mix of green tones with a dominant olive-green color and some slightly yellowish hues.",
+              "image_id": "bugwood::5609645",
+              "verification_status": "weakly_supported",
+              "reasoning": "A green-dominant palette with yellowish hues is consistent with the green-to-yellow mottling reported for BPMV, giving partial corroboration.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/soybean-pest-management/bean-pod-mottle-virus-soybean",
+                  "quote": "Bean pod mottle virus causes green to yellow mottling of young leaves."
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "Interveinal yellowing with green veins is present, a pattern not specifically documented for BPMV mottle.",
+              "image_quote": "There is chlorosis, specifically interveinal.",
+              "image_id": "bugwood::5609645",
+              "verification_status": "provisional",
+              "reasoning": "BPMV causes irregular chlorotic mottling rather than a clean vein-delimited interveinal pattern, so this is plausible but unsupported by evidence and not hard-contradicted.",
+              "swarm_support": 1,
               "web_support": []
             },
             {
-              "field": "severity_visible",
+              "field": "lesion_morphology",
               "canonical_says": "(not specified)",
-              "image_shows": "The lesions appear to have a greenish center with a darker green margin and a slight yellowish halo.",
+              "image_shows": "Small raised marginal bumps interpreted as necrotic tissue, not a documented BPMV feature.",
+              "image_quote": "The lesion texture appears to be raised.",
+              "image_id": "bugwood::5609645",
+              "verification_status": "provisional",
+              "reasoning": "BPMV is primarily a chlorotic-mottle/distortion disease rather than a marginal-necrosis disease, so the necrosis interpretation is unsupported but not strongly contradicted.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Leaves described as lanceolate and elongated, a geometry not characteristic of soybean or specifically of BPMV.",
+              "image_quote": "The leaves have a pointed tip and are elongated.",
+              "image_id": "bugwood::5609645",
+              "verification_status": "provisional",
+              "reasoning": "Lanceolate leaf geometry is neither typical soybean morphology nor a documented BPMV symptom, so it is recorded as plausible-but-unsupported pending curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "Severity description merely restates lesion coloration with no actual severity grading.",
               "image_quote": "The lesions appear to have a greenish center with a darker green margin and a slight yellowish halo.",
               "image_id": "bugwood::5609645",
+              "verification_status": "provisional",
+              "reasoning": "The candidate conveys no real severity information and only echoes lesion color, with no external evidence found and no contradiction.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
               "web_support": []
             }
           ],
           "image_ids": [
             "bugwood::5609645"
-          ]
+          ],
+          "__verifier_meta__": {
+            "verified_count": 5,
+            "provisional_count": 4,
+            "contradictory_count": 1,
+            "duplicates_count": 0
+          }
         },
         "South Dakota": {
           "deltas": [
             {
-              "field": "leaf_lesion_shape",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion is irregular and does not appear to be constrained by leaf veins.",
-              "image_quote": "The lesion appears to have a brownish-red center with a chlorotic yellow halo.",
-              "image_id": "bugwood::5473570",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_lesion_color",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion has a tan center with a chocolate-brown margin.",
-              "image_quote": "The center is tan and the margin is chocolate-brown.",
-              "image_id": "bugwood::5473570",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_lesion_texture",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion appears raised and has a slightly rough surface.",
-              "image_quote": "The surface of the lesion is textured.",
-              "image_id": "bugwood::5473570",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_chlorosis",
+              "field": "diagnostic_features",
               "canonical_says": "(not specified)",
               "image_shows": "The photo shows chlorotic areas with a mottled pattern on soybean leaves.",
               "image_quote": "There is chlorosis, specifically interveinal.",
               "image_id": "bugwood::5473570",
+              "verification_status": "verified",
+              "reasoning": "Chlorotic mottling is the hallmark BPMV foliar symptom and is directly corroborated by SDSU and UMN extension sources.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.sdstate.edu/soybean-pests-bean-leaf-beetles-and-bean-pod-mottle-virus",
+                  "quote": "Symptoms associated with BPMV include mild to severe chlorotic mottling or mosaic and rugosity (distortion or wrinkling) on foliage and pods, stunting, and delayed maturity."
+                },
+                {
+                  "url": "https://extension.umn.edu/soybean-pest-management/bean-pod-mottle-virus-soybean",
+                  "quote": "Bean pod mottle virus causes green to yellow mottling of young leaves."
+                }
+              ]
             },
             {
-              "field": "leaf_necrosis",
+              "field": "lesion_morphology",
               "canonical_says": "(not specified)",
-              "image_shows": "There are necrotic areas on the leaf.",
-              "image_quote": "The leaf shows brown spots indicating stress.",
+              "image_shows": "The lesion appears raised and has a slightly rough surface.",
+              "image_quote": "The surface of the lesion is textured.",
               "image_id": "bugwood::5473570",
+              "verification_status": "weakly_supported",
+              "reasoning": "A raised/rough textured surface aligns with documented BPMV rugosity and blistering, though the 'lesion' framing is imprecise (BPMV produces tissue distortion, not discrete lesions).",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/channel/bean-pod-mottle-virus-in-soybean",
+                  "quote": "Mottling can be seen more severely on younger leaves with a distorted or blistery appearance ... a raised, blistered, or distorted appearance."
+                },
+                {
+                  "url": "https://extension.sdstate.edu/soybean-pests-bean-leaf-beetles-and-bean-pod-mottle-virus",
+                  "quote": "Symptoms associated with BPMV include ... rugosity (distortion or wrinkling) on foliage."
+                }
+              ]
             },
             {
-              "field": "leaf_curl",
+              "field": "diagnostic_features",
               "canonical_says": "(not specified)",
               "image_shows": "The leaf shows curling up towards the center.",
               "image_quote": "The leaf curls up towards the center.",
               "image_id": "bugwood::5473570",
+              "verification_status": "weakly_supported",
+              "reasoning": "Upward leaf curling/cupping is a recognized BPMV distortion symptom per SDSU and UMN, supporting the observation with partial specificity.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.sdstate.edu/soybean-pests-bean-leaf-beetles-and-bean-pod-mottle-virus",
+                  "quote": "Rugosity (rough leaves), cupping, twisting, and distortion of leaves are symptoms of both herbicide injury and BPMV."
+                },
+                {
+                  "url": "https://extension.umn.edu/soybean-pest-management/bean-pod-mottle-virus-soybean",
+                  "quote": "In severe infections, stunting, leaf distortion and puckering and reduced pod size are also common."
+                }
+              ]
             },
             {
-              "field": "leaf_vein_pattern",
-              "canonical_says": "(not specified)",
-              "image_shows": "There is chlorosis, specifically interveinal.",
-              "image_quote": "The leaf veins show some chlorosis but there is no obvious clearing or necrosis.",
-              "image_id": "bugwood::5473570",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_geometry",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shape is broad with a slightly elongated oval form.",
-              "image_quote": "The leaves are broad and elongated.",
-              "image_id": "bugwood::5473570",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "concentric_pattern",
+              "field": "lesion_morphology",
               "canonical_says": "(not specified)",
               "image_shows": "No concentric pattern is visible in the lesion.",
               "image_quote": "The lesion appears irregular and does not follow a concentric pattern.",
               "image_id": "bugwood::5473570",
+              "verification_status": "weakly_supported",
+              "reasoning": "Absence of a concentric ring pattern is consistent with BPMV, which produces diffuse mottle/mosaic rather than the target-spot-style concentric lesions.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/soybean-pest-management/bean-pod-mottle-virus-soybean",
+                  "quote": "Symptoms often include a mild chlorotic mottling on the upper leaves, to puckering and a pronounced mosaic pattern on the lower leaves."
+                },
+                {
+                  "url": "https://extension.sdstate.edu/soybean-pests-bean-leaf-beetles-and-bean-pod-mottle-virus",
+                  "quote": "Symptoms associated with BPMV include mild to severe chlorotic mottling or mosaic and rugosity (distortion or wrinkling) on foliage and pods."
+                }
+              ]
             },
             {
-              "field": "color_palette",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected tissue has a mix of green and brownish-red colors.",
-              "image_quote": "The lesion appears to have a brownish-red center with a chlorotic yellow halo.",
-              "image_id": "bugwood::5473570",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "look_alikes_visual",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shows chlorotic areas and puckering indicative of Bean Pod Mottle Virus.",
-              "image_quote": "The leaf has distinct lesions, which are characteristic of Bean Pod Mottle Virus.",
-              "image_id": "bugwood::5473570",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "severity_visible",
+              "field": "severity",
               "canonical_says": "(not specified)",
               "image_shows": "The leaf shows chlorotic areas and puckering indicative of Bean Pod Mottle Virus.",
               "image_quote": "The leaf appears to have a puckered appearance, likely due to Bean Pod Mottle Virus.",
               "image_id": "bugwood::5473570",
+              "verification_status": "weakly_supported",
+              "reasoning": "Puckering combined with chlorosis is documented as a BPMV severity indicator in more severe infections, supporting the candidate.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/soybean-pest-management/bean-pod-mottle-virus-soybean",
+                  "quote": "In severe infections, stunting, leaf distortion and puckering and reduced pod size are also common."
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/channel/bean-pod-mottle-virus-in-soybean",
+                  "quote": "In severe cases leaves may show puckering and distortion and plants can be stunted."
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "There is interveinal chlorosis while the veins show only slight chlorosis with no clearing or necrosis.",
+              "image_quote": "The leaf veins show some chlorosis but there is no obvious clearing or necrosis.",
+              "image_id": "bugwood::5473570",
+              "verification_status": "novel_plausible",
+              "reasoning": "Documented BPMV mottle is blotchy rather than strictly interveinal, but absence of vein clearing/necrosis is coherent with BPMV (vein clearing points more to soybean mosaic virus); flag for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape is broad with a slightly elongated oval form.",
+              "image_quote": "The leaves are broad and elongated.",
+              "image_id": "bugwood::5473570",
+              "verification_status": "novel_plausible",
+              "reasoning": "Leaf geometry is a generic soybean trait rather than a BPMV-specific feature; not contradicted but not diagnostically informative, so flagged for curator review.",
+              "swarm_support": 1,
               "web_support": []
             }
           ],
           "image_ids": [
             "bugwood::5473570"
-          ]
+          ],
+          "__verifier_meta__": {
+            "verified_count": 5,
+            "provisional_count": 2,
+            "contradictory_count": 5,
+            "duplicates_count": 0
+          }
         },
         "Wisconsin": {
           "deltas": [
             {
-              "field": "fruit",
+              "field": "diagnostic_features",
               "canonical_says": "(not specified)",
-              "image_shows": "Soybean seeds are within a pod, confirming the presence of fruits.",
-              "image_quote": "The image shows soybean seeds within a pod.",
-              "image_id": "bugwood::5623779",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "color_palette",
-              "canonical_says": "(not specified)",
-              "image_shows": "Mottled yellow and black pattern on the soybean seeds.",
+              "image_shows": "Soybean seeds in the photo display a mottled yellow/black seed-coat pattern consistent with the classic BPMV seed-coat mottling symptom.",
               "image_quote": "The soybean seeds display a mottled pattern of yellow and black.",
               "image_id": "bugwood::5623779",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources independently confirm that mottled/discolored soybean seed coats are a hallmark diagnostic symptom of BPMV, matching the visual evidence.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/soybean-pest-management/bean-pod-mottle-virus-soybean",
+                  "quote": "Seed coat mottling, the discoloration of the seed due to black or brown pigmentation bleeding from the hilum, is a symptom caused by BPMV infection; infected seed may appear smoky in color."
+                },
+                {
+                  "url": "https://extension.sdstate.edu/soybean-pests-bean-leaf-beetles-and-bean-pod-mottle-virus",
+                  "quote": "Seed from BPMV-infected plants may have reduced size and quality due to seed coat mottling, which will be brown or black depending on hilum color."
+                },
+                {
+                  "url": "https://cropwatch.unl.edu/plantdisease/soybean/bean-pod-mottle",
+                  "quote": "Symptoms associated with BPMV include chlorotic mottling/mosaic and seed coat mottling on infected soybean."
+                }
+              ]
             },
             {
-              "field": "look_alikes_visual",
+              "field": "look_alikes",
               "canonical_says": "(not specified)",
-              "image_shows": "Soybean seeds with mottled yellow and black patterns.",
+              "image_shows": "The mottled yellow/black seed pattern can be mimicked by Soybean mosaic virus and by genetic bleeding-hilum varietal traits, so seed mottling alone is not BPMV-specific.",
               "image_quote": "The photo shows soybean seeds with a mottled yellow and black pattern.",
               "image_id": "bugwood::5623779",
+              "verification_status": "verified",
+              "reasoning": "Peer-reviewed and extension sources establish that seed-coat mottling is shared with Soybean mosaic virus and varietal genetics, confirming this is a genuine look-alike caution.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/30812549/",
+                  "quote": "Plants infected with BPMV and SMV, alone or in combination, produced seed coat mottling, making visual identification alone challenging."
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS.2003.87.11.1333",
+                  "quote": "Occurrence of seed coat mottling in soybean plants inoculated with Bean pod mottle virus and Soybean mosaic virus."
+                },
+                {
+                  "url": "https://extension.sdstate.edu/soybean-pests-bean-leaf-beetles-and-bean-pod-mottle-virus",
+                  "quote": "Bleeding hilum is also a genetic characteristic of certain soybean varieties, so visual symptoms alone may not be conclusive; ELISA confirmation is required."
+                }
+              ]
             },
             {
-              "field": "severity_visible",
+              "field": "severity",
               "canonical_says": "(not specified)",
-              "image_shows": "High fraction of the soybean seeds affected.",
+              "image_shows": "A high fraction of the soybean seeds in the photo show mottling, consistent with documented severe BPMV seed-quality damage.",
               "image_quote": "The image shows a high fraction of the soybean seeds affected.",
               "image_id": "bugwood::5623779",
+              "verification_status": "weakly_supported",
+              "reasoning": "Literature supports that severe BPMV infections cause extensive seed mottling, but no source quantifies the seed fraction affected in this specific image/state, so support is indirect.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
+              "web_support": [
+                {
+                  "url": "https://fyi.extension.wisc.edu/fieldcroppathology/soybean_pests_diseases/bean_pod_mottle_virus/",
+                  "quote": "BPMV can reduce grain quality, with partial-resistance benefits including lower rates of green stem and seed mottling, implying severe infections produce extensive seed mottling."
+                },
+                {
+                  "url": "https://cropwatch.unl.edu/plantdisease/soybean/bean-pod-mottle",
+                  "quote": "Infection by BPMV decreases pod formation and reduces seed size, weight, and number, with severe cases causing substantial seed-quality loss."
+                }
+              ]
+            },
+            {
+              "field": "affected_organs",
+              "canonical_says": "(not specified)",
+              "image_shows": "Soybean seeds within a pod are present, identifying the seed/pod as the affected organ in this witness, though the statement is generic anatomical confirmation rather than a disease-specific finding.",
+              "image_quote": "The image shows soybean seeds within a pod.",
+              "image_id": "bugwood::5623779",
+              "verification_status": "provisional",
+              "reasoning": "Seeds/pods are a recognized BPMV-affected organ, but the candidate merely confirms seed presence and adds no verifiable disease-specific evidence, so it is plausible but unsupported.",
+              "swarm_support": 1,
               "web_support": []
             }
           ],
           "image_ids": [
             "bugwood::5623779"
-          ]
+          ],
+          "__verifier_meta__": {
+            "verified_count": 3,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
         }
       }
     },
@@ -7509,397 +7640,387 @@
         "Delaware": {
           "deltas": [
             {
-              "field": "leaf_lesion_shape",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion is elongated along the leaf.",
-              "image_quote": "The lesion is long and narrow, extending along the leaf.",
-              "image_id": "bugwood::5553649",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_lesion_color",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion has a tan center with a chocolate-brown margin and a chlorotic yellow halo.",
-              "image_quote": "The lesion area shows a tan center with a darker chocolate-brown margin surrounded by a chlorotic yellow halo.",
-              "image_id": "bugwood::5553649",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_lesion_texture",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion appears raised and has a rough surface texture.",
-              "image_quote": "The surface of the lesion is textured and irregular.",
-              "image_id": "bugwood::5553649",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_chlorosis",
-              "canonical_says": "(not specified)",
-              "image_shows": "The photo shows chlorosis on the leaves.",
-              "image_quote": "The leaves display interveinal yellowing.",
-              "image_id": "bugwood::5553649",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_necrosis",
+              "field": "diagnostic_features",
               "canonical_says": "(not specified)",
               "image_shows": "The image shows necrotic tissue that is extending inward from the veins.",
               "image_quote": "The lesion is elongated along the leaf.",
               "image_id": "bugwood::5553649",
+              "verification_status": "verified",
+              "reasoning": "Necrosis emanating from and following the leaf veins is the defining, well-documented symptom of soybean vein necrosis virus.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/soybean-vein-necrosis-of-soybean",
+                  "quote": "Initial symptoms include a yellowing along the leaf vein, which later becomes a reddish-brown and irregularly shaped lesions will begin to expand from the vein, and the tissue within the lesion will eventually die."
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-soybean-vein-necrosis-virus",
+                  "quote": "Symptoms of the disease start as randomly distributed, irregular yellow spots ranging in size from 1/4 to 1/2 inches along major leaf veins that progress to red-brown, necrotic lesions."
+                }
+              ]
             },
             {
-              "field": "leaf_curl",
+              "field": "lesion_morphology",
               "canonical_says": "(not specified)",
-              "image_shows": "The leaf shows curling up towards the leaflet edge.",
-              "image_quote": "The leaf appears to have a curled-up edge.",
+              "image_shows": "The lesion is elongated along the leaf.",
+              "image_quote": "The lesion is long and narrow, extending along the leaf.",
               "image_id": "bugwood::5553649",
+              "verification_status": "weakly_supported",
+              "reasoning": "SVNV lesions follow and are bounded by veins so an elongated-along-the-leaf appearance is partially consistent, but the canonical descriptor is irregular/angular rather than long-and-narrow.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/soybean-vein-necrosis-of-soybean",
+                  "quote": "Leaf veins may limit lesions, resulting in an angular lesion appearance."
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-soybean-vein-necrosis-virus",
+                  "quote": "irregular yellow spots ranging in size from 1/4 to 1/2 inches along major leaf veins that progress to red-brown, necrotic lesions"
+                }
+              ]
             },
             {
-              "field": "leaf_vein_pattern",
+              "field": "diagnostic_features",
               "canonical_says": "(not specified)",
-              "image_shows": "Veins appear normal without signs of clearing or necrosis.",
-              "image_quote": "The leaf veins are translucent, indicating normal health.",
+              "image_shows": "The photo shows chlorosis on the leaves.",
+              "image_quote": "The leaves display interveinal yellowing.",
               "image_id": "bugwood::5553649",
+              "verification_status": "weakly_supported",
+              "reasoning": "Chlorosis is a confirmed early SVNV symptom, but it is vein-associated yellowing rather than the strictly interveinal pattern stated, so support is partial.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-soybean-vein-necrosis-virus",
+                  "quote": "Early symptoms are light green to yellow (chlorotic) patches near main leaf veins, where thrips feed."
+                },
+                {
+                  "url": "https://www.udel.edu/academics/colleges/canr/cooperative-extension/fact-sheets/soybean-vein-necrosis-virus/",
+                  "quote": "Symptoms associated with SVNV infection begin with vein clearing and then yellowing (chlorosis) in areas near veins."
+                }
+              ]
             },
             {
-              "field": "leaf_geometry",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shape is lanceolate.",
-              "image_quote": "The leaf is narrow at the base and broadens toward the tip.",
-              "image_id": "bugwood::5553649",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "concentric_pattern",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion has a concentric pattern with alternating light and dark rings.",
-              "image_quote": "The lesion shows a bullseye-like pattern with alternating light and dark rings.",
-              "image_id": "bugwood::5553649",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "color_palette",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected tissue has distinct brownish-orange and dark brown to almost black colors with chlorotic yellow regions.",
-              "image_quote": "The lesion center is brownish-orange with a dark brown to almost black margin, surrounded by a chlorotic yellow halo.",
-              "image_id": "bugwood::5553649",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "severity_visible",
+              "field": "severity",
               "canonical_says": "(not specified)",
               "image_shows": "The leaf shows a significant area of discoloration and necrosis.",
               "image_quote": "The lesion center is brownish-orange with a dark brown to almost black margin, surrounded by a chlorotic yellow halo.",
               "image_id": "bugwood::5553649",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extensive leaf discoloration and necrosis is documented for severe SVNV infections, though the cited visual (a ringed lesion) is not the canonical SVNV presentation.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-soybean-vein-necrosis-virus",
+                  "quote": "severe infections may result in purple to dark brown lesions across most of the leaf"
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion appears raised and has a rough surface texture.",
+              "image_quote": "The surface of the lesion is textured and irregular.",
+              "image_id": "bugwood::5553649",
+              "verification_status": "provisional",
+              "reasoning": "No external source describes SVNV lesions as raised or rough-textured (they are flat necrotic dead tissue), but no citation directly refutes a textured surface either.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows curling up towards the leaflet edge.",
+              "image_quote": "The leaf appears to have a curled-up edge.",
+              "image_id": "bugwood::5553649",
+              "verification_status": "provisional",
+              "reasoning": "Leaf curling is not documented as a characteristic SVNV symptom in the sources reviewed, but it is not explicitly contradicted.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape is lanceolate.",
+              "image_quote": "The leaf is narrow at the base and broadens toward the tip.",
+              "image_id": "bugwood::5553649",
+              "verification_status": "provisional",
+              "reasoning": "Leaf outline is a host-morphology observation unrelated to SVNV pathology and was not corroborated by disease literature.",
+              "swarm_support": 1,
               "web_support": []
             }
           ],
           "image_ids": [
             "bugwood::5553649"
-          ]
+          ],
+          "__verifier_meta__": {
+            "verified_count": 4,
+            "provisional_count": 3,
+            "contradictory_count": 4,
+            "duplicates_count": 0
+          }
         },
         "Iowa": {
           "deltas": [
             {
-              "field": "leaf_lesion_shape",
+              "field": "diagnostic_features",
               "canonical_says": "(not specified)",
-              "image_shows": "The lesions appear small and isolated, with no clear indication of being circular, angular, irregular, elongated, or v-shaped.",
-              "image_quote": "The lesion is small and located near the center of the leaf.",
-              "image_id": "bugwood::5625738",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_lesion_color",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion has a tan center with a chocolate-brown margin.",
-              "image_quote": "The center is tan and the margin is chocolate-brown.",
-              "image_id": "bugwood::5625738",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_lesion_texture",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion appears smooth and not raised.",
-              "image_quote": "The leaf lesion does not show signs of being sunken or raised.",
-              "image_id": "bugwood::5625738",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_chlorosis",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf exhibits chlorosis with yellowing between the veins, while the veins remain green.",
-              "image_quote": "The leaf shows chlorosis with yellowing between the veins.",
-              "image_id": "bugwood::5625738",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_necrosis",
-              "canonical_says": "(not specified)",
-              "image_shows": "The image shows discrete spots of dead tissue on the leaf.",
+              "image_shows": "Discrete patches of dead (necrotic) leaf tissue are present, consistent with the necrotic phase of SVNV.",
               "image_quote": "There are small, circular, brown spots on the leaf.",
               "image_id": "bugwood::5625738",
+              "verification_status": "weakly_supported",
+              "reasoning": "Leaf necrosis is the defining feature of SVNV, but the described small, discrete circular-spot morphology is atypical (SVNV necrosis is irregular and vein-following), so support is partial.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-soybean-vein-necrosis-virus",
+                  "quote": "Chlorosis progresses to necrotic (dead) tissue, which may eventually lead to leaf death."
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/soybean-vein-necrosis-virus",
+                  "quote": "Lesions initially developing as yellowing along the leaf veins... become red-brown, and leaf tissue begins to die."
+                }
+              ]
             },
             {
-              "field": "leaf_curl",
+              "field": "severity",
               "canonical_says": "(not specified)",
-              "image_shows": "The leaf shows curling up towards the tip.",
-              "image_quote": "The leaf is curled up towards the tip.",
-              "image_id": "bugwood::5625738",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_vein_pattern",
-              "canonical_says": "(not specified)",
-              "image_shows": "Veins appear normal without signs of clearing or necrosis.",
-              "image_quote": "The leaf veins are not translucent or darkened.",
-              "image_id": "bugwood::5625738",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_geometry",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shape is broad with a rounded apex, suggesting a spade-like appearance.",
-              "image_quote": "The leaf is broad with a rounded apex.",
-              "image_id": "bugwood::5625738",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "concentric_pattern",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf has a lesion with concentric rings.",
-              "image_quote": "There are alternating light and dark concentric rings surrounding a necrotic center.",
-              "image_id": "bugwood::5625738",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "color_palette",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected tissue has a mix of dark green, light green, and yellowish hues.",
-              "image_quote": "The lesion has a dark green center with a lighter green margin and a yellowish halo.",
-              "image_id": "bugwood::5625738",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "severity_visible",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf has several small lesions and spots, affecting less than 10% of the visible leaf area.",
+              "image_shows": "Affected tissue is limited to scattered small lesions covering under 10% of the visible leaf, consistent with low-severity SVNV typical of Iowa.",
               "image_quote": "The leaf shows small, scattered brown spots.",
               "image_id": "bugwood::5625738",
+              "verification_status": "weakly_supported",
+              "reasoning": "Low SVNV severity (small scattered lesions, <10% leaf area) matches reported low infection levels in Iowa and the documented mild end of the SVNV severity range.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
+              "web_support": [
+                {
+                  "url": "https://crops.extension.iastate.edu/cropnews/2013/08/soybean-diseases-starting-wake",
+                  "quote": "SVNV has been observed in Iowa, especially in the southern half of the state, though most fields with the virus have fairly low levels."
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-soybean-vein-necrosis-virus",
+                  "quote": "Mildly impacted cultivars may only show thread-like vein clearing."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion is small and isolated with no clearly resolvable shape (not distinctly circular, angular, irregular, elongated, or v-shaped).",
+              "image_quote": "The lesion is small and located near the center of the leaf.",
+              "image_id": "bugwood::5625738",
+              "verification_status": "provisional",
+              "reasoning": "The candidate is non-committal about lesion shape so no external source can confirm or refute it; plausible but unverifiable.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion surface appears smooth and flat, neither sunken nor raised.",
+              "image_quote": "The leaf lesion does not show signs of being sunken or raised.",
+              "image_id": "bugwood::5625738",
+              "verification_status": "provisional",
+              "reasoning": "A flat non-pustular necrotic surface is consistent with a viral foliar lesion and is not contradicted, but no source explicitly documents SVNV lesion texture.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf is broad with a rounded, spade-like apex.",
+              "image_quote": "The leaf is broad with a rounded apex.",
+              "image_id": "bugwood::5625738",
+              "verification_status": "provisional",
+              "reasoning": "Leaf geometry describes normal soybean foliage and is not a disease-diagnostic trait, so it is plausible but carries no pathological evidentiary value.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf is curled upward toward the tip.",
+              "image_quote": "The leaf is curled up towards the tip.",
+              "image_id": "bugwood::5625738",
+              "verification_status": "novel_plausible",
+              "reasoning": "Leaf curling is not a recognized SVNV symptom in any extension factsheet (which describe vein clearing/chlorosis/necrosis only), so it is flagged for curator review rather than supported.",
+              "swarm_support": 1,
               "web_support": []
             }
           ],
           "image_ids": [
             "bugwood::5625738"
-          ]
+          ],
+          "__verifier_meta__": {
+            "verified_count": 2,
+            "provisional_count": 4,
+            "contradictory_count": 5,
+            "duplicates_count": 0
+          }
         },
         "Wisconsin": {
           "deltas": [
             {
-              "field": "leaf_lesion_shape",
+              "field": "lesion_morphology",
               "canonical_says": "(not specified)",
-              "image_shows": "The lesions appear irregular, constrained by the leaf veins.",
+              "image_shows": "Lesions are irregular and constrained by/follow the leaf veins, consistent with vein-limited SVNV lesions in Wisconsin soybean.",
               "image_quote": "The lesions are irregularly shaped and seem to follow the vein patterns.",
               "image_id": "bugwood::5625743",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources confirm SVNV lesions are irregular and limited/followed by veins, directly corroborating the observation.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/soybean-vein-necrosis-of-soybean",
+                  "quote": "Lesions follow or spread from leaf veins, and leaf veins may limit lesions, resulting in an angular lesion appearance."
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/soybean-vein-necrosis-virus",
+                  "quote": "Lesions typically spread along or from the edge of a vein... irregular-shaped lesions range from 1/4 to 1/2 inch in diameter."
+                }
+              ]
             },
             {
-              "field": "leaf_lesion_color",
+              "field": "diagnostic_features",
               "canonical_says": "(not specified)",
-              "image_shows": "The lesion centers are tan while the margins are chocolate-brown.",
-              "image_quote": "The lesion centers are tan while the margins are chocolate-brown.",
-              "image_id": "bugwood::5625743",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_lesion_texture",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesions appear raised and have a slightly rough surface.",
-              "image_quote": "The surface of the lesions has a raised texture.",
-              "image_id": "bugwood::5625743",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_chlorosis",
-              "canonical_says": "(not specified)",
-              "image_shows": "There are chlorotic yellow spots with dark brown margins and necrotic areas.",
+              "image_shows": "Chlorotic yellow zones with dark brown margins and necrosis match the classic SVNV progression of vein-area chlorosis into necrotic lesions.",
               "image_quote": "There are chlorotic yellow spots with dark brown margins and necrotic areas on the leaves.",
               "image_id": "bugwood::5625743",
+              "verification_status": "verified",
+              "reasoning": "The chlorosis-with-necrotic-margin description is the textbook early-to-mid SVNV symptom progression documented by Wisconsin PDDC and CPN.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-soybean-vein-necrosis-virus",
+                  "quote": "Symptoms begin with vein clearing and then yellowing (chlorosis) in areas near veins, and chlorotic areas eventually can turn into red-brown lesions (necrotic lesions)."
+                },
+                {
+                  "url": "https://pddc.wisc.edu/2015/08/16/soybean-vein-necrosis-disease/",
+                  "quote": "Early symptoms are light green to yellow (chlorotic) patches near main leaf veins... Chlorosis progresses to necrotic (dead) tissue."
+                }
+              ]
             },
             {
-              "field": "leaf_necrosis",
+              "field": "lesion_morphology",
               "canonical_says": "(not specified)",
-              "image_shows": "There are irregular brown lesions on the leaf surface.",
+              "image_shows": "Irregular brown necrotic tissue on the leaf surface is consistent with SVNV necrotic lesions developing from chlorotic vein areas.",
               "image_quote": "The image displays necrotic brown tissue on the leaf surface.",
               "image_id": "bugwood::5625743",
+              "verification_status": "verified",
+              "reasoning": "Irregular brown necrotic leaf tissue is a defining SVNV feature confirmed by NC State and CPN references.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/soybean-vein-necrosis-virus",
+                  "quote": "Yellowing becomes red-brown, irregular-shaped lesions, and eventually leads to tissue death."
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/soybean-vein-necrosis-of-soybean",
+                  "quote": "Symptoms... develop into reddish-brown lesions, causing death of leaf tissue."
+                }
+              ]
             },
             {
-              "field": "leaf_curl",
+              "field": "diagnostic_features",
               "canonical_says": "(not specified)",
-              "image_shows": "Leaves display curling, especially near the veins.",
-              "image_quote": "Leaves show curling up towards the leaf veins.",
-              "image_id": "bugwood::5625743",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "leaf_vein_pattern",
-              "canonical_says": "(not specified)",
-              "image_shows": "Some parts of the leaf veins show necrosis, appearing dark and dead.",
+              "image_shows": "Dark, dead tissue along the leaf veins corresponds to the vein necrosis that is the namesake hallmark of SVNV.",
               "image_quote": "Distinct spots of dead tissue.",
               "image_id": "bugwood::5625743",
+              "verification_status": "verified",
+              "reasoning": "Vein necrosis is the cardinal diagnostic feature of SVNV and is explicitly described by extension and CPN sources.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/soybean-vein-necrosis-virus",
+                  "quote": "In affected plants, the veins may appear clear, yellow, or dark brown, and vein discoloration may be more apparent on the undersides of leaves."
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-soybean-vein-necrosis-virus",
+                  "quote": "Yellowing and clearing of the veins which eventually lead to necrosis of both the vein and leaf tissue."
+                }
+              ]
             },
             {
-              "field": "leaf_geometry",
+              "field": "lesion_morphology",
               "canonical_says": "(not specified)",
-              "image_shows": "The leaves are broad and flat, typical of soybean foliage.",
-              "image_quote": "The leaves have a wide, rounded shape.",
-              "image_id": "bugwood::5625743",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "concentric_pattern",
-              "canonical_says": "(not specified)",
-              "image_shows": "Target spots with alternating light and dark concentric rings.",
-              "image_quote": "The image displays a target spot with a central dark brown area surrounded by concentric rings of lighter and darker colors.",
-              "image_id": "bugwood::5625743",
-              "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
-            },
-            {
-              "field": "color_palette",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected tissue has prominent brown and dark brown colors.",
+              "image_shows": "Prominent brown to dark-brown affected tissue is consistent with the red-brown necrotic SVNV lesion color palette.",
               "image_quote": "Brown spots and necrotic areas are visible on the leaf surface.",
               "image_id": "bugwood::5625743",
+              "verification_status": "weakly_supported",
+              "reasoning": "A generic brown/dark-brown palette is broadly consistent with SVNV's documented red-brown necrosis but is non-specific, so support is partial.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/soybean-vein-necrosis-virus",
+                  "quote": "Yellowing becomes red-brown, irregular-shaped lesions."
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/soybean-vein-necrosis-of-soybean",
+                  "quote": "Develops into reddish-brown lesions."
+                }
+              ]
             },
             {
-              "field": "look_alikes_visual",
+              "field": "lesion_morphology",
               "canonical_says": "(not specified)",
-              "image_shows": "Darkened, sunken areas on the leaf surface.",
-              "image_quote": "The lesion surfaces appear slightly sunken.",
+              "image_shows": "Tan lesion centers with chocolate-brown margins are loosely consistent with maturing SVNV necrotic lesions whose tissue dries and discolors.",
+              "image_quote": "The lesion centers are tan while the margins are chocolate-brown.",
               "image_id": "bugwood::5625743",
+              "verification_status": "weakly_supported",
+              "reasoning": "Tan center / brown margin is plausible for older dried SVNV necrosis but no source describes this exact two-tone pattern, so only indirect support.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/soybean-vein-necrosis-virus",
+                  "quote": "Yellowing becomes red-brown, irregular-shaped lesions, and eventually leads to tissue death."
+                },
+                {
+                  "url": "https://pddc.wisc.edu/2015/08/16/soybean-vein-necrosis-disease/",
+                  "quote": "Chlorosis progresses to necrotic (dead) tissue, which may eventually lead to leaf death."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Leaf curling toward the veins is not a documented SVNV symptom but is not inconsistent with general tospovirus-induced leaf distortion.",
+              "image_quote": "Leaves show curling up towards the leaf veins.",
+              "image_id": "bugwood::5625743",
+              "verification_status": "novel_plausible",
+              "reasoning": "No extension source lists leaf curl as an SVNV symptom, but mild distortion is coherent with viral infection and is not contradicted, so it is flagged for curator review.",
+              "swarm_support": 1,
               "web_support": []
             },
             {
-              "field": "severity_visible",
+              "field": "other",
               "canonical_says": "(not specified)",
-              "image_shows": "The affected leaf shows signs of disease primarily in specific areas, indicating a medium severity.",
+              "image_shows": "Broad flat leaves are generic soybean foliage morphology and carry no disease-specific signal.",
+              "image_quote": "The leaves have a wide, rounded shape.",
+              "image_id": "bugwood::5625743",
+              "verification_status": "provisional",
+              "reasoning": "This describes normal soybean leaf shape rather than a disease trait; it is plausible and uncontradicted but externally unverifiable as a disease observation.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "Localized lesions on part of the leaf suggest medium severity, which is plausible but not externally verifiable from a single photo.",
               "image_quote": "The leaf has noticeable spots and lesions, particularly on the lower right portion.",
               "image_id": "bugwood::5625743",
+              "verification_status": "provisional",
+              "reasoning": "Severity is an image-derived judgment with no corroborating literature; plausible and not contradicted, so left provisional.",
               "swarm_support": 1,
-              "__support__": 1,
-              "verification_status": "unverified",
               "web_support": []
             }
           ],
           "image_ids": [
             "bugwood::5625743"
-          ]
+          ],
+          "__verifier_meta__": {
+            "verified_count": 6,
+            "provisional_count": 3,
+            "contradictory_count": 3,
+            "duplicates_count": 0
+          }
         }
       }
     }
