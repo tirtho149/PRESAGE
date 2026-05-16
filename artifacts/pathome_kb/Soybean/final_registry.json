@@ -1014,7 +1014,7 @@
       },
       "treatments": {
         "value": [
-          "Plant resistant varieties \u2014 many sources of resistance are available",
+          "Plant resistant varieties — many sources of resistance are available",
           "Crop rotation",
           "Burial of infested crop residue to reduce pathogen levels",
           "Typically no fungicide management is warranted; most foliar fungicides available for soybeans are not labeled for downy mildew and have very limited effect"
@@ -2775,7 +2775,7 @@
               "image_quote": "Curling up towards the leaflet edge.",
               "image_id": "bugwood::5623563",
               "verification_status": "novel_plausible",
-              "reasoning": "No source lists leaf curl as a bacterial blight symptom (the disease causes tattering/ragged leaves, not curling), but mild curl from necrotic tension is coherent with the visual \u2014 flag for curator.",
+              "reasoning": "No source lists leaf curl as a bacterial blight symptom (the disease causes tattering/ragged leaves, not curling), but mild curl from necrotic tension is coherent with the visual — flag for curator.",
               "swarm_support": 1,
               "web_support": []
             },
@@ -3453,7 +3453,7 @@
           "Crop rotation and tillage may be of some benefit"
         ],
         "url": "https://extension.umn.edu/soybean-pest-management/phytophthora-root-and-stem-rot-soybean",
-        "quote": "Try to create a field environment that reduces the likelihood of saturated soil by taking steps to increase drainage where possible. Treatment of seed with the highest labeled rates of fungicidal compounds such as mefenoxam (Apron XL\u00ae) or metalaxyl (Apron\u00ae) can be beneficial. In all areas where Phytophthora root and stem rot has been a problem, resistant cultivars should be planted. The most common resistance genes that are widely effective are Rps 1c and 1k. Rps1a can be effective, but is not as effective in many areas as the other genes. Rps 3 and other genes can also be effective. For areas where the Rps genes are not working well due to the presence of pathogen races that overcome the resistance, cultivars with high levels of field tolerance (or partial resistance) should be planted. Crop rotation and tillage may be of some benefit."
+        "quote": "Try to create a field environment that reduces the likelihood of saturated soil by taking steps to increase drainage where possible. Treatment of seed with the highest labeled rates of fungicidal compounds such as mefenoxam (Apron XL®) or metalaxyl (Apron®) can be beneficial. In all areas where Phytophthora root and stem rot has been a problem, resistant cultivars should be planted. The most common resistance genes that are widely effective are Rps 1c and 1k. Rps1a can be effective, but is not as effective in many areas as the other genes. Rps 3 and other genes can also be effective. For areas where the Rps genes are not working well due to the presence of pathogen races that overcome the resistance, cultivars with high levels of field tolerance (or partial resistance) should be planted. Crop rotation and tillage may be of some benefit."
       },
       "confidence": "high",
       "num_sources": 3,
@@ -4851,7 +4851,7 @@
                 },
                 {
                   "url": "https://content.ces.ncsu.edu/target-spot-of-soybean",
-                  "quote": "'Target-zone-like' rings can appear similar to frogeye leaf spot \u2014 a feature of target spot, not Septoria brown spot."
+                  "quote": "'Target-zone-like' rings can appear similar to frogeye leaf spot — a feature of target spot, not Septoria brown spot."
                 }
               ]
             },
@@ -5911,40 +5911,377 @@
       ],
       "regional_observations": {
         "Alabama": {
-          "deltas": [],
+          "deltas": [
+            {
+              "field": "leaf_lesion_shape",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesions appear angular and are confined by leaf veins.",
+              "image_quote": "The lesions are confined within the leaf veins, indicating a constrained angular shape.",
+              "image_id": "bugwood::5440185",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_color",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion centers are tan, the margins are chocolate-brown, and there is a chlorotic yellow halo.",
+              "image_quote": "The lesions exhibit a tan center with chocolate-brown margin and chlorotic yellow halo.",
+              "image_id": "bugwood::5440185",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_texture",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesions appear raised and have a slightly rough texture.",
+              "image_quote": "The surface of the lesions has a raised texture.",
+              "image_id": "bugwood::5440185",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_chlorosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows chlorosis with yellowing between the veins, but the veins themselves remain green.",
+              "image_quote": "The leaf has interveinal chlorosis with green veins.",
+              "image_id": "bugwood::5440185",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_necrosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows brownish lesions, some discrete spots, and necrotic tissue extending inward from the veins.",
+              "image_quote": "Brownish lesions and necrotic tissue extending inward from the veins.",
+              "image_id": "bugwood::5440185",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_curl",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows curling up towards the leaf veins.",
+              "image_quote": "The leaf curls up towards the central vein.",
+              "image_id": "bugwood::5440185",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_vein_pattern",
+              "canonical_says": "(not specified)",
+              "image_shows": "Veins appear clear and translucent.",
+              "image_quote": "The leaf shows a general lack of necrosis affecting the veins.",
+              "image_id": "bugwood::5440185",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_geometry",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape is broad with a rounded apex, suggesting a spade-like appearance.",
+              "image_quote": "The leaf has a broad, rounded apex.",
+              "image_id": "bugwood::5440185",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "concentric_pattern",
+              "canonical_says": "(not specified)",
+              "image_shows": "Target spots with alternating light and dark concentric rings.",
+              "image_quote": "The image displays a target spot with a pattern of concentric rings.",
+              "image_id": "bugwood::5440185",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "color_palette",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue has a mix of green, tan, and brown colors.",
+              "image_quote": "The lesion center is tan, while the margin is chocolate-brown.",
+              "image_id": "bugwood::5440185",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "severity_visible",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf has significant patches of brownish lesions covering more than half of its visible area.",
+              "image_quote": "The leaf displays large areas of brownish lesions.",
+              "image_id": "bugwood::5440185",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            }
+          ],
           "image_ids": [
             "bugwood::5440185"
-          ],
-          "__verifier_meta__": {
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0
-          }
+          ]
         },
         "Florida": {
-          "deltas": [],
+          "deltas": [
+            {
+              "field": "leaf_lesion_shape",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesions appear angular and are constrained by leaf veins.",
+              "image_quote": "The lesions are sharply defined and follow the venation patterns of the leaf.",
+              "image_id": "bugwood::5202010",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_color",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion center is tan, while the margin is chocolate-brown.",
+              "image_quote": "The lesion has a tan center with a chocolate-brown margin.",
+              "image_id": "bugwood::5202010",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_texture",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesions appear raised and have a rough texture.",
+              "image_quote": "The lesions show raised areas with a textured surface.",
+              "image_id": "bugwood::5202010",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_chlorosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf exhibits chlorosis with a yellowing pattern between the veins.",
+              "image_quote": "The leaf shows yellowing between the veins.",
+              "image_id": "bugwood::5202010",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_necrosis",
+              "canonical_says": "Symptoms begin on leaves in the lower plant canopy with gray-green, tan to dark-brown, or reddish-brown angular lesions (2-5 mm diameter) developing first on the underside of leaves; small pustules form in the lesions and break open to release masses of tan spores; lesions may also appear on petioles, pods, and stems.",
+              "image_shows": "Brown spots are visible along the veins, indicating necrotic tissue extending inward.",
+              "image_quote": "Brown spots are visible along the veins, indicating necrotic tissue extending inward.",
+              "image_id": "bugwood::5202010",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_curl",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows curling up along the leaf veins.",
+              "image_quote": "Leaf veins appear lighter and translucent.",
+              "image_id": "bugwood::5202010",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_vein_pattern",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf veins show signs of necrosis.",
+              "image_quote": "The leaf veins are dark, indicating necrosis.",
+              "image_id": "bugwood::5202010",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_geometry",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf has a broad, rounded apex with a petiole that is shorter than the blade.",
+              "image_quote": "The leaf has a broad, rounded apex with a petiole that is shorter than the blade.",
+              "image_id": "bugwood::5202010",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "look_alikes_visual",
+              "canonical_says": "(not specified)",
+              "image_shows": "No concentric patterns are visible in the lesions.",
+              "image_quote": "No concentric rings or target spots are present.",
+              "image_id": "bugwood::5202010",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "color_palette",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf displays a mix of green, tan, and chocolate-brown colors.",
+              "image_quote": "The image shows distinct tan centers with chocolate-brown margins.",
+              "image_id": "bugwood::5202010",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "severity_visible",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf has multiple lesions and necrotic spots, indicating significant damage.",
+              "image_quote": "Discrete spots of necrotic tissue.",
+              "image_id": "bugwood::5202010",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            }
+          ],
           "image_ids": [
             "bugwood::5202010"
-          ],
-          "__verifier_meta__": {
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0
-          }
+          ]
         },
         "Kentucky": {
-          "deltas": [],
+          "deltas": [
+            {
+              "field": "leaf_lesion_shape",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesions appear angular and are constrained by leaf veins.",
+              "image_quote": "The lesions are sharply defined and follow the venation patterns of the leaf.",
+              "image_id": "bugwood::5369087",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_color",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesions display a variety of colors including tan, brown, and rust-orange.",
+              "image_quote": "The affected tissue displays shades of tan, chocolate-brown, and rust-orange in a scattered pattern.",
+              "image_id": "bugwood::5369087",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_texture",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesions appear raised and have a slightly rough texture.",
+              "image_quote": "The surface of the lesions has a raised texture.",
+              "image_id": "bugwood::5369087",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_chlorosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "The photo shows chlorotic yellow halos around the lesions.",
+              "image_quote": "Lesions have a tan center with a chlorotic yellow halo and a dark brown margin.",
+              "image_id": "bugwood::5369087",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_necrosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "Numerous small brown spots scattered across the leaf surface.",
+              "image_quote": "The image displays multiple small, irregularly shaped brown spots scattered across the leaf surface.",
+              "image_id": "bugwood::5369087",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_curl",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows curling up towards the leaf veins.",
+              "image_quote": "Leaf geometry shows no specific shape like diamond, lanceolate, spade, or ovate, and there's no mention of a length-to-width ratio, petiole length, blade length, tip notch, single tip hair, or serration in the image.",
+              "image_id": "bugwood::5369087",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_vein_pattern",
+              "canonical_says": "(not specified)",
+              "image_shows": "Veins appear normal with no signs of clearing or necrosis.",
+              "image_quote": "Veins are translucent, indicating normal appearance.",
+              "image_id": "bugwood::5369087",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_geometry",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape appears to be ovate.",
+              "image_quote": "The leaf is broadest near the middle.",
+              "image_id": "bugwood::5369087",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "color_palette",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue has tan centers with chlorotic yellow halos and dark brown margins.",
+              "image_quote": "Lesions have a tan center with a chlorotic yellow halo and a dark brown margin.",
+              "image_id": "bugwood::5369087",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "severity_visible",
+              "canonical_says": "(not specified)",
+              "image_shows": "The photo shows a large number of angular lesions covering more than half of the visible leaf surface.",
+              "image_quote": "Lesions cover a significant portion of the leaf, with some areas appearing heavily affected.",
+              "image_id": "bugwood::5369087",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            }
+          ],
           "image_ids": [
             "bugwood::5369087"
-          ],
-          "__verifier_meta__": {
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0
-          }
+          ]
         }
       }
     },
@@ -6022,52 +6359,307 @@
       ],
       "regional_observations": {
         "Iowa": {
-          "deltas": [],
+          "deltas": [
+            {
+              "field": "stem_lesion",
+              "canonical_says": "(not specified)",
+              "image_shows": "A dark brown lesion is present on the outer surface of the stem near the middle of the pod cluster.",
+              "image_quote": "There is a dark brown spot on the stem near the middle of the pod cluster.",
+              "image_id": "bugwood::5626278",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "stem_discoloration",
+              "canonical_says": "(not specified)",
+              "image_shows": "There is a dark spot on the stem near the middle of the pod cluster.",
+              "image_quote": "The photo shows a dark brown spot on the stem near the middle of the pod cluster.",
+              "image_id": "bugwood::5626278",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "sporulation",
+              "canonical_says": "(not specified)",
+              "image_shows": "There are no visible signs of fungal structures like mycelium, spore masses, pycnidia, perithecia, apothecia, sclerotia, bacterial ooze, or rust pustules.",
+              "image_quote": "No fungal structures are apparent.",
+              "image_id": "bugwood::5626278",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "severity_visible",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image shows a dark brown spot on the stem near the middle of the pod cluster.",
+              "image_quote": "The dark brown lesion is localized within the stem.",
+              "image_id": "bugwood::5626278",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "color_palette",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected area has a dominant olive-green color with secondary dark brown spots.",
+              "image_quote": "The photo shows a dark brown spot on the stem near the middle of the pod cluster.",
+              "image_id": "bugwood::5626278",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "look_alikes_visual",
+              "canonical_says": "(not specified)",
+              "image_shows": "The photo shows a dark brown spot on the stem near the middle of the pod cluster.",
+              "image_quote": "The photo shows a dark brown spot on the stem near the middle of the pod cluster.",
+              "image_id": "bugwood::5626278",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            }
+          ],
           "image_ids": [
             "bugwood::5626278"
-          ],
-          "__verifier_meta__": {
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0
-          }
+          ]
         },
         "Kentucky": {
-          "deltas": [],
+          "deltas": [
+            {
+              "field": "stem_lesion",
+              "canonical_says": "(not specified)",
+              "image_shows": "The photo shows a sectioned stem with linear patterns and discolored tissue.",
+              "image_quote": "There are linear black streaks visible through the translucent bark of the stem.",
+              "image_id": "bugwood::5626286",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "stem_pith",
+              "canonical_says": "(not specified)",
+              "image_shows": "The pith is white and the outer vascular tissue is brown.",
+              "image_quote": "The internal structure displays a white pith surrounded by brown outer vascular tissue.",
+              "image_id": "bugwood::5626286",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "stem_surface",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image displays a sectioned stem with a pattern of dark streaks and a light-colored central area, resembling the internal structure.",
+              "image_quote": "The stem's internal pith appears to be white with brown outer vascular tissue.",
+              "image_id": "bugwood::5626286",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "stem_discoloration",
+              "canonical_says": "(not specified)",
+              "image_shows": "The photo shows a sectioned stem with visible vascular streaks through the translucent bark.",
+              "image_quote": "Vascular streaks visible through translucent bark.",
+              "image_id": "bugwood::5626286",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "sporulation",
+              "canonical_says": "(not specified)",
+              "image_shows": "Black pycnidia are visible on the cross-section of the stem.",
+              "image_quote": "The sectioned stem reveals a linear arrangement of black pycnidia.",
+              "image_id": "bugwood::5626286",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "color_palette",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue displays a predominant white pith with brown outer vascular tissue.",
+              "image_quote": "The internal pith appears to be white with brown outer vascular tissue.",
+              "image_id": "bugwood::5626286",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "look_alikes_visual",
+              "canonical_says": "(not specified)",
+              "image_shows": "The photo shows a linear arrangement of black pycnidia.",
+              "image_quote": "The sectioned stem reveals a linear arrangement of black pycnidia, which is consistent with the diagnostic features described.",
+              "image_id": "bugwood::5626286",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "severity_visible",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image shows a severe dissection of the stem with significant pith and vascular tissue exposure.",
+              "image_quote": "The white pith and brown outer vascular tissue observed aligns with the canonical description.",
+              "image_id": "bugwood::5626286",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            }
+          ],
           "image_ids": [
             "bugwood::5626286"
-          ],
-          "__verifier_meta__": {
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0
-          }
+          ]
         },
         "Mississippi": {
-          "deltas": [],
+          "deltas": [
+            {
+              "field": "stem_lesion",
+              "canonical_says": "(not specified)",
+              "image_shows": "The stem has dark brown discolored lesions.",
+              "image_quote": "The stem has dark brown discolored lesions.",
+              "image_id": "bugwood::5626282",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "stem_discoloration",
+              "canonical_says": "(not specified)",
+              "image_shows": "The stem has a dark brown discoloration.",
+              "image_quote": "The stem shows dark brown discoloration along its length.",
+              "image_id": "bugwood::5626282",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "color_palette",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue has a predominant olive-green color with some tan browning.",
+              "image_quote": "The stem shows dark brown discoloration along its length.",
+              "image_id": "bugwood::5626282",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "look_alikes_visual",
+              "canonical_says": "(not specified)",
+              "image_shows": "No visible signs of mycelium, spore masses, pycnidia, fruiting bodies, sclerotia, or bacterial ooze.",
+              "image_quote": "There are no visible signs of mycelium, spore masses, pycnidia, fruiting bodies, sclerotia, or bacterial ooze.",
+              "image_id": "bugwood::5626282",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "severity_visible",
+              "canonical_says": "(not specified)",
+              "image_shows": "The stem shows dark brown discoloration along its length.",
+              "image_quote": "The stem shows dark brown discoloration along its length.",
+              "image_id": "bugwood::5626282",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            }
+          ],
           "image_ids": [
             "bugwood::5626282"
-          ],
-          "__verifier_meta__": {
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0
-          }
+          ]
         },
         "Wisconsin": {
-          "deltas": [],
+          "deltas": [
+            {
+              "field": "stem_lesion",
+              "canonical_says": "(not specified)",
+              "image_shows": "The stem has a dark lesion with a black fungal structure.",
+              "image_quote": "The image shows dark streaks and spots on the stem surface.",
+              "image_id": "bugwood::5626280",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "stem_surface",
+              "canonical_says": "(not specified)",
+              "image_shows": "The stem surface shows dark streaks and spots without any visible galls, blisters, scabs, or exudates.",
+              "image_quote": "The stem has dark streaks and spots.",
+              "image_id": "bugwood::5626280",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "stem_discoloration",
+              "canonical_says": "(not specified)",
+              "image_shows": "The stem has dark streaks and spots.",
+              "image_quote": "The stem has a dark brown color with a black pycnidial ring.",
+              "image_id": "bugwood::5626280",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "sporulation",
+              "canonical_says": "(not specified)",
+              "image_shows": "Black pycnidia are visible on the stem.",
+              "image_quote": "The stem has a dark brown color with a black pycnidial ring.",
+              "image_id": "bugwood::5626280",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "severity_visible",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image shows dark streaks and spots on the stem, indicating significant fungal infection.",
+              "image_quote": "The stem has a dark lesion with a black fungal structure.",
+              "image_id": "bugwood::5626280",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "color_palette",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue displays a mix of dark and light colors.",
+              "image_quote": "The stem has dark streaks and spots, while leaves show some green but also some black areas.",
+              "image_id": "bugwood::5626280",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            }
+          ],
           "image_ids": [
             "bugwood::5626280"
-          ],
-          "__verifier_meta__": {
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0
-          }
+          ]
         }
       }
     },
@@ -6102,7 +6694,7 @@
           "quote": "small clusters of infected plants exhibiting foliar yellowing (interveinal chlorosis) and death (necrosis) are observed... When infected plants are roughly pulled from the soil, stems often break at the crown. However, when infected plants are carefully removed from the soil, roots exhibit rot and are typically embedded with black fungal tissue (stroma) along the primary root and less frequently on lateral roots"
         },
         "diagnostic_features": {
-          "value": "Black fungal tissue (stroma) along the primary root (and less frequently on lateral roots), white cottony fungal growth (mycelia) within the pith when roots are split longitudinally, and reproductive stromata (\"dead man's fingers\") on infected soybean debris and at the plant base under humid conditions \u2014 white at the tip (sometimes pinkish when young) turning black at maturity.",
+          "value": "Black fungal tissue (stroma) along the primary root (and less frequently on lateral roots), white cottony fungal growth (mycelia) within the pith when roots are split longitudinally, and reproductive stromata (\"dead man's fingers\") on infected soybean debris and at the plant base under humid conditions — white at the tip (sometimes pinkish when young) turning black at maturity.",
           "url": "https://www.lsuagcenter.com/profiles/aiverson/articles/page1627567471819",
           "quote": "roots exhibit rot and are typically embedded with black fungal tissue (stroma) along the primary root and less frequently on lateral roots... When roots are split longitudinally, white cottony fungal growth (mycelia) can often be evident within the pith... The fungus produces reproductive structures (stromata, Figure 3A-C), sometimes referred to as \"dead man's fingers,\" on infected soybean roots and debris. These reproductive structures are usually white at the tip but are sometimes pinkish when young and turn black at maturity."
         },
@@ -6125,11 +6717,11 @@
       },
       "treatments": {
         "value": [
-          "Practice crop rotation \u2014 rotation to cotton, corn, grain sorghum, rice or sugarcane will likely reduce the incidence and severity of TRD",
+          "Practice crop rotation — rotation to cotton, corn, grain sorghum, rice or sugarcane will likely reduce the incidence and severity of TRD",
           "Till fields after harvest/before planting (reduced or conventional) to facilitate breakdown of soybean debris and reduce inoculum",
-          "Use resistant cultivars \u2014 some commercially available soybean cultivars have shown resistance in greenhouse and field experiments",
+          "Use resistant cultivars — some commercially available soybean cultivars have shown resistance in greenhouse and field experiments",
           "Differences in soybean variety susceptibility to TRD have been observed",
-          "Follow good sanitation practices \u2014 avoid moving soil from infested to non-infested fields, and clean soil and crop debris from machinery, clothes, boots, tools",
+          "Follow good sanitation practices — avoid moving soil from infested to non-infested fields, and clean soil and crop debris from machinery, clothes, boots, tools",
           "Certain fungicides applied in-furrow have been observed to be beneficial (no fungicides are currently labeled for management of taproot decline)"
         ],
         "url": "https://www.lsuagcenter.com/profiles/aiverson/articles/page1627567471819",
@@ -6141,7 +6733,7 @@
         {
           "field": "affected_parts",
           "canonical_value": "Foliar, Root, Stem, Seed, Whole plant (union)",
-          "alternative_value": "Foliar, Root, Seed, Whole plant (CPN \u2014 omits Stem)",
+          "alternative_value": "Foliar, Root, Seed, Whole plant (CPN — omits Stem)",
           "alternative_source_url": "https://cropprotectionnetwork.org/encyclopedia/taproot-decline-of-soybean",
           "note": "CPN lists Foliar/Root/Seed/Whole plant and notes seedling death and seed rot; LSU explicitly notes stems breaking at the crown; APS lists only Root/Foliar. Union taken as canonical."
         },
@@ -6155,16 +6747,132 @@
       ],
       "regional_observations": {
         "Alabama": {
-          "deltas": [],
+          "deltas": [
+            {
+              "field": "leaf_lesion_shape",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf lesion appears to be elongated along the leaf margin.",
+              "image_quote": "The leaf geometry shows a lanceolate shape with a length-to-width ratio greater than 1.",
+              "image_id": "bugwood::5581660",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_color",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion area appears yellow with a brownish margin.",
+              "image_quote": "The photo shows a person examining a plant with yellowing leaves and a brownish margin.",
+              "image_id": "bugwood::5581660",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_texture",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf lesion has a raised texture.",
+              "image_quote": "The leaf lesion appears elevated compared to the surrounding tissue.",
+              "image_id": "bugwood::5581660",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_chlorosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "The photo shows a person examining a plant with yellowing leaves.",
+              "image_quote": "The leaf clearly exhibits interveinal chlorosis.",
+              "image_id": "bugwood::5581660",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_necrosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image shows a person inspecting a plant, but there is no visible lesion or symptom on the leaves.",
+              "image_quote": "No new information about leaf necrosis was observed in the current round.",
+              "image_id": "bugwood::5581660",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_curl",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows curling up towards the tip.",
+              "image_quote": "The leaf is curled up towards the tip.",
+              "image_id": "bugwood::5581660",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_vein_pattern",
+              "canonical_says": "(not specified)",
+              "image_shows": "Leaf veins appear translucent and pale, indicating vein clearing.",
+              "image_quote": "The veins are translucent and paler than the blade.",
+              "image_id": "bugwood::5581660",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_geometry",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape appears to be lanceolate.",
+              "image_quote": "The leaf is long and narrow.",
+              "image_id": "bugwood::5581660",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "color_palette",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue has a mix of green and yellow tones, with the green being more dominant.",
+              "image_quote": "The leaves show a mix of green and yellow.",
+              "image_id": "bugwood::5581660",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "look_alikes_visual",
+              "canonical_says": "(not specified)",
+              "image_shows": "No concentric patterns are visible in the image.",
+              "image_quote": "No concentric patterns are visible in the image.",
+              "image_id": "bugwood::5581660",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "severity_visible",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected soybean plant has yellowing and necrotic areas visible on its leaves.",
+              "image_quote": "The leaf clearly exhibits interveinal chlorosis.",
+              "image_id": "bugwood::5581660",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            }
+          ],
           "image_ids": [
             "bugwood::5581660"
-          ],
-          "__verifier_meta__": {
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0
-          }
+          ]
         }
       }
     },
@@ -6207,64 +6915,556 @@
       "conflicts": [],
       "regional_observations": {
         "Alabama": {
-          "deltas": [],
+          "deltas": [
+            {
+              "field": "leaf_lesion_shape",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion is irregular.",
+              "image_quote": "The lesion has a varied outline, not confined to a single shape like circular or angular.",
+              "image_id": "bugwood::5581647",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_color",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion center is light green and appears chlorotic, while the margin is dark brown.",
+              "image_quote": "Tan center with chocolate-brown margin and chlorotic yellow halo.",
+              "image_id": "bugwood::5581647",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_texture",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion texture appears to be raised.",
+              "image_quote": "The lesions have an irregular, elevated appearance.",
+              "image_id": "bugwood::5581647",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_chlorosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "mosaic/mottling chlorosis is present.",
+              "image_quote": "The photo shows chlorosis on soybean leaves, with yellowing primarily around the veins.",
+              "image_id": "bugwood::5581647",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_necrosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "Discrete spots of necrotic tissue.",
+              "image_quote": "Leaf tissue appears dead, brown, or bleached.",
+              "image_id": "bugwood::5581647",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_curl",
+              "canonical_says": "(not specified)",
+              "image_shows": "leaves are curled up",
+              "image_quote": "Some leaves have curled edges, indicating upward curling.",
+              "image_id": "bugwood::5581647",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_vein_pattern",
+              "canonical_says": "(not specified)",
+              "image_shows": "Some leaves have chlorotic areas that appear to stop at the veins, suggesting vein-limited lesions.",
+              "image_quote": "The image shows some leaves with chlorotic areas that do not seem to cross the veins.",
+              "image_id": "bugwood::5581647",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_geometry",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaves are ovate with a medium-length petiole compared to the blade.",
+              "image_quote": "Leaves are broadly ovate with a prominent petiole.",
+              "image_id": "bugwood::5581647",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "color_palette",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue has a mix of light green and tan colors.",
+              "image_quote": "The image shows leaves with scattered tan patches on a predominantly light green background.",
+              "image_id": "bugwood::5581647",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "severity_visible",
+              "canonical_says": "(not specified)",
+              "image_shows": "The photo shows a significant portion of the leaf affected by chlorotic mottling.",
+              "image_quote": "The mottled pattern of chlorosis is evident across multiple leaves.",
+              "image_id": "bugwood::5581647",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            }
+          ],
           "image_ids": [
             "bugwood::5581647"
-          ],
-          "__verifier_meta__": {
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0
-          }
+          ]
         },
         "Iowa": {
-          "deltas": [],
+          "deltas": [
+            {
+              "field": "leaf_lesion_shape",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion is angular, confined by leaf veins.",
+              "image_quote": "The lesion is located within the leaf margin and follows the vein pattern.",
+              "image_id": "bugwood::5623785",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_color",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion appears tan in the center with a darker margin and a yellowish halo.",
+              "image_quote": "The lesion's center is light tan, the margin is chocolate-brown, and there is a chlorotic yellow halo around it.",
+              "image_id": "bugwood::5623785",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_texture",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion appears raised and has a slightly rough surface.",
+              "image_quote": "The lesion shows a hole at the leaf margin.",
+              "image_id": "bugwood::5623785",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_chlorosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "The photo shows chlorosis on the leaves.",
+              "image_quote": "The leaves display a mix of pale yellow-green and olive-green colors, with some areas appearing more faded.",
+              "image_id": "bugwood::5623785",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_necrosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image shows a leaf with a hole, suggesting necrotic tissue has dropped out.",
+              "image_quote": "The leaf has a distinct hole, indicating shot-hole necrosis.",
+              "image_id": "bugwood::5623785",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_curl",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows curling up towards the tip.",
+              "image_quote": "The leaf tips appear to curl upwards.",
+              "image_id": "bugwood::5623785",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_vein_pattern",
+              "canonical_says": "(not specified)",
+              "image_shows": "Veins appear normal without signs of clearing or necrosis.",
+              "image_quote": "The leaf veins are not translucent or darkened.",
+              "image_id": "bugwood::5623785",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_geometry",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape is lanceolate.",
+              "image_quote": "The leaf exhibits a lanceolate shape with a pointed tip.",
+              "image_id": "bugwood::5623785",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "color_palette",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue displays a mix of green and yellow hues, with the leaf surface showing chlorosis.",
+              "image_quote": "The leaf shows interveinal chlorosis with yellowing occurring between the veins while the veins remain green.",
+              "image_id": "bugwood::5623785",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "look_alikes_visual",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion appears to have a tan center with a chocolate-brown margin and a chlorotic yellow halo.",
+              "image_quote": "The lesion appears to have a chlorotic area with a dark spot in the center, but there are no alternating light/dark concentric rings.",
+              "image_id": "bugwood::5623785",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "severity_visible",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows significant chlorosis and necrosis.",
+              "image_quote": "The leaf shows interveinal chlorosis with yellowing occurring between the veins while the veins remain green.",
+              "image_id": "bugwood::5623785",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            }
+          ],
           "image_ids": [
             "bugwood::5623785"
-          ],
-          "__verifier_meta__": {
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0
-          }
+          ]
         },
         "North Carolina": {
-          "deltas": [],
+          "deltas": [
+            {
+              "field": "leaf_lesion_shape",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesions appear as small green swellings along the leaf margins.",
+              "image_quote": "The lesions are angular, following the natural lines of the leaf.",
+              "image_id": "bugwood::5609645",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_color",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion appears to have a greenish center with a darker green margin and a slight yellowish halo.",
+              "image_quote": "The affected tissue has a mix of green tones with a dominant olive-green color and some slightly yellowish hues.",
+              "image_id": "bugwood::5609645",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_texture",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion texture appears to be raised. evidence=The lesions are small green swellings along the leaf margins.",
+              "image_quote": "The lesions appear raised and have a slightly fuzzy surface.",
+              "image_id": "bugwood::5609645",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_chlorosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "The yellowing is predominantly between the veins, leaving the veins themselves green.",
+              "image_quote": "There is chlorosis, specifically interveinal.",
+              "image_id": "bugwood::5609645",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_necrosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image displays small, raised bumps along the leaf margins, indicative of necrotic tissue.",
+              "image_quote": "The lesion texture appears to be raised.",
+              "image_id": "bugwood::5609645",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_curl",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaves are curled up.",
+              "image_quote": "The leaves are curled upwards, indicating upward curling.",
+              "image_id": "bugwood::5609645",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_geometry",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaves are lanceolate with a long, narrow blade.",
+              "image_quote": "The leaves have a pointed tip and are elongated.",
+              "image_id": "bugwood::5609645",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "color_palette",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue has a mix of green tones with a dominant olive-green color and some slightly yellowish hues.",
+              "image_quote": "The lesion appears to have a greenish center with a darker green margin and a slight yellowish halo.",
+              "image_id": "bugwood::5609645",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "look_alikes_visual",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesions do not show concentric patterns.",
+              "image_quote": "No concentric pattern was observed.",
+              "image_id": "bugwood::5609645",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "severity_visible",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesions appear to have a greenish center with a darker green margin and a slight yellowish halo.",
+              "image_quote": "The lesions appear to have a greenish center with a darker green margin and a slight yellowish halo.",
+              "image_id": "bugwood::5609645",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            }
+          ],
           "image_ids": [
             "bugwood::5609645"
-          ],
-          "__verifier_meta__": {
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0
-          }
+          ]
         },
         "South Dakota": {
-          "deltas": [],
+          "deltas": [
+            {
+              "field": "leaf_lesion_shape",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion is irregular and does not appear to be constrained by leaf veins.",
+              "image_quote": "The lesion appears to have a brownish-red center with a chlorotic yellow halo.",
+              "image_id": "bugwood::5473570",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_color",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion has a tan center with a chocolate-brown margin.",
+              "image_quote": "The center is tan and the margin is chocolate-brown.",
+              "image_id": "bugwood::5473570",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_texture",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion appears raised and has a slightly rough surface.",
+              "image_quote": "The surface of the lesion is textured.",
+              "image_id": "bugwood::5473570",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_chlorosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "The photo shows chlorotic areas with a mottled pattern on soybean leaves.",
+              "image_quote": "There is chlorosis, specifically interveinal.",
+              "image_id": "bugwood::5473570",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_necrosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "There are necrotic areas on the leaf.",
+              "image_quote": "The leaf shows brown spots indicating stress.",
+              "image_id": "bugwood::5473570",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_curl",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows curling up towards the center.",
+              "image_quote": "The leaf curls up towards the center.",
+              "image_id": "bugwood::5473570",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_vein_pattern",
+              "canonical_says": "(not specified)",
+              "image_shows": "There is chlorosis, specifically interveinal.",
+              "image_quote": "The leaf veins show some chlorosis but there is no obvious clearing or necrosis.",
+              "image_id": "bugwood::5473570",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_geometry",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape is broad with a slightly elongated oval form.",
+              "image_quote": "The leaves are broad and elongated.",
+              "image_id": "bugwood::5473570",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "concentric_pattern",
+              "canonical_says": "(not specified)",
+              "image_shows": "No concentric pattern is visible in the lesion.",
+              "image_quote": "The lesion appears irregular and does not follow a concentric pattern.",
+              "image_id": "bugwood::5473570",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "color_palette",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue has a mix of green and brownish-red colors.",
+              "image_quote": "The lesion appears to have a brownish-red center with a chlorotic yellow halo.",
+              "image_id": "bugwood::5473570",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "look_alikes_visual",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows chlorotic areas and puckering indicative of Bean Pod Mottle Virus.",
+              "image_quote": "The leaf has distinct lesions, which are characteristic of Bean Pod Mottle Virus.",
+              "image_id": "bugwood::5473570",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "severity_visible",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows chlorotic areas and puckering indicative of Bean Pod Mottle Virus.",
+              "image_quote": "The leaf appears to have a puckered appearance, likely due to Bean Pod Mottle Virus.",
+              "image_id": "bugwood::5473570",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            }
+          ],
           "image_ids": [
             "bugwood::5473570"
-          ],
-          "__verifier_meta__": {
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0
-          }
+          ]
         },
         "Wisconsin": {
-          "deltas": [],
+          "deltas": [
+            {
+              "field": "fruit",
+              "canonical_says": "(not specified)",
+              "image_shows": "Soybean seeds are within a pod, confirming the presence of fruits.",
+              "image_quote": "The image shows soybean seeds within a pod.",
+              "image_id": "bugwood::5623779",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "color_palette",
+              "canonical_says": "(not specified)",
+              "image_shows": "Mottled yellow and black pattern on the soybean seeds.",
+              "image_quote": "The soybean seeds display a mottled pattern of yellow and black.",
+              "image_id": "bugwood::5623779",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "look_alikes_visual",
+              "canonical_says": "(not specified)",
+              "image_shows": "Soybean seeds with mottled yellow and black patterns.",
+              "image_quote": "The photo shows soybean seeds with a mottled yellow and black pattern.",
+              "image_id": "bugwood::5623779",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "severity_visible",
+              "canonical_says": "(not specified)",
+              "image_shows": "High fraction of the soybean seeds affected.",
+              "image_quote": "The image shows a high fraction of the soybean seeds affected.",
+              "image_id": "bugwood::5623779",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            }
+          ],
           "image_ids": [
             "bugwood::5623779"
-          ],
-          "__verifier_meta__": {
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0
-          }
+          ]
         }
       }
     },
@@ -6307,40 +7507,399 @@
       "conflicts": [],
       "regional_observations": {
         "Delaware": {
-          "deltas": [],
+          "deltas": [
+            {
+              "field": "leaf_lesion_shape",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion is elongated along the leaf.",
+              "image_quote": "The lesion is long and narrow, extending along the leaf.",
+              "image_id": "bugwood::5553649",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_color",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion has a tan center with a chocolate-brown margin and a chlorotic yellow halo.",
+              "image_quote": "The lesion area shows a tan center with a darker chocolate-brown margin surrounded by a chlorotic yellow halo.",
+              "image_id": "bugwood::5553649",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_texture",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion appears raised and has a rough surface texture.",
+              "image_quote": "The surface of the lesion is textured and irregular.",
+              "image_id": "bugwood::5553649",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_chlorosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "The photo shows chlorosis on the leaves.",
+              "image_quote": "The leaves display interveinal yellowing.",
+              "image_id": "bugwood::5553649",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_necrosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image shows necrotic tissue that is extending inward from the veins.",
+              "image_quote": "The lesion is elongated along the leaf.",
+              "image_id": "bugwood::5553649",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_curl",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows curling up towards the leaflet edge.",
+              "image_quote": "The leaf appears to have a curled-up edge.",
+              "image_id": "bugwood::5553649",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_vein_pattern",
+              "canonical_says": "(not specified)",
+              "image_shows": "Veins appear normal without signs of clearing or necrosis.",
+              "image_quote": "The leaf veins are translucent, indicating normal health.",
+              "image_id": "bugwood::5553649",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_geometry",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape is lanceolate.",
+              "image_quote": "The leaf is narrow at the base and broadens toward the tip.",
+              "image_id": "bugwood::5553649",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "concentric_pattern",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion has a concentric pattern with alternating light and dark rings.",
+              "image_quote": "The lesion shows a bullseye-like pattern with alternating light and dark rings.",
+              "image_id": "bugwood::5553649",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "color_palette",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue has distinct brownish-orange and dark brown to almost black colors with chlorotic yellow regions.",
+              "image_quote": "The lesion center is brownish-orange with a dark brown to almost black margin, surrounded by a chlorotic yellow halo.",
+              "image_id": "bugwood::5553649",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "severity_visible",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows a significant area of discoloration and necrosis.",
+              "image_quote": "The lesion center is brownish-orange with a dark brown to almost black margin, surrounded by a chlorotic yellow halo.",
+              "image_id": "bugwood::5553649",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            }
+          ],
           "image_ids": [
             "bugwood::5553649"
-          ],
-          "__verifier_meta__": {
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0
-          }
+          ]
         },
         "Iowa": {
-          "deltas": [],
+          "deltas": [
+            {
+              "field": "leaf_lesion_shape",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesions appear small and isolated, with no clear indication of being circular, angular, irregular, elongated, or v-shaped.",
+              "image_quote": "The lesion is small and located near the center of the leaf.",
+              "image_id": "bugwood::5625738",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_color",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion has a tan center with a chocolate-brown margin.",
+              "image_quote": "The center is tan and the margin is chocolate-brown.",
+              "image_id": "bugwood::5625738",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_texture",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion appears smooth and not raised.",
+              "image_quote": "The leaf lesion does not show signs of being sunken or raised.",
+              "image_id": "bugwood::5625738",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_chlorosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf exhibits chlorosis with yellowing between the veins, while the veins remain green.",
+              "image_quote": "The leaf shows chlorosis with yellowing between the veins.",
+              "image_id": "bugwood::5625738",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_necrosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image shows discrete spots of dead tissue on the leaf.",
+              "image_quote": "There are small, circular, brown spots on the leaf.",
+              "image_id": "bugwood::5625738",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_curl",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows curling up towards the tip.",
+              "image_quote": "The leaf is curled up towards the tip.",
+              "image_id": "bugwood::5625738",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_vein_pattern",
+              "canonical_says": "(not specified)",
+              "image_shows": "Veins appear normal without signs of clearing or necrosis.",
+              "image_quote": "The leaf veins are not translucent or darkened.",
+              "image_id": "bugwood::5625738",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_geometry",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape is broad with a rounded apex, suggesting a spade-like appearance.",
+              "image_quote": "The leaf is broad with a rounded apex.",
+              "image_id": "bugwood::5625738",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "concentric_pattern",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf has a lesion with concentric rings.",
+              "image_quote": "There are alternating light and dark concentric rings surrounding a necrotic center.",
+              "image_id": "bugwood::5625738",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "color_palette",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue has a mix of dark green, light green, and yellowish hues.",
+              "image_quote": "The lesion has a dark green center with a lighter green margin and a yellowish halo.",
+              "image_id": "bugwood::5625738",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "severity_visible",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf has several small lesions and spots, affecting less than 10% of the visible leaf area.",
+              "image_quote": "The leaf shows small, scattered brown spots.",
+              "image_id": "bugwood::5625738",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            }
+          ],
           "image_ids": [
             "bugwood::5625738"
-          ],
-          "__verifier_meta__": {
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0
-          }
+          ]
         },
         "Wisconsin": {
-          "deltas": [],
+          "deltas": [
+            {
+              "field": "leaf_lesion_shape",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesions appear irregular, constrained by the leaf veins.",
+              "image_quote": "The lesions are irregularly shaped and seem to follow the vein patterns.",
+              "image_id": "bugwood::5625743",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_color",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion centers are tan while the margins are chocolate-brown.",
+              "image_quote": "The lesion centers are tan while the margins are chocolate-brown.",
+              "image_id": "bugwood::5625743",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_lesion_texture",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesions appear raised and have a slightly rough surface.",
+              "image_quote": "The surface of the lesions has a raised texture.",
+              "image_id": "bugwood::5625743",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_chlorosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "There are chlorotic yellow spots with dark brown margins and necrotic areas.",
+              "image_quote": "There are chlorotic yellow spots with dark brown margins and necrotic areas on the leaves.",
+              "image_id": "bugwood::5625743",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_necrosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "There are irregular brown lesions on the leaf surface.",
+              "image_quote": "The image displays necrotic brown tissue on the leaf surface.",
+              "image_id": "bugwood::5625743",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_curl",
+              "canonical_says": "(not specified)",
+              "image_shows": "Leaves display curling, especially near the veins.",
+              "image_quote": "Leaves show curling up towards the leaf veins.",
+              "image_id": "bugwood::5625743",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_vein_pattern",
+              "canonical_says": "(not specified)",
+              "image_shows": "Some parts of the leaf veins show necrosis, appearing dark and dead.",
+              "image_quote": "Distinct spots of dead tissue.",
+              "image_id": "bugwood::5625743",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "leaf_geometry",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaves are broad and flat, typical of soybean foliage.",
+              "image_quote": "The leaves have a wide, rounded shape.",
+              "image_id": "bugwood::5625743",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "concentric_pattern",
+              "canonical_says": "(not specified)",
+              "image_shows": "Target spots with alternating light and dark concentric rings.",
+              "image_quote": "The image displays a target spot with a central dark brown area surrounded by concentric rings of lighter and darker colors.",
+              "image_id": "bugwood::5625743",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "color_palette",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue has prominent brown and dark brown colors.",
+              "image_quote": "Brown spots and necrotic areas are visible on the leaf surface.",
+              "image_id": "bugwood::5625743",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "look_alikes_visual",
+              "canonical_says": "(not specified)",
+              "image_shows": "Darkened, sunken areas on the leaf surface.",
+              "image_quote": "The lesion surfaces appear slightly sunken.",
+              "image_id": "bugwood::5625743",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            },
+            {
+              "field": "severity_visible",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected leaf shows signs of disease primarily in specific areas, indicating a medium severity.",
+              "image_quote": "The leaf has noticeable spots and lesions, particularly on the lower right portion.",
+              "image_id": "bugwood::5625743",
+              "swarm_support": 1,
+              "__support__": 1,
+              "verification_status": "unverified",
+              "web_support": []
+            }
+          ],
           "image_ids": [
             "bugwood::5625743"
-          ],
-          "__verifier_meta__": {
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0
-          }
+          ]
         }
       }
     }
