@@ -195,6 +195,14 @@ STEP 2 runs Qwen2.5-VL-7B **in-process via transformers** (no vLLM
 server, no HTTP). The pipeline code is solid; the friction is all
 Nova GPU-node health. This is the exact, current procedure.
 
+The job handles its own environment automatically — you do **not**
+set these by hand: HF model cache → `/work` (downloaded once, reused);
+torch JIT/kernel cache → `/work` (the compute node's `/tmp` is
+restricted, so without this every first generate recompiles for
+minutes); `.env` auto-sourced for `HF_TOKEN`; output run **unbuffered**
+so progress streams live into the log (block-buffering was the real
+cause of the earlier "stuck for 20 min, nothing in the .out").
+
 ### One-time setup
 
 ```bash
@@ -217,10 +225,45 @@ ls -t logs/phase0r_*.log | head -1 | xargs tail -f
 ```
 
 The job auto-runs `scripts/setup_env.sh` (heals torch/CUDA to match
-the node driver), a CUDA preflight, then the swarm. On success you see
-`CUDA preflight OK` → `[hf_inproc] model ready` → `[1/76] OK
-Soybean::… deltas=N`. It auto-commits/pushes the populated
-`final_registry.json`; `git pull` locally afterward.
+the node driver), a CUDA preflight, then the swarm. It auto-commits/
+pushes the populated `final_registry.json`; `git pull` locally after.
+
+**Real-time progress** (streams live; one line per image, in + out):
+
+```
+CUDA preflight OK  →  [hf_inproc] model ready
+  processing 76 (crop,disease,state) image tuples (max_parallel=4);
+  each runs the real swarm vs the generated KB and emits ADDITIONAL deltas only
+  [start 1/76 | left 75] Soybean::Charcoal Rot / Alabama
+        (KB context: existing_deltas=0, canonical_visual_symptoms=loaded) image=bugwood::…
+  [done 1/76 | left 75] OK  Soybean::Charcoal Rot / Alabama  deltas=2
+        (N=…, K>=…, organ=['leaf','leaf','leaf'], existing=0, ADDED=2, bumped=0)
+        [run total added so far: 2]
+  …
+  BATCH DONE: 76/76 tuples in 5400s; NEW delta-KB found this run = 137
+```
+
+Reading it: `existing_deltas=` is the generated-KB context size the
+swarm sees; **`ADDED=` is the new delta-KB the real swarm extracted
+from that image** beyond the canonical KB (it is forbidden to restate
+canonical — additions/contradictions only); the running + final totals
+tell you how much new KB the run produced and how many images are left.
+
+### Validate a node in ~2 min before a long run
+
+`smoke/run_one_image_swarm.py` runs the **full** swarm on ONE real
+Soybean (disease,state,image) tuple — the fastest proof a node works
+end to end:
+
+```bash
+python smoke/run_one_image_swarm.py
+# faster: SWARM_GRANULARITY=grouped VLLM_N_RUNS=2 VLLM_SWARM_ROUNDS=1 python smoke/run_one_image_swarm.py
+```
+
+`[SMOKE PASS]` (exit 0) = OrganDetectionAgent → routed deep
+specialists → blackboard → consolidator → K-of-N → merge all work on
+this node; safe to launch the full `sbatch` run. (0 deltas is
+acceptable — it validates the pipeline, not clinical accuracy.)
 
 ### If it fails with NODE CUDA FAULT / "No devices were found"
 
