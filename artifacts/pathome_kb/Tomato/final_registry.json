@@ -30,7 +30,7 @@
         "diagnostic_features": {
           "value": "Leaves becoming 'strappy' or having a 'shoestring' appearance is the symptom most identified with CMV.",
           "url": "https://veggiescout.ca.uky.edu/cucumber-mosaic-virus-tomato",
-          "quote": "Leaves may become “strappy” or have a “shoestring” appearance; this is the symptom most identified with CMV."
+          "quote": "Leaves may become \u201cstrappy\u201d or have a \u201cshoestring\u201d appearance; this is the symptom most identified with CMV."
         },
         "look_alikes": {
           "value": [
@@ -67,7 +67,33 @@
           "alternative_value": "",
           "note": "Neither source provides an explicit scientific (Latin binomial) name for the pathogen; both refer to it by the common name 'cucumber mosaic virus' / 'cucumoviruses'. Field left empty rather than inferred."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Alabama": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1568047"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Virginia": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5411376"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        }
+      }
     },
     {
       "disease_name": "Early Blight",
@@ -94,12 +120,12 @@
         "summary": {
           "value": "Lesions first develop on lower leaves as small brownish-black spots that expand to 1/4-1/2 inch with characteristic concentric rings producing a 'bull's eye' or 'target-spot' appearance; surrounding tissue may yellow and entire leaves may become chlorotic, with dark sunken fruit lesions also showing concentric rings.",
           "url": "https://content.ces.ncsu.edu/early-blight-of-tomato",
-          "quote": "Lesions first develop on lower leaves as small, brownish-black spots which can expand to about 1 ⁄ 4 - 1 ⁄ 2 -inch in diameter with characteristic concentric rings in the darkened area. The area surrounding the lesions may become yellow and, as disease progresses, the entire leaf may turn yellow."
+          "quote": "Lesions first develop on lower leaves as small, brownish-black spots which can expand to about 1 \u2044 4 - 1 \u2044 2 -inch in diameter with characteristic concentric rings in the darkened area. The area surrounding the lesions may become yellow and, as disease progresses, the entire leaf may turn yellow."
         },
         "diagnostic_features": {
           "value": "Characteristic concentric rings in the darkened lesion area giving a 'bull's eye' or 'target-spot' appearance on lower leaves; on fruit, lesions are sunken, leathery, dark brown to black with concentric rings, often entering through the calyx around the stem attachment; potato tuber lesions are dark, sunken, circular, often bordered by purple to gray raised tissue with dry, leathery, brown underlying flesh.",
           "url": "https://ag.umass.edu/vegetable/fact-sheets/solanaceous-early-blight",
-          "quote": "As the lesions enlarge, they often develop concentric rings giving them a ‘bull’s eye’ or ‘target-spot’ appearance... Lesions can become quite large, involve the whole fruit, and have characteristic concentric rings... Tuber lesions are dark, sunken, and circular often bordered by a purple to gray raised tissue. The underlying flesh is dry, leathery, and brown."
+          "quote": "As the lesions enlarge, they often develop concentric rings giving them a \u2018bull\u2019s eye\u2019 or \u2018target-spot\u2019 appearance... Lesions can become quite large, involve the whole fruit, and have characteristic concentric rings... Tuber lesions are dark, sunken, and circular often bordered by a purple to gray raised tissue. The underlying flesh is dry, leathery, and brown."
         },
         "look_alikes": {
           "value": [
@@ -124,7 +150,7 @@
           "Time irrigation to avoid late afternoon or evening; use proper plant spacing to reduce leaf wetness duration",
           "Stake or trellis plants to improve air circulation and reduce soil contact; use mulch to prevent spore splash",
           "Avoid working plants when they are wet; prune the bottom-most leaves as the plant grows",
-          "Apply fungicides preventatively (7-14 day intervals) — e.g., azoxystrobin + chlorothalonil (Quadris Opti), azoxystrobin + difenoconazole (Quadris Top), boscalid (Endura), chlorothalonil (Bravo), cyprodinil + fludioxinil (Switch), difenoconazole + benzovindiflupyr (Aprovia Top), difenoconazole + cyprodinil (Inspire Super), fenamidone (Reason), flutriafol (Rhyme), fluopyram + trifloxystrobin (Luna Sensation), fluopyram + pyrimethanil (Luna Tranquility), fluxaypyroxad + pyraclostrobin (Priaxor), mandipropamid + difenoconazole (Revus Top), penthiopyrad (Fontelis), pydiflumetofen + fludioxonil (Miravis Prime), pyrimethanil (Scala), strobilurin products (Quadris, Cabrio, Gem, Evito)",
+          "Apply fungicides preventatively (7-14 day intervals) \u2014 e.g., azoxystrobin + chlorothalonil (Quadris Opti), azoxystrobin + difenoconazole (Quadris Top), boscalid (Endura), chlorothalonil (Bravo), cyprodinil + fludioxinil (Switch), difenoconazole + benzovindiflupyr (Aprovia Top), difenoconazole + cyprodinil (Inspire Super), fenamidone (Reason), flutriafol (Rhyme), fluopyram + trifloxystrobin (Luna Sensation), fluopyram + pyrimethanil (Luna Tranquility), fluxaypyroxad + pyraclostrobin (Priaxor), mandipropamid + difenoconazole (Revus Top), penthiopyrad (Fontelis), pydiflumetofen + fludioxonil (Miravis Prime), pyrimethanil (Scala), strobilurin products (Quadris, Cabrio, Gem, Evito)",
           "Schedule spray applications using spore trapping or forecasting systems (TOM-CAST)",
           "Organic options: Bacillus amyloliquefaciens strain D747 (Double Nickel 55), Bacillus mycoides isolate J (LifeGard WG), Bacillus pumilus strain QST 2808 (Sonata), Bacillus subtilis strain IAB/BS03 (AVIV), Bacillus subtilis strain QST 713 (Cease, Serenade ASO, Serenade Opti), extract of Reynoutria sachalinensis (Regalia), fixed copper, polyoxin D zinc salt (OSO 5%SC), potassium bicarbonate (Carb-O-Nator), Streptomyces lydicus WYEC 108 (Actinovate AG)"
         ],
@@ -141,7 +167,105 @@
           "alternative_source_url": "https://ag.umass.edu/vegetable/fact-sheets/solanaceous-early-blight",
           "note": "NC State source explicitly notes that A. solani is the formerly used name; A. linariae (= A. tomatophila) is the currently accepted name. UMass factsheet still uses A. solani."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Alabama": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1568038"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Connecticut": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5559537"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Delaware": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5553630"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Kentucky": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5369141"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Maine": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5505688"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Mississippi": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5551685"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "New York": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5503283"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "North Carolina": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1573849"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        }
+      }
     },
     {
       "disease_name": "Gray Mold",
@@ -201,7 +325,45 @@
       },
       "confidence": "high",
       "num_sources": 2,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Kentucky": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5368609"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Mississippi": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5558707"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "North Carolina": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1573933"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        }
+      }
     },
     {
       "disease_name": "Septoria Leaf Spot",
@@ -230,12 +392,12 @@
         "summary": {
           "value": "Circular, tan to gray lesions develop on the lower leaves and stems of the plant, typically small (<1/8 in), with a dark-brown perimeter and often a yellow halo; small dark pycnidia may appear in the center of the lesion. Disease begins on lower leaves and progresses upward.",
           "url": "https://content.ces.ncsu.edu/septoria-leaf-spot-of-tomato",
-          "quote": "Circular, tan to gray, lesions develop on the lower leaves and stems of the plant. Lesions are typically small (<1/8 in), but as lesions become more numerous the entire leaf may become blighted. The lesions generally have a dark-brown perimeter and a yellow halo may develop around the leaf lesions. Small dark spots may appear in the center of the lesion – these are pycnidia, the fruiting body of the fungus where spores are produced."
+          "quote": "Circular, tan to gray, lesions develop on the lower leaves and stems of the plant. Lesions are typically small (<1/8 in), but as lesions become more numerous the entire leaf may become blighted. The lesions generally have a dark-brown perimeter and a yellow halo may develop around the leaf lesions. Small dark spots may appear in the center of the lesion \u2013 these are pycnidia, the fruiting body of the fungus where spores are produced."
         },
         "diagnostic_features": {
           "value": "Small (<1/8 in) circular tan-to-gray lesions with a dark-brown perimeter and yellow halo, containing small dark raised pycnidia in the center; on the underside of the leaves, spots may appear as a darker green or water-soaked color. Disease progresses from older (lower) growth to younger (upper) growth.",
           "url": "https://content.ces.ncsu.edu/septoria-leaf-spot-of-tomato",
-          "quote": "Small dark spots may appear in the center of the lesion – these are pycnidia, the fruiting body of the fungus where spores are produced. On the underside of the leaves, spots may appear as a darker green color or \"water-soaked.\" As the disease progresses, traveling from older growth to younger growth, spots may coalesce and the leaves may become entirely blighted."
+          "quote": "Small dark spots may appear in the center of the lesion \u2013 these are pycnidia, the fruiting body of the fungus where spores are produced. On the underside of the leaves, spots may appear as a darker green color or \"water-soaked.\" As the disease progresses, traveling from older growth to younger growth, spots may coalesce and the leaves may become entirely blighted."
         },
         "look_alikes": {
           "value": [
@@ -278,7 +440,69 @@
           "alternative_source_url": "https://content.ces.ncsu.edu/septoria-leaf-spot-of-tomato",
           "note": "NC State lists only foliar and stem; Wisconsin extension lists the broader set including seed and whole-plant (severe cases). Canonical adopts the broader Wisconsin enumeration; the two are non-contradictory."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Connecticut": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5559543"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Delaware": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5553629"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Kentucky": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5368789"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Maine": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5505718"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Virginia": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5411325"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        }
+      }
     },
     {
       "disease_name": "Bacterial Speck Of Tomato",
@@ -303,9 +527,9 @@
       },
       "visual_symptoms": {
         "summary": {
-          "value": "Small black spots (⅛ to ¼ inch) on leaves, often more prominent on the undersides, sometimes developing a yellow halo; on fruit, very small pinpoint-like spots ranging from brown to black, which may be raised, flat or sunken, with darker green haloes on green fruit and subtle yellow haloes on ripe fruit.",
+          "value": "Small black spots (\u215b to \u00bc inch) on leaves, often more prominent on the undersides, sometimes developing a yellow halo; on fruit, very small pinpoint-like spots ranging from brown to black, which may be raised, flat or sunken, with darker green haloes on green fruit and subtle yellow haloes on ripe fruit.",
           "url": "https://hort.extension.wisc.edu/articles/bacterial-speck-of-tomato/",
-          "quote": "Leaf symptoms of bacterial speck consist of small black spots (approximately ⅛ to ¼ inch in diameter) that often are more prominent on the undersides of leaves.  As the spots age, a yellow halo may develop around the edge.  Spots on fruit are very small (almost pinpoint-like) and do not penetrate very deeply into the tissue.  The spots can be raised, flat or sunken, and range in color from brown to black.  On unripe, green fruits, the spots often have darker green haloes, while on ripe fruits the spots can have subtle, yellow haloes."
+          "quote": "Leaf symptoms of bacterial speck consist of small black spots (approximately \u215b to \u00bc inch in diameter) that often are more prominent on the undersides of leaves.  As the spots age, a yellow halo may develop around the edge.  Spots on fruit are very small (almost pinpoint-like) and do not penetrate very deeply into the tissue.  The spots can be raised, flat or sunken, and range in color from brown to black.  On unripe, green fruits, the spots often have darker green haloes, while on ripe fruits the spots can have subtle, yellow haloes."
         },
         "diagnostic_features": {
           "value": "Small, angular (straight-edged) spots with yellow haloes on leaves; pinpoint-like superficial spots on fruit that do not penetrate deeply into the tissue.",
@@ -331,7 +555,7 @@
           "Routinely disinfect garden tools with 10% bleach or 70% alcohol (e.g., rubbing alcohol)",
           "Remove contaminated tomato debris from the garden at the end of the growing season (deep bury, burn where allowed, or hot compost)",
           "DO NOT replant tomatoes in the same area the following growing season; practice non-host crop rotation (three-year field rotations)",
-          "As a last resort, apply chemical treatments with a copper-based product labeled for tomatoes; apply first treatment before symptoms develop and repeat every 10–14 days while cool, moist conditions continue",
+          "As a last resort, apply chemical treatments with a copper-based product labeled for tomatoes; apply first treatment before symptoms develop and repeat every 10\u201314 days while cool, moist conditions continue",
           "Sanitize all greenhouses, equipment, flats and trellising stakes at the end of the season",
           "Practice irrigation control to minimize leaf wetness during cooler periods",
           "Remain vigilant/scout: remove diseased plants and a few of the surrounding plants once symptoms are observed; plow under infected areas/fields",
@@ -357,7 +581,45 @@
           "alternative_source_url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/bacterial-speck/",
           "note": "Cornell uses the shorter form; canonical retains the host qualifier 'of Tomato' for specificity."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Alabama": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1568046"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "North Carolina": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1573569"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "South Carolina": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5606050"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        }
+      }
     },
     {
       "disease_name": "Bacterial Canker And Wilt Of Tomato",
@@ -406,10 +668,10 @@
           "Crop rotation to a non-host crop for 3-4 years (no tomato, potato, pepper, or eggplant); UMN also notes a shorter 2-3 year option",
           "Plant certified pathogen-free seed from a reputable supplier; do not save seeds from infected plants",
           "Treat saved seed before planting: soak in 1 part germicidal bleach to 4 parts water for 1 minute, then rinse in water for 5 minutes",
-          "Hot water seed treatment: soak seeds in 122°F water for 25 minutes",
+          "Hot water seed treatment: soak seeds in 122\u00b0F water for 25 minutes",
           "Seed may also be treated with dilute solutions of sodium hypochlorite",
           "Purchase healthy transplants from a reputable grower; inspect and avoid transplants with spots, discoloration, or that have been pruned or cut back",
-          "Keep tomato leaves as dry as possible — water with drip irrigation or a soaker hose, in the morning so leaves dry quickly",
+          "Keep tomato leaves as dry as possible \u2014 water with drip irrigation or a soaker hose, in the morning so leaves dry quickly",
           "Use filtered and/or treated irrigation water",
           "Space plants so that air flows between them",
           "Stake or cage plants, and clean and sanitize stakes/cages each year",
@@ -428,7 +690,7 @@
           "Sprays during transplant production are more effective in prevention than sprays post-transplanting or once symptoms appear in the field"
         ],
         "url": "https://extension.umn.edu/disease-management/bacterial-canker-tomato",
-        "quote": "Remove leaves with symptoms. Cultural controls Plant tomatoes where no tomatoes, potatoes, peppers or eggplants have been for the past 3-4 years. ... Plant certified pathogen-free seed from a reputable supplier. ... Soak seeds in a solution of 1 part germicidal bleach to 4 parts water for 1 minute. Rinse in water for 5 minutes. Soak seeds in 122°F water for 25 minutes. ... Disinfect tools and equipment between seasons with a commercial greenhouse sanitizer ... Rotate away from tomato and related crops for two to three years. ... Sprays during transplant production are more effective in prevention than sprays post-transplanting or when symptoms appear in the field."
+        "quote": "Remove leaves with symptoms. Cultural controls Plant tomatoes where no tomatoes, potatoes, peppers or eggplants have been for the past 3-4 years. ... Plant certified pathogen-free seed from a reputable supplier. ... Soak seeds in a solution of 1 part germicidal bleach to 4 parts water for 1 minute. Rinse in water for 5 minutes. Soak seeds in 122\u00b0F water for 25 minutes. ... Disinfect tools and equipment between seasons with a commercial greenhouse sanitizer ... Rotate away from tomato and related crops for two to three years. ... Sprays during transplant production are more effective in prevention than sprays post-transplanting or when symptoms appear in the field."
       },
       "confidence": "high",
       "num_sources": 2,
@@ -447,7 +709,45 @@
           "alternative_source_url": "https://extension.umn.edu/disease-management/bacterial-canker-tomato",
           "note": "UMN states '3-4 years' in cultural controls but also says 'Rotate away from tomato and related crops for two to three years'; NC State recommends 3-4 years."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Alabama": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1568040"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Kentucky": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5368889"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "North Carolina": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1573600"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        }
+      }
     },
     {
       "disease_name": "Southern Bacterial Wilt",
@@ -480,7 +780,7 @@
           "quote": "Initial stages of the disease include a wilted appearance of the youngest leaves. Typically, plants affected by bacterial wilt will show wilting symptoms while the plant is still green and can appear to come on suddenly. As the disease progresses, the base of the plant may show brown cankers, root rot, and a cross section of an infected stem may show a brown discoloration of the vascular tissue."
         },
         "diagnostic_features": {
-          "value": "A freshly cut stem at the base of the plant placed in water shows a stream of white slimy substance (bacterial streaming) — a strong indicator of the bacterium in the vascular tissue; the interior of the stem will be a light brown color in the pith area. Plants wilt while still green and may appear to recover overnight only to wilt again in the afternoon.",
+          "value": "A freshly cut stem at the base of the plant placed in water shows a stream of white slimy substance (bacterial streaming) \u2014 a strong indicator of the bacterium in the vascular tissue; the interior of the stem will be a light brown color in the pith area. Plants wilt while still green and may appear to recover overnight only to wilt again in the afternoon.",
           "url": "https://content.ces.ncsu.edu/bacterial-wilt-of-tomatoes",
           "quote": "A freshly cut stem at the base of the plant placed in water can also show a stream of a white slimy substance that is a strong indicator of the bacterium present in the vascular tissue. The interior of the stem will be a light brown color in the pith area."
         },
@@ -506,7 +806,69 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Alabama": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1568041"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Georgia": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5472887"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Louisiana": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5473709"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Mississippi": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5593855"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "North Carolina": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1573633"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        }
+      }
     },
     {
       "disease_name": "Anthracnose",
@@ -559,18 +921,18 @@
           "Grow tomatoes in a covered structure",
           "Avoid harvesting or pruning wet plants",
           "Stake plants upright and mulch underneath to improve air circulation and minimize soil splash contact",
-          "Hot water seed treatment (122 °F for 25 minutes) to reduce early disease pressure",
+          "Hot water seed treatment (122 \u00b0F for 25 minutes) to reduce early disease pressure",
           "Apply fungicides according to a disease forecasting system",
           "azoxystrobin plus difenoconazole (Quadris Top) Groups 11 & 3",
           "chlorothalonil (Bravo Weather Stik) Group M05",
           "mancozeb (Dithane F45) Group M03",
-          "polyoxin D zinc salt (OSO 5%SC OG / Veggie Turbo 5 SC OG) Group 19 — organic-approved",
-          "hydrogen dioxide plus peroxyacetic acid (Zerotol OG) Group NC — organic-approved",
+          "polyoxin D zinc salt (OSO 5%SC OG / Veggie Turbo 5 SC OG) Group 19 \u2014 organic-approved",
+          "hydrogen dioxide plus peroxyacetic acid (Zerotol OG) Group NC \u2014 organic-approved",
           "Resistant varieties: Chef's Choice FI (orange) and Chef's Choice (red)",
           "Fungicides labeled for black mold are effective against anthracnose fruit rot"
         ],
         "url": "https://ipm.cahnr.uconn.edu/tomato-anthracnose/",
-        "quote": "There are two slicer-type tomato varieties that are resistant to anthracnose: Chef's Choice FI (orange) and Chef's Choice (red). Cultural: Use drip irrigation and avoid overhead irrigation Grow tomatoes in a covered structure Avoid harvesting or pruning wet plants Practice crop rotation with non-solanaceous crops (e.g., corn, beans, or cover crop) for 3-4 years to reduce fungal buildup in soil Stake plants upright and mulch underneath to help improve air circulation and minimize soil splash contact Hot water seed treatment (122 °F for 25 minutes) can help reduce early disease pressure. Chemical: Apply fungicides according to a disease forecasting system. Here are some examples of fungicides you can use: azoxystrobin plus difenoconazole (Quadris Top) Groups 11 & 3, chlorothalonil (Bravo Weather Stik) Group M05, and mancozeb (Dithane F45), Group M03 . Additional fungicides labeled for organic production are polyoxin D zinc salt (OSO 5%SC OG , AKA Veggie Turbo 5 SC OG ) Group 19 and hydrogen dioxide plus peroxyacetic acid (Zerotol OG ) Group NC."
+        "quote": "There are two slicer-type tomato varieties that are resistant to anthracnose: Chef's Choice FI (orange) and Chef's Choice (red). Cultural: Use drip irrigation and avoid overhead irrigation Grow tomatoes in a covered structure Avoid harvesting or pruning wet plants Practice crop rotation with non-solanaceous crops (e.g., corn, beans, or cover crop) for 3-4 years to reduce fungal buildup in soil Stake plants upright and mulch underneath to help improve air circulation and minimize soil splash contact Hot water seed treatment (122 \u00b0F for 25 minutes) can help reduce early disease pressure. Chemical: Apply fungicides according to a disease forecasting system. Here are some examples of fungicides you can use: azoxystrobin plus difenoconazole (Quadris Top) Groups 11 & 3, chlorothalonil (Bravo Weather Stik) Group M05, and mancozeb (Dithane F45), Group M03 . Additional fungicides labeled for organic production are polyoxin D zinc salt (OSO 5%SC OG , AKA Veggie Turbo 5 SC OG ) Group 19 and hydrogen dioxide plus peroxyacetic acid (Zerotol OG ) Group NC."
       },
       "confidence": "high",
       "num_sources": 2,
@@ -596,7 +958,45 @@
           "alternative_source_url": "https://ipm.ucanr.edu/agriculture/tomato/anthracnose/",
           "note": "UC IPM states fungicides are generally not required for California production; UConn IPM recommends applying fungicides per a forecasting system for humid Northeast conditions."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Connecticut": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5559540"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Delaware": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5553628"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Kentucky": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5475185"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        }
+      }
     },
     {
       "disease_name": "Bacterial Wilt",
@@ -668,7 +1068,33 @@
           "alternative_source_url": "https://extension.umd.edu/resource/southern-bacterial-wilt-tomato-found",
           "note": "UMD source frames the disease as 'Southern Bacterial Wilt of Tomato' (caused by R. solanacearum Race 1); Penn State uses the broader name 'Bacterial Wilt'. Same pathogen."
         }
-      ]
+      ],
+      "regional_observations": {
+        "North Carolina": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5606056"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "South Carolina": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5606054"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        }
+      }
     },
     {
       "disease_name": "Late Blight",
@@ -761,7 +1187,93 @@
           "alternative_source_url": "https://content.ces.ncsu.edu/tomato-late-blight",
           "note": "NC State titles the page 'Tomato Late Blight'; UMN uses 'Late blight'. Same disease."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Alabama": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1568022"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Connecticut": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5559539"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Delaware": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5553626"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Maine": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5505710"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "New York": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5470380"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "North Carolina": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1573845"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Virginia": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5479849"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        }
+      }
     },
     {
       "disease_name": "Phytophthora Blight",
@@ -809,7 +1321,33 @@
       },
       "confidence": "low",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Alabama": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1568019"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "North Carolina": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1576400"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        }
+      }
     },
     {
       "disease_name": "Rhizopus Soft Rots",
@@ -853,7 +1391,7 @@
           "UV-C radiation (UV-C)",
           "Biological control (BC)",
           "Chitosan, nitrous oxide, essential oils and other volatile organic compounds",
-          "Dipping in hot water at 20, 40 and 60 °C for 20 s",
+          "Dipping in hot water at 20, 40 and 60 \u00b0C for 20 s",
           "Spraying 0.6% of Hydrogen Peroxide 23% + Peracetic acid 15%",
           "Commercial bleach at 0.5%",
           "2% Hydrogen Peroxide 50%",
@@ -865,7 +1403,21 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Kentucky": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5369117"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        }
+      }
     },
     {
       "disease_name": "Sclerotinia Timber Rot",
@@ -919,7 +1471,57 @@
       },
       "confidence": "high",
       "num_sources": 2,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Louisiana": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5472861"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Maine": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5530073"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Mississippi": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5593844"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "North Carolina": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1572826"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        }
+      }
     },
     {
       "disease_name": "Southern Blight",
@@ -972,7 +1574,7 @@
           "Ensure the previous crop residue is fully decomposed prior to planting",
           "Sanitation: early detection and removal of symptomatic plants, crop residues, and weeds; use protective gloves, boots, and disinfectants",
           "Use certified, pathogen-free seed and transplants",
-          "Modify planting dates to avoid wet/warm conditions favorable to disease (77-95°F)",
+          "Modify planting dates to avoid wet/warm conditions favorable to disease (77-95\u00b0F)",
           "Wider plant spacing to improve airflow",
           "Maintain or raise soil pH by liming (lower pH encourages disease)",
           "Avoid injuring plants during cultivation",
@@ -980,7 +1582,7 @@
           "Apply straw mulch to the soil",
           "Use grafted tomato rootstocks tolerant to southern blight ('Maxifort', 'Big Power', 'Beaufort')",
           "Use ammonium-source nitrogen instead of nitrate",
-          "Soil solarization (raise soil temperatures to 50-55°C / 122-131°F for up to 6 hours)",
+          "Soil solarization (raise soil temperatures to 50-55\u00b0C / 122-131\u00b0F for up to 6 hours)",
           "Anaerobic soil disinfestation",
           "Biological control: Trichoderma harzianum, Trichoderma viride, certain mycorrhizal fungi, Penicillium spp., Gliocladium virens, Bacillus subtilis (often combined with soil solarization)",
           "Soil fumigants: chloropicrin, metam-sodium (sodium metam), allyl isothiocyanate",
@@ -1017,7 +1619,81 @@
           "alternative_source_url": "https://content.ces.ncsu.edu/southern-blight-of-vegetable-crops",
           "note": "NC State and Missouri describe stem-line lesions and whole-plant wilt without emphasizing leaf symptoms; Virginia Tech additionally notes pale-green leaf clustering and cupping in early infections, so foliar involvement is included as canonical."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Alabama": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1568115"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Florida": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5429795"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Kentucky": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5369062"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Mississippi": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5551698"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "North Carolina": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1578611"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Virginia": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5411387"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        }
+      }
     },
     {
       "disease_name": "Tomato Leaf Mould",
@@ -1106,7 +1782,81 @@
           "alternative_source_url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/tomato-leaf-mold/",
           "note": "Cornell describes the disease as primarily foliar; UMass additionally documents that stems and seed can be affected, so the union is taken as canonical"
         }
-      ]
+      ],
+      "regional_observations": {
+        "Alabama": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1568017"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Connecticut": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5559541"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Kentucky": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5368373"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Maine": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5505700"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Mississippi": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5551687"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Virginia": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5487923"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        }
+      }
     },
     {
       "disease_name": "Tomato Spotted Wilt Virus",
@@ -1119,7 +1869,7 @@
       "type_of_disease": {
         "value": "Viral",
         "url": "https://content.ces.ncsu.edu/tomato-spotted-wilt-virus-on-tomato-and-pepper",
-        "quote": "TSWV is a member of the genus, Orthotospovirus— a group of plant viruses vectored by arthropods, usually thrips."
+        "quote": "TSWV is a member of the genus, Orthotospovirus\u2014 a group of plant viruses vectored by arthropods, usually thrips."
       },
       "affected_parts": {
         "value": [
@@ -1128,7 +1878,7 @@
           "Whole plant"
         ],
         "url": "https://pubs.nmsu.edu/_h/H242/",
-        "quote": "Young leaves turn bronze in color • Leaves develop numerous small, dark spots • Plants appear wilted • Tips die back • Dark streaking of the terminal stems • Stunting"
+        "quote": "Young leaves turn bronze in color \u2022 Leaves develop numerous small, dark spots \u2022 Plants appear wilted \u2022 Tips die back \u2022 Dark streaking of the terminal stems \u2022 Stunting"
       },
       "visual_symptoms": {
         "summary": {
@@ -1177,7 +1927,226 @@
       },
       "confidence": "high",
       "num_sources": 2,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Alabama": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::1568012"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Delaware": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5553631"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Georgia": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5472876"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Kansas": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5511526"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Kentucky": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5368746"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "Louisiana": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5411488"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "New York": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5505251"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        },
+        "North Carolina": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "fruit shows yellow ringspots and brown necrotic sunken areas",
+              "image_shows": "On North Carolina tomato fruit, TSWV ringspots can present as red and orange ring-shaped lesions, not only the yellow ringspots noted canonically.",
+              "image_quote": "The tomato has distinct red and orange ringspots.",
+              "image_id": "bugwood::1573589",
+              "verification_status": "verified",
+              "reasoning": "NC State and NMSU extension sources confirm TSWV tomato fruit shows ring-shaped lesions with red/orange coloration, supporting the candidate beyond the canonical yellow ringspot description.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/tomato-spotted-wilt-virus-on-tomato-and-pepper",
+                  "quote": "mature fruit has a unique red/orange mottling ... on maturing fruit, the blotches are often yellow, orange, or green, with concentric rings and black spots"
+                },
+                {
+                  "url": "https://pubs.nmsu.edu/_h/H242/",
+                  "quote": "Tomato fruits may display clearly defined circular ring spots, giving the fruits an appearance of concentric rings of yellow, brown, or green discoloration."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "TSWV-infected mature tomato fruit in North Carolina exhibits a mixed red, orange, and brown color palette from mottling and necrotic ring areas.",
+              "image_quote": "The fruit has a mix of red, orange, and brown colors.",
+              "image_id": "bugwood::1573589",
+              "verification_status": "verified",
+              "reasoning": "Extension sources document red/orange mottling plus brown necrotic ring areas on TSWV tomato fruit, corroborating the observed red-orange-brown color palette.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/tomato-spotted-wilt-virus-on-tomato-and-pepper",
+                  "quote": "mature fruit has a unique red/orange mottling that can make the fruit undesirable ... blotches are often yellow, orange, or green, with concentric rings and black spots"
+                },
+                {
+                  "url": "https://pubs.nmsu.edu/_h/H242/",
+                  "quote": "concentric rings of yellow, brown, or green discoloration"
+                }
+              ]
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "early blight; other leaf spot diseases; other plant viruses",
+              "image_shows": "The fruit lesions lack the defined concentric target/bullseye pattern characteristic of early blight, consistent with TSWV's blurred-margin ringspots rather than a look-alike.",
+              "image_quote": "There are no concentric patterns or target spots in the image.",
+              "image_id": "bugwood::1573589",
+              "verification_status": "weakly_supported",
+              "reasoning": "The absence of a defined concentric target/bullseye lesion is consistent with TSWV (blurred-margin ringspots) rather than early blight's definite target-patterned fruit spots, giving indirect look-alike differentiation support.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://vegcropshotline.org/article/tomato-lesion-primer/",
+                  "quote": "Early blight fruit spots are generally at the stem end of the fruit, are large and brown, and these spots often crack ... lesions caused by TSWV have blurred margins, while the margins of lesions caused by other diseases are definite"
+                },
+                {
+                  "url": "https://plantpath.ifas.ufl.edu/u-scout/tomato/tomato-spotted-wilt.html",
+                  "quote": "fruit from tomato plants infected with TSWV usually have chlorotic, concentric rings and are often misshapen"
+                }
+              ]
+            }
+          ],
+          "image_ids": [
+            "bugwood::1573589"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 3,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 1
+          }
+        },
+        "Virginia": {
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Lesions caused by TSWV have blurred margins, while the margins of lesions caused by other diseases are definite.",
+              "image_shows": "TSWV tomato fruit displays distinctive concentric ring patterns with alternating light and dark zones, a target-like diagnostic pattern not captured by the canonical 'blurred margins' note.",
+              "image_quote": "The tomatoes exhibit yellow and red concentric patterns.",
+              "image_id": "bugwood::5487914",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources (UC IPM, NC State) explicitly describe TSWV tomato fruit as bearing concentric rings, directly corroborating the observed concentric ring pattern.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/tomato/tomato-spotted-wilt/",
+                  "quote": "On ripe fruit, chlorotic spots and blotches appear, often with concentric rings. Green fruit show slightly raised areas with faint, concentric zones."
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/tomato-spotted-wilt-virus-on-tomato-and-pepper",
+                  "quote": "Tomato fruits may display clearly defined circular ring spots, giving the fruits an appearance of concentric rings of yellow, brown, or green discoloration."
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The fruit shows prominent, well-developed concentric rings and lesions indicating advanced/severe TSWV fruit symptom expression.",
+              "image_quote": "The image displays tomato fruits with prominent concentric rings and lesions.",
+              "image_id": "bugwood::5487914",
+              "verification_status": "weakly_supported",
+              "reasoning": "External literature confirms TSWV fruit symptoms can be severe and prominent (necrotic rings/patches), giving partial support to the visual severity claim though 'prominent' remains a subjective image read.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/tomato/tomato-spotted-wilt/",
+                  "quote": "Tomato fruits mostly exhibited severe symptoms beginning with chlorotic ringspots and uneven ripening, which progressed to severely necrotic rings and patches making fruits completely unmarketable."
+                }
+              ]
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "early blight; other leaf spot diseases; other plant viruses",
+              "image_shows": "The fruit ringspot/concentric-ring pattern shows no visual feature that conflicts with TSWV in favor of a listed look-alike.",
+              "image_quote": "The photo displays concentric rings and yellow ringspots, consistent with Tomato Spotted Wilt Virus symptoms.",
+              "image_id": "bugwood::5487914",
+              "verification_status": "novel_plausible",
+              "reasoning": "This is a vacuous non-observation (asserting absence of conflict) that is coherent with canonical and visual evidence but adds no externally verifiable claim, so it is flagged for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5487914"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 2,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 2
+          }
+        }
+      }
     },
     {
       "disease_name": "Verticillium Wilts",
@@ -1233,7 +2202,7 @@
           "Rotation to nonsusceptible crops such as small grains and corn",
           "Incorporate crop rotations to non-host plants at 4-5 year intervals (4-6 years for tomatoes)",
           "Remove and destroy all infected plant material, including roots",
-          "Soil solarization — heating the top six inches of soil to high temperatures",
+          "Soil solarization \u2014 heating the top six inches of soil to high temperatures",
           "Sanitize pots and tools with water and treat for at least 30 seconds in a 10% bleach solution or 70% alcohol",
           "Grow early-maturing varieties",
           "Control weeds",
@@ -1257,7 +2226,107 @@
           "alternative_source_url": "https://content.ces.ncsu.edu/verticillium-wilt-of-tomato-and-eggplant",
           "note": "NC State Extension lists both V. albo-atrum and V. dahliae as causal agents of Verticillium wilt on tomato and eggplant; UC IPM and PNW Handbook list only V. dahliae for tomato. V. dahliae is selected as canonical because two of three sources, including UC IPM (peer-reviewed extension authority), identify it as the sole causal agent on tomato."
         }
-      ]
+      ],
+      "regional_observations": {
+        "North Carolina": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion centers are tan while the margins are chocolate-brown.",
+              "image_quote": "The lesion centers are tan while the margins are chocolate-brown.",
+              "image_id": "bugwood::1573860",
+              "verification_status": "weakly_supported",
+              "reasoning": "Brown/tan necrotic lesion tissue with a darker brown margin is consistent with documented Verticillium foliar necrosis, though the precise tan-center/chocolate-margin coloration is only indirectly supported.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/verticillium-wilt-of-tomato-and-eggplant",
+                  "quote": "Brown, necrotic tissue begins to develop within the lesions as the disease progresses, surrounded by a yellow halo."
+                },
+                {
+                  "url": "https://ipm.cahnr.uconn.edu/vascular-wilts-of-tomato/",
+                  "quote": "Older leaves appear as yellow, V-shaped areas that narrow from the margin; the leaf progressively turns from yellow to brown."
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "vascular streaking can also be observed in the leaves, which is a characteristic symptom",
+              "image_shows": "Veins appear translucent and paler than the blade.",
+              "image_quote": "Veins are translucent, paler than the blade.",
+              "image_id": "bugwood::1573860",
+              "verification_status": "weakly_supported",
+              "reasoning": "Pale/altered leaf vein appearance is partially corroborated by documented in-leaf vascular streaking and interveinal yellowing characteristic of Verticillium.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/verticillium-wilt-of-tomato-and-eggplant",
+                  "quote": "Vascular streaking can also be observed in the leaves, and this is a characteristic symptom of Verticillium wilt; leaves turn yellow between the veins."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue has prominent brownish-red centers and chlorotic yellow halos.",
+              "image_quote": "Brownish-red centers and chlorotic yellow halos.",
+              "image_id": "bugwood::1573860",
+              "verification_status": "weakly_supported",
+              "reasoning": "The chlorotic yellow halo around darker necrotic centers is strongly documented for Verticillium, though a distinctly brownish-red center leans toward look-alike spotting and is only partially supported.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/verticillium-wilt-of-tomato-and-eggplant",
+                  "quote": "V-shaped dead tissue surrounded by a yellow halo; brown, necrotic tissue within lesions is surrounded by a large, irregular area of yellowing."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf lesions appear raised and slightly rough.",
+              "image_quote": "The lesions are elevated and not smooth.",
+              "image_id": "bugwood::1573860",
+              "verification_status": "provisional",
+              "reasoning": "No extension or peer-reviewed source describes Verticillium foliar lesions as raised or rough (they are typically flat necrotic V-areas), but the observation is not directly contradicted.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "plants wilt during the hot part of the day but recover in the evening",
+              "image_shows": "The leaves in the image are curled inward.",
+              "image_quote": "The leaves in the image are curled inward.",
+              "image_id": "bugwood::1573860",
+              "verification_status": "provisional",
+              "reasoning": "Inward leaf curl is not specifically documented as a Verticillium symptom, but it is plausibly coherent with the canonical wilting/water-stress pattern and is not contradicted.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaves appear lanceolate, elongated with pointed tips.",
+              "image_quote": "Lanceolate leaves are long and narrow, typically with pointed ends.",
+              "image_id": "bugwood::1573860",
+              "verification_status": "provisional",
+              "reasoning": "This describes generic leaf morphology rather than a disease sign, carries no diagnostic value for Verticillium, and has no external evidentiary basis though it is not contradictory.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::1573860"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 3,
+            "provisional_count": 3,
+            "contradictory_count": 2,
+            "duplicates_count": 4
+          }
+        }
+      }
     },
     {
       "disease_name": "Gray Molds",
@@ -1295,10 +2364,116 @@
       },
       "confidence": "low",
       "num_sources": 0,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Maine": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "On Maine tomato stems, the gray mold lesion presents as dark brown stem discoloration.",
+              "image_quote": "The stem has a dark brown discoloration consistent with gray molds.",
+              "image_id": "bugwood::5528796",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources document brown/brownish-gray stem lesions for Botrytis gray mold, directly corroborating the dark brown stem discoloration.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/botrytis-gray-mold-of-tomato",
+                  "quote": "Tomato leaf and stem lesions are tan to brown in color."
+                },
+                {
+                  "url": "https://u.osu.edu/hightunneldiseasefacts/tomato-diseases/botrytis-grey-mold/advanced/",
+                  "quote": "Botrytis infection on tomato stem shows brownish-gray, dry lesions and girdling of the stem, with masses of gray colored Botrytis spores visible on the surface."
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "The Maine stem witness shows a canker, which is a recognized manifestation of tomato gray mold.",
+              "image_quote": "The photo shows a canker on the stem.",
+              "image_id": "bugwood::5528796",
+              "verification_status": "verified",
+              "reasoning": "Stem canker is explicitly described by extension sources as the destructive stem stage of Botrytis gray mold, so a stem canker is consistent with this disease rather than a distinct look-alike.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/botrytis-gray-mold-of-tomato",
+                  "quote": "Once the pathogen infects the stem it often leads to stem canker, which is the most destructive stage of the disease."
+                },
+                {
+                  "url": "https://u.osu.edu/hightunneldiseasefacts/tomato-diseases/botrytis-grey-mold/advanced/",
+                  "quote": "Stem cankers have a distinctive brown and tan target-spot pattern."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The Maine stem lesion appears dark and sunken, consistent with a Botrytis stem canker.",
+              "image_quote": "The lesion appears dark and sunken.",
+              "image_id": "bugwood::5528796",
+              "verification_status": "weakly_supported",
+              "reasoning": "Documented Botrytis stem lesions/cankers are dry and brownish-gray which is partially consistent with a dark, sunken canker, but the specific 'dark and sunken' morphology is not explicitly stated by the sources.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/botrytis-gray-mold-of-tomato",
+                  "quote": "Once the pathogen infects the stem it often leads to stem canker, which is the most destructive stage of the disease."
+                },
+                {
+                  "url": "https://u.osu.edu/hightunneldiseasefacts/tomato-diseases/botrytis-grey-mold/advanced/",
+                  "quote": "Botrytis infection on tomato stem shows brownish-gray, dry lesions and girdling of the stem."
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "On the Maine stem, the lesion covers more than half the circumference, indicating moderate-to-high severity.",
+              "image_quote": "The lesion appears to cover more than half of the stem's circumference.",
+              "image_id": "bugwood::5528796",
+              "verification_status": "weakly_supported",
+              "reasoning": "Sources tie circumferential stem involvement (girdling) to high severity, supporting the inference that >half-circumference coverage indicates moderate-to-high severity, though the exact threshold is not quoted.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/botrytis-gray-mold-of-tomato",
+                  "quote": "If severely affected, stems may be completely girdled, killing tissue above the cankered portion."
+                },
+                {
+                  "url": "https://agriculture.vic.gov.au/biosecurity/plant-diseases/vegetable-diseases/grey-mould-botrytis-in-greenhouse-tomato-crops",
+                  "quote": "Infection of tomato stems can be particularly damaging, leading to stem girdling, wilting and ultimate plant death."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The Maine stem surface shows brownish-orange discoloration.",
+              "image_quote": "Brownish-orange discoloration is present on the stem surface.",
+              "image_id": "bugwood::5528796",
+              "verification_status": "novel_plausible",
+              "reasoning": "Extension sources describe tan-to-brown / brownish-gray stem lesions but do not document an orange tint, so the brownish-orange hue is plausible and uncontradicted but unverified.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5528796"
+          ],
+          "__verifier_meta__": {
+            "verified_count": 4,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 0
+          }
+        }
+      }
     }
   ],
   "crop": "Tomato",
   "generated_date": "2026-05-14",
-  "regional_observations_count": 0
+  "regional_observations_count": 71
 }
