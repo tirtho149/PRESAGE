@@ -24,9 +24,10 @@ hands off to the next step via `git push` / `git pull`:
                  └──────────────────┬───────────────────────────────┘
                                     │
                  ┌──────────────── STEP 2 ─ NOVA  ──────────────────┐
-                 │ scripts/sh_02_swarm_nova.sh                      │
+                 │ scripts/submit_phase0r_regional.sh               │
                  │   git pull                                       │
-                 │   24-agent 2-round Qwen2.5-VL real swarm         │
+                 │   organ-routed Qwen2.5-VL swarm (in-process)     │
+                 │   detect organ → deep specialists → consolidate  │
                  │   (visual symptoms ONLY; verifier OFF here)      │
                  │   → git push  (deltas tagged "unverified")       │
                  └──────────────────┬───────────────────────────────┘
@@ -117,15 +118,18 @@ CROPS=smoke bash scripts/sh_01_phase0_local.sh
 # then commits + pushes to origin/main.
 
 # ============================================================
-# STEP 2 — NOVA (24-agent 2-round Qwen swarm; verifier OFF)
+# STEP 2 — NOVA (organ-routed Qwen2.5-VL swarm; in-process; verifier OFF)
 # ============================================================
 ssh tirtho@hpc-login.iastate.edu
-cd /work/mech-ai-scratch/tirtho/PlantSwarm
-CROPS=smoke bash scripts/sh_02_swarm_nova.sh
-# ≈ 3-6 h. sbatch one Phase 0R job (vLLM + 24-agent 2-round swarm),
-# blocks until done, then pushes the unverified-deltas KB back to GitHub.
-# Tip: set PATHOME_TRACE_DIR=artifacts/swarm_smoke to capture per-pass
-# JSONL traces (round1_outputs, round2_outputs, cross_refs).
+cd /work/mech-ai-scratch/tirtho/PlantSwarm && git pull origin main
+PATHOME_ONLY_CROPS="Soybean,Tomato" sbatch scripts/submit_phase0r_regional.sh
+# ≈ 3-6 h. Qwen2.5-VL-7B is loaded IN-PROCESS via transformers (no vLLM
+# server). The job self-heals its env (scripts/setup_env.sh), runs a
+# CUDA preflight, then the organ-routed swarm (OrganDetectionAgent ->
+# only that organ's deep specialists -> blackboard -> consolidator ->
+# K-of-N), and pushes the unverified-deltas KB back to GitHub.
+# See "Phase 0R on Nova" below for node health, .env/HF_TOKEN, and the
+# smoke knobs — read it before first run, the GPU nodes are flaky.
 
 # ============================================================
 # STEP 3 — LOCAL (Claude+WebSearch validation)
@@ -185,6 +189,120 @@ results/pathomeood_report.md                        master report
 
 ---
 
+## Phase 0R on Nova — operational guide (read before first run)
+
+STEP 2 runs Qwen2.5-VL-7B **in-process via transformers** (no vLLM
+server, no HTTP). The pipeline code is solid; the friction is all
+Nova GPU-node health. This is the exact, current procedure.
+
+### One-time setup
+
+```bash
+# In the repo on Nova, create a gitignored .env with your HF token
+# (removes the HuggingFace unauthenticated rate limit — without it the
+#  ~16 GB model download crawls for 30+ min):
+echo 'HF_TOKEN=hf_xxxxxxxxxxxxxxxxxxxx' > /work/mech-ai-scratch/tirtho/PlantSwarm/.env
+```
+
+The model is cached once to `./.hf_cache` on the shared `/work` fs and
+reused by every later run on any node — you pay the download once.
+
+### Recommended: sbatch (survives disconnects, 12 h limit)
+
+```bash
+cd /work/mech-ai-scratch/tirtho/PlantSwarm && git pull origin main
+PATHOME_ONLY_CROPS="Soybean,Tomato" sbatch scripts/submit_phase0r_regional.sh
+# watch the guaranteed log (path printed on the job's first line):
+ls -t logs/phase0r_*.log | head -1 | xargs tail -f
+```
+
+The job auto-runs `scripts/setup_env.sh` (heals torch/CUDA to match
+the node driver), a CUDA preflight, then the swarm. On success you see
+`CUDA preflight OK` → `[hf_inproc] model ready` → `[1/76] OK
+Soybean::… deltas=N`. It auto-commits/pushes the populated
+`final_registry.json`; `git pull` locally afterward.
+
+### If it fails with NODE CUDA FAULT / "No devices were found"
+
+Some Nova A100 nodes have broken CUDA after a driver rollout. That is
+NOT a code problem. Find a healthy node and pin to it:
+
+```bash
+# probe candidate nodes (independent sbatch jobs, NOT srun):
+for n in nova21-gpu-12 nova21-gpu-15 nova22-amp-6 nova22-amp-7 nova23-amp-9; do
+  sbatch --nodelist=$n --gres=gpu:a100:1 --partition=nova --time=00:02:00 \
+    -o "logs/probe_${n}.out" \
+    --wrap 'hostname; nvidia-smi --query-gpu=name,driver_version --format=csv,noheader 2>&1|head -1'
+done
+sleep 60; grep -H . logs/probe_*.out
+# any node printing "A100-SXM4-80GB, 580.x" is healthy -> pin the run:
+PATHOME_ONLY_CROPS="Soybean,Tomato" sbatch --nodelist=<healthy> --exclude=nova21-gpu-2 \
+  scripts/submit_phase0r_regional.sh
+```
+
+### Interactive (debugging / first proof) via salloc
+
+```bash
+salloc --gres=gpu:a100:1 --partition=nova --time=03:00:00 --mem=64G --cpus-per-task=8 --exclude=nova21-gpu-2
+srun --pty bash                                  # land on the GPU node
+nvidia-smi --query-gpu=name,driver_version --format=csv,noheader   # must show A100/580
+cd /work/mech-ai-scratch/tirtho/PlantSwarm
+# already on a GPU node -> run with bash, NOT sbatch:
+PATHOME_ONLY_CROPS="Soybean" bash scripts/submit_phase0r_regional.sh
+```
+
+Quick model sanity check (loads the exact backend, times generation):
+
+```bash
+set -a; . .env 2>/dev/null; set +a
+python - <<'PY'
+import time, io, base64; from PIL import Image
+from utils.vllm_inproc import get_inproc_client
+c=get_inproc_client(); t=time.time(); c.warmup(); print(f"load {time.time()-t:.1f}s")
+im=Image.new("RGB",(512,512),(40,120,40)); b=io.BytesIO(); im.save(b,"JPEG")
+d="data:image/jpeg;base64,"+base64.b64encode(b.getvalue()).decode()
+m=[{"role":"user","content":[{"type":"image_url","image_url":{"url":d}},{"type":"text","text":"one sentence?"}]}]
+for i in range(3):
+    t=time.time(); x,n=c.chat(messages=m,seed=42+i,temperature=0.7)
+    print(f"gen{i+1} {time.time()-t:.1f}s {n}tok -> {x[:80]!r}")
+PY
+```
+
+### Run knobs (throughput vs coverage)
+
+Generation is serialized (one `model.generate` at a time). Tune for a
+fast smoke; scale up for production:
+
+| Env var | Default | Smoke | Effect |
+|---|---|---|---|
+| `SWARM_GRANULARITY` | routed | grouped | `grouped`=5 agents (6 calls/pass) vs `routed`≈28 for a leaf photo |
+| `VLLM_N_RUNS` | 10 | 2 | stochastic passes/tuple (K-of-N) |
+| `VLLM_SWARM_ROUNDS` | 2 | 1 | 1 drops the round-2 blackboard pass |
+| `VLLM_MAX_NEW_TOKENS` | 512 | 256-384 | shorter generations |
+| `PATHOME_SEED_QUICK` | 0 | 1 | caps states/disease (far fewer tuples) |
+| `PATHOME_ONLY_CROPS` | — | Soybean | restrict crops |
+
+Fast end-to-end proof (finishes well under an hour):
+
+```bash
+PATHOME_ONLY_CROPS="Soybean" VLLM_N_RUNS=2 VLLM_AGREEMENT_MIN=2 VLLM_SWARM_ROUNDS=1 \
+SWARM_GRANULARITY=grouped VLLM_MAX_NEW_TOKENS=384 PATHOME_SEED_QUICK=1 \
+bash scripts/submit_phase0r_regional.sh
+```
+
+### Gotchas
+
+- Don't `srun --gres=…` from inside the VS Code SLURM session — it
+  makes a GPU *step* in that CPU job and fails ("Invalid gres"). Use
+  `sbatch` (independent job) or a fresh `salloc`.
+- On a GPU node you got via `salloc`, run `bash scripts/...` — not
+  `sbatch` (you already hold the GPU).
+- `nvidia-smi` working ≠ CUDA working; the preflight is the real test.
+- Logs are always at `logs/phase0r_<jobid>_<ts>.log` (printed on the
+  first line) regardless of where you submitted from.
+
+---
+
 ## Set B — all-crop production (484 classes)
 
 The real run. ~5-8 days end-to-end; ~$80-300 in Claude API spend.
@@ -209,15 +327,16 @@ CROPS=all bash scripts/sh_01_phase0_local.sh
 # BugWood_Diseases_usable.csv (197 of them).
 
 # ============================================================
-# STEP 2 — NOVA (24-agent swarm over ~2,000-3,000 image tuples)
+# STEP 2 — NOVA (organ-routed Qwen2.5-VL swarm; ~1,000 image tuples)
 # ============================================================
 ssh tirtho@hpc-login.iastate.edu
-cd /work/mech-ai-scratch/tirtho/PlantSwarm
-CROPS=all VLLM_N_RUNS=10 VLLM_AGREEMENT_MIN=3 \
-  bash scripts/sh_02_swarm_nova.sh
-# ≈ 24-48 h. ~2,000-3,000 (crop, disease, state) tuples × 25 (or 49 in
-# 2-round mode) vLLM calls each. Set VLLM_SWARM_ROUNDS=1 to fall back
-# to single-round mode if you want ~half the wall-clock.
+cd /work/mech-ai-scratch/tirtho/PlantSwarm && git pull origin main
+VLLM_N_RUNS=10 VLLM_AGREEMENT_MIN=3 sbatch scripts/submit_phase0r_regional.sh
+# Many hours — 1,035 (crop,disease,state) tuples, in-process
+# transformers, generation serialized. Pin to a known-good node
+# (--nodelist=…) and read the "Phase 0R on Nova" guide above (node
+# health, .env/HF_TOKEN, knobs). Resumable: the conservative merge is
+# idempotent, so a re-run continues/accumulates rather than restarting.
 
 # ============================================================
 # STEP 3 — LOCAL (Claude+WebSearch validation over every unverified delta)
@@ -279,7 +398,7 @@ results/pathomeood_report.md                        paper-style master report
 |---|---|---|---|
 | 0 | LOCAL | `sh_00_setup_local.sh` | Filter raw Bugwood CSV by per-class threshold + Claude 2-layer label judge (drops INVALID/NON_CROP crops, INCORRECT diseases; canonicalises MISSPELLED crops) |
 | 1 | LOCAL | `sh_01_phase0_local.sh` | Claude builds the canonical (text-grounded, NON-visual) KB per crop |
-| 2 | NOVA | `sh_02_swarm_nova.sh` | 24-agent 2-round Qwen2.5-VL real swarm extracts image-grounded visual deltas (verifier OFF) |
+| 2 | NOVA | `submit_phase0r_regional.sh` | Organ-routed Qwen2.5-VL swarm (in-process transformers): detect organ → that organ's deep specialists → consolidator → K-of-N. Image-grounded visual deltas (verifier OFF) |
 | 3 | LOCAL | `sh_03_validate_local.sh` | Claude+WebSearch verifies each delta against extension / APS / CABI |
 | 4 | NOVA | `sh_04_train_encoder_nova.sh` | BioCAP-style ViT-B/16 dual-projector CLIP encoder fine-tuned on Bugwood + KB-grounded captions (warm-started from BioCLIP) |
 | 5 | LOCAL | `sh_05_tabpfn_local.sh` | 7 frozen encoders (6 off-shelf + your step-4 trained one) emit image_emb + KB-caption_emb + crop_text_emb + state_text_emb; TabPFN classifies; Grad-CAM; eval on PV / PD / PW |
@@ -409,57 +528,59 @@ Output: `artifacts/pathome_kb/<Crop>/final_registry.json` with the
 top-level `diseases[]` array. `regional_observations` is empty at this
 stage; Phase 0R fills it in.
 
-### Phase 0R — 24-agent 2-round real swarm (Qwen2.5-VL, NOVA)
+### Phase 0R — organ-routed Qwen2.5-VL swarm (in-process, NOVA)
 
-**The "real swarm" part.** Naive parallel-ensemble setups have
-specialists run in isolation and a consolidator collects outputs. This
-is a real swarm because it has **stigmergy** (a shared blackboard) and
-**cross-talk** (specialists react to each other's findings):
+**Backend.** Qwen2.5-VL-7B runs **in-process via transformers**
+(`utils/vllm_inproc.py`: `AutoProcessor` + `AutoModelForImageTextToText`
+→ `apply_chat_template` → `model.generate`). No vLLM server, no HTTP,
+no EngineCore subprocess — that machinery kept failing on Nova.
+`get_inproc_client()` is a process-wide singleton built once on the
+**main thread** (`warmup()`), `generate()` serialized through a lock.
+
+**Decision tree (DR.Arti-style), default mode = `routed`.** Each
+Bugwood photo shows essentially ONE organ, so running every agent on
+every image is wasteful. Per (crop,disease,state) tuple:
 
 ```
-Round 1 — independent observation
-  └─ 24 specialists run in parallel on (image, canonical KB, existing KB)
-  └─ each asks ONE laser-focused visual question
-  └─ no peer visibility yet
-
-Blackboard built from all round-1 outputs (dict[AGENT_NAME → output])
-
-Round 2 — stigmergy refinement
-  └─ same 24 specialists run AGAIN in parallel
-  └─ each now sees the FULL blackboard rendered in its prompt
-  └─ may emit cross_refs against peers:
-       SUPPORT   — raises peer's effective confidence
-       CHALLENGE — consolidator must adjudicate
-       WITHDRAW  — self-cancel a round-1 delta
-
-VisualDiagnosisAgent (consolidator)
-  └─ sees BOTH rounds + cross-ref digest grouped by action
-  └─ walks 5-step CoT (decision-graph from DR.Arti.docx):
-       (1) triage which organs are visible
-       (2) decisive forks
-       (3) adjudicate cross_refs
-       (4) dedup
-       (5) emit final deltas + CoT trace
+OrganDetectionAgent  (1 visual call: which organ dominates?)
+        │
+        ▼   route_for_organ(organ) activates ONLY that branch:
+   leaf→13  stem→8  root/crown/flower→5  fruit→6  whole_plant→7
+   other→all 24    (each route + always-on cross-cutters:
+                     ColorPalette · Severity · LookAlikeCoT · Sporulation)
+        │
+        ▼  the activated deep specialists run through the SAME machinery:
+Round 1  independent observation on (image, canonical visual_symptoms, existing KB)
+Blackboard  built from round-1 outputs
+Round 2  stigmergy — peers visible; SUPPORT / CHALLENGE / WITHDRAW cross_refs
+VisualDiagnosisAgent  consolidates both rounds → final deltas
+        │
+        ▼  K-of-N agreement across N stochastic passes → (verifier) → merge
 ```
 
-The 24 specialists are decomposed into 7 organ families:
+The deep specialists (the gated 24, by organ family):
 
 | Family | Count | Specialists |
 |---|---|---|
 | LEAF | 8 | LeafLesionShape, LeafLesionColor, LeafLesionTexture, LeafChlorosis, LeafNecrosis, LeafCurl, LeafVeinPattern, LeafGeometry |
-| STEM | 4 | StemLesion, **StemPith** (decisive SDS/BSR fork), StemSurface, StemDiscoloration |
-| BELOW-GROUND | 2 | **Root** (cysts → SCN; blue masses → SDS), CrownCollar |
+| STEM | 4 | StemLesion, **StemPith**, StemSurface, StemDiscoloration |
+| BELOW-GROUND | 2 | **Root**, CrownCollar |
 | REPRODUCTIVE | 2 | Flower, Fruit |
-| PATHOGEN SIGNS | 1 | Sporulation (mycelium / spores / ooze) |
-| WHOLE-PLANT PATTERNS | 3 | Wilting, **Defoliation** (bare-petiole SDS fork), SpatialPattern |
-| DIAGNOSTIC CROSS-CUTTERS | 4 | ConcentricPattern, **ColorPalette** (color encoder), **LookAlikeCoT** (decision-graph), SeverityVisual |
+| PATHOGEN SIGNS | 1 | Sporulation |
+| WHOLE-PLANT PATTERNS | 3 | Wilting, **Defoliation**, SpatialPattern |
+| DIAGNOSTIC CROSS-CUTTERS | 4 | ConcentricPattern, **ColorPalette**, **LookAlikeCoT**, SeverityVisual |
 
-Per-pass cost: 24 specialists × 2 rounds + 1 consolidator = **49 vLLM
-calls**. N=10 stochastic passes per (crop, disease, state) tuple.
+**`SWARM_GRANULARITY` modes:** `routed` (default; organ-gated, ≈12–28
+calls/pass by organ) · `grouped` (5 visual-symptom group agents, 11
+calls/pass) · `specialists` (legacy all-24, ≈49 calls/pass). Identical
+blackboard/round-2/consolidator wiring in every mode. N stochastic
+passes per tuple (`VLLM_N_RUNS`, default 10).
 
-The swarm focuses **exclusively on visual symptoms**. Pathogen, type,
-affected parts, treatments — those are all handled by Claude in Phase 0
-and never re-emitted by the swarm.
+The swarm is **visual-symptoms only** — every agent compares the photo
+to the canonical `visual_symptoms` block and emits nothing about
+pathogen / type / treatment (Claude's Phase 0 job). DR.Arti.docx
+informs only the decision-tree *shape*, not any hardcoded content;
+fully generalized across crops/diseases.
 
 ### Phase 0R verification — Claude+WebSearch (LOCAL, step 3)
 
