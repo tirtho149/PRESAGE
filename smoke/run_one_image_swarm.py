@@ -2,79 +2,133 @@
 """
 smoke/run_one_image_swarm.py
 ============================
-Dedicated one-image smoke for the Phase 0R swarm.
+Dedicated, self-contained one-image smoke for the Phase 0R swarm.
 
-Picks ONE real Soybean (disease, state, cached-image) tuple using the
-*exact* resolution the production pipeline uses
-(`build_state_image_map` + `_resolve_cached_image`), then runs the
-**full** swarm on it via `plantswarm.delta_pipeline.run_for_state`:
+Run it directly on a GPU node you already hold (salloc), with the
+project venv active:
 
-    OrganDetectionAgent -> route to that organ's deep specialists
-    -> round 1 -> blackboard -> round 2 (stigmergy)
-    -> VisualDiagnosisAgent consolidator -> K-of-N agreement
-    -> conservative merge
+    python smoke/run_one_image_swarm.py
 
-It prints the chosen tuple, the per-pass detected organ + active
-agent count, raw vs agreed delta counts, and the final merged deltas,
-then asserts the output is well-formed. Verifier is OFF by default
-(Claude is not available on a GPU node; the swarm is what we're
-testing).
+No shell wrapper needed — this file bootstraps its own environment
+(loads the gitignored .env for HF_TOKEN, points the HF cache at
+/work, enables hf_transfer, turns the Claude verifier OFF) BEFORE any
+heavy import, then:
 
-Env knobs (all optional; defaults give a faithful but quick smoke):
-  CROP                 Soybean         crop to smoke
-  SMOKE_DISEASE        (auto)          force a disease name, else first
-                                       Soybean tuple with a cached image
-  VLLM_N_RUNS          3               stochastic passes (K-of-N)
-  VLLM_AGREEMENT_MIN   2               K
-  VLLM_SWARM_ROUNDS    2               2 = full swarm (round-2 blackboard)
-  SWARM_GRANULARITY    routed          routed | grouped | specialists
-  VLLM_MAX_NEW_TOKENS  512             generation cap
-  PATHOME_USE_VERIFIER 0               kept OFF here
+  1. picks ONE real Soybean (disease, state, cached-image) tuple using
+     the *exact* production resolution (build_state_image_map +
+     _resolve_cached_image),
+  2. runs the FULL swarm via plantswarm.delta_pipeline.run_for_state:
+       OrganDetectionAgent -> route to that organ's deep specialists
+       -> round 1 -> blackboard -> round 2 (stigmergy)
+       -> VisualDiagnosisAgent consolidator -> K-of-N -> merge,
+  3. prints the chosen tuple, per-pass detected organ + active agent
+     count, raw vs agreed deltas, final merged deltas,
+  4. asserts the output is well-formed.
+
+Env knobs (optional; faithful but quick defaults):
+  CROP                 Soybean
+  SMOKE_DISEASE        (auto)   force a disease, else first Soybean
+                                tuple with a cached image
+  VLLM_N_RUNS          3        stochastic passes (K-of-N)
+  VLLM_AGREEMENT_MIN   2        K
+  VLLM_SWARM_ROUNDS    2        2 = full swarm (round-2 blackboard)
+  SWARM_GRANULARITY    routed   routed | grouped | specialists
+  VLLM_MAX_NEW_TOKENS  512
   PATHOME_USABLE_CSV   BugWood_Diseases_usable.csv
+  HF_HOME              <repo>/.hf_cache
+  PATHOME_VENV / PATHOME_REPO   override paths if needed
 
-Exit 0 = swarm ran end-to-end and produced well-formed output
-         (deltas may legitimately be 0 if the image adds nothing).
-Exit 2 = setup problem (no registry / no cached image / bad tuple).
-Exit 3 = swarm ran but output is malformed (a real failure).
+Exit 0 = full swarm ran end-to-end, output well-formed (0 deltas is
+         acceptable — the smoke validates the pipeline, not accuracy).
+Exit 2 = setup problem (no registry / no cached image / venv).
+Exit 3 = swarm ran but output malformed (a real failure).
 """
 from __future__ import annotations
 
-import json
 import os
 import sys
-import time
 from pathlib import Path
 
-# Default: do not call the Claude web verifier in a GPU-node smoke.
+# ---------------------------------------------------------------------------
+# Environment bootstrap — MUST run before importing torch/transformers/HF.
+# ---------------------------------------------------------------------------
+
+REPO = Path(os.environ.get("PATHOME_REPO")
+            or Path(__file__).resolve().parent.parent)
+os.chdir(REPO)
+
+
+def _load_dotenv(path: Path) -> None:
+    """Minimal .env loader: KEY=VALUE / export KEY=VALUE, no override of
+    already-set vars. Never prints values."""
+    if not path.is_file():
+        return
+    for raw in path.read_text().splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        if line.startswith("export "):
+            line = line[len("export "):]
+        if "=" not in line:
+            continue
+        k, v = line.split("=", 1)
+        k = k.strip()
+        v = v.strip().strip('"').strip("'")
+        if k and k not in os.environ:
+            os.environ[k] = v
+
+
+_load_dotenv(REPO / ".env")
+
+# HF model cache on the big shared fs (download once, reuse on any node)
+os.environ.setdefault("HF_HOME", str(REPO / ".hf_cache"))
+os.environ.setdefault("HUGGINGFACE_HUB_CACHE",
+                       str(Path(os.environ["HF_HOME"]) / "hub"))
+os.environ.setdefault("HF_HUB_ENABLE_HF_TRANSFER", "1")
+Path(os.environ["HF_HOME"]).mkdir(parents=True, exist_ok=True)
+
+# swarm-only smoke: no Claude verifier on a GPU node
 os.environ.setdefault("PATHOME_USE_VERIFIER", "0")
+os.environ.setdefault("PATHOME_IMAGE_CACHE_DIR", str(REPO / ".bugwood_cache"))
 
-CROP = os.environ.get("CROP", "Soybean")
+# faithful-but-quick defaults
+os.environ.setdefault("CROP", "Soybean")
+os.environ.setdefault("VLLM_N_RUNS", "3")
+os.environ.setdefault("VLLM_AGREEMENT_MIN", "2")
+os.environ.setdefault("VLLM_SWARM_ROUNDS", "2")     # 2 = full swarm
+
+CROP = os.environ["CROP"]
 CSV = os.environ.get("PATHOME_USABLE_CSV", "BugWood_Diseases_usable.csv")
-N_RUNS = int(os.environ.get("VLLM_N_RUNS", "3"))
-K = int(os.environ.get("VLLM_AGREEMENT_MIN", "2"))
+N_RUNS = int(os.environ["VLLM_N_RUNS"])
+K = int(os.environ["VLLM_AGREEMENT_MIN"])
 
 
-def _fail(code: int, msg: str) -> "None":
+def _fail(code: int, msg: str) -> None:
     print(f"\n[SMOKE FAIL] {msg}")
     sys.exit(code)
 
 
 def main() -> None:
-    repo = Path(__file__).resolve().parent.parent
-    os.chdir(repo)
-
-    reg_path = repo / "artifacts" / "pathome_kb" / CROP / "final_registry.json"
+    reg_path = REPO / "artifacts" / "pathome_kb" / CROP / "final_registry.json"
     if not reg_path.is_file():
         _fail(2, f"no {reg_path} — run Phase 0/1 (canonical KB) first.")
-    if not (repo / CSV).is_file():
+    if not (REPO / CSV).is_file():
         _fail(2, f"no {CSV} — run Step 0 (filter) first.")
 
-    from pathome_kb.regional_observation import (
-        build_state_image_map, _resolve_cached_image,
-    )
-    from plantswarm.delta_pipeline import (
-        run_for_state, existing_deltas_for_state,
-    )
+    try:
+        from pathome_kb.regional_observation import (
+            build_state_image_map, _resolve_cached_image,
+        )
+        from plantswarm.delta_pipeline import (
+            run_for_state, existing_deltas_for_state,
+        )
+    except ModuleNotFoundError as e:
+        _fail(2, f"import failed ({e}). Activate the project venv first: "
+                 f"source {os.environ.get('PATHOME_VENV', '<repo>/.venv')}"
+                 f"/bin/activate")
+
+    import json
+    import time
 
     reg = json.loads(reg_path.read_text())
     by_disease = {
@@ -101,7 +155,7 @@ def main() -> None:
         for img_id in image_ids:
             p = _resolve_cached_image(img_id)
             if p:
-                chosen = (disease, state, p, img_id, list(image_ids))
+                chosen = (disease, state, p, img_id)
                 break
         if chosen:
             break
@@ -110,7 +164,7 @@ def main() -> None:
         _fail(2, f"no {CROP} tuple with a cached image found "
                  f"(cache empty? run scripts/ensure_state_image_cache.py).")
 
-    disease, state, img_path, img_id, image_ids = chosen
+    disease, state, img_path, img_id = chosen
     drec = by_disease[disease]
     existing = existing_deltas_for_state(drec, state)
 
@@ -121,8 +175,10 @@ def main() -> None:
     print(f"  state   : {state}")
     print(f"  image   : {img_path}  (id={img_id})")
     print(f"  granularity={os.environ.get('SWARM_GRANULARITY','routed')} "
-          f"N={N_RUNS} K={K} rounds={os.environ.get('VLLM_SWARM_ROUNDS','2')} "
-          f"verifier={os.environ.get('PATHOME_USE_VERIFIER')}")
+          f"N={N_RUNS} K={K} rounds={os.environ['VLLM_SWARM_ROUNDS']} "
+          f"verifier={os.environ['PATHOME_USE_VERIFIER']}")
+    print(f"  HF_HOME={os.environ['HF_HOME']}  "
+          f"HF_TOKEN={'set' if os.environ.get('HF_TOKEN') else 'unset'}")
     print(f"  existing deltas for this state: {len(existing)}")
     print("-" * 64)
 
@@ -148,13 +204,12 @@ def main() -> None:
     for d in deltas[:12]:
         print(f"    - [{d.get('field')}] {str(d.get('image_shows',''))[:100]}")
 
-    # ---- assertions: swarm ran and output is well-formed -------------
     problems = []
     if "granularity" not in sm:
         problems.append("no __swarm_meta__.granularity (run_for_state contract broke)")
-    if sm.get("n_raw_per_pass") is None or len(sm.get("n_raw_per_pass") or []) != N_RUNS:
-        problems.append(f"expected {N_RUNS} passes in n_raw_per_pass, got "
-                        f"{sm.get('n_raw_per_pass')}")
+    n_raw = sm.get("n_raw_per_pass")
+    if n_raw is None or len(n_raw) != N_RUNS:
+        problems.append(f"expected {N_RUNS} passes in n_raw_per_pass, got {n_raw}")
     for d in deltas:
         if not isinstance(d, dict) or not d.get("field") or not d.get("image_shows"):
             problems.append(f"malformed delta: {d!r}")
