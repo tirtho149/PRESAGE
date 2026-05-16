@@ -70,8 +70,9 @@ fi
 #   PATHOME_ONLY_CROPS="Soybean,Tomato"  for a smoke-sized run.
 #
 # Swarm knobs (env vars consumed by plantswarm.delta_pipeline):
-#   VLLM_N_RUNS=10        stochastic traces per (crop, disease, state) tuple
-#   VLLM_AGREEMENT_MIN=3  K-of-N agreement to keep a delta
+#   VLLM_N_RUNS=1         stochastic traces per tuple (default 1 =
+#                         one-shot; set >1 for K-of-N)
+#   VLLM_AGREEMENT_MIN=1  K-of-N agreement to keep a delta
 #   VLLM_TEMPERATURE=0.8  per-call sampling temperature
 #   VLLM_TMAX=15          max path length per trace
 #   VLLM_MAX_BACKTRACKS=1 paper §5.3
@@ -207,8 +208,8 @@ CSV="${PATHOME_USABLE_CSV:-BugWood_Diseases_usable.csv}"
 OUT="${PATHOME_SEED_FILE:-artifacts/pathome_seed/symptoms_seed.json}"
 
 # Swarm knobs — propagate to plantswarm.delta_pipeline via env.
-export VLLM_N_RUNS="${VLLM_N_RUNS:-10}"
-export VLLM_AGREEMENT_MIN="${VLLM_AGREEMENT_MIN:-3}"
+export VLLM_N_RUNS="${VLLM_N_RUNS:-1}"
+export VLLM_AGREEMENT_MIN="${VLLM_AGREEMENT_MIN:-1}"
 export VLLM_TEMPERATURE="${VLLM_TEMPERATURE:-0.8}"
 export VLLM_TMAX="${VLLM_TMAX:-15}"
 export VLLM_MAX_BACKTRACKS="${VLLM_MAX_BACKTRACKS:-1}"

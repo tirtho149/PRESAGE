@@ -88,11 +88,13 @@ SPECIALIST_CLASSES: Tuple[type, ...] = SPECIALIST_AGENTS
 
 def _swarm_granularity() -> str:
     """Roster mode:
-      'routed'      (default) — OrganDetectionAgent picks the organ,
-                    then only that organ's deep single-feature
-                    specialists + always-on cross-cutters fire
-                    (DR.Arti decision tree).
-      'grouped'     — 5 visual-symptom group agents (all run).
+      'routed'      (default) — OrganDetectionAgent picks the organ
+                    (1 fixed routing call), then ALL of that organ's
+                    deep single-feature specialists fire (uncapped;
+                    optional soft cap via PATHOME_MAX_ROUTED_AGENTS).
+                    With the 2-round default this is the real swarm.
+      'grouped'     — 5 visual-symptom group agents (all run), no
+                    organ-detection call.
       'specialists' — legacy 24 single-feature specialists (all run).
     """
     v = os.environ.get("SWARM_GRANULARITY", "routed").strip().lower()
@@ -109,6 +111,29 @@ def _active_roster() -> Tuple[type, ...]:
     if _swarm_granularity() == "specialists":
         return SPECIALIST_AGENTS
     return VISUAL_GROUP_AGENTS
+
+
+# Hard global ceiling on model calls per image, across ALL granularity
+# modes. One image costs: (1 organ-detect if routed) + n_agents *
+# swarm_rounds + 1 consolidator. We truncate the agent roster so that
+# total can never exceed this. Default 25; override with the
+# PATHOME_MAX_MODEL_CALLS_PER_IMAGE env var.
+def _max_model_calls_per_image() -> int:
+    try:
+        return max(3, int(os.environ.get(
+            "PATHOME_MAX_MODEL_CALLS_PER_IMAGE", "25")))
+    except (TypeError, ValueError):
+        return 25
+
+
+def _agent_budget(swarm_rounds: int, *, has_organ_detect: bool) -> int:
+    """Max specialists allowed so total model calls/image stays within
+    the global cap. Reserves 1 call for the consolidator and (if
+    routed) 1 for the organ-detection call; the rest is split across
+    ``swarm_rounds`` (each agent runs once per round). Always >= 1."""
+    fixed = 1 + (1 if has_organ_detect else 0)  # consolidator (+ detect)
+    rounds = max(1, int(swarm_rounds))
+    return max(1, (_max_model_calls_per_image() - fixed) // rounds)
 
 
 # ---------------------------------------------------------------------------
@@ -272,13 +297,25 @@ def _run_single_pass(
     # this avoids running (and paying for) agents that can only ever
     # say "not visible".
     detected_organ: Optional[Dict[str, str]] = None
-    if _swarm_granularity() == "routed":
+    is_routed = _swarm_granularity() == "routed"
+    if is_routed:
         detected_organ = OrganDetectionAgent(client).detect(
             image_data_url, seed=seed, temperature=temperature,
         )
         roster = route_for_organ(detected_organ["organ"])
     else:
         roster = _active_roster()
+
+    # Global per-image model-call ceiling: truncate the roster (route
+    # order is organ-specific deep specialists first, so the most
+    # relevant survive) so 1 organ-detect + n_agents*rounds + 1
+    # consolidator never exceeds PATHOME_MAX_MODEL_CALLS_PER_IMAGE.
+    budget = _agent_budget(swarm_rounds, has_organ_detect=is_routed)
+    if len(roster) > budget:
+        print(f"    [budget] {len(roster)} agents -> {budget} "
+              f"(cap {_max_model_calls_per_image()} calls/image, "
+              f"rounds={swarm_rounds})")
+        roster = tuple(roster)[:budget]
 
     specialists: List[BaseAgent] = [cls(client) for cls in roster]
     n_specialists = len(specialists)
@@ -623,12 +660,19 @@ def run_for_state(
     if callable(_warmup):
         _warmup()
 
-    if n_runs              is None: n_runs              = _int_env  ("VLLM_N_RUNS",          10)
-    if agreement_min       is None: agreement_min       = _int_env  ("VLLM_AGREEMENT_MIN",    3)
+    # Real-swarm defaults: ONE pass (N=1, K=1) but the full 2-round
+    # protocol so agents actually interact (round-2 blackboard /
+    # stigmergy). Routed roster is UNCAPPED — every specialist for the
+    # detected organ runs. Set VLLM_N_RUNS>1 for stochastic K-of-N on
+    # top, or VLLM_SWARM_ROUNDS=1 to drop back to a parallel ensemble.
+    if n_runs              is None: n_runs              = _int_env  ("VLLM_N_RUNS",           1)
+    if agreement_min       is None: agreement_min       = _int_env  ("VLLM_AGREEMENT_MIN",    1)
     if temperature         is None: temperature         = _float_env("VLLM_TEMPERATURE",      0.8)
     if similarity_threshold is None: similarity_threshold = _float_env("VLLM_SIM_THRESHOLD",  0.4)
-    # 2-round real-swarm protocol by default. Set VLLM_SWARM_ROUNDS=1
-    # to fall back to the legacy parallel-ensemble single-round mode.
+    # 2-round real-swarm protocol by default: round 1 (independent) ->
+    # shared blackboard -> round 2 (each agent sees peers, may refine /
+    # challenge / support / withdraw). Set VLLM_SWARM_ROUNDS=1 to fall
+    # back to the legacy single-round parallel-ensemble.
     swarm_rounds = max(1, _int_env("VLLM_SWARM_ROUNDS", 2))
 
     n_runs              = max(1, int(n_runs))

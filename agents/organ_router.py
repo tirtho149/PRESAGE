@@ -160,9 +160,25 @@ def normalize_organ(raw: Any) -> str:
     return "other"
 
 
+# Routed roster is UNCAPPED by default: after the (fixed)
+# organ-detection call, EVERY deep specialist for the detected organ
+# fans out — combined with the 2-round blackboard this is the real
+# swarm (more agents interacting = richer stigmergy). An optional
+# soft cap is available via PATHOME_MAX_ROUTED_AGENTS (0 / unset =
+# no cap); if set > 0 the first N classes in route order are kept
+# (organ-specific deep specialists first).
+import os as _os
+
+MAX_ROUTED_AGENTS: int = max(0, int(_os.environ.get(
+    "PATHOME_MAX_ROUTED_AGENTS", "0")))
+
+
 def route_for_organ(organ: str) -> Tuple[type, ...]:
-    """The deep specialist classes to activate for a detected organ."""
-    return ORGAN_ROUTES.get(normalize_organ(organ), ORGAN_ROUTES["other"])
+    """The deep specialist classes to activate for a detected organ.
+    Full organ route by default; truncated to the first
+    ``MAX_ROUTED_AGENTS`` only if that env cap is set > 0."""
+    full = ORGAN_ROUTES.get(normalize_organ(organ), ORGAN_ROUTES["other"])
+    return full[:MAX_ROUTED_AGENTS] if MAX_ROUTED_AGENTS > 0 else full
 
 
 class OrganDetectionAgent:

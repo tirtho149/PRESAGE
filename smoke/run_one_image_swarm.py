@@ -29,10 +29,10 @@ Env knobs (optional; faithful but quick defaults):
   CROP                 Soybean
   SMOKE_DISEASE        (auto)   force a disease, else first Soybean
                                 tuple with a cached image
-  VLLM_N_RUNS          3        stochastic passes (K-of-N)
-  VLLM_AGREEMENT_MIN   2        K
-  VLLM_SWARM_ROUNDS    2        2 = full swarm (round-2 blackboard)
-  SWARM_GRANULARITY    routed   routed | grouped | specialists
+  VLLM_N_RUNS          1        stochastic passes (K-of-N)
+  VLLM_AGREEMENT_MIN   1        K
+  VLLM_SWARM_ROUNDS    2        2 = real swarm (round-2 blackboard); 1 = ensemble
+  SWARM_GRANULARITY    routed   routed (organ -> all its agents) | grouped | specialists
   VLLM_MAX_NEW_TOKENS  512
   PATHOME_USABLE_CSV   BugWood_Diseases_usable.csv
   HF_HOME              <repo>/.hf_cache
@@ -109,9 +109,11 @@ os.environ.setdefault("PATHOME_IMAGE_CACHE_DIR", str(REPO / ".bugwood_cache"))
 
 # faithful-but-quick defaults
 os.environ.setdefault("CROP", "Soybean")
-os.environ.setdefault("VLLM_N_RUNS", "3")
-os.environ.setdefault("VLLM_AGREEMENT_MIN", "2")
-os.environ.setdefault("VLLM_SWARM_ROUNDS", "2")     # 2 = full swarm
+os.environ.setdefault("VLLM_N_RUNS", "1")
+os.environ.setdefault("VLLM_AGREEMENT_MIN", "1")
+os.environ.setdefault("VLLM_SWARM_ROUNDS", "2")     # 2 = real swarm
+# Default roster = routed, UNCAPPED: 1 organ-detect call -> all of
+# that organ's specialists, 2 rounds (blackboard stigmergy).
 
 CROP = os.environ["CROP"]
 CSV = os.environ.get("PATHOME_USABLE_CSV", "BugWood_Diseases_usable.csv")

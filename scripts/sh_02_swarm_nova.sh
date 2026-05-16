@@ -22,9 +22,12 @@
 #
 # Knobs
 #   CROPS                  default "smoke" (Soybean+Tomato); "all" = no filter
-#   VLLM_N_RUNS            stochastic passes per tuple (default 10; smoke 5)
-#   VLLM_SWARM_ROUNDS      real-swarm rounds (default 2; 1 = legacy)
-#   VLLM_AGREEMENT_MIN     K-of-N agreement floor (default 3; smoke 2)
+#   VLLM_N_RUNS            stochastic passes per tuple (default 1 = one-shot)
+#   VLLM_SWARM_ROUNDS      real-swarm rounds (default 2 = real swarm; 1 = ensemble)
+#   VLLM_AGREEMENT_MIN     K-of-N agreement floor (default 1)
+#   SWARM_GRANULARITY      default routed (organ -> all its agents); grouped | specialists
+#   PATHOME_MAX_ROUTED_AGENTS  optional soft cap per organ (default 0 = uncapped)
+#   PATHOME_MAX_MODEL_CALLS_PER_IMAGE  hard global ceiling (default 25)
 #   PATHOME_TRACE_DIR      set to capture per-pass traces
 # ============================================================================
 set -euo pipefail
@@ -43,7 +46,7 @@ case "$CROPS" in
 esac
 
 echo "================================================================="
-echo " STEP 2 — Phase 0R 24-agent real swarm (NOVA)"
+echo " STEP 2 — Phase 0R real swarm: routed, 2 rounds, all agents/organ (NOVA)"
 echo "================================================================="
 echo "  CROPS                : ${PATHOME_ONLY_CROPS:-(all)}"
 echo "  PATHOME_SEED_QUICK   : $SEED_QUICK"
@@ -61,7 +64,7 @@ mkdir -p logs "${PATHOME_TRACE_DIR:-artifacts/swarm_traces}"
 # Run the swarm (no verifier on Nova).
 echo
 echo "[2/3] sbatch --wait scripts/submit_phase0r_regional.sh"
-echo "       (24 specialists, 2 rounds, N=${VLLM_N_RUNS:-default} passes)"
+echo "       (routed: 1 organ-detect + all agents/organ x 2 rounds, N=${VLLM_N_RUNS:-1} pass)"
 PATHOME_ONLY_CROPS="$PATHOME_ONLY_CROPS" \
 PATHOME_SEED_QUICK="$SEED_QUICK" \
 PATHOME_USE_VERIFIER=0 \

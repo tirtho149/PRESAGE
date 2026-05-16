@@ -257,7 +257,10 @@ end to end:
 
 ```bash
 python smoke/run_one_image_swarm.py
-# faster: SWARM_GRANULARITY=grouped VLLM_N_RUNS=2 VLLM_SWARM_ROUNDS=1 python smoke/run_one_image_swarm.py
+# default real swarm: routed, 1 organ-detect + organ agents x 2 rounds
+#   + 1 consolidator, N=1 — hard-capped at 25 model calls/image
+#   (≈12–24/image; roster truncated to fit the cap)
+# heavier: VLLM_N_RUNS=10 python smoke/run_one_image_swarm.py  (×N passes)
 ```
 
 `[SMOKE PASS]` (exit 0) = OrganDetectionAgent → routed deep
@@ -316,11 +319,14 @@ PY
 Generation is serialized (one `model.generate` at a time). Tune for a
 fast smoke; scale up for production:
 
-| Env var | Default | Smoke | Effect |
+| Env var | Default (real swarm) | Tuning | Effect |
 |---|---|---|---|
-| `SWARM_GRANULARITY` | routed | grouped | `grouped`=5 agents (6 calls/pass) vs `routed`≈28 for a leaf photo |
-| `VLLM_N_RUNS` | 10 | 2 | stochastic passes/tuple (K-of-N) |
-| `VLLM_SWARM_ROUNDS` | 2 | 1 | 1 drops the round-2 blackboard pass |
+| `SWARM_GRANULARITY` | routed | specialists | `routed`=organ-detect then ALL that organ's specialists; `grouped`=5 group agents; `specialists`=all 24 |
+| `PATHOME_MAX_MODEL_CALLS_PER_IMAGE` | 25 | 25 | **hard global ceiling** — roster auto-truncated so `1 organ-detect + n_agents×rounds + 1 consolidator ≤ this` |
+| `PATHOME_MAX_ROUTED_AGENTS` | 0 (uncapped) | 5 | optional extra soft cap on specialists per organ (first-N in route order); 0 = no cap |
+| `VLLM_N_RUNS` | 1 | 10 | stochastic passes/tuple (K-of-N) |
+| `VLLM_AGREEMENT_MIN` | 1 | 3 | K-of-N agreement floor |
+| `VLLM_SWARM_ROUNDS` | 2 | 1 | 2 = real swarm (round-2 blackboard); 1 = parallel ensemble |
 | `VLLM_MAX_NEW_TOKENS` | 512 | 256-384 | shorter generations |
 | `PATHOME_SEED_QUICK` | 0 | 1 | caps states/disease (far fewer tuples) |
 | `PATHOME_ONLY_CROPS` | — | Soybean | restrict crops |
@@ -516,9 +522,9 @@ PATHOME_SKIP_PUSH=1              # commit but don't push
 
 # Step 2
 PATHOME_TRACE_DIR=traces/        # capture per-pass JSONL traces
-VLLM_N_RUNS=5                    # cheaper smoke (default 10)
-VLLM_SWARM_ROUNDS=1              # disable round 2 (cheaper, less stigmergy)
-VLLM_AGREEMENT_MIN=2             # K-of-N floor (default 3)
+VLLM_N_RUNS=10                   # stochastic K-of-N passes (default 1 = single pass)
+VLLM_SWARM_ROUNDS=1              # drop to parallel ensemble (default 2 = real swarm)
+VLLM_AGREEMENT_MIN=3             # K-of-N floor (default 1)
 
 # Step 3
 MAX_TUPLES=50                    # cap on (crop, disease, state) tuples
@@ -585,21 +591,41 @@ Bugwood photo shows essentially ONE organ, so running every agent on
 every image is wasteful. Per (crop,disease,state) tuple:
 
 ```
-OrganDetectionAgent  (1 visual call: which organ dominates?)
+OrganDetectionAgent  (1 fixed visual call: which organ dominates?)
         │
-        ▼   route_for_organ(organ) activates ONLY that branch:
+        ▼   route_for_organ(organ) activates ONLY that branch (uncapped):
    leaf→13  stem→8  root/crown/flower→5  fruit→6  whole_plant→7
    other→all 24    (each route + always-on cross-cutters:
                      ColorPalette · Severity · LookAlikeCoT · Sporulation)
         │
-        ▼  the activated deep specialists run through the SAME machinery:
+        ▼   roster truncated to fit the 25 calls/image hard cap
+            (rounds=2 → ≤11 agents; route order keeps the most
+             organ-relevant; smaller organs run in full)
+        │
+        ▼  the activated deep specialists run the REAL swarm:
 Round 1  independent observation on (image, canonical visual_symptoms, existing KB)
 Blackboard  built from round-1 outputs
 Round 2  stigmergy — peers visible; SUPPORT / CHALLENGE / WITHDRAW cross_refs
 VisualDiagnosisAgent  consolidates both rounds → final deltas
         │
-        ▼  K-of-N agreement across N stochastic passes → (verifier) → merge
+        ▼  K-of-N across N passes (default N=1) → (verifier) → merge
 ```
+
+**Model calls per image** (default: real swarm, `rounds=2`, `N=1`,
+cap=25 — `1 organ-detect + n_agents×rounds + 1 consolidator`):
+
+| Detected organ | Full roster | After 25-cap | Calls/image |
+|---|---|---|---|
+| root / crown / flower | 5 | 5 | 12 |
+| fruit | 6 | 6 | 14 |
+| whole_plant | 7 | 7 | 16 |
+| stem | 8 | 8 | 18 |
+| leaf | 13 | **11** | **24** |
+| `other` / unclassified (all-24) | 24 | **11** | **24** |
+
+Nothing exceeds **25**. Raising `VLLM_N_RUNS` multiplies the per-pass
+cost (still capped per pass); `VLLM_SWARM_ROUNDS=1` drops back to a
+parallel ensemble (not a real swarm) and lets more agents fit the cap.
 
 The deep specialists (the gated 24, by organ family):
 
@@ -613,11 +639,19 @@ The deep specialists (the gated 24, by organ family):
 | WHOLE-PLANT PATTERNS | 3 | Wilting, **Defoliation**, SpatialPattern |
 | DIAGNOSTIC CROSS-CUTTERS | 4 | ConcentricPattern, **ColorPalette**, **LookAlikeCoT**, SeverityVisual |
 
-**`SWARM_GRANULARITY` modes:** `routed` (default; organ-gated, ≈12–28
-calls/pass by organ) · `grouped` (5 visual-symptom group agents, 11
-calls/pass) · `specialists` (legacy all-24, ≈49 calls/pass). Identical
-blackboard/round-2/consolidator wiring in every mode. N stochastic
-passes per tuple (`VLLM_N_RUNS`, default 10).
+**`SWARM_GRANULARITY` modes:** `routed` (default) — 1 organ-detect
+call → **all** of that organ's deep specialists (uncapped by organ;
+only the global 25-call cap and the optional `PATHOME_MAX_ROUTED_AGENTS`
+soft cap apply). `grouped` — 5 visual-symptom group agents, no
+organ-detect. `specialists` — legacy all-24. Same blackboard / round-2 /
+consolidator wiring in every mode. Every specialist receives the
+canonical (initial) KB + existing state deltas as context and emits
+deltas **against** it (never restating canonical).
+
+**Real swarm vs ensemble.** `VLLM_SWARM_ROUNDS=2` (default) is the real
+swarm — agents interact via the round-2 blackboard (stigmergy).
+`VLLM_SWARM_ROUNDS=1` is a parallel ensemble (agents never see each
+other) — cheaper, but **not** a swarm.
 
 The swarm is **visual-symptoms only** — every agent compares the photo
 to the canonical `visual_symptoms` block and emits nothing about

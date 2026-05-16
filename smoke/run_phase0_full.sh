@@ -40,8 +40,8 @@
 #   VLLM_MODEL              served model id (default Qwen/Qwen2.5-VL-7B-Instruct)
 #
 # Swarm knobs for Phase 0R (smoke defaults — smaller than production):
-#   VLLM_N_RUNS=5           stochastic traces per tuple
-#   VLLM_AGREEMENT_MIN=2    K-of-N agreement
+#   VLLM_N_RUNS=1           stochastic traces per tuple (one-shot)
+#   VLLM_AGREEMENT_MIN=1    K-of-N agreement
 #   VLLM_TEMPERATURE=0.8    per-call sampling temperature
 #   VLLM_TMAX=8             max path length per trace
 # ============================================================================
@@ -75,8 +75,8 @@ if ! command -v claude >/dev/null 2>&1; then
 fi
 
 # Smoke defaults for the swarm — smaller N + Tmax than production.
-export VLLM_N_RUNS="${VLLM_N_RUNS:-5}"
-export VLLM_AGREEMENT_MIN="${VLLM_AGREEMENT_MIN:-2}"
+export VLLM_N_RUNS="${VLLM_N_RUNS:-1}"
+export VLLM_AGREEMENT_MIN="${VLLM_AGREEMENT_MIN:-1}"
 export VLLM_TEMPERATURE="${VLLM_TEMPERATURE:-0.8}"
 export VLLM_TMAX="${VLLM_TMAX:-8}"
 export VLLM_MAX_BACKTRACKS="${VLLM_MAX_BACKTRACKS:-1}"
