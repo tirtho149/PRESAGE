@@ -27,7 +27,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # repo root
 from plantswarm.delta_pipeline import _merge_with_existing
 
-TRACES   = "phase0r_traces (1).jsonl"
+TRACES   = "artifacts/phase0r_traces/phase0r_traces (1).jsonl"
 KB_ROOT  = Path("artifacts/pathome_kb")
 CROPS    = ("Soybean", "Tomato")
 PREFIX_STALE = 147   # records[:147] = stale pre-fix run, excluded

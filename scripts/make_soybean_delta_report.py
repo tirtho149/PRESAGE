@@ -9,7 +9,7 @@ Data pulled live from the post-fix half of the trace file (records
 after the first 147, which are the stale pre-fix run)."""
 import json, subprocess, textwrap, os
 
-TRACES = "phase0r_traces (1).jsonl"
+TRACES = "artifacts/phase0r_traces/phase0r_traces (1).jsonl"
 OUT_MD, OUT_PDF = "Soybean_delta_validation.md", "Soybean_delta_validation.pdf"
 
 recs = [json.loads(l) for l in open(TRACES)]

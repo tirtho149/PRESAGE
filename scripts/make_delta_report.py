@@ -14,7 +14,7 @@ content is pulled live from the post-fix half of the trace file (the
 first 147 records are the stale pre-fix run and are excluded)."""
 import json, subprocess, textwrap, os, sys
 
-TRACES = "phase0r_traces (1).jsonl"
+TRACES = "artifacts/phase0r_traces/phase0r_traces (1).jsonl"
 CROP   = sys.argv[1] if len(sys.argv) > 1 else "Soybean"
 
 # (disease, field, image_id_suffix[, change-note for table B]) per crop.
