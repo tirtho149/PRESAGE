@@ -136,24 +136,51 @@ def _gather_unverified_tuples(
 def _apply_verifier_result(
     state_block: Dict[str, Any],
     verifier_result: Dict[str, Any],
-) -> None:
-    """Replace the unverified deltas in this state's block with the
-    accepted (verified / weakly_supported / provisional / novel_plausible)
-    ones from the verifier. Contradictory deltas are dropped (audit
-    trail lives in __verifier_meta__)."""
-    accepted = verifier_result.get("accepted") or []
+) -> str:
+    """Fold the verifier result back into this state's delta block.
+
+    Returns the tuple outcome: ``"ok"`` (a real verdict was applied) or
+    ``"failed"`` (verifier could not produce a verdict — candidates are
+    preserved as ``unverified``, NEVER silently dropped).
+
+    On success: unverified candidates are replaced by the accepted
+    (verified / weakly_supported / provisional / novel_plausible) ones;
+    contradictory delta *bodies* are persisted under
+    ``__verifier_meta__.dropped_contradictory`` (makes the true rejection
+    rate recoverable, not just a count)."""
     existing: List[Dict[str, Any]] = []
+    candidates: List[Dict[str, Any]] = []
     for d in state_block.get("deltas") or []:
         status = (d.get("verification_status") or "").lower()
         if status and status not in ("unverified", ""):
             existing.append(d)
+        else:
+            candidates.append(d)
+
+    if verifier_result.get("_verifier_failed"):
+        # Preserve every candidate as unverified — do not drop, do not
+        # mislabel as verified. The driver counts this tuple as failed.
+        preserved = verifier_result.get("_preserved_unverified") or candidates
+        state_block["deltas"] = existing + preserved
+        state_block["__verifier_meta__"] = {
+            "failed":          True,
+            "failure_reason":  verifier_result.get("_failure_reason", ""),
+            "preserved_count": len(preserved),
+        }
+        return "failed"
+
+    accepted = verifier_result.get("accepted") or []
+    contradictory = verifier_result.get("contradictory") or []
     state_block["deltas"] = existing + accepted
     state_block["__verifier_meta__"] = {
-        "verified_count":     len(verifier_result.get("verified") or []),
-        "provisional_count":  len(verifier_result.get("provisional") or []),
-        "contradictory_count": len(verifier_result.get("contradictory") or []),
-        "duplicates_count":   len(verifier_result.get("duplicates_of_existing") or []),
+        "failed":              False,
+        "verified_count":      len(verifier_result.get("verified") or []),
+        "provisional_count":   len(verifier_result.get("provisional") or []),
+        "contradictory_count": len(contradictory),
+        "duplicates_count":    len(verifier_result.get("duplicates_of_existing") or []),
+        "dropped_contradictory": contradictory,
     }
+    return "ok"
 
 
 def main() -> None:
@@ -236,6 +263,7 @@ def main() -> None:
     # Run the verifier per tuple.
     print()
     print("  --- verifying ---")
+    n_ok = n_failed = n_error = 0
     for i, t in enumerate(all_tuples, 1):
         print(f"  [{i}/{len(all_tuples)}] {t['crop']}/{t['disease']}/{t['state']} "
               f"({len(t['candidates'])} candidates)")
@@ -250,9 +278,14 @@ def main() -> None:
                 max_turns=args.max_turns,
             )
         except Exception as e:
+            # state_block untouched → candidates remain unverified (preserved).
             print(f"      [ERROR] {type(e).__name__}: {e}; leaving unverified")
+            n_error += 1
             continue
-        _apply_verifier_result(t["_ref_state"], result)
+        if _apply_verifier_result(t["_ref_state"], result) == "failed":
+            n_failed += 1
+        else:
+            n_ok += 1
 
     # Persist updated registries.
     print()
@@ -267,8 +300,28 @@ def main() -> None:
         written.add(path)
         print(f"    wrote {path}")
     print()
-    print(f"  validate_kb: verified {len(all_tuples)} tuples across "
-          f"{len(written)} registry files.")
+    print(f"  validate_kb: tuples={len(all_tuples)} "
+          f"verified_ok={n_ok} failed={n_failed} error={n_error} "
+          f"across {len(written)} registry files.")
+
+    degraded = n_failed + n_error
+    if degraded > 0:
+        allow = bool(os.environ.get("ALLOW_UNVERIFIED"))
+        print()
+        print("  " + "=" * 66)
+        print(f"  !! {degraded} tuple(s) could NOT be verified "
+              f"(failed={n_failed} error={n_error}).")
+        print("  !! Their deltas were PRESERVED as 'unverified' (not dropped),")
+        print("  !! but this KB is NOT fully verified.")
+        if allow:
+            print("  !! ALLOW_UNVERIFIED set — continuing anyway (exit 0).")
+            print("  " + "=" * 66)
+        else:
+            print("  !! Refusing to report success. Fix Claude auth / rate")
+            print("  !! limit and re-run, or set ALLOW_UNVERIFIED=1 to accept")
+            print("  !! a partially-verified KB.")
+            print("  " + "=" * 66)
+            raise SystemExit(3)
 
 
 if __name__ == "__main__":

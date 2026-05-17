@@ -1,4 +1,4 @@
-# PlantSwarm — End-to-End Flow
+# PRESAGE — End-to-End Flow
 
 Submission-ready overview of the current pipeline. All flowcharts are
 Mermaid (renderable on GitHub, mermaid.live, and any standard Markdown

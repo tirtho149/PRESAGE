@@ -38,6 +38,7 @@ cd "$REPO_ROOT"
 CROPS="${CROPS:-smoke}"
 GIT_REMOTE="${GIT_REMOTE:-origin}"
 GIT_BRANCH="${GIT_BRANCH:-main}"
+PY="${PYTHON_BIN:-$(command -v python || command -v python3 || true)}"
 
 case "$CROPS" in
   smoke) PATHOME_ONLY_CROPS="Soybean,Tomato"; SEED_QUICK=1;;
@@ -61,6 +62,13 @@ echo "[1/3] git pull canonical artifacts"
 git pull "$GIT_REMOTE" "$GIT_BRANCH" --ff-only
 mkdir -p logs "${PATHOME_TRACE_DIR:-artifacts/swarm_traces}"
 
+# Pre-condition: the swarm needs Step 1's canonical KB. Without this a
+# missing/empty registry silently produces garbage deltas.
+if [ "${SKIP_HANDOFF_CHECK:-0}" != "1" ] && [ -n "$PY" ]; then
+  "$PY" scripts/check_handoff.py canonical-kb \
+    --kb-root artifacts/pathome_kb --crops "$CROPS"
+fi
+
 # Run the swarm (no verifier on Nova).
 echo
 echo "[2/3] sbatch --wait scripts/submit_phase0r_regional.sh"
@@ -73,6 +81,13 @@ ${VLLM_N_RUNS:+VLLM_N_RUNS=$VLLM_N_RUNS} \
 ${VLLM_AGREEMENT_MIN:+VLLM_AGREEMENT_MIN=$VLLM_AGREEMENT_MIN} \
 ${PATHOME_TRACE_DIR:+PATHOME_TRACE_DIR=$PATHOME_TRACE_DIR} \
   sbatch --wait scripts/submit_phase0r_regional.sh
+
+# Post-condition: the swarm must have produced unverified deltas before we
+# push for Step 3.
+if [ "${SKIP_HANDOFF_CHECK:-0}" != "1" ] && [ -n "$PY" ]; then
+  "$PY" scripts/check_handoff.py unverified-deltas \
+    --kb-root artifacts/pathome_kb --crops "$CROPS"
+fi
 
 # Push unverified KB back.
 echo

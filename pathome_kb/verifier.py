@@ -309,20 +309,32 @@ def verify_candidates(
             "accepted":               [],
         }
 
-    if not _claude_available():
-        passthrough = []
+    def _failed(reason: str) -> Dict[str, List[Dict[str, Any]]]:
+        """Verifier could not produce a real verdict (claude absent /
+        unauthenticated / timed out / empty / unparseable). Preserve every
+        candidate as ``unverified`` — NEVER drop them — and flag the result
+        so the driver fails loud instead of committing a gutted KB."""
+        preserved: List[Dict[str, Any]] = []
         for c in candidates:
             nd = _normalize_delta(c, fallback_status="unverified",
                                    primary_image_id=primary_image_id)
             if nd is not None:
-                passthrough.append(nd)
+                preserved.append(nd)
+        print(f"  VERIFIER FAILED ({reason}): preserving "
+              f"{len(preserved)} candidate(s) as unverified (not dropped)")
         return {
             "verified":               [],
-            "provisional":            passthrough,
+            "provisional":            [],
             "contradictory":          [],
             "duplicates_of_existing": [],
-            "accepted":               passthrough,
+            "accepted":               [],
+            "_verifier_failed":       True,
+            "_failure_reason":        reason,
+            "_preserved_unverified":  preserved,
         }
+
+    if not _claude_available():
+        return _failed("claude CLI not found on PATH")
 
     prompt = VERIFIER_PROMPT.format(
         crop=crop, disease=disease, state=state,
@@ -339,9 +351,18 @@ def verify_candidates(
         max_turns=max_turns,
         timeout_secs=timeout_secs,
     )
+    if raw is None:
+        return _failed("claude_query returned None (auth / timeout / empty)")
     verdict = parse_json_result(raw, f"verifier_{crop}_{disease}_{state}")
-    if not isinstance(verdict, dict):
-        verdict = {}
+    _BUCKET_KEYS = ("verified", "provisional", "contradictory",
+                    "duplicates_of_existing")
+    if not isinstance(verdict, dict) or not any(
+        k in verdict for k in _BUCKET_KEYS
+    ):
+        # A dict that DOES contain ≥1 bucket key (even all-empty) is a real
+        # verdict — Claude legitimately found everything contradictory /
+        # duplicate. Only a missing/keyless verdict is a failure.
+        return _failed("verifier verdict missing all expected buckets")
 
     def _bucket(name: str, fallback: str) -> List[Dict[str, Any]]:
         raw_list = verdict.get(name) or []

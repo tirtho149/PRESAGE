@@ -80,6 +80,17 @@ git pull "$GIT_REMOTE" "$GIT_BRANCH" --ff-only
 mkdir -p data/bugwood_captions data/bugwood_features data/eval_features \
          "$RESULTS_DIR"
 
+# Pre-condition: verified KB present, and if a locally-trained encoder
+# checkpoint was requested it must actually exist (off-shelf-only runs
+# leave PATHOMEOOD_CKPT unset and skip the checkpoint check).
+if [ "${SKIP_HANDOFF_CHECK:-0}" != "1" ]; then
+  "$PY" scripts/check_handoff.py verified-kb \
+    --kb-root artifacts/pathome_kb --crops "$CROPS"
+  if [ -n "${PATHOMEOOD_CKPT:-}" ]; then
+    "$PY" scripts/check_handoff.py checkpoint --path "$PATHOMEOOD_CKPT"
+  fi
+fi
+
 # Step 2 — captions per strategy.
 if [ "${PATHOME_SKIP_CAPTIONS:-0}" != "1" ]; then
   echo

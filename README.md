@@ -1,4 +1,6 @@
-# PlantSwarm + PathomeDB — KB build + dual-track encoder evaluation
+# PRESAGE: Pathology-Retrieval Evidence for Scalable Agentic Grounded Evaluation
+
+> KB build + dual-track encoder evaluation for out-of-distribution crop disease diagnosis
 
 Six-step pipeline. Each step runs in a fixed place (LOCAL or NOVA) and
 hands off to the next step via `git push` / `git pull`:

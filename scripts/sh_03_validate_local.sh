@@ -16,10 +16,15 @@
 # (~2000+ tuples): ~1-3 days. Set MAX_TUPLES for a cost cap.
 #
 # Knobs
-#   CROPS          comma-separated crop allowlist
-#                   "smoke" = "Soybean,Tomato"; "all" = no filter
-#   MAX_TUPLES     cap (0 = no cap)
-#   DRY_RUN        set 1 to print plan without calling Claude
+#   CROPS              comma-separated crop allowlist
+#                       "smoke" = "Soybean,Tomato"; "all" = no filter
+#   MAX_TUPLES         cap (0 = no cap)
+#   DRY_RUN            set 1 to print plan without calling Claude
+#   SKIP_CLAUDE_PROBE  set 1 to skip the authenticated claude pre-flight
+#                       (offline / CI)
+#   ALLOW_UNVERIFIED   set 1 to accept a partially-verified KB (validate_kb
+#                       exits 3 by default if any tuple could not be verified)
+#   SKIP_HANDOFF_CHECK set 1 to skip the step-handoff pre/post artifact checks
 # ============================================================================
 set -euo pipefail
 
@@ -50,10 +55,33 @@ if ! command -v claude >/dev/null 2>&1; then
   exit 2
 fi
 
+# Authenticated pre-flight: a present-but-unauthenticated / rate-limited
+# `claude` would otherwise let validate_kb run, fail every tuple, and
+# (without this) waste the whole run. Probe cheaply up front.
+if [ "${SKIP_CLAUDE_PROBE:-0}" != "1" ] && [ "${DRY_RUN:-0}" != "1" ]; then
+  echo
+  echo "[0/3] claude auth pre-flight"
+  if ! printf 'Reply with the single word OK.' \
+       | timeout 60 claude -p --output-format json >/dev/null 2>&1; then
+    echo "ERROR: 'claude' is on PATH but the pre-flight call failed."
+    echo "       Likely not authenticated or rate-limited. Run 'claude'"
+    echo "       once interactively to authenticate (or wait out the rate"
+    echo "       limit), then retry. Set SKIP_CLAUDE_PROBE=1 to bypass."
+    exit 2
+  fi
+  echo "  ok"
+fi
+
 # Pull Nova's unverified deltas.
 echo
 echo "[1/3] git pull unverified-deltas KB from $GIT_REMOTE $GIT_BRANCH"
 git pull "$GIT_REMOTE" "$GIT_BRANCH" --ff-only
+
+# Pre-condition: Step 2's unverified deltas must be present to verify.
+if [ "${SKIP_HANDOFF_CHECK:-0}" != "1" ]; then
+  "$PY" scripts/check_handoff.py unverified-deltas \
+    --kb-root artifacts/pathome_kb --crops "$CROPS"
+fi
 
 # Validate.
 echo
@@ -66,6 +94,14 @@ if [ "${DRY_RUN:-0}" = "1" ]; then
   echo
   echo "DRY_RUN=1 — no changes to commit."
   exit 0
+fi
+
+# Post-condition: validate_kb already exits 3 on degraded runs (unless
+# ALLOW_UNVERIFIED=1); this is the belt-and-braces check that no delta is
+# left 'unverified' before we push a KB Step 4/5 will train/eval on.
+if [ "${SKIP_HANDOFF_CHECK:-0}" != "1" ] && [ "${ALLOW_UNVERIFIED:-0}" != "1" ]; then
+  "$PY" scripts/check_handoff.py verified-kb \
+    --kb-root artifacts/pathome_kb --crops "$CROPS"
 fi
 
 # Push verified KB.

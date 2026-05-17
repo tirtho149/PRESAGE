@@ -36,8 +36,10 @@ def _make_candidate(field: str, image_shows: str, support: int = 3) -> dict:
     }
 
 
-def test_verifier_offline_passthrough(monkeypatch):
-    """No Claude available -> candidates pass through as 'unverified'."""
+def test_verifier_offline_is_failure_not_passthrough(monkeypatch):
+    """No Claude binary -> verifier FAILS (loud), candidates preserved as
+    'unverified' under _preserved_unverified, NEVER routed to 'accepted'
+    (which would silently let an unverified KB look verified)."""
     from pathome_kb import verifier
 
     monkeypatch.setattr(verifier, "_claude_available", lambda: False)
@@ -52,15 +54,89 @@ def test_verifier_offline_passthrough(monkeypatch):
         candidates=candidates,
         primary_image_id="bugwood::1568038",
     )
+    assert verdict["_verifier_failed"] is True
+    assert verdict["accepted"] == []
+    assert verdict["provisional"] == []
     assert verdict["verified"] == []
-    assert verdict["contradictory"] == []
-    # All passthrough land in 'provisional' + 'accepted'.
-    assert len(verdict["provisional"]) == 2
-    assert len(verdict["accepted"]) == 2
-    for d in verdict["accepted"]:
+    preserved = verdict["_preserved_unverified"]
+    assert len(preserved) == 2
+    for d in preserved:
         assert d["verification_status"] == "unverified"
         assert d["web_support"] == []
         assert d["swarm_support"] >= 1
+
+
+def test_verifier_failed_when_claude_returns_none(monkeypatch):
+    """claude_query -> None (auth fail / timeout / empty) is a failure:
+    candidates preserved, NOT dropped, NOT marked verified."""
+    from pathome_kb import verifier
+
+    monkeypatch.setattr(verifier, "_claude_available", lambda: True)
+    monkeypatch.setattr(verifier, "claude_query", lambda **kw: None)
+
+    candidates = [_make_candidate("lesion_morphology", "yellow halos", 4)]
+    verdict = verifier.verify_candidates(
+        crop="Soybean", disease="Charcoal Rot", state="Alabama",
+        canonical=CANON, existing_kb_deltas=[], candidates=candidates,
+    )
+    assert verdict["_verifier_failed"] is True
+    assert "claude_query returned None" in verdict["_failure_reason"]
+    assert verdict["accepted"] == []
+    assert len(verdict["_preserved_unverified"]) == 1
+    assert verdict["_preserved_unverified"][0]["verification_status"] == "unverified"
+
+
+def test_verifier_failed_when_verdict_missing_buckets(monkeypatch):
+    """Claude returned something, but it has none of the expected bucket
+    keys -> failure (do not silently drop every candidate)."""
+    from pathome_kb import verifier
+
+    monkeypatch.setattr(verifier, "_claude_available", lambda: True)
+    monkeypatch.setattr(verifier, "claude_query",
+                        lambda **kw: json.dumps({"oops": "model rambled"}))
+
+    candidates = [_make_candidate("severity", "whole-field collapse")]
+    verdict = verifier.verify_candidates(
+        crop="X", disease="Y", state="Z",
+        canonical=CANON, existing_kb_deltas=[], candidates=candidates,
+    )
+    assert verdict["_verifier_failed"] is True
+    assert verdict["accepted"] == []
+    assert len(verdict["_preserved_unverified"]) == 1
+
+
+def test_verifier_all_contradictory_is_real_result_not_failure(monkeypatch):
+    """A valid verdict where every candidate is contradictory is a REAL
+    result (accepted == []), NOT a failure — must not be flagged."""
+    from pathome_kb import verifier
+
+    monkeypatch.setattr(verifier, "_claude_available", lambda: True)
+    canned = {
+        "verified": [],
+        "provisional": [],
+        "contradictory": [{
+            "field": "look_alikes",
+            "canonical_says": "(not specified)",
+            "image_shows": "actually bacterial blight",
+            "image_quote": "water-soaked halos",
+            "image_id": "bugwood::1568038",
+            "swarm_support": 1,
+            "verification_status": "contradictory",
+            "web_support": [{"url": "https://aps.org/x", "quote": "..."}],
+            "reasoning": "contradicted",
+        }],
+        "duplicates_of_existing": [],
+    }
+    monkeypatch.setattr(verifier, "claude_query", lambda **kw: json.dumps(canned))
+
+    verdict = verifier.verify_candidates(
+        crop="Soybean", disease="Charcoal Rot", state="Alabama",
+        canonical=CANON, existing_kb_deltas=[],
+        candidates=[_make_candidate("look_alikes", "blight-like")],
+    )
+    assert "_verifier_failed" not in verdict
+    assert verdict["accepted"] == []
+    assert len(verdict["contradictory"]) == 1
 
 
 def test_verifier_parses_claude_verdict(monkeypatch):

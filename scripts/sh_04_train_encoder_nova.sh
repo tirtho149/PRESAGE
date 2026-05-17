@@ -66,6 +66,12 @@ echo "[1/4] git pull verified KB"
 git pull "$GIT_REMOTE" "$GIT_BRANCH" --ff-only
 mkdir -p logs data/bugwood_captions data/wds_shards train_and_eval/checkpoints
 
+# Pre-condition: never train on a half-verified KB.
+if [ "${SKIP_HANDOFF_CHECK:-0}" != "1" ]; then
+  "$PY" scripts/check_handoff.py verified-kb \
+    --kb-root artifacts/pathome_kb --crops "$CROPS"
+fi
+
 # Build captions for the strategy this training variant needs.
 # Resolve the strategy from the variant tag using pathomeood_variants.sh.
 # shellcheck disable=SC1091

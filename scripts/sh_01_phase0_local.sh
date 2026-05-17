@@ -82,6 +82,13 @@ else
   "$PY" -m pathome_kb --csv "$PATHOME_USABLE_CSV"
 fi
 
+# Post-condition: Step 1 must have produced a real canonical KB before we
+# push it for Step 2 to consume.
+if [ "${SKIP_HANDOFF_CHECK:-0}" != "1" ]; then
+  "$PY" scripts/check_handoff.py canonical-kb \
+    --kb-root artifacts/pathome_kb --crops "$CROPS"
+fi
+
 # Stage + commit.
 echo
 echo "[2/3] git add canonical artifacts"
