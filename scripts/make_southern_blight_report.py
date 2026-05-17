@@ -3,7 +3,7 @@
 report (markdown -> PDF via pandoc/xelatex). One-off analysis script."""
 import json, subprocess, textwrap, os
 
-TRACES = "phase0r_traces.jsonl"
+TRACES = "artifacts/phase0r_traces/phase0r_traces.jsonl"
 REG    = "artifacts/pathome_kb/Soybean/final_registry.json"
 PROFILE, IMG = "Soybean::Southern Blight", "bugwood::5581651"
 OUT_MD, OUT_PDF = "Southern_Blight_validation.md", "Southern_Blight_validation.pdf"
