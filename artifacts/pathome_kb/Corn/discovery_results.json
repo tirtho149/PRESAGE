@@ -1,0 +1,476 @@
+{
+  "crop": "Corn",
+  "candidate_sources": [
+    {
+      "url": "https://extension.umn.edu/corn-pest-management/anthracnose-leaf-blight-corn",
+      "title": "Anthracnose leaf blight on corn | UMN Extension",
+      "snippet": "The first symptoms of anthracnose leaf blight are water-soaked, oval lesions with tan centers and reddish-brown borders. Symptoms begin on lower corn leaves early in the growing season and then develop on the upper leaves late in the season. Lesions can enlarge up to 5 to 6 inches long and may join and blight the entire leaf. Caused by the fungus Colletotrichum graminicola; includes management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose leaf blight",
+        "Anthracnose",
+        "Anthracnose stalk rot"
+      ]
+    },
+    {
+      "url": "https://cropprotectionnetwork.org/encyclopedia/anthracnose-leaf-blight-of-corn",
+      "title": "Anthracnose Leaf Blight of Corn | Crop Protection Network",
+      "snippet": "Anthracnose leaf blight of corn is caused by the fungus Colletotrichum graminicola. The same pathogen also produces a stalk rot and top dieback. Dark, raised fruiting bodies (acervuli) with spines develop on dead tissue. Detailed information on symptoms, disease cycle, favorable conditions (high temperatures and prolonged wet weather), and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose leaf blight",
+        "Anthracnose stalk rot",
+        "Anthracnose",
+        "Top dieback"
+      ]
+    },
+    {
+      "url": "https://cropwatch.unl.edu/plant-disease/corn/anthracnose/",
+      "title": "Anthracnose in Corn | CropWatch | Nebraska",
+      "snippet": "Anthracnose in corn is caused by the Colletotrichum graminicola fungus, which can cause early- and late-season leaf blight, stalk rot, and 'top-kill' or 'die-back.' Anthracnose stalk rot appears as dark, sunken lesions running longitudinally along the stalk, and internally the pith becomes blackened and decays, weakening stalk integrity and causing lodging.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose",
+        "Anthracnose leaf blight",
+        "Anthracnose stalk rot",
+        "Top dieback"
+      ]
+    },
+    {
+      "url": "https://ipm.mgcafe.uky.edu/content/anthracnose-corn",
+      "title": "Anthracnose in Corn | Integrated Pest Management Program (University of Kentucky)",
+      "snippet": "Anthracnose of corn, caused by Colletotrichum graminicola, can occur as a leaf blight phase early and late in the season and as a stalk rot phase after tasseling. The disease favors high temperatures and prolonged wet weather. Severe levels of anthracnose can cause significant lodging and yield loss.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose",
+        "Anthracnose leaf blight",
+        "Anthracnose stalk rot"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/corn-pest-management/gosss-bacterial-wilt-and-leaf-blight-corn",
+      "title": "Goss's bacterial wilt and leaf blight on corn | UMN Extension",
+      "snippet": "Goss's bacterial wilt and leaf blight is caused by Clavibacter michiganensis subsp. nebraskensis. Primary leaf symptoms are elongated tan lesions with irregular margins extending parallel to the veins; dark water-soaked spots ('freckles') develop in the lesions and shiny patches of dried bacterial ooze appear like dry varnish. In the less common systemic wilt phase, infection discolors xylem elements or causes a slimy stalk rot, followed by wilting and plant death. Management includes resistant hybrids and crop rotation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Goss's bacterial wilt and leaf blight",
+        "bacterial leaf blight",
+        "slimy stalk rot"
+      ]
+    },
+    {
+      "url": "https://cropprotectionnetwork.org/publications/an-overview-of-gosss-bacterial-wilt-and-blight",
+      "title": "An Overview of Goss's Bacterial Wilt and Blight",
+      "snippet": "Goss's bacterial wilt and blight, caused by Clavibacter michiganensis subsp. nebraskensis, infects corn leaves that have been wounded by hail, sand-blasting, rain, wind, and storms. The disease produces tan-to-gray leaf lesions with dark freckles and bacterial ooze, and a systemic wilt phase that can cause stalk rot and plant death. Recommended management includes resistant hybrids, crop rotation, and residue management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Goss's bacterial wilt and blight",
+        "bacterial leaf blight",
+        "bacterial wilt"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/corn-zea-mays-bacterial-stalk-rot",
+      "title": "Corn (Zea mays)-Bacterial Stalk Rot | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Bacterial stalk rot of corn is caused by Dickeya zeae (formerly Erwinia chrysanthemi pv. zeae). Typical symptoms include a soft, slimy rot of the stalk, leaf wilting, and plant death; warm temperatures (86-95F) and high relative humidity promote disease development. Management emphasizes prevention, resistant cultivars, and avoiding excessive irrigation and wounding.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "bacterial stalk rot",
+        "bacterial top rot"
+      ]
+    },
+    {
+      "url": "https://cropprotectionnetwork.org/encyclopedia/physoderma-brown-spot-of-corn",
+      "title": "Physoderma Brown Spot of Corn | Crop Protection Network",
+      "snippet": "Physoderma brown spot is caused by the fungus Physoderma maydis, a chytridiomycete that produces motile zoospores. Leaf lesions are numerous, very small (about 1/4 inch diameter), round to oval, yellowish to brown, and occur in broad bands across the leaf. Dark purplish to black oval spots occur on the midrib. Infection requires light, free water, and warm temperatures (75-85F); corn is most susceptible at V5 to V9.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Physoderma brown spot",
+        "Physoderma stalk rot",
+        "Physoderma node rot"
+      ]
+    },
+    {
+      "url": "https://www.udel.edu/academics/colleges/canr/cooperative-extension/fact-sheets/physoderma-brown-spot/",
+      "title": "Physoderma Brown Spot | University of Delaware Cooperative Extension",
+      "snippet": "Physoderma brown spot of corn is caused by Physoderma maydis. Symptoms include numerous small round-to-oval yellowish-to-brown leaf lesions in broad bands, with dark purplish to black spots on the midrib; symptoms also occur on the stalk, leaf sheath, and husks and typically appear prior to tasseling. The pathogen survives as sporangia for 2 to 7 years in soil and crop debris. Management includes labeled foliar fungicides, crop rotation, and tillage.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Physoderma brown spot"
+      ]
+    },
+    {
+      "url": "https://ipm.illinois.edu/diseases/rpds/210.pdf",
+      "title": "Physoderma Brown Spot of Corn - Report on Plant Diseases No. 210 | University of Illinois IPM",
+      "snippet": "University of Illinois Extension Report on Plant Diseases describing Physoderma brown spot of corn caused by Physoderma maydis. Covers symptoms on leaves (small yellowish to brown lesions in bands, dark midrib spots), stalks, sheaths and husks, disease cycle involving sporangia germinating in water-filled whorls to release zoospores that infect meristematic tissue, and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Physoderma brown spot"
+      ]
+    },
+    {
+      "url": "https://crops.extension.iastate.edu/cropnews/2015/07/physoderma-brown-spot-and-stalk-rot",
+      "title": "Physoderma Brown Spot and Stalk Rot | Iowa State University Integrated Crop Management",
+      "snippet": "Iowa State University Extension article on Physoderma brown spot and Physoderma stalk rot of corn, caused by Physoderma maydis. Describes foliar symptoms (alternating bands of infected and healthy tissue), node rot causing stalks to snap at lower nodes (sixth through eighth), favorable conditions (warm 75-85F, wet conditions pooling water in the whorl during V3-V9), and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Physoderma brown spot",
+        "Physoderma stalk rot",
+        "Physoderma node rot"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-cer-02",
+      "title": "Common Rust of Corn | Ohioline",
+      "snippet": "Common rust is caused by the fungus Puccinia sorghi. Symptoms initially occur as yellow flecks on the leaf surface that rapidly develop into oval to elongate reddish-brown, powdery pustules that break through the leaf surface. As the season progresses the reddish-orange pustules turn black. Disease development is favored by cool temperatures (60-74F) and high relative humidity.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Common rust of corn",
+        "Puccinia sorghi"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/corn-pest-management/common-rust-corn",
+      "title": "Common rust on corn | UMN Extension",
+      "snippet": "Common rust, caused by Puccinia sorghi, produces reddish-brown pustules on upper and lower leaf surfaces. Spores are blown northward during the growing season from subtropical and tropical regions where the fungus overwinters on corn or wood sorrel, the alternate host. Includes identification, conditions favoring disease, and management options.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Common rust",
+        "Puccinia sorghi"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/10.1079/cabicompendium.45872",
+      "title": "Puccinia sorghi (common rust of maize) | CABI Compendium",
+      "snippet": "Puccinia sorghi, common rust of maize, is a rust fungus that infects corn and Oxalis species. CABI datasheet covering host range, distribution, symptoms (golden-brown to cinnamon-brown pustules on leaves, husks, tassels and stalks), biology, and integrated disease management.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Common rust of maize",
+        "Puccinia sorghi"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/common-rust-of-sweet-corn/",
+      "title": "Common Rust of Sweet Corn | Cornell Vegetables",
+      "snippet": "Common rust of sweet corn is caused by Puccinia sorghi. Cornell vegetable disease factsheet describing symptoms, oval cinnamon-brown pustules, conditions favoring infection (cool, humid weather), disease cycle and management for sweet corn growers.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Common rust of sweet corn",
+        "Puccinia sorghi"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+      "title": "Corn Rusts: Common and Southern Rust | NC State Extension Publications",
+      "snippet": "NC State Extension publication comparing common rust (Puccinia sorghi) and southern rust (Puccinia polysora) of corn, including symptom differences, pustule color and distribution, favorable conditions, and management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Common rust",
+        "Southern rust",
+        "Puccinia sorghi",
+        "Puccinia polysora"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/common-smut-on-corn",
+      "title": "Common Smut on Corn | NC State Extension Publications",
+      "snippet": "Common smut is caused by the fungus, Ustilago maydis. It causes yellowing of green tissue and the production of light green or white to gray, fleshy galls on any part of the corn plant, including leaves, tassels, stalks and ears. Galls are filled with black, powdery teliospores released when the galls rupture; teliospores overwinter in the soil and can survive 5-7 years.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Common smut",
+        "Corn smut"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/corn-pest-management/common-smut-corn",
+      "title": "Common smut on corn | UMN Extension",
+      "snippet": "Common smut, caused by Ustilago maydis, produces galls (tumors) on ears, tassels, stalks, and leaves. Galls are initially white to light green, turning dark as membranes rupture and release dark spores. Management includes selecting adapted/resistant hybrids, balanced nitrogen fertilization, crop rotation, and avoiding mechanical injury. There is no chemical control.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Common smut",
+        "Corn smut"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/CornSmut.aspx",
+      "title": "Common smut of corn | APSnet Plant Disease Lessons",
+      "snippet": "Common smut of corn, caused by Ustilago maydis (also known as boil smut), is identified by tumor-like galls forming on actively growing host tissues that contain masses of dark, sooty teliospores. Spores germinate in warm humid conditions and infect young tissue through wounds or directly. The fungus overwinters as teliospores in soil and debris.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Common smut of corn",
+        "Corn smut",
+        "Boil smut"
+      ]
+    },
+    {
+      "url": "https://hort.extension.wisc.edu/articles/common-corn-smut/",
+      "title": "Common Corn Smut | Wisconsin Horticulture Extension",
+      "snippet": "Common corn smut, caused by the fungus Ustilago maydis, is also known as blister smut or boil smut, and the edible immature galls are called huitlacoche. Whitish galls form on actively growing tissue and later rupture to release dark spores. Control by clearing planting-area debris and crop rotation, as teliospores overwinter in soil and debris.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Common corn smut",
+        "Blister smut",
+        "Boil smut",
+        "Huitlacoche"
+      ]
+    },
+    {
+      "url": "https://ipm.missouri.edu/cropPest/2011/5/Crazy-Top-of-Corn/",
+      "title": "Crazy Top of Corn â€” University of Missouri Integrated Pest Management",
+      "snippet": "Crazy top of corn is caused by the downy mildew fungus, Sclerophthora macrospora. The disease causes deformation of plant tissues including excessive tillering, rolling of leaves, proliferation of the tassel until it resembles a mass of leafy structures, and stunting of corn plants. Crazy top is likely to occur when young corn plants are subjected to saturated soil conditions for 24-48 hours from planting to about the five-leaf stage of growth.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "crazy top of corn",
+        "downy mildew",
+        "Sclerophthora macrospora"
+      ]
+    },
+    {
+      "url": "https://crops.extension.iastate.edu/cropnews/2009/07/signs-crazy-top-corn",
+      "title": "Signs of Crazy Top in Corn â€” Iowa State University Integrated Crop Management",
+      "snippet": "Crazy top is a downy mildew disease of corn caused by Sclerophthora macrospora. Leaves of infected plants may be narrow and straplike in shape, leathery in texture, and yellow or yellow striped; the tassel proliferates into a mass of leafy structures and infected plants are usually barren. The pathogen produces oospores that persist in infested crop residue and soil.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "crazy top",
+        "downy mildew",
+        "Sclerophthora macrospora"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.44643",
+      "title": "Peronosclerospora sorghi (sorghum downy mildew) â€” CABI Compendium",
+      "snippet": "Peronosclerospora sorghi infects maize and sorghum around the world. Symptoms of sorghum downy mildew include chlorosis, abundant downy white growth (sporangiophores and sporangia) on the lower leaf surface, leaf shredding, and progressive bleaching of leaf tissue in streaks or stripes. The disease is managed mainly through genetic resistance, clean seed, chemical control, crop rotation, and strategic planting timing.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "sorghum downy mildew",
+        "Peronosclerospora sorghi",
+        "downy mildew"
+      ]
+    },
+    {
+      "url": "https://www.ars.usda.gov/ARSUserFiles/opmp/Corn%20Downy%20Mildews%20Recovery%20Plan%20Revised%202013.pdf",
+      "title": "Recovery Plan for Philippine Downy Mildew and Brown Stripe Downy Mildew of Corn â€” USDA ARS",
+      "snippet": "Downy mildew pathogens on corn include Peronosclerospora and Sclerophthora species. Disease symptoms include severe chlorosis in the upper leaves, stunting, deformation, and lodging; infections by Peronosclerospora maydis may lead to death in susceptible maize varieties. Early field symptoms alone cannot be used for diagnosis of Philippine downy mildew (PDM) or brown stripe downy mildew (BSDM).",
+      "source_type": "USDA",
+      "diseases_mentioned": [
+        "Philippine downy mildew",
+        "brown stripe downy mildew",
+        "downy mildew",
+        "Peronosclerospora maydis"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/10.1079/cabicompendium.19158",
+      "title": "Stenocarpella maydis (ear rot of maize) | CABI Compendium",
+      "snippet": "Stenocarpella maydis (previously known as Diplodia maydis) causes dry rot of ears and stalks of maize â€” ear rot, stalk rot and seedling blight. The ear and grain rotting phases are favored by excessive rainfall during silking to harvest, with infection of the ear usually occurring through the shank. Datasheet covers Identity, Distribution, Hosts, Diagnosis, Biology & Ecology, Seedborne Aspects, Impacts and Prevention/Control.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "dry rot of ears and stalks of maize",
+        "Diplodia ear rot",
+        "Diplodia stalk rot",
+        "seedling blight",
+        "Stenocarpella maydis",
+        "Diplodia maydis"
+      ]
+    },
+    {
+      "url": "https://guide.utcrops.com/corn/corn-ear-rots/diplodia-ear-rot/",
+      "title": "Diplodia Ear Rot - UT Crops Pest Guides",
+      "snippet": "Diplodia ear rot is caused by Stenocarpella maydis, also the causal agent of Diplodia stalk rot. Infected husks are often bleached while the rest of the plant remains green. White mold starts at the base of the ear, and as the rot progresses the whole ear becomes grayish-brown. Raised black bumps (pycnidia) develop on the moldy husk or kernels late in the season.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Diplodia ear rot",
+        "Diplodia stalk rot",
+        "Stenocarpella maydis"
+      ]
+    },
+    {
+      "url": "https://www.plantpath.k-state.edu/extension/field-crops/documents/corn/Diplodia_Stalk_and_Ear_Rot.pdf",
+      "title": "Diplodia Stalk & Ear Rot - Kansas State University Plant Pathology Extension",
+      "snippet": "Diplodia stalk and ear rot of corn is caused by the fungus Stenocarpella maydis. Stalk rot symptoms include white mycelium in lower stalks and tiny black specks (pycnidia) embedded in the rind of the lower stalk, with shredded inner stalk tissue. The most important source of inoculum is debris of diseased corn stalks from the previous crop; reducing surface residue through tillage and selecting resistant hybrids are effective management practices.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Diplodia stalk rot",
+        "Diplodia ear rot",
+        "Stenocarpella maydis"
+      ]
+    },
+    {
+      "url": "http://extension.cropsciences.illinois.edu/fieldcrops/corn/diplodia_stalk_rot/",
+      "title": "Diplodia Stalk Rot - University of Illinois Extension, Crop Sciences",
+      "snippet": "Diplodia stalk rot of corn, caused by Stenocarpella maydis, produces brown to tan lesions on lower internodes, premature plant death, and stalk lodging. Numerous small black pycnidia become embedded in the rind and pith. Disease is favored by dry weather early in the season followed by wet conditions after silking; management includes crop rotation, residue management, balanced fertility and resistant hybrids.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Diplodia stalk rot",
+        "Stenocarpella maydis"
+      ]
+    },
+    {
+      "url": "https://gd.eppo.int/taxon/DIPDMA/datasheet",
+      "title": "Stenocarpella maydis (DIPDMA) - EPPO Global Database Datasheet",
+      "snippet": "EPPO datasheet for Stenocarpella maydis, the cause of dry rot / Diplodia ear rot and stalk rot of maize. Covers identity, host plants (Zea mays), geographical distribution, biology, symptoms on ears, stalks and seedlings, and phytosanitary measures. Synonyms include Diplodia maydis and Diplodia zeae.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Diplodia ear rot",
+        "Diplodia stalk rot",
+        "dry rot of maize",
+        "Stenocarpella maydis",
+        "Diplodia maydis",
+        "Diplodia zeae"
+      ]
+    },
+    {
+      "url": "https://extensionpubs.unl.edu/publication/g1675/2006/html/view",
+      "title": "Goss's Bacterial Wilt and Leaf Blight of Corn | University of Nebraska-Lincoln Extension",
+      "snippet": "Goss's bacterial wilt and leaf blight of corn is caused by Clavibacter michiganensis subsp. nebraskensis. The bacterium overwinters in crop residue and enters plants through wounds from hail, wind and sand. Symptoms include large tan to gray elongated lesions with wavy water-soaked margins and dark discontinuous 'freckles', plus systemic wilt with orange vascular discoloration. Disease is favored by warm conditions and severity increases after silking.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Goss's Bacterial Wilt and Leaf Blight of Corn",
+        "Goss's wilt"
+      ]
+    },
+    {
+      "url": "https://www.extension.purdue.edu/extmedia/bp/BP-81-W.pdf",
+      "title": "Goss's Bacterial Wilt and Leaf Blight | Purdue Extension (BP-81-W)",
+      "snippet": "Purdue Extension publication on Goss's bacterial wilt and leaf blight of corn, caused by Clavibacter michiganensis subsp. nebraskensis. Describes the leaf blight phase (elongated lesions with freckles and bacterial ooze) and systemic wilt phase, conditions favoring infection, and management through crop rotation, tillage, weed control and resistant hybrids. Fungicides do not control this bacterial disease.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Goss's Bacterial Wilt and Leaf Blight",
+        "Goss's wilt"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/gray-leaf-spot-in-corn",
+      "title": "Gray Leaf Spot in Corn | NC State Extension Publications",
+      "snippet": "Gray leaf spot symptoms begin as small brown lesions in the lower canopy and travel upwards as the season progresses. Symptomatic leaves have small, tan, rectangular lesions surrounded by yellow halos; mature lesions are long, gray to tan, and rectangular, limited by leaf veins. The pathogen is the fungus Cercospora zeae-maydis. Conditions favoring infection include moderate to warm temperatures during extended periods of high humidity. Management involves resistant hybrids, rotation with non-hosts, and residue management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gray Leaf Spot"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/corn-pest-management/gray-leaf-spot-corn",
+      "title": "Gray leaf spot on corn | UMN Extension",
+      "snippet": "Gray leaf spot of corn, caused by the fungus Cercospora zeae-maydis, produces long, narrow, rectangular tan to gray lesions delimited by leaf veins. Symptoms first appear on lower leaves and progress up the plant. The disease is favored by warm, humid weather, and is more severe in fields with corn-on-corn rotations and minimum tillage. Management includes resistant hybrids, crop rotation, tillage/residue management, and foliar fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gray leaf spot"
+      ]
+    },
+    {
+      "url": "https://cropprotectionnetwork.org/encyclopedia/gray-leaf-spot-of-corn",
+      "title": "Gray Leaf Spot of Corn | Crop Protection Network",
+      "snippet": "Gray leaf spot, caused by Cercospora zeae-maydis, first appears on lower leaves about two to three weeks before tasseling. Lesions are long (up to 2 inches), narrow, rectangular, and light tan, later turning gray, and are delimited by leaf veins. Warm (70-90 F) and humid (>= 90%) conditions with prolonged leaf wetness drive sporulation and spread. Management techniques include crop resistance, crop rotation, residue management, fungicides, and weed control.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gray Leaf Spot"
+      ]
+    },
+    {
+      "url": "https://www.extension.purdue.edu/extmedia/bp/bp-56-w.pdf",
+      "title": "Gray Leaf Spot (BP-56-W) | Purdue Extension",
+      "snippet": "Purdue Extension factsheet on gray leaf spot of corn caused by Cercospora zeae-maydis. Describes symptom development from rectangular tan lesions bounded by veins, the influence of warm humid weather and crop residue on disease, and integrated management with resistant hybrids, rotation, tillage, and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gray Leaf Spot"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/corn-pest-management/northern-corn-leaf-blight",
+      "title": "Northern corn leaf blight | UMN Extension",
+      "snippet": "Northern corn leaf blight (NCLB) is a disease of corn caused by the fungus Exserohilum turcicum. The characteristic symptom is one-to-six inch long cigar-shaped gray- to tan-colored lesions on the leaves. Lesions begin on the lower leaves and then spread to upper leaves. The fungus overwinters on previously infected corn residue as conidia and mycelia. Severe outbreaks can cause up to 30-50% yield loss in dent corn if the disease is established before tassel.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Northern corn leaf blight"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-cer-10",
+      "title": "Northern Corn Leaf Blight | Ohioline - The Ohio State University",
+      "snippet": "Northern corn leaf blight, caused by the fungus Exserohilum turcicum, produces cigar-shaped lesions on leaves. Symptoms generally appear first on the lower leaves and may move higher in the canopy as the disease progresses. The disease is favored by heavy dew, frequent rainfall, high humidity, and moderate temperatures. Includes hybrid resistance, crop rotation, and fungicide management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Northern Corn Leaf Blight"
+      ]
+    },
+    {
+      "url": "https://cropprotectionnetwork.org/publications/an-overview-of-northern-corn-leaf-blight",
+      "title": "An Overview of Northern Corn Leaf Blight",
+      "snippet": "Early symptoms of NCLB appear as small, light-colored elliptical lesions that develop parallel to leaf margins or veins with a water-soaked appearance. Lesions expand 3 to 15 cm and become tan with distinct, dark zones of sporulation, forming the classic cigar-shape. The disease is most damaging during prolonged periods of dew and moderate temperatures (64-80 degrees F). Caused by Exserohilum turcicum, which has multiple races.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Northern Corn Leaf Blight",
+        "NCLB"
+      ]
+    },
+    {
+      "url": "https://www.extension.purdue.edu/extmedia/bp/bp-84-w.pdf",
+      "title": "Northern Corn Leaf Blight (BP-84-W) | Purdue Extension",
+      "snippet": "Purdue Extension factsheet on Northern Corn Leaf Blight covering the cigar-shaped lesions caused by the fungus Exserohilum turcicum, disease cycle, environmental conditions favoring infection (extended leaf wetness and moderate temperatures), and management through resistant hybrids, tillage, and foliar fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Northern Corn Leaf Blight"
+      ]
+    },
+    {
+      "url": "https://cropwatch.unl.edu/plant-disease/corn/southern-rust/",
+      "title": "Southern Rust | CropWatch | Nebraska",
+      "snippet": "Southern rust (Puccinia polysora) produces orange to light brown raised pustules, circular to oval, primarily on upper leaf surfaces and sometimes on stalks, husks, and leaf sheaths. The disease thrives in warm, humid conditions (77-82 F) and can rapidly lead to an epidemic. Includes identification, conditions favoring disease, and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "southern rust",
+        "common rust"
+      ]
+    },
+    {
+      "url": "https://cropprotectionnetwork.org/publications/an-overview-of-southern-rust",
+      "title": "An Overview of Southern Rust",
+      "snippet": "Crop Protection Network publication on southern rust of corn caused by Puccinia polysora. Pustules are orange to tan, circular or oval, about 1/16 inch in diameter, developing mostly on upper leaf surfaces. Disease is favored by high temperature (~80 F) and high relative humidity; latent period can be as short as nine days. Covers scouting, fungicide timing, and resistant cultivars.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "southern rust",
+        "common rust"
+      ]
+    },
+    {
+      "url": "https://ipm.ca.uky.edu/content/southern-rust-corn",
+      "title": "Southern Rust in Corn | Integrated Pest Management Program | University of Kentucky",
+      "snippet": "University of Kentucky IPM page on southern rust of corn (Puccinia polysora). Describes symptoms, the wind-dispersed urediniospores that arrive from tropical/subtropical regions, environmental conditions favoring infection, scouting, and fungicide management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "southern rust"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s42483-021-00102-0",
+      "title": "Southern corn rust caused by Puccinia polysora Underw: a review | Phytopathology Research",
+      "snippet": "Peer-reviewed review of southern corn rust caused by Puccinia polysora Underw., covering the pathogen biology, epidemiology, host resistance genes, geographic spread, and integrated management strategies for the disease.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "southern corn rust",
+        "southern rust"
+      ]
+    },
+    {
+      "url": "https://ipm.mgcafe.uky.edu/content/stenocarpella-diplodia-ear-rot",
+      "title": "Stenocarpella (Diplodia) Ear Rot | Integrated Pest Management Program (University of Kentucky)",
+      "snippet": "Stenocarpella (formerly known as Diplodia) ear rot is characterized by a white mold found growing between the kernels. The mold usually begins at the ear base and moves up from the shank, and black pycnidia may be scattered on husks, floral bracts and sides of kernels. Husks may become bleached and infected ears are often lightweight and stand upright. Corn is most susceptible at and up to three weeks after silk emergence (R1). Disease is favored in no-till fields continuously planted to corn; management includes resistant hybrids, residue management, and prompt cooling/drying of infected grain.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Stenocarpella ear rot",
+        "Diplodia ear rot"
+      ]
+    },
+    {
+      "url": "https://agcrops.osu.edu/newsletter/corn-newsletter/2016-30/diplodia-ear-rot",
+      "title": "Diplodia Ear Rot | Agronomic Crops Network (The Ohio State University)",
+      "snippet": "Diplodia ear rot, caused by the fungus Stenocarpella maydis, produces a thick white mold that grows over and between the kernels, often starting at the base of the ear. Bleached husks, lightweight mummified ears, and small black pycnidia on husks and kernels are characteristic. The disease is favored by wet weather after silking and is more severe in corn-on-corn fields with abundant surface residue.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Diplodia ear rot",
+        "Stenocarpella maydis"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}
