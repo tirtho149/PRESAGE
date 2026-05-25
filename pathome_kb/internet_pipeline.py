@@ -290,7 +290,7 @@ def _normalize_disease_names(diseases: list[dict]) -> list[dict]:
 
     normalized = list(merged.values())
     if len(normalized) < len(diseases):
-        print(f"  Name normalization: {len(diseases)} → {len(normalized)} (merged {len(diseases) - len(normalized)} duplicates)")
+        print(f"  Name normalization: {len(diseases)} -> {len(normalized)} (merged {len(diseases) - len(normalized)} duplicates)")
     else:
         print(f"  Name normalization: no duplicates found")
     return normalized
@@ -376,7 +376,7 @@ def _run_reconciliation(extractions: dict, crop: str) -> dict:
     taxonomy = {"validations": []}  # Taxonomy validation disabled
     all_ext = extractions.get("extractions", [])
     batches = chunk_list(all_ext, RECONCILIATION_BATCH_SIZE)
-    print(f"  {len(all_ext)} source records → {len(batches)} batch(es) (parallel)")
+    print(f"  {len(all_ext)} source records -> {len(batches)} batch(es) (parallel)")
 
     if len(batches) == 1:
         all_diseases = _reconcile_once(({"extractions": all_ext}, taxonomy, ""))

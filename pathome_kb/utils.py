@@ -219,7 +219,7 @@ def validate_pathogens_ncbi(pathogens: list[str]) -> list[dict]:
                     "ncbi_taxonomy_url": f"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id={tax_id}",
                     "ncbi_tax_id": tax_id,
                 })
-                print(f"    {name} → {status} ({sci_name})")
+                print(f"    {name} -> {status} ({sci_name})")
 
             except Exception as e:
                 results.append({
@@ -229,7 +229,7 @@ def validate_pathogens_ncbi(pathogens: list[str]) -> list[dict]:
                     "ncbi_taxonomy_url": None,
                     "error": str(e),
                 })
-                print(f"    {name} → error: {e}")
+                print(f"    {name} -> error: {e}")
 
     return results
 
