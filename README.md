@@ -101,7 +101,7 @@ Start here. End-to-end in under a day; ~$5-15 in Claude API spend.
 # ============================================================
 # STEP 0 — LOCAL (filter raw CSV + Claude label judge)
 # ============================================================
-cd ~/Desktop/PlantSwarm
+cd C:\Users\Nikhi\OneDrive\Desktop\PlantSwarm
 JUDGE_LABELS=1 bash scripts/sh_00_setup_local.sh
 # ≈ 10-30 min. Filters BugWood_Diseases.csv into the threshold-
 # satisfying BugWood_Diseases_usable.csv, then runs the Claude
@@ -114,7 +114,7 @@ JUDGE_LABELS=1 bash scripts/sh_00_setup_local.sh
 # ============================================================
 # STEP 1 — LOCAL (Phase 0 canonical KB via Claude)
 # ============================================================
-cd ~/Desktop/PlantSwarm
+cd C:\Users\Nikhi\OneDrive\Desktop\PlantSwarm
 CROPS=smoke bash scripts/sh_01_phase0_local.sh
 # ≈ 30-45 min. Writes artifacts/pathome_kb/{Soybean,Tomato}/final_registry.json
 # then commits + pushes to origin/main.
@@ -122,8 +122,8 @@ CROPS=smoke bash scripts/sh_01_phase0_local.sh
 # ============================================================
 # STEP 2 — NOVA (organ-routed Qwen2.5-VL swarm; in-process; verifier OFF)
 # ============================================================
-ssh tirtho@hpc-login.iastate.edu
-cd /work/mech-ai-scratch/tirtho/PlantSwarm && git pull origin main
+ssh nikhil@hpc-login.iastate.edu
+cd /work/mech-ai/nikhil/Presage && git pull origin main
 PATHOME_ONLY_CROPS="Soybean,Tomato" sbatch scripts/submit_phase0r_regional.sh
 # ≈ 3-6 h. Qwen2.5-VL-7B is loaded IN-PROCESS via transformers (no vLLM
 # server). The job self-heals its env (scripts/setup_env.sh), runs a
@@ -137,7 +137,7 @@ PATHOME_ONLY_CROPS="Soybean,Tomato" sbatch scripts/submit_phase0r_regional.sh
 # STEP 3 — LOCAL (Claude+WebSearch validation)
 # ============================================================
 # (back on your laptop)
-cd ~/Desktop/PlantSwarm
+cd C:\Users\Nikhi\OneDrive\Desktop\PlantSwarm
 git pull origin main
 CROPS=smoke bash scripts/sh_03_validate_local.sh
 # ≈ 30-60 min on smoke. Drives pathome_kb.verifier.verify_candidates
@@ -147,8 +147,8 @@ CROPS=smoke bash scripts/sh_03_validate_local.sh
 # ============================================================
 # STEP 4 — NOVA (BioCAP-style encoder fine-tune)
 # ============================================================
-ssh tirtho@hpc-login.iastate.edu
-cd /work/mech-ai-scratch/tirtho/PlantSwarm
+ssh nikhil@hpc-login.iastate.edu
+cd /work/mech-ai/nikhil/Presage
 git pull origin main
 CROPS=smoke bash scripts/sh_04_train_encoder_nova.sh
 # ≈ 30-60 min on one A100 (default = ONE variant T04, 50 epochs,
@@ -163,7 +163,7 @@ CROPS=smoke bash scripts/sh_04_train_encoder_nova.sh
 # STEP 5 — LOCAL (frozen encoders + TabPFN classifier + Grad-CAM)
 # ============================================================
 # (back on your laptop / any small-GPU host)
-cd ~/Desktop/PlantSwarm
+cd C:\Users\Nikhi\OneDrive\Desktop\PlantSwarm
 git pull origin main
 # point at your step-4 checkpoint (or rely on the default path)
 export PATHOMEOOD_CKPT=train_and_eval/checkpoints/T04/T04/checkpoints/epoch_50.pt
@@ -211,7 +211,7 @@ cause of the earlier "stuck for 20 min, nothing in the .out").
 # In the repo on Nova, create a gitignored .env with your HF token
 # (removes the HuggingFace unauthenticated rate limit — without it the
 #  ~16 GB model download crawls for 30+ min):
-echo 'HF_TOKEN=hf_xxxxxxxxxxxxxxxxxxxx' > /work/mech-ai-scratch/tirtho/PlantSwarm/.env
+echo 'HF_TOKEN=hf_xxxxxxxxxxxxxxxxxxxx' > /work/mech-ai/nikhil/Presage/.env
 ```
 
 The model is cached once to `./.hf_cache` on the shared `/work` fs and
@@ -220,7 +220,7 @@ reused by every later run on any node — you pay the download once.
 ### Recommended: sbatch (survives disconnects, 12 h limit)
 
 ```bash
-cd /work/mech-ai-scratch/tirtho/PlantSwarm && git pull origin main
+cd /work/mech-ai/nikhil/Presage && git pull origin main
 PATHOME_ONLY_CROPS="Soybean,Tomato" sbatch scripts/submit_phase0r_regional.sh
 # watch the guaranteed log (path printed on the job's first line):
 ls -t logs/phase0r_*.log | head -1 | xargs tail -f
@@ -294,7 +294,7 @@ PATHOME_ONLY_CROPS="Soybean,Tomato" sbatch --nodelist=<healthy> --exclude=nova21
 salloc --gres=gpu:a100:1 --partition=nova --time=03:00:00 --mem=64G --cpus-per-task=8 --exclude=nova21-gpu-2
 srun --pty bash                                  # land on the GPU node
 nvidia-smi --query-gpu=name,driver_version --format=csv,noheader   # must show A100/580
-cd /work/mech-ai-scratch/tirtho/PlantSwarm
+cd /work/mech-ai/nikhil/Presage
 # already on a GPU node -> run with bash, NOT sbatch:
 PATHOME_ONLY_CROPS="Soybean" bash scripts/submit_phase0r_regional.sh
 ```
@@ -363,7 +363,7 @@ Recommended only after Set A has succeeded end-to-end.
 # ============================================================
 # STEP 0 — LOCAL (filter raw CSV + Claude label judge)
 # ============================================================
-cd ~/Desktop/PlantSwarm
+cd C:\Users\Nikhi\OneDrive\Desktop\PlantSwarm
 JUDGE_LABELS=1 bash scripts/sh_00_setup_local.sh
 # ≈ 1-2 h on full Bugwood (~$3-10 Claude spend for the judge).
 # Produces the cleaned BugWood_Diseases_usable.csv consumed by step 1.
@@ -371,7 +371,7 @@ JUDGE_LABELS=1 bash scripts/sh_00_setup_local.sh
 # ============================================================
 # STEP 1 — LOCAL (Phase 0 canonical KB for ALL 197 crops)
 # ============================================================
-cd ~/Desktop/PlantSwarm
+cd C:\Users\Nikhi\OneDrive\Desktop\PlantSwarm
 CROPS=all bash scripts/sh_01_phase0_local.sh
 # ≈ 16-24 h. ~$60-180 in Anthropic API spend. Writes
 # artifacts/pathome_kb/<Crop>/final_registry.json for every crop in
@@ -380,8 +380,8 @@ CROPS=all bash scripts/sh_01_phase0_local.sh
 # ============================================================
 # STEP 2 — NOVA (organ-routed Qwen2.5-VL swarm; ~1,000 image tuples)
 # ============================================================
-ssh tirtho@hpc-login.iastate.edu
-cd /work/mech-ai-scratch/tirtho/PlantSwarm && git pull origin main
+ssh nikhil@hpc-login.iastate.edu
+cd /work/mech-ai/nikhil/Presage && git pull origin main
 VLLM_N_RUNS=10 VLLM_AGREEMENT_MIN=3 sbatch scripts/submit_phase0r_regional.sh
 # Many hours — 1,035 (crop,disease,state) tuples, in-process
 # transformers, generation serialized. Pin to a known-good node
@@ -392,7 +392,7 @@ VLLM_N_RUNS=10 VLLM_AGREEMENT_MIN=3 sbatch scripts/submit_phase0r_regional.sh
 # ============================================================
 # STEP 3 — LOCAL (Claude+WebSearch validation over every unverified delta)
 # ============================================================
-cd ~/Desktop/PlantSwarm
+cd C:\Users\Nikhi\OneDrive\Desktop\PlantSwarm
 git pull origin main
 CROPS=all bash scripts/sh_03_validate_local.sh
 # ≈ 1-3 days. ~$20-100 in Claude spend. Use MAX_TUPLES=N to cap if
@@ -403,8 +403,8 @@ CROPS=all bash scripts/sh_03_validate_local.sh
 # ============================================================
 # STEP 4 — NOVA (BioCAP-style encoder fine-tune over full Bugwood)
 # ============================================================
-ssh tirtho@hpc-login.iastate.edu
-cd /work/mech-ai-scratch/tirtho/PlantSwarm
+ssh nikhil@hpc-login.iastate.edu
+cd /work/mech-ai/nikhil/Presage
 git pull origin main
 CROPS=all TRAIN_FULL_MATRIX=1 \
   bash scripts/sh_04_train_encoder_nova.sh
@@ -418,7 +418,7 @@ CROPS=all TRAIN_FULL_MATRIX=1 \
 # ============================================================
 # STEP 5 — LOCAL (frozen encoders + TabPFN over full Bugwood)
 # ============================================================
-cd ~/Desktop/PlantSwarm
+cd C:\Users\Nikhi\OneDrive\Desktop\PlantSwarm
 git pull origin main
 export PATHOMEOOD_CKPT=train_and_eval/checkpoints/T04/T04/checkpoints/epoch_50.pt
 CROPS=all bash scripts/sh_05_tabpfn_local.sh
@@ -764,8 +764,8 @@ for the end-to-end animated walkthrough see [FLOW.md](FLOW.md).
 ### LOCAL
 
 ```bash
-git clone https://github.com/tirtho149/PlantSwarm.git
-cd PlantSwarm
+git clone https://github.com/tirtho149/PRESAGE.git
+cd PRESAGE
 
 python -m venv .venv && source .venv/bin/activate
 pip install --upgrade pip setuptools wheel
@@ -802,7 +802,7 @@ python scripts/filter_bugwood_csv.py \
 ### NOVA (one-time GPU-host install)
 
 ```bash
-ssh tirtho@hpc-login.iastate.edu
+ssh nikhil@hpc-login.iastate.edu
 module load python cuda/11.8
 
 # (a) put the venv where the submitters expect it — either inside the
@@ -813,8 +813,8 @@ source .venv/bin/activate
 pip install --upgrade pip setuptools wheel
 
 # (b) clone the repo
-git clone https://github.com/tirtho149/PlantSwarm.git
-cd PlantSwarm
+git clone https://github.com/tirtho149/PRESAGE.git
+cd PRESAGE
 
 # (c) base deps + GPU stack (vllm, torch, open_clip_torch, transformers,
 # webdataset, accelerate, huggingface_hub — see requirements-gpu.txt)
@@ -983,7 +983,7 @@ correct state.
 CROPS=smoke bash scripts/sh_03_validate_local.sh
 
 # Re-train encoder only (skip captions + shards if already built):
-ssh tirtho@hpc-login.iastate.edu
+ssh nikhil@hpc-login.iastate.edu
 PATHOME_SKIP_CAPTIONS=1 PATHOME_SKIP_SHARDS=1 \
   bash scripts/sh_04_train_encoder_nova.sh
 

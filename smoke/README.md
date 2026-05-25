@@ -46,8 +46,8 @@ git commit -m "smoke: Phase 0 canonical"
 git push origin main
 
 # 3. Phase 0R on Nova — the SLURM job boots vLLM in-place
-ssh tirtho@hpc-login.iastate.edu
-cd /work/mech-ai-scratch/tirtho/PlantSwarm && git pull origin main
+ssh nikhil@hpc-login.iastate.edu
+cd /work/mech-ai/nikhil/Presage && git pull origin main
 PATHOME_ONLY_CROPS="Soybean,Tomato" PATHOME_SEED_QUICK=1 \
   PATHOME_USABLE_CSV=smoke/BugWood_Diseases_smoke_usable.csv \
   PATHOME_SEED_FILE=smoke/artifacts/pathome_seed/symptoms_seed.json \
