@@ -1,0 +1,311 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Black Rot",
+      "pathogen_scientific_name": {
+        "value": "Diplodia seriata",
+        "url": "https://extension.umn.edu/plant-diseases/black-rot-apple",
+        "quote": "Black rot is caused by the fungus Diplodia seriata (syn Botryosphaeria obtusa ).",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.umn.edu/plant-diseases/black-rot-apple",
+        "quote": "This fungal disease causes leaf spot, fruit rot and cankers on branches."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://extension.psu.edu/apple-disease-black-rot-and-frogeye-leaf-spot",
+        "quote": "attacking the fruit, leaves, and bark of apple trees and other pomaceous plants"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Black rot causes large brown rotten areas on fruit (often with concentric rings), 'frog-eye' leaf spots with purplish/reddish edges and tan interiors, and sunken reddish-brown cankers on branches.",
+          "url": "https://extension.umn.edu/plant-diseases/black-rot-apple",
+          "quote": "Large brown rotten areas can form anywhere on the fruit but are most common on the blossom end. Brown to black concentric rings can often be seen on larger infections... Infected leaves develop \"frog-eye leaf spot.\"The se are circular spots with purplish or reddish edges and light tan interiors... Cankers appear as a sunken, reddish-brown area on infected branches."
+        },
+        "diagnostic_features": {
+          "value": "There is usually one spot per fruit (distinguishing it from bitter rot); leaf lesions show purple margins with brown/tan centers giving a 'frogeye' appearance; decayed flesh is not cone-shaped (unlike bitter rot); concentric bands of mahogany brown to black alternating with brown bands form on rotted fruit; small black pycnidia appear in the centers of leaf lesions.",
+          "url": "https://extension.psu.edu/apple-disease-black-rot-and-frogeye-leaf-spot",
+          "quote": "There is usually one spot per fruit, a characteristic that distinguishes black rot from bitter rot. In addition, when cutting through the lesion, the decayed flesh will not be in the shape of a cone (like bitter rot)."
+        },
+        "look_alikes": {
+          "value": [
+            "bitter rot"
+          ],
+          "url": "https://extension.psu.edu/apple-disease-black-rot-and-frogeye-leaf-spot",
+          "quote": "There is usually one spot per fruit, a characteristic that distinguishes black rot from bitter rot."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Practice good sanitation: prune out dead or diseased branches, pick all dried and shriveled (mummified) fruit remaining on the trees, and remove infected plant material from the area (burn, bury, or send to municipal composting).",
+          "Prune correctly during dormancy (below 32 F; Feb-Mar in Minnesota); first prune out all dead branches, then prune to shape the tree.",
+          "Prune and remove cankers at least 15 inches below the basal end; properly dispose of prunings by burial or burning.",
+          "Take good care of trees: choose an appropriate site, plant only hardy cultivars, provide adequate water, and maintain tree health to prevent stress.",
+          "Control fire blight by pruning out infected wood or controlling insect vectors; remove limbs or trees killed by fire blight to discourage black rot.",
+          "Fungicide sprays are usually not needed in Minnesota; Captan and sulfur products labeled for scab also control black rot.",
+          "Captan and fungicides containing a strobilurin (FRAC Group 11) as an active ingredient are effective in controlling black rot on fruit."
+        ],
+        "url": "https://extension.umn.edu/plant-diseases/black-rot-apple",
+        "quote": "Practice good sanitation Reduce sources of spores for future infections: Prune out dead or diseased branches. Pick all dried and shriveled fruits remaining on the trees. Remove infected plant material from the area. All infected plant parts should be burned, buried or sent to a municipal composting site... Captan and sulfur products are labeled for control of both scab and black rot."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Black rot of apple",
+          "alternative_value": "Black Rot and Frogeye Leaf Spot",
+          "alternative_source_url": "https://extension.psu.edu/apple-disease-black-rot-and-frogeye-leaf-spot",
+          "note": "Penn State combines the two names because the same fungus (Diplodia seriata) causes both the fruit/branch rot phase and the frogeye leaf spot phase."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Diplodia seriata",
+          "alternative_value": "Diplodia seriata (Botryosphaeria obtusa syn.)",
+          "alternative_source_url": "https://extension.psu.edu/apple-disease-black-rot-and-frogeye-leaf-spot",
+          "note": "Both sources cite Botryosphaeria obtusa as a synonym; canonical form uses the current accepted name."
+        }
+      ]
+    },
+    {
+      "disease_name": "Apple Scab",
+      "pathogen_scientific_name": {
+        "value": "Venturia inaequalis",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-fru-23",
+        "quote": "Apple scab is caused by the fungus Venturia inaequalis .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-fru-23",
+        "quote": "Apple scab is caused by the fungus Venturia inaequalis ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Pod"
+        ],
+        "url": "https://ohioline.osu.edu/factsheet/plpath-fru-23",
+        "quote": "Both the leaves and fruit of apple trees can be affected by this disease."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Lesions appear on leaves and fruit as light green circular spots that become olive green and velvety, later darkening and becoming scabby; severe infection causes leaf curling, puckering, and premature drop, and deformed cracked fruit.",
+          "url": "https://extension.unh.edu/resource/apple-scab-fact-sheet",
+          "quote": "Lesions on the leaf first appear as light green circular spots that later become olive green and velvety in appearance... Symptoms on the fruit appear as distinct, almost circular lesions that are olive-green and velvety at first, but later become darker, scabby, and sometimes cracked."
+        },
+        "diagnostic_features": {
+          "value": "Small, velvety, olive green lesions with unclear margins on the lower leaf surface that age into darker spots with more distinct margins; lesions may appear more numerous closer to the mid-vein of the leaf; on some crabapples, infections may be reddish in color.",
+          "url": "https://ohioline.osu.edu/factsheet/plpath-fru-23",
+          "quote": "At first, the lesions are small, velvety, olive green in color, and have unclear margins (Figure 1Ã¢â‚¬â€œleft). On some crabapples, infections may be reddish in color."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant resistant or scab-immune apple varieties (e.g., Redfree, Prima, Liberty, Freedom, Jonafree, Macfree, Sir Prize, William's Pride, Enterprise, Gold Rush, Pristine) as the ideal method for managing scab.",
+          "Rake and destroy fallen leaves below apple and crabapple trees in the fall (or chop leaves with a mulching/flail mower).",
+          "Couple leaf chopping with two or three applications of 5 percent urea to fall foliage to speed leaf decomposition.",
+          "For new plantings, select a site with at least eight hours of direct sun and space trees so air moves easily through the canopies and orchard.",
+          "Prune trees yearly to open the canopy, increase air movement and sunlight penetration, and promote leaf drying.",
+          "Avoid overhead irrigation.",
+          "Where resistance is absent, apply protectant fungicides starting at green tip (first susceptible tissue) and continue on a 7- to 10-day schedule through petal fall and fruit development.",
+          "Use curative-action fungicides when a weather monitoring system identifies that an infection period has occurred.",
+          "Apply cover sprays during the summer only if primary-season scab control was inadequate.",
+          "Organic and backyard growers can use biocontrol products to suppress disease development, combined with resistant varieties for maximum control."
+        ],
+        "url": "https://extension.unh.edu/resource/apple-scab-fact-sheet",
+        "quote": "Sanitation is an effective management tool for apple scab. Rake and destroy all leaves in the fall (or chop leaves with a mower). Application of urea to trees after harvest, but just prior to fall leaf drop helps to speed up leaf decomposition. Prune trees regularly to increase air movement and sunlight penetration into the canopy, which speeds up drying of the leaves and fruit, thus reducing infection. Avoid overhead irrigation. Use resistant varieties ( Redfree, Prima, Liberty, Freedom, Jonafree, Macfree, Sir Prize, WilliamÃ¢â‚¬â„¢s Pride, Enterprise, Gold Rush , and Pristine ). Chemical Control - Apply protectant fungicides at green tip..."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Cedar-Apple Rust",
+      "pathogen_scientific_name": {
+        "value": "Gymnosporangium juniperi-virginianae",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-tree-10",
+        "quote": "Cedar-apple rust is a common plant disease caused by the fungal pathogen Gymnosporangium juniperi-virginianae .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-tree-10",
+        "quote": "Cedar-apple rust is a common plant disease caused by the fungal pathogen Gymnosporangium juniperi-virginianae ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Pod"
+        ],
+        "url": "https://ohioline.osu.edu/factsheet/plpath-tree-10",
+        "quote": "galls begin to form on the branches of the primary host ... Initial symptoms of fungal infection appear on apple and crabapple plants as small chlorotic (yellow) spots ... On the pome fruits, symptoms begin as small yellow or orange lesions"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "On redcedar/juniper, dark brown swollen galls (up to two inches diameter) with circular dimples form on branches and produce bright orange gelatinous telial horns in spring. On apple/crabapple, small chlorotic yellow spots develop on leaves that turn orange with red rings, bearing orange pustules above and hairy tube-like aecia below; fruit develops yellow/orange lesions that turn brown with tube-like aecia.",
+          "url": "https://ohioline.osu.edu/factsheet/plpath-tree-10",
+          "quote": "Eventually, these galls grow and become dark brown with a diameter of up to two inches. The galls, which are not always spherical and can have lumpy areas, always have small circular dimples across the surface ... large, gelatinous protrusions will erupt from the dimples along the surface of the gall ... The protrusions are typically bright orange ... Initial symptoms of fungal infection appear on apple and crabapple plants as small chlorotic (yellow) spots, which eventually become orange and develop red rings around the edge ... fungal fruiting bodies, called aecia, appear on the underside of the leaf and eventually develop hairy, tube-like growths ... On the pome fruits, symptoms begin as small yellow or orange lesions, which eventually grow larger and turn brown."
+        },
+        "diagnostic_features": {
+          "value": "Galls on juniper/redcedar always have small circular dimples across the surface, from which bright orange gelatinous telial horns (1/2 to 3/4 inch long) erupt in spring. On apple/crabapple leaves, yellow spots develop red rings around the edge, small raised black dots in the center on the upper surface, and produce hairy, finger-like aecia (less than 1/10 inch) on the leaf underside; on crabapple fruits the aecia give the fruits a spiky appearance.",
+          "url": "https://ohioline.osu.edu/factsheet/plpath-tree-10",
+          "quote": "The galls, which are not always spherical and can have lumpy areas, always have small circular dimples across the surface (Figure 1A) ... large, gelatinous protrusions will erupt from the dimples along the surface of the gall ... The protrusions are typically bright orange ... These are called telial horns ... small chlorotic (yellow) spots, which eventually become orange and develop red rings around the edge ... aecia, appear on the underside of the leaf and eventually develop hairy, tube-like growths ... On crabapple this gives the little fruits a spiky appearance."
+        },
+        "look_alikes": {
+          "value": [
+            "Hawthorn rust",
+            "Quince rust",
+            "Juniper broom rust",
+            "Japanese apple rust"
+          ],
+          "url": "https://extension.umn.edu/plant-diseases/cedar-apple-rust",
+          "quote": "Although cedar-apple rust is the most well-known rust fungi, four different rust fungi cause similar diseases on the same types of trees in Minnesota."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant disease-resistant varieties of crabapple, apple, and juniper",
+          "Avoid planting eastern red cedar and juniper within several miles / a few hundred yards of susceptible Rosaceae plants",
+          "Inspect nearby juniper/red cedar trees in late winter or early spring and remove brown, woody galls before orange gelatinous structures form",
+          "Prune and remove infected twigs or branches on Rosaceae plants",
+          "Apply fungicides on the primary (juniper) host every 14 days from June to September",
+          "Apply fungicides on apple/crabapple beginning around flowering and continuing on a seven-day interval until telial horns dry up; sterol inhibitors (e.g., Myclobutanil) are most effective; copper and sulfur products can also be used",
+          "Spray trees/shrubs when flower buds first emerge until spring weather becomes consistently warm and dry",
+          "For organic apple production: bloom thinning combined with lime sulfur or a labelled biofungicide",
+          "Tolerate leaf spots and fruit infection on apples, hawthorns, serviceberry, and other Rosaceae",
+          "Avoid planting highly susceptible varieties such as Beacon and Wealthy apple where cedar-apple rust is a problem"
+        ],
+        "url": "https://extension.umn.edu/plant-diseases/cedar-apple-rust",
+        "quote": "Tolerate leaf spots and fruit infection on apples, hawthorns, serviceberry and other plants in the Rosaceae family... Fungicides with the active ingredient Myclobutanil are most effective in preventing rust. Copper and sulfur products can be used as well."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Fire Blight",
+      "pathogen_scientific_name": {
+        "value": "Erwinia amylovora",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-fru-22-0",
+        "quote": "The disease is caused by the bacterium Erwinia amylovora",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-fru-22-0",
+        "quote": "Fire blight is a common and very destructive bacterial disease of apples and pears"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Whole plant",
+          "Root"
+        ],
+        "url": "https://ohioline.osu.edu/factsheet/plpath-fru-22-0",
+        "quote": "the disease can kill blossoms, fruit, shoots, twigs, branches and entire trees"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Diseased blossoms become water-soaked, wilt and turn brown; blighted twigs bend at the growing point resembling a shepherd's crook; cankers form on bark with reddish brown sapwood beneath; fruit turn brown to black with bacterial ooze. Scorched appearance of leaves, blossoms, and young terminal shoots, with infected tissue turning black on pear and brown on apple.",
+          "url": "https://ohioline.osu.edu/factsheet/plpath-fru-22-0",
+          "quote": "Diseased blossoms become water-soaked, wilt and turn brown... As blighted shoots wilt, the twigs bend at the growing point and resemble a shepherd's crook or an upside down \"J\""
+        },
+        "diagnostic_features": {
+          "value": "Blighted shoots wilt and the twigs bend at the growing point and resemble a shepherd's crook or an upside down \"J\"; during warm and humid weather infected shoots ooze droplets of creamy white to amber bacterial ooze; sapwood beneath a canker has a reddish brown appearance; infected tissue turns black on pear and brown on apple.",
+          "url": "https://ohioline.osu.edu/factsheet/plpath-fru-22-0",
+          "quote": "the twigs bend at the growing point and resemble a shepherd's crook or an upside down \"J\" (Figure 4)... During warm and humid weather infected shoots will ooze droplets of creamy white bacteria... Sapwood beneath a canker has a reddish brown appearance"
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Select and plant resistant varieties",
+          "Prune out fire blight cankers and blighted twigs (cut 8-12 inches below visible infection)",
+          "Minimize summer pruning of blighted shoots; avoid heavy pruning in early summer",
+          "Follow proper pruning and fertilization practices; avoid excessive nitrogen and late-season fertilization",
+          "Make an early season application of copper",
+          "Spray streptomycin at bloom",
+          "Apply the plant growth regulator Apogee (prohexadione-calcium)",
+          "Control sucking insects",
+          "Sanitize tools with 10% bleach solution (1 part bleach : 9 parts water) between cuts",
+          "Use biological control product Serenade Garden Defense (Bacillus subtilis) as an alternative to streptomycin",
+          "Use hands to break out small blighted twigs rather than pruners",
+          "Remove cankers, blighted tissue, suckers, and root sprouts during the dormant season",
+          "Eradicate nearby fire blight hosts such as pyracantha, hawthorn, cotoneaster, and crabapple",
+          "Avoid excessive irrigation and avoid wetting foliage with sprinkler irrigation",
+          "Protect open blossoms during high-risk warm/wet weather"
+        ],
+        "url": "https://ohioline.osu.edu/factsheet/plpath-fru-22-0",
+        "quote": "Management Tactics for Fire Blight Select and plant resistant varieties... Prune out fire blight cankers and blighted twigs... Make an early season application of copper... Spray streptomycin at bloom... Apply the plant growth regulator Apogee... Control sucking insects"
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem, Whole plant, Root",
+          "alternative_value": "Foliar, Stem",
+          "alternative_source_url": "https://extension.usu.edu/planthealth/ipm/notes_ag/fruit-fire-blight",
+          "note": "USU restricts affected parts to leaves, blossoms, and shoots; OSU extends to whole tree mortality including roots."
+        }
+      ]
+    },
+    {
+      "disease_name": "Blue Mold",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    }
+  ],
+  "crop": "Apple",
+  "generated_date": "2026-05-25"
+}

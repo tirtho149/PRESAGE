@@ -1,0 +1,196 @@
+{
+  "crop": "Apple",
+  "candidate_sources": [
+    {
+      "url": "https://extension.unh.edu/resource/apple-scab-fact-sheet",
+      "title": "Apple Scab [fact sheet] - UNH Extension",
+      "snippet": "Lesions on the leaf first appear as light green circular spots that later become olive green and velvety in appearance. If early infections are severe, the leaves may curl, become puckered and torn, and often fall prematurely. Symptoms on the fruit appear as distinct, almost circular lesions that are olive-green and velvety at first, but later become darker, scabby, and sometimes cracked. The fungus that causes apple scab on apples and crabapples is Venturia inaequalis.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Apple Scab"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/disandpath/fungalasco/pdlessons/Pages/AppleScab.aspx",
+      "title": "Apple scab - APS Education Center",
+      "snippet": "Apple scab, caused by the fungus Venturia inaequalis, occurs everywhere in the world where apples are grown and results in more losses than any other apple disease. Symptoms appear on leaves, fruit, and young shoots as olive-green velvety lesions that later become scabby.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Apple Scab"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-fru-23",
+      "title": "Scab of Apple | Ohioline - Ohio State University Extension",
+      "snippet": "Apple scab, caused by Venturia inaequalis, is most severe in areas where spring weather is cool and moist. Lesions appear as olive-green velvety spots on leaves and fruit, later becoming dark and scabby. Management includes resistant cultivars, sanitation (removal of fallen leaves), pruning for aeration, and fungicide sprays beginning at budbreak.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Apple Scab"
+      ]
+    },
+    {
+      "url": "https://www.extension.purdue.edu/extmedia/bp/bp-1-w.pdf",
+      "title": "Apple Scab on Tree Fruit - Purdue Extension",
+      "snippet": "Apple scab is caused by the fungus Venturia inaequalis. Symptoms include olive-green to brown velvety lesions on leaves and fruit. Severe infections cause leaf curling, premature defoliation, and deformed, cracked fruit. Management involves sanitation, resistant cultivars, and fungicide sprays at 10-14 day intervals starting at budswell.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Apple Scab"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-fru-07",
+      "title": "Black Rot and Frogeye Leaf Spot of Apple | Ohioline",
+      "snippet": "Black rot is caused by the fungus Botryosphaeria obtusa, which causes leaf spot (frogeye leaf spot), fruit rot, and limb cankers on apple. The fungus overwinters in cankers, mummified fruits, and the bark of dead wood. In spring, black fungal fruiting bodies release conidia and ascospores.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black Rot",
+        "Frogeye Leaf Spot"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/plant-diseases/black-rot-apple",
+      "title": "Black rot of apple | UMN Extension",
+      "snippet": "Black rot is caused by the fungus Botryosphaeria obtusa. The fungus can infect leaves, fruit, and bark of apple trees, causing frogeye leaf spot on leaves, black rot of fruit, and cankers on branches. The pathogen survives and overwinters in diseased plant cankers, leaves and mummified fruits.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black Rot",
+        "Frogeye Leaf Spot"
+      ]
+    },
+    {
+      "url": "https://extension.psu.edu/apple-disease-black-rot-and-frogeye-leaf-spot",
+      "title": "Pome Fruit Disease - Black Rot and Frogeye Leaf Spot | Penn State Extension",
+      "snippet": "Frogeye leaf spot, black rot fruit rot, and limb cankers of apple are caused by the fungus Botryosphaeria obtusa. Symptoms of frogeye leaf spot start to appear 1 to 3 weeks after petal fall as small purple flecks on leaves. The pathogen primarily overwinters in dead bark, cankers, and mummified fruit.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black Rot",
+        "Frogeye Leaf Spot"
+      ]
+    },
+    {
+      "url": "https://extension.psu.edu/pome-fruit-disease-blue-mold",
+      "title": "Pome Fruit Disease - Blue Mold",
+      "snippet": "Blue mold is caused by pathogenic fungi in the Penicillium genus with Penicillium expansum being the most predominant. Blue mold is the most important postharvest disease of apples worldwide. Postharvest fungicides that are most effective include pyrimethanil (FRAC Group 9), fludioxonil (FRAC Group 12), and the premix difenoconazole and fludioxonil.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Blue Mold",
+        "Penicillium expansum"
+      ]
+    },
+    {
+      "url": "https://blogs.cornell.edu/applevarietydatabase/fact-sheet-blue-mold/",
+      "title": "Fact Sheet: Blue Mold - Database of Apple Diseases",
+      "snippet": "Blue mold, caused by fungus Penicillium expansum, is a common postharvest disease of apples and pears worldwide. Injuries to fruit, especially during picking and handling operations, are the primary points of entry of this fungus. It is the most economically important post-harvest decay of stored apples in the United States.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Blue Mold",
+        "Penicillium expansum"
+      ]
+    },
+    {
+      "url": "https://treefruit.wsu.edu/crop-protection/disease-management/blue-mold/",
+      "title": "Blue Mold | WSU Tree Fruit | Washington State University",
+      "snippet": "Blue mold initially appears as light tan to dark brown circular lesions with a defined margin between decayed and healthy tissues. The decayed tissue is soft and watery, and blue-green spore masses appear on the decayed area. P. expansum is a necrotrophic postharvest pathogen that requires a wound or natural openings to gain ingress and infect.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Blue Mold",
+        "Penicillium expansum"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.39572",
+      "title": "Penicillium expansum (blue mould of stored apple) | CABI Compendium",
+      "snippet": "CABI Compendium datasheet for Penicillium expansum, the causal agent of blue mould of stored apple, covering distribution, biology, symptoms, hosts, impact, and management of this postharvest pathogen.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Blue Mold",
+        "Blue Mould",
+        "Penicillium expansum"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/cedar-apple-rusts",
+      "title": "Cedar Apple Rust | NC State Extension Publications",
+      "snippet": "Cedar apple rust is caused by the fungal pathogen Gymnosporangium juniperi-virginianae. Infected leaves will have yellow to bright orange round lesions or spots on the upper surface. As infection progresses, fungal tufts or stalks, called aecia, appear on the bottom surface of the leaf directly underneath the lesion. Symptoms on fruit initially appear as orange colored, slightly raised lesions. A wet spring period of 4-6 hours at 50-75 F is sufficient for severe infection.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cedar Apple Rust",
+        "Cedar-Apple Rust"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/plant-diseases/cedar-apple-rust",
+      "title": "Cedar-apple rust and related rust diseases | UMN Extension",
+      "snippet": "Cedar-apple rust and related rust diseases caused by Gymnosporangium species. Information on symptoms, disease cycle on apple and juniper hosts, and management practices including resistant cultivars, host separation, and fungicide options.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cedar-apple rust",
+        "rust diseases"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-tree-10",
+      "title": "Cedar-Apple Rust | CFAES Knowledge Hub (Ohio State Extension)",
+      "snippet": "Cedar-apple rust is caused by Gymnosporangium juniperi-virginianae. The pathogen requires two hosts: rosaceous trees (apple, crabapple) and Juniperus species (eastern red cedar). Yellow-orange lesions develop on the upper sides of leaves or on fruit one to two weeks following infection. Management includes host separation, resistant cultivars, and fungicide sprays.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cedar-Apple Rust"
+      ]
+    },
+    {
+      "url": "https://hgic.clemson.edu/factsheet/cedar-apple-rust/",
+      "title": "Cedar-Apple Rust | Home & Garden Information Center (Clemson)",
+      "snippet": "Cedar-apple rust factsheet covering pathogen biology of Gymnosporangium juniperi-virginianae, symptoms on apple leaves and fruit, alternate host stages on cedar/juniper, and integrated management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cedar-Apple Rust"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/fire-blight",
+      "title": "Fire Blight | NC State Extension Publications",
+      "snippet": "Fire blight is caused by the bacterium Erwinia amylovora, a native pathogen of wild, rosaceous hosts in eastern North America. Symptoms include sudden wilting followed by shriveling and blackening of the blossoms and young shoots, with the characteristic shepherd's crook bending of blighted terminals.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fire Blight"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/FireBlight.aspx",
+      "title": "Fire blight of apple and pear",
+      "snippet": "APS Plant Disease lesson on fire blight of apple and pear caused by Erwinia amylovora, covering pathogen biology, symptoms (blossom blight, shoot blight, cankers, fruit ooze), disease cycle, and management strategies.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Fire Blight"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-fru-22-0",
+      "title": "Fire Blight of Apples and Pears | CFAES Knowledge Hub",
+      "snippet": "Ohio State University Extension factsheet on fire blight of apples and pears, including symptoms on blossoms, shoots, fruit, and cankers, the pathogen Erwinia amylovora, and management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fire Blight"
+      ]
+    },
+    {
+      "url": "https://treefruit.wsu.edu/crop-protection/disease-management/fire-blight/",
+      "title": "Fire Blight of Apple and Pear | WSU Tree Fruit | Washington State University",
+      "snippet": "Washington State University Tree Fruit extension page on fire blight management for apple and pear orchards, covering pathogen Erwinia amylovora, infection biology, symptoms, and integrated control approaches.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fire Blight"
+      ]
+    },
+    {
+      "url": "https://extension.usu.edu/planthealth/ipm/notes_ag/fruit-fire-blight",
+      "title": "Fire Blight (Erwinia amylovora) | USU",
+      "snippet": "Utah State University Extension IPM note on fire blight caused by Erwinia amylovora, including blossom and shoot symptoms, shepherd's crook, bacterial ooze, and integrated management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fire Blight"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}
