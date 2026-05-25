@@ -1,0 +1,75 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Sooty Mold",
+      "pathogen_scientific_name": {
+        "value": "Scorias spongiosa",
+        "url": "https://bygl.osu.edu/node/1622",
+        "quote": "honeydew which becomes colonized by a specific sooty mold fungus, Scorias spongiosa (Ascomycete)",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://bygl.osu.edu/node/1622",
+        "quote": "a specific sooty mold fungus, Scorias spongiosa (Ascomycete)"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://bygl.osu.edu/node/1622",
+        "quote": "may rise 1 - 2\" or more above the leaf or twig surface"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "The mycelia form a dense, black, fuzzy mat on top of honeydew, then progresses into a spongy, golden-yellow heap that may rise 1-2 inches or more above the leaf or twig surface, eventually hardening and turning black in the fall.",
+          "url": "https://bygl.osu.edu/node/1622",
+          "quote": "The mycelia form a dense, black, \"fuzzy\" mat on top of the honeydew. Over time, the fungus progresses into a growth phase that is totally unlike most sooty molds; it produces a spongy, golden-yellow heap that may rise 1 - 2\" or more above the leaf or twig surface."
+        },
+        "diagnostic_features": {
+          "value": "Spongy, golden-yellow heap rising 1-2\" or more above leaf or twig surface; unlike most sooty molds; eventually hardens and turns black in fall and remains evident through winter. Under a dissecting scope, individual pseudothecia and pycnidia are evident, with pycnidial necks releasing conidia and visible asci/ascospores.",
+          "url": "https://bygl.osu.edu/node/1622",
+          "quote": "it produces a spongy, golden-yellow heap that may rise 1 - 2\" or more above the leaf or twig surface. The odd-looking fungal growths look like nothing else that would commonly be associated with aphids or honeydew. The spongy growths eventually harden and turn black in the fall."
+        },
+        "look_alikes": {
+          "value": [
+            "other black sooty molds",
+            "other tree maladies"
+          ],
+          "url": "https://bygl.osu.edu/node/1622",
+          "quote": "The sooty mold fungus looks like other black sooty molds at the beginning... They remain evident throughout the winter and are sometimes mistaken for other tree maladies."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Suppress the aphids, scales, or other sucking insects (including mealybugs, leafhoppers, and soft scales) that excrete the honeydew on which sooty molds subsist",
+          "Apply horticultural oils, which help loosen sooty mold from the plant surface and hasten its weathering away",
+          "Apply other insecticides labeled for aphids, scales, mealybugs and other sucking insects"
+        ],
+        "url": "https://content.ces.ncsu.edu/sooty-molds",
+        "quote": "The first step in control of sooty molds is to suppress the aphids, scales, or other pests that are excreting the honeydew on which sooty molds subsist. If one of the horticultural oils is used for control, it also has the advantage of helping to loosen sooty molds from the plant surface. This hastens the weathering away of the sooty molds... Numerous other insecticides are labeled for aphids, scales, mealybugs and other sucking insects."
+      },
+      "confidence": "high",
+      "num_sources": 4,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Scorias spongiosa",
+          "alternative_value": "Capnodium citri; Capnodium elongatum; Fumago vagans (multiple species in the sooty mold complex)",
+          "alternative_source_url": "https://content.ces.ncsu.edu/sooty-molds",
+          "note": "NC State notes the sooty mold complex includes several fungi (Capnodium citri, Capnodium elongatum, Fumago vagans) associated with different hosts; Scorias spongiosa is the species specifically associated with alder, pine, beech and similar trees, and is the canonical pathogen in the alder context."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem",
+          "alternative_value": "Foliar only",
+          "alternative_source_url": "https://content.ces.ncsu.edu/sooty-molds",
+          "note": "NC State emphasizes effect on leaves (blocking sunlight for photosynthesis); UMaine, UMass, and OSU all describe colonization on both leaves and branches/twigs/limbs."
+        }
+      ]
+    }
+  ],
+  "crop": "Alder",
+  "generated_date": "2026-05-25"
+}

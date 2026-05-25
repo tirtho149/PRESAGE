@@ -4,30 +4,41 @@
     {
       "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/alder-sooty-mold/",
       "title": "Alder - Sooty Mold - Cooperative Extension: Insect Pests, Ticks and Plant Diseases - University of Maine Cooperative Extension",
-      "snippet": "University of Maine Cooperative Extension factsheet dedicated to Sooty Mold on Alder, with images and information on the dark superficial fungal growth caused by sooty mold fungi growing on honeydew secreted by sap-sucking insects such as aphids and scale insects (e.g., Scorias spongiosa associated with woolly alder aphid).",
+      "snippet": "The pathogen causing sooty mold on alder is Scorias spongiosa, and it is associated with aphid and scale pests of alder, pine, beech and other trees. Sooty mold is a charcoal black fungus that appears on the upper surface of leaves, twigs, branches and fruits.",
       "source_type": "extension_factsheet",
       "diseases_mentioned": [
         "Sooty Mold",
-        "Alder Sooty Mold"
+        "Scorias spongiosa"
       ]
     },
     {
       "url": "https://content.ces.ncsu.edu/sooty-molds",
       "title": "Sooty Molds | NC State Extension Publications",
-      "snippet": "NC State Extension publication on sooty molds: dark, superficial mycelium that gives leaves and branches a charcoal-gray sooty appearance. Sooty molds are not pathogenic — they grow on honeydew excreted by aphids, scales, mealybugs, psyllids, and whiteflies. Common genera include Capnodium, Fumago, and Scorias (Scorias spongiosa is associated with aphid and scale pests of alder, pine, beech and other trees).",
+      "snippet": "Sooty molds are not real pathogens; they colonize the honeydew excreted from aphids and other phloem-feeding, sap-sucking insects and feed on the sugary substance. Sooty molds lessen the aesthetic value of ornamental plants, and lower the vigor of plants by blocking sunlight essential for photosynthesis.",
       "source_type": "extension_factsheet",
       "diseases_mentioned": [
-        "Sooty Mold",
         "Sooty Molds"
       ]
     },
     {
-      "url": "https://ipm.ucanr.edu/home-and-landscape/sooty-mold/",
-      "title": "Sooty Mold / Home and Landscape / UC Statewide IPM Program (UC IPM)",
-      "snippet": "UC IPM Pest Notes on Sooty Mold: a fungal disease that grows on honeydew produced by sucking insects (aphids, scales, mealybugs, psyllids, whiteflies). Fungi most commonly causing sooty mold on landscape plants are in the genera Capnodium, Fumago, and Scorias. Management focuses on controlling the honeydew-producing insects and ants that tend them; horticultural oils and washing with water can help remove existing sooty mold.",
+      "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/sooty-mold",
+      "title": "Sooty Mold : Landscape : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Capnodium is one of the common genera of sooty mold fungi. Sooty mold is a dark colored fungus that grows on honeydew excreted by piercing sucking insects such as mealybugs, leafhoppers, scales and aphids.",
       "source_type": "extension_factsheet",
       "diseases_mentioned": [
-        "Sooty Mold"
+        "Sooty Mold",
+        "Capnodium"
+      ]
+    },
+    {
+      "url": "https://bygl.osu.edu/node/1622",
+      "title": "Woolly Alder Aphids - BYGL (osu.edu)",
+      "snippet": "Woolly Alder Aphids (Prociphilus tessellatus) produce large, white fluffy colonies on the branches of their namesake host (Alnus spp.). Woolly alder and beech blight aphids both produce copious quantities of honeydew which becomes colonized by a specific sooty mold fungus, Scorias spongiosa.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sooty Mold",
+        "Scorias spongiosa",
+        "Woolly Alder Aphid"
       ]
     }
   ],

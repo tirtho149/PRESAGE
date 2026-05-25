@@ -1,0 +1,910 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Anthracnose",
+      "pathogen_scientific_name": {
+        "value": "Colletotrichum graminicola",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/anthracnose-leaf-blight-of-corn",
+        "quote": "Anthracnose leaf blight is caused by the fungal pathogen Colletotrichum graminicola and seldom causes yield loss.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/anthracnose-leaf-blight-of-corn",
+        "quote": "Anthracnose leaf blight is caused by the fungal pathogen Colletotrichum graminicola"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://cropwatch.unl.edu/plant-disease/corn/anthracnose/",
+        "quote": "There are three distinct phases of anthracnose: leaf blight, top die-back, and stalk rot."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Leaf lesions are oval or spindle shaped, tan or brown with dark brown or purple margins, up to 1 inch long and 1/2 inch wide; severely infected leaves may turn yellow and wither. Symptoms begin on lower leaves and later develop on upper leaves.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/anthracnose-leaf-blight-of-corn",
+          "quote": "Leaf lesions are oval or spindle shaped, tan or brown with dark brown or purple margins, up to 1 inch long and 1/2 inch wide."
+        },
+        "diagnostic_features": {
+          "value": "As the disease develops, the fungus produces black, spiny fruiting structures on the dead leaf tissue, which are visible with a 30X hand lens.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/anthracnose-leaf-blight-of-corn",
+          "quote": "As the disease develops, the fungus produces black, spiny fruiting structures on the dead leaf tissue. These are visible with a 30X hand lens."
+        },
+        "look_alikes": {
+          "value": [
+            "Gray Leaf Spot",
+            "Eye spot"
+          ],
+          "url": "https://cropwatch.unl.edu/plant-disease/corn/anthracnose/",
+          "quote": "Immature lesions are not diagnostic and can easily be confused with Gray Leaf Spot or Eye spot."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant resistant hybrids, inbreds, and varieties (especially in no-till fields)",
+          "Rotate away from corn for one to two years to reduce early-season infection",
+          "Use tillage where appropriate to bury and decompose corn residue, reducing survival of the fungus",
+          "Maintain balanced soil fertility to help plants resist infection",
+          "Foliar fungicides labeled for anthracnose leaf blight are available"
+        ],
+        "url": "https://cropprotectionnetwork.org/encyclopedia/anthracnose-leaf-blight-of-corn",
+        "quote": "Resistant hybrids and inbreds are available. Crop rotation and tillage reduce survival of the fungus and foliar fungicides labeled for anthracnose leaf blight are available."
+      },
+      "confidence": "high",
+      "num_sources": 4,
+      "conflicts": [
+        {
+          "field": "treatments (fungicide efficacy)",
+          "canonical_value": "Foliar fungicides labeled for anthracnose leaf blight are available",
+          "alternative_value": "No fungicides are effective against the anthracnose pathogen",
+          "alternative_source_url": "https://cropwatch.unl.edu/plant-disease/corn/anthracnose/",
+          "note": "Sources disagree on chemical control. Crop Protection Network states labeled foliar fungicides exist; UNL CropWatch states no fungicides are effective against the pathogen."
+        },
+        {
+          "field": "visual_symptoms.summary (maximum lesion size)",
+          "canonical_value": "Lesions up to 1 inch long and 1/2 inch wide",
+          "alternative_value": "Lesions can enlarge up to 5 to 6 inches long and may join to blight and kill the entire leaf",
+          "alternative_source_url": "https://extension.umn.edu/corn-pest-management/anthracnose-leaf-blight-corn",
+          "note": "Reported maximum lesion size differs substantially: Crop Protection Network cites up to 1 inch, UMN Extension cites up to 5-6 inches."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem",
+          "alternative_value": "Foliar only",
+          "alternative_source_url": "https://cropprotectionnetwork.org/encyclopedia/anthracnose-leaf-blight-of-corn",
+          "note": "Crop Protection Network and UMN Extension describe anthracnose leaf blight as foliar only; UK IPM and UNL CropWatch describe anthracnose as having additional stalk/stem (top die-back, stalk rot) phases."
+        },
+        {
+          "field": "visual_symptoms.diagnostic_features (hand lens magnification)",
+          "canonical_value": "Fruiting structures visible with a 30X hand lens",
+          "alternative_value": "Setae visible with a 20X-magnification hand lens",
+          "alternative_source_url": "https://cropwatch.unl.edu/plant-disease/corn/anthracnose/",
+          "note": "Sources cite different hand-lens magnifications for observing the black fruiting structures/setae."
+        },
+        {
+          "field": "pathogen_scientific_name (teleomorph)",
+          "canonical_value": "Colletotrichum graminicola",
+          "alternative_value": "Glomerella graminicola Politis (teleomorph / sexual stage)",
+          "alternative_source_url": "https://cropwatch.unl.edu/plant-disease/corn/anthracnose/",
+          "note": "UNL CropWatch lists the teleomorph name Glomerella graminicola Politis; Colletotrichum graminicola is the anamorph and is retained as canonical. No NCBI/MycoBank taxonomy validation was provided for confirmation."
+        }
+      ]
+    },
+    {
+      "disease_name": "Goss' Bacterial Wilt",
+      "pathogen_scientific_name": {
+        "value": "Clavibacter michiganensis subspecies nebraskensis",
+        "url": "https://extension.umn.edu/corn-pest-management/gosss-bacterial-wilt-and-leaf-blight-corn",
+        "quote": "Goss's wilt is caused by the bacterial pathogen named Clavibacter michiganensis subspecies nebraskensis.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://extension.umn.edu/corn-pest-management/gosss-bacterial-wilt-and-leaf-blight-corn",
+        "quote": "Goss's wilt is caused by the bacterial pathogen named Clavibacter michiganensis subspecies nebraskensis."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Vascular",
+          "Whole plant"
+        ],
+        "url": "https://extension.umn.edu/corn-pest-management/gosss-bacterial-wilt-and-leaf-blight-corn",
+        "quote": "The primary symptoms on leaves are elongated tan lesions with irregular margins extending parallel to the veins. ... In plants with stalk infection, orange vascular bundles may be seen in the stalk. The seedling blight phase of this disease may cause wilting and death of seedlings"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Leaves develop elongated tan lesions with irregular margins running parallel to the veins, containing dark water-soaked spots ('freckles') and shiny patches of dried bacterial ooze resembling dry varnish; stalk-infected plants may show orange vascular bundles.",
+          "url": "https://extension.umn.edu/corn-pest-management/gosss-bacterial-wilt-and-leaf-blight-corn",
+          "quote": "The primary symptoms on leaves are elongated tan lesions with irregular margins extending parallel to the veins. Large sections of leaf area can be affected. Dark, water-soaked spots ('freckles') develop in the lesions. Shiny patches of dried bacterial ooze that appear similar to dry varnish are often present on the lesions. In plants with stalk infection, orange vascular bundles may be seen in the stalk."
+        },
+        "diagnostic_features": {
+          "value": "Dark, water-soaked spots ('freckles') develop within the lesions, accompanied by shiny patches of dried bacterial ooze that appear similar to dry varnish.",
+          "url": "https://extension.umn.edu/corn-pest-management/gosss-bacterial-wilt-and-leaf-blight-corn",
+          "quote": "Dark, water-soaked spots ('freckles') develop in the lesions. Shiny patches of dried bacterial ooze that appear similar to dry varnish are often present on the lesions."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use resistant hybrids",
+          "Rotate away from corn production",
+          "Use tillage that buries corn residue after harvest",
+          "Control grassy weeds"
+        ],
+        "url": "https://extension.umn.edu/corn-pest-management/gosss-bacterial-wilt-and-leaf-blight-corn",
+        "quote": "This disease can be managed by using resistant hybrids, rotating away from corn production, using tillage that buries corn residue after harvest, and by controlling grassy weeds."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Brown Spot Of Corn",
+      "pathogen_scientific_name": {
+        "value": "Physoderma maydis",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/physoderma-brown-spot-of-corn",
+        "quote": "Physoderma brown spot is caused by the fungus Physoderma maydis .",
+        "taxonomy_validated": false,
+        "mycobank_url": "",
+        "ncbi_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/physoderma-brown-spot-of-corn",
+        "quote": "Physoderma brown spot is caused by the fungus Physoderma maydis ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://www.udel.edu/academics/colleges/canr/cooperative-extension/fact-sheets/physoderma-brown-spot/",
+        "quote": "Symptoms occur on mid-canopy leaves. Lesions occur on the stalks and midrib."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Leaf lesions are numerous, very small (approximately ¼ inch in diameter), round to oval, yellowish to brown in color, and usually occur in broad bands across the leaf.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/physoderma-brown-spot-of-corn",
+          "quote": "Leaf lesions are numerous, very small (approximately ¼ inch in diameter), round to oval, yellowish to brown in color, and usually occur in broad bands across the leaf."
+        },
+        "diagnostic_features": {
+          "value": "Alternating bands of infected and noninfected tissues are common, and dark purplish to black oval spots occur on the midrib of the leaf.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/physoderma-brown-spot-of-corn",
+          "quote": "Alternating bands of infected and noninfected tissues are common. Dark purplish to black oval spots also occur on the midrib of the leaf."
+        },
+        "look_alikes": {
+          "value": [
+            "eyespot",
+            "southern rust",
+            "purple leaf sheath"
+          ],
+          "url": "https://crops.extension.iastate.edu/cropnews/2015/07/physoderma-brown-spot-and-stalk-rot",
+          "quote": "Symptoms may be confused with eyespot, southern rust or purple leaf sheath, so look for the purplish oval spots."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Hybrids vary in their susceptibility to the disease; plant resistant hybrids where available",
+          "Crop rotation and tillage reduce survival of inoculum",
+          "Foliar fungicides labeled for Physoderma brown spot are available",
+          "Fungicide treatment is often unnecessary because the disease rarely reduces yield"
+        ],
+        "url": "https://cropprotectionnetwork.org/encyclopedia/physoderma-brown-spot-of-corn",
+        "quote": "Hybrids vary in their susceptibility to the disease, and crop rotation and tillage reduce survival of inoculum. Foliar fungicides labeled for Physoderma brown spot are available."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Physoderma Brown Spot of Corn",
+          "alternative_value": "Physoderma Brown Spot and Stalk Rot",
+          "alternative_source_url": "https://crops.extension.iastate.edu/cropnews/2015/07/physoderma-brown-spot-and-stalk-rot",
+          "note": "Iowa State scopes the disease to include the stalk/node rot phase caused by Physoderma maydis ('Physoderma Brown Spot and Stalk Rot'), whereas the Crop Protection Network and University of Delaware name only the foliar 'Physoderma brown spot'. All three describe the same pathogen and are merged as one disease."
+        }
+      ]
+    },
+    {
+      "disease_name": "Bacterial Rot And Blight",
+      "pathogen_scientific_name": {
+        "value": "Erwinia chrysanthemi pv. zeae",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/corn-zea-mays-bacterial-stalk-rot",
+        "quote": "Erwinia chrysanthemi pv . zeae (syn. = Dickeya zeae = E. carotovora f. sp . zeae ), a bacterium that persists on crop residues in soil.",
+        "taxonomy_validated": false,
+        "mycobank_url": "",
+        "ncbi_url": ""
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/corn-zea-mays-bacterial-stalk-rot",
+        "quote": "Erwinia chrysanthemi pv . zeae (syn. = Dickeya zeae = E. carotovora f. sp . zeae ), a bacterium that persists on crop residues in soil."
+      },
+      "affected_parts": {
+        "value": [
+          "Stem",
+          "Foliar"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/corn-zea-mays-bacterial-stalk-rot",
+        "quote": "The first and/or second internode above the soil line appears water soaked, turns tan to brown, and becomes soft and mushy. ... In the top rot phase, tips of uppermost leaves wilt, followed by a slimy soft rot at the base of the whorl that spreads down into the stalk."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "In the stalk rot phase, the first and/or second internode above the soil line appears water soaked, turns tan to brown, and becomes soft and mushy; in the top rot phase, tips of the uppermost leaves wilt, followed by a slimy soft rot at the base of the whorl that spreads down into the stalk.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/corn-zea-mays-bacterial-stalk-rot",
+          "quote": "The first and/or second internode above the soil line appears water soaked, turns tan to brown, and becomes soft and mushy. Affected plants suddenly collapse and fall over with their vascular strands still intact. Infected tissue has a foul odor. In the top rot phase, tips of uppermost leaves wilt, followed by a slimy soft rot at the base of the whorl that spreads down into the stalk. Affected plants collapse."
+        },
+        "diagnostic_features": {
+          "value": "Affected plants suddenly collapse and fall over with their vascular strands still intact, and infected tissue has a foul odor.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/corn-zea-mays-bacterial-stalk-rot",
+          "quote": "Affected plants suddenly collapse and fall over with their vascular strands still intact. Infected tissue has a foul odor."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Incorporate infected crop residues",
+          "Avoid overhead irrigation",
+          "Use well water for irrigation if possible",
+          "If the irrigation source is surface water (ponds, rivers, etc.), use a hypochlorite water treatment system",
+          "There is no evidence that copper formulations (Group M1) are effective for controlling this disease",
+          "Cueva (Group M1) at 0.5 to 2 gal/100 gal water on 7- to 10-day intervals",
+          "Kocide 2000-O (Group M1) at 1.5 to 3 lb/A on 7- to 10-day intervals"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/corn-zea-mays-bacterial-stalk-rot",
+        "quote": "Cultural control Incorporate infected crop residues. Avoid overhead irrigation. Use well water, if possible, for irrigation. If irrigation source is surface water (ponds, rivers, etc.), use a hypochlorite water treatment system. Chemical control There is no evidence that applications of copper formulations (Group M1) are effective for controlling this disease. Cueva (Group M1) at 0.5 to 2 gal/100 gal water on 7- to 10-day intervals. May be applied on the day of harvest. 4-hr reentry. O Kocide 2000-O (Group M1) at 1.5 to 3 lb/A on 7- to 10-day intervals. 48-hr reentry. O"
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Erwinia chrysanthemi pv. zeae",
+          "alternative_value": "Dickeya zeae",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/corn-zea-mays-bacterial-stalk-rot",
+          "note": "The source itself lists 'syn. = Dickeya zeae = E. carotovora f. sp. zeae'. No NCBI Taxonomy / MycoBank validation data was supplied, so per the no-invention rule the source's primary stated name (Erwinia chrysanthemi pv. zeae) is retained as canonical; the source-stated synonyms Dickeya zeae and E. carotovora f. sp. zeae are recorded here. Dickeya zeae is the synonym most commonly treated as the current accepted name."
+        }
+      ]
+    },
+    {
+      "disease_name": "Common Corn Rust",
+      "pathogen_scientific_name": {
+        "value": "Puccinia sorghi",
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/common-rust-of-sweet-corn/",
+        "quote": "Common rust is caused by the fungus, Puccinia sorghi .",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+        "quote": "Rusts are fungal diseases that can be found throughout corn growing regions of the United States and southern Canada."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/common-rust-of-sweet-corn/",
+        "quote": "Rust pustules of either color may occur on the leaves, leaf sheaths, stalks, ears, tassels, and husks."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Common rust produces rust-colored to dark brown, elongated pustules on both leaf surfaces; the pustules contain cinnamon brown rust spores (urediniospores) and darken as they age, with leaf chlorosis and death possible under severe conditions.",
+          "url": "https://extension.umn.edu/corn-pest-management/common-rust-corn",
+          "quote": "Common rust produces rust-colored to dark brown, elongated pustules on both leaf surfaces. The pustules contain rust spores (urediniospores) that are cinnamon brown in color. Pustules darken as they age. Leaves, as well as sheaths, can be infected. Under severe conditions leaf chlorosis and death may occur."
+        },
+        "diagnostic_features": {
+          "value": "Brown pustules occur on both the top and bottom leaf surfaces, which differentiates common rust from Southern rust.",
+          "url": "https://extension.umn.edu/corn-pest-management/common-rust-corn",
+          "quote": "Common rust can be differentiated from Southern rust by the brown pustules occurring on both top and bottom leaf surfaces with common rust."
+        },
+        "look_alikes": {
+          "value": [
+            "Southern rust",
+            "tar spot",
+            "gray leaf spot"
+          ],
+          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/common-rust-of-sweet-corn/",
+          "quote": "Older, black rust pustules may easily be confused with tar spot."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant resistant or moderately resistant corn hybrids/cultivars — the best and most cost-effective management practice; use moderately resistant cultivars for late-season plantings.",
+          "Apply fungicides, especially early when few pustules have appeared on the leaves; in sweet corn, fungicides are typically applied at V7-V8 and tassel.",
+          "Use fungicides containing strobilurins (FRAC Group 11) and demethylation inhibitors (FRAC Group 3) for adequate control.",
+          "For common rust, spray fungicide when 80% of observed leaves have one or more pustules.",
+          "Scout fields early and frequently when corn rust is found nearby to prepare for potential fungicide applications.",
+          "If irrigation is used, apply it at midday to minimize the time leaves are wet, reducing infection and disease spread.",
+          "Use crop rotation of at least three years between field or sweet corn crops (manages other foliar diseases, though it will not influence common rust severity)."
+        ],
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/common-rust-of-sweet-corn/",
+        "quote": "Resistant or moderately resistant cultivars should be used for late season plantings. ... In sweet corn, fungicides are typically applied at V7-V8 and tassel. ... Fungicides containing active ingredients belonging to the strobilurins (Fungicide Resistance Action Committee [FRAC] Group 11) and demethylation inhibitors (FRAC Group 3) are likely to provide adequate control of common rust."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem (leaves, leaf sheaths, stalks, ears, tassels, husks)",
+          "alternative_value": "Foliar only (leaves and leaf sheaths)",
+          "alternative_source_url": "https://extension.umn.edu/corn-pest-management/common-rust-corn",
+          "note": "Cornell Vegetables reports pustules on leaves, leaf sheaths, stalks, ears, tassels and husks; UMN Extension ('Leaves, as well as sheaths, can be infected') and NC State Extension report only leaf and leaf-sheath (foliar) tissue. All sources are university extension (equal authority); canonical follows the more complete report."
+        }
+      ]
+    },
+    {
+      "disease_name": "Corn Smut",
+      "pathogen_scientific_name": {
+        "value": "Ustilago maydis",
+        "url": "https://content.ces.ncsu.edu/common-smut-on-corn",
+        "quote": "Common smut is caused by the fungus, Ustilago maydis .",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://content.ces.ncsu.edu/common-smut-on-corn",
+        "quote": "Common smut is caused by the fungus, Ustilago maydis ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Whole plant"
+        ],
+        "url": "https://content.ces.ncsu.edu/common-smut-on-corn",
+        "quote": "Common smut causes yellowing of green tissue and the production of light green or white to gray, fleshy galls on any part of the corn plant, including leaves, tassels, stalks (Figure 1) and ears (Figure 2)."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Common smut causes yellowing of green tissue and produces light green or white to gray, fleshy galls on any part of the corn plant, including leaves, tassels, stalks and ears.",
+          "url": "https://content.ces.ncsu.edu/common-smut-on-corn",
+          "quote": "Common smut causes yellowing of green tissue and the production of light green or white to gray, fleshy galls on any part of the corn plant, including leaves, tassels, stalks (Figure 1) and ears (Figure 2)."
+        },
+        "diagnostic_features": {
+          "value": "Galls on ears, leaves, stalk, or tassels are initially covered with white to silvery tissue, then develop dark masses of spores inside; leaf galls generally remain small.",
+          "url": "https://extension.umn.edu/corn-pest-management/common-smut-corn",
+          "quote": "Galls commonly develop on ears, leaves, stalk, or tassels and are initially covered with white to silvery tissue. Later, dark masses of spores develop inside the galls. Leaf galls generally remain small."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Destroy all stalks and other debris from fields as soon after harvest as possible, tilling debris as deep into the soil as possible while managing soil erosion.",
+          "Use crop rotation with any other crop to reduce disease pressure.",
+          "Reduce drought stress through irrigation.",
+          "Reduce nutrient stress through proper fertilization and maintain proper soil fertility.",
+          "Scout for smut galls and remove galls before they rupture.",
+          "Scout for insects and manage insect damage by using insecticides at optimal times.",
+          "Plant resistant hybrids (note: sources conflict on whether resistant corn varieties exist — see conflicts)."
+        ],
+        "url": "https://content.ces.ncsu.edu/common-smut-on-corn",
+        "quote": "Destroy all stalks and other debris from fields, as soon after harvest as possible. Till debris as deep into the soil as possible, while managing soil erosion."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem, Whole plant (galls on any part of the corn plant)",
+          "alternative_value": "Foliar, Stem (ears, leaves, stalk, tassels)",
+          "alternative_source_url": "https://extension.umn.edu/corn-pest-management/common-smut-corn",
+          "note": "NC State Extension states galls form on 'any part of the corn plant'; UMN Extension lists ears, leaves, stalk, and tassels. Both are university extension (equal authority); canonical follows the more complete 'whole plant' report."
+        },
+        {
+          "field": "treatments / host resistance",
+          "canonical_value": "There are no corn varieties resistant to common smut (NC State Extension)",
+          "alternative_value": "Common smut can be managed with resistant hybrids (UMN Extension)",
+          "alternative_source_url": "https://extension.umn.edu/corn-pest-management/common-smut-corn",
+          "note": "NC State Extension states 'There are no corn varieties resistant to common smut, though you may consult with local seed representatives to discuss hybrid options'; UMN Extension recommends resistant hybrids as a management practice ('This disease can be managed with resistant hybrids, crop rotation, and by maintaining proper soil fertility'). Both sources are university extension (equal authority); canonical follows the more explicit statement on resistance availability."
+        }
+      ]
+    },
+    {
+      "disease_name": "Downy Mildew",
+      "pathogen_scientific_name": {
+        "value": "Sclerophthora macrospora",
+        "url": "https://ipm.missouri.edu/cropPest/2011/5/Crazy-Top-of-Corn/",
+        "quote": "Crazy top of corn is caused by the downy mildew fungus, Sclerophthora macrospora.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ipm.missouri.edu/cropPest/2011/5/Crazy-Top-of-Corn/",
+        "quote": "Crazy top of corn is caused by the downy mildew fungus, Sclerophthora macrospora."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Whole plant"
+        ],
+        "url": "https://ipm.missouri.edu/cropPest/2011/5/Crazy-Top-of-Corn/",
+        "quote": "The disease causes a deformation of plant tissues including excessive tillering, rolling of leaves, proliferation of the tassel until it resembles a mass of leafy structures and stunting of corn plants."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "The disease causes deformation of plant tissues including excessive tillering, rolling of leaves, proliferation of the tassel into a mass of leafy structures, and stunting; leaves may be narrow and straplike, leathery, and yellow or yellow striped.",
+          "url": "https://ipm.missouri.edu/cropPest/2011/5/Crazy-Top-of-Corn/",
+          "quote": "The disease causes a deformation of plant tissues including excessive tillering, rolling of leaves, proliferation of the tassel until it resembles a mass of leafy structures and stunting of corn plants. Leaves of infected plants may be narrow and straplike in shape, leathery in texture and yellow or yellow striped in color."
+        },
+        "diagnostic_features": {
+          "value": "Proliferation of the tassel until it resembles a mass of leafy structures, along with excessive tillering and stunting.",
+          "url": "https://ipm.missouri.edu/cropPest/2011/5/Crazy-Top-of-Corn/",
+          "quote": "proliferation of the tassel until it resembles a mass of leafy structures and stunting of corn plants"
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Improve soil/field drainage and water management; avoid low, wet areas in fields.",
+          "Rotate to nongrass crops, keeping rotational fields free of grassy weeds.",
+          "Pull up and discard infected plants to reduce inoculum buildup and the risk of disease in subsequent years."
+        ],
+        "url": "https://crops.extension.iastate.edu/cropnews/2009/07/signs-crazy-top-corn",
+        "quote": "This disease is best managed by improving field drainage or by avoiding low, wet areas in fields. Rotation may be helpful if care is taken to keep rotational fields free of grassy weeds."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Whole plant",
+          "alternative_value": "Foliar, Seed, Whole plant",
+          "alternative_source_url": "https://crops.extension.iastate.edu/cropnews/2009/07/signs-crazy-top-corn",
+          "note": "The Iowa State extraction additionally tags 'Seed' as an affected part (evidence describes a 'leafy' tassel); the Missouri IPM extraction lists only Foliar and Whole plant. Both are university extension sources of equal authority rank (Rank 5); Missouri's value was chosen as canonical because its evidence quote directly enumerates the deformed tissues."
+        }
+      ]
+    },
+    {
+      "disease_name": "White Ear Rot And Seedling Blight Of Maize",
+      "pathogen_scientific_name": {
+        "value": "Stenocarpella maydis and Stenocarpella macrospora",
+        "url": "https://guide.utcrops.com/corn/corn-ear-rots/diplodia-ear-rot/",
+        "quote": "Diplodia ear rot (DER) is caused by the fungal pathogens Stenocarpella maydis, which is also the causal agent for Diplodia Stalk Rot, and S. macrospora, which is also associated with the foliar disease – Diplodia leaf streak.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://guide.utcrops.com/corn/corn-ear-rots/diplodia-ear-rot/",
+        "quote": "Diplodia ear rot (DER) is caused by the fungal pathogens Stenocarpella maydis"
+      },
+      "affected_parts": {
+        "value": [
+          "Seed"
+        ],
+        "url": "https://guide.utcrops.com/corn/corn-ear-rots/diplodia-ear-rot/",
+        "quote": "The presence of raised black bumps (pycnidia) that develop on the moldy husk or kernels late in the season is also a distinguishing feature."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Diplodia ear rot can appear as early as the R3 (Milk) stage, with infected husks often bleached while the rest of the plant stays green; white mold starts at the base of the ear and the whole ear becomes grayish-brown as the rot progresses.",
+          "url": "https://guide.utcrops.com/corn/corn-ear-rots/diplodia-ear-rot/",
+          "quote": "DER can be observed in plants as early as R3 (Milk) stage. Infected husks are often bleached while the rest of the plant remains green. The identifying characteristic of the fungi are white mold starting at the base of the ear and as the rot progresses the whole ear becomes grayish-brown."
+        },
+        "diagnostic_features": {
+          "value": "White mold starting at the base of the ear that progresses to a grayish-brown ear, and raised black bumps (pycnidia) developing on the moldy husk or kernels late in the season.",
+          "url": "https://guide.utcrops.com/corn/corn-ear-rots/diplodia-ear-rot/",
+          "quote": "The identifying characteristic of the fungi are white mold starting at the base of the ear and as the rot progresses the whole ear becomes grayish-brown. The presence of raised black bumps (pycnidia) that develop on the moldy husk or kernels late in the season is also a distinguishing feature."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Reduce surface residue through tillage to control disease.",
+          "Where tillage is not suitable, plant hybrids that are less susceptible.",
+          "Rotate to non-host crops."
+        ],
+        "url": "https://guide.utcrops.com/corn/corn-ear-rots/diplodia-ear-rot/",
+        "quote": "The most important source of inoculum of DER is the debris of diseased corn stalks from the previous crop, therefore reducing surface residue through tillage is an effective practice to control disease. However, where tillage is not suitable, growers should look for hybrids that are less susceptible and rotate to non-host crops."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Dry Rot Of Ears And Stalks Of Maize",
+      "pathogen_scientific_name": {
+        "value": "Stenocarpella maydis",
+        "url": "http://extension.cropsciences.illinois.edu/fieldcrops/corn/diplodia_stalk_rot/",
+        "quote": "Stenocarpella (Diplodia) maydis (a fungus)",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "http://extension.cropsciences.illinois.edu/fieldcrops/corn/diplodia_stalk_rot/",
+        "quote": "Stenocarpella (Diplodia) maydis (a fungus)"
+      },
+      "affected_parts": {
+        "value": [
+          "Stem",
+          "Root"
+        ],
+        "url": "http://extension.cropsciences.illinois.edu/fieldcrops/corn/diplodia_stalk_rot/",
+        "quote": "The crown, mesocotyl, or roots are often the point of infection, however, the nodes between the crown and the ear can also be infected."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "White mycelium can develop in lower stalks, with tiny black specks (pycnidia) embedded in the rind of the lower stalk; the lower, inner stalk may show shredded tissue and small, dark specks (pycnidia).",
+          "url": "http://extension.cropsciences.illinois.edu/fieldcrops/corn/diplodia_stalk_rot/",
+          "quote": "White mycelium can develop in lower stalks. Tiny black specks (pycnidia) embedded in rind of lower stalk Lower, inner stalk may have shredded tissue and small, dark specks (pycnidia)"
+        },
+        "diagnostic_features": {
+          "value": "Symptoms may be similar to those of Gibberella stalk rot, but Diplodia doesn't develop pink color.",
+          "url": "http://extension.cropsciences.illinois.edu/fieldcrops/corn/diplodia_stalk_rot/",
+          "quote": "Symptoms may be similar to those of Gibberella stalk rot, but Diplodia doesn't develop pink color."
+        },
+        "look_alikes": {
+          "value": [
+            "Gibberella stalk rot"
+          ],
+          "url": "http://extension.cropsciences.illinois.edu/fieldcrops/corn/diplodia_stalk_rot/",
+          "quote": "Symptoms may be similar to those of Gibberella stalk rot, but Diplodia doesn't develop pink color."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use commercial corn hybrids that are resistant to Gibberella stalk rot",
+          "Maintain balanced fertility",
+          "Use the proper plant population",
+          "Reduce plant stress",
+          "Control stalk-boring insects"
+        ],
+        "url": "http://extension.cropsciences.illinois.edu/fieldcrops/corn/diplodia_stalk_rot/",
+        "quote": "Use commercial corn hybrids that are resistant to Gibberella stalk rot Maintain balanced fertility Use the proper plant population Reduce plant stress Control stalk-boring insects"
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Stenocarpella maydis",
+          "alternative_value": "Diplodia maydis",
+          "alternative_source_url": "http://extension.cropsciences.illinois.edu/fieldcrops/corn/diplodia_stalk_rot/",
+          "note": "The University of Illinois Extension source writes the pathogen as 'Stenocarpella (Diplodia) maydis', presenting Diplodia maydis as a former genus synonym. No NCBI/MycoBank taxonomy validation was supplied (validations array empty) to formally confirm the currently accepted name; Stenocarpella maydis is retained as canonical because the source presents it as the primary name."
+        }
+      ]
+    },
+    {
+      "disease_name": "Southern Corn Rust",
+      "pathogen_scientific_name": {
+        "value": "Puccinia polysora",
+        "url": "https://link.springer.com/article/10.1186/s42483-021-00102-0",
+        "quote": "Puccinia polysora , the causal agent of SCR, was first described and named by Underwood in 1897 (Underwood 1897 )",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://link.springer.com/article/10.1186/s42483-021-00102-0",
+        "quote": "When urediniospores of these two fungi are treated with 95% sulfuric acid or 75% hydrochloric acid, the protoplast of P. polysora contracts into the shape of a ball"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://link.springer.com/article/10.1186/s42483-021-00102-0",
+        "quote": "The pathogen infects all the aboveground parts of maize plants including leaves, sheaths and stems (Fig. 4 )."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Early lesions on leaves are small and circular-to-oval, often with a prominent light green to yellow halo; as they mature the fungus erupts through the leaf surface forming light orange to cinnamon-red pustules.",
+          "url": "https://cropwatch.unl.edu/plant-disease/corn/southern-rust/",
+          "quote": "Early lesions on leaves are small and circular-to-oval, often with a prominent light green to yellow halo. As lesions mature, the fungus erupts through the leaf surface (epidermis. Light orange to cinnamon-red pustules (image) are the characteristic symptom on leaves; urediniospores that rub off on fingers are what impart the color to the lesion."
+        },
+        "diagnostic_features": {
+          "value": "Pustules of P. polysora are primarily produced on the upper leaf surfaces, whereas common rust pustules develop on both sides of the leaf.",
+          "url": "https://link.springer.com/article/10.1186/s42483-021-00102-0",
+          "quote": "Pustules of P. polysora are primarily produced on the upper leaf surfaces, distinguishing them from common rust whose pustules develop on both sides (Crouch and Szabo 2011 )."
+        },
+        "look_alikes": {
+          "value": [
+            "Common rust"
+          ],
+          "url": "https://ipm.ca.uky.edu/content/southern-rust-corn",
+          "quote": "Symptoms are somewhat similar to common rust"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Resistant varieties are the most cost-effective means to manage southern rust in field corn.",
+          "In seed production fields, foliar fungicides may be cost-effective if southern rust is severe.",
+          "Consult your seed dealer to determine the best hybrids and inbreds for your area.",
+          "Foliar fungicides can be effective in managing southern rust and numerous products are labeled for use.",
+          "Intercropping can also reduce the severity of the disease.",
+          "In the maize booting stage, 12.5% epoxiconazole SC effectively controlled SCR damage by up to 85.54%.",
+          "The application of quinone outside inhibitor (Qol) or Qol + demethylation inhibitor (DMI) fungicides at tasseling stage were most effective when SCR was present and environmental conditions favored rust development.",
+          "A combination of triazole and estrobirulina was feasible to reduce SCR severity.",
+          "Avoid late planting."
+        ],
+        "url": "https://link.springer.com/article/10.1186/s42483-021-00102-0",
+        "quote": "The use of resistant crop varieties is considered an effective and environmentally friendly strategy for disease management."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Southern corn rust",
+          "alternative_value": "Southern Rust",
+          "alternative_source_url": "https://cropwatch.unl.edu/plant-disease/corn/southern-rust/",
+          "note": "Naming variant for the same disease caused by Puccinia polysora. Canonical name taken from the peer-reviewed Springer review (Rank 4), which outranks the extension page titles (Rank 5)."
+        },
+        {
+          "field": "disease_name",
+          "canonical_value": "Southern corn rust",
+          "alternative_value": "Southern Rust in Corn",
+          "alternative_source_url": "https://ipm.ca.uky.edu/content/southern-rust-corn",
+          "note": "Naming variant (page-title form) for the same disease caused by Puccinia polysora."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem",
+          "alternative_value": "Foliar",
+          "alternative_source_url": "https://ipm.ca.uky.edu/content/southern-rust-corn",
+          "note": "UKy IPM describes only leaf (upper-surface) symptoms. CropWatch ('Lesions develop on stalk, husk, and leaf sheath tissues as well.') and the Springer review ('infects all the aboveground parts of maize plants including leaves, sheaths and stems') additionally report stalk/husk/sheath/stem infection; canonical value uses the more complete, higher-authority sources."
+        }
+      ]
+    },
+    {
+      "disease_name": "Gray Leaf Spot",
+      "pathogen_scientific_name": {
+        "value": "Cercospora zeae-maydis",
+        "url": "https://extension.umn.edu/corn-pest-management/gray-leaf-spot-corn",
+        "quote": "The pathogen is a fungus called Cercospora zeae-maydis.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/gray-leaf-spot-of-corn",
+        "quote": "Gray leaf spot, caused by the fungus Cercospora zeae-maydis , occurs virtually every growing season."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://extension.umn.edu/corn-pest-management/gray-leaf-spot-corn",
+        "quote": "Gray leaf spot is typically the most serious foliar disease of corn in the U.S. corn belt"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "The disease first appears as small, necrotic spots with halos that expand into rectangular gray to brown lesions about 1/8 inch wide by up to 2 to 3 inches long.",
+          "url": "https://extension.umn.edu/corn-pest-management/gray-leaf-spot-corn",
+          "quote": "The disease first appears in the form of small, necrotic spots with halos. These usually expand to become rectangular lesions, about 1/8 inch&nbsp;wide by up to 2 inches to 3 inches long and gray to brown in appearance."
+        },
+        "diagnostic_features": {
+          "value": "Mature lesions usually have distinct parallel edges and appear opaque when put up to the light, and gray leaf spot lesions are usually limited on the sides by veins.",
+          "url": "https://extension.umn.edu/corn-pest-management/gray-leaf-spot-corn",
+          "quote": "Mature lesions usually have distinct parallel edges and appear opaque when put up to the light, but the lesions hybrids vary widely in shape and color. Symptoms can sometimes be confused with northern corn leaf spot, although gray leaf spot lesions are usually limited on the sides by veins."
+        },
+        "look_alikes": {
+          "value": [
+            "northern corn leaf spot"
+          ],
+          "url": "https://extension.umn.edu/corn-pest-management/gray-leaf-spot-corn",
+          "quote": "Symptoms can sometimes be confused with northern corn leaf spot, although gray leaf spot lesions are usually limited on the sides by veins."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use resistant corn hybrids and inbreds",
+          "Conventional tillage where appropriate; tillage reduces survival of the fungus",
+          "Crop rotation to reduce survival of the fungus",
+          "Apply foliar fungicides when economically warranted; fungicides labeled for gray leaf spot are available"
+        ],
+        "url": "https://extension.umn.edu/corn-pest-management/gray-leaf-spot-corn",
+        "quote": "Disease management tactics include using resistant corn hybrids, conventional tillage where appropriate, and crop rotation. Foliar fungicides can be effective if economically warranted."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "visual_symptoms.summary",
+          "canonical_value": "Rectangular lesions about 1/8 inch wide by up to 2 to 3 inches long, gray to brown in appearance",
+          "alternative_value": "Leaf lesions long (up to 2 inches), narrow, rectangular, and light tan colored, later turning gray",
+          "alternative_source_url": "https://cropprotectionnetwork.org/encyclopedia/gray-leaf-spot-of-corn",
+          "note": "Sources differ on maximum lesion length (2 to 3 inches per UMN vs up to 2 inches per Crop Protection Network) and on initial lesion color (gray to brown per UMN vs light tan turning gray per CPN)."
+        }
+      ]
+    },
+    {
+      "disease_name": "Northern Corn Leaf Blight",
+      "pathogen_scientific_name": {
+        "value": "Exserohilum turcicum",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-cer-10",
+        "quote": "Northern corn leaf blight (NCLB), caused by the fungus Exserohilum turcicum",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-cer-10",
+        "quote": "caused by the fungus Exserohilum turcicum"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://ohioline.osu.edu/factsheet/plpath-cer-10",
+        "quote": "is one of the most frequently occurring foliar diseases of corn in Ohio and the Midwest in general"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "The characteristic symptom is one-to-six inch long cigar-shaped gray- to tan-colored lesions on the leaves; before lesions are fully developed they first appear as small light-green to grayish spots, and as the disease develops lesions spread to all leafy structures including the husks.",
+          "url": "https://ohioline.osu.edu/factsheet/plpath-cer-10",
+          "quote": "The characteristic symptom of northern corn leaf blight on a susceptible hybrid is one-to-six inch long cigar-shaped gray- to tan-colored lesions on the leaves ( Fig. 1 )."
+        },
+        "diagnostic_features": {
+          "value": "Canoe-shaped lesions initially bordered by gray-green margins that eventually turn tan colored and may contain dark areas of fungal sporulation.",
+          "url": "https://extension.umn.edu/corn-pest-management/northern-corn-leaf-blight",
+          "quote": "The lesions are initially bordered by gray-green margins. They eventually turn tan colored and may contain dark areas of fungal sporulation."
+        },
+        "look_alikes": {
+          "value": [
+            "Goss's leaf blight",
+            "Stewart's wilt",
+            "leaves killed by frost"
+          ],
+          "url": "https://extension.umn.edu/corn-pest-management/northern-corn-leaf-blight",
+          "quote": "The disease can be confused with symptoms of Goss's leaf blight on some hybrids, and perhaps with Stewarts wilt where this disease occurs."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant resistant hybrids — the most effective method for controlling NCLB; plant in all commercial dent corn production fields",
+          "Select hybrids with high levels of partial resistance in combination with Ht1, Ht2 or other Ht genes",
+          "Use a one- to two-year crop rotation away from corn",
+          "Destroy old corn residue by tillage",
+          "Apply fungicide sprays for fresh market sweet corn, hybrid seed production, and dent corn fields planted with susceptible hybrids; fungicides may be warranted on inbreds for seed production during early disease stages",
+          "Begin the spray schedule when the first lesions appear on the leaf below the ear on 50% of plants; applications at tasseling or silking (VT/R1) provide the most consistent results"
+        ],
+        "url": "https://ohioline.osu.edu/factsheet/plpath-cer-10",
+        "quote": "Planting resistant hybrids is the most effective method for controlling NCLB."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Exserohilum turcicum",
+          "alternative_value": "Helminthosporium turcicum",
+          "alternative_source_url": "https://extension.umn.edu/corn-pest-management/northern-corn-leaf-blight",
+          "note": "UMN lists Helminthosporium turcicum as a synonym of the accepted name Exserohilum turcicum (quote: 'The pathogen is the fungus Exserohilum turcicum (syn. Helminthosporium turcicum).'). No taxonomy validation data was supplied to confirm the current accepted name."
+        },
+        {
+          "field": "visual_symptoms.summary",
+          "canonical_value": "Cigar-shaped gray- to tan-colored lesions, one-to-six inches long",
+          "alternative_value": "Canoe-shaped lesions 1 to 6 inches long",
+          "alternative_source_url": "https://extension.umn.edu/corn-pest-management/northern-corn-leaf-blight",
+          "note": "Sources use different shape descriptors ('cigar-shaped' per OSU vs 'canoe-shaped' per UMN); both agree on the 1-to-6 inch lesion length."
+        },
+        {
+          "field": "visual_symptoms.look_alikes",
+          "canonical_value": "Goss's leaf blight; Stewart's wilt",
+          "alternative_value": "Leaves killed by frost",
+          "alternative_source_url": "https://ohioline.osu.edu/factsheet/plpath-cer-10",
+          "note": "OSU additionally notes blighted leaves resemble frost damage (quote: 'The leaves then become grayish-green and brittle, resembling leaves killed by frost.'). This look-alike was merged into the canonical list."
+        }
+      ]
+    },
+    {
+      "disease_name": "Xanthomonas Vasicola",
+      "pathogen_scientific_name": {
+        "value": "Xanthomonas vasicola",
+        "url": "https://content.ces.ncsu.edu/gray-leaf-spot-in-corn",
+        "quote": "Bacterial leaf streak ( Xanthomonas vasicola )",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://content.ces.ncsu.edu/gray-leaf-spot-in-corn",
+        "quote": "Bacterial leaf streak ( Xanthomonas vasicola )"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://content.ces.ncsu.edu/gray-leaf-spot-in-corn",
+        "quote": "In early stages, several foliar diseases on corn may look similar to GLS:"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Produces rectangular lesions with a distinct yellow halo around the lesion when held up to the sun, and the lesions are devoid of fungal spores.",
+          "url": "https://content.ces.ncsu.edu/gray-leaf-spot-in-corn",
+          "quote": "This pathogen produces rectangular lesions with a distinct yellow halo around the lesion when held up to the sun. Lesions are also devoid of fungal spores."
+        },
+        "diagnostic_features": {
+          "value": "Rectangular lesions show a distinct yellow halo when held up to the sun and are devoid of fungal spores.",
+          "url": "https://content.ces.ncsu.edu/gray-leaf-spot-in-corn",
+          "quote": "This pathogen produces rectangular lesions with a distinct yellow halo around the lesion when held up to the sun. Lesions are also devoid of fungal spores."
+        },
+        "look_alikes": {
+          "value": [
+            "Gray leaf spot"
+          ],
+          "url": "https://content.ces.ncsu.edu/gray-leaf-spot-in-corn",
+          "quote": "In early stages, several foliar diseases on corn may look similar to GLS:"
+        }
+      },
+      "treatments": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Fusarium Graminearum Schwabe",
+      "pathogen_scientific_name": {
+        "value": "",
+        "url": "",
+        "quote": "",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "",
+        "url": "",
+        "quote": ""
+      },
+      "affected_parts": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "",
+          "url": "",
+          "quote": ""
+        },
+        "diagnostic_features": {
+          "value": "",
+          "url": "",
+          "quote": ""
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "confidence": "low",
+      "num_sources": 1,
+      "conflicts": []
+    }
+  ],
+  "crop": "Corn",
+  "generated_date": "2026-05-22"
+}
