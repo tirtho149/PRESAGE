@@ -1,0 +1,132 @@
+{
+  "crop": "Rice",
+  "candidate_sources": [
+    {
+      "url": "https://www.uaex.uada.edu/publications/pdf/FSA-7580.pdf",
+      "title": "Bacterial Panicle Blight of Rice in Arkansas",
+      "snippet": "University of Arkansas Cooperative Extension factsheet (FSA-7580) on Bacterial Panicle Blight of Rice, covering pathogen Burkholderia glumae, symptoms including grain discoloration, panicle blight, sheath rot, and disease management strategies in Arkansas rice production.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial Panicle Blight"
+      ]
+    },
+    {
+      "url": "https://www.lsuagcenter.com/topics/crops/rice/diseases/photos/bacterial-panicle-blight",
+      "title": "Bacterial Panicle Blight - LSU AgCenter",
+      "snippet": "LSU AgCenter page on Bacterial Panicle Blight caused by Burkholderia glumae. Symptoms include sheath rot and discoloration and sterility in panicles; diagnostic features include green panicle branches up to the infected grain and two-toned grain with brown discoloration on the lower third to half of the grain.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial Panicle Blight"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHYTO-09-20-0401-RVW",
+      "title": "Bacterial Panicle Blight and Burkholderia glumae: From Pathogen Biology to Disease Control | Phytopathology",
+      "snippet": "APS Phytopathology review article covering Bacterial Panicle Blight (BPB) caused by Burkholderia glumae - a major disease affecting rice production worldwide. Discusses pathogen biology, symptoms (long gray lesions, brown grain discoloration, seed abortion), epidemiology (high temperature and humidity at heading), and integrated disease control including biocontrol and resistance.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Bacterial Panicle Blight"
+      ]
+    },
+    {
+      "url": "https://www.lsuagcenter.com/~/media/files/bacterial-panicle-blight.pdf",
+      "title": "Rice Bacterial Panicle Blight Disease Management",
+      "snippet": "LSU AgCenter PDF publication on Rice Bacterial Panicle Blight Disease Management - covers pathogen identification (Burkholderia glumae), field symptoms, conditions favoring outbreaks, and management recommendations including cultivar selection and cultural practices.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial Panicle Blight"
+      ]
+    },
+    {
+      "url": "https://www.lsuagcenter.com/~/media/system/c/6/4/1/c6412227e749ab7faabcc781d758f812/pub3105narrowbrownleafspotlowres.pdf",
+      "title": "Narrow Brown Leaf Spot of Rice (LSU AgCenter Pub 3105)",
+      "snippet": "LSU AgCenter extension publication on Narrow Brown Leaf Spot of Rice caused by Cercospora janseana. Covers symptoms on leaves (NBLS), tillers (Cercospora net blotch), and panicles (Cercospora panicle blight); typical lesions 2-10 mm long and 1-1.5 mm wide, light to dark brown linear lesions parallel to veins; sexual stage Sphaerulina oryzina; management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Narrow Brown Leaf Spot",
+        "Cercospora net blotch",
+        "Cercospora panicle blight"
+      ]
+    },
+    {
+      "url": "https://www.uaex.uada.edu/publications/pdf/FSA2213.pdf",
+      "title": "Cercospora Diseases in Rice (University of Arkansas Cooperative Extension FSA2213)",
+      "snippet": "University of Arkansas extension factsheet on Cercospora diseases of rice including narrow brown leaf spot caused by Cercospora janseana. Discusses symptoms, disease cycle, conditions favoring disease (warm humid environments, potassium-deficient soils), and management recommendations including resistant varieties and fungicide applications.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Narrow Brown Leaf Spot",
+        "Cercospora diseases of rice"
+      ]
+    },
+    {
+      "url": "https://www.cabi.org/ISC/datasheet/12254",
+      "title": "Sphaerulina oryzina (narrow brown leaf spot) - CABI Compendium Datasheet",
+      "snippet": "CABI Invasive Species Compendium datasheet for Sphaerulina oryzina (anamorph Cercospora janseana / Cercospora oryzae), causal agent of narrow brown leaf spot of rice. Comprehensive coverage of pathogen taxonomy, hosts, symptoms (short linear brown lesions on leaves, sheaths, pedicels and glumes), distribution, biology, epidemiology, and management.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "narrow brown leaf spot"
+      ]
+    },
+    {
+      "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/narrow-brown-spot",
+      "title": "Narrow brown spot - IRRI Rice Knowledge Bank",
+      "snippet": "IRRI Rice Knowledge Bank factsheet on narrow brown spot of rice. Describes lesions as short, linear, brown, 2-10 mm long and ~1 mm wide on leaf blades, sheaths, pedicels and glumes; darker centers on resistant varieties vs. wider lighter lesions with gray centers on susceptible varieties. Includes management practices: remove grassy weeds, plough stubble, fungicide options (propiconazole, mancozeb), and notes association with potassium-deficient soils at 25-28Â°C.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Narrow brown spot",
+        "narrow brown leaf spot"
+      ]
+    },
+    {
+      "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/sheath-blight",
+      "title": "Sheath blight - IRRI Rice Knowledge Bank",
+      "snippet": "Sheath blight is a fungal disease caused by Rhizoctonia solani. Sheath blight occurs in areas with high temperature (28-32Â°C), high levels of nitrogen fertilizer, and relative humidity of crop canopy from 85-100%. Infected leaves senesce or dry out and die more rapidly; young tillers can also be destroyed.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sheath blight",
+        "Rhizoctonia solani"
+      ]
+    },
+    {
+      "url": "https://www.lsuagcenter.com/NR/rdonlyres/C93A494B-8105-4804-9DFA-81190EC3F68B/58166/pub3123ShealthBlightofRiceHIGHRES.pdf",
+      "title": "Sheath Blight of Rice - LSU AgCenter Publication 3123",
+      "snippet": "Sheath blight, caused by Rhizoctonia solani Kuhn, is a potentially devastating rice disease in all temperate and tropical rice production regions, especially in irrigated production systems. Economic losses in rice yields up to 50% have been reported.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sheath blight",
+        "Rhizoctonia solani"
+      ]
+    },
+    {
+      "url": "https://www.uaex.uada.edu/publications/pdf/FSA7583.pdf",
+      "title": "Rice Sheath Blight - University of Arkansas Cooperative Extension FSA7583",
+      "snippet": "Rice sheath blight, caused by the fungus Rhizoctonia solani, is one of the most economically damaging diseases of rice. The pathogen survives in soil and crop residue as sclerotia and infects rice from the waterline upward, producing oval, grayish-green lesions on leaf sheaths.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rice sheath blight",
+        "Rhizoctonia solani"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11693681/",
+      "title": "Revisiting the emerging pathosystem of rice sheath blight: deciphering the Rhizoctonia solani virulence, host range, and rice genotype-based resistance",
+      "snippet": "The anastomosis group AG1 IA of R. solani has been identified as the predominant causal agent of rice sheath blight, one of the most devastating diseases of crop plants. In the paddy field, the infection process of R. solani is initiated by the attachment of sclerotia to the leaf sheath of rice.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Rice sheath blight",
+        "Rhizoctonia solani"
+      ]
+    },
+    {
+      "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.881116/full",
+      "title": "Rhizoctonia solani KÃ¼hn Pathophysiology: Status and Prospects of Sheath Blight Disease Management in Rice",
+      "snippet": "Sheath blight caused by Rhizoctonia solani is the second-most devastating disease after rice blast. Initial symptoms include elliptical or oval, grayish-green lesions on the lower leaf sheaths near the waterline, enlarging and coalescing as the disease progresses, potentially moving upward to leaf blades and panicle.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Sheath blight",
+        "Rhizoctonia solani"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

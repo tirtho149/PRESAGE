@@ -1,0 +1,248 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Rhizoctonia Damping-Off, Blight And Rot",
+      "pathogen_scientific_name": {
+        "value": "Rhizoctonia solani",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11693681/",
+        "quote": "Sheath blight, caused by Rhizoctonia solani AG1 IA, is a challenging disease of rice worldwide.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.881116/full",
+        "quote": "Sheath blight caused by necrotrophic fungus Rhizoctonia solani KÃ¼hn is one of the most serious diseases of rice."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Whole plant",
+          "Seed"
+        ],
+        "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.881116/full",
+        "quote": "In rice, R. solani mainly attacks the leaf sheath and leaf blades and in severe cases, the whole plant including the emerging panicles may be affected ... Lesions may appear on any part of the sheath and several lesions may coalesce to encircle the whole stem ... the infection spreads to the panicle affecting grain filling and leading to the discoloration of seeds with brownish-black spots or black to ashy gray patches"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Greenish-gray water-soaked lesions appear on the leaf sheath near the water level, circular to oblong or ellipsoid and about 1 cm long. Lesions enlarge to irregular shape with gray-white centers and brown margins, and can spread to upper sheaths, leaf blades and panicles causing rotting, leaf drying and seed discoloration.",
+          "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.881116/full",
+          "quote": "The typical symptom (Figure 1) is the appearance of greenish-gray water-soaked lesions on the leaf sheath near the water level that are circular, oblong or ellipsoid and about 1 cm long. These lesions enlarge and attain irregular shape, the center of which becomes gray white with brown margins."
+        },
+        "diagnostic_features": {
+          "value": "Greenish-gray water-soaked lesions on the leaf sheath near the water level, circular/oblong/ellipsoid ~1 cm long, enlarging with gray-white centers and brown margins; at field level the infection affects plants in a circular pattern referred to as 'bird's nest'.",
+          "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.881116/full",
+          "quote": "At the field level, the infection usually affects the plants in a circular pattern referred to as 'bird's nest'"
+        },
+        "look_alikes": {
+          "value": [
+            "stem rot",
+            "stemborer infestation"
+          ],
+          "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/sheath-blight",
+          "quote": "Sheath blight has symptoms similar to stem rot and stemborer infestation."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use resistant rice varieties / develop resistant genotypes",
+          "Use a reasonable level of fertilizer adapted to the cropping season; apply balanced K, Zn, S, Fe; use slow-release nitrogenous fertilizer (e.g., Crotonylidene diurea, Guanyl urea phosphate) with silica, phosphorus and potash",
+          "Use reasoned density of crop establishment (direct seeding or transplanting); improve canopy architecture by reducing seeding rate or providing wider plant spacing",
+          "Carefully control weeds, especially on the levees",
+          "Drain rice fields relatively early in the cropping season to reduce sheath blight epidemics",
+          "Use fungicide to treat seeds; apply chemical fungicides as needed",
+          "Apply soil amendments including neem cake, farm yard manure (FYM), vermicompost and rice husk",
+          "Spray Ganoderma diethyl ester biological formulation",
+          "Use resistance-linked molecular markers in breeding programs; use non-host plants as a genetic resource for developing resistant rice varieties",
+          "Use novel biotechnological approaches such as RNAi, transgenics and genome-editing (e.g., transgenic rice overexpressing oxalate oxidase)"
+        ],
+        "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.881116/full",
+        "quote": "various control measures such as cultural, chemical, and biological as well as utilizing host plant resistance ... Dath (1990) found a reduction in disease severity with the use of slow-release nitrogenous fertilizer such as Crotonylidene diurea (CDU) and Guanyl urea phosphate with the solo application of silica, phosphorus and potash ... application of K, Zn, S, and Fe reduce disease severity ... Application of soil amendments including neem cake, farm yard manure (FYM), vermicompost and rice husk ... spraying Ganoderma diethyl ester formulation ... novel biotechnological approaches like RNAi, transgenics and genome-editing approaches ... transgenic rice plants overexpressing oxalate oxidase break oxalate and enhance resistance against sheath blight"
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Sheath blight",
+          "alternative_value": "Sheath blight of rice",
+          "alternative_source_url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.881116/full",
+          "note": "Frontiers article uses 'Sheath blight of rice' but refers to the same disease; IRRI and PMC use the shorter form."
+        }
+      ]
+    },
+    {
+      "disease_name": "Narrow Brown Leaf Spot",
+      "pathogen_scientific_name": {
+        "value": "Sphaerulina oryzina",
+        "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/narrow-brown-spot",
+        "quote": "is caused by the fungus Sphaerulina oryzina (syn. Cercospora janseana , Cercospora oryzae )",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/narrow-brown-spot",
+        "quote": "is caused by the fungus Sphaerulina oryzina"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/narrow-brown-spot",
+        "quote": "can infect leaves, sheaths, and panicles"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Light to dark brown, linear lesions on leaves and upper leaf sheath that progress parallel to the vein, typically 2â€“10 mm long and 1â€“1.5 mm wide; also causes a netlike discoloration on the leaf sheath known as 'net blotch.'",
+          "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/narrow-brown-spot",
+          "quote": "Typical lesions on leaves and upper leaf sheath are light to dark brown, linear, and progress parallel to the vein. They are usually 2â€“10 mm long and 1â€“1.5 mm wide."
+        },
+        "diagnostic_features": {
+          "value": "Linear lesions make the disease distinct from other leaf diseases.",
+          "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/narrow-brown-spot",
+          "quote": "Linear lesions make the disease distinct from other leaf diseases."
+        },
+        "look_alikes": {
+          "value": [
+            "white leaf streak"
+          ],
+          "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/narrow-brown-spot",
+          "quote": "Narrow brown spot can be confused with white leaf streak."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use resistant varieties (contact local agriculture office for up-to-date lists)",
+          "Keep fields clean; remove weeds and weedy rice in the field and nearby areas to eliminate alternate hosts",
+          "Use balanced nutrients; ensure adequate potassium is used",
+          "Spray propiconazole at booting to heading stages if narrow brown spot poses a risk"
+        ],
+        "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/narrow-brown-spot",
+        "quote": "Use resistant varieties. Contact your local agriculture office for up-to-date lists of varieties available. Keep fields clean. Remove weeds and weedy rice in the field and nearby areas to remove alternate hosts that allow the fungus to survive and infect new rice crops. Use balanced nutrients; make sure that adequate potassium is used. If narrow brown spot poses a risk to the field, spray propiconazole at booting to heading stages."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Sphaerulina oryzina",
+          "alternative_value": "Cercospora janseana",
+          "alternative_source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11693681/",
+          "note": "PMC article lists 'Cercospora janseana' as the pathogen; IRRI explicitly states this is a synonym of the current accepted name 'Sphaerulina oryzina' (with Cercospora oryzae also a synonym)."
+        },
+        {
+          "field": "disease_name",
+          "canonical_value": "Narrow brown spot",
+          "alternative_value": "Narrow brown leaf spot",
+          "alternative_source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11693681/",
+          "note": "IRRI factsheet notes 'Narrow brown spot (also called narrow brown leaf spot, or rice Cercospora leaf spot)'; the PMC review uses 'narrow brown leaf spot'."
+        }
+      ]
+    },
+    {
+      "disease_name": "Bacterial Panicle Blight",
+      "pathogen_scientific_name": {
+        "value": "Burkholderia glumae",
+        "url": "https://www.lsuagcenter.com/topics/crops/rice/diseases/photos/bacterial-panicle-blight",
+        "quote": "Comparison of bacterial panicle blight resistant (left) and susceptible (right) rice varieties inoculated with Burkholderia glumae in the field.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://www.lsuagcenter.com/topics/crops/rice/diseases/photos/bacterial-panicle-blight",
+        "quote": "Bacterial Panicle Blight"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Seed"
+        ],
+        "url": "https://www.lsuagcenter.com/topics/crops/rice/diseases/photos/bacterial-panicle-blight",
+        "quote": "Rice leaf sheath rot symptoms caused the bacterial panicle blight pathogen. ... Bacterial panicle blight infection showing upright discolored heads and green stems. ... Rice heads with symptoms of bacterial panicle blight infection on the grain."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Bacterial panicle blight causes upright discolored rice heads with green stems, two-tone discoloration on the grain, and leaf sheath rot symptoms; very early infection shows water-soaked discoloration on the lower part of the grain.",
+          "url": "https://www.lsuagcenter.com/topics/crops/rice/diseases/photos/bacterial-panicle-blight",
+          "quote": "Bacterial panicle blight infection showing upright discolored heads and green stems. ... Bacterial panicle blight infection of rice grain showing characteristic two tone discoloration symptom. ... Rice leaf sheath rot symptoms caused the bacterial panicle blight pathogen. ... Very early infection by the bacterial panicle blight pathogen of rice grain showing water soaked discoloration on the lower part of the grain."
+        },
+        "diagnostic_features": {
+          "value": "Characteristic two-tone discoloration symptom on rice grain, with upright discolored heads and green stems; very early infection shows water-soaked discoloration on the lower part of the grain.",
+          "url": "https://www.lsuagcenter.com/topics/crops/rice/diseases/photos/bacterial-panicle-blight",
+          "quote": "Bacterial panicle blight infection of rice grain showing characteristic two tone discoloration symptom. ... Early bacterial panicle blight infection of rice grain showing characteristic two tone discoloration symptom and green stems. ... Very early infection by the bacterial panicle blight pathogen of rice grain showing water soaked discoloration on the lower part of the grain."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use resistant varieties"
+        ],
+        "url": "https://www.lsuagcenter.com/topics/crops/rice/diseases/photos/bacterial-panicle-blight",
+        "quote": "Comparison of bacterial panicle blight resistant (left) and susceptible (right) rice varieties inoculated with Burkholderia glumae in the field."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Rice Blast Disease",
+      "pathogen_scientific_name": {
+        "value": "Magnaporthe oryzae",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11693681/",
+        "quote": "rice blast ( Magnaporthe oryzae ; Anamorph: Pyricularia oryzae )",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11693681/",
+        "quote": "Fungal diseases of rice include, but are not limited to, rice blast ( Magnaporthe oryzae ; Anamorph: Pyricularia oryzae )"
+      },
+      "affected_parts": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "",
+          "url": "",
+          "quote": ""
+        },
+        "diagnostic_features": {
+          "value": "",
+          "url": "",
+          "quote": ""
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Magnaporthe oryzae",
+          "alternative_value": "Pyricularia oryzae",
+          "alternative_source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11693681/",
+          "note": "Pyricularia oryzae is named in the same source as the anamorph (asexual stage) of Magnaporthe oryzae, not a true conflict but a name variant."
+        }
+      ]
+    }
+  ],
+  "crop": "Rice",
+  "generated_date": "2026-05-25"
+}
