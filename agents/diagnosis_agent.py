@@ -23,6 +23,7 @@ from agents.base_agent import (
     ALLOWED_DELTA_FIELDS,
     AgentDeltaOutput,
     BaseAgent,
+    _backfill_canonical_says,
     _clean,
     parse_agent_output,
 )
@@ -222,6 +223,7 @@ class DiagnosisAgent(BaseAgent):
         deltas, confidence, reasoning, _cross_refs = parse_agent_output(
             text=text, owned_fields=list(ALLOWED_DELTA_FIELDS),
         )
+        _backfill_canonical_says(deltas, canonical)
         return AgentDeltaOutput(
             agent_name=self.AGENT_NAME,
             deltas=deltas, confidence=confidence, reasoning=reasoning,

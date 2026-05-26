@@ -177,6 +177,55 @@ def _validate_delta(d: Any, allowed_fields: set) -> Optional[Dict[str, str]]:
     }
 
 
+def _canonical_quote_for_field(
+    field: str,
+    canonical: Dict[str, Any],
+    max_chars: int = 240,
+) -> str:
+    """Map a delta ``field`` to the canonical visual_symptoms slice it
+    came from and return a short quote suitable for ``canonical_says``.
+
+    Returns ``"(not specified)"`` when the canonical KB has no usable
+    text for the slice(s) this field is mapped to (see
+    ``_DELTA_FIELD_TO_CANONICAL``).
+    """
+    if not isinstance(canonical, dict):
+        return "(not specified)"
+    keys = _DELTA_FIELD_TO_CANONICAL.get(field, ())
+    for key in keys:
+        v = _clean(canonical.get(key))
+        if v:
+            if len(v) > max_chars:
+                v = v[:max_chars].rstrip() + "..."
+            return v
+    return "(not specified)"
+
+
+def _backfill_canonical_says(
+    deltas: List[Dict[str, str]],
+    canonical: Dict[str, Any],
+) -> List[Dict[str, str]]:
+    """In-place: replace ``canonical_says == "(not specified)"`` with a
+    real quote from the canonical KB when the delta's ``field`` maps to
+    a populated canonical slice. Qwen-VL frequently emits the fallback
+    string even when the canonical text is right there in the prompt
+    (the "do NOT restate" instruction biases it toward the safe
+    default), so we patch the trace deterministically.
+    """
+    for d in deltas:
+        if not isinstance(d, dict):
+            continue
+        cs = _clean(d.get("canonical_says"))
+        if cs and cs != "(not specified)":
+            continue
+        quote = _canonical_quote_for_field(d.get("field", "other"), canonical)
+        if quote and quote != "(not specified)":
+            d["canonical_says"] = quote
+        else:
+            d["canonical_says"] = "(not specified)"
+    return deltas
+
+
 def _coerce_confidence(c: Any) -> str:
     s = _clean(c).lower()
     if s in CONFIDENCE_LEVELS:
@@ -485,6 +534,7 @@ class BaseAgent(abc.ABC):
         deltas, confidence, reasoning, cross_refs = parse_agent_output(
             text=text, owned_fields=self.OWNED_FIELDS,
         )
+        _backfill_canonical_says(deltas, canonical)
         return AgentDeltaOutput(
             agent_name=self.AGENT_NAME,
             deltas=deltas, confidence=confidence, reasoning=reasoning,
