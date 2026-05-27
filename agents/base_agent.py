@@ -192,7 +192,7 @@ def _canonical_quote_for_field(
     if not isinstance(canonical, dict):
         return "(not specified)"
     keys = _DELTA_FIELD_TO_CANONICAL.get(field, ())
-    for key in keys:
+    for key in (*keys, "summary", "diagnostic_features"):
         v = _clean(canonical.get(key))
         if v:
             if len(v) > max_chars:
