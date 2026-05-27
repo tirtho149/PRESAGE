@@ -1,0 +1,599 @@
+{
+  "crop": "Sweet Potato",
+  "candidate_sources": [
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-03-20-0568-PDN",
+      "title": "First Report of Bacterial Root Rot, Caused by Dickeya dadantii, on Sweetpotato (Ipomoea batatas) in North Carolina",
+      "snippet": "D. dadantii causes stem and root rot disease of sweet potato. Affected tubers had symptoms that ranged from light vascular discoloration to complete seed piece decay. Infected tuber tissue was often cream colored and soft to the touch. In the field, plants showed severe wilting, often accompanied by a slimy, brown necrosis of the lower stems.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Bacterial root rot",
+        "Bacterial stem and root rot",
+        "Dickeya dadantii infection"
+      ]
+    },
+    {
+      "url": "https://www.gardeningknowhow.com/edible/vegetables/sweet-potato/sweet-potato-soft-rot-treatment.htm",
+      "title": "Sweet Potato Bacterial Stem And Root Rot - Learn About Bacterial Sweet Potato Rot",
+      "snippet": "Roots afflicted with bacterial soft rot of sweet potato become light brown in color and watery accompanied by lesions with a characteristic dark brown margin. Foliage symptoms appear as black, necrotic, water-soaked lesions. Stems are afflicted with dark brown to black lesions along with dark streaks apparent in the vascular tissue. As the disease progresses, the stem becomes watery and collapses which causes the tips of the vines to wilt. Management includes minimizing wounding, using tolerant cultivars, and certified disease-free propagating materials.",
+      "source_type": "industry",
+      "diseases_mentioned": [
+        "Bacterial stem rot",
+        "Bacterial root rot",
+        "Bacterial soft rot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS.1998.82.1.129A",
+      "title": "First Report of Erwinia carotovora subsp. carotovora Causing Bacterial Root Rot of Sweetpotato (Ipomoea batatas) in Louisiana",
+      "snippet": "Report describes Erwinia carotovora subsp. carotovora as causal agent of bacterial root rot of sweetpotato in Louisiana, with symptoms of soft rot in storage roots. The pathogen can be recovered from mother storage roots, slips, and underground stems throughout the growing season.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Bacterial root rot",
+        "Bacterial soft rot"
+      ]
+    },
+    {
+      "url": "https://plantdiseasehandbook.tamu.edu/food-crops/vegetable-crops/sweet-potato/",
+      "title": "Sweet Potato | Texas Plant Disease Handbook",
+      "snippet": "Texas A&M Plant Disease Handbook entry covering diseases of sweet potato, including bacterial wilt, bacterial stem and root rot, and bacterial soft rot caused by Erwinia chrysanthemi (Dickeya) and Erwinia carotovora, with symptoms, pathogen biology, and management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial wilt",
+        "Bacterial stem and root rot",
+        "Bacterial soft rot"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/black-rot-of-sweetpotato",
+      "title": "Black Rot of Sweetpotato | NC State Extension Publications",
+      "snippet": "Black rot of sweetpotato is caused by the ascomycete fungus Ceratocystis fimbriata. Symptoms generally are seen at harvest, after curing or after storage and consist of a dry, firm, dark-colored rot that does not extend into the cortex of the sweetpotato root. Infections typically begin at wounds, lenticels, or lateral roots. Plant symptoms in the field include plant stunting, wilting, yellowing, leaf drop, and death.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black Rot",
+        "Sweetpotato Black Rot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-08-19-0052-DG",
+      "title": "Black Rot of Sweetpotato: A Comprehensive Diagnostic Guide | Plant Health Progress",
+      "snippet": "A comprehensive diagnostic guide for black rot of sweetpotato caused by Ceratocystis fimbriata, covering symptoms, pathogen biology, disease cycle, diagnosis, and management. Storage roots develop firm, black, dry rot with white mycelia and black perithecia on lesion surfaces as key diagnostic features.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Black Rot",
+        "Sweetpotato Black Rot"
+      ]
+    },
+    {
+      "url": "https://www.ctahr.hawaii.edu/nelsons/BlackRotofSweet%20Potato%5B2%5D.pdf",
+      "title": "Black Rot of Sweet Potato Disease Cycle and Management",
+      "snippet": "University of Hawaii CTAHR extension publication covering the black rot disease of sweet potato caused by Ceratocystis fimbriata, including disease cycle, symptoms, and management practices.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black Rot"
+      ]
+    },
+    {
+      "url": "https://plantpathology.ces.ncsu.edu/news/how-to-control-black-rot-of-sweetpotato/",
+      "title": "How to Control Black Rot of Sweetpotato - NC State Extension Plant Pathology",
+      "snippet": "Management guidance for sweetpotato black rot caused by Ceratocystis fimbriata: proper curing at 29C and 85-90% humidity for 5-10 days, sanitation of equipment with chlorinated water, removal of morning glory hosts, and use of thiabendazole and difenoconazole to protect seed and slips. No fungicides are effective after infection is established.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black Rot",
+        "Scurf"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/rhizopus-soft-rot-of-sweetpotato",
+      "title": "Rhizopus Soft Rot of Sweetpotato | NC State Extension Publications",
+      "snippet": "Rhizopus soft rot is caused by the necrotrophic, Zygomycete fungus Rhizopus stolonifer, also called the bread mold fungus. Symptoms originate at a wounded area and consist of a soft, watery rot that can result in full decay of an infected root in as little as three days. White to grey fungal mycelium producing black sporangia of R. stolonifer are often observed growing on decayed roots, resembling a distinctive 'grey man's beard.' Rhizopus soft rot produces a characteristic fermentation odor. Typically appears during postharvest handling and transport.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rhizopus soft rot",
+        "bread mold"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-01-16-0051-RE",
+      "title": "Cultural, Chemical, and Alternative Control Strategies for Rhizopus Soft Rot of Sweetpotato | Plant Disease",
+      "snippet": "Rhizopus stolonifer is a necrotrophic, Zygomycete fungus that is ubiquitous and causes postharvest soft rot on more than 200 fruit and vegetable crops, most notably sweetpotato and stone-fruits. Effective management strategies include planting resistant varieties in well-drained soil, preventing injury through handling and transport, crop rotation, proper curing after harvest, and decay control product applications on packinglines.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Rhizopus soft rot"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/10.1079/cabicompendium.47665",
+      "title": "Rhizopus stolonifer (bulb rot) | CABI Compendium",
+      "snippet": "CABI Compendium datasheet on Rhizopus stolonifer covering Identity, Distribution, Hosts/Species Affected, Diagnosis, Seedborne Aspects, Natural Enemies, Prevention/Control, and Further Information. R. stolonifer causes postharvest soft rot on more than 200 fruit and vegetable crops, most notably sweetpotato and stone-fruits.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Rhizopus soft rot",
+        "bulb rot",
+        "bread mold"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Rhizopus_soft_rot",
+      "title": "Rhizopus soft rot - Wikipedia",
+      "snippet": "Rhizopus soft rot is a postharvest disease of fruits and vegetables caused by the bread mold fungus Rhizopus stolonifer. The disease originates at wounded areas, produces watery soft rot, and is commonly observed on sweet potato roots during storage and transport.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Rhizopus soft rot",
+        "bread mold"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/Macrophomina_phaseolina_(charcoal_rot_of_sweetpotato)",
+      "title": "Macrophomina phaseolina (charcoal rot of sweetpotato) - Bugwoodwiki",
+      "snippet": "Dedicated page covering charcoal rot of sweetpotato caused by Macrophomina phaseolina, including symptoms (stem end rot / 'end rot' developing weeks after storage), the black charcoal-colored sclerotia/microsclerotia survival structures, host range, and management. Notes the disease is prevalent and aggressive in Mississippi and that pathogens are often present inside storage roots before symptoms appear.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Charcoal rot of sweetpotato",
+        "Stem end rot",
+        "End rot"
+      ]
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30716855/",
+      "title": "Infection of Sweetpotato by Fusarium solani and Macrophomina phaseolina Prior to Harvest - PubMed",
+      "snippet": "Peer-reviewed study on the end rot disease complex of sweetpotato caused mainly by Fusarium solani and Macrophomina phaseolina. Documents that both pathogens can be present inside storage roots prior to harvest and trigger postharvest charcoal rot / end rot symptoms during storage.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Charcoal rot",
+        "End rot",
+        "Sweetpotato end rot complex"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8100579/",
+      "title": "Macrophomina phaseolina: General Characteristics of Pathogenicity and Methods of Control - PMC",
+      "snippet": "Peer-reviewed review of Macrophomina phaseolina biology, pathogenicity, symptoms (progressive wilting, premature dying, loss of vigor, reduced yield), microsclerotia survival structures, broad host range (~500 species including sweetpotato), and integrated management/biocontrol options for charcoal rot.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Charcoal rot",
+        "Macrophomina phaseolina diseases"
+      ]
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8625119/",
+      "title": "Fungi Associated with Postharvest Diseases of Sweet Potato Storage Roots and In Vitro Antagonistic Assay of Trichoderma harzianum - PMC",
+      "snippet": "Peer-reviewed paper identifying fungi associated with postharvest diseases of sweet potato storage roots (including Macrophomina phaseolina / charcoal rot) and testing Trichoderma harzianum as a biocontrol antagonist for management of these storage root rots.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Charcoal rot",
+        "Postharvest storage root rots of sweet potato"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/fusarium-root-rot-of-sweetpotato",
+      "title": "Fusarium Root Rot of Sweetpotato | NC State Extension Publications",
+      "snippet": "Fusarium solani f. sp. batatas is considered the causal agent of Fusarium root rot. F. solani causes primarily root rots, stem cankers, and damping off. F. solani can be transmitted from infected slips to sweetpotato roots. Management includes avoiding planting in infested fields, reducing wounding during harvest, sanitary harvesting equipment, and labeled fungicides for seed beds.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fusarium root rot",
+        "Fusarium damping-off",
+        "stem canker"
+      ]
+    },
+    {
+      "url": "https://extension.msstate.edu/publications/damping-vegetables",
+      "title": "Damping-off in Vegetables | Mississippi State University Extension Service",
+      "snippet": "Damping-off caused by Fusarium spp. is often a post-emergence damping-off in which the pathogens attack seedlings at the soil line. Damping-off caused by Fusarium spp. and Rhizoctonia spp. is more common under warm, dry conditions. Place seedlings at the recommended planting depth in soils that drain well and when soil temperatures are warm.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "damping-off",
+        "Fusarium damping-off",
+        "Rhizoctonia damping-off",
+        "Pythium damping-off"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/greenhouse-plants-vegetables-damping-seed-rot-seedling-blight",
+      "title": "Greenhouse Plants, Vegetables-Damping-off (Seed Rot and Seedling Blight) | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Damping-off is caused by several soilborne fungi including Pythium, Rhizoctonia, Fusarium and Phytophthora species, which kill seedlings that are just germinating and seedlings that have been growing for several days. If seedlings have emerged, they may look normal the first few days and then the lower stem turns brown or black and the seedling falls over.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "damping-off",
+        "seed rot",
+        "seedling blight",
+        "Fusarium",
+        "Pythium",
+        "Rhizoctonia"
+      ]
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9430127/",
+      "title": "Whole-Genome Sequencing and Comparative Genome Analysis of Fusarium solani-melongenae Causing Fusarium Root and Stem Rot in Sweetpotatoes",
+      "snippet": "F. solani can infect sweetpotato seedlings and roots, causing root rot and canker in the field. Irregular black or brown disease spots form on the sweetpotato seedlings and roots, leading to the death of the whole plant, with infected seedlings in serious cases.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Fusarium root rot",
+        "Fusarium stem rot",
+        "Fusarium damping-off"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/resources/commonnames/Pages/Sweetpotato.aspx",
+      "title": "Diseases of Sweetpotato (Ipomoea batatas [L.] Lam.)",
+      "snippet": "APS common-names list of diseases of sweetpotato, including Chlorotic leaf distortion caused by Fusarium denticulatum Nirenberg & O'Donnell (syn. F. lateritium Nees:Fr.) — the authoritative APS reference for nomenclature and recognized diseases of sweetpotato.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Chlorotic leaf distortion",
+        "Fusarium wilt",
+        "Fusarium surface rot",
+        "Fusarium root rot"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/publications/phytopathology/backissues/Documents/1992Abstracts/Phyto82_656.htm",
+      "title": "Histological Evidence that Fusarium lateritium is an Exopathogen on Sweetpotato with Chlorotic Leaf Distortion",
+      "snippet": "Phytopathology 82:656 (Clark & Watson, 1992). Apical meristems, axillary buds, leaves and nodes from vines of sweetpotato with chlorotic leaf distortion were examined by light and SEM. Hyphae of F. lateritium were observed on/within mucilage on apical meristems, leaf primordia, and young folded leaves — establishing the fungus as an exopathogen producing the symptom complex.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Chlorotic leaf distortion",
+        "Fusarium lateritium on sweetpotato"
+      ]
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/00275514.1995.12026561",
+      "title": "An unusual strain of Fusarium lateritium affecting sweetpotato (Mycologia 87(4))",
+      "snippet": "A strain of Fusarium lateritium causing a unique disease — sweetpotato chlorotic leaf distortion — and producing microconidia borne on polyphialides is described. Provides morphological and pathogenicity description of the CLD strain distinct from typical F. lateritium, later proposed as F. denticulatum.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Sweetpotato chlorotic leaf distortion",
+        "Fusarium lateritium"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/chapter/10.1007/978-1-4020-9475-0_7",
+      "title": "Major Fungal and Bacterial Diseases of Sweetpotato (Springer book chapter, C.A. Clark et al.)",
+      "snippet": "Comprehensive chapter on sweetpotato fungal and bacterial diseases including Chlorotic Leaf Distortion caused by Fusarium lateritium (= F. denticulatum). Covers symptoms (chlorotic, distorted leaves at vine apices; white mycelial growth on emerging foliage), epidemiology (transmitted with planting material/slips), and management (clean seed/slip programs).",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Chlorotic leaf distortion",
+        "Fusarium wilt",
+        "Fusarium root rot",
+        "Fusarium surface rot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/abs/10.1094/PHP-03-24-0024-DG?af=R",
+      "title": "A Diagnostic Guide for Fusarium Root Rot of Sweetpotato | Plant Health Progress",
+      "snippet": "Diagnostic guide published in Plant Health Progress covering Fusarium root rot of sweetpotato caused by Fusarium solani f. sp. batatas, including symptom description, pathogen identification, and diagnostic procedures for distinguishing from surface rot and other storage diseases.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Fusarium Root Rot",
+        "Fusarium solani"
+      ]
+    },
+    {
+      "url": "https://www.arc.agric.za/arc-vopi/Pages/Crop%20Protection/Fusarium-wilt-of-sweet-potatoes.aspx",
+      "title": "Fusarium wilt of sweet potatoes - Agricultural Research Council",
+      "snippet": "Fusarium wilt is caused by a strain of Fusarium oxysporum that only infects sweetpotatoes. Symptoms include yellowing of older leaves followed by wilting, leaf drop, and stunting, with discoloration of vascular tissues of the stem occurring earlier; symptoms frequently are one-sided. Management: use disease-free/resistant roots, cut transplants, crop rotation, and resistant cultivars such as Jewel, Beauregard, Regal, Excel, and Sumor.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Fusarium Wilt",
+        "Fusarium oxysporum"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7238964/",
+      "title": "Occurrence of Sweetpotato (Ipomoea batatas) Wilt and Surface Rot Disease and Determining Resistance of Selected Varieties to the Pathogen in Korea",
+      "snippet": "Fusarium oxysporum is responsible for severe damage to sweetpotato production by producing wilt disease in field and bed and surface rot on storage root. Peer-reviewed study describes disease occurrence, symptomology including yellowing/wilting of leaves and vascular discoloration, and screens varieties for resistance.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Fusarium Wilt",
+        "Surface Rot",
+        "Fusarium oxysporum"
+      ]
+    },
+    {
+      "url": "https://www.ctahr.hawaii.edu/oc/freepubs/pdf/PD-55.pdf",
+      "title": "Java Black Rot of Okinawan Sweetpotato",
+      "snippet": "University of Hawaii CTAHR extension publication (PD-55) dedicated to Java black rot of sweetpotato, covering symptoms, the causal pathogen (Diplodia / Lasiodiplodia theobromae), disease cycle and management practices including curing, sanitation, and careful handling to avoid wound infection.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Java black rot"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/publications/phytopathology/backissues/Documents/1988Articles/Phyto78n11_1442.PDF",
+      "title": "Sources of Inoculum and Infection Courts of Diplodia gossypina on Sweet Potato",
+      "snippet": "APS Phytopathology publication on Diplodia gossypina (Java black rot pathogen) of sweet potato — symptoms typically begin at the ends of storage roots, sources of inoculum, infection courts, and epidemiology relevant to managing Java black rot in storage.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Java black rot",
+        "Diplodia gossypina"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8625119/",
+      "title": "Fungi Associated with Postharvest Diseases of Sweet Potato Storage Roots and In Vitro Antagonistic Assay of Trichoderma harzianum against the Diseases",
+      "snippet": "Penicillium species cause blue mold, one of the commonly observed postharvest diseases of sweet potatoes. Specific Penicillium species identified on sweet potato storage roots include Penicillium citrinum and P. rotoruae, with P. rotoruae being reported for the first time as a cause of sweet potato storage root rot diseases. In blue mold symptom, the bluish-green sporulation was abundantly visible on the surface of the storage roots.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Blue mold (Penicillium spp.)",
+        "Penicillium citrinum",
+        "Penicillium rotoruae",
+        "black rot",
+        "Fusarium surface rot",
+        "soft rot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-09-17-1421-PDN",
+      "title": "First Report of Blue Mold Caused by Penicillium oxalicum in Sweetpotato (Ipomoea batatas) in Korea",
+      "snippet": "First report of blue mold of sweetpotato (Ipomoea batatas) caused by Penicillium oxalicum in Korea. The disease causes blue-green sporulation on storage roots and is an important postharvest pathogen of sweet potato.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Blue mold",
+        "Penicillium oxalicum"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4829637/",
+      "title": "Biomolecular characterization, identification, enzyme activities of molds and physiological changes in sweet potatoes (Ipomea batatas) stored under controlled atmospheric conditions",
+      "snippet": "Fungal diseases are the most prominent before and after harvest and reduce the quality of storage roots; the thin periderm of the sweet potato increases the risk of storage diseases and causes severe losses during storage. Penicillium is among the fungal genera often linked with post-harvest deterioration of sweet potato tubers.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Penicillium spp.",
+        "postharvest mold",
+        "storage rot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-05-18-0865-PDN",
+      "title": "First Report of Pythium Root Rot on Aeroponically Grown Sweetpotato Caused by Pythium myriotylum in Louisiana",
+      "snippet": "P. myriotylum represents the first report on sweetpotato, and of root rot of sweetpotato grown in aeroponics. Secondary roots develop necrosis at 4 days postinoculation, with rotting becoming extensive by 7 to 10 days. Lower leaves exhibit mild interveinal chlorosis at 7 to 10 days postinoculation. Other Pythium species including P. ultimum, P. scleroteichum, P. spinosum, and P. aphanidermatum have been associated with mottle necrosis of storage roots and/or root rot of fibrous roots of sweetpotato in the field.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Pythium root rot",
+        "mottle necrosis",
+        "Pythium myriotylum root rot"
+      ]
+    },
+    {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/jph.13133",
+      "title": "Mottle necrosis caused by Globisporangium ultimum var. ultimum on sweet potato roots during harvest and storage in China",
+      "snippet": "Mottle necrosis caused by Globisporangium (Pythium) ultimum var. ultimum on sweet potato roots during harvest and storage. Disease incidence was 1-3% during harvest and increased to 10-30% during storage in underground cellars. The typical symptom of the disease is the soft cheese consistency of the affected tissue.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "mottle necrosis",
+        "Pythium root rot"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s10327-006-0335-3",
+      "title": "Mottle necrosis of sweet potato caused by Pythium scleroteichum in Japan and varietal difference in susceptibility to the disease",
+      "snippet": "Severe mottle necrosis was found on mature tubers of sweet potato in Ibaraki Prefecture in October 2004, with the causal organism identified as Pythium scleroteichum. The disease does not usually occur under normal conditions, but occasionally results in significant loss when soil moisture is high before harvest. Sweet potato cultivar Purple Sweet Lord was more susceptible than cultivars Beniazuma, Benimasari, Koukei-14, and Tamayutaka to the pathogen at 25°C.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "mottle necrosis",
+        "Pythium scleroteichum root rot"
+      ]
+    },
+    {
+      "url": "https://www.biodiversitylibrary.org/content/part/CDA/54A_Pythium_Scleroteichum_nsp_Causing_Mottle_Necrosis_of_Sweetpotatoes.pdf",
+      "title": "Pythium scleroteichum n. sp. Causing Mottle Necrosis of Sweetpotatoes [Ipomoea batatas (L.) Lam.]",
+      "snippet": "Original description of Pythium scleroteichum as the causal agent of mottle necrosis of sweetpotato roots, with morphological description of the pathogen, pathogenicity tests, and disease symptoms on Ipomoea batatas storage roots.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "mottle necrosis",
+        "Pythium scleroteichum root rot"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11989222/",
+      "title": "The Control of Postharvest Soft Rot Caused by Rhizopus stolonifer on Kokei No. 14 Organic Sweet Potato Roots by Carvacrol, Thymol, and Thyme Oil - PMC",
+      "snippet": "Essential oils including thymol, carvacrol, and thyme oil significantly reduced the incidence and severity of soft rot caused by Rhizopus stolonifer in sweet potatoes. The study explores safer alternatives to synthetic fungicides for controlling postharvest soft rot in organic sweet potato roots.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Rhizopus soft rot",
+        "postharvest soft rot"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/sweetpotato-scurf",
+      "title": "Sweetpotato Scurf | NC State Extension Publications",
+      "snippet": "Sweetpotato scurf is caused by the ascomycete fungus Monilochaetes infuscans. The diseased areas are purple or grayish-brown to black, are only skin-deep, and enlarge very slowly during storage. In advanced cases roots become spongy, dry, hard, and shrunken. The scurf pathogen survives in soil for only 1-3 years.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sweetpotato Scurf",
+        "Monilochaetes infuscans"
+      ]
+    },
+    {
+      "url": "https://www.lsuagcenter.com/~/media/system/8/5/4/2/8542fc180e040e91a36b7fda34da0670/pub3096scurfofsweetpotatolowres.pdf",
+      "title": "Scurf of Sweet Potato Monilochaetes infuscans Halsted ex Harter",
+      "snippet": "LSU AgCenter publication 3096 on Scurf of Sweet Potato caused by Monilochaetes infuscans Halsted ex Harter, including symptoms, pathogen biology, and management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Scurf of Sweet Potato",
+        "Monilochaetes infuscans"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/10.1079/cabicompendium.34723",
+      "title": "Monilochaetes infuscans (scurf of sweet potato) | CABI Compendium",
+      "snippet": "Symptoms of scurf are primarily cosmetic and usually restricted to the underground parts of sweet potato plants. Spots are of irregular size with diffuse margins, brown to black. Lesions enlarge, coalesce and eventually cover the entire surface of the tuber. Scurf is favored by high humidity and free moisture. Management includes 2-3-year crop rotation, disease-free cuttings, and fungicide treatment of seed roots.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "scurf of sweet potato",
+        "Monilochaetes infuscans"
+      ]
+    },
+    {
+      "url": "https://plantpathology.ces.ncsu.edu/2021/03/how-to-identify-and-manage-sweeetpotato-scurf-caused-by-monilochaetes-infuscans/",
+      "title": "How to Identify and Manage Sweeetpotato Scurf Caused by Monilochaetes Infuscans | NC State Extension",
+      "snippet": "NC State Extension Plant Pathology guide on identifying and managing sweetpotato scurf. The primary means of transmission is through infested soil that contacts wounded plant tissue, typically when slips are pulled instead of cut at least 1 inch above the soil line.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sweetpotato Scurf",
+        "Monilochaetes infuscans"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/geotrichum-sour-rot-of-sweetpotato",
+      "title": "Geotrichum Sour Rot of Sweetpotato | NC State Extension Publications",
+      "snippet": "Geotrichum sour rot is caused by the ascomycete fungus Geotrichum candidum. The most obvious symptom of an active infection is a wet, soft rot of the storage root combined with a distinct sour odor. During active infections, white mycelial tufts may also become present on the root surface. For pathogenesis to occur, sweetpotatoes must be exposed to stressful conditions combining high temperature, high moisture, and most importantly low oxygen, and usually require a wound for infection. The best control is to avoid favorable conditions; there are no conventional fungicides labeled for control.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Geotrichum sour rot",
+        "sour rot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-09-25-0217-DG",
+      "title": "Diagnostic Guide for Geotrichum Sour rot of Sweetpotato | Plant Health Progress",
+      "snippet": "Sour rot of sweetpotato, caused by Geotrichum candidum, is an emerging postharvest disease that reduces root quality and storage life. Infected roots develop a characteristic soft, watery rot accompanied by a sour odor, symptoms that are most often observed under storage or other postharvest conditions. While G. candidum affects a wide range of crops, including citrus, grapes, and carrots, reports on sweetpotato are scattered and limited.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Geotrichum sour rot",
+        "sour rot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS.2002.86.6.695C",
+      "title": "First Report of Geotrichum candidum as a Pathogen of Sweetpotato Storage Roots from Flooded Fields in North Carolina and Louisiana | Plant Disease",
+      "snippet": "First report documenting Geotrichum candidum as a pathogen of sweetpotato storage roots recovered from flooded fields in North Carolina and Louisiana. Establishes the association of G. candidum with sour rot/soft rot symptoms on sweetpotato roots subjected to flooding stress.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Geotrichum candidum",
+        "sour rot"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s41348-023-00748-2",
+      "title": "Post-harvest sour rot in sweet potato is caused by Geotrichum candidum in Brazil | Journal of Plant Diseases and Protection",
+      "snippet": "Peer-reviewed report identifying Geotrichum candidum as the causal agent of post-harvest sour rot in sweet potato in Brazil. Describes wet, soft rot of storage roots with characteristic sour odor under postharvest storage conditions.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "sour rot",
+        "Geotrichum candidum"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/southern-blight-of-sweetpotato",
+      "title": "Southern Blight of Sweetpotato | NC State Extension Publications",
+      "snippet": "Southern blight, also known as sclerotial blight, southern stem rot, and bed rot is a foliar disease of sweetpotato, affecting plants in greenhouse and field beds. The disease is caused by the fungus Sclerotium rolfsii. Symptoms manifest with a soft rot affecting the seed root, followed by the sudden wilt and subsequent death of a plant after sprouts have breached the soil line. When warm (82 to 86 degrees F), humid conditions are present the sclerotia germinate. Management: choose less susceptible cultivars (e.g. Beauregard or Evangeline), use pathogen-free certified seed roots, deep plow fields, soil solarization.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern blight",
+        "sclerotial blight",
+        "southern stem rot",
+        "bed rot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-12-23-0110-DG",
+      "title": "Diagnostic Guide for Sclerotial Blight and Circular Spot of Sweetpotato | Plant Health Progress",
+      "snippet": "Diagnostic guide describing sclerotial blight (southern blight) and circular spot of sweetpotato caused by Sclerotium rolfsii (Athelia rolfsii), including symptomatology, pathogen biology, and diagnostic procedures.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Sclerotial Blight",
+        "Southern blight",
+        "Circular Spot"
+      ]
+    },
+    {
+      "url": "https://ipm.ces.ncsu.edu/2010/05/pest-alert-sweetpotato-disease-alert-southern-blight-in-sweetpotato-plant-beds/",
+      "title": "Southern Blight in Sweetpotato Plant Beds | NC State Extension",
+      "snippet": "Pest alert on southern blight (Sclerotium rolfsii) affecting sweetpotato plant beds. Discusses hot spots, sudden wilt of slips after emergence, sclerotia survival in soil, and warm humid conditions favoring disease development.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern blight"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/SouthernBlight.aspx",
+      "title": "Southern blight, southern stem blight, white mold | APS Education Center",
+      "snippet": "APS Education Center lesson covering southern blight (southern stem blight, white mold) caused by Sclerotium rolfsii — host range, symptomatology, signs (white mycelial mat, mustard-seed-like sclerotia), disease cycle, and management across many hosts including sweetpotato.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Southern blight",
+        "southern stem blight",
+        "white mold"
+      ]
+    },
+    {
+      "url": "https://projects.ncsu.edu/cals/course/pp728/Sreptomyces_ipomoea/Streptomyces_ipomoea.htm",
+      "title": "Streptomyces ipomoea",
+      "snippet": "Streptomyces soil rot or pox is a widespread disease of sweet potato in North Carolina that results in a reduction in plant growth and severe yield losses. It is caused by the soilborne filamentous bacterium, Streptomyces ipomoea, and is able to persist in soil for many years in the absence of sweet potatoes. Hallmarks of the disease include decay (rotting) of fibrous feeder roots as well as the development of necrotic lesions on the fleshy storage roots. Soil rot disease development is favored by dry soils with pH above 5.2.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Streptomyces soil rot",
+        "pox",
+        "Streptomyces ipomoea"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.51837",
+      "title": "Streptomyces ipomoeae (Streptomycete soil rot (pox)) | CABI Compendium",
+      "snippet": "CABI Compendium datasheet on Streptomyces ipomoeae, the causal agent of Streptomycete soil rot (pox) of sweet potato. Covers identity, distribution, host plants, symptoms, biology, ecology, and management of this soilborne actinomycete pathogen.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Streptomycete soil rot",
+        "pox",
+        "Streptomyces ipomoeae"
+      ]
+    },
+    {
+      "url": "https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.species.51837",
+      "title": "Streptomyces ipomoeae (Streptomycete soil rot (pox))",
+      "snippet": "Plantwise Plus Knowledge Bank datasheet on Streptomyces ipomoeae causing Streptomycete soil rot (pox) of sweet potato. Provides information on symptoms including necrotic lesions on storage roots and fibrous root decay, host range, distribution, and recommended management practices.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Streptomycete soil rot",
+        "pox",
+        "Streptomyces ipomoeae"
+      ]
+    },
+    {
+      "url": "https://keys.lucidcentral.org/keys/sweetpotato/key/Sweetpotato%20Diagnotes/Media/Html/TheProblems/DiseasesBacterial/SoilRot/Soil%20rot.htm",
+      "title": "Soil rot or pox",
+      "snippet": "Sweetpotato DiagNotes entry on soil rot or pox caused by Streptomyces ipomoeae. Fibrous or feeder roots develop black necrotic lesions which traverse the entire cross section of the root. Storage roots show necrotic lesions and indentations resulting from early infections. Disease is favored by dry soils with pH above 5.2.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "soil rot",
+        "pox",
+        "Streptomyces ipomoeae"
+      ]
+    },
+    {
+      "url": "https://apps.lucidcentral.org/pppw_v10/text/web_full/entities/sweetpotato_feathery_mottle_258.htm",
+      "title": "Sweetpotato feathery mottle (258) - Pacific Pests, Pathogens & Weeds Fact Sheet",
+      "snippet": "SPFMV is a Potyvirus transmitted by aphids (Myzus persicae and Aphis gossypii) in a nonpersistent manner. The virus induces symptoms that vary greatly depending on the variety and growing conditions. When symptoms do appear, leaves of infected crops may show irregular chlorotic coloration along midribs (feathering) and/or faint to distinct chlorotic spots, with both spots and feathering potentially having purplish margins. Some strains of the virus induce cracks and external necrotic lesions or internal corking of roots. Detection depends on grafting shoots from sweet potato onto Ipomoea setosa as an indicator plant. The most useful cultural control measure is to use virus-tested planting material.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sweetpotato feathery mottle virus",
+        "SPFMV",
+        "internal corking",
+        "russet crack"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.50963",
+      "title": "Sweet potato feathery mottle virus (internal cork disease of sweet potato) | CABI Compendium",
+      "snippet": "The CABI datasheet on Sweet potato feathery mottle virus covers Identity, Overview, Distribution, Dispersal, Hosts/Species Affected, Vectors & Intermediate Hosts, Diagnosis, Biology & Ecology, Seedborne Aspects, Impacts, Prevention/Control. Sweet potato feathery mottle virus (SPFMV; species Sweet potato feathery mottle virus, genus Potyvirus), belongs to the largest and most important family of plant viruses, Potyviridae. Transmitted by aphids (Myzus persicae and Aphis gossypii) in a nonpersistent manner.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Sweet potato feathery mottle virus",
+        "internal cork disease"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-08-17-1156-RE",
+      "title": "Sweet potato feathery mottle virus and Sweet potato virus C from East Timorese and Australian Sweetpotato: Biological and Molecular Properties, and Biosecurity Implications | Plant Disease",
+      "snippet": "SPFMV (genus Potyvirus) is globally the most common pathogen of sweetpotato. There are different strains: ordinary (O), russet crack (RC), East African (EA), and severe (S). Peer-reviewed APS Plant Disease article describing biological and molecular properties of SPFMV and SPVC isolates.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Sweet potato feathery mottle virus",
+        "SPFMV",
+        "Sweet potato virus C",
+        "SPVC"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

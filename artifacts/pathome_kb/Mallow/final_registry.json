@@ -1,0 +1,80 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Hollyhock Rust",
+      "pathogen_scientific_name": {
+        "value": "Puccinia malvacearum",
+        "url": "https://wiki.bugwood.org/Puccinia_malvacearum_(hollyhock_rust)",
+        "quote": "Hollyhock rust is caused by Puccinia malvacearum .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://wiki.bugwood.org/Puccinia_malvacearum_(hollyhock_rust)",
+        "quote": "Kingdom Fungi Phylum Basidiomycota Subphylum Pucciniomycotina Class Pucciniomycetes Order Pucciniales Suborder Uredinineae Family Pucciniaceae Genus Puccinia"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://wiki.bugwood.org/Puccinia_malvacearum_(hollyhock_rust)",
+        "quote": "Initial symptoms of the disease are yellow-orange spots on the upper leaf surface and raised, blister-like pustules that develop on the lower leaf surface, petiole and stem."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Yellow-orange spots appear on the upper leaf surface with raised, blister-like pustules developing on the lower leaf surface, petiole and stem; leaves brown, shrivel and die. When disease is severe large portions of the foliage are killed.",
+          "url": "https://wiki.bugwood.org/Puccinia_malvacearum_(hollyhock_rust)",
+          "quote": "Initial symptoms of the disease are yellow-orange spots on the upper leaf surface and raised, blister-like pustules that develop on the lower leaf surface, petiole and stem. Leaves on diseased plants brown, shrivel and die."
+        },
+        "diagnostic_features": {
+          "value": "Yellow spotting on upper leaf surface and blister-like pustules that form on the lower leaf surface; leaf symptoms typically start near the bottom of plants and progress upward.",
+          "url": "https://wiki.bugwood.org/Puccinia_malvacearum_(hollyhock_rust)",
+          "quote": "The disease is easily recognized by yellow spotting on upper leaf surface and the blister-like pustules that form on the lower leaf surface."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Disease control on seedlings is especially important",
+          "Fungicide applications at regular intervals are necessary when disease is severe; fungicides labeled for control of rusts on ornamental plants can be used preventatively, with the first application made when the first leaves are expanding and treatments repeated according to label directions throughout the growing season",
+          "Plants should be cut back as soon as flowering is done",
+          "Plant debris should be removed and destroyed (bury, burn or bag and dispose in the landfill), not composted",
+          "Control weeds in the mallow family (e.g., common mallow) in the growing area to limit inoculum",
+          "Plant hollyhock in full sun in locations with good air circulation and soil drainage",
+          "Space plants to promote foliar drying and avoid overhead irrigation",
+          "Remove diseased leaves as soon as symptoms appear to reduce inoculum, and remove severely diseased plants; remove any diseased plants at the end of the growing season since hollyhock rust is systemic",
+          "Start new plants from seed or purchase disease-free transplants each year",
+          "Use resistant varieties where appropriate (A. rugosa and A. ficifolia have some resistance), recognizing that different races of the pathogen exist and resistance is not effective against all races",
+          "Use a wetting agent with fungicide applications since hollyhock leaves are hairy and good coverage is necessary for fungicide efficacy"
+        ],
+        "url": "https://wiki.bugwood.org/Puccinia_malvacearum_(hollyhock_rust)",
+        "quote": "Plant hollyhock in full sun in locations with good air circulation and soil drainage. Space plants to promote foliar drying and avoid overhead irrigation. Remove diseased leaves as soon as symptoms appear, to reduce inoculum for new infections and remove severely diseased plants. Since hollyhock rust is systemic, it is advisable to remove any diseased plants at the end of the growing season: Bury, burn or bag plant debris and dispose in the landfill."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem",
+          "alternative_value": "Foliar",
+          "alternative_source_url": "https://www.canr.msu.edu/resources/hollyhock-rust-puccinia-malvacearum",
+          "note": "MSU Extension describes only foliar symptoms (spots on underside, pustules on upper surface); Bugwood adds petiole and stem involvement."
+        },
+        {
+          "field": "visual_symptoms.diagnostic_features",
+          "canonical_value": "Yellow spotting on upper leaf surface and blister-like pustules that form on the lower leaf surface; leaf symptoms typically start near the bottom of plants and progress upward.",
+          "alternative_value": "Small brown spots on the underside of foliage with raised, bright yellow or orange pustules on the upper leaf surface.",
+          "alternative_source_url": "https://www.canr.msu.edu/resources/hollyhock-rust-puccinia-malvacearum",
+          "note": "MSU Extension reports brown spots on the underside with yellow/orange pustules on the upper surface; Bugwood reports the opposite orientation (yellow spots on upper surface, pustules on lower surface). Pustule-on-lower-surface is the typical rust morphology and is selected as canonical."
+        }
+      ]
+    }
+  ],
+  "crop": "Mallow",
+  "generated_date": "2026-05-27"
+}

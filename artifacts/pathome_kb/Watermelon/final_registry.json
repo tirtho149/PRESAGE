@@ -1,0 +1,865 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Cucurbit Downy Mildew",
+      "pathogen_scientific_name": {
+        "value": "Pseudoperonospora cubensis",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640371/",
+        "quote": "Pseudoperonospora cubensis [(Berkeley & M. A. Curtis) Rostovzev], the causal agent of cucurbit downy mildew",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Oomycete",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640371/",
+        "quote": "Kingdom Straminipila; Phylum Oomycota; Class Oomycetes; Order Peronosporales; Family Peronosporaceae; Genus Pseudoperonospora ; Species Pseudoperonospora cubensis"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640371/",
+        "quote": "Cucurbit downy mildew (caused by Pseudoperonospora cubensis ) is one of the most important foliar diseases of cucurbits"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Angular chlorotic lesions bound by leaf veins on the foliage of cucumber, with a 'downy' appearance on the lower leaf surface caused by sporulation.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640371/",
+          "quote": "Angular chlorotic lesions bound by leaf veins on the foliage of cucumber. Symptoms vary on different cucurbit species and varieties, specifically in terms of lesion development, shape and size."
+        },
+        "diagnostic_features": {
+          "value": "Chlorotic lesions on the adaxial leaf surface, sometimes with necrotic centres, restricted by the leaf vein giving them an angular appearance in cucumber; on the lower leaf surface a 'downy' appearance from sporulation (masses of sporangia visible with a 20X hand lens); in melon and watermelon, foliar lesions are less defined and not always bound by leaf veins.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640371/",
+          "quote": "Downy mildew of cucurbits is a foliar disease, and is easily recognizable by the development of chlorotic lesions on the adaxial leaf surface, sometimes with necrotic centres. These lesions can be restricted by the leaf vein, as in cucumber, giving them an angular appearance ( Fig. 1 ). In other cucurbits, the symptoms may vary slightly in terms of shape and colour. For example, in both melon and watermelon, foliar lesions are less defined than those on cucumber, and are not always bound by leaf veins"
+        },
+        "look_alikes": {
+          "value": [
+            "Alternaria leaf blight (Alternaria cucumerina)",
+            "Angular leaf spot (Pseudomonas syringae pv. lachrymans)",
+            "Anthracnose (Colletotrichum orbiculare)",
+            "Powdery mildew (Podosphaera xanthii or Erysiphe cichoracearum)",
+            "Phytophthora leaf blight (Phytophthora capsici)"
+          ],
+          "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+          "quote": "Downy mildew is often confused with other foliar diseases such as: Alternaria leaf blight, caused by Alternaria cucumerina ( Figure 3 ) Angular leaf spot, caused by Pseudomonas psyringae pv. lachrymans ( Figure 4 ) Anthracnose, caused by Colletotrichum orbiculare ( Figure 5 ) Powdery mildew, caused by Podosphaera xanthii or Erysiphe cichoracearum, note white powdery growth on the leaf surface ( Figure 6 ) Phytophthora leaf blight, caused by Phytophthora capsici ( Figure 7 )"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use tolerant/resistant cucurbit cultivars (e.g., pickling cucumber 'Citadel' and 'Peacemaker'; slicing cucumber 'SV3462CS' and 'SV4142CL' tolerant to clade 2 isolates)",
+          "Aggressive fungicide programme with sprays every 5-7 days for cucumber and every 7-10 days for other cucurbits to control outbreaks",
+          "Before disease appears, apply fungicides at 7-day intervals for cucumbers and 10-day intervals for other cucurbits; after detection in your area, tighten to 5-day (cucumber) and 7-day (other cucurbits) intervals",
+          "Alternate fungicide products and tank-mix with mancozeb or chlorothalonil to avoid generating fungicide-resistant strains",
+          "Example fungicides for cucumber/cantaloupe: Cyazofamid (Ranman 400 SC), Fluazinam (Omega 500 F), Chlorothalonil + oxathiapiprolin (Orondis Opti), Mandipropamid + oxathiapiprolin (Orondis Ultra), Propamocarb (Previcur Flex 6F), Ethaboxam (Elumin 4SC), Mancozeb + zoxamide (Gavel 75DF), Chlorothalonil + zoxamide (Zing!), Mancozeb (Dithane 75DF Rainshield), Chlorothalonil (Bravo Weather Stik 6SC)",
+          "Example fungicides for watermelon, squash, pumpkin: Cyazofamid (Ranman 400 SC), Fluazinam (Omega 500 F), Chlorothalonil + oxathiapiprolin (Orondis Opti), Mandipropamid + oxathiapiprolin (Orondis Ultra), Propamocarb (Previcur Flex 6F), Ametoctradin + dimethomorph (Zampro 4.38 SC), Ethaboxam (Elumin 4SC), Mancozeb + zoxamide (Gavel 75DF), Chlorothalonil + zoxamide (Zing!), Fluopicolide (Presidio 4F), Famoxadone + cymoxanil (Tanos 50WG), Mancozeb (Dithane 75DF Rainshield), Chlorothalonil (Bravo Weather Stik 6SC)",
+          "Use sporangia trapping and forecasts (e.g., Cucurbit Downy Mildew IPM Pipe) to time the first fungicide application",
+          "Plant early in the season to escape high disease pressure",
+          "Do not allow water to remain on leaves for long periods of time",
+          "Scout plants often and remove infected plants",
+          "Report outbreaks via the Cucurbit Downy Mildew IPM Pipe alert system",
+          "For organic growers: fixed copper formulations are the only OMRI labeled active ingredients with some efficacy",
+          "For home gardeners: plant early, destroy infected plants, plant tolerant varieties, use products containing copper or chlorothalonil (e.g. 'Daconil')"
+        ],
+        "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+        "quote": "Plant early in the season to escape high disease pressure Do not allow water to remain on leaves for long periods of time Scout plants often and remove infected plants Sign up to receive alerts at the Cucurbit Downy Mildew IPM Pipe website and report any outbreaks to prevent others Plant tolerant varieties when possible Protect the crop with fungicides... Fungicides are required to control cucurbit downy mildew. Before disease appears apply fungicides at 7-day interval for cucumbers and 10-day intervals for other cucurbits. After disease is detected in your area apply fungicides at 5-day interval for cucumbers and 7-day intervals for other cucurbits. Alternate products and tank mix with mancozeb or chlorothalonil to avoid generating fungicide-resistant strains."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Cucurbit Yellow Vine Decline",
+      "pathogen_scientific_name": {
+        "value": "Serratia marcescens",
+        "url": "https://plantpathology.mgcafe.uky.edu/yellow-vine-decline-cucurbits-ppfs-vg-12",
+        "quote": "Yellow vine decline is caused by the bacterium Serratia marcescens",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://plantpathology.mgcafe.uky.edu/yellow-vine-decline-cucurbits-ppfs-vg-12",
+        "quote": "Yellow vine decline is caused by the bacterium Serratia marcescens"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Root",
+          "Vascular",
+          "Whole plant"
+        ],
+        "url": "https://ipm.cahnr.uconn.edu/cucurbit-yellow-vine-disease-cyvd-in-connecticut/",
+        "quote": "Typically, all the leaves turn yellow within a few days... The phloem in the crown and lower stem turns honey-colored. Eventually, the root begins to decompose... and the whole plant begins to decline and die."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Foliage suddenly turns an intense bright yellow at or near fruit set, beginning with interveinal yellowing and progressing to whole-vine yellowing; terminal leaves stand erect with curled margins, older leaves develop scorched margins, and plants ultimately wilt and collapse. Vascular tissue (phloem) at the crown turns a characteristic honey-brown rather than translucent green.",
+          "url": "https://ipm.cahnr.uconn.edu/cucurbit-yellow-vine-disease-cyvd-in-connecticut/",
+          "quote": "the foliage on a few dozen vines turned bright yellow at fruit set... Typically, all the leaves turn yellow within a few days, starting about a week or two before harvest. Terminal leaves stand erect, fail to expand, and the margins curl inwards. Older leaves develop scorched margins and may die. The phloem in the crown and lower stem turns honey-colored."
+        },
+        "diagnostic_features": {
+          "value": "Honey-brown discoloration of the phloem in the crown and lower stem (visible at stem cross-section) is the key diagnostic; symptoms appear suddenly approximately 2 weeks before fruit maturity; terminal leaves stand erect, fail to expand, with margins curling inwards; unlike bacterial wilt, cut stems do NOT exude sticky ooze; in watermelon, fruit turn yellow as leaves discolor.",
+          "url": "https://plantpathology.mgcafe.uky.edu/yellow-vine-decline-cucurbits-ppfs-vg-12",
+          "quote": "Vascular tissue (phloem) from crowns of affected plants appears light brown rather than a healthy translucent green... symptoms are delayed until approximately 2 weeks before fruit maturity... Stems affected by bacterial wilt exude a slimy sticky ooze from cut stems, while YVD does not produce ooze."
+        },
+        "look_alikes": {
+          "value": [
+            "Bacterial wilt (Erwinia tracheiphila)",
+            "Fusarium wilt",
+            "Squash vine borer"
+          ],
+          "url": "https://plantpathology.mgcafe.uky.edu/yellow-vine-decline-cucurbits-ppfs-vg-12",
+          "quote": "Bacterial wilt - Stems affected by bacterial wilt exude a slimy sticky ooze from cut stems, while YVD does not produce ooze... Fusarium wilt - Symptom development of Fusarium wilt is gradual, unlike the more rapid decline of plants affected by YVD... Squash vine borer - The presence of holes at the base of plants, along with frass, are tell-tale signs of squash vine borer activity."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Control the squash bug (Anasa tristis) vector beginning at crop emergence or transplanting - this is the foundation of CYVD management",
+          "Target early-season adult squash bugs as they colonize the field; insecticide applications should hit young seedlings (< 3-5 true leaves) as soon as squash bugs are present",
+          "Manage the first generation of squash bugs during the nymphal stage to reduce the adult population; foliar sprays targeting newly hatched nymphs are more effective than against later stages",
+          "Repeat foliar sprays for extended periods of control",
+          "New generation synthetic pyrethroids (e.g., Capture, Brigade) tend to work better than most other materials against squash bug; Thionex may also be effective on squash bug and cucumber beetle",
+          "Systemic insecticides used for cucumber beetle management will provide up to 3 weeks of squash bug suppression",
+          "Crop rotation with non-cucurbit plants, or at a sufficient distance from previous cucurbit plantings",
+          "Remove crop debris and old/unharvested fruit to reduce overwintering squash bug populations",
+          "Use Hubbard squash (e.g., 'Blue Hubbard') as a perimeter/trap crop around later-planted pumpkins or other cucurbits; alternatively use early-planted straightneck summer squash ('Lemon Drop', 'Hyrific') as a border trap crop",
+          "Time the trap-crop spray just prior to main-crop emergence, with a second application at the first true-leaf stage of the main crop if needed",
+          "If infection has occurred, harvest and market fruit from infected pumpkins, winter squash, cantaloupe, or muskmelon vines early to avoid crop loss"
+        ],
+        "url": "https://plantpathology.mgcafe.uky.edu/yellow-vine-decline-cucurbits-ppfs-vg-12",
+        "quote": "Effective control of YVD is completely dependent on eliminating squash bugs beginning at crop emergence or transplanting. Early insecticide sprays should target overwintering adults on young plants... Apply insecticides as soon as plants are set or seedlings emerge... Systemic insecticides used for cucumber beetle management will provide up to 3 weeks of squash bug suppression. Foliar sprays targeting newly hatched nymphs are more effective than sprays used against later stages. Repeat foliar sprays for extended periods of control."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Serratia marcescens",
+          "alternative_value": "Serratia ureilytica",
+          "alternative_source_url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-yellow-vine-disease/",
+          "note": "Cornell (2 of 3 sources use S. marcescens: UKentucky and UConn) reports the causal agent as Serratia ureilytica, reflecting recent reclassification of the CYVD-associated Serratia strains. No NCBI/MycoBank taxonomy validation was supplied to confirm the currently accepted name; canonical chosen by source majority among Rank-5 extension sources."
+        },
+        {
+          "field": "disease_name",
+          "canonical_value": "Cucurbit Yellow Vine Disease",
+          "alternative_value": "Yellow Vine Decline of Cucurbits",
+          "alternative_source_url": "https://plantpathology.mgcafe.uky.edu/yellow-vine-decline-cucurbits-ppfs-vg-12",
+          "note": "University of Kentucky uses 'Yellow Vine Decline' (YVD); Cornell and UConn use 'Cucurbit Yellow Vine Disease' (CYVD). Treated as synonymous names for the same disease."
+        }
+      ]
+    },
+    {
+      "disease_name": "Gummy Stem Blight",
+      "pathogen_scientific_name": {
+        "value": "Stagonosporopsis cucurbitacearum",
+        "url": "https://wiki.bugwood.org/Didymella_bryoniae",
+        "quote": "Scientific Name Stagonosporopsis cucurbitacearum",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+        "quote": "Gummy stem blight is caused by several closely related fungal pathogens in the genus Stagonosporopsis"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Fruit",
+          "Seed",
+          "Whole plant"
+        ],
+        "url": "https://ask.ifas.ufl.edu/publication/PP280",
+        "quote": "Infection signs and symptoms can be seen on all parts of the plant except for the roots."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Yellowing/chlorosis of leaf margins followed by light- to dark-brown necrotic spots on cotyledons and leaves; ovate stem and vine cankers near nodes that crack and exude a characteristic brown/amber gummy fluid; fruit lesions begin as water-soaked spots that develop into large brown to black depressed spots (black rot).",
+          "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+          "quote": "Gummy stem blight causes ovate stem and vine cankers, usually starting near the nodes, with a characteristic brown gummy exudate ( Figure 1 ). ... Leaves can exhibit dark brown circular spots starting at margins and rapidly spreading to entire leaf. ... Black rot infected fruits show small water-soaked spots that advance into large brown spots, sometimes also exhibiting the brown gummy secretion as found in stems"
+        },
+        "diagnostic_features": {
+          "value": "Black fungal fruiting bodies (pycnidia, perithecia, or pseudothecia) on infected leaves, stems, and fruits; pycnidia swell and release tendrils of spores when wetted; stem and vine lesions near nodes that exude a characteristic brown/amber gummy substance; raised, black, pimple-like spore-producing structures within the black areas of fruit rot.",
+          "url": "https://ask.ifas.ufl.edu/publication/PP280",
+          "quote": "Black fruiting bodies of the fungus (pycnidia, perithecia, or pseudothecia) are often visible on the infected leaves, stems, and fruits and serve in confirmatory diagnosis"
+        },
+        "look_alikes": {
+          "value": [
+            "Anthracnose (Colletotrichum orbiculare)",
+            "Blossom end rot",
+            "Inadequate soil liming"
+          ],
+          "url": "https://ask.ifas.ufl.edu/publication/PP280",
+          "quote": "Anthracnose (caused by Colletotrichum orbiculare ) and inadequate soil liming can also cause the exudation of a gummy substance from cucurbit stems; hence, \"gummyness\" should not be relied upon as a definitive diagnosis of GSB."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Purchase seeds or seedlings free of pathogens from a reputable company with a good history of GSB-free seed production",
+          "Use treated seed; disinfectant solutions are more effective than dry-dust seed treatments",
+          "Plant resistant varieties where available (watermelon, pumpkin, buttercup, and canary melons have resistant cultivars)",
+          "Routinely inspect transplant seedlings in greenhouses and dispose of all seedlings near infected plants; do not use healthy-looking seedlings from trays containing infected plants",
+          "Rotate crops with non-host plants such as small grains or corn for at least 2-4 years, removing all volunteer cucurbits",
+          "Eradicate wild citrons, balsam pear, and other volunteer cucurbits/weeds before planting",
+          "Decaying crop debris should be disked and deep-plowed into the soil post-harvest to speed decomposition and reduce overwintering inoculum",
+          "Use drip irrigation instead of overhead sprinklers; if watering by hand, water at the base of the stem",
+          "In small gardens, remove and destroy infected fruit and vines at the end of the season",
+          "Use integrated pest management to control cucumber beetles and other insect pests, as well as powdery mildew",
+          "Avoid wounding fruits during harvest, and store fruits at 45 F-50 F to prevent postharvest black rot",
+          "Apply fungicides preventatively; effective contact fungicides include chlorothalonil and mancozeb, and there are many effective systemic fungicides",
+          "Alternate fungicide chemistries during the spray program to prevent fungicide resistance",
+          "Example fungicide products: Fluopyram + Difenoconazole (Luna Flex), Prothioconazole (Proline 480 SC), Potassium phosphite + Tebuconazole (Viathon 5.1SC), Difenoconazole + Cyprodinil (Inspire Super 2.09SC), Fluopyram + Tebuconazole (Luna Experience 400SC), Fluopyram + Trifloxystrobin (Luna Sensation 500SC), Penthiopyrad (Fontelis 1.67SC), Cyprodinil + Fludioxonil (Switch 62.5WG), Potassium phosphite + Chlorothalonil (Catamaran 5.3SC), Fluxapyroxad + Pyraclostrobin (Merivon), Pyraclostrobin + Boscalid (Pristine), Chlorothalonil (Bravo Weather Stick 6SC)",
+          "Example watermelon rotation: Bravo alternated with Viathon, alternated with Luna Sensation, alternated with Switch every 7 days",
+          "Commercial growers should consult the Midwest Vegetable Production Guide for specific fungicide recommendations and local extension for legal products"
+        ],
+        "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+        "quote": "Purchase seeds or seedlings free of pathogens from a reputable company, no resistant cucurbit varieties exist. Consider seed treatments. Inspect seedlings regularly for symptoms and dispose of all seedlings near infected plants. Deep plow infected areas post-harvest to ensure complete decomposition of all plant material. Rotate crops, carefully removing all volunteers of relates species. Since this disease can survive in soil and on un-decomposed plant material for 2-4 years, rotate all cucurbits out of infected areas for at least that long. Crop rotations with non-host plants such as small grain, corn, of two or more years are effective in reducing the incidence of these diseases ... Fungicides may be required to control gummy stem blight ... always remember to alternate products to avoid generating fungicide-resistant strains ... For example, in watermelon you can use: Bravo alternated with Viathon, alternated with Luna Sensation, alternated with Switch every 7 days."
+      },
+      "confidence": "high",
+      "num_sources": 4,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Stagonosporopsis cucurbitacearum",
+          "alternative_value": "Didymella bryoniae",
+          "alternative_source_url": "https://ask.ifas.ufl.edu/publication/PP280",
+          "note": "Didymella bryoniae is the older / synonymous teleomorph name still used by some extension and wiki sources (PP280, UMN, Bugwood title). The currently accepted teleomorph for the cucurbit pathogen population in the genus Stagonosporopsis is Stagonosporopsis cucurbitacearum (with related species S. citrulli and S. caricae), per NC State Extension and Bugwoodwiki's scientific-name field."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Stagonosporopsis cucurbitacearum",
+          "alternative_value": "Stagonosporopsis citrulli; Stagonosporopsis caricae",
+          "alternative_source_url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+          "note": "NC State Extension recognizes three closely related Stagonosporopsis species (S. cucurbitacearum, S. citrulli, S. caricae) as causal agents of cucurbit gummy stem blight."
+        },
+        {
+          "field": "type_of_disease",
+          "canonical_value": "Fungal",
+          "alternative_value": "Fungal (ascomycete; anamorph Phoma cucurbitacearum)",
+          "alternative_source_url": "https://ask.ifas.ufl.edu/publication/PP280",
+          "note": "PP280 specifies the ascomycete classification and gives the anamorph as Phoma cucurbitacearum, which is consistent with the older Didymella bryoniae naming."
+        }
+      ]
+    },
+    {
+      "disease_name": "Anthracnose",
+      "pathogen_scientific_name": {
+        "value": "Colletotrichum orbiculare",
+        "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+        "quote": "Anthracnose , Colletotrichum orbiculare",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "",
+        "url": "",
+        "quote": ""
+      },
+      "affected_parts": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Infected spots with a yellow halo around them.",
+          "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+          "quote": "note the yellow halo around infected spots"
+        },
+        "diagnostic_features": {
+          "value": "Yellow halo around infected spots distinguishes anthracnose from gummy stem blight.",
+          "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+          "quote": "Anthracnose , Colletotrichum orbiculare, note the yellow halo around infected spots ( Figure 5 )."
+        },
+        "look_alikes": {
+          "value": [
+            "Gummy stem blight"
+          ],
+          "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+          "quote": "Gummy stem blight and black rot can look like other plant diseases that affect cucurbits ... The following are images to help distinguish gummy stem blight from those diseases that can have similar symptoms during some life stages: Anthracnose"
+        }
+      },
+      "treatments": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "confidence": "low",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Blossom End Rot",
+      "pathogen_scientific_name": {
+        "value": "",
+        "url": "",
+        "quote": "",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Abiotic",
+        "url": "https://content.ces.ncsu.edu/blossom-end-rot-of-tomato-pepper-and-watermelon",
+        "quote": "Blossom-end rot is an abiotic (caused by a non-living factor) disease of tomato, pepper and watermelon."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://content.ces.ncsu.edu/blossom-end-rot-of-tomato-pepper-and-watermelon",
+        "quote": "a calicum defiiciency can be detected before plants set fruit in the form of stunting and necrosis of new leaves"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "The first symptoms on fruit are a slight water-soaked area on or near the blossom end of the fruit; the affected area darkens and enlarges, becoming dark, shrunken, with a dry, leathery appearance.",
+          "url": "https://content.ces.ncsu.edu/blossom-end-rot-of-tomato-pepper-and-watermelon",
+          "quote": "The first symptoms on fruit are a slight water-soaked area on or near the blossom end of the fruit, although lesions can form on the sides of fruit. The affected area soon darkens and enlargens in a constantly widening circle as the fruit ripens. The affected tissue becomes dark, shrunken, and has a dry, leathery appearance."
+        },
+        "diagnostic_features": {
+          "value": "Spot located at the blossom end of the fruit; starts water-soaked and light tan, enlarges and becomes dark brown or black with a leathery look; typically dry; affected fruit ripen faster than normal.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/watermelon-citrullus-sp-blossom-end-rot",
+          "quote": "A water-soaked, light tan spot develops at the blossom end of a fruit. The spot enlarges, becoming dark brown or black, and can take on a leathery look. Typically spots are dry, but these areas may become soft if secondary bacteria and fungi invade the fruit. Affected fruit ripen faster than normal."
+        },
+        "look_alikes": {
+          "value": [
+            "sunscald"
+          ],
+          "url": "https://content.ces.ncsu.edu/blossom-end-rot-of-tomato-pepper-and-watermelon",
+          "quote": "With pepper, blossom end rot is tan in color and can be confused with sunscald, which initially appears white but turns tan."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Do not plant watermelon where drainage is poor, surface water accumulates, or soil is droughty.",
+          "Use a soil test to determine if there is a calcium shortage. If so, add lime, preferably in fall, to adjust soil pH to 6.8 to 7. Mix lime thoroughly in top 8 to 12 inches of soil.",
+          "Mulch plants with black plastic or loose organic material to help maintain more even soil moisture levels.",
+          "Ensure uniform soil moisture. Wet all soil in the root zone at least every 7 to 10 days. About 24 hours after watering, dig a small hole one foot deep to be certain that water penetrated that far.",
+          "Home gardeners should provide even moisture levels throughout the fruiting period if possible by controlled watering and mulching.",
+          "Ensure good air movement by plant spacing and pruning practices. By reducing relative humidity, plant transpiration increases, aiding in the uptake of calcium when sufficient amounts are present in soil.",
+          "Fertilize only moderately to keep plants normally green and vigorous but not luxuriant. Side-dress with nitrogen fertilizer only if required to maintain green color and moderate growth.",
+          "Foliar applications of calcium nitrate fertilizers or calcium chloride dihydrate (1.5 teaspoons per gal water plus 0.5 teaspoon of a surfactant such as CapSil) on a weekly basis during fruiting can provide necessary calcium to developing fruit when needed.",
+          "Making applications in early morning can help avoid spray injury.",
+          "Application of lime to fields known to be low in calcium; soil should be limed according to recommendations of soil analysis report, usually to pH 6.5-6.8.",
+          "Use of gypsum (land plaster), at rates of 500 to 1000 pounds per acre (1 to 2 pounds per 100 square feet) as a supplement to liming on calcium deficient soils.",
+          "Lime and/or gypsum should be applied several months in advance of planting.",
+          "Spraying foliage and stems with anhydrous calcium chloride (4 pounds per 100 gallons of water per acre) four times on a weekly schedule beginning when the second forms, or when symptoms first appear.",
+          "Regulate moisture supply in the soil.",
+          "Cultivation and hoeing can be avoided if proper weed-control chemicals are used. If cultivation is necessary, it should be shallow to avoid root pruning.",
+          "Irrigation supplied via a drip system.",
+          "Plants need at least one inch of water per week in the form of rain or supplemental irrigation.",
+          "Young plants should not be grown too quickly nor should the plants be subjected to severe \"hardening-off\" before transplanting.",
+          "Removing affected fruits when symptoms are first observed."
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/watermelon-citrullus-sp-blossom-end-rot",
+        "quote": "Cultural control Do not plant watermelon where drainage is poor, surface water accumulates, or soil is droughty. Use a soil test to determine if there is a calcium shortage. If so, add lime, preferably in fall, to adjust soil pH to 6.8 to 7."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "affected_parts",
+          "canonical_value": "[\"Foliar\"]",
+          "alternative_value": "null",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/watermelon-citrullus-sp-blossom-end-rot",
+          "note": "PNW Handbooks source did not specify affected parts; NC State source mentions calcium deficiency can be detected as stunting and necrosis of new leaves before fruit set. Both sources primarily describe the disorder as affecting fruit (blossom end)."
+        },
+        {
+          "field": "diagnostic_features",
+          "canonical_value": "Spot located at the blossom end of the fruit; starts water-soaked and light tan, enlarges and becomes dark brown or black with a leathery look; typically dry; affected fruit ripen faster than normal.",
+          "alternative_value": "Blossom end rot will most often appear on the blossom-end of the fruit whereas sunscald will affect parts of the fruit exposed to the sun.",
+          "alternative_source_url": "https://content.ces.ncsu.edu/blossom-end-rot-of-tomato-pepper-and-watermelon",
+          "note": "PNW gives a more specific lesion description; NC State frames the diagnostic feature as differentiation from sunscald."
+        }
+      ]
+    },
+    {
+      "disease_name": "Phytophthora Blight",
+      "pathogen_scientific_name": {
+        "value": "",
+        "url": "",
+        "quote": "",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://hort.extension.wisc.edu/articles/vine-crops-disease-phytophthora-blight/",
+        "quote": "Phytophthora blight is a fungal disease capable of completely destroying zucchini, pumpkin, summer squash, and watermelon fields and seriously damaging other vine crops."
+      },
+      "affected_parts": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "",
+          "url": "",
+          "quote": ""
+        },
+        "diagnostic_features": {
+          "value": "",
+          "url": "",
+          "quote": ""
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "confidence": "low",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Powdery Mildew",
+      "pathogen_scientific_name": {
+        "value": "Podosphaera xanthii",
+        "url": "https://edis.ifas.ufl.edu/publication/PP342",
+        "quote": "The fungus Podosphaera xanthii (previously known as Sphaerotheca fuliginea ) was identified as the causal agent on watermelon fruit from southwest Florida",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://edis.ifas.ufl.edu/publication/PP342",
+        "quote": "The fungus Podosphaera xanthii (previously known as Sphaerotheca fuliginea ) was identified as the causal agent"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Pod"
+        ],
+        "url": "https://edis.ifas.ufl.edu/publication/PP342",
+        "quote": "the typical white powdery fungal growth (mycelia and conidia) may occur on petioles and leaves (Figure 2). The fruit can also exhibit white, powdery patches on the rind surface"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Initial symptoms appear on older leaves as a reddish-brown, bronzed appearance; as disease progresses, typical white powdery fungal growth occurs on petioles and leaves, and white powdery patches may appear on the fruit rind.",
+          "url": "https://edis.ifas.ufl.edu/publication/PP342",
+          "quote": "Initial symptoms of powdery mildew appear on the older leaves with a reddish-brown, bronzed appearance... As the disease progresses, the typical white powdery fungal growth (mycelia and conidia) may occur on petioles and leaves (Figure 2). The fruit can also exhibit white, powdery patches on the rind surface"
+        },
+        "diagnostic_features": {
+          "value": "The signs (white powdery patches) are relatively easy to identify and are diagnostic for this disease.",
+          "url": "https://edis.ifas.ufl.edu/publication/PP342",
+          "quote": "The signs (i.e., white powdery patches) are relatively easy to identify and are diagnostic for this disease."
+        },
+        "look_alikes": {
+          "value": [
+            "viral infections",
+            "chemical phytotoxicity",
+            "certain nutrient deficiencies"
+          ],
+          "url": "https://edis.ifas.ufl.edu/publication/PP342",
+          "quote": "other problems such as viral infections, chemical phytotoxicity, and certain nutrient deficiencies can cause similar symptoms"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Field sanitation by removal of weeds, such as citron watermelon, and volunteer plants that may harbor powdery mildew or other pathogens is recommended before and after planting",
+          "Early detection by frequent and thorough scouting of the fields is key to limiting the impact of this disease with chemical controls",
+          "Fungicides can be effective in managing this pathogen, however, their efficacy is typically improved when applied before the epidemic reaches 10 to 25% severity",
+          "Resistance management guidelines as outlined on individual fungicide labels should be followed",
+          "Rotation of fungicides with different modes of action and applying fungicides in tank mixtures"
+        ],
+        "url": "https://edis.ifas.ufl.edu/publication/PP342",
+        "quote": "Field sanitation by removal of weeds, such as citron watermelon, and volunteer plants that may harbor powdery mildew or other pathogens is recommended before and after planting... Fungicides can be effective in managing this pathogen, however, their efficacy is typically improved when applied before the epidemic reaches 10 to 25% severity... This includes rotation of fungicides with different modes of action and applying fungicides in tank mixtures."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Podosphaera xanthii",
+          "alternative_value": "Sphaerotheca fuliginea",
+          "note": "Sphaerotheca fuliginea is the previous/outdated name for the same fungus per source."
+        }
+      ]
+    },
+    {
+      "disease_name": "Pythium Diseases",
+      "pathogen_scientific_name": {
+        "value": "Pythium aphanidermatum; Pythium ultimum",
+        "url": "https://extension.usu.edu/vegetableguide/cucurbits/pythium",
+        "quote": "The rot was caused by two different Pythium species – Pythium aphanidermatum and Pythium ultimum.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Oomycete",
+        "url": "https://extension.usu.edu/vegetableguide/cucurbits/pythium",
+        "quote": "The rot was caused by two different Pythium species – Pythium aphanidermatum and Pythium ultimum."
+      },
+      "affected_parts": {
+        "value": [
+          "Root",
+          "Whole plant"
+        ],
+        "url": "https://extension.usu.edu/vegetableguide/cucurbits/pythium",
+        "quote": "Above ground symptoms consist of plant stunting, wilt, and death, despite wet soils. The fruit rot symptoms start as brown spots on the underside, where the fruit contacts with the ground."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Above-ground symptoms include plant stunting, wilt, and death despite wet soils; fruit rot starts as small water-soaked lesions or brown spots on the underside where the fruit contacts the ground, with the whole fruit collapsing within 72 hours and developing a white, cottony mycelium with fruit liquefaction under high moisture.",
+          "url": "https://extension.usu.edu/vegetableguide/cucurbits/pythium",
+          "quote": "Above ground symptoms consist of plant stunting, wilt, and death, despite wet soils. The fruit rot symptoms start as brown spots on the underside, where the fruit contacts with the ground. Eventually, a cottony mycelium develops and fruit liquefies."
+        },
+        "diagnostic_features": {
+          "value": "Brown spots on the underside of fruit where it contacts the ground, followed by white cottony mycelium and fruit liquefaction (described as cottony leak or watery rot); plant stunting and wilt despite wet soils; whole fruit collapses within 72 hours with epidermis ruptured.",
+          "url": "https://ag.umass.edu/vegetable/fact-sheets/pythium-fruit-rot",
+          "quote": "Pythium fruit rot, described as cottony leak or watery rot, occurs during wet weather or in poorly drained areas of fields... Under high moisture, a white, cottony growth may be apparent on the lesion surface."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Source disease-free / high-quality seeds grown under optimum moisture, temperature, and nutritional conditions",
+          "Implement drip irrigation and plastic mulch",
+          "Avoid excessive watering and low, poorly drained areas of fields",
+          "Use staking and mulching to prevent fruit contact with the soil",
+          "Apply fungicide; mefenoxam products used in soil drenches can reduce root rot but are ineffective against fruit rot",
+          "For current chemical control & pesticide management recommendations, consult the New England Vegetable Management Guide website"
+        ],
+        "url": "https://extension.usu.edu/vegetableguide/cucurbits/pythium",
+        "quote": "Source disease-free seeds . Use seeds that have been grown in optimum moisture, temperature, and nutritional conditions. Implement drip irrigation and plastic mulch . Avoid excessive watering and low, poorly drained areas of the fields. Use staking and mulching. Prevent fruit contact with the soil. Apply fungicide. Mefenoxam products used in soil drenches can reduce root rot. These are ineffective against fruit rot."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Pythium Root and Fruit Rot",
+          "alternative_value": "Pythium Fruit Rot",
+          "alternative_source_url": "https://ag.umass.edu/vegetable/fact-sheets/pythium-fruit-rot",
+          "note": "UMass source uses the narrower name 'Pythium Fruit Rot'; USU's name covers both root and fruit symptoms described across sources."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Root; Whole plant",
+          "alternative_value": "Whole plant",
+          "alternative_source_url": "https://ag.umass.edu/vegetable/fact-sheets/pythium-fruit-rot",
+          "note": "UMass lists only whole plant (fruit collapse); USU explicitly includes root."
+        }
+      ]
+    },
+    {
+      "disease_name": "Bacterial Fruit Blotch",
+      "pathogen_scientific_name": {
+        "value": "Acidovorax avenae subsp. citrulli",
+        "url": "https://extension.missouri.edu/publications/ipm1011",
+        "quote": "The causal organism, Acidovorax avenae subsp. citrulli, was first identified in the United States in 1989 and in Missouri in 1994.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://extension.missouri.edu/publications/ipm1011",
+        "quote": "Bacterial fruit blotch (BFB) is a serious disease infecting watermelons."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Seed",
+          "Pod"
+        ],
+        "url": "https://extension.missouri.edu/publications/ipm1011",
+        "quote": "Symptoms of BFB can be observed on the seedling transplants, mature leaves and fruit."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Water-soaked, oily areas with yellow halos on cotyledons that become dark angular necrotic patches; small dark angled lesions on mature leaves; and a dark green stain or blotch on the upper surface of developing fruit that rapidly expands to cover the entire fruit and causes rind rupture.",
+          "url": "https://extension.missouri.edu/publications/ipm1011",
+          "quote": "Water-soaked, \"oily\" areas on the underside of the cotyledons or seedling leaves often paralleling the veins with a yellow halo are characteristic symptoms. The infected areas dry up and become elongated, angled, black, necrotic patches."
+        },
+        "diagnostic_features": {
+          "value": "The diagnostic symptom of BFB is a dark green stain or blotch on the upper surface of the developing fruit that may be 0.5 inch in diameter at first but will rapidly expand to cover the entire fruit surface within a week.",
+          "url": "https://extension.missouri.edu/publications/ipm1011",
+          "quote": "The diagnostic symptom of BFB is a dark green stain or blotch on the upper surface of the developing fruit. The blotch may be 0.5 inch in diameter at first, but will rapidly expand to cover the entire fruit surface within a week if environmental conditions are favorable"
+        },
+        "look_alikes": {
+          "value": [
+            "other less harmful bacteria that can produce identical symptoms on seedling plants"
+          ],
+          "url": "https://extension.missouri.edu/publications/ipm1011",
+          "quote": "Proper identification of BFB is essential, because other less harmful bacteria can produce identical symptoms on seedling plants."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Practice good greenhouse sanitation: Use a 10 percent bleach solution or Physan 20 to dip all tools, recycled planting trays, and containers for at least 10 minutes.",
+          "Spray benches and the interior with the same solution.",
+          "Remove any weeds growing in the greenhouse.",
+          "Water plants evenly in early morning or by afternoon.",
+          "Bottom watering of transplants will help control BFB.",
+          "Purchase watermelon seed that has been tested negative for bacterial fruit blotch in a seedling grow-out test.",
+          "Monitor transplants for symptoms.",
+          "Try to segregate triploid seedless varieties and seed lots from diploid seeded varieties in the greenhouse.",
+          "Reduce physical contact with the seedlings.",
+          "If suspicious symptoms are observed, remove infected plants and have them diagnosed immediately for bacterial fruit blotch.",
+          "If transplants are confirmed to have BFB, destroy all transplants from that seed lot.",
+          "A greenhouse with infected transplants can be decontaminated and planted the following season.",
+          "If infected plants or potentially infected plants have been transplanted in the field, begin copper spray applications to suppress BFB.",
+          "Copper hydroxide fungicides can be tank mixed with most fungicides used to control fungal diseases.",
+          "If symptoms are observed, copper hydroxide should be applied immediately after planting on a 7- to 10-day schedule.",
+          "If no symptoms are observed but BFB is suspected, copper hydroxide should be applied when the first male flowers appear.",
+          "Continue spray applications until all fruit have reached maturity.",
+          "Fields should not be cultivated or sprayed when the foliage is wet.",
+          "If BFB has occurred, follow a strict three-year rotation, deep plow after harvest and control all volunteer melons and cucurbit weeds.",
+          "Kocide 2000 Copper hydroxide (54 percent) 1.5 pounds per acre",
+          "Kocide 4.5 LF Copper hydroxide (38 percent) 1.33 pints per acre",
+          "Kocide DF Copper hydroxide (61 percent) 2 pounds per acre; 5-day postharvest interval; Apply at 14-day intervals.",
+          "ManKocide DF Copper hydroxide (46 percent) + Mancozeb 2.5 pounds per acre; 5-day postharvest interval; Apply at 14-day intervals. pH of spray solution must be above 6.5.",
+          "Nu-Cop 50 DF Copper hydroxide (77 percent) 2 pounds per acre",
+          "Nu-Cop 3L Copper hydroxide (38 percent) 1-4 pints per acre"
+        ],
+        "url": "https://extension.missouri.edu/publications/ipm1011",
+        "quote": "Management of bacterial fruit blotch entails the following steps: Practice good greenhouse sanitation: Use a 10 percent bleach solution or Physan 20 to dip all tools, recycled planting trays, and containers for at least 10 minutes."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Southern Blight",
+      "pathogen_scientific_name": {
+        "value": "Agroathelia rolfsii",
+        "url": "https://content.ces.ncsu.edu/southern-blight-of-vegetable-crops",
+        "quote": "Southern blight is caused by the soil-born fungus Agroathelia rolfsii (= Sclerotium rolfsii ).",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://content.ces.ncsu.edu/southern-blight-of-vegetable-crops",
+        "quote": "Southern blight is caused by the soil-born fungus Agroathelia rolfsii"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Root",
+          "Whole plant"
+        ],
+        "url": "https://wiki.bugwood.org/Sclerotium_rolfsii_(Southern_blight_of_vegetables_and_melons)",
+        "quote": "Signs of infection include the development of coarse white strands of mycelium growing in a fan-shaped pattern on lower stems, leaf litter, and soil... The disease usually is recognized by the yellowing and wilting of foliage, followed by a complete collapse of the plant. On tomato and pepper, dark water-soaked lesions on the lower stem at or near the soil surface are present and rapidly develop to completely girdle the stem"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Coarse white strands of mycelium grow in a fan-shaped pattern on lower stems, leaf litter, and soil, with water-soaked lesions on crown and lower stem tissue that girdle the stem, yellowing and wilting of foliage, and complete collapse of the plant; tan-to-brown mustard-seed-sized sclerotia (0.5 to 2 mm) form on the mycelial mat.",
+          "url": "https://wiki.bugwood.org/Sclerotium_rolfsii_(Southern_blight_of_vegetables_and_melons)",
+          "quote": "Signs of infection include the development of coarse white strands of mycelium growing in a fan-shaped pattern on lower stems, leaf litter, and soil... Early symptoms consist of water-soaked lesions on crown and lower stem tissue. The disease usually is recognized by the yellowing and wilting of foliage, followed by a complete collapse of the plant... After 7 to 14 days, tan-to-brown, mustard-seed-sized (0.5 to 1.5 mm) sclerotia form on the mycelial mat"
+        },
+        "diagnostic_features": {
+          "value": "Coarse white mycelium in a distinctive fan-shaped pattern on lower stems and soil, plus tan-to-brown, mustard-seed-sized (0.5 to 1.5 mm) sclerotia forming on the mycelial mat after 7 to 14 days; fruit lesions become water-soaked, soft, and star-shaped with no offensive odor.",
+          "url": "https://wiki.bugwood.org/Sclerotium_rolfsii_(Southern_blight_of_vegetables_and_melons)",
+          "quote": "Advancing mycelium and colonies often grow in a distinctive fan-shaped pattern and the coarse hyphal strands may have a somewhat ropy appearance... After 7 to 14 days, tan-to-brown, mustard-seed-sized (0.5 to 1.5 mm) sclerotia form on the mycelial mat"
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Avoid planting in fields with a history of southern blight",
+          "Crop rotations of two years or more to non-host crops like corn, wheat, barley, or small grains to reduce inoculum levels",
+          "Avoid rotations with peanuts, soybeans, cabbage, and carrots",
+          "Maintain weed control during rotations to prevent inoculum increase on susceptible species",
+          "Modify planting dates to avoid conditions that favor disease development",
+          "Use deep plowing to bury infected plant debris and sclerotia",
+          "Ensure the previous crop is decomposed prior to planting; disk the field several times in fall and spring",
+          "Remove symptomatic plants and reduce or eliminate weed populations",
+          "Maintain adequate soil pH; lower soil pH encourages disease",
+          "Use high calcium levels and ammonium-type fertilizers or non-acidifying fertilizers such as calcium nitrate to suppress disease",
+          "Avoid close plant spacing and over-irrigation",
+          "Avoid injury during cultivation",
+          "Use black plastic mulch and row covers as a barrier between fruit and soil",
+          "Stake plants to prevent fruit from touching the ground",
+          "Use grafted tomato rootstocks ('Maxifort', 'Big Power', 'Beaufort') or resistant tomato breeding lines (5635M, 5707M, 5719M, 5737M, 5876M, 5913M)",
+          "Use resistant pepper cultivars such as 'Golden California Wonder'",
+          "Apply labeled fungicides such as difenoconazole + benzovindiflupyr (Aprovia Top), fluoxastrobin (Aftershock, Evito 480 SC), fluxapyroxad + pyraclostrobin (Priaxor 500 SC), penthiopyrad (Fontelis), pyraclostrobin (Cabrio EG)",
+          "Fumigate soils with broad spectrum chemicals such as chloropicrin and sodium metam sodium",
+          "Use organic amendments, cotton gin trash, and swine manure to improve colonization of soil by antagonistic Trichoderma spp.",
+          "Apply biological agents such as Gliocladium virens, Bacillus subtilis, Penicillium spp., Trichoderma koningii, and Streptomyces philanthi"
+        ],
+        "url": "https://wiki.bugwood.org/Sclerotium_rolfsii_(Southern_blight_of_vegetables_and_melons)",
+        "quote": "Avoiding the disease by selecting fields that are free of S. rolfsii is the most successful method of control. Crop rotations of two years or more to a non-host crop like corn or small grains will help to prevent build-up of inoculum and disease problems."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Agroathelia rolfsii",
+          "alternative_value": "Sclerotium rolfsii",
+          "alternative_source_url": "https://wiki.bugwood.org/Sclerotium_rolfsii_(Southern_blight_of_vegetables_and_melons)",
+          "note": "Sclerotium rolfsii is the older/synonym name. NC State explicitly notes 'Agroathelia rolfsii (= Sclerotium rolfsii)'; Bugwood title still uses Sclerotium rolfsii but body lists scientific name as Agroathelia rolfsii."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem, Root, Whole plant",
+          "alternative_value": "Stem, Whole plant",
+          "alternative_source_url": "https://content.ces.ncsu.edu/southern-blight-of-vegetable-crops",
+          "note": "NC State focuses on stem and whole-plant symptoms; Bugwoodwiki additionally describes foliar yellowing/wilting and root involvement."
+        }
+      ]
+    },
+    {
+      "disease_name": "Watermelon Mosaic Virus",
+      "pathogen_scientific_name": {
+        "value": "Watermelon mosaic virus",
+        "url": "https://ipm.ucanr.edu/agriculture/cucurbits/potyviruses/",
+        "quote": "Watermelon mosaic virus (WMV), formerly Watermelon mosaic virus II",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Viral",
+        "url": "https://extension.umd.edu/resource/viruses-cucurbits",
+        "quote": "Aphid vectored viruses belong to two main virus families: potyviruses"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Whole plant"
+        ],
+        "url": "https://extension.umn.edu/disease-management/cucurbit-viruses",
+        "quote": "All of the mosaic viruses can infect all of the cucurbit crops including melon, cucumber, pumpkin, summer and winter squash."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "First symptom is clearing of veins, followed by mosaic patterns or mottling consisting of irregularly shaped dark green areas alternating with light green or yellow areas; WMV tends to cause raised, blisterlike areas on leaves and to reduce leaf size severely; fruit distortion and color breaking on yellow summer squash and zucchini.",
+          "url": "https://ipm.ucanr.edu/agriculture/cucurbits/potyviruses/",
+          "quote": "The first symptom is a clearing of veins, followed by development of mosaic patterns or mottling consisting of irregularly shaped, dark green areas alternating with light green or yellow areas. Leaves on some species and cultivars are drastically reduced in size and growth is often retarded. Watermelon mosaic virus tends to cause raised, blisterlike areas on leaves and to reduce leaf size severely."
+        },
+        "diagnostic_features": {
+          "value": "Mosaic and rugosity of foliage with raised, blisterlike areas; severely reduced leaf size; color breaking on fruit of straightneck yellow squash; capable of infecting all commercially grown cucurbits.",
+          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/virus-diseases-of-cucurbits/",
+          "quote": "Mosaic and rugosity of foliage and color breaking on fruit of straightneck yellow squash caused by Watermelon Mosaic Potyvirus (formerly WMV-2)."
+        },
+        "look_alikes": {
+          "value": [
+            "CMV",
+            "Papaya ringspot virus (PRSV-W)",
+            "Zucchini yellow mosaic virus (ZYMV)",
+            "herbicide damage from products used on lawns"
+          ],
+          "url": "https://ipm.ucanr.edu/agriculture/cucurbits/potyviruses/",
+          "quote": "Each virus produces similar symptoms and mixed infections are common."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant genetically enhanced/resistant or tolerant varieties of cucurbit crop types with high resistance to WMV (as well as CMV and ZYMV)",
+          "Use varieties such as 'Multipik' with the precocious yellow gene to prolong the harvest period",
+          "Apply silver reflective plastic mulches at planting to repel aphids and reduce/delay virus infection",
+          "Start scouting for potyviruses during the vegetative growth stage; note infections to inform decisions for the next crop",
+          "Spraying with insecticides is rarely effective because the insect transmits the virus before being killed",
+          "Because occurrence is erratic and unpredictable, in-season control is generally not attempted",
+          "Purchase clean seed from a reputable supplier; do not save seed from infected plants",
+          "Control weeds within and around the field including legumes like clover (WMV infects legumes)",
+          "Keep aphid populations low",
+          "Remove and bury infected plants to prevent further spread",
+          "Clean tools and hands with soap and water after working with infected plants",
+          "Use screening in greenhouse/hoop house production to exclude aphids",
+          "Insecticides include Fulfill, Beleaf, neonicotinoids and some pyrethroids",
+          "Plant earlier in the season to reduce severity"
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/cucurbits/potyviruses/",
+        "quote": "Start looking for potyviruses during the vegetative growth stage. Note infections to make management decisions before the next crop because during the season, mosaic viruses are difficult to control. Spraying with insecticides is rarely effective for control because the insect transmits the virus before being killed by the insecticide. Because their occurrence is erratic and unpredictable, control of these viruses is not attempted. In studies, silver reflective plastic mulches applied at planting have been shown to be effective in repelling aphids from plants, thereby reducing or delaying virus infection."
+      },
+      "confidence": "high",
+      "num_sources": 4,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Watermelon mosaic virus (WMV)",
+          "alternative_value": "Watermelon Mosaic Virus 2 (WMV-2)",
+          "alternative_source_url": "https://extension.umn.edu/disease-management/cucurbit-viruses",
+          "note": "UMN uses the older designation WMV-2; UC IPM and Cornell note this is the former name. Current canonical name is Watermelon mosaic virus (WMV)."
+        }
+      ]
+    },
+    {
+      "disease_name": "Unknown Virus",
+      "pathogen_scientific_name": {
+        "value": "Papaya ringspot virus",
+        "url": "https://ipm.ucanr.edu/agriculture/cucurbits/potyviruses/",
+        "quote": "Papaya ringspot virus (PRSV-W), formerly Watermelon mosaic virus I",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Viral",
+        "url": "https://extension.umd.edu/resource/viruses-cucurbits",
+        "quote": "Aphid vectored viruses belong to two main virus families: potyviruses"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Whole plant"
+        ],
+        "url": "https://extension.umn.edu/disease-management/cucurbit-viruses",
+        "quote": "All of the mosaic viruses can infect all of the cucurbit crops including melon, cucumber, pumpkin, summer and winter squash."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Foliage shows strong mosaic, distortion, and deep leaf serration; extreme leaf filiformity of summer squash; fruits are malformed with knobby overgrowth and color breaks; vein clearing followed by mosaic patterns with irregularly shaped dark green areas alternating with light green or yellow areas.",
+          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/virus-diseases-of-cucurbits/",
+          "quote": "The foliage of affected plants shows strong mosaic, distortion, and deep leaf serration. Fruits are also malformed with knobby overgrowth and color breaks."
+        },
+        "diagnostic_features": {
+          "value": "Strong mosaic, distortion, and deep leaf serration; extreme leaf filiformity of summer squash; knobby overgrowth on fruits.",
+          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/virus-diseases-of-cucurbits/",
+          "quote": "Papaya Ringspot Potyvirus produces strong mosaic, distortion, and deep leaf serration... Extreme leaf filiformity of summer squash as seen with several cucurbit viruses including Papaya Ringspot Potyvirus"
+        },
+        "look_alikes": {
+          "value": [
+            "Watermelon mosaic virus (WMV)",
+            "Zucchini yellow mosaic virus (ZYMV)",
+            "several cucurbit viruses",
+            "herbicide damage from products used on lawns"
+          ],
+          "url": "https://ipm.ucanr.edu/agriculture/cucurbits/potyviruses/",
+          "quote": "Each virus produces similar symptoms and mixed infections are common."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Apply silver reflective plastic mulches at planting to repel aphids and reduce/delay virus infection",
+          "Start scouting for potyviruses during the vegetative growth stage; note infections to inform decisions for next crop",
+          "Spraying with insecticides is rarely effective (virus is transmitted before insect dies)",
+          "In-season control is generally not attempted because occurrence is erratic and unpredictable",
+          "Plant resistant or tolerant varieties whenever available (more options on cucumber than squash/pumpkin)",
+          "Purchase clean seed from a reputable supplier",
+          "Control weeds within and around the field",
+          "Keep aphid populations low",
+          "Remove and bury infected plants",
+          "Clean tools and hands with soap and water after handling infected plants",
+          "Use screening in greenhouse/hoop house production",
+          "Insecticides include Fulfill, Beleaf, neonicotinoids and some pyrethroids",
+          "Plant earlier in the season to reduce severity"
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/cucurbits/potyviruses/",
+        "quote": "Start looking for potyviruses during the vegetative growth stage... silver reflective plastic mulches applied at planting have been shown to be effective in repelling aphids from plants, thereby reducing or delaying virus infection."
+      },
+      "confidence": "high",
+      "num_sources": 4,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Papaya ringspot virus type W (PRSV-W)",
+          "alternative_value": "Watermelon Mosaic Virus 1 (WMV-1)",
+          "alternative_source_url": "https://extension.umn.edu/disease-management/cucurbit-viruses",
+          "note": "Older designation WMV-1 used by Cornell (Cucurbit-Papaya Ringspot Potyvirus) and UMN. UC IPM and others note PRSV-W is the current accepted name."
+        }
+      ]
+    }
+  ],
+  "crop": "Watermelon",
+  "generated_date": "2026-05-27"
+}

@@ -1,0 +1,44 @@
+{
+  "crop": "Spruce",
+  "candidate_sources": [
+    {
+      "url": "https://extension.umn.edu/plant-diseases/sirococcus-blight-conifers",
+      "title": "Sirococcus blight of conifers | UMN Extension",
+      "snippet": "Tiny, brown-to-black bumps (pycnidia) appear on newly infected shoots and needles. In summer, infected needles, shoot tips and one year old twigs wither, turn brown and fall off. Infections on expanding shoots often cause the shoot to curl downward in a shepherd's crook. Caused by Sirococcus conigenus, S. tsugae, and S. piceicola.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sirococcus blight",
+        "Sirococcus shoot blight"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/sirococcus-shoot-blight",
+      "title": "Sirococcus Shoot Blight : Landscape : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Sirococcus conigenus is a fungus that causes shoot blight on spruce and other conifers. New shoots die back in summer, with needles turning brown starting at the base or falling off near the infection point. If the twig dies during shoot elongation, a characteristic hook shape (shepherd's crook) develops. Small black pycnidia appear on infected twigs about a year after initial infection.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sirococcus shoot blight",
+        "Sirococcus blight"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/sirococcus-blight/",
+      "title": "Spruce - Sirococcus Blight - Cooperative Extension: Insect Pests, Ticks and Plant Diseases - University of Maine Cooperative Extension",
+      "snippet": "Sirococcus Blight on Spruce. Detailed images and description of symptoms including dieback of new shoots, browning of needles, and the characteristic shepherd's crook curling of infected expanding shoots caused by Sirococcus conigenus.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sirococcus blight"
+      ]
+    },
+    {
+      "url": "https://hortnews.extension.iastate.edu/1994/8-26-1994/siro.html",
+      "title": "Sirococcus Shoot Blight of Spruce | Yard and Garden - Iowa State University",
+      "snippet": "Sirococcus shoot blight of spruce is caused by the fungus Sirococcus conigenus (formerly S. strobilinus). Spores are spread by splashing water. Management includes pruning infected shoots during dry weather, avoiding overhead watering, and proper spacing.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sirococcus shoot blight"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

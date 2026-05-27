@@ -1,0 +1,491 @@
+{
+  "crop": "Wheat",
+  "candidate_sources": [
+    {
+      "url": "https://cropprotectionnetwork.org/encyclopedia/barley-yellow-dwarf-of-wheat",
+      "title": "Barley Yellow Dwarf of Wheat",
+      "snippet": "Barley Yellow Dwarf (BYD) is caused by the viral pathogen Barley Yellow Dwarf Virus (BYDV) complex, which consists of five closely related viruses in the Luteoviridae family. BYDV is found worldwide and infects small grains like barley, wheat, oats and rice as well as many wild grass species. Symptoms generally appear first on the older leaves of young plants as faint yellowish-green blotches near the leaf tip.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Barley Yellow Dwarf",
+        "Barley Yellow Dwarf Virus",
+        "BYDV"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-cer-01",
+      "title": "Barley Yellow Dwarf of Wheat, Oats, and Barley | Ohioline",
+      "snippet": "This disease is the most widely distributed and economically most important virus disease of wheat, with yield losses up to 20% reported. Symptoms include yellow to red leaf discoloration in wheat, stunting, and reduced tillering. BYDV-MAV is transmitted by the English grain aphid, while BYDV-PAV is transferred by the bird cherry-oat aphid and the English grain aphid.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Barley Yellow Dwarf",
+        "BYDV-MAV",
+        "BYDV-PAV"
+      ]
+    },
+    {
+      "url": "https://www.udel.edu/academics/colleges/canr/cooperative-extension/fact-sheets/barley-yellow-dwarf-virus/",
+      "title": "Barley Yellow Dwarf Virus | Cooperative Extension | University of Delaware",
+      "snippet": "Extension factsheet covering Barley Yellow Dwarf Virus in small grains including wheat. Covers symptoms (yellowing, stunting, reduced tillering), the virus complex (Luteoviridae), aphid vectors, and management strategies including delayed planting and resistant varieties.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Barley Yellow Dwarf Virus",
+        "BYDV"
+      ]
+    },
+    {
+      "url": "https://cropwatch.unl.edu/plant-disease/wheat/barley-yellow-dwarf/",
+      "title": "Barley Yellow Dwarf | CropWatch | Nebraska",
+      "snippet": "Primary symptoms of Barley Yellow Dwarf virus include plant stunting, reduced tillering, and yellowing and purpling of tips and margins of upper leaves. BYDV is transmitted by more than 20 aphid species, with the most important being the oat bird-cherry aphid, the corn leaf aphid, the English grain aphid and the green bug.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Barley Yellow Dwarf",
+        "BYDV"
+      ]
+    },
+    {
+      "url": "https://extension.usu.edu/crops/research/barley-yellow-dwarf-virus-bydv",
+      "title": "Barley yellow dwarf virus (BYDV) - USU Extension",
+      "snippet": "Utah State University Extension factsheet on Barley yellow dwarf virus (BYDV) affecting wheat, barley, and oats. Covers pathogen biology, symptoms, aphid transmission, and management approaches.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Barley yellow dwarf virus",
+        "BYDV"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/wheat-triticum-aestivum-dwarf-bunt",
+      "title": "Wheat (Triticum aestivum)-Dwarf Bunt | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Wheat dwarf bunt caused by Tilletia controversa. Infected plants are dwarfed; smut balls containing masses of dark smut spores replace kernels. Bunted heads are slender, remain green longer; bunt balls grey-brown, rupture at harvest releasing black powdery spores smelling like fish (stinking bunt). Management includes pathogen-free seed, planting spring wheat or resistant winter wheat varieties.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Dwarf Bunt",
+        "Stinking Bunt",
+        "TCK Smut"
+      ]
+    },
+    {
+      "url": "https://extension.usu.edu/crops/research/dwarf-bunt-winter-wheat",
+      "title": "Dwarf Bunt in Winter Wheat | USU Extension",
+      "snippet": "Dwarf bunt of winter wheat caused by Tilletia controversa. Disease is most common where winter wheat is subjected to prolonged snow cover. Discusses symptoms, pathogen biology and management of dwarf bunt (TCK smut).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Dwarf Bunt",
+        "TCK smut"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.53924",
+      "title": "Tilletia controversa (dwarf bunt of wheat) | CABI Compendium",
+      "snippet": "CABI datasheet on Tilletia controversa, causal agent of dwarf bunt of wheat. Covers symptoms (dwarfed plants, bunted spikes with teliospore-filled sori, fishy odor of trimethylamine), pathogen biology (soil/seedborne teliospores requiring prolonged snow cover for germination), distribution, and quarantine importance.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Dwarf bunt of wheat",
+        "TCK"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-09-23-1757-PDN",
+      "title": "First Report of Wheat Dwarf Bunt Caused by Tilletia controversa in Pakistan | Plant Disease",
+      "snippet": "APS Plant Disease note reporting wheat dwarf bunt caused by Tilletia controversa Kuhn. Describes mottling/flecking on leaves, increased tillers, smaller plants, bunted kernels (sori) with brown-black teliospores and rotten-fish odor; losses up to 70-80% under severe conditions.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Wheat Dwarf Bunt"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-cer-06",
+      "title": "Fusarium Head Blight or Head Scab of Wheat, Barley and other Small Grain Crops | Ohioline",
+      "snippet": "Fusarium head blight (FHB) or head scab, caused by the fungus Fusarium graminearum and related species, is one of the most important diseases of wheat, oats, barley, spelt and other small grain crops. On wheat, typical scab symptoms include premature bleaching of the wheat head and shriveled, scabby kernels. Infection occurs primarily during the flowering stage when wet, humid weather prevails.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fusarium head blight",
+        "head scab",
+        "Fusarium graminearum"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/wheat-triticum-aestivum-fusarium-root-crown-foot-rot-crown-rot-foot-rot-seedling-blight-dryland-foot",
+      "title": "Wheat (Triticum aestivum)-Fusarium Root, Crown, and Foot Rot (Crown Rot, Foot Rot, Seedling Blight, Dryland Foot Rot) | Pacific Northwest Pest Management Handbooks",
+      "snippet": "In late fall and early spring, roots are brown, and the subcrown internode is discolored; at about boot stage, roots and subcrown internode are uniformly dark brown. Up to six Fusarium species (including F. culmorum and F. pseudograminearum), all soilborne fungi that live on old stubble and straw in the soil, may infect roots and crowns of spring and winter wheat. Early season damping-off can occur at seedling emergence.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Fusarium root rot",
+        "crown rot",
+        "foot rot",
+        "seedling blight",
+        "dryland foot rot",
+        "damping-off"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-10-20-0091-DG",
+      "title": "Diagnostic Guide: Fusarium Crown Rot of Winter Wheat | Plant Health Progress",
+      "snippet": "Diagnostic guide for Fusarium Crown Rot of Winter Wheat published in Plant Health Progress, covering pathogen identification (Fusarium culmorum, F. pseudograminearum), symptoms including discolored subcrown internode, whiteheads, and seedling blight, along with management recommendations.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Fusarium crown rot",
+        "Fusarium culmorum",
+        "Fusarium pseudograminearum"
+      ]
+    },
+    {
+      "url": "https://cropprotectionnetwork.org/publications/an-overview-of-fusarium-head-blight",
+      "title": "An Overview of Fusarium Head Blight | Crop Protection Network",
+      "snippet": "An overview publication of Fusarium head blight covering the biology of Fusarium graminearum, symptoms on wheat heads (premature bleaching, shriveled kernels, pink/orange spore masses), mycotoxin contamination (DON), and integrated management including resistant varieties and fungicide timing at anthesis (Feekes 10.5.1).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fusarium head blight",
+        "FHB",
+        "scab",
+        "Fusarium graminearum"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/10.1079/cabicompendium.36168",
+      "title": "Tilletia indica (Karnal bunt of wheat) | CABI Compendium",
+      "snippet": "CABI Compendium datasheet covering Identity, Overview, Distribution, Dispersal, Hosts/Species Affected, Diagnosis, Biology & Ecology, Seedborne Aspects, Impacts, and Prevention/Control. Symptoms include oblong or ovoid sori 1-3 mm diameter, with dusty brown to black spore masses that characteristically smell of decaying fish (trimethylamine). Sporidia germinate on glumes and penetrate stomates, glumes, rachis, or ovary; fungus develops in intercellular space between endosperm and seed coat.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Karnal bunt",
+        "Tilletia indica"
+      ]
+    },
+    {
+      "url": "https://www.aphis.usda.gov/aphis/ourfocus/planthealth/plant-pest-and-disease-programs/pests-and-diseases/karnal-bunt/CT_Karnal_Bunt",
+      "title": "Karnal Bunt | Animal and Plant Health Inspection Service",
+      "snippet": "Karnal bunt, also called partial bunt, is a plant disease affecting wheat, durum wheat, and triticale, caused by Tilletia indica, a floret-infecting smut fungus. APHIS regulates this disease because many trading partners require that U.S. wheat be certified as grown in areas free of Karnal bunt. First detected in the United States in 1996 in Arizona and later in Texas and California. Karnal bunt is quarantined to portions of two counties in Arizona; incidence usually less than 0.1 percent.",
+      "source_type": "USDA",
+      "diseases_mentioned": [
+        "Karnal bunt",
+        "partial bunt",
+        "Tilletia indica"
+      ]
+    },
+    {
+      "url": "https://plantwiseplusknowledgebank.org/doi/10.1079/PWKB.Species.36168",
+      "title": "Tilletia indica (Karnal bunt of wheat) - Plantwise Plus Knowledge Bank",
+      "snippet": "Karnal bunt (also known as partial bunt) is a fungal disease of wheat, durum wheat, and triticale caused by the basidiomycete fungus Tilletia indica, an internationally quarantine-significant fungal disease of wheat. The fungus invades the kernels and obtains nutrients from the endosperm, leaving behind waste products with a disagreeable fishy odor. Humidity plays a crucial role in disease development; in semi-arid areas high humidity from rains synchronized with the heading stage favors infection, while in arid regions irrigation drives epidemiology.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Karnal bunt",
+        "partial bunt",
+        "Tilletia indica"
+      ]
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7550625/",
+      "title": "Karnal Bunt: A Re-Emerging Old Foe of Wheat",
+      "snippet": "Peer-reviewed review of Karnal bunt caused by Tilletia indica, a floret-infecting pathogen that targets ovaries in growing wheat heads and converts the seed into a black powdery mass of teliospores, severely impacting grain quality and marketability. Covers etiology, epidemiology, host-pathogen interaction, and integrated management strategies for this quarantine-significant disease.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Karnal bunt",
+        "Tilletia indica"
+      ]
+    },
+    {
+      "url": "https://cropprotectionnetwork.org/encyclopedia/loose-smut-of-wheat",
+      "title": "Loose Smut of Wheat",
+      "snippet": "Loose smut of wheat is caused by the fungus Ustilago tritici. It is a seed-borne pathogen. Mild symptoms may be present prior to heading, including yellowish leaf streaks and stiff, dark green leaves. At heading, affected plants produce sterile heads with clumped, sooty olive-black spores in place of healthy glumes and kernels.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Loose smut of wheat",
+        "Ustilago tritici"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/small-grains/loose-smut/",
+      "title": "Loose Smut / Small Grains / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Loose smut of small grains caused by Ustilago. Management guidelines including seed treatment with systemic fungicides, resistant varieties, and inspection of seed fields.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Loose smut"
+      ]
+    },
+    {
+      "url": "https://plantclinic.nmsu.edu/documents/loose-smut-of-wheat-fact-sheet.pdf",
+      "title": "Extension Plant Pathology Loose Smut of Wheat",
+      "snippet": "NMSU Extension Plant Pathology fact sheet on Loose Smut of Wheat caused by Ustilago tritici. Covers symptoms, disease cycle of the seed-borne pathogen, and management recommendations including fungicide seed treatment and use of clean certified seed.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Loose Smut of Wheat",
+        "Ustilago tritici"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Loose_smut",
+      "title": "Loose smut - Wikipedia",
+      "snippet": "Loose smut is caused by Ustilago tritici (wheat) and Ustilago nuda (barley). Affected heads emerge earlier than healthy heads and appear as a mass of olive-black spores initially covered by a thin gray membrane. Once the membrane ruptures, spores are dispersed by wind, infecting flowers of healthy plants. Mycelium establishes in the developing embryo and remains dormant in seed.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Loose smut",
+        "Ustilago tritici",
+        "Ustilago nuda"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-cer-11",
+      "title": "Powdery Mildew of Wheat | Ohioline",
+      "snippet": "Ohio State University Extension factsheet on powdery mildew of wheat caused by Blumeria graminis f. sp. tritici, including symptoms, disease cycle, and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery Mildew"
+      ]
+    },
+    {
+      "url": "https://extension.uga.edu/publications/detail.html?number=C1059&title=identification-and-control-of-powdery-mildew-of-wheat-in-georgia",
+      "title": "Identification and Control of Powdery Mildew of Wheat in Georgia | UGA Cooperative Extension",
+      "snippet": "UGA Extension publication C1059 covers identification and control of powdery mildew of wheat caused by Blumeria graminis f. sp. tritici.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery Mildew"
+      ]
+    },
+    {
+      "url": "https://www.udel.edu/academics/colleges/canr/cooperative-extension/fact-sheets/powdery-mildew-on-small-grains/",
+      "title": "Powdery Mildew on Small Grains | Cooperative Extension | University of Delaware",
+      "snippet": "Early symptoms begin as small yellow flecks visible on the leaf surface; fluffy white to gray mycelia develop on the top of the leaf, starting low in the plant and moving up the canopy.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery Mildew"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.22075",
+      "title": "Blumeria graminis (powdery mildew of grasses and cereals) | CABI Compendium",
+      "snippet": "CABI Compendium datasheet on Blumeria graminis, the pathogen causing powdery mildew of grasses and cereals including wheat.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Powdery Mildew",
+        "Blumeria graminis"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/wheat-triticum-aestivum-powdery-mildew",
+      "title": "Wheat (Triticum aestivum)-Powdery Mildew | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Pacific Northwest Pest Management Handbook entry on wheat powdery mildew including pathogen, symptoms, disease cycle, and management recommendations.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Powdery Mildew"
+      ]
+    },
+    {
+      "url": "https://cropprotectionnetwork.org/publications/an-overview-of-stripe-rust-of-wheat",
+      "title": "An Overview of Stripe Rust of Wheat",
+      "snippet": "Stripe rust symptoms first appear as small chlorotic lesions on leaves, and yellow to light orange pustules (uredia) eventually emerge from these lesions. After tillering, pustules develop parallel to leaf veins, which gives the foliage a symptomatic, distinct striped appearance. Under favorable conditions, this disease can devastate wheat production, reducing yield by more than 70 percent in years when disease is severe.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Stripe rust",
+        "Wheat stripe rust"
+      ]
+    },
+    {
+      "url": "https://extension.usu.edu/planthealth/uppdl/files/factsheet/wheat-stripe-rust08.pdf",
+      "title": "Wheat Stripe Rust - Utah State University Extension Factsheet",
+      "snippet": "Wheat stripe rust caused by Puccinia striiformis f. sp. tritici. Initial symptoms appear as small, yellow spots or flecks around the infection site within seven to ten days after infection, and these small yellowish lesions (uredinia) appear in linear rows on the top of the leaf surface and can also occur on the glumes and on the base of the awns.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Wheat stripe rust",
+        "Stripe rust"
+      ]
+    },
+    {
+      "url": "https://extension.uga.edu/publications/detail.html?number=C960&title=stripe-rust-yellow-rust-of-wheat",
+      "title": "Stripe Rust (Yellow Rust) of Wheat | CAES Field Report",
+      "snippet": "Stripe rust of wheat, also called yellow rust, is caused by the fungus Puccinia striiformis f. sp. tritici. Stripe rust appears as a mass of yellow to orange urediniospores erupting from pustules arranged in long, narrow stripes on leaves (usually between veins), leaf sheaths, glumes and awns on susceptible plants. Mild winters and cooler wet weather in the spring and early summer favor the development of the disease.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Stripe rust",
+        "Yellow rust",
+        "Wheat stripe rust"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6638732/",
+      "title": "Wheat stripe (yellow) rust caused by Puccinia striiformis f. sp. tritici",
+      "snippet": "Wheat stripe rust (yellow rust), caused by Puccinia striiformis f. sp. tritici (Pst), is one of the most important diseases of wheat worldwide. Recent emergence of new races of the pathogen, with novel virulence and aggressiveness combinations, has resulted in epidemics in many countries. Monitoring the virulence of Pst population is essential for managing wheat stripe rust.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Wheat stripe rust",
+        "Yellow rust"
+      ]
+    },
+    {
+      "url": "https://cropwatch.unl.edu/plant-disease/wheat/tan-spot/",
+      "title": "Tan Spot | CropWatch | Nebraska",
+      "snippet": "Initial symptoms are tan necrotic spots surrounded by a yellow halo. As lesions expand they take on a more angular, diamond shape, and typically have a darker center. Lesions coalesce and form large, tan blotchy areas of necrosis. Early in the growing season, spores called ascospores are released from pseudothecia (tiny black, raised fruiting structures formed on wheat straw) and spread by wind or blowing rain.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tan spot",
+        "Pyrenophora tritici-repentis"
+      ]
+    },
+    {
+      "url": "https://www.ndsu.edu/agriculture/extension/publications/fungal-leaf-spot-diseases-wheat-tan-spot-septoria/stagonospora-nodorum",
+      "title": "Fungal Leaf Spot Diseases of Wheat: Tan spot, Septoria/Stagonospora nodorum blotch and Septoria tritici blotch | NDSU Agriculture",
+      "snippet": "The fungal pathogen can produce at least three host-selective toxins (HST) that will induce necrosis (browning) or chlorosis (yellowing) on the leaf and aid in the infection process. At least eight races of the pathogen are known to occur based on their virulence on a wheat differential set. Discussion of tan spot, Septoria nodorum blotch and Septoria tritici blotch of wheat including symptoms, disease cycle, and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tan spot",
+        "Septoria/Stagonospora nodorum blotch",
+        "Septoria tritici blotch"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/10.1079/planthealthcases.2024.0017",
+      "title": "Tan Spot (Pyrenophora tritici-repentis) of Wheat: A Minireview | Plant Health Cases",
+      "snippet": "The necrotrophic fungus Pyrenophora tritici-repentis is the causal agent of tan spot of wheat, also known as yellow spot. This disease is polycyclic, meaning multiple infections can happen throughout the growing season. P. tritici-repentis overwinters on stubble, and due to recent heavily no-till/residue retention cultural practices, increased incidence and yield loss of up to 49% has been witnessed if ideal conditions occur.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Tan spot",
+        "yellow spot",
+        "Pyrenophora tritici-repentis"
+      ]
+    },
+    {
+      "url": "https://www.uaex.uada.edu/publications/pdf/FSA-7544.pdf",
+      "title": "Septoria Blotch, Stagonospora Blotch and Tan Spot",
+      "snippet": "University of Arkansas extension factsheet covering Septoria blotch, Stagonospora blotch, and tan spot of wheat including symptoms, pathogen biology, and management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Septoria blotch",
+        "Stagonospora blotch",
+        "Tan spot"
+      ]
+    },
+    {
+      "url": "https://www.ndsu.edu/agriculture/extension/publications/rust-diseases-wheat-north-dakota",
+      "title": "Rust Diseases of Wheat in North Dakota | NDSU Agriculture",
+      "snippet": "Extension publication describing leaf rust (Puccinia triticina), stem rust, and stripe rust of wheat, including symptoms, disease cycle, favorable conditions, and management with resistant varieties and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Wheat Leaf Rust",
+        "Stem Rust",
+        "Stripe Rust"
+      ]
+    },
+    {
+      "url": "https://www.ars.usda.gov/midwest-area/stpaul/cereal-disease-lab/docs/cereal-rusts/wheat-leaf-rust/",
+      "title": "Wheat leaf rust - Cereal Disease Lab (USDA-ARS)",
+      "snippet": "USDA Cereal Disease Lab page on wheat leaf rust caused by Puccinia triticina. Describes flaky reddish-brown pustules 1/16-inch in diameter on leaves and sheaths, urediniospores, disease cycle, alternate host (Thalictrum), epidemic conditions (60-80F with prolonged dews), and yield losses of 1-20%.",
+      "source_type": "USDA",
+      "diseases_mentioned": [
+        "Wheat Leaf Rust"
+      ]
+    },
+    {
+      "url": "https://extension.uga.edu/publications/detail.html?number=C1060&title=identification-and-control-of-leaf-rust-of-wheat-in-georgia",
+      "title": "Identification and Control of Leaf Rust of Wheat in Georgia | UGA Extension",
+      "snippet": "University of Georgia Extension factsheet on identifying and controlling leaf rust of wheat caused by Puccinia triticina, including symptom photos, disease cycle, host resistance genes (Lr genes), variety selection, and fungicide timing recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Wheat Leaf Rust"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.45859",
+      "title": "Puccinia triticina (wheat brown rust) | CABI Compendium",
+      "snippet": "CABI Compendium datasheet on Puccinia triticina (wheat brown rust / wheat leaf rust), with information on distribution, host range, biology, symptoms (orange-red pustules on leaves), epidemiology, and management.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Wheat Leaf Rust",
+        "Wheat Brown Rust"
+      ]
+    },
+    {
+      "url": "https://pubs.nmsu.edu/_a/A415/",
+      "title": "Leaf, Stem, and Stripe Rust Diseases of Wheat | New Mexico State University Extension",
+      "snippet": "NMSU Extension guide A-415 covering the three wheat rust diseases: leaf rust (Puccinia triticina), stem rust (P. graminis), and stripe rust (P. striiformis). Includes symptom descriptions, pustule color and arrangement, favorable conditions, and integrated management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Wheat Leaf Rust",
+        "Stem Rust",
+        "Stripe Rust"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/disandpath/fungalbasidio/pdlessons/Pages/StemRust.aspx",
+      "title": "Stem rust of wheat",
+      "snippet": "APS Education Center lesson on stem rust of wheat caused by Puccinia graminis f. sp. tritici. Covers symptoms (oval pustules of brick-red urediniospores breaking through the epidermis 7-15 days after infection), pathogen biology, life cycle, alternate host (barberry), and management.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Stem rust of wheat",
+        "Puccinia graminis f. sp. tritici"
+      ]
+    },
+    {
+      "url": "https://www.ars.usda.gov/midwest-area/stpaul/cereal-disease-lab/docs/cereal-rusts/wheat-stem-rust/",
+      "title": "Wheat stem rust - Cereal Disease Lab",
+      "snippet": "USDA-ARS Cereal Disease Laboratory page on wheat stem rust caused by Puccinia graminis f. sp. tritici. Describes the most characteristic signs as irregular-shaped pustules filled with dark red-brown spores erupting through the plant tissue; pustules elongated with jagged edges on the wheat stem. Includes information on Ug99 race.",
+      "source_type": "USDA",
+      "diseases_mentioned": [
+        "Wheat stem rust",
+        "Puccinia graminis f. sp. tritici",
+        "Ug99"
+      ]
+    },
+    {
+      "url": "https://cropprotectionnetwork.org/encyclopedia/stem-rust-of-wheat",
+      "title": "Stem Rust of Wheat",
+      "snippet": "Crop Protection Network encyclopedia entry on stem rust of wheat. Covers symptoms, signs, disease cycle, conditions favoring disease (warm temperatures 18-30C and frequent dews), and management. Plants do not show obvious symptoms until 7-15 days after infection when oval uredinia of brick-red urediniospores break through the epidermis on stems, leaf sheaths, and spikes.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Stem rust of wheat",
+        "Puccinia graminis f. sp. tritici"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.45797",
+      "title": "Puccinia graminis (stem rust of cereals) | CABI Compendium",
+      "snippet": "CABI Compendium datasheet for Puccinia graminis covering identity, distribution, dispersal, hosts/species affected, diagnosis, biology and ecology, seedborne aspects, natural enemies, impacts, prevention and control. Notes wheat stem rust as currently the most devastating wheat disease in some regions.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Stem rust of cereals",
+        "Puccinia graminis",
+        "Wheat stem rust"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/Septoria.aspx",
+      "title": "Septoria tritici blotch (STB) of wheat",
+      "snippet": "APS lesson on Septoria tritici blotch (STB) of wheat caused by Mycosphaerella graminicola (asexual stage: Septoria tritici / Zymoseptoria tritici). Covers symptoms, pathogen biology, disease cycle, and management.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Septoria tritici blotch",
+        "Zymoseptoria tritici",
+        "Mycosphaerella graminicola"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-cer-07",
+      "title": "Leaf Blotch Diseases of Wheat—Septoria tritici Blotch, Stagonospora nodorum Blotch and Tan Spot",
+      "snippet": "Ohio State University Extension factsheet covering Septoria tritici blotch alongside Stagonospora nodorum blotch and tan spot — symptoms, pathogen biology, and integrated management of wheat leaf blotch diseases.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Septoria tritici blotch",
+        "Stagonospora nodorum blotch",
+        "tan spot"
+      ]
+    },
+    {
+      "url": "https://cropprotectionnetwork.org/encyclopedia/septoria-tritici-blotch-of-wheat",
+      "title": "Septoria tritici Blotch of Wheat",
+      "snippet": "Crop Protection Network encyclopedia entry on Septoria tritici blotch of wheat caused by Zymoseptoria tritici (Mycosphaerella graminicola). Includes detailed symptom descriptions, disease cycle, favorable conditions, and management recommendations from US land-grant universities.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Septoria tritici blotch",
+        "Zymoseptoria tritici"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/small-grains/septoria-tritici-blotch-of-wheat/",
+      "title": "Septoria Tritici Blotch of Wheat / Small Grains / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "UC IPM Pest Management Guidelines for Septoria tritici blotch of wheat — symptoms, conditions for development, and management recommendations including resistant varieties and fungicides.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Septoria tritici blotch"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

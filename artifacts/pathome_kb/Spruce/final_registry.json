@@ -1,0 +1,77 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Sirococcus Blight",
+      "pathogen_scientific_name": {
+        "value": "Sirococcus conigenus",
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/sirococcus-shoot-blight",
+        "quote": "Sirococcus shoot blight is caused by Sirococcus conigenus (formerly S. strobilinus ), S. tsugae , and S. piceicola (Sinclair and Lyon 2005; Rossman et al. 2008).",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://hortnews.extension.iastate.edu/1994/8-26-1994/siro.html",
+        "quote": "The disease is caused by the fungus Sirococcus conigenus"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://hortnews.extension.iastate.edu/1994/8-26-1994/siro.html",
+        "quote": "The fungus infects needle bases in late spring and early summer. Small purple lesions are formed and a drop of resin is exuded at the point of infection. Infected needles become chlorotic, die, turn reddish-brown, and are shed. Infection may spread into the stem, causing a canker."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Young succulent shoots die rapidly with stunted, wilted needles that first appear pale green to yellow-brown, then become darker brown and desiccated, with irregularly curved shoots and small black pads of fungal tissue on diseased needles and shoots.",
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/sirococcus-shoot-blight",
+          "quote": "Sirococcus causes disease of young, succulent shoots in the spring, shortly after budbreak. Infected shoots can die rapidly, and the stunted, wilted needles first appear pale green to yellow-brown while the shoots can be irregularly curved. Over time, the needles become darker brown and desiccated. After symptoms appear, the fungus produces small black pads of tissue on the diseased needles and shoots."
+        },
+        "diagnostic_features": {
+          "value": "Small black pads of fungal tissue on diseased needles and shoots that rupture under humid conditions to release spore masses; small purple lesions with a drop of resin at the point of infection; hook-shaped tip growth when infection occurs in the region of shoot elongation; shoots killed by Sirococcus are scattered rather than uniform; affects only young current-year shoots while older shoots (>1 year old) remain unaffected.",
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/sirococcus-shoot-blight",
+          "quote": "After symptoms appear, the fungus produces small black pads of tissue on the diseased needles and shoots. When moisture and humidity are abundant, the pads rupture to release large masses of spores, which may be splashed or blown onto nearby shoots or trees, where new infections are initiated. Older shoots (>1 year old) remain unaffected"
+        },
+        "look_alikes": {
+          "value": [
+            "winter dying or frost damage"
+          ],
+          "url": "https://hortnews.extension.iastate.edu/1994/8-26-1994/siro.html",
+          "quote": "Symptoms appear similar to injury from winter dying or frost damage"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Prune dead shoot tips and remove diseased material from the site to reduce inoculum",
+          "Apply fungicide early in the growing season as new shoots are flushing to protect sensitive tissues",
+          "Chemicals labeled for use against Sirococcus include thiophanate-methyl, mancozeb, and copper hydroxide",
+          "Once tissues are fully hardened off, a locally systemic fungicide may be required for mid-season applications",
+          "Provide supplemental irrigation during extended dry periods to avoid drought stress",
+          "Preventative fungicides such as chlorothalonil (Bravo) and Bayleton 25wp may be effective on nursery stock and young trees"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/sirococcus-shoot-blight",
+        "quote": "Pruning dead shoot tips and removing the diseased material from the site is the first step in controlling the disease. For large and mature trees with significant outbreaks, this can be a daunting task, but inoculum reduction is important. Fungicide application early in the growing season as new shoots are flushing can help to protect these sensitive tissues. Chemicals labeled for use against Sirococcus include: thiophanate-methyl, mancozeb and copper hydroxide. Chemical control can be challenging with shoot blight pathogens since they live within woody tissues and can be difficult to contact. Therefore, once the tissues are fully hardened off, a locally systemic fungicide may be required if applications occur mid-season. Keeping trees healthy and robust is important, so provide supplemental irrigation (if possible) during extended dry periods to avoid drought stress."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Sirococcus Shoot Blight",
+          "alternative_value": "Sirococcus Blight",
+          "alternative_source_url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/sirococcus-blight/",
+          "note": "University of Maine uses 'Sirococcus Blight'; UMass and Iowa State use 'Sirococcus Shoot Blight'. Selected the more specific name used by two of three sources."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Sirococcus conigenus",
+          "alternative_value": "Sirococcus strobilinus",
+          "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/sirococcus-shoot-blight",
+          "note": "S. strobilinus is the former (synonym) name of S. conigenus per UMass: 'Sirococcus conigenus (formerly S. strobilinus)'."
+        }
+      ]
+    }
+  ],
+  "crop": "Spruce",
+  "generated_date": "2026-05-27"
+}

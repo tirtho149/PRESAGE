@@ -1,0 +1,864 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Barley Yellow Dwarf Virus",
+      "pathogen_scientific_name": {
+        "value": "",
+        "url": "",
+        "quote": "",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Viral",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-cer-01",
+        "quote": "The disease is caused by at least eight viral species that belongs to the Luteoviridae virus family, and it is transmitted by aphids."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Whole plant",
+          "Root"
+        ],
+        "url": "https://cropprotectionnetwork.org/encyclopedia/barley-yellow-dwarf-of-wheat",
+        "quote": "Symptoms of barley yellow dwarf (BYD) include stunting; yellow, red, and/or purple discoloration of leaves (particularly the flag leaf); and tip burn. Leaves can be distorted and roots underdeveloped."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Yellowish-green blotches appear near leaf tips on older leaves, enlarging and changing to shades of red to purple in oats, yellow to red in wheat, and bright yellow in barley, often with dwarfing and stunting.",
+          "url": "https://ohioline.osu.edu/factsheet/plpath-cer-01",
+          "quote": "Symptoms generally appear first on the older leaves of young plants as faint yellowish-green blotches near the leaf tip. The blotches enlarge rapidly and merge, changing to shades of red to purple in oats, yellow to red in wheat and bright yellow in barley"
+        },
+        "diagnostic_features": {
+          "value": "Reddish-purple or yellowish discoloration of the flag leaf is the most characteristic symptom; symptoms appear patchy in a field due to aphid vector movement and are most apparent when days are cool and light intensity is high; does not produce a distinct mosaic pattern.",
+          "url": "https://ohioline.osu.edu/factsheet/plpath-cer-01",
+          "quote": "Reddish-purple or yellowish discoloration of the flag leaf is the most characteristic symptoms of BYDV, but visual symptoms alone are not sufficient to properly identify the disease."
+        },
+        "look_alikes": {
+          "value": [
+            "wheat streak mosaic",
+            "mineral/nutrient deficiencies",
+            "low temperature damage",
+            "root and crown rots",
+            "herbicide injury",
+            "environmental stress"
+          ],
+          "url": "https://cropwatch.unl.edu/plant-disease/wheat/barley-yellow-dwarf/",
+          "quote": "Symptoms of barley yellow dwarf are highly variable and can be confused with those of wheat streak mosaic, nutrient deficiency, root and crown diseases, and environmental stress."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant BYDV-resistant or tolerant cultivars (resistance is more available in oats than in wheat and barley); grow diverse varieties.",
+          "Delay fall seeding of winter wheat until aphid populations decline; plant winter wheat after the Hessian fly-free date; plant spring oats as early as possible.",
+          "Control grassy weeds and volunteer cereals (wheat, barley, oats) within and near production fields to eliminate the green bridge for aphids.",
+          "Avoid planting small grains in midsummer as cover or companion crops in wheat-producing areas.",
+          "Seed treatments with imidacloprid (Gaucho) or thiamethoxam (Cruiser) can reduce fall aphid populations and primary infections.",
+          "Foliar contact or systemic insecticides may be used against aphids in the fall, though insecticide use is generally not economically beneficial due to sporadic aphid movement.",
+          "Maintain proper fertilization for good crop growth."
+        ],
+        "url": "https://cropwatch.unl.edu/plant-disease/wheat/barley-yellow-dwarf/",
+        "quote": "Delaying fall seeding of wheat until aphid populations decline minimizes the risk of barley yellow dwarf... An important strategy to manage BYDV is to plant resistant or tolerant cultivars... Cultural methods of managing barley yellow dwarf include controlling grassy weeds, including volunteer cereals, within and near wheat production fields... Seed treatments of imidacloprid (Gaucho and other products) or thiamethoxam (Cruiser) can reduce aphid populations through the fall..."
+      },
+      "confidence": "high",
+      "num_sources": 4,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Barley Yellow Dwarf",
+          "alternative_value": "Barley Yellow Dwarf of Wheat",
+          "alternative_source_url": "https://cropprotectionnetwork.org/encyclopedia/barley-yellow-dwarf-of-wheat",
+          "note": "CropProtectionNetwork uses the host-qualified name; UDel, OSU, and UNL use the unqualified canonical name."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Whole plant, Root",
+          "alternative_value": "Foliar, Whole plant (no root involvement listed)",
+          "alternative_source_url": "https://www.udel.edu/academics/colleges/canr/cooperative-extension/fact-sheets/barley-yellow-dwarf-virus/",
+          "note": "UDel, OSU, and UNL list only foliar and whole-plant symptoms; only the Crop Protection Network source explicitly mentions underdeveloped roots."
+        }
+      ]
+    },
+    {
+      "disease_name": "Dwarf Bunt, Dwarf Smut",
+      "pathogen_scientific_name": {
+        "value": "Tilletia controversa",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/wheat-triticum-aestivum-dwarf-bunt",
+        "quote": "The fungus, Tilletia controversa , is carried on seed and can survive many years in soil.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/wheat-triticum-aestivum-dwarf-bunt",
+        "quote": "The fungus, Tilletia controversa , is carried on seed and can survive many years in soil."
+      },
+      "affected_parts": {
+        "value": [
+          "Whole plant",
+          "Seed"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/wheat-triticum-aestivum-dwarf-bunt",
+        "quote": "Infected plants are dwarfed compared to healthy plants. Smut balls containing masses of dark smut spores replace kernels."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Infected plants are dwarfed compared to healthy plants, and smut balls containing masses of dark smut spores replace the kernels.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/wheat-triticum-aestivum-dwarf-bunt",
+          "quote": "Infected plants are dwarfed compared to healthy plants. Smut balls containing masses of dark smut spores replace kernels."
+        },
+        "diagnostic_features": {
+          "value": "When crushed, a smut ball emits a distinctive foul odor, as in common bunt.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/wheat-triticum-aestivum-dwarf-bunt",
+          "quote": "If crushed, a smut ball emits a distinctive foul odor as in common bunt."
+        },
+        "look_alikes": {
+          "value": [
+            "Common Bunt (Stinking Smut)"
+          ],
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/wheat-triticum-aestivum-dwarf-bunt",
+          "quote": "See: Wheat ( Triticum aestivum ) - Common Bunt (Stinking Smut)"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use pathogen-free seed.",
+          "Plant spring wheat or resistant varieties of winter wheat.",
+          "Seed treatment with Dividend Extreme (Group 3 + 4) at 2 to 4 fl oz per 100 lb of wheat or triticale seed.",
+          "Seed treatment with Dividend XL RTA (Group 3 + 4) at 5 to 10 fl oz per 100 lb of wheat seed; do not graze green forage until 55 days after planting."
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/wheat-triticum-aestivum-dwarf-bunt",
+        "quote": "Cultural control Use pathogen-free seed. Plant spring wheat or resistant varieties of winter wheat. ... Chemical control Treat seed. Dividend Extreme (Group 3 + 4) at 2 to 4 fl oz/100 lb of wheat or triticale seed. See label for reentry restrictions. Dividend XL RTA (Group 3 + 4) at 5 to 10 fl oz/100 lb of wheat seed. Do not graze green forage until 55 days after planting."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Loose Smut Of Wheat Or Barley",
+      "pathogen_scientific_name": {
+        "value": "Ustilago tritici",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/loose-smut-of-wheat",
+        "quote": "It is caused by the fungus Ustilago tritici .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/loose-smut-of-wheat",
+        "quote": "It is caused by the fungus Ustilago tritici ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Seed"
+        ],
+        "url": "https://cropprotectionnetwork.org/encyclopedia/loose-smut-of-wheat",
+        "quote": "Mild symptoms may be present prior to heading, including yellowish leaf streaks and stiff, dark green leaves. Affected plants head out early, producing sterile heads with clumped, sooty olive-black spores in place of healthy glumes and kernels."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Mild symptoms may include yellowish leaf streaks and stiff, dark green leaves before heading; affected plants head out early producing sterile heads with clumped, sooty olive-black spores in place of healthy glumes and kernels, with only a bare rachis remaining after spore dispersal.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/loose-smut-of-wheat",
+          "quote": "Mild symptoms may be present prior to heading, including yellowish leaf streaks and stiff, dark green leaves. Affected plants head out early, producing sterile heads with clumped, sooty olive-black spores in place of healthy glumes and kernels. Spores are not enclosed by the seed coat, so are quickly dispersed by rain or wind after emergence. After spores disperse, only a bare rachis remains with a few fragments of glumes or awns."
+        },
+        "diagnostic_features": {
+          "value": "Spores are not enclosed by the seed coat, so are quickly dispersed by rain or wind, leaving only a bare rachis with a few fragments of glumes or awns; loose smut spores will NOT have a fishy odor.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/loose-smut-of-wheat",
+          "quote": "Spores are not enclosed by the seed coat, so are quickly dispersed by rain or wind and only a bare rachis remains with a few fragments of glumes or awns. ... Loose smut spores will NOT have a fishy odor."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Less susceptible varieties of wheat are available.",
+          "Plant certified seed to reduce disease risk.",
+          "Do not save seed from fields with loose smut.",
+          "Fungicide seed treatments can effectively manage loose smut."
+        ],
+        "url": "https://cropprotectionnetwork.org/encyclopedia/loose-smut-of-wheat",
+        "quote": "Less susceptible varieties of wheat are available. Plant certified seed to reduce disease risk. Do not save seed from fields with loose smut. Fungicide seed treatments can effectively manage loose smut."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Karnal Bunt",
+      "pathogen_scientific_name": {
+        "value": "Tilletia indica",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7550625/",
+        "quote": "the smut fungus Tilletia indica Mitra (syn. Neovossia indica (Mitra) Mundkur), causing Karnal bunt (KB)",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7550625/",
+        "quote": "Tilletia indica that causes Karnal bunt (KB) disease in wheat is one such fungal pathogen of high quarantine importance"
+      },
+      "affected_parts": {
+        "value": [
+          "Seed"
+        ],
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7550625/",
+        "quote": "Basically, KB is a kernel bunt and, therefore, the reduced yield is mainly because of the loss of grain weight"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Karnal bunt infection does not cover the whole wheat ear but is restricted to a few kernels within a spike and to a part of the grain (partial bunt); bunted kernels are fragile, blackened, and sooty with cracks in the outer layer that release black powder when pressed, and in advanced infections kernels look like a boat or dugout canoe.",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7550625/",
+          "quote": "the KB infection does not cover the whole wheat ear, rather it is restricted to a few kernels within a spike ( Figure 1 ) and to a part of the grain and seldom the whole grain ( Figure 2 ), thereby, the name partial bunt"
+        },
+        "diagnostic_features": {
+          "value": "Infected spikes emit a fetid unpleasant odor of rotten fish or dead mice caused by trimethylamine (giving the name \"stinking bunt\"); infection is restricted to a few kernels within a spike and to a part of the grain, with infected seed layers replaced by black fetid powder of teliospores.",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7550625/",
+          "quote": "The infected spikes emit a fetid unpleasant odor of rotten fish or dead mice caused by trimethylamine, thus, giving it the name \"stinking bunt\""
+        },
+        "look_alikes": {
+          "value": [
+            "other bunts of wheat"
+          ],
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7550625/",
+          "quote": "unlike other bunts, the KB infection does not cover the whole wheat ear"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use clean seed",
+          "Ongoing sanitation",
+          "Sound agricultural practices",
+          "Follow quarantine regulations for both imported regulated articles and impacted domestic areas",
+          "Cooperate with State and Federal officials and follow regulations",
+          "Host resistance / breeding of KB resistant wheat cultivars",
+          "Identification and development of resistant sources",
+          "Stubble management"
+        ],
+        "url": "https://www.aphis.usda.gov/aphis/ourfocus/planthealth/plant-pest-and-disease-programs/pests-and-diseases/karnal-bunt/CT_Karnal_Bunt",
+        "quote": "You can reduce the risk of spreading Karnal bunt by using clean seed, ongoing sanitation, sound agricultural practices, and following quarantine regulations for both imported regulated articles and impacted domestic areas.  How It Is Treated You can manage the disease by cooperating with State and Federal officials and following regulations. It is equally important to use clean seed, proper sanitation, and sound agricultural practices."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Tilletia indica",
+          "alternative_value": "Neovossia indica",
+          "alternative_source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7550625/",
+          "note": "Neovossia indica (Mitra) Mundkur is listed as a synonym of the canonical Tilletia indica Mitra in the PMC review."
+        }
+      ]
+    },
+    {
+      "disease_name": "Powdery Mildew",
+      "pathogen_scientific_name": {
+        "value": "Blumeria graminis f. sp. tritici",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-cer-11",
+        "quote": "Powdery mildew, caused by Blumeria graminis f. sp. tritici , is the most common foliar disease of wheat in Ohio.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.udel.edu/academics/colleges/canr/cooperative-extension/fact-sheets/powdery-mildew-on-small-grains/",
+        "quote": "Powdery Mildew (PM) is a fungal leaf disease caused by Blumeria graminis"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://ohioline.osu.edu/factsheet/plpath-cer-11",
+        "quote": "Powdery mildew is characterized by a powdery white to gray fungal growth on leaves, stems and heads"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Powdery white to gray fungal growth on leaves, stems and heads; early symptoms are small yellow flecks on the leaf surface, with fluffy white to gray mycelia developing on top of leaves and progressing up the canopy, maturing to grey-brown, with yellow/tan/brown discoloration of the opposite leaf side.",
+          "url": "https://ohioline.osu.edu/factsheet/plpath-cer-11",
+          "quote": "Powdery mildew is characterized by a powdery white to gray fungal growth on leaves, stems and heads ( Fig. 1 ). The fluffy white pustules are first detected on the lowest leaves of plants in early- to mid-April. As the plant matures, the white powdery growth changes to a grey-brown color. The leaf tissue on the opposite side of the leaf from the white mold growth becomes yellow, later turning tan or brown."
+        },
+        "diagnostic_features": {
+          "value": "Small, black fruiting bodies (cleistothecia/chasmothecia) develop on leaves as plants mature, recognized as distinct round, black dots within older, grey colonies of powdery mildew.",
+          "url": "https://ohioline.osu.edu/factsheet/plpath-cer-11",
+          "quote": "Small, black fruiting bodies (cleistothecia) develop on leaves as plants mature in June. Cleistothecia are recognized as distinct round, black dots within older, grey colonies of powdery mildew ( Fig. 2 )."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant mildew resistant varieties (complete or partial resistance) — the most economical control method.",
+          "Use a balanced fertilization program with proper levels of N, P and K; avoid over-fertilization (watch fields receiving greater than 70 lb N/A).",
+          "Till wheat stubble and other residues into the soil in fields with persistent disease problems to allow disease-causing fungi to die out.",
+          "Destroy volunteer wheat and use crop rotation to reduce overwintering inoculum.",
+          "Apply labeled fungicides based on scouting from tiller elongation through flowering when PM moves up the canopy and conditions remain conducive."
+        ],
+        "url": "https://ohioline.osu.edu/factsheet/plpath-cer-11",
+        "quote": "Planting mildew resistant varieties is the most economical way to control powdery mildew. ... Use a balanced fertilization program with proper levels of N, P and K. Watch for mildew in fields receiving greater than 70 lb N/A. In fields with persistent disease problems, the wheat stubble and other residues should be tilled into the soil to permit disease causing fungi to die out before another wheat crop is planted. Incorporating wheat residues into the soil, destroying volunteer wheat and crop rotation will reduce the amount of overwintering inoculum in the field. Fungicides are available that provide excellent control of powdery mildew."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Blumeria graminis f. sp. tritici",
+          "alternative_value": "Blumeria graminis",
+          "alternative_source_url": "https://www.udel.edu/academics/colleges/canr/cooperative-extension/fact-sheets/powdery-mildew-on-small-grains/",
+          "note": "UDel fact sheet uses the species-level name Blumeria graminis; Ohio State specifies the wheat-infecting forma specialis (f. sp. tritici), which is the more precise canonical name for the wheat-specific pathogen."
+        }
+      ]
+    },
+    {
+      "disease_name": "Stripe Rust",
+      "pathogen_scientific_name": {
+        "value": "Puccinia striiformis f. sp. tritici",
+        "url": "https://extension.uga.edu/publications/detail.html?number=C960&title=stripe-rust-yellow-rust-of-wheat",
+        "quote": "Stripe rust of wheat is caused by the basidiomycete fungus Puccinia striiformis Westend f. sp. tritici Eriks & Henn",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.uga.edu/publications/detail.html?number=C960&title=stripe-rust-yellow-rust-of-wheat",
+        "quote": "Stripe rust of wheat is caused by the basidiomycete fungus Puccinia striiformis Westend f. sp. tritici"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Head"
+        ],
+        "url": "https://extension.uga.edu/publications/detail.html?number=C960&title=stripe-rust-yellow-rust-of-wheat",
+        "quote": "small, bright yellow, elongated uredial pustules arranged in conspicuous rows on the leaves, leaf sheaths, glumes and awns"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "First sign is the appearance of yellow streaks (pre-pustules), followed by small, bright yellow, elongated uredial pustules arranged in conspicuous rows on leaves (usually between veins), leaf sheaths, glumes and awns. Mature pustules rupture to release yellow-orange masses of urediniospores.",
+          "url": "https://extension.uga.edu/publications/detail.html?number=C960&title=stripe-rust-yellow-rust-of-wheat",
+          "quote": "The first sign of stripe rust is the appearance of yellow streaks (pre-pustules), followed by small, bright yellow, elongated uredial pustules arranged in conspicuous rows on the leaves, leaf sheaths, glumes and awns (Figure 3). Mature pustules will break open and release yellow-orange masses of urediniospores."
+        },
+        "diagnostic_features": {
+          "value": "Yellow to orange urediniospores in long, narrow stripes between leaf veins; individual uredinial pustules are oblong, 0.4-0.7 mm in length and 0.1 mm in width; urediniospores broadly ellipsoidal to broadly obovoid, ~24.5 x 21.6 µm, yellow to orange, echinulate with 6-18 scattered germ pores; at higher temperatures black telia are produced. Rubbing fingers across the leaf blade yields yellow powdery residues.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6638732/",
+          "quote": "Individual uredinial pustules are oblong, 0.4-0.7 mm in length and 0.1 mm in width. Urediniospores are broadly ellipsoidal to broadly obovoid, (16-)18-30(-32) x (15-)17-27(-28) µm, with a mean of 24.5 x 21.6 µm, yellow to orange in colour, echinulate, and with 6-18 scattered germ pores."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Become familiar with stripe rust symptoms and anticipate environmental conditions conducive for the disease; check fields periodically and early in the season.",
+          "Use of resistant varieties is the best way to control wheat losses to stripe rust.",
+          "Several fungicides are labeled for stripe rust on wheat; consult the current product label and local Extension agent because fungicide labeling changes frequently.",
+          "Cultural measures can reduce loss caused by stripe rust to some degree.",
+          "Integrate genetic resistance with constant monitoring when conditions are conducive to stripe rust for adequate management."
+        ],
+        "url": "https://extension.uga.edu/publications/detail.html?number=C960&title=stripe-rust-yellow-rust-of-wheat",
+        "quote": "Use of resistant varieties is the best way to control wheat losses to stripe rust... In Georgia, several fungicides are currently labeled for stripe rust on wheat... Cultural measures can reduce the loss caused by stripe rust to some degree... Genetic resistance and constant monitoring when conditions are conducive for stripe rust are imperative for adequate stripe rust management."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem, Head",
+          "alternative_value": "Foliar (only)",
+          "alternative_source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6638732/",
+          "note": "PMC article emphasizes leaves; UGA Extension explicitly lists leaves, leaf sheaths, glumes and awns. Union (foliar, stem/sheath, and head structures) taken as canonical."
+        }
+      ]
+    },
+    {
+      "disease_name": "Wheat Leaf Rust",
+      "pathogen_scientific_name": {
+        "value": "Puccinia triticina",
+        "url": "https://www.ars.usda.gov/midwest-area/stpaul/cereal-disease-lab/docs/cereal-rusts/wheat-leaf-rust/",
+        "quote": "Scientific Name: Puccinia triticina (= P. recondita Roberge ex Desmaz. f. sp. tritici .)",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.uga.edu/publications/detail.html?number=C1060&title=identification-and-control-of-leaf-rust-of-wheat-in-georgia",
+        "quote": "Wheat leaf rust, caused by the fungus Puccinia triticina"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://extension.uga.edu/publications/detail.html?number=C1060&title=identification-and-control-of-leaf-rust-of-wheat-in-georgia",
+        "quote": "Flaky, reddish-brown, 1/16-in. (1.5 mm) in diameter pustules develop on leaves and sheaths (Figure 2)."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Flaky, reddish-brown pustules about 1/16 inch (1.5 mm) in diameter develop on leaves and sheaths, breaking through the leaf epidermis with easily dislodged spores; uredinia normally appear on the upper leaf surface, are brown in color and generally circular in shape, and seldom penetrate through the leaf.",
+          "url": "https://extension.uga.edu/publications/detail.html?number=C1060&title=identification-and-control-of-leaf-rust-of-wheat-in-georgia",
+          "quote": "Flaky, reddish-brown, 1/16-in. (1.5 mm) in diameter pustules develop on leaves and sheaths (Figure 2). Pustules break through the leaf epidermis, and spores are easily dislodged by rain, wind, or contact."
+        },
+        "diagnostic_features": {
+          "value": "Leaf rust pustules are scattered about the leaf surface and not arranged in strips like stripe rust; develops at warmer temperatures (64-77ºF); pustules are orange to brown, medium-size and round to slightly elongated; reddish-brown pustules 1/16-in. (1.5 mm) in diameter break through the leaf epidermis and spores appear as a red-brown, clay matter on fingers when rubbed over the top of the leaf.",
+          "url": "https://cropprotectionnetwork.org/publications/an-overview-of-stripe-rust-of-wheat",
+          "quote": "Leaf rust pustules are scattered about the leaf surface and not arranged in strips like stripe rust. Leaf rust develops at warmer temperatures compared to stripe rust (64-77ºF)."
+        },
+        "look_alikes": {
+          "value": [
+            "Stripe Rust",
+            "Stem Rust"
+          ],
+          "url": "https://cropprotectionnetwork.org/publications/an-overview-of-stripe-rust-of-wheat",
+          "quote": "Table 1. Symptom distribution and expression for diseases and disorders with symptoms similar to stripe rust. Stripe Rust Leaf Rust Stem Rust"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use of resistant cultivars/varieties is the best way to control wheat losses to leaf rust",
+          "Control of volunteer wheat and seeding dates; eradicate volunteer plants and crop debris that can harbor inoculum over winter",
+          "Avoid early sowing and excess nitrogen applications",
+          "Apply fungicide if leaf rust is found in the field; protection of the flag leaf is critical for yield preservation",
+          "Strobilurin fungicides: Picoxystrobin (Aproach SC), Fluoxastrobin (Evito 480 SC), Pyraclostrobin (Headline SC)",
+          "Triazole fungicides: Metconazole (Caramba 0.75 SL), Propiconazole (Tilt 3.6 EC), Prothioconazole (Proline 480 SC), Tebuconazole (Folicur 3.6 F), Prothioconazole + Tebuconazole (Prosaro 421 SC)",
+          "Mixed modes of action: Metconazole + Pyraclostrobin (TwinLine 1.75 EC), Fluxapyroxad + Pyraclostrobin (Priaxor), Propiconazole + Azoxystrobin (Quilt 200 SC, Quilt Xcel 2.2 SE), Prothioconazole + Trifloxystrobin (Stratego YLD), Tebuconazole + Trifloxystrobin (Absolute 500 SC), Cyproconazole + Picoxystrobin (Aproach Prima SC)"
+        ],
+        "url": "https://extension.uga.edu/publications/detail.html?number=C1060&title=identification-and-control-of-leaf-rust-of-wheat-in-georgia",
+        "quote": "Use of resistant varieties is the best way to control wheat losses to leaf rust. ... It is recommended to implement practices that include the eradication of volunteer plants and crop debris, which can harbor inoculum over the winter. ... Avoid early sowing and excess nitrogen applications. ... IF leaf rust is found in the field, a fungicide application is recommended. Protection of the flag leaf is critical for yield preservation."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Wheat leaf rust",
+          "alternative_value": "Leaf rust",
+          "alternative_source_url": "https://cropprotectionnetwork.org/publications/an-overview-of-stripe-rust-of-wheat",
+          "note": "USDA-ARS lists 'Leaf rust, brown rust' as common names; canonical form chosen as 'Wheat leaf rust' per USDA-ARS and UGA Extension page titles."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Puccinia triticina",
+          "alternative_value": "Puccinia recondita f. sp. tritici",
+          "alternative_source_url": "https://extension.uga.edu/publications/detail.html?number=C1060&title=identification-and-control-of-leaf-rust-of-wheat-in-georgia",
+          "note": "Older synonym; UGA Extension and USDA-ARS both note P. triticina is the current accepted name, formerly known as Puccinia recondita f. sp. tritici."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem",
+          "alternative_value": "Foliar only",
+          "alternative_source_url": "https://www.ars.usda.gov/midwest-area/stpaul/cereal-disease-lab/docs/cereal-rusts/wheat-leaf-rust/",
+          "note": "USDA-ARS notes uredinia normally on upper leaf surface but sheath infections can occur with severe epidemics; UGA Extension explicitly reports pustules on leaves and sheaths."
+        }
+      ]
+    },
+    {
+      "disease_name": "Wheat Stem Rust",
+      "pathogen_scientific_name": {
+        "value": "Puccinia graminis f. sp. tritici",
+        "url": "https://www.ars.usda.gov/midwest-area/stpaul/cereal-disease-lab/docs/cereal-rusts/wheat-stem-rust/",
+        "quote": "SCIENTIFIC NAME: Puccinia graminis Pers.:Pers. f. sp. tritici Eriks. E. Henn.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://cropprotectionnetwork.org/publications/an-overview-of-stripe-rust-of-wheat",
+        "quote": "Stem rust produces orange-brick red oval to elongated pustules that visibly blister or tear affected plant tissues."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://www.ars.usda.gov/midwest-area/stpaul/cereal-disease-lab/docs/cereal-rusts/wheat-stem-rust/",
+        "quote": "Uredinia generally appear as oval lesions on leaf sheaths, true stem, and spike. Uredinia can appear on the leaves if other diseases have not killed them."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Brick red oval to elongated uredinia (pustules) appear on leaf sheaths, true stem, and spike, rupturing the host epidermis and making infected areas rough to the touch; pustules visibly blister or tear affected plant tissues.",
+          "url": "https://www.ars.usda.gov/midwest-area/stpaul/cereal-disease-lab/docs/cereal-rusts/wheat-stem-rust/",
+          "quote": "Uredinia generally appear as oval lesions on leaf sheaths, true stem, and spike. Uredinia can appear on the leaves if other diseases have not killed them. Uredinia are brick red in color and can be seen to rupture the host epidermis, on the leaves uredinia generally penetrate to sporulate on both surfaces. Infected areas are rough to the touch."
+        },
+        "diagnostic_features": {
+          "value": "Brick red uredinia that rupture the host epidermis and sporulate on both leaf surfaces; infected areas are rough to the touch; tearing of leaf tissue is characteristic of stem rust; the pathogen commonly infects stems, leaf sheaths, and leaf blades and is favored by hot days (77-86°F) and high nighttime humidity.",
+          "url": "https://www.ars.usda.gov/midwest-area/stpaul/cereal-disease-lab/docs/cereal-rusts/wheat-stem-rust/",
+          "quote": "Uredinia are brick red in color and can be seen to rupture the host epidermis, on the leaves uredinia generally penetrate to sporulate on both surfaces. Infected areas are rough to the touch."
+        },
+        "look_alikes": {
+          "value": [
+            "Stripe Rust",
+            "Leaf Rust"
+          ],
+          "url": "https://cropprotectionnetwork.org/publications/an-overview-of-stripe-rust-of-wheat",
+          "quote": "Table 1. Symptom distribution and expression for diseases and disorders with symptoms similar to stripe rust. Stripe Rust Leaf Rust Stem Rust"
+        }
+      },
+      "treatments": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Puccinia graminis f. sp. tritici",
+          "alternative_value": "(not specified)",
+          "alternative_source_url": "https://cropprotectionnetwork.org/publications/an-overview-of-stripe-rust-of-wheat",
+          "note": "CPN source mentioned stem rust as a look-alike but did not provide a pathogen name; canonical name taken from USDA-ARS Cereal Disease Lab."
+        }
+      ]
+    },
+    {
+      "disease_name": "Tan Spot",
+      "pathogen_scientific_name": {
+        "value": "Pyrenophora tritici-repentis",
+        "url": "https://cropwatch.unl.edu/plant-disease/wheat/tan-spot/",
+        "quote": "Tan spot is caused by Pyrenophora tritici-repentis.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://cropwatch.unl.edu/plant-disease/wheat/tan-spot/",
+        "quote": "Tan spot is caused by Pyrenophora tritici-repentis. The fungus can survive and reproduce on wheat straw."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://cropwatch.unl.edu/plant-disease/wheat/tan-spot/",
+        "quote": "On leaves, the disease first appears as small, tan to brown lens or diamond-shaped spots. ... As plants mature the fungus invades the straw where it produces pseudothecia in the fall."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "On leaves, the disease first appears as small, tan to brown lens or diamond-shaped spots that develop into elliptical to elongate tan spots with a dark brown spot near the center and a yellow border; lesions coalesce into larger irregular dead areas and heavy infection can give the field an overall yellow cast.",
+          "url": "https://cropwatch.unl.edu/plant-disease/wheat/tan-spot/",
+          "quote": "On leaves, the disease first appears as small, tan to brown lens or diamond-shaped spots. Characteristic symptoms are elliptical to elongate spots that are tan colored, have a dark brown spot near the center and are surrounded by a yellow border. As the lesions increase in size they tend to coalesce, producing larger, irregular areas of dead tissue."
+        },
+        "diagnostic_features": {
+          "value": "Elliptical to elongate tan spots with a dark brown spot near the center surrounded by a yellow border; pseudothecia visible on stubble by mid-August feel like coarse sandpaper to the touch and are diagnostic of tan spot.",
+          "url": "https://cropwatch.unl.edu/plant-disease/wheat/tan-spot/",
+          "quote": "Characteristic symptoms are elliptical to elongate spots that are tan colored, have a dark brown spot near the center and are surrounded by a yellow border. ... By mid-August, pseudothecia are visible on the stubble that remains after harvest and are diagnostic of tan spot. They feel like coarse sandpaper to the touch."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Three-year conservation tillage rotation system called ecofarming (ecofallow) can be used to reduce the threat of tan spot",
+          "In this system, corn or sorghum is seeded directly into winter wheat stubble in a winter wheat-grain sorghum or corn-fallow rotation",
+          "Crop rotation-fallow system effectively breaks disease cycles involving host-specific pathogens such as the tan spot fungus that survive in crop residue",
+          "Foliar fungicides can be applied to control tan spot if the disease becomes serious during the crucial post-boot stage of wheat development",
+          "Begin crop scouting early in the growing season and continue on a regular basis until disease is detected or a decision to spray is made based on the observed disease level"
+        ],
+        "url": "https://cropwatch.unl.edu/plant-disease/wheat/tan-spot/",
+        "quote": "A unique three-year conservation tillage rotation system called ecofarming (ecofallow) can be used to reduce the threat of tan spot. ... Foliar fungicides can be applied to control tan spot if the disease becomes serious during the crucial post-boot stage of wheat development.Crop scouting should begin early in the growing season and should continue on a regular basis until disease is detected or a decision to spray is made based on the observed disease level."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Fusarium Graminearum Schwabe",
+      "pathogen_scientific_name": {
+        "value": "Fusarium graminearum",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-cer-06",
+        "quote": "Fusarium head blight (FHB) or head scab, caused by the fungus Fusarium graminearum and related species",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-cer-06",
+        "quote": "caused by the fungus Fusarium graminearum and related species"
+      },
+      "affected_parts": {
+        "value": [
+          "Seed",
+          "Stem",
+          "Whole plant"
+        ],
+        "url": "https://ohioline.osu.edu/factsheet/plpath-cer-06",
+        "quote": "When the fungus infects the stem immediately below the head the entire head may die. ... Infected kernels are generally shrunken, wrinkled, and light-weight, with a rough, scabby appearance"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Infected spikelets prematurely die, becoming bleached (brown or straw-colored) while non-infected spikelets on the same head remain green; entire heads may be killed prematurely, and infected kernels become shriveled, wrinkled, and discolored.",
+          "url": "https://cropprotectionnetwork.org/publications/an-overview-of-fusarium-head-blight",
+          "quote": "Infected spikelets (segments of head) prematurely die, becoming bleached (brown or straw-colored) while non-infected spikelets remain green (Figure 2). Entire heads may be killed prematurely as the fungus colonizes tissues within the head."
+        },
+        "diagnostic_features": {
+          "value": "Pinkish to salmon (orange) spore masses and mycelium (sporodochia) form on the margin of the glumes of individual spikelets, especially near the base, at the attachment to the stem, or along the awns; severely infected kernels are lightweight, chalky, pink to red ('tombstones'); later, dark purplish-black perithecia may appear on heads.",
+          "url": "https://cropprotectionnetwork.org/publications/an-overview-of-fusarium-head-blight",
+          "quote": "Orange to salmon-pink spore masses may be first observed at the attachment of the small grain head to the stem, spikelet attachment to the rachis, or sometimes along the awns (Figure 3). Severely infected Fusarium infected kernels (scabby; tombstones) will be lightweight, chalky, pink to red, and often blown out with chaff during harvest."
+        },
+        "look_alikes": {
+          "value": [
+            "Root and foot rots (common root rot, Fusarium root, crown and foot rot, eyespot, take-all)",
+            "Black chaff (Xanthomonas translucens pv. undulosa)",
+            "Stagonospora glume blotch (Parastagonospora nodorum)",
+            "Wheat stem maggot",
+            "Abiotic disorders (salinity, frost, herbicide injury, water stress, hail, rodent feeding)"
+          ],
+          "url": "https://cropprotectionnetwork.org/publications/an-overview-of-fusarium-head-blight",
+          "quote": "Root and foot rots (common root rot, Fusarium root, crown and foot rot, eyespot, take-all) ... Black chaff (caused by the bacterium Xanthomonas translucens pv. undulosa ) ... Stagonospora glume blotch (caused by the fungus Parastagonospora nodorum ) ... Wheat stem maggot ... Disorders (salinity, frost, herbicide injury, water stress, hail, rodent feeding)"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant moderately resistant varieties",
+          "Plant cereals as far away as possible from old corn fields if stalk residues are left on the soil surface",
+          "Use clean, deep plowing of all infested stubble and straw of cereals and weed grasses, corn stalks and rotted ears when conventional tillage is used",
+          "When possible, plant wheat following a legume crop (soybean) and maintain a rotation with 2 to 3 years between wheat crops; longer rotations between small grain and corn crops to promote residue decomposition",
+          "Apply fungicides directed to the head at flowering (anthesis) in wheat (Feekes 10.51; Zadoks 61) up to about 7 days after start of flowering, and at complete head emergence in barley (or up to 7 days after full head)",
+          "Use DMI (triazole; FRAC group 3) or SDHI (FRAC group 7) fungicides; avoid QoI (strobilurin; FRAC group 11) at boot stage or beyond as they can increase DON",
+          "Use the scab prediction/forecasting system (www.wheatscab.psu.edu) as a guide to determine if the risk of scab warrants a fungicide application",
+          "Use a fungicide seed treatment if seed-lot was confirmed to be infected with F. graminearum",
+          "At harvest, use a properly adjusted combine with fan speed adjusted to remove moldy and lightweight kernels",
+          "Segregate poor quality grain from good quality grain",
+          "Store grain cool and dry: less than 50°F (10°C) and less than 15% moisture for short-term storage; below 13% moisture for long-term storage",
+          "Test moldy grain for mycotoxins before being used for food products or fed to animals"
+        ],
+        "url": "https://cropprotectionnetwork.org/publications/an-overview-of-fusarium-head-blight",
+        "quote": "Planting moderately resistant wheat varieties is the most important practice in reducing losses due to FHB and DON. ... Longer rotations between small grain and corn crops are encouraged to promote residue decomposition. ... Fungicide application should be directed to the head at the timing of flowering (anthesis) using appropriate nozzle types and water volumes. ... Fungicides primarily in the demethylation inhibitor (DMI; aka triazole; Fungicide Resistance Action Group (FRAC) group 3) class and one in the succinate dehydrogenase inhibitor (SDHI; FRAC group 7) have been the most effective against FHB and DON. ... Quinone outside inhibitor (QoI; aka strobilurin fungicides; FRAC group 11) applied at the boot stage or beyond should be avoided for FHB control as they can increase the concentration of DON in finished grain. ... If a seed-lot was confirmed to be infected with F. graminearum, the use of a fungicide seed treatment is encouraged ... At harvest, a properly adjusted combine can help reduce the amount of scabby kernels ... Temperatures of less than 50 F (10C) and less than 15% moisture are ideal for short-term storage. For long-term storage grain moisture should be below 13%."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Fusarium graminearum",
+          "alternative_value": "Gibberella zeae",
+          "alternative_source_url": "https://cropprotectionnetwork.org/publications/an-overview-of-fusarium-head-blight",
+          "note": "Gibberella zeae is the teleomorph (sexual stage) name; Fusarium graminearum is the accepted anamorph and current canonical name."
+        }
+      ]
+    },
+    {
+      "disease_name": "Fusarium Wilts, Blights, Rots And Damping-Off",
+      "pathogen_scientific_name": {
+        "value": "Fusarium graminearum",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-cer-06",
+        "quote": "the scab fungi also cause root and crown rot diseases in small grains",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-cer-06",
+        "quote": "caused by the fungus Fusarium graminearum and related species"
+      },
+      "affected_parts": {
+        "value": [
+          "Seed",
+          "Root",
+          "Whole plant"
+        ],
+        "url": "https://ohioline.osu.edu/factsheet/plpath-cer-06",
+        "quote": "A light to reddish brown root or crown rot may develop as the weakened plants mature."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Infected seedlings appear light to reddish brown in color and may be covered with a mass of pink or whitish mold; surviving seedlings lack vigor and produce few tillers with small heads.",
+          "url": "https://ohioline.osu.edu/factsheet/plpath-cer-06",
+          "quote": "Seedling blight is first noticed when infected plants appear light to reddish brown in color and may be covered with a mass of pink or whitish mold. If seedlings survive, they generally lack vigor, and frequently send up only a few tillers with small heads."
+        },
+        "diagnostic_features": {
+          "value": "Light to reddish brown discoloration with pink or whitish mold mass on seedlings; later a light to reddish brown root or crown rot develops as plants mature.",
+          "url": "https://ohioline.osu.edu/factsheet/plpath-cer-06",
+          "quote": "infected plants appear light to reddish brown in color and may be covered with a mass of pink or whitish mold ... A light to reddish brown root or crown rot may develop as the weakened plants mature."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Avoid using grain from scab-affected fields for seed",
+          "If scabby grain is used, thoroughly clean the seed to remove lightweight kernels",
+          "Use seed treatment fungicides to improve germination and control seedling blights",
+          "Delay planting of winter cereals until the soil temperature is 60°F (16°C) or below",
+          "Planting should always be after the Hessian fly free date",
+          "Spring-seeded grains should be sown as early as possible when soil temperatures are relatively cool",
+          "Sow seed in a well prepared seed bed with adequate fertilizer to ensure good root growth and vigorous plant development",
+          "Rotate small grains and corn with legumes, and leave at least one year between cereals, grass or corn before planting small grains"
+        ],
+        "url": "https://ohioline.osu.edu/factsheet/plpath-cer-06",
+        "quote": "Avoid using grain from scab-affected fields for seed. However, if scabby grain is used, thoroughly clean the seed to remove lightweight kernel. Seed treatment fungicides are available that will improve germination and control seedling blights. ... Delay planting of winter cereals until the soil temperature is 60 degrees F (16 degrees C) or below to reduce chances of seedling blight. Planting should always be after the Hessian fly free date. Spring seeded grains should be sown as early as possible when soil temperatures are relatively cool. Sow seed in a well prepared seed bed with adequate fertilizer to ensure good root growth and vigorous plant development. Rotate small grains and corn with legumes, and leave at least one year between cereals, grass or corn before planting small grains."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Parastagonospora Nodorum",
+      "pathogen_scientific_name": {
+        "value": "Parastagonospora nodorum",
+        "url": "https://cropprotectionnetwork.org/publications/an-overview-of-fusarium-head-blight",
+        "quote": "Stagonospora glume blotch (caused by the fungus Parastagonospora nodorum )",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://cropprotectionnetwork.org/publications/an-overview-of-fusarium-head-blight",
+        "quote": "caused by the fungus Parastagonospora nodorum"
+      },
+      "affected_parts": {
+        "value": [
+          "Seed"
+        ],
+        "url": "https://cropprotectionnetwork.org/publications/an-overview-of-fusarium-head-blight",
+        "quote": "Symptoms of Stagonospora glume blotch include purple-brown to gray streaks on the wheat head."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Purple-brown to gray streaks on the wheat head with pycnidia (fungal fruiting bodies) developing on infected tissue.",
+          "url": "https://cropprotectionnetwork.org/publications/an-overview-of-fusarium-head-blight",
+          "quote": "Symptoms of Stagonospora glume blotch include purple-brown to gray streaks on the wheat head. Pycnidia (fungal fruiting bodies) will develop on infected tissue (Figure 10)."
+        },
+        "diagnostic_features": {
+          "value": "Lesions are purple to brown (darker than FHB); FHB symptoms are lighter in color and cause premature bleaching of a single spikelet and/or entire head.",
+          "url": "https://cropprotectionnetwork.org/publications/an-overview-of-fusarium-head-blight",
+          "quote": "Lesions caused by Stagonopsora glume blotch will be purple to brown. Symptoms of FHB will be lighter in color cause premature bleaching of a single spikelet and/or entire head."
+        },
+        "look_alikes": {
+          "value": [
+            "Fusarium head blight"
+          ],
+          "url": "https://cropprotectionnetwork.org/publications/an-overview-of-fusarium-head-blight",
+          "quote": "How to distinguish Stagonospora glume blotch from Fusarium head blight?"
+        }
+      },
+      "treatments": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Zymoseptoria Tritici",
+      "pathogen_scientific_name": {
+        "value": "Zymoseptoria tritici",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/septoria-tritici-blotch-of-wheat",
+        "quote": "It is also known as Septoria leaf spot and is caused by Zymoseptoria tritici .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-cer-07",
+        "quote": "The Fungi Causing Leaf Blotch Diseases"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Seed"
+        ],
+        "url": "https://cropprotectionnetwork.org/encyclopedia/septoria-tritici-blotch-of-wheat",
+        "quote": "Elliptical, tan-brown lesions that often have yellowish halos first appear on seedling leaves. ... The fungus overwinters on seed, residue, and overwintering cereals."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Initial symptoms are yellowish or chlorotic flecks on leaves (especially those in contact with soil) that enlarge into elliptical, tan-brown lesions, often with yellowish halos. Lesion centers die, becoming bleached gray or ash-white, and produce small, dark brown to black pycnidia, giving the lesion a characteristic speckled appearance. Subsequent lesions on higher leaves generally follow leaf veins, with straight edges and no yellow margins.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/septoria-tritici-blotch-of-wheat",
+          "quote": "Elliptical, tan-brown lesions that often have yellowish halos first appear on seedling leaves. Lesion centers die and dark fruiting bodies are produced, giving the lesion a characteristic speckled appearance. Subsequent lesions on higher leaves generally follow leaf veins, having straight edges and no yellow margins."
+        },
+        "diagnostic_features": {
+          "value": "The presence of small, black pycnidia in lesions is the most reliable in-field character for identifying the disease. Lesions generally do not have pronounced chlorotic halos like Stagonospora leaf and glume blotch and tan spot, and lesions are more elongated with rougher edges. When humid, a translucent, curling thread of whitish (or pinkish-brown, column-shaped, jellylike) ooze of spores (conidia) may exude from the pycnidia and is visible with a hand lens.",
+          "url": "https://ohioline.osu.edu/factsheet/plpath-cer-07",
+          "quote": "The presence of small, black pycnidia in lesions is the most reliable in-field character for identifying the disease ( Fig. 1A )."
+        },
+        "look_alikes": {
+          "value": [
+            "Stagonospora leaf and glume blotch",
+            "Tan spot"
+          ],
+          "url": "https://cropprotectionnetwork.org/encyclopedia/septoria-tritici-blotch-of-wheat",
+          "quote": "Septoria tritici blotch lesions generally do not have pronounced chlorotic halos like Stagonospora leaf and glume blotch and tan spot, and lesions are more elongated with rougher edges."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant varieties less susceptible / resistant to Septoria tritici blotch",
+          "Avoid early plantings (October); later plantings (November to December) are less likely to be severely affected",
+          "Practices that encourage residue decomposition",
+          "Crop rotation — a rotation where wheat is planted in only 1 of 3 years is recommended",
+          "Destroy volunteer wheat, rye, barley, and wild grasses in the field before planting",
+          "Plant certified, disease-free seed treated with a recommended seed-protectant fungicide",
+          "Sow winter wheat after the Hessian fly-safe date recommended for the county",
+          "Fertilize wheat based on a soil test; avoid high rates of nitrogen that would increase lodging potential",
+          "Foliar fungicides labeled for management of Septoria tritici blotch (e.g., MANCOZEB / Dithane M45 2 lb; PROPICONAZOLE / Tilt 4 fl oz)",
+          "Apply between tillering and heading (single full-rate application at flag leaf emergence or at heading) to protect the flag leaf",
+          "Scout and consider varietal susceptibility, forecasted weather, length of rotation away from wheat, and yield potential prior to fungicide application"
+        ],
+        "url": "https://cropprotectionnetwork.org/encyclopedia/septoria-tritici-blotch-of-wheat",
+        "quote": "Plant varieties less susceptible to Septoria tritici blotch. Practices that encourage residue decomposition and crop rotation can be effective disease management strategies. Fungicides are labeled for management of Septoria tritici blotch. Scout and consider factors such as varietal susceptibility, forecasted weather, length of rotation away from wheat, and yield potential prior to fungicide application."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Zymoseptoria tritici",
+          "alternative_value": "Septoria tritici (= Mycosphaerella graminicola)",
+          "alternative_source_url": "https://ipm.ucanr.edu/agriculture/small-grains/septoria-tritici-blotch-of-wheat/",
+          "note": "UC IPM and OSU use the older name Septoria tritici with sexual stage Mycosphaerella graminicola. CPN uses the current accepted asexual genus name Zymoseptoria tritici. Canonical follows the current taxonomy."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Seed",
+          "alternative_value": "Foliar only",
+          "alternative_source_url": "https://ipm.ucanr.edu/agriculture/small-grains/septoria-tritici-blotch-of-wheat/",
+          "note": "UC IPM and OSU describe it as a foliar disease; CPN notes the fungus overwinters on seed. Canonical retains the seed pathway as documented by CPN."
+        }
+      ]
+    },
+    {
+      "disease_name": "Wheat Streak Mosaic Virus",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    }
+  ],
+  "crop": "Wheat",
+  "generated_date": "2026-05-27"
+}

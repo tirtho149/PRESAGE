@@ -1,0 +1,525 @@
+{
+  "crop": "Watermelon",
+  "candidate_sources": [
+    {
+      "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+      "title": "Anthracnose of Cucurbits | NC State Extension Publications",
+      "snippet": "Lesions on watermelon leaves can appear circular at first, but later coalesce into more irregular necrotic areas. Symptoms appear first on crown leaves as small, brown-black spots usually after vines begin to 'run'. During damp weather, orange-pink masses of spores develop in centers of larger leaf spots. Caused by Colletotrichum orbiculare (syn. C. lagenarium).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://aggie-horticulture.tamu.edu/vegetable/watermelon/foliar-diseases/anthracnose/",
+      "title": "Anthracnose - Aggie Horticulture - Texas A&M University",
+      "snippet": "Symptoms of the disease include brown, rounded lesions on the leaves, stems, and fruit that can coalesce into regions of dead tissue. Lesions can coalesce, causing the leaves to die. Anthracnose causes leaf spots, stem lesions, and fruit rot of watermelon and can result in substantial loss of marketable yield.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://www.mdpi.com/2311-7524/9/10/1132",
+      "title": "Recent Advances and Challenges in Management of Colletotrichum orbiculare, the Causal Agent of Watermelon Anthracnose",
+      "snippet": "Colletotrichum orbiculare causes watermelon anthracnose and is an important pathogen of watermelon in the United States, causing a significant impact on yield and quality. The disease causes significant yield loss at both pre- and postharvest stages, and the pathogen causes symptoms on all aboveground plant parts including leaf, stem, and fruits. Symptoms on leaves appear as blackish brown lesions, often leading to a shot-hole appearance.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.bayer.com/ca/en-ca/resources/agronomic-spotlights/watermelon-anthracnose.html",
+      "title": "Watermelon Anthracnose",
+      "snippet": "Agronomic spotlight on watermelon anthracnose caused by Colletotrichum orbiculare, covering symptoms on leaves, stems, and fruit, disease cycle, and management practices.",
+      "source_type": "industry",
+      "diseases_mentioned": [
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://extension.missouri.edu/publications/ipm1011",
+      "title": "Watermelon Bacterial Fruit Blotch | MU Extension",
+      "snippet": "Bacterial fruit blotch (BFB) is a serious disease infecting watermelons. The causal organism, Acidovorax avenae subsp. citrulli, was first identified in the United States in 1989 and in Missouri in 1994. Water-soaked, oily areas on the underside of the cotyledons with a yellow halo are characteristic. The diagnostic symptom is a dark green stain or blotch on the upper surface of the developing fruit.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial Fruit Blotch"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/disandpath/prokaryote/pdlessons/Pages/BacterialBlotch.aspx",
+      "title": "Bacterial fruit blotch of cucurbits",
+      "snippet": "APS Education Center lesson on bacterial fruit blotch of cucurbits caused by Acidovorax citrulli, covering symptoms, disease cycle, epidemiology, and management of this seedborne pathogen affecting watermelon and other cucurbits.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Bacterial Fruit Blotch"
+      ]
+    },
+    {
+      "url": "https://aggie-horticulture.tamu.edu/vegetable/watermelon/fruit-diseases/bacterial-fruit-blotch/",
+      "title": "Bacterial Fruit Blotch - Vegetable Resources (Texas A&M)",
+      "snippet": "Texas A&M AgriLife extension page on Bacterial Fruit Blotch of watermelon. Covers Acidovorax citrulli pathogen, symptoms on seedlings (water-soaked cotyledon lesions) and fruit (dark green blotch that ruptures rind), and management including bacteria-free seed and field sanitation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial Fruit Blotch"
+      ]
+    },
+    {
+      "url": "https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.species.2676",
+      "title": "Acidovorax citrulli (bacterial fruit blotch) - CABI Plantwise",
+      "snippet": "CABI datasheet for Acidovorax citrulli (bacterial fruit blotch). Details host range (watermelon, melon, cucurbits), symptoms, biology, geographical distribution, and integrated management of the seedborne bacterial pathogen.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Bacterial Fruit Blotch"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/watermelon-citrullus-sp-blossom-end-rot",
+      "title": "Watermelon (Citrullus sp.)-Blossom-end Rot | Pacific Northwest Pest Management Handbooks",
+      "snippet": "A water-soaked, light tan spot develops at the blossom end of a fruit, which enlarges and becomes dark brown or black with a leathery look. Blossom-end rot is caused by a localized calcium deficiency. In watermelon, calcium concentration was measured and found to be lower at the blossom end than the stem end. Drought, salinity and high temperatures have been found to promote blossom-end rot.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Blossom-end Rot"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/blossom-end-rot-of-tomato-pepper-and-watermelon",
+      "title": "Blossom-End Rot of Tomato, Pepper, and Watermelon | NC State Extension Publications",
+      "snippet": "Blossom-end rot is a physiological disorder affecting tomato, pepper, and watermelon caused by a localized calcium deficiency in the developing fruit. Symptoms include a water-soaked spot at the blossom end that enlarges and turns dark brown or black with a leathery texture. Management involves consistent irrigation, calcium fertility, and avoiding excessive ammonium nitrogen.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Blossom-End Rot"
+      ]
+    },
+    {
+      "url": "https://aggie-horticulture.tamu.edu/vegetable/watermelon/fruit-diseases/blossom-end-rot/",
+      "title": "Blossom End Rot - Vegetable Resources (Texas A&M Aggie Horticulture)",
+      "snippet": "Blossom end rot on watermelon appears as a dark, sunken, leathery lesion at the blossom end of the fruit. It is caused by a calcium deficiency in the developing fruit, often induced by drought stress, salinity, excessive nitrogen, or fluctuating soil moisture. Management focuses on consistent irrigation and calcium nutrition.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Blossom End Rot"
+      ]
+    },
+    {
+      "url": "https://ccd.uky.edu/sites/default/files/2024-12/ccd-fs-11_blossom_end_rot.pdf",
+      "title": "Blossom End Rot - University of Kentucky Center for Crop Diversification",
+      "snippet": "Blossom end rot is a physiological disorder, or non-biotic disease, observed in many cucurbits including watermelon, appearing as a general rot at the blossom end of developing fruit. It is usually the result of inadequate or uneven irrigation, high humidity, or other factors that slow the movement of water and calcium through the plant. Management involves adequate calcium fertility, proper irrigation, and avoiding high levels of ammonia fertilizer.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Blossom End Rot"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+      "title": "Cucurbit Downy Mildew | NC State Extension Publications",
+      "snippet": "Comprehensive NC State Extension factsheet on cucurbit downy mildew caused by Pseudoperonospora cubensis, covering hosts (including watermelon), symptoms (yellow lesions on upper leaf surface, gray-purple sporulation on underside), disease cycle, and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucurbit Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://extension.msstate.edu/publications/cucurbit-downy-mildew",
+      "title": "Cucurbit Downy Mildew | Mississippi State University Extension Service",
+      "snippet": "Mississippi State Extension publication (P3076) describing cucurbit downy mildew as a potentially devastating disease of cucurbits including watermelon, with pathogen biology, symptom identification, and management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucurbit Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://www.extension.purdue.edu/extmedia/bp/bp-140-w.pdf",
+      "title": "Downy Mildew of Cucurbits - Purdue Extension",
+      "snippet": "Purdue Extension publication BP-140-W on downy mildew of cucurbits, covering Pseudoperonospora cubensis biology, symptoms on watermelon and other cucurbits (lesions tend to be diffuse and amorphous on watermelon), and integrated disease management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucurbit Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://ask.ifas.ufl.edu/publication/PP325",
+      "title": "PP325: Management of Cucurbit Downy Mildew in Florida",
+      "snippet": "University of Florida IFAS Extension publication PP325 on management of cucurbit downy mildew in Florida, including watermelon, with information on pathogen Pseudoperonospora cubensis, symptoms, and fungicide recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucurbit Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640371/",
+      "title": "The cucurbit downy mildew pathogen Pseudoperonospora cubensis",
+      "snippet": "Peer-reviewed review article on Pseudoperonospora cubensis, the cucurbit downy mildew pathogen, including clade 1 isolates that more frequently infect watermelon, pumpkin, and squash; covers biology, epidemiology, and management.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Cucurbit Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-yellow-vine-disease/",
+      "title": "Cucurbit Yellow Vine Disease | Cornell Vegetables",
+      "snippet": "Cucurbit yellow vine disease, caused by the bacterium Serratia ureilytica, has been found in the midwestern and eastern US. Symptoms include bright yellow coloration, wilting, and honey brown discoloration of the phloem. Transmitted by the squash bug (Anasa tristis).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucurbit Yellow Vine Disease",
+        "Cucurbit Yellow Vine Decline"
+      ]
+    },
+    {
+      "url": "https://plantpathology.mgcafe.uky.edu/yellow-vine-decline-cucurbits-ppfs-vg-12",
+      "title": "Yellow Vine Decline of Cucurbits (PPFS-VG-12) | Plant Pathology",
+      "snippet": "University of Kentucky Plant Pathology extension factsheet on Yellow Vine Decline of Cucurbits, describing symptoms, pathogen (Serratia), squash bug vector transmission, and management practices for watermelon, melon, squash, and pumpkin.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Yellow Vine Decline",
+        "Cucurbit Yellow Vine Disease"
+      ]
+    },
+    {
+      "url": "https://ipm.cahnr.uconn.edu/cucurbit-yellow-vine-disease-cyvd-in-connecticut/",
+      "title": "Cucurbit Yellow Vine Disease (CYVD) In Connecticut | UConn IPM",
+      "snippet": "University of Connecticut IPM factsheet on Cucurbit Yellow Vine Disease caused by Serratia marcescens. Covers symptoms in watermelon and other cucurbits, squash bug vector biology, and management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucurbit Yellow Vine Disease",
+        "CYVD"
+      ]
+    },
+    {
+      "url": "https://vegcropshotline.org/article/pathogen-spotlight-serratia-ureilytica-causing-cucurbit-yellow-vine-disease/",
+      "title": "Pathogen Spotlight: Serratia ureilytica Causing Cucurbit Yellow Vine Disease | Purdue University Vegetable Crops Hotline",
+      "snippet": "Purdue University article on Serratia ureilytica as the causal agent of Cucurbit Yellow Vine Disease, with information on symptoms, host range (watermelon, squash, pumpkin, melon), and the squash bug vector.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucurbit Yellow Vine Disease"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-12-23-2716-PDN",
+      "title": "First Report of Cucurbit Yellow Vine Disease Caused by Serratia marcescens on Cucurbit Crops in Iowa | Plant Disease",
+      "snippet": "APS Plant Disease journal report documenting first occurrence of Cucurbit Yellow Vine Disease caused by Serratia marcescens on cucurbit crops in Iowa, including symptom descriptions and pathogen identification.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Cucurbit Yellow Vine Disease"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+      "title": "Gummy Stem Blight of Cucurbits | NC State Extension Publications",
+      "snippet": "Extension publication on gummy stem blight (and Phoma blight) on cucurbits including watermelon, covering pathogen identity (Stagonosporopsis spp., formerly Didymella bryoniae), symptoms on leaves/stems/fruit, disease cycle, and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gummy Stem Blight",
+        "Phoma Blight",
+        "Black Rot"
+      ]
+    },
+    {
+      "url": "https://ask.ifas.ufl.edu/publication/PP280",
+      "title": "PP280: Management of Gummy Stem Blight (Black Rot) on Cucurbits in Florida",
+      "snippet": "University of Florida IFAS Extension publication PP280 covering identification and management of gummy stem blight (also known as black rot) on cucurbits in Florida, including watermelon.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gummy Stem Blight",
+        "Black Rot"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/watermelon-citrullus-sp-gummy-stem-blight-black-rot",
+      "title": "Watermelon (Citrullus sp.)-Gummy Stem Blight (Black Rot) | Pacific Northwest Pest Management Handbooks",
+      "snippet": "The disease is caused by Stagonosporopsis cucurbitacearum (previously Didymella bryoniae), also called gummy stem blight or black rot. Widespread and destructive on watermelon and other cucurbits. Includes circular dark tan lesions, stem cankers, and gummy brown ooze exuding from cankers.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Gummy Stem Blight",
+        "Black Rot"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/gummy-stem-blight-and-black-rot",
+      "title": "Gummy stem blight and black rot | UMN Extension",
+      "snippet": "University of Minnesota Extension page on gummy stem blight and black rot of cucurbits, covering symptoms (leaf lesions with yellow halos, V-shaped necrosis, stem cankers with gummy exudate, fruit black rot) and integrated management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gummy Stem Blight",
+        "Black Rot"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/Didymella_bryoniae",
+      "title": "Didymella bryoniae - Bugwoodwiki",
+      "snippet": "Bugwood wiki page on Didymella bryoniae (anamorph Phoma cucurbitacearum / Stagonosporopsis cucurbitacearum), causal agent of gummy stem blight/black rot of cucurbits, including watermelon. Covers symptoms, biology, hosts, and management.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Gummy Stem Blight",
+        "Black Rot"
+      ]
+    },
+    {
+      "url": "https://extension.okstate.edu/fact-sheets/phytophthora-blight-of-cucurbits-and-peppers.html",
+      "title": "Phytophthora Blight of Cucurbits and Peppers | Oklahoma State University",
+      "snippet": "Extension factsheet covering Phytophthora blight of cucurbits (including watermelon) and peppers caused by Phytophthora capsici, with symptoms, pathogen biology, and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora blight",
+        "Phytophthora capsici"
+      ]
+    },
+    {
+      "url": "https://hort.extension.wisc.edu/articles/vine-crops-disease-phytophthora-blight/",
+      "title": "Vine Crops Disease: Phytophthora Blight – Wisconsin Horticulture",
+      "snippet": "Wisconsin Extension factsheet on Phytophthora blight of vine crops including watermelon, describing fruit rot symptoms (small dark brown circular areas, white fluffy growth) and management; pathogen overwinters as oospores in soil for over 10 years.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora blight"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0027-FI",
+      "title": "A Diagnostic Guide for Phytophthora capsici Infecting Vegetable Crops | Plant Health Progress",
+      "snippet": "APS Plant Health Progress diagnostic guide for Phytophthora capsici on vegetable crops including watermelon, with symptoms, host range, and management recommendations.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Phytophthora capsici",
+        "Phytophthora blight"
+      ]
+    },
+    {
+      "url": "https://lgpress.clemson.edu/publication/managing-phytophthora-capsici-diseases-on-vegetables/",
+      "title": "Managing Phytophthora capsici Diseases on Vegetables | Clemson University Land-Grant Press",
+      "snippet": "Clemson Extension publication on managing Phytophthora capsici diseases on vegetables including watermelon; covers fruit rot symptoms, cultural practices, drainage, fungicide programs, and resistant cultivars.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora capsici",
+        "Phytophthora blight",
+        "Phytophthora fruit rot"
+      ]
+    },
+    {
+      "url": "https://ask.ifas.ufl.edu/publication/VH045",
+      "title": "PP-176/VH045: Vegetable Diseases Caused by Phytophthora capsici in Florida | UF/IFAS",
+      "snippet": "University of Florida IFAS extension publication on vegetable diseases caused by Phytophthora capsici, including watermelon Phytophthora blight, with symptoms and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora capsici",
+        "Phytophthora blight"
+      ]
+    },
+    {
+      "url": "https://lgpress.clemson.edu/publication/powdery-mildew-on-watermelon/",
+      "title": "Powdery Mildew on Watermelon | Land-Grant Press | Clemson University, South Carolina",
+      "snippet": "The first symptoms of powdery mildew on watermelon are yellow spots on the leaves that reduce photosynthesis, followed by white colonies of fungus growth and spores forming on both the top and bottom of leaves. Powdery mildew is caused by the fungus named Podosphaera xanthii. It is an obligate biotroph, meaning that it can only survive on living host tissue, and chains of conidia are easily wind-blown to new infection sites. As no resistant cultivars of watermelon are available, specific fungicides are necessary to manage the disease.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://edis.ifas.ufl.edu/publication/PP342",
+      "title": "Powdery Mildew on Watermelon in Florida - UF/IFAS EDIS",
+      "snippet": "Powdery Mildew on Watermelon in Florida. Powdery mildew caused by Podosphaera xanthii is an important disease of watermelon that can severely limit fruit production and reduce yield. Outbreaks in Florida have caused up to 34% yield loss in watermelons. P. xanthii forms visible whitish or silvery powder-like colonies on the upper and lower surfaces of leaves, stems, and petioles. Severe infection leads to defoliation and reduced yield, with yield reductions occurring due to reduced fruit production and/or poor fruit quality due to sun scalding and premature or uneven ripening. Growers are advised to routinely apply fungicides to manage the disease. The fungus has become resistant to fungicides in FRAC Groups 1, 3, U6, 7, 11, and 13 in the United States.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-06-11-0521",
+      "title": "Outbreak of Cucurbit Powdery Mildew on Watermelon Fruit Caused by Podosphaera xanthii in Southwest Florida | Plant Disease",
+      "snippet": "Outbreak of Cucurbit Powdery Mildew on Watermelon Fruit Caused by Podosphaera xanthii in Southwest Florida. Powdery mildew is a destructive cucurbit disease. The pathogen produces whitish colonies on leaves, stems, and fruits, leading to premature defoliation and reduced fruit quality.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Powdery mildew",
+        "Cucurbit powdery mildew"
+      ]
+    },
+    {
+      "url": "https://extension.okstate.edu/fact-sheets/watermelon-diseases.html",
+      "title": "Watermelon Diseases | Oklahoma State University",
+      "snippet": "Watermelon Diseases factsheet covering common watermelon pathogens including powdery mildew, downy mildew, anthracnose, gummy stem blight, and Fusarium wilt with symptoms and management options for Oklahoma growers.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew",
+        "Downy mildew",
+        "Anthracnose",
+        "Gummy stem blight",
+        "Fusarium wilt"
+      ]
+    },
+    {
+      "url": "https://extension.usu.edu/vegetableguide/cucurbits/pythium",
+      "title": "Pythium Root and Fruit Rot | USU Extension",
+      "snippet": "Fruit rot symptoms start as brown spots on the underside, where the fruit comes in contact with the ground. Eventually, a cottony mycelium develops and fruit liquefies. Aboveground symptoms consist of plant stunting, wilt, and death, despite wet soils. The disease is most severe during periods of rainfall and high temperature.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pythium root rot",
+        "Pythium fruit rot",
+        "Pythium aphanidermatum"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/vegetable/fact-sheets/pythium-fruit-rot",
+      "title": "Pythium Fruit Rot | UMass Amherst Center for Agriculture, Food, and the Environment",
+      "snippet": "Fruit rot caused by Pythium generally starts as small, water soaked lesions on immature or mature fruit near or in contact with the soil, with the whole fruit involved within 72 hours, the epidermis ruptured, and the fruit collapsing. White mycelium growth may appear on fruit lesions.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pythium fruit rot",
+        "Pythium aphanidermatum"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/watermelon-citrullus-sp-damping",
+      "title": "Watermelon (Citrullus sp.)-Damping-off | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Just after seedlings emerge, they develop a sunken, necrotic lesion near the soil line. The lesion girdles the stem, and the seedling collapses and dies quickly. Wet soil, high humidity, and cloudy days are especially favorable for damping-off. Soil application of mefenoxam (Ridomil Gold) at planting will prevent damping-off caused by Pythium species.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Damping-off",
+        "Pythium spp."
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0042-FI",
+      "title": "A Diagnostic Guide for Pythium Damping-Off and Root and Stem Rot of Cucurbits | Plant Health Progress",
+      "snippet": "Diagnostic guide for Pythium damping-off and root and stem rot of cucurbits, including watermelon. Describes symptoms, pathogen biology of Pythium aphanidermatum and P. myriotylum, conditions favoring disease, and management strategies.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Pythium damping-off",
+        "Pythium root rot",
+        "Pythium stem rot",
+        "Pythium aphanidermatum",
+        "Pythium myriotylum"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/southern-blight-of-vegetable-crops",
+      "title": "Southern Blight of Tomato and Pepper | NC State Extension Publications",
+      "snippet": "Southern blight, also known as southern wilt and southern stem rot, is a serious and frequent disease of vegetable crops in North Carolina. The disease was first reported on tomato, but also occurs on hundreds of other economically important crops including pepper, bean, cantaloupe, carrot, potato, sweetpotato, watermelon, cotton, peanut, tobacco, and soybean. Southern blight is caused by the soil-born fungus Agroathelia rolfsii (=Sclerotium rolfsii). High temperatures (77 to 95 F), aerobic and moist conditions, and acidic soil favor disease development.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern blight",
+        "southern wilt",
+        "southern stem rot"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/Sclerotium_rolfsii_(Southern_blight_of_vegetables_and_melons)",
+      "title": "Sclerotium rolfsii (Southern blight of vegetables and melons) - Bugwoodwiki",
+      "snippet": "The first symptom of the disease is a mid-day wilting of the plant, with leaves turning yellow and the plant collapsing within a few days. The rapid collapse of the plant is due to girdling of the stem at the soil surface, and the entire root system is often completely rotted. In watermelon, infection is normally restricted to fruit lying in contact with the soil and runners where soil has been deposited over the vine. The fungus infects fruit in contact with infested soil, developing sunken, yellow spots which decay and collapse, with large amounts of white mycelium and sclerotia forming on the fruit as it decays.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Southern blight",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/10.1079/cabicompendium.49155",
+      "title": "Athelia rolfsii (sclerotium rot) | CABI Compendium",
+      "snippet": "CABI Compendium datasheet on Athelia rolfsii (sclerotium rot) covers Identity, Overview, Associated Diseases, Distribution, Dispersal, Hosts/Species Affected, Diagnosis, Biology & Ecology, Environmental Requirements, Prevention/Control and Further Information.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Sclerotium rot",
+        "Southern blight",
+        "Athelia rolfsii",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://ipm.ifas.ufl.edu/pdfs/Southern_Blight.pdf",
+      "title": "Disease Management: Southern Blight Sclerotium rolfsii (UF/IFAS)",
+      "snippet": "Southern blight, caused by Sclerotium rolfsii, affects a wide host range including watermelon and other cucurbits. Management practices include deep plowing of crop residue, crop rotation with non-hosts such as corn and small grains for 3-5 years, sanitation, and fungicide applications.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern blight",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://extension.msstate.edu/publications/whitefly-transmitted-and-yellowing-viruses-watermelon-and-other-cucurbit-crops",
+      "title": "Whitefly-transmitted and Yellowing Viruses in Watermelon and Other Cucurbit Crops | Mississippi State University Extension Service",
+      "snippet": "Information sheet covering whitefly-transmitted and yellowing viruses affecting watermelon and other cucurbits, including symptom identification, vector biology, and management recommendations for emerging and unknown viral diseases in cucurbit crops.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucurbit Yellow Stunting Disorder Virus",
+        "Cucurbit Leaf Crumple Virus",
+        "Squash Vein Yellowing Virus",
+        "whitefly-transmitted viruses",
+        "yellowing viruses"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/virus-diseases-of-cucurbits/",
+      "title": "Virus Diseases of Cucurbits | Cornell Vegetables",
+      "snippet": "The most common viruses found in cucurbits include cucumber mosaic virus (CMV), zucchini yellow mosaic virus (ZYMV), watermelon mosaic virus (WMV), and papaya ringspot-W (PRSV-W). These viruses are transmitted from diseased plants to healthy plants by aphids in a non-persistent manner. Symptoms include yellow mosaic or mottling patterns on leaves, leaf malformation and blisters, and fruit cracks and malformation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucumber Mosaic Virus",
+        "Zucchini Yellow Mosaic Virus",
+        "Watermelon Mosaic Virus",
+        "Papaya Ringspot Virus-W",
+        "virus diseases of cucurbits"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.bayer.com/us/en-us/resources/growing-tips-and-innovation-articles/agronomic-spotlights/new-watermelon-viruses.html",
+      "title": "New Watermelon Viruses | Bayer Vegetable Seeds",
+      "snippet": "Watermelon crinkle leaf-associated virus-1 (WCLaV-1) and watermelon crinkle leaf-associated virus-2 (WCLaV-2) were first found on watermelon plants in 2015 and 2016 in China, and both were detected in watermelons in Texas in 2020 and Florida in spring 2021. Symptoms include mild leaf crinkling and yellow mosaic patterns, yellow mottling and chlorosis, and wrinkling with thickened, bunchy, and upward curling leaves.",
+      "source_type": "industry",
+      "diseases_mentioned": [
+        "Watermelon crinkle leaf-associated virus 1",
+        "Watermelon crinkle leaf-associated virus 2",
+        "WCLaV-1",
+        "WCLaV-2",
+        "emerging watermelon viruses"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/cucurbit-viruses",
+      "title": "Cucurbit viruses | UMN Extension",
+      "snippet": "Virus-infected leaves often have a mottling or mosaic pattern in shades of green and yellow, but it is difficult to identify the specific virus from visual symptoms alone. Submitting samples to a plant disease clinic is the only way to confirm the species. Viruses are usually spread by aphids, but they also may be spread mechanically or by cucumber beetles.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucumber Mosaic Virus",
+        "Watermelon Mosaic Virus",
+        "Papaya Ringspot Virus",
+        "Zucchini Yellow Mosaic Virus",
+        "Squash Mosaic Virus",
+        "cucurbit viruses"
+      ]
+    },
+    {
+      "url": "https://extension.usu.edu/vegetableguide/cucurbits/watermelon-mosaic-virus",
+      "title": "Watermelon Mosaic Virus - USU Extension",
+      "snippet": "Watermelon Mosaic Virus (WMV) is a Potyvirus that infects watermelon and other cucurbits, causing mosaic patterns, leaf distortions, and reduced fruit quality. Transmitted nonpersistently by aphids; management includes weed control, crop rotation, and keeping cucurbit fields away from alfalfa fields.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Watermelon Mosaic Virus",
+        "WMV"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/cucurbits/potyviruses/",
+      "title": "Potyviruses / Cucurbits / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Potyviruses including Watermelon mosaic virus (WMV) infect cucurbits and are transmitted non-persistently by at least 29-38 aphid species (e.g. Aphis gossypii, Aphis craccivora). Aphids retain the virus only minutes to hours; insecticides are rarely effective, but mineral oil sprays can interfere with transmission.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Watermelon mosaic virus",
+        "WMV",
+        "Potyviruses",
+        "Papaya ringspot virus",
+        "Zucchini yellow mosaic virus"
+      ]
+    },
+    {
+      "url": "https://extension.umd.edu/resource/viruses-cucurbits",
+      "title": "Viruses in Cucurbits | University of Maryland Extension",
+      "snippet": "Overview of viruses affecting cucurbit crops including Watermelon mosaic virus (WMV), with symptoms (vein clearing, mottling, leaf distortion, fruit color breaking and warts), aphid transmission, and integrated management for watermelon, cucumber, melon, and squash.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Watermelon mosaic virus",
+        "WMV",
+        "Cucumber mosaic virus",
+        "Zucchini yellow mosaic virus",
+        "Papaya ringspot virus"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

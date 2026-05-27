@@ -1,0 +1,47 @@
+{
+  "crop": "Mallow",
+  "candidate_sources": [
+    {
+      "url": "https://wiki.bugwood.org/Puccinia_malvacearum_(hollyhock_rust)",
+      "title": "Puccinia malvacearum (hollyhock rust) - Bugwoodwiki",
+      "snippet": "Puccinia malvacearum is an autoecious, microcyclic rust, causing disease on many species in the Malvaceae family. Teliospores and basidiospores are the only spores produced. Initial symptoms are yellow-orange spots on the upper leaf surface and raised, blister-like pustules on the lower leaf surface, petiole and stem. Weed hosts such as Malva rotundifolia (common mallow) provide a reservoir of inoculum.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Hollyhock rust",
+        "Puccinia malvacearum",
+        "Mallow rust"
+      ]
+    },
+    {
+      "url": "https://www.canr.msu.edu/resources/hollyhock-rust-puccinia-malvacearum",
+      "title": "Hollyhock rust â€“ Puccinia malvacearum - Plant & Pest Diagnostics",
+      "snippet": "Michigan State University Plant & Pest Diagnostics factsheet on hollyhock rust caused by Puccinia malvacearum, covering symptoms, hosts including common mallow (Malva), disease cycle and management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Hollyhock rust",
+        "Puccinia malvacearum"
+      ]
+    },
+    {
+      "url": "https://hort.extension.wisc.edu/articles/hollyhock-rust/",
+      "title": "Hollyhock Rust â€“ Wisconsin Horticulture",
+      "snippet": "University of Wisconsin Extension article on hollyhock rust. Covers yellow-orange spots on upper leaf surface, red-orange to brown pustules on lower leaf surfaces, infection of leaves, stems and calyces, and management via sanitation, removal of mallow weeds, and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Hollyhock rust",
+        "Puccinia malvacearum"
+      ]
+    },
+    {
+      "url": "https://ipm.illinois.edu/diseases/rpds/627.pdf",
+      "title": "Hollyhock Rust - Report on Plant Disease - University of Illinois",
+      "snippet": "University of Illinois Extension Report on Plant Disease No. 627 on hollyhock rust caused by Puccinia malvacearum. Describes symptoms on Alcea rosea and mallow (Malva spp.) hosts, pustule development, spore biology and integrated management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Hollyhock rust",
+        "Puccinia malvacearum"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

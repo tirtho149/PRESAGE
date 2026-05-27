@@ -1,0 +1,72 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Crown Rust",
+      "pathogen_scientific_name": {
+        "value": "Puccinia coronata",
+        "url": "https://www.ars.usda.gov/midwest-area/stpaul/cereal-disease-lab/docs/cereal-rusts/oat-crown-rust/",
+        "quote": "SCIENTIFIC NAME: Puccinia coronata Corda var. avenae W.P. Fraser Ledingham",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.canr.msu.edu/news/crown_rust_on_oats",
+        "quote": "This disease is caused by a fungus in the genus Puccinia."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Root"
+        ],
+        "url": "https://www.ars.usda.gov/midwest-area/stpaul/cereal-disease-lab/docs/cereal-rusts/oat-crown-rust/",
+        "quote": "Uredinia form on both the upper and lower surfaces of infected leaves. In severe epidemics, leaf sheathes also become heavily infected. ... Badly rusted plants have stunted root systems and poor drought tolerance."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Uredinia form on both upper and lower leaf surfaces as round to oval pustules up to 5 mm long containing masses of orange-yellow spores; after a week or two, margins may become black with teliospore formation, often appearing as black rings around the orange-yellow uredinia. Pustules may also appear on leaf sheaths, stems and panicles.",
+          "url": "https://www.ars.usda.gov/midwest-area/stpaul/cereal-disease-lab/docs/cereal-rusts/oat-crown-rust/",
+          "quote": "Uredinia form on both the upper and lower surfaces of infected leaves. In severe epidemics, leaf sheathes also become heavily infected. Uredinia are round to oval pustules, up to 5 mm long, and contain masses of orange-yellow spores exposed by rupture of the leaf epidermis. After a week or two, the margins of uredinia may become black with formation of the dark colored teliospores. Often telia form as secondary, black rings abound the orange-yellow uredinia."
+        },
+        "diagnostic_features": {
+          "value": "Round to oval pustules up to 5 mm long with masses of orange-yellow spores, often surrounded by secondary black rings of teliospores; the leaf epidermis remains intact over the telia until after the leaves have died.",
+          "url": "https://www.ars.usda.gov/midwest-area/stpaul/cereal-disease-lab/docs/cereal-rusts/oat-crown-rust/",
+          "quote": "Uredinia are round to oval pustules, up to 5 mm long, and contain masses of orange-yellow spores exposed by rupture of the leaf epidermis. ... Often telia form as secondary, black rings abound the orange-yellow uredinia. The leaf epidermis remains intact over the telia until after the leaves have died."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Select an oat variety resistant to crown rust.",
+          "Apply a properly timed fungicide at flag leaf emergence; labeled fungicides are protective and prevent the disease from entering the plant."
+        ],
+        "url": "https://www.canr.msu.edu/news/crown_rust_on_oats",
+        "quote": "Selecting an oat variety resistant to crown rust is an important control consideration. ... A properly timed fungicide application can provide protection against crown rust. Spraying should take place at flag leaf emergence. ... Fungicides labeled for crown rust in oats are protective , that is, they can prevent the disease from entering the plant."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Oat crown rust",
+          "alternative_value": "Crown rust (also known as leaf rust)",
+          "alternative_source_url": "https://www.canr.msu.edu/news/crown_rust_on_oats",
+          "note": "MSU Extension refers to the disease as 'crown rust, also known as leaf rust'; USDA ARS Cereal Disease Lab uses the more specific common name 'Oat crown rust'."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem, Root",
+          "alternative_value": "Foliar, Root (USDA); Foliar, Stem (MSU)",
+          "alternative_source_url": "https://www.canr.msu.edu/news/crown_rust_on_oats",
+          "note": "Union of affected parts taken across sources. USDA notes root effects ('stunted root systems'); MSU additionally notes pustules on stems and panicles."
+        }
+      ]
+    }
+  ],
+  "crop": "Oat",
+  "generated_date": "2026-05-27"
+}

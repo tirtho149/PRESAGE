@@ -1,0 +1,541 @@
+{
+  "crop": "Melon",
+  "candidate_sources": [
+    {
+      "url": "https://extension.psu.edu/managing-alternaria-leaf-blight-on-cantaloupe",
+      "title": "Managing Alternaria Leaf Blight on Cantaloupe",
+      "snippet": "Symptoms of Alternaria leaf blight first appear as small tan circular spots with a white center on the upper leaf surface. As the disease progresses, the spots will enlarge and appear light brown. Spots darken with age and may show ridges, giving a target-like appearance. Alternaria leaf blight can cause infected plants to defoliate heavily, resulting in sunburn injury to the developing fruits. Caused by Alternaria cucumerina.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Alternaria leaf blight"
+      ]
+    },
+    {
+      "url": "https://vegpath.plantpath.wisc.edu/diseases/cucurbit-alternaria-leaf-blight/",
+      "title": "Cucurbit Alternaria Leaf Blight - UW Vegetable Pathology",
+      "snippet": "Alternaria leaf blight is caused by the fungus Alternaria cucumerina and can rapidly defoliate plants, causing reductions in bulk yield. Alternaria leaf blight is a much greater threat to muskmelons than watermelons. Symptoms first appear at the time of fruit set on older leaves, beginning as small, necrotic spots that may be surrounded by a yellow halo. Lesions expand to form brown spots; a concentric ring pattern may be present if conditions are wet.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Alternaria leaf blight"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/cantaloupe-cucumis-melo-alternaria-leaf-blight",
+      "title": "Cantaloupe (Cucumis melo)-Alternaria Leaf Blight | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Lesions begin as small, tan or brown spots that may appear watersoaked on the underside of leaves. Alternaria infections occur only on leaves. Petioles, stems, and fruit are not directly affected by the pathogen. However, melons on defoliated vines ripen prematurely and result in lower quality fruit. At least 18 hours of high relative humidity, producing leaf wetness, is required before infection can occur.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Alternaria leaf blight"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/vegetable/fact-sheets/cucurbits-alternaria-leaf-spot",
+      "title": "Cucurbits, Alternaria Leaf Spot - UMass Amherst Center for Agriculture",
+      "snippet": "Alternaria leaf spot/blight on cucurbits is caused by Alternaria cucumerina. Lesions expand to form brown spots ranging from 1/2 inch to 3/4 inch in size; a concentric ring pattern may be present if conditions are wet, and as lesions expand, they merge to form large, blighted areas, followed by leaf curling and eventual leaf drop. Management includes 3-4 year crop rotation and protectant fungicides beginning at fruit set.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Alternaria leaf spot",
+        "Alternaria leaf blight"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+      "title": "Anthracnose of Cucurbits | NC State Extension Publications",
+      "snippet": "Anthracnose damage on melon fruits, leaves and stems is caused by a fungus. Most cultivars of honeydew melon are very susceptible and this disease is a limiting factor in melon production in the eastern United States. Caused by Colletotrichum species; spots with pale yellow halos on leaves, sunken yellowish spots on fruits, dark brown spots on stems.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose",
+        "Anthracnose of cucurbits",
+        "Melon anthracnose"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/anthracnose-cucurbits",
+      "title": "Anthracnose of cucurbits | UMN Extension",
+      "snippet": "Anthracnose of cucurbits is caused by Colletotrichum orbiculare and is destructive on cucumber, melon, and watermelon. Symptoms on melon include water-soaked spots that turn brown, leaf blighting, and reddish gum exudation on fruits. Favored by warm temperatures (74-78 F) and high humidity. Management includes certified seed, tolerant varieties, crop rotation, and fungicides such as chlorothalonil and mancozeb.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose",
+        "Cucurbit anthracnose"
+      ]
+    },
+    {
+      "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/cucurbit_anthracnose_200.htm",
+      "title": "Fact sheet - Cucurbit anthracnose (200) - Pacific Pests and Pathogens",
+      "snippet": "Cucurbit anthracnose caused by Colletotrichum orbiculare is a destructive disease that occurs in wet and warm weather, especially serious on cucumber, melon and watermelon. On melon, symptoms include greyish water-soaked spots and brown older spots that join together to form extensive rots. Infections often exude a reddish gum. Cultural and chemical management options are described.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucurbit anthracnose",
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/Colletotrichum_orbiculare_(anthracnose_of_cucurbits)",
+      "title": "Colletotrichum orbiculare (anthracnose of cucurbits) - Bugwoodwiki",
+      "snippet": "Colletotrichum orbiculare causes anthracnose of cucurbits including cucumber, watermelon, and muskmelon (melon). The article covers host range, symptoms, biology, epidemiology, and management of the pathogen.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Anthracnose of cucurbits",
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://extension.missouri.edu/publications/ipm1011",
+      "title": "Watermelon Bacterial Fruit Blotch | MU Extension",
+      "snippet": "The causal organism, Acidovorax avenae subsp. citrulli, was first identified in the United States in 1989 and in Missouri in 1994. Infections that develop early can destroy up to 100 percent of the marketable watermelon crop. Water-soaked, 'oily' areas on the underside of the cotyledons or seedling leaves often paralleling the veins with a yellow halo are characteristic symptoms.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial Fruit Blotch"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/disandpath/prokaryote/pdlessons/Pages/BacterialBlotch.aspx",
+      "title": "Bacterial fruit blotch of cucurbits",
+      "snippet": "APS Education Center lesson on bacterial fruit blotch of cucurbits caused by Acidovorax citrulli, covering symptoms, disease cycle, epidemiology, and management on watermelon, melon, and other cucurbits.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Bacterial Fruit Blotch"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/watermelon-citrullus-sp-bacterial-fruit-blotchseedling-blight",
+      "title": "Watermelon (Citrullus sp.)-Bacterial Fruit Blotch/Seedling Blight | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Pacific Northwest Pest Management Handbook entry covering Bacterial Fruit Blotch / Seedling Blight caused by Acidovorax citrulli on cucurbits, with symptoms, cultural and chemical control recommendations.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Bacterial Fruit Blotch",
+        "Seedling Blight"
+      ]
+    },
+    {
+      "url": "https://aggie-horticulture.tamu.edu/vegetable/watermelon/fruit-diseases/bacterial-fruit-blotch/",
+      "title": "Bacterial Fruit Blotch - Texas A&M Vegetable Resources",
+      "snippet": "Texas A&M Aggie Horticulture page on Bacterial Fruit Blotch caused by Acidovorax avenae subsp. citrulli in cucurbits, including symptoms on seedlings, foliage, and fruit and management practices.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial Fruit Blotch"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.2676",
+      "title": "Acidovorax citrulli (bacterial fruit blotch) | CABI Compendium",
+      "snippet": "CABI Compendium datasheet on Acidovorax citrulli, the bacterial fruit blotch pathogen of cucurbits including watermelon and melon; covers distribution, hosts, symptoms, biology, and management.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Bacterial Fruit Blotch"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6638624/",
+      "title": "Acidovorax citrulli: generating basic and applied knowledge to tackle a global threat to the cucurbit industry - PMC",
+      "snippet": "Peer-reviewed review covering the biology, epidemiology, host range (watermelon, melon, cucumber), and management strategies for Acidovorax citrulli, causal agent of bacterial fruit blotch of cucurbits.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Bacterial Fruit Blotch"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/bacterial-wilt",
+      "title": "Bacterial wilt of cucurbits | UMN Extension",
+      "snippet": "Bacterial wilt is a serious disease caused by Erwinia tracheiphila that can severely affect cantaloupe, muskmelon, and cucumbers. The bacteria overwinter in the gut of striped and spotted cucumber beetles. Bacterial wilt cannot be controlled by bactericides directly but is managed by controlling striped cucumber beetle.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial wilt",
+        "Erwinia tracheiphila"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/cucurbits-bacterial-wilt",
+      "title": "Cucurbits, Bacterial Wilt : Vegetable : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Bacterial wilt of cucurbits caused by Erwinia tracheiphila is vectored by striped and spotted cucumber beetles. An easy way to diagnose is to sever a runner close to the crown and slowly pull the cut surfaces apart - sticky strands will be visible connecting the cut surfaces if the pathogen is present.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial wilt",
+        "Erwinia tracheiphila"
+      ]
+    },
+    {
+      "url": "https://extension.illinois.edu/plant-problems/bacterial-wilt-cucurbits",
+      "title": "Bacterial Wilt of Cucurbits | Plant Problems | Illinois Extension | UIUC",
+      "snippet": "Bacterial wilt of cucurbits is caused by Erwinia tracheiphila and affects cucumbers, muskmelons, and to a lesser extent squash and pumpkins. Leaves first appear dull green, wilt during the day, recover at night, and eventually yellow and brown at the margins, leading to complete withering and death. The bacterium produces extracellular polysaccharides and blocks fluid flow in the xylem.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial wilt",
+        "Erwinia tracheiphila"
+      ]
+    },
+    {
+      "url": "https://hort.extension.wisc.edu/articles/bacterial-wilt-of-cucurbits/",
+      "title": "Bacterial Wilt of Cucurbits - Wisconsin Horticulture",
+      "snippet": "Bacterial wilt of cucurbits, caused by Erwinia tracheiphila, is a devastating disease of cucumbers and muskmelons. Vectored by striped and spotted cucumber beetles. Management focuses on controlling beetle vectors via row covers, perimeter trap crops of Blue Hubbard squash, and insecticides especially before the 5-leaf stage.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial wilt",
+        "Erwinia tracheiphila"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/cucurbits/charcoal-rot/",
+      "title": "Charcoal Rot / Cucurbits / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "UC IPM Pest Management Guidelines for cucurbits covering charcoal rot caused by Macrophomina phaseolina, including symptoms, disease cycle and management on melon and other cucurbits.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Charcoal Rot",
+        "Macrophomina phaseolina"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-06-12-0588-PDN",
+      "title": "A Severe Outbreak of Charcoal Rot in Cantaloupe Melon Caused by Macrophomina phaseolina in Chile | Plant Disease",
+      "snippet": "APS Plant Disease report describing a severe outbreak of charcoal rot in cantaloupe melon caused by Macrophomina phaseolina, with symptom descriptions including wilting, leaf browning, water-soaked crown lesions with amber to dark brown exudates, and reddish fruit decay.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Charcoal Rot",
+        "Macrophomina phaseolina"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s10658-022-02500-2",
+      "title": "Charcoal rot (Macrophomina phaseolina) across melon diversity: evaluating the interaction between the pathogen, plant age and environmental conditions as a step towards breeding for resistance",
+      "snippet": "European Journal of Plant Pathology peer-reviewed article evaluating charcoal rot (Macrophomina phaseolina) across melon germplasm diversity, including the interaction between pathogen, plant age, and environmental conditions, as a step toward breeding for resistance.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Charcoal Rot",
+        "Macrophomina phaseolina"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Macrophomina_phaseolina",
+      "title": "Macrophomina phaseolina - Wikipedia",
+      "snippet": "Overview of Macrophomina phaseolina, a soilborne fungus causing charcoal rot in a wide range of hosts including melon, with information on sclerotia, host range (500+ species), survival in soil for 3-12 years, and stress-related disease development under high temperatures.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Charcoal Rot",
+        "Macrophomina phaseolina"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+      "title": "Cucurbit Downy Mildew | NC State Extension Publications",
+      "snippet": "Cucurbit downy mildew is caused by the fungus-like oomycete pathogen Pseudoperonospora cubensis. Downy mildew causes angular, yellow to brown lesions on top of the leaves that are restricted by leaf veins. However, in melon, foliar lesions are less defined than those on cucumber, and are not always bound by leaf veins.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucurbit Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/downy-mildew-cucurbits",
+      "title": "Downy mildew of cucumber, melon and squash | UMN Extension",
+      "snippet": "Downy mildew is a fungal disease caused by Pseudoperonospora cubensis, which affects cucurbits (cucumber, melon, squash, pumpkin) and a few weeds. This disease is favored by cool (61°-72° F), moist weather. Symptoms appear between 3 and 12 days after infection and begin as slightly yellow to bright yellow lesions on the upper leaf surface.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Downy Mildew",
+        "Cucurbit Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-12-19-0095-DG",
+      "title": "Diagnostic Guide for Cucurbit Downy Mildew | Plant Health Progress",
+      "snippet": "Diagnostic guide describing the cucurbit downy mildew pathogen Pseudoperonospora cubensis, host range including melon and cantaloupe, symptomatology with lesions on cantaloupe having a bright yellow halo and not being angular as in cucumber, and management.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Cucurbit Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/crops/cucurbits/downy-mildew/",
+      "title": "Downy Mildew | Cornell Vegetables",
+      "snippet": "Cornell vegetable pathology resource on cucurbit downy mildew caused by Pseudoperonospora cubensis, with symptoms, host range across cucumber, melon, squash and pumpkin, and management recommendations including resistant cultivars and fungicide programs.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Downy Mildew",
+        "Cucurbit Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/cucurbits/fusarium-wilt-cantaloupe/",
+      "title": "Fusarium Wilt (Cantaloupe) / Cucurbits / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Muskmelon wilt is caused by the fungus Fusarium oxysporum f. sp. melonis. Symptoms are typically expressed after fruit set and consist of yellowing of a runner on one side of the plant followed rapidly by wilting of the infected runner. The fungus can attack a susceptible plant at any stage of growth, and infection of the hypocotyl of young plants can result in pre- or post-emergence damping-off. At least four melon races have been reported.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fusarium wilt",
+        "damping-off"
+      ]
+    },
+    {
+      "url": "https://ecommons.cornell.edu/server/api/core/bitstreams/2272ac2e-e1b0-437a-a7dc-8f25d37fec11/content",
+      "title": "Diseases of Cucurbits: Fusarium Diseases of Cucurbits Fact Sheet (Cornell Cooperative Extension, Page 733.00)",
+      "snippet": "Fusarium diseases of cucurbits including Fusarium oxysporum f. sp. melonis on melon, Fusarium solani f. sp. cucurbitae causing crown rot, fruit rot and damping-off. The pathogen attacks only varieties of Cucumis melo. External lesions may develop on roots accompanied by red gumming at or just below the soil surface, and internally, a dark red-brown vascular discoloration extends from roots to runners.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fusarium wilt",
+        "Fusarium crown rot",
+        "Fusarium fruit rot",
+        "damping-off"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/vegetable/fact-sheets/cucurbits-fusarium-fruit-rot",
+      "title": "Cucurbits, Fusarium Fruit Rot | UMass Center for Agriculture, Food, and the Environment",
+      "snippet": "Fusarium solani f. sp. cucurbitae causes crown and foot rots of summer squash, melon, pumpkin, and a fruit rot of pumpkin. The disease consists of two different races; race 1 targets the stems, roots, and fruit of the plant while race 2 only targets the fruit. Initial infection of the whole plant may appear as damping off during the seedling stage. F. solani f.sp. cucurbitae is borne in and on seed and survives as chlamydospores in the soil for 2-3 years.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fusarium fruit rot",
+        "Fusarium crown rot",
+        "damping-off"
+      ]
+    },
+    {
+      "url": "https://extension.umd.edu/resource/gummy-stem-blight-cantaloupe",
+      "title": "Gummy Stem Blight in Cantaloupe | University of Maryland Extension",
+      "snippet": "Gummy Stem Blight in Cantaloupe (muskmelon) — extension factsheet describing symptoms, pathogen (Stagonosporopsis cucurbitacearum / Didymella bryoniae), favorable conditions and management on melon.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gummy Stem Blight",
+        "Black Rot"
+      ]
+    },
+    {
+      "url": "https://lgpress.clemson.edu/publication/gummy-stem-blight-on-watermelon-and-muskmelon/",
+      "title": "Gummy Stem Blight on Watermelon and Muskmelon | Land-Grant Press | Clemson University",
+      "snippet": "Gummy stem blight on watermelon and muskmelon caused by Stagonosporopsis spp. Describes leaf, stem and fruit symptoms including amber-colored gummy exudate, favorable warm wet conditions, and management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gummy Stem Blight"
+      ]
+    },
+    {
+      "url": "https://ask.ifas.ufl.edu/publication/PP280",
+      "title": "PP280: Management of Gummy Stem Blight (Black Rot) on Cucurbits in Florida",
+      "snippet": "UF/IFAS extension publication on management of gummy stem blight (black rot) caused by Didymella bryoniae / Stagonosporopsis cucurbitacearum on cucurbits including melon — covers symptoms, epidemiology, cultural control, and fungicide programs.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gummy Stem Blight",
+        "Black Rot"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+      "title": "Gummy Stem Blight of Cucurbits | NC State Extension Publications",
+      "snippet": "NC State Extension publication on gummy stem blight and Phoma blight on cucurbits — pathogen biology (Stagonosporopsis cucurbitacearum, S. citrulli, S. caricae), symptom diagnosis on melon stems, leaves and fruit, and integrated management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gummy Stem Blight",
+        "Phoma Blight"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/disandpath/fungalasco/pdlessons/Pages/Monosporascus.aspx",
+      "title": "Monosporascus root rot and vine decline of melons",
+      "snippet": "Monosporascus root rot and vine decline (MRR/VD), also referred to as sudden wilt, sudden death, melon collapse, Monosporascus wilt, and black pepper root rot, is caused by the root-infecting ascomycete Monosporascus cannonballus, and is characterized by the sudden and generally uniform canopy collapse of entire fields 1-2 weeks prior to harvest. The primary diagnostic sign is the formation of black, spherical, erumpent perithecia on the roots.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Monosporascus root rot and vine decline",
+        "sudden wilt",
+        "sudden death",
+        "melon collapse",
+        "Monosporascus wilt",
+        "black pepper root rot"
+      ]
+    },
+    {
+      "url": "https://aggie-horticulture.tamu.edu/vegetable/watermelon/root-vascular-diseases/monosporascus-root-rot-vine-decline/",
+      "title": "Monosporascus Root Rot / Vine Decline - Vegetable Resources (Texas A&M AgriLife)",
+      "snippet": "Monosporascus Root Rot / Vine Decline of cucurbits including melon and watermelon. Caused by Monosporascus cannonballus. Discussion of symptoms, pathogen biology, and management practices used in Texas production systems.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Monosporascus Root Rot",
+        "Vine Decline"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.bayer.com/gb/en-uk/knowledge-centre/disease-guides/cucurbit/monsporascus-root-rot-vine-decline.html",
+      "title": "Monosporascus Root Rot and Vine Decline - Bayer Vegetables Disease Guide",
+      "snippet": "Monosporascus Root Rot and Vine Decline of cucurbit crops including melon. Caused by Monosporascus cannonballus. Symptoms include sudden wilt and collapse near harvest, with characteristic black perithecia on roots. Management through resistant rootstocks, fumigation, and cultural practices.",
+      "source_type": "industry",
+      "diseases_mentioned": [
+        "Monosporascus Root Rot",
+        "Vine Decline"
+      ]
+    },
+    {
+      "url": "https://journals.sta.uwi.edu/ojs/index.php/ta/article/view/7958",
+      "title": "Monosporascus root rot and vine decline disease of muskmelon: an overview - Tropical Agriculture",
+      "snippet": "Review of Monosporascus root rot and vine decline (MRR/VD) of muskmelon caused by Monosporascus cannonballus. Covers symptoms (sudden wilt at fruiting stage, root lesions, vascular browning), pathogen biology, epidemiology, and integrated management.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Monosporascus root rot and vine decline",
+        "MRR/VD"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+      "title": "Phytophthora Blight of Cucurbits | Cornell Vegetables",
+      "snippet": "Cornell Vegetables factsheet on Phytophthora blight affecting cucurbits including melon, caused by Phytophthora capsici. Covers symptoms (fruit rot, crown rot, leaf blight), pathogen biology, and integrated management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora blight",
+        "Phytophthora capsici"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0027-FI",
+      "title": "A Diagnostic Guide for Phytophthora capsici Infecting Vegetable Crops | Plant Health Progress",
+      "snippet": "APS Plant Health Progress diagnostic guide for Phytophthora capsici on vegetable crops including melon and other cucurbits. Provides detailed symptom descriptions, host range, and diagnostic information.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Phytophthora capsici",
+        "Phytophthora blight"
+      ]
+    },
+    {
+      "url": "https://hort.extension.wisc.edu/articles/vine-crops-disease-phytophthora-blight/",
+      "title": "Vine Crops Disease: Phytophthora Blight - Wisconsin Horticulture",
+      "snippet": "University of Wisconsin Extension factsheet on Phytophthora blight of vine crops (cucurbits including melon). Watch for suddenly wilting plants in wet fields with brown stems at the soil surface and soft, rotting fruit. Caused by Phytophthora capsici which overwinters as oospores.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora blight",
+        "Phytophthora capsici"
+      ]
+    },
+    {
+      "url": "https://extension.okstate.edu/fact-sheets/phytophthora-blight-of-cucurbits-and-peppers.html",
+      "title": "Phytophthora Blight of Cucurbits and Peppers | Oklahoma State University",
+      "snippet": "Oklahoma State University Extension factsheet covering Phytophthora blight on cucurbits (including melon) and peppers caused by Phytophthora capsici. Includes symptoms, disease cycle, and management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora blight",
+        "Phytophthora capsici"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/powdery-mildew-cucurbits",
+      "title": "Powdery mildew of cucurbits | UMN Extension",
+      "snippet": "Powdery mildew, mainly caused by the fungus Podosphaera xanthii, infects all cucurbits, including muskmelons, squash, cucumbers, gourds, watermelons and pumpkins. Powdery mildew infections favor humid conditions with temperatures around 68-81F.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+      "title": "Cucurbit Powdery Mildew | Cornell Vegetables",
+      "snippet": "Cucurbit powdery mildew factsheet from Cornell. Leaves affected by powdery mildew die prematurely which results in fewer fruit and/or fruit of low quality. Managed with resistant varieties and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/vegetable/fact-sheets/cucurbits-powdery-mildew",
+      "title": "Cucurbits, Powdery Mildew : Vegetable : UMass Amherst CAFE",
+      "snippet": "Symptoms occur on both leaf surfaces, stems, and petioles as white, powdery fungal growth, developing first on older leaves, shaded lower leaves, lower leaf surfaces, and on older bearing plants. Caused by Podosphaera xanthii (previously Sphaerotheca fuliginea).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/cucurbit-powdery-mildew",
+      "title": "Cucurbit Powdery Mildew | NC State Extension Publications",
+      "snippet": "Cucurbit powdery mildew caused by Podosphaera xanthii affects melons, cucumbers, squash and other cucurbits. Information on symptoms, pathogen biology, and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://edis.ifas.ufl.edu/publication/PP342",
+      "title": "Powdery Mildew on Watermelon in Florida - UF/IFAS EDIS",
+      "snippet": "The fungus Podosphaera xanthii (previously known as Sphaerotheca fuliginea) is the causal agent of powdery mildew on watermelon, an obligate biotroph that can only survive on living host tissue.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://extension.usu.edu/vegetableguide/cucumber-melon-pumpkin-squash/pythium",
+      "title": "Pythium Root and Fruit Rot - USU Extension",
+      "snippet": "Pythium Fruit Rot can occur on all cucurbits, including cucumber, pumpkin, squash, gourds, melons, and watermelon. Fruit rot caused by Pythium generally starts as small, water soaked lesions on immature or mature fruit near or in contact with the soil. The whole fruit is involved within 72 hours, the epidermis is ruptured, and the fruit collapses. Caused by a number of species of Pythium (water molds). Most severe in soil that is wet for part of the growing season.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pythium Root Rot",
+        "Pythium Fruit Rot",
+        "Cottony Leak"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/vegetable/fact-sheets/pythium-fruit-rot",
+      "title": "Pythium Fruit Rot : Vegetable : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Cottony leak, sometimes called Pythium fruit rot or Pythium cottony leak, is a common disease of cucurbits. Symptoms begin as brown, water-soaked lesions that quickly develop into soft, rotted areas on the part of the fruit that is in direct contact with the soil. During humid conditions, white, cottony pathogen growth may cover the rotted area. Caused by a number of species of Pythium; most common and severe in heavy, poorly drained soils.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cottony Leak",
+        "Pythium Fruit Rot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0042-FI",
+      "title": "A Diagnostic Guide for Pythium Damping-Off and Root and Stem Rot of Cucurbits | Plant Health Progress",
+      "snippet": "Cucurbit damping-off and seedling root rot have been ascribed to several Pythium spp., most frequently P. aphanidermatum, P. ultimum, and P. irregulare. Diseases observed in cucumber, melon, watermelon, pumpkin, summer squash, and winter squash. Typical symptoms include few roots, remaining roots white with cortex sloughed off, and the lower hypocotyl having a soft watery rot. Diagnostic guide covers damping-off, root rot, and stem rot of cucurbits.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Pythium Damping-Off",
+        "Pythium Root Rot",
+        "Pythium Stem Rot"
+      ]
+    },
+    {
+      "url": "https://extension.msstate.edu/publications/cottony-leak-cucurbits",
+      "title": "Cottony Leak in Cucurbits | Mississippi State University Extension Service",
+      "snippet": "Cottony leak is a disease of cucurbit crops including melon, watermelon, cucumber, and squash. Pythium species are soilborne pathogens that can survive indefinitely on organic substrates or as thick-walled oospores. Fruit symptoms include water-soaked lesions, rapid soft rot, and profuse white cottony mycelial growth on infected tissue under humid conditions.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cottony Leak",
+        "Pythium Fruit Rot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-11-19-2484-PDN",
+      "title": "First Report of Geotrichum candidum Causing Sour-Rot of Melon in Brazil | Plant Disease",
+      "snippet": "Sour-rot symptoms were observed mainly on the top of the fruit, at the floral insertion site. The lesions were dark and eventually progressed to epidermal cracks. Sour-rot is a well-known disease of melon in other countries and can be listed as a potential postharvest disease for melon fruit.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Sour Rot",
+        "Geotrichum candidum sour-rot of melon"
+      ]
+    },
+    {
+      "url": "https://www.cabi.org/isc/abstract/20203230216",
+      "title": "First report of Geotrichum candidum causing sour-rot of melon in Brazil - CABI",
+      "snippet": "Report of Geotrichum candidum (synonym Galactomyces candidus) causing sour-rot on melon (Cucumis melo). Sour rot is an important postharvest disease on fruits and vegetables, with G. candidum as the main causal species.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Sour Rot",
+        "Geotrichum candidum"
+      ]
+    },
+    {
+      "url": "https://bsppjournals.onlinelibrary.wiley.com/doi/10.1111/ppa.13473",
+      "title": "Molecular phylogeny and morphological characterization of the aetiological agent of sour rot on fruits and vegetables in Brazil - Plant Pathology",
+      "snippet": "Sour rot is an important postharvest disease on fruits and vegetables in Brazil, with Geotrichum candidum (synonym Galactomyces candidus) reported as the main species causing this disease. The pathogen causes sour rot of stone fruit, melon, tomato, and other fruit.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Sour Rot",
+        "Geotrichum candidum",
+        "Galactomyces candidus"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/geotrichum-sour-rot-of-sweetpotato",
+      "title": "Geotrichum Sour Rot of Sweetpotato | NC State Extension Publications",
+      "snippet": "Geotrichum sour rot is caused by the ascomycete fungus Geotrichum candidum, a ubiquitous soil-inhabitant with a world-wide distribution disseminated by wind and water. The pathogen is restricted to areas with high water availability; for pathogenesis, plants must be exposed to high temperature, high moisture, and low oxygen, and usually require a wound for infection. No conventional fungicides are labeled for control.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Geotrichum Sour Rot",
+        "Geotrichum candidum"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

@@ -1,0 +1,45 @@
+{
+  "crop": "Oat",
+  "candidate_sources": [
+    {
+      "url": "https://extension.sdstate.edu/crown-rust-oats-0",
+      "title": "Crown Rust of Oats - SDSU Extension",
+      "snippet": "Crown rust is caused by Puccinia coronata. Symptoms include small, oval, orange pustules on leaves, leaf sheaths, stems and panicles. Spores are air-borne and can originate in southern states, or come from nearby buckthorn, an alternate host that allows the disease to overwinter. Crown rust may reduce yields by 10 to 40% in a normal growing season.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Crown Rust",
+        "Oat Crown Rust"
+      ]
+    },
+    {
+      "url": "https://www.ars.usda.gov/midwest-area/stpaul/cereal-disease-lab/docs/cereal-rusts/oat-crown-rust/",
+      "title": "Oat crown rust - Cereal Disease Lab",
+      "snippet": "Oat crown rust caused by Puccinia coronata f. sp. avenae. Spores develop oval, orange-colored pustules on the leaf within 7 to 10 days. The fungus uses buckthorn (Rhamnus spp.) as an alternate host.",
+      "source_type": "USDA",
+      "diseases_mentioned": [
+        "Crown Rust",
+        "Oat Crown Rust"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6638059/",
+      "title": "Puccinia coronata f. sp. avenae: a threat to global oat production - PMC",
+      "snippet": "Infection of susceptible oat varieties gives rise to orange-yellow round to oblong uredinia (pustules) containing newly formed urediniospores. Uredinia form on both the upper and lower surfaces of infected leaves. Epidemics of crown rust happen in areas with warm temperatures (20-25 C) and high humidity. Management strategies involve the use of rust-resistant crop varieties and the application of fungicides.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Crown Rust",
+        "Puccinia coronata f. sp. avenae"
+      ]
+    },
+    {
+      "url": "https://www.canr.msu.edu/news/crown_rust_on_oats",
+      "title": "Crown rust on oats - MSU Extension",
+      "snippet": "Crown rust on oats caused by Puccinia coronata. Discusses symptoms, disease cycle involving buckthorn alternate host, and management options for Michigan oat producers.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Crown Rust"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

@@ -1,0 +1,940 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Sour Rot",
+      "pathogen_scientific_name": {
+        "value": "Geotrichum candidum",
+        "url": "https://link.springer.com/article/10.1007/s41348-023-00748-2",
+        "quote": "Based on molecular results and phylogenetic analyses, the fungi were identified as Geotrichum candidum .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://link.springer.com/article/10.1007/s41348-023-00748-2",
+        "quote": "Seven fungal isolates were obtained which showed white mycelia with hyphae fragmenting into arthroconidia."
+      },
+      "affected_parts": {
+        "value": [
+          "Root"
+        ],
+        "url": "https://link.springer.com/article/10.1007/s41348-023-00748-2",
+        "quote": "Sweet potato roots showing rot symptoms were collected from the state of Pernambuco in Northeastern Brazil."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Soft necrotic lesions along the roots, with white mycelium under the lesions and a strong odor.",
+          "url": "https://link.springer.com/article/10.1007/s41348-023-00748-2",
+          "quote": "Soft necrotic lesions along the roots, with the presence of white mycelium under the lesions and a strong odor were noted."
+        },
+        "diagnostic_features": {
+          "value": "White mycelia with hyphae fragmenting into arthroconidia; soft necrotic lesions with white mycelium under the lesions and a strong odor.",
+          "url": "https://link.springer.com/article/10.1007/s41348-023-00748-2",
+          "quote": "Seven fungal isolates were obtained which showed white mycelia with hyphae fragmenting into arthroconidia."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Southern Blight",
+      "pathogen_scientific_name": {
+        "value": "Sclerotium rolfsii",
+        "url": "https://ipm.ces.ncsu.edu/2010/05/pest-alert-sweetpotato-disease-alert-southern-blight-in-sweetpotato-plant-beds/",
+        "quote": "Southern blight (also known as the Sclerotial blight) caused by the fungus Sclerotium rolfsii",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ipm.ces.ncsu.edu/2010/05/pest-alert-sweetpotato-disease-alert-southern-blight-in-sweetpotato-plant-beds/",
+        "quote": "Southern blight caused by the fungus S. rolfsii is a serious fungal disease affecting a wide variety of both food crops and ornamental plants."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Root",
+          "Whole plant"
+        ],
+        "url": "https://ipm.ces.ncsu.edu/2010/05/pest-alert-sweetpotato-disease-alert-southern-blight-in-sweetpotato-plant-beds/",
+        "quote": "On the seed roots S. rolfsii causes a soft rot, when it invades the developing sprouts at the point they emerge from the seed root it causes them to wilt and die. The sclerotia are produced on the mycelium on both seed roots and plant stems."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Causes sudden wilt, death of sprouts and melt down of storage roots, with damage ranging from small tire-size dead spots to the loss of entire beds.",
+          "url": "https://ipm.ces.ncsu.edu/2010/05/pest-alert-sweetpotato-disease-alert-southern-blight-in-sweetpotato-plant-beds/",
+          "quote": "Southern blight (also known as the Sclerotial blight) caused by the fungus Sclerotium rolfsii can cause a sudden wilt, death of sprouts and melt down of storage roots. The extent of damage ranges from small tire size dead spots to the loss of entire beds."
+        },
+        "diagnostic_features": {
+          "value": "Characterized by the production of rapidly growing white mycelium and the yellow to brown mustard seed-like sclerotia that serve as survival structures and are produced on the mycelium.",
+          "url": "https://ipm.ces.ncsu.edu/2010/05/pest-alert-sweetpotato-disease-alert-southern-blight-in-sweetpotato-plant-beds/",
+          "quote": "The fungus S. rolfsii is characterized by the production of rapidly growing white mycelium and the yellow to brown mustard seed-like sclerotia that serve as survival structures and are produced on the mycelium (Figs. 1-4)."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Site selection: Choose a well-drained site for the plant bed that has not had sweetpotatoes for at least 3 to 4 years.",
+          "Plant handling: Cut plants in beds 1 inch above the soil line. Do not pull plants. Use disease-free planting stock.",
+          "Removal of bed covers: bed covers should be removed as soon as the sprouts emerge from seed roots.",
+          "Deep plowing: The sclerotia do not survive when buried at least 8 inches into soil with a breaking plow.",
+          "Solarization: the soil may be covered with black polyethylene sheets for a 6 week period during the hottest months of the year.",
+          "Chemical control: Dipping roots prior to bedding, or to a lesser extent, spraying roots laid out in beds with a protectant fungicide such as dichloran (Botran) can reduce the incidence of Southern blight.",
+          "Make in-furrow or banded applications with azoxystrobin (Quadris) shortly after transplanting. Drenching the beds with Quadris at 15.4 ounces per acre using a minimum of 35 gallons of water may provide some suppression of Southern blight in plant beds.",
+          "Soil fumigation with chloropicrin can aid in reducing inoculum and Southern blight incidence."
+        ],
+        "url": "https://ipm.ces.ncsu.edu/2010/05/pest-alert-sweetpotato-disease-alert-southern-blight-in-sweetpotato-plant-beds/",
+        "quote": "Site selection . Choose a well-drained site for the plant bed that has not had sweetpotatoes for at least 3 to 4 years. ... Plant handling . Cut plants in beds 1 inch above the soil line. Do not pull plants. Use disease-free planting stock. ... Removal of bed covers . ... bed covers should be removed as soon as the sprouts emerge from seed roots. Deep plowing . The sclerotia do not survive when buried at least 8 inches into soil with a breaking plow. Solarization . Prior to establishing seedbeds, the soil may be covered with black polyethylene sheets for a 6 week period during the hottest months of the year. ... Chemical control . Dipping roots prior to bedding, or to a lesser extent, spraying roots laid out in beds with a protectant fungicide such as dichloran (Botran) can reduce the incidence of Southern blight. ... Make in-furrow or banded applications with azoxystrobin (Quadris) shortly after transplanting. Drenching the beds with Quadris at 15.4 ounces per acre using a minimum of 35 gallons of water may provide some suppression of Southern blight in plant beds. Soil fumigation with chloropicrin can aid in reducing inoculum and Southern blight incidence."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Streptomyces Soil Rot",
+      "pathogen_scientific_name": {
+        "value": "Streptomyces ipomoeae",
+        "url": "https://keys.lucidcentral.org/keys/sweetpotato/key/Sweetpotato%20Diagnotes/Media/Html/TheProblems/DiseasesBacterial/SoilRot/Soil%20rot.htm",
+        "quote": "Causal organism: Streptomyces ipomoeae (Person & Martin) Waksman & Henrici",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://keys.lucidcentral.org/keys/sweetpotato/key/Sweetpotato%20Diagnotes/Media/Html/TheProblems/DiseasesBacterial/SoilRot/Soil%20rot.htm",
+        "quote": "[ Diseases ] [ Nutrient disorders ] [ Nematodes ]"
+      },
+      "affected_parts": {
+        "value": [
+          "Root",
+          "Stem"
+        ],
+        "url": "https://keys.lucidcentral.org/keys/sweetpotato/key/Sweetpotato%20Diagnotes/Media/Html/TheProblems/DiseasesBacterial/SoilRot/Soil%20rot.htm",
+        "quote": "The pathogen causes lesions on all underground parts of the plant, including fibrous roots, storage roots, and the base of stems."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "The pathogen causes dark lesions on fibrous roots, storage roots, and the base of stems; affected plants become stunted with smaller, pale leaves, and storage roots develop round dark cracked or scaby lesions (\"pox\") and may become misshapen.",
+          "url": "https://keys.lucidcentral.org/keys/sweetpotato/key/Sweetpotato%20Diagnotes/Media/Html/TheProblems/DiseasesBacterial/SoilRot/Soil%20rot.htm",
+          "quote": "The pathogen causes lesions on all underground parts of the plant, including fibrous roots, storage roots, and the base of stems... Affected plants become stunted, the leaves are smaller and pale and early flowering results."
+        },
+        "diagnostic_features": {
+          "value": "Lesions on storage roots are round to irregular shape, generally less than 3 cm across, and less than 5 mm deep; they are dark, dry and frequently cracked from the centre or have a rough scaby surface; they do not spread after harvest. Early storage root infection causes misshapen roots with indented lesions, narrow constricted bands or \"dumbell\" shape.",
+          "url": "https://keys.lucidcentral.org/keys/sweetpotato/key/Sweetpotato%20Diagnotes/Media/Html/TheProblems/DiseasesBacterial/SoilRot/Soil%20rot.htm",
+          "quote": "The lesions are round to irregular shape, generally less than 3 cm across, and less than 5 mm deep. They are dark, dry and frequently cracked from the centre or have a rough scaby surface. They do not spread after harvest... It may be indented at the lesions, or have narrow constricted bands or \"dumbell\" shape."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Host-plant resistance: Some cultivars, like Beauregard and Jasper, showed high levels of resistance",
+          "Crop rotation with 3-4 years between sweetpotato crops",
+          "Avoid dryness of soil with timely irrigation",
+          "Careful selection of planting material",
+          "Avoid introduction from affected to unaffected areas, by restricting movement of equipment, animals, manures or planting material",
+          "If soil is mildly acidic, do not apply lime. Sulfur can be used to decrease soil pH, but may not be cost-effective",
+          "Soil fumigation with chloropicrin"
+        ],
+        "url": "https://keys.lucidcentral.org/keys/sweetpotato/key/Sweetpotato%20Diagnotes/Media/Html/TheProblems/DiseasesBacterial/SoilRot/Soil%20rot.htm",
+        "quote": "Host-plant resistance Some cultivars, like Beauregard and Jasper, showed high levels of resistance... Crop rotation with 3-4 years between sweetpotato crops. Avoid dryness of soil with timely irrigation. Careful selection of planting material. Avoid introduction from affected to unaffected areas, by restricting movement of equipment, animals, manures or planting material. If soil is mildly acidic, do not apply lime. Sulfur can be used to decrease soil pH, but may not be cost-effective. Chemical control Soil fumigation with chloropicrin."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Sweet Potato Feathery Mottle Virus",
+      "pathogen_scientific_name": {
+        "value": "Sweetpotato feathery mottle potyvirus",
+        "url": "https://apps.lucidcentral.org/pppw_v10/text/web_full/entities/sweetpotato_feathery_mottle_258.htm",
+        "quote": "Scientific Name Sweetpotato feathery mottle potyvirus ; the abbreviation is SPFMV",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Viral",
+        "url": "https://apps.lucidcentral.org/pppw_v10/text/web_full/entities/sweetpotato_feathery_mottle_258.htm",
+        "quote": "Sweetpotato feathery mottle potyvirus ; the abbreviation is SPFMV"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Root"
+        ],
+        "url": "https://apps.lucidcentral.org/pppw_v10/text/web_full/entities/sweetpotato_feathery_mottle_258.htm",
+        "quote": "On its own, there may be yellow spots (Photo 1), or purple ring spots (Photo 2). Feathery patterns may appear along the veins... On the roots, the symptoms, depend on the strain and the variety."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "On leaves, yellow spots or purple ring spots may appear, with feathery patterns along the veins that may be yellow or purple; in many cases there are no symptoms or they are faint and short-lived. On roots, strain RC causes external cracking in rings around the storage roots and internal cork (small brown to black corky spots).",
+          "url": "https://apps.lucidcentral.org/pppw_v10/text/web_full/entities/sweetpotato_feathery_mottle_258.htm",
+          "quote": "On its own, there may be yellow spots (Photo 1), or purple ring spots (Photo 2). Feathery patterns may appear along the veins, and these too may be yellow or purple (Photos 3&4). In many cases, there are no symptoms, or they are faint and short-lived, with the new leaves looking healthy. On the roots, the symptoms, depend on the strain and the variety. Strain O does not produce symptoms, whereas strain RC causes external cracking in rings around the storage roots (Photo 5), and internal cork – small brown to black corky spots, seen after harvest and during storage."
+        },
+        "diagnostic_features": {
+          "value": "Purple feathery-like patterns along veins typical of infection; strain RC causes external cracking in rings around storage roots and internal cork (small brown to black corky spots).",
+          "url": "https://apps.lucidcentral.org/pppw_v10/text/web_full/entities/sweetpotato_feathery_mottle_258.htm",
+          "quote": "Purple feathery-like patterns along veins typical of infection from Sweetpotato feathery mottle virus."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use virus-tested planting material",
+          "Plants are tested for virus and, if infected, given heat treatment before removing the meristem and growing it into a healthy plant in tissue culture",
+          "Use planting material, produced through a healthy 'seed' scheme",
+          "Remove wild Ipomoea species if they are present around the sweet potato plantings",
+          "Remove old, harvested, vines and, if possible, plant new crops away from older ones that might be a source of aphids and viruses",
+          "Use resistant varieties",
+          "Chemical control is not a method that can be used to control this virus"
+        ],
+        "url": "https://apps.lucidcentral.org/pppw_v10/text/web_full/entities/sweetpotato_feathery_mottle_258.htm",
+        "quote": "CULTURAL CONTROL Virus-tested planting material The most useful cultural control measures is to use virus-tested planting material... Before planting: Use planting material, produced through a healthy 'seed' scheme. Remove wild Ipomoea species if they are present around the sweet potato plantings... After harvest: Remove old, harvested, vines and, if possible, plant new crops away from older ones that might be a source of aphids and viruses. RESISTANT VARIETIES There are resistant varieties... CHEMICAL CONTROL Not a method that can be used to control this virus."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Black Rot",
+      "pathogen_scientific_name": {
+        "value": "Ceratocystis fimbriata",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8625119/",
+        "quote": "black rot ( Ceratocystis fimbriata )",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8625119/",
+        "quote": "Commonly observed postharvest diseases caused by fungi include black rot ( Ceratocystis fimbriata )"
+      },
+      "affected_parts": {
+        "value": [
+          "Storage root",
+          "Tuber"
+        ],
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4829637/",
+        "quote": "black rot of the tuber which is caused by the species Ceratocystis fimbriata"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "",
+          "url": "",
+          "quote": ""
+        },
+        "diagnostic_features": {
+          "value": "Black rot lesions tend to have a black center due to pathogen sporulation and lesions can extend into the sweetpotato flesh.",
+          "url": "https://plantpathology.ces.ncsu.edu/2021/03/how-to-identify-and-manage-sweeetpotato-scurf-caused-by-monilochaetes-infuscans/",
+          "quote": "black rot lesions tend to have a black center due to pathogen sporulation and lesions can go into the sweetpotato flesh."
+        },
+        "look_alikes": {
+          "value": [
+            "Sweetpotato scurf"
+          ],
+          "url": "https://plantpathology.ces.ncsu.edu/2021/03/how-to-identify-and-manage-sweeetpotato-scurf-caused-by-monilochaetes-infuscans/",
+          "quote": "Sweetpotato scurf can resemble black rot lesions, however, black rot lesions tend to have a black center due to pathogen sporulation and lesions can go into the sweetpotato flesh."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Cultural practices to overcome or minimize storage problems",
+          "Chemicals applied to remove pathogens from storage roots"
+        ],
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8625119/",
+        "quote": "Cultural practices are generally applied to overcome or minimize the problems associated with the storage of sweet potatoes. In addition, chemicals can also be applied to remove pathogens from storage roots [ 21 , 22 ]."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Bacteria Wilt And Soft Rot",
+      "pathogen_scientific_name": {
+        "value": "Erwinia chrysanthemi",
+        "url": "https://www.gardeningknowhow.com/edible/vegetables/sweet-potato/sweet-potato-soft-rot-treatment.htm",
+        "quote": "Sweet potato soft rot is caused by the bacterium Erwinia chrysanthemi .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://www.gardeningknowhow.com/edible/vegetables/sweet-potato/sweet-potato-soft-rot-treatment.htm",
+        "quote": "Sweet potato soft rot is caused by the bacterium Erwinia chrysanthemi ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Root",
+          "Vascular",
+          "Whole plant"
+        ],
+        "url": "https://www.gardeningknowhow.com/edible/vegetables/sweet-potato/sweet-potato-soft-rot-treatment.htm",
+        "quote": "In the garden, foliage symptoms appear as black, necrotic, water-soaked lesions. Stems are also afflicted with dark brown to black lesions along with dark streaks apparent in the vascular tissue. As the disease progresses, the stem becomes watery and collapses which causes the tips of the vines to wilt. On occasion, the entire plant dies, but more commonly, one or two vines collapse. Lesions or rotting in the root is more commonly found during storage."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Foliage develops black, necrotic, water-soaked lesions; stems show dark brown to black lesions with dark vascular streaks, becoming watery and collapsing; roots turn light brown and watery with dark brown margined lesions and internal black streaking.",
+          "url": "https://www.gardeningknowhow.com/edible/vegetables/sweet-potato/sweet-potato-soft-rot-treatment.htm",
+          "quote": "In the garden, foliage symptoms appear as black, necrotic, water-soaked lesions. Stems are also afflicted with dark brown to black lesions along with dark streaks apparent in the vascular tissue. As the disease progresses, the stem becomes watery and collapses which causes the tips of the vines to wilt."
+        },
+        "diagnostic_features": {
+          "value": "Roots afflicted with bacterial soft rot of sweet potato become light brown in color and watery accompanied by lesions with a characteristic dark brown margin; infected roots are streaked with black and become soft, moist, and rotten.",
+          "url": "https://www.gardeningknowhow.com/edible/vegetables/sweet-potato/sweet-potato-soft-rot-treatment.htm",
+          "quote": "Roots afflicted with bacterial soft rot of sweet potato become light brown in color and watery accompanied by lesions with a characteristic dark brown margin. During storage, some roots may appear untouched by the disease until they are cut into wherein decay becomes evident. The infected roots are streaked with black and become soft, moist, and rotten."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Minimize wounding of the roots.",
+          "Handle the sweet potatoes carefully as they are being harvested and stored, and work around them gently when weeding or the like.",
+          "Controlling insects will also help to control the spread of the disease.",
+          "Use cultivars with a tolerance to bacterial sweet potato rot.",
+          "Select only certified disease-free propagating materials.",
+          "For transplanting, only use vines that have been cut above the soil's surface.",
+          "Immediately remove and destroy any infected roots found during storage to prevent the spread of sweet potato rot."
+        ],
+        "url": "https://www.gardeningknowhow.com/edible/vegetables/sweet-potato/sweet-potato-soft-rot-treatment.htm",
+        "quote": "Sweet potato rot is introduced through wounds, so minimizing wounding of the roots will help to curtail the incidence of the disease. Handle the sweet potatoes carefully as they are being harvested and stored, and work around them gently when weeding or the like. Wounding may be caused by mechanical means but also by insect feeding, so controlling insects will also help to control the spread of the disease. Also, some varieties of sweet potato are more susceptible to the disease. For example, 'Beauregard' is very susceptible to root rot. Use cultivars with a tolerance to bacterial sweet potato rot and select only certified disease-free propagating materials. For transplanting , only use vines that have been cut above the soil's surface. Lastly, immediately remove and destroy any infected roots found during storage to prevent the spread of sweet potato rot."
+      },
+      "confidence": "low",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Charcoal Rot",
+      "pathogen_scientific_name": {
+        "value": "Macrophomina phaseolina",
+        "url": "https://wiki.bugwood.org/Macrophomina_phaseolina_(charcoal_rot_of_sweetpotato)",
+        "quote": "Scientific Name Macrophomina phaseolina",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8100579/",
+        "quote": "Macrophomina phaseolina is a generalist soil-borne fungus present all over the world"
+      },
+      "affected_parts": {
+        "value": [
+          "Root",
+          "Stem",
+          "Foliar",
+          "Vascular"
+        ],
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8100579/",
+        "quote": "Once in the roots, the fungus affects the vascular system, disrupting the water and nutrient transport to the upper parts of the plants ( Figure 1 ). Typical symptoms are yellowing and senescence of leaves that remain attached to the stems by the petioles, sloughing of cortical tissues from the lower stem and taproot"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "The leading edge of infection in sweetpotato storage root tissue is somewhat firm and light-brown, tinged red, with the area behind becoming darker as black sclerotia form; symptoms may present as wet or dry rot, often at the stem end.",
+          "url": "https://wiki.bugwood.org/Macrophomina_phaseolina_(charcoal_rot_of_sweetpotato)",
+          "quote": "The leading edge of Macrophomina phaseolina infection in sweetpotato storage root tissue is somewhat firm and light-brown, tinged red in color (Figure ). The area behind the leading edge becomes darker as more sclerotia are formed"
+        },
+        "diagnostic_features": {
+          "value": "The common name \"charcoal rot\" comes from many hundreds of black charcoal-colored sclerotia populating infected tissue, with uniform density of sclerotia in a given age area.",
+          "url": "https://wiki.bugwood.org/Macrophomina_phaseolina_(charcoal_rot_of_sweetpotato)",
+          "quote": "The common name “charcoal rot” comes from many hundreds of black charcoal-colored sclerotia populating infected tissue. The density of sclerotia in a given age area are more or less uniform."
+        },
+        "look_alikes": {
+          "value": [
+            "Fusarium wet rot",
+            "pocket rot",
+            "internal necrosis"
+          ],
+          "url": "https://wiki.bugwood.org/Macrophomina_phaseolina_(charcoal_rot_of_sweetpotato)",
+          "quote": "The general presentation of the combination of pathogenic Fusarium species and Macrophomina phaseolina is a “wet” rot... The variation typically consists of small internal charcoal-colored spots of rot within the parenchyma, a symptom sometimes called “pocket rot”... The disease is named internal necrosis."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Fungicides or splash barriers such as mulches might be helpful. Labeled products change, but two currently labeled products include Botran, Quadris and many biologicals.",
+          "Reduce plant stress. Plant stress may encourage infection by the pathogen.",
+          "Soaking crates full of cut slip bases with 3 pounds of RootShield/100 gallons water for about 45 minutes prior to transplant seemed to reduce pack out losses from the disease.",
+          "Fumigation trials using Telone II and Vapam in fields infested with reniform nematodes generally did increase different aspects of yield but showed a non-significant trend in reducing storage losses.",
+          "If possible, a growing interval between heavy rains and harvest operations may be beneficial.",
+          "Most losses seem to occur to growers who do not cure harvested sweetpotatoes before storage at about 68 F. Good curing practices should reduce storage losses.",
+          "Keep harvested sweetpotatoes away from heat sources.",
+          "Increased cutting height of the slips would be beneficial.",
+          "Biocontrol with microorganism Bacillus contaminans NZ.",
+          "Treatment with methyl jasmonate (MJ) or ethylene (ET) induced partial resistance.",
+          "Treatment with exogenous auxin conferred partial resistance.",
+          "Evaluation of transgenic plants overexpressing Thaumatin-like proteins (TLPs) gene of Camellia sinensis (CsTLP).",
+          "Selection of plant cultivars most appropriate for different climatic conditions.",
+          "Select for resistance to both traits in environments where both soil moisture stress and charcoal rot are high."
+        ],
+        "url": "https://wiki.bugwood.org/Macrophomina_phaseolina_(charcoal_rot_of_sweetpotato)",
+        "quote": "Fungicides or splash barriers such as mulches might be helpful. Labeled products change, but two currently labeled products include Botran, Quadris and many biologicals."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Pythium Root And Stem Rot",
+      "pathogen_scientific_name": {
+        "value": "Macrophomina phaseolina",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8100579/",
+        "quote": "Macrophomina phaseolina is a generalist soil-borne fungus present all over the world... It cause diseases such as stem and root rot",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8100579/",
+        "quote": "Macrophomina phaseolina is a generalist soil-borne fungus present all over the world"
+      },
+      "affected_parts": {
+        "value": [
+          "Stem",
+          "Root"
+        ],
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8100579/",
+        "quote": "It cause diseases such as stem and root rot"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "",
+          "url": "",
+          "quote": ""
+        },
+        "diagnostic_features": {
+          "value": "",
+          "url": "",
+          "quote": ""
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "confidence": "low",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Fusarium Damping-Off",
+      "pathogen_scientific_name": {
+        "value": "Macrophomina phaseolina",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8100579/",
+        "quote": "Macrophomina phaseolina is a generalist soil-borne fungus present all over the world... It cause diseases such as stem and root rot, charcoal rot and seedling blight",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8100579/",
+        "quote": "Macrophomina phaseolina is a generalist soil-borne fungus present all over the world"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Root",
+          "Whole plant"
+        ],
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8100579/",
+        "quote": "phytotoxic metabolites produced by M. phaseolina have been described, including phaseolinon, botryodiplodin and patulin, which are believed to play a role in the initial stages of infection, causing wilting of seedlings and formation of necrotic lesions on leaves and roots"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Wilting of seedlings and formation of necrotic lesions on leaves and roots, associated with phytotoxic metabolites produced by the fungus during early infection.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8100579/",
+          "quote": "phytotoxic metabolites produced by M. phaseolina have been described, including phaseolinon, botryodiplodin and patulin, which are believed to play a role in the initial stages of infection, causing wilting of seedlings and formation of necrotic lesions on leaves and roots"
+        },
+        "diagnostic_features": {
+          "value": "",
+          "url": "",
+          "quote": ""
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Fusarium Root Rot And Wilt",
+      "pathogen_scientific_name": {
+        "value": "Fusarium solani-melongenae",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9430127/",
+        "quote": "Whole-Genome Sequencing and Comparative Genome Analysis of Fusarium solani-melongenae Causing Fusarium Root and Stem Rot in Sweetpotatoes",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9430127/",
+        "quote": "The pathogenic fungus CRI 24-3 was isolated and sequenced"
+      },
+      "affected_parts": {
+        "value": [
+          "Root",
+          "Stem",
+          "Foliar"
+        ],
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9430127/",
+        "quote": "water-soaked lesions initially appeared on the basal stem of the FRST-infected sweetpotato ... The upper stem and leaves gradually became chlorotic and blighted as the disease spread. Storage roots exhibited concave lesions with clear cyclic margins"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Water-soaked lesions initially appear on the basal stem, with reddish perithecia covering the necrotic basal stem in humid weather; upper stems and leaves become chlorotic and blighted, and storage roots develop concave lesions with cyclic margins, white hyphae, and cracked necrotic tissues inside the tuber.",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9430127/",
+          "quote": "Field analysis indicated that water-soaked lesions initially appeared on the basal stem of the FRST-infected sweetpotato ( Fig. 1A ). Moreover, abundant reddish perithecia superficially covering the necrotic basal stem were observed during humid or rainy weather ( Fig. 1B ). The upper stem and leaves gradually became chlorotic and blighted as the disease spread. Storage roots exhibited concave lesions with clear cyclic margins, and white hyphae were distributed over sunken lesions together with cracked necrotic tissues inside the tuber"
+        },
+        "diagnostic_features": {
+          "value": "Abundant reddish perithecia superficially covering the necrotic basal stem during humid or rainy weather; storage roots with concave lesions having clear cyclic margins and white hyphae over sunken lesions with cracked necrotic tissues inside the tuber.",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9430127/",
+          "quote": "abundant reddish perithecia superficially covering the necrotic basal stem were observed during humid or rainy weather ... Storage roots exhibited concave lesions with clear cyclic margins, and white hyphae were distributed over sunken lesions together with cracked necrotic tissues inside the tuber"
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Fusarium Lateritium Nees",
+      "pathogen_scientific_name": {
+        "value": "Fusarium oxysporum",
+        "url": "https://www.arc.agric.za/arc-vopi/Pages/Crop%20Protection/Fusarium-wilt-of-sweet-potatoes.aspx",
+        "quote": "Fusarium wilt (FW) and surface rot on the tubers are caused by the fungal pathogen  Fusarium oxysporum.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.arc.agric.za/arc-vopi/Pages/Crop%20Protection/Fusarium-wilt-of-sweet-potatoes.aspx",
+        "quote": "are caused by the fungal pathogen  Fusarium oxysporum"
+      },
+      "affected_parts": {
+        "value": [
+          "Root"
+        ],
+        "url": "https://www.arc.agric.za/arc-vopi/Pages/Crop%20Protection/Fusarium-wilt-of-sweet-potatoes.aspx",
+        "quote": "circular, dark brown to pale, firm, dry and superficial depressed lesions on the storage roots"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Surface rot is characterized by circular, dark brown to pale, firm, dry, superficial depressed lesions/sunken spots on the surface of the storage roots; spot areas gradually enlarge and become conspicuous in 6 to 8 weeks.",
+          "url": "https://www.arc.agric.za/arc-vopi/Pages/Crop%20Protection/Fusarium-wilt-of-sweet-potatoes.aspx",
+          "quote": "Fusarium surface rot consists of circular, dark brown to pale, firm, dry and superficial depressed lesions on the storage roots."
+        },
+        "diagnostic_features": {
+          "value": "Dried circular lesions on the surface of storage roots that enlarge with age; surface of roots shrinks but lesions stay close to the surface, with surrounding tissue dried, resulting in hard and mummified storage roots. Infection does not penetrate deep into the storage roots, unlike root rot caused by Fusarium solani.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7238964/",
+          "quote": "Dried circular lesions on the surface of the sweetpotato storage roots were observed at the early stages of their infection, which became larger with age. The surface of the roots shrunk, but the lesions stayed reasonably close to the surface of the root. The tissue surrounding the lesion was dried, resulting in hard and mummified storage roots"
+        },
+        "look_alikes": {
+          "value": [
+            "root rot caused by Fusarium solani"
+          ],
+          "url": "https://www.arc.agric.za/arc-vopi/Pages/Crop%20Protection/Fusarium-wilt-of-sweet-potatoes.aspx",
+          "quote": "unlike root rot, caused by Fusarium solani , that usually infect the inner root tissue as well"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Cultural practices to minimize storage problems",
+          "Chemical applications to remove pathogens from storage roots",
+          "Microbially sourced antifungal agents and chemicals",
+          "Antagonistic Trichoderma harzianum strains (CMML20-26 and CMML20-27)",
+          "Resistant varieties (e.g., Beniharuka, Yulmi, Pungwanmi, Hogammi)",
+          "Reduce mechanical injury and use proper management practices, including curing",
+          "Proper sanitation to reduce infection in storage"
+        ],
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7238964/",
+        "quote": "The surface rot disease could be reduced by reducing the mechanical injury and proper management practices, including curing"
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Rhizopus Soft Rots",
+      "pathogen_scientific_name": {
+        "value": "Rhizopus stolonifer",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11989222/",
+        "quote": "Soft rotting caused by Rhizopus stolonifer is one of the most important postharvest decays in Kokei No. 14 organic sweet potato roots.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11989222/",
+        "quote": "The fungal pathogen Rhizopus stolonifer was isolated from diseased organic sweet potato roots"
+      },
+      "affected_parts": {
+        "value": [
+          "Root"
+        ],
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11989222/",
+        "quote": "postharvest decays in Kokei No. 14 organic sweet potato roots"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Roots show visible softening of the lesion and/or Rhizopus fungal mass.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11989222/",
+          "quote": "The roots were considered infected when a visible softening of the lesion and/or Rhizopus fungal mass were observed."
+        },
+        "diagnostic_features": {
+          "value": "Visible softening of the lesion and/or Rhizopus fungal mass on the root surface; decay rated on a scale of 0 to 4.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11989222/",
+          "quote": "The roots were considered infected when a visible softening of the lesion and/or Rhizopus fungal mass were observed."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Maintain roots at low temperatures (10-15 °C) to reduce respiration during storage, transit, and retail displays",
+          "Fungicide applications during the harvesting stage",
+          "Curing and maintaining the cold chain",
+          "High voltage alternating electric field, chlorine dioxide, or nitric oxide-modified atmosphere packaging",
+          "Essential oils (carvacrol, thymol, thyme oil); thymol and thyme oil at 300 mg/L and carvacrol at 500 mg/L most effective",
+          "Vapor phase of carvacrol, thymol, and thyme oil is more effective than contact phase",
+          "Cultural practices to overcome or minimize storage problems",
+          "Chemicals applied to remove pathogens from storage roots"
+        ],
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11989222/",
+        "quote": "the common ones maintain roots at low temperatures (10-15 °C) to reduce respiration rate during root storage, transit, and retail displays, or fungicide applications during the harvesting stage... postharvest root decay problems are primarily managed by curing, maintaining the cold chain, and occasionally, by the use of high voltage alternating electric field, chlorine dioxide, or a nitric oxide-modified atmosphere package"
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Rhizopus stolonifer",
+          "alternative_value": "Rhizopus stolonifer and Rhizopus oryzae",
+          "alternative_source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8625119/",
+          "note": "PMC8625119 lists soft rot as caused by both R. stolonifer and R. oryzae; PMC11989222 and PMC4829637 attribute it specifically to R. stolonifer."
+        }
+      ]
+    },
+    {
+      "disease_name": "Penicillium Fungi",
+      "pathogen_scientific_name": {
+        "value": "Penicillium spp.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8625119/",
+        "quote": "blue mold ( Penicillium spp. )",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8625119/",
+        "quote": "Commonly observed postharvest diseases caused by fungi include ... blue mold ( Penicillium spp. )"
+      },
+      "affected_parts": {
+        "value": [
+          "Root"
+        ],
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8625119/",
+        "quote": "In blue mold symptom, the bluish-green sporulation was abundantly visible on the surface of the storage roots."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Bluish-green sporulation is abundantly visible on the surface of the storage roots.",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8625119/",
+          "quote": "In blue mold symptom, the bluish-green sporulation was abundantly visible on the surface of the storage roots."
+        },
+        "diagnostic_features": {
+          "value": "Bluish-green sporulation abundantly visible on the surface of the storage roots.",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8625119/",
+          "quote": "In blue mold symptom, the bluish-green sporulation was abundantly visible on the surface of the storage roots."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Antagonistic Trichoderma harzianum strains (CMML20-26 and CMML20-27)"
+        ],
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8625119/",
+        "quote": "Pathogens causing postharvest diseases of sweet potatoes were screened for antifungal activity with two antagonistic Trichoderma harzianum strains (CMML20-26 and CMML20-27)"
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Java Black Rot",
+      "pathogen_scientific_name": {
+        "value": "Lasiodiplodia theobromae",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8625119/",
+        "quote": "java black rot ( Botryodiplodia theobromae )",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8625119/",
+        "quote": "Commonly observed postharvest diseases caused by fungi include ... java black rot ( Botryodiplodia theobromae )"
+      },
+      "affected_parts": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "",
+          "url": "",
+          "quote": ""
+        },
+        "diagnostic_features": {
+          "value": "",
+          "url": "",
+          "quote": ""
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Cultural practices to overcome or minimize storage problems",
+          "Chemicals applied to remove pathogens from storage roots"
+        ],
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8625119/",
+        "quote": "Cultural practices are generally applied to overcome or minimize the problems associated with the storage of sweet potatoes. In addition, chemicals can also be applied to remove pathogens from storage roots [ 21 , 22 ]."
+      },
+      "confidence": "medium",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Lasiodiplodia theobromae",
+          "alternative_value": "Diplodia gossypina",
+          "alternative_source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4829637/",
+          "note": "PMC4829637 reports Diplodia gossypina; PMC8625119 reports Botryodiplodia theobromae. Both are taxonomic synonyms of the currently accepted name Lasiodiplodia theobromae."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Lasiodiplodia theobromae",
+          "alternative_value": "Botryodiplodia theobromae",
+          "alternative_source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8625119/",
+          "note": "Botryodiplodia theobromae is a synonym of the currently accepted Lasiodiplodia theobromae."
+        }
+      ]
+    },
+    {
+      "disease_name": "Bread Mold",
+      "pathogen_scientific_name": {
+        "value": "Aspergillus wentii",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8625119/",
+        "quote": "this is the first report of sweet potato storage root rot diseases caused by A. wentii",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8625119/",
+        "quote": "Symptoms of sweet potato postharvest diseases collected from local markets in Korea: ( A ) Fusarium surface rot, ( B ) charcoal rot, ( C ) Aspergillus mold"
+      },
+      "affected_parts": {
+        "value": [
+          "Root"
+        ],
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8625119/",
+        "quote": "this is the first report of sweet potato storage root rot diseases caused by A. wentii"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "",
+          "url": "",
+          "quote": ""
+        },
+        "diagnostic_features": {
+          "value": "",
+          "url": "",
+          "quote": ""
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Antagonistic Trichoderma harzianum strains (CMML20-26 and CMML20-27)"
+        ],
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8625119/",
+        "quote": "Pathogens causing postharvest diseases of sweet potatoes were screened for antifungal activity with two antagonistic Trichoderma harzianum strains (CMML20-26 and CMML20-27)"
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Fusarium Wilt",
+      "pathogen_scientific_name": {
+        "value": "Fusarium oxysporum f. sp. batatas",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7238964/",
+        "quote": "The forma specialis of the Fusarium oxysporum was determined and characterized on sweetpotato, and this is F. oxysporum f. sp. batatas",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.arc.agric.za/arc-vopi/Pages/Crop%20Protection/Fusarium-wilt-of-sweet-potatoes.aspx",
+        "quote": "are caused by the fungal pathogen  Fusarium oxysporum"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Vascular",
+          "Root",
+          "Whole plant"
+        ],
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7238964/",
+        "quote": "The first symptom of wilt appears in the youngest leaves by changing the color to light yellow and yellowing between vines. Eventually, the entire plant collapses and dies. The pathogen can invade the fleshy roots and causes blackened ring about one-quarter inch below the surface"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "The first symptom of wilt appears in the youngest leaves by changing the color to light yellow and yellowing between vines; eventually the entire plant collapses and dies. Symptoms include wilting of the plant, leaf yellowing and browning of the vascular tissues in the lower stems.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7238964/",
+          "quote": "The first symptom of wilt appears in the youngest leaves by changing the color to light yellow and yellowing between vines. Eventually, the entire plant collapses and dies."
+        },
+        "diagnostic_features": {
+          "value": "Typical discolouration (browning) of the vascular tissue of a stem; stem internal vascular bundle browning and cracking; the pathogen invades fleshy roots and causes a blackened ring about one-quarter inch below the surface.",
+          "url": "https://www.arc.agric.za/arc-vopi/Pages/Crop%20Protection/Fusarium-wilt-of-sweet-potatoes.aspx",
+          "quote": "Fusarium wilt of sweet potato, caused by Fusarium oxysporum, resulting in typical discolouration of the vascular tissue of a stem."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Screen cultivars/varieties for Fusarium wilt resistance",
+          "Plant resistant cultivars (e.g., USDA P.I. 153655, Tinian; Pungwanmi, Jinyulmi, Pungwonmi, Matnami, Yeonhwangmi, Healthymi, Singeonmi)",
+          "Biological control with non-pathogenic F. oxysporum and Trichoderma species",
+          "Plant growth promoting rhizobacteria (PGPR) for FW disease suppression"
+        ],
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7238964/",
+        "quote": "Screening cultivars or varieties for Fusarium wilt is one of the effective ways to select the best resistant variety as well as to avoid the occurrence of the disease. Excellent control of this disease has been achieved by introducing high levels of resistance into new cultivars (USDA P.I. 153655, Tinian)"
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Fusarium oxysporum f. sp. batatas",
+          "alternative_value": "Fusarium oxysporum",
+          "alternative_source_url": "https://www.arc.agric.za/arc-vopi/Pages/Crop%20Protection/Fusarium-wilt-of-sweet-potatoes.aspx",
+          "note": "ARC reports the species-level name; PMC7238964 specifies the more specific forma specialis 'f. sp. batatas' for sweetpotato"
+        }
+      ]
+    },
+    {
+      "disease_name": "Scurf",
+      "pathogen_scientific_name": {
+        "value": "Monilochaetes infuscans",
+        "url": "https://plantpathology.ces.ncsu.edu/2021/03/how-to-identify-and-manage-sweeetpotato-scurf-caused-by-monilochaetes-infuscans/",
+        "quote": "Sweetpotato scurf is caused by the soilborne fungus Monilochaetes infuscans.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://plantpathology.ces.ncsu.edu/2021/03/how-to-identify-and-manage-sweeetpotato-scurf-caused-by-monilochaetes-infuscans/",
+        "quote": "Sweetpotato scurf is caused by the soilborne fungus Monilochaetes infuscans."
+      },
+      "affected_parts": {
+        "value": [
+          "Storage root",
+          "Skin"
+        ],
+        "url": "https://plantpathology.ces.ncsu.edu/2021/03/how-to-identify-and-manage-sweeetpotato-scurf-caused-by-monilochaetes-infuscans/",
+        "quote": "Sweetpotato roots exhibit expanding brown lesions in the surface of storage roots... This disease is limited to the skin of the root with sweetpotato flesh remaining undamaged."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Sweetpotato roots exhibit expanding brown lesions on the surface of storage roots that can eventually cover the entire surface under high humidity; the disease is limited to the skin with flesh remaining undamaged.",
+          "url": "https://plantpathology.ces.ncsu.edu/2021/03/how-to-identify-and-manage-sweeetpotato-scurf-caused-by-monilochaetes-infuscans/",
+          "quote": "Sweetpotato roots exhibit expanding brown lesions in the surface of storage roots (Figure 1). These lesions can eventually cover the entire surface of the sweetpotato under high humidity. This disease is limited to the skin of the root with sweetpotato flesh remaining undamaged."
+        },
+        "diagnostic_features": {
+          "value": "Brown lesions limited to the skin of the root (flesh undamaged); in advanced cases roots become spongy, dry, hard, and shrunken. Unlike black rot, scurf lesions do not have a black center and do not extend into the flesh.",
+          "url": "https://plantpathology.ces.ncsu.edu/2021/03/how-to-identify-and-manage-sweeetpotato-scurf-caused-by-monilochaetes-infuscans/",
+          "quote": "In advanced cases of sweetpotato scurf, roots become spongy, dry, hard, and shrunken. Sweetpotato scurf can resemble black rot lesions, however, black rot lesions tend to have a black center due to pathogen sporulation and lesions can go into the sweetpotato flesh."
+        },
+        "look_alikes": {
+          "value": [
+            "Black rot"
+          ],
+          "url": "https://plantpathology.ces.ncsu.edu/2021/03/how-to-identify-and-manage-sweeetpotato-scurf-caused-by-monilochaetes-infuscans/",
+          "quote": "Sweetpotato scurf can resemble black rot lesions, however, black rot lesions tend to have a black center due to pathogen sporulation and lesions can go into the sweetpotato flesh."
+        }
+      },
+      "treatments": {
+        "value": [
+          "3-year crop rotation as part of an integrated management approach",
+          "Avoid heavy soils with high organic matter; prefer light, sandy soils",
+          "Vigilant selection of seed roots for bedding; wetting roots makes scurf spots easier to see",
+          "Apply effective fungicides to seed roots following label instructions",
+          "When harvesting slips, cut above the soil level to prevent fungal infection",
+          "Treat slips with effective fungicides, especially in fields with scurf history",
+          "Preventive fungicides for seed roots at bedding: Mertect (thiabendazole), Botran (dicloran), Maxim 4FS (fludioxonil), Dynasty (azoxystrobin)",
+          "Use certified seed for planting production fields",
+          "Properly sanitize tools"
+        ],
+        "url": "https://plantpathology.ces.ncsu.edu/2021/03/how-to-identify-and-manage-sweeetpotato-scurf-caused-by-monilochaetes-infuscans/",
+        "quote": "Thus, a 3-year crop rotation can be an effective strategy as part of an integrated management approach. The disease is less prevalent in light, sandy soils and worse in heavy soils especially those containing considerable amounts of organic matter. No resistant varieties are available, therefore avoidance strategies must be put in place to prevent losses due to sweetpotato scurf. ... Preventive fungicides for use on seed roots during bedding include Mertect (thiabendazole), Botran (dicloran), Maxim 4FS (fludioxonil), and Dynasty (azoxystrobin). To prevent introducing scurf into your fields we recommend using certified seed for planting production fields."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": []
+    }
+  ],
+  "crop": "Sweet Potato",
+  "generated_date": "2026-05-27"
+}
