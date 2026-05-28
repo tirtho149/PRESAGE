@@ -219,14 +219,12 @@ def _render_candidates(candidates: List[Dict[str, Any]]) -> str:
 # ---------------------------------------------------------------------------
 
 def _claude_available() -> bool:
-    """``claude`` CLI on PATH (headless mode; no API key path)."""
-    for p in (os.environ.get("PATH") or "").split(os.pathsep):
-        try:
-            if os.path.exists(os.path.join(p, "claude")):
-                return True
-        except (TypeError, OSError):
-            continue
-    return False
+    """``claude`` CLI on PATH (headless mode; no API key path).
+
+    Uses shutil.which so Windows PATHEXT (.exe / .cmd / .bat) is honoured.
+    """
+    import shutil
+    return shutil.which("claude") is not None
 
 
 def _normalize_delta(

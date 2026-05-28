@@ -70,7 +70,321 @@
           "alternative_source_url": "https://extension.psu.edu/apple-disease-black-rot-and-frogeye-leaf-spot",
           "note": "Both sources cite Botryosphaeria obtusa as a synonym; canonical form uses the current accepted name."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Kentucky": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "'frog-eye' leaf spots with purplish/reddish edges and tan interiors",
+              "image_shows": "irregular shapes",
+              "image_quote": "The lesions are scattered across the leaf surfaces.",
+              "image_id": "bugwood::5368721",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources describe frogeye lesions as round to irregularly lobed, which corroborates the candidate's 'irregular shapes' framing but only partially since canonical lesions are predominantly circular.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-fru-07",
+                  "quote": "The round to irregularly lobed spots develop a light brown-to-gray center surrounded by one or more dark-brown concentric rings and a purple margin giving it a 'frogeye' appearance."
+                },
+                {
+                  "url": "https://extension.psu.edu/apple-disease-black-rot-and-frogeye-leaf-spot",
+                  "quote": "lesions are circular, tan to brown with distinct purple margins"
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "'frog-eye' leaf spots with purplish/reddish edges and tan interiors",
+              "image_shows": "smooth texture",
+              "image_quote": "The lesions do not show signs of being sunken, raised, fuzzy, felty, waxy, or water-soaked.",
+              "image_id": "bugwood::5368721",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension descriptions of mature frogeye lesions are consistent with a flat, smooth surface (only the small central pycnidia are pimple-like); the candidate's 'smooth, not sunken/raised/fuzzy' fits the standard literature.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.psu.edu/apple-disease-black-rot-and-frogeye-leaf-spot",
+                  "quote": "mature lesions are circular, tan to brown with distinct purple margins"
+                },
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-fru-07",
+                  "quote": "Multiple small, black pycnidia (pimple-like fruiting bodies of the fungus) may appear in the centers"
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "'frog-eye' leaf spots with purplish/reddish edges and tan interiors",
+              "image_shows": "brown spots with reddish-brown margins",
+              "image_quote": "There are brown spots with a reddish-brown margin, indicating necrotic tissue.",
+              "image_id": "bugwood::5368721",
+              "verification_status": "weakly_supported",
+              "reasoning": "Brown necrotic centers are well documented; the 'reddish-brown' margin is a plausible field rendering of the canonical purple/purplish-red margin, so the observation is partially supported.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/black-rot-apple",
+                  "quote": "Leaf margins remain purple, while the centers turn brown, tan, or yellowish brown, giving the lesions a 'frogeye' appearance."
+                },
+                {
+                  "url": "https://apples.ces.ncsu.edu/2018/03/leaf-spots-of-bother-the-troublesome-3/",
+                  "quote": "small purple flecks on leaves, which expand to 1/8\"-1/4\" lesions with occasional purple margins and tan/brown centers"
+                }
+              ]
+            },
+            {
+              "field": "spread_pattern",
+              "canonical_says": "leaf lesions show purple margins with brown/tan centers giving a 'frogeye' appearance",
+              "image_shows": "irregular lesion shapes, some crossing the veins",
+              "image_quote": "The leaf lesions are irregular in shape.",
+              "image_id": "bugwood::5368721",
+              "verification_status": "weakly_supported",
+              "reasoning": "Frogeye lesions are described as round to irregularly lobed and are not bounded by leaf veins, so 'some crossing the veins' is consistent with the typical pattern, though not explicitly stated in any single source.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-fru-07",
+                  "quote": "The round to irregularly lobed spots develop a light brown-to-gray center surrounded by one or more dark-brown concentric rings"
+                },
+                {
+                  "url": "https://extension.unh.edu/resource/frogeye-leaf-spot-black-rot-apple-0",
+                  "quote": "Lesions are more uniformly distributed throughout the tree canopy"
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "concentric bands of mahogany brown to black alternating with brown bands form on rotted fruit",
+              "image_shows": "target spots with alternating light and dark concentric rings",
+              "image_quote": "The image shows leaves with lesions having a target spot pattern.",
+              "image_id": "bugwood::5368721",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension fact sheets explicitly describe concentric alternating light/dark rings within frogeye lesions, directly corroborating the 'target spot' observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.psu.edu/apple-disease-black-rot-and-frogeye-leaf-spot",
+                  "quote": "as a lesion ages, a series of concentric rings develops around the original infection point"
+                },
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-fru-07",
+                  "quote": "a light brown-to-gray center surrounded by one or more dark-brown concentric rings"
+                },
+                {
+                  "url": "https://apples.ces.ncsu.edu/2018/03/leaf-spots-of-bother-the-troublesome-3/",
+                  "quote": "a series of concentric rings develops around the original infection point"
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "'frog-eye' leaf spots with purplish/reddish edges and tan interiors",
+              "image_shows": "dominant dark brown spots with pale green surrounding areas and reddish-brown discoloration",
+              "image_quote": "The lesion centers are tan with brown spots, the margins are chocolate-brown, and there is a chlorotic yellow halo.",
+              "image_id": "bugwood::5368721",
+              "verification_status": "weakly_supported",
+              "reasoning": "Dark-brown lesion centers and reddish-brown discoloration align with canonical frogeye coloration; the 'pale green surround' is plausibly healthy tissue but the image_quote's chlorotic yellow halo is atypical (handled separately in chlorosis/look-alikes entries).",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/black-rot-apple",
+                  "quote": "centers turn brown, tan, or yellowish brown, giving the lesions a 'frogeye' appearance"
+                },
+                {
+                  "url": "https://extension.psu.edu/apple-disease-black-rot-and-frogeye-leaf-spot",
+                  "quote": "circular, tan to brown with distinct purple margins"
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "medium fraction of the visible leaf area affected",
+              "image_quote": "The photo displays multiple apple leaves with numerous lesions, each showing a distinct 'frog-eye' pattern with a chlorotic halo around a brown center.",
+              "image_id": "bugwood::5368721",
+              "verification_status": "weakly_supported",
+              "reasoning": "Numerous lesions per leaf at moderate severity is a documented presentation of frogeye in eastern US orchards including Kentucky.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plantpathology.mgcafe.uky.edu/files/ppfs-fr-t-03.pdf",
+                  "quote": "All three phases can cause significant damage in Kentucky home and commercial orchards"
+                },
+                {
+                  "url": "https://extension.unh.edu/resource/frogeye-leaf-spot-black-rot-apple-0",
+                  "quote": "Heavily infected trees develop chlorosis and can drop all their leaves"
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "leaves are curled up",
+              "image_quote": "The leaves are curled up and down along their edges.",
+              "image_id": "bugwood::5368721",
+              "verification_status": "novel_plausible",
+              "reasoning": "Leaf curling is not a documented primary symptom of frogeye leaf spot, but moderate curling is plausible on heavily infected/chlorotic leaves; flagged for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "ovate with pointed tips",
+              "image_quote": "The leaves are ovate with pointed tips.",
+              "image_id": "bugwood::5368721",
+              "verification_status": "novel_plausible",
+              "reasoning": "This describes apple leaf morphology (host trait) rather than a disease sign; coherent with apple (Malus) leaves but not a disease observation per se.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5368721"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 7,
+            "provisional_count": 2,
+            "contradictory_count": 3,
+            "duplicates_count": 0,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "'frog-eye' leaf spots with purplish/reddish edges and tan interiors",
+                "image_shows": "tan centers with chocolate-brown margins and chlorotic yellow halos",
+                "image_quote": "The lesion centers are tan with a chocolate-brown margin.",
+                "image_id": "bugwood::5368721",
+                "verification_status": "contradictory",
+                "reasoning": "Canonical frogeye margins are purple, not chocolate-brown, and chlorotic yellow halos around individual lesions are diagnostic of Glomerella leaf spot rather than frogeye/black rot, so the margin+halo description contradicts the published differential.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://extension.umn.edu/plant-diseases/black-rot-apple",
+                    "quote": "Leaf margins remain purple, while the centers turn brown, tan, or yellowish brown"
+                  },
+                  {
+                    "url": "https://apples.ces.ncsu.edu/2018/06/apple-disease-update-6-3-18-welcome-glomerella/",
+                    "quote": "concentric rings become visible on the surface of the spots and purple or chlorotic halos develop around the lesions [Glomerella leaf spot]"
+                  }
+                ]
+              },
+              {
+                "field": "diagnostic_features",
+                "canonical_says": "purplish/reddish edges and tan interiors; small black pycnidia appear in the centers of leaf lesions",
+                "image_shows": "chlorotic halos around necrotic centers",
+                "image_quote": "There are chlorotic halos surrounding necrotic centers on the leaves.",
+                "image_id": "bugwood::5368721",
+                "verification_status": "contradictory",
+                "reasoning": "Frogeye produces overall leaf chlorosis at high severity but does not typically show chlorotic halos around individual lesions; that halo pattern is characteristic of Glomerella leaf spot, so the observation contradicts the canonical frogeye diagnostic signature.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://apples.ces.ncsu.edu/2018/06/apple-disease-update-6-3-18-welcome-glomerella/",
+                    "quote": "purple or chlorotic halos develop around the lesions [in Glomerella leaf spot]"
+                  },
+                  {
+                    "url": "https://extension.unh.edu/resource/frogeye-leaf-spot-black-rot-apple-0",
+                    "quote": "Heavily infected leaves become chlorotic and drop"
+                  }
+                ]
+              },
+              {
+                "field": "look_alikes",
+                "canonical_says": "bitter rot",
+                "image_shows": "frog-eye pattern with a chlorotic halo around a brown center",
+                "image_quote": "The leaf lesions are irregular in shape.",
+                "image_id": "bugwood::5368721",
+                "verification_status": "contradictory",
+                "reasoning": "A chlorotic halo around a brown center on apple foliage is the hallmark of Glomerella leaf spot, not frogeye/black rot, so describing the canonical lesion as having that halo conflates frogeye with its primary look-alike.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://apples.ces.ncsu.edu/2018/06/apple-disease-update-6-3-18-welcome-glomerella/",
+                    "quote": "purple or chlorotic halos develop around the lesions [in GLS]"
+                  },
+                  {
+                    "url": "https://content.ces.ncsu.edu/glomerella-leaf-spot-and-fruit-rot",
+                    "quote": "Early lesions of GLS look strikingly similar to frogeye leaf spot... However, inside the brown spots of GLS, irregular-shaped concentric rings differentiate this spot"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "Maine": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "sunken reddish-brown cankers on branches",
+              "image_shows": "Rough, textured surface with dark gray/black and brown patches.",
+              "image_quote": "The stem surface is covered with a dense, textured pattern of irregular shapes, resembling a rough, scale-like texture.",
+              "image_id": "bugwood::5529859",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources independently describe rough, cracked, scale-like / blistered bark texture as a defining feature of mature Diplodia seriata cankers on apple stems.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/black-rot-apple",
+                  "quote": "Cankers appear as a sunken, reddish-brown area on infected branches and often have rough or cracked bark."
+                },
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-fru-07",
+                  "quote": "Cankers may appear as a superficial roughening of the bark; or the bark may be killed and conspicuously cracked, especially at the margins."
+                },
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/apple-malus-spp-diplodia-canker",
+                  "quote": "Old cankers are dry and appear blistered, peeling and revealing black pimple-like, spore-carrying structures."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "small black pycnidia appear in the centers of leaf lesions",
+              "image_shows": "Dark gray/black and brown hues.",
+              "image_quote": "The stem surface displays a dense, scale-like texture with dark gray/black and brown hues.",
+              "image_id": "bugwood::5529859",
+              "verification_status": "weakly_supported",
+              "reasoning": "Aging Diplodia cankers do darken from reddish-brown to gray/black as wood shrinks and pycnidia emerge, supporting the gray-black coloration in addition to canonical reddish-brown.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/apple-malus-spp-diplodia-canker",
+                  "quote": "As symptoms progress, the wood will shrink and become black with cracked edges."
+                },
+                {
+                  "url": "https://extension.wvu.edu/files/d/7630f5af-2f89-489d-a411-fc5410982ced/black-rot-disease-in-apples.pdf",
+                  "quote": "Black rot cankers show dry, blistery and peeling lesions revealing black, pimple-like, spore-carrying structures."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Dominant dark gray/black with secondary brown and green hues.",
+              "image_quote": "The affected tissue is predominantly black with some brown and gray tones.",
+              "image_id": "bugwood::5529859",
+              "verification_status": "novel_plausible",
+              "reasoning": "Dark gray/black + brown is consistent with aged Diplodia cankers per literature, but the green hue is not disease-diagnostic (likely surrounding lichen/algae or healthy bark) so the full palette is flagged for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5529859"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 2,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 3,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Apple Scab",
@@ -102,7 +416,7 @@
         "diagnostic_features": {
           "value": "Small, velvety, olive green lesions with unclear margins on the lower leaf surface that age into darker spots with more distinct margins; lesions may appear more numerous closer to the mid-vein of the leaf; on some crabapples, infections may be reddish in color.",
           "url": "https://ohioline.osu.edu/factsheet/plpath-fru-23",
-          "quote": "At first, the lesions are small, velvety, olive green in color, and have unclear margins (Figure 1Ã¢â‚¬â€œleft). On some crabapples, infections may be reddish in color."
+          "quote": "At first, the lesions are small, velvety, olive green in color, and have unclear margins (Figure 1\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u00a2\u00e2\u201a\u00ac\u00c5\u201cleft). On some crabapples, infections may be reddish in color."
         },
         "look_alikes": {
           "value": [],
@@ -124,11 +438,427 @@
           "Organic and backyard growers can use biocontrol products to suppress disease development, combined with resistant varieties for maximum control."
         ],
         "url": "https://extension.unh.edu/resource/apple-scab-fact-sheet",
-        "quote": "Sanitation is an effective management tool for apple scab. Rake and destroy all leaves in the fall (or chop leaves with a mower). Application of urea to trees after harvest, but just prior to fall leaf drop helps to speed up leaf decomposition. Prune trees regularly to increase air movement and sunlight penetration into the canopy, which speeds up drying of the leaves and fruit, thus reducing infection. Avoid overhead irrigation. Use resistant varieties ( Redfree, Prima, Liberty, Freedom, Jonafree, Macfree, Sir Prize, WilliamÃ¢â‚¬â„¢s Pride, Enterprise, Gold Rush , and Pristine ). Chemical Control - Apply protectant fungicides at green tip..."
+        "quote": "Sanitation is an effective management tool for apple scab. Rake and destroy all leaves in the fall (or chop leaves with a mower). Application of urea to trees after harvest, but just prior to fall leaf drop helps to speed up leaf decomposition. Prune trees regularly to increase air movement and sunlight penetration into the canopy, which speeds up drying of the leaves and fruit, thus reducing infection. Avoid overhead irrigation. Use resistant varieties ( Redfree, Prima, Liberty, Freedom, Jonafree, Macfree, Sir Prize, William\u00c3\u0192\u00c2\u00a2\u00c3\u00a2\u00e2\u20ac\u0161\u00c2\u00ac\u00c3\u00a2\u00e2\u20ac\u017e\u00c2\u00a2s Pride, Enterprise, Gold Rush , and Pristine ). Chemical Control - Apply protectant fungicides at green tip..."
       },
       "confidence": "high",
       "num_sources": 2,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Connecticut": {
+          "deltas": [
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image displays multiple dark brown lesions on the apple and leaves.",
+              "image_quote": "The fruit has multiple dark brown, irregular lesions on its surface.",
+              "image_id": "bugwood::5594697",
+              "verification_status": "novel_plausible",
+              "reasoning": "Canonical KB does not specify severity; multiple coalescing dark lesions on both fruit and leaves is coherent with advanced scab infection described in extension sources but the observation itself is too generic to verify as a state-specific signal.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5594697"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 3,
+            "dropped_contradictory": []
+          }
+        },
+        "Indiana": {
+          "deltas": [
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "Scabby lesions cover over half the apple's surface.",
+              "image_quote": "The fruit displays significant damage with multiple brown lesions covering a large portion of its surface.",
+              "image_id": "bugwood::5601941",
+              "verification_status": "weakly_supported",
+              "reasoning": "Purdue Extension (Indiana) and UMN confirm severe scab can extensively cover and disfigure fruit surfaces, consistent with the candidate's observation of >50% surface coverage.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.extension.purdue.edu/extmedia/bp/bp-1-w.pdf",
+                  "quote": "Black, scabby spots of various sizes appear on fruits and often cause them to be dwarfed, cracked, and/or misshapen. In severe cases, apple trees severely infected with scab can be completely defoliated and the fruits reduced to distorted, blemished 'nubbins.'"
+                },
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/apple-scab",
+                  "quote": "As these lesions mature, they become dark brown to black, scabby, and can cause the underlying fruit tissue to become corky and cracked."
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Small, velvety, olive green lesions with unclear margins on the lower leaf surface that age into darker spots with more distinct margins; lesions may appear more numerous closer to the mid-vein of the leaf; on some crabapples, infections may be reddish in color.",
+              "image_shows": "There are no visible sporulation signs such as mycelium, spore masses, or pycnidia/fruiting bodies.",
+              "image_quote": "The fruit shows signs of decay, with concentric brown patches.",
+              "image_id": "bugwood::5601941",
+              "verification_status": "novel_plausible",
+              "reasoning": "Negative observation (absence of sporulation) is not directly contradicted; mature fruit lesions on Venturia inaequalis often become corky/scabby with reduced visible conidial mass, but the supporting image_quote describes concentric patches that do not corroborate the sporulation claim \u00e2\u20ac\u201d flag for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5601941"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 1,
+            "contradictory_count": 1,
+            "duplicates_count": 1,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "Lesions appear on leaves and fruit as light green circular spots that become olive green and velvety, later darkening and becoming scabby; severe infection causes leaf curling, puckering, and premature drop, and deformed cracked fruit.",
+                "image_shows": "The fruit shows signs of decay, with concentric brown patches.",
+                "image_quote": "The fruit is red with scabby lesions.",
+                "image_id": "bugwood::5601941",
+                "verification_status": "contradictory",
+                "reasoning": "Concentric brown patches are diagnostic of Black Rot (Botryosphaeria obtusa), not apple scab; Venturia inaequalis produces scabby, corky, non-concentric lesions, so the observation conflicts with the canonical pathology.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://extension.umn.edu/plant-diseases/apple-scab",
+                    "quote": "Apple scab caused by the fungus Venturia inaequalis first appears as olive-green or dark, velvety patches on the skin... lesions progress to bare, brown and corky spots."
+                  },
+                  {
+                    "url": "https://scienceinsights.org/brown-spots-on-apples-why-they-happen-and-what-to-do/",
+                    "quote": "Black Rot lesions start as light brown spots that darken and are often marked by distinct, concentric dark bands, resulting in a firm rot."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "Kentucky": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "olive green and velvety, later darkening and becoming scabby",
+              "image_shows": "The lesions appear raised and have a rough texture.",
+              "image_quote": "The lesions are dark brownish-black with raised and rough surfaces.",
+              "image_id": "bugwood::5407842",
+              "verification_status": "verified",
+              "reasoning": "Multiple sources (Plantix, Wikipedia) explicitly describe older apple scab lesions as raised with a rough/corky surface, matching the candidate observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plantix.net/en/library/plant-diseases/100006/apple-scab/",
+                  "quote": "The first sign of the disease is seen on leaves as small olive-green to dark brown spots which are generally circular and highly raised with a velvety texture. Older leaf lesions are typically raised, with a corresponding cupping on the underside of the leaf."
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Apple_scab",
+                  "quote": "As they develop further, they often coalesce and become raised, hard and corky."
+                }
+              ]
+            },
+            {
+              "field": "spread_pattern",
+              "canonical_says": "lesions may appear more numerous closer to the mid-vein of the leaf",
+              "image_shows": "The leaf veins show signs of clearing and necrosis.",
+              "image_quote": "The veins are translucent and there are dark, necrotic areas along the veins.",
+              "image_id": "bugwood::5407842",
+              "verification_status": "weakly_supported",
+              "reasoning": "Necrotic lesions following veins is supported by extension and pathology sources, but 'vein clearing' (translucent veins) is not a classic apple scab descriptor, so only partial support.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plantix.net/en/library/plant-diseases/100006/apple-scab/",
+                  "quote": "lesions are more elongate and often follow veins, but the same velvety brown look is present."
+                },
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/apple-scab",
+                  "quote": "leaf spots often form along the leaf veins"
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "severe infection causes leaf curling, puckering, and premature drop",
+              "image_shows": "The leaf shows signs of chlorosis with yellowing between the veins.",
+              "image_quote": "The leaf has yellowing between the veins.",
+              "image_id": "bugwood::5407842",
+              "verification_status": "weakly_supported",
+              "reasoning": "General leaf yellowing/chlorosis from apple scab is well documented by extension sources, though the specific interveinal pattern is not classically described.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/apple-scab",
+                  "quote": "leaves with many leaf spots turn yellow and drop by mid-summer"
+                },
+                {
+                  "url": "https://www.davey.com/insect-disease-resource-center/apple-scab/",
+                  "quote": "Severe cases can lead to yellowing of the leaves and early defoliation."
+                }
+              ]
+            }
+          ],
+          "image_ids": [
+            "bugwood::5407842"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 3,
+            "provisional_count": 0,
+            "contradictory_count": 1,
+            "duplicates_count": 6,
+            "dropped_contradictory": [
+              {
+                "field": "other",
+                "canonical_says": "(not specified)",
+                "image_shows": "The leaf shape is lanceolate.",
+                "image_quote": "The leaf is narrow with a long, pointed tip.",
+                "image_id": "bugwood::5407842",
+                "verification_status": "contradictory",
+                "reasoning": "Malus domestica leaves are elliptic-to-ovate per NC State Extension and Native Plant Trust references, not lanceolate; the candidate misidentifies the host leaf geometry.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://plants.ces.ncsu.edu/plants/malus-domestica/",
+                    "quote": "Apple leaves are generally simple, with an elliptical-to-ovate shape."
+                  },
+                  {
+                    "url": "https://gobotany.nativeplanttrust.org/species/malus/pumila/",
+                    "quote": "Leaf length is 3-6 inches and width is 1-3 inches... somewhat egg-shaped with the wider portion toward their base (ovate)"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "Maine": {
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Small, velvety, olive green lesions with unclear margins on the lower leaf surface that age into darker spots with more distinct margins; lesions may appear more numerous closer to the mid-vein of the leaf; on some crabapples, infections may be reddish in color.",
+              "image_shows": "Microscopic view of elongated fungal structures consistent with Venturia inaequalis conidiophores/conidia, the asexual sporulation form that erupts through the cuticle and creates the velvety lesion surface.",
+              "image_quote": "The image shows two fungal structures, likely spores, against a blue background.",
+              "image_id": "bugwood::5505167",
+              "verification_status": "weakly_supported",
+              "reasoning": "Peer-reviewed sources document V. inaequalis conidiophores/conidia with the elongated morphology shown; the observation is consistent with documented sporulation morphology but is generic and adds no Maine-specific signal.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9867426/",
+                  "quote": "The single-celled, uninucleate conidia are produced from lesions on conidiophores and emerge through the leaf cuticle, contributing to the velvety appearance of scab lesions."
+                },
+                {
+                  "url": "https://www.researchgate.net/figure/Morphology-of-dry-and-hydrated-conidia-of-Venturia-inaequalis-A-The-apex-of-nonturgid_fig1_23408039",
+                  "quote": "Morphology of dry and hydrated conidia of Venturia inaequalis ... nonturgid conidia form on conidiophores."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "Lesions appear on leaves and fruit as light green circular spots that become olive green and velvety, later darkening and becoming scabby; severe infection causes leaf curling, puckering, and premature drop, and deformed cracked fruit.",
+              "image_shows": "Two microscopic fungal structures resembling hyphae or conidiophores (not a stem surface \u00e2\u20ac\u201d this is a lab microscopy view).",
+              "image_quote": "The image shows two microscopic organisms.",
+              "image_id": "bugwood::5505167",
+              "verification_status": "novel_plausible",
+              "reasoning": "Candidate is mislabeled as stem_surface; the image is microscopy, not a stem photograph, and the structures shown are plausibly V. inaequalis conidiophores but offer no Maine-specific stem-surface evidence.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Image background is a uniform blue (microscopy slide/stain backdrop), not a disease-relevant color signal.",
+              "image_quote": "The background is a uniform blue color.",
+              "image_id": "bugwood::5505167",
+              "verification_status": "novel_plausible",
+              "reasoning": "Uniform blue is an artifact of microscopy imaging, not a disease attribute; no external evidence ties background color to apple scab diagnosis.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "(not specified)",
+              "image_shows": "Elongated fungal structures resembling hyphae or conidiophores \u00e2\u20ac\u201d morphologically generic and could be confused with other ascomycete conidiophores under low-power microscopy.",
+              "image_quote": "The image shows two elongated fungal structures resembling hyphae or conidiophores.",
+              "image_id": "bugwood::5505167",
+              "verification_status": "novel_plausible",
+              "reasoning": "Candidate notes generic conidiophore morphology that overlaps with many Venturia-like ascomycetes, but no source was found specifying confusable look-alikes at this microscopic resolution for Maine field diagnostics.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5505167"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 3,
+            "contradictory_count": 1,
+            "duplicates_count": 0,
+            "dropped_contradictory": [
+              {
+                "field": "other",
+                "canonical_says": "Small, velvety, olive green lesions with unclear margins on the lower leaf surface that age into darker spots with more distinct margins.",
+                "image_shows": "Microscopic fungal structures on a blue background \u00e2\u20ac\u201d the image does not depict a stem or any stem discoloration.",
+                "image_quote": "The image shows two microscopic organisms.",
+                "image_id": "bugwood::5505167",
+                "verification_status": "contradictory",
+                "reasoning": "The image is a microscopy slide of fungal structures, not a stem photograph; extension sources describe apple scab symptoms on leaves/fruit (and occasionally buds), so a 'stem_discoloration' observation derived from this image is not supported.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://netreefruit.org/apples/diseases/apple-scab",
+                    "quote": "Apple scab ... infects the leaves and fruit of apples."
+                  },
+                  {
+                    "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/AppleScab.aspx",
+                    "quote": "Disease symptoms emerge as brown-green lesions on leaves, buds, and fruit."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "Mississippi": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5608962"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 4,
+            "dropped_contradictory": []
+          }
+        },
+        "New York": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Lesions appear on leaves and fruit as light green circular spots that become olive green and velvety, later darkening and becoming scabby",
+              "image_shows": "The image shows small, scattered black spots on the fruit, which are consistent with Apple Scab.",
+              "image_quote": "The photo shows small, scattered black spots on the fruit, which are consistent with Apple Scab.",
+              "image_id": "bugwood::5606878",
+              "verification_status": "weakly_supported",
+              "reasoning": "Small scattered black spots on fruit are consistent with the documented 'pinpoint scab' / corky black-spot pattern described by UNH and UMN extension; the field tag 'sporulation' was reclassified to lesion_morphology since the visual evidence depicts spots, not conidial structures.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.unh.edu/resource/apple-scab-fact-sheet",
+                  "quote": "late-season infection may result in 'pinpoint scab,' which appears as tiny, dark spots visible only after the fruit is placed into cold storage"
+                },
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/apple-scab",
+                  "quote": "Apples and crabapples develop corky, black spots or misshapen areas, and the fruit may crack or become deformed"
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "Lesions appear on leaves and fruit as light green circular spots that become olive green and velvety, later darkening and becoming scabby",
+              "image_shows": "The photo shows a green apple with lesions and black spots.",
+              "image_quote": "The apple has green skin with black spots.",
+              "image_id": "bugwood::5606878",
+              "verification_status": "novel_plausible",
+              "reasoning": "A color-palette note (green fruit skin bearing black spots) is coherent with canonical lesion progression and not contradicted, but adds no diagnostic value beyond canonical and was not specifically cited by any extension source.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5606878"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 2,
+            "dropped_contradictory": []
+          }
+        },
+        "Washington": {
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Small, velvety, olive green lesions with unclear margins on the lower leaf surface that age into darker spots with more distinct margins",
+              "image_shows": "Dark, powdery-looking lesions on the fruit surface suggest spore masses.",
+              "image_quote": "The fruit shows dark lesions with a concentric ring-like pattern.",
+              "image_id": "bugwood::5608951",
+              "verification_status": "weakly_supported",
+              "reasoning": "External sources confirm that scab lesions develop a velvety/powdery surface from masses of conidia and conidiophores rupturing the host epidermis, supporting the observation of powdery spore-mass-like texture on fruit lesions.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/AppleScab.aspx",
+                  "quote": "It is this mass of conidia and conidiophores that causes the velvety appearance of young scab lesions."
+                },
+                {
+                  "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2017.01496/full",
+                  "quote": "Conidia are generated in multiple cycles, rupturing the host epidermis to form cushion-like aggregates resembling acervuli on lesion surfaces."
+                }
+              ]
+            }
+          ],
+          "image_ids": [
+            "bugwood::5608951"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 0,
+            "contradictory_count": 2,
+            "duplicates_count": 2,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "Small, velvety, olive green lesions with unclear margins on the lower leaf surface that age into darker spots with more distinct margins",
+                "image_shows": "The fruit displays dark lesions with a concentric ring-like pattern.",
+                "image_quote": "The fruit shows dark lesions with a concentric ring-like pattern.",
+                "image_id": "bugwood::5608951",
+                "verification_status": "contradictory",
+                "reasoning": "Concentric ring patterns on apple fruit are diagnostic of bitter rot (Colletotrichum spp.) or black rot (Botryosphaeria obtusa), not Venturia inaequalis; apple scab fruit lesions are scabby/corky without concentric ring banding.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://extension.psu.edu/apple-and-pear-disease-bitter-rot",
+                    "quote": "The spores of the causal organism of bitter rot sometimes appear in concentric circles in the roundish lesion."
+                  },
+                  {
+                    "url": "https://extension.umn.edu/plant-diseases/black-rot-apple",
+                    "quote": "Symptoms appear as black and brown concentric rings on fruits, usually containing small, black fungal fruiting structures."
+                  }
+                ]
+              },
+              {
+                "field": "severity",
+                "canonical_says": "(not specified)",
+                "image_shows": "The affected area includes multiple dark spots on the apple's skin.",
+                "image_quote": "Dark spots (pycnidia) on the apple",
+                "image_id": "bugwood::5608951",
+                "verification_status": "contradictory",
+                "reasoning": "The image_quote misidentifies the dark spots as pycnidia, but Venturia inaequalis does not produce pycnidia; it produces conidia on subcuticular stromata/acervulus-like structures, so the structural identification is contradicted by the literature.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2017.01496/full",
+                    "quote": "Conidiophores emerge from subcuticular stromata within infected host tissues... producing conidia in chains that contribute to the velvety appearance of scab lesions."
+                  },
+                  {
+                    "url": "https://en.wikipedia.org/wiki/Venturia_inaequalis",
+                    "quote": "Venturia inaequalis is an ascomycete fungus that produces sexual spores (ascospores) in a sac-like structure called an ascus."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "disease_name": "Cedar-Apple Rust",
@@ -192,7 +922,472 @@
       },
       "confidence": "high",
       "num_sources": 2,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Kentucky": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "bearing orange pustules above and hairy tube-like aecia below",
+              "image_shows": "The lesions appear raised and have a slightly rough texture.",
+              "image_quote": "The lesions show a raised and textured surface.",
+              "image_id": "bugwood::5368593",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources confirm CAR lesions produce raised aecial structures and bulges, consistent with the raised/textured surface reported.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/cedar-apple-rusts",
+                  "quote": "fungal tufts or stalks, called aecia, appear on the bottom surface of the leaf directly underneath the lesion"
+                },
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/cedar-apple-rust",
+                  "quote": "these spots gradually enlarge, becoming evident on the undersurface of the leaves as small bulges"
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaves show curling up towards the leaf margins.",
+              "image_quote": "Leaves appear to curl up towards the leaf margins.",
+              "image_id": "bugwood::5368593",
+              "verification_status": "weakly_supported",
+              "reasoning": "Multiple extension sources document leaf curl and distortion as a recognized symptom of CAR infection on apple.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.okstate.edu/fact-sheets/cedar-apple-rust",
+                  "quote": "Infected leaf veins cause the leaf to curl and become distorted"
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf lesions are orange with a reddish ring, which aligns with the severity of the disease observed.",
+              "image_quote": "The affected leaves display numerous orange spots with red rings, indicating significant chlorosis and necrosis.",
+              "image_id": "bugwood::5368593",
+              "verification_status": "weakly_supported",
+              "reasoning": "Kentucky-specific extension confirms CAR is the most economically important apple rust in the state and severe infections cause notable chlorosis and defoliation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://kentuckypestnews.wordpress.com/2022/05/24/cedar-apple-rust/",
+                  "quote": "Cedar-apple rust is the most common and economically important rust disease of apple in Kentucky"
+                },
+                {
+                  "url": "https://hnr.k-state.edu/extension/horticulture-resource-center/common-pest-problems/documents/Cedar-Apple%20Rust%20for%20Apples.pdf",
+                  "quote": "Severely infected leaves may drop prematurely. Premature defoliation weakens the tree and reduces fruit set"
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaves are ovate with a length-to-width ratio greater than 1.",
+              "image_quote": "The leaves are broad with pointed tips.",
+              "image_id": "bugwood::5368593",
+              "verification_status": "novel_plausible",
+              "reasoning": "Observation describes host leaf morphology rather than disease signs; coherent with apple foliage but not a disease-relevant diagnostic and no extension evidence speaks to it.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5368593"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 3,
+            "provisional_count": 1,
+            "contradictory_count": 2,
+            "duplicates_count": 6,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "small chlorotic yellow spots develop on leaves that turn orange with red rings",
+                "image_shows": "The lesions appear irregular in shape, with some crossing leaf veins.",
+                "image_quote": "The lesions cross leaf veins.",
+                "image_id": "bugwood::5368593",
+                "verification_status": "contradictory",
+                "reasoning": "Extension literature consistently describes CAR foliar lesions as round/circular spots, contradicting the claim of irregular vein-crossing lesions.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://content.ces.ncsu.edu/cedar-apple-rusts",
+                    "quote": "Infected leaves will have yellow to bright orange round lesions or spots on the upper surface"
+                  },
+                  {
+                    "url": "https://extension.illinois.edu/plant-problems/cedar-apple-rust",
+                    "quote": "yellow to bright orange round lesions or spots on the upper surface"
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "yellow spots develop red rings around the edge, small raised black dots in the center",
+                "image_shows": "The lesion centers are tan, while the margins are reddish-brown.",
+                "image_quote": "The lesion center is orange with a reddish ring, while the margin is green.",
+                "image_id": "bugwood::5368593",
+                "verification_status": "contradictory",
+                "reasoning": "Canonical and extension sources describe orange centers with red rings; the candidate's tan centers with reddish-brown margins contradicts the established CAR color signature and even its own quoted evidence.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://blogs.cornell.edu/applevarietydatabase/factsheet-cedar-apple-rust/",
+                    "quote": "bright yellow-orange spots with a red ring around the edges of the lesion on the top side of the leaf"
+                  },
+                  {
+                    "url": "https://ohioline.osu.edu/factsheet/plpath-tree-10",
+                    "quote": "Leaf spots are first yellow then turn bright orange-red, often with a bright red border"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "North Carolina": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "small chlorotic yellow spots develop on leaves that turn orange with red rings",
+              "image_shows": "The image shows necrotic tissue on the leaf, which appears to be in discrete spots.",
+              "image_quote": "The image shows necrotic tissue on the leaf.",
+              "image_id": "bugwood::1577109",
+              "verification_status": "weakly_supported",
+              "reasoning": "Late-stage cedar-apple rust lesions can become brown/necrotic in discrete spots before defoliation, consistent with this image.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/cedar-apple-rusts",
+                  "quote": "infected leaves will have yellow to bright orange round lesions or spots on the upper surface ... may cause premature defoliation if infection is severe"
+                },
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/cedar-apple-rust",
+                  "quote": "infected leaves develop yellow spots that eventually turn brown or black and may drop prematurely"
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "yellow spots develop red rings around the edge",
+              "image_shows": "The leaf shows curling up towards the center, consistent with vein infection by cedar-apple rust.",
+              "image_quote": "The leaf is curled up towards the center.",
+              "image_id": "bugwood::1577109",
+              "verification_status": "verified",
+              "reasoning": "UMN Extension explicitly states that vein infection by cedar-apple rust causes leaves to curl and distort.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/cedar-apple-rust",
+                  "quote": "Infected leaf veins cause the leaf to curl and become distorted"
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "yellow spots develop red rings around the edge",
+              "image_shows": "The leaf veins show translucent and darkened sections indicating vein necrosis.",
+              "image_quote": "Veins are darkened and appear necrotic.",
+              "image_id": "bugwood::1577109",
+              "verification_status": "weakly_supported",
+              "reasoning": "Vein/petiole infection by cedar-apple rust is documented and can produce darkened, distorted vein tissue, though outright vein necrosis is not the textbook description.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/cedar-apple-rust",
+                  "quote": "Small, yellow spots with red borders are found on green stems, leaf petioles (leafstalks) and leaf veins ... finger-like tubes develop on leaf petioles and stems and occasionally develop on upper and lower sides of leaf veins"
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "Multiple circular lesions with red rings and chlorotic centers cover more than half of the visible leaf area.",
+              "image_quote": "The lesions cover more than half of the leaf.",
+              "image_id": "bugwood::1577109",
+              "verification_status": "weakly_supported",
+              "reasoning": "Heavy lesion coverage covering >50% of leaf area is consistent with the severe-infection range described by NC State and Illinois Extension.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/cedar-apple-rusts",
+                  "quote": "On apple, the pathogen can infect leaves and fruit of susceptible cultivars and may cause premature defoliation if infection is severe"
+                },
+                {
+                  "url": "https://extension.illinois.edu/plant-problems/cedar-apple-rust",
+                  "quote": "Extensive infections may cause the plant to drop leaves, severely impacting the plant's photosynthetic ability"
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape is broad with a medium-length petiole.",
+              "image_quote": "The leaf has a noticeable petiole extending from the base.",
+              "image_id": "bugwood::1577109",
+              "verification_status": "novel_plausible",
+              "reasoning": "Describes host-leaf morphology, not a disease symptom; no contradiction but minimal diagnostic value for cedar-apple rust.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::1577109"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 4,
+            "provisional_count": 1,
+            "contradictory_count": 2,
+            "duplicates_count": 4,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "small chlorotic yellow spots develop on leaves that turn orange with red rings",
+                "image_shows": "The lesion centers are tan while the margins are chocolate-brown.",
+                "image_quote": "The lesion centers are tan with a chocolate-brown margin.",
+                "image_id": "bugwood::1577109",
+                "verification_status": "contradictory",
+                "reasoning": "Tan center with chocolate-brown margin is not the established colour pattern for cedar-apple rust on apple leaves; this colour scheme is more typical of frogeye leaf spot.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://www.ndsu.edu/agriculture/extension/extension-topics/gardening-and-horticulture/trees-and-shrubs/apple-trees/diagnosing-0",
+                    "quote": "brown-centered lesions with darker margins ... more closely match other apple leaf spot diseases like frogeye leaf spot, rather than the typical presentation of cedar-apple rust"
+                  },
+                  {
+                    "url": "https://extension.umn.edu/plant-diseases/cedar-apple-rust",
+                    "quote": "Initial symptoms ... appear as small, pale-yellow spots ... gradually enlarge, becoming yellow/orange and swollen with a red border"
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "small chlorotic yellow spots develop on leaves that turn orange with red rings, bearing orange pustules above and hairy tube-like aecia below",
+                "image_shows": "The lesions appear raised and have a rough texture.",
+                "image_quote": "The lesions are dark brown and swollen.",
+                "image_id": "bugwood::1577109",
+                "verification_status": "contradictory",
+                "reasoning": "'Dark brown and swollen' describes juniper galls, not apple-leaf lesions; apple leaf lesions are yellow/orange with fine aecial tubes underneath, contradicting this candidate.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://extension.umn.edu/plant-diseases/cedar-apple-rust",
+                    "quote": "Initial symptoms ... appear as small, pale-yellow spots on the upper surfaces of leaves ... small bulges ... small cup-like structures with tubes (aecia) are visible on the undersides"
+                  },
+                  {
+                    "url": "https://content.ces.ncsu.edu/cedar-apple-rusts",
+                    "quote": "yellow to bright orange round lesions or spots on the upper surface, and ... fungal tufts or stalks, called aecia, appear on the bottom surface"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "Ohio": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "small chlorotic yellow spots develop on leaves that turn orange with red rings, bearing orange pustules above",
+              "image_shows": "The lesions appear circular with orange pustules.",
+              "image_quote": "The lesions appear circular with orange pustules.",
+              "image_id": "bugwood::5486242",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources describe round/circular lesions bearing orange spermogonial pustules on the upper leaf surface.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/cedar-apple-rusts",
+                  "quote": "Infected leaves develop yellow to bright orange round lesions or spots on the upper surface"
+                },
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-tree-10",
+                  "quote": "Small, orange or dark-colored, sporulating pustules (spermogonia), develop on these lesions on the upper side of the leaf"
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "small raised black dots in the center on the upper surface, and produce hairy, finger-like aecia on the leaf underside",
+              "image_shows": "The lesions appear raised and have a slightly rough texture.",
+              "image_quote": "The lesions show slight protrusion from the leaf surface.",
+              "image_id": "bugwood::5486242",
+              "verification_status": "verified",
+              "reasoning": "Extension references confirm lesions become raised due to spermogonial dots on the upper surface and aecial bulges below.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/cedar-apple-rust",
+                  "quote": "Small, raised, black dots form in the center of leaf spots on the upper leaf surface when the leaf spots mature"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/cedar-apple-rusts",
+                  "quote": "these spots gradually enlarge, becoming evident on the undersurface of the leaves as small bulges"
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "yellow spots develop red rings around the edge",
+              "image_shows": "The leaf shows curling up towards the center.",
+              "image_quote": "The leaf is curled up towards the center.",
+              "image_id": "bugwood::5486242",
+              "verification_status": "verified",
+              "reasoning": "UMN extension explicitly states infected leaf veins cause leaf curling and distortion in cedar-apple rust.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/cedar-apple-rust",
+                  "quote": "Infected leaf veins cause the leaf to curl and become distorted"
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "yellow spots develop red rings around the edge",
+              "image_shows": "Target spots with alternating light and dark concentric rings.",
+              "image_quote": "The lesions show a target spot pattern with alternating light and dark concentric rings.",
+              "image_id": "bugwood::5486242",
+              "verification_status": "verified",
+              "reasoning": "Multiple sources document concentric ring/target-spot pattern on cedar-apple rust lesions on apple leaves.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://whyfarmit.com/cedar-apple-rust/",
+                  "quote": "spots may enlarge and develop a concentric ring pattern"
+                },
+                {
+                  "url": "https://microbenotes.com/cedar-apple-rust/",
+                  "quote": "spots that enlarge to become orange-yellow and gradually change and become surrounded at borders by concentric red bands"
+                }
+              ]
+            },
+            {
+              "field": "spread_pattern",
+              "canonical_says": "(not specified)",
+              "image_shows": "Some lesions appear to cross the veins while others stop at them.",
+              "image_quote": "Lesions are not consistently confined to the interveinal regions.",
+              "image_id": "bugwood::5486242",
+              "verification_status": "novel_plausible",
+              "reasoning": "Canonical and extension sources mention lesions on veins/petioles but do not characterize interveinal confinement; observation is plausible but unverified.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape appears to be ovate.",
+              "image_quote": "The leaf is broadest near the middle and tapers towards the tip.",
+              "image_id": "bugwood::5486242",
+              "verification_status": "novel_plausible",
+              "reasoning": "Leaf-shape observation is consistent with typical Malus leaf morphology but is not a disease-specific signal worth strong weight.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "Hawthorn rust; Quince rust; Juniper broom rust; Japanese apple rust",
+              "image_shows": "No look-alikes identified.",
+              "image_quote": "No look-alikes identified.",
+              "image_id": "bugwood::5486242",
+              "verification_status": "novel_plausible",
+              "reasoning": "Negative observation; adds no positive evidence, but is not contradicted.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf displays numerous lesions covering a significant portion of its surface.",
+              "image_quote": "The leaf has distinct orange and brown patches.",
+              "image_id": "bugwood::5486242",
+              "verification_status": "novel_plausible",
+              "reasoning": "Heavy lesion coverage on a single leaf is consistent with documented severity range but not specifically validated for this image.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/cedar-apple-rusts",
+                  "quote": "It can cause serious yield loss and almost total defoliation in susceptible cultivars"
+                }
+              ]
+            }
+          ],
+          "image_ids": [
+            "bugwood::5486242"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 4,
+            "provisional_count": 4,
+            "contradictory_count": 3,
+            "duplicates_count": 1,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "small chlorotic yellow spots develop on leaves that turn orange with red rings",
+                "image_shows": "The lesion centers are tan, the margins are chocolate-brown, and there is a chlorotic yellow halo.",
+                "image_quote": "The central part of the lesions is tan, bordered by chocolate-brown margin and a chlorotic yellow halo.",
+                "image_id": "bugwood::5486242",
+                "verification_status": "contradictory",
+                "reasoning": "Cedar-apple rust lesions are documented as yellow/orange with red borders, not tan-centered with chocolate-brown margins; the described palette matches frogeye/Alternaria-type lesions, not CAR.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://ohioline.osu.edu/factsheet/plpath-tree-10",
+                    "quote": "small chlorotic (yellow) spots, which eventually become orange and develop red rings around the edge"
+                  },
+                  {
+                    "url": "https://microbenotes.com/cedar-apple-rust/",
+                    "quote": "yellow-greenish spots that enlarge to become orange-yellow and gradually change and become surrounded at borders by concentric red bands"
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "small chlorotic yellow spots develop on leaves that turn orange with red rings, bearing orange pustules above",
+                "image_shows": "The leaf displays lesions with tan centers, chocolate-brown margins, and chlorotic yellow halos.",
+                "image_quote": "The lesion centers are tan with a chocolate-brown margin and chlorotic yellow halo.",
+                "image_id": "bugwood::5486242",
+                "verification_status": "contradictory",
+                "reasoning": "Documented CAR color palette is yellow-to-orange with red borders; tan/chocolate-brown is inconsistent with the disease signature.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://www.uaex.uada.edu/counties/baxter/news/ced/may-2015/Cedar-Apple-Rust.aspx",
+                    "quote": "Leaf spots are first yellow then turn bright orange-red, often with a bright red border"
+                  },
+                  {
+                    "url": "https://ohioline.osu.edu/factsheet/plpath-fru-02",
+                    "quote": "yellow spots develop on the underside of the leaf, and during late spring and early summer a number of small, orange-yellow tubular projections (aecia) appear"
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "small chlorotic yellow spots develop on leaves",
+                "image_shows": "The image displays necrotic tissue that covers the entire leaf.",
+                "image_quote": "The necrotic tissue is covering the whole leaf.",
+                "image_id": "bugwood::5486242",
+                "verification_status": "contradictory",
+                "reasoning": "Cedar-apple rust produces discrete round leaf spots, not confluent whole-leaf necrosis; premature defoliation occurs in severe cases but the primary lesion morphology remains discrete spots.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://content.ces.ncsu.edu/cedar-apple-rusts",
+                    "quote": "Infected leaves develop yellow to bright orange round lesions or spots on the upper surface"
+                  },
+                  {
+                    "url": "https://extension.umn.edu/plant-diseases/cedar-apple-rust",
+                    "quote": "Small, raised, black dots form in the center of leaf spots on the upper leaf surface"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "disease_name": "Fire Blight",
@@ -265,7 +1460,544 @@
           "alternative_source_url": "https://extension.usu.edu/planthealth/ipm/notes_ag/fruit-fire-blight",
           "note": "USU restricts affected parts to leaves, blossoms, and shoots; OSU extends to whole tree mortality including roots."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Delaware": {
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "infected tissue turns black on pear and brown on apple; blighted shoots wilt",
+              "image_shows": "The leaf necrosis is distributed across the entire leaf, including the tips, margins, and veins.",
+              "image_quote": "Leaf veins appear necrotic.",
+              "image_id": "bugwood::5624792",
+              "verification_status": "verified",
+              "reasoning": "Vein necrosis along the midrib and main veins is a well-documented canonical fire blight diagnostic feature in extension literature.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/pathogen-articles/common/bacteria-other-prokaryotes/fire-blight-apple-pear",
+                  "quote": "Leaves on diseased shoots often show blackening along the midrib and veins before becoming fully necrotic, and cling firmly to the host after death."
+                },
+                {
+                  "url": "https://plantvoice.farm/fire-blight-erwinia-amylovora-in-apple-and-pear-trees/",
+                  "quote": "Shoot leaf vein necrosis is typical for fire blight infection with shoot tip wilt and initial tip bending."
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "Some leaves show curling up towards the tip.",
+              "image_quote": "Leaves with tips curling upwards.",
+              "image_id": "bugwood::5624792",
+              "verification_status": "weakly_supported",
+              "reasoning": "Leaf curling/shriveling is documented as a fire blight symptom though extension sources describe downward curl rather than upward \u00e2\u20ac\u201d directional detail is only partially supported.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/pathogen-articles/common/bacteria-other-prokaryotes/fire-blight-apple-pear",
+                  "quote": "as the blackening progresses, the leaves curl and shrivel, hang downward, and usually cling to the curled, blighted twigs."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaves show a mix of dried, brown, and green leaf shapes.",
+              "image_quote": "The leaves show a mix of dried, brown, and green leaf shapes.",
+              "image_id": "bugwood::5624792",
+              "verification_status": "provisional",
+              "reasoning": "Mixed dried/green leaf morphology is a generic visual descriptor without specific external diagnostic support, but it is plausible and not contradicted.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5624792"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 2,
+            "provisional_count": 1,
+            "contradictory_count": 5,
+            "duplicates_count": 1,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "Diseased blossoms become water-soaked, wilt and turn brown; cankers form on bark with reddish brown sapwood beneath; fruit turn brown to black with bacterial ooze",
+                "image_shows": "The lesions appear irregular in shape.",
+                "image_quote": "The lesions have irregular shapes and are not confined to the leaf veins.",
+                "image_id": "bugwood::5624792",
+                "verification_status": "contradictory",
+                "reasoning": "Fire blight produces vein/midrib-localized blackening and whole-shoot blight, not discrete irregular leaf-blade lesions; this morphology points to a fungal leaf-spot look-alike rather than Erwinia amylovora.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://pnwhandbooks.org/plantdisease/pathogen-articles/common/bacteria-other-prokaryotes/fire-blight-apple-pear",
+                    "quote": "Leaves on diseased shoots often show blackening along the midrib and veins before becoming fully necrotic"
+                  },
+                  {
+                    "url": "https://apples.ces.ncsu.edu/2018/03/leaf-spots-of-bother-the-troublesome-3/",
+                    "quote": "discrete leaf lesions are characteristic of fungal leaf spot diseases like frogeye leaf spot, Alternaria leaf blotch, and Glomerella leaf spot \u00e2\u20ac\u201d not fire blight"
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "infected tissue turns black on pear and brown on apple; fruit turn brown to black with bacterial ooze",
+                "image_shows": "The lesion centers are tan, while the margins are chocolate-brown.",
+                "image_quote": "The central areas of the lesions appear tan.",
+                "image_id": "bugwood::5624792",
+                "verification_status": "contradictory",
+                "reasoning": "Tan-centered, chocolate-brown-margined lesions match frogeye leaf spot (Botryosphaeria obtusa); fire blight foliar symptoms are uniformly brown/black necrosis along veins, not bicolored discrete lesions.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://ohioline.osu.edu/factsheet/plpath-fru-07",
+                    "quote": "Frogeye leaf spot lesions start at petal-fall as small, circular, and brown spots surrounded by dark-brown concentric rings"
+                  },
+                  {
+                    "url": "https://extension.unh.edu/resource/frogeye-leaf-spot-black-rot-apple-0",
+                    "quote": "lesions with tan/light centers and darker brown margins are diagnostic of frogeye leaf spot, not fire blight"
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "Diseased blossoms become water-soaked, wilt and turn brown",
+                "image_shows": "The leaf lesions appear raised and dry.",
+                "image_quote": "The leaf lesions appear raised and dry.",
+                "image_id": "bugwood::5624792",
+                "verification_status": "contradictory",
+                "reasoning": "Fire blight produces water-soaked, sunken, necrotic, flaccid tissue \u00e2\u20ac\u201d not raised, dry leaf lesions; this texture is inconsistent with bacterial blight and more typical of fungal pustule/scab-type pathogens.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://pnwhandbooks.org/plantdisease/pathogen-articles/common/bacteria-other-prokaryotes/fire-blight-apple-pear",
+                    "quote": "Leaves... show blackening along the midrib and veins before becoming fully necrotic"
+                  },
+                  {
+                    "url": "https://plantvoice.farm/fire-blight-erwinia-amylovora-in-apple-and-pear-trees/",
+                    "quote": "the disease initially presents with mild yellowing or burning of leaf tissues... Dark, necrotic spots affect leaf tissue"
+                  }
+                ]
+              },
+              {
+                "field": "diagnostic_features",
+                "canonical_says": "Blighted shoots wilt and the twigs bend at the growing point and resemble a shepherd's crook",
+                "image_shows": "Some leaves show clear signs of necrosis with veins appearing dark and dead.",
+                "image_quote": "The image shows a target spot with a central dark brown area surrounded by concentric rings of lighter and darker colors.",
+                "image_id": "bugwood::5624792",
+                "verification_status": "contradictory",
+                "reasoning": "The image_quote describes a concentric-ring target spot which is a hallmark of frogeye leaf spot, not fire blight; the candidate's stated vein-necrosis interpretation is not supported by its own quote.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://ohioline.osu.edu/factsheet/plpath-fru-07",
+                    "quote": "Frogeye leaf spot lesions start at petal-fall as small, circular, and brown spots surrounded by dark-brown concentric rings, which resemble a frog's eye."
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "Blighted shoots wilt and the twigs bend at the growing point... sapwood beneath a canker has a reddish brown appearance",
+                "image_shows": "Target spots with alternating light and dark concentric rings.",
+                "image_quote": "Target spots with alternating light and dark concentric rings.",
+                "image_id": "bugwood::5624792",
+                "verification_status": "contradictory",
+                "reasoning": "Concentric-ring target-spot lesions are diagnostic of frogeye leaf spot (or Alternaria) on apple and are explicitly NOT a fire blight symptom; extension sources confirm fire blight produces diffuse vein blackening rather than target patterns.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://ohioline.osu.edu/factsheet/plpath-fru-07",
+                    "quote": "Frogeye leaf spot lesions... surrounded by dark-brown concentric rings, which resemble a frog's eye."
+                  },
+                  {
+                    "url": "https://apples.ces.ncsu.edu/2018/03/leaf-spots-of-bother-the-troublesome-3/",
+                    "quote": "target/bullseye concentric ring leaf lesions are characteristic of frogeye leaf spot and Alternaria leaf blotch, not fire blight"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "Iowa": {
+          "deltas": [
+            {
+              "field": "other",
+              "canonical_says": "Diseased blossoms become water-soaked, wilt and turn brown...",
+              "image_shows": "The photo shows chlorotic yellowing in the leaves.",
+              "image_quote": "The image shows brown and tan tones on affected tissue, which aligns with the canonical description of scorched and brown appearance on infected apple plants.",
+              "image_id": "bugwood::5407840",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources confirm chlorotic yellowing as an early fire blight leaf symptom preceding necrosis.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/fire-blight",
+                  "quote": "fire blight is a bacterial infection that causes apple tree leaves to turn yellow, followed by blackening at the tips, giving them a scorched appearance"
+                },
+                {
+                  "url": "https://extension.unh.edu/resource/fire-blight-fact-sheet",
+                  "quote": "Initial symptoms include yellowing and burning of leaf tissues, followed by the formation of dark spots on the branches"
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Diseased blossoms become water-soaked, wilt and turn brown; blighted twigs bend at the growing point resembling a shepherd's crook...",
+              "image_shows": "Leaves show curling and distortion, particularly around the edges.",
+              "image_quote": "Leaf edges appear curled inward.",
+              "image_id": "bugwood::5407840",
+              "verification_status": "verified",
+              "reasoning": "ISU and WSU extensions confirm curling/distortion of fire blight-affected apple leaves.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://treefruit.wsu.edu/crop-protection/disease-management/fire-blight/",
+                  "quote": "As the blackening progresses, the leaves curl and shrivel, hang downward, and usually cling to the curled, blighted twigs"
+                },
+                {
+                  "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/fire-blight",
+                  "quote": "Affected leaves will blight and turn black and affected shoots will curl"
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Diseased blossoms become water-soaked, wilt and turn brown...",
+              "image_shows": "The affected leaves display signs of necrosis, but the texture details of the lesions are not clearly visible.",
+              "image_quote": "The leaves show scorched appearance with necrotic centers.",
+              "image_id": "bugwood::5407840",
+              "verification_status": "provisional",
+              "reasoning": "Observation only notes that texture is not clearly visible \u00e2\u20ac\u201d no positive claim to verify or refute beyond canonical scorched appearance.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Scorched appearance of leaves, blossoms, and young terminal shoots, with infected tissue turning black on pear and brown on apple.",
+              "image_shows": "The lesion centers are tan, while the margins are chocolate-brown.",
+              "image_quote": "The tan center contrasts sharply with the chocolate-brown margin.",
+              "image_id": "bugwood::5407840",
+              "verification_status": "novel_plausible",
+              "reasoning": "Extension sources describe leaves turning chocolate-brown/black uniformly; a distinct tan-center/chocolate-margin zonation is not standard for fire blight but is not explicitly contradicted \u00e2\u20ac\u201d flag for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaves appear to be lanceolate, elongated with pointed tips.",
+              "image_quote": "Lanceolate leaf shape.",
+              "image_id": "bugwood::5407840",
+              "verification_status": "novel_plausible",
+              "reasoning": "Apple leaves are typically ovate to elliptic; a lanceolate description is unusual but cannot be ruled out without direct image inspection \u00e2\u20ac\u201d flag for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5407840"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 2,
+            "provisional_count": 3,
+            "contradictory_count": 4,
+            "duplicates_count": 2,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "Diseased blossoms become water-soaked, wilt and turn brown; blighted twigs bend at the growing point resembling a shepherd's crook...",
+                "image_shows": "The lesions appear scattered and not clearly defined by leaf veins.",
+                "image_quote": "Leaf tissue is dead, brown/black/bleached, distributed across the leaf, not confined to specific regions.",
+                "image_id": "bugwood::5407840",
+                "verification_status": "contradictory",
+                "reasoning": "Fire blight leaf necrosis characteristically follows the midrib/veins or progresses from margins, contradicting the 'scattered, not vein-defined' description.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://treefruit.wsu.edu/crop-protection/disease-management/fire-blight/",
+                    "quote": "Leaves on diseased shoots often show blackening along the midrib and veins before becoming fully necrotic"
+                  },
+                  {
+                    "url": "https://pnwhandbooks.org/plantdisease/pathogen-articles/common/bacteria-other-prokaryotes/fire-blight-apple-pear",
+                    "quote": "Leaves on the same spur or on nearby twigs develop brown-black blotches along the midrib and main veins or along the margins and between the veins"
+                  }
+                ]
+              },
+              {
+                "field": "diagnostic_features",
+                "canonical_says": "Blighted shoots wilt and the twigs bend at the growing point and resemble a shepherd's crook or an upside down 'J'; ... sapwood beneath a canker has a reddish brown appearance...",
+                "image_shows": "Leaf veins appear to be translucent and paler than the blade.",
+                "image_quote": "Veins are translucent / paler than the blade.",
+                "image_id": "bugwood::5407840",
+                "verification_status": "contradictory",
+                "reasoning": "Fire blight veins darken/blacken with necrosis; translucent/pale veins is the opposite pattern and inconsistent with the pathology.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://treefruit.wsu.edu/crop-protection/disease-management/fire-blight/",
+                    "quote": "Leaves on diseased shoots often show blackening along the midrib and veins before becoming fully necrotic"
+                  },
+                  {
+                    "url": "https://www.biorxiv.org/content/10.1101/2024.10.10.617712v1.full",
+                    "quote": "necrosis expands from the tips of leaf serrations into internal leaf tissue, and along the midrib and veins"
+                  }
+                ]
+              },
+              {
+                "field": "diagnostic_features",
+                "canonical_says": "Blighted shoots wilt and the twigs bend at the growing point and resemble a shepherd's crook or an upside down 'J'...",
+                "image_shows": "Target spots with alternating light and dark concentric rings observed in some lesions.",
+                "image_quote": "Target spots with alternating light and dark concentric rings.",
+                "image_id": "bugwood::5407840",
+                "verification_status": "contradictory",
+                "reasoning": "Concentric ring lesions are characteristic of fungal diseases (e.g., apple scab, frogeye/black rot), not the diffuse scorched necrosis of bacterial fire blight.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://plantdiseasehandbook.tamu.edu/food-crops/fruit-crops/apple/",
+                    "quote": "Concentric dark bands mark lesions as they enlarge on apple leaves and fruit"
+                  },
+                  {
+                    "url": "https://treefruit.wsu.edu/crop-protection/disease-management/fire-blight/",
+                    "quote": "Blackened crooked shoots (i.e., shepherd's crook), bacterial ooze, necrotic leaves, and the formation of necrotic lesions and cankers are symptoms that characterize typical fire blight shoot infections"
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "Diseased blossoms become water-soaked, wilt and turn brown...",
+                "image_shows": "The affected tissue displays tan centers with chocolate-brown margins and chlorotic yellow halos.",
+                "image_quote": "The photo shows scorched and browned leaves.",
+                "image_id": "bugwood::5407840",
+                "verification_status": "contradictory",
+                "reasoning": "Fire blight produces a diffuse scorched browning; discrete tan-center/dark-margin lesions with chlorotic halos describe a frogeye/black-rot or scab-type lesion, not fire blight.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://extension.umn.edu/plant-diseases/fire-blight",
+                    "quote": "Most infected leaves and branch tips wilt rapidly turn brown or black; the leaves die but do not drop off"
+                  },
+                  {
+                    "url": "https://hort.extension.wisc.edu/articles/apple-pear-and-related-trees-disorder-fire-blight/",
+                    "quote": "infected shoots and twigs will turn chocolate brown to black in color and appear as if they have been scorched by fire"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "Kentucky": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "sapwood beneath a canker has a reddish brown appearance",
+              "image_shows": "Water-soaked dark streaks are visible through the translucent bark of the stem.",
+              "image_quote": "Water-soaked dark streaking extending from a lesion.",
+              "image_id": "bugwood::5368563",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources (PNW Handbooks, WSU Tree Fruit) explicitly describe water-soaked, dark/reddish streaking visible on/through the bark of fire-blighted apple stems, directly corroborating the observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/pathogen-articles/common/bacteria-other-prokaryotes/fire-blight-apple-pear",
+                  "quote": "Cankers near the base of the trunk often appear dark, water-soaked, and purplish on the outside ... when the bark is removed, the cankered area may show red-brown streaking."
+                },
+                {
+                  "url": "https://treefruit.wsu.edu/crop-protection/disease-management/fire-blight/",
+                  "quote": "The bark of infected rootstocks may show water-soaking, purplish to black discoloration, and red-brown streaking may be apparent in the cambium just under the bark."
+                },
+                {
+                  "url": "https://www.planetnatural.com/pest-problem-solver/plant-disease/fire-blight/",
+                  "quote": "Trees develop reddish water soaked lesions on the bark."
+                }
+              ]
+            }
+          ],
+          "image_ids": [
+            "bugwood::5368563"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 4,
+            "dropped_contradictory": []
+          }
+        },
+        "Maine": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Diseased blossoms become water-soaked, wilt and turn brown; cankers form on bark with reddish brown sapwood beneath; fruit turn brown to black with bacterial ooze.",
+              "image_shows": "tan, chocolate-brown, and rust-orange",
+              "image_quote": "The photo shows a blighted apple fruit with scorched leaves and stem. The affected tissue exhibits various colors.",
+              "image_id": "bugwood::5528837",
+              "verification_status": "verified",
+              "reasoning": "The tan/chocolate-brown/rust-orange palette is corroborated by multiple extension sources describing apple fire blight tissue as rusty brown to orange with tan ooze.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/fire-blight",
+                  "quote": "Apple leaves and shoots turn a rusty brown color."
+                },
+                {
+                  "url": "https://www.canr.msu.edu/news/scouting_for_blossom_blight_symptoms_of_fire_blight_in_apples",
+                  "quote": "The systemically infected shoot has orange-colored leaves at the tip and is starting to wilt."
+                },
+                {
+                  "url": "https://cfaes.osu.edu/fact-sheet/fire-blight-apples-and-pears",
+                  "quote": "Rotted areas turn brown to black and become covered with droplets of whitish tan colored bacterial ooze."
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "severe decline in the health of the plant",
+              "image_quote": "The image shows a severe decline in the health of the plant, with brown and necrotic lesions on the fruit and leaves.",
+              "image_id": "bugwood::5528837",
+              "verification_status": "verified",
+              "reasoning": "Severe whole-plant decline with concurrent fruit and leaf necrosis is a well-documented advanced presentation of fire blight in apple.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/fire-blight",
+                  "quote": "On apples and pears, the disease can kill blossoms, fruit, shoots, twigs, branches and entire trees."
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Fire_blight",
+                  "quote": "Severe fire blight can cause trees to die, and fire blight bacteria overwinter as cankers in living tissue on the trunk and main branches and on mummified fruit."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Blighted twigs bend at the growing point resembling a shepherd's crook; cankers form on bark with reddish brown sapwood beneath",
+              "image_shows": "a raised lesion",
+              "image_quote": "The lesion is raised and located on the main stem.",
+              "image_id": "bugwood::5528837",
+              "verification_status": "weakly_supported",
+              "reasoning": "Early-stage fire blight cankers on apple stems are described as having raised/blistered margins before becoming sunken, providing partial support.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/apple-malus-spp-fire-blight",
+                  "quote": "the margin that may at first be indefinite or raised and blistered but becomes definite and marked by a crack or crevice later"
+                }
+              ]
+            }
+          ],
+          "image_ids": [
+            "bugwood::5528837"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 3,
+            "provisional_count": 0,
+            "contradictory_count": 1,
+            "duplicates_count": 2,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "Blighted shoots wilt and the twigs bend at the growing point and resemble a shepherd's crook; during warm and humid weather infected shoots ooze droplets of creamy white to amber bacterial ooze",
+                "image_shows": "brownish galls",
+                "image_quote": "Galls are visible on the stem.",
+                "image_id": "bugwood::5528837",
+                "verification_status": "contradictory",
+                "reasoning": "Fire blight produces sunken cankers and ooze, not gall-type swellings; gall-like growths on apple are associated with crown gall (Agrobacterium) or other pathogens, so this is inconsistent with the canonical pathogen.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://pnwhandbooks.org/plantdisease/host-disease/apple-malus-spp-fire-blight",
+                    "quote": "Cankers develop on trunks, limbs, and the graft union; are at first water soaked, later brownish red, and ultimately dark brown or black, with bark covering the cankered area appearing sunken, rougher and separating from injured tissue."
+                  },
+                  {
+                    "url": "https://extension.unh.edu/resource/fire-blight-fact-sheet",
+                    "quote": "Bark on younger trees becomes water soaked and the cankers have a dark brown to purple color."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "North Carolina": {
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "during warm and humid weather infected shoots ooze droplets of creamy white to amber bacterial ooze",
+              "image_shows": "Dry branches with no signs of galls, blisters, scabs, exudates, or fruiting bodies.",
+              "image_quote": "No abnormalities like galls, blisters, scabs, ooze, or fruiting bodies are visible.",
+              "image_id": "bugwood::1576337",
+              "verification_status": "novel_plausible",
+              "reasoning": "Bacterial ooze on fire-blight-infected shoots only forms under warm/humid conditions per NC State; its absence on dry tissue is plausible and not contradicted, but no source specifically corroborates this negative finding.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "sapwood beneath a canker has a reddish brown appearance",
+              "image_shows": "No distinct vascular streaking, dark blotches, or water-soaked streaks.",
+              "image_quote": "The stem shows no distinct vascular streaking, dark blotches, or water-soaked streaks.",
+              "image_id": "bugwood::1576337",
+              "verification_status": "novel_plausible",
+              "reasoning": "Canonical reddish-brown discoloration is internal sapwood beneath cankers, not external surface streaking; the noted absence on the external stem surface is consistent with canonical but lacks direct external corroboration.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::1576337"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 2,
+            "contradictory_count": 0,
+            "duplicates_count": 4,
+            "dropped_contradictory": []
+          }
+        },
+        "Washington": {
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "sapwood beneath a canker has a reddish brown appearance",
+              "image_shows": "Water-soaked dark streaks extending from a lesion edge are visible through the translucent bark.",
+              "image_quote": "Water-soaked dark streaking extending from a lesion edge are visible through the translucent bark.",
+              "image_id": "bugwood::5608960",
+              "verification_status": "verified",
+              "reasoning": "PNW Handbook and WSU Tree Fruit both document water-soaked bark with red-brown streaking visible from lesion margins, directly corroborating the observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/pathogen-articles/common/bacteria-other-prokaryotes/fire-blight-apple-pear",
+                  "quote": "The bark of infected rootstocks may show water-soaking, purplish to black discoloration, cracking, or signs of bacterial ooze, with red-brown streaking apparent in the cambium just under the bark."
+                },
+                {
+                  "url": "https://treefruit.wsu.edu/crop-protection/disease-management/fire-blight/",
+                  "quote": "Bark on younger trees becomes water soaked and the cankers have a dark brown to purple color."
+                }
+              ]
+            }
+          ],
+          "image_ids": [
+            "bugwood::5608960"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 3,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Blue Mold",
@@ -303,9 +2035,96 @@
       },
       "confidence": "low",
       "num_sources": 0,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "North Carolina": {
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "White powdery-looking sporulation masses visible on the brown core.",
+              "image_quote": "The white powdery spots on the brown core.",
+              "image_id": "bugwood::1577537",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension and peer-reviewed sources confirm that Penicillium expansum sporulation on apple is initially white before turning blue-green, so a white powdery mass on a decayed apple is consistent with early-stage blue mold sporulation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://treefruit.wsu.edu/crop-protection/disease-management/blue-mold/",
+                  "quote": "The rotted areas are soft, watery, and light brown, with older lesions covered by bluish green spores that initially are nearly snow white."
+                },
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7548999/",
+                  "quote": "Fungal growth on the lesion surface, at first white, becomes pale blue as sporulation occurs."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "Concentric brown rings in the cut apple halves.",
+              "image_quote": "The apple halves exhibit concentric brown rings.",
+              "image_id": "bugwood::1577537",
+              "verification_status": "weakly_supported",
+              "reasoning": "Peer-reviewed inoculation studies report that Penicillium expansum lesions on apple may exhibit concentric zones, so concentric brown rings are a recognized though not invariant feature of blue mold.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8709240/",
+                  "quote": "Lesions were soft, watery, light to medium brown, with or without concentric zones, with smooth or irregular margins, and with blue green conidial tufts present mainly around the inoculation site."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "Two apple halves with concentric brown rings, indicating internal browning.",
+              "image_quote": "The lesions display concentric rings with alternating light and dark colors.",
+              "image_id": "bugwood::1577537",
+              "verification_status": "provisional",
+              "reasoning": "Internal browning with concentric rings on cut apple halves is plausible for advanced Penicillium expansum decay but is also a hallmark of bull's-eye rot, so the candidate is left provisional pending stronger evidence specific to blue mold cross-sections.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "Yellow outer skin and rust-orange inner flesh with concentric ring patterns.",
+              "image_quote": "The photo displays two apple halves with concentric brown rings, indicating internal browning.",
+              "image_id": "bugwood::1577537",
+              "verification_status": "provisional",
+              "reasoning": "Blue mold flesh is typically described as light to medium brown rather than rust-orange; without external evidence for this specific color palette in blue mold, the observation is recorded as provisional.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "Significant brown discoloration in the center of the apple halves.",
+              "image_quote": "The image displays two cut apple halves with significant brown discoloration in the center, indicating the presence of disease.",
+              "image_id": "bugwood::1577537",
+              "verification_status": "provisional",
+              "reasoning": "Generic 'significant brown discoloration' is consistent with advanced blue mold soft rot, but the observation is too non-specific to verify against literature and is left provisional.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::1577537"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 2,
+            "provisional_count": 3,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     }
   ],
   "crop": "Apple",
-  "generated_date": "2026-05-25"
+  "generated_date": "2026-05-25",
+  "regional_observations_count": 19
 }
