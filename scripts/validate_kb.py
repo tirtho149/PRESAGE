@@ -229,7 +229,7 @@ def main() -> None:
     by_reg: Dict[Path, List[Dict[str, Any]]] = {}
     for reg in registries:
         try:
-            data = json.loads(reg.read_text())
+            data = json.loads(reg.read_text(encoding="utf-8"))
         except Exception as e:
             print(f"  [skip] {reg}: {type(e).__name__}: {e}")
             continue
@@ -296,7 +296,7 @@ def main() -> None:
         if path in written:
             continue
         data = t["_ref_registry"]
-        path.write_text(json.dumps(data, indent=2))
+        path.write_text(json.dumps(data, indent=2), encoding="utf-8")
         written.add(path)
         print(f"    wrote {path}")
     print()

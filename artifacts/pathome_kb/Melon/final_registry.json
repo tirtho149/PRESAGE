@@ -33,7 +33,7 @@
         "diagnostic_features": {
           "value": "Brown leaf lesions with concentric, target-like rings and a yellow surrounding halo; with significant progression whole leaves become brown and dry.",
           "url": "https://vegpath.plantpath.wisc.edu/diseases/cucurbit-alternaria-leaf-blight/",
-          "quote": "brown lesions on the leaves that can develop concentric, target-like rings and a yellow surrounding halo ... Significant progression of Alternaria leaf blight on muskmelon – whole leaves become brown and dry."
+          "quote": "brown lesions on the leaves that can develop concentric, target-like rings and a yellow surrounding halo ... Significant progression of Alternaria leaf blight on muskmelon \u2013 whole leaves become brown and dry."
         },
         "look_alikes": {
           "value": [],
@@ -104,7 +104,188 @@
           "alternative_source_url": "https://ag.umass.edu/vegetable/fact-sheets/cucurbits-alternaria-leaf-spot",
           "note": "UMass primarily emphasises leaves ('fruit spots have been reported'); UW also lists seed as a survival route; PSU and PNW add fruit symptoms."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Kentucky": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5368278"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 1,
+            "duplicates_count": 1,
+            "dropped_contradictory": [
+              {
+                "field": "diagnostic_features",
+                "canonical_says": "Brown leaf lesions with concentric, target-like rings and a yellow surrounding halo; with significant progression whole leaves become brown and dry.",
+                "image_shows": "Signs of mycelium and spore masses are present.",
+                "image_quote": "The image shows a white, fluffy mycelium covering the affected area.",
+                "image_id": "bugwood::5368278",
+                "verification_status": "contradictory",
+                "reasoning": "Alternaria cucumerina sporulation is consistently described as dark olive-green to black/felt-like, not white fluffy mycelium; white fluffy growth is characteristic of other pathogens (Pythium, Sclerotinia, downy mildew), so this candidate is inconsistent with the disease.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://extension.umaine.edu/ipm/ipddl/publications/5086e/",
+                    "quote": "Fruit lesions appear as zonate, sunken lesions with dark, olive-green, felt-like sporulation present."
+                  },
+                  {
+                    "url": "https://vegpath.plantpath.wisc.edu/diseases/cucurbit-alternaria-leaf-blight/",
+                    "quote": "Numerous black conidia (spores) and chains of spores can be seen on infected leaves around leaf hairs (trichomes)."
+                  },
+                  {
+                    "url": "https://plantpath.ifas.ufl.edu/u-scout/cucurbit/alternaria-leaf-spot.html",
+                    "quote": "Fruit lesions may develop a dark olive to black-colored powdery mat on the fruit surface."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "North Carolina": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Brown lesions develop on leaves with concentric, target-like rings and a yellow surrounding halo.",
+              "image_shows": "The lesions exhibit a tan center, a chocolate-brown margin, and a chlorotic yellow halo.",
+              "image_quote": "The lesions have a chocolate-brown margin. There is a chlorotic yellow halo around the lesions. The lesions exhibit a tan center.",
+              "image_id": "bugwood::1576450",
+              "verification_status": "verified",
+              "reasoning": "Tan center, dark brown margin, and chlorotic yellow halo are the textbook Alternaria cucumerina lesion zonation described by APS Plant Disease and UMass Extension.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-92-4-0652B",
+                  "quote": "The center of the lesions was light tan, surrounded by a dark brown ring and a chlorotic halo, and tended to split in the later development stages."
+                },
+                {
+                  "url": "https://ag.umass.edu/vegetable/fact-sheets/cucurbits-alternaria-leaf-spot",
+                  "quote": "Symptoms first appear as small tan circular spots... diagnostic concentric black rings develop within the spots on infected leaves, often there is a chlorotic (yellow) halo around margins."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Brown lesions develop on leaves with concentric, target-like rings and a yellow surrounding halo.",
+              "image_shows": "The lesions appear as small, isolated, pinpoint spots with no clearly developed shape category.",
+              "image_quote": "The lesions are small, pinpoint spots.",
+              "image_id": "bugwood::1576450",
+              "verification_status": "weakly_supported",
+              "reasoning": "Early-stage Alternaria lesions are described by Kentucky and Penn State Extension as small/pinpoint spots before expansion, consistent with the candidate observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://veggiescout.ca.uky.edu/alternaria-leaf-blight-cucurbit-crops",
+                  "quote": "Symptoms first appear at the time of fruit set on older leaves, beginning as small, necrotic spots that may be surrounded by a yellow halo."
+                },
+                {
+                  "url": "https://extension.psu.edu/managing-alternaria-leaf-blight-on-cantaloupe",
+                  "quote": "Symptoms of Alternaria leaf blight first appear as small tan circular spots with a white center on the upper leaf surface."
+                }
+              ]
+            },
+            {
+              "field": "spread_pattern",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf apex is curled upwards, consistent with Alternaria-induced leaf curling.",
+              "image_quote": "The leaf apex is curled upwards.",
+              "image_id": "bugwood::1576450",
+              "verification_status": "weakly_supported",
+              "reasoning": "UMass and Illinois Extension both document leaf curling as a downstream symptom of Alternaria cucumerina, supporting the curled-apex observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ag.umass.edu/vegetable/fact-sheets/cucurbits-alternaria-leaf-spot",
+                  "quote": "As lesions expand, they merge to form large, blighted areas, followed by leaf curling and eventual leaf drop."
+                },
+                {
+                  "url": "https://ipm.illinois.edu/diseases/rpds/918.pdf",
+                  "quote": "Infected leaves may curl or grow in a cupped shape."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Brown lesions develop on leaves with concentric, target-like rings and a yellow surrounding halo.",
+              "image_shows": "The lesions appear smooth, with no visible sunken, raised, fuzzy, felty, waxy, or water-soaked texture.",
+              "image_quote": "The lesions on the leaf surface are smooth.",
+              "image_id": "bugwood::1576450",
+              "verification_status": "provisional",
+              "reasoning": "Lesion surface texture (smooth vs sporulating) is not described in external sources for early foliar Alternaria; canonical only notes fuzzy sporulation on fruit, so a smooth leaf-lesion appearance is plausible but unverified.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Brown leaf lesions with concentric, target-like rings and a yellow surrounding halo.",
+              "image_shows": "The leaf veins appear normal, neither translucent nor necrotic.",
+              "image_quote": "The veins are not clearing or necrotic.",
+              "image_id": "bugwood::1576450",
+              "verification_status": "novel_plausible",
+              "reasoning": "Normal vein appearance (no vein-clearing or vein-necrosis) is consistent with Alternaria being a non-vascular foliar pathogen, but is a negative finding not explicitly cited in extension literature.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape appears broad with a slightly elongated length-to-width ratio.",
+              "image_quote": "The leaf is broad and elongated.",
+              "image_id": "bugwood::1576450",
+              "verification_status": "novel_plausible",
+              "reasoning": "Leaf geometry is a host-morphology trait, not a disease feature; it is plausible but unrelated to Alternaria evidence in the literature.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Affected tissue is dominated by olive-green (60%) with rust-orange (30%) and pale-straw (10%) secondary tones.",
+              "image_quote": "Dominant color: olive-green (60%); Secondary colors: rust-orange (30%), pale-straw (10%).",
+              "image_id": "bugwood::1576450",
+              "verification_status": "novel_plausible",
+              "reasoning": "Quantitative color-palette breakdown is not addressed in extension literature, but the olive/rust/straw mix is qualitatively consistent with chlorotic-and-necrotic Alternaria foliage.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::1576450"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 3,
+            "provisional_count": 4,
+            "contradictory_count": 1,
+            "duplicates_count": 3,
+            "dropped_contradictory": [
+              {
+                "field": "look_alikes",
+                "canonical_says": "Brown lesions develop on leaves with concentric, target-like rings and a yellow surrounding halo.",
+                "image_shows": "No concentric pattern is visible in the lesions and they lack the chlorotic halos typical of Alternaria Leaf Blight.",
+                "image_quote": "The lesions are small and do not display the concentric, target-like rings or chlorotic halos typical of Alternaria Leaf Blight.",
+                "image_id": "bugwood::1576450",
+                "verification_status": "contradictory",
+                "reasoning": "This observation contradicts the sibling observation of a chlorotic halo on the same image and is inconsistent with UMass/APS descriptions of canonical Alternaria lesions; treat as an internal inconsistency to be flagged.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://ag.umass.edu/vegetable/fact-sheets/cucurbits-alternaria-leaf-spot",
+                    "quote": "Diagnostic concentric black rings will develop within the spots on infected leaves, often there is a chlorotic (yellow) halo around margins."
+                  },
+                  {
+                    "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-92-4-0652B",
+                    "quote": "The center of the lesions was light tan, surrounded by a dark brown ring and a chlorotic halo."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "disease_name": "Anthracnose",
@@ -136,7 +317,7 @@
         "summary": {
           "value": "On cucumber leaves, symptoms begin as water-soaked areas that expand into roughly circular brown spots (1/4 to 1/2 inch in diameter); on watermelon, lesions are circular at first but coalesce into irregular black necrotic areas, with stem/petiole lesions shallow, elongate and tan, and fruit lesions sunken with pinkish spore masses in moist weather.",
           "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
-          "quote": "On cucumber leaves the spots start as water soaked areas and expand into brown spots which are roughly circular, reaching about 1 ⁄ 4 to 1 ⁄ 2 inch in diameter ( Figure 3 & Figure 5 ). Small, growing leaves may be distorted and severe spotting may cause entire leaves to blight ( Figure 4 ). Lesions on watermelon leaves can also appear circular at first, but later coalesce into more irregular necrotic areas ( Figure 6 ). Leaf petiole and stem lesions are shallow, elongate and tan. Lesions on fruit are roughly circular, sunken and contain pinkish spore masses in moist weather."
+          "quote": "On cucumber leaves the spots start as water soaked areas and expand into brown spots which are roughly circular, reaching about 1 \u2044 4 to 1 \u2044 2 inch in diameter ( Figure 3 & Figure 5 ). Small, growing leaves may be distorted and severe spotting may cause entire leaves to blight ( Figure 4 ). Lesions on watermelon leaves can also appear circular at first, but later coalesce into more irregular necrotic areas ( Figure 6 ). Leaf petiole and stem lesions are shallow, elongate and tan. Lesions on fruit are roughly circular, sunken and contain pinkish spore masses in moist weather."
         },
         "diagnostic_features": {
           "value": "Presence of a pinkish to salmon mass of spores, black stroma, and black setae (bristle-like fungal structures visible with a hand lens); conidia are hyaline, nonseptate, oblong and 4-6 x 13-19 micrometers; whisker-like setae can be seen in the pink spore masses under a hand lens or microscope.",
@@ -203,7 +384,420 @@
           "alternative_source_url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/cucurbit_anthracnose_200.htm",
           "note": "Lucidcentral states 'All aboveground parts...are susceptible'; NC State specifies leaves/stems/petioles/fruit; Bugwoodwiki adds seedling damage (seed)."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Kentucky": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "On cucumber leaves, symptoms begin as water-soaked areas that expand into roughly circular brown spots (1/4 to 1/2 inch in diameter); on watermelon, lesions are circular at first but coalesce into irregular black necrotic areas.",
+              "image_shows": "The lesion centers are tan, while the margins are chocolate-brown.",
+              "image_quote": "The central parts of the lesions appear tan.",
+              "image_id": "bugwood::5368379",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources describe a tan to dark-brown gradient within anthracnose lesions, matching the tan-center/brown-margin coloration.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+                  "quote": "Anthracnose spots begin as circular lesions that are light brown-to-tan."
+                },
+                {
+                  "url": "https://extension.umn.edu/disease-management/anthracnose-cucurbits",
+                  "quote": "Lesions on leaves start as water-soaked areas that become tan to dark brown."
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf necrosis is irregular and covers the whole leaf, with some areas showing darker brown and black necrotic regions.",
+              "image_quote": "The necrotic tissue appears to cover the whole leaf.",
+              "image_id": "bugwood::5368379",
+              "verification_status": "verified",
+              "reasoning": "Whole-leaf blighting from coalescing anthracnose lesions is explicitly documented by NC State and Kentucky extension.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+                  "quote": "Spots may coalesce, resulting in blighting, distortion, and death of entire leaves."
+                },
+                {
+                  "url": "https://kentuckypestnews.wordpress.com/2019/07/09/vegetable-diseases-to-scout-for-anthracnose-of-cucurbits-3/",
+                  "quote": "Severe spotting may cause entire leaves to blight."
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified for leaf concentric rings)",
+              "image_shows": "Target spots with alternating light and dark concentric rings and a chlorotic halo around a necrotic center.",
+              "image_quote": "The lesions exhibit concentric rings with a chlorotic halo.",
+              "image_id": "bugwood::5368379",
+              "verification_status": "verified",
+              "reasoning": "Concentric (target-like) ring patterning with chlorotic halos is documented across multiple cucurbit-anthracnose factsheets, though curators should note Alternaria leaf blight produces a similar appearance.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plantvillage.psu.edu/topics/cantaloupe/infos",
+                  "quote": "Lesions expand and become large necrotic patches, often with concentric patterning."
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+                  "quote": "Brown to black, sunken lesions with concentric rings within the lesion."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Roughly circular brown spots... lesions are circular at first but coalesce into irregular black necrotic areas.",
+              "image_shows": "The affected tissue has a mix of dark brown and chlorotic yellow hues.",
+              "image_quote": "The lesion center is a dark brown with a chlorotic yellow halo.",
+              "image_id": "bugwood::5368379",
+              "verification_status": "verified",
+              "reasoning": "The dark-brown center plus chlorotic yellow halo color combination is a canonical description across cucurbit anthracnose factsheets.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plantvillage.psu.edu/topics/cantaloupe/infos",
+                  "quote": "Brown spots ranging from 0.5-5 mm or larger in diameter with yellow halo."
+                },
+                {
+                  "url": "https://extension.umn.edu/disease-management/anthracnose-cucurbits",
+                  "quote": "Small, yellow-brown spots with a yellow or green halo first appear on the oldest leaves."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Roughly circular brown spots... lesions are circular at first but coalesce into irregular black necrotic areas.",
+              "image_shows": "The lesions appear irregular with multiple small spots rather than a single well-defined shape.",
+              "image_quote": "The lesions show various small spots distributed across the leaf surface, not following any specific geometric shape.",
+              "image_id": "bugwood::5368379",
+              "verification_status": "weakly_supported",
+              "reasoning": "Multiple small, irregularly distributed lesions are consistent with the early/intermediate progression documented for melon anthracnose, though sources emphasize underlying circularity that the candidate downplays.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://kentuckypestnews.wordpress.com/2019/07/09/vegetable-diseases-to-scout-for-anthracnose-of-cucurbits-3/",
+                  "quote": "Irregular brown leaf spots form on squash, melon and cucumber."
+                },
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/anthracnose-of-cucurbits/",
+                  "quote": "Small, circular lesions develop initially on leaves, and these lesions enlarge to form large tan to brown spots that may coalesce."
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected area appears to cover more than half of each leaf.",
+              "image_quote": "The lesions are extensive across the leaf surface.",
+              "image_id": "bugwood::5368379",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extensive coverage of >50% leaf area is consistent with documented severe-stage anthracnose, although no source quantifies a specific percent threshold.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+                  "quote": "Severe infections can lead to defoliation."
+                },
+                {
+                  "url": "https://kentuckypestnews.wordpress.com/2019/07/09/vegetable-diseases-to-scout-for-anthracnose-of-cucurbits-3/",
+                  "quote": "Severe spotting may cause entire leaves to blight."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified for chlorosis pattern)",
+              "image_shows": "The photo shows chlorotic yellowing in the form of spots between the veins.",
+              "image_quote": "There are clear chlorotic spots between the leaf veins.",
+              "image_id": "bugwood::5368379",
+              "verification_status": "weakly_supported",
+              "reasoning": "Chlorotic halos around anthracnose lesions are well-documented; the 'between-veins' placement is consistent with lesions being often restricted by vein boundaries.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plantvillage.psu.edu/topics/cantaloupe/infos",
+                  "quote": "Brown spots ranging from 0.5-5 mm or larger in diameter with yellow halo."
+                },
+                {
+                  "url": "https://extension.umn.edu/disease-management/anthracnose-cucurbits",
+                  "quote": "Small, yellow-brown spots with a yellow or green halo first appear on the oldest leaves."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "Veins appear normal without signs of clearing or necrosis.",
+              "image_quote": "The veins remain green and unaffected.",
+              "image_id": "bugwood::5368379",
+              "verification_status": "weakly_supported",
+              "reasoning": "Cornell notes lesions are often restricted by veins, which leaves the vein tissue itself appearing green and intact on the upper surface \u00e2\u20ac\u201d consistent with the candidate.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/anthracnose-of-cucurbits/",
+                  "quote": "Leaf lesions first appear near veins, are roughly circular (often restricted by veins)."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaves show curling up towards the leaf margins.",
+              "image_quote": "Leaves appear to curl up towards the edges.",
+              "image_id": "bugwood::5368379",
+              "verification_status": "weakly_supported",
+              "reasoning": "PlantVillage documents leaf curling as a late-stage symptom in melon anthracnose, providing partial support; other extension sources do not emphasize curling.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plantvillage.psu.edu/topics/cantaloupe/infos",
+                  "quote": "Lesions coalesce, leaves begin to curl and eventually die."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified for leaf-lesion surface texture)",
+              "image_shows": "The lesions appear raised and have a rough surface texture.",
+              "image_quote": "The surface of the lesions is rough.",
+              "image_id": "bugwood::5368379",
+              "verification_status": "provisional",
+              "reasoning": "Extension sources describe anthracnose leaf lesions as drying, papery, and shot-hole rather than raised/rough; raised margins are reported for fruit lesions but not leaves, so the observation is plausible (possibly from acervuli/setae) but lacks direct support.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified \u00e2\u20ac\u201d host morphology, not disease)",
+              "image_shows": "The leaves have a large, broad base, resembling a spade shape.",
+              "image_quote": "The leaves have a large, broad base with a prominent central rib.",
+              "image_id": "bugwood::5368379",
+              "verification_status": "novel_plausible",
+              "reasoning": "This describes host-leaf geometry rather than a disease symptom; it cannot be verified against pathology literature and should be flagged as off-target for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5368379"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 9,
+            "provisional_count": 2,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "North Carolina": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Lesions are circular at first but coalesce into irregular black necrotic areas.",
+              "image_shows": "The image shows sunken, brown lesions with concentric rings.",
+              "image_quote": "The image shows sunken, brown lesions with concentric rings.",
+              "image_id": "bugwood::5598316",
+              "verification_status": "verified",
+              "reasoning": "Sunken brown fruit lesions arranged in concentric rings are explicitly documented for Colletotrichum orbiculare on cucurbits by CABI/Plantwise, NC State Extension, and Lucid factsheets.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.species.14917",
+                  "quote": "brown or black lesions appear on fruit, growing to 20-30 mm diameter, becoming sunken, wrinkled and dark, with concentric rings of sub-surface, tiny, black, saucer-shaped structures"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+                  "quote": "Lesions on fruit are roughly circular, sunken and contain pinkish spore masses in moist weather"
+                },
+                {
+                  "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/cucurbit_anthracnose_200.htm",
+                  "quote": "round, pale brown, sunken spots (up to 6 mm deep) with raised margins, up to 30 mm diameter"
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Lesions are circular at first but coalesce into irregular black necrotic areas.",
+              "image_shows": "The photo displays a white rind with brownish lesions.",
+              "image_quote": "The lesions appear brown and sunken.",
+              "image_id": "bugwood::5598316",
+              "verification_status": "weakly_supported",
+              "reasoning": "Brown and sunken fruit lesions are well-supported by extension and CABI references for melon anthracnose; the pale/white rind background is a cultivar-dependent observation not specifically corroborated, hence weakly_supported.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/cucurbit_anthracnose_200.htm",
+                  "quote": "round, pale brown, sunken spots (up to 6 mm deep) with raised margins"
+                },
+                {
+                  "url": "https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.species.14917",
+                  "quote": "brown or black lesions appear on fruit ... becoming sunken, wrinkled and dark"
+                }
+              ]
+            }
+          ],
+          "image_ids": [
+            "bugwood::5598316"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 2,
+            "provisional_count": 0,
+            "contradictory_count": 1,
+            "duplicates_count": 0,
+            "dropped_contradictory": [
+              {
+                "field": "diagnostic_features",
+                "canonical_says": "Presence of a pinkish to salmon mass of spores, black stroma, and black setae.",
+                "image_shows": "The image displays dark spots (pycnidia) on the surface of the melon rind.",
+                "image_quote": "The image shows multiple brown lesions with concentric rings on the melon surface.",
+                "image_id": "bugwood::5598316",
+                "verification_status": "contradictory",
+                "reasoning": "Colletotrichum orbiculare produces acervuli (open, saucer-shaped fruiting bodies with setae), not pycnidia (closed flask-shaped structures characteristic of Phoma/Septoria); labeling the dark structures as pycnidia is contradicted by every extension and CABI reference for this pathogen.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://wiki.bugwood.org/Colletotrichum_orbiculare_(anthracnose_of_cucurbits)",
+                    "quote": "Dark acervuli (fruiting bodies) and a profusion of single-celled spores (conidia) are visible with a microscope"
+                  },
+                  {
+                    "url": "https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.species.14917",
+                    "quote": "concentric rings of sub-surface, tiny, black, saucer-shaped structures"
+                  },
+                  {
+                    "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+                    "quote": "use a hand lens to see black, bristle-like fungal structures"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "Virginia": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "dark brown spots with tan margins and chlorotic yellow halo",
+              "image_shows": "The lesion centers are tan, the margins are chocolate-brown, and there is a chlorotic yellow halo.",
+              "image_quote": "The lesion centers appear tan, margins are chocolate-brown, and there is a chlorotic yellow halo.",
+              "image_id": "bugwood::5479926",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension/peer-reviewed sources independently corroborate pale/tan centers, darker brown margins, and a yellow halo on cucurbit anthracnose foliar lesions.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/keys-for-identifying-vegetable-diseases/cucurbit-key/melon-disease-key/melon-leaf-symptoms/",
+                  "quote": "brown spots of 0.5-5 mm or larger in diameter have a yellow halo"
+                },
+                {
+                  "url": "https://extension.umn.edu/disease-management/anthracnose-cucurbits",
+                  "quote": "In cucumber and honeydew melon, leaf lesions start as small water soaked areas, eventually becoming somewhat circular and brown with a yellow halo"
+                },
+                {
+                  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9410023/",
+                  "quote": "Anthracnose symptoms on watermelon leaves were small circular or irregular spots, pale brown in the center with medium to dark brown margins"
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Presence of a pinkish to salmon mass of spores, black stroma, and black setae (bristle-like fungal structures visible with a hand lens)",
+              "image_shows": "Dark, necrotic areas where the veins are located.",
+              "image_quote": "The leaf has dark, necrotic areas where the veins are located.",
+              "image_id": "bugwood::5479926",
+              "verification_status": "verified",
+              "reasoning": "Vein-associated necrosis is a documented anthracnose hallmark on cucurbit foliage per Rutgers Plant & Pest Advisory; supports the observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plant-pest-advisory.rutgers.edu/anthracnose-and-alternaria-leaf-blight-in-cucurbit-crops-2/",
+                  "quote": "With Anthracnose, spots always develop on veins on the underside of infected leaves. Often, black setae (hair-like projections) will develop on the veins of infected tissue."
+                }
+              ]
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "Alternaria leaf blight (Alternaria cucumerina); Angular leaf spot ...",
+              "image_shows": "No concentric pattern was observed.",
+              "image_quote": "The leaf shows primarily scattered necrotic spots without a concentric arrangement.",
+              "image_id": "bugwood::5479926",
+              "verification_status": "verified",
+              "reasoning": "Concentric ring/target pattern is the diagnostic of Alternaria leaf blight, not anthracnose; absence of concentric rings is genuinely informative for ruling out the principal look-alike.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plant-pest-advisory.rutgers.edu/anthracnose-and-alternaria-leaf-blight-in-cucurbit-crops-2/",
+                  "quote": "With Alternaria, diagnostic concentric black rings will develop within the spots on infected leaves"
+                },
+                {
+                  "url": "https://vegpath.plantpath.wisc.edu/diseases/cucurbit-alternaria-leaf-blight/",
+                  "quote": "Alternaria cucumerina can cause a characteristic target-like spot"
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesions appear raised and have a slightly rough surface.",
+              "image_quote": "The surface of the lesions has a raised texture.",
+              "image_id": "bugwood::5479926",
+              "verification_status": "novel_plausible",
+              "reasoning": "Leaf lesions are typically described as sunken on fruit and not characterized by raised texture on foliage; the appearance may reflect setae/acervuli but is not directly supported by extension literature \u00e2\u20ac\u201d flagged for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows curling up along the margins.",
+              "image_quote": "The leaf margins appear to curl upwards.",
+              "image_id": "bugwood::5479926",
+              "verification_status": "novel_plausible",
+              "reasoning": "Upward marginal leaf curl is not a documented anthracnose symptom (more typical of viruses); could reflect secondary deformation from severe necrosis but lacks direct external support.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5479926"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 3,
+            "provisional_count": 2,
+            "contradictory_count": 1,
+            "duplicates_count": 5,
+            "dropped_contradictory": [
+              {
+                "field": "other",
+                "canonical_says": "(not specified)",
+                "image_shows": "There is chlorosis, specifically interveinal.",
+                "image_quote": "The leaf shows yellowing between the veins while the veins remain green.",
+                "image_id": "bugwood::5479926",
+                "verification_status": "contradictory",
+                "reasoning": "Interveinal chlorosis with green veins is diagnostic of Cucurbit Yellow Stunting Disorder Virus (or nutrient deficiency), not of Colletotrichum orbiculare anthracnose, which produces discrete lesions with localized chlorotic halos.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://ipm.ucanr.edu/agriculture/cucurbits/cucurbit-yellow-stunting-disorder/",
+                    "quote": "develops into a striking interveinal chlorosis in which the veins remain more or less green but the rest of the leaf turns bright yellow"
+                  },
+                  {
+                    "url": "https://extension.umn.edu/disease-management/anthracnose-cucurbits",
+                    "quote": "leaf lesions start as small water soaked areas, eventually becoming somewhat circular and brown with a yellow halo"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "disease_name": "Bacterial Wilt",
@@ -280,7 +874,374 @@
           "alternative_source_url": "https://extension.illinois.edu/plant-problems/bacterial-wilt-cucurbits",
           "note": "Illinois Extension only explicitly identifies wilt of runners/whole plants and implied vascular involvement; UMN and UMass additionally call out leaves and stems."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Alabama": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "leaves yellowing and browning at the margins before completely withering",
+              "image_shows": "The photo shows chlorosis on the leaves.",
+              "image_quote": "Leaves exhibit yellowing between the veins.",
+              "image_id": "bugwood::1568136",
+              "verification_status": "verified",
+              "reasoning": "Interveinal chlorosis on leaves of cucurbits with E. tracheiphila infection is explicitly documented by APS and Bayer Vegetables extension references.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.apsnet.org/edcenter/apsnetfeatures/Pages/BacterialWilt.aspx",
+                  "quote": "Wilt initially affects single leaves as chlorosis followed by interveinal necrosis, then progresses to individual runners of a plant."
+                },
+                {
+                  "url": "https://www.vegetables.bayer.com/us/en-us/resources/growing-tips-and-innovation-articles/agronomic-spotlights/bacterial-wilt-of-melons.html",
+                  "quote": "A distinct necrosis and chlorosis can develop at the leaf margins before the entire plant collapses and dies."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "leaves yellowing and browning at the margins before completely withering",
+              "image_shows": "Dead-tissue patterns are observed throughout the leaf surfaces.",
+              "image_quote": "The image displays necrotic tissue on the leaves, which appear dead brown, black, or bleached.",
+              "image_id": "bugwood::1568136",
+              "verification_status": "weakly_supported",
+              "reasoning": "Brown necrosis on bacterial-wilt leaves is well-supported; the 'black or bleached' qualifier is not characteristic of E. tracheiphila, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.vegetables.bayer.com/us/en-us/resources/growing-tips-and-innovation-articles/agronomic-spotlights/bacterial-wilt-of-melons.html",
+                  "quote": "A distinct necrosis and chlorosis can develop at the leaf margins before the entire plant collapses and dies."
+                },
+                {
+                  "url": "https://www.apsnet.org/edcenter/apsnetfeatures/Pages/BacterialWilt.aspx",
+                  "quote": "Leaves may develop chlorotic (i.e., yellow) and necrotic (i.e., dead) areas as the disease progresses."
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "wilt progresses down the vine until the entire vine wilts or dies",
+              "image_shows": "The majority of the plant organs (leaves and vines) are visibly affected.",
+              "image_quote": "The leaves are curled and showing signs of wilting.",
+              "image_id": "bugwood::1568136",
+              "verification_status": "weakly_supported",
+              "reasoning": "Progression of wilting across most leaves/vines is well-documented for advanced bacterial wilt; the 'curled' component is not characteristic and weakens the support.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://hort.extension.wisc.edu/articles/bacterial-wilt-of-cucurbits/",
+                  "quote": "As the disease progresses, the entire plant begins to wilt and collapse as the bacteria clog the xylem vessels."
+                },
+                {
+                  "url": "https://extension.umn.edu/disease-management/bacterial-wilt",
+                  "quote": "The first symptoms are wilting of individual leaves followed by wilting of individual stems and then of entire plants."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaves are broad with pointed tips, resembling spade or ovate shapes.",
+              "image_quote": "The leaves are broad with pointed tips.",
+              "image_id": "bugwood::1568136",
+              "verification_status": "novel_plausible",
+              "reasoning": "Describes generic cucurbit leaf morphology rather than a disease symptom; coherent with melon foliage but not a verifiable pathology claim.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "squash vine borer",
+              "image_shows": "The image does not show concentric rings or bullseye patterns, which contradicts the search criteria for ConcentricPatternAgent.",
+              "image_quote": "No concentric pattern is visible in the lesion.",
+              "image_id": "bugwood::1568136",
+              "verification_status": "novel_plausible",
+              "reasoning": "Absence of concentric/target patterning is consistent with bacterial wilt (which is vascular, not a leaf-spot disease) and helps rule out target spot / Alternaria look-alikes, but is a negative observation without direct external citation.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::1568136"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 3,
+            "provisional_count": 2,
+            "contradictory_count": 6,
+            "duplicates_count": 1,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "leaves yellowing and browning at the margins before completely withering",
+                "image_shows": "The leaf lesions appear to be elongated along the leaf margin.",
+                "image_quote": "The leaf lesions appear to be elongated along the leaf margin.",
+                "image_id": "bugwood::1568136",
+                "verification_status": "contradictory",
+                "reasoning": "E. tracheiphila is a xylem-limited vascular pathogen and does not produce discrete elongated marginal leaf lesions; elongated lesions are typical of fungal leaf-spot diseases, not bacterial wilt.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://www.apsnet.org/edcenter/apsnetfeatures/Pages/BacterialWilt.aspx",
+                    "quote": "The bacteria multiply rapidly within the plant and plug the vascular tissue, resulting in wilting of the vines."
+                  },
+                  {
+                    "url": "https://hort.extension.wisc.edu/articles/bacterial-wilt-of-cucurbits/",
+                    "quote": "The first symptom is usually just a few wilted leaves... As the disease progresses, the entire plant begins to wilt and collapse as the bacteria clog the xylem vessels."
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "leaves yellowing and browning at the margins before completely withering",
+                "image_shows": "The lesion centers are tan, while the margins are chocolate-brown.",
+                "image_quote": "The lesion centers are tan, while the margins are chocolate-brown.",
+                "image_id": "bugwood::1568136",
+                "verification_status": "contradictory",
+                "reasoning": "Tan-centered, chocolate-brown-margined leaf lesions are diagnostic of fungal leaf spots (e.g., Alternaria/anthracnose), not E. tracheiphila bacterial wilt, which presents as chlorosis-then-necrosis tied to wilting.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://www.vegetables.cornell.edu/pest-management/keys-for-identifying-vegetable-diseases/cucurbit-key/summer-squash-disease-key/summer-squash-leaf-symptoms/",
+                    "quote": "Brown spots, 0.5-5 mm or larger in diameter, with yellow halo, and spots often have concentric rings (target appearance)"
+                  },
+                  {
+                    "url": "https://www.apsnet.org/edcenter/apsnetfeatures/Pages/BacterialWilt.aspx",
+                    "quote": "Wilt initially affects single leaves as chlorosis followed by interveinal necrosis"
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "leaves yellowing and browning at the margins before completely withering",
+                "image_shows": "The leaf lesions appear raised and dry.",
+                "image_quote": "The leaf lesions are dry.",
+                "image_id": "bugwood::1568136",
+                "verification_status": "contradictory",
+                "reasoning": "Raised, dry leaf lesions are not a documented sign of bacterial wilt; E. tracheiphila symptoms are loss of turgor (wilting) leading to chlorosis/necrosis, not raised cortical lesions.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://hort.extension.wisc.edu/articles/bacterial-wilt-of-cucurbits/",
+                    "quote": "Over time, the leaves turn yellow and brown, the plant stops recovering, and eventually dies."
+                  },
+                  {
+                    "url": "https://www.apsnet.org/edcenter/apsnetfeatures/Pages/BacterialWilt.aspx",
+                    "quote": "Cucumbers and melons wilt and die rapidly."
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "(not specified)",
+                "image_shows": "The leaves in the image exhibit signs of curling inward towards the center of the plant.",
+                "image_quote": "The leaves have an inward curling tendency.",
+                "image_id": "bugwood::1568136",
+                "verification_status": "contradictory",
+                "reasoning": "Inward leaf curling is a hallmark of begomoviruses (squash leaf curl virus), whereas bacterial wilt presents as flaccid wilting/drooping with no characteristic curling.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://www.vegetables.bayer.com/ca/en-ca/resources/growing-tips/squash-leaf-curl-virus-in-cucurbits.html",
+                    "quote": "Leaf curling in cucurbits is more commonly associated with viral diseases like Squash Leaf Curl Virus (SLCV), which is transmitted by whiteflies."
+                  },
+                  {
+                    "url": "https://extension.umn.edu/disease-management/bacterial-wilt",
+                    "quote": "The first symptoms are wilting of individual leaves followed by wilting of individual stems and then of entire plants."
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "thread-like sticky strands of bacterial ooze connecting the cut surfaces confirm the pathogen",
+                "image_shows": "Leaf veins appear clear and translucent.",
+                "image_quote": "Leaf veins are translucent and paler than the surrounding leaf blades.",
+                "image_id": "bugwood::1568136",
+                "verification_status": "contradictory",
+                "reasoning": "Translucent vein clearing is characteristic of cucurbit viral diseases (e.g., cucumber vein-yellowing, squash vein-yellowing virus), not of bacterial wilt caused by E. tracheiphila.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://www.vegetables.bayer.com/us/en-us/resources/disease-guides/cucurbit/cucumber-vein-yellowing.html",
+                    "quote": "vein clearing, mosaic patterns, interveinal chlorosis... were observed in cucumbers, squash and melon (viral diseases)"
+                  },
+                  {
+                    "url": "https://www.apsnet.org/edcenter/apsnetfeatures/Pages/BacterialWilt.aspx",
+                    "quote": "Wilt initially affects single leaves as chlorosis followed by interveinal necrosis."
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "thread-like sticky strands of bacterial ooze connecting the cut surfaces confirm the pathogen",
+                "image_shows": "Target spots with alternating light and dark concentric rings.",
+                "image_quote": "The image shows a target spot with a central dark brown area surrounded by concentric rings of lighter and darker colors.",
+                "image_id": "bugwood::1568136",
+                "verification_status": "contradictory",
+                "reasoning": "Concentric-ring target spots are diagnostic of foliar fungal diseases (Alternaria/target spot), not bacterial wilt; the canonical diagnostic for E. tracheiphila is bacterial-ooze threads from cut vine sections.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://www.vegetables.cornell.edu/pest-management/keys-for-identifying-vegetable-diseases/cucurbit-key/summer-squash-disease-key/summer-squash-leaf-symptoms/",
+                    "quote": "Brown spots, 0.5-5 mm or larger in diameter, with yellow halo, and spots often have concentric rings (target appearance)"
+                  },
+                  {
+                    "url": "https://hort.extension.wisc.edu/articles/bacterial-wilt-of-cucurbits/",
+                    "quote": "To determine if a symptomatic plant has bacterial wilt, cut a wilted vine near the base of the plant... The presence of these sticky threads is diagnostic."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "North Carolina": {
+          "deltas": [
+            {
+              "field": "other",
+              "canonical_says": "leaves yellowing and browning at the margins before completely withering",
+              "image_shows": "Dead brown, black, or bleached tissue on the leaves.",
+              "image_quote": "The leaves show dead brown, black, or bleached tissue.",
+              "image_id": "bugwood::1578380",
+              "verification_status": "weakly_supported",
+              "reasoning": "Marginal necrosis (dead brown tissue) is documented for bacterial wilt; the further qualifier 'black or bleached' is not classic but the core necrosis claim is supported by extension sources.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://hort.extension.wisc.edu/articles/bacterial-wilt-of-cucurbits/",
+                  "quote": "Leaves may develop chlorotic (yellow) and necrotic (dead) areas as the disease progresses."
+                },
+                {
+                  "url": "https://www.vegetables.bayer.com/us/en-us/resources/growing-tips-and-innovation-articles/agronomic-spotlights/bacterial-wilt-of-melons.html",
+                  "quote": "A distinct necrosis and chlorosis can develop at the leaf margins before the entire plant collapses and dies."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Dominant color: olive-green, Secondary color: rust-orange.",
+              "image_quote": "The affected tissue has prominent olive-green and rust-orange colors.",
+              "image_id": "bugwood::1578380",
+              "verification_status": "novel_plausible",
+              "reasoning": "Bacterial wilt's early 'dull-green patches' and later marginal browning could loosely correspond to olive-green and rust-orange, but no source uses these exact color descriptors; flag for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::1578380"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 1,
+            "contradictory_count": 5,
+            "duplicates_count": 2,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "Plants wilt in the field... wilt progresses down the vine until the entire vine wilts or dies",
+                "image_shows": "Elongated lesions along the leaf margin.",
+                "image_quote": "The leaf lesions appear elongated along the leaf margin.",
+                "image_id": "bugwood::1578380",
+                "verification_status": "contradictory",
+                "reasoning": "Bacterial wilt is a systemic vascular disease producing diffuse marginal chlorosis/necrosis and wilting, not discrete elongated marginal lesions; elongated leaf-margin lesions are more consistent with angular leaf spot or Alternaria.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://extension.illinois.edu/plant-problems/bacterial-wilt-cucurbits",
+                    "quote": "The most distinctive symptom exhibited by a plant with bacterial wilt is wilting and ultimately death... a consequence of the blockage of water movement inside of the plant."
+                  },
+                  {
+                    "url": "https://hort.extension.wisc.edu/articles/bacterial-wilt-of-cucurbits/",
+                    "quote": "Leaves may develop chlorotic (yellow) and necrotic (dead) areas as the disease progresses."
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "(not specified)",
+                "image_shows": "Tan centers with chocolate-brown margins.",
+                "image_quote": "The lesion centers are tan, while the margins are chocolate-brown.",
+                "image_id": "bugwood::1578380",
+                "verification_status": "contradictory",
+                "reasoning": "Tan-centered lesions with darker brown margins are classic of fungal leaf spots (Alternaria, Cercospora, anthracnose) on cucurbits, not Erwinia tracheiphila; bacterial wilt produces diffuse marginal necrosis without distinct two-tone lesion architecture.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://www.vegetables.bayer.com/us/en-us/resources/growing-tips-and-innovation-articles/agronomic-spotlights/bacterial-wilt-of-melons.html",
+                    "quote": "first symptoms being dull-green patches on the leaves... A distinct necrosis and chlorosis can develop at the leaf margins before the entire plant collapses and dies."
+                  },
+                  {
+                    "url": "https://extension.illinois.edu/plant-problems/bacterial-wilt-cucurbits",
+                    "quote": "The most distinctive symptom exhibited by a plant with bacterial wilt is wilting and ultimately death."
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "(not specified)",
+                "image_shows": "Raised and slightly rough texture.",
+                "image_quote": "The leaf lesions appear raised and slightly rough.",
+                "image_id": "bugwood::1578380",
+                "verification_status": "contradictory",
+                "reasoning": "Bacterial wilt produces flat marginal necrosis/chlorosis, not raised rough lesions; raised/rough textures point toward downy mildew, scab, or other fungal pathologies and are inconsistent with the vascular nature of E. tracheiphila.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://extension.illinois.edu/plant-problems/bacterial-wilt-cucurbits",
+                    "quote": "Symptoms appear first on leaves of a single runner (vine). Leaves may develop chlorotic (yellow) and necrotic (dead) areas as the disease progresses."
+                  },
+                  {
+                    "url": "https://hort.extension.wisc.edu/articles/bacterial-wilt-of-cucurbits/",
+                    "quote": "The most distinctive symptom exhibited by a plant with bacterial wilt is wilting and ultimately death."
+                  }
+                ]
+              },
+              {
+                "field": "other",
+                "canonical_says": "Sever an infected vine close to the crown... thread-like sticky strands of bacterial ooze connecting the cut surfaces confirm the pathogen",
+                "image_shows": "Translucent and pale veins indicating vein clearing.",
+                "image_quote": "The veins are translucent and paler than the blade.",
+                "image_id": "bugwood::1578380",
+                "verification_status": "contradictory",
+                "reasoning": "Vein clearing (translucent paler veins) is a classic symptom of viral diseases on cucurbits (e.g., CMV, WMV), not of Erwinia tracheiphila, which is a xylem-occluding bacterium producing wilt and marginal necrosis rather than vein-pattern changes.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://www.vegetables.bayer.com/us/en-us/resources/growing-tips-and-innovation-articles/agronomic-spotlights/bacterial-wilt-of-melons.html",
+                    "quote": "the first symptoms being dull-green patches on the leaves, which become progressively more flaccid in sunny weather."
+                  },
+                  {
+                    "url": "https://extension.illinois.edu/plant-problems/bacterial-wilt-cucurbits",
+                    "quote": "wilting and ultimately death, which are a consequence of the blockage of water movement inside of the plant."
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "(not specified)",
+                "image_shows": "Target spots with alternating light and dark concentric rings.",
+                "image_quote": "The image shows a target spot with a light outer ring and a darker inner ring.",
+                "image_id": "bugwood::1578380",
+                "verification_status": "contradictory",
+                "reasoning": "Concentric-ring target spots on melon are diagnostic of Alternaria cucumerina (Alternaria leaf blight) or Cercospora, not bacterial wilt; Erwinia tracheiphila produces no ringed lesions because it is vascular, not foliar-necrotic.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://u.osu.edu/vegnetnews/2025/07/11/cucurbit-disease-update-no-downy-mildew-yet-but-powdery-mildew-bacterial-wilt-angular-leaf-spot-and-alternaria-leaf-spot-present-july-11-2025/",
+                    "quote": "Alternaria spots on muskmelon and watermelon develop definite, concentric rings that give the spot a target-like appearance."
+                  },
+                  {
+                    "url": "https://extension.illinois.edu/plant-problems/bacterial-wilt-cucurbits",
+                    "quote": "The most distinctive symptom exhibited by a plant with bacterial wilt is wilting and ultimately death."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "disease_name": "Charcoal Rot",
@@ -324,7 +1285,131 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "North Carolina": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "Two spherical fruits with blackened lesions.",
+              "image_quote": "The lesions have a black center.",
+              "image_id": "bugwood::1578012",
+              "verification_status": "weakly_supported",
+              "reasoning": "Dark/black lesion appearance on fruit is consistent with general descriptions of charcoal rot tissue darkening, though melon fruit-specific reports also describe reddish decay.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/cucurbits/charcoal-rot/",
+                  "quote": "Numerous microsclerotia, visible as black specks, are embedded in the dead plant tissue."
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Macrophomina_phaseolina",
+                  "quote": "Diseases incited by M. phaseolina are often referred to as charcoal rot because of the dark coloration of the parasitized host tissue."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesions on the melon fruits are dark and black, consistent with the canonical description of Charcoal Rot.",
+              "image_quote": "The lesions appear dark and black, covering a significant portion of the fruit surface.",
+              "image_id": "bugwood::1578012",
+              "verification_status": "weakly_supported",
+              "reasoning": "Dark/black coloration is widely documented for charcoal rot, though Chilean cantaloupe fruit lesions were described as reddish, so support is partial rather than definitive.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://en.wikipedia.org/wiki/Macrophomina_phaseolina",
+                  "quote": "Diseases incited by M. phaseolina are often referred to as charcoal rot because of the dark coloration of the parasitized host tissue."
+                },
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/cucurbits/charcoal-rot/",
+                  "quote": "Numerous microsclerotia, visible as black specks, are embedded in the dead plant tissue."
+                }
+              ]
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "(not specified)",
+              "image_shows": "The concentric rings visible in the lesions align with the described look-alike for Alternaria/Early Blight. However, the pale-straw yellow and chocolate-brown color palette suggests Charcoal Rot, which is supported by the severity and appearance of the lesions.",
+              "image_quote": "The photo displays two affected melon fruits with dark lesions.",
+              "image_id": "bugwood::1578012",
+              "verification_status": "weakly_supported",
+              "reasoning": "Concentric-ring 'bull's-eye' lesions on cucurbits are a documented signature of Alternaria cucumerina and Didymella bryoniae (gummy stem blight / black rot), so flagging these as look-alikes for charcoal rot has external support.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.cahnr.uconn.edu/leaf-and-fruit-diseases-of-cucurbits-i/",
+                  "quote": "Alternaria leaf spot causes lesions that are round to irregular target spots on older leaves, and as the spots enlarge, concentric rings are formed in the lesion."
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-2013-1024-01-DG",
+                  "quote": "Gummy stem blight... causes circular lesions that often appear as concentric rings, with fruiting bodies (pycnidia or pseudothecia) appearing within lesions."
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "No visible signs of mycelium, spore masses, pycnidia, fruiting bodies, sclerotia, bacterial ooze, or rust pustules.",
+              "image_quote": "The image shows two fruits with dark lesions.",
+              "image_id": "bugwood::1578012",
+              "verification_status": "provisional",
+              "reasoning": "Absence of visible fungal structures in a single field photo cannot be confirmed externally; microsclerotia of M. phaseolina are typically embedded in tissue and may not always be visible at this scale.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image clearly shows significant dark lesions on the fruits, indicating that over 50% of the affected organ is affected.",
+              "image_quote": "The image displays two melon fruits with significant dark lesions covering more than half of their surfaces.",
+              "image_id": "bugwood::1578012",
+              "verification_status": "provisional",
+              "reasoning": "Severity coverage is an image-specific measurement; literature documents severe outbreaks on melon but provides no quantitative threshold that can verify a >50% coverage claim for this specific photo.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::1578012"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 3,
+            "provisional_count": 2,
+            "contradictory_count": 1,
+            "duplicates_count": 0,
+            "dropped_contradictory": [
+              {
+                "field": "diagnostic_features",
+                "canonical_says": "(not specified)",
+                "image_shows": "The image shows lesions with concentric patterns.",
+                "image_quote": "There are target spots with alternating light and dark concentric rings.",
+                "image_id": "bugwood::1578012",
+                "verification_status": "contradictory",
+                "reasoning": "Concentric/target-ring lesions are diagnostic of Alternaria cucumerina and Didymella bryoniae (gummy stem blight), not of charcoal rot, which produces dry, cracked, tan-to-brown tissue with embedded black microsclerotia \u00e2\u20ac\u201d so this pattern argues against a charcoal rot ID.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://ipm.cahnr.uconn.edu/leaf-and-fruit-diseases-of-cucurbits-i/",
+                    "quote": "Alternaria leaf spot causes lesions that are round to irregular target spots on older leaves, and as the spots enlarge, concentric rings are formed in the lesion."
+                  },
+                  {
+                    "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-2013-1024-01-DG",
+                    "quote": "Gummy stem blight... causes circular lesions that often appear as concentric rings, with fruiting bodies (pycnidia or pseudothecia) appearing within lesions."
+                  },
+                  {
+                    "url": "https://ipm.ucanr.edu/agriculture/cucurbits/charcoal-rot/",
+                    "quote": "First symptoms are yellowing and death of crown leaves and water-soaked lesions on the stem at the soil line... the stem eventually becomes dry and tan-to-brown in color. Numerous microsclerotia, visible as black specks, are embedded in the dead plant tissue."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "disease_name": "Cucurbit Downy Mildew",
@@ -390,7 +1475,377 @@
           "alternative_source_url": "https://extension.umn.edu/disease-management/downy-mildew-cucurbits",
           "note": "Minor naming variation between Cornell and UMN extension sources; both refer to the same disease caused by Pseudoperonospora cubensis."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Kansas": {
+          "deltas": [
+            {
+              "field": "severity",
+              "canonical_says": "Characteristic mosaic pattern of chlorosis and necrosis on the upper surfaces of cucurbit leaves, with gray sporangia giving a fuzzy or downy appearance on the underside of leaves.",
+              "image_shows": "Late-stage disease showing extensive foliar necrosis with tan and pale straw-colored dead tissue, consistent with coalesced lesions and leaf death from advanced cucurbit downy mildew.",
+              "image_quote": "The dried, dead foliage with tan and pale straw colors.",
+              "image_id": "bugwood::5511509",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension and CABI references confirm that advanced cucurbit downy mildew on melon progresses to tan/brown necrotic leaves and burned/dried foliage, matching the image's pale straw appearance.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://blogs.cornell.edu/livegpath/gallery/cucurbits/downy-mildew-on-cucurbits-other-symptoms-and-imitators/",
+                  "quote": "chlorotic, yellow-olive, often angular, vein-delimited lesions that become tan and necrotic as the disease progresses ... the yellow spots become brown and then necrotic, which leads to leaf fall and death."
+                },
+                {
+                  "url": "https://ag.umass.edu/vegetable/fact-sheets/cucurbits-downy-mildew",
+                  "quote": "Severe infections can kill the leaf completely, and in severe cases all the leaves may look burned."
+                },
+                {
+                  "url": "https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.species.45244",
+                  "quote": "In both melon and watermelon, foliar lesions ... lesions with chlorotic margins expand while the centres become necrotic ... Eventually, leaves will turn necrotic and curl upwards."
+                }
+              ]
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "Powdery mildew; Angular leaf spot",
+              "image_shows": "No signs of gray sporangia or fuzzy growth visible on the underside of leaves in the dried, dead foliage shown.",
+              "image_quote": "The image shows dried, dead foliage with no visible gray sporangia or fuzzy growth.",
+              "image_id": "bugwood::5511509",
+              "verification_status": "provisional",
+              "reasoning": "Absence of sporulation in desiccated late-stage tissue is plausible (sporangia require high humidity and living tissue) but no specific external source addresses this negative observation for dried melon leaves.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "Powdery mildew; Angular leaf spot",
+              "image_shows": "No discrete angular vein-delimited leaf spots are visible because lesions have coalesced into uniformly necrotic foliage.",
+              "image_quote": "No angular leaf spots are observed on the leaves.",
+              "image_id": "bugwood::5511509",
+              "verification_status": "novel_plausible",
+              "reasoning": "Coherent with literature noting that on melon foliar lesions are less vein-delimited than cucumber and that lesions coalesce at late stages, but the absence of angular spotting is not by itself evidence ruling in or out look-alikes \u00e2\u20ac\u201d flagged for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "Powdery mildew; Angular leaf spot",
+              "image_shows": "No white powdery growth (powdery mildew) or fresh bacterial angular lesions are visible on the necrotic foliage.",
+              "image_quote": "The presence of dry, shriveled leaves without any visible signs of fungal growth supports the absence of Powdery Mildew and Angular leaf spot.",
+              "image_id": "bugwood::5511509",
+              "verification_status": "provisional",
+              "reasoning": "Distinguishing powdery mildew and angular leaf spot from downy mildew typically requires examining living tissue for white powder or bacterial streaming; in fully desiccated tissue these checks are inconclusive, so the negative finding is plausible but not externally corroborated.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5511509"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 3,
+            "contradictory_count": 0,
+            "duplicates_count": 2,
+            "dropped_contradictory": []
+          }
+        },
+        "Mississippi": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Characteristic mosaic pattern of chlorosis and necrosis on the upper surfaces of cucurbit leaves",
+              "image_shows": "The lesion centers are tan, while the margins are chocolate-brown.",
+              "image_quote": "The lesion centers are tan, while the margins are chocolate-brown.",
+              "image_id": "bugwood::5558713",
+              "verification_status": "weakly_supported",
+              "reasoning": "Tan-to-brown necrotic centers progressing from chlorotic margins are documented for cucurbit downy mildew lesion maturation, supporting (though not perfectly matching) the candidate's tan/chocolate-brown color description.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://wiki.bugwood.org/Pseudoperonospora_cubensis_(downy_mildew_of_cucurbits)",
+                  "quote": "The centre of the lesion turns yellow (chlorotic) and eventually tan or brown (necrotic)."
+                },
+                {
+                  "url": "https://vegcropshotline.org/article/downy-mildew-of-watermelon/",
+                  "quote": "lesions start out as chlorotic (yellow) areas that become round and necrotic (brown/black) areas surrounded by a chlorotic halo."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Characteristic mosaic pattern of chlorosis and necrosis on the upper surfaces of cucurbit leaves",
+              "image_shows": "Distinct pale green lesions with chlorotic yellow halos and darker green margins.",
+              "image_quote": "Distinct pale green lesions with chlorotic yellow halos and darker green margins.",
+              "image_id": "bugwood::5558713",
+              "verification_status": "verified",
+              "reasoning": "Early-stage lesions are well-documented to begin as pale green/chlorotic patches surrounded by yellow halos and bordered by darker tissue, directly matching the candidate observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-12-19-0095-DG",
+                  "quote": "Symptoms appear between 3 and 12 days after infection and begin as slightly yellow to bright yellow lesions on the upper leaf surface."
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+                  "quote": "In its early stages, the disease appears as a pale green lesion on the upper surface of the leaf. Soon the color changes to yellow."
+                },
+                {
+                  "url": "https://vegcropshotline.org/article/downy-mildew-of-watermelon/",
+                  "quote": "lesions start out as chlorotic (yellow) areas... surrounded by a chlorotic halo."
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "On watermelons, an exaggerated upward leaf curling is common.",
+              "image_shows": "The leaf shows some distortion, possibly inward curling towards the center.",
+              "image_quote": "The leaf shows some distortion, possibly inward curling towards the center.",
+              "image_id": "bugwood::5558713",
+              "verification_status": "weakly_supported",
+              "reasoning": "Upward/inward leaf curling is documented for melon and watermelon under downy mildew infection; the candidate's hedged 'possibly inward curling' is consistent with this curling response.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.msstate.edu/publications/cucurbit-downy-mildew",
+                  "quote": "As the disease progresses, the infected leaves turn dry and curl upward. This symptom is particularly notable on melons and watermelon."
+                },
+                {
+                  "url": "https://wiki.bugwood.org/Pseudoperonospora_cubensis_(downy_mildew_of_cucurbits)",
+                  "quote": "Often, an exaggerated upward leaf curling will occur."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Characteristic mosaic pattern of chlorosis and necrosis on the upper surfaces of cucurbit leaves",
+              "image_shows": "Prominent chlorotic lesions with a greenish-yellow hue, surrounded by a darker green margin.",
+              "image_quote": "The lesion center is a pale green with chlorotic yellowing, the margin is a darker green, and there is a chlorotic yellow halo around the lesion.",
+              "image_id": "bugwood::5558713",
+              "verification_status": "weakly_supported",
+              "reasoning": "Pale-green-to-yellow chlorotic lesions with surrounding green/yellow halo zones match documented early symptomology, though the candidate description partially overlaps the chlorosis observation already noted.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+                  "quote": "In its early stages, the disease appears as a pale green lesion on the upper surface of the leaf. Soon the color changes to yellow."
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-12-19-0095-DG",
+                  "quote": "lesions are first visible on the upper leaf surface as small, irregular to angular, slightly chlorotic areas."
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "gray sporangia giving a fuzzy or downy appearance on the underside of leaves",
+              "image_shows": "The leaf lesions appear raised and slightly fuzzy.",
+              "image_quote": "The lesions have a slightly raised and fuzzy texture.",
+              "image_id": "bugwood::5558713",
+              "verification_status": "provisional",
+              "reasoning": "Fuzzy/downy texture in canonical is specifically the sporangia on the underside; the candidate does not clarify which leaf surface, so the observation is plausible but unverified without surface context.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Leaf spots are angular and bounded by leaf veins... Dark purplish-grey fuzz forms on the underside",
+              "image_shows": "Leaf veins appear normal without signs of clearing or necrosis.",
+              "image_quote": "The leaf veins are not clearing or showing any dark necrotic regions.",
+              "image_id": "bugwood::5558713",
+              "verification_status": "provisional",
+              "reasoning": "Absence of vein clearing/necrosis is consistent with downy mildew (which is bounded by, not destructive to, veins) and helps rule out viral look-alikes, but is a negative observation not directly addressed in canonical or external sources.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape is broad with pointed tips, resembling an ovate shape.",
+              "image_quote": "The leaf has a broad base tapering towards a more pointed tip.",
+              "image_id": "bugwood::5558713",
+              "verification_status": "novel_plausible",
+              "reasoning": "Broadly ovate leaf with cordate base is documented melon (Cucumis melo) morphology, but this is host-anatomy not disease-symptom and provides no diagnostic value for downy mildew.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "severity",
+              "canonical_says": "Characteristic mosaic pattern of chlorosis and necrosis on the upper surfaces of cucurbit leaves",
+              "image_shows": "The leaf has a mosaic pattern of chlorosis and necrosis with rust-orange speckles.",
+              "image_quote": "The image shows a mosaic pattern of chlorosis and necrosis with rust-orange speckles.",
+              "image_id": "bugwood::5558713",
+              "verification_status": "novel_plausible",
+              "reasoning": "Rust-orange speckles are not part of canonical downy-mildew descriptions and may indicate either advanced necrosis pigment, co-infection, or a misread of the necrotic ring; flagged for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5558713"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 4,
+            "provisional_count": 4,
+            "contradictory_count": 0,
+            "duplicates_count": 2,
+            "dropped_contradictory": []
+          }
+        },
+        "North Carolina": {
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "On watermelons, an exaggerated upward leaf curling is common.",
+              "image_shows": "The leaf shows curling up at the edges.",
+              "image_quote": "The leaf edges appear to curl upwards.",
+              "image_id": "bugwood::1573686",
+              "verification_status": "verified",
+              "reasoning": "Upward leaf curling on cucurbit downy mildew is documented across multiple extension and CucCAP sources for melon and watermelon.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.vegetables.bayer.com/language-masters/en-us/resources/growing-tips-and-innovation-articles/agronomic-spotlights/watermelon-downy-mildew.html",
+                  "quote": "an exaggerated upward leaf curling often occurs on watermelons"
+                },
+                {
+                  "url": "https://cuccap.org/disease-management/melon/downy-mildew/",
+                  "quote": "Infected leaves may experience an upward leaf curl."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Characteristic mosaic pattern of chlorosis and necrosis on the upper surfaces of cucurbit leaves...",
+              "image_shows": "Irregular patches of chlorotic tissue with purple centers, suggesting chlorosis.",
+              "image_quote": "The leaf exhibits chlorotic lesions with purple centers, indicating chlorosis.",
+              "image_id": "bugwood::1573686",
+              "verification_status": "weakly_supported",
+              "reasoning": "Irregular (non-angular) chlorotic patches with darker centers are documented for melon CDM; purple cast is unusual but consistent with reddish-brown to dark necrotic transition.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-12-19-0095-DG",
+                  "quote": "On melon (Cucumis melo), lesions have irregular shape with bright yellow chlorotic margins and necrotic lesion centres."
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+                  "quote": "In cantaloupe, pumpkin, and watermelon, lesions frequently do not have the angular shape... Instead, the lesions are irregular in shape, unrestricted by leaf veins."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Characteristic mosaic pattern of chlorosis and necrosis on the upper surfaces of cucurbit leaves...",
+              "image_shows": "The image displays necrotic tissue in discrete spots on the leaf.",
+              "image_quote": "Irregular patches with brownish-purple centers are scattered across the leaf.",
+              "image_id": "bugwood::1573686",
+              "verification_status": "weakly_supported",
+              "reasoning": "Discrete necrotic spots with brown-to-reddish-brown centers are documented in melon CDM; 'brownish-purple' falls within the reddish-brown to black range described in sources.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://cuccap.org/disease-management/melon/downy-mildew/",
+                  "quote": "initially spots are light yellow with a dark green border that appears water-soaked, and the spots enlarge and become brown (necrotic). They are not angular like symptoms on cucumber"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Pseudoperonospora_cubensis",
+                  "quote": "the color may remain yellow or turn brown, reddish-brown or black"
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf has numerous purple spots, indicating significant disease presence.",
+              "image_quote": "The leaf displays a mosaic pattern with numerous purple spots.",
+              "image_id": "bugwood::1573686",
+              "verification_status": "weakly_supported",
+              "reasoning": "Numerous scattered lesions indicating significant disease pressure is consistent with later-stage CDM infection patterns described in North Carolina; severity assessment via visible spot density is well-established.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://cuccap.org/disease-management/melon/downy-mildew/",
+                  "quote": "In severe cases all the leaves may look burned."
+                },
+                {
+                  "url": "https://plantpathology.ces.ncsu.edu/news/cucurbit-downy-mildew-reported-in-north-carolina/",
+                  "quote": "Pseudoperonospora cubensis generally arrives in North Carolina in May or June and escalates through fall."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Characteristic mosaic pattern of chlorosis and necrosis on the upper surfaces of cucurbit leaves...",
+              "image_shows": "The lesions appear raised and have a slightly rough texture.",
+              "image_quote": "The surface of the lesions has a raised texture.",
+              "image_id": "bugwood::1573686",
+              "verification_status": "novel_plausible",
+              "reasoning": "Raised/rough lesion texture is not described in standard CDM literature for melon; reference sources focus on color and shape rather than surface topology \u00e2\u20ac\u201d flag for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Leaf spots are angular and bounded by leaf veins (most distinct in cucumbers).",
+              "image_shows": "The leaf veins show various stages of disease progression, including some that appear to be clearing and others that seem necrotic.",
+              "image_quote": "Some veins are translucent, while others are dark and appear necrotic.",
+              "image_id": "bugwood::1573686",
+              "verification_status": "novel_plausible",
+              "reasoning": "Vein-clearing and vein necrosis as a distinct staged progression is not directly documented in CDM extension literature for melon; lesions are described as vein-delimited (cucumber) rather than vein-itself necrotic \u00e2\u20ac\u201d plausible curator-review observation.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape is broad with pointed tips, resembling an ovate form.",
+              "image_quote": "The leaf has a broad base tapering towards a more pointed tip.",
+              "image_id": "bugwood::1573686",
+              "verification_status": "provisional",
+              "reasoning": "Leaf morphology describes host (melon) leaf shape rather than disease symptom; not a pathology observation and provides no diagnostic value for CDM.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::1573686"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 4,
+            "provisional_count": 3,
+            "contradictory_count": 1,
+            "duplicates_count": 2,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "Characteristic mosaic pattern of chlorosis and necrosis on the upper surfaces of cucurbit leaves, with gray sporangia giving a fuzzy or downy appearance on the underside of leaves.",
+                "image_shows": "The lesion centers are dark purple, and the margins are slightly lighter purple.",
+                "image_quote": "The lesion centers are dark purple, while the margins are a slightly lighter purple.",
+                "image_id": "bugwood::1573686",
+                "verification_status": "contradictory",
+                "reasoning": "Upper-surface lesion centers on melon are documented as yellow-then-brown/necrotic; purple coloration in CDM refers to underside sporangial fuzz, not upper-surface lesion centers \u00e2\u20ac\u201d and cantaloupe sporulates poorly, so even underside purple is uncommon.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-12-19-0095-DG",
+                    "quote": "On melon (Cucumis melo), lesions have irregular shape with bright yellow chlorotic margins and necrotic lesion centres."
+                  },
+                  {
+                    "url": "https://cuccap.org/disease-management/melon/downy-mildew/",
+                    "quote": "initially spots are light yellow with a dark green border... the spots enlarge and become brown (necrotic)."
+                  },
+                  {
+                    "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+                    "quote": "the production of fruiting bodies (sporangia) on the lower leaf surface gives the undersides of the lesions a downy appearance, varying in color from light gray to deep purple."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "disease_name": "Fusarium Wilts, Blights, Rots And Damping-Off",
@@ -444,7 +1899,152 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "California": {
+          "deltas": [
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "A cross-section of a melon with a bright orange-yellow inner flesh and a greenish-brown outer rind.",
+              "image_quote": "The affected area has a greenish-brown outer rind with a bright orange-yellow inner flesh.",
+              "image_id": "bugwood::1571182",
+              "verification_status": "novel_plausible",
+              "reasoning": "Describes a melon cross-section that resembles normal cantaloupe anatomy rather than documented Fusarium fruit symptoms (vascular browning, external rind collapse, brown decomposed flesh after peeling); not contradicted but no external source treats this color combination as diagnostic.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The rind is predominantly green, while the flesh is pale straw.",
+              "image_quote": "The photo displays a cross-section of a melon with a predominately pale-straw colored flesh and a green rind.",
+              "image_id": "bugwood::1571182",
+              "verification_status": "novel_plausible",
+              "reasoning": "Flesh-color description conflicts with the same image_id read by the other candidates (orange-yellow vs pale straw) and no extension/APS source treats rind/flesh hue as a Fusarium melonis diagnostic; recorded as novel but uncertain.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image displays a cross-section of a melon showing the rind and flesh, with the flesh appearing yellow-orange.",
+              "image_quote": "The affected area has a greenish-brown outer rind with a bright orange-yellow inner flesh.",
+              "image_id": "bugwood::1571182",
+              "verification_status": "novel_plausible",
+              "reasoning": "Observation describes flesh color rather than any severity indicator (e.g., extent of vascular browning or rind collapse); no external evidence ties this appearance to a severity stage of Fusarium wilt, so flagged for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::1571182"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 3,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "North Carolina": {
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Runner lesions develop externally and extend from the crown to the yellowed tips; external lesions may develop on roots accompanied by red gumming at or just below the soil surface; internally, a dark red-brown vascular discoloration extend...",
+              "image_shows": "There are white exudates/ooze on the stem surface.",
+              "image_quote": "White/mycelium-like structures on the plant stem.",
+              "image_id": "bugwood::1573387",
+              "verification_status": "verified",
+              "reasoning": "Extension and APS sources confirm that white mycelial felting forms on the external stem surface of melon plants in late stages of Fusarium wilt.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ephytia.inrae.fr/en/C/7958/Melon-Main-symptoms",
+                  "quote": "At the end of the evolution, F. oxysporum f. sp. melonis may fruit on the lesions as a dense matt white to pinkish felting."
+                },
+                {
+                  "url": "https://www.apsnet.org/edcenter/disandpath/fungalasco/pdlessons/Pages/FusariumWatermelon.aspx",
+                  "quote": "In the very late stages of disease or upon plant death, the fungus begins to grow profusely along the outside of the decayed stem, producing thick mats of white mycelia and abundant macroconidia."
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Runner lesions develop externally and extend from the crown to the yellowed tips; external lesions may develop on roots accompanied by red gumming at or just below the soil surface; internally, a dark red-brown vascular discoloration extend...",
+              "image_shows": "White exudates/ooze on the stem surface.",
+              "image_quote": "There are white exudates/ooze on the stem surface.",
+              "image_id": "bugwood::1573387",
+              "verification_status": "verified",
+              "reasoning": "Sporodochia and macroconidia formation on the external stem surface (visible as white felting) is a documented late-stage diagnostic feature of Fusarium wilt on cucurbits.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.apsnet.org/edcenter/disandpath/fungalasco/pdlessons/Pages/FusariumWatermelon.aspx",
+                  "quote": "In the very late stages of disease or upon plant death, the fungus begins to grow profusely along the outside of the decayed stem, producing thick mats of white mycelia and abundant macroconidia."
+                },
+                {
+                  "url": "https://ephytia.inrae.fr/en/C/7958/Melon-Main-symptoms",
+                  "quote": "F. oxysporum f. sp. melonis may fruit on the lesions as a dense matt white to pinkish felting."
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "Seedlings may wilt; after fruit set, yellowing of a runner on one side of the plant is followed by wilting of the infected runner, with other runners collapsing similarly and rapid whole plant collapse.",
+              "image_shows": "The image shows extensive white mycelium-like structures on the stem, which are indicative of a fungal infection.",
+              "image_quote": "White/mycelium-like structures on the plant stem",
+              "image_id": "bugwood::1573387",
+              "verification_status": "verified",
+              "reasoning": "Extensive external white mycelial mats on the stem indicate late/severe Fusarium wilt, consistent with documented end-stage progression where the fungus sporulates on dying stems.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.apsnet.org/edcenter/disandpath/fungalasco/pdlessons/Pages/FusariumWatermelon.aspx",
+                  "quote": "In the very late stages of disease or upon plant death, the fungus begins to grow profusely along the outside of the decayed stem, producing thick mats of white mycelia and abundant macroconidia."
+                },
+                {
+                  "url": "https://ephytia.inrae.fr/en/C/7958/Melon-Main-symptoms",
+                  "quote": "A brownish necrotic damage develops several centimeters in length and appears flat and localized on one side of the stem as the affected tissues dry out... may fruit on the lesions as a dense matt white to pinkish felting."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Seedlings may wilt; after fruit set, yellowing of a runner on one side of the plant is followed by wilting of the infected runner, with other runners collapsing similarly and rapid whole plant collapse.",
+              "image_shows": "There is a raised lesion on the outer stem surface.",
+              "image_quote": "The image shows a raised lesion on the outer stem surface.",
+              "image_id": "bugwood::1573387",
+              "verification_status": "weakly_supported",
+              "reasoning": "External stem/runner lesions are well-documented for F. oxysporum f. sp. melonis, but sources describe them as linear/flat necrotic rather than 'raised'; the lesion presence is supported though the 'raised' morphology is only partially corroborated.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ephytia.inrae.fr/en/C/7958/Melon-Main-symptoms",
+                  "quote": "On stems near the crown of the plant, a linear, necrotic lesion may develop, extending up the plant and usually on one side of the vine."
+                },
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/cucurbits/fusarium-wilt-cantaloupe/",
+                  "quote": "Runner lesions develop externally and extend from the crown to the yellowed tips."
+                }
+              ]
+            }
+          ],
+          "image_ids": [
+            "bugwood::1573387"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 4,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 1,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Bacterial Fruit Blotch",
@@ -542,7 +2142,48 @@
           "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/watermelon-citrullus-sp-bacterial-fruit-blotchseedling-blight",
           "note": "MU Extension recommends strict 3-year rotation post-outbreak; PNW recommends 2-in-3 year or alternate-year rotation as baseline."
         }
-      ]
+      ],
+      "regional_observations": {
+        "North Carolina": {
+          "deltas": [
+            {
+              "field": "severity",
+              "canonical_says": "rapidly expanding to cover the entire fruit surface within a week under favorable conditions",
+              "image_shows": "significant portion of the melon's surface covered by lesions",
+              "image_quote": "The image displays multiple small dark spots spread across the melon's surface.",
+              "image_id": "bugwood::1577666",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension/APS sources confirm BFB on melon fruit presents as numerous discrete dark spots that progressively cover much of the fruit surface, matching the visual observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://aggie-horticulture.tamu.edu/vegetable/watermelon/fruit-diseases/bacterial-fruit-blotch/",
+                  "quote": "BFB symptoms on melon fruit also start as discrete dark green spots; however, as fruit mature, lesions become small sunken depressions in the rind."
+                },
+                {
+                  "url": "https://www.apsnet.org/edcenter/disandpath/prokaryote/pdlessons/Pages/BacterialBlotch.aspx",
+                  "quote": "Fruit symptoms begin as small, water-soaked spots. These lesions expand rapidly and may cover the upper surface of the fruit."
+                },
+                {
+                  "url": "https://www.vegetables.bayer.com/nz/en-nz/resources/growing-tips/agronomic-spotlights/bacterial-fruit-blotch-of-watermelon.html",
+                  "quote": "first appearing as small, olive-colored, irregular shaped lesions on the upper side of the fruit. These lesions can rapidly expand and grow together, coalescing into a large dark-green stain (or blotch) on the fruit."
+                }
+              ]
+            }
+          ],
+          "image_ids": [
+            "bugwood::1577666"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 1,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Powdery Mildew",
@@ -603,8 +2244,8 @@
           "Use translaminar or systemic fungicides that move to the lower leaf surface",
           "DMI fungicides (FRAC Code 3): Proline, Procure, Luna Experience, Rhyme, Aprovia Top, Inspire Super, Mettle, Rally (Myclobutanil)",
           "Carboxamide / SDHI fungicides (FRAC Code 7): Aprovia Top, Luna fungicides, Miravis Prime",
-          "Quinoxyfen (Quintec) and Cyflufenamid (Torino) — apply at most once based on resistance testing",
-          "Metrafenone (Vivando, FRAC Code 50/U8) — exhibited excellent control in evaluations",
+          "Quinoxyfen (Quintec) and Cyflufenamid (Torino) \u2014 apply at most once based on resistance testing",
+          "Metrafenone (Vivando, FRAC Code 50/U8) \u2014 exhibited excellent control in evaluations",
           "Gatten (FRAC Code U13)",
           "Pyraclostrobin + boscalid (Pristine); Azoxystrobin + difenoconazole (Quadris Top)",
           "Protectant fungicides: chlorothalonil (Bravo Weather Stik), sulfur, copper, mineral oil (mancozeb is not effective for powdery mildew)",
@@ -646,7 +2287,178 @@
           "alternative_source_url": "https://ag.umass.edu/vegetable/fact-sheets/cucurbits-powdery-mildew",
           "note": "UMass, NC State, and Cornell describe symptoms on leaves, petioles, and stems but do not list fruit. UF/IFAS reports fruit rind symptoms on watermelon."
         }
-      ]
+      ],
+      "regional_observations": {
+        "California": {
+          "deltas": [
+            {
+              "field": "look_alikes",
+              "canonical_says": "downy mildew; viral infections; chemical phytotoxicity; nutrient deficiencies",
+              "image_shows": "target spots, chlorotic halos, bullseye patterns",
+              "image_quote": "Target spots, chlorotic halos, and bullseye patterns are present.",
+              "image_id": "bugwood::1572171",
+              "verification_status": "weakly_supported",
+              "reasoning": "Target-spot / bullseye lesions are documented as a distinct cucurbit foliar disease (Corynespora cassiicola) that is a credible visual look-alike not in the canonical list, so this expands the look-alike set.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plantpath.ifas.ufl.edu/u-scout/cucurbit/target-spot.html",
+                  "quote": "The name target spot derives from the ringed, or bull's eye, appearance that is sometimes seen in lesions caused by C. cassiicola."
+                },
+                {
+                  "url": "https://wiki.bugwood.org/Corynespora_cassiicola_(target_spot_of_cucurbits)",
+                  "quote": "Target spot occurs sporadically and can be confused with downy mildew and other leaf spotting diseases."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "White, powdery fungal growth develops on both leaf surfaces, petioles, and stems",
+              "image_shows": "irregular pattern",
+              "image_quote": "The lesion is irregular.",
+              "image_id": "bugwood::1572171",
+              "verification_status": "provisional",
+              "reasoning": "Powdery mildew colonies grow as expanding, irregular powdery patches rather than discrete circular lesions, so 'irregular' is consistent but too generic to verify directly from a single source.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "broad, lobed leaf shape",
+              "image_quote": "The leaves have a prominent central lobe with smaller side lobes, resembling a spade shape.",
+              "image_id": "bugwood::1572171",
+              "verification_status": "novel_plausible",
+              "reasoning": "This describes host (Cucumis melo) leaf morphology rather than a disease feature; coherent with known melon leaf shape but not a disease observation, flag for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "upward curling",
+              "image_quote": "The leaves are curled upwards, indicating upward curling.",
+              "image_id": "bugwood::1572171",
+              "verification_status": "novel_plausible",
+              "reasoning": "Upward leaf curl is not a documented primary PM symptom (PM mainly causes yellowing, wilting, and senescence), but is plausible secondary tissue response on heavily infected leaves; flag for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::1572171"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 3,
+            "contradictory_count": 5,
+            "duplicates_count": 1,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "White, powdery fungal growth develops on both leaf surfaces, petioles, and stems",
+                "image_shows": "tan center, dark brown margin, chlorotic yellow halo",
+                "image_quote": "The lesion center is tan, the margin is dark brown, and there is a chlorotic yellow halo surrounding the entire lesion.",
+                "image_id": "bugwood::1572171",
+                "verification_status": "contradictory",
+                "reasoning": "Tan center / brown margin / yellow halo describes a discrete necrotic leaf spot (consistent with target spot or Alternaria), not the white powdery colonies that define cucurbit powdery mildew.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://ipm.ucanr.edu/agriculture/cucurbits/powdery-mildew/",
+                    "quote": "Cucurbit powdery mildew causes white, powdery fungal growth on leaves, stems, and petioles."
+                  },
+                  {
+                    "url": "https://plantpath.ifas.ufl.edu/u-scout/cucurbit/target-spot.html",
+                    "quote": "Target spot... lesions are light tan with a thin brown margin."
+                  }
+                ]
+              },
+              {
+                "field": "diagnostic_features",
+                "canonical_says": "White, powdery fungal growth (asexual conidia) on both leaf surfaces, petioles, and stems",
+                "image_shows": "fuzzy texture",
+                "image_quote": "The lesion texture appears fuzzy.",
+                "image_id": "bugwood::1572171",
+                "verification_status": "contradictory",
+                "reasoning": "'Fuzzy' texture is the hallmark of downy mildew sporulation; powdery mildew is specifically powdery / dust-like, so this descriptor contradicts the PM diagnosis.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://blog.plantdoctor.app/tips/powdery-vs-downy-mildew-identify-microscopy-treatment",
+                    "quote": "Powdery mildew looks like 'a dusty pancake batter smeared across the upper leaf surface'... In contrast, downy mildew appears as 'a delicate, downy fuzz under the leaf'."
+                  },
+                  {
+                    "url": "https://gardeningsolutions.ifas.ufl.edu/care/pests-and-diseases/diseases/powdery-vs-downy/",
+                    "quote": "Downy mildew is generally only present on the underside of leaves, while powdery mildew is often on the top of leaves and stems."
+                  }
+                ]
+              },
+              {
+                "field": "diagnostic_features",
+                "canonical_says": "yellow spots forming on upper leaf surfaces opposite the colonies",
+                "image_shows": "interveinal chlorosis",
+                "image_quote": "There is chlorosis, specifically interveinal.",
+                "image_id": "bugwood::1572171",
+                "verification_status": "contradictory",
+                "reasoning": "PM chlorosis is described as diffuse yellowing or discrete yellow spots opposite colonies, not vein-restricted interveinal chlorosis, which is more typical of nutrient deficiency or viral disease.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://extension.umn.edu/disease-management/powdery-mildew-cucurbits",
+                    "quote": "Yellow spots may form on upper leaf surfaces opposite powdery mildew colonies."
+                  },
+                  {
+                    "url": "https://ipm.ucanr.edu/agriculture/cucurbits/powdery-mildew/",
+                    "quote": "Affected leaves become dull, chlorotic, and may show some degree of wilting... eventually they become brown and papery."
+                  }
+                ]
+              },
+              {
+                "field": "diagnostic_features",
+                "canonical_says": "White, powdery fungal growth (asexual conidia) on both leaf surfaces, petioles, and stems",
+                "image_shows": "discrete spots of necrotic tissue",
+                "image_quote": "Discrete spots of necrotic tissue.",
+                "image_id": "bugwood::1572171",
+                "verification_status": "contradictory",
+                "reasoning": "PM necrosis manifests as whole-leaf browning / papery senescence, not as discrete focal necrotic spots, which suggests a different leaf spot pathogen.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://ipm.ucanr.edu/agriculture/cucurbits/powdery-mildew/",
+                    "quote": "Affected leaves become dull, chlorotic, and may show some degree of wilting in the afternoon heat; eventually they become brown and papery."
+                  },
+                  {
+                    "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+                    "quote": "Disease symptoms include leaf yellowing, necrosis and premature death of leaves."
+                  }
+                ]
+              },
+              {
+                "field": "diagnostic_features",
+                "canonical_says": "White, powdery fungal growth develops on both leaf surfaces, petioles, and stems",
+                "image_shows": "pale straw, olive-green, rust-orange",
+                "image_quote": "The affected area shows pale straw-colored patches and olive-green areas with rust-orange streaks.",
+                "image_id": "bugwood::1572171",
+                "verification_status": "contradictory",
+                "reasoning": "The diagnostic color signature of PM is white powdery growth (sometimes with yellow halo); rust-orange streaks point to a different pathogen (e.g. rust), so this palette contradicts a PM diagnosis.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://ipm.ucanr.edu/agriculture/cucurbits/powdery-mildew/",
+                    "quote": "Cucurbit powdery mildew causes white, powdery fungal growth on leaves, stems, and petioles."
+                  },
+                  {
+                    "url": "https://homegarden.cahnr.uconn.edu/factsheets/powdery-mildew-of-cucurbits/",
+                    "quote": "Powdery mildew first appears as pale yellow spots... which enlarge as white, fluffy mycelium grows over plant surfaces."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "disease_name": "Gummy Stem Blight",
@@ -703,12 +2515,12 @@
           "Routine scouting of the fields helps in timely application of fungicides that can prevent major crop losses",
           "Apply fungicides in a preventative manner. Chlorothalonil and Mancozeb are effective contact fungicides, and there are many effective systemic fungicides for management of GSB",
           "To prevent development of fungicide resistance, various chemistries should be alternated during the spray program",
-          "Avoid wounding fruits during harvest, and store fruits at 45°F–50°F to prevent postharvest black rot",
+          "Avoid wounding fruits during harvest, and store fruits at 45\u00b0F\u201350\u00b0F to prevent postharvest black rot",
           "Chlorothalonil mixed with another product such as prothioconazole or tebuconazole",
           "Mixing chlorothalonil with Luna Experience (tebuconazole and fluopyram)"
         ],
         "url": "https://ask.ifas.ufl.edu/publication/PP280",
-        "quote": "Purchase seeds from reputable companies with a good history of GSB-free seed production... Seed treatment is necessary if not previously treated, and disinfectants as solutions are more effective than dry-dust treatments... A two- to three-year rotation with non-hosts is an effective way to reduce incidence of GSB... Apply fungicides in a preventative manner. Chlorothalonil ad Mancozeb are effective contact fungicides... Avoid wounding fruits during harvest, and store fruits at 45°F–50°F to prevent postharvest black rot."
+        "quote": "Purchase seeds from reputable companies with a good history of GSB-free seed production... Seed treatment is necessary if not previously treated, and disinfectants as solutions are more effective than dry-dust treatments... A two- to three-year rotation with non-hosts is an effective way to reduce incidence of GSB... Apply fungicides in a preventative manner. Chlorothalonil ad Mancozeb are effective contact fungicides... Avoid wounding fruits during harvest, and store fruits at 45\u00b0F\u201350\u00b0F to prevent postharvest black rot."
       },
       "confidence": "high",
       "num_sources": 2,
@@ -727,7 +2539,256 @@
           "alternative_source_url": "https://extension.umd.edu/resource/gummy-stem-blight-cantaloupe",
           "note": "UMD lists leaves, stems and fruits (mapped to Foliar/Stem/Whole plant). UF/IFAS specifies that all parts except roots are affected, including seed and fruit (Pod). Canonical merges the union."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Maine": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "brownish-black depressed fruit lesions (black rot)",
+              "image_shows": "Close-up of fruit lesions with a concentric ring pattern.",
+              "image_quote": "The image shows a close-up of fruit lesions with a concentric ring pattern, which matches the description of brownish-black depressed fruit lesions with concentric rings in the canonical KB.",
+              "image_id": "bugwood::5507179",
+              "verification_status": "weakly_supported",
+              "reasoning": "Concentric ring fruit lesions are documented for cucurbit GSB (notably butternut squash) in extension literature, providing indirect support for the observation on melon fruit.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/disease-management/gummy-stem-blight-and-black-rot",
+                  "quote": "On butternut squash, the disease may form distinct concentric rings."
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+                  "quote": "Black rot on butternut may appear as a superficial hardened tan to white area which can develop concentric rings."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Large brown irregularly shaped lesions with concentric ring pattern on leaf margins and interveinal areas.",
+              "image_shows": "The image displays concentric ring structures within the stem lesions.",
+              "image_quote": "The image shows a close-up of stem lesions with a concentric ring pattern.",
+              "image_id": "bugwood::5507179",
+              "verification_status": "novel_plausible",
+              "reasoning": "Canonical documents concentric rings on leaves and extension literature documents them on fruit; concentric rings on stems are not directly described in available sources but are visually coherent with GSB lesion development \u00e2\u20ac\u201d flag for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5507179"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 4,
+            "dropped_contradictory": []
+          }
+        },
+        "North Carolina": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "light- to dark-brown necrotic spots ... large brown irregularly shaped lesions with concentric ring pattern on leaf margins and interveinal areas",
+              "image_shows": "The lesion shows a tan center, a darker brown margin, and a chlorotic yellow halo.",
+              "image_quote": "The lesion appears tan with a darker brown margin and a chlorotic yellow halo.",
+              "image_id": "bugwood::1577181",
+              "verification_status": "verified",
+              "reasoning": "Clemson and UF/IFAS extension sources explicitly describe GSB melon foliar lesions as tan-to-brown with lighter centers and darker margins, plus surrounding chlorosis, matching the candidate's color stratification.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://lgpress.clemson.edu/publication/gummy-stem-blight-on-watermelon-and-muskmelon/",
+                  "quote": "Leaf lesions are round or triangular, particularly those at leaf edges, brown on melons ... with centers of spots often lighter brown than the surrounding portions."
+                },
+                {
+                  "url": "https://plantpath.ifas.ufl.edu/u-scout/cucurbit/gummy-stem-blight.html",
+                  "quote": "Brown, irregularly shaped lesions containing a concentric ring pattern can be seen on cantaloupe and watermelon leaf margins and interveinal areas."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "light- to dark-brown necrotic spots ... concentric ring pattern on leaf margins and interveinal areas",
+              "image_shows": "The affected tissue displays tan centers, darker brown margins, and a chlorotic yellow halo.",
+              "image_quote": "The lesion appears tan with a darker brown margin and a chlorotic yellow halo.",
+              "image_id": "bugwood::1577181",
+              "verification_status": "verified",
+              "reasoning": "The tan/brown/chlorotic-halo color palette is corroborated by NC State's watermelon disease handbook and Clemson Land-Grant Press, both describing the same tri-zone pattern in cucurbit GSB.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://lgpress.clemson.edu/publication/gummy-stem-blight-on-watermelon-and-muskmelon/",
+                  "quote": "centers of spots often lighter brown than the surrounding portions"
+                },
+                {
+                  "url": "https://cucurbitbreeding.wordpress.ncsu.edu/watermelon-breeding/nc-state-watermelon-disease-handbook/gummy-stem-blight-didymella-bryoniae/",
+                  "quote": "Early symptoms appear as yellowing or chlorosis of the leaf margins followed by light to dark brown necrotic spots."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf margin is curled inward, affecting a significant portion of the leaf's edge.",
+              "image_quote": "The leaf margin shows a distinct curl inward towards the center of the leaf.",
+              "image_id": "bugwood::1577181",
+              "verification_status": "verified",
+              "reasoning": "Marginal lesions of GSB are documented to cause leaf curling and shriveling, supporting the observed inward leaf-margin curl.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://en.wikipedia.org/wiki/Gummy_stem_blight",
+                  "quote": "lesions beginning at leaf margins but rapidly extending back into the leaf blade, causing curling, shriveling, and leaf death"
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion appears raised with a rough texture.",
+              "image_quote": "The lesion is irregular and has a raised, uneven surface.",
+              "image_id": "bugwood::1577181",
+              "verification_status": "weakly_supported",
+              "reasoning": "Corky/cracked texture is documented for mature GSB lesions (primarily on stems but extended to lesion tissue generally); raised-rough leaf texture is plausible but not explicitly cataloged for foliar lesions.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://cucurbitbreeding.wordpress.ncsu.edu/watermelon-breeding/nc-state-watermelon-disease-handbook/gummy-stem-blight-didymella-bryoniae/",
+                  "quote": "Mature GSB lesions appear corky and cracked"
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected area occupies more than half of the visible leaf margin.",
+              "image_quote": "The leaf margin shows a significant portion of the leaf edge curled inward.",
+              "image_id": "bugwood::1577181",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extensive marginal involvement is consistent with documented rapid leaf-margin spread that leads to defoliation, supporting a high-severity reading on a single leaf.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plantpath.ifas.ufl.edu/u-scout/cucurbit/gummy-stem-blight.html",
+                  "quote": "Yield loss due to gummy stem blight occurs as a result of rapid defoliation of vines and fruit infection and subsequent decay."
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Gummy_stem_blight",
+                  "quote": "lesions beginning at leaf margins but rapidly extending back into the leaf blade"
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf veins appear normal without any signs of clearing or necrosis.",
+              "image_quote": "The veins are visible and their color does not indicate any abnormality.",
+              "image_id": "bugwood::1577181",
+              "verification_status": "novel_plausible",
+              "reasoning": "GSB literature does not describe vein clearing as a typical symptom, so unaffected veins are coherent with the disease but not externally documented as a positive diagnostic feature.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf has a broad shape with rounded ends.",
+              "image_quote": "The leaf appears to have an ovate shape.",
+              "image_id": "bugwood::1577181",
+              "verification_status": "novel_plausible",
+              "reasoning": "Leaf-shape description is a host-morphology observation rather than a disease feature; no contradiction with melon foliage but not a pathology claim per se.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::1577181"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 5,
+            "provisional_count": 2,
+            "contradictory_count": 0,
+            "duplicates_count": 4,
+            "dropped_contradictory": []
+          }
+        },
+        "Texas": {
+          "deltas": [
+            {
+              "field": "severity",
+              "canonical_says": "stem lesions that girdle the stem, cracking with gummy ooze, red/brown/black cankers exuding red to amber gummy substance",
+              "image_shows": "The stem lesions are extensive and show a gummy, reddish-brown ooze.",
+              "image_quote": "A significant portion of the stem shows gummy, reddish-brown lesions.",
+              "image_id": "bugwood::5605150",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension literature describes extensive stem cankers with gummy exudate consistent with the visible severity, though severity itself is a visual assessment not directly quantified by canonical.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://aggie-horticulture.tamu.edu/vegetable/watermelon/foliar-diseases/gummy-stem-blight/",
+                  "quote": "Cankers develop on the stem that can be red, brown, or black in color, and a red to amber gummy substance can exude from this region."
+                },
+                {
+                  "url": "https://lgpress.clemson.edu/publication/gummy-stem-blight-on-watermelon-and-muskmelon/",
+                  "quote": "cankered vines wilt near mid-season"
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "red/brown/black cankers exuding red to amber gummy substance",
+              "image_shows": "The affected tissue shows a predominance of brown and green colors.",
+              "image_quote": "The affected tissue displays a brown, cracked, and gummy appearance with surrounding healthy green stem.",
+              "image_id": "bugwood::5605150",
+              "verification_status": "weakly_supported",
+              "reasoning": "Cracked brown gummy lesions surrounded by green stem tissue match described mature lesion appearance in NCSU and Clemson handbooks.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://cucurbitbreeding.wordpress.ncsu.edu/watermelon-breeding/nc-state-watermelon-disease-handbook/gummy-stem-blight-didymella-bryoniae/",
+                  "quote": "Mature GSB lesions appear corky and cracked and often exude an orange-red-brown gummy substance."
+                }
+              ]
+            }
+          ],
+          "image_ids": [
+            "bugwood::5605150"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 2,
+            "provisional_count": 0,
+            "contradictory_count": 1,
+            "duplicates_count": 3,
+            "dropped_contradictory": [
+              {
+                "field": "affected_organs",
+                "canonical_says": "Foliar; Stem; Seed; Pod; Whole plant",
+                "image_shows": "A portion of the root is visible and appears to have a gummy, reddish-brown substance on its surface.",
+                "image_quote": "The image shows a gummy, reddish-brown substance on the root.",
+                "image_id": "bugwood::5605150",
+                "verification_status": "contradictory",
+                "reasoning": "Multiple authoritative sources explicitly state Didymella bryoniae does not infect roots; the observation almost certainly mislabels stem/crown tissue as root.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://cucurbitbreeding.wordpress.ncsu.edu/watermelon-breeding/nc-state-watermelon-disease-handbook/gummy-stem-blight-didymella-bryoniae/",
+                    "quote": "signs and symptoms can be seen on all parts of the plant except for the roots"
+                  },
+                  {
+                    "url": "https://en.wikipedia.org/wiki/Gummy_stem_blight",
+                    "quote": "Didymella bryoniae infects all aerial parts of the plant"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "disease_name": "Monosporascus Root Rot",
@@ -781,7 +2842,125 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "California": {
+          "deltas": [
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue has a dominant color of rust-orange with scattered patches of sooty black and tan.",
+              "image_quote": "The photo shows rust-orange discoloration with small dark spots.",
+              "image_id": "bugwood::1571335",
+              "verification_status": "weakly_supported",
+              "reasoning": "The rust-orange + sooty-black + tan palette is consistent with the documented reddish-brown corky root lesions interspersed with black erumpent perithecia of M. cannonballus, though color descriptors alone are non-specific.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.apsnet.org/edcenter/disandpath/fungalasco/pdlessons/Pages/Monosporascus.aspx",
+                  "quote": "lesions develop on the primary and secondary roots, which are distinct, reddish-brown, and often dry. Additionally, black, spherical fungal fruiting bodies may develop on infected roots"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS.2000.84.3.224",
+                  "quote": "Monosporascus cannonballus was associated both with a wet, brownish rot as well as with discrete, reddish, corky lesions"
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "It causes sudden wilt and collapse of melon plants at fruiting stage, which results in total yield loss.",
+              "image_shows": "The photo shows a high fraction of the visible affected organ displaying signs of disease.",
+              "image_quote": "The image displays extensive dark lesions on the surface, indicating significant tissue damage.",
+              "image_id": "bugwood::1571335",
+              "verification_status": "weakly_supported",
+              "reasoning": "Severe, extensive tissue involvement of the affected organ is consistent with published California field reports of ~93% root length density loss and rapid total collapse.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS.2000.84.3.224",
+                  "quote": "M. cannonballus caused vine collapse and severe root rot of cantaloupe, reducing root length density by 93%"
+                },
+                {
+                  "url": "https://www.apsnet.org/edcenter/disandpath/fungalasco/pdlessons/Pages/Monosporascus.aspx",
+                  "quote": "Damage is done to the root system throughout the growing season, and typically within a week or two of harvest, the vines wilt or collapse quickly and completely"
+                }
+              ]
+            }
+          ],
+          "image_ids": [
+            "bugwood::1571335"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 2,
+            "provisional_count": 0,
+            "contradictory_count": 3,
+            "duplicates_count": 0,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "(not specified)",
+                "image_shows": "The stem surface displays numerous dark spots, consistent with galls indicative of Monosporascus Root Rot.",
+                "image_quote": "The stem surface shows numerous dark spots scattered across the surface.",
+                "image_id": "bugwood::1571335",
+                "verification_status": "contradictory",
+                "reasoning": "Monosporascus does not produce galls and stem lesions are explicitly described as generally lacking; the dark spherical structures of this pathogen (perithecia) form on roots, not the stem surface.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://www.vegetables.bayer.com/gb/en-uk/knowledge-centre/disease-guides/cucurbit/monsporascus-root-rot-vine-decline.html",
+                    "quote": "stem lesions are generally lacking, and above ground symptoms may be confused with other vine declines"
+                  },
+                  {
+                    "url": "https://www.apsnet.org/edcenter/disandpath/fungalasco/pdlessons/Pages/Monosporascus.aspx",
+                    "quote": "The primary diagnostic sign of the pathogen is the formation of black, spherical, erumpent perithecia on the roots"
+                  }
+                ]
+              },
+              {
+                "field": "other",
+                "canonical_says": "(not specified)",
+                "image_shows": "The image displays a brownish textured surface with numerous small dark spots.",
+                "image_quote": "There are numerous small dark spots on the brownish textured surface.",
+                "image_id": "bugwood::1571335",
+                "verification_status": "contradictory",
+                "reasoning": "Dark spots on a stem surface are not a documented Monosporascus sign; the pathogen's characteristic dark spots (perithecia) appear specifically on roots, so attributing them to a stem surface contradicts the literature.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://www.vegetables.bayer.com/gb/en-uk/knowledge-centre/disease-guides/cucurbit/monsporascus-root-rot-vine-decline.html",
+                    "quote": "stem lesions are generally lacking"
+                  },
+                  {
+                    "url": "https://www.apsnet.org/edcenter/disandpath/fungalasco/pdlessons/Pages/Monosporascus.aspx",
+                    "quote": "black, spherical, erumpent perithecia on the roots, easily visible with the unaided eye or hand lens"
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "(not specified)",
+                "image_shows": "The stem surface has numerous dark spots and streaks.",
+                "image_quote": "The stem surface shows numerous dark spots scattered across the surface.",
+                "image_id": "bugwood::1571335",
+                "verification_status": "contradictory",
+                "reasoning": "Literature explicitly notes stem lesions are generally absent; only internal vascular discoloration at the lower stem is reported, not numerous dark surface spots and streaks as described.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://www.vegetables.bayer.com/gb/en-uk/knowledge-centre/disease-guides/cucurbit/monsporascus-root-rot-vine-decline.html",
+                    "quote": "stem lesions are generally lacking, and above ground symptoms may be confused with other vine declines"
+                  },
+                  {
+                    "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS.2000.84.3.224",
+                    "quote": "root rot and necrosis, foot rot, and to a lesser extent vascular tissue discoloration at the lower part of the stem were also observed"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "disease_name": "Phytophthora Blight",
@@ -872,7 +3051,176 @@
           "alternative_source_url": "https://hort.extension.wisc.edu/articles/vine-crops-disease-phytophthora-blight/",
           "note": "Wisconsin Horticulture extension describes Phytophthora blight as a 'fungal disease', but Cornell correctly identifies the pathogen as an oomycete (Phytophthora capsici). Oomycetes are not true fungi; Cornell's classification is taxonomically correct."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Kentucky": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Phytophthora capsici causes ... stem lesions ... with infected tissue initially appearing water-soaked",
+              "image_shows": "The stem shows brown discoloration consistent with Phytophthora stem lesions.",
+              "image_quote": "The affected stem displays brownish patches.",
+              "image_id": "bugwood::5368986",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources describe brown discoloration on stems as a core symptom of Phytophthora blight on cucurbits, matching the observed brownish patches.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://vegcropshotline.org/article/phytophthora-blight-of-cucurbits/",
+                  "quote": "The lesions are dark olive in the beginning and become dark brown in a few days."
+                },
+                {
+                  "url": "https://extension.illinois.edu/plant-problems/phytophthora-blight",
+                  "quote": "Aboveground symptoms of Phytophthora blight include a brown discoloration of the crown and lower stem and foliar wilting."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Phytophthora capsici causes ... stem lesions ... with infected tissue initially appearing water-soaked",
+              "image_shows": "The affected tissue shows an olive-green to tan color palette characteristic of early-to-progressing Phytophthora stem lesions.",
+              "image_quote": "The affected area has a rough texture with olive-green and tan hues.",
+              "image_id": "bugwood::5368986",
+              "verification_status": "verified",
+              "reasoning": "Extension literature explicitly describes the olive-green to tan/brown color progression of Phytophthora capsici lesions, matching the observed color palette.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://vegcropshotline.org/article/phytophthora-blight-of-cucurbits/",
+                  "quote": "The lesions are dark olive in the beginning and become dark brown in a few days."
+                },
+                {
+                  "url": "https://extension.okstate.edu/fact-sheets/phytophthora-blight-of-cucurbits-and-peppers.html",
+                  "quote": "Lesions on leaves tend to be circular and initially water-soaked in appearance, turning tan to dark brown color."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Phytophthora capsici causes ... stem lesions ... with infected tissue initially appearing water-soaked",
+              "image_shows": "The outer stem shows a sunken lesion / canker-like depression consistent with constricted Phytophthora stem lesions.",
+              "image_quote": "The outer surface of the stem shows a sunken and rough lesion.",
+              "image_id": "bugwood::5368986",
+              "verification_status": "weakly_supported",
+              "reasoning": "Constricted/sunken stem lesions are documented for Phytophthora capsici, though 'canker' terminology is more typical of woody Phytophthora hosts; sunken texture is partially supported.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.okstate.edu/fact-sheets/phytophthora-blight-of-cucurbits-and-peppers.html",
+                  "quote": "Lesions on stems are constricted, darkened, and water-soaked, often extending a few inches above the soil line."
+                },
+                {
+                  "url": "https://www.vegetables.bayer.com/us/en-us/resources/growing-tips-and-innovation-articles/agronomic-spotlights/phytophthora-blight-of-melon.html",
+                  "quote": "Circular lesions are common on fruit and will appear water-soaked and sunken."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Phytophthora capsici causes ... stem lesions ... with infected tissue initially appearing water-soaked",
+              "image_shows": "The stem displays a rough textured surface with a noticeable gash or split with fibrous material protruding.",
+              "image_quote": "The stem appears to have a crack or split with fibrous material protruding.",
+              "image_id": "bugwood::5368986",
+              "verification_status": "novel_plausible",
+              "reasoning": "Splitting/fibrous protrusion is not a documented Phytophthora capsici stem symptom (lesions typically become soft and collapse); plausible only as advanced tissue breakdown \u00e2\u20ac\u201d flag for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "Phytophthora infestans (late blight); Pythium fruit rot; Sclerotinia white mold",
+              "image_shows": "A ruler in the frame obscures stem pith and petiole attachment details that would help distinguish look-alikes.",
+              "image_quote": "The image shows a ruler obscuring any stem pith or petiole attachment.",
+              "image_id": "bugwood::5368986",
+              "verification_status": "novel_plausible",
+              "reasoning": "This is a meta-observation about image framing rather than a disease sign; not contradicted by evidence but adds no positive support for look-alike differentiation.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The stem shows a noticeable gash or split indicating advanced/severe tissue damage.",
+              "image_quote": "The image shows a severe distortion and splitting of the stem, indicative of significant damage.",
+              "image_id": "bugwood::5368986",
+              "verification_status": "novel_plausible",
+              "reasoning": "Late-stage Phytophthora stem girdling can lead to collapse, but 'splitting/distortion' phrasing is not directly documented; coherent with severe infection but unverified by literature.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5368986"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 3,
+            "provisional_count": 3,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "North Carolina": {
+          "deltas": [
+            {
+              "field": "other",
+              "canonical_says": "Phytophthora capsici causes seedling damping-off, leaf spots, foliar blight, root and crown rot, stem lesions, and fruit rot, with infected tissue initially appearing water-soaked and often producing a white yeast-like growth of sporangia.",
+              "image_shows": "No visible signs of lesions, mummification, scab, soft rot, or internal browning.",
+              "image_quote": "The image shows a cross-section of a melon with seeds and no visible signs of lesions, mummification, scab, soft rot, or internal browning.",
+              "image_id": "bugwood::1577186",
+              "verification_status": "novel_plausible",
+              "reasoning": "Negative observation describing absence of fruit-rot symptoms in a healthy melon cross-section; coherent with the image but adds no disease-specific regional information and cannot be web-verified.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image displays a cross-section of a melon with a green outer rind and a yellowish inner flesh, with a mixture of orange and tan hues in the core.",
+              "image_quote": "The interior of the melon appears yellowish with orange and tan hues.",
+              "image_id": "bugwood::1577186",
+              "verification_status": "novel_plausible",
+              "reasoning": "Describes ordinary melon flesh coloration unrelated to Phytophthora blight pathology; no external evidence applies and the observation is not disease-diagnostic.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "Phytophthora infestans (late blight); Pythium fruit rot; Sclerotinia white mold",
+              "image_shows": "No specific visual features from the blackboard are relevant to Phytophthora blight or its look-alikes.",
+              "image_quote": "The image shows a cross-section of a melon with seeds and no visible signs of Phytophthora blight.",
+              "image_id": "bugwood::1577186",
+              "verification_status": "novel_plausible",
+              "reasoning": "Negative observation noting no look-alike features are visible; not contradicted by any source but provides no actionable regional differentiation.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "severity",
+              "canonical_says": "Phytophthora capsici causes seedling damping-off, leaf spots, foliar blight, root and crown rot, stem lesions, and fruit rot, with infected tissue initially appearing water-soaked and often producing a white yeast-like growth of sporangia.",
+              "image_shows": "No visible signs of lesions, mummification, scab, soft rot, or internal browning.",
+              "image_quote": "The image shows a cross-section of a melon with seeds and no visible signs of lesions, mummification, scab, soft rot, or internal browning.",
+              "image_id": "bugwood::1577186",
+              "verification_status": "novel_plausible",
+              "reasoning": "Duplicate-style negative severity statement; the cross-section appears asymptomatic, plausible but unverifiable via external sources and adds no positive disease signal.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::1577186"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 4,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Pythium Diseases",
@@ -945,7 +3293,99 @@
           "alternative_source_url": "https://extension.msstate.edu/publications/cottony-leak-cucurbits",
           "note": "Sources disagree on the classified affected part, though evidence quotes in both sources describe fruit rot."
         }
-      ]
+      ],
+      "regional_observations": {
+        "North Carolina": {
+          "deltas": [
+            {
+              "field": "affected_organs",
+              "canonical_says": "Whole plant",
+              "image_shows": "The image shows a plant with roots extending from the stem.",
+              "image_quote": "The image displays a plant with roots extending from the stem.",
+              "image_id": "bugwood::1577588",
+              "verification_status": "verified",
+              "reasoning": "Pythium in melon affects roots as well as fruit; documenting visible root involvement is consistent with multiple extension/APS sources on cucurbit Pythium root rot.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://blogs.cornell.edu/livegpath/gallery/cucurbits/pythium-root-rot-in-cucurbits/",
+                  "quote": "Pythium infection leads to root rot in both young and mature plants, causing browning, necrosis, and sloughing of the root cortex."
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0042-FI",
+                  "quote": "All major commercially cultivated species of Cucurbitaceae are susceptible to Pythium damping-off and root and stem rot."
+                },
+                {
+                  "url": "https://extension.usu.edu/vegetableguide/cucumber-melon-pumpkin-squash/pythium",
+                  "quote": "Pythium spp. cause both root rot and fruit rot in cucumber, melon, pumpkin and squash."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Pythium fruit rot starts as small, water-soaked lesions on fruit near or in contact with the soil",
+              "image_shows": "The photo displays roots with visible decay. The affected tissue is predominantly tan with some olive-green areas.",
+              "image_quote": "The roots show a tan appearance with olive-green areas.",
+              "image_id": "bugwood::1577588",
+              "verification_status": "weakly_supported",
+              "reasoning": "Tan discoloration of Pythium-infected cucurbit roots is well documented; the olive-green tint is plausibly soil/decay staining and is not directly contradicted but only partially supported.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://blogs.cornell.edu/livegpath/gallery/cucurbits/pythium-root-rot-in-cucurbits/",
+                  "quote": "the hypocotyl collapses and turns tan to brown, roots die ... roots have light-brown, depressed, water-soaked lesions."
+                },
+                {
+                  "url": "https://www.canr.msu.edu/resources/pythium-root-and-stem-rot",
+                  "quote": "Roots are discolored, the cortex may slough off, leaving the vascular cylinder."
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "the whole fruit becomes involved within 72 hours, the epidermis ruptures, and the fruit collapses",
+              "image_shows": "The image displays roots with visible decay and disintegration. The roots show signs of Pythium root rot.",
+              "image_quote": "The image displays roots with visible decay and disintegration.",
+              "image_id": "bugwood::1577588",
+              "verification_status": "verified",
+              "reasoning": "Visible root decay and disintegration matches the documented severe phase of Pythium root rot in cucurbits where the cortex sloughs and only the vascular stele remains.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0042-FI",
+                  "quote": "In severe infections, there is complete decay of the root cortex while the stele remains intact."
+                },
+                {
+                  "url": "https://blogs.cornell.edu/livegpath/gallery/cucurbits/pythium-root-rot-in-cucurbits/",
+                  "quote": "few roots, some remaining roots are white with cortex sloughed off, and the lower hypocotyl (tap root) has a soft watery rot."
+                }
+              ]
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "Phytophthora spp.",
+              "image_shows": "The photo shows tan and pale-straw colored roots. The affected tissue shows tan and pale-straw colors.",
+              "image_quote": "The affected tissue shows tan and pale-straw colors.",
+              "image_id": "bugwood::1577588",
+              "verification_status": "novel_plausible",
+              "reasoning": "The visual cue (tan/pale-straw root discoloration) is consistent with Pythium but is not specifically described in the sources as the visual axis that distinguishes Pythium from Phytophthora on melon roots, so flag for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::1577588"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 3,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Sour Rot",
@@ -1000,9 +3440,58 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "North Carolina": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "wet, soft rot of the storage root combined with a distinct sour odor, often with white mycelial tufts on the root surface; once favorable conditions are removed, lesions collapse 1-3 mm and become firm with highly irregular borders",
+              "image_shows": "On melon fruit the lesion presents as a raised, rough-textured area with white mycelial spots set against dark, cracked epidermal patches, rather than the collapsed root lesion described in canonical.",
+              "image_quote": "The fruit is visibly affected by a fungal infection.",
+              "image_id": "bugwood::1575010",
+              "verification_status": "verified",
+              "reasoning": "The dark, rough/cracked appearance with overlying white mycelial spots on a melon fruit matches the published first-report description of G. candidum sour rot of melon (dark lesions progressing to epidermal cracks with white mycelial growth).",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-11-19-2484-PDN",
+                  "quote": "Sour-rot symptoms were observed mainly on the top of the fruit, at the floral insertion site, with lesions that were dark and eventually progressed to epidermal cracks."
+                },
+                {
+                  "url": "https://www.cabi.org/isc/abstract/20203230216",
+                  "quote": "First report of Geotrichum candidum causing sour-rot of melon... soft lesions of digested tissue appearing as a white layer of mycelial growth with a distinct sour odor."
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image displays significant damage to the fruit's surface, with substantial tissue loss and fungal growth across a large fraction of the visible rind.",
+              "image_quote": "The affected area shows substantial tissue loss and fungal growth.",
+              "image_id": "bugwood::1575010",
+              "verification_status": "provisional",
+              "reasoning": "Canonical does not quantify severity on melon and no source-specific evidence describes a per-fruit severity grade; the observation is coherent with the high-incidence reports for melon sour rot but cannot be directly corroborated from the searched literature.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::1575010"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 2,
+            "dropped_contradictory": []
+          }
+        }
+      }
     }
   ],
   "crop": "Melon",
-  "generated_date": "2026-05-27"
+  "generated_date": "2026-05-27",
+  "regional_observations_count": 23
 }

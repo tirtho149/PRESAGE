@@ -64,9 +64,78 @@
           "alternative_source_url": "https://www.canr.msu.edu/news/crown_rust_on_oats",
           "note": "Union of affected parts taken across sources. USDA notes root effects ('stunted root systems'); MSU additionally notes pustules on stems and panicles."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Maine": {
+          "deltas": [
+            {
+              "field": "look_alikes",
+              "canonical_says": "(not specified)",
+              "image_shows": "Pustules show orange-yellow contents with no concentric rings or target-spot structures, ruling out ring/target-spot foliar diseases.",
+              "image_quote": "The image displays numerous pustules and masses of orange-yellow spores on a plant surface.",
+              "image_id": "bugwood::5486120",
+              "verification_status": "weakly_supported",
+              "reasoning": "Concentric-ring/target-spot lesions are diagnostic of ring/leaf-spot diseases, not rust uredinia, so their absence supports crown rust and distinguishes it from look-alikes.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plantix.net/en/library/plant-diseases/100339/ring-spot/",
+                  "quote": "Ring spot lesions are grey and they contain black, pinhead dots in concentric rings."
+                },
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/small-grains/leaf-rusts-of-wheat-and-barley-crown-rust-of-oats/",
+                  "quote": "Pustules on oats are oblong and orange. The lack of ragged edges on pustules of leaf rusts distinguishes them from stem rusts."
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "A high fraction of the visible organ is covered by orange-yellow uredinia, indicating heavy/severe foliar infection.",
+              "image_quote": "The image shows a high fraction of the visible affected organ showing disease.",
+              "image_id": "bugwood::5486120",
+              "verification_status": "weakly_supported",
+              "reasoning": "Literature documents heavy/severe foliar coverage by crown rust uredinia, corroborating the high-severity coverage seen in the image.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.ars.usda.gov/midwest-area/stpaul/cereal-disease-lab/docs/cereal-rusts/oat-crown-rust/",
+                  "quote": "Uredinia form on both the upper and lower surfaces of infected leaves, and in severe epidemics, leaf sheathes also become heavily infected."
+                },
+                {
+                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/puccinia-coronata",
+                  "quote": "Moderate to severe epidemics can reduce grain yield by 10 to 40%, and individual oat fields may suffer total crop failures."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The substrate/leaf background appears pale straw colored, consistent with a mature or senescing oat leaf.",
+              "image_quote": "The image shows a high fraction of the visible affected organ showing disease.",
+              "image_id": "bugwood::5486120",
+              "verification_status": "provisional",
+              "reasoning": "Substrate color is not a documented diagnostic feature and no external source addresses it, but a pale straw background is plausible and not contradicted.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5486120"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 2,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 1,
+            "dropped_contradictory": []
+          }
+        }
+      }
     }
   ],
   "crop": "Oat",
-  "generated_date": "2026-05-27"
+  "generated_date": "2026-05-27",
+  "regional_observations_count": 1
 }

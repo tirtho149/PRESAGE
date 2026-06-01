@@ -69,9 +69,38 @@
           "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/sirococcus-shoot-blight",
           "note": "S. strobilinus is the former (synonym) name of S. conigenus per UMass: 'Sirococcus conigenus (formerly S. strobilinus)'."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Maine": {
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "small black pads of fungal tissue on diseased needles and shoots",
+              "image_shows": "The image displays numerous small black spots and spots with white centers on the stem surface.",
+              "image_quote": "There are numerous small black spots on the outer stem surface.",
+              "image_id": "bugwood::5506003",
+              "verification_status": "novel_plausible",
+              "reasoning": "The 'black spots with white centers' detail is absent from canonical and unsupported by external sources, but is coherent with sporulating pycnidia exuding pale spore masses; flag for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5506003"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 5,
+            "dropped_contradictory": []
+          }
+        }
+      }
     }
   ],
   "crop": "Spruce",
-  "generated_date": "2026-05-27"
+  "generated_date": "2026-05-27",
+  "regional_observations_count": 1
 }

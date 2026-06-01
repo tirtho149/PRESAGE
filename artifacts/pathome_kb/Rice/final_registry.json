@@ -11,7 +11,7 @@
       "type_of_disease": {
         "value": "Fungal",
         "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.881116/full",
-        "quote": "Sheath blight caused by necrotrophic fungus Rhizoctonia solani KÃ¼hn is one of the most serious diseases of rice."
+        "quote": "Sheath blight caused by necrotrophic fungus Rhizoctonia solani K\u00c3\u0192\u00c2\u00bchn is one of the most serious diseases of rice."
       },
       "affected_parts": {
         "value": [
@@ -69,7 +69,167 @@
           "alternative_source_url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.881116/full",
           "note": "Frontiers article uses 'Sheath blight of rice' but refers to the same disease; IRRI and PMC use the shorter form."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Louisiana": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "circular to oblong or ellipsoid and about 1 cm long ... enlarge to irregular shape",
+              "image_shows": "The lesions appear elongated and vein-limited.",
+              "image_quote": "The lesions are elongated along the leaf.",
+              "image_id": "bugwood::5390538",
+              "verification_status": "weakly_supported",
+              "reasoning": "Lesions are documented as irregularly elongated and coalescing along leaf blades, supporting the elongated shape, though Rhizoctonia lesions are not strictly vein-delimited.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.tezu.ernet.in/krishi/rice-sheath-blight.php",
+                  "quote": "Characteristic symptoms of the disease are water-soaked, spherical to oval-shaped or irregularly elongated discoloured, greyish to light brownish lesions with brown margin on the leaf sheath and blades."
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Sheath_blight_of_rice",
+                  "quote": "the lesions can develop extensively and coalesce on partial or whole leaf blades, which may produce a rattlesnake skin pattern."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "gray-white centers and brown margins",
+              "image_shows": "The lesion centers are tan, while the margins are chocolate-brown.",
+              "image_quote": "The lesion centers are tan, while the margins are chocolate-brown.",
+              "image_id": "bugwood::5390538",
+              "verification_status": "verified",
+              "reasoning": "Extension and pathology sources confirm lesions dry to tan/straw centers with dark/reddish-brown margins, matching the observed tan-center and chocolate-brown-margin.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.uaex.uada.edu/publications/pdf/FSA7583.pdf",
+                  "quote": "When there is leaf dieback and sun can penetrate and dry the lesions, they turn tan with a brown border."
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Sheath_blight_of_rice",
+                  "quote": "The lesions are spherical, oval or ellipsoid shaped (0.5-3 cm), with green grey to straw coloured centre and a wide reddish brown margin."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Greenish-gray water-soaked lesions",
+              "image_shows": "The lesions appear water-soaked and slightly sunken.",
+              "image_quote": "The affected tissue displays shades of tan, chocolate-brown, and pale-straw, with the greenish-gray of the healthy tissue surrounding it.",
+              "image_id": "bugwood::5390538",
+              "verification_status": "weakly_supported",
+              "reasoning": "Water-soaked lesions are a hallmark of the disease and the damping-off phase produces water-soaked sunken lesions, giving indirect support to the slightly-sunken texture.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.uaex.uada.edu/publications/pdf/FSA7583.pdf",
+                  "quote": "Symptoms usually develop ... as oval-to-elliptical, green-gray, water-soaked lesions on the sheaths of lower leaves near the waterline."
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Rhizoctonia_solani",
+                  "quote": "Infection by R. solani results in a water-soaked, sunken lesion at ground level, causing the plant to fall over."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "Target spots with alternating light and dark concentric rings.",
+              "image_quote": "Target spots with alternating light and dark concentric rings.",
+              "image_id": "bugwood::5390538",
+              "verification_status": "weakly_supported",
+              "reasoning": "A zonate 'banded blight' / rattlesnake-skin phase with transverse bands is documented, partially supporting a concentric/zonate appearance, though true target-spot bullseye rings are more typical of brown spot.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://en.wikipedia.org/wiki/Sheath_blight_of_rice",
+                  "quote": "basidiospores of the pathogen have been found to infect all aerial parts of the plant, forming a series of copper coloured transverse bands across the affected parts called 'banded blight phase'."
+                },
+                {
+                  "url": "https://www.tezu.ernet.in/krishi/rice-sheath-blight.php",
+                  "quote": "the lesions can develop extensively and coalesce on partial or whole leaf blades, which may produce a rattlesnake skin pattern."
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The photo shows a significant portion of the rice plants exhibiting symptoms of Rhizoctonia Damping-Off, Blight And Rot.",
+              "image_quote": "The affected areas show chlorotic and necrotic regions, indicating extensive damage.",
+              "image_id": "bugwood::5390538",
+              "verification_status": "weakly_supported",
+              "reasoning": "Louisiana extension sources document sheath blight as ubiquitous and sometimes very severe with major yield loss, consistent with extensive symptom coverage visible in the photo.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.lsuagcenter.com/topics/crops/rice/diseases",
+                  "quote": "Sheath blight is consistently present in Louisiana rice fields and, while not always the most damaging, is always there and sometimes very severe."
+                },
+                {
+                  "url": "https://www.lsuagcenter.com/topics/crops/rice/diseases",
+                  "quote": "The disease is present in all rice fields in Louisiana and has been the most economically significant disease of rice in Louisiana since the early 1970s."
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "Yellowing is seen in the middle of the plant canopy, suggesting interveinal chlorosis.",
+              "image_quote": "Yellowing is seen in the middle of the plant canopy, suggesting interveinal chlorosis.",
+              "image_id": "bugwood::5390538",
+              "verification_status": "novel_plausible",
+              "reasoning": "General foliar yellowing accompanies sheath girdling, but interveinal chlorosis specifically is not a documented Rhizoctonia symptom (it is more typical of nutrient deficiency) and no external evidence was found, so flag for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shapes are primarily lanceolate, with elongated and narrow blades.",
+              "image_quote": "Leaf shapes are elongated with narrow blades.",
+              "image_id": "bugwood::5390538",
+              "verification_status": "novel_plausible",
+              "reasoning": "This describes host leaf morphology rather than a disease sign; it is coherent with rice's linear/lanceolate leaves and not contradicted, but carries no diagnostic value, so flag for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5390538"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 5,
+            "provisional_count": 2,
+            "contradictory_count": 1,
+            "duplicates_count": 2,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "(not specified)",
+                "image_shows": "Some leaves have chlorotic halos around dark necrotic lesions, suggesting lesions stop at veins.",
+                "image_quote": "Some leaves have chlorotic halos around dark lesions.",
+                "image_id": "bugwood::5390538",
+                "verification_status": "contradictory",
+                "reasoning": "Sources describe Rhizoctonia lesions as irregular and freely coalescing across whole leaf blades, contradicting the claim that lesions are vein-delimited (stopping at veins).",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://www.lsuagcenter.com/topics/crops/rice/diseases",
+                    "quote": "Sheath blight is characterized by large oval spots on the leaf sheaths and irregular spots on leaf blades."
+                  },
+                  {
+                    "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.881116/full",
+                    "quote": "The lesions expand and coalesce to form larger lesions with irregular outlines and gray-white centers surrounded by dark brown borders."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "disease_name": "Narrow Brown Leaf Spot",
@@ -94,9 +254,9 @@
       },
       "visual_symptoms": {
         "summary": {
-          "value": "Light to dark brown, linear lesions on leaves and upper leaf sheath that progress parallel to the vein, typically 2â€“10 mm long and 1â€“1.5 mm wide; also causes a netlike discoloration on the leaf sheath known as 'net blotch.'",
+          "value": "Light to dark brown, linear lesions on leaves and upper leaf sheath that progress parallel to the vein, typically 2\u00c3\u00a2\u00e2\u201a\u00ac\u00e2\u20ac\u015310 mm long and 1\u00c3\u00a2\u00e2\u201a\u00ac\u00e2\u20ac\u01531.5 mm wide; also causes a netlike discoloration on the leaf sheath known as 'net blotch.'",
           "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/narrow-brown-spot",
-          "quote": "Typical lesions on leaves and upper leaf sheath are light to dark brown, linear, and progress parallel to the vein. They are usually 2â€“10 mm long and 1â€“1.5 mm wide."
+          "quote": "Typical lesions on leaves and upper leaf sheath are light to dark brown, linear, and progress parallel to the vein. They are usually 2\u00c3\u00a2\u00e2\u201a\u00ac\u00e2\u20ac\u015310 mm long and 1\u00c3\u00a2\u00e2\u201a\u00ac\u00e2\u20ac\u01531.5 mm wide."
         },
         "diagnostic_features": {
           "value": "Linear lesions make the disease distinct from other leaf diseases.",
@@ -138,7 +298,92 @@
           "alternative_source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11693681/",
           "note": "IRRI factsheet notes 'Narrow brown spot (also called narrow brown leaf spot, or rice Cercospora leaf spot)'; the PMC review uses 'narrow brown leaf spot'."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Louisiana": {
+          "deltas": [
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "A large portion of the leaf surface is affected by lesions.",
+              "image_quote": "The image shows linear lesions parallel to the veins, covering a significant area.",
+              "image_id": "bugwood::5390492",
+              "verification_status": "weakly_supported",
+              "reasoning": "IRRI/extension sources document that lesions enlarge and coalesce into severe leaf blighting on susceptible varieties, supporting that a large area of a single leaf can be affected.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/narrow-brown-spot",
+                  "quote": "Lesions on the leaves of highly susceptible varieties may enlarge and connect together, forming brown linear necrotic regions."
+                },
+                {
+                  "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/narrow-brown-spot",
+                  "quote": "The disease leads to premature death of leaves and leaf sheaths, premature ripening of grains, and in severe cases, lodging of plants."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf is curling upward toward the leaf sheath.",
+              "image_quote": "The leaf appears to curl up towards the sheath.",
+              "image_id": "bugwood::5390492",
+              "verification_status": "provisional",
+              "reasoning": "No external source describes leaf curling as a symptom of narrow brown leaf spot; the observation is plausible and not contradicted, so it is flagged for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5390492"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 1,
+            "contradictory_count": 2,
+            "duplicates_count": 3,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "Light to dark brown, linear lesions on leaves and upper leaf sheath that progress parallel to the vein",
+                "image_shows": "The lesion centers are tan with chocolate-brown margins and chlorotic yellow halos.",
+                "image_quote": "The affected tissue displays shades of tan, chocolate-brown, and pale-straw, with the tan and chocolate-brown being more prominent.",
+                "image_id": "bugwood::5390492",
+                "verification_status": "contradictory",
+                "reasoning": "Sources describe a dark-brown lesion center fading toward the margin (not a tan center with chocolate-brown margins) and attribute the chlorotic yellow halo to the look-alike brown spot, so external evidence contradicts this candidate.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://plantix.net/en/library/plant-diseases/100183/narrow-brown-leaf-spot-of-rice/",
+                    "quote": "Narrow brown leaf spot produces linear leaf lesions that are 2-10 mm long and usually not more than 1-1.5 mm wide, with a dark-brown centre where the border fades as the outer margin is reached."
+                  },
+                  {
+                    "url": "https://plantix.net/en/library/plant-diseases/100064/brown-spot-of-rice/",
+                    "quote": "Lesions are often surrounded by a yellow halo thought to be caused by toxins produced by the fungus."
+                  }
+                ]
+              },
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "Light to dark brown, linear lesions on leaves and upper leaf sheath that progress parallel to the vein",
+                "image_shows": "The lesion center is light brown and the margin is darker brown.",
+                "image_quote": "The lesion center is light brown and the margin is darker brown.",
+                "image_id": "bugwood::5390492",
+                "verification_status": "contradictory",
+                "reasoning": "The candidate's light-center/dark-margin gradient is reversed relative to the documented dark-brown center fading toward the margin, so external evidence contradicts it.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://plantix.net/en/library/plant-diseases/100183/narrow-brown-leaf-spot-of-rice/",
+                    "quote": "Narrow brown leaf spot produces linear leaf lesions that are 2-10 mm long and usually not more than 1-1.5 mm wide, with a dark-brown centre where the border fades as the outer margin is reached."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "disease_name": "Bacterial Panicle Blight",
@@ -188,7 +433,46 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Louisiana": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image shows no visible galls, blisters, scabs, exudates, or fruiting bodies emerging through the epidermis.",
+              "image_quote": "No signs of galls, blisters, scabs, exudates, or fruiting bodies emerging through the epidermis are observed.",
+              "image_id": "bugwood::5390471",
+              "verification_status": "provisional",
+              "reasoning": "The generic absence of galls/scabs/fruiting bodies is coherent with a bacterial (non-fungal) disease, but no external source specifically corroborates this negative observation; plausible and not contradicted.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "very early infection shows water-soaked discoloration on the lower part of the grain",
+              "image_shows": "The photo does not show any clear signs of vascular streaking, dark blotches, or water-soaked streaks extending from a lesion.",
+              "image_quote": "The image confirms the presence of brownish-orange discolored grains and green stems, which matches the diagnostic features of bacterial panicle blight.",
+              "image_id": "bugwood::5390471",
+              "verification_status": "provisional",
+              "reasoning": "Absence of vascular streaking is consistent with BPB being a non-vascular bacterial disease, but the candidate is internally inconsistent and has no external support, so it is plausible but unverified.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5390471"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 2,
+            "contradictory_count": 0,
+            "duplicates_count": 3,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Rice Blast Disease",
@@ -240,9 +524,71 @@
           "alternative_source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11693681/",
           "note": "Pyricularia oryzae is named in the same source as the anamorph (asexual stage) of Magnaporthe oryzae, not a true conflict but a name variant."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Louisiana": {
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image shows a healthy rice plant with no visible abnormalities on the stem surface.",
+              "image_quote": "The stem appears smooth without any galls, blisters, scabs, ooze, or fruiting bodies.",
+              "image_id": "bugwood::5606555",
+              "verification_status": "provisional",
+              "reasoning": "Negative observation; literature shows rice blast produces discrete necrotic leaf/node/neck lesions rather than galls, scabs, ooze, or fruiting bodies, so a smooth stem is consistent but cannot be corroborated for a specific image.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The stem surface remains unchanged and does not exhibit any discoloration patterns.",
+              "image_quote": "The stem surface is uniformly colored without any visible abnormalities.",
+              "image_id": "bugwood::5606555",
+              "verification_status": "provisional",
+              "reasoning": "Absence-of-discoloration claim is plausible and not contradicted by canonical or literature, but no external source can verify what this specific image shows.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "The photo shows a healthy rice plant with no visible signs of disease.",
+              "image_quote": "The image shows a healthy rice plant with no visible lesions, cankers, or girdling.",
+              "image_id": "bugwood::5606555",
+              "verification_status": "provisional",
+              "reasoning": "Broad no-symptom claim is plausible if the disease is absent or pre-symptomatic in this frame, but a healthy-plant reading of a specific image cannot be externally corroborated.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image shows a healthy rice plant with no visible signs of Rice Blast Disease.",
+              "image_quote": "The photo does not show any lesions or signs of Rice Blast Disease.",
+              "image_id": "bugwood::5606555",
+              "verification_status": "provisional",
+              "reasoning": "Severity-none observation cannot be externally corroborated for a specific image and is not contradicted by canonical or literature, so it is flagged provisional rather than verified.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5606555"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 4,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     }
   ],
   "crop": "Rice",
-  "generated_date": "2026-05-25"
+  "generated_date": "2026-05-25",
+  "regional_observations_count": 4
 }

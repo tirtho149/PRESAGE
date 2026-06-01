@@ -73,7 +73,55 @@
           "alternative_source_url": "https://extension.missouri.edu/programs/turfgrass-science/turfgrass-disease-profiles/ascochyta-leaf-blight",
           "note": "Sources describe pycnidia color differently: CSU says 'yellow to dark brown, flask-shaped'; MU says 'small brown or black freckles'; NC State says 'brownish, red, or black'; Bugwoodwiki says 'yellow brown, rust brown, or brick red, 70-200 micrometers'. These are consistent (variable pigmentation in pycnidia) rather than contradictory."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Missouri": {
+          "deltas": [
+            {
+              "field": "affected_organs",
+              "canonical_says": "Foliar; leaves exhibiting bleached tip dieback",
+              "image_shows": "The crown/collar appears to be dry with no visible rot, girdling, sunken cankers, white mycelium, or mustard-seed-shaped sclerotia.",
+              "image_quote": "No signs of crown rot, girdling, sunken cankers, white mycelium, or mustard-seed-shaped sclerotia are visible.",
+              "image_id": "bugwood::5516071",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources confirm Ascochyta is foliar and crowns/roots are not killed, so the absence of crown rot and sclerotia is consistent with the disease and rules out crown-rotting look-alikes, though the negative sign list is not itself documented.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://turf.unl.edu/news/ascochyta-leaf-blight/",
+                  "quote": "Blighting is usually restricted to the leaves; bluegrass crowns and roots typically are not killed."
+                },
+                {
+                  "url": "https://extension.missouri.edu/programs/turfgrass-science/turfgrass-disease-profiles/ascochyta-leaf-blight",
+                  "quote": "Large irregular patches of turf rapidly turn a straw-color and appear dead... blighting is usually restricted to the leaves."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "turf rapidly turn straw-colored and appear dead",
+              "image_shows": "The affected tissue shows a mix of tan and olive-green colors.",
+              "image_quote": "The image shows large irregular patches of turf turning straw-colored and appearing dead.",
+              "image_id": "bugwood::5516071",
+              "verification_status": "novel_plausible",
+              "reasoning": "No source documents an olive-green color phase, but a tan/olive-green mix is coherent with canonical straw-coloring plus the literature note that healthy leaves are interspersed within blighted patches, so it is flagged for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5516071"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 2,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Spring Dead Spot",
@@ -133,9 +181,138 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Colorado": {
+          "deltas": [
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image does not display any clear signs of wilting.",
+              "image_quote": "The lawn is uniformly green with no visible signs of wilting or diseases.",
+              "image_id": "bugwood::5389426",
+              "verification_status": "provisional",
+              "reasoning": "An absence observation on a uniformly green lawn; it makes no positive disease claim that external sources can corroborate or refute and is not contradicted, so it is provisional.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image shows a healthy lawn with no visible signs of defoliation or bare petioles.",
+              "image_quote": "The image shows a healthy lawn with no visible signs of defoliation or bare petioles.",
+              "image_id": "bugwood::5389426",
+              "verification_status": "provisional",
+              "reasoning": "Defoliation/bare-petiole loss is not a turfgrass concept and the candidate only reports absence on a healthy lawn, giving no verifiable disease claim; not contradicted, so provisional.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "spread_pattern",
+              "canonical_says": "randomly distributed... mostly circular patches ranging from a few inches to several feet in diameter",
+              "image_shows": "The damage is not visible in the photo; the grass appears uniformly green.",
+              "image_quote": "The image shows a healthy lawn with no signs of disease such as brown patches or blackened roots.",
+              "image_id": "bugwood::5389426",
+              "verification_status": "provisional",
+              "reasoning": "Reports no visible patch pattern on a uniformly green lawn; an absence finding with no positive claim to verify and no external contradiction, so provisional.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "straw-colored, mostly circular patches... completely dead turfgrass and black, brittle, rotted roots",
+              "image_shows": "The affected area has a uniform green appearance.",
+              "image_quote": "The affected area is a uniform green lawn with some areas showing signs of discoloration.",
+              "image_id": "bugwood::5389426",
+              "verification_status": "provisional",
+              "reasoning": "The candidate is internally mixed (uniform green vs. some discoloration) and reports essentially no lesion coloration; with no positive claim to verify and no external contradiction, it is provisional.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "necrotic ring spot",
+              "image_shows": "The image shows a uniformly green lawn without any visible signs of the disease mentioned in the canonical KB text.",
+              "image_quote": "The image shows a healthy lawn with no visible signs of disease such as brown patches or blackened roots.",
+              "image_id": "bugwood::5389426",
+              "verification_status": "provisional",
+              "reasoning": "An absence observation that names no look-alike symptom present in the image; nothing positive to corroborate against sources and no contradiction, so provisional.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "image_ids": [
+            "bugwood::5389426"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 5,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "Pennsylvania": {
+          "deltas": [
+            {
+              "field": "severity",
+              "canonical_says": "patches ranging from a few inches to several feet in diameter, with completely dead turfgrass",
+              "image_shows": "The image shows patches of dead grass, indicating significant damage.",
+              "image_quote": "The photo displays a large area of affected turfgrass with widespread necrosis.",
+              "image_id": "bugwood::5333010",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources confirm SDS produces large, expanding, fully necrotic patches, giving indirect support to the observed widespread-damage severity.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.okstate.edu/fact-sheets/spring-dead-spot-of-bermudagrass",
+                  "quote": "Dead spots may be from 6 inches to as large as 3 feet in diameter and recur in the same spot, increasing in size by up to several inches each season."
+                },
+                {
+                  "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+                  "quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas."
+                }
+              ]
+            }
+          ],
+          "image_ids": [
+            "bugwood::5333010"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 0,
+            "contradictory_count": 1,
+            "duplicates_count": 2,
+            "dropped_contradictory": [
+              {
+                "field": "affected_organs",
+                "canonical_says": "Foliar; Stem; Root",
+                "image_shows": "The image shows patches of dead grass with petioles still attached to some stems, supporting the hypothesis that these petioles represent defoliation evidence.",
+                "image_quote": "The image shows patches of brown grass with petioles still attached to some stems.",
+                "image_id": "bugwood::5333010",
+                "verification_status": "contradictory",
+                "reasoning": "Turfgrasses (Poaceae) have blade-and-sheath leaves with no true petiole, so 'petioles still attached' is a misidentification and defoliation is not a recognized SDS symptom.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://www.britannica.com/plant/Poaceae/Characteristic-morphological-features",
+                    "quote": "Each leaf is differentiated into a lower sheath hugging the stem and a blade; what resembles a stalk or petiole in some grasses is a pseudopetiole, not a true petiole."
+                  },
+                  {
+                    "url": "https://evolution.earthathome.org/grasses/morphology/",
+                    "quote": "A grass leaf is divided into the blade, sheath, and collar region, attaching to the stem via the sheath rather than a petiole."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
     }
   ],
   "crop": "Kentucky Bluegrass",
-  "generated_date": "2026-05-27"
+  "generated_date": "2026-05-27",
+  "regional_observations_count": 3
 }

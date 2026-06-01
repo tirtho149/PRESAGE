@@ -67,9 +67,26 @@
           "alternative_source_url": "https://content.ces.ncsu.edu/sooty-molds",
           "note": "NC State emphasizes effect on leaves (blocking sunlight for photosynthesis); UMaine, UMass, and OSU all describe colonization on both leaves and branches/twigs/limbs."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Maine": {
+          "deltas": [],
+          "image_ids": [
+            "bugwood::5503591"
+          ],
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 3,
+            "dropped_contradictory": []
+          }
+        }
+      }
     }
   ],
   "crop": "Alder",
-  "generated_date": "2026-05-25"
+  "generated_date": "2026-05-25",
+  "regional_observations_count": 1
 }
