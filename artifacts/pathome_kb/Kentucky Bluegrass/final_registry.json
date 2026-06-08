@@ -106,7 +106,20 @@
               "verification_status": "novel_plausible",
               "reasoning": "No source documents an olive-green color phase, but a tan/olive-green mix is coherent with canonical straw-coloring plus the literature note that healthy leaves are interspersed within blighted patches, so it is flagged for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://turf.unl.edu/news/ascochyta-leaf-blight/",
+                  "quote": "Blighting is usually restricted to the leaves; bluegrass crowns and roots typically are not killed.",
+                  "inherited": true,
+                  "inherited_from": "Ascochyta Fungi::Missouri"
+                },
+                {
+                  "url": "https://extension.missouri.edu/programs/turfgrass-science/turfgrass-disease-profiles/ascochyta-leaf-blight",
+                  "quote": "Large irregular patches of turf rapidly turn a straw-color and appear dead... blighting is usually restricted to the leaves.",
+                  "inherited": true,
+                  "inherited_from": "Ascochyta Fungi::Missouri"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -194,7 +207,20 @@
               "verification_status": "provisional",
               "reasoning": "An absence observation on a uniformly green lawn; it makes no positive disease claim that external sources can corroborate or refute and is not contradicted, so it is provisional.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.okstate.edu/fact-sheets/spring-dead-spot-of-bermudagrass",
+                  "quote": "Dead spots may be from 6 inches to as large as 3 feet in diameter and recur in the same spot, increasing in size by up to several inches each season.",
+                  "inherited": true,
+                  "inherited_from": "Spring Dead Spot::*"
+                },
+                {
+                  "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+                  "quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas.",
+                  "inherited": true,
+                  "inherited_from": "Spring Dead Spot::*"
+                }
+              ]
             },
             {
               "field": "other",
@@ -205,7 +231,20 @@
               "verification_status": "provisional",
               "reasoning": "Defoliation/bare-petiole loss is not a turfgrass concept and the candidate only reports absence on a healthy lawn, giving no verifiable disease claim; not contradicted, so provisional.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.okstate.edu/fact-sheets/spring-dead-spot-of-bermudagrass",
+                  "quote": "Dead spots may be from 6 inches to as large as 3 feet in diameter and recur in the same spot, increasing in size by up to several inches each season.",
+                  "inherited": true,
+                  "inherited_from": "Spring Dead Spot::*"
+                },
+                {
+                  "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+                  "quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas.",
+                  "inherited": true,
+                  "inherited_from": "Spring Dead Spot::*"
+                }
+              ]
             },
             {
               "field": "spread_pattern",
@@ -216,7 +255,20 @@
               "verification_status": "provisional",
               "reasoning": "Reports no visible patch pattern on a uniformly green lawn; an absence finding with no positive claim to verify and no external contradiction, so provisional.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.okstate.edu/fact-sheets/spring-dead-spot-of-bermudagrass",
+                  "quote": "Dead spots may be from 6 inches to as large as 3 feet in diameter and recur in the same spot, increasing in size by up to several inches each season.",
+                  "inherited": true,
+                  "inherited_from": "Spring Dead Spot::*"
+                },
+                {
+                  "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+                  "quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas.",
+                  "inherited": true,
+                  "inherited_from": "Spring Dead Spot::*"
+                }
+              ]
             },
             {
               "field": "lesion_morphology",
@@ -227,7 +279,20 @@
               "verification_status": "provisional",
               "reasoning": "The candidate is internally mixed (uniform green vs. some discoloration) and reports essentially no lesion coloration; with no positive claim to verify and no external contradiction, it is provisional.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.okstate.edu/fact-sheets/spring-dead-spot-of-bermudagrass",
+                  "quote": "Dead spots may be from 6 inches to as large as 3 feet in diameter and recur in the same spot, increasing in size by up to several inches each season.",
+                  "inherited": true,
+                  "inherited_from": "Spring Dead Spot::*"
+                },
+                {
+                  "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+                  "quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas.",
+                  "inherited": true,
+                  "inherited_from": "Spring Dead Spot::*"
+                }
+              ]
             },
             {
               "field": "look_alikes",
@@ -238,7 +303,20 @@
               "verification_status": "provisional",
               "reasoning": "An absence observation that names no look-alike symptom present in the image; nothing positive to corroborate against sources and no contradiction, so provisional.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.okstate.edu/fact-sheets/spring-dead-spot-of-bermudagrass",
+                  "quote": "Dead spots may be from 6 inches to as large as 3 feet in diameter and recur in the same spot, increasing in size by up to several inches each season.",
+                  "inherited": true,
+                  "inherited_from": "Spring Dead Spot::*"
+                },
+                {
+                  "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+                  "quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas.",
+                  "inherited": true,
+                  "inherited_from": "Spring Dead Spot::*"
+                }
+              ]
             }
           ],
           "image_ids": [

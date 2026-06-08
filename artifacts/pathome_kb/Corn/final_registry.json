@@ -326,7 +326,38 @@
               "verification_status": "novel_plausible",
               "reasoning": "A fuzzy/raised surface could correspond to acervuli with setae erupting through the cuticle, but literature describes these as 'spiny' rather than 'fuzzy'; coherent but unverified.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/cp/corn-anthracnose",
+                  "quote": "lesions become tan at the center with red to reddish-brown or yellow-orange borders",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Wisconsin"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/anthracnose-leaf-blight-of-corn",
+                  "quote": "Anthracnose lesions tend to be brown, oval to spindle-shaped lesions with yellow to pinkish to reddish-brown borders",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Wisconsin"
+                },
+                {
+                  "url": "https://cropwatch.unl.edu/2018/differentiating-corn-leaf-diseases/",
+                  "quote": "anthracnose lesions are notably not restricted by leaf veins, unlike gray leaf spot lesions which remain constrained by the vein structure",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Wisconsin"
+                },
+                {
+                  "url": "https://www.fbn.com/community/blog/anthracnose-leaf-blight-corn",
+                  "quote": "lesions are typically tan to brown, often encircled by a yellow halo",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Wisconsin"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/anthracnose-corn-disease",
+                  "quote": "oval to elongated, water-soaked lesions that appear on youngest leaves and turn tan to brown with yellow to reddish brown borders",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Wisconsin"
+                }
+              ]
             },
             {
               "field": "other",
@@ -337,7 +368,38 @@
               "verification_status": "novel_plausible",
               "reasoning": "Absence of chlorosis is plausible for early-stage anthracnose lesions before coalescence, but the supplied image quote does not actually evidence the chlorosis-absence claim.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/cp/corn-anthracnose",
+                  "quote": "lesions become tan at the center with red to reddish-brown or yellow-orange borders",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Wisconsin"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/anthracnose-leaf-blight-of-corn",
+                  "quote": "Anthracnose lesions tend to be brown, oval to spindle-shaped lesions with yellow to pinkish to reddish-brown borders",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Wisconsin"
+                },
+                {
+                  "url": "https://cropwatch.unl.edu/2018/differentiating-corn-leaf-diseases/",
+                  "quote": "anthracnose lesions are notably not restricted by leaf veins, unlike gray leaf spot lesions which remain constrained by the vein structure",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Wisconsin"
+                },
+                {
+                  "url": "https://www.fbn.com/community/blog/anthracnose-leaf-blight-corn",
+                  "quote": "lesions are typically tan to brown, often encircled by a yellow halo",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Wisconsin"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/anthracnose-corn-disease",
+                  "quote": "oval to elongated, water-soaked lesions that appear on youngest leaves and turn tan to brown with yellow to reddish brown borders",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Wisconsin"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -439,7 +501,20 @@
               "verification_status": "novel_plausible",
               "reasoning": "Extension sources describe Goss's wilt lesions as tan to gray with wavy margins and possible brown/yellow tones, but a distinct chocolate-brown margin plus chlorotic halo is more typical of NCLB; flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.agry.purdue.edu/ext/corn/news/articles.08/GossWilt-0816.html",
+                  "quote": "yield losses of as much as 60 bushels/acre were reported in northwestern Indiana in 2008",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Indiana"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-gosss-bacterial-wilt-and-blight",
+                  "quote": "Grain yield losses from Goss's wilt can be severe, exceeding 50%.",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Indiana"
+                }
+              ]
             },
             {
               "field": "lesion_morphology",
@@ -450,7 +525,20 @@
               "verification_status": "novel_plausible",
               "reasoning": "Absence of fungal fuzz is consistent with a bacterial disease, but the canonical 'varnish-like' shiny ooze is not affirmed; observation is plausible but not externally verified.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.agry.purdue.edu/ext/corn/news/articles.08/GossWilt-0816.html",
+                  "quote": "yield losses of as much as 60 bushels/acre were reported in northwestern Indiana in 2008",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Indiana"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-gosss-bacterial-wilt-and-blight",
+                  "quote": "Grain yield losses from Goss's wilt can be severe, exceeding 50%.",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Indiana"
+                }
+              ]
             },
             {
               "field": "lesion_morphology",
@@ -461,7 +549,20 @@
               "verification_status": "novel_plausible",
               "reasoning": "Goss's wilt classically produces coalescing elongated lesions rather than discrete necrotic spots, though early/peripheral necrosis is plausible; flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.agry.purdue.edu/ext/corn/news/articles.08/GossWilt-0816.html",
+                  "quote": "yield losses of as much as 60 bushels/acre were reported in northwestern Indiana in 2008",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Indiana"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-gosss-bacterial-wilt-and-blight",
+                  "quote": "Grain yield losses from Goss's wilt can be severe, exceeding 50%.",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Indiana"
+                }
+              ]
             },
             {
               "field": "other",
@@ -472,7 +573,20 @@
               "verification_status": "novel_plausible",
               "reasoning": "Leaf curling is not a documented Goss's wilt diagnostic but is plausible as a secondary wilting/desiccation response on heavily blighted leaves.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.agry.purdue.edu/ext/corn/news/articles.08/GossWilt-0816.html",
+                  "quote": "yield losses of as much as 60 bushels/acre were reported in northwestern Indiana in 2008",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Indiana"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-gosss-bacterial-wilt-and-blight",
+                  "quote": "Grain yield losses from Goss's wilt can be severe, exceeding 50%.",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Indiana"
+                }
+              ]
             },
             {
               "field": "other",
@@ -483,7 +597,20 @@
               "verification_status": "novel_plausible",
               "reasoning": "Translucent vein appearance is not externally documented for Goss's wilt and the supporting quote describes color rather than vein translucence; flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.agry.purdue.edu/ext/corn/news/articles.08/GossWilt-0816.html",
+                  "quote": "yield losses of as much as 60 bushels/acre were reported in northwestern Indiana in 2008",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Indiana"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-gosss-bacterial-wilt-and-blight",
+                  "quote": "Grain yield losses from Goss's wilt can be severe, exceeding 50%.",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Indiana"
+                }
+              ]
             },
             {
               "field": "lesion_morphology",
@@ -494,7 +621,20 @@
               "verification_status": "novel_plausible",
               "reasoning": "Tan centers are canonical, but the chocolate-brown margin plus chlorotic halo combination is more characteristic of NCLB than Goss's wilt; flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.agry.purdue.edu/ext/corn/news/articles.08/GossWilt-0816.html",
+                  "quote": "yield losses of as much as 60 bushels/acre were reported in northwestern Indiana in 2008",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Indiana"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-gosss-bacterial-wilt-and-blight",
+                  "quote": "Grain yield losses from Goss's wilt can be severe, exceeding 50%.",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Indiana"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -561,7 +701,20 @@
               "verification_status": "provisional",
               "reasoning": "Discrete necrotic spots are atypical for Goss's wilt (which forms elongated lesions), but tolerant lines and early-stage infections can show scattered necrosis prior to lesion coalescence; no direct evidence found.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/goss-wilt-identification-and-management",
+                  "quote": "tolerant lines may exhibit only mild symptoms such as chlorosis, freckling, and necrosis",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Iowa"
+                },
+                {
+                  "url": "https://crops.extension.iastate.edu/cropnews/2009/07/gosss-wilt-and-northern-corn-leaf-blight-showing-iowa",
+                  "quote": "Yellowing and interveinal chlorosis starting with lower leaves are symptoms associated with Goss's bacterial wilt",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Iowa"
+                }
+              ]
             },
             {
               "field": "other",
@@ -572,7 +725,20 @@
               "verification_status": "provisional",
               "reasoning": "Leaf curling is not a documented Goss's wilt feature; systemic phase causes wilting/drought-like appearance but tip curl specifically lacks external support.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/goss-wilt-identification-and-management",
+                  "quote": "tolerant lines may exhibit only mild symptoms such as chlorosis, freckling, and necrosis",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Iowa"
+                },
+                {
+                  "url": "https://crops.extension.iastate.edu/cropnews/2009/07/gosss-wilt-and-northern-corn-leaf-blight-showing-iowa",
+                  "quote": "Yellowing and interveinal chlorosis starting with lower leaves are symptoms associated with Goss's bacterial wilt",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Iowa"
+                }
+              ]
             },
             {
               "field": "other",
@@ -583,7 +749,20 @@
               "verification_status": "novel_plausible",
               "reasoning": "This describes normal corn leaf morphology rather than a disease feature; coherent with the host but not diagnostically informative.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/goss-wilt-identification-and-management",
+                  "quote": "tolerant lines may exhibit only mild symptoms such as chlorosis, freckling, and necrosis",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Iowa"
+                },
+                {
+                  "url": "https://crops.extension.iastate.edu/cropnews/2009/07/gosss-wilt-and-northern-corn-leaf-blight-showing-iowa",
+                  "quote": "Yellowing and interveinal chlorosis starting with lower leaves are symptoms associated with Goss's bacterial wilt",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Iowa"
+                }
+              ]
             },
             {
               "field": "lesion_morphology",
@@ -594,7 +773,20 @@
               "verification_status": "provisional",
               "reasoning": "A green/yellow/brown color palette is generic and consistent with mixed chlorosis and tan lesions, but is too non-specific to find direct corroborating evidence.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/goss-wilt-identification-and-management",
+                  "quote": "tolerant lines may exhibit only mild symptoms such as chlorosis, freckling, and necrosis",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Iowa"
+                },
+                {
+                  "url": "https://crops.extension.iastate.edu/cropnews/2009/07/gosss-wilt-and-northern-corn-leaf-blight-showing-iowa",
+                  "quote": "Yellowing and interveinal chlorosis starting with lower leaves are symptoms associated with Goss's bacterial wilt",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Iowa"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -717,7 +909,20 @@
               "verification_status": "novel_plausible",
               "reasoning": "Canonical Goss's wilt pith is described as orange/brown with bacterial exudate or slimy brown rot, not white with brown spots; the observation is plausible for an early-stage systemic infection but lacks specific corroboration \u00e2\u20ac\u201d flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/corn/bacterial-stalk-rot/",
+                  "quote": "Bacterial stalk rot is sometimes confused with Goss's wilt... Split the stalks and a discolored, soft, slimy pith is present.",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/gosss-wilt-of-corn",
+                  "quote": "Shiny patches of dried bacterial ooze that appear similar to dry varnish are often present on the lesions.",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Kentucky"
+                }
+              ]
             },
             {
               "field": "severity",
@@ -728,7 +933,20 @@
               "verification_status": "provisional",
               "reasoning": "Late-stage Goss's wilt can produce discolored vascular tissue and slimy stalk rot leading to weak/lodging stalks, but a hollow core is not specifically documented as a Goss's wilt diagnostic \u00e2\u20ac\u201d plausible severity indicator pending verification.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/corn/bacterial-stalk-rot/",
+                  "quote": "Bacterial stalk rot is sometimes confused with Goss's wilt... Split the stalks and a discolored, soft, slimy pith is present.",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/gosss-wilt-of-corn",
+                  "quote": "Shiny patches of dried bacterial ooze that appear similar to dry varnish are often present on the lesions.",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Kentucky"
+                }
+              ]
             },
             {
               "field": "other",
@@ -739,7 +957,20 @@
               "verification_status": "novel_plausible",
               "reasoning": "Goss's wilt leaf lesions are gray-green to black and stalk infection produces orange vascular discoloration; the olive-green/white palette and white pith with brown vascular ring are not directly contradicted but do not match the canonical orange-bundle signature \u00e2\u20ac\u201d flag for review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/corn/bacterial-stalk-rot/",
+                  "quote": "Bacterial stalk rot is sometimes confused with Goss's wilt... Split the stalks and a discolored, soft, slimy pith is present.",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/gosss-wilt-of-corn",
+                  "quote": "Shiny patches of dried bacterial ooze that appear similar to dry varnish are often present on the lesions.",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::Kentucky"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -826,7 +1057,44 @@
               "verification_status": "novel_plausible",
               "reasoning": "Upward leaf-tip curling is not described as a Goss's wilt diagnostic in extension literature but is not explicitly contradicted; could reflect drought-like wilting from systemic infection - flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.agry.purdue.edu/ext/corn/news/articles.08/GossWilt-0816.html",
+                  "quote": "yield losses of as much as 60 bushels/acre were reported in northwestern Indiana in 2008",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::*"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-gosss-bacterial-wilt-and-blight",
+                  "quote": "Grain yield losses from Goss's wilt can be severe, exceeding 50%.",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::*"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/goss-wilt-identification-and-management",
+                  "quote": "tolerant lines may exhibit only mild symptoms such as chlorosis, freckling, and necrosis",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::*"
+                },
+                {
+                  "url": "https://crops.extension.iastate.edu/cropnews/2009/07/gosss-wilt-and-northern-corn-leaf-blight-showing-iowa",
+                  "quote": "Yellowing and interveinal chlorosis starting with lower leaves are symptoms associated with Goss's bacterial wilt",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::*"
+                },
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/corn/bacterial-stalk-rot/",
+                  "quote": "Bacterial stalk rot is sometimes confused with Goss's wilt... Split the stalks and a discolored, soft, slimy pith is present.",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::*"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/gosss-wilt-of-corn",
+                  "quote": "Shiny patches of dried bacterial ooze that appear similar to dry varnish are often present on the lesions.",
+                  "inherited": true,
+                  "inherited_from": "Goss' Bacterial Wilt::*"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -1113,7 +1381,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Extension factsheets and CPN do not describe Physoderma brown spot lesions as sunken; this could be a visual artifact of mature dried lesions but lacks documented support \u00e2\u20ac\u201d flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/physoderma-brown-spot-of-corn",
+                  "quote": "Leaf lesions are numerous, very small (approximately \u00c2\u00bc inch in diameter), round to oval, yellowish to brown in color, and usually occur in broad bands across the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Indiana"
+                },
+                {
+                  "url": "https://www.udel.edu/academics/colleges/canr/cooperative-extension/fact-sheets/physoderma-brown-spot/",
+                  "quote": "Alternating bands of infected and noninfected tissues are common.",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Indiana"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/physoderma-brown-spot-and-stalk-rot-in-corn",
+                  "quote": "lesions ... yellowish to brown in color",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Indiana"
+                }
+              ]
             },
             {
               "field": "other",
@@ -1124,7 +1411,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Leaf curling is not a documented symptom of Physoderma brown spot in any extension or CPN source; could reflect drought stress or sampling artifact rather than disease-specific signal.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/physoderma-brown-spot-of-corn",
+                  "quote": "Leaf lesions are numerous, very small (approximately \u00c2\u00bc inch in diameter), round to oval, yellowish to brown in color, and usually occur in broad bands across the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Indiana"
+                },
+                {
+                  "url": "https://www.udel.edu/academics/colleges/canr/cooperative-extension/fact-sheets/physoderma-brown-spot/",
+                  "quote": "Alternating bands of infected and noninfected tissues are common.",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Indiana"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/physoderma-brown-spot-and-stalk-rot-in-corn",
+                  "quote": "lesions ... yellowish to brown in color",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Indiana"
+                }
+              ]
             },
             {
               "field": "other",
@@ -1135,7 +1441,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Leaf geometry is a host botanical trait not a disease feature; corn leaves are typically linear-lanceolate so this is plausible but not disease-diagnostic.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/physoderma-brown-spot-of-corn",
+                  "quote": "Leaf lesions are numerous, very small (approximately \u00c2\u00bc inch in diameter), round to oval, yellowish to brown in color, and usually occur in broad bands across the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Indiana"
+                },
+                {
+                  "url": "https://www.udel.edu/academics/colleges/canr/cooperative-extension/fact-sheets/physoderma-brown-spot/",
+                  "quote": "Alternating bands of infected and noninfected tissues are common.",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Indiana"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/physoderma-brown-spot-and-stalk-rot-in-corn",
+                  "quote": "lesions ... yellowish to brown in color",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Indiana"
+                }
+              ]
             },
             {
               "field": "lesion_morphology",
@@ -1146,7 +1471,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Documented Physoderma lesion colors are yellow to brown, chocolate, reddish-brown, or purple; olive-green is not described, though it could represent healthy leaf tissue adjacent to brown lesions \u00e2\u20ac\u201d flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/physoderma-brown-spot-of-corn",
+                  "quote": "Leaf lesions are numerous, very small (approximately \u00c2\u00bc inch in diameter), round to oval, yellowish to brown in color, and usually occur in broad bands across the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Indiana"
+                },
+                {
+                  "url": "https://www.udel.edu/academics/colleges/canr/cooperative-extension/fact-sheets/physoderma-brown-spot/",
+                  "quote": "Alternating bands of infected and noninfected tissues are common.",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Indiana"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/physoderma-brown-spot-and-stalk-rot-in-corn",
+                  "quote": "lesions ... yellowish to brown in color",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Indiana"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -1249,7 +1593,26 @@
               "verification_status": "provisional",
               "reasoning": "Flat/smooth lesion texture is consistent with Physoderma (vs. raised rust pustules or fuzzy downy mildew) but no source explicitly describes texture; coherent with canonical.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/physoderma-brown-spot-and-stalk-rot-in-corn",
+                  "quote": "Each lesion forms a translucent yellow halo around the margin, which can be easily observed if the leaf is held up to the sun.",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Iowa"
+                },
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/corn/physoderma-brown-spot/",
+                  "quote": "yellow halos darken as the corn plant matures",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Iowa"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/physoderma-brown-spot-of-corn",
+                  "quote": "numerous, very small (approximately \u00c2\u00bc inch in diameter), round to oval, yellowish to brown in color",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Iowa"
+                }
+              ]
             },
             {
               "field": "other",
@@ -1260,7 +1623,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Leaf curling is not a documented Physoderma symptom but is not contradicted; could reflect concurrent abiotic stress on the witness leaf \u00e2\u20ac\u201d flagged for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/physoderma-brown-spot-and-stalk-rot-in-corn",
+                  "quote": "Each lesion forms a translucent yellow halo around the margin, which can be easily observed if the leaf is held up to the sun.",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Iowa"
+                },
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/corn/physoderma-brown-spot/",
+                  "quote": "yellow halos darken as the corn plant matures",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Iowa"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/physoderma-brown-spot-of-corn",
+                  "quote": "numerous, very small (approximately \u00c2\u00bc inch in diameter), round to oval, yellowish to brown in color",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Iowa"
+                }
+              ]
             },
             {
               "field": "other",
@@ -1271,7 +1653,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Vein clearing is more typical of viral infection; the darker vein sections may correspond to the canonical midrib dark spots, but the translucent-vein claim has no extension support.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/physoderma-brown-spot-and-stalk-rot-in-corn",
+                  "quote": "Each lesion forms a translucent yellow halo around the margin, which can be easily observed if the leaf is held up to the sun.",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Iowa"
+                },
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/corn/physoderma-brown-spot/",
+                  "quote": "yellow halos darken as the corn plant matures",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Iowa"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/physoderma-brown-spot-of-corn",
+                  "quote": "numerous, very small (approximately \u00c2\u00bc inch in diameter), round to oval, yellowish to brown in color",
+                  "inherited": true,
+                  "inherited_from": "Brown Spot Of Corn::Iowa"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -1521,7 +1922,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Tan/brown is canonical and pale-straw is consistent with bleached late-stage stalk tissue, but no external source documents an olive-green component for E. chrysanthemi pv. zeae \u00e2\u20ac\u201d flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/corn-zea-mays-bacterial-stalk-rot",
+                  "quote": "The rind and the pith become soft, brown, and water-soaked.",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Rot And Blight::Colorado"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/bacterial-stalk-rot-of-corn",
+                  "quote": "Splitting the stalk reveals internal discoloration and soft slimy rot mostly initiating at the nodes.",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Rot And Blight::Colorado"
+                },
+                {
+                  "url": "https://ipm.missouri.edu/cropPest/2013/8/Corn-Stalk-Rots/",
+                  "quote": "Diplodia produces fruiting bodies which may be seen as small black specks embedded in the white fungal mat (Gibberella stalk rot has tiny, round, blue-black fungal structures on the surface of the stalk).",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Rot And Blight::Colorado"
+                },
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/corn/bacterial-stalk-rot/",
+                  "quote": "The pith of infected plants will decay and be mushy or soft.",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Rot And Blight::Colorado"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -1738,7 +2164,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Leaf curl is not a documented hallmark of common rust; could be incidental drought/wilting on the imaged leaf and warrants curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/common-rust-of-corn",
+                  "quote": "leaf tissue encircling the pustules often turns yellow or dies, leaving lesions of dead tissue and creating a characteristic yellow halo",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Illinois"
+                },
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-cer-02",
+                  "quote": "early symptoms of common rust are chlorotic flecks on the leaf surface that soon develop into powdery, brick-red pustules",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Illinois"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/gray-leaf-spot-in-corn",
+                  "quote": "gray leaf spot lesions develop parallel edges due to being restricted by leaf veins, giving them a rectangular or blocky appearance",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Illinois"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/common-corn-rust",
+                  "quote": "brick-red to cinnamon-brown pustules",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Illinois"
+                }
+              ]
             },
             {
               "field": "other",
@@ -1749,7 +2200,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Vein clearing is more characteristic of viral disorders than rust; no extension source ties this pattern to P. sorghi, so flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/common-rust-of-corn",
+                  "quote": "leaf tissue encircling the pustules often turns yellow or dies, leaving lesions of dead tissue and creating a characteristic yellow halo",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Illinois"
+                },
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-cer-02",
+                  "quote": "early symptoms of common rust are chlorotic flecks on the leaf surface that soon develop into powdery, brick-red pustules",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Illinois"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/gray-leaf-spot-in-corn",
+                  "quote": "gray leaf spot lesions develop parallel edges due to being restricted by leaf veins, giving them a rectangular or blocky appearance",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Illinois"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/common-corn-rust",
+                  "quote": "brick-red to cinnamon-brown pustules",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Illinois"
+                }
+              ]
             },
             {
               "field": "other",
@@ -1760,7 +2236,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "This describes generic corn leaf morphology rather than a disease feature; not contradicted but not diagnostically useful.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/common-rust-of-corn",
+                  "quote": "leaf tissue encircling the pustules often turns yellow or dies, leaving lesions of dead tissue and creating a characteristic yellow halo",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Illinois"
+                },
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-cer-02",
+                  "quote": "early symptoms of common rust are chlorotic flecks on the leaf surface that soon develop into powdery, brick-red pustules",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Illinois"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/gray-leaf-spot-in-corn",
+                  "quote": "gray leaf spot lesions develop parallel edges due to being restricted by leaf veins, giving them a rectangular or blocky appearance",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Illinois"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/common-corn-rust",
+                  "quote": "brick-red to cinnamon-brown pustules",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Illinois"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -1911,7 +2412,44 @@
               "verification_status": "provisional",
               "reasoning": "Canonical lists chlorosis as a severe-stage symptom; absence of chlorosis in a mild/moderate infection is plausible and not contradicted by sources, but cannot be independently verified from extension literature.",
               "swarm_support": 4,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/common-rust-of-corn",
+                  "quote": "lesions rapidly develop into oval to elongate shaped reddish-brown and powdery pustules that break through the surface giving the leaf a bumpy appearance",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-cer-02",
+                  "quote": "pustules break through the epidermis early in their development and become powdery as spores (urediniospores) are produced",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "Lesions are found on both the upper and lower surfaces of the leaves and are scattered across the leaf surface, circular to elongate, and may occur in clusters",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://www.illinoiswildflowers.info/grasses/plants/corn.html",
+                  "quote": "Leaves are linear-lanceolate and acuminate",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://evolution.earthathome.org/grasses/andropogoneae/maize-morphology/",
+                  "quote": "The leaf blades are linear to linear-lanceolate in shape",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/common-corn-rust",
+                  "quote": "lesions begin as flecks on the leaves and develop into small, tan spots before becoming the characteristic colored pustules",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Iowa"
+                }
+              ]
             },
             {
               "field": "other",
@@ -1922,7 +2460,44 @@
               "verification_status": "novel_plausible",
               "reasoning": "Common rust pustules are typically scattered across the whole leaf surface rather than concentrated at the margin; the marginal distribution noted here is unusual and worth curator review, but not directly contradicted.",
               "swarm_support": 4,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/common-rust-of-corn",
+                  "quote": "lesions rapidly develop into oval to elongate shaped reddish-brown and powdery pustules that break through the surface giving the leaf a bumpy appearance",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-cer-02",
+                  "quote": "pustules break through the epidermis early in their development and become powdery as spores (urediniospores) are produced",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "Lesions are found on both the upper and lower surfaces of the leaves and are scattered across the leaf surface, circular to elongate, and may occur in clusters",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://www.illinoiswildflowers.info/grasses/plants/corn.html",
+                  "quote": "Leaves are linear-lanceolate and acuminate",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://evolution.earthathome.org/grasses/andropogoneae/maize-morphology/",
+                  "quote": "The leaf blades are linear to linear-lanceolate in shape",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/common-corn-rust",
+                  "quote": "lesions begin as flecks on the leaves and develop into small, tan spots before becoming the characteristic colored pustules",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Iowa"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -1988,7 +2563,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Common rust produces chlorotic halos around discrete pustules rather than an interveinal pattern; no external evidence ties interveinal chlorosis to Puccinia sorghi, so this is flagged for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropscience.bayer.us/articles/bayer/common-corn-rust",
+                  "quote": "As lesions mature, a prominent yellow halo is usually evident. Additionally, leaf tissue encircling the pustules often turns yellow or dies, leaving lesions of dead tissue and creating a characteristic yellow halo.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/common-rust-of-corn",
+                  "quote": "The leaf tissue around the pustules often yellows or dies leaving areas of dead tissue.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://extension.umn.edu/corn-pest-management/common-rust-corn",
+                  "quote": "within 7 to 14 days, more urediniospores are produced and new infections continue to occur while conditions are favorable, which can rapidly lead to an epidemic.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Kentucky"
+                }
+              ]
             },
             {
               "field": "other",
@@ -1999,7 +2593,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Leaf-margin curling is not described in extension factsheets as a symptom of common corn rust; plausible as a secondary effect of severe foliar damage but unsupported, so flagged for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropscience.bayer.us/articles/bayer/common-corn-rust",
+                  "quote": "As lesions mature, a prominent yellow halo is usually evident. Additionally, leaf tissue encircling the pustules often turns yellow or dies, leaving lesions of dead tissue and creating a characteristic yellow halo.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/common-rust-of-corn",
+                  "quote": "The leaf tissue around the pustules often yellows or dies leaving areas of dead tissue.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://extension.umn.edu/corn-pest-management/common-rust-corn",
+                  "quote": "within 7 to 14 days, more urediniospores are produced and new infections continue to occur while conditions are favorable, which can rapidly lead to an epidemic.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Kentucky"
+                }
+              ]
             },
             {
               "field": "other",
@@ -2010,7 +2623,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "This describes normal corn leaf geometry rather than a disease feature; not contradicted but provides no diagnostic value, so flagged for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropscience.bayer.us/articles/bayer/common-corn-rust",
+                  "quote": "As lesions mature, a prominent yellow halo is usually evident. Additionally, leaf tissue encircling the pustules often turns yellow or dies, leaving lesions of dead tissue and creating a characteristic yellow halo.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/common-rust-of-corn",
+                  "quote": "The leaf tissue around the pustules often yellows or dies leaving areas of dead tissue.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://extension.umn.edu/corn-pest-management/common-rust-corn",
+                  "quote": "within 7 to 14 days, more urediniospores are produced and new infections continue to occur while conditions are favorable, which can rapidly lead to an epidemic.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Kentucky"
+                }
+              ]
             },
             {
               "field": "look_alikes",
@@ -2021,7 +2653,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "A reddish-orange margin with a chlorotic halo is more consistent with common rust itself than with the canonical look-alikes (southern rust, tar spot, gray leaf spot); coherent with visual evidence but not externally tied to look-alike differentiation.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropscience.bayer.us/articles/bayer/common-corn-rust",
+                  "quote": "As lesions mature, a prominent yellow halo is usually evident. Additionally, leaf tissue encircling the pustules often turns yellow or dies, leaving lesions of dead tissue and creating a characteristic yellow halo.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/common-rust-of-corn",
+                  "quote": "The leaf tissue around the pustules often yellows or dies leaving areas of dead tissue.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://extension.umn.edu/corn-pest-management/common-rust-corn",
+                  "quote": "within 7 to 14 days, more urediniospores are produced and new infections continue to occur while conditions are favorable, which can rapidly lead to an epidemic.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Kentucky"
+                }
+              ]
             },
             {
               "field": "other",
@@ -2032,7 +2683,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "A green/tan/reddish-orange palette is broadly consistent with healthy tissue plus chlorotic halos and reddish-brown pustules, but is a generic visual descriptor rather than a verifiable diagnostic claim.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropscience.bayer.us/articles/bayer/common-corn-rust",
+                  "quote": "As lesions mature, a prominent yellow halo is usually evident. Additionally, leaf tissue encircling the pustules often turns yellow or dies, leaving lesions of dead tissue and creating a characteristic yellow halo.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/common-rust-of-corn",
+                  "quote": "The leaf tissue around the pustules often yellows or dies leaving areas of dead tissue.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://extension.umn.edu/corn-pest-management/common-rust-corn",
+                  "quote": "within 7 to 14 days, more urediniospores are produced and new infections continue to occur while conditions are favorable, which can rapidly lead to an epidemic.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::Kentucky"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -2187,7 +2857,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "No extension or pathology source consulted lists upward leaf curl as a common rust symptom, but the observation is not contradicted by canonical and could reflect general drought/severe-infection stress; flagged for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/common-rust-of-corn",
+                  "quote": "At the mature stage, a prominent yellow halo is usually evident.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::New York"
+                },
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/common-rust-of-sweet-corn/",
+                  "quote": "oval to elongate shaped reddish-brown and powdery pustules",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::New York"
+                },
+                {
+                  "url": "https://cropwatch.unl.edu/2024/black-spots-corn-southern-rust-tar-spot-and-more/",
+                  "quote": "Black rust telia are usually produced adjacent to or around old rust pustules in rings or horseshoe shapes.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::New York"
+                }
+              ]
             },
             {
               "field": "other",
@@ -2198,7 +2887,26 @@
               "verification_status": "provisional",
               "reasoning": "A non-finding for vein clearing/necrosis; common rust is not vein-restricted, so this is plausible but no external source explicitly addresses vein translucency in P. sorghi infections.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/common-rust-of-corn",
+                  "quote": "At the mature stage, a prominent yellow halo is usually evident.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::New York"
+                },
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/common-rust-of-sweet-corn/",
+                  "quote": "oval to elongate shaped reddish-brown and powdery pustules",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::New York"
+                },
+                {
+                  "url": "https://cropwatch.unl.edu/2024/black-spots-corn-southern-rust-tar-spot-and-more/",
+                  "quote": "Black rust telia are usually produced adjacent to or around old rust pustules in rings or horseshoe shapes.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::New York"
+                }
+              ]
             },
             {
               "field": "other",
@@ -2209,7 +2917,26 @@
               "verification_status": "provisional",
               "reasoning": "This describes host leaf morphology rather than a disease feature; not contradicted, but contributes no pathology-specific signal.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/common-rust-of-corn",
+                  "quote": "At the mature stage, a prominent yellow halo is usually evident.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::New York"
+                },
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/common-rust-of-sweet-corn/",
+                  "quote": "oval to elongate shaped reddish-brown and powdery pustules",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::New York"
+                },
+                {
+                  "url": "https://cropwatch.unl.edu/2024/black-spots-corn-southern-rust-tar-spot-and-more/",
+                  "quote": "Black rust telia are usually produced adjacent to or around old rust pustules in rings or horseshoe shapes.",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::New York"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -2336,7 +3063,38 @@
               "verification_status": "novel_plausible",
               "reasoning": "No extension source lists leaf curling as a symptom of common rust; the observation is not contradicted but is unsupported and could reflect generalized stress under severe infection.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/common-rust-of-sweet-corn/",
+                  "quote": "oval to elongate shaped reddish-brown and powdery pustules that break through the surface giving the leaf a bumpy appearance",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::South Dakota"
+                },
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-cer-02",
+                  "quote": "pustules ... breaking through the leaf surface and giving the leaf a bumpy appearance",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::South Dakota"
+                },
+                {
+                  "url": "https://extension.umn.edu/corn-pest-management/common-rust-corn",
+                  "quote": "Under severe conditions leaf chlorosis and death may occur",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::South Dakota"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "a characteristic yellow halo is commonly present",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::South Dakota"
+                },
+                {
+                  "url": "http://ipm.illinois.edu/diseases/rpds/965.pdf",
+                  "quote": "pustules ... may appear by themselves or as clusters on the leaf surface",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::South Dakota"
+                }
+              ]
             },
             {
               "field": "other",
@@ -2347,7 +3105,38 @@
               "verification_status": "novel_plausible",
               "reasoning": "Describes host leaf geometry rather than a pathological trait; coherent with corn leaf morphology but contributes no diagnostic value for common rust.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/common-rust-of-sweet-corn/",
+                  "quote": "oval to elongate shaped reddish-brown and powdery pustules that break through the surface giving the leaf a bumpy appearance",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::South Dakota"
+                },
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-cer-02",
+                  "quote": "pustules ... breaking through the leaf surface and giving the leaf a bumpy appearance",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::South Dakota"
+                },
+                {
+                  "url": "https://extension.umn.edu/corn-pest-management/common-rust-corn",
+                  "quote": "Under severe conditions leaf chlorosis and death may occur",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::South Dakota"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "a characteristic yellow halo is commonly present",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::South Dakota"
+                },
+                {
+                  "url": "http://ipm.illinois.edu/diseases/rpds/965.pdf",
+                  "quote": "pustules ... may appear by themselves or as clusters on the leaf surface",
+                  "inherited": true,
+                  "inherited_from": "Common Corn Rust::South Dakota"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -2645,7 +3434,74 @@
               "verification_status": "novel_plausible",
               "reasoning": "Corn is a cereal grain with no true fruits in the horticultural sense; the observation is coherent but uninformative for disease diagnosis and warrants curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://hort.extension.wisc.edu/articles/common-corn-smut/",
+                  "quote": "Newly-formed galls are white but eventually turn brown and are filled with dark powdery spores.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/CornSmut.aspx",
+                  "quote": "Initially galls are white to light green, turning dark when gall membranes rupture and a mass of dark spores emerge.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/common-smut-on-corn",
+                  "quote": "As the galls mature, the interior darkens and turns into masses of powdery, dark olive-brown to black spores.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/common-smut-of-corn",
+                  "quote": "Galls start to have a gray, silvery appearance as streaks of blackened tissues (teliospores) begin to form 14 to 15 days after infection.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://extension.usu.edu/vegetableguide/sweet-corn/corn-smut",
+                  "quote": "Initially galls are white to light green, turning dark when gall membranes rupture and a mass of dark spores emerge.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/head-smut-of-corn",
+                  "quote": "as the galls enlarge and mature, fungal strands grow throughout the galls, causing development of dark streaks until the cells finally mature into large quantities of teliospores",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://extensionpubs.unl.edu/publication/g2223/na/html/view",
+                  "quote": "as galls begin to mature, interior tissue becomes semifleshy and streaks of black tissues occur as teliospores begin to form",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://extension.usu.edu/pests/research/corn-smut",
+                  "quote": "The interior of these galls darkens and turns into masses of powdery, dark olive-brown to black spores",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/common-smut-and-head-smut-in-corn",
+                  "quote": "Common smut may infect all above ground parts of the plant but causes the greatest economic losses when the ear becomes infected",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://extension.umn.edu/corn-pest-management/common-smut-corn",
+                  "quote": "Galls (tumors) are formed on ears, tassels, stalks, and leaves. Initially galls are white to light green, turning dark when gall membranes rupture and a mass of dark spores emerge.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://plant-pest-advisory.rutgers.edu/whats-up-with-corn-smut/",
+                  "quote": "Ear galls can grow to 4- to 5-inches in diameter and release thousands of spores as they rupture.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -2711,7 +3567,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Literature describes smut damage as tumor-like galls (hyperplasia) rather than 'necrotic and decayed tissue'; the framing is unusual but visually coherent with a ruptured, degraded mature gall \u00e2\u20ac\u201d flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://hort.extension.wisc.edu/articles/common-corn-smut/",
+                  "quote": "As fleshy galls mature, their outer surfaces become papery and brittle, and their inner tissues become powdery and black.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::Delaware"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/common-smut-on-corn",
+                  "quote": "As the galls mature, the interior darkens and turns into masses of powdery, dark olive-brown to black spores.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::Delaware"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/common-smut-of-corn",
+                  "quote": "Galls start to have a gray, silvery appearance as streaks of blackened tissues (teliospores) begin to form 14 to 15 days after infection.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::Delaware"
+                },
+                {
+                  "url": "https://extension.usu.edu/vegetableguide/sweet-corn/corn-smut",
+                  "quote": "Initially galls are white to light green, turning dark when gall membranes rupture and a mass of dark spores emerge.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::Delaware"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -2939,7 +3820,20 @@
               "verification_status": "novel_plausible",
               "reasoning": "The image_quote describes gall surface, not extent; while extension sources note that large ear galls can severely reduce yield, the cited visual evidence does not directly substantiate a 'significant portion of the ear' severity claim \u00e2\u20ac\u201d coherent but unverified.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/CornSmut.aspx",
+                  "quote": "As the galls mature, the interior darkens and turns into masses of powdery, dark olive-brown to black spores; teliospores are olive-brown to black.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::Kansas"
+                },
+                {
+                  "url": "https://hort.extension.wisc.edu/articles/common-corn-smut/",
+                  "quote": "Immature smut galls are firm, greenish or silvery white, and covered with a corky periderm.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::Kansas"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -3028,7 +3922,74 @@
               "verification_status": "novel_plausible",
               "reasoning": "Corn does not bear true fruits in the horticultural sense (the ear is the reproductive structure), so 'no fruits visible' is a vacuous/non-informative observation; the image_quote does not actually evidence fruit absence, and other candidates from the same image_id describe galls on ears \u00e2\u20ac\u201d flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://hort.extension.wisc.edu/articles/common-corn-smut/",
+                  "quote": "Newly-formed galls are white but eventually turn brown and are filled with dark powdery spores.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/CornSmut.aspx",
+                  "quote": "Initially galls are white to light green, turning dark when gall membranes rupture and a mass of dark spores emerge.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/common-smut-on-corn",
+                  "quote": "As the galls mature, the interior darkens and turns into masses of powdery, dark olive-brown to black spores.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/common-smut-of-corn",
+                  "quote": "Galls start to have a gray, silvery appearance as streaks of blackened tissues (teliospores) begin to form 14 to 15 days after infection.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://extension.usu.edu/vegetableguide/sweet-corn/corn-smut",
+                  "quote": "Initially galls are white to light green, turning dark when gall membranes rupture and a mass of dark spores emerge.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/head-smut-of-corn",
+                  "quote": "as the galls enlarge and mature, fungal strands grow throughout the galls, causing development of dark streaks until the cells finally mature into large quantities of teliospores",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://extensionpubs.unl.edu/publication/g2223/na/html/view",
+                  "quote": "as galls begin to mature, interior tissue becomes semifleshy and streaks of black tissues occur as teliospores begin to form",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://extension.usu.edu/pests/research/corn-smut",
+                  "quote": "The interior of these galls darkens and turns into masses of powdery, dark olive-brown to black spores",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/common-smut-and-head-smut-in-corn",
+                  "quote": "Common smut may infect all above ground parts of the plant but causes the greatest economic losses when the ear becomes infected",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://extension.umn.edu/corn-pest-management/common-smut-corn",
+                  "quote": "Galls (tumors) are formed on ears, tassels, stalks, and leaves. Initially galls are white to light green, turning dark when gall membranes rupture and a mass of dark spores emerge.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                },
+                {
+                  "url": "https://plant-pest-advisory.rutgers.edu/whats-up-with-corn-smut/",
+                  "quote": "Ear galls can grow to 4- to 5-inches in diameter and release thousands of spores as they rupture.",
+                  "inherited": true,
+                  "inherited_from": "Corn Smut::*"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -3234,7 +4195,20 @@
               "verification_status": "novel_plausible",
               "reasoning": "Extension sources describe leafy tassel proliferation and yellow/yellow-striped leaves but do not specify olive-green/tan tonal palette; the observation is coherent with a mass of leafy tissue plus senescing tassel parts and is not contradicted, so flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.missouri.edu/cropPest/2011/5/Crazy-Top-of-Corn/",
+                  "quote": "Crazy top of corn is caused by the downy mildew fungus, Sclerophthora macrospora. The causal fungus is a soilborne fungus... The disease causes a deformation of plant tissues including excessive tillering, rolling of leaves, proliferation of the tassel until it resembles a mass of leafy structures and stunting of corn plants.",
+                  "inherited": true,
+                  "inherited_from": "Downy Mildew::*"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Sclerophthora_macrospora",
+                  "quote": "The fungus produces survival structures called oospores which can persist for months in infested crop residues and in the soil.",
+                  "inherited": true,
+                  "inherited_from": "Downy Mildew::*"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -3446,7 +4420,26 @@
               "verification_status": "provisional",
               "reasoning": "The image_quote is a non-finding (explicitly describes normal stem surface) that contradicts the interpretive image_shows, so the observation is too weak to verify but is not externally contradicted.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/diplodia-ear-rot-of-corn",
+                  "quote": "A distinguishing characteristic is the appearance of raised black bumps (pycnidia) on the moldy husk or kernels.",
+                  "inherited": true,
+                  "inherited_from": "White Ear Rot And Seedling Blight Of Maize::Iowa"
+                },
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stenocarpella-diplodia-ear-rot",
+                  "quote": "Black pycnidia may be scattered on husks, floral bracts and the sides of kernels.",
+                  "inherited": true,
+                  "inherited_from": "White Ear Rot And Seedling Blight Of Maize::Iowa"
+                },
+                {
+                  "url": "https://www.ent.iastate.edu/imagegal/plantpath/corn/diplodia/diplodia_ear_rot.html",
+                  "quote": "Pycnidia (the small, black, spore-producing structures of the fungus) ... appearing as black specks that may be scattered on the husks, cobs, and sides of kernels.",
+                  "inherited": true,
+                  "inherited_from": "White Ear Rot And Seedling Blight Of Maize::Iowa"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -3547,7 +4540,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Diplodia-affected kernels are typically described as white-moldy, grayish-brown, or brown ('hidden Diplodia'), not yellow; the 'yellow' descriptor may simply reflect underlying kernel base color rather than a disease sign, so the observation is plausible but unverified.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/diplodia-ear-rot-of-corn",
+                  "quote": "Under highly favorable weather conditions, entire ears may become colonized, turn grayish-brown in color and lightweight (mummified), with kernels, cobs, and ear leaves that are rotted and soft.",
+                  "inherited": true,
+                  "inherited_from": "White Ear Rot And Seedling Blight Of Maize::Nebraska"
+                },
+                {
+                  "url": "http://extension.cropsciences.illinois.edu/fieldcrops/corn/diplodia_ear_rot/",
+                  "quote": "Occasionally, the white mold will not be prevalent, and kernels will have a brown discoloration, which is called 'hidden Diplodia.'",
+                  "inherited": true,
+                  "inherited_from": "White Ear Rot And Seedling Blight Of Maize::Nebraska"
+                },
+                {
+                  "url": "https://cropwatch.unl.edu/2017/ear-rot-diseases-developing-some-nebraska-corn-fields/",
+                  "quote": "The ear leaf and husks on the ear of infected plants may appear bleached or straw-colored due to a dense light gray mold.",
+                  "inherited": true,
+                  "inherited_from": "White Ear Rot And Seedling Blight Of Maize::Nebraska"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -3678,7 +4690,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Sunken/depressed leaf lesions are not specifically attested in Diplodia leaf streak literature, but are plausible for a necrotic fungal lesion; flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/diplodia-leaf-streak-of-corn",
+                  "quote": "Lesions are mostly oval to elongated and contain black pycnidia (fungal fruiting structures) imbedded in leaf tissue.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-01-21-0002-DG",
+                  "quote": "As the disease progresses, the lesions expand, forming long streaks measuring several inches to over 12 inches.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Stenocarpella_maydis",
+                  "quote": "S. maydis may cause seed rot, seedling blight, stem and ear rot and leaf spot in corn.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                }
+              ]
             },
             {
               "field": "lesion_morphology",
@@ -3689,7 +4720,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Combined necrotic-and-sunken description is not specifically reported for S. maydis foliar lesions; coherent with general fungal necrosis but unverified.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/diplodia-leaf-streak-of-corn",
+                  "quote": "Lesions are mostly oval to elongated and contain black pycnidia (fungal fruiting structures) imbedded in leaf tissue.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-01-21-0002-DG",
+                  "quote": "As the disease progresses, the lesions expand, forming long streaks measuring several inches to over 12 inches.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Stenocarpella_maydis",
+                  "quote": "S. maydis may cause seed rot, seedling blight, stem and ear rot and leaf spot in corn.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                }
+              ]
             },
             {
               "field": "other",
@@ -3700,7 +4750,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Leaf curling is not described as a Diplodia/Stenocarpella symptom in any extension or APS source reviewed; possibly secondary to necrosis but no direct evidence.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/diplodia-leaf-streak-of-corn",
+                  "quote": "Lesions are mostly oval to elongated and contain black pycnidia (fungal fruiting structures) imbedded in leaf tissue.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-01-21-0002-DG",
+                  "quote": "As the disease progresses, the lesions expand, forming long streaks measuring several inches to over 12 inches.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Stenocarpella_maydis",
+                  "quote": "S. maydis may cause seed rot, seedling blight, stem and ear rot and leaf spot in corn.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                }
+              ]
             },
             {
               "field": "other",
@@ -3711,7 +4780,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Vein clearing is not reported as a Stenocarpella foliar feature; more characteristic of viral infections, so flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/diplodia-leaf-streak-of-corn",
+                  "quote": "Lesions are mostly oval to elongated and contain black pycnidia (fungal fruiting structures) imbedded in leaf tissue.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-01-21-0002-DG",
+                  "quote": "As the disease progresses, the lesions expand, forming long streaks measuring several inches to over 12 inches.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Stenocarpella_maydis",
+                  "quote": "S. maydis may cause seed rot, seedling blight, stem and ear rot and leaf spot in corn.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                }
+              ]
             },
             {
               "field": "other",
@@ -3722,7 +4810,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Describes generic corn leaf morphology rather than a disease feature; carries no diagnostic weight but is not contradicted.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/diplodia-leaf-streak-of-corn",
+                  "quote": "Lesions are mostly oval to elongated and contain black pycnidia (fungal fruiting structures) imbedded in leaf tissue.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-01-21-0002-DG",
+                  "quote": "As the disease progresses, the lesions expand, forming long streaks measuring several inches to over 12 inches.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Stenocarpella_maydis",
+                  "quote": "S. maydis may cause seed rot, seedling blight, stem and ear rot and leaf spot in corn.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                }
+              ]
             },
             {
               "field": "lesion_morphology",
@@ -3733,7 +4840,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Image_shows (olive-green dominant) is inconsistent with image_quote (tan/chocolate-brown on lesions, olive-green only on healthy tissue); no direct external evidence for this palette in Stenocarpella foliar lesions.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/diplodia-leaf-streak-of-corn",
+                  "quote": "Lesions are mostly oval to elongated and contain black pycnidia (fungal fruiting structures) imbedded in leaf tissue.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-01-21-0002-DG",
+                  "quote": "As the disease progresses, the lesions expand, forming long streaks measuring several inches to over 12 inches.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Stenocarpella_maydis",
+                  "quote": "S. maydis may cause seed rot, seedling blight, stem and ear rot and leaf spot in corn.",
+                  "inherited": true,
+                  "inherited_from": "Dry Rot Of Ears And Stalks Of Maize::Kentucky"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -4014,7 +5140,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Extension references describe P. polysora pustules as 'oval to irregular' in some sources, so an irregular appearance is plausible, but the image-specific deviation from the canonical circular-to-oval description deserves curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-southern-rust",
+                  "quote": "Pustules of southern rust are small (0.2 to 2 mm in diameter), circular to oval, and light cinnamon brown to orange.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "Southern rust pustules are orange to tan, circular or oval... As southern rust pustules age, they become dark brown to black, often forming dark halos around the original pustule.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://ipm.missouri.edu/cropPest/index.cfm?ID=705",
+                  "quote": "Puccinia polysora produces fuzzy, raised structures called pustules on leaves and stalks of corn.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12141246/",
+                  "quote": "Disease severity is classified into 5 levels: highly resistant (no disease lesions), resistant (no more than 25% leaf area infected), medium resistance (26-50% infected), susceptible (51-75% infected), and highly susceptible (more than 70% infected).",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                }
+              ]
             },
             {
               "field": "lesion_morphology",
@@ -4025,7 +5176,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Necrosis around pustules is documented as the disease progresses, but the candidate's quote describes orange dots (pustules) rather than necrotic tissue \u00e2\u20ac\u201d the field/quote pairing is internally inconsistent and needs curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-southern-rust",
+                  "quote": "Pustules of southern rust are small (0.2 to 2 mm in diameter), circular to oval, and light cinnamon brown to orange.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "Southern rust pustules are orange to tan, circular or oval... As southern rust pustules age, they become dark brown to black, often forming dark halos around the original pustule.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://ipm.missouri.edu/cropPest/index.cfm?ID=705",
+                  "quote": "Puccinia polysora produces fuzzy, raised structures called pustules on leaves and stalks of corn.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12141246/",
+                  "quote": "Disease severity is classified into 5 levels: highly resistant (no disease lesions), resistant (no more than 25% leaf area infected), medium resistance (26-50% infected), susceptible (51-75% infected), and highly susceptible (more than 70% infected).",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                }
+              ]
             },
             {
               "field": "diagnostic_features",
@@ -4036,7 +5212,32 @@
               "verification_status": "provisional",
               "reasoning": "Absence of vein involvement is consistent with southern rust being a foliar pustule disease rather than a vascular pathogen, but no source explicitly addresses vein appearance as a diagnostic.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-southern-rust",
+                  "quote": "Pustules of southern rust are small (0.2 to 2 mm in diameter), circular to oval, and light cinnamon brown to orange.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "Southern rust pustules are orange to tan, circular or oval... As southern rust pustules age, they become dark brown to black, often forming dark halos around the original pustule.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://ipm.missouri.edu/cropPest/index.cfm?ID=705",
+                  "quote": "Puccinia polysora produces fuzzy, raised structures called pustules on leaves and stalks of corn.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12141246/",
+                  "quote": "Disease severity is classified into 5 levels: highly resistant (no disease lesions), resistant (no more than 25% leaf area infected), medium resistance (26-50% infected), susceptible (51-75% infected), and highly susceptible (more than 70% infected).",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                }
+              ]
             },
             {
               "field": "other",
@@ -4047,7 +5248,32 @@
               "verification_status": "provisional",
               "reasoning": "Leaf geometry is a host trait, not a disease feature; canonical KB does not address it and no evidence contradicts it.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-southern-rust",
+                  "quote": "Pustules of southern rust are small (0.2 to 2 mm in diameter), circular to oval, and light cinnamon brown to orange.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "Southern rust pustules are orange to tan, circular or oval... As southern rust pustules age, they become dark brown to black, often forming dark halos around the original pustule.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://ipm.missouri.edu/cropPest/index.cfm?ID=705",
+                  "quote": "Puccinia polysora produces fuzzy, raised structures called pustules on leaves and stalks of corn.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12141246/",
+                  "quote": "Disease severity is classified into 5 levels: highly resistant (no disease lesions), resistant (no more than 25% leaf area infected), medium resistance (26-50% infected), susceptible (51-75% infected), and highly susceptible (more than 70% infected).",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                }
+              ]
             },
             {
               "field": "diagnostic_features",
@@ -4058,7 +5284,32 @@
               "verification_status": "provisional",
               "reasoning": "Concentric rings are characteristic of northern corn leaf spot rather than southern rust, so their absence is consistent with the diagnosis though not a diagnostic feature in itself.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-southern-rust",
+                  "quote": "Pustules of southern rust are small (0.2 to 2 mm in diameter), circular to oval, and light cinnamon brown to orange.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "Southern rust pustules are orange to tan, circular or oval... As southern rust pustules age, they become dark brown to black, often forming dark halos around the original pustule.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://ipm.missouri.edu/cropPest/index.cfm?ID=705",
+                  "quote": "Puccinia polysora produces fuzzy, raised structures called pustules on leaves and stalks of corn.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                },
+                {
+                  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12141246/",
+                  "quote": "Disease severity is classified into 5 levels: highly resistant (no disease lesions), resistant (no more than 25% leaf area infected), medium resistance (26-50% infected), susceptible (51-75% infected), and highly susceptible (more than 70% infected).",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Iowa"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -4193,7 +5444,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Raised texture is implicit in canonical (pustules erupt through epidermis); the 'rough' qualifier adds little new and is coherent but not separately corroborated.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-southern-rust",
+                  "quote": "Southern rust pustules are orange to tan, circular or oval, and about 1/16 inch (1.5 millimeters) in diameter. As the disease progresses, pustules become dark brown to black, often forming dark halos around the original pustule.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "Pustules are often surrounded by light-green to yellow (chlorotic) halos.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/southern-rust-of-corn",
+                  "quote": "Pustules are usually circular or oval, very numerous, and densely scattered over the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://www.agweb.com/news/crops/scout-southern-rust-corn",
+                  "quote": "raised pustules that break through the leaf surface, ranging from orange to tan and usually 1/16-inch ovals... very numerous, and densely scattered over the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                }
+              ]
             },
             {
               "field": "other",
@@ -4204,7 +5480,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Generalised leaf yellowing under heavy SCR is plausible, but specifically interveinal chlorosis is not a documented SCR-diagnostic pattern; flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-southern-rust",
+                  "quote": "Southern rust pustules are orange to tan, circular or oval, and about 1/16 inch (1.5 millimeters) in diameter. As the disease progresses, pustules become dark brown to black, often forming dark halos around the original pustule.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "Pustules are often surrounded by light-green to yellow (chlorotic) halos.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/southern-rust-of-corn",
+                  "quote": "Pustules are usually circular or oval, very numerous, and densely scattered over the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://www.agweb.com/news/crops/scout-southern-rust-corn",
+                  "quote": "raised pustules that break through the leaf surface, ranging from orange to tan and usually 1/16-inch ovals... very numerous, and densely scattered over the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                }
+              ]
             },
             {
               "field": "other",
@@ -4215,7 +5516,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Leaf curling is not documented as a primary SCR symptom but is plausible secondary to tissue desiccation under heavy pustule load.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-southern-rust",
+                  "quote": "Southern rust pustules are orange to tan, circular or oval, and about 1/16 inch (1.5 millimeters) in diameter. As the disease progresses, pustules become dark brown to black, often forming dark halos around the original pustule.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "Pustules are often surrounded by light-green to yellow (chlorotic) halos.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/southern-rust-of-corn",
+                  "quote": "Pustules are usually circular or oval, very numerous, and densely scattered over the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://www.agweb.com/news/crops/scout-southern-rust-corn",
+                  "quote": "raised pustules that break through the leaf surface, ranging from orange to tan and usually 1/16-inch ovals... very numerous, and densely scattered over the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                }
+              ]
             },
             {
               "field": "other",
@@ -4226,7 +5552,32 @@
               "verification_status": "provisional",
               "reasoning": "Absence-of-vein-clearing observation; consistent with SCR (no vein clearing documented) but not directly verifiable from external sources.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-southern-rust",
+                  "quote": "Southern rust pustules are orange to tan, circular or oval, and about 1/16 inch (1.5 millimeters) in diameter. As the disease progresses, pustules become dark brown to black, often forming dark halos around the original pustule.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "Pustules are often surrounded by light-green to yellow (chlorotic) halos.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/southern-rust-of-corn",
+                  "quote": "Pustules are usually circular or oval, very numerous, and densely scattered over the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://www.agweb.com/news/crops/scout-southern-rust-corn",
+                  "quote": "raised pustules that break through the leaf surface, ranging from orange to tan and usually 1/16-inch ovals... very numerous, and densely scattered over the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                }
+              ]
             },
             {
               "field": "other",
@@ -4237,7 +5588,32 @@
               "verification_status": "provisional",
               "reasoning": "Describes generic Zea mays leaf geometry rather than a disease feature; not contradicted but not informative for SCR.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-southern-rust",
+                  "quote": "Southern rust pustules are orange to tan, circular or oval, and about 1/16 inch (1.5 millimeters) in diameter. As the disease progresses, pustules become dark brown to black, often forming dark halos around the original pustule.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "Pustules are often surrounded by light-green to yellow (chlorotic) halos.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/southern-rust-of-corn",
+                  "quote": "Pustules are usually circular or oval, very numerous, and densely scattered over the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://www.agweb.com/news/crops/scout-southern-rust-corn",
+                  "quote": "raised pustules that break through the leaf surface, ranging from orange to tan and usually 1/16-inch ovals... very numerous, and densely scattered over the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                }
+              ]
             },
             {
               "field": "diagnostic_features",
@@ -4248,7 +5624,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Late-season telia can form dark rings around uredia, but absence of concentric pattern in early/mid-stage SCR is plausible and not contradicted.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-southern-rust",
+                  "quote": "Southern rust pustules are orange to tan, circular or oval, and about 1/16 inch (1.5 millimeters) in diameter. As the disease progresses, pustules become dark brown to black, often forming dark halos around the original pustule.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "Pustules are often surrounded by light-green to yellow (chlorotic) halos.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/southern-rust-of-corn",
+                  "quote": "Pustules are usually circular or oval, very numerous, and densely scattered over the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://www.agweb.com/news/crops/scout-southern-rust-corn",
+                  "quote": "raised pustules that break through the leaf surface, ranging from orange to tan and usually 1/16-inch ovals... very numerous, and densely scattered over the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                }
+              ]
             },
             {
               "field": "look_alikes",
@@ -4259,7 +5660,32 @@
               "verification_status": "provisional",
               "reasoning": "Negative look-alike claim; consistent with upper-surface-only pustule pattern characteristic of SCR vs. common rust, but not directly verified.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-southern-rust",
+                  "quote": "Southern rust pustules are orange to tan, circular or oval, and about 1/16 inch (1.5 millimeters) in diameter. As the disease progresses, pustules become dark brown to black, often forming dark halos around the original pustule.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "Pustules are often surrounded by light-green to yellow (chlorotic) halos.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/southern-rust-of-corn",
+                  "quote": "Pustules are usually circular or oval, very numerous, and densely scattered over the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                },
+                {
+                  "url": "https://www.agweb.com/news/crops/scout-southern-rust-corn",
+                  "quote": "raised pustules that break through the leaf surface, ranging from orange to tan and usually 1/16-inch ovals... very numerous, and densely scattered over the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::Kentucky"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -4402,7 +5828,44 @@
               "verification_status": "novel_plausible",
               "reasoning": "Image quote describes raised pustules rather than necrosis per se; necrotic flecking around pustules is plausible for Southern Rust but the candidate evidence does not directly demonstrate necrosis.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-southern-rust",
+                  "quote": "The southern rust fungus produces raised structures called pustules which rupture the outer leaf tissue (epidermal tissue).",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::South Dakota"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "Southern rust pustules are orange to tan, circular or oval, and about 1/16 inch (1.5 millimeters) in diameter.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::South Dakota"
+                },
+                {
+                  "url": "https://extension.sdstate.edu/southern-rust-bacterial-leaf-streak-and-eyespot-are-developing-corn",
+                  "quote": "Pustules are often surrounded by light green to yellow (chlorotic) halos, which are evident on the underside of a leaf.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::South Dakota"
+                },
+                {
+                  "url": "https://lgseeds.com/agronomy/2024-southern-corn-rust-invasion",
+                  "quote": "Corn leaves can be covered with the pustules of Southern rust which can kill the leaf tissue.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::South Dakota"
+                },
+                {
+                  "url": "https://www.illinoiswildflowers.info/grasses/plants/corn.html",
+                  "quote": "The leaf blades of corn (Zea mays) are linear to linear-lanceolate in shape.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::South Dakota"
+                },
+                {
+                  "url": "https://revistacultivar.com/plant-health/Zea-Mays",
+                  "quote": "Zea mays is an annual herbaceous plant with alternate lanceolate leaves.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::South Dakota"
+                }
+              ]
             },
             {
               "field": "other",
@@ -4413,7 +5876,44 @@
               "verification_status": "novel_plausible",
               "reasoning": "Leaf curling is not a recognized diagnostic feature of Southern Rust in the literature reviewed, though it could arise as a secondary desiccation effect under heavy pustule load; flagged for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-southern-rust",
+                  "quote": "The southern rust fungus produces raised structures called pustules which rupture the outer leaf tissue (epidermal tissue).",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::South Dakota"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/corn-rusts-common-and-southern-rust",
+                  "quote": "Southern rust pustules are orange to tan, circular or oval, and about 1/16 inch (1.5 millimeters) in diameter.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::South Dakota"
+                },
+                {
+                  "url": "https://extension.sdstate.edu/southern-rust-bacterial-leaf-streak-and-eyespot-are-developing-corn",
+                  "quote": "Pustules are often surrounded by light green to yellow (chlorotic) halos, which are evident on the underside of a leaf.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::South Dakota"
+                },
+                {
+                  "url": "https://lgseeds.com/agronomy/2024-southern-corn-rust-invasion",
+                  "quote": "Corn leaves can be covered with the pustules of Southern rust which can kill the leaf tissue.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::South Dakota"
+                },
+                {
+                  "url": "https://www.illinoiswildflowers.info/grasses/plants/corn.html",
+                  "quote": "The leaf blades of corn (Zea mays) are linear to linear-lanceolate in shape.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::South Dakota"
+                },
+                {
+                  "url": "https://revistacultivar.com/plant-health/Zea-Mays",
+                  "quote": "Zea mays is an annual herbaceous plant with alternate lanceolate leaves.",
+                  "inherited": true,
+                  "inherited_from": "Southern Corn Rust::South Dakota"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -4603,7 +6103,38 @@
               "verification_status": "novel_plausible",
               "reasoning": "Extension and CPN descriptions of GLS focus on shape, color, and vein-limitation but do not characterize lesions as sunken or depressed; no evidence for or against, so flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.entm.purdue.edu/newsletters/pestandcrop/article/update-on-corn-diseases-in-indiana-part-2-gray-leaf-spot-and-southern-rust/",
+                  "quote": "As lesions mature, they elongate into narrow, rectangular, brown to gray spots. Lesions expand parallel to leaf veins and may become 1.5 to 2 inches long.",
+                  "inherited": true,
+                  "inherited_from": "Gray Leaf Spot::Indiana"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/gray-leaf-spot-of-corn",
+                  "quote": "Gray leaf spot lesions elongate over time running parallel to the veins becoming pale brown to gray and rectangular in shape with blunt ends.",
+                  "inherited": true,
+                  "inherited_from": "Gray Leaf Spot::Indiana"
+                },
+                {
+                  "url": "https://ipm.missouri.edu/cropPest/index.cfm?ID=604",
+                  "quote": "Diplodia leaf spot lesions tend to be a half inch to an inch in length, can have concentric rings within the lesion, and have a stark yellow halo around the edge of the lesion.",
+                  "inherited": true,
+                  "inherited_from": "Gray Leaf Spot::Indiana"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gray_leaf_spot_cropfocus.html",
+                  "quote": "Gray leaf spot lesions start out as small, light tan to brown lesions with yellow margins.",
+                  "inherited": true,
+                  "inherited_from": "Gray Leaf Spot::Indiana"
+                },
+                {
+                  "url": "https://cals.cornell.edu/field-crops/corn/diseases-corn/gray-leaf-spot",
+                  "quote": "GLS lesions begin as small necrotic spots with chlorotic halos.",
+                  "inherited": true,
+                  "inherited_from": "Gray Leaf Spot::Indiana"
+                }
+              ]
             },
             {
               "field": "severity",
@@ -4614,7 +6145,38 @@
               "verification_status": "provisional",
               "reasoning": "Coalescence and high lesion density on a single leaf are consistent with late-stage GLS, but the supporting quote restates morphology rather than severity, so support is indirect.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.entm.purdue.edu/newsletters/pestandcrop/article/update-on-corn-diseases-in-indiana-part-2-gray-leaf-spot-and-southern-rust/",
+                  "quote": "As lesions mature, they elongate into narrow, rectangular, brown to gray spots. Lesions expand parallel to leaf veins and may become 1.5 to 2 inches long.",
+                  "inherited": true,
+                  "inherited_from": "Gray Leaf Spot::Indiana"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/gray-leaf-spot-of-corn",
+                  "quote": "Gray leaf spot lesions elongate over time running parallel to the veins becoming pale brown to gray and rectangular in shape with blunt ends.",
+                  "inherited": true,
+                  "inherited_from": "Gray Leaf Spot::Indiana"
+                },
+                {
+                  "url": "https://ipm.missouri.edu/cropPest/index.cfm?ID=604",
+                  "quote": "Diplodia leaf spot lesions tend to be a half inch to an inch in length, can have concentric rings within the lesion, and have a stark yellow halo around the edge of the lesion.",
+                  "inherited": true,
+                  "inherited_from": "Gray Leaf Spot::Indiana"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gray_leaf_spot_cropfocus.html",
+                  "quote": "Gray leaf spot lesions start out as small, light tan to brown lesions with yellow margins.",
+                  "inherited": true,
+                  "inherited_from": "Gray Leaf Spot::Indiana"
+                },
+                {
+                  "url": "https://cals.cornell.edu/field-crops/corn/diseases-corn/gray-leaf-spot",
+                  "quote": "GLS lesions begin as small necrotic spots with chlorotic halos.",
+                  "inherited": true,
+                  "inherited_from": "Gray Leaf Spot::Indiana"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -4801,7 +6363,44 @@
               "verification_status": "provisional",
               "reasoning": "Corn leaves are botanically linear to linear-lanceolate, so the description is plausible, but it concerns host morphology rather than the disease and adds no diagnostic value.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropwatch.unl.edu/2018/differentiating-corn-leaf-diseases/",
+                  "quote": "Northern corn leaf spot race 1 lesions are tan, oval to circular with concentric zones, and are commonly 1/2 inch in width and 1 inch in length.",
+                  "inherited": true,
+                  "inherited_from": "Gray Leaf Spot::Iowa"
+                },
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/corn/gray-leaf-spot/",
+                  "quote": "Gray leaf spot lesions are generally an inch or less in length, have parallel margins and do not cross the leaf veins.",
+                  "inherited": true,
+                  "inherited_from": "Gray Leaf Spot::Iowa"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/gray-leaf-spot-of-corn",
+                  "quote": "Lesions run parallel to the leaf surface and, with increased severity, may coalesce, leading to blighting of entire leaves.",
+                  "inherited": true,
+                  "inherited_from": "Gray Leaf Spot::Iowa"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gray_leaf_spot_cropfocus.html",
+                  "quote": "Over time the lesions of Gray leaf spot coalesce to form large necrotic areas, and under the proper circumstances significant loss photosynthetic area of the canopy occurs.",
+                  "inherited": true,
+                  "inherited_from": "Gray Leaf Spot::Iowa"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/gray-leaf-spot-in-corn",
+                  "quote": "Coloration of initial lesions can range from tan to brown before sporulation begins.",
+                  "inherited": true,
+                  "inherited_from": "Gray Leaf Spot::Iowa"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/gray-leaf-spot-in-corn",
+                  "quote": "Gray leaf spot lesions start out as small, light tan to brown lesions with yellow margins.",
+                  "inherited": true,
+                  "inherited_from": "Gray Leaf Spot::Iowa"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -5009,7 +6608,32 @@
               "verification_status": "provisional",
               "reasoning": "Early-stage NCLB lesions may appear smooth before sporulation produces the 'dirty' textured appearance noted in the canonical diagnostic features; no direct external corroboration found.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-northern-corn-leaf-blight",
+                  "quote": "Lesions may form in bands across leaves because of infection in the whorl.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Indiana"
+                },
+                {
+                  "url": "https://extension.umn.edu/corn-pest-management/northern-corn-leaf-blight",
+                  "quote": "with the Ht4 gene, a chlorotic 'halo' appears around the lesions",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Indiana"
+                },
+                {
+                  "url": "https://crops.extension.iastate.edu/cropnews/2009/07/gosss-wilt-and-northern-corn-leaf-blight-showing-iowa",
+                  "quote": "lesions may become so numerous that they coalesce and turn the entire leaf necrotic",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Indiana"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/northern-corn-leaf-blight-of-corn",
+                  "quote": "Over time, the lesions become grayish or tan, and can have dark-gray or green masses of fungal spores in the center",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Indiana"
+                }
+              ]
             },
             {
               "field": "other",
@@ -5020,7 +6644,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Leaf curling is not a documented primary NCLB symptom, but desiccation of severely blighted tissue can secondarily cause margin curl; flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-northern-corn-leaf-blight",
+                  "quote": "Lesions may form in bands across leaves because of infection in the whorl.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Indiana"
+                },
+                {
+                  "url": "https://extension.umn.edu/corn-pest-management/northern-corn-leaf-blight",
+                  "quote": "with the Ht4 gene, a chlorotic 'halo' appears around the lesions",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Indiana"
+                },
+                {
+                  "url": "https://crops.extension.iastate.edu/cropnews/2009/07/gosss-wilt-and-northern-corn-leaf-blight-showing-iowa",
+                  "quote": "lesions may become so numerous that they coalesce and turn the entire leaf necrotic",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Indiana"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/northern-corn-leaf-blight-of-corn",
+                  "quote": "Over time, the lesions become grayish or tan, and can have dark-gray or green masses of fungal spores in the center",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Indiana"
+                }
+              ]
             },
             {
               "field": "other",
@@ -5031,7 +6680,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Translucent/clearing vein appearance around lesions is not a documented NCLB diagnostic but is coherent with early water-soaked lesion margins; flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-northern-corn-leaf-blight",
+                  "quote": "Lesions may form in bands across leaves because of infection in the whorl.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Indiana"
+                },
+                {
+                  "url": "https://extension.umn.edu/corn-pest-management/northern-corn-leaf-blight",
+                  "quote": "with the Ht4 gene, a chlorotic 'halo' appears around the lesions",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Indiana"
+                },
+                {
+                  "url": "https://crops.extension.iastate.edu/cropnews/2009/07/gosss-wilt-and-northern-corn-leaf-blight-showing-iowa",
+                  "quote": "lesions may become so numerous that they coalesce and turn the entire leaf necrotic",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Indiana"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/northern-corn-leaf-blight-of-corn",
+                  "quote": "Over time, the lesions become grayish or tan, and can have dark-gray or green masses of fungal spores in the center",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Indiana"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -5174,7 +6848,32 @@
               "verification_status": "provisional",
               "reasoning": "Severe blighting of individual leaves is consistent with reports that lesions can coalesce and entirely blight leaves, but image-specific severity is a per-witness claim not directly attestable from literature.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.illinoiswildflowers.info/grasses/plants/corn.html",
+                  "quote": "The leaf blades of corn (Zea mays) are linear to linear-lanceolate in shape, with entire margins.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Iowa"
+                },
+                {
+                  "url": "https://gna.it.com/linear-leaf-examples-characteristics",
+                  "quote": "Corn (Zea mays) is an excellent example of a linear leaf found in many grasses... The plant is an annual herbaceous plant with alternate lanceolate leaves.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Iowa"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-northern-corn-leaf-blight",
+                  "quote": "As lesions mature, they turn tan and develop distinct dark areas of fungal sporulation which give them a dirty appearance.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Iowa"
+                },
+                {
+                  "url": "https://extension.umn.edu/corn-pest-management/northern-corn-leaf-blight",
+                  "quote": "Under moist conditions, dark gray spores are produced, usually on the lower leaf surface, which give lesions a 'dirty' gray appearance.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Iowa"
+                }
+              ]
             },
             {
               "field": "other",
@@ -5185,7 +6884,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Leaf curling is not a documented primary symptom of NCLB, but severe necrosis and tissue death can plausibly cause secondary curling; flagged for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.illinoiswildflowers.info/grasses/plants/corn.html",
+                  "quote": "The leaf blades of corn (Zea mays) are linear to linear-lanceolate in shape, with entire margins.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Iowa"
+                },
+                {
+                  "url": "https://gna.it.com/linear-leaf-examples-characteristics",
+                  "quote": "Corn (Zea mays) is an excellent example of a linear leaf found in many grasses... The plant is an annual herbaceous plant with alternate lanceolate leaves.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Iowa"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-northern-corn-leaf-blight",
+                  "quote": "As lesions mature, they turn tan and develop distinct dark areas of fungal sporulation which give them a dirty appearance.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Iowa"
+                },
+                {
+                  "url": "https://extension.umn.edu/corn-pest-management/northern-corn-leaf-blight",
+                  "quote": "Under moist conditions, dark gray spores are produced, usually on the lower leaf surface, which give lesions a 'dirty' gray appearance.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Iowa"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -5348,7 +7072,32 @@
               "verification_status": "provisional",
               "reasoning": "Absence of leaf curling is consistent with canonical NCLB descriptions, which do not list curling/cupping/blistering among symptoms; no external source explicitly affirms the negative.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-northern-corn-leaf-blight",
+                  "quote": "Early season symptoms consist of small necrotic spots sometimes with a chlorotic halo",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Kentucky"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/Managing-Northern-Corn-Leaf-Blight.html",
+                  "quote": "The Ht4 gene produces a chlorotic 'halo' around lesions",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Kentucky"
+                },
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/northern-corn-leaf-blight",
+                  "quote": "Severe yield loss can occur when leaves become blighted during early grain fill",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/northern-corn-leaf-blight-of-corn",
+                  "quote": "NCLB lesions are typically gray-green to tan colored, elliptical or cigar shaped",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Kentucky"
+                }
+              ]
             },
             {
               "field": "other",
@@ -5359,7 +7108,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Describes intrinsic corn leaf morphology rather than a disease sign; coherent with the host but not a pathology observation \u00e2\u20ac\u201d flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-northern-corn-leaf-blight",
+                  "quote": "Early season symptoms consist of small necrotic spots sometimes with a chlorotic halo",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Kentucky"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/Managing-Northern-Corn-Leaf-Blight.html",
+                  "quote": "The Ht4 gene produces a chlorotic 'halo' around lesions",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Kentucky"
+                },
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/northern-corn-leaf-blight",
+                  "quote": "Severe yield loss can occur when leaves become blighted during early grain fill",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/northern-corn-leaf-blight-of-corn",
+                  "quote": "NCLB lesions are typically gray-green to tan colored, elliptical or cigar shaped",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Kentucky"
+                }
+              ]
             },
             {
               "field": "diagnostic_features",
@@ -5370,7 +7144,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "'Discrete necrotic spots' would correspond to very early or resistant-hybrid NCLB lesions rather than the canonical elongated form; image_quote describes brownish lesions but does not confirm discreteness \u00e2\u20ac\u201d needs curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-northern-corn-leaf-blight",
+                  "quote": "Early season symptoms consist of small necrotic spots sometimes with a chlorotic halo",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Kentucky"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/Managing-Northern-Corn-Leaf-Blight.html",
+                  "quote": "The Ht4 gene produces a chlorotic 'halo' around lesions",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Kentucky"
+                },
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/northern-corn-leaf-blight",
+                  "quote": "Severe yield loss can occur when leaves become blighted during early grain fill",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Kentucky"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/northern-corn-leaf-blight-of-corn",
+                  "quote": "NCLB lesions are typically gray-green to tan colored, elliptical or cigar shaped",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Kentucky"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -5565,7 +7364,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Leaf curl is not a documented NCLB symptom in extension literature, but severe late-stage blighting can deform leaves; flagging for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-northern-corn-leaf-blight",
+                  "quote": "NCLB lesions are typically gray-green to tan colored, elliptical or cigar shaped, and one to six inches in length.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::New York"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/Managing-Northern-Corn-Leaf-Blight.html",
+                  "quote": "With the Ht4 gene, a chlorotic 'halo' appears around the lesions.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::New York"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/northern-corn-leaf-blight-of-corn",
+                  "quote": "On severely infected plants, lesions can become so numerous that the leaves are eventually destroyed. Late in the season, plants may look like they have been killed by an early frost.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::New York"
+                }
+              ]
             },
             {
               "field": "other",
@@ -5576,7 +7394,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Describes normal corn leaf geometry rather than a disease signal; not contradicted but not diagnostically informative.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-northern-corn-leaf-blight",
+                  "quote": "NCLB lesions are typically gray-green to tan colored, elliptical or cigar shaped, and one to six inches in length.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::New York"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/Managing-Northern-Corn-Leaf-Blight.html",
+                  "quote": "With the Ht4 gene, a chlorotic 'halo' appears around the lesions.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::New York"
+                },
+                {
+                  "url": "https://cropprotectionnetwork.org/encyclopedia/northern-corn-leaf-blight-of-corn",
+                  "quote": "On severely infected plants, lesions can become so numerous that the leaves are eventually destroyed. Late in the season, plants may look like they have been killed by an early frost.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::New York"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -5775,7 +7612,38 @@
               "verification_status": "novel_plausible",
               "reasoning": "Extension literature does not explicitly describe NCLB lesion surface texture; sporulation can give a 'dirty' or 'sooty' appearance that may resemble raised roughness, but no direct evidence.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-northern-corn-leaf-blight",
+                  "quote": "Multiple lesions can develop on individual leaves and cover large portions of leaves. On susceptible hybrids, lesions can coalesce resulting in severe leaf blighting.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                },
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-cer-10",
+                  "quote": "lesions can coalesce resulting in severe leaf blighting",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/Managing-Northern-Corn-Leaf-Blight.html",
+                  "quote": "resistance conferred by Ht1, Ht2, and Ht3 is expressed as small chlorotic lesions",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Northern_corn_leaf_blight",
+                  "quote": "Race 4 may also have concentric rings of spores within lesions",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/managing-northern-corn-leaf-blight",
+                  "quote": "With the Ht4 gene, a chlorotic halo appears around the lesions, which are somewhat smaller in size",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                }
+              ]
             },
             {
               "field": "diagnostic_features",
@@ -5786,7 +7654,38 @@
               "verification_status": "novel_plausible",
               "reasoning": "Leaf curling is not documented as a primary NCLB symptom in extension literature; could reflect secondary moisture stress from extensive blighting, but no direct support found.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-northern-corn-leaf-blight",
+                  "quote": "Multiple lesions can develop on individual leaves and cover large portions of leaves. On susceptible hybrids, lesions can coalesce resulting in severe leaf blighting.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                },
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-cer-10",
+                  "quote": "lesions can coalesce resulting in severe leaf blighting",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/Managing-Northern-Corn-Leaf-Blight.html",
+                  "quote": "resistance conferred by Ht1, Ht2, and Ht3 is expressed as small chlorotic lesions",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Northern_corn_leaf_blight",
+                  "quote": "Race 4 may also have concentric rings of spores within lesions",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/managing-northern-corn-leaf-blight",
+                  "quote": "With the Ht4 gene, a chlorotic halo appears around the lesions, which are somewhat smaller in size",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                }
+              ]
             },
             {
               "field": "affected_organs",
@@ -5797,7 +7696,38 @@
               "verification_status": "novel_plausible",
               "reasoning": "Describes the intrinsic shape of corn leaves rather than a disease feature; not contradicted but not a disease-specific finding.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-northern-corn-leaf-blight",
+                  "quote": "Multiple lesions can develop on individual leaves and cover large portions of leaves. On susceptible hybrids, lesions can coalesce resulting in severe leaf blighting.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                },
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-cer-10",
+                  "quote": "lesions can coalesce resulting in severe leaf blighting",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/Managing-Northern-Corn-Leaf-Blight.html",
+                  "quote": "resistance conferred by Ht1, Ht2, and Ht3 is expressed as small chlorotic lesions",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Northern_corn_leaf_blight",
+                  "quote": "Race 4 may also have concentric rings of spores within lesions",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/managing-northern-corn-leaf-blight",
+                  "quote": "With the Ht4 gene, a chlorotic halo appears around the lesions, which are somewhat smaller in size",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                }
+              ]
             },
             {
               "field": "look_alikes",
@@ -5808,7 +7738,38 @@
               "verification_status": "provisional",
               "reasoning": "Negative observation; cannot be externally verified, but plausible given the cigar-shaped lesion pattern is distinctive when present.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://cropprotectionnetwork.org/publications/an-overview-of-northern-corn-leaf-blight",
+                  "quote": "Multiple lesions can develop on individual leaves and cover large portions of leaves. On susceptible hybrids, lesions can coalesce resulting in severe leaf blighting.",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                },
+                {
+                  "url": "https://ohioline.osu.edu/factsheet/plpath-cer-10",
+                  "quote": "lesions can coalesce resulting in severe leaf blighting",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/Managing-Northern-Corn-Leaf-Blight.html",
+                  "quote": "resistance conferred by Ht1, Ht2, and Ht3 is expressed as small chlorotic lesions",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Northern_corn_leaf_blight",
+                  "quote": "Race 4 may also have concentric rings of spores within lesions",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                },
+                {
+                  "url": "https://www.cropscience.bayer.us/articles/bayer/managing-northern-corn-leaf-blight",
+                  "quote": "With the Ht4 gene, a chlorotic halo appears around the lesions, which are somewhat smaller in size",
+                  "inherited": true,
+                  "inherited_from": "Northern Corn Leaf Blight::Wisconsin"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -6372,7 +8333,26 @@
               "verification_status": "unverified",
               "reasoning": "",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stalk-rots-corn",
+                  "quote": "Small superficial black spots (perithecia) of the fungus may at times be seen on the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://extension.psu.edu/scouting-for-stalk-rots-in-corn",
+                  "quote": "Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gibberella_stalk_rot_cropfocus.html",
+                  "quote": "the lower internodes will soften and turn a tan to dark-brown. Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                }
+              ]
             },
             {
               "field": "sporulation",
@@ -6383,7 +8363,26 @@
               "verification_status": "unverified",
               "reasoning": "",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stalk-rots-corn",
+                  "quote": "Small superficial black spots (perithecia) of the fungus may at times be seen on the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://extension.psu.edu/scouting-for-stalk-rots-in-corn",
+                  "quote": "Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gibberella_stalk_rot_cropfocus.html",
+                  "quote": "the lower internodes will soften and turn a tan to dark-brown. Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                }
+              ]
             },
             {
               "field": "fruit",
@@ -6394,7 +8393,26 @@
               "verification_status": "unverified",
               "reasoning": "",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stalk-rots-corn",
+                  "quote": "Small superficial black spots (perithecia) of the fungus may at times be seen on the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://extension.psu.edu/scouting-for-stalk-rots-in-corn",
+                  "quote": "Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gibberella_stalk_rot_cropfocus.html",
+                  "quote": "the lower internodes will soften and turn a tan to dark-brown. Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                }
+              ]
             },
             {
               "field": "severity_visible",
@@ -6405,7 +8423,26 @@
               "verification_status": "unverified",
               "reasoning": "",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stalk-rots-corn",
+                  "quote": "Small superficial black spots (perithecia) of the fungus may at times be seen on the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://extension.psu.edu/scouting-for-stalk-rots-in-corn",
+                  "quote": "Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gibberella_stalk_rot_cropfocus.html",
+                  "quote": "the lower internodes will soften and turn a tan to dark-brown. Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -6484,7 +8521,26 @@
               "verification_status": "provisional",
               "reasoning": "Scattered speckles is too generic to identify a specific look-alike pathogen and no external source distinguishes Gibberella perithecia from confusable speckling here.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stalk-rots-corn",
+                  "quote": "Small superficial black spots (perithecia) of the fungus may at times be seen on the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::Kentucky"
+                },
+                {
+                  "url": "https://extension.psu.edu/scouting-for-stalk-rots-in-corn",
+                  "quote": "Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::Kentucky"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gibberella_stalk_rot_cropfocus.html",
+                  "quote": "the lower internodes will soften and turn a tan to dark-brown. Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::Kentucky"
+                }
+              ]
             },
             {
               "field": "severity",
@@ -6495,7 +8551,26 @@
               "verification_status": "provisional",
               "reasoning": "The candidate describes spotting but does not quantify or rank severity, so it cannot be matched against extension severity descriptors for Gibberella stalk or ear rot.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stalk-rots-corn",
+                  "quote": "Small superficial black spots (perithecia) of the fungus may at times be seen on the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::Kentucky"
+                },
+                {
+                  "url": "https://extension.psu.edu/scouting-for-stalk-rots-in-corn",
+                  "quote": "Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::Kentucky"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gibberella_stalk_rot_cropfocus.html",
+                  "quote": "the lower internodes will soften and turn a tan to dark-brown. Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::Kentucky"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -6521,7 +8596,26 @@
               "verification_status": "unverified",
               "reasoning": "",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stalk-rots-corn",
+                  "quote": "Small superficial black spots (perithecia) of the fungus may at times be seen on the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://extension.psu.edu/scouting-for-stalk-rots-in-corn",
+                  "quote": "Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gibberella_stalk_rot_cropfocus.html",
+                  "quote": "the lower internodes will soften and turn a tan to dark-brown. Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                }
+              ]
             },
             {
               "field": "sporulation",
@@ -6532,7 +8626,26 @@
               "verification_status": "unverified",
               "reasoning": "",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stalk-rots-corn",
+                  "quote": "Small superficial black spots (perithecia) of the fungus may at times be seen on the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://extension.psu.edu/scouting-for-stalk-rots-in-corn",
+                  "quote": "Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gibberella_stalk_rot_cropfocus.html",
+                  "quote": "the lower internodes will soften and turn a tan to dark-brown. Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                }
+              ]
             },
             {
               "field": "color_palette",
@@ -6543,7 +8656,26 @@
               "verification_status": "unverified",
               "reasoning": "",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stalk-rots-corn",
+                  "quote": "Small superficial black spots (perithecia) of the fungus may at times be seen on the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://extension.psu.edu/scouting-for-stalk-rots-in-corn",
+                  "quote": "Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gibberella_stalk_rot_cropfocus.html",
+                  "quote": "the lower internodes will soften and turn a tan to dark-brown. Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                }
+              ]
             },
             {
               "field": "concentric_pattern",
@@ -6554,7 +8686,26 @@
               "verification_status": "unverified",
               "reasoning": "",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stalk-rots-corn",
+                  "quote": "Small superficial black spots (perithecia) of the fungus may at times be seen on the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://extension.psu.edu/scouting-for-stalk-rots-in-corn",
+                  "quote": "Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gibberella_stalk_rot_cropfocus.html",
+                  "quote": "the lower internodes will soften and turn a tan to dark-brown. Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                }
+              ]
             },
             {
               "field": "severity_visible",
@@ -6565,7 +8716,26 @@
               "verification_status": "unverified",
               "reasoning": "",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stalk-rots-corn",
+                  "quote": "Small superficial black spots (perithecia) of the fungus may at times be seen on the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://extension.psu.edu/scouting-for-stalk-rots-in-corn",
+                  "quote": "Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gibberella_stalk_rot_cropfocus.html",
+                  "quote": "the lower internodes will soften and turn a tan to dark-brown. Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -6588,7 +8758,26 @@
               "verification_status": "unverified",
               "reasoning": "",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stalk-rots-corn",
+                  "quote": "Small superficial black spots (perithecia) of the fungus may at times be seen on the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://extension.psu.edu/scouting-for-stalk-rots-in-corn",
+                  "quote": "Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gibberella_stalk_rot_cropfocus.html",
+                  "quote": "the lower internodes will soften and turn a tan to dark-brown. Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                }
+              ]
             },
             {
               "field": "stem_pith",
@@ -6599,7 +8788,26 @@
               "verification_status": "unverified",
               "reasoning": "",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stalk-rots-corn",
+                  "quote": "Small superficial black spots (perithecia) of the fungus may at times be seen on the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://extension.psu.edu/scouting-for-stalk-rots-in-corn",
+                  "quote": "Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gibberella_stalk_rot_cropfocus.html",
+                  "quote": "the lower internodes will soften and turn a tan to dark-brown. Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                }
+              ]
             },
             {
               "field": "stem_surface",
@@ -6610,7 +8818,26 @@
               "verification_status": "unverified",
               "reasoning": "",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stalk-rots-corn",
+                  "quote": "Small superficial black spots (perithecia) of the fungus may at times be seen on the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://extension.psu.edu/scouting-for-stalk-rots-in-corn",
+                  "quote": "Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gibberella_stalk_rot_cropfocus.html",
+                  "quote": "the lower internodes will soften and turn a tan to dark-brown. Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                }
+              ]
             },
             {
               "field": "stem_discoloration",
@@ -6621,7 +8848,26 @@
               "verification_status": "unverified",
               "reasoning": "",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stalk-rots-corn",
+                  "quote": "Small superficial black spots (perithecia) of the fungus may at times be seen on the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://extension.psu.edu/scouting-for-stalk-rots-in-corn",
+                  "quote": "Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gibberella_stalk_rot_cropfocus.html",
+                  "quote": "the lower internodes will soften and turn a tan to dark-brown. Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                }
+              ]
             },
             {
               "field": "color_palette",
@@ -6632,7 +8878,26 @@
               "verification_status": "unverified",
               "reasoning": "",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stalk-rots-corn",
+                  "quote": "Small superficial black spots (perithecia) of the fungus may at times be seen on the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://extension.psu.edu/scouting-for-stalk-rots-in-corn",
+                  "quote": "Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gibberella_stalk_rot_cropfocus.html",
+                  "quote": "the lower internodes will soften and turn a tan to dark-brown. Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                }
+              ]
             },
             {
               "field": "severity_visible",
@@ -6643,7 +8908,26 @@
               "verification_status": "unverified",
               "reasoning": "",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://ipm.mgcafe.uky.edu/content/stalk-rots-corn",
+                  "quote": "Small superficial black spots (perithecia) of the fungus may at times be seen on the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://extension.psu.edu/scouting-for-stalk-rots-in-corn",
+                  "quote": "Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                },
+                {
+                  "url": "https://www.pioneer.com/us/agronomy/gibberella_stalk_rot_cropfocus.html",
+                  "quote": "the lower internodes will soften and turn a tan to dark-brown. Small superficial black spots (perithecia) are often evident on the outside of the stalk.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Graminearum Schwabe::*"
+                }
+              ]
             }
           ],
           "image_ids": [

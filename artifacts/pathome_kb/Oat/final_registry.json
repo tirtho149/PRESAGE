@@ -117,7 +117,32 @@
               "verification_status": "provisional",
               "reasoning": "Substrate color is not a documented diagnostic feature and no external source addresses it, but a pale straw background is plausible and not contradicted.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://plantix.net/en/library/plant-diseases/100339/ring-spot/",
+                  "quote": "Ring spot lesions are grey and they contain black, pinhead dots in concentric rings.",
+                  "inherited": true,
+                  "inherited_from": "Crown Rust::Maine"
+                },
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/small-grains/leaf-rusts-of-wheat-and-barley-crown-rust-of-oats/",
+                  "quote": "Pustules on oats are oblong and orange. The lack of ragged edges on pustules of leaf rusts distinguishes them from stem rusts.",
+                  "inherited": true,
+                  "inherited_from": "Crown Rust::Maine"
+                },
+                {
+                  "url": "https://www.ars.usda.gov/midwest-area/stpaul/cereal-disease-lab/docs/cereal-rusts/oat-crown-rust/",
+                  "quote": "Uredinia form on both the upper and lower surfaces of infected leaves, and in severe epidemics, leaf sheathes also become heavily infected.",
+                  "inherited": true,
+                  "inherited_from": "Crown Rust::Maine"
+                },
+                {
+                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/puccinia-coronata",
+                  "quote": "Moderate to severe epidemics can reduce grain yield by 10 to 40%, and individual oat fields may suffer total crop failures.",
+                  "inherited": true,
+                  "inherited_from": "Crown Rust::Maine"
+                }
+              ]
             }
           ],
           "image_ids": [

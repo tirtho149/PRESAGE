@@ -182,7 +182,38 @@
               "verification_status": "novel_plausible",
               "reasoning": "General foliar yellowing accompanies sheath girdling, but interveinal chlorosis specifically is not a documented Rhizoctonia symptom (it is more typical of nutrient deficiency) and no external evidence was found, so flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.tezu.ernet.in/krishi/rice-sheath-blight.php",
+                  "quote": "Characteristic symptoms of the disease are water-soaked, spherical to oval-shaped or irregularly elongated discoloured, greyish to light brownish lesions with brown margin on the leaf sheath and blades.",
+                  "inherited": true,
+                  "inherited_from": "Rhizoctonia Damping-Off, Blight And Rot::Louisiana"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Sheath_blight_of_rice",
+                  "quote": "the lesions can develop extensively and coalesce on partial or whole leaf blades, which may produce a rattlesnake skin pattern.",
+                  "inherited": true,
+                  "inherited_from": "Rhizoctonia Damping-Off, Blight And Rot::Louisiana"
+                },
+                {
+                  "url": "https://www.uaex.uada.edu/publications/pdf/FSA7583.pdf",
+                  "quote": "When there is leaf dieback and sun can penetrate and dry the lesions, they turn tan with a brown border.",
+                  "inherited": true,
+                  "inherited_from": "Rhizoctonia Damping-Off, Blight And Rot::Louisiana"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Rhizoctonia_solani",
+                  "quote": "Infection by R. solani results in a water-soaked, sunken lesion at ground level, causing the plant to fall over.",
+                  "inherited": true,
+                  "inherited_from": "Rhizoctonia Damping-Off, Blight And Rot::Louisiana"
+                },
+                {
+                  "url": "https://www.lsuagcenter.com/topics/crops/rice/diseases",
+                  "quote": "Sheath blight is consistently present in Louisiana rice fields and, while not always the most damaging, is always there and sometimes very severe.",
+                  "inherited": true,
+                  "inherited_from": "Rhizoctonia Damping-Off, Blight And Rot::Louisiana"
+                }
+              ]
             },
             {
               "field": "other",
@@ -193,7 +224,38 @@
               "verification_status": "novel_plausible",
               "reasoning": "This describes host leaf morphology rather than a disease sign; it is coherent with rice's linear/lanceolate leaves and not contradicted, but carries no diagnostic value, so flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.tezu.ernet.in/krishi/rice-sheath-blight.php",
+                  "quote": "Characteristic symptoms of the disease are water-soaked, spherical to oval-shaped or irregularly elongated discoloured, greyish to light brownish lesions with brown margin on the leaf sheath and blades.",
+                  "inherited": true,
+                  "inherited_from": "Rhizoctonia Damping-Off, Blight And Rot::Louisiana"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Sheath_blight_of_rice",
+                  "quote": "the lesions can develop extensively and coalesce on partial or whole leaf blades, which may produce a rattlesnake skin pattern.",
+                  "inherited": true,
+                  "inherited_from": "Rhizoctonia Damping-Off, Blight And Rot::Louisiana"
+                },
+                {
+                  "url": "https://www.uaex.uada.edu/publications/pdf/FSA7583.pdf",
+                  "quote": "When there is leaf dieback and sun can penetrate and dry the lesions, they turn tan with a brown border.",
+                  "inherited": true,
+                  "inherited_from": "Rhizoctonia Damping-Off, Blight And Rot::Louisiana"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Rhizoctonia_solani",
+                  "quote": "Infection by R. solani results in a water-soaked, sunken lesion at ground level, causing the plant to fall over.",
+                  "inherited": true,
+                  "inherited_from": "Rhizoctonia Damping-Off, Blight And Rot::Louisiana"
+                },
+                {
+                  "url": "https://www.lsuagcenter.com/topics/crops/rice/diseases",
+                  "quote": "Sheath blight is consistently present in Louisiana rice fields and, while not always the most damaging, is always there and sometimes very severe.",
+                  "inherited": true,
+                  "inherited_from": "Rhizoctonia Damping-Off, Blight And Rot::Louisiana"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -331,7 +393,14 @@
               "verification_status": "provisional",
               "reasoning": "No external source describes leaf curling as a symptom of narrow brown leaf spot; the observation is plausible and not contradicted, so it is flagged for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/narrow-brown-spot",
+                  "quote": "Lesions on the leaves of highly susceptible varieties may enlarge and connect together, forming brown linear necrotic regions.",
+                  "inherited": true,
+                  "inherited_from": "Narrow Brown Leaf Spot::Louisiana"
+                }
+              ]
             }
           ],
           "image_ids": [

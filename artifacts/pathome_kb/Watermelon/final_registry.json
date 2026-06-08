@@ -137,7 +137,26 @@
               "verification_status": "provisional",
               "reasoning": "Disease severity/extent is inherently image-specific and cannot be confirmed by external literature, but extensive foliar involvement is plausible and not contradicted for CDM.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.lsuagcenter.com/portals/communications/publications/publications_catalog/crops_livestock/insect_disease_control/vegetables/louisiana-plant-pathology--downy-mildew-on-cucurbits",
+                  "quote": "Typical symptoms include the appearance of small chlorotic spots that quickly become necrotic as well as upward curling of the leaves.",
+                  "inherited": true,
+                  "inherited_from": "Cucurbit Downy Mildew::Louisiana"
+                },
+                {
+                  "url": "https://www.vegetables.bayer.com/language-masters/en-us/resources/growing-tips-and-innovation-articles/agronomic-spotlights/watermelon-downy-mildew.html",
+                  "quote": "Small, chlorotic to yellow spots develop on the upper leaf surfaces and eventually become brown to black, surrounded by yellow halos.",
+                  "inherited": true,
+                  "inherited_from": "Cucurbit Downy Mildew::Louisiana"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+                  "quote": "Symptoms on watermelon ... often, an exaggerated upward leaf curling will occur.",
+                  "inherited": true,
+                  "inherited_from": "Cucurbit Downy Mildew::Louisiana"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -420,7 +439,44 @@
               "verification_status": "novel_plausible",
               "reasoning": "No external source documents vein clearing/translucency for CDM, but it is plausible where chlorotic lesions thin the lamina; flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://plantpathology.ces.ncsu.edu/news/watermelon-downy-mildew-reported-in-north-carolina/",
+                  "quote": "lesions begin as chlorotic (yellow) areas that become necrotic (brown/black) areas surrounded by a chlorotic halo",
+                  "inherited": true,
+                  "inherited_from": "Cucurbit Downy Mildew::North Carolina"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+                  "quote": "As the lesions expand, their centers turn brown.",
+                  "inherited": true,
+                  "inherited_from": "Cucurbit Downy Mildew::North Carolina"
+                },
+                {
+                  "url": "https://cucurbitbreeding.wordpress.ncsu.edu/watermelon-breeding/nc-state-watermelon-disease-handbook/downy-mildew-pseudoperonospora-cubensis/",
+                  "quote": "Symptoms typically develop first on older leaves near the crown before spreading to younger leaves.",
+                  "inherited": true,
+                  "inherited_from": "Cucurbit Downy Mildew::North Carolina"
+                },
+                {
+                  "url": "https://plant-pest-advisory.rutgers.edu/anthracnose-and-alternaria-leaf-blight-in-cucurbit-crops/",
+                  "quote": "Alternaria ... develop a concentric ring pattern, which helps differentiate this disease from CDM (cucurbit downy mildew).",
+                  "inherited": true,
+                  "inherited_from": "Cucurbit Downy Mildew::North Carolina"
+                },
+                {
+                  "url": "https://www.growingproduce.com/crop-protection/disease-control/alternaria-leaf-spot-awareness-can-save-your-cucurbit-crops/",
+                  "quote": "Alternaria species produce small, brown to black circular to irregular lesions with concentric rings",
+                  "inherited": true,
+                  "inherited_from": "Cucurbit Downy Mildew::North Carolina"
+                },
+                {
+                  "url": "https://plantpath.ifas.ufl.edu/u-scout/cucurbit/downy-mildew.html",
+                  "quote": "The small necrotic spots merge to form large blighted areas ... referred to ... as 'wildfire'",
+                  "inherited": true,
+                  "inherited_from": "Cucurbit Downy Mildew::North Carolina"
+                }
+              ]
             },
             {
               "field": "other",
@@ -431,7 +487,44 @@
               "verification_status": "provisional",
               "reasoning": "Describes host leaf geometry rather than a disease feature and cannot be verified against pathology literature; retained as provisional for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://plantpathology.ces.ncsu.edu/news/watermelon-downy-mildew-reported-in-north-carolina/",
+                  "quote": "lesions begin as chlorotic (yellow) areas that become necrotic (brown/black) areas surrounded by a chlorotic halo",
+                  "inherited": true,
+                  "inherited_from": "Cucurbit Downy Mildew::North Carolina"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+                  "quote": "As the lesions expand, their centers turn brown.",
+                  "inherited": true,
+                  "inherited_from": "Cucurbit Downy Mildew::North Carolina"
+                },
+                {
+                  "url": "https://cucurbitbreeding.wordpress.ncsu.edu/watermelon-breeding/nc-state-watermelon-disease-handbook/downy-mildew-pseudoperonospora-cubensis/",
+                  "quote": "Symptoms typically develop first on older leaves near the crown before spreading to younger leaves.",
+                  "inherited": true,
+                  "inherited_from": "Cucurbit Downy Mildew::North Carolina"
+                },
+                {
+                  "url": "https://plant-pest-advisory.rutgers.edu/anthracnose-and-alternaria-leaf-blight-in-cucurbit-crops/",
+                  "quote": "Alternaria ... develop a concentric ring pattern, which helps differentiate this disease from CDM (cucurbit downy mildew).",
+                  "inherited": true,
+                  "inherited_from": "Cucurbit Downy Mildew::North Carolina"
+                },
+                {
+                  "url": "https://www.growingproduce.com/crop-protection/disease-control/alternaria-leaf-spot-awareness-can-save-your-cucurbit-crops/",
+                  "quote": "Alternaria species produce small, brown to black circular to irregular lesions with concentric rings",
+                  "inherited": true,
+                  "inherited_from": "Cucurbit Downy Mildew::North Carolina"
+                },
+                {
+                  "url": "https://plantpath.ifas.ufl.edu/u-scout/cucurbit/downy-mildew.html",
+                  "quote": "The small necrotic spots merge to form large blighted areas ... referred to ... as 'wildfire'",
+                  "inherited": true,
+                  "inherited_from": "Cucurbit Downy Mildew::North Carolina"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -879,7 +972,38 @@
               "verification_status": "novel_plausible",
               "reasoning": "Brown streaks and tan patches fit documented stem-lesion coloration, but olive-green tissue is described for fruit rot rather than stems, so the palette is coherent yet unverified and flagged for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://lgpress.clemson.edu/publication/gummy-stem-blight-on-watermelon-and-muskmelon/",
+                  "quote": "Stem lesions are circular in shape, and tan to dark brown in color.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::Georgia"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+                  "quote": "Tan lesions develop on infected stems, often close to the crown; cankers can be red, brown, or black in color.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::Georgia"
+                },
+                {
+                  "url": "https://www.vegetables.bayer.com/us/en-us/resources/growing-tips-and-innovation-articles/agronomic-spotlights/gummy-stem-blight-of-watermelon.html",
+                  "quote": "Tan lesions develop on infected stems and these lesions crack open and exude gummy, amber-colored fluid.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::Georgia"
+                },
+                {
+                  "url": "https://plantpath.ifas.ufl.edu/u-scout/cucurbit/gummy-stem-blight.html",
+                  "quote": "Symptoms consist of circular dark tan lesions, stem cankers, and gummy brown ooze that exudes from cankers.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::Georgia"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-2013-1024-01-DG",
+                  "quote": "Within advanced lesions on dead tissue, small black fungal fruiting bodies (pycnidia) can be seen with a 10x hand lens.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::Georgia"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -1205,7 +1329,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "GSB lesions are described as 'wrinkled' on young leaves and necrosis can distort foliage, but whole-leaf inward curling is not a documented GSB hallmark, so flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://blogs.cornell.edu/livegpath/gallery/cucurbits/gummy-stem-blight-and-black-rot-of-cucurbit-crops/",
+                  "quote": "Leaf spots initially are round or triangular when beginning at the leaf margin. They can rapidly enlarge becoming irregular.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::North Carolina"
+                },
+                {
+                  "url": "https://www.gardeningknowhow.com/edible/fruits/watermelon/watermelon-gummy-stem-blight.htm",
+                  "quote": "Irregular brown to black blotches appear between leaf veins, gradually expanding and resulting in the death of the affected foliage.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::North Carolina"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+                  "quote": "Color is tan to brown; yellow halos may occur around leaf spots.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::North Carolina"
+                },
+                {
+                  "url": "https://plantpathology.ces.ncsu.edu/2025/05/gummy-stem-blight-detected-in-watermelon-transplants-in-north-carolina/",
+                  "quote": "Symptoms in transplants may include water-soaked or dark brown lesions on stems, which can become sunken and necrotic as the disease progresses.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::North Carolina"
+                }
+              ]
             },
             {
               "field": "other",
@@ -1216,7 +1365,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Vein clearing is atypical of GSB (more associated with viral disease) and no source corroborates it; the swarm itself hedged ('possible'), so flag for curator review rather than assert support.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://blogs.cornell.edu/livegpath/gallery/cucurbits/gummy-stem-blight-and-black-rot-of-cucurbit-crops/",
+                  "quote": "Leaf spots initially are round or triangular when beginning at the leaf margin. They can rapidly enlarge becoming irregular.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::North Carolina"
+                },
+                {
+                  "url": "https://www.gardeningknowhow.com/edible/fruits/watermelon/watermelon-gummy-stem-blight.htm",
+                  "quote": "Irregular brown to black blotches appear between leaf veins, gradually expanding and resulting in the death of the affected foliage.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::North Carolina"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+                  "quote": "Color is tan to brown; yellow halos may occur around leaf spots.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::North Carolina"
+                },
+                {
+                  "url": "https://plantpathology.ces.ncsu.edu/2025/05/gummy-stem-blight-detected-in-watermelon-transplants-in-north-carolina/",
+                  "quote": "Symptoms in transplants may include water-soaked or dark brown lesions on stems, which can become sunken and necrotic as the disease progresses.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::North Carolina"
+                }
+              ]
             },
             {
               "field": "other",
@@ -1227,7 +1401,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "This describes host leaf geometry rather than a disease sign and is not diagnostic for GSB; coherent with a photographed young leaf but non-actionable, so flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://blogs.cornell.edu/livegpath/gallery/cucurbits/gummy-stem-blight-and-black-rot-of-cucurbit-crops/",
+                  "quote": "Leaf spots initially are round or triangular when beginning at the leaf margin. They can rapidly enlarge becoming irregular.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::North Carolina"
+                },
+                {
+                  "url": "https://www.gardeningknowhow.com/edible/fruits/watermelon/watermelon-gummy-stem-blight.htm",
+                  "quote": "Irregular brown to black blotches appear between leaf veins, gradually expanding and resulting in the death of the affected foliage.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::North Carolina"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+                  "quote": "Color is tan to brown; yellow halos may occur around leaf spots.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::North Carolina"
+                },
+                {
+                  "url": "https://plantpathology.ces.ncsu.edu/2025/05/gummy-stem-blight-detected-in-watermelon-transplants-in-north-carolina/",
+                  "quote": "Symptoms in transplants may include water-soaked or dark brown lesions on stems, which can become sunken and necrotic as the disease progresses.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::North Carolina"
+                }
+              ]
             },
             {
               "field": "severity",
@@ -1238,7 +1437,32 @@
               "verification_status": "provisional",
               "reasoning": "Severity is a single-image judgment with an internal mismatch (significant vs. scattered) and cannot be externally verified, so it is left provisional.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://blogs.cornell.edu/livegpath/gallery/cucurbits/gummy-stem-blight-and-black-rot-of-cucurbit-crops/",
+                  "quote": "Leaf spots initially are round or triangular when beginning at the leaf margin. They can rapidly enlarge becoming irregular.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::North Carolina"
+                },
+                {
+                  "url": "https://www.gardeningknowhow.com/edible/fruits/watermelon/watermelon-gummy-stem-blight.htm",
+                  "quote": "Irregular brown to black blotches appear between leaf veins, gradually expanding and resulting in the death of the affected foliage.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::North Carolina"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+                  "quote": "Color is tan to brown; yellow halos may occur around leaf spots.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::North Carolina"
+                },
+                {
+                  "url": "https://plantpathology.ces.ncsu.edu/2025/05/gummy-stem-blight-detected-in-watermelon-transplants-in-north-carolina/",
+                  "quote": "Symptoms in transplants may include water-soaked or dark brown lesions on stems, which can become sunken and necrotic as the disease progresses.",
+                  "inherited": true,
+                  "inherited_from": "Gummy Stem Blight::North Carolina"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -1466,7 +1690,44 @@
               "verification_status": "provisional",
               "reasoning": "No external source describes watermelon anthracnose leaf lesions as raised; a rough center from spore masses (acervuli) is plausible but raised texture is unconfirmed, so flagged provisional rather than contradicted.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.vegetables.bayer.com/ca/en-ca/resources/agronomic-spotlights/watermelon-anthracnose.html",
+                  "quote": "Anthracnose lesions on mature watermelon leaves tend to be angular and jagged.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Louisiana"
+                },
+                {
+                  "url": "https://cucurbitbreeding.wordpress.ncsu.edu/watermelon-breeding/nc-state-watermelon-disease-handbook/anthracnose-colletotrichum-lagenarium/",
+                  "quote": "In watermelon the lesions are often smaller, darker brown, and irregular shaped.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Louisiana"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+                  "quote": "Anthracnose spots begin as circular lesions that are light brown-to-tan. The spots gradually become brown.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Louisiana"
+                },
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/cucurbits-anthracnose",
+                  "quote": "Small pale yellow, water-soaked areas emerge near veins and enlarge rapidly, turning tan to dark brown.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Louisiana"
+                },
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/anthracnose-of-cucurbits/",
+                  "quote": "Spots on watermelon foliage are black; lesions can coalesce, causing the leaves to die.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Louisiana"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+                  "quote": "Anthracnose causes irregular lesions on leaves, while gummy stem blight has circular, ringed or target-like patterns.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Louisiana"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -1605,7 +1866,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Marginal leaf curl is not a documented anthracnose symptom (it is more typical of viral/abiotic stress); it could reflect desiccation of necrotic tissue, so flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+                  "quote": "Spots on watermelon foliage are irregular and turn dark brown or black.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Mississippi"
+                },
+                {
+                  "url": "https://extension.umn.edu/disease-management/anthracnose-cucurbits",
+                  "quote": "On watermelon the leaf spots are irregular; as lesions expand the irregular shape becomes apparent.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Mississippi"
+                },
+                {
+                  "url": "https://extension.okstate.edu/fact-sheets/watermelon-diseases.html",
+                  "quote": "Leaf spots enlarge, become circular, and turn dark brown to black, with the centers drying and dropping out to give a shot-hole appearance.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Mississippi"
+                },
+                {
+                  "url": "https://lgpress.clemson.edu/publication/gummy-stem-blight-on-watermelon-and-muskmelon/",
+                  "quote": "Gummy stem blight leaf lesions often develop concentric rings (target-spot pattern) that are absent in anthracnose.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Mississippi"
+                }
+              ]
             },
             {
               "field": "spread_pattern",
@@ -1616,7 +1902,32 @@
               "verification_status": "provisional",
               "reasoning": "Anthracnose lesions are generally scattered and not vein-delimited; no source specifically describes a vein-associated distribution, so the claim is plausible but unverified.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+                  "quote": "Spots on watermelon foliage are irregular and turn dark brown or black.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Mississippi"
+                },
+                {
+                  "url": "https://extension.umn.edu/disease-management/anthracnose-cucurbits",
+                  "quote": "On watermelon the leaf spots are irregular; as lesions expand the irregular shape becomes apparent.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Mississippi"
+                },
+                {
+                  "url": "https://extension.okstate.edu/fact-sheets/watermelon-diseases.html",
+                  "quote": "Leaf spots enlarge, become circular, and turn dark brown to black, with the centers drying and dropping out to give a shot-hole appearance.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Mississippi"
+                },
+                {
+                  "url": "https://lgpress.clemson.edu/publication/gummy-stem-blight-on-watermelon-and-muskmelon/",
+                  "quote": "Gummy stem blight leaf lesions often develop concentric rings (target-spot pattern) that are absent in anthracnose.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Mississippi"
+                }
+              ]
             },
             {
               "field": "other",
@@ -1627,7 +1938,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "This describes watermelon host leaf shape rather than a disease feature; coherent with the host but not a pathology observation, so flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+                  "quote": "Spots on watermelon foliage are irregular and turn dark brown or black.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Mississippi"
+                },
+                {
+                  "url": "https://extension.umn.edu/disease-management/anthracnose-cucurbits",
+                  "quote": "On watermelon the leaf spots are irregular; as lesions expand the irregular shape becomes apparent.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Mississippi"
+                },
+                {
+                  "url": "https://extension.okstate.edu/fact-sheets/watermelon-diseases.html",
+                  "quote": "Leaf spots enlarge, become circular, and turn dark brown to black, with the centers drying and dropping out to give a shot-hole appearance.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Mississippi"
+                },
+                {
+                  "url": "https://lgpress.clemson.edu/publication/gummy-stem-blight-on-watermelon-and-muskmelon/",
+                  "quote": "Gummy stem blight leaf lesions often develop concentric rings (target-spot pattern) that are absent in anthracnose.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Mississippi"
+                }
+              ]
             },
             {
               "field": "other",
@@ -1638,7 +1974,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "A green/brown color split is consistent with brown necrotic spots on green foliage but is a generic image histogram, not a diagnostic feature, so flag for review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+                  "quote": "Spots on watermelon foliage are irregular and turn dark brown or black.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Mississippi"
+                },
+                {
+                  "url": "https://extension.umn.edu/disease-management/anthracnose-cucurbits",
+                  "quote": "On watermelon the leaf spots are irregular; as lesions expand the irregular shape becomes apparent.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Mississippi"
+                },
+                {
+                  "url": "https://extension.okstate.edu/fact-sheets/watermelon-diseases.html",
+                  "quote": "Leaf spots enlarge, become circular, and turn dark brown to black, with the centers drying and dropping out to give a shot-hole appearance.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Mississippi"
+                },
+                {
+                  "url": "https://lgpress.clemson.edu/publication/gummy-stem-blight-on-watermelon-and-muskmelon/",
+                  "quote": "Gummy stem blight leaf lesions often develop concentric rings (target-spot pattern) that are absent in anthracnose.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::Mississippi"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -1785,7 +2146,32 @@
               "verification_status": "provisional",
               "reasoning": "No extension source documents leaf curling for watermelon anthracnose; it is plausible as a secondary effect of severe necrosis but unsupported and not contradicted.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.vegetables.bayer.com/ca/en-ca/resources/agronomic-spotlights/watermelon-anthracnose.html",
+                  "quote": "Lesions on watermelon leaves can appear circular at first, but later coalesce into more irregular necrotic areas.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::North Carolina"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+                  "quote": "Lesions can coalesce, causing the leaves to die.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::North Carolina"
+                },
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/anthracnose-of-cucurbits/",
+                  "quote": "Watermelon leaf spots are smaller and dark brown to black.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::North Carolina"
+                },
+                {
+                  "url": "https://extension.umn.edu/disease-management/anthracnose-cucurbits",
+                  "quote": "The lesions tend to have a marginal yellow discoloration around it.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::North Carolina"
+                }
+              ]
             },
             {
               "field": "diagnostic_features",
@@ -1796,7 +2182,32 @@
               "verification_status": "provisional",
               "reasoning": "A normal (non-clearing, non-necrotic) vein pattern is consistent with anthracnose being an interveinal leaf spot, but no source explicitly documents this negative finding.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.vegetables.bayer.com/ca/en-ca/resources/agronomic-spotlights/watermelon-anthracnose.html",
+                  "quote": "Lesions on watermelon leaves can appear circular at first, but later coalesce into more irregular necrotic areas.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::North Carolina"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+                  "quote": "Lesions can coalesce, causing the leaves to die.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::North Carolina"
+                },
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/anthracnose-of-cucurbits/",
+                  "quote": "Watermelon leaf spots are smaller and dark brown to black.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::North Carolina"
+                },
+                {
+                  "url": "https://extension.umn.edu/disease-management/anthracnose-cucurbits",
+                  "quote": "The lesions tend to have a marginal yellow discoloration around it.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::North Carolina"
+                }
+              ]
             },
             {
               "field": "other",
@@ -1807,7 +2218,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Describes host leaf geometry rather than a pathology feature and is internally inconsistent (ovate vs. elongated with pointed tips), so it is flagged for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.vegetables.bayer.com/ca/en-ca/resources/agronomic-spotlights/watermelon-anthracnose.html",
+                  "quote": "Lesions on watermelon leaves can appear circular at first, but later coalesce into more irregular necrotic areas.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::North Carolina"
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+                  "quote": "Lesions can coalesce, causing the leaves to die.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::North Carolina"
+                },
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/anthracnose-of-cucurbits/",
+                  "quote": "Watermelon leaf spots are smaller and dark brown to black.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::North Carolina"
+                },
+                {
+                  "url": "https://extension.umn.edu/disease-management/anthracnose-cucurbits",
+                  "quote": "The lesions tend to have a marginal yellow discoloration around it.",
+                  "inherited": true,
+                  "inherited_from": "Anthracnose::North Carolina"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -2203,7 +2639,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Brown discoloration matches documented Phytophthora lesions, but the specific olive-green/rust-orange/pale-straw palette is not described in the literature, so it is coherent but unverified and flagged for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://vegcropshotline.org/article/phytophthora-fruit-rot-of-watermelon/",
+                  "quote": "Most growers first notice this disease when large, soft areas develop on mature watermelon fruit. These lesions can be several inches across and are often covered with a white mold.",
+                  "inherited": true,
+                  "inherited_from": "Phytophthora Blight::Delaware"
+                },
+                {
+                  "url": "https://www.vegetables.bayer.com/us/en-us/resources/growing-tips-and-innovation-articles/agronomic-spotlights/phytophthora-in-watermelon.html",
+                  "quote": "The lesions are several inches in diameter and often become covered with a white fungal growth, sometimes described as having a 'powdered sugar' appearance.",
+                  "inherited": true,
+                  "inherited_from": "Phytophthora Blight::Delaware"
+                },
+                {
+                  "url": "https://ag.purdue.edu/department/arge/swpap/watermelon-diseases.html",
+                  "quote": "Alternaria infections occur only on leaves, and petioles, stems, and fruit are not directly affected by the pathogen.",
+                  "inherited": true,
+                  "inherited_from": "Phytophthora Blight::Delaware"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -2448,7 +2903,20 @@
               "verification_status": "provisional",
               "reasoning": "Circular restatement of the task premise with no specific, testable look-alike or visual claim; nothing to verify or contradict externally.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://lgpress.clemson.edu/publication/powdery-mildew-on-watermelon/",
+                  "quote": "Affected leaves eventually wither and die and defoliation can become extensive; severely affected leaves turn yellow, brown, and eventually fall off.",
+                  "inherited": true,
+                  "inherited_from": "Powdery Mildew::California"
+                },
+                {
+                  "url": "https://extension.okstate.edu/fact-sheets/watermelon-diseases.html",
+                  "quote": "Severely attacked leaves become brown and shrivelled and defoliation may occur.",
+                  "inherited": true,
+                  "inherited_from": "Powdery Mildew::California"
+                }
+              ]
             },
             {
               "field": "other",
@@ -2459,7 +2927,20 @@
               "verification_status": "provisional",
               "reasoning": "Field-scale green/brown tones are consistent with canonical bronzing but are non-diagnostic (the defining sign is white powder, not brown field tones) and equally explained by senescence or other stressors, so no specific support.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://lgpress.clemson.edu/publication/powdery-mildew-on-watermelon/",
+                  "quote": "Affected leaves eventually wither and die and defoliation can become extensive; severely affected leaves turn yellow, brown, and eventually fall off.",
+                  "inherited": true,
+                  "inherited_from": "Powdery Mildew::California"
+                },
+                {
+                  "url": "https://extension.okstate.edu/fact-sheets/watermelon-diseases.html",
+                  "quote": "Severely attacked leaves become brown and shrivelled and defoliation may occur.",
+                  "inherited": true,
+                  "inherited_from": "Powdery Mildew::California"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -2542,7 +3023,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Powdery mildew is a superficial pathogen that does not cause vein clearing or vein necrosis, so normal-appearing veins are coherent with the diagnosis and help rule out viral look-alikes; flagged for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.vegetables.cornell.edu/crops/cucurbits/downy-mildew/",
+                  "quote": "Downy mildew causes chlorotic, yellow-olive, often angular, vein-delimited lesions bounded by leaf veins.",
+                  "inherited": true,
+                  "inherited_from": "Powdery Mildew::North Carolina"
+                },
+                {
+                  "url": "https://ipm.cahnr.uconn.edu/mildew-diseases-of-cucurbits/",
+                  "quote": "Powdery mildew causes white, powdery fungal growth in the absence of any leaf spotting.",
+                  "inherited": true,
+                  "inherited_from": "Powdery Mildew::North Carolina"
+                },
+                {
+                  "url": "https://lgpress.clemson.edu/publication/powdery-mildew-on-watermelon/",
+                  "quote": "Severe cases cause leaf curling, defoliation, and reduced fruit quality.",
+                  "inherited": true,
+                  "inherited_from": "Powdery Mildew::North Carolina"
+                }
+              ]
             },
             {
               "field": "other",
@@ -2553,7 +3053,26 @@
               "verification_status": "provisional",
               "reasoning": "Leaf outline is a host-morphology descriptor unrelated to powdery mildew; no pathology evidence applies and it is not contradicted, so it is left provisional.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.vegetables.cornell.edu/crops/cucurbits/downy-mildew/",
+                  "quote": "Downy mildew causes chlorotic, yellow-olive, often angular, vein-delimited lesions bounded by leaf veins.",
+                  "inherited": true,
+                  "inherited_from": "Powdery Mildew::North Carolina"
+                },
+                {
+                  "url": "https://ipm.cahnr.uconn.edu/mildew-diseases-of-cucurbits/",
+                  "quote": "Powdery mildew causes white, powdery fungal growth in the absence of any leaf spotting.",
+                  "inherited": true,
+                  "inherited_from": "Powdery Mildew::North Carolina"
+                },
+                {
+                  "url": "https://lgpress.clemson.edu/publication/powdery-mildew-on-watermelon/",
+                  "quote": "Severe cases cause leaf curling, defoliation, and reduced fruit quality.",
+                  "inherited": true,
+                  "inherited_from": "Powdery Mildew::North Carolina"
+                }
+              ]
             },
             {
               "field": "diagnostic_features",
@@ -2564,7 +3083,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Powdery mildew forms a diffuse powdery coating rather than concentric/target-ring lesions, so the absence of concentric patterning is coherent with the diagnosis; flagged for review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.vegetables.cornell.edu/crops/cucurbits/downy-mildew/",
+                  "quote": "Downy mildew causes chlorotic, yellow-olive, often angular, vein-delimited lesions bounded by leaf veins.",
+                  "inherited": true,
+                  "inherited_from": "Powdery Mildew::North Carolina"
+                },
+                {
+                  "url": "https://ipm.cahnr.uconn.edu/mildew-diseases-of-cucurbits/",
+                  "quote": "Powdery mildew causes white, powdery fungal growth in the absence of any leaf spotting.",
+                  "inherited": true,
+                  "inherited_from": "Powdery Mildew::North Carolina"
+                },
+                {
+                  "url": "https://lgpress.clemson.edu/publication/powdery-mildew-on-watermelon/",
+                  "quote": "Severe cases cause leaf curling, defoliation, and reduced fruit quality.",
+                  "inherited": true,
+                  "inherited_from": "Powdery Mildew::North Carolina"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -2671,7 +3209,20 @@
               "verification_status": "provisional",
               "reasoning": "Absence of look-alike symptoms in a specific photograph cannot be externally verified; the observation is coherent with the canonical look-alike list and is not contradicted.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.apsnet.org/publications/plantdisease/2011/December/Pages/95_12_1586.3.aspx",
+                  "quote": "Severe powdery mildew-like symptoms were observed on seedless and seeded watermelon fruit on several commercial farms in southwestern Florida; abundant powdery mildew conidia occurred on fruit surface.",
+                  "inherited": true,
+                  "inherited_from": "Powdery Mildew::Utah"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-06-11-0521",
+                  "quote": "Abundant powdery mildew conidia occurred on fruit surface, but not on the leaves; powdery mildew symptoms were mainly observed on young immature fruit.",
+                  "inherited": true,
+                  "inherited_from": "Powdery Mildew::Utah"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -2788,7 +3339,20 @@
               "verification_status": "provisional",
               "reasoning": "A largely negative texture observation (no blisters/ooze/fruiting bodies) that adds no specific diagnostic value and is neither corroborated nor contradicted by sources.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.msstate.edu/publications/cottony-leak-cucurbits",
+                  "quote": "During humid conditions, white, cottony pathogen growth may be produced and cover the rotted area of the fruit.",
+                  "inherited": true,
+                  "inherited_from": "Pythium Diseases::California"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0042-FI",
+                  "quote": "Signs of Pythium infection include the production of a white, cottony mycelium on the surface and oospores embedded within necrotic host tissue.",
+                  "inherited": true,
+                  "inherited_from": "Pythium Diseases::California"
+                }
+              ]
             },
             {
               "field": "other",
@@ -2799,7 +3363,20 @@
               "verification_status": "provisional",
               "reasoning": "Tan areas are loosely consistent with water-soaked Pythium tissue but olive-green is not a documented Pythium color cue; no external evidence found, so flagged rather than supported.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.msstate.edu/publications/cottony-leak-cucurbits",
+                  "quote": "During humid conditions, white, cottony pathogen growth may be produced and cover the rotted area of the fruit.",
+                  "inherited": true,
+                  "inherited_from": "Pythium Diseases::California"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0042-FI",
+                  "quote": "Signs of Pythium infection include the production of a white, cottony mycelium on the surface and oospores embedded within necrotic host tissue.",
+                  "inherited": true,
+                  "inherited_from": "Pythium Diseases::California"
+                }
+              ]
             },
             {
               "field": "severity",
@@ -2810,7 +3387,20 @@
               "verification_status": "provisional",
               "reasoning": "A single localized circular lesion is a non-specific severity note that does not match canonical Pythium severity (wilt/collapse); no external evidence found, so left provisional.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.msstate.edu/publications/cottony-leak-cucurbits",
+                  "quote": "During humid conditions, white, cottony pathogen growth may be produced and cover the rotted area of the fruit.",
+                  "inherited": true,
+                  "inherited_from": "Pythium Diseases::California"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0042-FI",
+                  "quote": "Signs of Pythium infection include the production of a white, cottony mycelium on the surface and oospores embedded within necrotic host tissue.",
+                  "inherited": true,
+                  "inherited_from": "Pythium Diseases::California"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -2877,7 +3467,20 @@
               "verification_status": "novel_plausible",
               "reasoning": "Color-palette descriptions are not documented in extension/APS literature; the rust-orange/pale-straw reading is coherent with brown rot tissue plus aged white mycelium but has no external corroboration, so it is flagged for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.msstate.edu/publications/cottony-leak-cucurbits",
+                  "quote": "During humid conditions, white, cottony pathogen growth may be produced and cover the rotted area of the fruit.",
+                  "inherited": true,
+                  "inherited_from": "Pythium Diseases::*"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0042-FI",
+                  "quote": "Signs of Pythium infection include the production of a white, cottony mycelium on the surface and oospores embedded within necrotic host tissue.",
+                  "inherited": true,
+                  "inherited_from": "Pythium Diseases::*"
+                }
+              ]
             },
             {
               "field": "severity",
@@ -2888,7 +3491,20 @@
               "verification_status": "novel_plausible",
               "reasoning": "A quantitative ~50% lesion-coverage estimate is plausible given documented rapid whole-fruit collapse, but no source quantifies severity this way, so it is flagged for curator review rather than verified.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://extension.msstate.edu/publications/cottony-leak-cucurbits",
+                  "quote": "During humid conditions, white, cottony pathogen growth may be produced and cover the rotted area of the fruit.",
+                  "inherited": true,
+                  "inherited_from": "Pythium Diseases::*"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0042-FI",
+                  "quote": "Signs of Pythium infection include the production of a white, cottony mycelium on the surface and oospores embedded within necrotic host tissue.",
+                  "inherited": true,
+                  "inherited_from": "Pythium Diseases::*"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -3107,7 +3723,38 @@
               "verification_status": "provisional",
               "reasoning": "A null finding with no actionable visual content; not contradicted by evidence but provides no positive support, so it remains provisional.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.species.2676",
+                  "quote": "Later the lesions may turn red brown and develop cracks... Water-soaked lesions eventually dry to form elongated, dark to reddish-brown lesions.",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::Delaware"
+                },
+                {
+                  "url": "https://www.apsnet.org/edcenter/disandpath/prokaryote/pdlessons/Pages/BacterialBlotch.aspx",
+                  "quote": "Brown cracks may develop in the rind lesions and they may release amber-colored or effervescent ooze.",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::Delaware"
+                },
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/cucurbits/bacterial-fruit-blotch/",
+                  "quote": "The presence of white bacterial ooze is a key distinguishing feature of bacterial fruit blotch, whereas fungal diseases typically produce different characteristics (like spores).",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::Delaware"
+                },
+                {
+                  "url": "https://www.vegetables.bayer.com/nz/en-nz/resources/growing-tips/agronomic-spotlights/bacterial-fruit-blotch-of-watermelon.html",
+                  "quote": "These lesions, although initially small, can spread and cover the entire upper surface of the melon.",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::Delaware"
+                },
+                {
+                  "url": "https://extension.missouri.edu/publications/ipm1011",
+                  "quote": "Infections that develop early can destroy up to 100 percent of the marketable watermelon crop.",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::Delaware"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -3153,7 +3800,20 @@
               "verification_status": "provisional",
               "reasoning": "A null observation that adds no distinguishing regional detail and references template fields irrelevant to watermelon fruit; not contradicted but unsupported by external evidence.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.apsnet.org/edcenter/disandpath/prokaryote/pdlessons/Pages/BacterialBlotch.aspx",
+                  "quote": "The causal agent is Acidovorax avenae subsp. citrulli.",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::Georgia"
+                },
+                {
+                  "url": "https://wiki.bugwood.org/Acidovorax_citrulli_(Bacterial_Fruit_Blotch)",
+                  "quote": "Symptoms on fruit appear just prior to harvest and begin as small, greasy-looking water-soaked areas a few millimeters in diameter.",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::Georgia"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -3219,7 +3879,20 @@
               "verification_status": "provisional",
               "reasoning": "A bare absence-of-conflict statement carries no positive evidence and could not be externally corroborated, but it is plausible and not contradicted.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.apsnet.org/edcenter/disandpath/prokaryote/pdlessons/Pages/BacterialBlotch.aspx",
+                  "quote": "These lesions expand rapidly and may cover the upper surface of the fruit.",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::Mississippi"
+                },
+                {
+                  "url": "https://extension.missouri.edu/publications/ipm1011",
+                  "quote": "The diagnostic symptom of BFB is a dark green stain or blotch on the upper surface of the developing fruit.",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::Mississippi"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -3337,7 +4010,26 @@
               "verification_status": "provisional",
               "reasoning": "No source describes BFB lesions as raised (they are water-soaked/necrotic), but the texture claim is not explicitly contradicted, so it is left provisional.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://aggie-horticulture.tamu.edu/vegetable/watermelon/foliar-diseases/bacterial-fruit-blotch/",
+                  "quote": "bacterial fruit blotch causes irregular, rust-colored lesions that run along leaf ribs",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::North Carolina"
+                },
+                {
+                  "url": "https://extension.missouri.edu/publications/ipm1011",
+                  "quote": "small, dark brown, somewhat angular and water-soaked lesions ... lesions are frequently delimited by veins",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::North Carolina"
+                },
+                {
+                  "url": "https://ag.purdue.edu/department/arge/swpap/bacterial-fruit-blotch-watermelon.html",
+                  "quote": "lesions that develop along leaf veins eventually dry and may turn reddish-brown to black",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::North Carolina"
+                }
+              ]
             },
             {
               "field": "other",
@@ -3348,7 +4040,26 @@
               "verification_status": "provisional",
               "reasoning": "Leaf curling/puckering is not a documented BFB symptom and searches returned no support, but it is not contradicted, so it is flagged provisional for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://aggie-horticulture.tamu.edu/vegetable/watermelon/foliar-diseases/bacterial-fruit-blotch/",
+                  "quote": "bacterial fruit blotch causes irregular, rust-colored lesions that run along leaf ribs",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::North Carolina"
+                },
+                {
+                  "url": "https://extension.missouri.edu/publications/ipm1011",
+                  "quote": "small, dark brown, somewhat angular and water-soaked lesions ... lesions are frequently delimited by veins",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::North Carolina"
+                },
+                {
+                  "url": "https://ag.purdue.edu/department/arge/swpap/bacterial-fruit-blotch-watermelon.html",
+                  "quote": "lesions that develop along leaf veins eventually dry and may turn reddish-brown to black",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::North Carolina"
+                }
+              ]
             },
             {
               "field": "other",
@@ -3359,7 +4070,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "This describes host leaf geometry rather than a disease sign; coherent with the visual evidence but unverifiable against pathology literature.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://aggie-horticulture.tamu.edu/vegetable/watermelon/foliar-diseases/bacterial-fruit-blotch/",
+                  "quote": "bacterial fruit blotch causes irregular, rust-colored lesions that run along leaf ribs",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::North Carolina"
+                },
+                {
+                  "url": "https://extension.missouri.edu/publications/ipm1011",
+                  "quote": "small, dark brown, somewhat angular and water-soaked lesions ... lesions are frequently delimited by veins",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::North Carolina"
+                },
+                {
+                  "url": "https://ag.purdue.edu/department/arge/swpap/bacterial-fruit-blotch-watermelon.html",
+                  "quote": "lesions that develop along leaf veins eventually dry and may turn reddish-brown to black",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::North Carolina"
+                }
+              ]
             },
             {
               "field": "severity",
@@ -3370,7 +4100,26 @@
               "verification_status": "provisional",
               "reasoning": "Severe foliar blighting is plausible for BFB, but a specific >50% coverage on this photograph cannot be externally verified.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://aggie-horticulture.tamu.edu/vegetable/watermelon/foliar-diseases/bacterial-fruit-blotch/",
+                  "quote": "bacterial fruit blotch causes irregular, rust-colored lesions that run along leaf ribs",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::North Carolina"
+                },
+                {
+                  "url": "https://extension.missouri.edu/publications/ipm1011",
+                  "quote": "small, dark brown, somewhat angular and water-soaked lesions ... lesions are frequently delimited by veins",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::North Carolina"
+                },
+                {
+                  "url": "https://ag.purdue.edu/department/arge/swpap/bacterial-fruit-blotch-watermelon.html",
+                  "quote": "lesions that develop along leaf veins eventually dry and may turn reddish-brown to black",
+                  "inherited": true,
+                  "inherited_from": "Bacterial Fruit Blotch::North Carolina"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -3564,7 +4313,20 @@
               "verification_status": "novel_plausible",
               "reasoning": "No external source describes a color palette, but a green-brown-white combination is coherent with the canonical white mycelium plus necrotic fruit lesions and is flagged for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://wiki.bugwood.org/Sclerotium_rolfsii_(Southern_blight_of_vegetables_and_melons)",
+                  "quote": "The fungus infects fruit in contact with infested soil, developing sunken, yellow spots which decay and collapse, and large amounts of white mycelium and sclerotia can form on the fruit as it decays.",
+                  "inherited": true,
+                  "inherited_from": "Southern Blight::North Carolina"
+                },
+                {
+                  "url": "https://lgpress.clemson.edu/publication/managing-southern-blight-on-vegetable-crops/",
+                  "quote": "Southern blight affects fruits directly and causes a white mycelial growth on the underside of the fruit leading to severe fruit rot on cucurbits.",
+                  "inherited": true,
+                  "inherited_from": "Southern Blight::North Carolina"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -3950,7 +4712,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Vein-delimited angular patterning is coherent with mosaic blocking/serration but overlaps strongly with bacterial angular leaf spot (a non-viral look-alike), so it warrants curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/cucurbit-problem-solver/leaf-disorders/watermelon-mosaic/",
+                  "quote": "Watermelon mosaic virus causes severe interveinal chlorosis with a characteristic green/yellow mosaic pattern. Leaves become stunted and misshapen.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                },
+                {
+                  "url": "https://extension.usu.edu/pests/ipm/notes_ag/veg-watermelon-mosaic-virus",
+                  "quote": "The first signs of infection are yellowing of the leaves and marginal chlorosis, with yellowing most often at the leaf veins and edges in an irregular pattern.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                },
+                {
+                  "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/watermelon__papaya_ringspot_virus_w_392.htm",
+                  "quote": "As symptoms progress, a light to dark green mosaic develops, followed by distortion and deep leaf serration.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                },
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/virus-diseases-of-cucurbits/",
+                  "quote": "The first symptoms are oily streaks on the younger leaves with clearing along the veins that gives a flecked appearance.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                }
+              ]
             },
             {
               "field": "diagnostic_features",
@@ -3961,7 +4748,32 @@
               "verification_status": "provisional",
               "reasoning": "The observation is non-committal (distribution undefined) and no external source confirms or contradicts necrosis for this viral context.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/cucurbit-problem-solver/leaf-disorders/watermelon-mosaic/",
+                  "quote": "Watermelon mosaic virus causes severe interveinal chlorosis with a characteristic green/yellow mosaic pattern. Leaves become stunted and misshapen.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                },
+                {
+                  "url": "https://extension.usu.edu/pests/ipm/notes_ag/veg-watermelon-mosaic-virus",
+                  "quote": "The first signs of infection are yellowing of the leaves and marginal chlorosis, with yellowing most often at the leaf veins and edges in an irregular pattern.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                },
+                {
+                  "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/watermelon__papaya_ringspot_virus_w_392.htm",
+                  "quote": "As symptoms progress, a light to dark green mosaic develops, followed by distortion and deep leaf serration.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                },
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/virus-diseases-of-cucurbits/",
+                  "quote": "The first symptoms are oily streaks on the younger leaves with clearing along the veins that gives a flecked appearance.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                }
+              ]
             },
             {
               "field": "other",
@@ -3972,7 +4784,32 @@
               "verification_status": "provisional",
               "reasoning": "Generic leaf-geometry note is not disease-diagnostic and not contradicted, though watermelon leaves are typically lobed rather than simply ovate.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/cucurbit-problem-solver/leaf-disorders/watermelon-mosaic/",
+                  "quote": "Watermelon mosaic virus causes severe interveinal chlorosis with a characteristic green/yellow mosaic pattern. Leaves become stunted and misshapen.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                },
+                {
+                  "url": "https://extension.usu.edu/pests/ipm/notes_ag/veg-watermelon-mosaic-virus",
+                  "quote": "The first signs of infection are yellowing of the leaves and marginal chlorosis, with yellowing most often at the leaf veins and edges in an irregular pattern.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                },
+                {
+                  "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/watermelon__papaya_ringspot_virus_w_392.htm",
+                  "quote": "As symptoms progress, a light to dark green mosaic develops, followed by distortion and deep leaf serration.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                },
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/virus-diseases-of-cucurbits/",
+                  "quote": "The first symptoms are oily streaks on the younger leaves with clearing along the veins that gives a flecked appearance.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                }
+              ]
             },
             {
               "field": "look_alikes",
@@ -3983,7 +4820,32 @@
               "verification_status": "provisional",
               "reasoning": "Absence of concentric target spots is consistent with a viral etiology (rings/target spots are fungal), but a negative observation lacks positive external support.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/cucurbit-problem-solver/leaf-disorders/watermelon-mosaic/",
+                  "quote": "Watermelon mosaic virus causes severe interveinal chlorosis with a characteristic green/yellow mosaic pattern. Leaves become stunted and misshapen.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                },
+                {
+                  "url": "https://extension.usu.edu/pests/ipm/notes_ag/veg-watermelon-mosaic-virus",
+                  "quote": "The first signs of infection are yellowing of the leaves and marginal chlorosis, with yellowing most often at the leaf veins and edges in an irregular pattern.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                },
+                {
+                  "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/watermelon__papaya_ringspot_virus_w_392.htm",
+                  "quote": "As symptoms progress, a light to dark green mosaic develops, followed by distortion and deep leaf serration.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                },
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/virus-diseases-of-cucurbits/",
+                  "quote": "The first symptoms are oily streaks on the younger leaves with clearing along the veins that gives a flecked appearance.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                }
+              ]
             },
             {
               "field": "severity",
@@ -3994,7 +4856,32 @@
               "verification_status": "provisional",
               "reasoning": "The >50% severity estimate is image-derived; no external source quantifies severity, and the symptom types are not contradicted.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://aggie-horticulture.tamu.edu/vegetable/problem-solvers/cucurbit-problem-solver/leaf-disorders/watermelon-mosaic/",
+                  "quote": "Watermelon mosaic virus causes severe interveinal chlorosis with a characteristic green/yellow mosaic pattern. Leaves become stunted and misshapen.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                },
+                {
+                  "url": "https://extension.usu.edu/pests/ipm/notes_ag/veg-watermelon-mosaic-virus",
+                  "quote": "The first signs of infection are yellowing of the leaves and marginal chlorosis, with yellowing most often at the leaf veins and edges in an irregular pattern.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                },
+                {
+                  "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/watermelon__papaya_ringspot_virus_w_392.htm",
+                  "quote": "As symptoms progress, a light to dark green mosaic develops, followed by distortion and deep leaf serration.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                },
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/virus-diseases-of-cucurbits/",
+                  "quote": "The first symptoms are oily streaks on the younger leaves with clearing along the veins that gives a flecked appearance.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::California"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -4411,7 +5298,38 @@
               "verification_status": "provisional",
               "reasoning": "Absence of sporulation is consistent with a viral (non-fungal) etiology and helps separate PRSV from sporulating fungal target spots, but a negative finding on a single image cannot be externally verified.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.ipt.us.com/produce-inspection-resources/inspectors-blog/defect-identification/watermelon-ring-spot-virus",
+                  "quote": "Concentric ring-spot patterns develop on the rind of watermelon fruit; characteristic ring spots develop on the fruit, merging into large dark green areas.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::Utah"
+                },
+                {
+                  "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/watermelon__papaya_ringspot_virus_w_392.htm",
+                  "quote": "Characteristic ring spots develop on the fruit, merging into large dark green areas, more conspicuous on light coloured varieties than those with dark skin.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::Utah"
+                },
+                {
+                  "url": "https://cucurbitbreeding.wordpress.ncsu.edu/watermelon-breeding/nc-state-watermelon-disease-handbook/papaya-ringspot-virus-watermelon-strain-prsv-w/",
+                  "quote": "Fruit is often malformed, and can have a color break pattern, where the normal color of the fruit is 'invaded' by an unusual color, generally in sharply defined sections.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::Utah"
+                },
+                {
+                  "url": "https://aggie-horticulture.tamu.edu/vegetable/watermelon/foliar-diseases/alternaria-leaf-spot/",
+                  "quote": "Alternaria leaf spot produces round to irregular target spots; as the spots enlarge, concentric rings are formed in the lesion.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::Utah"
+                },
+                {
+                  "url": "https://aggie-horticulture.tamu.edu/vegetable/watermelon/foliar-diseases/tobacco-ring-spot-virus/",
+                  "quote": "Fruit symptoms include ringspots and necrotic, concentric rings, which can be caused by Tobacco Ring Spot Virus.",
+                  "inherited": true,
+                  "inherited_from": "Unknown Virus::Utah"
+                }
+              ]
             }
           ],
           "image_ids": [

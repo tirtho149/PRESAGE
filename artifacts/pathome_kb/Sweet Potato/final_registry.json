@@ -301,7 +301,26 @@
               "verification_status": "provisional",
               "reasoning": "Sweet potato is grown for storage roots, not fruit, and no extension or APS reference treats fruit as a diagnostic surface for southern blight, so a negative-finding observation about fruit visibility is uncontradicted but informationally empty and cannot be verified or refuted externally.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/southern-blight-of-sweetpotato",
+                  "quote": "Small (0.5-1 mm), white, round, fuzzy mycelial bodies initially appear, which soon become smooth and light tan, brown or black in color.",
+                  "inherited": true,
+                  "inherited_from": "Southern Blight::North Carolina"
+                },
+                {
+                  "url": "https://www.lsuagcenter.com/topics/crops/sweet_potatoes/diseases/sclerotial-blight-and-circular-spot",
+                  "quote": "Sclerotial blight and circular spot are caused by the same soilborne fungus, Sclerotium rolfsii ... circular spot develops on storage roots shortly before harvest. The margins of the lesions are usually sharply defined and circular.",
+                  "inherited": true,
+                  "inherited_from": "Southern Blight::North Carolina"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-12-23-0110-DG",
+                  "quote": "Sclerotial blight is a major fungal disease caused by Sclerotium rolfsii during the early cultivation period and has been observed in plant beds, mature plants as circular spots, and tubers as a post-harvest disease.",
+                  "inherited": true,
+                  "inherited_from": "Southern Blight::North Carolina"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -597,7 +616,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Ovate/cordate is the typical leaf shape of Ipomoea batatas itself rather than a disease feature; plausible but not a pathology-specific signal.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://apps.lucidcentral.org/pppw_v10/text/web_full/entities/sweetpotato_feathery_mottle_258.htm",
+                  "quote": "Purple feathery-like patterns along veins typical of infection from Sweetpotato feathery mottle virus.",
+                  "inherited": true,
+                  "inherited_from": "Sweet Potato Feathery Mottle Virus::Louisiana"
+                },
+                {
+                  "url": "https://plantvillage.psu.edu/topics/sweet-potato/infos",
+                  "quote": "Symptoms include ring and chlorotic spots, puckering, feathering, vein clearing, and leaf curl with chlorotic specks.",
+                  "inherited": true,
+                  "inherited_from": "Sweet Potato Feathery Mottle Virus::Louisiana"
+                },
+                {
+                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/sweet-potato-feathery-mottle-virus",
+                  "quote": "yellow (chlorotic) spotting often surrounded by a purple margin or irregular chlorotic vein clearing patterns or feathering patterns",
+                  "inherited": true,
+                  "inherited_from": "Sweet Potato Feathery Mottle Virus::Louisiana"
+                },
+                {
+                  "url": "https://cipotato.org/wp-content/uploads/publication%20files/books/002435.pdf",
+                  "quote": "coalescing tiny lesions covering the leaf veins, thus making them shrink and causing the leaves to curl",
+                  "inherited": true,
+                  "inherited_from": "Sweet Potato Feathery Mottle Virus::Louisiana"
+                }
+              ]
             },
             {
               "field": "other",
@@ -608,7 +652,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "A green-and-purple palette is coherent with canonical purple-margined chlorotic spots but is largely a re-summary of candidate [2]; flag for curator review for possible merging.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://apps.lucidcentral.org/pppw_v10/text/web_full/entities/sweetpotato_feathery_mottle_258.htm",
+                  "quote": "Purple feathery-like patterns along veins typical of infection from Sweetpotato feathery mottle virus.",
+                  "inherited": true,
+                  "inherited_from": "Sweet Potato Feathery Mottle Virus::Louisiana"
+                },
+                {
+                  "url": "https://plantvillage.psu.edu/topics/sweet-potato/infos",
+                  "quote": "Symptoms include ring and chlorotic spots, puckering, feathering, vein clearing, and leaf curl with chlorotic specks.",
+                  "inherited": true,
+                  "inherited_from": "Sweet Potato Feathery Mottle Virus::Louisiana"
+                },
+                {
+                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/sweet-potato-feathery-mottle-virus",
+                  "quote": "yellow (chlorotic) spotting often surrounded by a purple margin or irregular chlorotic vein clearing patterns or feathering patterns",
+                  "inherited": true,
+                  "inherited_from": "Sweet Potato Feathery Mottle Virus::Louisiana"
+                },
+                {
+                  "url": "https://cipotato.org/wp-content/uploads/publication%20files/books/002435.pdf",
+                  "quote": "coalescing tiny lesions covering the leaf veins, thus making them shrink and causing the leaves to curl",
+                  "inherited": true,
+                  "inherited_from": "Sweet Potato Feathery Mottle Virus::Louisiana"
+                }
+              ]
             },
             {
               "field": "look_alikes",
@@ -619,7 +688,32 @@
               "verification_status": "provisional",
               "reasoning": "An absence-of-concentric-rings observation is plausible (would help distinguish from purple ring-spot strains) but no external source explicitly addresses this differential \u00e2\u20ac\u201d left provisional.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://apps.lucidcentral.org/pppw_v10/text/web_full/entities/sweetpotato_feathery_mottle_258.htm",
+                  "quote": "Purple feathery-like patterns along veins typical of infection from Sweetpotato feathery mottle virus.",
+                  "inherited": true,
+                  "inherited_from": "Sweet Potato Feathery Mottle Virus::Louisiana"
+                },
+                {
+                  "url": "https://plantvillage.psu.edu/topics/sweet-potato/infos",
+                  "quote": "Symptoms include ring and chlorotic spots, puckering, feathering, vein clearing, and leaf curl with chlorotic specks.",
+                  "inherited": true,
+                  "inherited_from": "Sweet Potato Feathery Mottle Virus::Louisiana"
+                },
+                {
+                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/sweet-potato-feathery-mottle-virus",
+                  "quote": "yellow (chlorotic) spotting often surrounded by a purple margin or irregular chlorotic vein clearing patterns or feathering patterns",
+                  "inherited": true,
+                  "inherited_from": "Sweet Potato Feathery Mottle Virus::Louisiana"
+                },
+                {
+                  "url": "https://cipotato.org/wp-content/uploads/publication%20files/books/002435.pdf",
+                  "quote": "coalescing tiny lesions covering the leaf veins, thus making them shrink and causing the leaves to curl",
+                  "inherited": true,
+                  "inherited_from": "Sweet Potato Feathery Mottle Virus::Louisiana"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -875,7 +969,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "No source quantifies a specific 50% coverage threshold, but extension literature describes 'large circular' lesions that 'expand in diameter during storage', so an extensive-coverage visual observation is coherent with canonical and warrants curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/black-rot-of-sweetpotato",
+                  "quote": "Root symptoms include large circular, brownish to black, dry rots.",
+                  "inherited": true,
+                  "inherited_from": "Black Rot::North Carolina"
+                },
+                {
+                  "url": "https://apps.lucidcentral.org/pppw_v10/text/web_full/entities/sweetpotato_black_rot_232.htm",
+                  "quote": "Storage roots infected by the black rot pathogen develop a firm, black, dry rot, and externally, the lesions appear grey to black when dry.",
+                  "inherited": true,
+                  "inherited_from": "Black Rot::North Carolina"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-08-19-0052-DG",
+                  "quote": "Tubers with black rot show irregular sunken spots, dark brown to black in color.",
+                  "inherited": true,
+                  "inherited_from": "Black Rot::North Carolina"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -1065,7 +1178,20 @@
               "verification_status": "novel_plausible",
               "reasoning": "Canonical KB does not quantify lesion extent; literature notes that charcoal rot is typically restricted to one end of the storage root, so >50% cross-section involvement is plausible at the affected end but not directly supported \u00e2\u20ac\u201d flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://wiki.bugwood.org/Macrophomina_phaseolina_(charcoal_rot_of_sweetpotato)",
+                  "quote": "The leading edge of Macrophomina phaseolina infection in sweetpotato storage root tissue is somewhat firm and light-brown, tinged red in color, and the area behind the leading edge becomes darker as more sclerotia are formed.",
+                  "inherited": true,
+                  "inherited_from": "Charcoal Rot::Mississippi"
+                },
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8625119/",
+                  "quote": "Initial symptoms are variously shaped and sized pale brown discolorations, and eventually, rotten roots with micro-sclerotia colonize interiorly.",
+                  "inherited": true,
+                  "inherited_from": "Charcoal Rot::Mississippi"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -1180,7 +1306,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Pythium is an oomycete that typically lacks macroscopically visible sporulation structures on host tissue, so an absence-of-sporulation observation is coherent with canonical biology though not directly cited.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://onlinelibrary.wiley.com/doi/10.1111/jph.13133",
+                  "quote": "Decay of storage roots begins at the proximal end leading to firm, dry, dark brown necrosis that covers a large portion of the root.",
+                  "inherited": true,
+                  "inherited_from": "Pythium Root And Stem Rot::North Carolina"
+                },
+                {
+                  "url": "https://www.canr.msu.edu/resources/pythium-root-and-stem-rot",
+                  "quote": "Pythium causes a dark brown to black wet rot that makes roots soften and disintegrate.",
+                  "inherited": true,
+                  "inherited_from": "Pythium Root And Stem Rot::North Carolina"
+                },
+                {
+                  "url": "https://link.springer.com/article/10.1007/s10327-006-0335-3",
+                  "quote": "Mottle necrosis of sweet potato caused by Pythium scleroteichum",
+                  "inherited": true,
+                  "inherited_from": "Pythium Root And Stem Rot::North Carolina"
+                }
+              ]
             },
             {
               "field": "look_alikes",
@@ -1191,7 +1336,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Vague self-referential claim about pith coloration; no targeted source corroborates or refutes it, so flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://onlinelibrary.wiley.com/doi/10.1111/jph.13133",
+                  "quote": "Decay of storage roots begins at the proximal end leading to firm, dry, dark brown necrosis that covers a large portion of the root.",
+                  "inherited": true,
+                  "inherited_from": "Pythium Root And Stem Rot::North Carolina"
+                },
+                {
+                  "url": "https://www.canr.msu.edu/resources/pythium-root-and-stem-rot",
+                  "quote": "Pythium causes a dark brown to black wet rot that makes roots soften and disintegrate.",
+                  "inherited": true,
+                  "inherited_from": "Pythium Root And Stem Rot::North Carolina"
+                },
+                {
+                  "url": "https://link.springer.com/article/10.1007/s10327-006-0335-3",
+                  "quote": "Mottle necrosis of sweet potato caused by Pythium scleroteichum",
+                  "inherited": true,
+                  "inherited_from": "Pythium Root And Stem Rot::North Carolina"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -1525,7 +1689,26 @@
               "verification_status": "provisional",
               "reasoning": "Vein clearing is more commonly associated with sweet potato viral diseases; no extension or APS source documents translucent veins as a Fusarium lateritium CLD diagnostic feature, but the absence-of-necrosis observation is not contradicted.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.lsuagcenter.com/topics/crops/sweet_potatoes/diseases/chlorotic-leaf-distortion",
+                  "quote": "Chlorotic leaf distortion develops on young leaves near the vine terminals... the youngest opened leaves may either turn bright yellow, or, if they normally are purple, they may turn pink.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Lateritium Nees::North Carolina"
+                },
+                {
+                  "url": "https://www.apsnet.org/publications/phytopathology/backissues/Documents/1992Abstracts/Phyto82_656.htm",
+                  "quote": "Histological Evidence that Fusarium lateritium is an Exopathogen on Sweetpotato with Chlorotic Leaf Distortion \u00e2\u20ac\u201d symptoms include chlorotic leaf distortion with deformation of young leaves",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Lateritium Nees::North Carolina"
+                },
+                {
+                  "url": "https://www.researchgate.net/publication/279466913_Heritability_Estimates_for_Reaction_Resistance_to_Sweetpotato_Chlorotic_Leaf_Distortion_Caused_by_Fusarium_lateritium",
+                  "quote": "Chlorotic Leaf Distortion Caused by Fusarium lateritium",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Lateritium Nees::North Carolina"
+                }
+              ]
             },
             {
               "field": "other",
@@ -1536,7 +1719,26 @@
               "verification_status": "novel_plausible",
               "reasoning": "Describes host leaf morphology rather than disease symptom; cordate/spade-shaped leaves are normal for sweet potato cultivars, so this is a host trait, not a pathology observation \u00e2\u20ac\u201d flagged for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.lsuagcenter.com/topics/crops/sweet_potatoes/diseases/chlorotic-leaf-distortion",
+                  "quote": "Chlorotic leaf distortion develops on young leaves near the vine terminals... the youngest opened leaves may either turn bright yellow, or, if they normally are purple, they may turn pink.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Lateritium Nees::North Carolina"
+                },
+                {
+                  "url": "https://www.apsnet.org/publications/phytopathology/backissues/Documents/1992Abstracts/Phyto82_656.htm",
+                  "quote": "Histological Evidence that Fusarium lateritium is an Exopathogen on Sweetpotato with Chlorotic Leaf Distortion \u00e2\u20ac\u201d symptoms include chlorotic leaf distortion with deformation of young leaves",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Lateritium Nees::North Carolina"
+                },
+                {
+                  "url": "https://www.researchgate.net/publication/279466913_Heritability_Estimates_for_Reaction_Resistance_to_Sweetpotato_Chlorotic_Leaf_Distortion_Caused_by_Fusarium_lateritium",
+                  "quote": "Chlorotic Leaf Distortion Caused by Fusarium lateritium",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Lateritium Nees::North Carolina"
+                }
+              ]
             },
             {
               "field": "severity",
@@ -1547,7 +1749,26 @@
               "verification_status": "provisional",
               "reasoning": "Generic severity claim without quantitative support; the cited image_quote describes lesion appearance not severity, so this is unverifiable from external evidence.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://www.lsuagcenter.com/topics/crops/sweet_potatoes/diseases/chlorotic-leaf-distortion",
+                  "quote": "Chlorotic leaf distortion develops on young leaves near the vine terminals... the youngest opened leaves may either turn bright yellow, or, if they normally are purple, they may turn pink.",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Lateritium Nees::North Carolina"
+                },
+                {
+                  "url": "https://www.apsnet.org/publications/phytopathology/backissues/Documents/1992Abstracts/Phyto82_656.htm",
+                  "quote": "Histological Evidence that Fusarium lateritium is an Exopathogen on Sweetpotato with Chlorotic Leaf Distortion \u00e2\u20ac\u201d symptoms include chlorotic leaf distortion with deformation of young leaves",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Lateritium Nees::North Carolina"
+                },
+                {
+                  "url": "https://www.researchgate.net/publication/279466913_Heritability_Estimates_for_Reaction_Resistance_to_Sweetpotato_Chlorotic_Leaf_Distortion_Caused_by_Fusarium_lateritium",
+                  "quote": "Chlorotic Leaf Distortion Caused by Fusarium lateritium",
+                  "inherited": true,
+                  "inherited_from": "Fusarium Lateritium Nees::North Carolina"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -2103,7 +2324,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Java black rot is documented primarily on storage roots, not stem pith; the 'stem pith' framing is not directly corroborated, so flag for curator review even though dark brown necrosis is plausible.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://keys.lucidcentral.org/keys/sweetpotato/key/Sweetpotato%20Diagnotes/Media/Html/TheProblems/DiseasesFungal/JavaBlackRot/Java%20black%20rot.htm",
+                  "quote": "Java black rot is one of the most significant postharvest diseases of sweetpotato. It can damage a huge quantity of storage roots.",
+                  "inherited": true,
+                  "inherited_from": "Java Black Rot::Louisiana"
+                },
+                {
+                  "url": "https://www.ctahr.hawaii.edu/oc/freepubs/pdf/PD-55.pdf",
+                  "quote": "Symptoms of sweet potato infection by D. gossypina usually begin at the ends of storage roots.",
+                  "inherited": true,
+                  "inherited_from": "Java Black Rot::Louisiana"
+                },
+                {
+                  "url": "https://www.gardeningknowhow.com/edible/vegetables/sweet-potato/sweet-potato-storage-rots.htm",
+                  "quote": "Infected tissues become yellowed to reddish brown, turning black as the disease progresses.",
+                  "inherited": true,
+                  "inherited_from": "Java Black Rot::Louisiana"
+                },
+                {
+                  "url": "https://plantdiseasehandbook.tamu.edu/food-crops/vegetable-crops/sweet-potato/",
+                  "quote": "Java Black Rot initially appears brown and moderately firm, turning to black and firm with pimply surface.",
+                  "inherited": true,
+                  "inherited_from": "Java Black Rot::Louisiana"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -2325,7 +2571,20 @@
               "verification_status": "provisional",
               "reasoning": "Candidate restates that mold is present rather than describing a specific color palette; no contradicting evidence but it adds no verifiable state-specific feature.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/rhizopus-soft-rot-of-sweetpotato",
+                  "quote": "White to grey fungal mycelium producing black sporangia of R. stolonifer are often observed growing on decayed roots, resembling a distinctive 'grey man's beard.'",
+                  "inherited": true,
+                  "inherited_from": "Bread Mold::Georgia"
+                },
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8625119/",
+                  "quote": "Several diseases including Fusarium surface and root rot, charcoal rot, dry rot, and soft rot were observed in the postharvest sweet potatoes.",
+                  "inherited": true,
+                  "inherited_from": "Bread Mold::Georgia"
+                }
+              ]
             },
             {
               "field": "severity",
@@ -2336,7 +2595,20 @@
               "verification_status": "novel_plausible",
               "reasoning": "Multi-root spread in a storage container is consistent with postharvest bread mold dynamics (humid storage, rapid mycelial advance) but no Georgia-specific severity citation was located; flag for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/rhizopus-soft-rot-of-sweetpotato",
+                  "quote": "White to grey fungal mycelium producing black sporangia of R. stolonifer are often observed growing on decayed roots, resembling a distinctive 'grey man's beard.'",
+                  "inherited": true,
+                  "inherited_from": "Bread Mold::Georgia"
+                },
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8625119/",
+                  "quote": "Several diseases including Fusarium surface and root rot, charcoal rot, dry rot, and soft rot were observed in the postharvest sweet potatoes.",
+                  "inherited": true,
+                  "inherited_from": "Bread Mold::Georgia"
+                }
+              ]
             }
           ],
           "image_ids": [
@@ -2443,7 +2715,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "A dense, dark, powdery surface mat is also produced by Rhizopus stolonifer soft rot and by some Aspergillus/Cladosporium colonisations on sweetpotato, so the morphology is plausibly confusable with other postharvest black-mould diseases; no source was found that explicitly enumerates this as a look-alike pairing for Aspergillus wentii bread mold.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/rhizopus-soft-rot-of-sweetpotato",
+                  "quote": "Symptoms originate at a wounded area in the sweetpotato and consist of a soft, watery rot that progresses quickly under favorable conditions and can result in full decay of an infected root in as little as three days.",
+                  "inherited": true,
+                  "inherited_from": "Bread Mold::North Carolina"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-01-16-0051-RE",
+                  "quote": "Roots were rated for disease incidence (percentage of wounds infected) and disease severity (percent of root infected/soft) at multiple time points after inoculation.",
+                  "inherited": true,
+                  "inherited_from": "Bread Mold::North Carolina"
+                },
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8625119/",
+                  "quote": "Aspergillus wentii is identified as one of the fungal pathogens associated with postharvest sweet potato diseases.",
+                  "inherited": true,
+                  "inherited_from": "Bread Mold::North Carolina"
+                },
+                {
+                  "url": "https://greenygardener.com/sweet-potato-rot/",
+                  "quote": "Sweet potato rot from bread mold starts as soft, watery decay that quickly spreads, turning the tuber into a mushy, foul-smelling liquid, with fuzzy black fungal growth visible on the surface.",
+                  "inherited": true,
+                  "inherited_from": "Bread Mold::North Carolina"
+                }
+              ]
             }
           ],
           "image_ids": [

@@ -181,7 +181,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "No source documents leaf curling for hollyhock rust, but it is not contradicted and could accompany the wilting and shriveling of severely infected leaves; flagged for curator review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://portal.ct.gov/caes/plant-pest-handbook/pphh/hollyhock-alcea",
+                  "quote": "Symptoms first appear as a pinpoint brown dot which rapidly enlarges into a circular spot, with lesions appearing as yellow to tan spots on the upper surface of the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Hollyhock Rust::Maine"
+                },
+                {
+                  "url": "https://hort.extension.wisc.edu/articles/hollyhock-rust/",
+                  "quote": "Over time the spots can grow together and destroy large sections of the leaves.",
+                  "inherited": true,
+                  "inherited_from": "Hollyhock Rust::Maine"
+                },
+                {
+                  "url": "https://www.canr.msu.edu/resources/hollyhock-rust-puccinia-malvacearum",
+                  "quote": "turning the leaf over reveals red-orange to brown pustules on the undersides of leaves",
+                  "inherited": true,
+                  "inherited_from": "Hollyhock Rust::Maine"
+                },
+                {
+                  "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hollyhock-rust",
+                  "quote": "Over time the spots can grow together and destroy large sections of the leaves.",
+                  "inherited": true,
+                  "inherited_from": "Hollyhock Rust::Maine"
+                }
+              ]
             },
             {
               "field": "lesion_morphology",
@@ -192,7 +217,32 @@
               "verification_status": "novel_plausible",
               "reasoning": "Yellow-orange and pale-straw spotting is consistent with rust, but an olive-green lesion periphery is not described in the literature, so the distinctive color detail is flagged as novel for review.",
               "swarm_support": 1,
-              "web_support": []
+              "web_support": [
+                {
+                  "url": "https://portal.ct.gov/caes/plant-pest-handbook/pphh/hollyhock-alcea",
+                  "quote": "Symptoms first appear as a pinpoint brown dot which rapidly enlarges into a circular spot, with lesions appearing as yellow to tan spots on the upper surface of the leaf.",
+                  "inherited": true,
+                  "inherited_from": "Hollyhock Rust::Maine"
+                },
+                {
+                  "url": "https://hort.extension.wisc.edu/articles/hollyhock-rust/",
+                  "quote": "Over time the spots can grow together and destroy large sections of the leaves.",
+                  "inherited": true,
+                  "inherited_from": "Hollyhock Rust::Maine"
+                },
+                {
+                  "url": "https://www.canr.msu.edu/resources/hollyhock-rust-puccinia-malvacearum",
+                  "quote": "turning the leaf over reveals red-orange to brown pustules on the undersides of leaves",
+                  "inherited": true,
+                  "inherited_from": "Hollyhock Rust::Maine"
+                },
+                {
+                  "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hollyhock-rust",
+                  "quote": "Over time the spots can grow together and destroy large sections of the leaves.",
+                  "inherited": true,
+                  "inherited_from": "Hollyhock Rust::Maine"
+                }
+              ]
             }
           ],
           "image_ids": [

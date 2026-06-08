@@ -1,0 +1,113 @@
+ACADEMIC CONTEXT: this is plant pathology research for an agricultural extension knowledge base. We are fact-checking disease symptom descriptions for a published academic reference intended for crop scouts and county extension agents. All sources must be public extension service factsheets and peer-reviewed agronomy literature.
+
+You are validating regional plant disease observations against agronomic
+literature. The vision swarm has emitted candidate observations from a
+single Bugwood field photograph. Your job is to use web search to
+verify each candidate against external evidence, then return a
+structured verdict.
+
+CROP:    Wheat
+DISEASE: Parastagonospora Nodorum
+STATE:   Wisconsin
+
+CANONICAL KB (already established for this disease; treat as background):
+  pathogen:             Parastagonospora nodorum
+  type_of_disease:      Fungal
+  affected_parts:       Seed
+  summary:              Purple-brown to gray streaks on the wheat head with pycnidia (fungal fruiting bodies) developing on infected tissue.
+  diagnostic_features:  Lesions are purple to brown (darker than FHB); FHB symptoms are lighter in color and cause premature bleaching of a single spikelet and/or entire head.
+  look_alikes:          Fusarium head blight
+  treatments:           (not specified)
+
+EXISTING REGIONAL OBSERVATIONS for Wisconsin (already in the KB; preserve,
+do NOT re-emit):
+  (none — cold start for this state)
+
+CANDIDATE OBSERVATIONS from the Qwen swarm (each with a swarm_support
+count = how many of N stochastic runs proposed it):
+  [1] field=stem_surface  swarm_support=1
+      canonical_says: Purple-brown to gray streaks on the wheat head with pycnidia (fungal fruiting bodies) developing on infected tissue.
+      image_shows:    The image displays wheat heads with no visible stem surface abnormalities.
+      image_quote:    No galls, blisters, scabs, ooze, or fruiting bodies are present on the stem surface.
+      image_id:       bugwood::5626276
+  [2] field=stem_discoloration  swarm_support=1
+      canonical_says: Lesions are purple to brown (darker than FHB); FHB symptoms are lighter in color and cause premature bleaching of a single spikelet and/or entire head.
+      image_shows:    The photo shows greenish-brown grains and no visible vascular streaks, dark blotches, or water-soaked streaks extending from a lesion edge.
+      image_quote:    The stem surfaces appear healthy.
+      image_id:       bugwood::5626276
+  [3] field=color_palette  swarm_support=1
+      canonical_says: Purple-brown to gray streaks on the wheat head with pycnidia (fungal fruiting bodies) developing on infected tissue.
+      image_shows:    The photo shows wheat heads with olive-green grains and some tan-colored lesions.
+      image_quote:    Dominant color is olive-green, with tan lesions.
+      image_id:       bugwood::5626276
+  [4] field=look_alikes_visual  swarm_support=1
+      canonical_says: Fusarium head blight
+      image_shows:    No visible purple-brown to gray streaks or lesions.
+      image_quote:    The image shows golden-brown wheat heads without the typical symptoms of Parastagonospora nodorum.
+      image_id:       bugwood::5626276
+  [5] field=severity_visible  swarm_support=1
+      canonical_says: Purple-brown to gray streaks on the wheat head with pycnidia (fungal fruiting bodies) developing on infected tissue.
+      image_shows:    The image shows wheat heads with visible lesions, which are consistent with Parastagonospora Nodorum infection.
+      image_quote:    The image shows wheat heads with visible lesions.
+      image_id:       bugwood::5626276
+
+YOUR TASK
+=========
+Use WebSearch to look up extension-service pages, APS / CABI
+references, peer-reviewed literature, and pathology resources for
+Wheat :: Parastagonospora Nodorum (and where relevant, the specific state context).
+Search for evidence supporting (or contradicting) each candidate
+observation.
+
+For each candidate, return:
+
+  field            one of: lesion_morphology, severity, affected_organs,
+                            spread_pattern, diagnostic_features,
+                            look_alikes, treatments, type_of_disease, other
+  canonical_says   short quote from CANONICAL KB on this field, or
+                    "(not specified)"
+  image_shows      one-sentence state-specific addition or contradiction
+                    (carried from the candidate)
+  image_quote      one-sentence visual evidence (carried from the candidate)
+  image_id         the bugwood::N witness (carried from the candidate)
+  swarm_support    the input count, unchanged
+  verification_status   one of:
+        "verified"          strong external support; ≥1 high-quality
+                            source corroborates the observation
+        "weakly_supported"  partial / indirect support
+        "provisional"       no evidence found but plausible and not
+                            contradicted
+        "novel_plausible"   no evidence but the observation is coherent
+                            with canonical + visual evidence; flag for
+                            curator review
+        "contradictory"     external evidence contradicts the observation
+        "duplicate_existing"   this candidate is essentially a restatement
+                                of an existing regional observation
+  web_support      list of {url, quote} pairs supporting the verdict;
+                    [] for provisional/novel; required for verified/
+                    weakly_supported/contradictory
+  reasoning        one-sentence justification for the verification_status
+
+BUCKETING
+=========
+Group your verdicts under four top-level keys:
+  verified            verification_status in {verified, weakly_supported}
+  provisional         verification_status in {provisional, novel_plausible}
+  contradictory       verification_status == "contradictory"
+  duplicates_of_existing  verification_status == "duplicate_existing"
+
+Hard rules:
+- Restating canonical text is forbidden — drop such candidates as
+  duplicates_of_existing.
+- Fabricated citations are forbidden. Only cite URLs returned by your
+  searches.
+- If you can't find evidence after a reasonable search, use
+  "provisional" or "novel_plausible" — don't manufacture support.
+
+Output STRICT JSON only (no markdown):
+{
+  "verified":              [<delta>, ...],
+  "provisional":           [<delta>, ...],
+  "contradictory":         [<delta>, ...],
+  "duplicates_of_existing":[<delta>, ...]
+}
