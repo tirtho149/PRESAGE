@@ -266,6 +266,33 @@ class CLIP(nn.Module):
         # lock image tower as per LiT - https://arxiv.org/abs/2111.07991
         self.visual.lock(unlocked_groups=unlocked_groups, freeze_bn_stats=freeze_bn_stats)
 
+    def lock_text_tower(self, unlocked_layers: int = 0, freeze_layer_norm: bool = True):
+        # This CLIP stores the text tower inline (no self.text submodule like
+        # CustomTextCLIP), so freeze the inline components directly for
+        # projectors-only / LiT-style training. unlocked_layers>0 keeps the
+        # last N transformer blocks trainable (best-effort).
+        def _freeze(obj):
+            if obj is None:
+                return
+            if isinstance(obj, nn.Parameter):
+                obj.requires_grad = False
+            else:
+                for p in obj.parameters():
+                    p.requires_grad = False
+
+        _freeze(self.token_embedding)
+        _freeze(self.positional_embedding)
+        _freeze(self.ln_final)
+        _freeze(self.text_projection)
+        blocks = getattr(self.transformer, "resblocks", None)
+        if blocks is None or unlocked_layers <= 0:
+            _freeze(self.transformer)
+        else:
+            cutoff = max(0, len(blocks) - unlocked_layers)
+            for i, blk in enumerate(blocks):
+                if i < cutoff:
+                    _freeze(blk)
+
     @torch.jit.ignore
     def set_grad_checkpointing(self, enable=True):
         self.visual.set_grad_checkpointing(enable)

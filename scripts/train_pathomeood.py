@@ -106,11 +106,43 @@ def main() -> None:
     save_dir = (repo_root / args.save_root / args.variant).resolve()
     save_dir.mkdir(parents=True, exist_ok=True)
 
+    # webdataset + --dataset-resampled requires an explicit per-epoch sample
+    # count (shards carry no length metadata). Derive it from the captions
+    # table this strategy was built from.
+    caps = repo_root / "data" / "bugwood_captions" / f"{args.crop}_{strategy}.parquet"
+    if not caps.exists():
+        caps = caps.with_suffix(".tsv")
+    splits: list[str] = []
+    if caps.exists():
+        if caps.suffix == ".parquet":
+            import pyarrow.parquet as pq  # type: ignore
+            splits = pq.read_table(caps, columns=["split"]).column("split").to_pylist()
+        else:
+            import csv as _csv
+            with open(caps, newline="") as fh:
+                splits = [r["split"] for r in _csv.DictReader(fh, delimiter="\t")]
+    n_train = sum(1 for s in splits if s == "train")
+    n_val   = sum(1 for s in splits if s == "val")
+    if n_train == 0:
+        raise SystemExit(
+            f"could not determine train sample count from {caps}; "
+            f"webdataset needs --train-num-samples"
+        )
+
+    # Single-GPU: launch with plain `python -m` to avoid torchrun's
+    # argparse prefix-matching, which mis-claims our `--logs` flag
+    # (newer torchrun: "ambiguous option: --logs could match
+    # --logs-specs"). Multi-GPU still needs torchrun's rendezvous.
+    if args.nproc_per_node and args.nproc_per_node > 1:
+        launcher = ["torchrun", f"--nproc_per_node={args.nproc_per_node}",
+                    "-m", "train_and_eval.open_clip_train.main"]
+    else:
+        launcher = [sys.executable, "-m", "train_and_eval.open_clip_train.main"]
+
     cmd: list[str] = [
-        "torchrun",
-        f"--nproc_per_node={args.nproc_per_node}",
-        "-m", "open_clip_train.main",
+        *launcher,
         "--train-data",     train_glob,
+        "--train-num-samples", str(n_train),
         "--dataset-type",   "webdataset",
         "--pretrained",     args.pretrained,
         "--text-type",      "random",
@@ -129,6 +161,8 @@ def main() -> None:
     ]
     if val_shards:
         cmd += ["--val-data", val_glob]
+        if n_val:
+            cmd += ["--val-num-samples", str(n_val)]
     if proj == "dual":
         cmd += ["--dual-projector"]
     # Single-projector is the absence of --dual-projector.
@@ -139,11 +173,12 @@ def main() -> None:
         # Default ON because BioCLIP already supplies strong bio-features.
         cmd += ["--lock-image", "--lock-text"]
 
-    # The training module lives at train_and_eval/open_clip_train/ -
-    # cd in so the `-m open_clip_train.main` import works exactly like
-    # biocap/slurm/train.sh does. Shard + log paths are absolute so the
-    # cd does not invalidate them.
-    cwd = (repo_root / "train_and_eval").resolve()
+    # The training package lives at train_and_eval/open_clip_train/ and
+    # uses two-level relative imports (`from ..open_clip import ...`), so
+    # it must be launched from the repo root as the fully-qualified
+    # `train_and_eval.open_clip_train.main` (train_and_eval is a namespace
+    # package). Shard + log paths are absolute, so cwd only affects imports.
+    cwd = repo_root
 
     print("=== train_pathomeood ===")
     print(f"  variant       : {args.variant} ({paper_tables})")

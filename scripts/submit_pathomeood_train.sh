@@ -32,6 +32,29 @@ REPO_ROOT="${PATHOME_REPO:-$(pwd)}"
 cd "$REPO_ROOT"
 mkdir -p logs
 
+# ---- environment: module + venv (mirrors submit_phase0r_regional.sh) -------
+# Load ONLY python by default; loading the system cuda module shadows
+# torch's bundled libcudart and breaks torch.cuda. Set
+# PATHOME_LOAD_CUDA_MODULE=1 to restore the cuda module load.
+if [ "${PATHOME_LOAD_CUDA_MODULE:-0}" = "1" ]; then
+  module load python cuda/12.8 2>/dev/null || true
+else
+  module load python 2>/dev/null || true
+fi
+# Resolve venv: PATHOME_VENV -> $REPO/.venv -> ../.venv
+VENV="${PATHOME_VENV:-$REPO_ROOT/.venv}"
+if [ ! -f "$VENV/bin/activate" ]; then
+  if [ -f "$(dirname "$REPO_ROOT")/.venv/bin/activate" ]; then
+    VENV="$(dirname "$REPO_ROOT")/.venv"
+  else
+    echo "ERROR: no venv found (tried PATHOME_VENV, $REPO_ROOT/.venv, ../.venv)"
+    exit 2
+  fi
+fi
+echo "  venv:       $VENV"
+# shellcheck disable=SC1091
+source "$VENV/bin/activate"
+
 echo "==============================================="
 echo " pathomeood_train  variant=$VARIANT  crop=$CROP"
 echo "==============================================="
