@@ -1,0 +1,128 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Rhizosphaera Needle Cast",
+      "pathogen_scientific_name": {
+        "value": "Rhizosphaera kalkhoffii",
+        "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+        "quote": "Rhizosphaera needle cast is caused by the fungus Rhizosphaera kalkhoffii .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+        "quote": "Rhizosphaera needle cast is a fungal disease of spruce trees"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+        "quote": "causes needles to turn brown and fall off"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "In spring or early summer, new needles at the branch tips are green, while older needles turn brown to purple and eventually fall off, leaving infected trees thin or see-through; the disease typically begins on lower branches and works its way up the tree.",
+          "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+          "quote": "In spring or early summer, new needles at the branch tips are green, and the older needles turn brown to purple."
+        },
+        "diagnostic_features": {
+          "value": "In the following spring, infected needles show rows of tiny black dots on the underside â€” the spore-bearing pycnidia emerging from the stomata, which may be capped with a whitish waxy plug; damage typically starts on the lower branches and moves up the tree.",
+          "url": "https://extension.umaine.edu/ipm/ipddl/publications/5104e/",
+          "quote": "In the following spring, needles that were infected the previous year will show rows of tiny black dots on the underside. These are the spore-bearing structures (pycnidia) emerging from the stomata and may be capped with a whitish waxy plug"
+        },
+        "look_alikes": {
+          "value": [
+            "Several other fungi cause symptoms very similar to Rhizosphaera"
+          ],
+          "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+          "quote": "Several other fungi cause symptoms very similar to Rhizosphaera and correct identification is important."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant disease-tolerant/resistant trees; avoid Colorado blue spruce (Picea pungens); plant Norway (P. abies), white spruce (P. glauca) or red spruce (P. rubens) which are more resistant.",
+          "Plant spruce on sites with acidic, moist, well-drained soils and full sun.",
+          "Whenever possible plant spruce grown from local seed sources.",
+          "Maintain good air circulation; do not overcrowd plants and use the mature tree size as a spacing guide.",
+          "Remove the bottom-most branches from the trunk to increase circulation around the canopy.",
+          "Do not shear spruce, as shearing creates dense growth that stays wet longer.",
+          "Mulch under trees (3â€“4 inch wood chip layer) and remove weeds to reduce humidity in the lower canopy.",
+          "Do not allow sprinklers to wet the needles; water the soil, not the foliage.",
+          "Keep trees healthy and vigorous by watering during drought.",
+          "Use proper pruning technique: prune only when needles are dry, prune healthy trees first, and sterilize shears with 70% rubbing alcohol.",
+          "Remove unhealthy trees or stumps that may serve as a disease reservoir.",
+          "Apply protective fungicides (chlorothalonil, copper hydroxide, mancozeb, azoxystrobin, propiconazole, thiophanate-methyl, copper salts of fatty/rosin acids, or phosphorous acid): make a first application in spring/early summer when new needles are about half (one inch) their mature length, and a second 3â€“4 weeks later."
+        ],
+        "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+        "quote": "Fungicides with the active ingredient chlorothalonil, copper hydroxide or mancozeb will protect new spruce needles from infection by Rhizosphaera. Make one application in spring or early summer when the new needles have grown to half their mature length. Make a second application 3 to 4 weeks later."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Rhizosphaera kalkhoffii",
+          "alternative_value": "Rhizosphaera kalkhofii",
+          "alternative_source_url": "https://extension.umaine.edu/ipm/ipddl/publications/5104e/",
+          "note": "Spelling variant. UMaine spells it 'kalkhofii'; 'kalkhoffii' (UMN) is retained as canonical. No NCBI/MycoBank validation was supplied."
+        }
+      ]
+    },
+    {
+      "disease_name": "Fir-Fern Rust",
+      "pathogen_scientific_name": {
+        "value": "Uredinopsis pteridis",
+        "url": "https://pubs.extension.oregonstate.edu/pnw659/uredinopsis-needle-rust",
+        "quote": "Uredinopsis needle rust Uredinopsis pteridis",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "",
+        "url": "",
+        "quote": ""
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://pubs.extension.oregonstate.edu/pnw659/uredinopsis-needle-rust",
+        "quote": "Yellowing blotches on the upper surface of needles ... White, tube-like fruiting bodies on underside of needles"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Yellowing blotches on the upper surface of needles (needles of any age vulnerable) with white, tube-like fruiting bodies on the underside of needles.",
+          "url": "https://pubs.extension.oregonstate.edu/pnw659/uredinopsis-needle-rust",
+          "quote": "Yellowing blotches on the upper surface of needles Needles of any age vulnerable White, tube-like fruiting bodies on underside of needles"
+        },
+        "diagnostic_features": {
+          "value": "Yellowing blotches on the upper surface of needles with white, tube-like fruiting bodies on the underside; needles of any age are vulnerable.",
+          "url": "https://pubs.extension.oregonstate.edu/pnw659/uredinopsis-needle-rust",
+          "quote": "Yellowing blotches on the upper surface of needles Needles of any age vulnerable White, tube-like fruiting bodies on underside of needles"
+        },
+        "look_alikes": {
+          "value": [
+            "Current season needle necrosis",
+            "Pucciniastrum needle rust"
+          ],
+          "url": "https://pubs.extension.oregonstate.edu/pnw659/uredinopsis-needle-rust",
+          "quote": "Similar symptoms as Current season needle necrosis Pucciniastrum needle rust"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Remove and destroy all bracken ferns nearby (the pathogen depends on this alternate host for survival).",
+          "Spray protective fungicides (if needed) on developing fir shoots.",
+          "Control ferns with herbicides from mid-August through September."
+        ],
+        "url": "https://pubs.extension.oregonstate.edu/pnw659/uredinopsis-needle-rust",
+        "quote": "Remove and destroy all bracken ferns nearby. Pathogen depends on alternate host for survival. Spray protective fungicides (if needed) on developing fir shoots. ... Control ferns with herbicides: mid-August through September"
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    }
+  ],
+  "crop": "Balsam Fir",
+  "generated_date": "2026-06-10"
+}

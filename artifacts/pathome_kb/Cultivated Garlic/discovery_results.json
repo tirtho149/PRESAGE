@@ -1,0 +1,196 @@
+{
+  "crop": "Cultivated Garlic",
+  "candidate_sources": [
+    {
+      "url": "https://extension.sdstate.edu/embellisia-skin-blotch-garlic",
+      "title": "Embellisia Skin Blotch of Garlic - SDSU Extension",
+      "snippet": "Embellisia skin blotch is caused by the fungal pathogen Embellisia allii. Typical symptoms are irregular, dark areas on the outer scales of the garlic bulb; in advanced cases bulb canker consists of corky masses on cloves and bulbs may become soft or mushy. The pathogen overwinters in plant debris, soil, and diseased cloves. Management includes removing diseased scales/bulbs, storing at humidity below 70%, and crop rotation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Embellisia skin blotch",
+        "bulb canker",
+        "Embellisia allii"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/publications/1204e/",
+      "title": "Bulletin #1204, Embellisia Skin Blotch of Garlic - University of Maine Cooperative Extension",
+      "snippet": "Symptoms start as small water-soaked lesions on the bulbs and develop into brown-to-black lesions, generally underneath the bulb epidermis. As the disease develops, the entire bulb may appear black and shriveled as all cloves become infected. Embellisia allii overwinters in plant debris, infested soil, diseased bulbs and cloves. Proper drying and storage at relative humidity less than 70 percent greatly reduce the disease; sorting and removal of diseased bulbs is recommended.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Embellisia skin blotch",
+        "Embellisia allii"
+      ]
+    },
+    {
+      "url": "https://plant-pest-advisory.rutgers.edu/skin-blotch-in-garlic/",
+      "title": "Skin blotch in garlic â€” Plant & Pest Advisory (Rutgers)",
+      "snippet": "Skin blotch in garlic caused by Embellisia allii produces dark blotches on the outer wrapper scales of garlic bulbs. The disease is typically a cosmetic blemish; removing affected outer wrappers usually renders the crop marketable. Disease is favored by wet conditions and poor post-harvest drying.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "skin blotch",
+        "Embellisia allii"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-07-18-1171-PDN",
+      "title": "First Report of Alternaria embellisia (syn. Embellisia allii) Causing Bulb Canker or Skin Blotch on Garlic in Mexico | Plant Disease (APS)",
+      "snippet": "First report documenting Alternaria embellisia (synonym Embellisia allii) causing bulb canker or skin blotch on garlic (Allium sativum), confirming the pathogen's taxonomic reclassification and describing skin blotch and bulb canker symptoms on garlic bulbs.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "skin blotch",
+        "bulb canker",
+        "Alternaria embellisia",
+        "Embellisia allii"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/garlic-mushy-rot/",
+      "title": "Garlic - Mushy Rot - University of Maine Cooperative Extension",
+      "snippet": "University of Maine Extension resource specifically about garlic mushy rot caused by Rhizopus stolonifer. Symptoms consist of a soft, mushy brown rot, with white mycelia and black fruiting bodies (sporangia), giving the disease a 'bearded' appearance.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Garlic mushy rot",
+        "Rhizopus soft rot",
+        "Rhizopus stolonifer (black bread mold)"
+      ]
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8151520/",
+      "title": "Incidence and Etiology of Postharvest Fungal Diseases Associated with Bulb Rot in Garlic (Allium sativum) in Spain",
+      "snippet": "Peer-reviewed study on postharvest fungal diseases causing bulb rot in garlic (Allium sativum), including Rhizopus and other genera responsible for soft rot during storage.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Garlic bulb rot",
+        "postharvest fungal rot",
+        "Rhizopus",
+        "Penicillium",
+        "Fusarium"
+      ]
+    },
+    {
+      "url": "https://www.rasacreekfarm.com/garlic-diseases-and-pests",
+      "title": "Diseases and Pests of Garlic | Rasa Creek Farm",
+      "snippet": "Overview of diseases and pests of garlic, including soft rots. Rhizopus soft rot occurs as large watersoaked areas which become soft and sunken; gray whiskery mould with dusty black spores may grow on the surface.",
+      "source_type": "industry",
+      "diseases_mentioned": [
+        "Rhizopus soft rot",
+        "garlic diseases",
+        "black bread mold"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/garlic-allium-sativum-neck-rot-gray-mold",
+      "title": "Garlic (Allium sativum)-Neck Rot (Gray Mold) | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Gray mold (neck rot) of garlic is caused by Botrytis porri and B. aclada. Pathogens survive winter on dead plant parts in soil, as sclerotia, and on infected bulbs. The disease usually appears first on necks near the soil line after spring greenup; the fungus moves rapidly into the bulb neck region producing a water-soaked appearance. Severe losses most commonly result from excessive irrigation and/or rain.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Neck Rot",
+        "Gray Mold",
+        "Botrytis rot"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/full/10.1079/cabicompendium.9610",
+      "title": "Botryotinia porri (Botrytis rot of garlic) | CABI Compendium",
+      "snippet": "CABI datasheet for Botryotinia porri (anamorph Botrytis porri), the cause of Botrytis rot (gray mold / neck rot) of garlic. Covers host range (limited to Allium), symptoms, biology, distribution, and management of the pathogen on cultivated garlic.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Botrytis rot of garlic",
+        "gray mold",
+        "neck rot",
+        "Botryotinia porri",
+        "Botrytis porri"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/publications/1207e/",
+      "title": "Bulletin #1207, Botrytis Neck Rot in Maine Garlic - University of Maine Cooperative Extension",
+      "snippet": "Initial symptoms usually begin at the neck, where affected tissue softens, becomes water-soaked, and turns brown. In a humid atmosphere a gray, feltlike growth (where spores are produced) appears on rotting scales, and mycelia may develop between scales. Dark-brown-to-black sclerotia develop in the neck or between scales. Disease development is greatest when cool, damp and cloudy weather persists.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Botrytis Neck Rot",
+        "gray mold",
+        "Botrytis porri"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/vegetable/fact-sheets/alliums-botrytis-neck-rot",
+      "title": "Alliums, Botrytis Neck Rot | UMass Center for Agriculture, Food, and the Environment",
+      "snippet": "When B. porri colonizes the bulb and crown, lower leaves show symptoms first; plants appear stunted and green leaves can develop water-soaked lesions, wilt and turn yellow. Symptoms are often first seen at the soil line on the neck as water-soaked lesions. Several species of Botrytis infect garlic including B. porri, which infects through wounds.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Botrytis Neck Rot",
+        "gray mold",
+        "Botrytis porri"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/garlic-allium-sativum-rust",
+      "title": "Garlic (Allium sativum)-Rust | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Early symptoms occur on the foliage as small, white flecks that develop into bright orange spots (uredinia) on both sides of infected leaves. Leaves on severely affected plants turn yellow, wilt, dry up, and die prematurely; bulbs can be shrunken and of poor quality. Caused by Puccinia allii (syn. P. porri). Infection rates are highest at cool temperatures (50-59F) and 100% relative humidity; at least 4 hours of leaf wetness is required. Management: rotate out of Allium crops for 2-3 years, destroy volunteers and Allium weeds, avoid dense plantings and excess nitrogen.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Garlic rust",
+        "Rust (Puccinia allii)",
+        "Puccinia porri"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/agriculture/garlic/maine-garlic-pest-field-notebook/",
+      "title": "Maine Garlic Pest Field Notebook - University of Maine Cooperative Extension",
+      "snippet": "Garlic rust (Puccinia allii): early symptoms are small white-to-yellow spots or flecks on leaves, which turn yellow to orange as the fungus develops, becoming pustules (uredinia) containing spores. The fungus probably overwinters on infected crop residue, volunteer garlic and onions, or wild hosts. Use of healthy seed and rotating out of Allium crops for two to three years can reduce disease severity.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Garlic rust (Puccinia allii)"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-07-12-0686-PDN",
+      "title": "First Report of Garlic Rust Caused by Puccinia allii on Allium sativum in Minnesota | Plant Disease (APS)",
+      "snippet": "Infected garlic (Allium sativum) leaves showed circular to oblong lesions (1 to 3 mm long), which ranged in color from yellow-orange (uredinia) to black (telia). The causal agent was identified as Puccinia allii. Two distinct types of Puccinia allii are known: a garlic type and a leek type.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Garlic rust",
+        "Puccinia allii"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/white-rot/",
+      "title": "White Rot / Onion and Garlic / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Leaves decay at the base, turn yellow, wilt, and topple over, with older leaves collapsing first. Roots are rotted, and the top of the plant can be pulled out of the ground easily. White mycelial growth develops on the bulb, becoming compacted with numerous small spherical black sclerotia. Caused by Sclerotium cepivorum; sclerotia can survive 20 to 30 years in soil.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "White Rot"
+      ]
+    },
+    {
+      "url": "https://extension.umd.edu/resource/white-rot-onion-and-garlic",
+      "title": "White Rot of Onion and Garlic | University of Maryland Extension",
+      "snippet": "White rot of onion and garlic is caused by the fungus Sclerotium cepivorum (teleomorph: Stromatinia cepivora). Symptoms include leaf yellowing, wilting, and white mycelial growth on the bulb with small black sclerotia. Management focuses on planting in pathogen-free fields.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "White Rot"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/garlic-allium-sativum-white-rot",
+      "title": "Garlic (Allium sativum)-White Rot | Pacific Northwest Pest Management Handbooks",
+      "snippet": "White rot of garlic caused by Sclerotium cepivorum. White mycelial growth develops on the bulb; as the disease progresses the mycelium becomes compacted with numerous small spherical black bodies (sclerotia) about the size of a pin head. Sclerotia survive in soil for decades.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "White Rot"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.49145",
+      "title": "Stromatinia cepivora (white rot of onion and garlic) | CABI Compendium",
+      "snippet": "CABI Compendium datasheet on Stromatinia cepivora covering Identity, Distribution, Hosts/Species Affected, Diagnosis, Biology & Ecology, Impacts, and Prevention/Control. Symptoms include leaf yellowing and dieback, stunting, and white fungal mycelium with roundish black sclerotia (size of poppy seeds) on the basal plate and bulb. On a worldwide basis, white rot is probably the most serious threat to Allium crop production of any disease.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "White Rot"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

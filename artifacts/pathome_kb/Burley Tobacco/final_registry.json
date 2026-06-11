@@ -1,0 +1,171 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Blue Mold",
+      "pathogen_scientific_name": {
+        "value": "Peronospora hyoscyami f. sp. tabacina",
+        "url": "https://content.ces.ncsu.edu/blue-mold-of-tobacco",
+        "quote": "Blue mold of tobacco is caused by Peronospora hyoscyami f. sp. tabacina , an oomycete",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Oomycete",
+        "url": "https://content.ces.ncsu.edu/blue-mold-of-tobacco",
+        "quote": "Peronospora hyoscyami f. sp. tabacina , an oomycete that is highly destructive to tobacco seed beds"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://content.ces.ncsu.edu/blue-mold-of-tobacco",
+        "quote": "In severe situations, blue mold may also cause systemic stem infections, resulting in partial or overall stunting of the plant, with narrow, mottled leaves"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Foliar lesions appear yellow, grey, or bluish; single or groups of yellow spots appear on older leaves, often growing together to form light brown necrotic areas, with leaves becoming puckered and distorted. Dense gray-blue sporulation appears on the undersides of leaf lesions.",
+          "url": "https://content.ces.ncsu.edu/blue-mold-of-tobacco",
+          "quote": "Foliar lesions appear yellow, grey, or bluish characteristic of blue mold."
+        },
+        "diagnostic_features": {
+          "value": "The presence of the characteristic gray-blue spores on the bottom of leaves distinguishes it from other problems; dense, gray sporulation on the undersides of leaf lesions is characteristic of blue mold.",
+          "url": "https://content.ces.ncsu.edu/blue-mold-of-tobacco",
+          "quote": "the presence of the characteristic gray-blue spores on the bottom of leaves ( Figure 6 ) distinguishes it from other problems"
+        },
+        "look_alikes": {
+          "value": [
+            "other leaf spots",
+            "cold injury",
+            "malnutrition",
+            "damping-off"
+          ],
+          "url": "https://content.ces.ncsu.edu/blue-mold-of-tobacco",
+          "quote": "In its early stages, blue mold can easily be confused with other leaf spots, cold injury, malnutrition, or damping-off"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Keep the growing area as thoroughly drained as possible",
+          "Maintain appropriate plant spacing and nutrition to prevent excess growth and humidity in the canopy",
+          "Apply fungicides when the pathogen is most vulnerable",
+          "Several fungicides are labeled for blue mold management and can be found in the Flue-Cured Tobacco Guide or the North Carolina Agricultural Chemicals Manual"
+        ],
+        "url": "https://content.ces.ncsu.edu/blue-mold-of-tobacco",
+        "quote": "one of the best strategies to prevent the development of an epidemic is to keep the growing area as thoroughly drained as possible. Maintaining appropriate plant spacing and nutrition to prevent excess growth and humidity in the canopy may also reduce disease. Applying fungicides when the pathogen is most vulnerable is a critical aspect of managing blue mold."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Rhizoctonia Damping-Off, Blight And Rot",
+      "pathogen_scientific_name": {
+        "value": "Rhizoctonia solani",
+        "url": "https://wiki.bugwood.org/Rhizoctonia_solani_(Target_spot_of_Tobacco)",
+        "quote": "Rhizoctonia solani is a soil-borne plant pathogenic fungus in the phylum Basidiomycota",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://wiki.bugwood.org/Rhizoctonia_solani_(Target_spot_of_Tobacco)",
+        "quote": "Rhizoctonia solani is a soil-borne plant pathogenic fungus in the phylum Basidiomycota"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://wiki.bugwood.org/Rhizoctonia_solani_(Target_spot_of_Tobacco)",
+        "quote": "lower leaves turn brown and the presence of brown web-like mycelium may be observed attached to leaves and stems"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Symptoms on leaves begin as small, round, water-soaked spots about 2 to 3 mm in diameter that expand into large circular spots of concentric rings with a characteristic 'bullseye' appearance; tissue in the center may drop out giving a shot-hole appearance.",
+          "url": "https://wiki.bugwood.org/Rhizoctonia_solani_(Target_spot_of_Tobacco)",
+          "quote": "Symptoms on leaves develop around 48 hours after infection and begin as small, round, water-soaked spots about 2 to 3 mm in diameter (Figure 3)."
+        },
+        "diagnostic_features": {
+          "value": "Expanded lesions first become light green, almost transparent, with irregular margins and then form large circular spots of concentric rings, taking on a characteristic 'bullseye' appearance; tissue in the center of the lesions is thin and may drop out, giving a shot-hole appearance to the leaf.",
+          "url": "https://wiki.bugwood.org/Rhizoctonia_solani_(Target_spot_of_Tobacco)",
+          "quote": "Expanded lesions first become light green, almost transparent, with irregular margins and then form large circular spots of concentric rings, taking on a characteristic 'bullseye' appearance (Figures 5-6). Tissue in the center of the lesions is thin and may drop out, giving a shot-hole appearance to the leaf (Figure 7)."
+        },
+        "look_alikes": {
+          "value": [
+            "brown spot caused by Alternaria alternata"
+          ],
+          "url": "https://wiki.bugwood.org/Rhizoctonia_solani_(Target_spot_of_Tobacco)",
+          "quote": "Symptoms of target spot on tobacco are similar to those of brown spot caused by Alternaria alternata ."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Ventilation is critical",
+          "Plants with stem lesions should not be transplanted into the field",
+          "Sanitation and good growing practices are the best defense against target spot",
+          "Maintaining nitrogen within the recommended range of 75 to 125 ppm will help suppress, but not eliminate, this disease",
+          "Steam treatment for used pots and trays (center of stack held at 75 to 80Â°C for one hour)",
+          "Practices that open the plant canopy, increase air circulation, and reduce leaf wetness",
+          "Early harvesting of lower leaves from infected plants",
+          "Isolates of T. harzianum can reduce the growth of R. solani and enhance disease control",
+          "Fungicides containing Azoxystrobin and Mancozeb applied preventatively as a foliar spray"
+        ],
+        "url": "https://wiki.bugwood.org/Rhizoctonia_solani_(Target_spot_of_Tobacco)",
+        "quote": "Fungicides containing Azoxystrobin and Mancozeb have good activity against target spot. These products can be applied preventatively as a foliar spray for target spot."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Tomato Spotted Wilt Virus",
+      "pathogen_scientific_name": {
+        "value": "",
+        "url": "",
+        "quote": "",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Viral",
+        "url": "https://burleytobaccoextension.ca.uky.edu/content/tobacco-spotted-wilt-virus-tswv",
+        "quote": "Tomato Spotted Wilt Virus (TSWV)"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Whole plant"
+        ],
+        "url": "https://burleytobaccoextension.ca.uky.edu/content/tobacco-spotted-wilt-virus-tswv",
+        "quote": "plants are stunted and leaves may become distorted due to uneven growth of foliage"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Symptoms vary with plant age; plants are frequently stunted and leaves may become distorted due to uneven growth of foliage.",
+          "url": "https://burleytobaccoextension.ca.uky.edu/content/tobacco-spotted-wilt-virus-tswv",
+          "quote": "Tomato spotted wilt virus symptoms vary with plant age. Frequently, plants are stunted and leaves may become distorted due to uneven growth of foliage."
+        },
+        "diagnostic_features": {
+          "value": "Necrotic (brown) zonate spots and rings on younger leaves that may merge to form larger necrotic areas.",
+          "url": "https://burleytobaccoextension.ca.uky.edu/content/tobacco-spotted-wilt-virus-tswv",
+          "quote": "Necrotic (brown) zonate spots and rings may occur on younger leaves. Spots may merge together to form larger necrotic areas."
+        },
+        "look_alikes": {
+          "value": [
+            "Fusarium wilt"
+          ],
+          "url": "https://burleytobaccoextension.ca.uky.edu/content/tobacco-spotted-wilt-virus-tswv",
+          "quote": "The symptoms, such as those shown above, are often confused with Fusarium wilt."
+        }
+      },
+      "treatments": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": []
+    }
+  ],
+  "crop": "Burley Tobacco",
+  "generated_date": "2026-06-10"
+}

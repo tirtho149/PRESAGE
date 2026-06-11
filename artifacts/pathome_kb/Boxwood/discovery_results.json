@@ -1,0 +1,96 @@
+{
+  "crop": "Boxwood",
+  "candidate_sources": [
+    {
+      "url": "https://www.extension.purdue.edu/extmedia/bp/bp-203-w.pdf",
+      "title": "Boxwood Blight (BP-203-W) â€” Purdue Plant and Pest Diagnostic Laboratory",
+      "snippet": "PLANT AND PEST DIAGNOSTIC LABORATORY BP-203-W ppdl.purdue.edu Boxwood Blight. Boxwood blight is caused by Calonectria pseudonaviculata. Symptoms include brown leaf spots, black stem streaking and rapid defoliation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Boxwood Blight",
+        "Calonectria pseudonaviculata",
+        "Cylindrocladium buxicola"
+      ]
+    },
+    {
+      "url": "https://homegarden.cahnr.uconn.edu/factsheets/boxwood-blight/",
+      "title": "Boxwood Blight | Home and Garden Education Center | University of Connecticut",
+      "snippet": "Boxwood blight, caused by the fungus Calonectria pseudonaviculata, produces brown leaf spots, black streaks on stems, and extensive defoliation. Favored by temperatures of 64-80Â°F and high humidity. The pathogen was first found in the U.S. in 2011 in Connecticut.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Boxwood Blight",
+        "Calonectria pseudonaviculata"
+      ]
+    },
+    {
+      "url": "https://www.udel.edu/academics/colleges/canr/cooperative-extension/fact-sheets/boxwood-blight/",
+      "title": "Boxwood Blight | University of Delaware Cooperative Extension",
+      "snippet": "Infection from Calonectria manifests as dark leaf spots that coalesce to form brown blotches, leading to defoliation and black streaking on boxwood stem tissue. Also termed Calonectria blight; previously called Cylindrocladium pseudonaviculatum or Cylindrocladium buxicola.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Boxwood Blight",
+        "Calonectria blight",
+        "Calonectria pseudonaviculata",
+        "Cylindrocladium pseudonaviculatum",
+        "Cylindrocladium buxicola"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-12-14-1245-RE",
+      "title": "Soil Inoculum Production, Survival, and Infectivity of the Boxwood Blight Pathogen, Calonectria pseudonaviculata | Plant Disease (APS)",
+      "snippet": "The fungus Calonectria pseudonaviculata causes severe defoliation and death of container grown boxwoods and dieback in in-ground plantings. Study examines soil inoculum production, survival, and infectivity of the boxwood blight pathogen.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Boxwood Blight",
+        "Calonectria pseudonaviculata"
+      ]
+    },
+    {
+      "url": "https://extension.umd.edu/resource/volutella-blight-disease-boxwood",
+      "title": "Volutella Blight Disease of Boxwood | University of Maryland Extension",
+      "snippet": "Volutella blight is caused by the fungi Pseudonectria buxi (formerly Volutella buxi) and Pseudonectria foliicola. Before new growth appears in spring, leaves on tips of infected branches turn red, then bronze and finally yellow, and branches die back. Affected branches show loose bark and girdling; in moist weather the fungus produces salmon-pink fruiting bodies on leaves and stems. Optimal infection 68-77F at RH 85%+. Prune diseased branches in dry weather; copper-based fungicides are effective.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Volutella blight",
+        "Pseudonectria buxi",
+        "Volutella buxi",
+        "Pseudonectria foliicola"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/PMG/GARDEN/PLANTS/DISEASES/pseudcank.html",
+      "title": "Volutella Blight, or Pseudonectria Canker / Home and Landscape / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Volutella blight, or Pseudonectria canker, is a common disease of boxwood, pachysandra, and sarcococca caused by Pseudonectria buxi. Leaves on infected branches turn red then bronze and yellow; bark loosens and girdles. Salmon-pink fruiting bodies form in moist weather. Management includes pruning out diseased wood, improving air circulation, and sanitation.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Volutella blight",
+        "Pseudonectria canker",
+        "Pseudonectria buxi"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0052-DG",
+      "title": "A Diagnostic Guide for Volutella Blight Affecting Buxaceae | Plant Health Progress",
+      "snippet": "Although symptoms of Volutella blight have led some to refer to the disease as a leaf blight and/or twig dieback, the disease is more properly categorized as a canker disease because the visually striking canopy symptoms are typically the outcome of canker-induced girdling. Caused by Pseudonectria buxi and Pseudonectria foliicola, affecting members of the Buxaceae (boxwood, pachysandra, sarcococca).",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Volutella blight",
+        "Pseudonectria buxi",
+        "Pseudonectria foliicola"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/boxwood-buxus-spp-volutella-leaf-stem-blight-canker",
+      "title": "Boxwood (Buxus spp.)-Volutella Leaf and Stem Blight (Canker) | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Volutella leaf and stem blight (canker) of boxwood caused by Pseudonectria buxi (formerly Volutella buxi). Plants subjected to stress (winter injury, bright sunlight, scale insects, stem wounds) are at greater risk. Includes symptom description, disease cycle, and cultural and chemical management recommendations.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Volutella leaf and stem blight",
+        "Volutella canker",
+        "Pseudonectria buxi",
+        "Volutella buxi"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

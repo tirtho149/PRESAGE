@@ -1,0 +1,115 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Neonectria Coccinea",
+      "pathogen_scientific_name": {
+        "value": "Neonectria faginata",
+        "url": "https://content.ces.ncsu.edu/beech-bark-disease",
+        "quote": "There are two species of Neonectria fungi that contribute to BBD: the native N. galligena and the non-native N. faginata (sometimes referred to as N. coccinea var. faginata).",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://content.ces.ncsu.edu/beech-bark-disease",
+        "quote": "a combination of feeding damage by a scale insect and cankers caused by a fungal pathogen"
+      },
+      "affected_parts": {
+        "value": [
+          "Stem",
+          "Vascular"
+        ],
+        "url": "https://content.ces.ncsu.edu/beech-bark-disease",
+        "quote": "Upon settling, beech scales use their specialized mouthparts to penetrate the bark and suck sap from the phloem of beech trees. As this occurs, areas of the tree become damaged, creating fissures."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Signs and symptoms include white woolly scale insects on the bark, orange cankers with rough callous edges that may exude a red-brown fluid, and small bright red fungal fruiting bodies (perithecia) on the bark in fall; severe infection causes girdling, stem breakage, and death.",
+          "url": "https://content.ces.ncsu.edu/beech-bark-disease",
+          "quote": "Scale insects ( Fig. 1 ), cankers ( Fig 2 , 3 ), and fungal fruiting bodies ( Fig. 4 ) are some signs and symptoms of BBD."
+        },
+        "diagnostic_features": {
+          "value": "Adult beech scale insects are round, soft-bodied, and yellow, often noticed due to the white, woolly substance they create; cankers may appear orange with rough edges and may exude a red-brown fluid; fungal perithecia are small and bright red, produced in clusters as superficial perithecia (each about 0.25 mm diameter), while irregular, blocky bark indicates a host resistance response.",
+          "url": "https://content.ces.ncsu.edu/beech-bark-disease",
+          "quote": "These cankers may appear orange, and edges of the cankers become rough as the tree creates callous tissue. Cankers may also exude a red-brown fluid which seeps down the bark . Further, fruiting bodies (perithecia) of the fungi are often present on bark in the fall. These perithecia are small and bright red in color."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Insecticides may be used to prevent infection, more effective if timed for the crawler stage before it develops a protective waxy covering",
+          "Scale insects may be mechanically removed from landscape trees",
+          "Care for landscape trees properly to improve overall tree health",
+          "Promote and breed/plant resistant beech trees in forests",
+          "Report suspected cases of BBD to the North Carolina Forest Service - Forest Health Branch",
+          "Silvicultural selective harvesting of larger beech (about 45% basal area reduction) to improve overstory growth of sugar maple and birch"
+        ],
+        "url": "https://content.ces.ncsu.edu/beech-bark-disease",
+        "quote": "Since BBD begins with feeding by the beech scale insect, insecticides may be used to prevent infection. These insecticides are more effective if timed for the crawler stage because this stage does not yet have a protective waxy covering. Scale insects may also be mechanically removed from landscape trees."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Neonectria faginata",
+          "alternative_value": "Neonectria coccinea var. faginata",
+          "alternative_source_url": "https://content.ces.ncsu.edu/beech-bark-disease",
+          "note": "Same source notes N. faginata is 'sometimes referred to as N. coccinea var. faginata'. It also names a second contributing species, native N. galligena (N. ditissima). No taxonomy validation records were supplied, so the name is unverified (taxonomy_validated=false)."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Stem, Vascular",
+          "alternative_value": "Stem",
+          "alternative_source_url": "https://forestpathology.org/canker/beech-bark/",
+          "note": "Forest Pathology lists only the stem ('Cankers on beech are typically diffuse and spreading'); NC State additionally implicates vascular/phloem tissue ('suck sap from the phloem'). Canonical takes the union."
+        }
+      ]
+    },
+    {
+      "disease_name": "Beech Leaf Disease",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    }
+  ],
+  "crop": "American Beech",
+  "generated_date": "2026-06-10"
+}

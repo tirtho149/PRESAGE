@@ -1,0 +1,656 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Gray Mold",
+      "pathogen_scientific_name": {
+        "value": "Botrytis cinerea",
+        "url": "https://ipm.ucanr.edu/home-and-landscape/botrytis-rot-gray-mold-on-lettuce/",
+        "quote": "The fungus that causes gray mold, Botrytis cinerea , survives in decaying plant material in or on the soil and as sclerotia.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.greenhousecanada.com/managing-botrytis-a-serious-disease-in-greenhouse-lettuce-33048/",
+        "quote": "This ubiquitous fungus readily attacks lettuce because of the moist, enclosed microclimate created in the lettuce head."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Whole plant",
+          "Seed"
+        ],
+        "url": "https://www.greenhousecanada.com/managing-botrytis-a-serious-disease-in-greenhouse-lettuce-33048/",
+        "quote": "B. cinerea can infect almost all plant parts, especially tender tissues, wounds, and senescent and dead tissues when moisture is available."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Leaves on or near the soil first develop a dark, water-soaked lesion and turn light brown, then a gray or brown fuzzy growth of fungal spores appears; a soft rot of leaves and stems develops, plants shrivel and the whole head wilts and rots (beginning with the oldest leaves) until the plant collapses, with abundant gray powdery spore masses and black sclerotia forming under rotted parts.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-gray-mold",
+          "quote": "The initial symptom is a dark, water-soaked lesion. A soft rot of infected leaves and stems occur as the pathogen grows into healthy tissues. Seedlings will fall over if infection girdles the stem. Any time before harvest, leaves may wilt, beginning with the oldest leaves and continuing until the plant collapses. Gray, powdery spore masses form, particularly on shaded leaves. Black sclerotia may also develop."
+        },
+        "diagnostic_features": {
+          "value": "A dense gray or light brown sporulation (abundant fuzzy spore masses) appears over the damaged areas when moisture is abundant; this gray sporulation distinguishes Botrytis from lettuce drop. The fungus produces small, black, usually flattened sclerotia on the plant's underside.",
+          "url": "https://ipm.ucanr.edu/home-and-landscape/botrytis-rot-gray-mold-on-lettuce/",
+          "quote": "A dense gray or light brown sporulation appears over the damaged areas when moisture is abundant; this gray sporulation distinguishes Botrytis from lettuce drop."
+        },
+        "look_alikes": {
+          "value": [
+            "sclerotinia rot",
+            "lettuce drop"
+          ],
+          "url": "https://ipm.ucanr.edu/home-and-landscape/botrytis-rot-gray-mold-on-lettuce/",
+          "quote": "Symptoms of Botrytis crown rot are similar to sclerotinia rot"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant on well-drained, raised beds, use furrow irrigation whenever possible, and keep the surface of vegetable beds as dry as possible",
+          "Limit irrigation so plant leaves do not remain wet; avoid overhead irrigation; when sprinkling, do so in the morning so foliage dries quickly",
+          "Harvest in advance of rainy or humid, cool conditions whenever possible",
+          "Avoid injury to plant tissues",
+          "Remove and dispose of diseased plants as soon as they appear and discard plant residue/crop debris at planting to prevent infection of the next planting",
+          "Control other pathogens that infect leaves or lower stem tissues",
+          "In greenhouse production, control climate: keep air moving at the plant surface with horizontal and vertical air flow, avoid condensation, reduce relative humidity, and improve dehumidification",
+          "Establish a good integrated pest management approach from the beginning of the crop and practice end-of-crop sanitation (clean and sanitize greenhouses regularly)",
+          "Discard any seedlings that appear damaged or weak",
+          "Rotate fungicide chemistries and avoid repeated use of the same fungicides to reduce resistance risk; consult a local extension specialist",
+          "Use approved biofungicides preventively (e.g., Bacillus subtilis, Trichoderma viride, Streptomyces griseoviridis; Actinovate AG; Romeo)",
+          "Cannonball WG (Group 12) at 7 oz/A on 7- to 10-day intervals",
+          "Carboxamide (Group 7) formulations â€” no more than two sequential applications before alternating mode of action; e.g., Endura at 8-11 oz/A; Fontelis at 14-24 fl oz/A",
+          "OSO 5% SC (Group 19) at 6.5-13 fl oz/A on 7- to 14-day intervals",
+          "Rovral 4 Flowable (Group 2) at 1.5-2 pints/A",
+          "Trilogy at 0.5%-1% (not labeled in Oregon)",
+          "Vacres (potassium bicarbonate) at 2.5-5 lb/A on 7- to 14-day intervals",
+          "Miravis Prime (Group 7 + 12) at 13.4 fl oz/A; Switch 62.5WG (Group 12 + 9) at 11-14 oz/A"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-gray-mold",
+        "quote": "Cultural control Avoid injury to plant tissues. Limit irrigation so plant leaves do not remain wet; avoid overhead irrigation. Control other pathogens that infect leaves or lower stem tissues. Minimize crop debris/residues at planting. In greenhouse production, reduce the relative humidity. Chemical control Cannonball WG (Group 12) at 7 oz/A on 7- to 10-day intervals."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Gray Mold (Botrytis)",
+          "alternative_value": "Botrytis Rot (Gray Mold) on Lettuce",
+          "alternative_source_url": "https://ipm.ucanr.edu/home-and-landscape/botrytis-rot-gray-mold-on-lettuce/",
+          "note": "Greenhouse Canada uses the British-spelling variant 'Botrytis grey mold'; all refer to the same disease."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Botrytis cinerea",
+          "alternative_value": "Botryotinia fuckeliana (teleomorph)",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-gray-mold",
+          "note": "PNW Handbook lists the sexual/teleomorph stage as Botryotinia fuckeliana for Botrytis cinerea. No NCBI/MycoBank validation was supplied, so the anamorph name is retained as canonical."
+        }
+      ]
+    },
+    {
+      "disease_name": "Downy Mildew",
+      "pathogen_scientific_name": {
+        "value": "Bremia lactucae",
+        "url": "https://edis.ifas.ufl.edu/publication/HS1403",
+        "quote": "LDM is caused by the oomycete Bremia lactucae Regel.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Oomycete",
+        "url": "https://edis.ifas.ufl.edu/publication/HS1403",
+        "quote": "LDM is caused by the oomycete Bremia lactucae Regel."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Whole plant",
+          "Root"
+        ],
+        "url": "https://edis.ifas.ufl.edu/publication/HS1403",
+        "quote": "Primarily a foliar disease, LDM has a direct effect on both yield and quality of lettuce. ... Although LDM is usually most severe on mature outer leaves, the disease may become systemic, infecting lettuce heads internally and even roots."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Symptoms begin as chlorotic yellow spots on the underside of the leaf, followed within 24 to 48 hours by a white, cotton-like growth (sporulation) on the lower leaf surface; lesions become chlorotic, then turn brown and necrotic.",
+          "url": "https://edis.ifas.ufl.edu/publication/HS1403",
+          "quote": "Symptoms of LDM appear initially as chlorotic yellow spots on the underside of the leaf surface. Under favorable conditions, a white, cotton-like growth that is indicative of the formation of sporangia (sporulation) generally appears on the lower leaf surface within 24 to 48 hours following initial symptom development"
+        },
+        "diagnostic_features": {
+          "value": "Lesions are often delineated by leaf veins, giving infections a rather angular appearance, and a profuse white, cotton-like growth (sporulation) forms on the lower leaf surface.",
+          "url": "https://edis.ifas.ufl.edu/publication/HS1403",
+          "quote": "During early stages of disease development, lesions are often delineated by leaf veins, giving infections a rather angular appearance (Figures 2B and 2C)."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use a well-designed integrated LDM management plan that includes host resistance, chemicals, and cultural practices",
+          "Use cultivar (host) resistance where available â€” the best form of LDM control",
+          "Establish a lettuce-free period, crop rotation, and rapid destruction of infected crop residues",
+          "Use irrigation practices such as drip irrigation that minimize leaf wetness or soil moisture",
+          "Apply broad-spectrum protectants (sulfur, copper fungicides, mancozeb) and more specific oomycete compounds (translaminar or systemic)",
+          "Initiate prophylactic chemical applications when conditions favorable for pathogen infection occur"
+        ],
+        "url": "https://edis.ifas.ufl.edu/publication/HS1403",
+        "quote": "a well-designed integrated LDM management plan that includes host resistance, the use of chemicals, and any cultural practices is strongly encouraged. ... Cultivar resistance, when available, is the best form of LDM control. ... Establishment of a lettuce-free period, crop rotation, and rapid destruction of infected crop residues are recommended cultural control measures to reduce LDM in Florida lettuce. ... These include several broad-spectrum protectants, such as sulfur, copper fungicides, and mancozeb, as well as an assortment of more specific oomycete compounds, many of which are translaminar or systemic."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Lettuce Chlorosis Virus",
+      "pathogen_scientific_name": {
+        "value": "",
+        "url": "",
+        "quote": "",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Viral",
+        "url": "https://www.agdia.com/company/news/1747690/agdia-releases-test-kit-for-lettuce-chlorosis-virus-lcv",
+        "quote": "Lettuce chlorosis virus (LCV) is a member of the Crinivirus genus and known to cause disease on several economically important plant species."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Whole plant"
+        ],
+        "url": "https://gd.eppo.int/reporting/article-3501",
+        "quote": "stunted lettuces with yellow leaves and interveinal chlorosis were collected in 1992/1993 in the Imperial valley"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "On lettuce, infected plants are stunted with yellow leaves and interveinal chlorosis; on other hosts (e.g. Cannabis) LCV causes interveinal and full-leaf chlorosis, leaf distortion, necrosis, purple leaf discoloration and stunting.",
+          "url": "https://gd.eppo.int/reporting/article-3501",
+          "quote": "stunted lettuces with yellow leaves and interveinal chlorosis were collected in 1992/1993 in the Imperial valley"
+        },
+        "diagnostic_features": {
+          "value": "Symptoms on lettuce of LCV are generally indistinguishable from lettuce infectious chlorosis, but Western blot analysis with the LCV antisera can distinguish the two viruses.",
+          "url": "https://gd.eppo.int/reporting/article-3501",
+          "quote": "In general symptoms on lettuce of LCV and lettuce infectious chlorosis are indistinguishable. But Western blot analysis with the LCV antisera can distinguish the two viruses."
+        },
+        "look_alikes": {
+          "value": [
+            "lettuce infectious chlorosis closterovirus",
+            "abiotic physiological disorders",
+            "nutrient imbalances"
+          ],
+          "url": "https://gd.eppo.int/reporting/article-3501",
+          "quote": "In general symptoms on lettuce of LCV and lettuce infectious chlorosis are indistinguishable."
+        }
+      },
+      "treatments": {
+        "value": [
+          "No therapeutics exist for viral infections in mature plants.",
+          "Exclusion is the most important virus management strategy.",
+          "Diagnostic testing is the cornerstone of an effective management program, as it is the primary means of identifying viruses and excluding infected plants before introduction into plant inventories and shipment of propagative materials."
+        ],
+        "url": "https://www.agdia.com/company/news/1747690/agdia-releases-test-kit-for-lettuce-chlorosis-virus-lcv",
+        "quote": "No therapeutics exist for viral infections in mature plants.  Therefore, exclusion is the most important virus management strategy.  Diagnostic testing is the cornerstone of an effective management program, as it is the primary means of identifying viruses and excluding infected plants before introduction into plant inventories and shipment of propagative materials."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Lettuce chlorosis virus (LCV)",
+          "alternative_value": "Lettuce chlorosis closterovirus (LCV)",
+          "alternative_source_url": "https://gd.eppo.int/reporting/article-3501",
+          "note": "EPPO uses the older 'closterovirus' designation; Agdia uses current 'Lettuce chlorosis virus' (Crinivirus genus). Same virus."
+        },
+        {
+          "field": "visual_symptoms.summary",
+          "canonical_value": "On lettuce: stunting, yellow leaves, interveinal chlorosis (EPPO).",
+          "alternative_value": "On Cannabis: interveinal and full-leaf chlorosis, leaf distortion, necrosis, purple leaf discoloration and stunting (Agdia).",
+          "alternative_source_url": "https://www.agdia.com/company/news/1747690/agdia-releases-test-kit-for-lettuce-chlorosis-virus-lcv",
+          "note": "Symptom descriptions differ by host; lettuce-host description selected as canonical for this crop registry."
+        }
+      ]
+    },
+    {
+      "disease_name": "Mirafiori Lettuce Big-Vein Virus",
+      "pathogen_scientific_name": {
+        "value": "Mirafiori lettuce big-vein virus (MLBVV)",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-big-vein",
+        "quote": "Mirafiori lettuce big-vein virus (MLBVV) (formerly known as mirafiori lettuce virus) has been recently identified as a causal agent of big vein",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Viral",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-big-vein",
+        "quote": "This viral disease is soilborne and transmitted by the oomycete, Olpidium virulentus"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Whole plant"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-big-vein",
+        "quote": "Leaf veins appear decidedly larger because of clear areas along the veins. Leaves may be puckered and mottled. Heads fail to size up. Often only a rosette of leaves forms, but no head."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Leaf veins appear enlarged due to clear areas along the veins; leaves may be puckered and mottled, heads fail to size up, and often only a rosette of leaves forms with no head.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-big-vein",
+          "quote": "Leaf veins appear decidedly larger because of clear areas along the veins. Leaves may be puckered and mottled. Heads fail to size up. Often only a rosette of leaves forms, but no head."
+        },
+        "diagnostic_features": {
+          "value": "Leaf veins appear decidedly larger because of clear areas along the veins; leaves may be puckered and mottled.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-big-vein",
+          "quote": "Leaf veins appear decidedly larger because of clear areas along the veins. Leaves may be puckered and mottled."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "On badly infested land, use long rotations.",
+          "Avoid early planting in wet soil or poorly draining fields with a history of disease.",
+          "Select land not previously planted to lettuce, if possible.",
+          "Removing crop residue, rather than working it into the soil, prevents increase of the disease.",
+          "Steam treatment of soil for seedbeds or in the greenhouse will reduce the population of vector and virus."
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-big-vein",
+        "quote": "On badly infested land, use long rotations. Avoid early planting in wet soil or poorly draining fields with a history of disease. Select land not previously planted to lettuce, if possible. Removing crop residue, rather than working it into the soil, prevents increase of the disease. Steam treatment of soil for seedbeds or in the greenhouse will reduce the population of vector and virus."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Mirafiori lettuce big-vein virus (MLBVV)",
+          "alternative_value": "Mirafiori lettuce virus",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-big-vein",
+          "note": "Source notes MLBVV was 'formerly known as mirafiori lettuce virus'; current name retained as canonical. Not independently taxonomy-validated (validation set was empty)."
+        }
+      ]
+    },
+    {
+      "disease_name": "Powdery Mildew",
+      "pathogen_scientific_name": {
+        "value": "Golovinomyces cichoracearum",
+        "url": "https://ipm.ucanr.edu/agriculture/lettuce/powdery-mildew/",
+        "quote": "Powdery Mildew Golovinomyces cichoracearum",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ipm.ucanr.edu/agriculture/lettuce/powdery-mildew/",
+        "quote": "The powdery mildew fungus appears as a gray-white, powdery growth on both upper and lower sides of lettuce leaves."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/lettuce/powdery-mildew/",
+        "quote": "The powdery mildew fungus appears as a gray-white, powdery growth on both upper and lower sides of lettuce leaves."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "A gray-white, powdery growth appears on both upper and lower sides of lettuce leaves, which may become deformed and buckled, and in advanced stages dry out and turn brown.",
+          "url": "https://ipm.ucanr.edu/agriculture/lettuce/powdery-mildew/",
+          "quote": "The powdery mildew fungus appears as a gray-white, powdery growth on both upper and lower sides of lettuce leaves. Such infections may cause deformity and buckling of the leaves. In advanced stages, leaves may begin to dry out and turn brown."
+        },
+        "diagnostic_features": {
+          "value": "Chains of spores, visible with a hand lens, distinguish powdery mildew from downy mildew (which has branched fruiting bodies); small, brown spherical cleistothecia may be seen on the leaves.",
+          "url": "https://ipm.ucanr.edu/agriculture/lettuce/powdery-mildew/",
+          "quote": "Chains of spores, which are visible with a hand lens, distinguish powdery mildew from downy mildew, which has branched fruiting bodies."
+        },
+        "look_alikes": {
+          "value": [
+            "downy mildew"
+          ],
+          "url": "https://ipm.ucanr.edu/agriculture/lettuce/powdery-mildew/",
+          "quote": "Chains of spores, which are visible with a hand lens, distinguish powdery mildew from downy mildew, which has branched fruiting bodies."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Begin fungicide applications when powdery mildew is first observed on plants.",
+          "QUINOXYFEN (Quintec) 4â€“6 fl oz",
+          "SULFUR (Microthiol Disperss) 5â€“6 lb",
+          "PENTHIOPYRAD (Fontelis) 14â€“24 fl oz",
+          "MYCLOBUTANIL (Rally 40WSP) 5 oz",
+          "AZOXYSTROBIN (Quadris) 12.3â€“15.4 fl oz",
+          "Alternate with a fungicide, such as sulfur, that has a different mode-of-action group number."
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/lettuce/powdery-mildew/",
+        "quote": "Begin fungicide applications when powdery mildew is first observed on plants."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Tomato Spotted Wilt Virus",
+      "pathogen_scientific_name": {
+        "value": "",
+        "url": "",
+        "quote": "",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Viral",
+        "url": "https://ipm.ucanr.edu/agriculture/lettuce/tospoviruses/",
+        "quote": "Tomato spotted wilt virus and Impatiens necrotic spot virus are closely related tospoviruses that cause indistinguishable symptoms in lettuce."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Whole plant"
+        ],
+        "url": "https://extension.usu.edu/vegetableguide/leafy-greens/tswv",
+        "quote": "Initially, infected leaves show bronzing, and small brown lesions begin to develop along the veins. ... plants often become systemically infected, and the virus spreads from the original infection point throughout the entire plant."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Leaves develop brown to dark brown spots and dead (necrotic) areas; as necrosis spreads much of the leaf browns, dries out, and dies, with leaf yellowing, brown spots, and leaf deformity on both older and newer leaves. Margins may wilt and yellow, and plants infected early may become stunted and then die.",
+          "url": "https://ipm.ucanr.edu/agriculture/lettuce/tospoviruses/",
+          "quote": "Leaves of infected plants develop brown to dark brown spots and dead (necrotic) areas. ... As necrosis spreads, much of the leaf browns, dries out, and dies. Leaf yellowing, brown spots, and leaf deformity can be observed on both older and newer leaves. Margins of leaves may wilt and become yellow. Plants infected early in development may become stunted and then die."
+        },
+        "diagnostic_features": {
+          "value": "Leaf bronzing with small brown lesions developing along the veins that expand and merge into large necrotic areas.",
+          "url": "https://extension.usu.edu/vegetableguide/leafy-greens/tswv",
+          "quote": "infected leaves show bronzing, and small brown lesions begin to develop along the veins. Lesions expand over time and may merge, causing large necrotic areas on leaves."
+        },
+        "look_alikes": {
+          "value": [
+            "Symptoms on tomato leaves",
+            "Lettuce necrotic stunt virus (lettuce dieback)",
+            "Tomato bushy stunt virus",
+            "Fertilizer or pesticide application burn damage"
+          ],
+          "url": "https://ipm.ucanr.edu/agriculture/lettuce/tospoviruses/",
+          "quote": "Necrotic tissue can resemble burn damage caused by fertilizer or pesticide applications. ... Symptoms caused by these tospoviruses and by the lettuce dieback pathogen Lettuce necrotic stunt virus can be confused."
+        }
+      },
+      "treatments": {
+        "value": [
+          "There is no cure for an infected plant; remove and destroy diseased/infected plants",
+          "The best management strategy is to prevent an infection",
+          "Scout for and manage thrips populations (control the thrips that vector both tospoviruses)",
+          "Plant lettuce upwind from susceptible crops; avoid planting lettuce next to any potential source of the virus",
+          "Maintain good weed control on field edges and in backyards to reduce virus reservoir hosts",
+          "Cultivate nearby weedy areas before lettuce plants emerge to reduce thrips problems as weeds dry out"
+        ],
+        "url": "https://extension.usu.edu/vegetableguide/leafy-greens/tswv",
+        "quote": "There is no cure for an infected plant. Remove and destroy diseased plants. The best management strategy is to prevent an infection. ... Scout for and manage thrips populations. ... Plant lettuce upwind from susceptible crops. ... Maintain good weed control. Weeds can be a host TSWV and reservoir. Good weed control on field edges and in backyards can reduce the chance of infections."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Sclerotinia Stem Rot",
+      "pathogen_scientific_name": {
+        "value": "Sclerotinia sclerotiorum and Sclerotinia minor",
+        "url": "https://content.ces.ncsu.edu/lettuce-drop",
+        "quote": "Lettuce drop is caused by the fungal pathogens Sclerotinia sclerotiorum and Sclerotinia minor .",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://content.ces.ncsu.edu/lettuce-drop",
+        "quote": "Lettuce drop is caused by the fungal pathogens Sclerotinia sclerotiorum and Sclerotinia minor ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Whole plant"
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/lettuce/lettuce-drop/",
+        "quote": "Sclerotinia minor only infects the stems and leaves in contact with the soil."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Infection causes a brown, soft decay that destroys the plant crown tissue; older leaves wilt and eventually the entire plant wilts and collapses. Lower leaves wilt and drop to the soil surface, and where the leaf contacts the soil a white mycelium forms and sclerotia develop.",
+          "url": "https://ipm.ucanr.edu/agriculture/lettuce/lettuce-drop/",
+          "quote": "Once infection takes place, the fungus will cause a brown, soft decay that eventually destroys the plant crown tissue . Older leaves then wilt and later the entire plant will wilt and collapse, making it unharvestable."
+        },
+        "diagnostic_features": {
+          "value": "Profuse white mycelia and small (up to 0.125 inch / 3 mm) black, hard sclerotia form on the outside of the decayed crown for S. minor, while S. sclerotiorum forms larger sclerotia (0.25â€“0.50 inch) and produces airborne spores that can infect upper leaves causing a watery soft rot.",
+          "url": "https://ipm.ucanr.edu/agriculture/lettuce/lettuce-drop/",
+          "quote": "Profuse amounts of white mycelia and small [up to 0.125 inch (3 mm)], black, hard, resting bodies (sclerotia) form on the outside of the decayed crown."
+        },
+        "look_alikes": {
+          "value": [
+            "Verticillium wilt",
+            "Botrytis crown rot",
+            "Phoma basal rot"
+          ],
+          "url": "https://ipm.ucanr.edu/agriculture/lettuce/lettuce-drop/",
+          "quote": "Symptoms caused by Sclerotinia species could resemble Verticillium wilt, Botrytis crown rot, and Phoma basal rot symptoms."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Crop rotation with non-hosts; for S. minor, crop rotations and deep inversion plowing may help reduce incidence.",
+          "Deep plowing to keep sclerotia from the soil surface.",
+          "Avoid known crop hosts including beans, cauliflower, celery, corn salad, endive, escarole, fennel, pepper, radicchio, and tomato.",
+          "Avoid cover crop hosts including Austrian winter pea, mustards, phacelia, and vetch.",
+          "Avoid overly wet soils and keep the bed surface as dry as possible with careful irrigation; use drip irrigation below the soil surface.",
+          "Level land for even water distribution and good drainage, with beds as high as possible.",
+          "Collect and remove infected plants.",
+          "Use cultural controls in an organically certified crop.",
+          "For S. minor, apply protectant fungicides after thinning, directed to the base of young plants before they become too large; for S. sclerotiorum, apply fungicides beginning at the rosette stage when conditions favor disease.",
+          "Before disease appears, apply fungicides on a 14-day interval.",
+          "Example products: Iprodione (Rovral 4F), Cyprodinil/Fludioxonil (Switch 62.5WG), Boscalid (Endura), Fludioxonil (Cannonball WG), Dicloran (Botran)."
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/lettuce/lettuce-drop/",
+        "quote": "For S. minor, crop rotations and deep inversion plowing may be helpful in reducing incidence of lettuce drop. Avoid known crop hosts including beans, cauliflower, celery, corn salad, endive, escarole, fennel, pepper, radicchio, and tomato."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Southern Blight",
+      "pathogen_scientific_name": {
+        "value": "Agroathelia rolfsii",
+        "url": "https://content.ces.ncsu.edu/southern-blight-of-vegetable-crops",
+        "quote": "Southern blight is caused by the soil-born fungus Agroathelia rolfsii (= Sclerotium rolfsii ).",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://wiki.bugwood.org/Sclerotium_rolfsii_(Southern_blight_of_vegetables_and_melons)",
+        "quote": "Sclerotium rolfsii is a necrotrophic, soilborne fungal plant pathogen"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Root",
+          "Pod",
+          "Whole plant"
+        ],
+        "url": "https://wiki.bugwood.org/Sclerotium_rolfsii_(Southern_blight_of_vegetables_and_melons)",
+        "quote": "Early symptoms consist of water-soaked lesions on crown and lower stem tissue. The disease usually is recognized by the yellowing and wilting of foliage, followed by a complete collapse of the plant... Fruit and other fleshy organs near the soil surface may become infected with S. rolfsii"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Coarse white strands of mycelium grow in a fan-shaped pattern on lower stems, leaf litter, and soil, followed by tan-to-brown mustard-seed-sized sclerotia. A brown to black lesion develops on the lower stem near the soil line and can girdle the stem, causing sudden permanent wilt and complete collapse; infected fruit develops soft, water-soaked, sunken star-shaped spots.",
+          "url": "https://wiki.bugwood.org/Sclerotium_rolfsii_(Southern_blight_of_vegetables_and_melons)",
+          "quote": "Signs of infection include the development of coarse white strands of mycelium growing in a fan-shaped pattern on lower stems, leaf litter, and soil... After 7 to 14 days, tan-to-brown, mustard-seed-sized (0.5 to 1.5 mm) sclerotia form on the mycelial mat... Early symptoms consist of water-soaked lesions on crown and lower stem tissue. The disease usually is recognized by the yellowing and wilting of foliage, followed by a complete collapse of the plant."
+        },
+        "diagnostic_features": {
+          "value": "Coarse white mycelium in a distinctive fan-shaped pattern on lower stems/crown â€” at least a trace evident even under dry conditions â€” plus tan-to-reddish-brown, spherical, mustard-seed-sized sclerotia (0.5 to 2 mm) on the mycelial mat; on fruit, sunken water-soaked star-shaped spots with no offensive odor.",
+          "url": "https://wiki.bugwood.org/Sclerotium_rolfsii_(Southern_blight_of_vegetables_and_melons)",
+          "quote": "the development of coarse white strands of mycelium growing in a fan-shaped pattern on lower stems, leaf litter, and soil... Even under dry conditions, at least a trace of white mycelium should be evident on the surface of the stem or crown... tan-to-brown, mustard-seed-sized (0.5 to 1.5 mm) sclerotia form on the mycelial mat"
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Avoid planting in fields with a history of southern blight; selecting fields free of S. rolfsii is the most successful method of control.",
+          "Rotate host crops for two years or more with non-hosts such as corn, wheat, barley, or small grains to reduce inoculum; avoid rotations with peanuts, soybeans, cabbage, and carrots.",
+          "Maintain weed control during rotations and reduce or eliminate weed populations.",
+          "Modify planting dates to avoid conditions favorable to disease.",
+          "Bury infected plant debris and sclerotia via deep plowing to invert the soil.",
+          "Ensure the previous crop is decomposed prior to planting (may require disking several times in fall and spring).",
+          "Remove symptomatic plants.",
+          "Maintain adequate soil pH; lower soil pH encourages disease. Certain fertilization regimes (high calcium, ammonium-type, and non-acidifying fertilizers such as calcium nitrate) may suppress disease.",
+          "Avoid close plant spacing and over-irrigation; avoid injury during cultivation.",
+          "Use black plastic mulch, row covers, or staking to keep fruit from touching the soil.",
+          "Use resistant/grafted material: tomato rootstocks 'Maxifort', 'Big Power', 'Beaufort'; resistant tomato breeding lines (5635M, 5707M, 5719M, 5737M, 5876M, 5913M); pepper cultivar 'Golden California Wonder'; grafting onto interspecific hybrid rootstocks.",
+          "Apply labeled fungicides for tomato and pepper.",
+          "Fumigate soil with broad-spectrum chemicals such as chloropicrin and metam sodium, applied days to weeks prior to planting (toxic to sclerotia and mycelium).",
+          "Use organic amendments (cotton gin trash, swine manure) to improve colonization by antagonistic Trichoderma spp.",
+          "Apply biological control agents such as Gliocladium virens, Bacillus subtilis, Penicillium spp., and an isolate of Streptomyces philanthi."
+        ],
+        "url": "https://content.ces.ncsu.edu/southern-blight-of-vegetable-crops",
+        "quote": "However, losses can be reduced by adopting the following management strategies: Avoid planting in fields with a history of southern blight. Rotate host crops with corn, wheat, barley, or other non-host crops to reduce inoculum levels in soil. ... Several fungicides are labeled for use on tomato and pepper to manage southern blight (Table 1)."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Agroathelia rolfsii",
+          "alternative_value": "Sclerotium rolfsii (synonym); Athelia rolfsii",
+          "alternative_source_url": "https://wiki.bugwood.org/Sclerotium_rolfsii_(Southern_blight_of_vegetables_and_melons)",
+          "note": "Both sources treat Agroathelia rolfsii as the accepted name with Sclerotium rolfsii (and Athelia rolfsii) as synonyms. No NCBI/MycoBank validation was provided, so the canonical name is taken from the cited sources rather than taxonomy-validated."
+        },
+        {
+          "field": "visual_symptoms.diagnostic_features (sclerotia size)",
+          "canonical_value": "0.5 to 1.5 mm (mustard-seed-sized), Bugwoodwiki",
+          "alternative_value": "1 to 2 mm in diameter",
+          "alternative_source_url": "https://content.ces.ncsu.edu/southern-blight-of-vegetable-crops",
+          "note": "Sources give slightly different sclerotia diameter ranges; the diagnostic_features value spans both (0.5 to 2 mm)."
+        }
+      ]
+    },
+    {
+      "disease_name": "Cercospora Leaf Spot",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Rhizoctonia Damping-Off, Blight And Rot",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Sclerotinia Timber Rot",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    }
+  ],
+  "crop": "Lettuce",
+  "generated_date": "2026-06-10"
+}

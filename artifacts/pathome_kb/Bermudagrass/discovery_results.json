@@ -1,0 +1,67 @@
+{
+  "crop": "Bermudagrass",
+  "candidate_sources": [
+    {
+      "url": "https://extension.psu.edu/turfgrass-diseases-pink-patch-causal-fungus-limonomyces-roseipellis",
+      "title": "Turfgrass Diseases: Pink Patch (Causal Fungus: Limonomyces Roseipellis)",
+      "snippet": "Pink patch symptoms appear as circular or irregular-shaped patches of blighted turf, typically with a pink cast, and the disease is usually restricted to the leaves, leaf sheaths, and stems of turfgrasses. L. roseipellis overwinters as dormant mycelium on dead leaves and stems. Disease develops when air temperatures are 65 to 75 F during prolonged rainy or humid weather in late spring and early summer.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pink patch",
+        "Limonomyces roseipellis"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-10-12-0986-PDN",
+      "title": "First Report of Limonomyces roseipellis Causing Pink Patch on Bermudagrass in South China | Plant Disease",
+      "snippet": "Infected leaves were covered with pink, gelatinous fungal mycelium, which resulted in the production of chlorotic lesions. Lesions expanded, became water-soaked, and leaves died basipetally. The fungus is characterized by the presence of clamp connections. First report of L. roseipellis causing pink patch on bermudagrass.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Pink patch",
+        "Limonomyces roseipellis"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/turf/fact-sheets/red-thread-pink-patch",
+      "title": "Red Thread and Pink Patch : Turf : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Red thread (Laetisaria fuciformis) and pink patch (Limonomyces roseipellis) are foliar turfgrass diseases. Pink patch appears as circular or irregular patches with a pink cast; leaves become covered with fluffy pink mycelium. Management includes balanced nitrogen fertility, proper irrigation, sharp mower blades, and improving light and airflow.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Red thread",
+        "Pink patch",
+        "Laetisaria fuciformis",
+        "Limonomyces roseipellis"
+      ]
+    },
+    {
+      "url": "https://site.extension.uga.edu/tattnall/2020/05/leaf-rust-on-bermudagrass/",
+      "title": "Leaf Rust on Bermudagrass | Tattnall County Extension",
+      "snippet": "Leaf rust or Puccinia disease caused by Puccinia cynodontis has similar impacts as Helminthosporium in bermudagrass. Numerous, small, red to orange lesions can be observed on leaf and stem tissue. Puccinia or rust lesions start as a small raised area or blister (pustule). The blister ruptures revealing a powdery mass of orange red urediniospores. Both diseases typically appear in late summer when weather is warm (75-90F) with high relative humidity. Heavy infestations can decrease both hay yields and hay quality.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Leaf rust",
+        "Puccinia (rust)",
+        "Helminthosporium leaf spot"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/bermudagrass-seed-production/rust/",
+      "title": "Rust / Bermudagrass Seed Production / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Rust on bermudagrass is caused by Puccinia species. Tiny dark brown to orange pustules appear on the grass blades; the pustules burst and release dusty reddish-brown spore masses. Humid, moderate temperatures are conducive to disease development and periods of leaf wetness (dew) must occur for infection. Management: maintain proper fertility, minimize leaf wetness, keep plants growing vigorously, and apply fungicides when pustules first appear.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Rust (Puccinia spp.)"
+      ]
+    },
+    {
+      "url": "https://extension.psu.edu/turfgrass-diseases-rust-diseases-causal-fungi-puccinia-spp",
+      "title": "Turfgrass Diseases: Rust Diseases (Causal fungi: Puccinia spp.)",
+      "snippet": "Rust diseases of turfgrass are caused by Puccinia spp. The lawn or field looks bronze/yellow-orange from a distance; tiny dark brown to orange pustules appear on grass blades and release dusty reddish-brown spore masses that coat shoes. Disease is favored by warm humid conditions and slow-growing turf. Management includes adequate nitrogen fertilization, minimizing leaf wetness, and fungicide application.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rust (Puccinia spp.)"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

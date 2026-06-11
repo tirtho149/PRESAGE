@@ -1,0 +1,369 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Phytophthora Root And Stem Rot",
+      "pathogen_scientific_name": {
+        "value": "Phytophthora megasperma",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/cabbage-cauliflower-brassica-oleracea-phytophthora-root-rot",
+        "quote": "Phytophthora megasperma is a fungus-like microorganism that survives as resistant spores in the soil and infects its hosts with swimming zoospores under wet conditions.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "",
+        "url": "",
+        "quote": ""
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Root",
+          "Whole plant"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/cabbage-cauliflower-brassica-oleracea-phytophthora-root-rot",
+        "quote": "Leaf margins discolor, turn brown, and eventually die. Aboveground portions of the plant wilt, and plants may die. Lateral roots are absent or entirely decayed. Tap roots are entirely decayed or show large, dark lesions along their entire length."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Leaf margins discolor and brown while aboveground portions wilt; lateral roots are absent or decayed and tap roots are decayed or show large dark lesions, with symptomatic plants appearing in wet areas of the field.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/cabbage-cauliflower-brassica-oleracea-phytophthora-root-rot",
+          "quote": "Leaf margins discolor, turn brown, and eventually die. Aboveground portions of the plant wilt, and plants may die. Lateral roots are absent or entirely decayed. Tap roots are entirely decayed or show large, dark lesions along their entire length. Symptomatic plants are found in wet areas of the field."
+        },
+        "diagnostic_features": {
+          "value": "Lateral roots absent or entirely decayed; tap roots entirely decayed or showing large, dark lesions along their entire length; symptomatic plants found in wet areas of the field.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/cabbage-cauliflower-brassica-oleracea-phytophthora-root-rot",
+          "quote": "Lateral roots are absent or entirely decayed. Tap roots are entirely decayed or show large, dark lesions along their entire length. Symptomatic plants are found in wet areas of the field."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant only on well-drained soil that has a minimum of low areas where water can accumulate.",
+          "Avoid excessive irrigation.",
+          "Practice a 3-year rotation with nonsusceptible crops.",
+          "Warhammer (chitosan) at 4 to 12 fl oz/A on 7- to 14-day intervals. No preharvest interval or reentry interval requirement.",
+          "Bexfond at 7 to 14 fl oz/A. 4-hr reentry.",
+          "Double Nickel LC at 1 to 2 quarts/A as a banded soil spray or drench 4- to 6-week intervals or at 0.5 to 4.5 pints/A on 2- to 4-week intervals. Can be applied the day of harvest. 4-hr reentry."
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/cabbage-cauliflower-brassica-oleracea-phytophthora-root-rot",
+        "quote": "Cultural control Plant only on well-drained soil that has a minimum of low areas where water can accumulate. Avoid excessive irrigation. Practice a 3-year rotation with nonsusceptible crops. Chemical control Warhammer (chitosan) at 4 to 12 fl oz/A on 7- to 14-day intervals. ... Biological control Bexfond at 7 to 14 fl oz/A. 4-hr reentry. O Double Nickel LC at 1 to 2 quarts/A as a banded soil spray or drench 4- to 6-week intervals or at 0.5 to 4.5 pints/A on 2- to 4-week intervals. Can be applied the day of harvest. 4-hr reentry."
+      },
+      "confidence": "low",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Black Rot Of Crucifers",
+      "pathogen_scientific_name": {
+        "value": "Xanthomonas campestris pv. campestris",
+        "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=133",
+        "quote": "Black rot, caused by the bacterium Xanthomonas campestris pv. campestris , is one of the most destructive diseases of cabbage and other crucifers.",
+        "ncbi_url": "",
+        "mycobank_url": "",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=133",
+        "quote": "Bacterial Disease Black Rot of Cole Crops"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Root",
+          "Seed",
+          "Vascular"
+        ],
+        "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=133",
+        "quote": "The veins of infected leaves, stems, and roots turn black as the pathogen multiplies."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Seedling infection appears as blackening along the cotyledon margin; leaves develop small, wilted, V-shaped (wedge-shaped) chlorotic areas extending inward from the leaf edge toward the midrib that turn yellow to brown and dry out, and the veins of leaves, stems, and roots turn black; the disease eventually becomes systemic, producing leaf drop and head rot.",
+          "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=133",
+          "quote": "Leaf infections often result in a small, wilted, V-shaped infected area that extends inward from the leaf edge toward the midrib. Diseased areas enlarge and progress toward the base of the leaf, turn yellow to brown, and dry out. The veins of infected leaves, stems, and roots turn black as the pathogen multiplies."
+        },
+        "diagnostic_features": {
+          "value": "The presence of black veins in yellowish, V-shaped (wedge-shaped) diseased areas along the leaf margins is diagnostic of black rot; a crosswise cut of the stem, leaf petiole or veins will reveal a darkened ring of vascular tissue.",
+          "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=133",
+          "quote": "However, the presence of black veins in yellowish, V-shaped diseased areas along the leaf margins is diagnostic of black rot."
+        },
+        "look_alikes": {
+          "value": [
+            "Fusarium yellows"
+          ],
+          "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=133",
+          "quote": "These symptoms also are commonly associated with a disease called Fusarium yellows."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Purchase only certified, pathogen-free seed and disease-free transplants; grow your own transplants or source them locally",
+          "Use hot water seed treatment to reduce or eliminate the seedborne pathogen",
+          "Grow transplants in a soilless mix or a new, pasteurized or fumigated seedbed",
+          "Practice a 3-year rotation between cole crop plantings (grow where a crucifer crop has not been grown for at least three consecutive years)",
+          "Use black rot resistant varieties (some cabbage, rutabaga, turnip, kale, and black mustard varieties have varying degrees of resistance)",
+          "Avoid planting in low, wet sites with poor soil drainage; plant on raised beds for better drainage and use plastic mulch to reduce water splashing",
+          "Avoid planting in fields infested with crucifer-family weeds; manage weeds such as mustard and shepherdspurse",
+          "Inspect seedlings frequently and rogue infected and surrounding plants immediately",
+          "Avoid working in fields when the foliage is wet",
+          "Plow cole crop fields after harvest to hasten decomposition of crop residues",
+          "Apply recommended bactericides when conditions favor disease; fixed copper or copper hydroxide applications every 7 to 10 days may slow spread in dry seasons"
+        ],
+        "url": "https://ipm.cahnr.uconn.edu/black-rot-of-crucifers/",
+        "quote": "It is advised to grow your own transplants or source them locally. Hot water seed treatment can help reduce or eliminate the seedborne pathogen. ... If infection occurs, fixed copper or copper hydroxide applications every 7 to 10 days may slow the spread of this disease in dry seasons. Use black rot resistant varieties, detailed below."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Black Rot of Cole Crops",
+          "alternative_value": "Black Rot of Crucifers",
+          "alternative_source_url": "https://ipm.cahnr.uconn.edu/black-rot-of-crucifers/",
+          "note": "Both sources are university extension (Rank 5); names are synonymous variants for the same disease/pathogen. Illinois name retained as canonical."
+        }
+      ]
+    },
+    {
+      "disease_name": "Club Root Of Crucifers",
+      "pathogen_scientific_name": {
+        "value": "Plasmodiophora brassicae",
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/clubroot-of-crucifers/",
+        "quote": "Clubroot of cabbage and related crucifers is caused by the soilborne pathogen Plasmodiophora brassicae which belongs to the plasmodiophorids.",
+        "ncbi_url": "",
+        "mycobank_url": "",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "",
+        "url": "",
+        "quote": ""
+      },
+      "affected_parts": {
+        "value": [
+          "Root",
+          "Foliar",
+          "Whole plant"
+        ],
+        "url": "https://extension.umn.edu/plant-diseases/clubroot",
+        "quote": "The pathogen infects roots, which causes them to swell, giving the roots the clubbed experience that gives this disease its name."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "The most characteristic symptoms are root distortion and galling (swelling) that give roots a club-like appearance; aboveground, infected plants are stunted, wilt easily (especially on warm days, often recovering at night) and may show yellowing leaves and blue-green foliage. Clubroot may develop extensively on roots before aboveground symptoms are noticed.",
+          "url": "https://content.ces.ncsu.edu/clubroot-of-brassicas",
+          "quote": "The most characteristic symptoms are root distortion and galling (swelling). The galling symptoms give roots a 'club-like' appearance."
+        },
+        "diagnostic_features": {
+          "value": "Roots are swollen and distorted into large club-shaped malformations ranging from very small swellings on tap and lateral roots to large spindle-shaped clubs; galls are firm with a white interior at the beginning of infection (light-colored early in the season) and eventually turn brown and decay. Clubbing symptoms are unique to members of the Cruciferae.",
+          "url": "https://content.ces.ncsu.edu/clubroot-of-brassicas",
+          "quote": "Galls are firm and have a white interior at the beginning of infection, and eventually turn brown and decay."
+        },
+        "look_alikes": {
+          "value": [
+            "Root knot nematode (Meloidogyne spp.)"
+          ],
+          "url": "https://content.ces.ncsu.edu/clubroot-of-brassicas",
+          "quote": "Infection by root knot nematode ( Meloidogyne spp.) also can cause swellings on roots, although brassicas are less likely to be affected by this nematode. The galls formed by root knot nematode are typically smaller and more round in shape than those caused by the clubroot pathogen."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Prevent introduction of the pathogen into a field (prevention is the primary control, as the pathogen is long-lived in soil)",
+          "Use disease-free, certified transplants; inspect roots for symptoms before planting; reject the entire lot if even a trace of clubroot is present",
+          "Sanitize tools and equipment: remove all soil, then apply a surface disinfectant or 1% bleach solution (or a 1:9 household bleach solution / undiluted Lysol), keeping surfaces wet for 15-20 minutes",
+          "Only add soil or compost heated to kill pathogens (compost should reach 148 F)",
+          "Crop rotation away from susceptible crucifers for a minimum of 4-7 years (Cornell advises at least 7 years; UMN 5-7 years); planting corn or alfalfa can reduce inoculum",
+          "Manage weeds and eliminate weedy hosts and brassica crop volunteers during rotation",
+          "Raise soil pH by liming to 7.1-7.5 (adjust to ~6.8-7.5 with ground limestone; calcitic lime preferred over dolomitic unless soil magnesium is low; hydrated lime may be added)",
+          "Reduce soil moisture: avoid planting in saturated/wet fields, improve drainage, deep-plow, break up hard pan, or use raised beds",
+          "Avoid water run-off and irrigation from contaminated fields/ponds into clean areas",
+          "Use green manure, organic soil amendments, and soil solarization",
+          "Plant clubroot-resistant varieties whenever available",
+          "Bury or compost infected plants on site",
+          "Fungicides are limited and have not provided adequate or consistent control: e.g., Blocker (PCNB), Omega 500F (fluazinam), Ranman (cyazofamid); see current Cornell/Midwest vegetable production guides for labeled options"
+        ],
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/clubroot-of-crucifers/",
+        "quote": "Most control measures for clubroot are aimed at preventing the introduction of the pathogen into a field. ... A rotation of at least 7 years out of susceptible crucifers may be effective."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Clubroot",
+          "alternative_value": "Clubroot of Crucifers / Clubroot of Brassicas",
+          "alternative_source_url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/clubroot-of-crucifers/",
+          "note": "All three sources (Cornell, NC State, UMN) are extension/factsheet (Rank 5) and describe the same disease/pathogen. UMN and NC State use bare 'Clubroot'; Cornell uses 'Clubroot of Crucifers' and NC State publication title 'Clubroot of Brassicas'."
+        },
+        {
+          "field": "treatments.crop_rotation_interval",
+          "canonical_value": "Minimum 4-7 years out of susceptible crucifers",
+          "alternative_value": "At least 7 years (Cornell); 5 to 7 years (UMN); minimum 4-7 years (NC State)",
+          "alternative_source_url": "https://content.ces.ncsu.edu/clubroot-of-brassicas",
+          "note": "Sources differ on the recommended rotation length; range preserved in the treatments union."
+        }
+      ]
+    },
+    {
+      "disease_name": "Bacterial Soft Rot",
+      "pathogen_scientific_name": {
+        "value": "Erwinia carotovora subsp. carotovora (syn. Pectobacterium carotovorum subsp. carotovorum)",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/cabbage-cauliflower-brassica-oleracea-bacterial-soft-rot-erwinia",
+        "quote": "The soft-rot bacterium, Erwinia carotovora subsp. carotovora (syn. = Pectobacterium carotovorum subsp. carotovorum )",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/cabbage-cauliflower-brassica-oleracea-bacterial-soft-rot-erwinia",
+        "quote": "The soft-rot bacterium, Erwinia carotovora subsp. carotovora"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Whole plant"
+        ],
+        "url": "https://veggiescout.mgcafe.uky.edu/bacterial-soft-rot",
+        "quote": "water-soaked spots are the earliest symptoms on outer leaves. The disease progresses quickly, leaving large areas of wet, necrotic tissue. Inside the head, tissues may liquefy"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "On cabbage, water-soaked spots appear on outer leaves, progressing to large areas of wet, necrotic tissue, with head tissues liquefying and a foul odor; on broccoli and cauliflower, localized wet areas on the head enlarge into sunken, necrotic patches.",
+          "url": "https://veggiescout.mgcafe.uky.edu/bacterial-soft-rot",
+          "quote": "ON cabbage, water-soaked spots are the earliest symptoms on outer leaves. The disease progresses quickly, leaving large areas of wet, necrotic tissue. Inside the head, tissues may liquefy, and a foul odor is often present. On broccoli and cauliflower, localized areas of the head will have a wet appearance at first. These areas become larger as the disease progresses, leaving sunken, necrotic patches."
+        },
+        "diagnostic_features": {
+          "value": "Tissue becomes soft and mushy with an offensive/foul odor, collapsing within a few days; on cabbage heads tissues liquefy, on broccoli and cauliflower sunken necrotic patches form.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/cabbage-cauliflower-brassica-oleracea-bacterial-soft-rot-erwinia",
+          "quote": "Tissue becomes soft and mushy, and within a few days the affected plant part may collapse. An offensive odor usually is present."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Crop rotation",
+          "Set out plants in rows to allow good air drainage",
+          "Irrigation management: minimize leaf wetness and soil splash; control frequency and source of irrigation water; avoid frequent irrigation during head development; time irrigation to allow the head to dry rapidly",
+          "Plant in well-draining soils",
+          "Cultivate and harvest carefully to minimize injuring/bruising/wounding plants",
+          "Use well water (generally free of bacteria) and avoid stagnant water sources",
+          "Clean and spray storage walls and floors with copper sulfate solution (1 lb/5 gal water); bactericides such as Clorox, Lysol, and quaternary ammonium products also are effective",
+          "In storage, use a buffering material such as straw or paper to prevent injury to the heads",
+          "Keep storage house humidity between 90% and 95% and temperature between 32Â°F and 39Â°F",
+          "Cueva (Group M1) at 0.5 to 2 gal/100 gal water on 7- to 10-day intervals",
+          "Use tolerant broccoli varieties with head shapes that minimize pooling of moisture"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/cabbage-cauliflower-brassica-oleracea-bacterial-soft-rot-erwinia",
+        "quote": "Cultural control Set out plants in rows to allow good air drainage. Cultivate carefully to minimize injuring plants. Control frequency and source of irrigation water. Avoid frequent irrigation during head development. Time irrigation to allow the head to dry rapidly. Use well water, which generally is free of bacteria. Avoid stagnant water sources. Clean and spray storage walls and floors with copper sulfate solution (1 lb/5 gal water). Bactericides such as Clorox, Lysol, and quaternary ammonium products also are effective. In storage, use a buffering material such as straw or paper to prevent injury to the heads. Keep storage house humidity between 90% and 95% and the temperature between 32Â°F and 39Â°F. Chemical control Cueva (Group M1) at 0.5 to 2 gal/100 gal water on 7- to 10-day intervals."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Erwinia carotovora subsp. carotovora (syn. Pectobacterium carotovorum subsp. carotovorum)",
+          "alternative_value": "Erwinia carotovora var. carotovora",
+          "alternative_source_url": "https://veggiescout.mgcafe.uky.edu/bacterial-soft-rot",
+          "note": "University of Kentucky cites the infrasubspecific rank 'var. carotovora'; PNW and U. Arizona use 'subsp. carotovora' and note the current accepted synonym Pectobacterium carotovorum subsp. carotovorum. No NCBI/MycoBank validation was supplied, so taxonomy_validated is false."
+        }
+      ]
+    },
+    {
+      "disease_name": "Downy Mildew",
+      "pathogen_scientific_name": {
+        "value": "Hyaloperonospora parasitica",
+        "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/cabbage_downy_mildew_192.htm",
+        "quote": "Scientific Name Hyaloperonospora parasitica ; previously known as Peronospora parasitica.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Oomycete",
+        "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/cabbage_downy_mildew_192.htm",
+        "quote": "The disease is caused by an oomycete or water mould, not a fungus."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Root",
+          "Whole plant"
+        ],
+        "url": "https://ag.umass.edu/vegetable/fact-sheets/brassicas-downy-mildew",
+        "quote": "Small, angular lesions develop on leaves and inflorescences. ... black streaks may develop on the stems. ... Downy mildew also attacks the taproots of turnip and radish"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Small, angular lesions develop on leaves and inflorescences, enlarging into irregular yellow to orange necrotic patches with dense sporulation on leaf undersides that gives a gray to purple, downy appearance; systemically infected plants develop black streaking inside stems and heads, and cabbage heads develop sunken black spots.",
+          "url": "https://ag.umass.edu/vegetable/fact-sheets/brassicas-downy-mildew",
+          "quote": "Small, angular lesions develop on leaves and inflorescences. These lesions enlarge and become irregular, yellow to orange necrotic patches, with dense sporulation on leaf undersides. Heavy sporulation gives leaf undersides a gray to purple, downy appearance."
+        },
+        "diagnostic_features": {
+          "value": "Dense sporulation (grayish-white mycelial growth) on leaf undersides gives a gray to purple downy appearance; on seedlings bright yellow lesions have networks of black spots or lines throughout, looking almost like a web; cabbage heads develop sunken black spots.",
+          "url": "https://ag.umass.edu/vegetable/fact-sheets/brassicas-downy-mildew",
+          "quote": "These yellow lesions have networks of black spots or lines throughout, looking almost like a web."
+        },
+        "look_alikes": {
+          "value": [
+            "Rhizoctonia root rot",
+            "White rust",
+            "cold-damaged tissues with subsequent secondary leaf rot"
+          ],
+          "url": "https://ag.umass.edu/vegetable/fact-sheets/brassicas-downy-mildew",
+          "quote": "the skin becomes rough and the root may split open, which can be confused with symptoms of Rhizoctonia root rot"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Removal of crop debris and weed hosts (including brassica-family weeds and volunteers) may reduce inoculum.",
+          "Start with disease-free seed; ask your seed supplier if the lot has been tested for downy mildew, or hot-water treat your seeds.",
+          "Scout seedlings in the greenhouse/seedbed and maintain low humidity; check each seedling before transplanting and remove any showing symptoms.",
+          "Practice crop rotation with non-brassica crops (a two-year rotation away from brassicas, and rotate out of crucifers for at least two years).",
+          "Improve air circulation, avoid overcrowding seedlings, and irrigate early in the day so leaves are wet only for a few hours.",
+          "In the field, lower leaf wetness and canopy humidity by increasing spacing, controlling weeds, planting in the direction of prevailing winds, and planting in areas with full sun.",
+          "Collect and burn or bury as much of the crop as possible when harvest is complete; remove or bury infected crop debris near new plantings.",
+          "Plant resistant or tolerant cultivars (limited resistant varieties of cabbage and Chinese cabbage are available).",
+          "If fungicides are needed, spray with systemic metalaxyl/mefenoxam, or protectant mancozeb, copper, or chlorothalonil.",
+          "On transplants apply first spray as soon as seedlings appear and repeat until plants are set out in the field; examples include Actigard 50WG, Forum, Revus, Orondis, Presidio, Ranman 400 SC, Zampro, phosphonates (Aliette/Fosphite), Regalia, and biological controls (Cease, Double Nickel LC, LifeGard WG, Sonata, Stargus)."
+        ],
+        "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/cabbage_downy_mildew_192.htm",
+        "quote": "If fungicides are needed, spray with systemic metalaxyl, or protectant mancozeb, copper or chlorothalonil."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Hyaloperonospora parasitica",
+          "alternative_value": "Hyaloperonospora brassicae",
+          "alternative_source_url": "https://ag.umass.edu/vegetable/fact-sheets/brassicas-downy-mildew",
+          "note": "UMass attributes the disease to Hyaloperonospora brassicae s.l. (sensu lato), a related/segregate name."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Hyaloperonospora parasitica",
+          "alternative_value": "Peronospora parasitica",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/cabbage-cauliflower-brassica-oleracea-downy-mildew-staghead",
+          "note": "PNW uses Peronospora parasitica (= Hyaloperonospora parasitica); Lucid notes Peronospora parasitica is the older/previous name for the same organism."
+        },
+        {
+          "field": "type_of_disease",
+          "canonical_value": "Oomycete",
+          "alternative_value": "fungus-like microorganism / water mould",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/cabbage-cauliflower-brassica-oleracea-downy-mildew-staghead",
+          "note": "PNW describes the pathogen as a 'fungus-like microorganism'; Lucid explicitly states it is an oomycete/water mould, not a fungus."
+        }
+      ]
+    }
+  ],
+  "crop": "Cabbage",
+  "generated_date": "2026-06-10"
+}

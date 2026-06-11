@@ -1,0 +1,380 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Powdery Mildew",
+      "pathogen_scientific_name": {
+        "value": "Erysiphe necator",
+        "url": "https://ipm.ucanr.edu/agriculture/grape/powdery-mildew/",
+        "quote": "Powdery Mildew Erysiphe necator",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ipm.ucanr.edu/agriculture/grape/powdery-mildew/",
+        "quote": "The fungus survives the winter as mycelia infecting tissue inside dormant buds or as chasmothecia (spore producing fruiting bodies)."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/grape/powdery-mildew/",
+        "quote": "Initial symptoms of powdery mildew appear on leaves as chlorotic spots on the upper leaf surface... On fruit and rachises the pathogen appears as white, powdery masses... Symptoms of powdery mildew infection include red blotchy areas on dormant canes."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Initial symptoms appear as chlorotic spots on the upper leaf surface, followed by white, webby mycelium on the lower leaf surface, with infected areas taking on a white, powdery or dusty appearance; fruit and rachises develop white, powdery masses.",
+          "url": "https://ipm.ucanr.edu/agriculture/grape/powdery-mildew/",
+          "quote": "Initial symptoms of powdery mildew appear on leaves as chlorotic spots on the upper leaf surface. Signs of the pathogen appear a short time later as white, webby mycelium on the lower leaf surface. As spores are produced, the infected areas take on a white, powdery or dusty appearance ."
+        },
+        "diagnostic_features": {
+          "value": "Black to brown web scarring on mature fruit representing former colonies, and red blotchy areas on dormant canes.",
+          "url": "https://ipm.ucanr.edu/agriculture/grape/powdery-mildew/",
+          "quote": "Black to brown web scarring can be seen on mature fruit, which represents former colonies. Symptoms of powdery mildew infection include red blotchy areas on dormant canes."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Season-long control is dependent upon reducing early-season inoculum and subsequent infection",
+          "Apply a contact material as soon as possible to eradicate those colonies prior to the onset of conidial spore production",
+          "A micronized sprayable sulfur application or oil should be applied prior to other fungicides",
+          "Monitor and use the UC Davis powdery mildew risk index model to determine necessary spray intervals and material choice",
+          "If eradication is necessary, a light summer oil may be used anytime in the season if there is no sulfur residue present",
+          "Basal leaf removal can improve coverage of powdery mildew fungicides on clusters",
+          "Sulfur, Serenade Max, Sonata, M-Pede, Organic JMS Stylet Oil, and Purespray Green horticultural oil are acceptable on organically certified grapes",
+          "Alternating fungicides with different modes of action is essential to prevent pathogen populations from developing resistance",
+          "Demethylation inhibitors (DMIs): tebuconazole (Elite 45WP), triflumizole (Viticure), myclobutanil (Rally 40WSP), tetraconazole (Mettle 125ME), flutriafol (Rhyme), difenoconazole",
+          "Strobilurins/QoI fungicides: azoxystrobin (Abound), trifloxystrobin (Flint), kresoxim-methyl (Sovran), pyraclostrobin + boscalid (Pristine)",
+          "Quinoxyfen (Quintec)",
+          "Metrafenone (Vivando)",
+          "Cyflufenamid (Torino)",
+          "Fluopyram + tebuconazole (Luna Experience)",
+          "Difenoconazole + cyprodinil (Inspire Super)",
+          "Difenoconazole + azoxystrobin (Quadris Top)",
+          "Elemental sulfur (dust, wettable, flowable, or micronized)",
+          "Biologicals: Bacillus pumilus (Sonata), Bacillus subtilis (Serenade Max)",
+          "Narrow range oil (JMS Stylet Oil, Saf-T-Side, etc.)",
+          "Potassium bicarbonate (Kaligreen)",
+          "Fungicidal soap (M-Pede)",
+          "Liquid lime sulfur (Brandt lime sulfur)"
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/grape/powdery-mildew/",
+        "quote": "Research has shown that a micronized sprayable sulfur application or oil should be applied prior to other fungicides... DEMETHYLATION INHIBITORS (DMIs) A. TEBUCONAZOLE (Elite 45WP)... ELEMENTAL SULFUR A. SULFUR# (dust, wettable, flowable, or micronized)... BIOLOGICALS A. BACILLUS PUMILIS# (Sonata)... CONTACT MATERIALS A. NARROW RANGE OIL# (JMS Stylet Oil, Saf-T-Side, etc.)"
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Pseudocercospora Leaf Spot",
+      "pathogen_scientific_name": {
+        "value": "Pseudocercospora vitis",
+        "url": "https://www.ndrs.org.uk/article.php?id=010015",
+        "quote": "Pseudocercospora vitis , the anamorph of Mycosphaerella personata , was consistently isolated from diseased material.",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.ndrs.org.uk/article.php?id=010015",
+        "quote": "Pseudocercospora vitis , the anamorph of Mycosphaerella personata , was consistently isolated from diseased material."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://www.ndrs.org.uk/article.php?id=010015",
+        "quote": "In this region diseased plants were observed and affected leaves sampled. Leaf spots were circular, amphigenous, sometimes confluent, 2-8 mm in diameter, brown or purplish brown"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Leaf spots were circular, amphigenous, sometimes confluent, 2-8 mm in diameter, and brown or purplish brown.",
+          "url": "https://www.ndrs.org.uk/article.php?id=010015",
+          "quote": "Leaf spots were circular, amphigenous, sometimes confluent, 2-8 mm in diameter, brown or purplish brown (Fig. 1)."
+        },
+        "diagnostic_features": {
+          "value": "Circular, amphigenous, sometimes confluent leaf spots 2-8 mm in diameter, brown or purplish brown; conidia 5-10 septate, 25-90 Âµm long and 5-8 Âµm wide.",
+          "url": "https://www.ndrs.org.uk/article.php?id=010015",
+          "quote": "Conidia were 5-10 septate, 25-90 Âµm long and 5-8 Âµm wide."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Black Rot",
+      "pathogen_scientific_name": {
+        "value": "Guignardia bidwellii",
+        "url": "https://ag.umass.edu/fruit/fact-sheets/grape-ipm-black-rot",
+        "quote": "Black rot of grapes is caused by the fungus Guignardia bidwellii.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ag.umass.edu/fruit/fact-sheets/grape-ipm-black-rot",
+        "quote": "Black rot of grapes is caused by the fungus Guignardia bidwellii."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Whole plant"
+        ],
+        "url": "https://ag.umass.edu/fruit/fact-sheets/grape-ipm-black-rot",
+        "quote": "All parts of the grapevine are susceptible. Young leaves are very vulnerable to infection... Black lesions may girdle petioles and shoots, resulting in wilt. Affected berries turn brown and soft at first"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Round, tan lesions with dark purple to brown margins appear on leaves, bearing small black pycnidia; infected berries turn brown and soft then become hard, black, shriveled mummies dotted with pycnidia.",
+          "url": "https://ag.umass.edu/fruit/fact-sheets/grape-ipm-black-rot",
+          "quote": "Round, tan lesions with dark purple to brown margins may be observed on leaves. Small, round, black fruiting bodies (pycnidia) are produced on the lesions and may be visible with a hand lens... Affected berries turn brown and soft at first, but within a few days they become hard, black, shriveled structures called mummies. Mummies are dotted with numerous pycnidia"
+        },
+        "diagnostic_features": {
+          "value": "Tiny black dots (pycnidia) appear in the lesion, usually in a ring pattern near the border of the lesion; lesions on shoots, cluster stems, rachises and tendrils are oval, sunken and purple to black; infected berries shrivel into hard raisin-like mummies that remain attached to the cluster.",
+          "url": "https://ohioline.osu.edu/factsheet/plpath-fru-24",
+          "quote": "As the infection develops, tiny black dots appear in the lesion, usually in a ring pattern near the border of the lesion (Figure 1- inset)."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Sanitation is the most important element of management; remove infected canes, spurs, and fruit clusters remaining on the vines",
+          "Rake up and dispose of fallen leaves and mummies",
+          "Use mulch or cultivate beneath the vines prior to bud break to bury mummies and reduce initial inoculum",
+          "Drop mummies remaining in the canopy to the ground and bury them at the end of the season",
+          "Prune out diseased/infected canes and tendrils during the dormant season; remove leaf lesions and diseased fruit when first observed",
+          "Reduce humidity in the canopy by removing canes or leaves and managing weeds",
+          "Select a sunny planting site with good air movement and orient rows with the prevailing winds so plants dry quickly",
+          "Provide proper vine spacing, maintain an open canopy, and maintain good weed control",
+          "Plant resistant or less susceptible varieties, hybrids, and Vitis species",
+          "Apply protectant fungicides (sulfur/Bordeaux mix, copper, mancozeb, or ferbam) beginning shortly before bloom and repeat through approximately 4-6 weeks post bloom with thorough coverage",
+          "Use systemic fungicides (strobilurins, sterol inhibitors) for later infections and kickback activity, rotating among chemical classes",
+          "Time fungicides from early bloom through three to four weeks after bloom, targeting the pre-bloom peak in spore production",
+          "Use disease forecasting models to predict periods of high disease pressure"
+        ],
+        "url": "https://ag.umass.edu/fruit/fact-sheets/grape-ipm-black-rot",
+        "quote": "Sanitation is the most important element of a successful black rot management program. Remove infected canes, spurs, and fruit clusters remaining on the vines. Rake up and dispose of fallen leaves and mummies. Alternatively, mulch may be used to bury mummies... Applications of protectant fungicides such as sulfur (Bordeaux mix), copper, or mancozeb should begin shortly before bloom and be repeated at the intervals recommended on the label until approximately 4-6 weeks post bloom. Thorough coverage is important. Later infections may also be managed by systemic fungicides."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Black rot of grape",
+          "alternative_value": "Black rot of grapes",
+          "alternative_source_url": "https://ag.umass.edu/fruit/fact-sheets/grape-ipm-black-rot",
+          "note": "Naming variant; same disease and pathogen (Guignardia bidwellii)."
+        },
+        {
+          "field": "disease_name",
+          "canonical_value": "Black rot of grape",
+          "alternative_value": "Grape Black Rot",
+          "alternative_source_url": "https://ohioline.osu.edu/factsheet/plpath-fru-24",
+          "note": "Naming variant; same disease and pathogen (Guignardia bidwellii)."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem, Whole plant",
+          "alternative_value": "Foliar, Stem, Pod",
+          "alternative_source_url": "https://ohioline.osu.edu/factsheet/plpath-fru-24",
+          "note": "OSU lists leaves, shoots, berries, tendrils, rachises and cluster stems (mapped to Foliar/Stem/Pod). UMass cites 'All parts of the grapevine are susceptible,' hence canonical 'Whole plant'."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem, Whole plant",
+          "alternative_value": "Foliar, Stem",
+          "alternative_source_url": "https://extension.umaine.edu/ipm/ipddl/publications/5106e/",
+          "note": "UMaine lists newly emerging leaves, fruit, canes, shoots, and tendrils (mapped to Foliar/Stem only)."
+        }
+      ]
+    },
+    {
+      "disease_name": "Grape Anthracnose",
+      "pathogen_scientific_name": {
+        "value": "Elsinoe ampelina",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-fru-15",
+        "quote": "Anthracnose of grape is caused by the fungus Elsinoe ampelina .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-fru-15",
+        "quote": "Anthracnose of grape is caused by the fungus Elsinoe ampelina ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://ohioline.osu.edu/factsheet/plpath-fru-15",
+        "quote": "All succulent parts of the plant, including fruit stems, leaves, petioles, tendrils, young shoots, and berries, can be attacked, but lesions on shoots and berries are most common and distinctive."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "On young shoots, symptoms appear as small, circular, reddish spots that enlarge into sunken lesions with gray centers and dark reddish-brown to violet-black margins; on berries small reddish circular spots enlarge to whitish-gray centers surrounded by reddish-brown to black margins resembling a bird's eye.",
+          "url": "https://ohioline.osu.edu/factsheet/plpath-fru-15",
+          "quote": "Symptoms on young, succulent shoots first appear as numerous small, circular, and reddish spots. Spots then enlarge, become sunken, and produce lesions with gray centers and round or angular edges (Figure 1). Dark reddish-brown to violet-black margins eventually surround the lesions."
+        },
+        "diagnostic_features": {
+          "value": "On berries the typical symptom resembles a bird's eye (whitish-gray centers surrounded by narrow reddish-brown to black margins), giving the disease the name 'bird's eye rot'; on leaves the necrotic center often drops out creating a shot-hole appearance; lesion edges on shoots are raised and black.",
+          "url": "https://ohioline.osu.edu/factsheet/plpath-fru-15",
+          "quote": "This typical symptom on fruit often resembles a birdÃ¢â‚¬â„¢s eye, and the disease has been called birdÃ¢â‚¬â„¢s eye rot."
+        },
+        "look_alikes": {
+          "value": [
+            "Hail injury"
+          ],
+          "url": "https://ohioline.osu.edu/factsheet/plpath-fru-15",
+          "quote": "Anthracnose lesions on shoots may be confused with hail injury; however, unlike hail damage, the edges of the wounds caused by the anthracnose fungus are raised and black."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Sanitation is very important; prune out and destroy diseased plant parts (infected shoots, cluster stems, and berries) during the dormant season",
+          "Eliminate wild grapes near the vineyard",
+          "Plant less susceptible varieties (American grapes such as 'Concord' and 'Niagara' may be less susceptible than Vinifera and French Hybrid cultivars)",
+          "Use canopy management practices (training system selection, shoot positioning, leaf removal) to improve air circulation and reduce drying time of susceptible tissue",
+          "Apply a dormant application of Liquid Lime Sulfur in early spring, followed by foliar fungicides during the growing season"
+        ],
+        "url": "https://ohioline.osu.edu/factsheet/plpath-fru-15",
+        "quote": "Disease Management Sanitation is very important . Prune out and destroy (remove from the vineyard) diseased plant parts during the dormant season."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Gray Mold",
+      "pathogen_scientific_name": {
+        "value": "Botrytis cinerea",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-fru-03",
+        "quote": "Botrytis bunch rot is caused by the fungus Botrytis cinerea .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ohioline.osu.edu/factsheet/plpath-fru-03",
+        "quote": "Botrytis bunch rot is caused by the fungus Botrytis cinerea ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/grape/botrytis-bunch-rot/",
+        "quote": "Prior to fruit ripening, early-season shoot blight may occur following prolonged warm moist conditions caused by frequent spring rains. ... Infections often occur in leaf axils causing shoots to wilt or break off."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Early-season shoot blight produces patches of soft brown tissue and death of infected plant parts, with infections in leaf axils causing shoots to wilt or break off. At veraison, individually infected berries turn brown on white cultivars or reddish in red and black cultivars, and epidermal cracks develop fungal growth with a characteristic gray, velvety appearance.",
+          "url": "https://ipm.ucanr.edu/agriculture/grape/botrytis-bunch-rot/",
+          "quote": "Patches of soft brown tissue develop resulting in the death of the infected plant part. Infections often occur in leaf axils causing shoots to wilt or break off. At veraison, individually infected berries in a cluster turn brown on white cultivars or reddish in red and black cultivars."
+        },
+        "diagnostic_features": {
+          "value": "Epidermal cracks form in which fungal growth produces mycelium and spores, resulting in the characteristic gray, velvety appearance of infected berries; under high humidity infected berries become covered with a gray growth of fungus mycelium.",
+          "url": "https://ipm.ucanr.edu/agriculture/grape/botrytis-bunch-rot/",
+          "quote": "epidermal cracks will form in which fungal growth produces mycelium and spores, resulting in the characteristic gray, velvety appearance of infected berries."
+        },
+        "look_alikes": {
+          "value": [
+            "Noble rot"
+          ],
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3779096/",
+          "quote": "both noble rot and gray mold symptoms are observed in sympatry, in the same vineyards, on the same plant, and sometimes within the same grapes"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Promote good air circulation and light penetration by proper pruning, controlling weeds and suckers, and positioning or removing shoots for uniform leaf development.",
+          "Where possible, rows should be planted in the direction of the prevailing wind.",
+          "Removal of leaves around clusters (or basal leaves immediately after berry set) before bunch closing reduces losses caused by Botrytis.",
+          "Canopy management practices such as shoot thinning, hedging, and leaf removal can be used to manage canopy density when appropriate.",
+          "Design vineyards to the anticipated vigor of the site to produce balanced canopies with moderate shoot vigor that optimize leaf and cluster exposure.",
+          "Prevent wounding by controlling insects, birds, and other grape diseases; manage insect populations that produce entry wounds.",
+          "Avoid unnecessary irrigation or nitrogen fertilization that may promote excessive canopy growth.",
+          "Apply effective fungicides at appropriate times: between bloom and pea-size berries if the canopy interior remains dry, otherwise before rainfall at bloom or after veraison; treat late-harvest grapes prior to bunch closure and as needed before harvest.",
+          "Alternate fungicides with different modes of action within and between seasons to prevent fungicide resistance.",
+          "Use resistant cultivars when practical.",
+          "Organically acceptable methods: canopy/cultural management plus sprays of Organic JMS Stylet Oil and Serenade.",
+          "Conventional fungicide options include CYPRODINIL (Vangard WG), FENHEXAMID (Elevate 50WDG), PYRIMETHANIL (Scala SC), FLUOPYRAM + TEBUCONAZOLE (Luna Experience), CYPRODINIL + FLUDIOXONIL (Switch 62.5WG), DIFENOCONAZOLE + CYPRODINIL (Inspire Super), IPRODIONE (Rovral 4F), PYRACLOSTROBIN + BOSCALID (Pristine), NARROW RANGE OIL (JMS Stylet), BACILLUS SUBTILIS (Serenade Max), ISOFETAMID (Kenja 400SC)."
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/grape/botrytis-bunch-rot/",
+        "quote": "By employing cultural control methods, properly applying fungicides, and using resistant cultivars when practical, the disease can be managed."
+      },
+      "confidence": "high",
+      "num_sources": 4,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Botrytis Bunch Rot or Gray Mold of Grape",
+          "alternative_value": "Gray mold",
+          "alternative_source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3779096/",
+          "note": "Sources use synonymous names for the same disease/pathogen: 'Botrytis Bunch Rot' (UC IPM, WSU), 'Botrytis Bunch Rot or Gray Mold of Grape' (Ohioline), and 'Gray mold' (PMC)."
+        }
+      ]
+    },
+    {
+      "disease_name": "Downy Mildew",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    }
+  ],
+  "crop": "Grape",
+  "generated_date": "2026-06-10"
+}

@@ -1,0 +1,731 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Angular Leaf Spot Of Cucumber",
+      "pathogen_scientific_name": {
+        "value": "Pseudomonas syringae pv. lachrymans",
+        "url": "https://extension.umn.edu/disease-management/angular-leaf-spot",
+        "quote": "Angular leaf spot is a bacterial disease caused by Pseudomonas syringae pv. lachrymans .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://extension.umn.edu/disease-management/angular-leaf-spot",
+        "quote": "Angular leaf spot is a bacterial disease caused by Pseudomonas syringae pv. lachrymans ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Seed"
+        ],
+        "url": "https://extension.umn.edu/disease-management/angular-leaf-spot",
+        "quote": "will infect all above ground parts of the plant including leaves, fruit and vines. When bacteria infects the fruit, it moves deep into the fruit and infects the seed."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Irregularly shaped, water-soaked leaf spots that appear angular because they are bounded by the leaf veins; bacteria may ooze from the spots in droplets that dry to a white residue, the area later turns gray and dies, and dead tissue often tears away leaving large irregular holes. Fruit lesions are smaller, circular, and superficial.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/cucumber-cucumis-sativus-angular-leaf-spot",
+          "quote": "The leaf spot is irregularly shaped with a water-soaked appearance; bounded by the leaf veins the shapes of spots are angular. Bacteria may ooze from the spots in droplets, which dry to a white residue. The water-soaked area later turns gray and dies. Often, dead tissue is torn away from the healthy portion, leaving large, irregular holes. Water-soaked spots on fruit are smaller than on leaves, and they are circular."
+        },
+        "diagnostic_features": {
+          "value": "The spots expand until limited by larger veins, which gives them an angular appearance; under humid conditions the water-soaked spots are covered by a white exudate (bacterial ooze) that dries to a thin, white crust on or adjacent to the spot on the underleaf surface; as spots dry they tear away leaving large, irregular holes.",
+          "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=130",
+          "quote": "The spots expand until they are limited by larger veins, which give the spots an angular appearance. Under humid conditions, water-soaked spots are covered by a white exudate, which eventually dries to form a thin, white crust on or adjacent to the spot on the underleaf surface."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant certified, pathogen-free (clean, bacteria-free) seed; if saving seed, do not collect seed from infected plants.",
+          "Plant resistant/tolerant varieties (many resistant cucumber varieties are available).",
+          "Hot water seed treatment can remove some, but not all, bacteria (not fully effective alone).",
+          "Rotate out of cucurbits for 2 or more years (do not grow cucurbits in the same field more than once every three or four years) and avoid excessive nitrogen fertilization.",
+          "Use drip irrigation instead of overhead sprinklers; if watering by hand, water at the base of the plant.",
+          "Do not cultivate, harvest, or work in plants when leaves are wet, and stay out of wet, infected fields.",
+          "Remove and destroy infected fruit and vines at the end of the season; in large fields till in or plow under infected debris to speed decomposition.",
+          "Apply copper-based bactericides early (e.g., fixed-copper products, Badge SC, Cueva, Kocide, Previsto) at first sign of disease; sprays are not effective once disease is severe.",
+          "Apply Actigard 50WG (Group P1) at 0.5 to 1 oz/A on 7-day intervals.",
+          "Tank-mix the recommended bactericide with effective fungicides to also protect against fungal diseases."
+        ],
+        "url": "https://extension.umn.edu/disease-management/angular-leaf-spot",
+        "quote": "Buy clean seed from a reputable source. If saving seed, do not collect seed from infected plants. Hot water treatment can remove some, but not all, bacteria. Rotate vegetables ... Use drip irrigation instead of overhead sprinklers if possible. Do not work in plants when leaves are wet. ... Copper can slow the spread of disease if used early. Sprays are not effective once disease is severe."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem, Seed",
+          "alternative_value": "Foliar, Seed (no stem)",
+          "alternative_source_url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=130",
+          "note": "Illinois Extension lists foliar and seed (seedborne) but not stem; PNW Handbook lists leaves, stems, and fruit but not seed as an infected part. UMN explicitly lists all above-ground parts plus seed, used as canonical."
+        },
+        {
+          "field": "disease_name",
+          "canonical_value": "Angular Leaf Spot",
+          "alternative_value": "Angular Leaf Spot of Cucurbits",
+          "alternative_source_url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=130",
+          "note": "Same disease; Illinois Extension and UMN qualify the name with 'of Cucurbits' / cucurbit host."
+        }
+      ]
+    },
+    {
+      "disease_name": "Anthracnose",
+      "pathogen_scientific_name": {
+        "value": "Colletotrichum orbiculare",
+        "url": "https://wiki.bugwood.org/Colletotrichum_orbiculare_(anthracnose_of_cucurbits)",
+        "quote": "Scientific Name Colletotrichum orbiculare",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://wiki.bugwood.org/Colletotrichum_orbiculare_(anthracnose_of_cucurbits)",
+        "quote": "Kingdom Fungi"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Fruit",
+          "Seed",
+          "Seedling"
+        ],
+        "url": "https://wiki.bugwood.org/Colletotrichum_orbiculare_(anthracnose_of_cucurbits)",
+        "quote": "Symptoms include leaf spots, fruit rot and seedling damage."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Symptoms include leaf spots, fruit rot and seedling damage, with leaf lesions that are angular on watermelon but more rounded on cucumber and muskmelon.",
+          "url": "https://wiki.bugwood.org/Colletotrichum_orbiculare_(anthracnose_of_cucurbits)",
+          "quote": "Symptoms include leaf spots, fruit rot and seedling damage. Leaf lesions on watermelon tend to be angular but on cucumber and muskmelon they more rounded."
+        },
+        "diagnostic_features": {
+          "value": "Presence of a pinkish to salmon mass of spores, black stroma, and black setae; conidia are hyaline, nonseptate, oblong and 4-6 x 13-19 micrometers.",
+          "url": "https://wiki.bugwood.org/Colletotrichum_orbiculare_(anthracnose_of_cucurbits)",
+          "quote": "Diagnostic features: Presence of a pinkish to salmon mass of spores Black stroma Black setae Conidia are hyaline, nonseptate, oblong and 4-6 x 13-19 micrometers."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Fall tillage.",
+          "Rotate away from cucurbit crops for 3 years.",
+          "Use host resistance, which exists in some cucumber varieties.",
+          "Start transplants with disease-free seeds and inspect transplants in the greenhouse frequently.",
+          "Use fungicides to prevent disease at or before the time vines begin to touch within the row.",
+          "Do not save seeds from fields where anthracnose has been observed."
+        ],
+        "url": "https://wiki.bugwood.org/Colletotrichum_orbiculare_(anthracnose_of_cucurbits)",
+        "quote": "Fall Tillage Rotate away from cucurbit crops for 3 years Host resistance exists in some cucumber varieties Start transplants with disease free seeds and inspect transplants in the greenhouse frequently Use fungicides to prevent disease at or before the time vines begin to touch within the row Do not save seeds from fields where anthracnose has been observed"
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Bacterial Wilt",
+      "pathogen_scientific_name": {
+        "value": "Erwinia tracheiphila",
+        "url": "https://hort.extension.wisc.edu/articles/bacterial-wilt-of-cucurbits/",
+        "quote": "Bacterial wilt of cucurbits is caused by the bacterium  Erwinia tracheiphila .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://extension.umn.edu/disease-management/bacterial-wilt",
+        "quote": "The bacterium Erwinia tracheiphila causes bacterial wilt."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Vascular",
+          "Whole plant"
+        ],
+        "url": "https://hort.extension.wisc.edu/articles/bacterial-wilt-of-cucurbits/",
+        "quote": "Symptoms typically develop rapidly along individual runners, and eventually, the plant's crown is affected, resulting in the entire plant dying."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Plants wilt during the heat of the day and often recover overnight but continue to wilt each day; leaves first appear dull green, then yellow and brown at the margins, completely wither and die. Wilt progresses down the vine until the entire vine wilts or dies, beginning on a single runner and ultimately killing the whole plant.",
+          "url": "https://extension.umn.edu/disease-management/bacterial-wilt",
+          "quote": "Leaves first appear dull green, wilt during the day and recover at night. Leaves eventually yellow and brown at the margins, completely wither and die. Wilt progresses down the vine until the entire vine wilts or dies."
+        },
+        "diagnostic_features": {
+          "value": "Cut a wilted vine close to the crown, press the cross-sections together, then slowly pull them apart: thread-like strands of sticky bacterial ooze form between the two cut sections, which is diagnostic (works best for cucumbers and melon, less well for squash and pumpkins).",
+          "url": "https://hort.extension.wisc.edu/articles/bacterial-wilt-of-cucurbits/",
+          "quote": "look for sticky threads to form between the two vine sections as you slowly pull them apart.  The presence of these sticky threads is diagnostic.  This technique works best for cucumbers and melon, but less well for squash and pumpkins."
+        },
+        "look_alikes": {
+          "value": [
+            "squash vine borer",
+            "wilting from insufficient water / heat of the day"
+          ],
+          "url": "https://extension.umn.edu/disease-management/bacterial-wilt",
+          "quote": "Rule out squash vine borer by looking at the plant's crown (the point where the stem meets the soil). Make sure you are giving your plants enough water. Keep an eye out for plants that are wilting in the heat of the day but aren't recovered by the next morning."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Bacterial wilt cannot be controlled once a plant is infected; immediately remove infected plants and dispose of them by burning (where allowed by law) or burying them",
+          "DO NOT compost infected plants",
+          "If disease appears in a few plants, rogue and bury these plants to prevent further spread",
+          "Managing cucumber beetles is the most effective way to prevent bacterial wilt; remove wilted plants to keep beetles from moving bacteria to other cucurbits",
+          "Target non-chemical and chemical control of cucumber beetles at the beginning of the season when plants are most attractive to beetles",
+          "Use mechanical barriers such as floating row covers placed as seedlings emerge, removing them as flowers appear to allow pollination",
+          "In hoop houses/greenhouses, use insect exclusion screens (0.8 x 1.0 mm) to keep beetles out while allowing ventilation",
+          "Inspect cucurbits regularly for cucumber beetles and their damage (two to three times per week early, then weekly)",
+          "When cucumber beetle numbers are high (more than 20 per plant), spray with an appropriate insecticide",
+          "Use trap crops such as blue hubbard squash to reduce feeding on the main crop",
+          "Remove or destroy crop residue to reduce overwintering sites for cucumber beetles",
+          "Surround (kaolin clay) can reduce beetle numbers and defoliation",
+          "Plant resistant cucurbit varieties where available (check seed catalogues / Disease Resistant Vegetable Varieties lists)",
+          "Use less-attractive crops such as watermelons and pickling cucumbers as alternatives to more susceptible cucurbit species"
+        ],
+        "url": "https://extension.umn.edu/disease-management/bacterial-wilt",
+        "quote": "If disease appears in a few plants, rogue and bury these plants to prevent further spread of the disease. Managing cucumber beetles is the most effective way to prevent bacterial wilt. Excluding cucumber beetles is very effective. In the field, floating row covers can be placed as seedlings emerge and plants start to grow, just make sure to remove them as flowers appear to allow pollination."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Powdery Mildew",
+      "pathogen_scientific_name": {
+        "value": "Podosphaera xanthii",
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+        "quote": "Podosphaera xanthii (previously known as Sphaerotheca fuliginea and S. fusca ) and Erysiphe cichoracearum are the two most commonly recorded fungi causing cucurbit powdery mildew.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+        "quote": "This foliar, fungal disease is common wherever cucurbits are grown, including in the northeastern U.S."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+        "quote": "White, powdery fungal growth develops on both leaf surfaces, petioles, and stems."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "White, powdery fungal growth develops on both leaf surfaces, petioles, and stems, usually developing first on crown leaves, shaded lower leaves, and leaf undersurfaces; affected leaves senesce early and fruit yield and quality can be reduced.",
+          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+          "quote": "White, powdery fungal growth develops on both leaf surfaces, petioles, and stems. This growth is primarily asexual spores called conidia. It usually develops first on crown leaves, on shaded lower leaves and on leaf undersurfaces."
+        },
+        "diagnostic_features": {
+          "value": "Yellow spots may form on upper leaf surfaces opposite the powdery mildew colonies; older plants are affected first; late in the season dark brown, very small (about 0.003 inches) chasmothecia that are barely discernable without a hand lens may develop.",
+          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+          "quote": "Yellow spots may form on upper leaf surfaces opposite powdery mildew colonies. Older plants are affected first."
+        },
+        "look_alikes": {
+          "value": [
+            "Downy mildew"
+          ],
+          "url": "https://ag.umass.edu/vegetable/fact-sheets/cucurbits-powdery-mildew",
+          "quote": "Inspect crops routinely for symptoms of both powdery and downy mildew, beginning at the start of crop development."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Manage with resistant varieties/cultivars; an integrated program using both resistant varieties and fungicides is the best approach for effective control",
+          "Apply fungicides on a 7 to 10-day interval beginning very early in disease development (before disease appears / following IPM-based detection)",
+          "Initiate a weekly spray program when symptoms are found; action threshold is one leaf with symptoms out of 50 older leaves examined",
+          "Alternate products with different modes of action / FRAC groups and include a protectant fungicide in every application to manage fungicide resistance",
+          "Apply mobile (systemic) fungicides together with a contact/protectant fungicide as a tank mix, at highest labeled rates, only when needed to protect yield",
+          "Provide adequate plant spacing; choose planting sites with good air movement and free of shade",
+          "Physically separate successive cucurbit plantings or plant up-wind of older plantings, which can serve as a source of conidia",
+          "Remove debris, weeds, and volunteers that may harbor the pathogen",
+          "Scout fields regularly, particularly lower leaf surfaces, beginning at the start of crop development",
+          "Example conventional products: Chlorothalonil (Bravo Weather Stik), Myclobutanil (Rally 40WSP), Pyraclostrobin + boscalid (Pristine), Quinoxyfen (Quintec), Metrafenone (Vivando), Cyflufenamid (Torino), Azoxystrobin + difenoconazole (Quadris Top)",
+          "Organic growers: fixed copper formulations are the only OMRI-labeled active ingredients with some efficacy; several biopesticides approved for organic production are registered",
+          "Home gardeners: products containing copper or chlorothalonil (e.g., 'Daconil') are the best effective options; also grow tolerant varieties"
+        ],
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+        "quote": "Powdery mildew is managed with resistant varieties and fungicides. An integrated program with both management tools is the best approach for achieving effective control because the pathogen is adept at evolving new strains resistant to individual tools such as resistant varieties or a specific fungicide."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Podosphaera xanthii",
+          "alternative_value": "Erysiphe cichoracearum",
+          "alternative_source_url": "https://content.ces.ncsu.edu/cucurbit-powdery-mildew",
+          "note": "Cucurbit powdery mildew is caused by two fungi; sources list both Podosphaera xanthii and Erysiphe cichoracearum as causal agents. NCSU gives the pathogen as 'Podosphaera xanthii and Erysiphe cichoracearum'; Cornell and UMass identify P. xanthii as the most common. UMass extraction split into two per-pathogen records that represent the same disease."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Podosphaera xanthii",
+          "alternative_value": "Sphaerotheca fuliginea / Sphaerotheca fusca",
+          "alternative_source_url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+          "note": "Cornell notes P. xanthii was 'previously known as Sphaerotheca fuliginea and S. fusca' (older synonyms). No NCBI/MycoBank validation supplied to confirm current accepted name."
+        }
+      ]
+    },
+    {
+      "disease_name": "Phytophthora Blight",
+      "pathogen_scientific_name": {
+        "value": "Phytophthora capsici",
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+        "quote": "The pathogen, Phytophthora capsici , causes seedling damping-off, leaf spots, foliar blight, root and crown rot, stem lesions, and fruit rot.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Oomycete",
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+        "quote": "Several fungicides have been developed with targeted activity for P. capsici and other oomycetes."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Root",
+          "Whole plant"
+        ],
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+        "quote": "The pathogen, Phytophthora capsici , causes seedling damping-off, leaf spots, foliar blight, root and crown rot, stem lesions, and fruit rot."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Causes leaf spots (dark brown, large, with a border of wilted light green tissue), water-soaked dieback of growing tips, crown and root rot leading to plant collapse, and fruit rot covered with a white yeast-like growth (sporangia).",
+          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+          "quote": "The pathogen, Phytophthora capsici , causes seedling damping-off, leaf spots, foliar blight, root and crown rot, stem lesions, and fruit rot."
+        },
+        "diagnostic_features": {
+          "value": "The white, yeast-like growth on affected fruit is mostly sporangia of Phytophthora capsici; seeing these sporangia is diagnostic and confirms the pathogen.",
+          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+          "quote": "The white, yeast-like growth is mostly spores of Phytophthora capsici (sporangia). Seeing sporangia is diagnostic."
+        },
+        "look_alikes": {
+          "value": [
+            "Late blight (Phytophthora infestans) â€” for leaf spots",
+            "Pythium fruit rot",
+            "Sclerotinia white mold"
+          ],
+          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+          "quote": "They often resemble those caused by Phytophthora infestans , the late blight fungus, being dark brown and typically large with a border of wilted light green tissue"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use long rotations between susceptible crops and select fields where Phytophthora blight has never occurred",
+          "Select and prepare well-drained fields; level with a land plane, prepare raised dome-shaped beds (min. 9 inches high) for bush-type crops, and avoid planting in poorly drained areas (plant a cover crop there instead)",
+          "Minimize hardpans/plowpans by subsoiling or chisel plowing before planting and by not driving through wet fields; subsoil between rows after planting to improve drainage",
+          "Physically separate plantings of susceptible crops (cucurbits, pepper, eggplant, tomato)",
+          "Grow a mustard biofumigant cover crop before a susceptible crop, preferably in spring; use deep-zone reduced tillage",
+          "Cover raised/flat beds with plastic mulch as a barrier between crop and soilborne pathogen",
+          "Avoid over-irrigating; do not irrigate at night when temperatures are above 70Â°F; use drip irrigation and lay drip tape a few inches from crowns; do not irrigate from a pond that may contain runoff from an infested field",
+          "Apply fungicides with targeted activity for P. capsici preventively (rather than waiting for symptoms); manage resistance using a diversity of FRAC chemistries in alternation/combination; several biopesticides are labeled for soil/foliar application",
+          "Scout fields routinely, especially after major rain storms; disk localized infested areas",
+          "Seed driveways between vining crops (e.g., pumpkin) to avoid spreading disease and compacting soil; clean soil off farm equipment, shoes, etc. between fields",
+          "When growing small-fruited pumpkins, select varieties with hard, gourd-like rinds (e.g., Lil' Ironsides)",
+          "Harvest before rain; do not leave cull fruit in the field; do not display pumpkin fruit for sale where the blight occurred previously; do not save seed from an affected field"
+        ],
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+        "quote": "It is important to use an integrated program with as many of the following practices as possible."
+      },
+      "confidence": "low",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Pythium Diseases",
+      "pathogen_scientific_name": {
+        "value": "Pythium aphanidermatum",
+        "url": "https://veggiescout.mgcafe.uky.edu/cottony-leak-cucurbit-crops",
+        "quote": "Cottony leak  ( Pythium aphanidermatum ) affects fruits of most cucurbits",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "",
+        "url": "",
+        "quote": ""
+      },
+      "affected_parts": {
+        "value": [
+          "Whole plant"
+        ],
+        "url": "https://veggiescout.mgcafe.uky.edu/cottony-leak-cucurbit-crops",
+        "quote": "affects fruits of most cucurbits but is more common on cucumber and squash. The disease first appears on portions of fruit in contact with soil."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Disease first appears on parts of the fruit touching soil as small water-soaked spots that expand rapidly until large portions become necrotic and soft; profuse white cottony fungal growth appears on rotted areas in high humidity.",
+          "url": "https://veggiescout.mgcafe.uky.edu/cottony-leak-cucurbit-crops",
+          "quote": "The disease first appears on portions of fruit in contact with soil. Small, water-soaked spots expand rapidly until large portions of the fruit are necrotic and soft. Disease is more severe during warm weather under wet conditions or when soil is saturated. Profuse, white fungal growth resembling tufts of cotton can be found on rotted areas when humidity is high."
+        },
+        "diagnostic_features": {
+          "value": "Profuse, white fungal growth resembling tufts of cotton on rotted areas when humidity is high.",
+          "url": "https://veggiescout.mgcafe.uky.edu/cottony-leak-cucurbit-crops",
+          "quote": "Profuse, white fungal growth resembling tufts of cotton can be found on rotted areas when humidity is high."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use physical barriers (mulches) to prevent fruit from contacting soil",
+          "Apply fungicides before or at planting, which may provide some disease suppression",
+          "Manage excess soil moisture through drainage and irrigation management",
+          "Promptly remove and destroy diseased plant material during the growing season",
+          "Avoid movement of infested soil to clean fields"
+        ],
+        "url": "https://veggiescout.mgcafe.uky.edu/cottony-leak-cucurbit-crops",
+        "quote": "Management: Use physical barriers (mulches) to prevent fruit from contacting soil. Fungicides applied before or at planting may provide some disease suppression. Manage excess soil moisture (drainage, irrigation). Promptly remove and destroy diseased plant material during the growing season. Avoid movement of infested soil to clean fields."
+      },
+      "confidence": "low",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Corynespora Leaf Spot",
+      "pathogen_scientific_name": {
+        "value": "Corynespora cassiicola",
+        "url": "https://wiki.bugwood.org/Corynespora_cassiicola_(target_spot_of_cucurbits)",
+        "quote": "Scientific Name Corynespora cassiicola",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://wiki.bugwood.org/Corynespora_cassiicola_(target_spot_of_cucurbits)",
+        "quote": "Target spot is caused by the fungus Corynespora cassiicola"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://wiki.bugwood.org/Corynespora_cassiicola_(target_spot_of_cucurbits)",
+        "quote": "All above ground parts of the plant can be affected."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Target spot begins on leaves as yellow leaf flecks, which later become angular with a definite outline, then become circular with light brown centers surrounded by dark brown margins; lesions coalesce to produce large dead areas with dead and shedding leaves.",
+          "url": "https://wiki.bugwood.org/Corynespora_cassiicola_(target_spot_of_cucurbits)",
+          "quote": "Target spot begins on leaves as yellow leaf flecks, which later become angular with a definite outline. The spots become circular with light brown centers surrounded by dark brown margins. Lesions coalesce to produce large dead areas with dead and shedding leaves."
+        },
+        "diagnostic_features": {
+          "value": "Circular spots with light brown centers surrounded by dark brown margins (target-like appearance).",
+          "url": "https://wiki.bugwood.org/Corynespora_cassiicola_(target_spot_of_cucurbits)",
+          "quote": "The spots become circular with light brown centers surrounded by dark brown margins."
+        },
+        "look_alikes": {
+          "value": [
+            "downy mildew",
+            "other leaf spotting diseases"
+          ],
+          "url": "https://wiki.bugwood.org/Corynespora_cassiicola_(target_spot_of_cucurbits)",
+          "quote": "Target spot occurs sporadically and can be confused with downy mildew and other leaf spotting diseases."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Most protectant fungicides used to control other foliar pathogens will suppress target spot",
+          "Destroy infected debris or sanitize greenhouse areas to greatly reduce the spread of disease",
+          "Use resistant cultivars, if available, in conjunction with the other disease management strategies"
+        ],
+        "url": "https://wiki.bugwood.org/Corynespora_cassiicola_(target_spot_of_cucurbits)",
+        "quote": "Most protectant fungicides used to control other foliar pathogens will suppress target spot. Destroying infected debris or sanitizing greenhouse areas will greatly aid in reducing the spread of disease. Resistant cultivars, if available, should be used in conjunction with the aforementioned disease management strategies."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Cucurbit Downy Mildew",
+      "pathogen_scientific_name": {
+        "value": "Pseudoperonospora cubensis",
+        "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+        "quote": "caused by the fungus-like oomycete pathogen Pseudoperonospora cubensis ( P. cubensis )",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Oomycete",
+        "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+        "quote": "caused by the fungus-like oomycete pathogen Pseudoperonospora cubensis"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://extension.msstate.edu/publications/cucurbit-downy-mildew",
+        "quote": "Signs and symptoms of downy mildew typically occur only on leaves. Leaves of all ages may be affected."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Downy mildew causes angular, yellow to brown lesions on the upper leaf surface that are restricted by leaf veins; lesions may remain yellow or turn brown and can expand to cover and kill much of the leaf. Under favorable, moist conditions the underside of the leaf below the lesions may be covered in dark gray- to purple-colored 'down' (masses of sporangia).",
+          "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+          "quote": "Downy mildew causes angular, yellow to brown lesions on top of the leaves that are restricted by leaf veins ( Figure 1 ). When conditions are favorable, for example early in the morning when moisture is higher, lesions observed on the underside of the leaf may be covered in dark \"down\" ( Figure 2 ). This downy growth is masses of pathogen spores called sporangia, which can be seen in the field with a 20X hand lens."
+        },
+        "diagnostic_features": {
+          "value": "Angular, yellow to brown lesions on the topside of leaves bound/restricted by leaf veins, with dark downy spore (sporangia) growth on the leaf underside; in watermelon and cantaloupe lesions are not always angular, but spores on the underside provide evidence of the pathogen.",
+          "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+          "quote": "Downy mildew causes angular, yellow to brown lesions on top of the leaves that are restricted by leaf veins ( Figure 1 ). ... Identification of downy mildew can be more difficult in watermelon and cantaloupe than in cucumber since lesions do not always have the characteristic angular shape, but spores on the underside of the leaf can provide additional evidence of the pathogen."
+        },
+        "look_alikes": {
+          "value": [
+            "Alternaria leaf blight, caused by Alternaria cucumerina",
+            "Angular leaf spot, caused by Pseudomonas syringae pv. lachrymans",
+            "Anthracnose, caused by Colletotrichum orbiculare",
+            "Powdery mildew, caused by Podosphaera xanthii or Erysiphe cichoracearum",
+            "Phytophthora leaf blight, caused by Phytophthora capsici"
+          ],
+          "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+          "quote": "Downy mildew is often confused with other foliar diseases such as: Alternaria leaf blight, caused by Alternaria cucumerina ( Figure 3 ) Angular leaf spot, caused by Pseudomonas psyringae pv. lachrymans ( Figure 4 ) Anthracnose, caused by Colletotrichum orbiculare ( Figure 5 ) Powdery mildew, caused by Podosphaera xanthii or Erysiphe cichoracearum, note white powdery growth on the leaf surface ( Figure 6 ) Phytophthora leaf blight, caused by Phytophthora capsici ( Figure 7 )"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant early in the season to escape high disease pressure",
+          "Plant tolerant/resistant cultivars when possible (e.g., Citadel and Peacemaker pickling cucumbers; SV3462CS and SV4142CL slicing cucumbers; cucumber varieties Calypso, Dasher II, General Lee, and Thunder recommended in Mississippi)",
+          "Use cultural practices that promote air flow and reduce leaf wetness (increase plant spacing, grow on a trellis, avoid overhead irrigation; reduce humidity in protected structures); do not allow water to remain on leaves for long periods",
+          "Scout plants often and remove infected plants",
+          "Sign up for and monitor the Cucurbit Downy Mildew IPM Pipe (ipmPIPE) website for outbreaks and report any outbreaks to alert others",
+          "Protect the crop with fungicides, applied before disease develops; before disease appears apply at 7-day intervals for cucumbers and 10-day intervals for other cucurbits, and after detection at 5-day intervals for cucumbers and 7-day intervals for other cucurbits",
+          "Use protectant fungicides such as chlorothalonil and mancozeb before onset; once disease develops incorporate systemic fungicides into the spray program",
+          "Practice resistance management by alternating fungicides based on FRAC codes and tank-mixing a systemic fungicide with a protectant or a different mode of action (different FRAC group)",
+          "For organic growers, fixed copper / OMRI-listed formulations (coppers, neem oil, peroxides, biologicals) are the labeled options with some efficacy",
+          "For home gardeners, use products containing copper or chlorothalonil (e.g., 'Daconil')"
+        ],
+        "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+        "quote": "Before disease appears apply fungicides at 7-day interval for cucumbers and 10-day intervals for other cucurbits. After disease is detected in your area apply fungicides at 5-day interval for cucumbers and 7-day intervals for other cucurbits. Alternate products and tank mix with mancozeb or chlorothalonil to avoid generating fungicide-resistant strains."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "visual_symptoms.diagnostic_features",
+          "canonical_value": "Lesions are angular, restricted by leaf veins (characteristic angular shape, especially in cucumber)",
+          "alternative_value": "In most cucurbits lesions have irregular margins; only in cucumbers are lesions angular",
+          "alternative_source_url": "https://extension.msstate.edu/publications/cucurbit-downy-mildew",
+          "note": "NC State emphasizes angular vein-restricted lesions; Mississippi State notes lesion margins are irregular in most cucurbits and angular only in cucumbers. Both agree gray- to purple-colored sporangia form on the lower leaf surface."
+        }
+      ]
+    },
+    {
+      "disease_name": "Gummy Stem Blight",
+      "pathogen_scientific_name": {
+        "value": "Stagonosporopsis caricae",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/cantaloupe-cucumis-melo-gummy-stem-blight-black-rot",
+        "quote": "A fungus, Stagonosporopsis caricae (syns. Stagonosporopsis citrulli , Stagonosporopsis cucurbitacearum , Didymella bryoniae , Phoma cucurbitacearum ), which overwinters in associaton with infected crop debris for at least two years.",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+        "quote": "Gummy stem blight is caused by several closely related fungal pathogens in the genus Stagonosporopsis"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Seed",
+          "Fruit",
+          "Whole plant"
+        ],
+        "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+        "quote": "Stems, vines, leaves, and fruits are affected by gummy stem blight, which can result in yield reduction, damaged fruit (black rot), and plant death."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "On leaves, brown to black circular spots associated with the leaf margins progress toward the center of the leaf; stem and vine cankers form near the nodes with a characteristic brown/reddish gummy exudate and can girdle the plant; on fruit, circular water-soaked spots expand and become black and leathery (black rot).",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/cantaloupe-cucumis-melo-gummy-stem-blight-black-rot",
+          "quote": "On leaves, brown to black circular spots generally associated with the leaf margins progress toward the center of the leaf. Stem infections can girdle the plant. On fruit, the fungus causes circular water-soaked spots which expand and may take on a black, leathery appearance."
+        },
+        "diagnostic_features": {
+          "value": "A gummy exudate is usually in the center of diseased spots, which become covered with white mycelium and tiny black fungal fruiting structures (pycnidia, perithecia, and pseudothecia) under high relative humidity; pycnidia swell and release tendrils of spores when wetted.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/cantaloupe-cucumis-melo-gummy-stem-blight-black-rot",
+          "quote": "Regardless of where the lesion occurs, a gummy exudate is usually in the center of diseased spots. The spot becomes covered with white mycelium and tiny black fungal fruiting structures (pycnidia and pseudothecia) when under a higher relative humidity."
+        },
+        "look_alikes": {
+          "value": [
+            "Anthracnose (Colletotrichum orbiculare)",
+            "Blossom end rot (abiotic)",
+            "Inadequate soil liming"
+          ],
+          "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+          "quote": "Anthracnose , Colletotrichum orbiculare, note the yellow halo around infected spots ( Figure 5 ). Blossom end rot , abiotic, note water-soaked spots and only located opposite to fruit stem ( Figure 6 )."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use pathogen-free seed that has been tested for the pathogen, from a reputable company; apply seed treatments if not previously treated",
+          "Regularly inspect/scout transplant seedlings in greenhouses and discard seedlings near infected plants; avoid using healthy-looking seedlings from trays with infected plants",
+          "Separate cucurbit transplant trays from other vegetables and keep greenhouse humidity below 80% with ventilation",
+          "Rotate out of cucurbits for at least 2 years (3-4 years recommended after a confirmed occurrence) using non-host crops such as small grain or corn",
+          "Eradicate volunteer cucurbits and wild hosts (wild citrons, balsam pear) before planting",
+          "Deep plow / promptly incorporate infected plant debris after harvest to ensure complete decomposition",
+          "Avoid overhead irrigation; water in the morning when leaves dry quickly",
+          "Apply fungicides preventively and scout routinely for timely application; Chlorothalonil (Bravo) and Mancozeb are effective contact fungicides",
+          "Alternate fungicide chemistries / FRAC groups to avoid resistance: carboxamides (Group 7: Endura, Fontelis), DMI (Group 3: Proline, Rhyme), strobilurins (Group 11: Cabrio, Quadris), Topsin M (Group 1), copper (Group M1), Regalia (P5), OSO (Group 19), and premixes (Switch, Pristine, Merivon, Inspire Super, Aprovia Top, Miravis Prime, Orondis Opti, Quadris Top/Opti, ManKocide)",
+          "Avoid wounding fruit during harvest; cure winter squash rind (~77Â°F for 1-2 weeks) and store fruit properly (45-50Â°F; ~55Â°F and 60% RH) to prevent postharvest black rot",
+          "Biological controls: Double Nickel LC and LifeGard WG",
+          "No resistant cucurbit varieties exist (only a very few resistant melon/watermelon varieties)"
+        ],
+        "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+        "quote": "Purchase seeds or seedlings free of pathogens from a reputable company, no resistant cucurbit varieties exist. Consider seed treatments. Inspect seedlings regularly for symptoms and dispose of all seedlings near infected plants. Deep plow infected areas post-harvest to ensure complete decomposition of all plant material. Rotate crops, carefully removing all volunteers of relates species."
+      },
+      "confidence": "high",
+      "num_sources": 4,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Stagonosporopsis caricae",
+          "alternative_value": "Didymella bryoniae",
+          "alternative_source_url": "https://ask.ifas.ufl.edu/publication/PP280",
+          "note": "UF/IFAS and Cornell name the pathogen Didymella bryoniae; Cornell notes this is the pathogen's previous name. PNW lists Didymella bryoniae as a synonym of Stagonosporopsis caricae. No NCBI/MycoBank taxonomy validation was supplied, so the accepted name is not independently verified."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Stagonosporopsis caricae",
+          "alternative_value": "Stagonosporopsis cucurbitacearum, Stagonosporopsis citrulli, Stagonosporopsis caricae (species complex)",
+          "alternative_source_url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+          "note": "NC State attributes gummy stem blight to three closely related Stagonosporopsis species rather than a single species; PNW lists S. citrulli and S. cucurbitacearum as synonyms of S. caricae."
+        },
+        {
+          "field": "disease_name",
+          "canonical_value": "Gummy Stem Blight (Black Rot)",
+          "alternative_value": "Gummy stem blight / Black rot (separate names)",
+          "alternative_source_url": "https://blogs.cornell.edu/livegpath/gallery/cucurbits/gummy-stem-blight-and-black-rot-of-cucurbit-crops/",
+          "note": "Cornell treats these as the same disease/pathogen but applies the name 'gummy stem blight' to foliar/stem symptoms and 'black rot' to fruit symptoms. Merged into one canonical entry."
+        }
+      ]
+    },
+    {
+      "disease_name": "Rhizoctonia Damping-Off, Blight And Rot",
+      "pathogen_scientific_name": {
+        "value": "Rhizoctonia solani",
+        "url": "https://wiki.bugwood.org/Rhizoctonia_solani_(belly_rot)",
+        "quote": "Belly rot is caused by the soilborne fungus Rhizoctonia solani",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://cucurbitbreeding.wordpress.ncsu.edu/cucumber-breeding/cucumber-disease-handbook/belly-rot-rhizoctonia-solani-kuhn/",
+        "quote": "Belly rot is caused by the fungus Rhizoctonia solani Kuhn (anastomosis group 4)."
+      },
+      "affected_parts": {
+        "value": [
+          "Pod"
+        ],
+        "url": "https://veggiescout.ca.uky.edu/belly-rot-cucurbit-crops",
+        "quote": "develops when fruit comes into contact with soil"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Belly rot symptoms occur on the underside and blossom end of cucumber fruit, producing water-soaked, tan to brown lesions that become sunken, cratered, irregular in shape, and dried as the disease progresses.",
+          "url": "https://wiki.bugwood.org/Rhizoctonia_solani_(belly_rot)",
+          "quote": "Belly rot symptoms occur on the underside and blossom end of cucumber fruit, producing water-soaked, tan to brown lesions. As the disease progresses lesions become sunken, cratered, irregular in shape, and dried."
+        },
+        "diagnostic_features": {
+          "value": "Decay occurs most often on the side of the fruit in contact with the soil, the fruit may have small cracks in the rotten area, and under humid conditions a dense brown mold covers the rotted area.",
+          "url": "https://cucurbitbreeding.wordpress.ncsu.edu/cucumber-breeding/cucumber-disease-handbook/belly-rot-rhizoctonia-solani-kuhn/",
+          "quote": "The fruit may have small cracks in the rotten area. Under humid conditions a dense brown mold covers the rotted area."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Space plants for air circulation and rapid drying.",
+          "Use physical barriers (mulches) to prevent fruit from contacting soil; belly rot can be controlled effectively by not letting fruit touch the soil.",
+          "Plastic mulches are often effective in preventing belly rot in semi-arid and arid production regions.",
+          "Apply protectant fungicides when weather becomes warm and wet (soil-applied fungicides provide inconsistent disease control).",
+          "Soil fumigation can be effective in certain regions.",
+          "Promptly remove and destroy diseased plant material during the growing season.",
+          "Manage weeds and potential alternative hosts; thorough weed control is essential for crop rotation to be most effective.",
+          "Avoid movement of infested soil to clean fields.",
+          "Promptly destroy crop residues after harvest and incorporate crop debris to hasten breakdown of the pathogen's dormant resting structures.",
+          "Deep plow to bury residual inoculum.",
+          "Practice a three-year or longer crop rotation with nonhost crops between cucurbit crops.",
+          "Use resistant sources: PI 165509, PI 19708-, Marketmore 76.",
+          "Temperatures below 50Â°F retard disease development during transit and storage."
+        ],
+        "url": "https://veggiescout.ca.uky.edu/belly-rot-cucurbit-crops",
+        "quote": "Management: Space plants for air circulation and rapid drying. Use physical barriers (mulches) to prevent fruit from contacting soil. Apply protectant fungicides when weather becomes warm and wet. Promptly remove and destroy diseased plant material during growing season. Manage weeds and potential alternative hosts. Avoid movement of infested soil to clean fields. Promptly destroy crop residues after harvest. Deep plow to bury residual inoculum. Rotate with nonhost crops for at least 3 years."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Scab",
+      "pathogen_scientific_name": {
+        "value": "Cladosporium cucumerinum",
+        "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/cucurbits-scab",
+        "quote": "Scab, caused by Cladosporium cucumerinum is a significant problem for summer and winter squash, pumpkin, melon, and watermelon.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/cucurbits-scab",
+        "quote": "The fungus can infect all above ground portions of the plant, but is most serious when it occurs on fruit."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Whole plant"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/cucurbits-scab",
+        "quote": "The fungus can infect all above ground portions of the plant, but is most serious when it occurs on fruit. ... On foliage, the first sign of the disease is pale-green, water-soaked lesions"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "On foliage, lesions begin pale-green and water-soaked, turning gray and angular, sometimes with a yellow halo and shot-holed appearance; on fruit, small sunken spots appear that may ooze sticky liquid, darken, and become crater-like, often with dark green velvety spore layers.",
+          "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/cucurbits-scab",
+          "quote": "On foliage, the first sign of the disease is pale-green, water-soaked lesions which turn gray and become angular. These lesions may appear with a yellow halo that can become shot-holed in appearance. Numerous lesions may cause leaf twisting and deformation. On fruit, spots first appear as small sunken areas which can be mistaken for insect injury. The spots may ooze a sticky liquid and become crater-like as they darken with age. Dark green, velvety layers of spores may appear in the cavities and secondary soft-rotting bacteria can invade."
+        },
+        "diagnostic_features": {
+          "value": "Fruit spots become crater-like and darken with age, may ooze a sticky liquid, and develop dark green, velvety layers of spores in the cavities; foliar lesions become angular with a yellow halo and shot-holed appearance.",
+          "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/cucurbits-scab",
+          "quote": "The spots may ooze a sticky liquid and become crater-like as they darken with age. Dark green, velvety layers of spores may appear in the cavities and secondary soft-rotting bacteria can invade."
+        },
+        "look_alikes": {
+          "value": [
+            "insect injury"
+          ],
+          "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/cucurbits-scab",
+          "quote": "On fruit, spots first appear as small sunken areas which can be mistaken for insect injury."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Rotate with non-cucurbit crops for 2-3 years.",
+          "Plant resistant cultivars if available.",
+          "Use seed that does not have significant levels of the pathogen.",
+          "Select sites with well-drained soil and good air movement for rapid drying of foliage and fruit.",
+          "Avoid overhead irrigation and dense plant canopies.",
+          "Protectant fungicides are recommended for control.",
+          "To be effective, fungicides must be applied before fruit formation."
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/cucurbits-scab",
+        "quote": "Rotate with non-cucurbit crops for 2-3 years. Plant resistant cultivars if available. Use seed that does not have significant levels of the pathogen. Select sites with well-drained soil and good air movement for rapid drying of foliage and fruit. Avoid overhead irrigation and dense plant canopies. Protectant fungicides are recommended for control. Fungicide sprays may not be effective during extended cool, wet weather due to the short disease cycle of this pathogen. To be effective, fungicides must be applied before fruit formation."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    }
+  ],
+  "crop": "Cucumber",
+  "generated_date": "2026-06-10"
+}

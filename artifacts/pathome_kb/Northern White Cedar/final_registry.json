@@ -1,0 +1,146 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Needle Blight Of Cedar",
+      "pathogen_scientific_name": {
+        "value": "Didymascella thujina",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
+        "quote": "Cause Didymascella thujina , a fungus.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
+        "quote": "Didymascella thujina , a fungus."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
+        "quote": "Light-brown to tan spots appear on the leaves, and large brown fruiting structures of the fungus (apothecia) form in the center of these spots."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Small, bleached light-brown to tan spots appear first on the upper surface of one-year-old leaves; one or several brown to black fruiting structures (apothecia) form in the center of the spots in late spring; leaves turn brown and drop in fall, while infected leaves remaining on the tree turn ashy gray.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
+          "quote": "Small, bleached spots on the upper surface of one-year-old leaves appear first. One or several brown to black fruiting structures (apothecia) appear on the small leaves in late spring. Leaves turn brown and drop in fall. Infected leaves that remain on the tree turn ashy gray."
+        },
+        "diagnostic_features": {
+          "value": "Apothecia are embedded in the leaf tissues and the entire structure drops out, leaving deep pits; the disease progression gives the appearance of having been scorched by fire.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
+          "quote": "Apothecia are imbedded in leaf tissues; the entire structure drops out, leaving deep pits. The disease progression gives the appearance of having been scorched by fire."
+        },
+        "look_alikes": {
+          "value": [
+            "Pseudocercospora thujina (formerly Coryneum thujinum)"
+          ],
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
+          "quote": "Can also be confused with the minor problem caused by Pseudocercospora thujina (formerly Coryneum thujinum )."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Application of fungicides to manage the disease is rarely necessary",
+          "A copper fungicide (Bordeaux Mix) or mancozeb (Dithane) should be effective if applied early in the season, when susceptible foliage is developing",
+          "Propagate from disease-free stock plants",
+          "Use seed from British Columbia coastal, low-elevation populations",
+          "Space nursery plants and time irrigation to promote rapid drying of foliage",
+          "Do not grow susceptible cultivars downwind of infected hedges, windbreaks, or nearby stands of native western red cedar",
+          "Pruning out and burning affected twigs is of limited use",
+          "Remove plant debris from seed before seeding",
+          "Apply fungicides during wet periods in spring and fall to protect healthy foliage",
+          "Banner MAXX at 5 to 8 fl oz/100 gal water can be used if not phytotoxic to plants",
+          "Topas (propiconazole) registered in British Columbia for use every 4 weeks during the growing season to a maximum of six applications (Group 3 fungicide, 12-hr reentry)",
+          "Bordeaux or fixed-copper sprays (such as CuPRO 5000 at 1.5 to 2 lb/A) in spring and early summer (48-hr reentry)",
+          "Mancozeb-based products applied as regular sprays late March through May and late August through October (Group M3, 24-hr reentry)",
+          "Tebuject 16 registered for tree injections, number of capsules based on tree size"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
+        "quote": "Cultural control Propagate from disease-free stock plants. Use seed from British Columbia coastal, low-elevation populations. Space nursery plants and time irrigation to promote rapid drying of foliage. Do not grow susceptible cultivars downwind of infected hedges, windbreaks, or nearby stands of native western red cedar. Pruning out and burning affected twigs is of limited use. Remove plant debris from seed before seeding. Chemical control Apply during wet periods in spring and fall to protect healthy foliage."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Didymascella thujina",
+          "alternative_value": "Keithia thujina",
+          "alternative_source_url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
+          "note": "Maine Forest Service lists Keithia thujina as a synonym of the accepted name Didymascella thujina: 'Cedar Leaf Blight Didymascella thujina [= Keithia thujina ]'."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar",
+          "alternative_value": "Foliar, Stem",
+          "alternative_source_url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
+          "note": "Maine Forest Service indicates twigs are also affected/shed ('Heavily-infected needles and twigs are shed later in the fall'), implying stem involvement, whereas PNW restricts symptoms to foliage."
+        },
+        {
+          "field": "treatments",
+          "canonical_value": "PNW Handbook cultural + chemical program (merged)",
+          "alternative_value": "Maine: fungicide application rarely necessary; copper (Bordeaux Mix) or mancozeb (Dithane) if applied early",
+          "alternative_source_url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
+          "note": "Treatment list is a union of both sources; Maine quote: 'Application of fungicides to manage the disease is rarely necessary.  A copper fungicide (Bordeaux Mix) or mancozeb (Dithane) should be effective if applied early in the season, when susceptible foliage is developing.'"
+        }
+      ]
+    },
+    {
+      "disease_name": "Arborvitae Needle Blight",
+      "pathogen_scientific_name": {
+        "value": "Pestalotiopsis and Phyllosticta",
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
+        "quote": "Arborvitae needle blight is caused by the fungal pathogens  Pestalotiopsis  and  Phyllosticta .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
+        "quote": "Arborvitae needle blight is caused by the fungal pathogens  Pestalotiopsis  and  Phyllosticta ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
+        "quote": "Arborvitae infected by Phyllosticta  typically have blighted needle tips and/or discolored (pale green to yellow) needles ... Overall, Pestalotiopsis can likely be described as more aggressive in comparison to Phyllosticta because of its ability to attack stems and small branches."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Phyllosticta-infected arborvitae show blighted needle tips and pale green to yellow, desiccated-looking needles, with infections progressing from tip toward the base; Pestalotiopsis causes browning and dieback that can kill small branches.",
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
+          "quote": "Arborvitae infected by Phyllosticta  typically have blighted needle tips and/or discolored (pale green to yellow) needles that may appear desiccated. Infections often initiate at the needle tip and progress towards the base."
+        },
+        "diagnostic_features": {
+          "value": "During wet, mild weather black pads of fungal tissue (pycnidia) rupture through the needle epidermis to release spores; Pestalotiopsis produces small pads under the epidermis that rupture to form a long black mass of spores and attacks stems and small branches, whereas Phyllosticta is primarily restricted to the needles.",
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
+          "quote": "During wet and mild weather, black pads of fungal tissue (pycnidia) rupture through the epidermis on symptomatic needles to release large volumes of spores (conidia) ... Pestalotiopsis produces small pads of fungal tissue underneath the epidermis, and when moisture is abundant the pads ruptures through, producing a long black mass of spores. ... Phyllosticta , meanwhile, is primarily restricted to the needles."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Prune and discard as many infected plant parts as possible",
+          "Avoid pruning during wet weather, when the fungus is most actively producing and disseminating spores",
+          "Avoid watering with overhead sprinklers that wet the foliage",
+          "Use drip irrigation or hand-watering of newly planted trees",
+          "Apply fungicides labeled for use on ornamentals (copper hydroxide, copper salts of fatty and rosin acids, metconazole, propiconazole, thiophanate-methyl and mancozeb)",
+          "Use fungicides preventatively to limit infections on the current year's growth in the spring",
+          "Use proper spacing and planting techniques to alleviate predisposing stresses"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
+        "quote": "The best course of action for management of any needle and shoot blight pathogen is to prune and discard as many infected plant parts as much as possible. ... Avoid pruning during wet weather ... Avoid watering with overhead sprinklers that wet the foliage ... Drip irrigation or hand-watering of newly planted trees is preferable. ... Fungicides labeled for use on ornamentals in Massachusetts that may have utility against both pathogens include: copper hydroxide, copper salts of fatty and rosin acids, metconaozle, propiconazole, thiophanate-methyl and mancozeb. Fungicides should be used as a preventative measure to limit infections on the current year's growth in the spring. ... Proper spacing and planting techniques can alleviate some of the predisposing stresses"
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    }
+  ],
+  "crop": "Northern White Cedar",
+  "generated_date": "2026-06-10"
+}

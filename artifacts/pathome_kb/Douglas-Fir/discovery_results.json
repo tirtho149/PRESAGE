@@ -1,0 +1,82 @@
+{
+  "crop": "Douglas-Fir",
+  "candidate_sources": [
+    {
+      "url": "https://www.fs.usda.gov/foresthealth/docs/fidls/FIDL-190-RhabdoclineNeedleCast.pdf",
+      "title": "Rhabdocline Needle Cast of Douglas-fir (Forest Insect & Disease Leaflet 190)",
+      "snippet": "Rhabdocline needle cast, caused by fungi in the genus Rhabdocline (R. pseudotsugae and R. weirii), affects Douglas-fir. Symptoms include yellow spots on current-season needles in fall that turn reddish-brown by spring, followed by premature needle drop. Discusses disease cycle, hosts, impact, and management including use of local seed sources and resistant varieties.",
+      "source_type": "USDA",
+      "diseases_mentioned": [
+        "Rhabdocline needle cast",
+        "Rhabdocline pseudotsugae",
+        "Rhabdocline weirii"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/fir-douglas-pseudotsuga-menziesii-needle-cast-rhabdocline",
+      "title": "Fir, Douglas (Pseudotsuga menziesii)-Needle Cast, Rhabdocline | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Rhabdocline needle cast affects only Douglas-fir (Pseudotsuga menziesii). Symptoms appear as yellow to reddish-brown mottled or banded discoloration on needles; fruiting bodies (apothecia) form under the epidermis and split lengthwise to release spores in spring. Management includes resistant seed sources, spacing for air circulation, and fungicide options.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Rhabdocline needle cast",
+        "Rhabdocline pseudotsugae"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/landscape/fact-sheets/rhabdocline-needle-cast",
+      "title": "Rhabdocline Needle Cast : Landscape : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Rhabdocline needle cast, caused by the fungus Rhabdocline spp., is a common disease of Douglas-fir. Yellow spots appear on current-season needles in late summer/fall, enlarging and turning reddish-brown the following spring. Lesions swell and split to release spores. Management includes avoiding poor air drainage, spacing, and fungicide applications.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rhabdocline needle cast",
+        "Rhabdocline pseudotsugae"
+      ]
+    },
+    {
+      "url": "https://hortsense.cahnrs.wsu.edu/fact-sheet/douglas-fir-rhabdocline-needle-cast/",
+      "title": "Douglas Fir: Rhabdocline needle cast | Hortsense | Washington State University",
+      "snippet": "Rhabdocline needle cast of Douglas-fir produces yellow then reddish-brown banding on needles, fruiting bodies on the needle underside, and premature defoliation. Provides cultural and chemical management recommendations for the home landscape.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rhabdocline needle cast"
+      ]
+    },
+    {
+      "url": "https://yardandgarden.extension.iastate.edu/article/2006/3-22/swiss.html",
+      "title": "Swiss Needle Cast of Douglas Fir | Yard and Garden",
+      "snippet": "Swiss needle cast is a foliage disease specific to Douglas-fir. Needles first become yellow-green, chlorotic, then mottled or entirely brown, then fall. Check older needles for the characteristic black fruiting bodies of the fungus erupting through the stomatal lines on the underside.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Swiss needle cast"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/fir-douglas-pseudotsuga-menziesii-needle-cast-swiss",
+      "title": "Fir, Douglas (Pseudotsuga menziesii)-Needle Cast, Swiss | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Swiss needle cast is caused by the fungal pathogen Nothophaeocryptopus gaeumannii. An important diagnostic sign is lines of pseudothecia in stomata on the undersides of needles. Symptoms include chlorotic needles and decreased needle retention.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Swiss needle cast"
+      ]
+    },
+    {
+      "url": "https://sncc.forestry.oregonstate.edu/swiss-needle-cast-summary",
+      "title": "Swiss Needle Cast Summary | Swiss Needle Cast Cooperative",
+      "snippet": "Swiss needle cast (SNC) is a foliage disease specific to Douglas-fir caused by Nothophaeocryptopus gaeumannii. The fungus lives inside the needles and impacts needle function when pseudothecia emerge into and plug the stomates, blocking gas exchange. Symptoms include chlorotic foliage, low needle retention, thin crowns and reduced growth.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Swiss needle cast"
+      ]
+    },
+    {
+      "url": "https://forestpathology.org/foliage/swiss-needle-cast/",
+      "title": "Swiss Needle Cast | Forest Pathology",
+      "snippet": "Swiss needle cast disease symptoms include chlorotic needles and decreased needle retention, resulting in sparse crowns and reduced diameter and height growth. Symptoms typically appear one to three years after infection and are more severe in the lower and inner foliage. Caused by Nothophaeocryptopus gaeumannii.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Swiss needle cast"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

@@ -1,0 +1,199 @@
+{
+  "crop": "Common Bean",
+  "candidate_sources": [
+    {
+      "url": "https://hortsense.cahnrs.wsu.edu/fact-sheet/bean-curly-top-beet-curly-top-virus/",
+      "title": "Bean: Curly top (Beet curly top virus) | Hortsense | Washington State University",
+      "snippet": "Curly top of bean is caused by Beet curly top virus, transmitted by beet leafhoppers. The predominant symptom is stunting. On young plants the trifoliolate leaves pucker and curl down; general yellowing and death follow. Older affected plants become yellowed, dwarfed, and bunchy, and pods are stunted.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Curly top",
+        "Beet curly top virus"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-all-phaseolus-vulgaris-curly-top",
+      "title": "Bean, All (Phaseolus vulgaris)-Curly Top | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Curly top of bean (Phaseolus vulgaris) caused by Beet curly top virus, vectored by the beet leafhopper. The disease is cyclic but occurs frequently in the Columbia Basin, southern Idaho, and central Oregon. Management includes resistant/tolerant varieties and planting timing relative to leafhopper migration.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Curly Top",
+        "Beet curly top virus"
+      ]
+    },
+    {
+      "url": "https://www.uidaho.edu/extension/food/ipm/ag-pests/beet-curly-top",
+      "title": "Beet curly top virus | University of Idaho Extension",
+      "snippet": "Beet curly top virus (BCTV), genus Curtovirus, family Geminiviridae, has a broad host range including beans, table beet, tomatoes, peppers, squash, and melon. The only vector is the beet leafhopper (Circulifer tenellus). Infected plants are stunted, yellow, misshapen, and curled; symptoms appear 7-14 days after infection. Management: tolerant varieties, seed-treatment insecticides, and adjusted planting timing.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Beet curly top virus",
+        "Curly top"
+      ]
+    },
+    {
+      "url": "https://edis.ifas.ufl.edu/publication/PP107",
+      "title": "PP-62/PP107: Common Bacterial Blight of Snap Bean in Florida",
+      "snippet": "Common bacterial blight of bean caused by Xanthomonas axonopodis pv. phaseoli (and the fuscous form X. fuscans subsp. fuscans). Symptoms begin as flaccid, small water-soaked spots on the underside of leaflets that enlarge, coalesce, and become brown, dry, and brittle with a narrow yellow border. Disease is seedborne and favored by warm, wet weather; managed with disease-free seed, rotation, and resistant cultivars.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Common bacterial blight",
+        "Fuscous blight"
+      ]
+    },
+    {
+      "url": "https://cropwatch.unl.edu/plantdisease/drybean/common-blight",
+      "title": "Bacterial Blight in Dry Bean | CropWatch | Nebraska",
+      "snippet": "Common bacterial blight of dry bean is caused by Xanthomonas axonopodis pv. phaseoli; the fuscous strain (var. fuscans) produces a brown pigment. Water-soaked leaf spots enlarge to brown necrotic lesions with a narrow lemon-yellow margin; pods develop sunken, water-soaked spots. Spread by contaminated seed, rain, and irrigation; favored by warm temperatures above 85F.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Common bacterial blight",
+        "Fuscous blight"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/HPIPM:Common_Bacterial_Blight",
+      "title": "HPIPM: Common Bacterial Blight - Bugwoodwiki",
+      "snippet": "Common bacterial blight of bean is caused by Xanthomonas axonopodis pv. phaseoli and the fuscous blight pathogen X. axonopodis pv. phaseoli var. fuscans. Lesions begin as water-soaked spots that enlarge into large brown necrotic areas surrounded by a lemon-yellow zone; symptoms occur on leaves, stems, pods, and seeds. Pathogen is seed-transmitted and spread by splashing water.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Common bacterial blight",
+        "Fuscous blight"
+      ]
+    },
+    {
+      "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+      "title": "Bacterial Diseases of Beans | Plant Problems | Illinois Extension | UIUC",
+      "snippet": "Bacterial diseases of beans including common bacterial blight (Xanthomonas spp.). Symptoms include water-soaked spots that become brown, dry lesions with yellow margins on leaves and pods. Management emphasizes disease-free certified seed, crop rotation, and avoiding working in wet fields.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Common bacterial blight",
+        "Bacterial diseases of beans",
+        "Halo blight"
+      ]
+    },
+    {
+      "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
+      "title": "Rust of Dry Bean - Nebraska Extension Publications",
+      "snippet": "Rust is caused by the obligate fungus Uromyces appendiculatus. Symptoms initially appear as small yellow or white slightly raised spots on upper and/or lower leaf surfaces, which enlarge and form reddish-brown pustules about 1/8 inch or smaller containing thousands of urediniospores; pustules may be surrounded by a yellow border. Common bean rust can lead to 18-100% yield losses.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rust of Dry Bean",
+        "Common bean rust",
+        "Uromyces appendiculatus"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/bean-rust",
+      "title": "Bean, Rust : Vegetable : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Bean rust factsheet covering symptoms, pathogen Uromyces appendiculatus, disease cycle, and management on Phaseolus vulgaris.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bean rust",
+        "Uromyces appendiculatus"
+      ]
+    },
+    {
+      "url": "https://ipm.cahnr.uconn.edu/bean-rust/",
+      "title": "Bean Rust | Integrated Pest Management | University of Connecticut",
+      "snippet": "Rust spots are most numerous on the undersides of leaves, beginning as tiny white slightly raised spots that break open to become distinct round reddish brown spots; reddish brown dust-like spores brush off when touched. Disease is more severe in humid areas; management includes crop rotation, resistant varieties, and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bean Rust",
+        "Uromyces appendiculatus",
+        "Uromyces phaseoli"
+      ]
+    },
+    {
+      "url": "https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.species.55816",
+      "title": "Uromyces appendiculatus (bean rust) - CABI Plantwise Plus Knowledge Bank",
+      "snippet": "CABI datasheet for Uromyces appendiculatus (bean rust) covering host range, symptoms, biology, distribution, and management on common bean.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "bean rust",
+        "Uromyces appendiculatus"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/vegetable/fact-sheets/bean-halo-blight",
+      "title": "Bean, Halo Blight : Vegetable : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Leaf symptoms first appear as small, water-soaked spots on the lower leaf surface. A chlorotic zone of yellow tissue (halo) develops around necrotic spots. The disease is spread by rain splash, irrigation water and field workers, and favours cool (less than 25 Â°C) moist conditions. The pathogen persists on dry bean seeds.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Halo blight"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.44987",
+      "title": "Pseudomonas savastanoi pv. phaseolicola (halo blight (of beans)) | CABI Compendium",
+      "snippet": "Halo blight is caused by the bacterium Pseudomonas savastanoi pv. phaseolicola. Symptoms include water-soaked spots surrounded by chlorotic yellow-green halos. The disease is seedborne; up to 43% yield losses have been reported.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Halo blight"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/pdf/10.1094/PDIS-04-16-0448-RE",
+      "title": "An Emerging Disease Caused by Pseudomonas syringae pv. phaseolicola",
+      "snippet": "Pseudomonas syringae pv. phaseolicola causes halo blight of the common bean, Phaseolus vulgaris, worldwide and remains difficult to control. Disease is characterized by water-soaked necrotic lesions surrounded by yellow haloes.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Halo blight",
+        "Common bacterial blight"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Halo_blight",
+      "title": "Halo blight - Wikipedia",
+      "snippet": "Halo blight is a bacterial disease of common bean caused by Pseudomonas syringae pv. phaseolicola, characterized by water-soaked lesions surrounded by a yellow halo. Spread by rain splash and infected seed.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Halo blight"
+      ]
+    },
+    {
+      "url": "https://extension.colostate.edu/topic-areas/agriculture/white-mold-of-dry-beans-2-918/",
+      "title": "White Mold of Dry Beans - 2.918 - CSU Extension",
+      "snippet": "White mold is first observed as wet, soft spots or lesions on infected leaves, branches, stems and pods that enlarge into a watery, rotten mass of tissue covered by a white moldy growth. White mold is one of the most important diseases affecting dry beans in western Nebraska and Colorado, with losses averaging as high as 20 percent. The most important survival mechanism of S. sclerotiorum is the formation of sclerotia. Up to 75 percent of sclerotia buried 12 inches deep remain alive and infective three years or longer.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "White mold",
+        "Sclerotinia sclerotiorum"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/dry-beans/white-mold/",
+      "title": "White Mold / Dry Beans / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "In beans, this disease is commonly called white mold, while in other crops like pepper, potato, and tomato it's known as timber rot or white rot. Symptoms are usually first visible about one week after full bloom because blossoms are the first part of the plant colonized by the fungus. Initial symptoms on leaves, stems, and pods are pale (often bleached) colored, water-soaked lesions that enlarge and within a few days become covered with a white, cottony fungal growth and sclerotia. A good indicator of Sclerotinia disease is the presence of small, black sclerotia.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "White mold",
+        "Timber rot",
+        "White rot",
+        "Sclerotinia sclerotiorum"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/white-mold/",
+      "title": "White Mold and Its Management in Cabbage, Beans, and Other Vegetables | Cornell Vegetables",
+      "snippet": "The fungus Sclerotinia sclerotiorum is responsible for a number of vegetable diseases attacking a wide range of crops. White mold management includes reducing humidity and high-moisture periods within the plant canopy and field, providing adequate aeration by increasing plant and row spacing, and timing irrigations to allow drying of the plant canopy before nightfall. Disease control comprises integrated strategies using cultural practices, biological control, and chemical fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "White mold",
+        "Sclerotinia sclerotiorum"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-snap-phaseolus-vulgaris-white-mold-sclerotinia-rot",
+      "title": "Bean, Snap (Phaseolus vulgaris)-White Mold (Sclerotinia Rot) | Pacific Northwest Pest Management Handbooks",
+      "snippet": "White Mold (Sclerotinia Rot) of snap bean (Phaseolus vulgaris) caused by Sclerotinia sclerotiorum. Initial symptoms appear as water-soaked lesions on leaves, stems, and pods that become covered with white cottony mycelium and black sclerotia. Includes cultural and chemical management recommendations for the Pacific Northwest.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "White mold",
+        "Sclerotinia rot",
+        "Sclerotinia sclerotiorum"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

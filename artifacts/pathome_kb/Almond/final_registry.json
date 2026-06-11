@@ -1,0 +1,137 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Brown Rot",
+      "pathogen_scientific_name": {
+        "value": "Monilinia spp.",
+        "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/brownrot.html",
+        "quote": "Brown Rot Blossom and Twig Blight Monilinia spp.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/brownrot.html",
+        "quote": "The fungi kill flowers, girdle and kill twigs, and cause maturing almond nuts and fruit to decay."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Fruit"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/brown-rot-of-stone-fruits",
+        "quote": "Brown rot is a common disease in southern New England that affects blossoms, foliage, shoots, fruit and stems on susceptible trees."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Blighted flower buds, brown and undersized foliage, wilted shoot tips, and scattered twig and small branch dieback; blossoms and the associated shoots wilt and die, and gum exudes at the base of infected flowers. Fruit infection first appears as small water-soaked lesions that rapidly expand to consume the entire fruit, and discolored decay spots develop on fruit and nuts.",
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/brown-rot-of-stone-fruits",
+          "quote": "Symptoms often include blighted flower buds, brown and undersized foliage, wilted shoot tips, and scattered twig and small branch dieback. Fruit can be infected at any time but susceptibility to infection increases as they approach maturity. Symptoms of fruit infection first appear as small, water-soaked lesions that rapidly expand to consume the entire fruit."
+        },
+        "diagnostic_features": {
+          "value": "Cankers on blighted twigs have tan centers with dark margins, and during foggy, humid, or rainy weather gray to tan velvety spore masses form on diseased blossoms and twig cankers. Shoots killed by brown rot turn mostly brown to tan (versus black for bacterial blast, which produces no visible spores). Diseased shriveled fruit may be held in the canopy as mummies, and stem cankers are accompanied by copious gum production (gummosis).",
+          "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/brownrot.html",
+          "quote": "Unlike the clumps or masses of gray and tan spores that develop on tissue diseased by brown rot when it is humid or wet, bacterial blast produces no visible spores. Shoots killed by brown rot turn mostly brown to tan while those killed by bacterial blast generally turn black."
+        },
+        "look_alikes": {
+          "value": [
+            "Bacterial blast, blight, and canker caused by the Pseudomonas syringae bacterium",
+            "Citrus brown rot caused by Phytophthora species"
+          ],
+          "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/brownrot.html",
+          "quote": "Bacterial blast, blight, and canker caused by the Pseudomonas syringae bacterium produces similar blossom death, cankers, gumming, and shoot dieback on almonds and stone fruit. ... Citrus fruit that are almost mature can also develop a disease called brown rot . This malady is caused by Phytophthora species"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Where available, choose plant varieties that are resistant to brown rot, and keep trees vigorous with appropriate cultural care.",
+          "Remove infected leaves, shoots and fruit to reduce inoculum within and around the tree; promptly remove and dispose of diseased shoots during dry weather.",
+          "Prune branches (and thin interior branches of young trees) during dry weather to maintain an open canopy for better air circulation and sunlight penetration, which promotes drying.",
+          "After working on an infected tree, clean tools and dip or spray them with a 10% bleach solution, 70% isopropyl rubbing alcohol, or a commercial disinfectant.",
+          "Use drip or furrow irrigation or low-angle sprinklers to avoid wetting blossoms, foliage, and fruit.",
+          "Avoid overfertilizing with nitrogen, and manage other diseases and pests that wound fruit or nuts.",
+          "Inspect green fruit at least weekly and remove affected fruit before spores form; cool fruit quickly after harvest and inspect during storage.",
+          "Chemical control is based on protection of flower parts; time applications to each cultivar's bloom stage, treating at pink bud (5-10% bloom) and full bloom.",
+          "One application at full bloom is sufficient in most orchards in most years with low rainfall; a second or third near full bloom may be needed in severe years or extended wet bloom.",
+          "Begin applications just before buds open (pink or white color) and repeat at regular intervals per label; e.g., myclobutanil or thiophanate-methyl at 20-40% bloom, with a second application at 80-100% bloom if high humidity or heavy rainfall follow.",
+          "Fungicides labeled for use against Monilinia include: calcium polysulfide, copper hydroxide, copper salts of fatty and rosin acids, fenarimol, iprodione, mancozeb, propiconazole, sulfur, thiophanate-methyl and ziram.",
+          "Registered products for almond include pyraclostrobin/fluxapyroxad (Merivon), propiconazole (Bumper, Tilt), fenbuconazole (Indar 2F), difenoconazole/cyprodinil (Inspire Super), difenoconazole (Inspire), fluopyram/trifloxystrobin (Luna Sensation), metconazole (Quash), fluopyram/tebuconazole (Luna Experience), azoxystrobin/propiconazole (Quilt Xcel), azoxystrobin/difenoconazole (Quadris Top), pyraclostrobin/boscalid (Pristine), iprodione (Rovral, Nevado) plus narrow range oil, pyrimethanil (Scala SC), thiophanate-methyl (Topsin M WSB), cyprodinil (Vangard WG), azoxystrobin (Abound), fenhexamid (Elevate 50 WDG), trifloxystrobin (Gem 500SC), myclobutanil (Laredo EW, Rally 40WSP), captan (various 50WP), and tebuconazole (Toledo, Tebucon)."
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/brown-rot-of-stone-fruits",
+        "quote": "Remove infected leaves, shoots and fruit to reduce inoculum within and around the tree. Prune branches to maintain an open canopy for better air circulation and sunlight penetration... Begin applications just before buds open (when buds show a pink or white color). Fungicide applications should be made at regular intervals according to label recommendations. Fungicides labeled for use against Monilinia include: calcium polysulfide, copper hydroxide, copper salts of fatty and rosin acids, fenarimol, iprodione, mancozeb, propiconazole, sulfur, thiophanate-methyl and ziram."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Brown Rot Blossom and Twig Blight",
+          "alternative_value": "Brown Rot Blossom Blight",
+          "alternative_source_url": "https://ipm.ucanr.edu/agriculture/almond/brown-rot-blossom-blight/",
+          "note": "UC IPM almond pest management guideline names the disease 'Brown Rot Blossom Blight'."
+        },
+        {
+          "field": "disease_name",
+          "canonical_value": "Brown Rot Blossom and Twig Blight",
+          "alternative_value": "Brown Rot of Stone Fruits",
+          "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/brown-rot-of-stone-fruits",
+          "note": "UMass extension names the disease 'Brown Rot of Stone Fruits'; all three records describe the same Monilinia brown rot complex and were merged."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Monilinia spp.",
+          "alternative_value": "Monilinia laxa (rarely Monilinia fructicola)",
+          "alternative_source_url": "https://ipm.ucanr.edu/agriculture/almond/brown-rot-blossom-blight/",
+          "note": "UC IPM almond guideline attributes the disease primarily to Monilinia laxa, rarely M. fructicola. No NCBI/MycoBank taxonomy validation was supplied, so the genus-level umbrella name was retained as canonical."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Monilinia spp.",
+          "alternative_value": "Monilinia fructicola, Monilinia fructigena, Monilinia laxa",
+          "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/brown-rot-of-stone-fruits",
+          "note": "UMass lists three Monilinia species responsible for the greatest worldwide losses (M. fructicola, M. fructigena, M. laxa)."
+        }
+      ]
+    },
+    {
+      "disease_name": "Stigmina Fungus",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    }
+  ],
+  "crop": "Almond",
+  "generated_date": "2026-06-10"
+}

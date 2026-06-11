@@ -1,0 +1,85 @@
+{
+  "crop": "Lemon",
+  "candidate_sources": [
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.39570",
+      "title": "Penicillium digitatum (green mould) | CABI Compendium",
+      "snippet": "Penicillium digitatum is the causal agent of green mould, a primary postharvest disease of citrus fruits. It is a wound pathogen causing a soft, wet rot; datasheet covers symptoms, biology, distribution and management.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Green mould",
+        "Green mold",
+        "Penicillium digitatum"
+      ]
+    },
+    {
+      "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2021.833328/full",
+      "title": "Alternative Management Approaches of Citrus Diseases Caused by Penicillium digitatum (Green Mold) and Penicillium italicum (Blue Mold)",
+      "snippet": "Initial symptoms include a moist depression on the surface, which expands as white mycelium colonizes the surface; the centre of the mycelial mass turns olive as conidial production begins. Reviews wound infection, disease cycle, fungicides (imazalil, pyrimethanil, thiabendazole) and eco-friendly alternatives.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Green mold (Penicillium digitatum)",
+        "Blue mold (Penicillium italicum)"
+      ]
+    },
+    {
+      "url": "https://apps.lucidcentral.org/pppw_v10/text/web_full/entities/citrus_storage_moulds_197.htm",
+      "title": "Citrus storage moulds (197) - Pacific Pests, Pathogens & Weeds",
+      "snippet": "Fact sheet on citrus storage moulds including green mould (Penicillium digitatum) and blue mould (Penicillium italicum): wound-entry pathogens producing soft wet rot with white mycelium turning green/olive, plus prevention through careful handling and sanitation.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Green mould (Penicillium digitatum)",
+        "Blue mould (Penicillium italicum)",
+        "Citrus storage moulds"
+      ]
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11013941/",
+      "title": "Effect of Chitosanâ€“Riboflavin Bioconjugate on Green Mold Caused by Penicillium digitatum in Lemon Fruit",
+      "snippet": "Penicillium digitatum is the primary lemon fungal phytopathogen, causing green mold during the postharvest period; soft wet rot following wound infection. Study evaluates a chitosanâ€“riboflavin bioconjugate for control on lemon fruit.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Green mold",
+        "Penicillium digitatum"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-04-18-0603-PDN",
+      "title": "First Report of Whisker Mold as a Postharvest Disease Caused by Penicillium ulaiense on Citrus (Citrus unshiu) in Korea | Plant Disease",
+      "snippet": "Symptoms include a water-soaked, circular lesion and a blue-gray spore mass, with lesions covered by a blue-gray spore mass and coremia with white stalks and mycelia. The fungus forms whisker-like coremia measuring 1-8 mm, distinguishing it from the common blue mold agent Penicillium italicum. Causative agent identified as Penicillium ulaiense via morphology and beta-tubulin gene phylogeny.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Whisker mold",
+        "Blue mold"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-06-18-1098-PDN",
+      "title": "First Report of Penicillium ulaiense Causing Postharvest Whisker Mold of Oranges (Citrus sinensis) in Spain | Plant Disease",
+      "snippet": "Whisker mold caused by Penicillium ulaiense is a concern during citrus storage in Brazil, Egypt, Japan, Pakistan, and the United States. Identifying features on sporulated soft lesions include grayish blue conidial masses and whisker-like coremia with tall whitish stalks. Wounded fruit reach 100% infection within 2 weeks at 25C and 90-95% relative humidity.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Whisker mold"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s10327-012-0363-0",
+      "title": "First report of whisker mold, a postharvest disease on citrus caused by Penicillium ulaiense (in Japan) | Journal of General Plant Pathology",
+      "snippet": "First report of whisker mold, a postharvest disease on citrus caused by Penicillium ulaiense in Japan. Describes coremia (whisker-like structures) and blue-gray sporulation on stored citrus fruit, with morphological and molecular identification of the pathogen.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Whisker mold"
+      ]
+    },
+    {
+      "url": "https://www.researchgate.net/figure/Symptoms-of-whisker-mold-a-c-and-the-causative-agent-Penicillium-ulaiense-d-h-a-b_fig1_257494283",
+      "title": "Symptoms of whisker mold (a-c) and the causative agent Penicillium ulaiense (d-h)",
+      "snippet": "Symptoms of whisker mold (a-c) and the causative agent Penicillium ulaiense (d-h): blue-gray spore mass on lesion surface and whisker-like white coremia on infected citrus fruit.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Whisker mold"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

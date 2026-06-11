@@ -1,0 +1,208 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Southern Blight",
+      "pathogen_scientific_name": {
+        "value": "Sclerotium rolfsii",
+        "url": "https://ag.umass.edu/greenhouse-floriculture/photos/hosta-sclerotium-crown-rot",
+        "quote": "Sclerotium crown rot is caused by the fungus Sclerotium rolfsii",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hosta-petiole-and-crown-rot",
+        "quote": "caused by the fungus Sclerotium rolfsii"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Whole plant",
+          "Root"
+        ],
+        "url": "https://ag.umass.edu/greenhouse-floriculture/photos/hosta-sclerotium-crown-rot",
+        "quote": "Initial above-ground symptoms can include discoloration of lower leaves, wilting, and collapse. These are often followed by plant death. ... Sclerotium rolfsii is soil-borne and attacks plants at or below the soil line."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Symptoms include marginal yellowing and browning of leaves beginning with the lower leaves, progressing to entire discoloration, wilting, and collapse, with rotted petiole bases and mushy crowns; a white mat of fungus and tiny spherical sclerotia appear at the crown and soil surface.",
+          "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hosta-petiole-and-crown-rot",
+          "quote": "Symptoms of the disease include marginal yellowing and browning of the leaves, beginning with the lower leaves. As the disease progresses, the leaves discolor entirely and wilt. In the final stages of the disease, most of the leaves completely collapse and lay flat on the ground."
+        },
+        "diagnostic_features": {
+          "value": "Because the bases of the petioles are rotted, the leaves can be easily pulled away from the crown; a white mat of fungus (mycelium) fans out from the infected crown across the soil surface, and thousands of tiny, spherical sclerotia (BB to pepper grounds in size, white to brick red) are present in the rotted crown.",
+          "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hosta-petiole-and-crown-rot",
+          "quote": "Look a bit closer and you can see thousands of tiny, spherical sclerotia in the rotted crown. Sclerotia of S. rolfsii are somewhere between BB's and pepper grounds in size and vary in color from white (newly developed) to brick red."
+        },
+        "look_alikes": {
+          "value": [
+            "Other basal stem rots such as those caused by Rhizoctonia or other fungi"
+          ],
+          "url": "https://ag.umass.edu/greenhouse-floriculture/photos/hosta-sclerotium-crown-rot",
+          "quote": "Symptoms are easily confused with other basal stem rots such as those caused by Rhizoctonia or other fungi."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Dig up/dig and burn or remove hostas showing crown rot symptoms.",
+          "Thoroughly scrape and/or wash soil from all tools used in infested soil, then sterilize tools in a 10% solution of household bleach.",
+          "Buy disease-free plants / use only pathogen free stock.",
+          "Plant nonhost species into holes from which sick hostas have been excavated.",
+          "Follow good Integrated Pest Management practices to avoid fungicide applications.",
+          "Solarize or otherwise pasteurize soil before planting.",
+          "Remove soil from affected area and replace with new or sterilized soil.",
+          "Avoid overwatering and provide good soil drainage, for example, by planting in raised beds.",
+          "Rhizomes or bulbs can be treated with hot water to eliminate the fungus.",
+          "Soil drenches of fungicides (Cleary's 3336, Terraclor) around the base of plants before infection can prevent disease development (but will not cure affected plants).",
+          "Amendment of the soil with biological control agents such as MycoStop, PlantShield, SoilGard, or YieldShield may offer some control."
+        ],
+        "url": "https://ag.umass.edu/greenhouse-floriculture/photos/hosta-sclerotium-crown-rot",
+        "quote": "Dig and burn plants that are seriously infected. Solarize or otherwise pasteurize soil before planting. Remove soil from affected area and replace with new or sterilized soil. Use only pathogen free stock. Avoid overwatering and provide good soil drainage, for example, by planting in raised beds. ... Rhizomes or bulbs can be treated with hot water to eliminate the fungus. Soil drenches of fungicides (Cleary's 3336, Terraclor) around the base of plants before infection can prevent disease development (but will not cure affected plants). Amendment of the soil with biological control agents such as MycoStop, PlantShield,SoilGard, or YieldShield may offer some control."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Sclerotium Crown Rot",
+          "alternative_value": "Hosta Petiole and Crown Rot",
+          "alternative_source_url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hosta-petiole-and-crown-rot",
+          "note": "Both names refer to the same Sclerotium rolfsii crown/petiole rot on hosta. Iowa State labels it 'Hosta Petiole and Crown Rot'; UMass uses the pathogen-based 'Sclerotium crown rot'. Both are rank-5 university extension sources."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem, Whole plant, Root (union)",
+          "alternative_value": "Iowa State: Foliar/Stem/Whole plant; UMass: Foliar/Whole plant/Root",
+          "alternative_source_url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hosta-petiole-and-crown-rot",
+          "note": "Sources emphasize different plant parts; canonical value is the union. Both agree the pathogen attacks the crown at/below the soil line."
+        }
+      ]
+    },
+    {
+      "disease_name": "Hosta Virus X",
+      "pathogen_scientific_name": {
+        "value": "Hosta virus X",
+        "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+        "quote": "HVX is caused by a plant virus of the same name (i.e.,  Hosta virus X ).",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Viral",
+        "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+        "quote": "Hosta virus X (HVX) is the most common viral disease to infect hostas in Maine."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Whole plant"
+        ],
+        "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+        "quote": "The most common symptoms of this disease are a bleeding of color out from the veins of the leaves and blue or dark green mottling on the leaves (Figure 1)."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Symptoms include bleeding of color out from the leaf veins, blue or dark green mottling on the leaves, leaf distortion (puckering and twisting), ring spots, flecks, zipper marks, stunted growth, and occasionally necrotic lesions.",
+          "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+          "quote": "The most common symptoms of this disease are a bleeding of color out from the veins of the leaves and blue or dark green mottling on the leaves (Figure 1). HVX can also cause distortion in the leaves such as puckering and twisting as well as ring spots, flecks and zipper marks. Infected plants will also have more stunted growth than that of healthy plants. Occasionally, the leaves will develop necrotic lesions."
+        },
+        "diagnostic_features": {
+          "value": "Bleeding of color out from the veins of the leaves and blue or dark green mottling, along with zipper marks, ring spots, and flecks; symptoms are easier to distinguish in gold-colored cultivars, and holding an infected leaf up to the light versus a healthy leaf aids identification.",
+          "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+          "quote": "The most common symptoms of this disease are a bleeding of color out from the veins of the leaves and blue or dark green mottling on the leaves (Figure 1). HVX can also cause distortion in the leaves such as puckering and twisting as well as ring spots, flecks and zipper marks."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Carefully inspect any plants for color bleeding and leaf mottling before purchasing; avoid buying plants with symptoms of HVX.",
+          "When purchasing hostas (especially expensive ones), consider requesting that the seller provide proof that the plants are HVX-free.",
+          "Send samples to a diagnostic lab when HVX is suspected; virus testing kits are available and relatively inexpensive.",
+          "Before planting new plants, isolate them from any other hostas for at least 1 week (up to several weeks) and watch for symptom development.",
+          "Remove and destroy all plants that test positive or show symptoms â€” burn (where allowed) or landfill/throw away in their own trash bags. Do NOT compost.",
+          "Disinfest tools that may have contacted infected plants; for home gardeners, thoroughly scrubbing tools in hot soapy water is generally sufficient.",
+          "Professionals may use disinfectants such as Zerotol, KleenGrow, Physan, or Virkon after removing all organic matter from tools; or treat items for at least one minute with Alconox plus SLS/SDS, or trisodium phosphate solution.",
+          "Wash hands thoroughly with soap and water (for at least one minute) before and after working with the plants.",
+          "Minimize wounding that could release sap and provide an entry point for HVX.",
+          "Note: normal sterilization with 70% rubbing alcohol is NOT effective for HVX management."
+        ],
+        "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+        "quote": "The only way to eliminate the disease is to destroy infected plants (and any associated plant debris) by burning (where allowed by local ordinance) or landfilling.  DO NOT compost hostas with HVX."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Hosta virus X",
+          "alternative_value": "null (not stated)",
+          "alternative_source_url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+          "note": "U Maine and Purdue do not state a formal pathogen name; Wisconsin specifies the virus name is identical to the disease name. No NCBI/MycoBank validation was supplied, so taxonomy_validated is false."
+        }
+      ]
+    },
+    {
+      "disease_name": "Tobacco Rattle Virus",
+      "pathogen_scientific_name": {
+        "value": "",
+        "url": "",
+        "quote": "",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Viral",
+        "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+        "quote": "Tobacco rattle virus (TRV) is a plant virus with a large host range"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Root",
+          "Whole plant"
+        ],
+        "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+        "quote": "removing whole plants, including roots, is necessary to eliminate the virus"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting; on ornamental hosts line patterns and ringspots are most common, though infected plants may be asymptomatic.",
+          "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+          "quote": "Symptoms of TRV include ringspots (Figs. 1, 2, and 3), line patterns (Fig. 4), mosaic, mottle (Fig. 5), necrotic lesions, and stunting. On ornamental hosts, line patterns and ringspot symptoms are most commonly observed."
+        },
+        "diagnostic_features": {
+          "value": "Line patterns and ringspot symptoms most commonly observed on ornamental hosts; symptoms typically not distributed uniformly on plants and are typically expressed under cooler environmental conditions.",
+          "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+          "quote": "Line patterns and other symptoms of TRV are typically not distributed uniformly on plants, but a TRV infection may be systemic"
+        },
+        "look_alikes": {
+          "value": [
+            "a variety of other viruses/diseases"
+          ],
+          "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+          "quote": "This disease may look like a variety of other viruses/ diseases."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plants diagnosed with TRV should be removed to avoid spread to other susceptible plant hosts.",
+          "Removing whole plants, including roots, is necessary to eliminate the virus from a greenhouse or landscape.",
+          "Avoid planting susceptible plants in a landscape, garden, or field where TRV has been diagnosed.",
+          "Manage weeds, as many (e.g. lambs' quarters, hairy nightshade, broadleaf plantain) are hosts to TRV and may carry the virus.",
+          "Use disease-free seed.",
+          "Propagate and/or make divisions from disease-free stock plants and disinfect tools frequently and between plants when propagating.",
+          "Wash hands in hot soapy water between plants or wear disposable gloves and change them between plants."
+        ],
+        "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+        "quote": "Plants diagnosed with TRV should be removed to avoid spread to other susceptible plant hosts. ... There are no controls for stubby root nematodes in the home landscape/garden, so avoid planting susceptible plants in a landscape, garden, or field where TRV has been diagnosed. Manage weeds ... Use disease-free seed. Propagate and/or make divisions from disease-free stock plants and disinfect tools frequently and between plants when propagating (Table 2). Wash hands in hot soapy water between plants or, even better, wear disposable gloves and change them between plants."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": []
+    }
+  ],
+  "crop": "Hosta",
+  "generated_date": "2026-06-10"
+}

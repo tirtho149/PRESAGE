@@ -1,0 +1,88 @@
+{
+  "crop": "Norway Maple",
+  "candidate_sources": [
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+      "title": "Maple Anthracnose : Landscape : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Symptoms are most visible in late spring or summer as scattered, sharply defined reddish-brown dead areas formed on or near leaf veins. Light brown acervuli on lower leaf surfaces. Caused by Aureobasidium apocryptum, which infects many maple species including Japanese, Norwegian, mountain, red, silver, sugar, and Tatarian Maples. Overwinters in infected leaf litter.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Maple Anthracnose",
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+      "title": "Aureobasidium apocryptum (Anthracnose on maple) - Bugwoodwiki",
+      "snippet": "Aureobasidium apocryptum is a foliar pathogen causing anthracnose on maple. In culture it does not form fruiting bodies but produces conidia on hyphal cells. Reddish-brown lesions form on or near leaf veins and may coalesce, killing large leaf areas; can cause twisting, crinkling, and leaf malformation. Infects Acer including Norway maple.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Anthracnose on maple",
+        "Maple Anthracnose"
+      ]
+    },
+    {
+      "url": "https://www.uvm.edu/extension/news/common-spring-disease-maple-anthracnose",
+      "title": "Common Spring Disease: Maple Anthracnose | University of Vermont Extension",
+      "snippet": "Anthracnose is a foliar fungal disease that infects maple leaves during cool, wet spring weather. On Norway maple, lesions tend to be narrow, purplish-black streaks along leaf veins. Management includes sanitation (removing infected leaf litter), pruning for air circulation, and preventive fungicides for young/newly transplanted trees.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Maple Anthracnose",
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://portal.ct.gov/-/media/CAES/DOCUMENTS/Publications/Bulletins/b316pdf.pdf",
+      "title": "A Maple Leaf Disease Caused By Cristulariella Depraedans",
+      "snippet": "In maples, the foliage becomes affected by small grey lesions which expand and coalesce, the leaves later wilting and falling from the tree early. The disease seems to be associated with cool wet summers, and epidemic years sometimes occur. Typical lesions include crystalline deposits and spherical fungal propagules (conidia, bulbils, fruiting bodies).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cristulariella leaf spot",
+        "Cristulariella depraedans maple leaf disease"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/cristulariella-leaf/",
+      "title": "Maple - Cristulariella Leaf - Cooperative Extension: Insect Pests, Ticks and Plant Diseases - University of Maine Cooperative Extension",
+      "snippet": "Maple Cristulariella Leaf disease. Circular or irregular leaf spots that are greyish-green to brownish-grey leading to leaf senescence and premature defoliation; target lesions usually have a tan or light-colored center.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cristulariella leaf spot",
+        "zonate leaf spot"
+      ]
+    },
+    {
+      "url": "https://ccmedia.fdacs.gov/content/download/11377/file/pp370.pdf",
+      "title": "Plant Pathology Circular No. 370 - Cristulariella (Zonate/Target) Leaf Spot - Fla. Dept. Agric. & Consumer Services",
+      "snippet": "The fungus Cristulariella moricola (Hino) Redhead causes a target or zonate leaf spot on a myriad of woody and annual plants. Conidia/propagules are characteristically pyramidal or cone-shaped and off-white. Cool, wet weather during mid- and late summer is optimum for disease development. Susceptible hosts include Acer sp., A. rubrum, and A. saccharinum.",
+      "source_type": "USDA",
+      "diseases_mentioned": [
+        "zonate leaf spot",
+        "target leaf spot",
+        "Cristulariella moricola"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Cristulariella_depraedans",
+      "title": "Cristulariella depraedans - Wikipedia",
+      "snippet": "Cristulariella depraedans is a fungal plant pathogen causing leaf spot of maple and other trees and shrubs. Foliage becomes affected by small grey lesions which expand and coalesce, leaves later wilting and falling early; associated with cool wet summers.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Cristulariella leaf spot",
+        "Cristulariella depraedans",
+        "maple leaf spot"
+      ]
+    },
+    {
+      "url": "https://pbsociety.org.pl/journals/index.php/am/article/view/am.2008.001",
+      "title": "Cristulariella depraedans as causal agent of leaf spots of maple and other trees and shrubs (Kowalski & Bartnik, Acta Mycologica)",
+      "snippet": "Cristulariella depraedans caused circular or irregular leaf spots that were greyish-green to brownish-grey in colour, leading to leaf senescence and premature defoliation on maple and other trees and shrubs.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Cristulariella depraedans leaf spot",
+        "maple leaf spot"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

@@ -1,0 +1,125 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Swiss Needle Cast",
+      "pathogen_scientific_name": {
+        "value": "Nothophaeocryptopus gaeumannii",
+        "url": "https://sncc.forestry.oregonstate.edu/swiss-needle-cast-summary",
+        "quote": "is caused by the fungal pathogen Nothophaeocryptopus gaeumannii.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://yardandgarden.extension.iastate.edu/article/2006/3-22/swiss.html",
+        "quote": "Swiss needle cast is a fungal disease that causes needle discoloration on Douglas fir trees."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://sncc.forestry.oregonstate.edu/swiss-needle-cast-summary",
+        "quote": "Swiss needle cast (SNC) is a foliage disease that is specific to Douglas-fir"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Infected needles (most visible on inner portions of lower branches) turn yellow-green and brown and then fall off, producing sparse, chlorotic crowns with decreased needle retention and reduced diameter and height growth; tiny black fruiting structures appear as black dots in two rows on the undersides of needles.",
+          "url": "https://yardandgarden.extension.iastate.edu/article/2006/3-22/swiss.html",
+          "quote": "Symptoms are usually most visible on the inner portions of lower branches, where infected needles turn yellow-green and brown and then fall off. Tiny black fruiting structures of the fungus can be seen with a hand lens, appearing as black dots in two rows on the undersides of discolored and some green needles. Affected branches typically look sparse."
+        },
+        "diagnostic_features": {
+          "value": "Tiny black fruiting structures (pseudothecia) of the fungus appear as black dots in two rows on the undersides of discolored and some green needles, visible with a hand lens; the fruiting bodies develop in the stomatal cavities and physically block (occlude) needle stomates, with older needles carrying relatively more fungal biomass than younger needles.",
+          "url": "https://yardandgarden.extension.iastate.edu/article/2006/3-22/swiss.html",
+          "quote": "Tiny black fruiting structures of the fungus can be seen with a hand lens, appearing as black dots in two rows on the undersides of discolored and some green needles."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Provide spacing and weed control that enhance airflow to help prevent the disease (most prevalent in moist environments)",
+          "Inspect new Douglas fir trees carefully for the fruiting structures of the fungus before purchase, and avoid diseased trees",
+          "Manage with fungicidal sprays (Bordeaux mixture or chlorothalonil), with timing being important",
+          "Apply fungicides in the last two weeks of May, and again four to six weeks later",
+          "Repeat fungicide sprays yearly until symptoms have disappeared"
+        ],
+        "url": "https://yardandgarden.extension.iastate.edu/article/2006/3-22/swiss.html",
+        "quote": "Swiss needle cast is most prevalent in moist environments, so spacing and weed control that enhance airflow can help to prevent this disease. New Douglas fir trees should be inspected carefully for the fruiting structures of the fungus before purchase, and diseased trees avoided. If symptoms appear, the disease may be managed using fungicidal sprays (Bordeaux mixture or chlorothalonil), but timing of the sprays is important. Fungicides should be applied in the last two weeks of May, and again four to six weeks later. Fungicide sprays should be repeated yearly until symptoms have disappeared."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Nothophaeocryptopus gaeumannii",
+          "alternative_value": "Phaeocryptopus gaeumannii",
+          "alternative_source_url": "https://yardandgarden.extension.iastate.edu/article/2006/3-22/swiss.html",
+          "note": "Iowa State uses the older name 'Phaeocryptopus gaeumannii'; the Swiss Needle Cast Cooperative (Oregon State) uses the more recent name 'Nothophaeocryptopus gaeumannii'. No taxonomy (NCBI/MycoBank) validation was supplied in the input, so the more recent specialized-source name was selected as canonical but is not independently taxonomy-validated."
+        }
+      ]
+    },
+    {
+      "disease_name": "Rhabdocline Needlecasts",
+      "pathogen_scientific_name": {
+        "value": "Rhabdocline pseudotsugae",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/fir-douglas-pseudotsuga-menziesii-needle-cast-rhabdocline",
+        "quote": "Rhabdocline spp. including R. pseudotsugae and R. weirii and 3 other species, fungi.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://hortsense.cahnrs.wsu.edu/fact-sheet/douglas-fir-rhabdocline-needle-cast/",
+        "quote": "The first symptoms of this fungal infection are many tiny yellow spots on the current season's needles"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://ag.umass.edu/landscape/fact-sheets/rhabdocline-needle-cast",
+        "quote": "Symptoms first appear in late summer to autumn as yellow-brown spots or blotches on both the upper and lower surface of current year needles."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Many tiny yellow spots appear on both upper and lower surfaces of current-season needles in late summer to autumn, most abundant near the needle apex; spots enlarge and darken over winter, and by spring coalesce into characteristic dark reddish-brown (deep red-brown, mottled) blotches, causing needle browning and premature defoliation, with diseased needles typically cast by late June.",
+          "url": "https://hortsense.cahnrs.wsu.edu/fact-sheet/douglas-fir-rhabdocline-needle-cast/",
+          "quote": "The first symptoms of this fungal infection are many tiny yellow spots on the current season's needles appearing in late summer or fall. By spring, these spots have expanded and become characteristic dark reddish-brown blotches. The blotches on the underside of the needles later swell and split open to reveal orange-brown fungal structures."
+        },
+        "diagnostic_features": {
+          "value": "Fruiting bodies (apothecia) appear on each side of the midrib on the needle's lower surface; the needle's epidermis lifts up as a patch and splits open, exposing an orange to orange-brown fungus structure. The disease often initiates and is most severe in the lower canopy, and diseased needles are typically cast (dropped) by late June.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/fir-douglas-pseudotsuga-menziesii-needle-cast-rhabdocline",
+          "quote": "Fruiting bodies (apothecia) of the fungus appear on each side of the midrib on the needle's lower surface. The needle's epidermis lifts up as a patch, exposing an orange to orange-brown fungus structure."
+        },
+        "look_alikes": {
+          "value": [
+            "Swiss needle cast"
+          ],
+          "url": "https://hortsense.cahnrs.wsu.edu/fact-sheet/douglas-fir-rhabdocline-needle-cast/",
+          "quote": "Rhabdocline needle cast may be confused with Douglas Fir: Swiss needle cast"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Thoroughly scout trees for disease symptoms from autumn through early spring, prior to bud break",
+          "On small trees, prune and destroy diseased branches; prune out heavily infected shoots/branches from the lower canopy and remove severely infected trees to prevent spread",
+          "In Christmas tree plantations, remove and destroy any infected trees",
+          "Avoid overhead watering while new foliage is growing",
+          "Do not plant in areas with poor air drainage / low-lying areas; if the location is exposed to shade during the day, do not plant Douglas-fir",
+          "Space trees properly and prune the lowest canopy branches to promote air flow and good air circulation",
+          "Remove weeds around the base of trees, thin canopy, and avoid establishing ground cover plantings to reduce humidity and lingering moisture",
+          "Avoid using east-side and Rocky Mountain seed sources; in disease-prone or marginal sites use seed sources with partial resistance (among the most resistant: Shuswap and Pillar Lake)",
+          "Apply fungicides with thorough coverage of all needles; make first application when new growth is 1 to 2 inches long (or once 50% of buds have broken and new growth reaches 0.5 inch) and an additional application 3 weeks later â€” three applications are usually required for good control",
+          "Fungicides include: chlorothalonil, copper-based products (copper hydroxide, copper sulfate, copper salts of fatty and/or rosin acids), mancozeb-based products, thiophanate-methyl, azoxystrobin (Heritage/Quadris), and thiophanate-methyl + chlorothalonil mixtures (Spectro 90 WDG), Tourney EZ"
+        ],
+        "url": "https://ag.umass.edu/landscape/fact-sheets/rhabdocline-needle-cast",
+        "quote": "Thoroughly scout trees for disease symptoms from autumn through early spring, prior to bud break. Prune out heavily infected shoots/branches from the lower canopy and remove severely infected trees to prevent spread of disease to healthy trees. ... Fungicides labeled for use include: copper hydroxide, copper sulfate, copper salts of fatty and/or rosin acids, mancozeb and thiophanate-methyl."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": []
+    }
+  ],
+  "crop": "Douglas-Fir",
+  "generated_date": "2026-06-10"
+}

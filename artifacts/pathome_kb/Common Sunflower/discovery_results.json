@@ -1,0 +1,85 @@
+{
+  "crop": "Common Sunflower",
+  "candidate_sources": [
+    {
+      "url": "https://www.apsnet.org/edcenter/learningPP/Pages/PHI-P-2023-03-0001.aspx",
+      "title": "Sunflower Rust (Puccinia helianthi)",
+      "snippet": "Red rust, caused by Puccinia helianthi, is an autoecious rust meaning it produces all its spore stages on sunflower; there are no alternate hosts. The most identifiable sign of P. helianthi is the uredinia which forms rust-colored pustules on leaves, stems, petioles, and bracts. Urediniospores can infect sunflower over a range of temperatures (40 to 86F) when leaves are continually wet for 6 to 10 hours.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Sunflower rust",
+        "Red rust"
+      ]
+    },
+    {
+      "url": "https://cropwatch.unl.edu/plant-disease/sunflower/rust/",
+      "title": "Rust | CropWatch - University of Nebraska-Lincoln",
+      "snippet": "The rust first appears as pale yellow or orange spots on the upper surface of leaves (pycnia), followed by yellow or orange spots on lower surface of leaves (aecia). Cinnamon brown spores appear on both surfaces (uredia) of lower leaves and sometimes on stems late in the season. The pustules darken into black, telial resting pustules once temperatures decrease.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rust",
+        "Sunflower rust"
+      ]
+    },
+    {
+      "url": "https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.species.45804",
+      "title": "Puccinia helianthi (sunflower rust)",
+      "snippet": "CABI Plantwise Plus Knowledge Bank datasheet for Puccinia helianthi (sunflower rust), covering host range, symptoms, biology, distribution and management of the rust disease of sunflower.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "sunflower rust",
+        "Puccinia helianthi"
+      ]
+    },
+    {
+      "url": "https://extension.sdstate.edu/sites/default/files/2021-08/P-00205-10.pdf",
+      "title": "Chapter 10: Diseases of Sunflower - SDSU Extension",
+      "snippet": "Small, reddish brown pustules (uredia) covered with rusty dust appear on the lower surface of bottom leaves, with infection later spreading to other leaves and even to the green parts of the head. Cultural control includes crop rotation, eliminating volunteer sunflowers, and planting rust-resistant hybrids.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rust",
+        "Sunflower diseases"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/SclerotiniaSunflower.aspx",
+      "title": "Sclerotinia Diseases of Sunflower",
+      "snippet": "Diseases caused by the fungus Sclerotinia sclerotiorum include Sclerotinia wilt/basal stalk rot; mid-stem rot; and head rot. Root infection by myceliogenic germination of sclerotia causes basal stalk rot and wilt, while carpogenic germination releases airborne ascospores causing midstalk rot and head rot.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Sclerotinia diseases of sunflower",
+        "Sclerotinia wilt",
+        "basal stalk rot",
+        "mid-stem rot",
+        "head rot",
+        "white mold"
+      ]
+    },
+    {
+      "url": "https://extension.sdstate.edu/sclerotinia-concerns-sunflower",
+      "title": "Sclerotinia Concerns in Sunflower - SDSU Extension",
+      "snippet": "White mold, also known as Sclerotinia wilt, is caused by Sclerotinia sclerotiorum and is the most destructive disease of sunflowers. Symptoms include wilting, middle stalk rot, and head rot; a water-soaked canker with cottony mycelium forms at the base of the stem. The fungus overwinters as hard, black sclerotia that survive three to seven years.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "white mold",
+        "Sclerotinia wilt",
+        "basal stalk rot",
+        "middle stalk rot",
+        "head rot"
+      ]
+    },
+    {
+      "url": "https://cropwatch.unl.edu/plant-disease/sunflower/white-mold/",
+      "title": "White Mold in Sunflower | CropWatch | Nebraska",
+      "snippet": "White mold of sunflower, caused by Sclerotinia sclerotiorum, attacks roots first, causing wilting; a water-soaked canker with cottony white mycelium forms at the stem base and girdles the plant. As the disease progresses the pith decays and stems become bleached and shred. Crop rotation is not effective because sclerotia survive for years.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "white mold",
+        "Sclerotinia stem rot",
+        "wilt",
+        "head rot"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

@@ -1,0 +1,153 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Dogwood Anthracnose",
+      "pathogen_scientific_name": {
+        "value": "Discula destructiva",
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dogwood-anthracnose",
+        "quote": "The non-native fungal pathogen Discula destructiva causes dogwood anthracnose leaf blight and canker.",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dogwood-anthracnose",
+        "quote": "The non-native fungal pathogen Discula destructiva causes dogwood anthracnose leaf blight and canker."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Vascular",
+          "Whole plant"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dogwood-anthracnose",
+        "quote": "Foliar symptoms of infection range from angular-shaped leaf spots and blotches... Additionally, succulent shoots and small stems can be killed and perennial cankers can develop on larger branches... Vascular cambium infected with dogwood anthracnose is chocolate brown in contrast to the pale tan color of healthy sapwood."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Foliar symptoms range from angular-shaped leaf spots and blotches, marginal leaf scorch, and a complete blight of infected foliage; leaf spots are round to blotchy with tan centers and reddish-purple margins. Leaf dieback first occurs in the lower crown and works up the tree. Infection moves from leaves to twigs, where cankers develop causing twig dieback, and succulent shoots and small stems can be killed while perennial cankers develop on larger branches.",
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dogwood-anthracnose",
+          "quote": "Foliar symptoms of infection range from angular-shaped leaf spots and blotches, marginal leaf scorch and a complete blight of infected foliage. Leaf spots are round to blotchy and have tan centers with reddish-purple margins. Additionally, succulent shoots and small stems can be killed and perennial cankers can develop on larger branches."
+        },
+        "diagnostic_features": {
+          "value": "Tan leaf spots with distinctive purple borders; dead twigs appear tan and are often covered with black, pin-point fruiting bodies (conidiomata) that produce masses of orange spores in wet weather; the leaf blotch often spreads down the midvein giving a wedge-shaped appearance; vascular cambium infected with the disease is chocolate brown in contrast to the pale tan color of healthy sapwood; and prolific epicormic/water sprouts develop on the trunk and adjacent to large branch cankers.",
+          "url": "https://extension.unh.edu/resource/discula-dogwood-anthracnose-fact-sheet",
+          "quote": "Leaves develop tan spots with purple borders or tan blotches... Dead twigs appear tan and are often covered with black, pin-point fruiting bodies of the fungus (called conidiomata). In wet weather the conidiomata produce masses of orange spores. Water sprouts (succulent shoots) may develop on the trunk as a result of twig dieback."
+        },
+        "look_alikes": {
+          "value": [
+            "Dogwood (Cornus spp.) - Leaf Spots"
+          ],
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/dogwood-cornus-spp-anthracnose",
+          "quote": "See: Dogwood ( Cornus spp.) - Leaf Spots"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant resistant species/cultivars: Cornus kousa (e.g. Milky Way, Steeple) is tolerant; C. kousa x C. florida hybrids (Celestial, StarDust, Stellar Pink, and several 'stellar' crosses) and disease-resistant C. florida cultivars greatly reduce the need for management",
+          "Practice early detection; trees with extensive dieback and only a few active branches cannot be saved and should be removed",
+          "Trees showing only initial signs (leaf spots and twig canker) can be pruned and treated with fungicides",
+          "Prune out and destroy infected/blighted twigs, shoots, and stems as they develop, and remove epicormic/water sprouts that form",
+          "Rake and remove fallen leaves from spring through fall, and remove dead twigs and leaves remaining attached to the tree",
+          "Plant in full sun with good air circulation, in well-ventilated areas where plants dry quickly after wetting, with no surrounding plantings",
+          "Avoid high-nitrogen fertilizers that produce lush succulent shoots more susceptible to the fungus",
+          "Do not let irrigation wet the tree canopy; provide a soaking root-zone irrigation during droughts and maintain a 2-3 inch layer of composted mulch over the root zone",
+          "Limit additional stresses such as string trimmer and mower damage",
+          "Apply protective fungicide sprays beginning at bud break/budbreak, repeating every 10-14 days until leaves are fully open / until dry weather, with an additional application in late summer when flower buds form",
+          "Alternate or tank-mix fungicide products from different groups (modes of action) to prevent resistance; limit use of any one group during the growing season",
+          "Registered fungicide products include: Armada 50 WDG (Group 3+11), BioAdvanced Disease Control, Bonide Fung-onil (Group M5), Broadform (Group 7+11), Cleary's 3336 EG (Group 1), Compass (Group 11), Concert (Group 3+M5), Daconil Weather Stik (Group M5), Disarm 480 SC (Group 11), Eagle 20 EW (Group 3), Fame SC (Group 11), Heritage (Group 11), Mancozeb-based products such as Fore 80WP Rainshield and Protect DF (Group M3), Monsoon Turf (Group 3), Monterey Liqui-Cop, Myclobutanil 20 EW T&O (Group 3), Nu-Cop 50 DF, Ortho MAX Garden Disease Control, Postiva (Group 3+7), Propiconazole-based products such as Banner MAXX/Bonide Infuse (Group 3), Spectracide Immunox (Group 3), Spectro 90 WDG (Group 1+M5), Tebuzol 3.6F (Group 3), Torque (Group 3), and Tourney EZ (Group 3)"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/dogwood-cornus-spp-anthracnose",
+        "quote": "Cultural control Prune out and destroy infected twigs when possible. Rake and destroy fallen leaves from spring through fall. Do not let irrigation wet the tree canopy. Plant resistant cultivars including the kousa cultivars Milky Way and Steeple and the hybrid cultivars Celestial, StarDust, and Stellar Pink. Chemical control Begin sprays at budbreak and continue at 10- to 14-day intervals until dry weather."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Discula destructiva",
+          "alternative_value": "Discula destructiva (formerly Gloeosporium sp.)",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/dogwood-cornus-spp-anthracnose",
+          "note": "PNW Handbooks notes the prior name Gloeosporium sp. for the same pathogen. No NCBI/MycoBank taxonomy validation was supplied to confirm the current accepted name."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem, Vascular, Whole plant",
+          "alternative_value": "Foliar, Stem",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/dogwood-cornus-spp-anthracnose",
+          "note": "Canonical is the union across sources. PNW lists only foliar (leaves) and stem (twigs). UMass adds vascular (chocolate-brown cambium). UNH adds whole-plant impact ('the entire tree may die in two to three years')."
+        }
+      ]
+    },
+    {
+      "disease_name": "Powdery Mildew",
+      "pathogen_scientific_name": {
+        "value": "Erysiphe pulchra",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/dogwood-cornus-spp-powdery-mildew",
+        "quote": "Erysiphe pulchra (formerly Microsphaera penicillata ) and Phyllactinia guttata can produce white mycelial growth on leaves, buds, flowers, and new stems of dogwood.",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/dogwood-cornus-spp-powdery-mildew",
+        "quote": "Under favorable conditions, this fungus can go from spore to spore in as little as 7 days."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/dogwood-cornus-spp-powdery-mildew",
+        "quote": "can produce white mycelial growth on leaves, buds, flowers, and new stems of dogwood."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "A white, very thin, dry growth (mycelium) develops on the leaves; leaf surfaces can become completely covered with the thin mycelia of powdery mildew on both upper and lower surfaces.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/dogwood-cornus-spp-powdery-mildew",
+          "quote": "A white, very thin, dry growth (mycelium) develops on the leaves."
+        },
+        "diagnostic_features": {
+          "value": "The first symptom is often yellow patchy areas on a leaf that become necrotic, followed by a white, very thin, dry growth (mycelium) somewhat similar to a very dense covering of plant hair on the lower leaf surface directly below affected leaf spots; during late summer and early fall a peppered speckling (chasmothecia) may develop on the white to light gray growth.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/dogwood-cornus-spp-powdery-mildew",
+          "quote": "The first symptom is often yellow patchy areas on a leaf that become necrotic. A white, very thin, dry growth (mycelium) that is somewhat similar in appearance to a very dense covering of plant hair develops on the lower leaf surface directly below affected leaf spots."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant disease-resistant cultivars: C. florida cultivars Karen's Appalachian Blush, Jean's Appalachian Snow, Kay's Appalachian Mist, and Appalachian Joy; the C. kousa x florida hybrids 'Aurora', 'Constellation', 'Galaxy', 'Stardust', and 'Stellar Pink' are highly resistant",
+          "Improve air circulation to reduce relative humidity and accelerate drying of foliage; space plants well and plant in more exposed areas, avoiding heavily shaded areas",
+          "Irrigate with microjet sprinklers or soaker hoses to avoid wetting foliage",
+          "If practical, prune out and destroy infected tissue as it appears early in the year",
+          "In the fall, rake up and destroy fallen leaves",
+          "Use an active scouting program and begin fungicides at the first sign of disease (best used preventively, before symptoms develop), at 7-14 day intervals (shorter intervals when conditions favor disease)",
+          "Alternate or tank-mix products from different groups with different modes of action; limit use of any one group during the growing season",
+          "Registered fungicide products include: Armada 50 WDG (Group 3+11), Avelyo (Group 3), BioAdvanced Disease Control, Kaligreen, MilStop (potassium bicarbonate), Broadform (Group 7+11), Concert (Group 3+M5), Daconil Zn (Group M5), Disarm 480 SC (Group 11), Eagle 20 EW (Group 3), KleenGrow (greenhouse), Mural (Group 7+11), Myclobutanil 20 EW T&O (Group 3), Pageant (Group 7+11), Postiva (Group 3+7), Propiconazole-based products such as Banner MAXX (Group 3), Seido (Group 50), Spectracide Immunox (Group 3), strobilurin-based products such as Compass, Fame SC, Heritage and Insignia SC (Group 11, preventive only), Tebuject 16 (tree injection, Group 3), Tebuzol 3.6F (Group 3), Terraguard SC (Group 3), Torque (Group 3), Tourney EZ (Group 3), and Cease or Rhapsody (Bacillus subtilis strain QST 713)"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/dogwood-cornus-spp-powdery-mildew",
+        "quote": "Cultural control Disease-resistant cultivars of C. florida include Karen's Appalachian Blush, Jean's Appalachian Snow, Kay's Appalachian Mist, and Appalachian Joy."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Erysiphe pulchra",
+          "alternative_value": "Microsphaera penicillata",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/dogwood-cornus-spp-powdery-mildew",
+          "note": "Source lists Erysiphe pulchra as the current name with 'Microsphaera penicillata' as the former (synonym) name. The source also names a second causal powdery mildew fungus, Phyllactinia guttata, on dogwood. No NCBI/MycoBank taxonomy validation was supplied."
+        }
+      ]
+    }
+  ],
+  "crop": "Dogwood",
+  "generated_date": "2026-06-10"
+}

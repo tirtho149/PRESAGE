@@ -1,0 +1,461 @@
+{
+  "crop": "Cucumber",
+  "candidate_sources": [
+    {
+      "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=130",
+      "title": "Angular Leaf Spot of Cucurbits (Pseudomonas syringae pv. lachrymans) - Hort Answers, University of Illinois Extension",
+      "snippet": "Angular leaf spot is caused by the bacterium Pseudomonas syringae pv. lachrymans and is most severe on cucumber, zucchini squash, and honeydew melon. On cucumber, leaf symptoms appear as small, round to irregularly shaped, water-soaked lesions that expand until they are limited by larger veins, giving the spots an angular appearance. Under humid conditions spots are covered by a white exudate. Plant certified, pathogen-free seed; resistant varieties are available; rotate cucurbits; limit overhead irrigation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Angular Leaf Spot of Cucurbits",
+        "Angular leaf spot"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/angular-leaf-spot",
+      "title": "Angular leaf spot | UMN Extension",
+      "snippet": "Angular leaf spot is caused by Pseudomonas syringae pv. lachrymans, a bacterium that overwinters in diseased plant material and on seed. The leaf spot is irregularly shaped with a water-soaked appearance; bounded by the leaf veins the spots are angular. Bacteria may ooze from the spots in droplets which dry to a white residue. It is spread by rain, sprinkler irrigation, and on workers' hands and clothing. Manage with resistant varieties, sanitation, and irrigation that doesn't wet leaves.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Angular leaf spot"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/cucumber-cucumis-sativus-angular-leaf-spot",
+      "title": "Cucumber (Cucumis sativus) - Angular Leaf Spot | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Angular leaf spot of cucumber is caused by Pseudomonas syringae pv. lachrymans. Symptoms include water-soaked angular leaf lesions bounded by veins, white bacterial exudate, and tearing of dead tissue leaving holes. The pathogen is seedborne and survives in crop residue. Management includes pathogen-free seed, crop rotation, copper bactericides, and avoiding overhead irrigation and wet-field handling.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Angular Leaf Spot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-91-6-0769A",
+      "title": "Angular Leaf Spot of Cucumber Caused by Pseudomonas syringae pv. lachrymans in Kurdistan | Plant Disease (APS)",
+      "snippet": "Report in APS Plant Disease journal documenting angular leaf spot of cucumber caused by Pseudomonas syringae pv. lachrymans, with symptom descriptions, pathogen isolation, and identification.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Angular Leaf Spot of Cucumber"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+      "title": "Anthracnose of Cucurbits | NC State Extension Publications",
+      "snippet": "Anthracnose is caused by the fungus Colletotrichum orbiculare (syn. Colletotrichum lagenarium). On cucumber leaves the spots start as water soaked areas and expand into brown spots which are roughly circular, reaching about 1/4 to 1/2 inch in diameter. The disease is easily diagnosed when whisker-like setae can be seen in the pink spore masses. Warm, wet weather (26-32 C) is favorable for infection and spread.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose",
+        "Anthracnose of cucurbits"
+      ]
+    },
+    {
+      "url": "https://portal.ct.gov/-/media/CAES/DOCUMENTS/Publications/Fact_Sheets/Plant_Pathology_and_Ecology/ANTHRACNOSEOFCUCUMBER013014pdf.pdf",
+      "title": "Anthracnose of Cucumber (Connecticut Agricultural Experiment Station)",
+      "snippet": "On mature cucumber leaves, small pale yellow, water-soaked areas emerge near veins and enlarge rapidly, turning tan to dark brown. Symptoms on seedlings occur as wilt of cotyledons and stem lesions near the soil line when the fungus is seed borne. Caused by Colletotrichum orbiculare (C. lagenarium).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose",
+        "Anthracnose of cucumber"
+      ]
+    },
+    {
+      "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/cucurbit-anthracnose",
+      "title": "Cucurbit Anthracnose | Yard and Garden (Iowa State University Extension)",
+      "snippet": "Lesions appear water-soaked to yellow circular spots and eventually dark brown or black irregularly shaped spots on leaves, petioles, stems, and fruits. Tiny black fruiting structures (acervuli) form within the lesion, and in wet weather pink or orange spores ooze out. Most destructive during warm, moist seasons; manage with sanitation, crop rotation, resistant varieties, and fungicides (copper, chlorothalonil, mancozeb).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucurbit Anthracnose",
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/Colletotrichum_orbiculare_(anthracnose_of_cucurbits)",
+      "title": "Colletotrichum orbiculare (anthracnose of cucurbits) - Bugwoodwiki",
+      "snippet": "Colletotrichum orbiculare (syn. C. lagenarium), teleomorph Glomerella lagenaria, causes anthracnose of cucurbits. There are three races (1, 2, and 2B) on cucurbits, with Race 1 pathogenic on cucumber. Covers symptoms, biology, hosts, and management.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Anthracnose of cucurbits",
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/bacterial-wilt",
+      "title": "Bacterial wilt of cucurbits | UMN Extension",
+      "snippet": "Bacterial wilt is vectored by the striped cucumber beetle and, less often, the spotted cucumber beetle. E. tracheiphila survives in the gut of the beetles, and is spread through feeding activity. The leaf tissue becomes dull green and wilts rapidly; the wilt progresses outwards until the entire plant wilts. Management relies on control of cucumber beetles.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial wilt",
+        "Bacterial wilt of cucurbits"
+      ]
+    },
+    {
+      "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/cucurbit-bacterial-wilt",
+      "title": "Cucurbit Bacterial Wilt | Yard and Garden | Iowa State University Extension",
+      "snippet": "Bacterial wilt, caused by Erwinia tracheiphila, severely affects cucumber and muskmelon. The bacterium overwinters in cucumber beetles and is spread through their feeding wounds. Cut a wilted vine and pull apart to look for sticky bacterial threads as a diagnostic test.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial wilt",
+        "Cucurbit bacterial wilt"
+      ]
+    },
+    {
+      "url": "https://hort.extension.wisc.edu/articles/bacterial-wilt-of-cucurbits/",
+      "title": "Bacterial Wilt of Cucurbits â€“ Wisconsin Horticulture",
+      "snippet": "Bacterial wilt is a serious disease caused by Erwinia tracheiphila that affects cantaloupe, muskmelon, and cucumbers. Wilt symptoms may appear at any growth stage but are most often noticed early in the season. The bacterium is moved from plant to plant by the striped cucumber beetle (Acalymma vittatum) and the spotted cucumber beetle (Diabrotica undecimpunctata).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial wilt",
+        "Bacterial wilt of cucurbits"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-10-14-1068-FE",
+      "title": "Bacterial Wilt of Cucurbits: Resurrecting a Classic Pathosystem | Plant Disease (APS)",
+      "snippet": "A feature article reviewing the pathosystem of Erwinia tracheiphila, the causal agent of bacterial wilt of cucurbits, its transmission by cucumber beetles, and the biology of host infection in cucumber and muskmelon.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Bacterial wilt of cucurbits",
+        "Erwinia tracheiphila"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/Corynespora_cassiicola_(target_spot_of_cucurbits)",
+      "title": "Corynespora cassiicola (target spot of cucurbits) - Bugwoodwiki",
+      "snippet": "Corynespora cassiicola is the causal agent of target spot of several cultivated species, with cucumber highlighted for frequent reports of yield losses under greenhouse conditions. Early symptoms are small brown spots with yellow halos that enlarge into irregular lesions, eventually causing defoliation. Spots have light centers with rings of olive green tissue and yellow borders.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Corynespora leaf spot",
+        "target spot of cucurbits",
+        "target leaf spot"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.bayer.com/content/bayer-vegetables/us/en-us/resources/disease-guides/cucurbit/target-leaf-spot.html",
+      "title": "Target Leaf Spot - Cucurbit Disease Guide (Bayer Vegetables)",
+      "snippet": "Target leaf spot of cucurbits is caused by Corynespora cassiicola. A long dew period on the leaf surface and high temperatures are the main contributing factors for disease development and greenhouse epidemics. Management focuses on sanitation, resistant varieties, and fungicide programs.",
+      "source_type": "industry",
+      "diseases_mentioned": [
+        "Target leaf spot",
+        "Corynespora leaf spot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-09-18-1504-PDN",
+      "title": "First Report of Cucumber Target Leaf Spot, Corynespora cassiicola, on Cucumber in Heilongjiang, Northeastern China | Plant Disease",
+      "snippet": "Cucumber target leaf spot, caused by Corynespora cassiicola, is an emerging disease with high incidence that causes severe damage to cucumbers. Symptoms include pallid to yellowish-brown spots with a necrotic center and dark brown margins; as lesions coalesce, large irregular necrotic areas form and the entire leaf yellows and dies.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Cucumber target leaf spot",
+        "Corynespora cassiicola"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9687187/",
+      "title": "Temperature and Humidity Regulate Sporulation of Corynespora cassiicola That Is Associated with Pathogenicity in Cucumber (Cucumis sativus L.)",
+      "snippet": "Corynespora cassiicola grows at 10-35 C with optimum mycelial growth near 30 C; optimum infection temperatures on cucumber leaves are 25-30 C. More than 18 h of leaf-wetness duration at 20-30 C is necessary for obvious infection, with symptoms severe after more than 30 h of wetness. The pathogen often has fungicide resistance, making control difficult.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Corynespora leaf spot",
+        "target leaf spot of cucumber"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+      "title": "Cucurbit Downy Mildew | NC State Extension Publications",
+      "snippet": "Downy mildew in cucurbits is caused by Pseudoperonospora cubensis, an oomycete (water mold). Symptoms begin as slightly yellow to bright yellow angular lesions on the upper leaf surface restricted by leaf veins, with gray- to purple-colored pathogen growth on the lower surface. Up to 100% yield reduction is possible when downy mildew strikes early and fungicides are not used.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucurbit Downy Mildew",
+        "Downy mildew"
+      ]
+    },
+    {
+      "url": "https://extension.msstate.edu/publications/cucurbit-downy-mildew",
+      "title": "Cucurbit Downy Mildew | Mississippi State University Extension Service",
+      "snippet": "Cucurbit downy mildew is caused by the pathogen Pseudoperonospora cubensis. Symptoms appear between 3 and 12 days after infection and begin as yellow lesions on the upper leaf surface, with angular yellow to brown lesions restricted by leaf veins and gray to purple pathogen growth on the lower leaf surface.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucurbit Downy Mildew",
+        "Downy mildew"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-12-19-0095-DG",
+      "title": "Diagnostic Guide for Cucurbit Downy Mildew | Plant Health Progress",
+      "snippet": "Cucurbit downy mildew, caused by the obligate biotrophic oomycete Pseudoperonospora cubensis, is the most devastating foliar disease of cultivated cucurbitaceous crops. The pathogen infects over 40 host species across 20 genera of Cucurbitaceae, with clade 2 isolates more frequently infecting cucumber and cantaloupe.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Cucurbit Downy Mildew",
+        "Downy mildew"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/Cucurbits.aspx",
+      "title": "Downy mildew of cucurbits | APSnet Education Center",
+      "snippet": "Downy mildew of cucurbits caused by Pseudoperonospora cubensis. Small angular yellow spots appear on the upper leaf surface following leaf veins; on the underside fluffy growth appears, first white then grey-brown. Management requires resistant cultivars, fungicide applications, and early detection.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Downy mildew of cucurbits",
+        "Downy mildew"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+      "title": "Gummy Stem Blight of Cucurbits | NC State Extension Publications",
+      "snippet": "Gummy stem blight, caused by Stagonosporopsis spp. (formerly Didymella bryoniae), produces circular dark tan leaf lesions, stem cankers with gummy brown ooze, and black rot of fruit on cucurbit crops including cucumber. Includes symptoms, disease cycle, and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gummy stem blight",
+        "Phoma blight",
+        "Black rot"
+      ]
+    },
+    {
+      "url": "https://ask.ifas.ufl.edu/publication/PP280",
+      "title": "PP280: Management of Gummy Stem Blight (Black Rot) on Cucurbits in Florida",
+      "snippet": "Management of gummy stem blight (black rot) on cucurbits caused by Didymella bryoniae / Stagonosporopsis cucurbitacearum. Covers symptoms on leaves, stems and fruit, disease cycle, cultural controls, resistant cultivars, and fungicide programs (carboxamide Group 7, etc.).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gummy stem blight",
+        "Black rot"
+      ]
+    },
+    {
+      "url": "https://blogs.cornell.edu/livegpath/gallery/cucurbits/gummy-stem-blight-and-black-rot-of-cucurbit-crops/",
+      "title": "Gummy stem blight and black rot of cucurbit crops | Vegetable Pathology â€“ Long Island Horticultural Research & Extension Center (Cornell)",
+      "snippet": "Cornell Vegetable Pathology page on gummy stem blight and black rot of cucurbit crops caused by Stagonosporopsis (Didymella bryoniae). Leaf lesions start at the margin, brown circular/triangular with concentric rings; stem cankers exude gummy ooze; fruit develop black rot. Includes images and management.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Gummy stem blight",
+        "Black rot"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/cantaloupe-cucumis-melo-gummy-stem-blight-black-rot",
+      "title": "Cantaloupe (Cucumis melo)-Gummy Stem Blight (Black Rot) | Pacific Northwest Pest Management Handbooks",
+      "snippet": "PNW Pest Management Handbook entry for gummy stem blight (black rot) on cucurbits caused by Stagonosporopsis cucurbitacearum. Describes symptoms, favorable conditions, and chemical/cultural management for cucurbit crops.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gummy stem blight",
+        "Black rot"
+      ]
+    },
+    {
+      "url": "https://cuccap.org/disease-management/cucumber/phytophthora-rot/",
+      "title": "Phytophthora fruit rot on cucumber â€“ CucCAP",
+      "snippet": "In cucumber fields, Phytophthora capsici primarily causes fruit rot and on rare occasions, when the weather is favorable, it can infect cucumber seedlings. Fruit rot often occurs on the side of the fruit touching the soil, beginning as a water-soaked lesion that expands and is covered with white sporulating pathogen growth.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Phytophthora fruit rot",
+        "Phytophthora blight",
+        "Phytophthora capsici"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+      "title": "Phytophthora Blight of Cucurbits | Cornell Vegetables",
+      "snippet": "Phytophthora capsici produce spores known as sporangia, and in the presence of water, each sporangium may break open to release 20 to 40 zoospores. Cucumbers generally display symptoms only on fruit: angular, water-soaked lesions and rapid fruit rot covered with white fungal-like growth.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora blight",
+        "Phytophthora capsici"
+      ]
+    },
+    {
+      "url": "https://www.extension.purdue.edu/extmedia/bp/bp-204-w.pdf",
+      "title": "Managing Phytophthora Blight of Cucurbits (Purdue Extension BP-204-W)",
+      "snippet": "Phytophthora capsici is a soilborne plant pathogenic oomycete requiring warm and wet weather for disease development. With favorable conditions of saturated soil and temperatures between 75Â°F and 85Â°F, oospores germinate and infect plants. Includes management and fungicide recommendations for cucurbits including cucumber.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora blight",
+        "Phytophthora capsici"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0027-FI",
+      "title": "A Diagnostic Guide for Phytophthora capsici Infecting Vegetable Crops | Plant Health Progress (APS)",
+      "snippet": "A diagnostic guide describing symptoms, pathogen biology, and identification of Phytophthora capsici infecting vegetable crops including cucurbits such as cucumber, with details on crown rot, fruit rot, and foliar blight.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Phytophthora capsici",
+        "Phytophthora blight",
+        "crown rot",
+        "fruit rot"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/powdery-mildew-cucurbits",
+      "title": "Powdery mildew of cucurbits | UMN Extension",
+      "snippet": "White powdery growth appears on leaves, upper and lower surfaces and stems. First sign is pale yellow leaf spots; white powdery spots expand into large blotches. Infection begins on older or shaded leaves; leaves senesce early and yield/quality are affected. Caused by Podosphaera xanthii and Erysiphe cichoracearum; favors humid conditions 68-81F.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew",
+        "Powdery mildew of cucurbits"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+      "title": "Cucurbit Powdery Mildew | Cornell Vegetables",
+      "snippet": "Cucurbit powdery mildew factsheet covering symptoms, pathogen biology, and management. Caused by Podosphaera xanthii (more aggressive, warmer months) and Golovinomyces (Erysiphe) cichoracearum. White powdery growth on leaves and stems; spores spread by air.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew",
+        "Cucurbit powdery mildew"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/cucurbit-powdery-mildew",
+      "title": "Cucurbit Powdery Mildew | NC State Extension Publications",
+      "snippet": "Powdery mildew on cucurbits caused by two primary fungal pathogens, Podosphaera xanthii and Erysiphe cichoracearum. P. xanthii is more prevalent and aggressive; E. cichoracearum found mainly in cooler spring/early summer. Time between infection and symptom expression can be as short as 3 days.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew",
+        "Cucurbit powdery mildew",
+        "Downy mildew"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/vegetable/fact-sheets/cucurbits-powdery-mildew",
+      "title": "Cucurbits, Powdery Mildew | UMass Amherst Center for Agriculture, Food, and the Environment",
+      "snippet": "Infection occurs between 50F and 90F with 68-81F optimum; above 100F halts disease. Spots get larger and thicker as massive numbers of spores form; severely affected leaves become dry and brittle, wither and die. Fruits smaller, fewer, sun scalded, poor flavor.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0042-FI",
+      "title": "A Diagnostic Guide for Pythium Damping-Off and Root and Stem Rot of Cucurbits | Plant Health Progress",
+      "snippet": "A Diagnostic Guide for Pythium Damping-Off and Root and Stem Rot of Cucurbits. Pythium species cause damping-off, root rot, and stem rot of cucurbits including cucumber, with symptoms of seedling collapse, blackened mushy roots, wilting, and stunting.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Pythium damping-off",
+        "Pythium root rot",
+        "Pythium stem rot",
+        "Cucurbit Pythium diseases"
+      ]
+    },
+    {
+      "url": "https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/agriculture-and-seafood/animal-and-crops/plant-health/disease-factsheets/greenhouse-vegetables/pythium_diseases_of_greenhouse_vegetables.pdf",
+      "title": "Pythium Diseases of Greenhouse Vegetables",
+      "snippet": "Several Pythium species, including P. aphanidermatum, P. irregulare and P. ultimum, cause damping-off and crown and root rot in greenhouse cucumber, pepper and tomato. Pythium root rot causes wilting, loss of vigor, stunting, chlorosis and leaf drop; roots are blackened, mushy and rotten. Over watering, poor root aeration and improper root zone temperatures trigger outbreaks.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pythium damping-off",
+        "Pythium crown and root rot",
+        "Pythium root rot"
+      ]
+    },
+    {
+      "url": "https://extension.msstate.edu/publications/cottony-leak-cucurbits",
+      "title": "Cottony Leak in Cucurbits | Mississippi State University Extension Service",
+      "snippet": "Symptoms begin as brown areas that develop into soft, rotted areas on fruits in contact with the soil. During humid conditions, white, cottony growth covers the rotten area. Cucumber is the most susceptible cucurbit crop. Caused by Pythium species; most severe in wet soil. Management: improve drainage, create barriers between fruit and soil, rotate with non-hosts.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cottony leak",
+        "Pythium fruit rot"
+      ]
+    },
+    {
+      "url": "https://veggiescout.mgcafe.uky.edu/cottony-leak-cucurbit-crops",
+      "title": "Cottony Leak of Cucurbit Crops | Scouting Guides for Problems of Vegetables (University of Kentucky)",
+      "snippet": "Cottony leak of cucurbit crops is caused by Pythium species. Fruit in contact with wet soil develop water-soaked, soft rot covered by white cottony mycelial growth. Scouting and management guidance for cucumber and other cucurbits.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Cottony leak",
+        "Pythium fruit rot"
+      ]
+    },
+    {
+      "url": "https://cucurbitbreeding.wordpress.ncsu.edu/cucumber-breeding/cucumber-disease-handbook/belly-rot-rhizoctonia-solani-kuhn/",
+      "title": "NC State and USDA Cucumber Disease Handbook â€“ Belly Rot (Rhizoctonia solani KÃ¼hn)",
+      "snippet": "Belly rot (Rhizoctonia solani) is one of the most common fruit rots of cucumbers in North Carolina. Symptoms include sunken tan-brown cankers resembling a dry rot; large fruit have a dark brown water-soaked decay where the fruit contacts the soil. Under humid conditions a dense brown mold covers the rotted area. Apparently healthy infected fruit can develop severe symptoms within 24 hours and rot entirely within 72 hours. Disease occurs from 46â€“95Â°F, most damaging near 80Â°F.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Belly rot",
+        "Rhizoctonia damping-off",
+        "Rhizoctonia solani"
+      ]
+    },
+    {
+      "url": "https://plantpath.ifas.ufl.edu/u-scout/cucurbit/rhizoctonia-root-rot-belly-rot.html",
+      "title": "Rhizoctonia root rot / belly rot â€” UF/IFAS Plant Pathology Cucurbit Scouting",
+      "snippet": "Rhizoctonia solani causes root rot, damping-off and belly rot of cucurbits. Belly rot develops where fruit contacts the soil, producing brown, irregular, sunken lesions with a crusty appearance. Management includes mulches to keep fruit off the soil, protectant fungicides in warm wet weather, crop rotation, and weed control.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rhizoctonia root rot",
+        "Belly rot",
+        "Damping-off",
+        "Rhizoctonia solani"
+      ]
+    },
+    {
+      "url": "https://veggiescout.ca.uky.edu/belly-rot-cucurbit-crops",
+      "title": "Belly Rot of Cucurbit Crops | Scouting Guides for Problems of Vegetables (University of Kentucky)",
+      "snippet": "Belly rot, caused by Rhizoctonia solani, primarily affects cucumber and is found rarely on other cucurbits. Small cucumbers show yellowish-brown superficial discoloration while large fruit have dark brown water-soaked decay on the side touching the soil; high humidity produces a dense brown mold. Temperature is more important than moisture for disease development.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Belly rot",
+        "Rhizoctonia solani"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/Rhizoctonia_solani_(belly_rot)",
+      "title": "Rhizoctonia solani (belly rot) â€” Bugwoodwiki",
+      "snippet": "Characteristic symptoms of Rhizoctonia solani are damping off, stem lesions, stem cankers, root rot, crown rot, and aerial web blighting. On cucumbers belly rot appears as brown, irregular-shaped lesions on the bottom of fruit that may have a crusty appearance as lesions dry. Frequent rainfall and irrigation with warm temperatures favor the pathogen.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Belly rot",
+        "Damping-off",
+        "Stem canker",
+        "Root rot",
+        "Aerial web blight",
+        "Rhizoctonia solani"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/scab-cucurbits",
+      "title": "Scab of cucurbits | UMN Extension",
+      "snippet": "Scab of cucurbits is caused by the fungus Cladosporium cucumerinum. Leaf symptoms appear as numerous small, water-soaked or pale green spots that turn white to gray and become angular, often surrounded by a yellowish halo. On fruit, small gray, slightly sunken, gummy spots develop that resemble insect stings, later enlarging into sunken cavities. Management includes crop rotation, scab-resistant varieties, and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Scab of cucurbits",
+        "Cucumber scab",
+        "Cladosporium cucumerinum"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/cucurbits-scab",
+      "title": "Cucurbits, Scab : Vegetable : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Scab, caused by Cladosporium cucumerinum, is primarily a disease of cucumber, cantaloupe, melon, squash, pumpkin, and gourds. Susceptible cucumber varieties have sustained 50 percent or greater yield loss during prolonged cool, moist weather. The disease is at its worst when conditions are foggy, dew is heavy, and the weather is cool (59-77 F).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Scab",
+        "Cucurbit scab",
+        "Cladosporium cucumerinum"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/cucumber-cucumis-sativus-scab-gummosis",
+      "title": "Cucumber (Cucumis sativus)-Scab (Gummosis) | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Cucumber scab, also known as gummosis, is caused by Cladosporium cucumerinum. Small gray, sunken, oozing gummy spots develop on fruit, becoming distinct sunken cavities lined with a dark green velvety layer of fruiting fungus. Management includes resistant cultivars, crop rotation, well-drained sites, avoiding overhead irrigation, and fungicide applications.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Scab",
+        "Gummosis",
+        "Cladosporium cucumerinum"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.13722",
+      "title": "Cladosporium cucumerinum (scab of cucurbits) | CABI Compendium",
+      "snippet": "Datasheet on Cladosporium cucumerinum, the causal agent of scab of cucurbits, covering host range, geographic distribution, symptoms, biology, and management of the disease affecting cucumber and other cucurbit crops.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Scab of cucurbits",
+        "Cladosporium cucumerinum"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

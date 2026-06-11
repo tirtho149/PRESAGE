@@ -1,0 +1,121 @@
+{
+  "crop": "Alfalfa",
+  "candidate_sources": [
+    {
+      "url": "https://extension.usu.edu/crops/research/downy-mildew-of-alfalfa",
+      "title": "Downy Mildew of Alfalfa - USU Extension",
+      "snippet": "Symptoms include chlorotic leaf blotches ranging from light green to yellow-green to gray-green; rolled or downturned leaves; and thickened, stunted stems ending in rosette-like growths. The upper surface of leaves becomes lighter with bluish-gray mycelial mats and spores visible on the underside. Caused by the oomycete Peronospora trifoliorum; favored by cool, humid, rainy conditions; managed by early cutting.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Downy Mildew",
+        "Peronospora trifoliorum"
+      ]
+    },
+    {
+      "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
+      "title": "Downy Mildew of Alfalfa - Crop Protection Network",
+      "snippet": "Primary symptoms of Peronospora trifoliorum on alfalfa are chlorotic leaf blotches, rolled or downturned leaves, and thickened, stunted stems ending in rosette-like growths. Identified by moldy, downy growth on the underside of leaves appearing white, gray, or light purple. Management: harvest first cutting early, metalaxyl seed treatment, resistant varieties.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Downy Mildew",
+        "Peronospora trifoliorum",
+        "Pythium damping off",
+        "Phytophthora"
+      ]
+    },
+    {
+      "url": "https://pubs.nmsu.edu/_a/A326/index.html",
+      "title": "Downy Mildew on Alfalfa | New Mexico State University",
+      "snippet": "Downy mildew of alfalfa, caused by Peronospora trifoliorum, produces chlorotic leaf blotches and downy gray-purple growth on leaf undersides. The pathogen overwinters in crown branches, buds, and shoots; spread by wind and rain. Favored by cool, humid conditions. Management includes early harvest of the first cutting and resistant varieties.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Downy Mildew",
+        "Peronospora trifoliorum"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/alfalfa/downy-mildew/",
+      "title": "Downy Mildew / Alfalfa / Pest Management Guidelines / UC IPM",
+      "snippet": "UC IPM pest management guidelines for downy mildew of alfalfa caused by Peronospora trifoliorum. Describes symptoms, disease cycle, and management including early cutting and metalaxyl seed treatment.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Downy Mildew",
+        "Peronospora trifoliorum"
+      ]
+    },
+    {
+      "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+      "title": "Stemphylium Leaf Spot of Alfalfa",
+      "snippet": "Symptoms caused by the W-T biotype include brown, oval-shaped leaf lesions with dark margins and yellow halos. Lesions can grow to cover much of the leaf and concentric rings develop. In the United States, Stemphylium botryosum is reported to be the predominant pathogen, although S. vesicarium and S. herbarum are also observed. Wet weather is conducive to development; consider early harvest to reduce leaf loss if severe.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Stemphylium leaf spot",
+        "Stemphylium botryosum",
+        "Stemphylium vesicarium",
+        "Stemphylium herbarum"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/alfalfa/stemphyllium-leaf-spot/",
+      "title": "Stemphylium Leaf Spot / Alfalfa / Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "The most noticeable symptom is formation of oval-to-elongate brown lesions with lighter centers, enlarging to form concentric light and dark brown zones. Cool temperatures (60-70F) and moist weather favor infection and spread; the disease is usually found in first and second cuttings. Early harvest is an option with severe infestations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Stemphylium leaf spot",
+        "Stemphylium botryosum"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-08-13-0828-PDN",
+      "title": "First Report of Stemphylium globuliferum Causing Stemphylium Leaf Spot on Alfalfa (Medicago sativa) in the United States | Plant Disease",
+      "snippet": "First report of Stemphylium globuliferum causing Stemphylium Leaf Spot on alfalfa (Medicago sativa) in the United States. Identifies a Stemphylium species causing leaf spot lesions on alfalfa, expanding the known pathogen complex beyond S. botryosum.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Stemphylium leaf spot",
+        "Stemphylium globuliferum"
+      ]
+    },
+    {
+      "url": "https://ipm.ca.uky.edu/alflsp",
+      "title": "Leaf Spots in Alfalfa | Integrated Pest Management Program (University of Kentucky)",
+      "snippet": "Stemphylium leaf spot can be identified by a tan center and a dark border around an irregularly shaped lesion. Once the border is formed, the spot ceases to enlarge, and new spores form in the center. A warm-temperature strain in the midwestern and eastern U.S. produces spots without a dark border that continue expanding.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Stemphylium leaf spot",
+        "Common leaf spot",
+        "Lepto leaf spot"
+      ]
+    },
+    {
+      "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+      "title": "Summer Black Stem and Leaf Spot of Alfalfa",
+      "snippet": "Symptoms first appear on lower leaves and progress up the plant over time, with irregular brown lesions with yellow halos forming on leaves. Fungal spores cause lesions to turn silvery. Defoliation can occur when leaves have as few as two lesions. High humidity and warm temperature within a dense plant canopy favor development.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Summer Black Stem and Leaf Spot",
+        "Cercospora medicaginis"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/alfalfa/summer-black-stem-and-leaf-spot/",
+      "title": "Summer Black Stem and Leaf Spot / Alfalfa / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Leaf spots are brown at first, then become ash-gray, roughly circular, and surrounded by a diffuse yellow margin. Lesions on the stem are elongate and range from a reddish brown to a chocolate brown. Losses can be reduced by harvesting early, when flower buds first appear.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Summer Black Stem and Leaf Spot",
+        "Cercospora medicaginis"
+      ]
+    },
+    {
+      "url": "https://extensionpubs.unl.edu/publication/g2079/2011/html/view",
+      "title": "Summer Black Stem and Leaf Spot of Alfalfa (G2079) â€” University of Nebraska-Lincoln Extension",
+      "snippet": "Summer black stem and leaf spot is caused by Cercospora species. Disease development is favored by high humidity (close to 100%) and temperatures ranging from 75 to 82 degrees F. Defoliation from the base of the stem to the top is the most obvious symptom. Management includes planting moderately resistant varieties, harvesting prior to leaf drop, and timely application of labeled foliar fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Summer Black Stem and Leaf Spot",
+        "Cercospora medicaginis"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

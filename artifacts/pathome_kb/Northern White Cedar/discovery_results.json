@@ -1,0 +1,78 @@
+{
+  "crop": "Northern White Cedar",
+  "candidate_sources": [
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
+      "title": "Arborvitae Needle Blight : Landscape : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Arborvitae needle blight, caused by fungi such as Pestalotiopsis and related pathogens, produces light-brown areas on individual scale-like leaves; twig tips turn brown to tan and may bear black fruiting bodies (acervuli) emerging from dead tissue. Infections usually develop during damp weather in spring as fresh needles sprout and mature.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Arborvitae needle blight",
+        "Pestalotiopsis needle/tip blight"
+      ]
+    },
+    {
+      "url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
+      "title": "Cedar Leaf Blight: Insect & Disease Fact Sheets â€” Maine Forest Service, Maine DACF",
+      "snippet": "Cedar leaf blight (caused by Didymascella thujina) is a needle blight of Northern White Cedar (Thuja occidentalis). Infected scale leaves turn brown and bear olive-brown to black fruiting bodies; heavy infection causes premature needle drop and thinning of the crown, most severe on shaded, moist lower foliage.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cedar leaf blight",
+        "Didymascella thujina needle blight"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/arborvitae-thuja-occidentalis-tip-blight",
+      "title": "Arborvitae (Thuja occidentalis)-Tip Blight | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Tip blight of arborvitae (Thuja occidentalis) is caused by fungi including Kabatina thujae and Pestalotiopsis. Shoot tips turn brown to gray and die back; black fruiting bodies form at the junction of dead and living tissue. Management includes pruning out and destroying blighted tips in dry weather, planting in well-ventilated sites, and fungicide applications at budbreak.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Tip blight",
+        "Kabatina blight",
+        "Pestalotiopsis tip blight"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/10.1079/cabicompendium.18896",
+      "title": "Didymascella thujina (cedar leaf blight) | CABI Compendium",
+      "snippet": "Didymascella thujina causes cedar leaf blight (also known as Keithia blight or Keithia leaf blight), a leaf disease on western red cedar (Thuja plicata) and white cedar (T. occidentalis). Symptoms first appear in spring on 1-year-old foliage as bleached, tan-brown areas on individual scale-leaves; apothecia become visible by June as olive-brown to black spots.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Cedar leaf blight",
+        "Keithia blight",
+        "Keithia leaf blight"
+      ]
+    },
+    {
+      "url": "https://hortsense.cahnrs.wsu.edu/fact-sheet/arborvitae-leaf-blight/",
+      "title": "Arborvitae: Leaf blight | Hortsense | Washington State University",
+      "snippet": "Arborvitae leaf blight (Didymascella thujina) produces small, bleached spots on one-year-old leaves, with brown to black fruiting structures (apothecia) appearing in late spring. Individual leaves are killed and turn light tan to gray; as fruiting bodies drop out, deep pits are left in the dead tissue. Lower branches are worst affected in dense plantings with poor air circulation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Leaf blight",
+        "Cedar leaf blight"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
+      "title": "Cedar, Western Red (Thuja plicata)-Leaf Blight (Keithia Blight) | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Cedar leaf blight (Keithia blight) is caused by Didymascella thujina. Disease is favored by prolonged foliage wetness and restricted air movement, e.g., high seedling density. Spore discharge begins in late spring and increases during summer. Management: plant resistant cultivars, improve air circulation, and reduce foliage moisture.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Cedar leaf blight",
+        "Keithia blight"
+      ]
+    },
+    {
+      "url": "http://forestrydev.org/diseases/CTD/Group/Needle/needle1_e.html",
+      "title": "CTD â€” Conifer Needle Diseases: Cedar Leaf Blight",
+      "snippet": "Cedar leaf blight (Didymascella thujina) infects 1-year-old foliage; bleached areas appear in spring and apothecia mature to black spots by June. Windborne ascospores are released from late spring, peaking late summer into autumn. Occurs in eastern white cedar (T. occidentalis) in eastern North America, though its effect there is insignificant compared to western red cedar nurseries.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Cedar leaf blight",
+        "Keithia blight"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

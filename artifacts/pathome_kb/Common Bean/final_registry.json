@@ -1,0 +1,351 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Dry Bean Rust",
+      "pathogen_scientific_name": {
+        "value": "Uromyces appendiculatus",
+        "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
+        "quote": "Rust is caused by the obligate fungus Uromyces appendiculatus .",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
+        "quote": "Rust is caused by the obligate fungus Uromyces appendiculatus ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Pod",
+          "Stem"
+        ],
+        "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
+        "quote": "the characteristic reddish-brown repeating (urediniospores) spore stage develops, usually on leaves. ... Green pods, and occasionally stems and branches, also may become infected and develop typical rust symptoms."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Symptoms begin as small yellow or white slightly raised spots on leaf surfaces that enlarge into reddish-brown pustules (uredinia) about 1/8 inch or smaller; pustules may be surrounded by a yellow border and release rusty spores, and severe infection causes leaves to curl, dry, turn brown, and drop prematurely.",
+          "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
+          "quote": "Symptoms initially appear as small yellow or white slightly raised spots on upper and/or lower leaf surfaces ( Figure 1 ). These spots enlarge and form reddish-brown pustules, also called uredinia, that are about 1/8 inch or smaller and contain thousands of microscopic spores called urediniospores."
+        },
+        "diagnostic_features": {
+          "value": "Rust can be distinguished from other foliar diseases because the rust-colored spores will rub off, while with other foliar diseases, nothing rubs off.",
+          "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
+          "quote": "Rust can be distinguished from other foliar diseases because the rust-colored spores will rub off ( Figure 3 ), while with other foliar diseases, nothing rubs off."
+        },
+        "look_alikes": {
+          "value": [
+            "other foliar diseases"
+          ],
+          "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
+          "quote": "Rust can be distinguished from other foliar diseases because the rust-colored spores will rub off ( Figure 3 ), while with other foliar diseases, nothing rubs off."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Rotate bean with non-host crops / rotate away from any bean for two years to remove sources of inoculum.",
+          "Plow under or bury infected crop residues and bean debris right after harvest.",
+          "Eliminate volunteer bean plants.",
+          "Plant within recommended planting periods (e.g. May 15 to June 15) to reduce late-season exposure to the pathogen.",
+          "Select planting dates and schedule irrigation to avoid long periods of leaf wetness when temperatures are warm (e.g. avoid foliage staying wet at night for more than 10 hours).",
+          "Plant rust-resistant cultivars (available for many market classes including pinto, great northern, small white, red kidney, and black beans), recognizing many races of the fungus exist.",
+          "Avoid over-application of nitrogen and ensure adequate potassium fertilization.",
+          "Disinfect poles used in pole-bean production.",
+          "Scout fields frequently during late vegetative to early pod development for initial rust pustules.",
+          "Apply protectant and/or systemic fungicides such as Maneb/Manex (30-day phi), Endura, Headline, Priaxor, or Vertisan (21-day phi), Bravo/Terranil, Folicur or Quadris (14-day phi), Proline (7-day phi), or Fontelis (0-day phi); consult Cooperative Extension or the latest New England Vegetable Management Guide for current chemical recommendations."
+        ],
+        "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
+        "quote": "Cultural practices such as crop rotation and burial of bean debris will remove potential sources of inoculum. Planting within recommended periods for this region (May 15 to June 15) will reduce late season exposure to high levels of the pathogen ... treatment with a labeled fungicide such as Maneb/Manex (30-day preharvest interval = phi), Endura, Headline, Priaxor, or Vertisan (21 day phi), Bravo/Terranil, Folicur or Quadris (14 day phi), Proline (7 day phi), or Fontelis (0 day phi) should be considered at the first confirmed signs of rust"
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Uromyces appendiculatus",
+          "alternative_value": "Uromyces phaseoli typica",
+          "alternative_source_url": "https://ipm.cahnr.uconn.edu/bean-rust/",
+          "note": "UConn names the pathogen 'Uromyces phaseoli typica', an older synonym; Nebraska Extension and UMass both use the current accepted name 'Uromyces appendiculatus'. No taxonomy validation records were supplied, so canonical was selected by source agreement (2 of 3)."
+        },
+        {
+          "field": "disease_name",
+          "canonical_value": "Bean Rust",
+          "alternative_value": "Rust of Dry Bean",
+          "alternative_source_url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
+          "note": "Nebraska titles it 'Rust of Dry Bean'; UMass and UConn use 'Bean Rust'. Same disease."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Pod, Stem",
+          "alternative_value": "Foliar only",
+          "alternative_source_url": "https://ipm.cahnr.uconn.edu/bean-rust/",
+          "note": "UConn notes rust can occur on all above-ground parts but emphasizes leaves; Nebraska and UMass explicitly document pod and stem infection."
+        }
+      ]
+    },
+    {
+      "disease_name": "Common Bacterial  Blight Of Beans, Fuscous Blight",
+      "pathogen_scientific_name": {
+        "value": "Xanthomonas campestris pv. phaseoli",
+        "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+        "quote": "common bacterial blight ( Xanthomonas campestris  pv.  phaseoli )",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+        "quote": "There are three major bacterial diseases of common beans"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Pod",
+          "Seed",
+          "Whole plant"
+        ],
+        "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+        "quote": "Common bacterial blight affects bean foliage, pods, and seedlings."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Early foliar symptoms are small, angular, light green, water-soaked or translucent spots that enlarge and merge, with centers becoming dry and brown surrounded by a narrow zone of yellow tissue; pods develop circular, slightly sunken, dark red-brown lesions.",
+          "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+          "quote": "Early foliar symptoms are small, angular, light green, water-soaked or translucent spots. During warm and wet conditions, these lesions rapidly enlarge and merge. Gradually, the centers of the lesions become dry and brown, and are surrounded by a distinct, narrow zone of yellow tissue."
+        },
+        "diagnostic_features": {
+          "value": "Lesion centers become dry and brown, surrounded by a distinct, narrow zone of yellow tissue; in highly susceptible varieties leaves appear scorched, ragged, and torn; pod lesions are generally circular, slightly sunken, and dark red-brown.",
+          "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+          "quote": "the centers of the lesions become dry and brown, and are surrounded by a distinct, narrow zone of yellow tissue. In highly susceptible varieties, the lesions continue to expand until the leaves appear scorched, ragged, and torn by wind and rain. Pod symptoms consist of lesions that are generally circular, slightly sunken, and dark red-brown."
+        },
+        "look_alikes": {
+          "value": [
+            "halo blight",
+            "bacterial brown spot"
+          ],
+          "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+          "quote": "Because chemical control is often less effective against common bacterial blight compared to halo blight and bacterial brown spot, accurate disease diagnosis is important."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Crop rotation and clean tillage (for example, plowing) help reduce the risk of disease by reducing the amount of inoculum in the immediate area.",
+          "Plant only certified, pathogen-free seed from reputable suppliers and produced in semiarid regions.",
+          "Do not enter fields to cultivate or handle plants wet with dew or rain.",
+          "Equipment should be sanitized by spraying with a disinfectant before moving from an infected to a blight-free field.",
+          "Sprays provide good control of bacterial brown spot and halo blight but only moderate control of common blight."
+        ],
+        "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+        "quote": "Crop rotation and clean tillage (for example, plowing) help reduce the risk of disease by reducing the amount of inoculum in the immediate area. However, plowing may increase soil loss through erosion. Plant only certified, pathogen-free seed from reputable suppliers and produced in semiarid regions. Do not enter fields to cultivate or handle plants wet with dew or rain. Equipment should be sanitized by spraying with a disinfectant before moving from an infected to a blight-free field. Sprays provide good control of bacterial brown spot and halo blight but only moderate control of common blight."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Halo Blight",
+      "pathogen_scientific_name": {
+        "value": "Pseudomonas syringae pv. phaseolicola",
+        "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+        "quote": "halo blight ( Pseudomonas syringae  pv.  phaseolicola )",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+        "quote": "There are three major bacterial diseases of common beans"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Pod",
+          "Seed",
+          "Whole plant"
+        ],
+        "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+        "quote": "Halo blight affects bean foliage, pods, and seedlings."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Leaf symptoms appear as water-soaked spots on the lower surface with a zone of yellow-green tissue (halo) around infection points; severe infection causes generalized systemic chlorosis, and pods show red or brown water-soaked lesions.",
+          "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+          "quote": "Leaf symptoms appear as water-soaked spots on the lower surface. A zone of yellow-green tissue (halo) appears around the infection points. Infection foci generally remain small. In cases of severe leaf infection, plants develop generalized systemic chlorosis."
+        },
+        "diagnostic_features": {
+          "value": "A zone of yellow-green tissue (halo) around small infection foci, and generalized systemic chlorosis particularly pronounced at 64-73 F (favorable for phaseolotoxin production); mature pod lesions may remain green and exhibit crusty bacterial ooze.",
+          "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+          "quote": "The systemic chlorosis is particularly pronounced at 64-73?F, temperatures that are favorable for production of the non-host-specific phaseolotoxin. ... As pods mature, and turn yellow, pod lesions may remain green and may exhibit crusty bacterial ooze on the surface."
+        },
+        "look_alikes": {
+          "value": [
+            "common bacterial blight",
+            "bacterial brown spot"
+          ],
+          "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+          "quote": "Because chemical control is often less effective against common bacterial blight compared to halo blight and bacterial brown spot, accurate disease diagnosis is important."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Crop rotation and clean tillage (for example, plowing) help reduce the risk of disease by reducing the amount of inoculum in the immediate area.",
+          "Plant only certified, pathogen-free seed from reputable suppliers and produced in semiarid regions.",
+          "Do not enter fields to cultivate or handle plants wet with dew or rain.",
+          "Equipment should be sanitized by spraying with a disinfectant before moving from an infected to a blight-free field.",
+          "Sprays provide good control of bacterial brown spot and halo blight but only moderate control of common blight."
+        ],
+        "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+        "quote": "Crop rotation and clean tillage (for example, plowing) help reduce the risk of disease by reducing the amount of inoculum in the immediate area. ... Plant only certified, pathogen-free seed from reputable suppliers and produced in semiarid regions. Do not enter fields to cultivate or handle plants wet with dew or rain. Equipment should be sanitized by spraying with a disinfectant before moving from an infected to a blight-free field. Sprays provide good control of bacterial brown spot and halo blight but only moderate control of common blight."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Sclerotinia Timber Rot",
+      "pathogen_scientific_name": {
+        "value": "Sclerotinia sclerotiorum",
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/white-mold/",
+        "quote": "The fungus that causes white mold, Sclerotinia sclerotiorum , is widely distributed in relatively cool and moist areas throughout the world .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-snap-phaseolus-vulgaris-white-mold-sclerotinia-rot",
+        "quote": "The fungus, Sclerotinia sclerotiorum , causes white mold."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Pod",
+          "Root",
+          "Whole plant"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-snap-phaseolus-vulgaris-white-mold-sclerotinia-rot",
+        "quote": "The first symptom is usually water-soaked lesions on stem and pods. The fungus may invade the stem near the soil line, causing a rapid wilting and death of the entire plant, or it may invade pods or branches and foliage that comes in contact with colonized tissue."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "White mold first appears as pale, often bleached, water-soaked (watery) rot lesions on stems, leaves, and pods; white threadlike, cottony mycelium is often visible on rotted tissue under moist conditions, after which affected tissue dries and bleaches to a pale tan, beige, or almost white color and black sclerotia develop.",
+          "url": "https://ipm.ucanr.edu/agriculture/dry-beans/white-mold/",
+          "quote": "White mold first appears as a watery rot on stems, leaves, and pods. White mycelium (threadlike hyphae) is often visible on the surface of rotted tissue under moist conditions."
+        },
+        "diagnostic_features": {
+          "value": "The development of black, irregularly shaped (round to oblong) sclerotiaâ€”compact masses of myceliaâ€”within the white cottony fungal growth is the best diagnostic feature; sclerotia are white early in development and turn black when fully developed, formed on plant surfaces and inside pods or stems, while affected tissue dries quickly and bleaches to a pale tan, beige, or almost white color.",
+          "url": "https://ipm.ucanr.edu/agriculture/dry-beans/white-mold/",
+          "quote": "The development of black, irregularly shaped sclerotia (compact masses of mycelia) is the best diagnostic feature."
+        },
+        "look_alikes": {
+          "value": [
+            "Phytophthora blight",
+            "Pythium blight"
+          ],
+          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/white-mold/",
+          "quote": "White mold on pepper can be distinguished from Phytophthora blight, which also affects stems, by presence of white cottony fungal growth and sclerotia, additionally, with Phytophthora blight affected stems are darker brown and usually there are also symptoms on leaves and fruit plus the growing tip may be blighted."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Rotate with non-host crops (small grains, corn, rye, wheat, grasses, cereals) for at least 2-3 years, and up to 3-8 years, to reduce soil inoculum and sclerotia populations.",
+          "Use wide row spacing (36 inches recommended) to increase air movement and promote drying of the soil and plant canopy.",
+          "Use management practices that reduce heavy canopies and increase air movement.",
+          "Avoid heavy applications of nitrogen / over-fertilization, which can produce excessive, dense, lush canopies.",
+          "Plant erect, upright, open-canopy (open-base) varieties that hold pods off the ground and do not produce excessive foliage near ground level; resistant bean varieties (including dry bean types) are available.",
+          "Orient bean rows in the direction of the prevailing winds to promote air drainage and drying of plant and soil surfaces.",
+          "Avoid planting the most susceptible crops in fields surrounded by dense woods that restrict air circulation.",
+          "Time irrigations to allow drying of the plant canopy before nightfall and avoid excessive irrigation after petal fall.",
+          "Plant garbanzo beans later (December through early February) rather than early (early November) to avoid heavy canopies that increase humidity.",
+          "Scout and inspect plants for symptoms beginning at emergence/bloom, keeping written notes and photographic records of occurrence and severity.",
+          "Practice good weed control, removing susceptible weeds (in particular ragweed) from the field.",
+          "Avoid wounds and remove affected plants.",
+          "Incorporate debris promptly after harvest and use deep plowing to bury sclerotia and reduce sclerotia production.",
+          "Field flooding during warm temperatures destroys sclerotia.",
+          "Use a timely harvest with rapid cooling and pod storage at 45Â°F to 50Â°F for effective postharvest control.",
+          "Apply foliar fungicides starting at early bloom (1% to 10% bloom) in fields with a history of white mold, obtaining thorough coverage with high water volume (50 gallons per acre minimum) and high pressure (100 to 200 psi).",
+          "Conventional fungicides in FRAC groups 1, 2, 3, 7, 11, 12 and 29 are labeled for white mold, in addition to contact fungicides copper and chlorothalonil.",
+          "BOSCALID (Endura) at 8 to 11 oz/A at the beginning of flowering and again at full bloom.",
+          "THIOPHANATE METHYL (Topsin M WSB at 1 to 1.5 lb/A; T-Methyl 4.5F AG / Topsin 4.5 FL at 30 to 40 fl oz/A).",
+          "Blocker 4F (Group 14) at 4 pints/A at planting and again on 2- to 3-week intervals when disease is severe.",
+          "Botran 75W (Group 14) at 2 2/3 lb/A on 7-day intervals.",
+          "Cannonball WG (Group 12) at 7 oz/A when 10% of plants have at least one open blossom.",
+          "Fontelis at 16 to 30 fl oz/A at the beginning of flowering and again at full bloom.",
+          "Luna Privilege at 6.84 fl oz/A on 14-day intervals.",
+          "Rovral 4 Flowable at 1.5 to 2 pints/A when 10% of plants have at least one open bloom.",
+          "Omega 500F (Group 29) at 0.5 to 0.85 pint/A when 10% to 30% of plants have at least one open blossom.",
+          "Switch 62.5WG (Group 12 + 9) at 11 to 14 oz/A.",
+          "Jet-Ag at 0.75 to 3.9 fl oz/5 gal water as a weekly preventative treatment.",
+          "Biological/soil treatments: Contans WG (a parasitic fungus that attacks sclerotia) at 1 to 4 lb/A as a preplant or postharvest treatment.",
+          "Regalia Biofungicide (Group P5) at 1 to 4 quarts/A on 7- to 10-day intervals.",
+          "Double Nickel LC at 1 to 6 quarts/A at planting and again at cultivation.",
+          "Serenade Opti at 14 to 20 oz/A on 7- to 10-day intervals.",
+          "Stargus at 2 to 4 quarts/A plus a nonionic surfactant on 7- to 10-day intervals."
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-snap-phaseolus-vulgaris-white-mold-sclerotinia-rot",
+        "quote": "Cultural control Reduce humidity and high-moisture periods within the plant canopy and field. ... Chemical control In fields with a history of white mold, apply fungicide at 1% to 10% bloom ... Biological control Contans WG at 1 to 4 lb/A"
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Sclerotinia sclerotiorum",
+          "alternative_value": "Sclerotinia trifoliorum",
+          "alternative_source_url": "https://ipm.ucanr.edu/agriculture/dry-beans/white-mold/",
+          "note": "UC IPM lists Sclerotinia trifoliorum as an additional causal species of white mold alongside Sclerotinia sclerotiorum; the Cornell and PNW sources attribute the disease solely to S. sclerotiorum."
+        },
+        {
+          "field": "look_alikes",
+          "canonical_value": "Phytophthora blight (Cornell); Pythium blight (PNW)",
+          "alternative_value": "Pythium blight",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-snap-phaseolus-vulgaris-white-mold-sclerotinia-rot",
+          "note": "Sources cite different confusable diseases â€” Cornell distinguishes white mold from Phytophthora blight (on pepper), while PNW notes white mold may be confused with Pythium blight on bean. Both are retained in the look_alikes value array."
+        }
+      ]
+    },
+    {
+      "disease_name": "Beet Curly Top Virus",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    }
+  ],
+  "crop": "Common Bean",
+  "generated_date": "2026-06-10"
+}

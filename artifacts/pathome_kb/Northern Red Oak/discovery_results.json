@@ -1,0 +1,75 @@
+{
+  "crop": "Northern Red Oak",
+  "candidate_sources": [
+    {
+      "url": "https://ipm.ucanr.edu/PMG/GARDEN/PLANTS/DISEASES/oaktwigblight.html",
+      "title": "Oak Twig Blight / Home and Landscape / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Cryptocline cinerescens kills leaves and twigs from the current-season's growth; infected shoots turn white or tan and die while remaining on the tree in scattered patches throughout the canopy. Symptoms are most noticeable in summer and fall (July to October), and blight is more severe in wet years and on trees infested with oak pit scales.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Oak twig blight",
+        "Cryptocline cinerescens",
+        "Discula quercina"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/publications/plantdisease/backissues/Documents/1986Abstracts/PD_70_800d.htm",
+      "title": "Cryptocline cinerescens and Discula quercina Causing Twig Blight of Oaks in California (Plant Disease 1986)",
+      "snippet": "Extensive, previously unrecorded twig blight of Quercus agrifolia and, to a lesser extent, Q. lobata and Q. wislizenii appeared in California; both fungi were consistently isolated from diseased twigs. Pathogenicity was confirmed by Koch's postulates using conidial suspensions on greenhouse seedlings. Hecht-Poinar & Parmeter, UC Berkeley, Plant Disease 70:800.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Twig blight of oaks",
+        "Cryptocline cinerescens",
+        "Discula quercina"
+      ]
+    },
+    {
+      "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+      "title": "Cryptocline leaf spot (anthracnose) of Elm â€” Purdue Landscape Report",
+      "snippet": "Leaf spots begin as small, round chlorotic lesions that expand into necrotic spots with a purple/black border and tan or white center; lesions may follow leaf veins. Black acervuli form in necrotic tissue and produce conidia in a sticky matrix spread by rain, driving repeated secondary infections and premature leaf drop through the growing season.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cryptocline leaf spot",
+        "Cryptocline anthracnose"
+      ]
+    },
+    {
+      "url": "https://auf.isa-arbor.com/content/44/3/146",
+      "title": "Drippy Blight, a Disease of Red Oaks in Colorado, U.S., Produced from the Combined Effect of the Scale Insect Allokermes galliformis and the Bacterium Lonsdalea quercina subsp. quercina | Arboriculture & Urban Forestry",
+      "snippet": "Drippy blight is an emergent disease of red oaks caused by the interaction between a kermes scale insect (Allokermes galliformis) and a bacterium (Lonsdalea quercina subsp. quercina). Main symptoms are leaf scorch and premature leaf drop followed by dieback of small twigs and development of branch cankers, from which copious bacterial ooze is produced.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Drippy blight"
+      ]
+    },
+    {
+      "url": "https://www.fs.fed.us/rmrs/science-spotlights/drippy-blight-new-disease-complex-red-oak",
+      "title": "Drippy blight: A new disease complex of red oak | Rocky Mountain Research Station",
+      "snippet": "Drippy blight is a striking disease where the unique association between a kermes scale insect and a bacterium contribute to severe tree decline. The pin oak kermes scale produces wounds while feeding, damaging tissues and allowing entry of the bacterial pathogen Lonsdalea quercina, which causes cankers and viscous ooze that drips from trees.",
+      "source_type": "USDA",
+      "diseases_mentioned": [
+        "Drippy blight"
+      ]
+    },
+    {
+      "url": "https://bouldercolorado.gov/drippy-blight",
+      "title": "Drippy Blight | City of Boulder",
+      "snippet": "Drippy blight disease is caused by a plant pathogenic bacterium, Lonsdalea quercina subsp. quercina, in association with the kermes scale insect Allokermes galliformis. Symptoms include oozing, dripping, twig dieback, flagging, and abscission of twigs that often look like squirrel clippings on the ground in late June and July. Twig cankers show maroon discoloration with clear margins.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Drippy blight"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHYTOFR-03-24-0029-R",
+      "title": "Defining the Pathobiomes Associated with Drippy Blight in Colorado and Drippy Nut in California | PhytoFrontiers",
+      "snippet": "Drippy blight in Colorado and drippy nut in California are diseases associated with Lonsdalea quercina affecting oaks. Analysis defines the pathobiomes and microbial communities associated with the bacterial pathogen and scale insect interactions on red oaks.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Drippy blight",
+        "Drippy nut"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

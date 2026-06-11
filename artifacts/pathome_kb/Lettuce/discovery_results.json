@@ -1,0 +1,393 @@
+{
+  "crop": "Lettuce",
+  "candidate_sources": [
+    {
+      "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/lettuce_cercospora_leaf_spot_210.htm",
+      "title": "Fact sheet - Lettuce Cercospora leaf spot (210) - Pacific Pests, Pathogens & Weeds (Lucid)",
+      "snippet": "Leaf spots are tan to brown, circular or oval, up to 1 cm diameter, with small (0.5-1 mm) whitish centres, sometimes with yellow halos, and joining together. The pathogen is Cercospora lactucae-sativae, previously known as Cercospora longissima. Cultural control: space plants for air movement, drip irrigation, 2-3-year crop rotation, collect and burn trash. Chemical control: mancozeb if needed.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Lettuce Cercospora leaf spot",
+        "Cercospora lactucae-sativae",
+        "Cercospora longissima"
+      ]
+    },
+    {
+      "url": "http://ephytia.inra.fr/en/C/5857/Salads-Cercospora-longissima-cercospora-leaf-spot",
+      "title": "Salads - Cercospora longissima (cercospora leaf spot) - INRAE Ephytia",
+      "snippet": "Spots are circular to oval, brown, with whitish centres, up to 1 cm, and later merge, appearing on older leaves first, sometimes with haloes. The fungus is maintained in soil on plant debris, on seeds and on wild lettuce. It develops during humid periods with free water on leaves; conidia germinate and enter through stomata. Optimal temperature near 25Â°C; symptoms visible after 3 days, sporulation 5 days after contamination.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Cercospora longissima",
+        "cercospora leaf spot"
+      ]
+    },
+    {
+      "url": "https://extension.umd.edu/resource/cercospora-leaf-spot-vegetables",
+      "title": "Cercospora Leaf Spot of Vegetables | University of Maryland Extension",
+      "snippet": "Small tan to brown lesions surrounded by a reddish-purple border develop in late spring; eventually the center of the lesion may drop out leaving a hole. Older infected leaves may yellow and die. This fungal disease affects the leaves of beet, Swiss chard, lettuce, spinach, pepper, bean, and cucurbits, and is more noticeable when conditions are warm and humid.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cercospora leaf spot"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/vegetable/fact-sheets/lettuce-downy-mildew",
+      "title": "Lettuce, Downy Mildew : Vegetable : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Downy mildew (Bremia lactucae) is a common disease of lettuce in cooler growing environments, with low temperatures and long periods of leaf wetness caused by overnight dew. Downy mildew causes pale, angular, yellow areas bounded by veins on upper leaf surfaces; sporulation (white growth) occurs on the opposite surface. Lesions eventually turn brown and may coalesce; first on lower leaves.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Downy mildew",
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/lettuce/downy-mildew/",
+      "title": "Downy Mildew / Lettuce / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Downy mildew of lettuce, caused by Bremia lactucae, produces chlorotic angular lesions limited by veins, with white sporulation on the underside of leaves. The pathogen favors cool, moist conditions. UC IPM Pest Management Guidelines cover monitoring, resistant cultivars, and fungicide management.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Downy mildew"
+      ]
+    },
+    {
+      "url": "https://desertagsolutions.org/sites/desertagsolutions.org/files/az1682-2015%20downy%20mildew%20of%20lettuce%20Cooperative%20Extension%20Publication_MM.pdf",
+      "title": "Biology and Management of Downy Mildew of Lettuce (University of Arizona Cooperative Extension, AZ1682)",
+      "snippet": "Lettuce downy mildew is caused by Bremia lactucae, an obligate parasite in the oomycete group (water molds). Symptoms begin as chlorotic yellow spots; light green to yellow angular spots become necrotic and tan/brown. White fluffy growth of spore-producing structures develops. Pathogen favors 50-65Â°F and requires leaf wetness/high humidity. Management includes genetic resistance and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Downy mildew"
+      ]
+    },
+    {
+      "url": "https://edis.ifas.ufl.edu/publication/HS1403",
+      "title": "HS1403: Downy Mildew of Lettuce in Florida (UF/IFAS EDIS)",
+      "snippet": "Downy Mildew of Lettuce in Florida â€” caused by Bremia lactucae. Describes symptoms, disease cycle, favorable cool/wet conditions, and management options for Florida lettuce production.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Downy mildew"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-gray-mold",
+      "title": "Lettuce (Lactuca sativa)-Gray Mold | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Botrytis cinerea (teleomorph: Botryotinia fuckeliana) is a fungus pathogenic on many plants. The initial symptom is a dark, water-soaked lesion, and a soft rot of infected leaves and stems occurs as the pathogen grows into healthy tissues. Cool temperatures, high humidity, and free water on plant surfaces favor the disease. Includes cultural and chemical management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gray Mold",
+        "Botrytis cinerea"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/home-and-landscape/botrytis-rot-gray-mold-on-lettuce/",
+      "title": "Botrytis Rot (Gray Mold) on Lettuce / Home and Landscape / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Lower leaves of plants infected with Botrytis yellow, and eventually the whole head wilts and rots, with a watery, brown decay developing on the underside of the head at the crown. A characteristic fuzzy gray to brown growth covers diseased areas. Occasionally the fungus produces small, black, flattened sclerotia on the plant's underside. This ubiquitous fungus readily attacks lettuce because of the moist, enclosed microclimate created in the lettuce head.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Botrytis Rot",
+        "Gray Mold",
+        "Botrytis cinerea"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/lettuce/botrytis-crown-rot/",
+      "title": "Botrytis Crown Rot / Lettuce / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Botrytis crown rot (gray mold) of lettuce, caused by Botrytis cinerea. Pest management guidelines covering symptoms, disease cycle, and chemical and cultural control for commercial lettuce production.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Botrytis Crown Rot",
+        "Gray Mold",
+        "Botrytis cinerea"
+      ]
+    },
+    {
+      "url": "https://www.greenhousecanada.com/managing-botrytis-a-serious-disease-in-greenhouse-lettuce-33048/",
+      "title": "Managing Botrytis: A serious disease in greenhouse lettuce - Greenhouse Canada",
+      "snippet": "Botrytis (gray mold) is a serious disease in greenhouse lettuce. Proper climate control is the main strategy for controlling or reducing severity. Biofungicides containing Trichoderma atroviride, Coniothyrium minitans and Epicoccum purpurascens have been tested against gray mold on lettuce.",
+      "source_type": "industry",
+      "diseases_mentioned": [
+        "Botrytis",
+        "Gray Mold"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6784094/",
+      "title": "Lettuce Chlorosis Virus Disease: A New Threat to Cannabis Production",
+      "snippet": "Lettuce chlorosis virus (LCV) is a crinivirus in the family Closteroviridae, first characterized in the early 1990s infecting sugar beets and lettuce in southern California. Symptoms include interveinal chlorosis, brittleness, and occasional necrosis on older leaves; Butterhead and Romaine lettuce showed severe symptoms after four weeks. Transmitted by the whitefly Bemisia tabaci (MEAM1 biotype) in a semi-persistent manner; not seed-transmitted.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Lettuce chlorosis virus",
+        "Lettuce infectious yellows virus"
+      ]
+    },
+    {
+      "url": "https://www.mdpi.com/1999-4915/11/9/802",
+      "title": "Lettuce Chlorosis Virus Disease: A New Threat to Cannabis Production (Viruses, MDPI)",
+      "snippet": "LCV is a crinivirus (Closteroviridae) with a linear RNA genome encoding 14 proteins, first characterized in the early 1990s infecting sugar beets and lettuce in southern California. On lettuce, symptoms include interveinal chlorosis up to complete leaf yellowing, stunting, and leaf brittleness. The virus is spread by Bemisia tabaci (silverleaf whitefly) in a semi-persistent manner.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Lettuce chlorosis virus"
+      ]
+    },
+    {
+      "url": "https://gd.eppo.int/reporting/article-3501",
+      "title": "Further characterization of lettuce chlorosis closterovirus (EPPO Global Database)",
+      "snippet": "Lettuce chlorosis closterovirus (LCV) is a distinct closterovirus associated with chlorosis symptoms observed in lettuce in California in the 1990s. Provides characterization, host range, and vector (whitefly) information for the pathogen.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Lettuce chlorosis virus",
+        "lettuce chlorosis closterovirus"
+      ]
+    },
+    {
+      "url": "https://www.agdia.com/company/news/1747690/agdia-releases-test-kit-for-lettuce-chlorosis-virus-lcv",
+      "title": "Agdia Releases Test Kit for Lettuce Chlorosis Virus (LCV)",
+      "snippet": "Lettuce chlorosis virus (LCV) is a crinivirus transmitted by the whitefly Bemisia tabaci in a semi-persistent manner. Causes interveinal chlorosis, leaf yellowing, and stunting in lettuce and other hosts. Molecular and serological testing can detect the virus before symptoms appear, supporting management and clean-stock programs.",
+      "source_type": "industry",
+      "diseases_mentioned": [
+        "Lettuce chlorosis virus"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-big-vein",
+      "title": "Lettuce (Lactuca sativa)-Big Vein | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Lettuce big-vein disease symptoms include loss of chlorophyll around the vascular bundles (vein banding) and increased leaf stiffness giving a bushy appearance, preventing head formation. Vectored by the soil-borne Olpidium virulentus, which produces persistent resting spores; weedy hosts such as sow thistle (Sonchus oleraceus) act as reservoirs. Wet, cool conditions favor the vector. Management challenges and cultural controls discussed.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Lettuce big-vein disease",
+        "Mirafiori lettuce big-vein virus",
+        "Lettuce big-vein associated virus"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Lettuce_big-vein_disease",
+      "title": "Lettuce big-vein disease - Wikipedia",
+      "snippet": "Lettuce big-vein disease is found worldwide and is associated with at least two unrelated viruses: Mirafiori lettuce big-vein virus (MiLBVV) and Lettuce big-vein associated virus (LBVaV). Symptoms include vein banding (chlorophyll loss around vascular bundles), leaf stiffness/bushy appearance, malformation, mottled and puckered surfaces with ruffled margins. The disease is soilborne and transmitted by the fungus Olpidium virulentus.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Lettuce big-vein disease",
+        "Mirafiori lettuce big-vein virus (MiLBVV)",
+        "Lettuce big-vein associated virus (LBVaV)"
+      ]
+    },
+    {
+      "url": "https://michelmorelab.ucdavis.edu/lettuce-big-vein",
+      "title": "Lettuce Big Vein | The Michelmore Lab (UC Davis)",
+      "snippet": "Lettuce big-vein disease is caused by Mirafiori lettuce big-vein virus (MLBVV), with Lettuce big-vein associated virus (LBVaV) also present. Seedlings infected with MLBVV alone develop big-vein symptoms, while those infected with LBVaV alone develop no symptoms. The virus resides within the soil-borne water mold Olpidium virulentus. Economic damage results from reduced plant size and fewer marketable plants.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Lettuce big-vein disease",
+        "Mirafiori lettuce big-vein virus (MLBVV)",
+        "Lettuce big-vein associated virus (LBVaV)"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-07-19-1471-PDN",
+      "title": "First Report of Lettuce Big-Vein Disease Associated with Mirafiori Lettuce Big-Vein Virus and Lettuce Big-Vein Associated Virus in Colombia | Plant Disease",
+      "snippet": "First report of lettuce big-vein disease associated with Mirafiori lettuce big-vein virus (MiLBVV) and Lettuce big-vein associated virus (LBVaV). Describes vein-clearing/big-vein symptoms in lettuce, molecular detection of both viruses, and their association with the soil-borne vector Olpidium.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Lettuce big-vein disease",
+        "Mirafiori lettuce big-vein virus",
+        "Lettuce big-vein associated virus"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/anr-56",
+      "title": "Powdery Mildew of Greenhouse-grown Lettuce | Ohioline",
+      "snippet": "Symptoms include patches of white powdery growth on upper and lower leaves and stems. The fungus Golovinomyces cichoracearum (formerly Erysiphe cichoracearum) causes powdery mildew on lettuce. Optimal temperature is 64 to 77 degrees Fahrenheit (18 to 25 degrees Celsius). Conidia are borne in chains and spread by air currents. Management includes ventilation, sanitation, and bicarbonate fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery Mildew"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/lettuce/powdery-mildew/",
+      "title": "Powdery Mildew / Lettuce / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "The powdery mildew fungus appears as a gray-white, powdery growth on both upper and lower sides of lettuce leaves, causing deformity and buckling. In advanced stages leaves dry out and turn brown; cleistothecia may be seen. Favored by warm, dry conditions on mature lettuce. Caused by Golovinomyces cichoracearum.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Powdery Mildew"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-powdery-mildew",
+      "title": "Lettuce (Lactuca sativa)-Powdery Mildew | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Lettuce powdery mildew caused by Golovinomyces cichoracearum (formerly Erysiphe cichoracearum). Symptoms, disease cycle, and chemical and cultural control recommendations for the disease on lettuce.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery Mildew"
+      ]
+    },
+    {
+      "url": "https://bsppjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-3059.2010.02399.x",
+      "title": "Taxonomy, distribution and biology of lettuce powdery mildew (Golovinomyces cichoracearum sensu stricto) - Lebeda - 2011 - Plant Pathology",
+      "snippet": "Review of the taxonomy, distribution and biology of lettuce powdery mildew caused by Golovinomyces cichoracearum sensu stricto, including host range across Asteraceae and pathogen morphology.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Powdery Mildew"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/lettuce/rhizoctonia-diseases/",
+      "title": "Rhizoctonia Diseases / Lettuce / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Bottom rot is caused by the soil-borne fungus Rhizoctonia solani. Symptoms develop first on lower leaves in contact with the soil as small rust-colored brown spots, and are most pronounced at heading. Favored by warm (77 to 81F), moist conditions; survives as sclerotia or mycelium in soil and crop debris.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Rhizoctonia diseases of lettuce",
+        "bottom rot",
+        "damping-off"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/lettuce-lactuca-sativa-bottom-rot",
+      "title": "Lettuce (Lactuca sativa)-Bottom Rot | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Bottom rot of lettuce caused by Rhizoctonia solani. Early symptoms include wilting of outer leaves; sunken reddish-brown lesions on petioles and midribs touching the soil. White- to brown-colored mycelium grows in lesions; brown sclerotia develop near leaf axils. Management: well-drained soil/raised beds, rotation with nonsusceptible crops, fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "bottom rot",
+        "Rhizoctonia solani"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/HPIPM:Lettuce_Bottom_Rot",
+      "title": "HPIPM: Lettuce Bottom Rot - Bugwoodwiki",
+      "snippet": "Lettuce bottom rot caused by Rhizoctonia solani. Infection occurs when sclerotia germinate and produce mycelium that penetrates healthy or wounded tissue. The pathogen causes damping-off and bottom rot on a broad range of plants; rust-colored lesions on midribs, network of mycelial growth around the head that becomes slimy and dries to a blackened mummy.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "lettuce bottom rot",
+        "Rhizoctonia solani",
+        "damping-off"
+      ]
+    },
+    {
+      "url": "https://extension.missouri.edu/media/wysiwyg/Extensiondata/Pro/PlantDiagnosticClinic/Docs/bottom-rot.pdf",
+      "title": "Rhizoctonia Bottom Rot of Lettuce - University of Missouri Extension (Peng Tian & Blaike Zehnle)",
+      "snippet": "Rhizoctonia bottom rot of lettuce caused by the soilborne fungus Rhizoctonia solani. Symptoms, infection, survival, and management of bottom rot/damping-off in lettuce. Avoid planting lettuce in fields with large amounts of undecomposed plant residues since this enhances R. solani growth and survival.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rhizoctonia bottom rot",
+        "damping-off",
+        "Rhizoctonia solani"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/lettuce-drop",
+      "title": "Lettuce Drop | NC State Extension Publications",
+      "snippet": "Lettuce drop, caused by Sclerotinia sclerotiorum and S. minor, initially causes lower leaves to wilt and drop to the soil surface. White mycelium forms and black sclerotia develop on decayed crown tissue; the fungus causes a brown, soft decay that destroys the plant crown, leading to wilt and collapse. Sclerotia survive in soil 2 to 3 years.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Lettuce drop",
+        "Sclerotinia rot",
+        "white mold"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/lettuce/lettuce-drop/",
+      "title": "Lettuce Drop / Lettuce / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Lettuce drop caused by Sclerotinia minor and S. sclerotiorum produces wilting and yellowing of lower leaves, white cottony fungal growth on basal plant surfaces, and black sclerotia. Management includes irrigation/moisture control, subsurface drip irrigation, crop rotation with non-hosts, deep inversion plowing, and fungicides applied at the rosette stage.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Lettuce drop",
+        "Sclerotinia rot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-08-19-0053-RS",
+      "title": "Optimizing Fungicide Inputs for Management of Lettuce Drop Caused by Sclerotinia minor and S. sclerotiorum | Plant Health Progress",
+      "snippet": "For S. minor, fungicides applied immediately after thinning and cultivation (at 4-6 true-leaf stages) significantly reduced incidence of lettuce drop. Crop rotations and deep inversion plowing may help reduce incidence. Examines optimizing fungicide timing for both Sclerotinia minor and S. sclerotiorum.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Lettuce drop",
+        "Sclerotinia minor",
+        "Sclerotinia sclerotiorum"
+      ]
+    },
+    {
+      "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/sclerotinia-drop-lettuce-drop-or-white-mold.html",
+      "title": "Sclerotinia Drop, Lettuce Drop, or White Mold | Oklahoma State University",
+      "snippet": "Early symptoms include wilting and yellowing of lower leaves; plants appear limp with white, cottony fungal growth on basal surfaces. Black sclerotia form within the cottony growth. Caused by Sclerotinia sclerotiorum and S. minor under cool, moist conditions.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sclerotinia drop",
+        "Lettuce drop",
+        "White mold"
+      ]
+    },
+    {
+      "url": "https://blogs.ifas.ufl.edu/stjohnsco/2019/11/25/southern-blight-of-lettuce/",
+      "title": "Southern Blight of Lettuce - UF/IFAS Extension St. Johns County",
+      "snippet": "The fungus infects lower stems near or at the soil surface. A girdling lesion will begin to infect the crown and stems, as defoliation occurs, and crown collapse is often observed in leafy greens. Thick mats of white mycelia may grow from infected tissue, radiating from the plant onto the soil surface, and sclerotia develop on infected tissue and soil. Sclerotia can be killed by soil solarization; preplant fungicides such as captan and PCNB reduce disease severity.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern Blight",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/SouthernBlight.aspx",
+      "title": "Southern blight, southern stem blight, white mold - APS Education Center",
+      "snippet": "Southern blight is caused by the soilborne fungus Athelia rolfsii (formerly Sclerotium rolfsii). A brown to black lesion usually develops on the stem near the soil line that can completely girdle the stem and cause a sudden and permanent wilt. White mycelium and small tan spherical sclerotia (resembling mustard seeds) can be found at the stem soil line. Sanitation is the cornerstone for control.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Southern blight",
+        "Southern stem blight",
+        "White mold",
+        "Athelia rolfsii",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/Sclerotium_rolfsii_(Southern_blight_of_vegetables_and_melons)",
+      "title": "Sclerotium rolfsii (Southern blight of vegetables and melons) - Bugwoodwiki",
+      "snippet": "Sclerotium rolfsii is a soilborne fungus with a broad host range of more than 600 species. The pathogen favors water-saturated soils with high temperatures; ideal temperatures for mycelial growth range from 46 to 104 F. White mats of mycelia radiate from infected tissue and tan sclerotia develop on infected tissue and soil. Spread occurs through infested soil, plant debris, irrigation water, and contaminated tools.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Southern blight",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/southern-blight-of-vegetable-crops",
+      "title": "Southern Blight of Vegetable Crops - NC State Extension Publications",
+      "snippet": "Southern blight, caused by Sclerotium rolfsii, affects many vegetable crops. A girdling lesion develops on the lower stem at the soil line causing wilt and collapse. Diagnostic white mycelium and round tan sclerotia form at the base of the plant. Management includes sanitation, deep plowing to bury sclerotia, and fungicide applications.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern Blight",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/lettuce/tospoviruses/",
+      "title": "Tospoviruses / Lettuce / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "UC IPM Pest Management Guidelines for lettuce covering tospoviruses including Tomato spotted wilt virus (TSWV) and Impatiens necrotic spot virus (INSV): symptoms (bronzing, brown necrotic lesions along veins, necrotic areas), thrips vectors, and management.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Tomato spotted wilt virus",
+        "Impatiens necrotic spot virus",
+        "Tospoviruses"
+      ]
+    },
+    {
+      "url": "https://extension.usu.edu/vegetableguide/leafy-greens/tswv",
+      "title": "Tomato Spotted Wilt Virus (TSWV) | USU Extension",
+      "snippet": "Utah State University Extension leafy greens factsheet. Infected leaves show bronzing and small brown lesions develop along the veins; lesions expand and merge causing large necrotic areas; lettuce plants may die if infected young. Transmitted by Western flower thrips (Frankliniella occidentalis).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tomato Spotted Wilt Virus",
+        "TSWV"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/TomatoSpottedWilt.aspx",
+      "title": "Tomato spotted wilt â€” APS Plant Disease Lessons",
+      "snippet": "American Phytopathological Society educational lesson on Tomato spotted wilt virus. TSWV is an obligate parasite transmitted by at least ten thrips species; the virus is acquired by the larval stage, replicates in the thrips, and is transmitted by adults. Host range includes lettuce among over 1,000 species.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Tomato spotted wilt virus",
+        "TSWV"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

@@ -1,0 +1,127 @@
+{
+  "crop": "Hops",
+  "candidate_sources": [
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
+      "title": "Hop (Humulus lupulus)-Virus Diseases | Pacific Northwest Pest Management Handbooks",
+      "snippet": "ApMV, an ilarvirus, can cause significant symptoms in hop, though severity varies by cultivar. Many varieties are tolerant to ApMV and asymptomatic when infected; a few cultivars are very sensitive. ApMV is transmitted by mechanical inoculation of infective sap, simulated pruning, foliar contact, and root grafting. Management: plant clean stock, sanitize equipment with 5-10% bleach, work diseased yards last, destroy severely stunted/yellowed plants.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Apple mosaic virus (ApMV)",
+        "Hop mosaic virus",
+        "Hop latent virus",
+        "Prunus necrotic ringspot virus"
+      ]
+    },
+    {
+      "url": "https://www.canr.msu.edu/news/virus_visible_in_michigan_hopyards",
+      "title": "Virus visible in Michigan hopyards - MSU Extension",
+      "snippet": "Apple mosaic virus (ApMV) symptoms appear as chlorotic rings that turn necrotic. ApMV, an ilarvirus previously known in hop as prunus necrotic ringspot virus, can cause up to 30% loss in cone production and decrease alpha acid levels, with infected hop plants showing yellowish-brownish arcs and rings. Primarily transmitted via root grafting and infected vegetative propagation equipment.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Apple mosaic virus (ApMV)",
+        "Prunus necrotic ringspot virus"
+      ]
+    },
+    {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1744-7348.2002.tb00198.x",
+      "title": "Mechanical transmission of Apple mosaic virus in Australian hop (Humulus lupulus) gardens - Pethybridge et al., 2002, Annals of Applied Biology",
+      "snippet": "ApMV is transmitted to hop by mechanical inoculation of infective sap, simulated pruning, foliar contact, and root grafting. Under field conditions, the rate of ApMV transmission was halved when contact between neighboring plants was prevented by early season applications of paraquat to restrict basal shoot growth.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Apple mosaic virus (ApMV)"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
+      "title": "Hop (Humulus lupulus)-Fusarium Canker (Wilt) | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Fusarium canker forms cankers at the base of the bine accompanied by sudden wilting of bines when flowering or when temperatures soar. The fungus Fusarium sambucinum survives in soil and diseased plants and has been found in Oregon, Washington, and Idaho. Management: reduce crown wetness, lime to increase soil pH above 7, maintain higher pH using less ammonium-based nitrogen.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fusarium canker",
+        "Fusarium wilt",
+        "Fusarium crown rot"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-cone-tip-blight",
+      "title": "Hop (Humulus lupulus)-Cone Tip Blight | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Two fungal species, Fusarium avenaceum and F. sambucinum, cause cone tip blight; the disease has been found in OR, WA, and ID. Affected cones turn from green to brown as they reach full maturity; browning starts at the tip and moves up the cone toward the stem. Onset appears more severe in sites with more humid conditions during cone development, especially with overhead irrigation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fusarium cone tip blight",
+        "cone tip blight"
+      ]
+    },
+    {
+      "url": "https://ishs.org/ishs-article/668_16/",
+      "title": "FUSARIUM CONE TIP BLIGHT OF HUMULUS LUPULUS | ISHS",
+      "snippet": "Fusarium sambucinum (teleomorph: Gibberella pulicaris) and F. avenaceum have been recovered from symptomatic hop cones causing cone tip blight. The interior of the hop cone browns and dies, with browning beginning at the cone tip.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Fusarium cone tip blight"
+      ]
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30823176/",
+      "title": "First Report of Fusarium crookwellense Causing Tip Blight on Cones of Hop - PubMed",
+      "snippet": "First report documenting Fusarium crookwellense as a causal agent of tip blight on cones of hop (Humulus lupulus), expanding the known Fusarium species associated with cone tip blight beyond F. sambucinum and F. avenaceum.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Fusarium tip blight",
+        "cone tip blight"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s13314-022-00462-2",
+      "title": "First report of Fusarium meridionale causing canker in hop plants | Australasian Plant Disease Notes",
+      "snippet": "Symptoms include wilting, cankers in the crown, foliar necrosis and death of infected plants. Fusarium meridionale identified as causing Fusarium canker in hop, alongside previously reported F. sambucinum.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Fusarium canker",
+        "Fusarium wilt"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
+      "title": "Hop (Humulus lupulus)-Powdery Mildew | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Powdery mildew is caused by the fungus Podosphaera macularis, which affects all green tissue of the hop plant, forming characteristic white colonies bearing mycelia and conidia. In spring, new shoots can be covered with the fungus and appear white (flag shoots). The pathogen persists as bud infections or chasmothecia. Management includes clean planting stock, scouting, and preventative fungicide programs.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew",
+        "Hop powdery mildew"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.50923",
+      "title": "Podosphaera macularis (powdery mildew of hop) | CABI Compendium",
+      "snippet": "Datasheet on Podosphaera macularis, the causal agent of powdery mildew of hop (Humulus lupulus). Covers identity, distribution, symptoms, biology, hosts, and management of hop powdery mildew. The pathogen overwinters as chasmothecia in debris or as mycelia in plant buds.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "powdery mildew of hop",
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-2003-1113-07-RV",
+      "title": "Responding to an Introduced Pathogen: Podosphaera macularis (Hop Powdery Mildew) in the Pacific Northwest | Plant Health Progress",
+      "snippet": "Review article on hop powdery mildew (Podosphaera macularis) in the Pacific Northwest. Describes white powdery colonies on foliage, shoots, and cones; reddish-brown cone discoloration; bud infections as the confirmed overwintering inoculum source; and integrated management including fungicides and the powdery mildew risk index.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Hop Powdery Mildew",
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://www.canr.msu.edu/news/managing-hop-powdery-mildew-in-michigan",
+      "title": "Managing hop powdery mildew in Michigan in 2020 | MSU Extension",
+      "snippet": "Powdery mildew is easy to identify on leaves, with white powdery mycelia visible. Early infection on hop cones can appear as reddish-brown discoloration. New spring shoots may be entirely covered and appear white. Caused by Podosphaera macularis; overwinters in buds and as chasmothecia. Management uses scouting and preventative fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Hop powdery mildew",
+        "Powdery mildew"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

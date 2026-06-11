@@ -1,0 +1,100 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Cryptocline Fungus",
+      "pathogen_scientific_name": {
+        "value": "Cryptocline betularum",
+        "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+        "quote": "Elm trees are susceptible to a number of different anthracnose fungi, including Ophiognomonia intermedia , Gloeosporium betulae , Cryptocline betularum , and Cylindrosporium sp. Cryptocline is the fungus that we encounter the most frequently on samples submitted to the lab for diagnosis.",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+        "quote": "Elm trees are susceptible to a number of different anthracnose fungi"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+        "quote": "Cryptocline is only known to colonize the leaves, so it overwinters in fallen leaf tissue."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Leaf spots start as small, round chlorotic lesions that expand into necrotic spots with a purple/black border and tan or white center; large areas of the leaf blade turn yellow then necrotic before premature leaf drop.",
+          "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+          "quote": "Leaf spots may start as small, round chlorotic lesions that slowly expand over time (Figures 1 & 2). Eventually, a necrotic spot with a purple/black border and tan or white center will form (Figure 3)."
+        },
+        "diagnostic_features": {
+          "value": "Necrotic spot with a purple/black border and tan or white center; lesions developing on a leaf vein follow the vein creating a thin/elongate necrotic lesion instead of being circular; mature lesions are tan with black fungal structures (acervuli) within.",
+          "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+          "quote": "Eventually, a necrotic spot with a purple/black border and tan or white center will form (Figure 3). Lesions may begin to develop on a leaf vein and instead of being circular will follow the vein a little, creating a thin necrotic lesion (Figure 4)."
+        },
+        "look_alikes": {
+          "value": [
+            "Ophiognomonia intermedia",
+            "Gloeosporium betulae",
+            "Cylindrosporium sp."
+          ],
+          "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+          "quote": "Elm trees are susceptible to a number of different anthracnose fungi, including Ophiognomonia intermedia , Gloeosporium betulae , Cryptocline betularum , and Cylindrosporium sp."
+        }
+      },
+      "treatments": {
+        "value": [
+          "removal of the foliage in the fall can reduce inoculum for the following year (though won't eliminate the disease)",
+          "Providing fertilizer (where needed) and water (hot and dry periods) will help mitigate some tree stress, as stress can predispose plants to increased disease severity",
+          "Fungicides are not normally recommended for mature trees as it is impractical to get coverage across the entire canopy, but could be practical in a nursery setting if symptoms are observed and leading to leaf drop"
+        ],
+        "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+        "quote": "Like other leaf spot pathogens that do not infect stems, removal of the foliage in the fall can reduce inoculum for the following year (though won't eliminate the disease). Providing fertilizer (where needed) and water (hot and dry periods) will help mitigate some tree stress, as stress can predispose plants to increased disease severity. Fungicides are not normally recommended for mature trees as it is impractical to get coverage across the entire canopy, but could be practical in a nursery setting if symptoms are observed and leading to leaf drop."
+      },
+      "confidence": "low",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Drippy Blight",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    }
+  ],
+  "crop": "Northern Red Oak",
+  "generated_date": "2026-06-10"
+}

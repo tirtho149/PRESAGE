@@ -1,0 +1,156 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Diaporthe Vexans Gratz",
+      "pathogen_scientific_name": {
+        "value": "Phomopsis vexans",
+        "url": "https://veggiescout.mgcafe.uky.edu/phomopsis-blight-eggplant",
+        "quote": "Phomopsis blight ( Phomopsis vexans )",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://veggiescout.mgcafe.uky.edu/phomopsis-blight-eggplant",
+        "quote": "These rings are comprised of numerous fungal fruiting bodies (pycnidia) embedded in the diseased tissue."
+      },
+      "affected_parts": {
+        "value": [
+          "Fruit",
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://veggiescout.mgcafe.uky.edu/phomopsis-blight-eggplant",
+        "quote": "most commonly affects fruit, although symptoms may also appear on leaves and stems"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "On fruit, small, circular lesions appear and enlarge rapidly and often coalesce, covering a large portion of the fruit surface; darkened rings may appear in older lesions giving a zonate appearance. Symptoms may also appear on leaves and stems.",
+          "url": "https://veggiescout.mgcafe.uky.edu/phomopsis-blight-eggplant",
+          "quote": "On fruit, small, circular lesions appear and enlarge rapidly; lesions often coalesce, covering a large portion of the fruit surface. Darkened rings may be evident in older lesions, giving them a zonate appearance."
+        },
+        "diagnostic_features": {
+          "value": "Darkened rings in older lesions give a zonate appearance, comprised of numerous fungal fruiting bodies (pycnidia) embedded in the diseased tissue.",
+          "url": "https://veggiescout.mgcafe.uky.edu/phomopsis-blight-eggplant",
+          "quote": "Darkened rings may be evident in older lesions, giving them a zonate appearance. These rings are comprised of numerous fungal fruiting bodies (pycnidia) embedded in the diseased tissue."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Rotate with non-host crops",
+          "Promptly destroy crop residues after harvest",
+          "Deep plow to bury residual inoculum"
+        ],
+        "url": "https://veggiescout.mgcafe.uky.edu/phomopsis-blight-eggplant",
+        "quote": "Management: Rotate with non-host crops Promptly destroy crop residues after harvest Deep plow to bury residual inoculum"
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Phytophthora Blight",
+      "pathogen_scientific_name": {
+        "value": "Phytophthora capsici",
+        "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/phytophthora-blight",
+        "quote": "Phytophthora blight, caused by the oomycete Phytophthora capsici",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Oomycete",
+        "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/phytophthora-blight",
+        "quote": "Phytophthora blight, caused by the oomycete Phytophthora capsici"
+      },
+      "affected_parts": {
+        "value": [
+          "Root",
+          "Stem",
+          "Foliar",
+          "Fruit",
+          "Whole plant"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/phytophthora-blight",
+        "quote": "P. capsici can cause root, crown, and fruit rot in pepper, tomato, eggplant, and all cucurbits."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Roots and stems near the soil line appear water-soaked, dark brown and soft, and whole plants or vines collapse quickly; in peppers distinctive black lesions form on rigid stems while foliage and fruit wilt and wither yet remain attached; infected fruit shows water-soaked areas that enlarge and become covered in gray to white sporangia. On eggplant symptoms also include large leaf spots, fruit rot, crown rot, and dieback of the growing tip.",
+          "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/phytophthora-blight",
+          "quote": "Roots and stems near the soil line will appear water-soaked, dark brown in color, and will become soft. Whole plants or vines collapse quickly. In peppers, P. capsici causes distinctive black lesions to form on stems. Infected stems remain rigid but foliage and fruit wilt and wither, and remain attached to the plant."
+        },
+        "diagnostic_features": {
+          "value": "In peppers, distinctive black lesions form on stems which remain rigid while foliage and fruit wilt, wither and remain attached; on fruit, sporangia-covered lesions have a yeast-like, gray to white appearance.",
+          "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/phytophthora-blight",
+          "quote": "In peppers, P. capsici causes distinctive black lesions to form on stems. Infected stems remain rigid but foliage and fruit wilt and wither, and remain attached to the plant."
+        },
+        "look_alikes": {
+          "value": [
+            "buckeye rot of tomato fruit"
+          ],
+          "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/phytophthora-blight",
+          "quote": "In tomato, P. capsici is one of the pathogens that can cause buckeye rot of tomato fruit."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Manage water so that there is never standing water for longer than 24 hours anywhere in the field",
+          "Avoid planting susceptible crops in Phytophthora-infested soil and keep records of contaminated fields",
+          "Rotate with corn, small grains, brassicas, alliums, or other non-hosts (minimum 3-4 year rotation)",
+          "Plant in raised, dome-shaped beds (at least 9 inches for non-vining cucurbits and peppers) in well-drained areas of the field",
+          "Practice light irrigation or sub-surface drip irrigation to keep the soil surface dry; improve drainage, break up hardpan with a V-ripper, and avoid soil compaction",
+          "After working in infested soil wash soil from equipment, and always work in clean fields before infested fields",
+          "Mulch between rows with straw or leave cover crop stubble to reduce splash dispersal of inoculum",
+          "Biofumigation with brassica (especially mustard) cover crops",
+          "Practice good sanitation and do not discard cull fruit in the field",
+          "Avoid introducing the pathogen into a field and promptly destroy affected plants at the start of an outbreak to limit spread",
+          "Plant resistant varieties where available (e.g. hard-rinded pumpkins 'Lil' Ironsides', 'Apprentice', 'IronMan', 'Rockafellow', 'CannonBall'; bell peppers 'Conquest', 'Paladin', 'Emerald Isle')",
+          "Apply fungicides preventively starting before disease onset",
+          "Preventive fungicide programs: mefenoxam/mancozeb (Ridomil, Apron), copper compounds (Kocide, Basic Copper 53, Champ 2F), phosphorous acid fungicides (Prophyt, K-phite, Agri-fos)",
+          "Targeted preventive fungicides: in cucurbits Presidio, Ranman, Zing!, Gavel, Zampro, Revus, Curzate, Tanos; for pepper Omega 500 and Reason 500; Presidio, Revus, Forum and phosphorous acid fungicides labeled on eggplant",
+          "Soil-applied products: Orondis Gold (in-furrow/banded), Ridomil Gold SL (directed base spray), Regalia Biofungicide, Warhammer (chitosan)",
+          "Biofungicides/biologicals: Serenade, Double Nickel, Taegro, RootShield/Rootshield Plus, Actinovate, Mycostop, Stargus, Bexfond, BioTam (soil drench)"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/phytophthora-blight",
+        "quote": "the critical goal is to manage water so that there is never standing water for longer than 24 hours anywhere in the field"
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Phytophthora Blight",
+          "alternative_value": "Phytophthora Root Rot",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/eggplant-solanum-melongena-phytophthora-root-rot",
+          "note": "PNW Handbook names the same P. capsici disease on eggplant 'Phytophthora Root Rot'; UMass notes Phytophthora blight causes a root, crown and fruit rot, so these are the same disease."
+        },
+        {
+          "field": "disease_name",
+          "canonical_value": "Phytophthora Blight",
+          "alternative_value": "Phytophthora blight on eggplant",
+          "alternative_source_url": "https://blogs.cornell.edu/livegpath/gallery/eggplant/phytophthora-blight-on-eggplant/",
+          "note": "Cornell Long Island Vegetable Health refers to the disease as 'Phytophthora blight on eggplant'."
+        },
+        {
+          "field": "type_of_disease",
+          "canonical_value": "Oomycete",
+          "alternative_value": "fungus-like microorganism",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/eggplant-solanum-melongena-phytophthora-root-rot",
+          "note": "PNW describes P. capsici as 'a fungus-like microorganism'; functionally equivalent to oomycete."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Phytophthora capsici",
+          "alternative_value": "",
+          "alternative_source_url": "https://blogs.cornell.edu/livegpath/gallery/eggplant/phytophthora-blight-on-eggplant/",
+          "note": "Cornell source did not state the pathogen name explicitly (null); pathogen confirmed by UMass and PNW sources."
+        }
+      ]
+    }
+  ],
+  "crop": "Eggplant",
+  "generated_date": "2026-06-10"
+}

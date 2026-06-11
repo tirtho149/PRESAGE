@@ -1,0 +1,169 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Alternaria Blight",
+      "pathogen_scientific_name": {
+        "value": "Alternaria dauci",
+        "url": "https://ipm.ucanr.edu/agriculture/carrot/alternaria-leaf-blight/",
+        "quote": "The pathogen, Alternaria dauci, is seedborne and survives on and is spread with carrot seed.",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/carrot-leaf-blight-diseases-and-their-management/",
+        "quote": "Carrot leaf blights are caused by two fungal pathogens, Alternaria dauci and Cercospora carotae"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Seed",
+          "Root",
+          "Stem"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+        "quote": "A. dauci causes leaf spot and blight... A. dauci occurs on the seed as spores and within the seed as dormant mycelium and/or spores... Initially, infection may occur on the petioles as shallow, black lesions which later spread into the crown and down the root."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Foliar symptoms first appear along leaflet margins (and on older/lower leaves) as greenish-brown, water-soaked lesions which enlarge, turn brown to black, and often develop a yellow halo or margin; under favorable conditions lesions coalesce giving leaves a scorched/blighted appearance, and when about 40% of a leaf is infected it yellows, collapses, and dies.",
+          "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+          "quote": "Foliar symptoms of A. dauci first appear along leaflet margins as greenish-brown, water-soaked lesions which enlarge, turn brown to black, and often develop a yellow halo. Older leaves are more susceptible to infection. When about 40% of the leaf is infected, the leaf yellows, collapses, and dies."
+        },
+        "diagnostic_features": {
+          "value": "Greenish-brown, water-soaked lesions beginning along leaflet margins and on older/lower leaves that turn brown to black with a yellow halo; common, elongate petiole lesions that can quickly girdle and kill entire leaves; at advanced stages leaves have a scorched appearance and weakened tops break during mechanical harvest.",
+          "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+          "quote": "first appear along leaflet margins as greenish-brown, water-soaked lesions which enlarge, turn brown to black, and often develop a yellow halo... Petiole lesions are common, elongate, and can quickly kill entire leaves."
+        },
+        "look_alikes": {
+          "value": [
+            "Cercospora leaf blight",
+            "Bacterial leaf blight"
+          ],
+          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/carrot-leaf-blight-diseases-and-their-management/",
+          "quote": "Compared to Cercospora leaf blight, the lesions of Alternaria dauci are more evident initially on the lower, older leaves"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant Alternaria-indexed / certified pathogen-free seed and treat seed with a hot water dip (122Â°F / 50Â°C for 20-25 minutes) or fungicide",
+          "Practice rotations out of carrots (2-year minimum; 3-4 years recommended) and avoid continuous carrot culture",
+          "Turn under / promptly incorporate carrot residue by tillage or plowing to hasten decomposition of debris and reduce inoculum",
+          "Do not plant new fields near existing fields with blight symptoms",
+          "Use resistant/tolerant cultivars (e.g. Bolero, Carson, Ithaca, Calgary, Waltham-Hi-Color, Orlando Gold, Hi-Color 9)",
+          "Reduce leaf wetness and soil moisture (wider row spacing, break compacted layers, raised ridges, furrow irrigation) and keep carrots vigorously growing and free from injury",
+          "Apply first fungicide spray at ~25% disease incidence threshold and continue based on severity/weather, using spray forecast models (e.g. Tom-Cast) and alternating fungicide chemistries",
+          "Foliar fungicides/biologicals: azoxystrobin (Quadris), chlorothalonil (Bravo Weather Stik), iprodione (Rovral 4F), pyraclostrobin (Cabrio EG), pyraclostrobin/fluxapyroxad (Merivon), trifloxystrobin (Flint Extra), penthiopyrad (Fontelis), boscalid (Endura), polyoxin D zinc salt (Ph-D), Bacillus subtilis / Serenade ASO (organic-acceptable)"
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/carrot/alternaria-leaf-blight/",
+        "quote": "Planting Alternaria -indexed seed or treating seed in a hot water dip is very important. Turn under carrot residue by tillage or plowing to hasten decomposition of debris ... Practice 2-year rotations and avoid continuous carrot culture. ... apply fungicides when the first blight symptoms appear, at biweekly intervals"
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "treatments.first_fungicide_timing",
+          "canonical_value": "Apply first fungicide at 25% disease incidence threshold",
+          "alternative_value": "Apply fungicides when the first blight symptoms appear, at biweekly intervals",
+          "alternative_source_url": "https://ipm.ucanr.edu/agriculture/carrot/alternaria-leaf-blight/",
+          "note": "UMass and Cornell cite a 25% disease incidence threshold; UC IPM recommends spraying at first symptom onset on biweekly intervals."
+        },
+        {
+          "field": "rotation_length",
+          "canonical_value": "2-year minimum rotation out of carrots",
+          "alternative_value": "3-4 year rotations",
+          "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+          "note": "UC IPM and Cornell recommend a 2-year minimum rotation; UMass recommends relatively long rotations of 3-4 years."
+        }
+      ]
+    },
+    {
+      "disease_name": "Alternaria Black Molds / Stem Cankers",
+      "pathogen_scientific_name": {
+        "value": "Alternaria radicina",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
+        "quote": "The fungus, Alternaria radicina (formerly Stemphylium radicinum ), can be seedborne or may overwinter in crop refuse.",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
+        "quote": "The fungus, Alternaria radicina (formerly Stemphylium radicinum )"
+      },
+      "affected_parts": {
+        "value": [
+          "Root",
+          "Seed",
+          "Foliar",
+          "Vascular",
+          "Stem"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+        "quote": "necrosis of roots and crowns, foliar blight, seed/umbel blight, and storage rot... lesions on petioles can extend to the vascular system and cause yellowing, wilting, and plant death."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Causes seed decay, damping-off, blackened hypocotyls and deformed roots; small to extensive black lesions develop on the root surface with a well-defined border between infected and healthy tissue, and a dry, mealy, black decay develops on roots held in storage. Foliar symptoms are less severe than those of A. dauci.",
+          "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+          "quote": "A. radicina causes seed decay, damping-off, blackened hypocotyls, and deformed roots. A dry, mealy, black decay may develop when carrot roots are held in storage. Foliar symptoms caused by A. radicina are less severe than those caused by A. dauci"
+        },
+        "diagnostic_features": {
+          "value": "Black lesions on the root surface with a well-defined border between infected and healthy tissues that may not penetrate deeply and enlarge slowly even near freezing; dry, mealy, black storage decay; blackened hypocotyls and deformed roots; petiole lesions extending to the vascular system causing yellowing, wilting, and plant death.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
+          "quote": "black lesions on the root surface, with a well-defined border between infected and healthy tissues. Such lesions may not penetrate deeply. Lesions may enlarge slowly in colder temperatures, even those near freezing."
+        },
+        "look_alikes": {
+          "value": [
+            "Alternaria Leaf Blight (Alternaria dauci)"
+          ],
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
+          "quote": "Under certain environmental conditions, A. radicina can cause a foliar blight similar to the Alternaria leaf blight incited by A. dauci."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use pathogen-free seed and, for seed crops, obtain transplant carrots free of Alternaria infection",
+          "Eradicate A. radicina from seed with a hot water treatment (122Â°F for 30 min)",
+          "Rotate out of carrots for at least 1 year (3-4 years recommended) since refuse is the main overwintering route",
+          "Plow under / promptly incorporate crop debris soon after harvest",
+          "Irrigate so that carrots are dry by nightfall",
+          "Plant tolerant cultivars (e.g. Improved Half Long Chantenay, K-2043)",
+          "Control storage rot by washing, culling, minimizing wounding/breakage, and storing at 0-1Â°C",
+          "Fungicides: Rovral / iprodione (e.g. Rovral 4 Flowable, Iprodione 4L AG, Meteor), copper products (Bordeaux 6-6-100, C-O-C-S WDG), mancozeb products (Dithane F45 Rainshield, Roper DF Rainshield), Nevado 4F seed treatment (WA/ID only)"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
+        "quote": "Use pathogen-free seed. Irrigate so that carrots are dry by nightfall. Rotation out of carrots for at least 1 year is important because refuse is the main way the organisms overwinter. Plow under crop debris soon after harvest."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Alternaria radicina",
+          "alternative_value": "Stemphylium radicinum",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
+          "note": "Stemphylium radicinum is listed by PNW as a former (synonym/outdated) name for the current accepted name Alternaria radicina. No NCBI/MycoBank validation was supplied to confirm the accepted name."
+        },
+        {
+          "field": "disease_name",
+          "canonical_value": "Alternaria Black Rot",
+          "alternative_value": "Black Rot (carrot black root rot)",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
+          "note": "UMass labels it 'Alternaria Black Rot / Alternaria Rot'; PNW labels it 'Black Rot (carrot black root rot)'. Same pathogen (A. radicina)."
+        },
+        {
+          "field": "rotation_length",
+          "canonical_value": "At least 1 year out of carrots",
+          "alternative_value": "3-4 year rotations",
+          "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+          "note": "PNW recommends rotation out of carrots for at least 1 year; UMass recommends relatively long rotations of 3-4 years."
+        }
+      ]
+    }
+  ],
+  "crop": "Carrot",
+  "generated_date": "2026-06-10"
+}

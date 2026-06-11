@@ -1,0 +1,91 @@
+{
+  "crop": "Eggplant",
+  "candidate_sources": [
+    {
+      "url": "https://veggiescout.mgcafe.uky.edu/phomopsis-blight-eggplant",
+      "title": "Phomopsis Blight of Eggplant | Scouting Guides for Problems of Vegetables",
+      "snippet": "On fruit, small circular lesions appear and enlarge rapidly; lesions often coalesce. Darkened rings may be evident in older lesions, giving them a zonate appearance, comprised of numerous fungal fruiting bodies (pycnidia) embedded in the diseased tissue. On leaves: gray to brown spots with light centers; dark, sunken cankers on stems. Favored by hot, wet weather (85-90 F). Manage with rotation, residue destruction, weed control, and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phomopsis blight",
+        "Phomopsis vexans"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.40488",
+      "title": "Phomopsis vexans (Phomopsis blight of eggplant) | CABI Compendium",
+      "snippet": "CABI Compendium datasheet for Phomopsis vexans, the causal agent of Phomopsis blight of eggplant, covering identity, distribution, host range, symptoms, biology and ecology, and management of the disease on Solanum melongena.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Phomopsis blight of eggplant",
+        "Phomopsis vexans"
+      ]
+    },
+    {
+      "url": "https://plant-pest-advisory.rutgers.edu/phomopsis-fruit-rot-in-eggplant/",
+      "title": "Phomopsis fruit rot in eggplant â€” Plant & Pest Advisory (Rutgers)",
+      "snippet": "The causal fungus is Diaporthe vexans, the current name under the 'one fungus, one name' rules, instead of the former name Phomopsis vexans. Causes brownish-black spots on fruit that enlarge into flat spots producing black pycnidia and rain-dispersed conidia. Favored by hot, wet weather (85-90 F); survives in soil on infested plant debris. Phomopsis blight is one of the most destructive fruit diseases of eggplant.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phomopsis blight",
+        "Phomopsis fruit rot",
+        "Diaporthe vexans",
+        "Phomopsis vexans"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-07-21-0100-RS",
+      "title": "Differences in Susceptibility to Phomopsis Blight of Seven Eggplant Cultivars with Different Fruit Types | Plant Health Progress",
+      "snippet": "APS Plant Health Progress research report evaluating susceptibility of seven eggplant cultivars to Phomopsis blight caused by Phomopsis vexans (Diaporthe vexans), with disease severity assessment across fruit types.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Phomopsis blight",
+        "Phomopsis vexans",
+        "Diaporthe vexans"
+      ]
+    },
+    {
+      "url": "https://blogs.cornell.edu/livegpath/gallery/eggplant/phytophthora-blight-on-eggplant/",
+      "title": "Phytophthora blight on eggplant | Long Island Vegetable Health (Cornell)",
+      "snippet": "Phytophthora nicotianae is a water mold that may attack eggplant roots, leaves, stems, or fruit, causing fruit rot. Fruit rot is the primary symptom; masses of white, slimy spores may develop on the undersides of infected fruit, and as infection progresses fruit become mushy and collapse.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Phytophthora blight",
+        "Phytophthora fruit rot",
+        "Phytophthora nicotianae"
+      ]
+    },
+    {
+      "url": "https://plant-pest-advisory.rutgers.edu/controlling-phytophthora-blight-in-eggplant/",
+      "title": "Controlling Phytophthora blight in eggplant â€” Rutgers Plant & Pest Advisory",
+      "snippet": "Management of Phytophthora blight in eggplant. Rogueing out infected plants and ensuring water drains adequately from the field helps suppress the disease; overhead irrigation should be avoided to prevent spread of the aerial phase, and infected fruit should be removed from the field separately from normal picking.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora blight",
+        "Phytophthora capsici"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/eggplant-solanum-melongena-phytophthora-root-rot",
+      "title": "Eggplant (Solanum melongena)-Phytophthora Root Rot | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Dark-gray to dark-brown, water-soaked spots develop on roots and stems of eggplant, causing plants to wilt and die. The disease is caused by Phytophthora species and favored by high soil moisture and warm temperatures; cultural and chemical management options are listed.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora root rot",
+        "Phytophthora blight",
+        "Phytophthora capsici"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/phytophthora-blight",
+      "title": "Phytophthora Blight | UMass Amherst Center for Agriculture, Food, and the Environment",
+      "snippet": "Phytophthora blight, caused by Phytophthora capsici, causes root, crown and fruit rot of cucurbits, pepper, tomato and eggplant. Symptoms include leaf spots, fruit rot, crown rot and dieback of the growing tip; favored by high soil moisture, frequent rain or irrigation and warm temperatures (24-33 C).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora blight",
+        "Phytophthora capsici"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

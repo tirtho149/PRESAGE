@@ -1,0 +1,199 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Downy Mildew",
+      "pathogen_scientific_name": {
+        "value": "Peronospora trifoliorum",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
+        "quote": "caused by the oomycete (not a true fungus) pathogen Peronospora trifoliorum",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Oomycete",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
+        "quote": "Downy mildew is primarily caused by the oomycete (not a true fungus) pathogen Peronospora trifoliorum"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Seed",
+          "Whole plant"
+        ],
+        "url": "https://pubs.nmsu.edu/_a/A326/index.html",
+        "quote": "The disease begins as chlorotic spots on the leaflets. ... Infected stems are usually a little larger than non-infected stems ... particularly troublesome on newly germinating seedlings. Infected seedlings are weakened ... Seedling death"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "The disease begins as chlorotic spots on the leaflets that may enlarge to cover the entire leaflet, with leaflets becoming twisted and margins curling down; infected stems are thickened with bunchy, rosette-like growth at their tips, and a white to grayish downy growth appears on the underside of infected leaflets.",
+          "url": "https://pubs.nmsu.edu/_a/A326/index.html",
+          "quote": "The disease begins as chlorotic spots on the leaflets. As the disease progresses, these chlorotic areas may enlarge and eventually cover the entire leaflet. Infected leaflets become twisted and the margins curl down. Infected stems are usually a little larger than non-infected stems and produce bunchy, rosette-like growth at their tips. The tell-tale sign of downy mildew is the production of a white to grayish downy growth on the underside of infected leaflets."
+        },
+        "diagnostic_features": {
+          "value": "The tell-tale sign of downy mildew is the production of a white to grayish downy growth on the underside of infected leaflets.",
+          "url": "https://pubs.nmsu.edu/_a/A326/index.html",
+          "quote": "The tell-tale sign of downy mildew is the production of a white to grayish downy growth on the underside of infected leaflets."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant resistant/tolerant alfalfa cultivars (resistant varieties available for P. trifoliorum)",
+          "Fungicide seed treatments with metalaxyl or mefenoxam to manage seedling infection",
+          "Do not delay the first spring cutting; harvest early to remove inoculum and susceptible tissue and reduce losses",
+          "Cutting reduces humidity in the canopy, lowering infection risk",
+          "Spring seeding is recommended where fall infections are common"
+        ],
+        "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
+        "quote": "Resistant alfalfa cultivars are available to economically manage downy mildew. Fungicide seed treatments such as metalaxyl and mefenoxam effectively manage seedling downy mildew. When downy mildew is severe, do not delay the first harvest."
+      },
+      "confidence": "high",
+      "num_sources": 4,
+      "conflicts": [
+        {
+          "field": "type_of_disease",
+          "canonical_value": "Oomycete",
+          "alternative_value": "Fungal",
+          "alternative_source_url": "https://pubs.nmsu.edu/_a/A326/index.html",
+          "note": "NMSU describes downy mildew as a 'fungal disease', but Crop Protection Network and USU Extension correctly classify the pathogen as an oomycete (Oomycota), more closely related to algae than true fungi. Canonical value reflects current taxonomy (2 sources agree on Oomycete)."
+        },
+        {
+          "field": "disease_name",
+          "canonical_value": "Downy Mildew of Alfalfa",
+          "alternative_value": "Downy Mildew on Alfalfa / Downy Mildew",
+          "alternative_source_url": "https://ipm.ucanr.edu/agriculture/alfalfa/downy-mildew/",
+          "note": "Minor naming variants across sources ('Downy Mildew on Alfalfa' at NMSU, 'Downy Mildew' at UC IPM); all refer to the same disease."
+        }
+      ]
+    },
+    {
+      "disease_name": "Stemphylium Leaf Spot",
+      "pathogen_scientific_name": {
+        "value": "Stemphylium botryosum",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+        "quote": "The most important causal pathogen is S. botryosum , which has two distinct biotypes that cause disease within differing temperature regimes.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "",
+        "url": "",
+        "quote": ""
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+        "quote": "Symptoms caused by the W-T biotype include brown, oval-shaped leaf lesions with dark margins and yellow halos. Lesions can grow to cover much of the leaf and concentric rings develop. Dark stem discoloration and early defoliation can also occur."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "The disease produces leaf lesions whose appearance depends on the biotype: W-T causes brown, oval lesions with dark margins and yellow halos that may develop concentric rings, while C-T causes small, irregular, light-colored lesions with dark margins.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+          "quote": "Symptoms caused by the W-T biotype include brown, oval-shaped leaf lesions with dark margins and yellow halos. Lesions can grow to cover much of the leaf and concentric rings develop. Dark stem discoloration and early defoliation can also occur. Lesions caused by the C-T biotype are small, irregular-shaped, and light-colored with dark margins."
+        },
+        "diagnostic_features": {
+          "value": "Two distinct lesion types by biotype: W-T lesions are brown, oval-shaped with dark margins, yellow halos, and concentric rings that expand to cover much of the leaf; C-T lesions are small, irregular-shaped, light-colored with dark margins and do not expand.",
+          "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+          "quote": "Symptoms caused by the W-T biotype include brown, oval-shaped leaf lesions with dark margins and yellow halos. Lesions can grow to cover much of the leaf and concentric rings develop. ... Lesions caused by the C-T biotype are small, irregular-shaped, and light-colored with dark margins. Unlike the W-T biotype, lesion expansion does not occur."
+        },
+        "look_alikes": {
+          "value": [
+            "Common (Pseudopeziza) Leaf Spot",
+            "Downy Mildew",
+            "Rusts",
+            "Bacterial Leaf Spot",
+            "Yellow Leaf Blotch",
+            "Summer Black Stem",
+            "Spring Black Stem",
+            "Lepto Leaf Spot"
+          ],
+          "url": "https://ipm.ca.uky.edu/alflsp",
+          "quote": "Common Leaf Spot, Downy Mildew, Rusts, Bacterial Leaf Spot, Yellow Leaf Blotch, Stemphylium Leaf Spot, and Summer and Spring Black Stem and Lepto Leaf Spot all cause symptoms called \"leaf spot\"."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Alfalfa cultivars with low to moderate Stemphylium leaf blight resistance exist.",
+          "Consider early harvest to reduce leaf loss if Stemphylium leaf spot is severe."
+        ],
+        "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+        "quote": "Alfalfa cultivars with low to moderate Stemphylium leaf blight resistance exist. Consider early harvest to reduce leaf loss if Stemphylium leaf spot is severe."
+      },
+      "confidence": "medium",
+      "num_sources": 2,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Summer Black Stem",
+      "pathogen_scientific_name": {
+        "value": "Cercospora medicaginis",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+        "quote": "Summer black stem and leaf spot is caused by the fungus Cercospora medicaginis .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+        "quote": "Summer black stem and leaf spot is caused by the fungus Cercospora medicaginis ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+        "quote": "Irregular, brown lesions with yellow halos form on leaves and can be observed on both leaf surfaces. ... Stems initially show small, dark lesions that may grow to cover large portions of the stem."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "The most obvious symptom is premature defoliation from the base of the stem upward, with leaf spots appearing first; leaf spots begin as brown areas with a wavy margin, turning gray or silvery as spores are produced, often surrounded by a diffuse yellow margin, and brown lesions also form on stems.",
+          "url": "https://ipm.ucanr.edu/agriculture/alfalfa/summer-black-stem-and-leaf-spot/",
+          "quote": "Defoliation from the base of the stem to the top is the most obvious symptom, but leaf spots usually appear first. Leaf spots begin as brown areas with a wavy margin. As spores on the surface of the spot are produced, the color of the spot appears gray or silvery. A diffuse yellow margin often surrounds the spot. Brown lesions also form on stems."
+        },
+        "diagnostic_features": {
+          "value": "Ash-gray, roughly circular leaf spots surrounded by a diffuse yellow margin, which are quite distinct and can be distinguished from other leaf spot diseases once familiar.",
+          "url": "https://extensionpubs.unl.edu/publication/g2079/2011/html/view",
+          "quote": "the leaf spots ... become ash-gray, roughly circular, and surrounded by a diffuse yellow margin (Figure 3) . These spots are quite distinct and once familiar with them, can easily be distinguished from those of other leaf spot diseases."
+        },
+        "look_alikes": {
+          "value": [
+            "Common (Pseudopeziza) Leaf Spot",
+            "Downy Mildew",
+            "Rusts",
+            "Bacterial Leaf Spot",
+            "Yellow Leaf Blotch",
+            "Stemphylium Leaf Spot",
+            "Spring Black Stem",
+            "Lepto Leaf Spot"
+          ],
+          "url": "https://ipm.ca.uky.edu/alflsp",
+          "quote": "Common Leaf Spot, Downy Mildew, Rusts, Bacterial Leaf Spot, Yellow Leaf Blotch, Stemphylium Leaf Spot, and Summer and Spring Black Stem and Lepto Leaf Spot all cause symptoms called \"leaf spot\"."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Avoid planting particularly susceptible alfalfa cultivars.",
+          "Harvest early, when flower buds first appear / before extensive defoliation occurs, to minimize losses.",
+          "Scout fields regularly during the growing season for early detection of disease so that timely adjustment of cutting schedules can be made.",
+          "Adjusting the cutting schedule to disease development is the most practical and economical means of management in established stands.",
+          "A copper hydroxide fungicide can be applied 10 to 14 days or earlier before harvesting the second and third cuttings."
+        ],
+        "url": "https://extensionpubs.unl.edu/publication/g2079/2011/html/view",
+        "quote": "Scout fields regularly during the growing season for early detection of disease so that timely adjustment of cutting schedules can be made. Adjusting the cutting schedule to disease development is the most practical and economical means of management in established stands. A copper hydroxide fungicide can be applied 10 to 14 days or earlier before harvesting the second and third cuttings."
+      },
+      "confidence": "high",
+      "num_sources": 4,
+      "conflicts": []
+    }
+  ],
+  "crop": "Alfalfa",
+  "generated_date": "2026-06-10"
+}

@@ -1,0 +1,116 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Whisker Mold",
+      "pathogen_scientific_name": {
+        "value": "Penicillium ulaiense",
+        "url": "https://link.springer.com/article/10.1007/s10327-012-0363-0",
+        "quote": "the fungus was identified as P. ulaiense",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://link.springer.com/article/10.1007/s10327-012-0363-0",
+        "quote": "The fungus causing this disease differed distinctly from the well-known, blue mold agent, Penicillium italicum"
+      },
+      "affected_parts": {
+        "value": [
+          "fruit"
+        ],
+        "url": "https://link.springer.com/article/10.1007/s10327-012-0363-0",
+        "quote": "stored fruits of the medium-to-late-ripening citrus variety Shiranuhi ... were found to have a disease similar to blue mold"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "A postharvest disease of stored citrus fruits resembling blue mold, in which the fungus forms whisker-like coremia measuring 1â€“8 mm.",
+          "url": "https://link.springer.com/article/10.1007/s10327-012-0363-0",
+          "quote": "stored fruits of the medium-to-late-ripening citrus variety Shiranuhi ... were found to have a disease similar to blue mold ... it formed whisker-like coremia measuring 1â€“8 mm"
+        },
+        "diagnostic_features": {
+          "value": "Unlike the blue mold agent Penicillium italicum, it forms distinctive whisker-like coremia measuring 1â€“8 mm.",
+          "url": "https://link.springer.com/article/10.1007/s10327-012-0363-0",
+          "quote": "The fungus causing this disease differed distinctly from the well-known, blue mold agent, Penicillium italicum , because it formed whisker-like coremia measuring 1â€“8 mm."
+        },
+        "look_alikes": {
+          "value": [
+            "Blue mold (Penicillium italicum)"
+          ],
+          "url": "https://link.springer.com/article/10.1007/s10327-012-0363-0",
+          "quote": "a disease similar to blue mold ... differed distinctly from the well-known, blue mold agent, Penicillium italicum"
+        }
+      },
+      "treatments": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Green Mold",
+      "pathogen_scientific_name": {
+        "value": "Penicillium digitatum",
+        "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2021.833328/full",
+        "quote": "Green mold, caused by Penicillium digitatum Sacc, and blue mold, caused by Penicillium italicum Wehmer, result in substantial economic losses around the globe",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11013941/",
+        "quote": "Penicillium digitatum is a phytopathogenic fungus of the Ascomycota phylum that causes green mold in citrus fruits."
+      },
+      "affected_parts": {
+        "value": [
+          "fruit"
+        ],
+        "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2021.833328/full",
+        "quote": "The infected pericarp and mesocarp cells plasmolyze, causing a soft watery spot, and the fruit is rotted"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Infected fruit first shows small water-soaked greyish areas that enlarge rapidly into white rots several centimetres in diameter; white mycelia and greenish conidia (spore masses) develop, the mycelium breaks down cell walls causing shrinkage into a sunken mummified form with a soft watery rotted spot.",
+          "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2021.833328/full",
+          "quote": "The infected fruit then produces white mycelia and greenish conidia, a characteristic symptoms of green mold (Lin et al., 2019 ). The mycelium produces enzymes that break down fruit cell walls and initiate shrinkage, resulting in a sunken mummified form (Papoutsis et al., 2019 ). The infected pericarp and mesocarp cells plasmolyze, causing a soft watery spot, and the fruit is rotted"
+        },
+        "diagnostic_features": {
+          "value": "A thick non-sporulating mycelium limited by the decaying peel surrounds the green mold spores, and infection of adjacent fruit is rare; rots are white at first and rapidly change to green as spores develop.",
+          "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2021.833328/full",
+          "quote": "a thick non-sporulating mycelium limited by decaying peel surrounds green mold spores (Palou et al., 2008 ; Talibi et al., 2014 )"
+        },
+        "look_alikes": {
+          "value": [
+            "Blue mold (Penicillium italicum)"
+          ],
+          "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2021.833328/full",
+          "quote": "Although initial lesions caused by green mold resemble blue mold disease, a thick non-sporulating mycelium limited by decaying peel surrounds green mold spores"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Synthetic fungicides such as pyrimethanil, imazalil, fludioxonil, and thiabendazole",
+          "Fungicides applied before cold storage as a wax coating, dip, or drench",
+          "Thiabendazole post-harvest dips (fruit dipped without rinsing at recommended dosage for 30 seconds within 24 hours of harvest)",
+          "Rapid refrigeration / cold storage to slow rot development",
+          "Careful handling of fruit and proper disposal of affected fruit",
+          "Do not pick fruit when wet (reduces wounding)",
+          "Remove infected fruit promptly, including in and around packing sheds and orchards",
+          "Dispose of affected fruit before the fungi produce spores",
+          "Wrap fruit individually in paper to prevent fruit-to-fruit spread during storage and transport",
+          "Hot-water treatment of fruit",
+          "Alternative methods: antagonistic micro-organisms, plant extracts and essential oils, biofungicides, chitosan and chitosan-based citrus coatings, heat treatments, ionizing and non-ionizing irradiations, food additives, and synthetic elicitors",
+          "Novel photoactive chitosanâ€“riboflavin bioconjugate (CH-RF)",
+          "Integrating multiple approaches (e.g., biocontrol agents with food additives or heat treatments)"
+        ],
+        "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2021.833328/full",
+        "quote": "This review comprehensively describes alternative methods for the control of P. digitatum and P. italicum : (a) antagonistic micro-organisms, (b) plant extracts and essential oils, (c) biofungicides, (d) chitosan and chitosan-based citrus coatings, (e) heat treatments, (f) ionizing and non-ionizing irradiations, (g) food additives, and (h) synthetic elicitors."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": []
+    }
+  ],
+  "crop": "Lemon",
+  "generated_date": "2026-06-10"
+}

@@ -1,0 +1,106 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Sclerotinia Timber Rot",
+      "pathogen_scientific_name": {
+        "value": "Sclerotinia sclerotiorum",
+        "url": "https://cropwatch.unl.edu/plant-disease/sunflower/white-mold/",
+        "quote": "is caused by Sclerotinia sclerotiorum (Lib.) de Bary",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://cropwatch.unl.edu/plant-disease/sunflower/white-mold/",
+        "quote": "Pathogen Fungal structures: hyphae (mycelium), sclerotia, apothecia, and ascospores."
+      },
+      "affected_parts": {
+        "value": [
+          "Root",
+          "Stem",
+          "Foliar",
+          "Whole plant"
+        ],
+        "url": "https://cropwatch.unl.edu/plant-disease/sunflower/white-mold/",
+        "quote": "It causes a wide range of diseases in sunflower including base, crown, root, stalk and stem rots, and head rots."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Symptoms include wilting, a water-soaked canker with cottony white mycelium at the stem base that turns dark and girdles the plant, middle stalk rot, and head rot leaving a shredded appearance.",
+          "url": "https://cropwatch.unl.edu/plant-disease/sunflower/white-mold/",
+          "quote": "Symptoms of white mold can include wilting, middle stalk rot, and head rot. The most common symptom is wilting because the pathogen first attacks roots. A water-soaked canker with cottony mycelium forms form at the base of the stem and spread up the plant; cankers turn dark and eventually girdle the entire plant."
+        },
+        "diagnostic_features": {
+          "value": "Sclerotia, formed from the mycelium in shredded tissues, are an excellent method of pathogen identification; a dense, white cottony fungal growth (mycelium) is produced in the stalk.",
+          "url": "https://cropwatch.unl.edu/plant-disease/sunflower/white-mold/",
+          "quote": "Sclerotia, formed from the mycelium in shredded tissues, are an excellent method of pathogen identification."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Using long rotations with non-host crops such as wheat, corn or sorghum will prevent further build-up in soils",
+          "Do not rotate with susceptible crops like dry beans, soybeans, potatoes, or canola",
+          "Controlling numerous weed hosts, planting clean seed, burying previous crop debris, and using moderate fertility programs"
+        ],
+        "url": "https://cropwatch.unl.edu/plant-disease/sunflower/white-mold/",
+        "quote": "Using long rotations with non-host crops such as wheat, corn or sorghum will prevent further build-up in soils. Do not rotate with susceptible crops like dry beans, soybeans, potatoes, or canola. Other management practices include controlling numerous weed hosts, planting clean seed, burying previous crop debris, and using moderate fertility programs."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Rust",
+      "pathogen_scientific_name": {
+        "value": "Coleosporium helianthi",
+        "url": "https://cropwatch.unl.edu/plant-disease/sunflower/rust/",
+        "quote": "Coleosporium or yellow rust caused by Coleosporium helianthi (Schwein.) Arth.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://cropwatch.unl.edu/plant-disease/sunflower/rust/",
+        "quote": "Pathogen Fungal structures: pycnia(spores), aecia(spores), uredia(spores), telia(spores), and basidia(spores)."
+      },
+      "affected_parts": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Rust pustules (uredia) appear as golden yellow pustules; the pathogen has Monterey Pine as an alternate host and occurs primarily on the west coast.",
+          "url": "https://cropwatch.unl.edu/plant-disease/sunflower/rust/",
+          "quote": "Rust pustules (uredia) appear as golden yellow pustules that have Monterey Pine as an alternate host."
+        },
+        "diagnostic_features": {
+          "value": "Golden yellow pustules (uredia), with Monterey Pine as an alternate host; occurs primarily on the west coast.",
+          "url": "https://cropwatch.unl.edu/plant-disease/sunflower/rust/",
+          "quote": "Rust pustules (uredia) appear as golden yellow pustules that have Monterey Pine as an alternate host."
+        },
+        "look_alikes": {
+          "value": [
+            "White rust",
+            "Red rust"
+          ],
+          "url": "https://cropwatch.unl.edu/plant-disease/sunflower/rust/",
+          "quote": "There are at least three diseases referred to as \"rusts\" that occur on sunflower in the United States."
+        }
+      },
+      "treatments": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    }
+  ],
+  "crop": "Common Sunflower",
+  "generated_date": "2026-06-10"
+}

@@ -1,0 +1,80 @@
+{
+  "crop": "American Beech",
+  "candidate_sources": [
+    {
+      "url": "https://extension.umd.edu/resource/beech-leaf-disease",
+      "title": "Beech Leaf Disease | University of Maryland Extension",
+      "snippet": "Affected leaves exhibit a unique banding, or darkening, of the leaf area between the veins, which are distinct, early symptoms visible immediately upon bud-break in the spring. The microbe, Litylenchus crenatae mccannii, a subspecies of a nematode found in Japan, is causing beech leaf disease (BLD). All beech species, including native American beech (Fagus grandifolia), European beech, and Oriental beech are susceptible.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Beech Leaf Disease"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
+      "title": "Beech Leaf Disease : Landscape : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "The disease is caused by an invasive foliar-feeding nematode (a microscopic roundworm), Litylenchus crenatae subsp. mccannii, which overwinters in leaf buds and enters leaves as they develop in the spring. Symptoms progress from leaf banding to shrinkage in leaf size, heavy banding, and a crinkling leather texturing of the leaf.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Beech Leaf Disease"
+      ]
+    },
+    {
+      "url": "https://njaes.rutgers.edu/E376/",
+      "title": "E376: Beech Leaf Disease & Management Options (Rutgers NJAES)",
+      "snippet": "Beech leaf disease (BLD) is caused by an invasive nematode Litylenchus crenatae subsp. mccannii (Lcm). BLD is recognized best by opaque banding of diseased leaf tissue, including leaf interveinal banding and thickened leaf texture, leading to eventual tree mortality. Thiabendazole, the active ingredient in Arbotect 20-S, is currently the most effective treatment option.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Beech Leaf Disease"
+      ]
+    },
+    {
+      "url": "https://research.fs.usda.gov/treesearch/59915",
+      "title": "Beech leaf disease symptoms caused by newly recognized nematode subspecies Litylenchus crenatae mccannii (Anguinata) described from Fagus grandifolia in North America | US Forest Service Research and Development",
+      "snippet": "Beech leaf disease symptoms caused by newly recognized nematode subspecies Litylenchus crenatae mccannii (Anguinata) described from Fagus grandifolia in North America.",
+      "source_type": "USDA",
+      "diseases_mentioned": [
+        "Beech Leaf Disease"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-bark-disease",
+      "title": "Beech Bark Disease | Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Beech bark disease is a disease-insect complex involving scale insects (Cryptococcus fagisuga) and Neonectria fungi (N. faginata, N. ditissima; N. coccinea in Europe). The causal fungi enter the tree via bark wounds caused by the scale. Scale wounds are colonized by Neonectria, causing a perennial bark canker that slowly kills the tree. Red, oval-shaped masses of fungal fruiting bodies (perithecia) appear against the smooth grey bark; branch and crown dieback occur as cankers spread.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Beech bark disease",
+        "Neonectria coccinea",
+        "Neonectria faginata",
+        "Neonectria ditissima",
+        "Cryptococcus fagisuga"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/beech-bark-disease",
+      "title": "Beech Bark Disease | NC State Extension Publications",
+      "snippet": "Beech bark disease (BBD) is caused by the combined impacts of the beech scale insect (Cryptococcus fagisuga) and several Neonectria fungi; in Europe N. ditissima and N. coccinea are responsible. Beech scale feeds on host tissues causing small fissures in the bark, allowing Neonectria to enter and girdle the tree. First sign is a woolly white waxy covering; an early fungal sign is a bleeding spot oozing reddish-brown fluid, followed by perithecia. Management includes thinning, removal of infected trees, retaining resistant trees, and insecticide treatment of scale.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Beech bark disease",
+        "Neonectria coccinea",
+        "Neonectria ditissima",
+        "Cryptococcus fagisuga"
+      ]
+    },
+    {
+      "url": "https://forestpathology.org/canker/beech-bark/",
+      "title": "Beech Bark Disease | Forest Pathology",
+      "snippet": "Beech bark disease results from the interaction of the beech scale insect (Cryptococcus fagisuga) and Neonectria fungi. N. coccinea is the species involved in Europe, while N. faginata and N. ditissima occur in North America. The scale feeding predisposes American beech (Fagus grandifolia) to fungal infection, producing cankers, crown dieback, and tree mortality across northern hardwood forests.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Beech bark disease",
+        "Neonectria coccinea",
+        "Neonectria faginata",
+        "Neonectria ditissima",
+        "Cryptococcus fagisuga"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

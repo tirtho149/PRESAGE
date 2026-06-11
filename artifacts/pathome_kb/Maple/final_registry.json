@@ -1,0 +1,210 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Anthracnose",
+      "pathogen_scientific_name": {
+        "value": "Aureobasidium apocryptum",
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+        "quote": "Several fungal pathogens are responsible for maple anthracnose in southern New England, including: Aureobasidium apocryptum (syn. Kabatiella apocrypta ), Discula campestris and Colletotrichum gleosporoides .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+        "quote": "Several fungal pathogens are responsible for maple anthracnose in southern New England"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-anthracnose",
+        "quote": "Usually there are vein-associated lesions, discrete necrotic spots, and/or irregular necrotic blotches or blights. ... Twig cankers or lesions also can develop where fungi can overwinter."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Dark-colored, irregularly-shaped, angular spots or blotches occurring primarily along the midrib, primary veins and leaf margins; vein-associated lesions, discrete necrotic spots, and irregular necrotic blotches or blights, with acervuli produced in the necrotic spots. Severely diseased trees can defoliate early.",
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+          "quote": "in general the symptoms are characterized by dark-colored, irregularly-shaped, angular spots or blotches that occur primarily along the midrib, primary veins and leaf margins"
+        },
+        "diagnostic_features": {
+          "value": "Lesions occur along the midrib, primary veins and leaf margins (rather than randomly across the leaf) and vary by host: narrow purplish-black streaks along leaf veins on Norway maple, large brown blotches along primary veins on sugar maple, and tan or black lesions along primary veins and leaf margins on Japanese maple.",
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+          "quote": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins. On sugar maple, lesions occur along primary veins and appear as large, brown blotches. On Japanese maple, lesions occur along primary veins and leaf margins and the lesions can appear both tan or black in color."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Avoid overhead irrigation of ornamental maples to reduce free moisture on the foliage; time irrigation to minimize the time leaves are wet",
+          "Remove infected leaves (the primary source of inoculum) from the site; rake up and destroy fallen leaves before the first snowfall",
+          "If the disease is severe, prune out infected shoots; remove and destroy twig cankers during dormant pruning",
+          "Maintain tree vigor through adequate fertilization, watering, mulching and pruning; reduce stress with adequate watering throughout the growing season",
+          "Redirect sprinklers that splash water on the tree's leaves",
+          "Do not fertilize unless a soil test shows the need; apply lime if soil pH is too low (sugar maple prefers calcareous soils)",
+          "Prune to increase light penetration and improve air circulation; avoid dense plantings in nurseries",
+          "Plant disease-resistant trees where possible",
+          "Apply labeled fungicides at or just before bud break to protect new growth; active ingredients include copper hydroxide + mancozeb, thiabendazole, mancozeb, propiconazole, thiophanate-methyl, and chlorothalonil"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+        "quote": "While little can be done about natural rainfall, avoid overhead irrigation of ornamental maples to reduce free moisture on the foliage. Infected leaves are the primary source of inoculum and should be removed from the site. If the disease is severe, infected shoots should be pruned out, as they can also harbor the pathogen."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Aureobasidium apocryptum",
+          "alternative_value": "Kabatiella apocrypta",
+          "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+          "note": "Listed by UMass as a synonym of Aureobasidium apocryptum (syn. Kabatiella apocrypta). No taxonomy validation provided to confirm current accepted name."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Aureobasidium apocryptum",
+          "alternative_value": "Discula campestris (Discula sp.)",
+          "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+          "note": "Maple anthracnose is caused by a complex of fungi; UMass and PNW also list Discula campestris / Discula sp. as a co-causal pathogen."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Aureobasidium apocryptum",
+          "alternative_value": "Colletotrichum gleosporoides",
+          "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+          "note": "Additional co-causal pathogen named by UMass within the maple anthracnose fungal complex (spelled 'gleosporoides' in source)."
+        }
+      ]
+    },
+    {
+      "disease_name": "Maple Cankers",
+      "pathogen_scientific_name": {
+        "value": "Eutypella parasitica",
+        "url": "https://extension.psu.edu/eutypella-canker-on-maple",
+        "quote": "The fungus Eutypella parasitica kills the growing layer of cells under the barkâ€”the cambium.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.psu.edu/eutypella-canker-on-maple",
+        "quote": "The fungus Eutypella parasitica kills the growing layer of cells under the barkâ€”the cambium."
+      },
+      "affected_parts": {
+        "value": [
+          "Stem"
+        ],
+        "url": "https://extension.psu.edu/eutypella-canker-on-maple",
+        "quote": "A large roughened area of bark, sunken in the center with heavy callus around the margin, is observed on the branch or main trunk."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "A pronounced bulge of callus develops around the infected area on the trunk or branch of red, sugar, silver, Norway and other maples; dead bark remains attached to the canker (which may be on one side of the trunk or completely girdle the tree), often with a dead branch stub in the center of the swollen, cankered area.",
+          "url": "https://extension.psu.edu/eutypella-canker-on-maple",
+          "quote": "This causes a pronounced bulge of callus to develop around the infected area of red, sugar, silver, Norway, and other maples. Dead bark remains attached to the canker, which may be on one side of the trunk or completely girdle the tree. Often, there is a dead branch stub in the center of the swollen, cankered area."
+        },
+        "diagnostic_features": {
+          "value": "When bark is removed at the junction of diseased and healthy wood, a light tan to cream-colored mat of fungus is observed; black fungal fruiting structures protrude from the bark near the centers of 5-year-old or older cankers. The canker is usually within 10 to 12 feet of the ground with a branch stub in the center.",
+          "url": "https://extension.psu.edu/eutypella-canker-on-maple",
+          "quote": "When bark is removed from the upper and lower ends of the canker at the junction between the diseased and healthy wood, a light tan to cream-colored mat of fungus is observed. Black fungal fruiting structures protrude from the bark near the centers of 5-year-old or older cankers."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Remove trees with cankers on the main trunk",
+          "Remove all cankered branches, cutting 4â€“6 inches below the canker, pruning when the weather is dry",
+          "For highly valuable trees, use a sharp chisel to remove all cankered wood and fungal mat plus 1\" to 1.5\" of surrounding apparently healthy bark and wood",
+          "When planning to remove lower limbs, do so when they are less than 1 inch in diameter",
+          "When a limb breaks, remove the remains with a clean cut close to the branch collar without damaging the collar",
+          "If the collar is damaged or bark is stripped, use a sharp chisel to shape the damaged area into a clean-edged, vertically-oriented oval; do not point the ends and do not damage any callus already formed"
+        ],
+        "url": "https://extension.psu.edu/eutypella-canker-on-maple",
+        "quote": "Management Remove trees with cankers on the main trunk. Remove all cankered branches, cutting 4â€“6 inches below the canker. Do this pruning when the weather is dry."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Tar Spot Of Maple",
+      "pathogen_scientific_name": {
+        "value": "Rhytisma spp. (R. americanum, R. acerinum, R. punctatum)",
+        "url": "https://hort.extension.wisc.edu/articles/tar-spot/",
+        "quote": "On maples specifically,  Rhytisma americanum ,  Rhytisma acerinum , and (less commonly)  Rhytisma punctatum  cause tar spot.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://hort.extension.wisc.edu/articles/tar-spot/",
+        "quote": "Tar spot is a common, visually distinctive and primarily cosmetic fungal leaf spot disease."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://hort.extension.wisc.edu/articles/tar-spot/",
+        "quote": "Initial symptoms of tar spot are small (approximately 1/8 inch) yellowish spots that form on infected leaves."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Begins as small (approximately 1/8 inch) yellowish spots on leaves that may enlarge to about 3/4 inch; as it develops, raised shiny black structures resembling blobs of tar form, first appearing within yellow spots in late summer.",
+          "url": "https://hort.extension.wisc.edu/articles/tar-spot/",
+          "quote": "Initial symptoms of tar spot are small (approximately 1/8 inch) yellowish spots that form on infected leaves.  These spots may remain relatively small, or may enlarge over the growing season to approximately 3/4 inch in diameter.  As tar spot develops, black structures (resembling blobs of tar) form."
+        },
+        "diagnostic_features": {
+          "value": "On Norway maple the black structures are typically numerous, small (~1/8 inch) and clustered; on silver maple they are often single, large (~3/4 inch), visibly raised, with convoluted line patterns resembling fingerprints in the larger tar-like areas.",
+          "url": "https://hort.extension.wisc.edu/articles/tar-spot/",
+          "quote": "On Norway maple, the black structures are typically numerous, small (approximately 1/8 inch in diameter), and clustered together.  On silver maple, the black structures are often single, large (approximately 3/4 inch in diameter) and visibly raised.  If you carefully examine the larger tar-like areas on silver maple, you will see convoluted line patterns that resemble fingerprints."
+        },
+        "look_alikes": {
+          "value": [
+            "Tar spot caused by Rhytisma punctatum",
+            "Tar spot caused by Rhytisma acerinum",
+            "Tar spot caused by Rhytisma americanum"
+          ],
+          "url": "https://treediseases.cfans.umn.edu/tarspots",
+          "quote": "Another native tar spot to the United States is  Rhytisma punctatum."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Collect and properly dispose of leaves from affected trees and shrubs each fall (burn where allowed, bury, or hot compost)",
+          "When composting, ensure the pile reaches a high temperature (approximately 140Â°F) and routinely turn the pile",
+          "Fall/winter raking and sanitation is essential since Rhytisma overwinters on infected leaves",
+          "Fungicides containing copper, alone or with mancozeb, are labeled for tar spot control in Wisconsin",
+          "If warranted, three fungicide applications: at bud break, when leaves are half expanded, and when fully expanded",
+          "Often no control measures are necessary (primarily cosmetic)"
+        ],
+        "url": "https://hort.extension.wisc.edu/articles/tar-spot/",
+        "quote": "You can reduce or even eliminate tar spot by simply collecting up and properly disposing of leaves from affected trees and shrubs each fall.  These leaves can be burned (where allowed), buried or hot composted... Fungicides containing copper, alone or in combination with mancozeb, are labeled for tar spot control in Wisconsin... If warranted, three fungicide applications will be needed:  one at bud break, one when leaves are half expanded, and one when leaves are fully expanded."
+      },
+      "confidence": "high",
+      "num_sources": 4,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Rhytisma spp. (R. americanum, R. acerinum, R. punctatum)",
+          "alternative_value": "Rhytisma spp.",
+          "alternative_source_url": "https://content.ces.ncsu.edu/common-disease-pests-of-maple-in-north-carolina",
+          "note": "NC State cites genus only (Rhytisma spp.); Penn State cites 'Rhytisma acerinum or R. punctatum'; UMN distinguishes R. americanum (native, silver/sugar maple), R. punctatum (native), and R. acerinum (introduced on Norway maple); Wisconsin lists all three."
+        },
+        {
+          "field": "treatments",
+          "canonical_value": "Sanitation plus optional copper/mancozeb fungicide program",
+          "alternative_value": "No control measures are necessary",
+          "alternative_source_url": "https://extension.psu.edu/maple-diseases",
+          "note": "Penn State states no control is necessary; Wisconsin offers both sanitation and a fungicide program; the disease is generally considered cosmetic."
+        }
+      ]
+    }
+  ],
+  "crop": "Maple",
+  "generated_date": "2026-06-10"
+}

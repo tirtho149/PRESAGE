@@ -1,0 +1,413 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Iris Yellow Spot Virus",
+      "pathogen_scientific_name": {
+        "value": "",
+        "url": "",
+        "quote": "",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Viral",
+        "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/iris-yellow-spot/",
+        "quote": "The pathogen is a tospovirus that is transmitted by the onion thrips, Thrips tabaci."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/iris-yellow-spot/",
+        "quote": "Symptoms of iris yellow spot on onion include yellow to straw-colored lesions on leaves and scapes, and dry, elongated lesions or flecks that may resemble severe thrips feeding injury."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Yellow to straw-colored lesions on onion leaves and scapes, with dry, elongated lesions or flecks that may resemble severe thrips feeding injury.",
+          "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/iris-yellow-spot/",
+          "quote": "Symptoms of iris yellow spot on onion include yellow to straw-colored lesions on leaves and scapes, and dry, elongated lesions or flecks that may resemble severe thrips feeding injury."
+        },
+        "diagnostic_features": {
+          "value": "Lesions may be diamond-shaped, but this occurs more commonly on scapes than on leaves.",
+          "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/iris-yellow-spot/",
+          "quote": "Lesions may be diamond-shaped, but this occurs more commonly on scapes than on leaves."
+        },
+        "look_alikes": {
+          "value": [
+            "severe thrips feeding injury"
+          ],
+          "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/iris-yellow-spot/",
+          "quote": "dry, elongated lesions or flecks that may resemble severe thrips feeding injury"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Maintain good fertility and adequate soil moisture to reduce plant stress.",
+          "Avoid excessive application of nitrogen fertilizer.",
+          "Practice good sanitation. Remove and destroy infected plants along with cull piles.",
+          "Eliminate weeds in and around onion fields, especially volunteer onions and wild Allium species.",
+          "Controlling onion thrips will reduce incidence of this disease; particularly spread within the field."
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/iris-yellow-spot/",
+        "quote": "Maintain good fertility and adequate soil moisture to reduce plant stress. Avoid excessive application of nitrogen fertilizer. Practice good sanitation. Remove and destroy infected plants along with cull piles. Eliminate weeds in and around onion fields, especially volunteer onions and wild Allium species."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Fusarium Damping-Off",
+      "pathogen_scientific_name": {
+        "value": "",
+        "url": "",
+        "quote": "",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "",
+        "url": "",
+        "quote": ""
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Root",
+          "Whole plant"
+        ],
+        "url": "https://extension.colostate.edu/resource/soil-borne-diseases-of-onion/",
+        "quote": "Plants often are infected at the soil line or slightly below, and the tissue shrinks rapidly while the aboveground parts wilt and fall over. Root systems of seedlings and transplants are rotted by these fungi"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Appears in circular to irregular shaped areas within fields or on individual plants; seedlings are killed before or after emergence, tissue at the soil line shrinks and aboveground parts wilt and fall over.",
+          "url": "https://extension.colostate.edu/resource/soil-borne-diseases-of-onion/",
+          "quote": "Damping-off (caused by Pythium, Fusarium and Rhizoctonia species) may appear in circular to irregular shaped areas within fields, or on individual plants between healthy appearing ones. Seedlings can be attacked and killed before or after emergence. Plants often are infected at the soil line or slightly below, and the tissue shrinks rapidly while the aboveground parts wilt and fall over."
+        },
+        "diagnostic_features": {
+          "value": "Infection at the soil line or slightly below with rapid tissue shrinking causing aboveground parts to wilt and fall over.",
+          "url": "https://extension.colostate.edu/resource/soil-borne-diseases-of-onion/",
+          "quote": "Plants often are infected at the soil line or slightly below, and the tissue shrinks rapidly while the aboveground parts wilt and fall over."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "planting seed treated with fungicides such as Apron/Terraclor, or by drenching the seed furrow with Ridomil",
+          "Do not plant onions more than once every five years in a field"
+        ],
+        "url": "https://extension.colostate.edu/resource/soil-borne-diseases-of-onion/",
+        "quote": "Smut and damping-off can be reduced easily by planting seed treated with fungicides such as Apron/Terraclor, or by drenching the seed furrow with Ridomil."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Purple Blotch",
+      "pathogen_scientific_name": {
+        "value": "Alternaria porri",
+        "url": "https://extension.usu.edu/pests/ipm/notes_ag/veg-purple-blotch",
+        "quote": "Purple blotch is caused by by the fungus Alternaria porri .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.usu.edu/pests/ipm/notes_ag/veg-purple-blotch",
+        "quote": "Purple blotch is caused by by the fungus Alternaria porri ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Whole plant",
+          "Bulb"
+        ],
+        "url": "https://wiki.bugwood.org/Alternaria_porri",
+        "quote": "It can infect all above-ground parts of the plant in addition to the bulb."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Small water-soaked lesions develop a white center then enlarge with concentric zones, turning brown to purplish with red or purple margins surrounded by yellowish tissue; in moist weather the spot surface becomes covered with a brownish black, powdery fungal growth, and in severe cases lesions coalesce to blight the entire leaf, which then wilts and dies.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/onion-allium-cepa-purple-blotch",
+          "quote": "A small, water-soaked lesion develops on leaves and soon develops a white center. Zones may appear as the spot enlarges and the lesion turns brown to purplish. Red or purple margins often encircle the purplish centers and are surrounded by yellowish tissue. In moist weather, the spot's surface usually becomes covered with a brownish black, powdery fungus growth."
+        },
+        "diagnostic_features": {
+          "value": "Elongate, small, sunken whitish lesions with a purple center showing concentric light and dark zones, up to four inches long and covered with black fruiting bodies (spores).",
+          "url": "https://wiki.bugwood.org/Alternaria_porri",
+          "quote": "Lesions are elongate, small, sunken and whitish with a purple center. Concentric light and dark zones later appear over part or all of the purple area. These blotches may enlarge (up to four inches long) and become covered with black fruiting bodies (spores)."
+        },
+        "look_alikes": {
+          "value": [
+            "IYSV (Iris Yellow Spot Virus) lesions",
+            "Stemphylium Leaf Blight and Stalk Rot"
+          ],
+          "url": "https://extension.usu.edu/pests/ipm/notes_ag/veg-purple-blotch",
+          "quote": "small brown elliptical spots on leaves, similar to IYSV lesions"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Rotate crops / practice long (three-year or longer) rotations with unrelated, non-host crops such as small grains and corn.",
+          "Avoid excessive nitrogen applications; apply adequate but not excessive nitrogen fertilizer before bulb initiation.",
+          "Bury or dispose of culls and other plant debris; destroy old onion cull piles, debris, and volunteers.",
+          "Use pathogen-free, high quality seed and transplants.",
+          "Reduce hours of leaf wetness by plant spacing and density, as well as irrigation management.",
+          "Avoid dense plantings of late maturing varieties.",
+          "Avoid injuring onions during production.",
+          "Undercut roots and harvest at full maturity in dry weather; properly cure bulbs in the field, lifting and drying several days before topping with ambient to warm (90 to 95Â°F) air.",
+          "Maintain storage temperatures near 32Â°F with 70% or less relative humidity.",
+          "Plant tolerant or resistant varieties. 'Fiesta' is tolerant.",
+          "Use fungicides as soon as the disease is confirmed/occurs to prevent further spread.",
+          "Copper fungicides/products (Group M1) are registered but not highly effective and not recommended as stand-alone materials.",
+          "Aliette WDG (Group P7; formerly Group 33) at 2 to 3 lb/A on 7- to 14-day intervals.",
+          "Endura at 6.8 oz/A on 7- to 14-day intervals.",
+          "Fontelis at 16 to 24 fl oz/A on 7- to 14-day intervals.",
+          "Bravo Ultrex at 0.9 to 2.7 lb/A on 7- to 10-day intervals for dry bulbs.",
+          "Echo Zn at 1.5 to 3 pints/A for dry bulb onions.",
+          "Inspire Super at 16 to 20 fl oz/A on 7- to 10-day intervals.",
+          "PropiMax EC at 4 fl oz/A on 7- to 10-day intervals.",
+          "Tebustar 3.6L at 4 to 6 fl oz/A on 10- to 14-day intervals.",
+          "Tilt at 4 to 8 fl oz/A on 7- to 14-day intervals.",
+          "Topaz at 4 to 8 fl oz/A on 7- to 10-day intervals.",
+          "Rovral 4 Flowable at 1.5 pints/A in 50 to 100 gal water for dry bulb onions only.",
+          "Dithane F45 Rainshield at 2.4 quart/A on 7-day intervals.",
+          "Omega 500F (Group 29) at 1 pint/A on 7- to 10-day intervals.",
+          "OSO 5% SC (Group 19) at 3.75 to 13 fl oz/A on 7- to 14-day intervals.",
+          "Regalia Biofungicide (Group P5) at 1 to 4 quarts/A on 7- to 14-day intervals.",
+          "Scala SC (Group 9) at 9 or 18 fl oz/A.",
+          "Cabrio EG at 8 to 12 oz/A.",
+          "Quadris Flowable at 6 to 12 fl oz/A.",
+          "Double Nickel LC at 1 to 6 quarts/A on 3- to 10-day intervals.",
+          "Serenade Opti at 14 to 20 oz/A on 7- to 10-day intervals."
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/onion-allium-cepa-purple-blotch",
+        "quote": "Cultural control Use pathogen-free seed. Practice long rotations with unrelated crops. Reduce hours of leaf wetness by plant spacing and density, as well as irrigation management. Destroy old onion cull piles and bury field debris. Avoid injuring onions during production. Properly cure bulbs in the field; lift and allow them to dry several days before topping. Plant tolerant or resistant varieties. 'Fiesta' is tolerant."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Alternaria porri",
+          "alternative_value": "Macrosporium porri",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/onion-allium-cepa-purple-blotch",
+          "note": "PNW Handbook lists Macrosporium porri as a synonym of Alternaria porri ('Alternaria porri (syn. = Macrosporium porri)'). No taxonomy validation was supplied to confirm the currently accepted name."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Whole plant, Bulb",
+          "alternative_value": "Foliar only",
+          "alternative_source_url": "https://extension.usu.edu/pests/ipm/notes_ag/veg-purple-blotch",
+          "note": "USU and PNW describe symptoms only on leaves (foliar), while Bugwood states the pathogen 'can infect all above-ground parts of the plant in addition to the bulb.' Canonical reflects the broader Bugwood description."
+        }
+      ]
+    },
+    {
+      "disease_name": "Black Mold",
+      "pathogen_scientific_name": {
+        "value": "Aspergillus niger",
+        "url": "https://blogs.cornell.edu/livegpath/gallery/onion/black-mold-of-onion/",
+        "quote": "The pathogen causing this disease, Aspergillus niger , is a fungus that commonly lives in soil surviving saprophytically on dead plant tissue.",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/onion-allium-cepa-black-mold",
+        "quote": "Aspergillus niger ,a fungus common in soil and crop debris"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Whole plant"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/onion-allium-cepa-black-mold",
+        "quote": "Infection usually is through neck tissues as foliage dies down at maturity. Infected bulbs are discolored black around the neck"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Infected bulbs are discolored black around the neck and affected scales shrivel, with masses of powdery black spores arranged as streaks along veins on and between the outer dry scales; as the disease advances from the neck into the central fleshy scales the entire bulb surface turns black and the onion shrivels.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/onion-allium-cepa-black-mold",
+          "quote": "Infected bulbs are discolored black around the neck, and affected scales shrivel. Masses of powdery black spores generally are arranged as streaks along veins on and between outer dry scales."
+        },
+        "diagnostic_features": {
+          "value": "Masses of powdery black mycelium and spores produced along the veins, creating vertical streaks on the bulbs beneath the outer dry scales; sometimes visible without removing outer scales or in the neck tissue, with the entire bulb surface turning black in advanced stages.",
+          "url": "https://blogs.cornell.edu/livegpath/gallery/onion/black-mold-of-onion/",
+          "quote": "which are typically produced along veins creating vertical streaks on the bulbs. It is produced beneath the outer dry scales. Sometimes the black pathogen growth is visible without removing outer scales or in the neck tissue."
+        },
+        "look_alikes": {
+          "value": [
+            "secondary bacterial soft rot"
+          ],
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/onion-allium-cepa-black-mold",
+          "quote": "secondary bacterial soft rot may make the bulb soft and mushy"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant seed free of Aspergillus niger.",
+          "Promptly and adequately dry bulbs after harvest, but avoid using heated air, which favors the occurrence of black mold.",
+          "Harvest after the leaves are fully dried (harvesting before leaves are fully dried results in more storage rots).",
+          "Cure bulbs properly and store at low temperatures and low humidity (PNW: 35-55 F; Cornell: 34-59 F).",
+          "Minimize injury and avoid bruising bulbs during handling, before and after harvest.",
+          "Control other foliar diseases in the field.",
+          "Store bulbs in clean stores and cover them with Cement and Zeolite as an eco-friendly alternative to synthetic fungicides."
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/onion-allium-cepa-black-mold",
+        "quote": "Cultural control Plant seed free of Aspergillus niger . Promptly and adequately dry bulbs after harvest, but avoid using heated air, which favors the occurrence of black mold. Storing bulbs at low temperatures (35Ã‚Â°F to 55Ã‚Â°F) and low humidity controls black mold if bulbs are cured properly. Avoid bruising bulbs during handling. Control other foliar diseases in the field."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Black mold of onion",
+          "alternative_value": "Black Mold / Black mold of onion bulbs (post-harvest bulbs rot of onion)",
+          "alternative_source_url": "https://www.nature.com/articles/s41598-024-53849-9",
+          "note": "Same disease named variously across sources; Nature article frames it as a post-harvest bulb rot."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar; Whole plant",
+          "alternative_value": "Root; Seed",
+          "alternative_source_url": "https://blogs.cornell.edu/livegpath/gallery/onion/black-mold-of-onion/",
+          "note": "Cornell emphasizes infection through wounds on roots and notes the pathogen is seed-borne, in addition to the neck/bulb route emphasized by PNW. Nature provides no affected-parts value."
+        },
+        {
+          "field": "treatments (storage conditions)",
+          "canonical_value": "Store at low temperatures (35-55 F) and low humidity (PNW)",
+          "alternative_value": "Storage at 20-25 Â°C and relative humidity of 70-80% (Nature)",
+          "alternative_source_url": "https://www.nature.com/articles/s41598-024-53849-9",
+          "note": "Recommended storage temperature/humidity ranges differ substantially between the extension handbook and the journal article."
+        }
+      ]
+    },
+    {
+      "disease_name": "Downy Mildew",
+      "pathogen_scientific_name": {
+        "value": "Peronospora destructor",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/onion-allium-cepa-downy-mildew",
+        "quote": "Cause Peronospora destructor , a fungus-like microorganism that overwinters on infected plants or debris.",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Oomycete",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/onion-allium-cepa-downy-mildew",
+        "quote": "Peronospora destructor , a fungus-like microorganism that overwinters on infected plants or debris."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Seed"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/onion-allium-cepa-downy-mildew",
+        "quote": "Slightly pale spots develop first on leaves or seed stalks, later taking on a light brown or purplish shade."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "At the field level, symptoms appear as circular clumps of yellowed plants a few to many feet in diameter; on individual plants leaf tissue becomes pale green, then tan to brown or yellow, and finally collapses, with lesions sometimes showing a violet-to-purple color. When leaves are wet or humidity is very high, fine, furry, grayish-white growths appear on the surface of older leaves, and systemically infected plants may be dwarfed, distorted, and pale green.",
+          "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/downy-mildew/",
+          "quote": "At the field level, symptoms of downy mildew are first noticed as circular clumps of yellowed plants that are a few to many feet in diameter. ... On individual plants, leaf tissue becomes pale green, then tan to brown or yellow, and finally collapses. Lesions may exhibit a violet-to-purple color. When leaves are wet, or when humidity is very high, signs of Peronospora destructor are visible on the surface of older leaves as fine, furry, grayish-white growths ."
+        },
+        "diagnostic_features": {
+          "value": "Signs of Peronospora destructor appear on older leaf surfaces as fine, furry, grayish-white (grayish violet) growths when leaves are wet or humidity is very high; spots enlarge and often girdle the leaves, and lesions may turn violet-to-purple.",
+          "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/downy-mildew/",
+          "quote": "When leaves are wet, or when humidity is very high, signs of Peronospora destructor are visible on the surface of older leaves as fine, furry, grayish-white growths ."
+        },
+        "look_alikes": {
+          "value": [
+            "Purple blotch",
+            "Stemphylium leaf blight"
+          ],
+          "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/downy-mildew/",
+          "quote": "These growths may later turn purple or brown as a result of a secondary infection of the lesion by other fungi, such as those that cause PURPLE BLOTCH AND STEMPYLIUM LEAF BLIGHT , as these fungi can produce purple pigmentation and dark spores."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant only pathogen-free transplants, sets, and seed (use disease-free bulbs, sets, and seed).",
+          "Practice a 3-year or longer crop rotation away from Allium crops in fields where the disease has occurred.",
+          "Avoid poorly drained soils and select fields that are well drained.",
+          "Plant in fields with good air movement and align rows with the prevailing winds; manage plant density/spacing and limit intercropping to reduce humidity.",
+          "Avoid overhead/sprinkler irrigation; use drip or sub-surface irrigation, or adjust irrigation to maximize leaf drying.",
+          "Change planting date to avoid a full canopy during conditions favorable for downy mildew.",
+          "Destroy onion plant refuse, cull piles, residue, volunteer plants, and eradicate wild Allium spp.",
+          "Avoid over-application of nitrogen, which promotes succulent leaves and disease.",
+          "Avoid entering fields when leaves are wet and avoid injuring the crop with herbicides and other materials.",
+          "Use resistant red onion cultivars (e.g., Calred) where available (resistance active in flower stalks, not leaves).",
+          "Spray at the first sign of disease and rotate fungicides among different mode-of-action groups; ensure thorough foliar coverage.",
+          "Use the DOWNCAST forecast program to optimize field scouting and spray timing.",
+          "Seed treatment with a metalaxyl/mefenoxam formulation; foliar fungicides including Actigard (P1), copper (M1), CAA-fungicides/Revus/Forum (40), chlorothalonil (M5: Bravo, Echo 720), mancozeb (M3), Ridomil Gold MZ/Bravo (mefenoxam mixes), Omega 500F/fluazinam (29), phosphonates (P7), Presidio (43), Regalia (P5), Milstop, strobilurins (11), Zampro (ametoctradin/dimethomorph), Orondis Ultra (oxathiapiprolin/mandipropamid), Reason 500 SC (fenamidone).",
+          "Biological control: Actinovate AG, Double Nickel LC, Sonata, Stargus."
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/downy-mildew/",
+        "quote": "To reduce the incidence and severity of downy mildew: Minimize canopy leaf wetness: Avoid sprinkler irrigation, especially when the canopy begins to fill. ... Spray at the first sign of the disease. After the first spray, scout fields and make subsequent applications when weather conditions are favorable for the disease. Rotate with fungicides from different mode-of-action groups to reduce the risk of fungicide resistance development."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar; Stem; Seed",
+          "alternative_value": "Foliar; Stem; Whole plant",
+          "alternative_source_url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/downy-mildew/",
+          "note": "Both sources agree on leaves and seed/flower stalks; UC IPM additionally notes the pathogen can infect bulbs systemically (whole plant), while PNW explicitly lists seed stalks."
+        },
+        {
+          "field": "type_of_disease",
+          "canonical_value": "Oomycete",
+          "alternative_value": "(not stated)",
+          "alternative_source_url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/downy-mildew/",
+          "note": "Only PNW characterizes the pathogen type, describing P. destructor as a 'fungus-like microorganism' (i.e., an oomycete); UC IPM does not state a disease type."
+        }
+      ]
+    },
+    {
+      "disease_name": "Onion Yellows Phytoplasma",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    }
+  ],
+  "crop": "Garden Onion",
+  "generated_date": "2026-06-10"
+}

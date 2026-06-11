@@ -1,0 +1,108 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Rust",
+      "pathogen_scientific_name": {
+        "value": "Phragmidium rubi-idaei",
+        "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+        "quote": "Yellow Rust of Red Raspberry Phragmidium rubi-idaei",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+        "quote": "the yellow rust fungus infects only red raspberry"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+        "quote": "Yellow spots develop on the upper surface of infected leaves during spring. ... The yellow rust fungus overwinters as teliospores on bark and any leaves remaining on floricanes (fruiting canes)."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Small orange to yellow raised spots (spermagonia) develop on the upper leaf surface in spring, surrounded by larger yellowish orange pustules (aecia) near the ground; orange to yellow pustules (uredinia) appear on the leaf underside in June and July and later darken to black teliospores.",
+          "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+          "quote": "Yellow spots develop on the upper surface of infected leaves during spring. Spots initially are very small, orange to yellow, and slightly raised bumps ( spermagonia , photograph by Peter R. Bristow). Around these spots develop larger, yellowish orange pustules (aecia) commonly on raspberry leaves near the ground. ... In June and July, orange to yellow pustules (uredinia) appear on the underside of infected leaves. These structures later darken to become black teliospores"
+        },
+        "diagnostic_features": {
+          "value": "The appearance of aecia on the top of leaves early in the growing season generally distinguishes yellow rust from late leaf rust; season of appearance and which caneberry types are affected help distinguish the rust, though expert spore examination may be required.",
+          "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+          "quote": "The appearance of aecia on the top of leaves early in the growing season generally distinguishes yellow rust from late leaf rust, Pucciniastrum americanum , which infects red and purple raspberries."
+        },
+        "look_alikes": {
+          "value": [
+            "late leaf rust (Pucciniastrum americanum)",
+            "cane and leaf rust",
+            "orange rust"
+          ],
+          "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+          "quote": "Note that cane and leaf rust , late leaf rust , and orange rust also infect caneberries. These diseases can produce symptoms similar to those of yellow rust"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Grow raspberries where they will receive full sun.",
+          "Plant them on a raised berm or mound of soil to improve air circulation around the plants.",
+          "Remove any wild caneberries near those grown for fruit because they can be alternative hosts from which the pathogen can spread.",
+          "Control weeds to improve air circulation and reduce humidity around plants.",
+          "Any method of pruning and trellising that improves air circulation around caneberries helps to reduce yellow rust.",
+          "The dry conditions in a macrotunnel (hoop house covered with clear plastic) greatly limit yellow rust if the tunnels are constructed before environmental conditions favor rust infections.",
+          "After harvest, cultivate to bury debris or dispose of it away from caneberries.",
+          "Remove fruiting canes after harvest.",
+          "Complete removal of floricanes and the first flush of primocane helps to control this disease because it removes most sources of pathogen inoculum",
+          "Stripping leaves from primocanes in the fall will also reduce overwintering inoculum.",
+          "spraying Bordeaux mixture or another copper fungicide may be warranted during the delayed dormant season, which is once buds appear and swell before they open",
+          "a fixed copper fungicide or myclobutanil can be sprayed during the first bloom"
+        ],
+        "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+        "quote": "Grow raspberries where they will receive full sun. Plant them on a raised berm or mound of soil to improve air circulation around the plants. Remove any wild caneberries near those grown for fruit ... If the fungus was abundant the previous growing season, spraying Bordeaux mixture or another copper fungicide may be warranted during the delayed dormant season ... Alternatively or in addition, a fixed copper fungicide or myclobutanil can be sprayed during the first bloom."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Gnomonia Cane Canker",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    }
+  ],
+  "crop": "European Red Raspberry",
+  "generated_date": "2026-06-10"
+}

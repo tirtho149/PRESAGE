@@ -1,0 +1,86 @@
+{
+  "crop": "Hydrangea",
+  "candidate_sources": [
+    {
+      "url": "https://hyg.ipm.illinois.edu/article.php?id=1311",
+      "title": "Cercospora Leaf Spot of Hydrangea",
+      "snippet": "This fungus causes circular to angular leaf spots about 1/8 to 1/4 inch (3-6 mm) in diameter, brown to gray with dark reddish brown, purplish, or nearly black borders. Caused by the fungus Cercospora hydrangeae; the pathogen overwinters on leaf debris and spores are disseminated to foliage via splashing rain or overhead irrigation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cercospora leaf spot",
+        "Cercospora hydrangeae"
+      ]
+    },
+    {
+      "url": "https://www.uaex.uada.edu/publications/pdf/FSA-7570.pdf",
+      "title": "Cercospora Leaf Spot of Hydrangea - FSA7570 (University of Arkansas Cooperative Extension)",
+      "snippet": "Cercospora leaf spot of hydrangea is caused by the fungus Cercospora hydrangea, perhaps the most common disease on this ornamental July through October. The first leaf spots appear on older leaves near the plant's base, then progressively spread upward. Severely infected plants may defoliate and have reduced vigor and fewer flowers.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cercospora leaf spot",
+        "Cercospora hydrangeae"
+      ]
+    },
+    {
+      "url": "https://www.lsuagcenter.com/articles/page1502825252460",
+      "title": "Cercospora Leaf Spot on Hydrangea (LSU AgCenter)",
+      "snippet": "Initial spots are purple and small with a circular shape. As spots enlarge, they often become irregular or angular and develop a tan or gray center surrounded by a purple or brown border. Disease spreads primarily with splashing water and wind; managing leaf wetness, sanitation of fallen leaf debris, and drip irrigation are key management practices.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cercospora leaf spot",
+        "Cercospora hydrangeae"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/Cercospora_hydrangeae",
+      "title": "Cercospora hydrangeae - Bugwoodwiki",
+      "snippet": "Datasheet on the fungus Cercospora hydrangeae, the causal agent of Cercospora leaf spot of hydrangea, including host range, symptoms, signs, and disease cycle information.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Cercospora hydrangeae",
+        "Cercospora leaf spot"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/hydrangea-bud-flower-blight",
+      "title": "Hydrangea-Bud and Flower Blight | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Hydrangea bud and flower blight caused by Botrytis cinerea. Water-soaked spots on petals expand into brown irregular blotches; brown, withered flowers covered with fuzzy gray fungal growth. Disease favored by cool, humid, wet conditions; infection requires 5 to 8 hours of wetness. Includes cultural control and chemical management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bud and flower blight",
+        "Gray mold",
+        "Botrytis blight (Botrytis cinerea)"
+      ]
+    },
+    {
+      "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=33",
+      "title": "Gray Mold [Trees and Shrubs] (Botrytis cinerea and other species) - Hort Answers - University of Illinois Extension",
+      "snippet": "Gray mold caused by Botrytis cinerea and other species attacks trees and shrubs including hydrangea. The fungus colonizes dead, dying, and wounded plant parts, then attacks healthy tissue. Brown withered flowers and leaf spots covered with fuzzy gray growth. The fungus survives almost indefinitely in plant debris; spores spread by wind. Disease favored by cool, humid conditions.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gray mold (Botrytis cinerea)"
+      ]
+    },
+    {
+      "url": "https://homegarden.cahnr.uconn.edu/factsheets/hydrangea-diseases-and-pests/",
+      "title": "Hydrangea Diseases and Pests | Home Garden Education Office | University of Connecticut",
+      "snippet": "Gray mold (Botrytis cinerea) on hydrangea: small water-soaked spots on petals quickly expand into brown irregular blotches; brown, withered masses of flowers may be covered with fuzzy gray fungal growth. Flower buds may be affected and leaf spots occur when infected petals fall on them. Bigleaf hydrangea is highly susceptible. Management includes sanitation, improving air circulation, and fungicides.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Gray mold (Botrytis cinerea)",
+        "Hydrangea diseases and pests"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/PMG/GARDEN/PLANTS/DISEASES/botrytis.html",
+      "title": "Botrytis Blight, or Gray Mold / Home and Landscape / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Botrytis blight, also called gray mold, is caused by the fungus Botrytis cinerea and attacks tender parts of many plants in high humidity. Initial symptoms are water-soaked spots on petals that develop into reddish-brown blotches; infected tissue becomes covered with whitish-gray mold. Management: sanitation, keep foliage dry, prune for air circulation, and apply fungicides where needed.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Botrytis blight",
+        "Gray mold (Botrytis cinerea)"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

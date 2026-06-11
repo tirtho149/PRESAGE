@@ -1,0 +1,230 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Powdery Mildew",
+      "pathogen_scientific_name": {
+        "value": "Podosphaera xanthii",
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+        "quote": "Podosphaera xanthii (previously known as Sphaerotheca fuliginea and S. fusca ) and Erysiphe cichoracearum are the two most commonly recorded fungi causing cucurbit powdery mildew.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://content.ces.ncsu.edu/cucurbit-powdery-mildew",
+        "quote": "Cucurbit powdery mildew is caused by the fungal pathogens Podosphaera xanthii and Erysiphe cichoracearum ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+        "quote": "White, powdery fungal growth develops on both leaf surfaces, petioles, and stems."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "White, powdery fungal growth develops on both leaf surfaces, petioles, and stems (primarily asexual conidia), usually first on crown leaves, shaded lower leaves and leaf undersurfaces; yellow spots may form on upper leaf surfaces opposite the colonies, infected leaves shrivel and die, and plants may senesce prematurely.",
+          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+          "quote": "White, powdery fungal growth develops on both leaf surfaces, petioles, and stems. This growth is primarily asexual spores called conidia. It usually develops first on crown leaves, on shaded lower leaves and on leaf undersurfaces. Yellow spots may form on upper leaf surfaces opposite powdery mildew colonies."
+        },
+        "diagnostic_features": {
+          "value": "White, powdery fungal growth (conidia) on both leaf surfaces, petioles and stems, developing first on crown leaves, shaded lower leaves and leaf undersurfaces, with yellow spots on upper leaf surfaces opposite the colonies; older plants are affected first. The first sign is often pale yellow leaf spots.",
+          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+          "quote": "It usually develops first on crown leaves, on shaded lower leaves and on leaf undersurfaces. Yellow spots may form on upper leaf surfaces opposite powdery mildew colonies. Older plants are affected first."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Plant varieties with complete or partial resistance to powdery mildew; select varieties with resistance from both parents (homozygous resistance) when possible.",
+          "Provide good air movement around plants through proper spacing, staking, and weed control; choose planting sites free of shade.",
+          "Apply fertilizer based on soil test results and avoid over-applying nitrogen.",
+          "Inspect/scout crops routinely (particularly lower leaf surfaces) beginning at the start of crop development; the action threshold for starting applications is one leaf with symptoms out of 50 older leaves examined.",
+          "Physically separate successive cucurbit plantings (or plant up-wind of older plantings) to prevent older plants serving as an inoculum source for the main crop.",
+          "Before disease appears / early in disease development, apply fungicides on a 7 to 10-day interval following detection through an IPM scouting program.",
+          "Alternate products with different modes of action / FRAC groups to avoid generating fungicide-resistant strains, and include a protectant fungicide in every application.",
+          "Use mobile (systemic or translaminar) fungicides tank-mixed with a contact fungicide, applied only when needed at the highest labeled rates, alternating among as many different mobile fungicides as possible.",
+          "Recommended protectant fungicides include chlorothalonil, sulfur, copper, mineral oil, and several biopesticides; sulfur is one of the most effective and least expensive products.",
+          "Remove debris, weeds, and volunteers that may harbor the pathogen.",
+          "Organic growers: fixed copper formulations are the only OMRI-labeled active ingredients with some efficacy against cucurbit powdery mildew.",
+          "Home gardeners: products containing copper or chlorothalonil are the best effective products available, combined with growing tolerant varieties."
+        ],
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+        "quote": "Powdery mildew is managed with resistant varieties and fungicides. An integrated program with both management tools is the best approach for achieving effective control"
+      },
+      "confidence": "high",
+      "num_sources": 4,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Podosphaera xanthii",
+          "alternative_value": "Erysiphe cichoracearum",
+          "alternative_source_url": "https://content.ces.ncsu.edu/cucurbit-powdery-mildew",
+          "note": "UMN names only Podosphaera xanthii as the main cause, while UMass, NC State, and Cornell name Erysiphe cichoracearum as a second co-causal fungus of cucurbit powdery mildew. (UMass spells it 'Erisyphe cichoracearum'.)"
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Podosphaera xanthii",
+          "alternative_value": "Sphaerotheca fuliginea / S. fusca",
+          "alternative_source_url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+          "note": "Cornell records Sphaerotheca fuliginea and S. fusca as previous (synonym) names for Podosphaera xanthii."
+        }
+      ]
+    },
+    {
+      "disease_name": "Phytophthora Blight",
+      "pathogen_scientific_name": {
+        "value": "Phytophthora capsici",
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+        "quote": "The pathogen, Phytophthora capsici , causes seedling damping-off, leaf spots, foliar blight, root and crown rot, stem lesions, and fruit rot.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Oomycete",
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+        "quote": "Several fungicides have been developed with targeted activity for P. capsici and other oomycetes."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Root",
+          "Whole plant"
+        ],
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+        "quote": "The pathogen, Phytophthora capsici , causes seedling damping-off, leaf spots, foliar blight, root and crown rot, stem lesions, and fruit rot."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "The pathogen causes seedling damping-off, leaf spots, foliar blight, root and crown rot, stem lesions, and fruit rot; affected tissue initially appears water-soaked, turns brown, and collapses, and a white, yeast-like growth of sporangia often develops on affected fruit.",
+          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+          "quote": "The pathogen, Phytophthora capsici , causes seedling damping-off, leaf spots, foliar blight, root and crown rot, stem lesions, and fruit rot."
+        },
+        "diagnostic_features": {
+          "value": "A white, yeast-like growth made up mostly of sporangia develops on affected tissue; seeing these sporangia is diagnostic for Phytophthora capsici.",
+          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+          "quote": "The white, yeast-like growth is mostly spores of Phytophthora capsici (sporangia). Seeing sporangia is diagnostic."
+        },
+        "look_alikes": {
+          "value": [
+            "Phytophthora infestans (late blight fungus)",
+            "Pythium fruit rot",
+            "Sclerotinia white mold"
+          ],
+          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+          "quote": "They often resemble those caused by Phytophthora infestans , the late blight fungus"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use long rotations between susceptible crops and select fields where Phytophthora blight has never occurred.",
+          "Select well-drained fields; minimize hardpans and plowpans by subsoiling or chisel plowing before planting, and use deep-zone reduced tillage.",
+          "Physically separate plantings of susceptible crops (cucurbits, pepper, eggplant, and tomato).",
+          "Grow a mustard biofumigant cover crop before a susceptible crop, preferably in spring rather than the previous fall.",
+          "Prepare raised dome-shaped beds for bush-type crops and cover raised and flat beds with plastic mulch.",
+          "Improve drainage by subsoiling between rows after planting and before vining, and seed driveways between vining crops like pumpkin.",
+          "Avoid over-irrigating; do not irrigate at night when temperatures are above 70F, and lay drip tape a few inches from crowns to avoid crown rot.",
+          "When growing small-fruited pumpkins, select varieties producing hard, gourd-like rinds (such as Lil' Ironsides).",
+          "Use targeted fungicides and biopesticides in a preventive spray program, and manage resistance by alternating/combining a diversity of FRAC-code chemistries.",
+          "Scout fields routinely for symptoms, especially after major rain storms.",
+          "Clean farm equipment, shoes, etc. of soil between fields.",
+          "Do not discard cull fruit in the field, and do not save seed from a field where Phytophthora blight occurred."
+        ],
+        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+        "quote": "It is important to use an integrated program with as many of the following practices as possible."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Fusarium Damping-Off",
+      "pathogen_scientific_name": {
+        "value": "Pythium aphanidermatum, Globisporangium irregulare (formerly P. irregulare), G. ultimum (formerly P. ultimum), Fusarium spp., and Rhizoctonia solani",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/squash-cucurbita-spp-damping",
+        "quote": "The fungi or fungus-like microorganisms, Pythium aphanidermatum, Globisporangium irregulare (formerly P. irregulare ), G. ultimum (formerly P. ultimum ), Fusarium spp., and Rhizoctonia solani , attack many vegetable seedlings",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://content.ces.ncsu.edu/damping-off-in-flower-and-vegetable-seedlings",
+        "quote": "Damping-off is primarily caused by fungi present in the growing medium."
+      },
+      "affected_parts": {
+        "value": [
+          "Stem",
+          "Root",
+          "Seed",
+          "Whole plant"
+        ],
+        "url": "https://content.ces.ncsu.edu/damping-off-in-flower-and-vegetable-seedlings",
+        "quote": "Typical symptoms of damping-off are rotting stems at or near the soil line and root decay (post-emerging damping off)."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Typical symptoms are rotting stems at or near the soil line and root decay (post-emerging damping-off), with affected seed-bed areas a foot or more in diameter showing shriveled brown, collapsed or stunted seedlings; young seedlings develop a sunken, necrotic lesion near the soil line that, if it girdles the stem, causes the seedling to collapse and die.",
+          "url": "https://content.ces.ncsu.edu/damping-off-in-flower-and-vegetable-seedlings",
+          "quote": "Typical symptoms of damping-off are rotting stems at or near the soil line and root decay (post-emerging damping off). Affected areas in the seed bed are usually a foot or more in diameter with shriveled brown, collapsed or stunted seedlings."
+        },
+        "diagnostic_features": {
+          "value": "Plants affected by damping-off will be scattered or occur in patches whereas plants affected by abiotic issues will be more consistently affected and at or near 100% incidence; affected seedlings show a sunken, necrotic lesion near the soil line that can girdle the stem.",
+          "url": "https://content.ces.ncsu.edu/damping-off-in-flower-and-vegetable-seedlings",
+          "quote": "Typically, plants affected by damping-off will be scattered or occur in patches whereas plants affected by abiotic issues mentioned above will be more consistently affected and at or near 100% incidence."
+        },
+        "look_alikes": {
+          "value": [
+            "plant injury caused by excessive fertilization",
+            "high soluble salts",
+            "drowning in wet soil",
+            "desiccation in dry soil",
+            "death of seedlings from excessive heat, cold, fuel fumes, or chemical injury"
+          ],
+          "url": "https://content.ces.ncsu.edu/damping-off-in-flower-and-vegetable-seedlings",
+          "quote": "True damping-off may be confused with plant injury caused by excessive fertilization, high soluble salts, drowning in wet soil, desiccation in dry soil, and death of seedlings from excessive heat, cold, fuel fumes, or chemical injury."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Sanitize all seed trays, flats, pots and containers; use new ones or thoroughly wash and disinfect old containers",
+          "Use new, pasteurized soil mix or treat media with heat (e.g. 158Â°F/70Â°C for 30 min with aerated steam) to reduce damping-off fungi",
+          "Proper soil preparation for good drainage, structure, aeration, water-holding capacity and nutrition",
+          "Use fungicide-treated seed with high germination",
+          "Use proper seeding rates to avoid thick stands, poor air movement and low light",
+          "Use proper planting depth and soil temperature for rapid emergence and growth",
+          "Provide drier conditions: increase greenhouse temperature, increase air circulation/ventilation and light, reduce watering frequency, improve drainage; if damping-off appears, stop watering and let soil dry",
+          "Use transplants if the field has a high disease risk",
+          "Fungicides applied as drench or heavy spray at first symptoms (e.g. captan or ferbam; benomyl plus etridiazole or metalaxyl; etridiazole + thiophanate methyl)",
+          "Seed treatments: Captan 4F, Dynasty, Maxim 4FS, Mertect 340-F, 42-S Thiram",
+          "In-furrow/soil fungicides: Orondis Gold, Quadris Flowable, Ridomil Gold SL",
+          "OMRI/biological products: Actinovate (Streptomyces lydicus), Cease (Bacillus subtilis QST 713), RootShield PLUS/Rootshield WP (Trichoderma harzianum T-22, T. virens G-41), SoilGard (Gliocladium virens GL-21), Subtilex NG (Bacillus subtilis MBI 600), Bexfond, Double Nickel LC, Stargus"
+        ],
+        "url": "https://content.ces.ncsu.edu/damping-off-in-flower-and-vegetable-seedlings",
+        "quote": "The general methods employed to prevent damping-off consists of: Sanitize all seed trays and flats and store them in a clean location when not in use."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Pythium aphanidermatum, Globisporangium irregulare, G. ultimum, Fusarium spp., and Rhizoctonia solani",
+          "alternative_value": "Not specified (attributed generally to fungi in the growing medium)",
+          "alternative_source_url": "https://content.ces.ncsu.edu/damping-off-in-flower-and-vegetable-seedlings",
+          "note": "NC State did not name specific pathogens, stating only that damping-off is 'primarily caused by fungi present in the growing medium.' The PNW handbook provides the specific causal complex used as canonical."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Stem, Root, Seed, Whole plant (union of both sources)",
+          "alternative_value": "PNW emphasizes Stem and Whole plant (seedling collapse); NC State emphasizes Stem, Root, Seed",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/squash-cucurbita-spp-damping",
+          "note": "Sources emphasize different affected parts; values merged as a union."
+        }
+      ]
+    }
+  ],
+  "crop": "Gourd",
+  "generated_date": "2026-06-10"
+}

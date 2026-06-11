@@ -1,0 +1,152 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Anthracnose",
+      "pathogen_scientific_name": {
+        "value": "Colletotrichum cereale",
+        "url": "https://extension.psu.edu/turfgrass-diseases-anthracnose-causal-fungus-colletotrichum-cereale",
+        "quote": "caused by the fungus Colletotrichum cereale .",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.psu.edu/turfgrass-diseases-anthracnose-causal-fungus-colletotrichum-cereale",
+        "quote": "Anthracnose is a foliar and crown/root rotting disease of golf course turf, caused by the fungus Colletotrichum cereale ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Root",
+          "Stem",
+          "Whole plant"
+        ],
+        "url": "https://ag.umass.edu/turf/fact-sheets/anthracnose-foliar-blight-basal-rot",
+        "quote": "The pathogen may cause a foliar blight or a rot of crowns, stolons, and roots."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Foliar blight causes yellowing to reddish brown discoloration of leaves and general thinning of the turf, with leaves dying from their tips down; basal rot causes scattered plants or small patches to turn yellow and die, with a water-soaked black rot of the crown tissue. On annual bluegrass putting greens, symptoms typically appear as bright yellowing of turf in irregular patterns, with patches an inch or two to more than a foot across.",
+          "url": "https://ag.umass.edu/turf/fact-sheets/anthracnose-foliar-blight-basal-rot",
+          "quote": "Symptoms of foliar blight are most evident during the summer stress period and include a yellowing to reddish brown discoloration of leaves and a general thinning of the turf. Leaves die from their tips down."
+        },
+        "diagnostic_features": {
+          "value": "The most reliable diagnostic features are the dark/black coloration at the base of the plant (crowns, roots, and lower stem bases) and the presence of fungal spore-producing structures (acervuli) on stems and leaves, which look like small pin cushions and bear protruding, black, hairlike structures (setae) observable with a hand lens.",
+          "url": "https://ag.umass.edu/turf/fact-sheets/anthracnose-foliar-blight-basal-rot",
+          "quote": "The distinctive fruiting bodies (acervuli) of the fungus with their protruding, black, hairlike structures (setae) can be observed with a hand lens."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Alleviate conditions that cause turf stress (aeration, redirecting traffic, reduced watering, and tree pruning or removal)",
+          "Adequate / light, frequent nitrogen fertilization (~3.0 lb/1,000 ft2/year) to reduce anthracnose severity on annual bluegrass putting greens, without overstimulating turf during heat stress",
+          "Do not apply nitrogen at high rates during periods of high temperature stress or drought",
+          "Fertilize with complete fertilizers, avoiding deficiencies of potassium and phosphorous; soil test to avoid potassium deficiencies",
+          "Water deeply and infrequently; irrigation at 60-80% of ET is preferred",
+          "Increase mowing height (cutting heights of 0.141 inch) and reduce mowing frequency; avoid mowing below 0.125 inch and scalping",
+          "Lightweight rolling with smooth rollers to maintain green speed",
+          "Light and frequent sand topdressing",
+          "Reduce soil compaction by core aeration in spring and fall; manage thatch",
+          "Modify traffic patterns and move cups frequently",
+          "Minimize leaf wetness by improving air circulation, watering early in the day, and/or dew removal",
+          "Wash mowers thoroughly after mowing areas where disease is active",
+          "Renovate greens with newer, less susceptible bentgrass cultivars",
+          "Preventive fungicide programs (beginning 2-4 weeks before symptoms appear) using penetrant fungicides or penetrant/contact combinations at label rates; preventive applications are more effective than curative",
+          "For basal rot, apply and water in a systemic fungicide to reach the crown, followed by a separate protectant application",
+          "Avoid Group 3 fungicides (DMIs) during the summer stress period to avoid growth regulator effects",
+          "Alternate active ingredients / fungicide classes and mix contact with penetrant fungicides to delay resistance"
+        ],
+        "url": "https://ag.umass.edu/turf/fact-sheets/anthracnose-foliar-blight-basal-rot",
+        "quote": "Alleviate conditions that cause turf stress. Preventive applications of fungicides are recommended where the disease is a chronic problem. Fertilize with complete fertilizers, avoiding deficiencies of potassium and phosphorous."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Anthracnose Foliar Blight and Basal Rot",
+          "alternative_value": "Anthracnose",
+          "alternative_source_url": "https://extension.psu.edu/turfgrass-diseases-anthracnose-causal-fungus-colletotrichum-cereale",
+          "note": "Both are university extension sources (equal authority rank). UMass uses the fuller descriptive name distinguishing the foliar blight and basal rot phases; PSU titles it simply 'Anthracnose'. Same disease and pathogen."
+        }
+      ]
+    },
+    {
+      "disease_name": "Dollar Spot",
+      "pathogen_scientific_name": {
+        "value": "Clarireedia jacksonii",
+        "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
+        "quote": "caused by the fungus Clarireedia jacksonii",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
+        "quote": "caused by the fungus Clarireedia jacksonii"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
+        "quote": "Dollar spot is a foliar disease of golf courses, athletic fields, home lawns, parks, and institutional grounds"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Small, roughly circular bleached/white-to-tan patches of dead turf, silver-dollar sized on closely mowed greens and 1-5 inches (occasionally exceeding 6 inches) on fairways, athletic fields, and lawns; numerous spots may coalesce into large, irregular dead areas.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/lawn-turf-dollar-spot",
+          "quote": "Small, roughly circular, bleached patches develop in the turf. Spots are generally a few inches in diameter but can exceed 6 inches when conditions are favorable. Numerous spots may occur and coalesce into large, irregular dead areas. Leaves develop light yellow to tan lesions with reddish-brown borders or lines."
+        },
+        "diagnostic_features": {
+          "value": "On individual leaves, initial symptoms appear as yellow-green blotches that progress to tan-colored lesions with reddish-brown borders; lesions occur near the middle of the leaf and extend completely across the blade, often with a classic 'hourglass' shape. White mycelia can be observed on diseased leaves in early morning following rainy/dewy periods.",
+          "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
+          "quote": "On individual leaves, initial symptoms appear as yellow-green blotches, which progress to a tan-colored lesion with reddish-brown borders."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Late spring nitrogen fertilizer applications to minimize dollar spot severity; maintain adequate nitrogen in a balanced nutritional program",
+          "On athletic fields and lawns use slow-release nitrogen; on golf courses quick-release nitrogen can be applied in liquid form at low rates frequently",
+          "Avoid light, frequent waterings; irrigate to apply more water less frequently and wet the entire rootzone",
+          "Water in the morning so turf dries before night",
+          "Remove dew and guttation fluid from foliage (dragging fairways with weighted hoses, dew whips, rollers, or early-morning mowing)",
+          "Daily/lightweight rolling of putting greens, particularly coupled with increased mowing height, to reduce dollar spot activity",
+          "Collect and remove plant debris",
+          "Use resistant cultivars (e.g., creeping bentgrass: Proclamation, Declaration, 007, Barracuda, Luminary, Pin-Up, V8, Memorial, Benchmark DSR)",
+          "Focus on cultural control tactics first; implement a broad-based cultural program to reduce the number of fungicide applications",
+          "Apply fungicides on irrigated turf with persistent dollar spot; early-season applications just before symptoms appear reduce later outbreaks",
+          "Alternate modes of action / tank-mix fungicides from different groups, mix contact and penetrant fungicides, or use only contact fungicides; limit use of any one group",
+          "Specific products (PNW): Group 3 (BioAdvanced Fungus Control, Bonide Infuse, Densicor, Eagle 20 EW, propiconazole products such as Banner MAXX/PropiMax EC), Group 2 (Chipco 26019 FLO), Group M5 (Daconil Weather Stik), Group M3 (Mancozeb - Fore, Manzate, Protect DF), Group 11 (Disarm 480 SC, Fame SC), Group 7 (Emerald, Velista), plus combination fungicides (Armada 50 WDG, Briskway, Concert, Encartis, Exteris Stressgard, Headway, Honor, Interface, Lexicon, Navicon, Pillar G, Premion, Renown, Tartan Stressgard)"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/lawn-turf-dollar-spot",
+        "quote": "Cultural control Fertilize with adequate nitrogen in a balanced nutritional program. ... Avoid light, frequent waterings. ... Water in morning so turf will dry before night. ... Use resistant cultivars. Chemical control Focus on cultural control tactics first. ... Alternate or tank-mix fungicides from different groups that have different modes of action."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Clarireedia jacksonii",
+          "alternative_value": "Clarireedia monteithiana",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/lawn-turf-dollar-spot",
+          "note": "Not a true disagreement: C. jacksonii is the causal agent on cool-season turfgrass; PNW notes C. monteithiana causes dollar spot on warm-season turfgrass in the USA. Canonical reflects the cool-season turf context shared by both sources."
+        }
+      ]
+    }
+  ],
+  "crop": "Creeping Bentgrass",
+  "generated_date": "2026-06-10"
+}

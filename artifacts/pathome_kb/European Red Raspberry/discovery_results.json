@@ -1,0 +1,99 @@
+{
+  "crop": "European Red Raspberry",
+  "candidate_sources": [
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-03-18-0516-RE",
+      "title": "Characterization of Gnomoniopsis idaeicola, the Causal Agent of Canker and Wilting of Blackberry in Serbia | Plant Disease (APS)",
+      "snippet": "Gnomoniopsis idaeicola found to be the causal agent of cane canker and wilting in Rubus orchards. The holotype of G. idaeicola was collected on raspberry (Rubus idaeus L.) in Finland in 1886.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Gnomonia cane canker",
+        "Gnomoniopsis idaeicola canker and wilting",
+        "cane canker of Rubus"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/gnomonia-comari-leaf-blotch-of-strawberry",
+      "title": "Gnomonia Leaf Blotch and Stem-End Rot of Strawberry | NC State Extension Publications",
+      "snippet": "Gnomonia comari is a fungal plant pathogen. Symptoms consist of tan to gray leaf lesions developing along the margin of leaflets; leaf blotches are irregular and may be surrounded by a purple border. A key diagnostic feature is the presence of tiny, brown to black fungal fruiting bodies in the gray blotches.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gnomonia leaf blotch",
+        "stem-end rot",
+        "Gnomonia comari"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/BF00023912",
+      "title": "Resistance to cane and foliar diseases in red raspberry (Rubus idaeus) and related species | Euphytica",
+      "snippet": "Resistance to cane and foliar diseases in red raspberry (Rubus idaeus) and related species, covering cane canker and spot pathogens affecting Rubus idaeus.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "cane diseases of red raspberry",
+        "foliar diseases",
+        "cane canker"
+      ]
+    },
+    {
+      "url": "https://agrobaseapp.com/new-zealand/disease/cane-spot",
+      "title": "Cane spot | Agrobase",
+      "snippet": "Cane spot disease of raspberry/Rubus, describing leaf and cane spot symptoms and management.",
+      "source_type": "industry",
+      "diseases_mentioned": [
+        "cane spot",
+        "leaf and cane spot"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/plant-diseases/late-leaf-rust",
+      "title": "Late leaf rust on raspberry | UMN Extension",
+      "snippet": "Symptoms of late leaf rust appear in late July or early August first on lower foliage with small chlorotic or yellow areas; yellow-orange powdery pustules on leaf surfaces and on fruit. Causes decreased plant vigour, early defoliation, and increased winter frost sensitivity. Management: plant disease-free stock, maintain air circulation, full sun, drip irrigation, fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "late leaf rust",
+        "Pucciniastrum americanum"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-fru-17",
+      "title": "Late Leaf Rust of Red Raspberries | Ohioline (Ohio State University Extension)",
+      "snippet": "Late leaf rust of red raspberries (Rubus idaeus) caused by Pucciniastrum americanum. Small yellow spots turning brown and yellow-orange powdery pustules on adaxial and abaxial leaf surfaces and light yellow/orange pustules on fruits. Includes pathogen biology and management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "late leaf rust",
+        "Pucciniastrum americanum"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/raspberry-rubus-spp-yellow-rust",
+      "title": "Raspberry (Rubus spp.)-Yellow Rust | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Yellow rust caused by Phragmidium rubi-idaei. Leaf infections in spring create yellowish spotting on upper leaf surface (spermagonia), then aecia in a ring; orange to yellow uredinia on leaf undersides in June-July. Severely affected leaves dry, die, and drop prematurely. Overwinters as teliospores on leaves; leaf wetness needed for infection.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "yellow rust",
+        "Phragmidium rubi-idaei"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+      "title": "Yellow Rust of Red Raspberry / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Yellow rust (Phragmidium rubi-idaei) of red raspberry. Yellow to orange spots and pustules on leaves; aecia and uredinia described; teliospores overwinter on fallen leaves. Provides symptom, disease cycle, and management information for caneberries.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "yellow rust",
+        "Phragmidium rubi-idaei"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.40537",
+      "title": "Phragmidium rubi-idaei (raspberry yellow rust) | CABI Compendium",
+      "snippet": "CABI Compendium datasheet for Phragmidium rubi-idaei, the cause of raspberry yellow rust, covering distribution, host range, symptoms, biology, and management on Rubus idaeus.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "raspberry yellow rust",
+        "Phragmidium rubi-idaei"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

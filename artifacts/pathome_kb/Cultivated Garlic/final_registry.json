@@ -1,0 +1,276 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Alternaria Embellisia Togashi",
+      "pathogen_scientific_name": {
+        "value": "Embellisia allii",
+        "url": "https://extension.umaine.edu/publications/1204e/",
+        "quote": "Embellisia Skin Blotch of Garlic is caused by the fungal pathogen Embellisia allii (Helminthosporium allii)",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.umaine.edu/publications/1204e/",
+        "quote": "caused by the fungal pathogen Embellisia allii"
+      },
+      "affected_parts": {
+        "value": [
+          "Whole plant"
+        ],
+        "url": "https://extension.umaine.edu/publications/1204e/",
+        "quote": "Disease symptoms start as small water-soaked lesions on the bulbs and develop into brown to black lesions generally underneath the bulb epidermis."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Symptoms start as small water-soaked lesions on the bulbs and develop into brown to black lesions generally underneath the bulb epidermis; left unchecked, the disease may progress into cankers on the cloves.",
+          "url": "https://extension.umaine.edu/publications/1204e/",
+          "quote": "Disease symptoms start as small water-soaked lesions on the bulbs and develop into brown to black lesions generally underneath the bulb epidermis. Generally, Embellisia allii causes cosmetic damage on the bulb only. Left unchecked, the disease may progress into cankers on the cloves."
+        },
+        "diagnostic_features": {
+          "value": "Brown to black lesions generally underneath the bulb epidermis, typically causing cosmetic damage on the bulb only.",
+          "url": "https://extension.umaine.edu/publications/1204e/",
+          "quote": "develop into brown to black lesions generally underneath the bulb epidermis. Generally, Embellisia allii causes cosmetic damage on the bulb only."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Proper drying conditions and storage conditions with relative humidity less than 70 percent will greatly reduce the potential for the disease",
+          "Sorting and removal of diseased bulbs is recommended",
+          "When the disease is present, removing the affected outer scales on garlic bulbs before sale or use is usually sufficient"
+        ],
+        "url": "https://extension.umaine.edu/publications/1204e/",
+        "quote": "Proper drying conditions and storage conditions with relative humidity less than 70 percent will greatly reduce the potential for the disease. Sorting and removal of diseased bulbs is recommended. When the disease is present, removing the affected outer scales on garlic bulbs before sale or use is usually sufficient."
+      },
+      "confidence": "low",
+      "num_sources": 1,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Embellisia allii",
+          "alternative_value": "Helminthosporium allii",
+          "alternative_source_url": "https://extension.umaine.edu/publications/1204e/",
+          "note": "Source lists Helminthosporium allii as a parenthetical synonym/former name of Embellisia allii. No NCBI/MycoBank validation was supplied to confirm the current accepted name."
+        }
+      ]
+    },
+    {
+      "disease_name": "Gray Molds",
+      "pathogen_scientific_name": {
+        "value": "Botrytis porri",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/garlic-allium-sativum-neck-rot-gray-mold",
+        "quote": "Botrytis porri and B. aclada (formerly B. alliiaclada ), fungi.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.umaine.edu/publications/1207e/",
+        "quote": "Botryotinia (Botrytis) porri is the fungal pathogen that causes neck rot in garlic."
+      },
+      "affected_parts": {
+        "value": [
+          "Stem",
+          "Foliar",
+          "Whole plant"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/garlic-allium-sativum-neck-rot-gray-mold",
+        "quote": "The disease usually appears first on necks near the soil line ... The fungus moves rapidly into the succulent garlic bulb's neck region ... Before bulbing, plants may die"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Infected plants are stunted with dead or dying outer leaves, showing water-soaked lesions at the soil line on the neck that progress up the leaves and down the neck; a gray mold develops on or between the scales and large distinct black sclerotia form around the rotting neck.",
+          "url": "https://extension.umaine.edu/publications/1207e/",
+          "quote": "In the field, plants infected with Botrytis neck rot are stunted, with dead or dying outer leaves. Symptoms of the infection are often first seen at the soil line on the neck as water-soaked lesions. Under warm and wet conditions, the disease progresses quickly, spreading up the leaves and down the neck. At this time, the large, distinct sclerotia may be present around the rotting neck."
+        },
+        "diagnostic_features": {
+          "value": "Large, distinct black sclerotia (rough black masses of hardened fungal mycelium) as large as Â¾ inch but typically Â¼ inch in diameter form around the rotting neck, with gray mold on or between the garlic scales.",
+          "url": "https://extension.umaine.edu/publications/1207e/",
+          "quote": "later forming sclerotia (rough black masses of hardened fungal mycelium) as large as Â¾ inch but typically Â¼ inch in diameter"
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Use disease-free seed stock.",
+          "Use adequate plant spacing and good weed control to encourage air movement.",
+          "Remove infected plants from the area and do not compost.",
+          "Try to harvest mature plants with a minimum of injury.",
+          "Properly cure garlic bulbs with good air movement; if normal dry weather prevails, cure garlic on the ground for 6 to 10 days.",
+          "Practice proper crop rotation.",
+          "Do not plant garlic or other alliums in a field where the pathogen is present.",
+          "Allow the tops to mature well, then lift or undercut the garlic.",
+          "When topping, keep bruising and mechanical injury to a minimum.",
+          "Store garlic in well-ventilated houses at temperatures of 32Â°F, or just slightly higher.",
+          "Avoid frequent and excessive irrigation.",
+          "Visual inspection of seed garlic with a hand lens may help; examine the basal plate or bottom of garlic for gray mold.",
+          "Treat seed (cloves) to reduce incidence of fungi in the seed.",
+          "Cueva (Group M1) at 0.5 to 2 gal/100 gal water on 7- to 10-day intervals.",
+          "Fontelis (Group 7) at 16 to 24 fl oz/A on 7- to 14-day intervals.",
+          "Inspire Super (Group 3 + 9) at 16 to 20 fl oz/A prior to disease onset on 7- to 10-day intervals.",
+          "OSO 5% SC (Group 19) at 3.75 to 13 fl oz/A on 7- to 14-day intervals.",
+          "Scala SC (Group 9) at 9 or 18 fl oz/A on 7- to 14-day intervals for great-headed garlic.",
+          "Strobilurin fungicides (Group 11) are labeled for use, including Heritage at 0.08 to 0.15 oz/1,000 sq ft on 7- to 14-day intervals and Quadris Flowable at 9 to 15.5 fl oz/A.",
+          "Dexter Max (Group M3 + 11) at 3.2 lb/A on 7-day intervals for dry bulb onion.",
+          "Luna Tranquility (Group 7 + 9) at 16 to 27 fl oz/A on 7- to 14-day intervals.",
+          "Merivon Xemium (Group 7 + 11) at 8 to 11 fl oz/A on 7- to 14-day intervals; not registered for use in Washington.",
+          "Pristine (Group 7 + 11) at 14.5 to 18.5 oz/A.",
+          "Stargus at 2 to 4 quarts/A plus a nonionic surfactant on 7- to 10-day intervals.",
+          "Double Nickel LC at 1 to 6 quarts/A on 3- to 10-day intervals.",
+          "Romeo at 0.23 to 0.91 lb/A on 7- to 10-day intervals starting prior to infection.",
+          "Serenade Opti (BM02) at 14 to 20 oz/A on 7- to 10-day intervals."
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/garlic-allium-sativum-neck-rot-gray-mold",
+        "quote": "Cultural control Difficult to control in extended wet weather. Allow the tops to mature well, then lift or undercut the garlic. If normal dry weather prevails, cure garlic on the ground for 6 to 10 days."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Botrytis Neck Rot (Gray Mold)",
+          "alternative_value": "Neck Rot (Gray Mold)",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/garlic-allium-sativum-neck-rot-gray-mold",
+          "note": "UMaine names it 'Botrytis Neck Rot'; PNW Handbook names it 'Neck Rot (Gray Mold)'. Merged as the same disease."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Botrytis porri",
+          "alternative_value": "Botryotinia porri",
+          "alternative_source_url": "https://extension.umaine.edu/publications/1207e/",
+          "note": "UMaine gives the teleomorph name 'Botryotinia (Botrytis) porri'; PNW gives 'Botrytis porri and B. aclada (formerly B. alliiaclada)'. PNW additionally implicates Botrytis aclada as a co-causal agent. No NCBI/MycoBank validation was supplied to select a single accepted name."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Botrytis porri",
+          "alternative_value": "Botrytis aclada (formerly B. alliiaclada)",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/garlic-allium-sativum-neck-rot-gray-mold",
+          "note": "PNW lists B. aclada as an additional causal fungus for garlic neck rot; UMaine attributes the disease to Botrytis/Botryotinia porri only."
+        }
+      ]
+    },
+    {
+      "disease_name": "Bread Mold",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Onion Rust",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    },
+    {
+      "disease_name": "White Rot",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    }
+  ],
+  "crop": "Cultivated Garlic",
+  "generated_date": "2026-06-10"
+}

@@ -1,0 +1,151 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Limonomyces Fungus",
+      "pathogen_scientific_name": {
+        "value": "Limonomyces roseipellis",
+        "url": "https://extension.psu.edu/turfgrass-diseases-pink-patch-causal-fungus-limonomyces-roseipellis",
+        "quote": "This disease is caused by the fungus Limonomyces roseipellis and is a common turfgrass disease during rainy periods in late spring and early summer.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.psu.edu/turfgrass-diseases-pink-patch-causal-fungus-limonomyces-roseipellis",
+        "quote": "This disease is caused by the fungus Limonomyces roseipellis"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://extension.psu.edu/turfgrass-diseases-pink-patch-causal-fungus-limonomyces-roseipellis",
+        "quote": "The disease is usually restricted to the leaves, leaf sheaths, and stems of turfgrasses."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Pink patch appears as circular or irregular-shaped patches of blighted turf, typically with a pink cast, restricted to the leaves, leaf sheaths, and stems; in advanced stages leaves become covered with fluffy pink fungal mycelium.",
+          "url": "https://extension.psu.edu/turfgrass-diseases-pink-patch-causal-fungus-limonomyces-roseipellis",
+          "quote": "Pink patch symptoms appear as circular or irregular-shaped patches of blighted turf, typically with a pink cast. The disease is usually restricted to the leaves, leaf sheaths, and stems of turfgrasses. In advanced stages, leaves become covered with fluffy pink fungal mycelium."
+        },
+        "diagnostic_features": {
+          "value": "In advanced stages, leaves become covered with fluffy pink fungal mycelium; diseased areas on leaves can take on yellow or bleached-straw color.",
+          "url": "https://extension.psu.edu/turfgrass-diseases-pink-patch-causal-fungus-limonomyces-roseipellis",
+          "quote": "In advanced stages, leaves become covered with fluffy pink fungal mycelium. Diseased areas on leaves can take on yellow or bleached-straw color."
+        },
+        "look_alikes": {
+          "value": [
+            "red thread"
+          ],
+          "url": "https://extension.psu.edu/turfgrass-diseases-pink-patch-causal-fungus-limonomyces-roseipellis",
+          "quote": "Pink patch often occurs with another disease called red thread , which has similar symptoms and develops under the same environmental conditions as pink patch."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Where pink patch disease occurs, fertilization with adequate nitrogen for good turf growth usually will reduce the injury",
+          "In most situations, pink patch is not sufficiently damaging to warrant fungicide treatment; in rare cases high-value lawns may become severely blighted during wet weather and fungicide treatment will minimize symptoms",
+          "Penetrant fungicides labeled for control of pink patch (e.g., propiconazole, tebuconazole, triticonazole, Polyoxin D, azoxystrobin, pyraclostrobin, trifloxystrobin, flutolanil, penthiopyrad)",
+          "Avoid excessive use of fungicides within the same FRAC code/resistance group and alternate products among different FRAC codes/resistance groups",
+          "Maintain adequate and complete fertility (potassium, phosphorus, and calcium as well as nitrogen) as determined by soil tests",
+          "A light application of quick release nitrogen reduces disease severity and is generally the only treatment necessary on residential lawns",
+          "Maintain soil pH between 6.0 and 7.0",
+          "Water deeply and infrequently while preventing moisture stress",
+          "Avoid late afternoon, evening, and light, frequent irrigations which extend periods of leaf wetness",
+          "Remove morning dew from grass by dragging a hose over it",
+          "Prune trees and shrubs to improve air circulation and increase light penetration",
+          "Keep mower blades sharp to minimize leaf wounding which can enhance infection",
+          "Collect grass clippings when the disease is active or turf is growing slowly to reduce the amount of fungal stroma incorporated into the thatch",
+          "Manage thatch, which can harbor the pathogen",
+          "Overseed with resistant varieties of turfgrass (perennial ryegrass, fescues, and Kentucky bluegrass)"
+        ],
+        "url": "https://extension.psu.edu/turfgrass-diseases-pink-patch-causal-fungus-limonomyces-roseipellis",
+        "quote": "Where pink patch disease occurs, fertilization with adequate nitrogen for good turf growth usually will reduce the injury."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem",
+          "alternative_value": "Foliar",
+          "alternative_source_url": "https://ag.umass.edu/turf/fact-sheets/red-thread-pink-patch",
+          "note": "UMass limits the pathogen to plant foliage only ('Both pathogens are limited to the plant foliage and individual blades die from the tips down.'), while PSU also includes leaf sheaths and stems."
+        }
+      ]
+    },
+    {
+      "disease_name": "Rust",
+      "pathogen_scientific_name": {
+        "value": "Puccinia cynodontis",
+        "url": "https://ipm.ucanr.edu/agriculture/bermudagrass-seed-production/rust/",
+        "quote": "The causal fungus, Puccinia cynodontis, survives on infected bermudagrass and bermudagrass residues in the field",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ipm.ucanr.edu/agriculture/bermudagrass-seed-production/rust/",
+        "quote": "The causal fungus, Puccinia cynodontis, survives on infected bermudagrass and bermudagrass residues in the field"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/bermudagrass-seed-production/rust/",
+        "quote": "Rust begins as small, grayish purple pustules on the underside of older leaves. ... the rust infections progress up the stem of the plant to younger leaves."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Rust begins as small, grayish purple pustules on the underside of older leaves; as pustules mature, leaf tissue ruptures to expose red-brown uredospores, followed by premature leaf senescence and death.",
+          "url": "https://ipm.ucanr.edu/agriculture/bermudagrass-seed-production/rust/",
+          "quote": "Rust begins as small, grayish purple pustules on the underside of older leaves. As pustules mature, the leaf tissue ruptures to expose red-brown uredospores. Premature leaf senescence and death occur."
+        },
+        "diagnostic_features": {
+          "value": "Small, grayish purple pustules on the underside of older leaves that rupture to expose red-brown uredospores; red-brown rust spores cling to the shoes and lower pant legs of scouts walking through the seed field.",
+          "url": "https://ipm.ucanr.edu/agriculture/bermudagrass-seed-production/rust/",
+          "quote": "The first indication of a problem may be red-brown rust spores clinging to the shoes and lower pant legs of scouts walking through the seed field."
+        },
+        "look_alikes": {
+          "value": [
+            "bermudagrass stem maggot (BSM)"
+          ],
+          "url": "https://site.extension.uga.edu/tattnall/2020/05/leaf-rust-on-bermudagrass/",
+          "quote": "I figured that it was bermudagrasss stem maggot (BSM). However, after making a few farm visits I discovered something I had never seen before, leaf rust"
+        }
+      },
+      "treatments": {
+        "value": [
+          "Keep plants growing vigorously with adequate, but not excessive, nitrogen fertilization and irrigation",
+          "If possible, irrigate during normal dew periods so plant foliage is not wet any longer than normal night and morning leaf wetness periods",
+          "Remove straw from the field by burning (preferred) or baling",
+          "Apply fungicides as soon as environmental conditions favor rust development or when rust pustules first appear",
+          "Tebuconazole (Folicur)",
+          "Pyraclostrobin (Headline)",
+          "Sulfur"
+        ],
+        "url": "https://ipm.ucanr.edu/agriculture/bermudagrass-seed-production/rust/",
+        "quote": "Keep plants growing vigorously with adequate, but not excessive, nitrogen fertilization and irrigation. If possible, irrigate during normal dew periods so plant foliage is not wet any longer than normal night and morning leaf wetness periods. Remove straw from the field by burning (preferred) or baling. ... Apply fungicides as soon as environmental conditions favor rust development or when rust pustules first appear."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Rust (bermudagrass leaf rust)",
+          "alternative_value": "Leaf rust on bermudagrass",
+          "alternative_source_url": "https://site.extension.uga.edu/tattnall/2020/05/leaf-rust-on-bermudagrass/",
+          "note": "UC IPM labels the disease 'Rust'; UGA labels it 'Leaf rust on bermudagrass'. Same pathogen (Puccinia cynodontis)."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem",
+          "alternative_value": "Foliar",
+          "alternative_source_url": "https://site.extension.uga.edu/tattnall/2020/05/leaf-rust-on-bermudagrass/",
+          "note": "UGA documents rust damage on leaves only; UC IPM notes infections progress up the stem to younger leaves."
+        }
+      ]
+    }
+  ],
+  "crop": "Bermudagrass",
+  "generated_date": "2026-06-10"
+}

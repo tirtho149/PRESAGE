@@ -1,0 +1,199 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Bacterial Leaf Scorch",
+      "pathogen_scientific_name": {
+        "value": "Xylella fastidiosa",
+        "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
+        "quote": "The organism, Xylella fastidiosa, is a small gram negative bacterium with no flagella.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Bacterial",
+        "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
+        "quote": "The pathogen is a bacterium that grows inside the plant's vascular tissue where it blocks water movement from the roots."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Vascular"
+        ],
+        "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
+        "quote": "grows inside the plant's vascular tissue where it blocks water movement from the roots. ... Symptoms typically appear in mid to late summer on lower branches as irregular marginal browning on interior leaves."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Symptoms appear in mid to late summer on lower branches as irregular marginal browning on interior leaves, progressing along the branch toward the tip; scorched areas may have a yellow halo, with reduced growth and dieback in severely infected plants.",
+          "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
+          "quote": "Symptoms typically appear in mid to late summer on lower branches as irregular marginal browning on interior leaves. Symptoms progress along the branch towards the tip."
+        },
+        "diagnostic_features": {
+          "value": "BLS symptoms first appear on the lower branches and on the older interior leaves, and scorched areas may have a yellow halo around them depending on the tree species; this distinguishes it from drought scorch, which is more uniform and first appears near the upper branches and on younger leaves near the tips.",
+          "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
+          "quote": "BLS symptoms first appear on the lower branches and on the older interior leaves. Drought scorch symptoms will be more uniform and will first appear near the upper branches and on the younger leaves near the tips of the branches."
+        },
+        "look_alikes": {
+          "value": [
+            "drought",
+            "environmental stress",
+            "root diseases",
+            "drought scorch"
+          ],
+          "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
+          "quote": "These symptoms are sometimes mistaken for drought, environmental stress, or root diseases. Bacterial scorch symptoms differ from drought scorch symptoms."
+        }
+      },
+      "treatments": {
+        "value": [
+          "There are no treatments for bacterial leaf scorch.",
+          "Infected trees may continue to persist in the landscape if symptomatic branches and dead wood is pruned out promptly.",
+          "Antibiotic trunk injections, administered by a licensed arborist, have shown promise but they only relieve symptoms and don't provide a cure."
+        ],
+        "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
+        "quote": "There are no treatments for bacterial leaf scorch. However, infected trees may continue to persist in the landscape if symptomatic branches and dead wood is pruned out promptly. Antibiotic trunk injections, administered by a licensed arborist, have shown promise but they only relieve symptoms and don't provide a cure."
+      },
+      "confidence": "low",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Black Spot Of Elm",
+      "pathogen_scientific_name": {
+        "value": "Stegophora ulmea",
+        "url": "https://purduelandscapereport.org/article/7528/",
+        "quote": "is caused by the fungus Stegophora ulmea",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
+        "quote": "A fungal disease called Elm Black Spot is an important foliar disease in North American elms"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
+        "quote": "an important foliar disease in North American elms (Ulmus spp.) ... Besides infecting the leaves, this fungus can infect and girdle petioles and shoots."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Symptoms begin as small whitish or yellowish flecks or blotches on the upper leaf surface that enlarge with black specks inside; these specks merge into irregular black stomata 0.5 to 3.0 mm in diameter surrounded by a yellow-white band of dead tissue.",
+          "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
+          "quote": "Symptoms start as small, whitish, or yellowish flecks or blotches on the upper surface of the leaf that later enlarge with black specks developing inside. These black specks can merge to form a single, irregular-shaped stomata that is 0.5 to 3.0 mm in diameter. In general, individual stomata remain separate surrounded by a yellow-white band of dead tissue"
+        },
+        "diagnostic_features": {
+          "value": "Raised black fungal fruiting bodies (stromata) form within the leaf spots, giving the leaf a bumpy texture as if dotted with tar; black specks merge into single irregular stomata 0.5 to 3.0 mm in diameter surrounded by a yellow-white band of dead tissue, and successive seasons of twig blighting can cause witches' broom.",
+          "url": "https://purduelandscapereport.org/article/7528/",
+          "quote": "These fungal structures are raised and will give the leaf a bumpy texture. As more spots develop and coalesce, they will create white areas of dead tissue that can eventually turn brown."
+        },
+        "look_alikes": {
+          "value": [
+            "Rhytisma tar spot",
+            "Dutch elm disease (DED)"
+          ],
+          "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
+          "quote": "sometimes these stomata can grow so close together to appear to cover the entire discolored area. When this happens, the symptoms can look like Rhytisma tar spot."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Remove infected leaf debris and dead shoots; rake up leaf litter and prune out infected stems to remove inoculum for the following season.",
+          "Avoid overhead irrigation and close spacing of cuttings and young trees.",
+          "Chemical control / fungicides are generally not warranted for large, mature trees in landscapes since full foliage coverage is impractical and damage is not usually severe.",
+          "For small nursery trees, preventive fungicide applications (e.g. mancozeb, copper, or chlorothalonil) may be made starting at budbreak in spring and continued at regular intervals until leaves are fully developed, especially where overhead irrigation is used."
+        ],
+        "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
+        "quote": "Management of this disease includes removing infected leaf debris and dead shoots. Avoid overhead irrigation and close spacing of cuttings and young trees. Chemical control of this disease is generally not warranted for large trees. For small nursery trees, preventive fungicide applications of chemicals such as mancozeb, copper, or chemicals with the active ingredient chlorothalonil may be made starting at budbreak in the spring and continuing at regular intervals until leaves are fully developed."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Elm Black Spot",
+          "alternative_value": "Black Spot of Elm (also called elm anthracnose)",
+          "alternative_source_url": "https://purduelandscapereport.org/article/7528/",
+          "note": "Purdue uses 'Black Spot of Elm' and notes the synonym 'elm anthracnose'; Arkansas uses 'Elm Black Spot'. Same disease and pathogen."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Stegophora ulmea",
+          "alternative_value": "Stegophora (syn. Gnomonia) ulmea",
+          "alternative_source_url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
+          "note": "Arkansas lists Gnomonia ulmea as a synonym of Stegophora ulmea."
+        }
+      ]
+    },
+    {
+      "disease_name": "Dutch Elm Disease",
+      "pathogen_scientific_name": {
+        "value": "Ophiostoma ulmi and Ophiostoma novo-ulmi",
+        "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
+        "quote": "Dutch elm disease is caused by two closely related fungi, Ophiostoma ulmi and Ophiostoma novo-ulmi.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
+        "quote": "An invasive fungal pathogen causes the disease and occurs throughout Minnesota."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Vascular",
+          "Root",
+          "Whole plant"
+        ],
+        "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
+        "quote": "Leaves on one or more branches in the outer crown of the tree turn yellow, wilt and then turn brown. ... Once in the tree's vascular system, the fungal spores are carried up the tree with the flow of water. ... the fungus can reach the root system in the first season of infection. ... Dutch elm disease (DED) causes wilt and death in all elm species native to Minnesota."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Yellow foliage appears on one or more branches in the outer crown from late spring to midsummer, soon becoming wilted and brown (\"flagging\"), with yellowing and wilting progressing down the infected branch toward the trunk; fallen leaves may be strewn over the lawn in spring or summer.",
+          "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=82",
+          "quote": "The first symptom observed in American elm is yellow foliage on one or more branches, from late spring to midsummer. The affected foliage soon becomes wilted and brown; this symptom is called \"flagging.\""
+        },
+        "diagnostic_features": {
+          "value": "Wilted and brown foliage on individual branches called \"flagging,\" with brown discoloration/streaking of the sapwood visible when the bark is removed on recently wilted branches.",
+          "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
+          "quote": "If the bark is removed, brown streaking can be seen along the sapwood of wilted branches."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Manage by eliminating bark beetle breeding sites: promptly remove dead or dying elm wood with intact bark.",
+          "Remove DED-infected branches the same year infection starts, before the disease moves into the main stem, cutting at least 5 feet (preferably 10 feet) below the last sign of streaking in the sapwood.",
+          "Properly dispose of elm wood by burying, debarking, burning, or chipping.",
+          "Sever root grafts between infected and adjacent elms (e.g., with a vibratory plow or trenching to 3-4 feet deep) before removing the infected tree.",
+          "Take down trees with many infected branches.",
+          "Choose Dutch elm disease-resistant cultivars for new or replacement plantings.",
+          "Preventative fungicide injection treatments (e.g., thiabendazole, propiconazole) can protect highly valuable trees, but are expensive and regarded as a temporary measure.",
+          "Without community-wide sanitation, Dutch elm disease is almost impossible to control."
+        ],
+        "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
+        "quote": "Reduce the number of breeding sites available to the beetles by promptly removing dead or dying elm wood with intact bark. ... Fungicides with the active ingredients thiabendazole and propiconazole are effective against DED."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Ophiostoma ulmi and Ophiostoma novo-ulmi",
+          "alternative_value": "Ophiostoma ulmi [formerly Ceratocystis ulmi] and O. novo-ulmi",
+          "alternative_source_url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=82",
+          "note": "Illinois Extension notes the outdated/former name Ceratocystis ulmi for Ophiostoma ulmi. Both sources agree the disease is caused by O. ulmi and O. novo-ulmi."
+        }
+      ]
+    }
+  ],
+  "crop": "Elm",
+  "generated_date": "2026-06-10"
+}

@@ -1,0 +1,259 @@
+{
+  "crop": "Grape",
+  "candidate_sources": [
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-fru-24",
+      "title": "Grape Black Rot | Ohioline - The Ohio State University",
+      "snippet": "Grape black rot, caused by the fungus Guignardia bidwellii, presents reddish-brown circular lesions on leaves with tiny black pycnidia in the center; fruit infection causes berries to shrivel into hard black mummies. Includes symptoms, disease cycle, and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black rot",
+        "Grape black rot"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/publications/5106e/",
+      "title": "Black Rot of Grape - University of Maine Cooperative Extension",
+      "snippet": "Black rot of grape is caused by Guignardia bidwellii. Symptoms include reddish-brown leaf lesions, elongated black lesions on petioles, cane lesions, and fruit rot producing black pycnidia and mummified berries. Management combines sanitation and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black rot",
+        "Black Rot of Grape"
+      ]
+    },
+    {
+      "url": "https://plantclinic.tamu.edu/calendar2018/grape_blackrot/",
+      "title": "Black Rot of Grapes | Texas Plant Disease Diagnostic Lab",
+      "snippet": "Black rot of grapes, caused by Guignardia bidwellii, produces small reddish-brown circular leaf lesions with black fruiting bodies (pycnidia), and fruit that shrivels into hard black mummies. Discusses symptoms and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black rot",
+        "Black Rot of Grapes"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/fruit/fact-sheets/grape-ipm-black-rot",
+      "title": "Grape IPM- Black Rot | Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Symptoms on leaves are circular tan spots that become reddish brown with a dark brown border, with black pimple-like fruiting bodies. Disease develops on all green tissues and berries mummify. Includes IPM management strategies.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black rot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHYTO-11-16-0404-R",
+      "title": "Genetic Variability of Phyllosticta ampelicida, the Agent of Black Rot Disease of Grapevine | Phytopathology",
+      "snippet": "Black rot of grapevine is caused by Phyllosticta ampelicida (teleomorph Guignardia bidwellii). Cankers form on tendrils, petioles, shoots, and rachis; berries mummify and become covered with pycnidia and pseudothecia. APS Phytopathology publication.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Black rot",
+        "Black rot disease of grapevine"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/DownyMildewGrape.aspx",
+      "title": "Downy mildew of grape",
+      "snippet": "Grape downy mildew, caused by Plasmopara viticola, is one of the most important diseases in wine and table grape production worldwide. The first symptoms are usually seen on the leaves as 'oil spots' on the upper surface of young, actively growing leaves, followed by downy white growth on the underside. It is considered the most devastating disease of grapevines in climates with relatively warm and humid summers.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Downy mildew of grape"
+      ]
+    },
+    {
+      "url": "https://cals.cornell.edu/integrated-pest-management/grapevine-downy-mildew-plasmopara-viticola-fruit-fact-sheet",
+      "title": "Grapevine Downy Mildew (Plasmopara viticola) Fruit Fact Sheet",
+      "snippet": "New leaves infected by downy mildew often develop yellow lesions that look oily, while more mature tissues have an angular lesion that is yellow to reddish-brown and limited by leaf veins. On the lower leaf surface, a cottony growth (mycelium) is often readily apparent. Downy mildew is caused by the fungal-like organism Plasmopara viticola.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Grapevine Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-fru-33",
+      "title": "Downy Mildew of Grape | Ohioline",
+      "snippet": "Downy mildew of grape, caused by Plasmopara viticola, infects leaves, shoots, and young berries. Characteristic 'oil spots' appear on the upper leaf surface with white downy sporulation on the underside. The pathogen overwinters as oospores in fallen leaf litter; management combines cultural practices and protective fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Downy Mildew of Grape"
+      ]
+    },
+    {
+      "url": "http://extension.cropsciences.illinois.edu/fruitveg/pdfs/776-Grape%20Anthracnose.pdf",
+      "title": "Grape Anthracnose (University of Illinois Extension)",
+      "snippet": "Anthracnose is caused by the fungus Elsinoe ampelina, and has been reported from all grape growing areas in the world. All succulent parts of the plant including stems, leaves, petioles, tendrils, young shoots, and berries can be attacked. On green berries, 'bird's-eye' spots are purplish brown or bleached with a dark edge. Berries remain firm, crack and shrivel.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Grape Anthracnose",
+        "Elsinoe ampelina",
+        "bird's eye rot"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-fru-15",
+      "title": "Anthracnose of Grape | Ohioline (Ohio State University Extension)",
+      "snippet": "Grapevine anthracnose, also called bird's eye rot and black spot, is caused by the ascomycete fungus Elsinoe ampelina. It overwinters in fungal structures on the shoots and bark of infected vines and produces spores dispersed by rain splash. Management includes sanitation, canopy management, and dormant lime sulfur plus foliar fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose of Grape",
+        "bird's eye rot",
+        "black spot",
+        "Elsinoe ampelina"
+      ]
+    },
+    {
+      "url": "https://www.canr.msu.edu/news/anthracnose_how_to_recognize_and_control_this_fungal_disease_of_grapevines",
+      "title": "Anthracnose: How to recognize and control this fungal disease of grapevines - MSU Extension",
+      "snippet": "Anthracnose (Elsinoe ampelina) attacks leaves, shoots, petioles, tendrils and berries of grapevines. Leaf lesions develop a 'shot-hole' appearance; berry lesions resemble a bird's eye. Sanitation and fungicide applications are recommended for control.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose",
+        "Elsinoe ampelina"
+      ]
+    },
+    {
+      "url": "https://bsppjournals.onlinelibrary.wiley.com/doi/full/10.1111/mpp.13076",
+      "title": "Current status and future prospects of grapevine anthracnose caused by Elsinoe ampelina: An important disease in humid grape-growing regions (Molecular Plant Pathology)",
+      "snippet": "A comprehensive review of grapevine anthracnose caused by Elsinoe ampelina, covering its biology, epidemiology, symptoms, host resistance and management in humid grape-growing regions.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "grapevine anthracnose",
+        "Elsinoe ampelina"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-fru-03",
+      "title": "Botrytis Bunch Rot or Gray Mold of Grape | Ohioline",
+      "snippet": "Botrytis bunch rot, caused by the fungus Botrytis cinerea, is one of the most common and damaging diseases of grape. The most striking sign is the gray-brown sporulating growth of the fungus on infected berries. Infected berries first appear soft and watery; white cultivars become brown and shriveled, purple cultivars develop a reddish color. The fungus overwinters as mycelium or sclerotia on canes, debris, and berry mummies.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Botrytis bunch rot",
+        "gray mold",
+        "Botrytis cinerea"
+      ]
+    },
+    {
+      "url": "https://pubs.extension.wsu.edu/botrytis-bunch-rot-in-commercial-grape-production-biology-and-disease-management",
+      "title": "Botrytis Bunch Rot in Commercial Washington Grape Production: Biology and Disease Management | WSU Extension",
+      "snippet": "Botrytis bunch rot, caused by Botrytis cinerea, is one of the most important diseases of grapes worldwide and can cause large economic losses from preharvest field infection and postharvest losses in storage. Rot symptoms are typified by gray fuzzy growth, berry oozing, and berry desiccation. Management includes canopy management (shoot thinning, leaf removal), and fungicides; resistance management is critical.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Botrytis bunch rot",
+        "Botrytis cinerea"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/grape/botrytis-bunch-rot/",
+      "title": "Botrytis Bunch Rot / Grape / Pest Management Guidelines | UC IPM",
+      "snippet": "Botrytis bunch rot (gray mold) of grape is caused by Botrytis cinerea. Symptoms in red cultivars may be subtle with off colors, shriveled or leaking berries, and gray sporulation of the fungus. Provides identification, biology, and integrated management guidelines including cultural practices and fungicide recommendations.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Botrytis bunch rot",
+        "gray mold",
+        "Botrytis cinerea"
+      ]
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3779096/",
+      "title": "The 'Dr Jekyll and Mr Hyde fungus': noble rot versus gray mold symptoms of Botrytis cinerea on grapes",
+      "snippet": "Botrytis cinerea causes gray mold (a destructive bunch rot) but under specific conditions induces noble rot, the beneficial form prized for sweet dessert wines. This review contrasts the symptoms, infection biology, and host responses underlying the two outcomes on grape berries.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "gray mold",
+        "noble rot",
+        "Botrytis cinerea",
+        "bunch rot"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/grape/powdery-mildew/",
+      "title": "Powdery Mildew / Grape / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Erysiphe necator (synonym Uncinula necator) is a fungus that causes powdery mildew of grape. Initial symptoms appear on leaves as chlorotic spots; infected areas take on a white, powdery appearance. The pathogen infects all green tissue including leaves and young berries and can cause crop loss and poor wine quality if untreated.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://extension.arizona.edu/publication/powdery-mildew-grapes",
+      "title": "Powdery Mildew of Grapes | UA Cooperative Extension",
+      "snippet": "Powdery mildew of grapes is caused by the fungus Erysiphe necator. Symptoms include white, powdery growth on leaves, shoots, and berries; severe infections cause splitting and dehydration of berries. Management includes cultural practices and fungicide applications.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://portal.ct.gov/-/media/CAES/DOCUMENTS/Publications/Fact_Sheets/Plant_Pathology_and_Ecology/PowderyMildewofGrapespdf.pdf",
+      "title": "Grape Powdery Mildew - Connecticut Agricultural Experiment Station (CAES) Fact Sheet",
+      "snippet": "Powdery mildew of grape, caused by Erysiphe necator (syn. Uncinula necator), produces white, webby mycelium and powdery lesions on leaves; late-season black chasmothecia form on lesions. Infected berries turn brown, shrivel, and split. Includes symptom and management information.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://pubs.nmsu.edu/_h/H329/Index.html",
+      "title": "Grape Powdery Mildew | New Mexico State University",
+      "snippet": "Grape powdery mildew (Uncinula necator / Erysiphe necator) first appears as white powder on the underside of basal leaves; causes mottling, curling, and withering of leaves and white-gray powdery coating on berries. Management via cultural practices, sulfur, and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://grapes.extension.org/powdery-mildew-of-grapes/",
+      "title": "Powdery Mildew of Grapes â€“ Grapes (eXtension)",
+      "snippet": "Powdery mildew of grapes, caused by Erysiphe necator, infects all green tissue on the grapevine. Provides detailed symptom descriptions, disease cycle, and integrated management recommendations for vineyards.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://www.invasive.org/browse/subinfo.cfm?sub=9493&fam=318",
+      "title": "Pseudocercospora leaf spot (Pseudocercospora vitis (LÃ©v.) Speg.)",
+      "snippet": "Pseudocercospora vitis, the cause of leaf blight (formerly Isariopsis leaf spot) of grape. Leaf symptoms are characterized by 'tiger stripe' patterns (lesions surrounded by areas with chlorosis) during severe infection; large, irregular shaped spots, initially dull red, with tiny angular chlorotic halos and later large black spots. Hosts include several genera of Vitaceae (Ampelopsis, Cissus, Parthenocissus) and Vitis species. Distribution: Brazil, Europe, India, Japan, North America, Korea, Pakistan, Saudi Arabia, South Africa.",
+      "source_type": "USDA",
+      "diseases_mentioned": [
+        "Pseudocercospora leaf spot",
+        "Isariopsis leaf spot",
+        "leaf blight",
+        "Pseudocercospora vitis"
+      ]
+    },
+    {
+      "url": "https://www.invasive.org/collections/viewcollection.cfm?ser=72222",
+      "title": "Leaf blight, also called Isariopsis leaf spot (Pseudocercospora vitis) on Grape (Vitis sp.)",
+      "snippet": "Image collection for leaf blight, also called Isariopsis leaf spot, caused by the fungus Pseudocercospora vitis on Grape (Vitis sp.). Photographs document the characteristic foliar lesions and symptom progression of the disease on grapevine leaves.",
+      "source_type": "USDA",
+      "diseases_mentioned": [
+        "leaf blight",
+        "Isariopsis leaf spot",
+        "Pseudocercospora vitis"
+      ]
+    },
+    {
+      "url": "https://www.ndrs.org.uk/article.php?id=010015",
+      "title": "Occurrence of grapevine leaf spot caused by Pseudocercospora vitis in Argentina",
+      "snippet": "Report on grapevine leaf spot (Isariopsis leaf spot / leaf blight) caused by Pseudocercospora vitis. Describes large, irregular dull-red lesions that develop angular chlorotic halos and later coalesce into large black spots and necrotic blotches on grapevine foliage, with pathogen identification and distribution notes.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "grapevine leaf spot",
+        "Isariopsis leaf spot",
+        "Pseudocercospora vitis"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/resources/commonnames/Pages/Grape.aspx",
+      "title": "Diseases of Grape (Vitis vinifera L.) â€” APS",
+      "snippet": "American Phytopathological Society common-names list of diseases of grape, including Isariopsis leaf spot / leaf blight caused by Pseudocercospora vitis (synonym Isariopsis clavispora), cross-referencing the pathogen with its accepted common names.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Isariopsis leaf spot",
+        "leaf blight",
+        "Pseudocercospora vitis"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

@@ -1,0 +1,75 @@
+{
+  "crop": "Carrot",
+  "candidate_sources": [
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
+      "title": "Carrot (Daucus carota)-Black Rot | Pacific Northwest Pest Management Handbooks",
+      "snippet": "The fungus Alternaria radicina (formerly Stemphylium radicinum) can be seedborne or overwinter in crop refuse. It attacks the leaf-stalk base and crown, causing black lesions on the root surface with a well-defined border between infected and healthy tissues; a dry, mealy, black decay may develop in storage. Management: plant Alternaria-indexed seed, hot water seed treatment, furrow irrigation, and crop rotation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black rot of carrot (Alternaria radicina)",
+        "Stemphylium radicinum"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/carrot/black-rot-black-crown/",
+      "title": "Black Rot (Black Crown) / Carrot / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Black rot, also called black crown, of carrot is caused by Alternaria radicina. The pathogen is seedborne and survives in soil with plant residues for up to 8 years. It causes seed decay, damping-off, blackened hypocotyls, crown and root lesions, and storage rot. Management includes pathogen-free seed, crop rotation, and proper storage.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black rot (black crown) of carrot (Alternaria radicina)"
+      ]
+    },
+    {
+      "url": "https://plantwiseplusknowledgebank.org/doi/10.1079/pwkb.species.4524",
+      "title": "Alternaria radicina (black rot of carrots)",
+      "snippet": "CABI/Plantwise datasheet for Alternaria radicina, cause of black rot of carrots. Covers identity, host range, distribution, symptoms (seed decay, damping-off, blackened hypocotyls, deformed roots, dry mealy black decay in storage), biology, and management.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Black rot of carrots (Alternaria radicina)"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/pdf/10.1094/PDIS.2004.88.8.776",
+      "title": "Alternaria Diseases of Carrot - APS Journals (Plant Disease)",
+      "snippet": "Review of Alternaria diseases of carrot, including leaf blight (Alternaria dauci) and black rot / black canker (Alternaria radicina). Discusses symptoms, seedborne and soilborne survival, epidemiology, and integrated management.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Alternaria leaf blight (Alternaria dauci)",
+        "Black rot / black canker (Alternaria radicina)"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+      "title": "Carrot, Alternaria Leaf Blight : Vegetable : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Alternaria Leaf Blight is a foliar disease of carrots caused by the fungus Alternaria dauci. Symptoms appear first as greenish-brown, then water-soaked, and finally necrotic lesions 8-10 days following an infection event, with a characteristic chlorotic, yellow halo on carrot leaflets and petioles. Older leaves are most susceptible; when ~40% of the leaf surface is infected the leaf yellows, collapses, and dies. The pathogen is seedborne. Management: plant Alternaria-indexed seed or hot water seed treatment, turn under carrot residue, practice 2-year rotations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Alternaria Leaf Blight",
+        "Alternaria dauci"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/carrot/alternaria-leaf-blight/",
+      "title": "Alternaria Leaf Blight / Carrot / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Alternaria leaf blight of carrot caused by Alternaria dauci. Small leaf spots with water soaking are the first symptom; later lesions enlarge to black/brown with a yellow halo. Leaves can be killed when foliar spots coalesce or by petiole lesions, giving a scorched appearance. Management: use certified pathogen-free seed or treat seed with hot water (50C for 20 min) or fungicides; some carrot cultivars are fairly resistant; a 25% disease incidence triggers first fungicide spray.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Alternaria Leaf Blight",
+        "Alternaria dauci"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/carrot-leaf-blight-diseases-and-their-management/",
+      "title": "Carrot Leaf Blight Diseases and their Management | Cornell Vegetables",
+      "snippet": "Cornell factsheet on carrot leaf blight diseases including Alternaria leaf blight (Alternaria dauci) and Cercospora leaf blight. Describes lesion symptoms with yellow halos on foliage and petioles, seedborne pathogen survival, and management via clean seed, rotation, residue management, and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Alternaria Leaf Blight",
+        "Alternaria dauci",
+        "Cercospora leaf blight"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

@@ -1,0 +1,73 @@
+{
+  "crop": "Creeping Bentgrass",
+  "candidate_sources": [
+    {
+      "url": "https://extension.psu.edu/turfgrass-diseases-anthracnose-causal-fungus-colletotrichum-cereale",
+      "title": "Turfgrass Diseases: Anthracnose (Causal fungus: Colletotrichum cereale)",
+      "snippet": "Anthracnose is a fungal disease caused by Colletotrichum cereale that develops as a foliar blight, infecting turfgrass leaves, or a basal rot, attacking the leaf sheaths, crowns, and stolons. Foliar blight symptoms progress from older to younger leaves with leaf tips becoming chlorotic; basal rot reveals a water-soaked black rot of the crown tissue. Favored by summer heat stress, low fertility, low mowing height, and compaction.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose",
+        "Anthracnose foliar blight",
+        "Anthracnose basal rot"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/turf/fact-sheets/anthracnose-foliar-blight-basal-rot",
+      "title": "Anthracnose Foliar Blight and Basal Rot : Turf : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Anthracnose foliar blight and basal rot, caused by Colletotrichum cereale, is most prevalent on creeping bentgrass and annual bluegrass during summer heat stress. Symptoms appear as yellow-to-bronze, irregularly shaped patches with loss of turf density; C. cereale produces abundant acervuli with conidia and setae on infected foliar tissue. Includes management for stressed turf.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose foliar blight",
+        "Anthracnose basal rot"
+      ]
+    },
+    {
+      "url": "https://www.extension.purdue.edu/extmedia/bp/bp-108-w.pdf",
+      "title": "Turfgrass Disease Profiles: Anthracnose - Purdue Extension",
+      "snippet": "Purdue Extension disease profile describing anthracnose of turfgrass caused by Colletotrichum cereale (formerly C. graminicola). Covers basal rot crown infection of creeping bentgrass and annual bluegrass on putting greens, symptom identification, conditions favoring disease, and cultural and chemical management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose",
+        "Anthracnose basal rot"
+      ]
+    },
+    {
+      "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
+      "title": "Turfgrass Diseases: Dollar Spot (Causal fungus: Clarireedia jacksonii)",
+      "snippet": "Dollar spot is a major problem in many turfgrass species, particularly creeping bentgrass (Agrostis stolonifera). Symptoms appear as small, circular, sunken spots of blighted turf about the size of a silver dollar. Characteristic leaf symptoms are white to tan lesions with a dark brown margin, taking on an hourglass shape. Most active during warm humid days (70-85F) and cool nights with heavy dew. Includes cultural and fungicide management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Dollar Spot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHYTO-11-20-0505-RVW",
+      "title": "New Approaches to an Old Problem: Dollar Spot of Turfgrass | Phytopathology",
+      "snippet": "Six species within the genus Clarireedia are known to cause dollar spot, with C. jacksonii and C. monteithiana being the two most prominent species found in the US. The pathogen was formerly known as Sclerotinia homoeocarpa. Review of epidemiology, host range (including creeping bentgrass), and integrated management.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Dollar Spot"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/lawn-turf-dollar-spot",
+      "title": "Lawn and Turf-Dollar Spot | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Dollar spot, caused by Clarireedia spp. (formerly Sclerotinia homoeocarpa), produces circular straw-colored patches the size of a silver dollar. Management includes nitrogen fertility, dew removal, improving air circulation and drainage, and fungicides such as chlorothalonil, propiconazole, boscalid, thiophanate-methyl, and iprodione.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Dollar Spot"
+      ]
+    },
+    {
+      "url": "https://www.k-state.edu/turf/resources/lawn-problem-solver/problem-solver/dead-patches/dollar-spot/",
+      "title": "Dollar Spot (Sclerotinia homoeocarpa) | K-State Turf",
+      "snippet": "Dollar spot appears as circular or irregular patches of light tan or straw-colored turfgrass 10-40 mm in diameter. White to tan leaf spots with a dark brown margin develop into hourglass-shaped lesions. Favored by warm days, cool nights, and prolonged leaf wetness. Cultural and chemical management discussed.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Dollar Spot"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

@@ -1,0 +1,100 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Anthracnose",
+      "pathogen_scientific_name": {
+        "value": "Colletotrichum sp.",
+        "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
+        "quote": "Colletotrichum species (anthracnose )",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
+        "quote": "Common Fungal Leaf Spot Pathogens"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Vascular"
+        ],
+        "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
+        "quote": "Vascular discoloration is evident in the infected petioles and corm."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Mainly small, round lesions on leaves and petals which coalesce to form large areas of necrotic tissue; leaves and petals may become completely blighted. On Anemone it causes leaf curl with twisted petioles and pedicels, and on Cyclamen small round brown leaf spots with stunting and deformity.",
+          "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
+          "quote": "On other hosts, Colletotrichum occurs mainly as small, round lesions on leaves and petals which coalesce to form large areas of necrotic tissue. Leaves and petals may become completely blighted."
+        },
+        "diagnostic_features": {
+          "value": "Pink to orange sporulation oozing from lesions, visible under close inspection.",
+          "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
+          "quote": "A diagnostic sign for anthracnose is the presence of pink to orange sporulation oozing from lesions under close inspection."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Good sanitation practices and reduction of humidity in the greenhouse and around plants are essential to the management of leaf spot diseases.",
+          "Minimize leaf wetness by watering early in the day or sub-irrigating.",
+          "Eliminate overhead watering if possible.",
+          "Provide good air circulation within the plant canopy by proper plant spacing and the use of fans to provide horizontal air flow.",
+          "Grow resistant cultivars when they are available.",
+          "Fungicides are best used preventatively.",
+          "Fungicides include azoxystrobin, chlorothalonil, mancozeb, myclobutanil, pyraclostrobin, thiophanate-methyl, and copper products."
+        ],
+        "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
+        "quote": "Good sanitation practices and reduction of humidity in the greenhouse and around plants are essential to the management of leaf spot diseases."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Cladosporium Fungi",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": []
+    }
+  ],
+  "crop": "Common Lilac",
+  "generated_date": "2026-06-10"
+}

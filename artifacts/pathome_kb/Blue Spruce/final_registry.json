@@ -1,0 +1,188 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Rhizosphaera Needle Cast",
+      "pathogen_scientific_name": {
+        "value": "Rhizosphaera kalkhoffii",
+        "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+        "quote": "Rhizosphaera needle cast is caused by the fungus Rhizosphaera kalkhoffii .",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+        "quote": "Rhizosphaera needle cast is a fungal disease of spruce trees"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://pubs.nmsu.edu/_h/H163/index.html",
+        "quote": "Symptoms of the disease are discoloration of the needles (Figure 1), needle drop, and eventual defoliation"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Needles become discolored â€” new needles at branch tips stay green while older needles turn brown to purple (yellow in July, reddish-purple in August), eventually turning brown and falling off; infected trees look thin or see-through with many bare branches, and damage starts on the lower branches and moves up the tree.",
+          "url": "https://pubs.nmsu.edu/_h/H163/index.html",
+          "quote": "Infected needles turn yellow in July and then reddish-purple in August. The needles eventually turn brown and fall off one or more branches."
+        },
+        "diagnostic_features": {
+          "value": "Tiny brown to black spots called pycnidia (fruiting bodies) emerge from the stomata on the needles, arranged in neat rows/lines and visible with a hand lens (10X); the disease attacks the oldest needles in the lower canopy first and progresses upward, giving the appearance of death from the bottom up and inside out.",
+          "url": "https://pubs.nmsu.edu/_h/H163/index.html",
+          "quote": "The fungus can sometimes be seen with a hand lens (10X) as tiny brown to black spots called pycnidia, or fruiting bodies, emerging from stomata (pores) on the needles (Figure 3)."
+        },
+        "look_alikes": {
+          "value": [
+            "Several other fungi cause symptoms very similar to Rhizosphaera"
+          ],
+          "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+          "quote": "Several other fungi cause symptoms very similar to Rhizosphaera and correct identification is important."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Do not plant Colorado blue spruce (Picea pungens) or other spruce not well adapted to local conditions; plant more resistant Norway (P. abies) or white spruce (P. glauca)",
+          "Plant spruce trees on sites with acidic, moist, well drained soils and full sun, preferably grown from local seed sources",
+          "Do not overcrowd plants; use the mature size of the tree as a spacing guide, and remove the bottom-most branches to increase air circulation around the canopy",
+          "Do not shear spruce, as shearing creates dense, compact growth that stays wet longer",
+          "Remove weeds under trees and maintain a 3-4 inch wood chip mulch layer (leaving a 2 inch gap from the trunk); avoid wetting needles with sprinkler irrigation",
+          "Plant only healthy trees and avoid planting new trees next to established trees",
+          "Sterilize pruning shears with 70% isopropyl alcohol or another disinfectant between cuts and between trees",
+          "Clean up fallen needles from infected trees, seal in a plastic bag and dispose of them",
+          "Apply protectant fungicides containing chlorothalonil, copper hydroxide, mancozeb, thiophanate-methyl, or Bordeaux mixture 8-8-100; first application when new needles are about half their mature length and a second 3 to 4 weeks later"
+        ],
+        "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+        "quote": "Fungicides with the active ingredient chlorothalonil, copper hydroxide or mancozeb will protect new spruce needles from infection by Rhizosphaera. Make one application in spring or early summer when the new needles have grown to half their mature length. Make a second application 3 to 4 weeks later."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "visual_symptoms.diagnostic_features",
+          "canonical_value": "Tiny brown to black spots called pycnidia emerging from stomata on the needles (NMSU)",
+          "alternative_value": "Tiny black bumps arranged in neat rows on infected needles (UMN)",
+          "alternative_source_url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+          "note": "Both sources describe the same spore-producing structures with complementary detail; NMSU selected as canonical for the more specific term (pycnidia / emerging from stomata) while UMN contributes the diagnostic 'neat rows' arrangement."
+        },
+        {
+          "field": "treatments",
+          "canonical_value": "Fungicides containing chlorothalonil, copper hydroxide or mancozeb (UMN)",
+          "alternative_value": "Bordeaux mixture 8-8-100 or fungicides containing chlorothalonil or thiophanate-methyl (NMSU)",
+          "alternative_source_url": "https://pubs.nmsu.edu/_h/H163/index.html",
+          "note": "Sources recommend overlapping but non-identical fungicide active ingredients; both timing instructions agree (first at half-developed needles, second ~3-4 weeks later). All listed actives merged into the union of treatments."
+        }
+      ]
+    },
+    {
+      "disease_name": "Ceropsora Weirii",
+      "pathogen_scientific_name": {
+        "value": "Ceropsora weirii",
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
+        "quote": "is caused by the fungal pathogen Ceropsora weirii (formerly Chrysomyxa ) (Aime and McTaggart 2020)",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
+        "quote": "is caused by the fungal pathogen Ceropsora weirii"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
+        "quote": "In late winter to early spring, orange to yellow spots or bands appear on infected one year old needles (Sinclair and Lyon 2005)."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "In late winter to early spring, orange to yellow spots or bands appear on infected one year old needles; as conditions warm, the bands swell into waxy, yellow-orange pustules containing masses of spores, and infected needles may become rusty brown and drop during the summer.",
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
+          "quote": "In late winter to early spring, orange to yellow spots or bands appear on infected one year old needles (Sinclair and Lyon 2005). At first, they may be hard to detect, but when conditions warm and bud break approaches, the bands swell to produce waxy, yellow-orange pustules containing masses of spores."
+        },
+        "diagnostic_features": {
+          "value": "Waxy, yellow-orange pustules containing masses of spores form on one year old needles and erupt at bud break to release yellow-orange spores; after sporulation needles may become rusty brown and drop during the summer, with severity often highest on lower canopy branches.",
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
+          "quote": "the bands swell to produce waxy, yellow-orange pustules containing masses of spores. At bud break, the pustules erupt and the yellow-orange spores are dispersed by wind and rain"
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Fungicide application to newly developing needles shortly after budbreak can suppress new infections",
+          "Copper-based fungicides, such as copper hydroxide and copper octanoate, should be effective against C. weirii",
+          "Removing infected one year old needles to reduce inoculum in late winter or early spring prior to the release of spores"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
+        "quote": "Fungicide application to newly developing needles shortly after budbreak can suppress new infections. Copper-based fungicides, such as copper hydroxide and copper octanoate, should be effective against C. weirii ."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Ceropsora weirii",
+          "alternative_value": "Chrysomyxa weirii",
+          "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
+          "note": "Source notes the pathogen was formerly classified in genus Chrysomyxa; reclassified to Ceropsora per Aime and McTaggart 2020. No NCBI/MycoBank taxonomy validation was provided to confirm the currently accepted name."
+        }
+      ]
+    },
+    {
+      "disease_name": "Spruce Needle Rusts",
+      "pathogen_scientific_name": {
+        "value": "",
+        "url": "",
+        "quote": "",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
+        "quote": "This disease is caused by fungi from several species of the genus Chrysomyxa ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
+        "quote": "Young needles on infected trees turn yellow."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Current-year needles at the tips of branches turn yellow, and severely infected trees take on a tan to pinkish look; pale orange to white tube-like projections release powdery orange spores.",
+          "url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
+          "quote": "Needles at the tips of the branches (current year needles) turn yellow. Pale orange to white, tube-like projections appear on infected needles in July or August and release powdery, orange spores. Severely infected trees may have a tan to pinkish look."
+        },
+        "diagnostic_features": {
+          "value": "Pale orange to white, tube-like projections appear on infected needles in July or August and release powdery, orange spores; some species can cause witches' brooms (clumps of small weak branches arising from one point on a large branch).",
+          "url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
+          "quote": "Pale orange to white, tube-like projections appear on infected needles in July or August and release powdery, orange spores. ... Some species of rust can cause witches' brooms. These are clumps of small weak branches arising from one point on a large branch."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Reduce moisture on needles by redirecting lawn sprinklers away from spruce trees",
+          "Space spruce trees to allow good air circulation around the tree",
+          "Prune out and destroy witches' brooms present in the tree",
+          "Remove all alternate host plants within 1000 feet of spruce trees"
+        ],
+        "url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
+        "quote": "Reduce moisture on needles by redirecting lawn sprinklers away from spruce trees. Space spruce trees to allow good air circulation around the tree. Prune out and destroy witches' brooms present in the tree. Remove all alternate host plants within 1000 feet of spruce trees."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    }
+  ],
+  "crop": "Blue Spruce",
+  "generated_date": "2026-06-10"
+}

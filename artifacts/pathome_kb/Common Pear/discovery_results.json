@@ -1,0 +1,89 @@
+{
+  "crop": "Common Pear",
+  "candidate_sources": [
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0261219414000064",
+      "title": "Identification and characterization of Colletotrichum fructicola causing black spots on young fruits related to bitter rot of pear (Pyrus bretschneideri Rehd.) in China",
+      "snippet": "Initial symptoms were light brown, slightly sunken lesions that enlarged over time, becoming dark brown and forming sunken or saucer-shaped depressions that extended toward the fruit core in a V-shaped pattern. Bitter rot of pear caused by Colletotrichum fructicola.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Bitter rot of pear",
+        "anthracnose",
+        "black spot"
+      ]
+    },
+    {
+      "url": "https://extension.unh.edu/resource/bitter-rot",
+      "title": "Bitter Rot - UNH Extension",
+      "snippet": "Bitter rot is a fungal disease that primarily causes fruit rot of apples and pears, caused by several species in the genus Colletotrichum including those in the C. gloeosporioides and C. acutatum species complexes. Lesions start as small, circular, sunken spots that expand rapidly under warm, humid conditions, darkening and developing concentric rings.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bitter rot",
+        "anthracnose"
+      ]
+    },
+    {
+      "url": "https://www.pubs.ext.vt.edu/SPES/spes-614/spes-614.html",
+      "title": "Apple Bitter Rot and Glomerella Leaf Spot Caused by Colletotrichum Species | VCE Publications | Virginia Tech",
+      "snippet": "Bitter rot is caused by the fungi Colletotrichum gloeosporioides, C. acutatum and Glomerella cingulata. These pathogens can cause diseases in other tree fruits such as pear, banana, citrus, avocado, papaya, mango, olive and peach. On fruit, lesions are light to dark brown and progress to the core in a V-shaped pattern; acervuli form concentric rings releasing orange conidia.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bitter rot",
+        "Glomerella leaf spot",
+        "anthracnose"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-fru-20",
+      "title": "Bitter Rot of Apple | Ohioline - The Ohio State University",
+      "snippet": "Bitter rot is caused by the fungi Colletotrichum gloeosporioides, C. acutatum and Glomerella cingulata. These pathogens can cause diseases in other tree fruits such as pear, banana, citrus, avocado, papaya, mango, olive and peach. Disease development is favored by high temperatures (80-90F) and high relative humidity (80-100%).",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Bitter rot",
+        "anthracnose"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/fruit/fact-sheets/pear-ipm-pear-scab",
+      "title": "Pear IPM - Pear Scab : Fruit : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Pear scab is caused by the fungus Venturia pirina. Symptoms on leaves and fruit are similar to those of apple scab; however, pear scab lesions can also occur on shoots. Olive-black spots expand with leaf growth and infected twigs show small blister-like infections. Chemical control using contact and systemic fungicides beginning in spring, plus sanitation, is recommended.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pear scab",
+        "Venturia pirina",
+        "apple scab"
+      ]
+    },
+    {
+      "url": "https://netreefruit.org/pears/diseases/pear-scab",
+      "title": "Pear Scab : New England Tree Fruit Management Guide : UMass Amherst",
+      "snippet": "In spring, sooty spots with a soft velvet look appear on young fruit, stems, calyx lobes, or flower petals; young infected fruit frequently drop or are misshapen. Pseudothecia overwinter in infected leaves and ascospores are released with spring rainfall. Sanitation by flail mowing leaves may reduce overwintering inoculum, but chemical control is typically necessary.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Pear scab",
+        "Venturia pyrina"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/pear-pyrus-spp-scab",
+      "title": "Pear (Pyrus spp.)-Scab | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Pear scab, caused by Venturia pyrina, produces olive-black velvety lesions on leaves, fruit, and shoots. Late-season fruit infections (about 2 weeks before harvest) may appear as pinpoint scab spots in storage a month or more later. Management combines orchard sanitation with fungicide applications targeting primary infection in spring.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Pear scab",
+        "Venturia pyrina"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/pear-scab/",
+      "title": "Pear - Scab - Cooperative Extension: Insect Pests, Ticks and Plant Diseases - University of Maine Cooperative Extension",
+      "snippet": "Pear scab (Venturia pirina) often appears first on undersides of leaves as small yellow or chlorotic spots; on fruit these patches are larger and more obvious, turning black and soft. On fruit, scab shows up as irregular patches on the skin, which can develop into areas of widespread rot.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pear scab",
+        "Venturia pirina"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

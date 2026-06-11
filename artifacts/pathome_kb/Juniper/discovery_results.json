@@ -1,0 +1,219 @@
+{
+  "crop": "Juniper",
+  "candidate_sources": [
+    {
+      "url": "https://web.extension.illinois.edu/hortanswers/detailProblem.cfm?PathogenID=14",
+      "title": "Phomopsis Tip Blight of Juniper (Phomopsis juniperovora) - Hort Answers - University of Illinois Extension",
+      "snippet": "Phomopsis tip blight occurs during late spring and fall when the weather is cool and wet. New growths of succulent branch tips are most susceptible. The disease is caused by the fungus Diaporthe juniperivora (formerly Phomopsis juniperovora). Management includes pruning diseased branches in dry weather, avoiding overhead irrigation, planting resistant varieties, and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phomopsis tip blight of juniper",
+        "Diaporthe juniperivora",
+        "Phomopsis juniperovora"
+      ]
+    },
+    {
+      "url": "https://hort.extension.wisc.edu/articles/phomopsis-tip-blight/",
+      "title": "Phomopsis Tip Blight â€“ Wisconsin Horticulture",
+      "snippet": "Phomopsis tip blight is a common fungal disease of juniper caused by Phomopsis juniperovora (teleomorph Diaporthe juniperivora). Symptoms begin as yellow spots on new needles, progressing to reddish-brown then ash-gray dieback of shoot tips. Management emphasizes sanitation, pruning, water management, and fungicide protection of new growth.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phomopsis tip blight",
+        "Phomopsis juniperovora"
+      ]
+    },
+    {
+      "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/phomopsis-blight-of-junipers.html",
+      "title": "Phomopsis Blight of Junipers | Oklahoma State University",
+      "snippet": "Phomopsis blight of juniper, caused by the fungus Phomopsis juniperovora, infects immature scale leaves and needles, progressing into shoots and causing tip dieback. Most affected species include eastern red cedar, Rocky Mountain juniper, and creeping juniper. Includes symptoms, disease cycle, and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phomopsis blight of juniper",
+        "Phomopsis juniperovora"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/juniper-juniperus-spp-twig-blight",
+      "title": "Juniper (Juniperus spp.)-Twig Blight | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Twig blight of juniper caused by Phomopsis juniperovora (and Kabatina). Infection of young shoots causes tip dieback with lesions at the junction of healthy and diseased tissue. Provides cultural and chemical management recommendations.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Twig blight",
+        "Phomopsis juniperovora",
+        "Kabatina"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Phomopsis_blight_of_juniper",
+      "title": "Phomopsis blight of juniper - Wikipedia",
+      "snippet": "Phomopsis blight of juniper is a foliar disease first discovered in 1917, caused by the fungus Phomopsis juniperovora (teleomorph Diaporthe juniperivora). It affects many gymnosperms in the cypress family, especially eastern red cedar, savin, creeping, and Rocky Mountain junipers. Infection starts on immature scale leaves and progresses into shoots.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Phomopsis blight of juniper",
+        "Phomopsis juniperovora",
+        "Diaporthe juniperivora"
+      ]
+    },
+    {
+      "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/kabatina-and-phomopsis-tip-blight",
+      "title": "Kabatina and Phomopsis Tip Blight | Yard and Garden | Iowa State University Extension",
+      "snippet": "Kabatina blight is caused by the fungus Kabatina juniperi. Shoots infected show no symptoms during the season they are infected; the following spring infected foliage turns pale green to yellow, then brown and dies. Black pinhead-sized fruiting structures appear at the base of dead twigs. Kabatina requires a small wound to invade the plant. Prune and dispose of infected parts to reduce inoculum; resistant varieties are most effective.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Kabatina blight",
+        "Kabatina tip blight",
+        "Phomopsis tip blight"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/kabatina-blight",
+      "title": "Kabatina Blight : Landscape : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Kabatina juniperi kills juniper tissue at least one year old, entering through wounds caused by insects, mechanical injury, or weather. The terminal 2 to 6 inches of diseased branches first turn dull green, then red or yellow, with small ash gray to silver lesions dotted with small black fruit bodies at the base of discolored tissue. Plant resistant species, provide spacing, avoid overhead irrigation; there are no effective fungicide controls.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Kabatina blight",
+        "Kabatina juniperi"
+      ]
+    },
+    {
+      "url": "https://web.extension.illinois.edu/hortanswers/detailProblem.cfm?PathogenID=20",
+      "title": "Kabatina Blight (Kabatina juniperi) - Hort Answers - University of Illinois Extension",
+      "snippet": "Kabatina blight, caused by Kabatina juniperi, affects branch tips of juniper. Symptoms appear earlier in the year (February and March), with tips changing color to yellow or brown. If the canker is on last year's (one year old) growth then it is Kabatina, distinguishing it from Phomopsis blight.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Kabatina blight",
+        "Kabatina juniperi",
+        "Phomopsis blight"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/HPIPM:Kabatina_juniperi",
+      "title": "Juniper Tip Blights (Kabatina juniperi) - Bugwoodwiki",
+      "snippet": "Kabatina juniperi causes tip blight of juniper. Dieback begins on shoot tips and progresses toward the main stem; tips turn yellow or brown and drop foliage in late spring. Small black fruiting bodies appear on at least one-year-old tissues. The fungus overwinters in infected branches and enters through wounds.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Juniper tip blight",
+        "Kabatina juniperi",
+        "Phomopsis juniperovora"
+      ]
+    },
+    {
+      "url": "https://hnr.k-state.edu/extension/horticulture-resource-center/common-pest-problems/documents/Juniper%20-%20Cercospora%20Needle%20Blight.pdf",
+      "title": "Problem: Cercospora Needle Blight of Juniper",
+      "snippet": "Cercospora needle blight is caused by the fungus Cercospora sequoiae var. juniperi and is potentially destructive in established juniper plantings. Symptoms appear in late summer and fall on inner branch needles and toward the lower portion of the tree. Needles turn dull brown or red and eventually drop, with small fuzzy or hairy spore-bearing fungal structures forming on the dead needles. Proper tree spacing promotes good air movement and rapid drying of foliage; fungicide applications may be necessary on susceptible junipers.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cercospora needle blight",
+        "Cercospora sequoiae var. juniperi"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/juniper-juniperus-spp-leaf-blight",
+      "title": "Juniper (Juniperus spp.)-Leaf Blight | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Leaf blight and needle cast of juniper caused by fungi including Cercospora sequoiae var. juniperi and Lophodermium juniperinum. Needles turn brown and drop, leaving inner crown bare; small black fruiting bodies form on dead needles. Management includes improving air circulation, pruning, and fungicide applications.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Leaf blight",
+        "Needle cast",
+        "Cercospora sequoiae var. juniperi",
+        "Lophodermium juniperinum"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/HPIPM:Cercospora_sequoiae",
+      "title": "Cercospora Needle Blight of Junipers - Bugwoodwiki",
+      "snippet": "Cercospora Needle Blight of Junipers caused by Cercospora sequoiae. The fungus begins by infecting the oldest needles on lower branches inside the plant; disease development progresses upward and outward as needle browning spreads. Needles of spur branches turn brown and die in late summer, leaving the inner crown devoid of foliage. Includes hosts, signs, symptoms, disease cycle and management.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Cercospora needle blight",
+        "Cercospora sequoiae"
+      ]
+    },
+    {
+      "url": "https://hgic.clemson.edu/factsheet/juniper-diseases-insect-pests/",
+      "title": "Juniper Diseases & Insect Pests | Home & Garden Information Center",
+      "snippet": "Cercospora Twig Blight is caused by the fungus Cercospora sequoiae var. juniperi and begins by infecting the oldest needles located on the lower branches inside of the plant, with disease development progressing upward and outward as needle browning spreads. Plant junipers in areas with good air circulation to promote rapid drying of the needles.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cercospora twig blight",
+        "Cercospora sequoiae var. juniperi",
+        "Juniper diseases"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/PMG/GARDEN/PLANTS/DISEASES/crypblight.html",
+      "title": "Pestalotiopsis Tip Blight and Dieback, or Cryptomeria Blight / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Pestalotiopsis tip blight causes conifer foliage to turn yellow, then dark brown, beginning at the tip, with lower, older foliage most affected. Tiny black fruiting bodies (acervuli) develop on affected foliage and resemble short black strings. The pathogen (Pestalotiopsis/Pestalotia funerea) infects junipers, arborvitae, cypress, hemlock and other conifers weakened by stress; spores spread by splashing rain. Management: avoid crowding, provide good growing conditions, prune dead foliage when dry and disinfect blades.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pestalotiopsis Tip Blight",
+        "Pestalotiopsis Dieback",
+        "Cryptomeria Blight"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/pieris-pestalotiopsis-leaf-spot/",
+      "title": "Pestalotiopsis Leaf Spot - University of Maine Cooperative Extension",
+      "snippet": "Leaf spots tend to be tan to gray and are often the result of previous damage such as freeze injury, scorching or mechanical wounds. Dark, disc- or cushion-shaped acervuli form under the plant epidermis, which then splits open to reveal the fungal fruiting structures of Pestalotiopsis. The fungus usually requires wounds for penetration and infection necessary for disease development.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pestalotiopsis Leaf Spot"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/node/2163/print",
+      "title": "Arborvitae (Thuja occidentalis)-Tip Blight | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Tips of conifer branches, particularly Leyland cypress, arborvitae and juniper, turn brown to grayish in color. Infected bark may be covered in fungal fruiting structures giving the tissue a black sooty appearance. Pestalotiopsis is often a secondary, opportunistic pathogen colonizing tissue weakened by other stresses or pathogens. Cultural management includes improving plant vigor and pruning out affected tips.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tip Blight",
+        "Pestalotiopsis"
+      ]
+    },
+    {
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8494",
+      "title": "Pest categorisation of Pestalotiopsis disseminata - 2023 - EFSA Journal",
+      "snippet": "EFSA pest categorisation of Pestalotiopsis disseminata, a fungal pathogen reported causing leaf spot, leaf blight, shoot blight and dieback on a range of woody hosts including conifers such as juniper. The pathogen forms dark acervuli producing characteristic appendaged conidia and is associated with disease of stressed or wounded plants.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Pestalotiopsis leaf spot",
+        "leaf blight",
+        "shoot blight",
+        "dieback"
+      ]
+    },
+    {
+      "url": "https://yardandgarden.extension.iastate.edu/article/1997/5-23-1997/phomopsis.html",
+      "title": "Phomopsis Tip Blight of Juniper | Yard and Garden - Iowa State University Extension",
+      "snippet": "Phomopsis tip blight of juniper caused by Phomopsis juniperovora. First symptoms appear in spring as die-back of new shoot growth, with new growth changing from light yellow green to red brown to ash gray. Infection starts on immature scale leaves or needles, progressing into underlying shoots and causing a small lesion (canker) at the junction of healthy and diseased tissues. Management includes planting resistant cultivars and fungicide applications.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phomopsis tip blight",
+        "Phomopsis blight of juniper"
+      ]
+    },
+    {
+      "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=14",
+      "title": "Phomopsis Tip Blight of Juniper (Phomopsis juniperovora) - Hort Answers, University of Illinois Extension",
+      "snippet": "Phomopsis Tip Blight of Juniper is caused by the fungus Phomopsis juniperovora. The primary symptom is browning and dieback of new shoot tips. Yellow spots at the shoot tips of young needles are the first symptoms. Sunken dark lesions called cankers form at the junction of live and dead wood. The fungus overwinters on previously blighted twigs and bark.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phomopsis tip blight of juniper",
+        "Phomopsis juniperovora"
+      ]
+    },
+    {
+      "url": "https://extension.umd.edu/resource/juniper-twig-blights",
+      "title": "Juniper Twig Blights | University of Maryland Extension",
+      "snippet": "Juniper twig blights caused by the fungi Phomopsis and Kabatina are two of the most damaging diseases to junipers. Phomopsis blight is caused by Phomopsis juniperovora. The primary symptom is browning and dieback of new shoot tips in spring. Blighted twigs first turn pale green and are brown by early summer. Shoots are usually killed back to the previous season's wood, forming sunken cankers at the junction of live and dead wood.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Juniper twig blights",
+        "Phomopsis blight",
+        "Phomopsis juniperovora",
+        "Kabatina blight"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

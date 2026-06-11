@@ -1,0 +1,167 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Gray Molds",
+      "pathogen_scientific_name": {
+        "value": "Botrytis cinerea",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/hydrangea-bud-flower-blight",
+        "quote": "Botrytis cinerea , a fungus.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=33",
+        "quote": "Fungal Disease Gray Mold [Trees and Shrubs]"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem",
+          "Whole plant"
+        ],
+        "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=33",
+        "quote": "This fungus disease can cause twig blights on stems, buds, flowers, fruit and leaves"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Disease often begins as tiny, almost translucent spots that turn brown and water-soaked; infected fruit, leaves, petals, and succulent stems become dark, soft, and wilted and die. On flowers, water-soaked petal spots develop reddish-brown blotches and buds may die before opening. Under high humidity a thin to thick grayish web of mycelium develops on diseased tissue, hence the name gray mold.",
+          "url": "https://ipm.ucanr.edu/PMG/GARDEN/PLANTS/DISEASES/botrytis.html",
+          "quote": "Disease often presents initially as tiny, almost translucent spots. These infected spots turn brown and appear water soaked. Infected fruit, leaves, petals, and succulent stems become dark, soft, and wilted and die."
+        },
+        "diagnostic_features": {
+          "value": "A fuzz of grayish-brown fungal sporulation (a thin to thick grayish web of mycelium) develops on dead/diseased tissue under humid conditions, giving rotted tissue a fuzzy or woolly appearance. When inner or middle petals develop brown lesions first, gray mold is the likely cause; on thin leaves (e.g. redbud) lesions are light brown to brown and irregular, while on fleshier leaves (e.g. rhododendron) concentric rings of different shades of brown may be visible.",
+          "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=33",
+          "quote": "When inner petals or the middle of the petals develop brown lesions first, gray mold is probably the reason. On leaves that are relatively thin such as redbud, lesions are light brown to brown and irregular. On fleshier leaves such as rhododendrons, concentric rings of different shades of brown may be visible."
+        },
+        "look_alikes": {
+          "value": [
+            "Azalea petal blight",
+            "rhododendron petal blight",
+            "camellia petal blight",
+            "old age",
+            "thrips damage"
+          ],
+          "url": "https://ipm.ucanr.edu/PMG/GARDEN/PLANTS/DISEASES/botrytis.html",
+          "quote": "Azalea petal blight and rhododendron petal blight and camellia petal blight when these hosts are involved can resemble Botrytis blight."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Control the environment and keep plants healthy by avoiding stresses such as plants staying too wet or too dry, chemical or mechanical injury, and too little or too much fertilizer.",
+          "Improve air circulation and sunlight; adequately space plants and prune canopies, and cut back nearby and overhead vegetation.",
+          "Avoid overhead or late-evening watering; use drip or microsprinkler irrigation and avoid wetting foliage.",
+          "Especially keep open flowers with many petals dry.",
+          "Maintain low humidity in the greenhouse and avoid sunburn by planting in shadier locations.",
+          "Avoid wounding leaves or shoots.",
+          "Use good sanitation: dead-head dying flowers, remove and dispose of old blossoms, infected plant tissue, crop debris (especially spent blooms), fallen leaves, and weeds; do not practice sanitation when plants are wet.",
+          "Destroy infected tissue by burning where permitted, or bury it under at least a foot of soil.",
+          "Apply fungicides to help prevent or reduce leaf, fruit, and stem infections; chlorothalonil, thiophanate-methyl, or triforine can be applied before disease develops.",
+          "Tank-mix and/or alternate products from different groups with different modes of action to prevent buildup of resistant fungi.",
+          "Labeled chemical products include Astun (Group 7), Bonide Fung-onil Multi-purpose Fungicide, Broadform (Group 7+11), Chipco 26019 FLO (Group 2), Daconil Weather Stik (Group M5), Decree 50 WDG (Group 17), mancozeb-based Fore 80WP/Protect DF (Group M3), OHP 6672 4.5 F (Group 1), Orkestra (Group 7+11), Pageant (Group 7+11), Palladium (Group 9+12), Phyton 27 (Group M1), Postiva (Group 3+7), Spectro 90 WDG (Group 1+M5), and Terraguard SC (Group 3).",
+          "Biological control: BotryStop (Ulocladium oudemansii U3 strain) at 2 to 4 lb/A, kept refrigerated before use."
+        ],
+        "url": "https://ipm.ucanr.edu/PMG/GARDEN/PLANTS/DISEASES/botrytis.html",
+        "quote": "Provide proper cultural care to keep plants vigorous. Use good sanitation practices and modify environmental conditions where feasible. Remove and dispose of old blossoms, declining green plant tissue, plant debris, fallen leaves, and weeds. Avoid wetting foliage, such as by using drip or microsprinkler irrigation. Improve air circulation around plants. ... Where gray mold has been a problem, the fungicides chlorothalonil , thiophanate methyl , or triforine can be applied before disease develops."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "disease_name",
+          "canonical_value": "Gray Mold (Botrytis Blight)",
+          "alternative_value": "Hydrangea-Bud and Flower Blight",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/hydrangea-bud-flower-blight",
+          "note": "PNW Handbooks names this Botrytis cinerea disease 'Hydrangea-Bud and Flower Blight'; merged with the Illinois ('Gray Mold') and UC IPM ('Botrytis Blight, or Gray Mold') records as the same disease/pathogen, with the bud-and-flower-blight name representing the hydrangea-specific manifestation."
+        },
+        {
+          "field": "look_alikes",
+          "canonical_value": "Azalea petal blight; rhododendron petal blight; camellia petal blight (UC IPM)",
+          "alternative_value": "old age; thrips damage (Illinois Extension)",
+          "alternative_source_url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=33",
+          "note": "Sources cite different confusable conditions; all are retained in the merged look_alikes list."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Botrytis cinerea",
+          "alternative_value": "Botrytis cinerea and other Botrytis/Botryotinia species",
+          "alternative_source_url": "https://ipm.ucanr.edu/PMG/GARDEN/PLANTS/DISEASES/botrytis.html",
+          "note": "Illinois ('and other species') and UC IPM ('Various Botrytis and Botryotinia species ... most commonly Botrytis cinerea') note multiple causal species; Botrytis cinerea selected as canonical. No NCBI/MycoBank taxonomy validation was provided, so taxonomy_validated is false."
+        }
+      ]
+    },
+    {
+      "disease_name": "Cercospora Fungi",
+      "pathogen_scientific_name": {
+        "value": "Cercospora hydrangeae",
+        "url": "https://wiki.bugwood.org/Cercospora_hydrangeae",
+        "quote": "Scientific Name Cercospora hydrangeae",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://wiki.bugwood.org/Cercospora_hydrangeae",
+        "quote": "This fungus causes circular to angular leaf spots about 1/8 to 1/4 inch (3-6 mm) in diameter."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://www.lsuagcenter.com/articles/page1502825252460",
+        "quote": "Cercospora leaf spot is a foliar disease that rarely, if ever, kills the target plant."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Circular to angular leaf spots about 1/8 to 1/4 inch (3-6 mm) in diameter, brown to gray with dark reddish brown, purplish, or nearly black borders, which may converge to cover much of the leaf surface. On Bigleaf and panicle hydrangea the spots first appear on the bottom leaves; on oakleaf hydrangea the infected areas are more angular and dark brown to purple.",
+          "url": "https://wiki.bugwood.org/Cercospora_hydrangeae",
+          "quote": "This fungus causes circular to angular leaf spots about 1/8 to 1/4 inch (3-6 mm) in diameter. These are brown to gray in color with dark reddish brown, purplish, or nearly black borders. The spots may converge and cover much of the leaf surface."
+        },
+        "diagnostic_features": {
+          "value": "Spots roughly 1/8 to 1/4 inch in diameter with a pale or light brown center and dark margins (a frogeye pattern); the disease progresses from the bottom foliage to the top, and spores may eventually become visible as dark specks within the leaf spots.",
+          "url": "https://www.lsuagcenter.com/articles/page1502825252460",
+          "quote": "These diseased areas are roughly 1/8 to 1/4 inch in diameter with a pale or light brown center and dark margins. The disease will then progress from the bottom foliage to the top. This pattern of leaf spotting is sometimes referred to as frogeye leaf spot."
+        },
+        "look_alikes": {
+          "value": [
+            "Corynespora cassicola (Corynespora leaf spot)"
+          ],
+          "url": "https://wiki.bugwood.org/Cercospora_hydrangeae",
+          "quote": "Diagnostic primer sets have been developed to help distinguish Cercospora sp. from Corynespora cassicola , which produces very similar symptoms on hydrangea."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Remove any diseased leaves that have fallen from the plant and hand-pick highly infected leaves from the plant.",
+          "Discard diseased leaves in the trash; do not put them in the compost bin.",
+          "Practice good sanitation to remove overwintering fungal inoculum; dispose of plant debris and infected leaves in the autumn.",
+          "Provide adequate plant spacing to increase air movement and sunlight penetration so leaves dry quickly.",
+          "Avoid practices that prevent leaves from drying quickly, such as overhead and excess watering; if foliage must be wetted, irrigate in the early morning.",
+          "Placement of hydrangeas in areas of lower light intensity may reduce infection.",
+          "Fertilize lightly with a nitrogen fertilizer to encourage new disease-free growth.",
+          "Apply labeled fungicides at the first onset of symptoms, e.g. chlorothalonil (Bonide Fung-onil, Ortho MAX, Daconil), azoxystrobin, mancozeb, myclobutanil, or thiophanate-methyl, strictly according to the label."
+        ],
+        "url": "https://wiki.bugwood.org/Cercospora_hydrangeae",
+        "quote": "Fungicides that are labeled for use on hydrangea to control Cercospora leaf spot include azoxystrobin, chlorothalonil, mancozeb, myclobutanil, and thiophanate-methyl. These should be applied at the first onset of symptoms and continued as needed, strictly according to the label instructions."
+      },
+      "confidence": "high",
+      "num_sources": 2,
+      "conflicts": [
+        {
+          "field": "look_alikes",
+          "canonical_value": "Corynespora cassicola (Corynespora leaf spot)",
+          "alternative_value": "frogeye leaf spot",
+          "alternative_source_url": "https://www.lsuagcenter.com/articles/page1502825252460",
+          "note": "LSU labels the symptom pattern 'frogeye leaf spot'; this is a descriptive name for the same disease's spotting pattern rather than a distinct look-alike disease. The Bugwoodwiki Corynespora cassicola comparison is a true symptomatic look-alike."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Cercospora hydrangeae",
+          "alternative_value": "(not provided by source)",
+          "alternative_source_url": "https://www.lsuagcenter.com/articles/page1502825252460",
+          "note": "The LSU AgCenter article does not name the pathogen; canonical name taken from Bugwoodwiki. No NCBI/MycoBank taxonomy validation was provided, so taxonomy_validated is false."
+        }
+      ]
+    }
+  ],
+  "crop": "Hydrangea",
+  "generated_date": "2026-06-10"
+}

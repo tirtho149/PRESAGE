@@ -1,0 +1,143 @@
+{
+  "crop": "Hosta",
+  "candidate_sources": [
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+      "title": "Hosta Virus X - Cooperative Extension: Insect Pests, Ticks and Plant Diseases - University of Maine Cooperative Extension",
+      "snippet": "Hosta Virus X (HVX) is a virus in the group known as potexviruses, which includes potato virus X. This virus only affects hostas. Symptoms include color bleeding from leaf veins, blue or dark green mottling, ringspots, puckering, and tissue death. Viruses spread primarily through transfer of plant sap on tools. There is no cure; remove infected plants and disinfect tools with 10 percent bleach.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Hosta Virus X",
+        "potato virus X"
+      ]
+    },
+    {
+      "url": "https://purduelandscapereport.org/article/hosta-virus-x/",
+      "title": "Hosta Virus X - Purdue Landscape Report",
+      "snippet": "Hosta Virus X causes light or dark green discolorations along leaf veins, green and yellow mottling of leaf blades, puckering, ringspots, and in some cases wilting and necrosis. The most dramatic diagnostic symptoms include line patterns along veins, mosaic, blotches, and twisting. Spread occurs through infected sap on contaminated tools.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Hosta Virus X"
+      ]
+    },
+    {
+      "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+      "title": "Hosta Virus X â€“ Wisconsin Horticulture",
+      "snippet": "Hosta Virus X (HVX) is caused by a potexvirus first described in 1996 at the University of Minnesota. Symptoms include color bleeding from veins, blue/dark green mottling, ringspots, flecks, and zipper marks; some infected plants are asymptomatic. Diagnosis is by ELISA. There is no cure; infected plants should be removed and destroyed and tools disinfected.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Hosta Virus X"
+      ]
+    },
+    {
+      "url": "https://ipm.cahnr.uconn.edu/wp-content/uploads/sites/3216/2022/12/2020hostavirusxfactsheetfinal.pdf",
+      "title": "Hosta Virus X - UConn Integrated Pest Management Program",
+      "snippet": "Factsheet describing Hosta Virus X (HVX), a potexvirus affecting hosta. Covers symptoms (mottling, ringspots, leaf distortion, necrosis), transmission via sap on tools, ELISA-based diagnosis, and management by removal of infected plants and tool sanitation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Hosta Virus X"
+      ]
+    },
+    {
+      "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hosta-petiole-and-crown-rot",
+      "title": "Hosta Petiole and Crown Rot | Yard and Garden | Iowa State University Extension",
+      "snippet": "Hosta petiole rot is caused by the fungus Sclerotium rolfsii, which lives in the soil and attacks the crown (the part of the plant at the soil line). Symptoms include marginal yellowing and browning of the leaves beginning with the lower leaves; as the disease progresses leaves discolor entirely and wilt, with most leaves completely collapsing. Control measures include digging up and removing hostas showing crown rot symptoms.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Hosta petiole rot",
+        "crown rot",
+        "Southern blight",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/greenhouse-floriculture/photos/hosta-sclerotium-crown-rot",
+      "title": "Hosta - Sclerotium crown rot : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Symptoms begin in hot, humid weather with wilting and discoloration of lower leaves. In a short time the upper leaves also wilt; close inspection shows a soft, brown rot of the base of petioles. Look for fluffy, fan-like white mycelium (often with a distinct 'mushroomy' odor) near the crown on the media or soil to distinguish Sclerotium crown rot.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sclerotium crown rot",
+        "Southern blight",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://hyg.ipm.illinois.edu/article.php?id=232",
+      "title": "Hosta Petiole Blight - Home, Yard and Garden Pest Newsletter (University of Illinois Extension)",
+      "snippet": "Hosta petiole blight (Sclerotium blight / Southern blight), caused by Sclerotium rolfsii, was once thought of as a southern disease because it was not known to survive Midwest winters. Mulching has helped protect the fungus through otherwise killing low temperatures. Research at Iowa State University has shown the pathogen can survive under mulched hostas. The fungus produces sclerotia the size of mustard seeds.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Hosta petiole blight",
+        "Sclerotium blight",
+        "Southern blight",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/SouthernBlight.aspx",
+      "title": "Southern blight, southern stem blight, white mold | APSnet (American Phytopathological Society)",
+      "snippet": "Southern blight, caused by Sclerotium rolfsii (Athelia rolfsii), is a soilborne pathogen with a very wide host range of over 500 plant species. The fungus remains dormant in soil as small round brown- to tan-colored sclerotia (0.5 to 1 mm) and can survive in soil debris and diseased tissue for up to 5 years. Characteristic white mycelial mats and sclerotia develop at infection sites.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Southern blight",
+        "southern stem blight",
+        "white mold",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://www.pubs.ext.vt.edu/SPES/SPES-325/SPES-325.html",
+      "title": "An Overview of Southern Blight, Caused by Sclerotium rolfsii | VCE Publications | Virginia Tech",
+      "snippet": "Sclerotium rolfsii is a soilborne pathogen causing southern blight on a wide range of ornamentals including hosta. The fungus survives as sclerotia and produces fluffy white fan-like mycelium near the crown and soil line. Management includes sanitation, removal of infected plants, mulch management, and crop rotation to non-host crops.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern blight",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://purduelandscapereport.org/article/tobacco-rattle-virus-trv/",
+      "title": "Tobacco Rattle Virus (TRV) - Purdue Landscape Report",
+      "snippet": "Chlorotic mottling and chlorotic and necrotic ringspots are associated with TRV in infected hosta. TRV is in the genus Tobravirus and replicates in the cytoplasm before moving systemically. At least 40% of infected plants are asymptomatic. Transmitted via vegetative propagation, mechanically by sap, and by nematodes.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tobacco Rattle Virus",
+        "TRV",
+        "Tobravirus"
+      ]
+    },
+    {
+      "url": "https://extension.sdstate.edu/tobacco-rattle-virus",
+      "title": "Tobacco Rattle Virus - SDSU Extension",
+      "snippet": "Symptoms of Tobacco Rattle Virus infection in hostas may include mottled or yellowish-green patterns on the leaves, as well as necrotic streaks or ring-like patterns. Management options are limited; removal of infected plants and sanitation of tools are recommended. Transmission is supported by nematodes such as Trichodorus and Paratrichodorus.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tobacco Rattle Virus",
+        "TRV"
+      ]
+    },
+    {
+      "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+      "title": "Tobacco Rattle Virus (TRV) on Ornamental Plants - Virginia Cooperative Extension (Virginia Tech)",
+      "snippet": "TRV affects ornamental plants including hosta, causing chlorotic mottling, ringspots, distorted or stunted growth, and reduced vigor. Use certified virus-free planting material, avoid planting near infected plants or in TRV-infested soil, and manage soil nematode vectors.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tobacco Rattle Virus",
+        "TRV"
+      ]
+    },
+    {
+      "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hosta-infecting-virii",
+      "title": "Hosta-infecting Virii - Iowa State University Yard and Garden",
+      "snippet": "Covers viruses that infect hosta including Hosta Virus X (HVX) and Tobacco Rattle Virus (TRV). Describes chlorotic and necrotic ringspots and mottling symptoms, transmission, and the importance of removing and destroying infected plants.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tobacco Rattle Virus",
+        "TRV",
+        "Hosta Virus X",
+        "HVX"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

@@ -1,0 +1,78 @@
+{
+  "crop": "Balsam Fir",
+  "candidate_sources": [
+    {
+      "url": "http://www.plantpath.cornell.edu/Trees/Firfern.html",
+      "title": "Fir fern rusts â€” Cornell Plant Pathology",
+      "snippet": "Fir-fern rusts are caused by one of as many as 10 species of fungi in the genera Uredinopsis or Milesina. These rusts affect true firs and have ferns as their alternate hosts. They are characterized by cylindrical or tongue-shaped, white fruiting bodies (aecia) which form on yellow or green needles; white spores distinguish them from other fir rusts that produce yellow or orange spores.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "fir-fern rust",
+        "needle rust",
+        "Uredinopsis",
+        "Milesina"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-11-22-0115-BR",
+      "title": "Rust Disease Caused by Uredinopsis osmundae on Balsam Fir, Canaan Fir, White Fir, and Sensitive Fern Reported from Pennsylvania, United States | Plant Health Progress",
+      "snippet": "Report of rust disease caused by Uredinopsis osmundae on balsam fir, Canaan fir, white fir, and sensitive fern. White pustules (aecia) emerge from the lower surface of infected needles; infected needles turn yellow, giving trees a pale, ghostly appearance. The fungus alternates between fir and fern hosts.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "fir-fern rust",
+        "needle rust",
+        "Uredinopsis osmundae"
+      ]
+    },
+    {
+      "url": "https://pubs.extension.oregonstate.edu/pnw659/uredinopsis-needle-rust",
+      "title": "Uredinopsis needle rust â€” Identifying and managing Christmas tree diseases, pests and other problems | OSU Extension Service",
+      "snippet": "The principal fir-fern rust in Oregon is Uredinopsis pteridis, which infects all true fir (noble, grand, concolor, silver, balsam, and Shasta) with bracken fern as the alternate host. Infection occurs in May and June. Management: remove ferns near trees by mowing or herbicide, and apply a registered fungicide (e.g., Banner MAXX, Eagle 20 EW) during or shortly after budbreak.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Uredinopsis needle rust",
+        "fir-fern rust",
+        "Uredinopsis pteridis"
+      ]
+    },
+    {
+      "url": "https://forestrynews.blogs.govdelivery.com/2021/07/06/balsam-fir-needle-rust/",
+      "title": "Balsam Fir Needle Rust",
+      "snippet": "Balsam fir needle rust has white pustules that emerge from the lower surface of infected needles. Infected needles turn yellow; the combination of white pustules and yellow needles gives trees a pale, ghostly appearance from a distance. The fungus produces spores on ferns, its secondary host, in spring and does well in years with a cool, wet spring.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "balsam fir needle rust",
+        "fir-fern rust"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+      "title": "Rhizosphaera needle cast | UMN Extension",
+      "snippet": "Rhizosphaera needle cast is caused by the fungus Rhizosphaera kalkhoffii. Symptoms appear on older needles as a brownish purple discoloration and eventually lead to death while younger needles remain non-symptomatic. Rows of small, black spheres (fruiting bodies) form along the length of infected needles, visible with a 10X hand lens. Affects spruce, balsam fir, and other conifers. Fungicides with chlorothalonil, copper hydroxide or mancozeb protect new needles.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rhizosphaera needle cast"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/publications/5104e/",
+      "title": "Rhizosphaera Needlecast - University of Maine Cooperative Extension",
+      "snippet": "Rhizosphaera needle cast affects balsam fir along with various other conifers including spruce species, pine, Douglas-fir, and western hemlock. The first noticeable symptom is purpling or browning and loss of the innermost needles on lower branches. Spores require 72 hours of moisture on the needles at about 77F to germinate and infect. The fungus overwinters in infected needles on the tree and on the ground; spores are released throughout the growing season and spread by wind and splashing water.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rhizosphaera needle cast",
+        "Rhizosphaera needlecast"
+      ]
+    },
+    {
+      "url": "https://hortnews.extension.iastate.edu/rhizosphaera-needle-cast",
+      "title": "Rhizosphaera Needle Cast | Yard and Garden - Iowa State University Extension",
+      "snippet": "Rhizosphaera needle cast is caused by the fungus Rhizosphaera kalkhoffii. Current-year needles become infected in May and June, but symptoms do not appear until late summer, fall, or the following spring, when infected needles turn a distinctive lavender or purplish-brown color. The disease begins in the lower portion of the tree and works its way up. True firs such as white fir and balsam fir can be affected. Preventative fungicide applied when needles are half mature length, with a second application 3 to 4 weeks later.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rhizosphaera needle cast"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

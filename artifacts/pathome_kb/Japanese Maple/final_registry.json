@@ -1,0 +1,196 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Anthracnose",
+      "pathogen_scientific_name": {
+        "value": "Aureobasidium apocryptum",
+        "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+        "quote": "Scientific Name Aureobasidium apocryptum",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+        "quote": "Aureobasidium apocryptum is an asexual fungus that causes a common non-fatal leaf blight on many species of maple."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-anthracnose",
+        "quote": "Usually there are vein-associated lesions, discrete necrotic spots, and/or irregular necrotic blotches or blights. ... Twig cankers or lesions also can develop where fungi can overwinter."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Symptoms are characterized by dark-colored, irregularly-shaped, angular spots or blotches that occur primarily along the midrib, primary veins and leaf margins; they appear in late spring or summer as scattered, sharply defined reddish-brown dead areas on or near leaf veins, may enlarge and coalesce to kill large areas of leaves, cause twisting/crinkling/malformation, and severely diseased trees can defoliate early.",
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+          "quote": "in general the symptoms are characterized by dark-colored, irregularly-shaped, angular spots or blotches that occur primarily along the midrib, primary veins and leaf margins."
+        },
+        "diagnostic_features": {
+          "value": "Lesions occur primarily along the midrib, primary veins and leaf margins (narrow, purplish-black streaks on Norway maple; large brown blotches on sugar maple; tan or black lesions on Japanese maple); acervuli (spore pads) form within leaf spots and blotches. A. apocryptum is distinguished from other maple pathogens by its formation of one-celled, colorless conidia in groups of four to eight on the tips of short, broad conidiophores.",
+          "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+          "quote": "A. apocryptum can be distinguished from other pathogens of maple by its formation of one-celled, colorless conidia in groups of four to eight on the tips of short, broad conidiophores."
+        },
+        "look_alikes": {
+          "value": [
+            "leaf scorch caused by drought and heat injury",
+            "Discula campestris",
+            "Discula umbrinella",
+            "Monostichella histeroidea",
+            "Phyllosticta minima",
+            "angular spots due to Kabatiella sp."
+          ],
+          "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+          "quote": "Symptoms of maple anthracnose caused by A. apocryptum may be confused with leaf scorch caused by drought and heat injury. ... Other fungi that cause anthracnose on maple, Discula campestris , Discula umbrinella , and Monostichella histeroidea , also produces acervuli, but the condia are quite distinct. ... Yet another pathogen of maple, Phyllosticta minima , produces pycnidia."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Avoid overhead irrigation/splashing water and time irrigation to minimize the time leaves are wet, reducing free moisture on the foliage",
+          "Rake up, remove and destroy fallen/infected leaves (primary source of inoculum; prevents over-wintering)",
+          "Prune out infected shoots and remove/destroy twig cankers during dormant pruning",
+          "Maintain tree vigor through adequate fertilization, watering, mulching and pruning; water and fertilize defoliated trees; apply lime if soil pH is too low",
+          "Avoid dense plantings in nurseries",
+          "Apply labeled fungicides to protect susceptible/nursery trees, with the first application at or just before bud break and continued through spring",
+          "Labeled active ingredients/products: copper hydroxide + mancozeb, thiabendazole, mancozeb (Fore 80WP Rainshield, Protect DF), propiconazole (Banner MAXX, Tebuject 16), thiophanate-methyl (Cleary's 3336 EG, OHP 6672), chlorothalonil (Daconil Weather Stik, Bonide Fung-onil), Armada 50 WDG, Spectro 90 WDG, Tourney EZ"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+        "quote": "avoid overhead irrigation of ornamental maples to reduce free moisture on the foliage. Infected leaves are the primary source of inoculum and should be removed from the site. If the disease is severe, infected shoots should be pruned out... The following products are labeled for use against anthracnose of maple: copper hydroxide + mancozeb, thiabendazole, mancozeb and propiconazole. The first application should be made at or just before bud break"
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Aureobasidium apocryptum",
+          "alternative_value": "Discula sp. and Aureobasidium apocryptum",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-anthracnose",
+          "note": "Maple anthracnose is caused by several foliar fungi; PNW lists Discula sp. alongside A. apocryptum. UMass notes the synonym Kabatiella apocrypta and also lists Discula campestris and Colletotrichum gleosporoides as causal agents. No taxonomy validation data was supplied, so taxonomy_validated is false."
+        },
+        {
+          "field": "affected_parts",
+          "canonical_value": "Foliar, Stem",
+          "alternative_value": "Foliar",
+          "alternative_source_url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+          "note": "Bugwood describes A. apocryptum as a foliar pathogen only; UMass and PNW note twig/shoot involvement under high disease pressure."
+        }
+      ]
+    },
+    {
+      "disease_name": "Phomopsis Cankers And Twig Blights",
+      "pathogen_scientific_name": {
+        "value": "",
+        "url": "",
+        "quote": "",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phomopsis-canker",
+        "quote": "Cankering fungi like Phomopsis attack the phloem, cambium, and outer sapwood of woody plants (Sinclair and Lyon 2005)."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phomopsis-canker",
+        "quote": "Phomopsis can cause cankers of young shoots, small stems and branches, and occasionally primary branches and the main trunk of trees and shrubs (Sinclair and Lyon 2005)."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Infected woody plants show thinning canopies, browning and prematurely shedding foliage, scattered branch dieback, and eruptive cankers on the bark, sometimes with sunken sap-stained lesions and oozing sap; in many cases the only symptoms are leaf wilting and canopy dieback.",
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phomopsis-canker",
+          "quote": "Typical symptoms of infection include thinning canopies, browning and prematurely shedding foliage, scattered branch dieback, and eruptive cankers on the bark. There may also be sunken lesions on shoots and branches with sap-stained bark, along with cracking, splitting, and sloughing bark or oozing sap near the canker site (Sinclair and Lyon 2005)."
+        },
+        "diagnostic_features": {
+          "value": "After establishing in the canopy, the pathogen produces an abundance of small, black-colored pads of fungal tissue (pycnidia) that erupt through the bark to release cream-colored spore tendrils (cirrhi).",
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phomopsis-canker",
+          "quote": "After Phomopsis has established within the canopy, it produces an abundance of small, black-colored pads of fungal tissue (pycnidia) that erupt through the bark to release cream-colored spore tendrils (cirrhi)."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Minimize stresses that predispose woody plants to infection and maintain high plant vigor",
+          "Irrigate susceptible trees and shrubs at regular intervals during extended dry periods to minimize drought stress",
+          "Fertilize if soil nutrients are lacking and mulch the root zone to retain soil moisture",
+          "Limit mechanical wounds (e.g. string trimmers) and avoid needless damage to canopy and roots",
+          "Avoid excessive pruning, especially on recently transplanted plants, and avoid pruning during wet spring periods",
+          "Perform regular sanitation pruning to remove dead twigs; prune cankered stems/branches at least 6-12 inches away from blighted tissue and remove diseased material from the site",
+          "Sanitize pruning tools after working with infected or suspected plants",
+          "Apply registered fungicides in spring to protect newly developing tissues (azoxystrobin, captan, copper salts of fatty and rosin acids, copper hydroxide, mancozeb, metconazole, phosphites, propiconazole, tebuconazole, thiophanate-methyl); avoid application on actively flowering plants to protect pollinators"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phomopsis-canker",
+        "quote": "Pruning of cankered stems and branches, at least 6-12 inches away from the blighted tissue (if possible), and removal of the diseased material from the site is the best management practice. ... Fungicides registered for use against Phomopsis include: azoxystrobin captan, copper salts of fatty and rosin acids, copper hydroxide, mancozeb, metconazole, phosphites, propiconazole, tebuconazole, and thiophanate-methyl."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Powdery Mildew",
+      "pathogen_scientific_name": {
+        "value": "Phyllactinia marissallii",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
+        "quote": "Phyllactinia marissallii , a fungus that attacks only maple.",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
+        "quote": "Phyllactinia marissallii , a fungus that attacks only maple."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
+        "quote": "A white fungal growth often occurs with small black fruiting bodies (chasmothecia), on the undersides of mature leaves."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "A white fungal growth occurs with small black fruiting bodies (chasmothecia) on the undersides of mature leaves; white colonies/patches can cover the leaf surface.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
+          "quote": "A white fungal growth often occurs with small black fruiting bodies (chasmothecia), on the undersides of mature leaves."
+        },
+        "diagnostic_features": {
+          "value": "Phyllactinia sp. typically have very sparsely growing mycelia and colonies can be difficult to detect, while Sawadaea sp. have more obvious robust colonies; S. tulansnei has white mycelium in irregular, discrete, scattered spots or almost continuously on the upper leaf surfaces and on some petioles.",
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
+          "quote": "Phyllactinia sp. typically have very sparsely growing mycelia and colonies can be difficult to detect while Sawadaea sp. have more obvious robust colonies. S. tulansnei was described as having white mycelium present in irregular, discrete, scattered spots or almost continuously on the upper surfaces of leaves and also was present on some petioles."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Apply fungicides preventively before symptoms develop, at 7- to 14-day intervals (shorter when conditions favor disease); alternate or tank-mix products from different FRAC groups to manage resistance",
+          "Note most fungicides are not labeled for trees used for syrup production",
+          "Registered chemical products: Armada 50 WDG, Avelyo, Banner MAXX, Eagle 20 EW, Heritage, Insignia SC, Magus, Myclobutanil 20 EW T&O, Orkestra, Seido, Spectracide Immunox, Tourney EZ, Trinity, and Safer Brand Garden Fungicide (0.4% sulfur)",
+          "Biological control: Cease or Rhapsody (Bacillus subtilis strain QST 713) at 2 to 8 quarts/100 gal water, registered for Japanese Maple"
+        ],
+        "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
+        "quote": "Chemical control Most of these fungicides are not labeled for use on trees to be used for syrup production. Fungicides will do best when used before symptoms develop. Few materials have good eradicant activity. Use at 7- to 14-day intervals"
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    }
+  ],
+  "crop": "Japanese Maple",
+  "generated_date": "2026-06-10"
+}

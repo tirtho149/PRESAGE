@@ -1,0 +1,80 @@
+{
+  "crop": "Common Lilac",
+  "candidate_sources": [
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/lilac-anthracnose/",
+      "title": "Lilac - Anthracnose - Cooperative Extension: Insect Pests, Ticks and Plant Diseases | University of Maine Cooperative Extension",
+      "snippet": "University of Maine Cooperative Extension page dedicated to lilac anthracnose. The pathogen causing lilac anthracnose is Colletotrichum sp. Anthracnose diseases are usually characterized by leaf spots and blight; a diagnostic sign is pink to orange sporulation oozing from lesions under close inspection.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://blogs.ifas.ufl.edu/leeco/2018/02/03/factsheet-anthracnose/",
+      "title": "Fact Sheet: Anthracnose Disease of Ornamental Plants: A Pictorial | UF/IFAS Extension Lee County",
+      "snippet": "Anthracnose of ornamental plants is caused by Colletotrichum (and Gloeosporium) species. Symptoms include leaf spots and blight on foliage; pink to orange spore masses ooze from lesions. Management emphasizes nursery hygiene, removing infected debris, and avoiding overhead irrigation since spores spread by water splash.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/plant-diseases/lilac-issues-and-diseases",
+      "title": "Lilac issues and diseases | UMN Extension",
+      "snippet": "Overview of common lilac diseases. Syringa vulgaris, the common lilac, is reportedly the most affected species by fungal leaf diseases. Spores of fungal leaf diseases can persist for several years on plant debris; cleaning up fallen leaves helps reduce reinfection next season. Covers fungal leaf spots, bacterial blight, powdery mildew, and other disorders.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose",
+        "Bacterial blight",
+        "Powdery mildew",
+        "Leaf spot",
+        "Verticillium wilt"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
+      "title": "Leaf Spot Diseases of Floricultural Crops Caused by Fungi and Bacteria | UMass Amherst Greenhouse & Floriculture",
+      "snippet": "Fact sheet on leaf spot and anthracnose diseases of floricultural and ornamental crops caused by fungi (including Colletotrichum/anthracnose) and bacteria, with symptom descriptions and management practices such as sanitation and reducing leaf wetness.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose",
+        "Leaf spot diseases"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/lilac-syringa-spp-leaf-spots",
+      "title": "Lilac (Syringa spp.)-Leaf Spots | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Several fungal leaf spot diseases affect lilacs including Cladosporium sp., anthracnose, and others. Describes causal pathogens, symptoms, and cultural/chemical management for leaf spots of lilac.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cladosporium leaf spot",
+        "Anthracnose",
+        "Leaf spots"
+      ]
+    },
+    {
+      "url": "https://yardandgarden.extension.iastate.edu/how-to/late-season-lilac-foliar-diseases",
+      "title": "Late Season Lilac Foliar Diseases | Yard and Garden (Iowa State University Extension)",
+      "snippet": "Late-season fungal foliar diseases of lilac including Cladosporium sp., Pseudocercospora, and Septoria; covers symptoms (leaf spots, blight, premature leaf drop) and management such as sanitation and air circulation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cladosporium leaf spot",
+        "Pseudocercospora leaf spot",
+        "Septoria leaf spot"
+      ]
+    },
+    {
+      "url": "https://plantpath.caes.uga.edu/content/dam/caes-subsite/plant-pathology/extension-pdfs/PDL-fungi-cladosporium.pdf",
+      "title": "Plant Disease Library: Cladosporium | University of Georgia Extension Plant Pathology",
+      "snippet": "Cladosporium is commonly a saprophyte but can be a pathogen causing scab diseases, leaf spots and blights. Produces spores on the underside of leaves; elongated brown, velvety lesions form along leaf veins, and infected leaves drop prematurely.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cladosporium leaf spot",
+        "Cladosporium scab",
+        "Cladosporium blight"
+      ]
+    }
+  ],
+  "search_queries_run": []
+}

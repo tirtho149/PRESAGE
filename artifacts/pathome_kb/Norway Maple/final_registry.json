@@ -1,0 +1,130 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Anthracnose",
+      "pathogen_scientific_name": {
+        "value": "Aureobasidium apocryptum",
+        "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+        "quote": "Scientific Name Aureobasidium apocryptum",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.uvm.edu/extension/news/common-spring-disease-maple-anthracnose",
+        "quote": "a common spring fungal disease called maple anthracnose"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar",
+          "Stem"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+        "quote": "Symptoms on twigs and buds are less common on maples but under high disease pressure, tender shoots may be killed."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Dark-colored, irregularly-shaped, angular spots or blotches occur primarily along the midrib, primary veins and leaf margins; lesions may enlarge and coalesce, killing large areas of leaves, and in severe cases defoliation and twig dieback can occur.",
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+          "quote": "in general the symptoms are characterized by dark-colored, irregularly-shaped, angular spots or blotches that occur primarily along the midrib, primary veins and leaf margins"
+        },
+        "diagnostic_features": {
+          "value": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins; on sugar maple, large brown blotches along primary veins; on Japanese maple, tan or black lesions along primary veins and leaf margins. The fungus can be distinguished microscopically by one-celled, colorless conidia in groups of four to eight on the tips of short, broad conidiophores.",
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+          "quote": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins. On sugar maple, lesions occur along primary veins and appear as large, brown blotches. On Japanese maple, lesions occur along primary veins and leaf margins and the lesions can appear both tan or black in color."
+        },
+        "look_alikes": {
+          "value": [
+            "leaf scorch caused by drought and heat injury",
+            "Discula campestris",
+            "Discula umbrinella",
+            "Monostichella histeroidea",
+            "Phyllosticta minima",
+            "oak anthracnose (Quercus sp.)",
+            "ash anthracnose (Fraxinus sp.)",
+            "sycamore anthracnose (Plantanus sp.)"
+          ],
+          "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+          "quote": "Symptoms of maple anthracnose caused by A. apocryptum may be confused with leaf scorch caused by drought and heat injury. ... Other fungi that cause anthracnose on maple, Discula campestris , Discula umbrinella , and Monostichella histeroidea , also produces acervuli, but the condia are quite distinct. ... Yet another pathogen of maple, Phyllosticta minima , produces pycnidia."
+        }
+      },
+      "treatments": {
+        "value": [
+          "Rake/remove and destroy fallen infected leaves (primary inoculum source) to reduce the pathogen and prevent overwintering",
+          "Avoid overhead irrigation and splashing water to reduce free moisture on foliage and limit spread",
+          "If disease is severe, prune out infected shoots",
+          "Maintain tree vigor through adequate fertilization, watering during drought, mulching and pruning",
+          "Apply lime if soil pH is too low",
+          "Apply labeled fungicides to protect susceptible/nursery trees (e.g. copper hydroxide + mancozeb, thiabendazole, mancozeb, propiconazole), with the first application at or just before bud break and continued through spring"
+        ],
+        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+        "quote": "avoid overhead irrigation of ornamental maples to reduce free moisture on the foliage. Infected leaves are the primary source of inoculum and should be removed from the site. If the disease is severe, infected shoots should be pruned out"
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "affected_parts",
+          "canonical_value": "[\"Foliar\", \"Stem\"]",
+          "alternative_value": "[\"Foliar\"]",
+          "alternative_source_url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+          "note": "UVM and UMass report both foliar and stem/twig/shoot involvement under high disease pressure; Bugwoodwiki describes A. apocryptum strictly as a foliar pathogen."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Aureobasidium apocryptum",
+          "alternative_value": "Several fungal pathogens (genus not specified)",
+          "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+          "note": "Maple anthracnose is caused by several fungal pathogens; Bugwoodwiki names A. apocryptum as one of them. UVM and UMass do not name a single causal species. No NCBI/MycoBank validation was supplied to confirm the accepted name."
+        }
+      ]
+    },
+    {
+      "disease_name": "Cristulariella Leaf Spot",
+      "pathogen_scientific_name": {
+        "value": "Cristulariella sp.",
+        "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/cristulariella-leaf/",
+        "quote": "Cristulariella sp.",
+        "taxonomy_validated": false
+      },
+      "type_of_disease": {
+        "value": "",
+        "url": "",
+        "quote": ""
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/cristulariella-leaf/",
+        "quote": "Maple &#8211; Cristulariella Leaf Spot"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "A leaf spot disease of maple (including variegated maple and boxelder), with conidia bearing globose cells observed on infected leaves.",
+          "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/cristulariella-leaf/",
+          "quote": "Sample 2: Leaf spot closeup Sample 2: Variegated maple infected leaves Sample 1: Boxelder Infected leaves"
+        },
+        "diagnostic_features": {
+          "value": "Conidia with globose cells",
+          "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/cristulariella-leaf/",
+          "quote": "Sample 1: Conidia with globose cells"
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "confidence": "low",
+      "num_sources": 1,
+      "conflicts": []
+    }
+  ],
+  "crop": "Norway Maple",
+  "generated_date": "2026-06-10"
+}

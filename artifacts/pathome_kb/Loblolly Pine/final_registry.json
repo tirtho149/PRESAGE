@@ -1,0 +1,195 @@
+{
+  "diseases": [
+    {
+      "disease_name": "Pine Needle Rusts",
+      "pathogen_scientific_name": {
+        "value": "Coleosporium asterum",
+        "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
+        "quote": "Pine needle rust is caused by the fungus Coleosporium asterum .",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
+        "quote": "Pine needle rust is caused by the fungus Coleosporium asterum ."
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
+        "quote": "Yellow-to-orange spots or bands appear on green needles in spring. Needles turn partly or completely yellow."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "On pines, yellow-to-orange spots or bands appear on green needles in spring, needles turn yellow, and tiny raised white tubes form and break open to release powdery orange spores. On asters, yellow leaf spots appear on the upper leaf surface with raised orange spore-filled pustules and powdery yellow-orange spores on the lower leaf surface.",
+          "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
+          "quote": "Yellow-to-orange spots or bands appear on green needles in spring. Needles turn partly or completely yellow. In late spring to early summer, tiny, raised, white tubes form on needles breaking open to release powdery, orange spores."
+        },
+        "diagnostic_features": {
+          "value": "Reddish-orange spots on pine needles with swelling pads of fungal tissue that rupture to release flattened white spore-bearing structures (aecia); because the base of the needles remains green, infected needles are often retained in the canopy. On aster and goldenrod hosts, orange spots and blotches appear.",
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/pine-needle-rust",
+          "quote": "Because the base of the needles remains green, infected needles are often retained in the canopy. Aeciospores disperse to infect the foliage of aster and goldenrod (among other Asteraceae), producing orange spots and blotches a few weeks later."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Pine needle rust is a minor stress on the tree and no management is required.",
+          "Increase the vigor of infected trees by watering during dry conditions and mulching to conserve water.",
+          "Removal of alternative hosts such as wild or cultivated species of aster (Aster), goldenrod (Solidago) and several other members of the daisy or aster family (Asteraceae) from the immediate area of the trees will reduce infections of pines.",
+          "In areas with large numbers of wild asters, plant conifers resistant to needle rusts like spruce, white pine or balsam fir.",
+          "Avoid planting members of the Asteraceae (specifically asters and goldenrods) near two- and three-needle pines.",
+          "Chemical management to control rust diseases is notoriously difficult and is not recommended.",
+          "Provide good air circulation; do not crowd plants.",
+          "Practice good weed control so lower needles are not kept moist for extended periods of time.",
+          "For high-value trees, remove and destroy fallen needles that collect in branch crotches and on the ground.",
+          "Protect trees in late summer when telia are seen on alternate hosts.",
+          "Armada 50 WDG at 9 oz/100 gal water. Do not use a silicone-based surfactant. Not for nursery or greenhouse use. Group 3 + 11 fungicide. 12-hr reentry.",
+          "Heritage at 1 to 4 oz/100 gal water plus a non-silicone-based wetter sticker. Registered for conifers including Christmas trees. Group 11 fungicide. 4-hr reentry."
+        ],
+        "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
+        "quote": "Pine needle rust is a minor stress on the tree and no management is required. Increase the vigor of infected trees by watering during dry conditions and mulching to conserve water. Removal of alternative hosts such as wild or cultivated species of aster ( Aster ), goldenrod ( Solidago )&nbsp;and several other members of the daisy or aster family (Asteraceae) from the immediate area of the trees will reduce infections of pines. In areas with large numbers of wild asters, plant conifers resistant to needle rusts like spruce, white pine or balsam fir."
+      },
+      "confidence": "high",
+      "num_sources": 3,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Coleosporium asterum",
+          "alternative_value": "Coleosporium",
+          "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/pine-needle-rust",
+          "note": "UMass identifies the pathogen only to genus (Coleosporium); UMN and PNW Handbook specify the species Coleosporium asterum. No NCBI/MycoBank validation was supplied."
+        },
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Coleosporium asterum",
+          "alternative_value": "Coleosporium pacificum; Coleosporium jonesii",
+          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/pine-pinus-spp-needle-rusts",
+          "note": "PNW Handbook reports three rust fungi causing pine needle rust depending on region/alternate host: C. asterum (aster, goldenrod), C. pacificum (tarweed), and C. jonesii (Ribes spp.)."
+        }
+      ]
+    },
+    {
+      "disease_name": "Leptographium Root Disease",
+      "pathogen_scientific_name": {
+        "value": "Leptographium procerum",
+        "url": "https://www.forestpests.org/gfcbook/leptographium.html",
+        "quote": "to assess the relationship between Leptographium procerum and southern pine beetle infestations",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://www.forestpests.org/gfcbook/leptographium.html",
+        "quote": "The fungus causes the disease known as white pine root decline"
+      },
+      "affected_parts": {
+        "value": [
+          "Root",
+          "Foliar"
+        ],
+        "url": "https://www.forestpests.org/gfcbook/leptographium.html",
+        "quote": "High Leptographium incidence was also statistically related to decreased resin flow, poor root condition, radial growth reduction, foliar transparency and crown density."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Trees show thin, often tufted crowns that are slightly off-colored.",
+          "url": "https://www.forestpests.org/gfcbook/leptographium.html",
+          "quote": "Many of the southern pine beetle infested stands in the two counties had trees with thin often tufted crowns that were slightly off-colored"
+        },
+        "diagnostic_features": {
+          "value": "",
+          "url": "",
+          "quote": ""
+        },
+        "look_alikes": {
+          "value": [
+            "littleleaf disease caused by Phytophthora cinnamomi"
+          ],
+          "url": "https://www.forestpests.org/gfcbook/leptographium.html",
+          "quote": "The symptoms closely resembled those associated with littleleaf disease caused by Phytophthora cinnamomi"
+        }
+      },
+      "treatments": {
+        "value": [],
+        "url": "",
+        "quote": ""
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": []
+    },
+    {
+      "disease_name": "Wood Decay Fungi",
+      "pathogen_scientific_name": {
+        "value": "Porodaedalea pini",
+        "url": "https://edis.ifas.ufl.edu/fr425",
+        "quote": "Red Heart Disease in Pines caused by Porodaedalea (Phellinus) pini in Florida",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://edis.ifas.ufl.edu/fr425",
+        "quote": "Porodaedalea pini , more commonly known by its former names Phellinus pini and Fomes pini , is one of the most important wood-decaying fungi in pine forests"
+      },
+      "affected_parts": {
+        "value": [
+          "Stem"
+        ],
+        "url": "https://edis.ifas.ufl.edu/fr425",
+        "quote": "the presence of conks (fungal fruiting bodies) on the stem, usually emerging from branch stubs or knots of the infected trees"
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "The infected pine shows reddish-brown decay with \"white pocket\" in the heartwood, and shelf-like, hoof-shaped conks (fruiting bodies) on the stem emerging from branch stubs or knots.",
+          "url": "https://edis.ifas.ufl.edu/fr425",
+          "quote": "The infected pine tree shows the typical symptom of reddish-brown decay, with &quot;white pocket&quot; in the heartwood (Figure 1) causing considerable loss of heartwood volume"
+        },
+        "diagnostic_features": {
+          "value": "Conks are shelf-like, hoof-shaped, usually 4 to 10 cm in diameter; the upper surface is ridged, red-brown to dark-brown, often showing concentric rings, while the underside is almond-yellow with pores. Within the stem the fungus causes reddish decay in concentric circles (\"red ring rot\") and advanced infection shows spindle-shaped white pockets in the heartwood (\"white pocket rot\").",
+          "url": "https://edis.ifas.ufl.edu/fr425",
+          "quote": "Conks are shelf-like, hoof-shaped, usually 4 to 10 cm (1.6 to 4 inches) in diameter (Figure 2). The upper surface of a conk is ridged, red-brown to dark-brown, often showing concentric rings, while the underside is almond-yellow with pores."
+        },
+        "look_alikes": {
+          "value": [],
+          "url": "",
+          "quote": ""
+        }
+      },
+      "treatments": {
+        "value": [
+          "Infected pines in public areas should be checked frequently and be removed by a certified arborist if the trees are structurally unstable.",
+          "Infected trees should be harvested before the progress of disease has significantly decreased their economic value.",
+          "In pine plantations, infected trees should be removed to reduce spore production.",
+          "Reducing the rotation age need only be considered in areas where the disease occurs frequently.",
+          "Preventing unnecessary injuries to trees while logging and pruning is the most effective way to prevent the disease."
+        ],
+        "url": "https://edis.ifas.ufl.edu/fr425",
+        "quote": "Avoidance of unnecessary wounds is the most effective way to prevent new infections of this disease."
+      },
+      "confidence": "medium",
+      "num_sources": 1,
+      "conflicts": [
+        {
+          "field": "pathogen_scientific_name",
+          "canonical_value": "Porodaedalea pini",
+          "alternative_value": "Phellinus pini; Fomes pini",
+          "alternative_source_url": "https://edis.ifas.ufl.edu/fr425",
+          "note": "The source notes Porodaedalea pini was formerly known as Phellinus pini and Fomes pini. No NCBI/MycoBank validation was supplied to confirm the current accepted name; canonical retained as stated by the source."
+        }
+      ]
+    }
+  ],
+  "crop": "Loblolly Pine",
+  "generated_date": "2026-06-10"
+}
