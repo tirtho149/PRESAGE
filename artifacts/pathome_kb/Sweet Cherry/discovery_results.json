@@ -1,5 +1,84 @@
 {
   "crop": "Sweet Cherry",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/cherry/brown-rot-blossom-and-twig-blight/",
+      "title": "Brown Rot Blossom and Twig Blight / Cherry / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "The first symptom of blossom blight is necrosis of the anthers, which proceeds to the floral tube, ovary and peduncle, and infections may extend into and girdle the twig, with infected flowers becoming affixed to the twig in a gummy mass as they wilt and turn brown. Small cankers on twigs form below infected spurs; gum may be present at the base of flowers. Infection is favored by rain or dew during bloom and moderate temperatures (about 58 to 77F).",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Brown Rot Blossom and Twig Blight",
+        "Brown Rot"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/cherry-prunus-spp-brown-rot-blossom-blight-fruit-rot",
+      "title": "Cherry (Prunus spp.)-Brown Rot Blossom Blight and Fruit Rot | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Fungi survive year to year on infected twigs, branches, old flower parts, or mummified fruit, with conidia produced on infected plant debris when temperature is above 40F. Infected flower parts turn light brown and may develop areas of buff-color (M. fructicola) or gray (M. laxa) spores. Wind and rain blow spores to healthy blossoms in spring. Infection does not occur below 50F.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Brown Rot Blossom Blight",
+        "Brown Rot Fruit Rot",
+        "Brown Rot"
+      ]
+    },
+    {
+      "url": "https://extension.umd.edu/resource/brown-rot-ornamental-cherry-trees",
+      "title": "Brown Rot on Ornamental Cherry Trees | University of Maryland Extension",
+      "snippet": "Brown rot is a fungal disease (Monilinia spp.) affecting cherry and other stone fruit trees. Infected flower parts turn brown and wilt; cankers form on twigs and gum may exude. Fruit develops circular brown spots that expand rapidly until the entire fruit rots, with greyish spore tufts, eventually shriveling into black mummies that remain attached over winter.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Brown Rot"
+      ]
+    },
+    {
+      "url": "https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.species.34749",
+      "title": "Monilinia laxa (blossom blight) - CABI Plantwise Plus Knowledge Bank",
+      "snippet": "Monilinia laxa infects the aerial parts of host plants to give a variety of symptoms, including blighting of blossoms, buds, leaves and twigs; cankers on woody tissues; and rotting of fruits. It is a major cause of brown rot blossom blight and fruit rot in stone fruits including cherry, apricot, peach and plum.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Monilinia laxa",
+        "blossom blight",
+        "brown rot"
+      ]
+    },
+    {
+      "url": "https://treefruit.wsu.edu/crop-protection/disease-management/cherry-powdery-mildew/",
+      "title": "Cherry Powdery Mildew | WSU Tree Fruit | Washington State University",
+      "snippet": "Powdery mildew of sweet and sour cherry is caused by Podosphaera clandestina, an obligate biotrophic fungus. Initial symptoms, often occurring 7 to 10 days after the onset of the first irrigation, are light roughly-circular, powdery looking patches on young, susceptible leaves. In the fall, P. clandestina produces chasmothecia, small and hardened overwintering structures. The key to managing powdery mildew on the fruit is to keep the disease off of the leaves.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cherry Powdery Mildew",
+        "Powdery Mildew"
+      ]
+    },
+    {
+      "url": "https://extension.psu.edu/powdery-mildew-of-cherry-and-plum-in-home-fruit-plantings",
+      "title": "Powdery Mildew of Cherry and Plum in Home Fruit Plantings",
+      "snippet": "Powdery mildew of cherry and plum in home fruit plantings — symptoms, disease cycle, and management of powdery mildew (Podosphaera clandestina) affecting leaves and fruit of cherry and plum.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery Mildew"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/cherry-prunus-spp-powdery-mildew",
+      "title": "Cherry (Prunus spp.)-Powdery Mildew | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Cherry (Prunus spp.)-Powdery Mildew caused by Podosphaera clandestina. Symptoms include white powdery patches on leaves and fruit; includes cultural and chemical control and fungicide recommendations.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Powdery Mildew"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/full/10.1094/PDIS-02-21-0229-RE",
+      "title": "Factors Affecting the Infection of Sweet Cherry (Prunus avium) Fruit by Podosphaera cerasi | Plant Disease",
+      "snippet": "The powdery mildew species infecting sweet and sour cherries was reclassified as Podosphaera cerasi. Mid- and late-season sweet cherry (Prunus avium) cultivars are commonly affected, rendering them unmarketable due to white fungal growth on the cherry surface.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Powdery Mildew"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

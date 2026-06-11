@@ -1,5 +1,135 @@
 {
   "crop": "Rhododendrons And Azaleas",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://ag.umass.edu/landscape/fact-sheets/guignardia-leaf-blotch",
+      "title": "Guignardia Leaf Blotch : Landscape : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "UMass Extension landscape fact sheet dedicated to Guignardia leaf blotch, describing symptoms (leaf spots and blotches), the causal Guignardia fungus, and management on broad-leaved evergreens including rhododendron and azalea.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Guignardia leaf blotch",
+        "Guignardia leaf spot"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phyllosticta-leaf-blotch",
+      "title": "Phyllosticta Leaf Blotch : Landscape : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Phyllosticta species (anamorph/asexual stage of Guignardia) are opportunistic pathogens that cause leaf spots, blotches, marginal leaf blight, and total collapse of infected foliage. The most common hosts of Phyllosticta leaf blotch on broad-leaved evergreens in southern New England include rhododendron/azalea (Rhododendron).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phyllosticta leaf blotch",
+        "Guignardia leaf blotch",
+        "marginal leaf blight"
+      ]
+    },
+    {
+      "url": "https://pddc.wisc.edu/2015/07/24/guignardia-leaf-spot/",
+      "title": "Guignardia Leaf Spot | Plant Disease Diagnostics Clinic - University of Wisconsin-Madison",
+      "snippet": "Guignardia leaf spot is caused by the fungus Guignardia (Phyllosticta) which survives in leaf litter. Symptoms include roughly circular or angular, ¼ to ½ inch dead spots, often with a purple-red border and centers that may fall out; young leaves are more susceptible. Management includes sanitation, improved airflow, base watering, and fungicides (chlorothalonil, copper, mancozeb, thiophanate-methyl).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Guignardia leaf spot"
+      ]
+    },
+    {
+      "url": "https://hort.extension.wisc.edu/articles/guignardia-leaf-spot/",
+      "title": "Guignardia Leaf Spot – Wisconsin Horticulture",
+      "snippet": "Wisconsin Horticulture extension article on Guignardia leaf spot covering the causal fungus, circular/angular dead spots with reddish-purple borders, disease cycle (overwinters in leaf litter), and management through sanitation, cultural practices, and labeled fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Guignardia leaf spot"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/exobasidium-gall-of-rhododendron-azalea",
+      "title": "Exobasidium Gall of Rhododendron and Azalea : Landscape : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Exobasidium vaccinii is a fungus that causes galls on ericaceous plant species. The first symptoms are swollen or puffy portions on newly expanding leaves, shoots, buds or flowers, which turn into galls that range in color from green, silvery white, to pink or red. As galls age, they develop a white surface growth consisting of reproductive spores; eventually the infected part turns brown and shrivels into hard galls. Fungicide sprays are not effective; prevention involves hand picking the galls off before they develop white sporulating surfaces.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Exobasidium gall",
+        "Leaf and flower gall",
+        "Azalea gall"
+      ]
+    },
+    {
+      "url": "https://extension.umd.edu/resource/exobasidium-gall-azalea",
+      "title": "Exobasidium Gall on Azalea | University of Maryland Extension",
+      "snippet": "Exobasidium gall on azalea is caused by the fungus Exobasidium vaccinii. This problem is more common during cool and wet spring weather. Infection is dependent on high humidity and moisture during bud break. While very noticeable, Exobasidium leaf and flower gall will not threaten the health of the plant. Management involves hand picking galls before they develop white sporulating surfaces and avoiding overhead watering in spring.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Exobasidium gall",
+        "Leaf and flower gall"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/PMG/GARDEN/PLANTS/DISEASES/leafgall.html",
+      "title": "Leaf and Flower Gall / Home and Landscape / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Leaf and flower gall on azalea and camellia is caused by Exobasidium fungi. Infected leaves, buds, and flowers become thickened, curled, fleshy, and pale green to white or pinkish galls. A whitish layer of spores forms on the gall surface. Management focuses on removing and disposing of galls before the white spore layer develops.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Leaf and flower gall",
+        "Exobasidium gall"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/azalea-rhododendron-spp-leaf-flower-gall",
+      "title": "Azalea (Rhododendron spp.)-Leaf and Flower Gall | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Azalea (Rhododendron spp.)-Leaf and Flower Gall caused by Exobasidium vaccinii. Symptoms include thickened, curled, fleshy, and distorted leaves and flower parts that are pale green, white, or pink. Galls become covered with a white powdery layer of spores. Cultural and chemical management options are listed.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Leaf and flower gall"
+      ]
+    },
+    {
+      "url": "https://www.uaex.uada.edu/publications/pdf/FSA-7546.pdf",
+      "title": "Azalea Leaf and Flower Gall (FSA-7546) | University of Arkansas Cooperative Extension",
+      "snippet": "Azalea leaf and flower gall is caused by the fungus Exobasidium vaccinii. The fungus causes abnormal swelling and distortion of leaves and flowers, which become thickened and fleshy. Galls develop a white coating of spores before turning brown. Includes symptoms, disease cycle, and management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Azalea leaf and flower gall"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/rhododendron-gray-blight",
+      "title": "Rhododendron-Gray Blight | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Pestalotiopsis sydowiana causes gray blight on rhododendrons. The spot is at first white in the middle with a dark-brown margin; later it becomes a blotch, with small fungal fruiting bodies (acervuli) dotting the spot's surface. Leaf infection usually follows an injury such as sunburn, sunscald, or low temperature. Management: choose a planting site to reduce injury, do not take cuttings from infected plants, use a clean sharp tool.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gray Blight",
+        "Pestalotiopsis leaf spot",
+        "Pestalotiopsis sydowiana"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-08-22-1896-PDN",
+      "title": "First Report of Leaf Spot on Rhododendron delavayi Caused by Pestalotiopsis scoparia in China | Plant Disease",
+      "snippet": "The damaged leaves show gray-white irregular diseased spots with black-brown margins and black conidiomata on the surface, and when severe, leaves fall. Leaf spot disease is a serious problem for rhododendrons, reducing their ornamental value and causing significant economic losses. First report of Pestalotiopsis scoparia causing leaf spot on Rhododendron delavayi.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Pestalotiopsis leaf spot",
+        "Pestalotiopsis scoparia"
+      ]
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0261219424002874",
+      "title": "Pestalotiopsis kenyana causes leaf spot disease on Rhododendron agastum in China - ScienceDirect",
+      "snippet": "Pestalotiopsis kenyana was identified as a pathogen causing leaf spot in Rhododendron agastum, marking the first report of P. kenyana causing leaf spot in this rhododendron species. Damaged leaves show gray-white irregular spots with black-brown margins and black conidiomata.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Pestalotiopsis leaf spot",
+        "Pestalotiopsis kenyana"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS.2000.84.1.100C",
+      "title": "First Report of Azalea Petal Blight Caused by Pestalotiopsis guepini in Argentina | Plant Disease",
+      "snippet": "Pestalotiopsis guepini was reported as the cause of petal blight on azalea flowers in Argentina. Describes symptoms on azalea (Rhododendron spp.) caused by a Pestalotiopsis species.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Azalea Petal Blight",
+        "Pestalotiopsis guepini"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

@@ -1,5 +1,281 @@
 {
   "crop": "Plum and Cherry",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://portal.ct.gov/CAES/Fact-Sheets/Plant-Pathology/Black-Knot-of-Plum-and-Cherry",
+      "title": "Black Knot of Plum and Cherry - Connecticut Agricultural Experiment Station (CAES)",
+      "snippet": "Black knot, caused by the fungus Apiosporina morbosa, is common on many flowering Prunus species. Symptoms are easily recognized as hard, black, elongate swellings or galls on twigs, branches, and trunks. In the spring, the fungus produces infective ascospores which are forcibly ejected during rainy periods.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black Knot",
+        "Apiosporina morbosa"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/publications/5091e/",
+      "title": "Black Knot of Plum and Cherry - University of Maine Cooperative Extension",
+      "snippet": "Black knot is a destructive disease of plum and prune trees in orchards and on wild plums and cherries. Knots are greenish to light brown at first, then turn black and hard. Losses result from dieback of girdled limbs and stunting of growth beyond the knots.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black Knot"
+      ]
+    },
+    {
+      "url": "https://hort.extension.wisc.edu/articles/black-knot-apiosporina-morbosa/",
+      "title": "Black Knot, Apiosporina morbosa – Wisconsin Horticulture",
+      "snippet": "Black knot is a common fungal disease of Prunus species including plum and cherry. Symptoms first appear as light brown swellings on current season's growth that enlarge and turn into hard black galls. Management focuses on pruning infected branches 6 to 8 inches below the knot during dormancy.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black Knot",
+        "Apiosporina morbosa"
+      ]
+    },
+    {
+      "url": "https://extension.psu.edu/stone-fruit-disease-black-knot",
+      "title": "Stone Fruit Disease - Black Knot - Penn State Extension",
+      "snippet": "Black knot is a serious disease of plum and cherry trees caused by the fungus Apiosporina morbosa. The disease produces hard black galls on twigs and branches. Removal of knots and infected wood plus fungicide applications during the growing season help manage the disease.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black Knot",
+        "Apiosporina morbosa"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Dibotryon_morbosum",
+      "title": "Dibotryon morbosum - Wikipedia",
+      "snippet": "Dibotryon morbosum (syn. Apiosporina morbosa) causes black knot and infects Prunus serotina, Prunus persica, Prunus domestica, and Prunus cerasus. Galls vary from 13–305 mm long. Pruning 6–8 inches below symptomatic tissue can reduce infection by 80%.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Black Knot",
+        "Dibotryon morbosum",
+        "Apiosporina morbosa"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/plant-diseases/cherry-leaf-spot",
+      "title": "Cherry leaf spot | UMN Extension",
+      "snippet": "Cherry leaf spot is a fungal disease caused by Blumeriella jaapii that infects cherries and plums. Lesions begin as small, circular red to purplish spots on the upper leaf surface; centers may drop out giving a shot-hole appearance, particularly on plum. Severe infection causes yellowing and premature defoliation. Sanitation (raking fallen leaves) and fungicides from petal fall through midsummer are recommended.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cherry leaf spot",
+        "Blumeriella jaapii"
+      ]
+    },
+    {
+      "url": "https://extension.psu.edu/plum-disease-plum-leaf-spot",
+      "title": "Plum Disease - Plum Leaf Spot | Penn State Extension",
+      "snippet": "Plum leaf spot, caused by Blumeriella jaapii. On plum leaves the spots tend to be smaller and severely infected leaves often have a tattered, shot-hole appearance. Unlike cherry infection, severe plum leaf infection is often followed by a heavy fruit drop. Management includes sanitation and fungicide applications.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Plum leaf spot",
+        "Cherry leaf spot",
+        "Blumeriella jaapii"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/prune-plum-prunus-spp-leaf-spots",
+      "title": "Prune and Plum (Prunus spp.)-Leaf Spots | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Leaf spots of prune and plum caused by Blumeriella jaapii (formerly Coccomyces). Lesions are reddish to purple spots that may coalesce and drop out, giving a shot-hole appearance; severe infection leads to defoliation. Includes pathogen biology and fungicide management recommendations.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Leaf spot",
+        "Blumeriella jaapii",
+        "Coccomyces"
+      ]
+    },
+    {
+      "url": "https://extension.wvu.edu/files/d/ff5a3ae6-26ef-4958-8cda-5bac1a661cf8/cherry-leaf-spot.pdf",
+      "title": "Cherry Leaf Spot Blumeriella jaapii (Rehm) Arx | WVU Extension",
+      "snippet": "Cherry leaf spot caused by Blumeriella jaapii (Rehm) Arx. The pathogen overwinters on the orchard floor in lesions of infected leaves and forms apothecia in spring. Symptoms begin as small reddish to purple circular spots; white to pink spore masses form on leaf undersides during wet conditions. Optimal infection temperature 58–73 F.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cherry leaf spot",
+        "Blumeriella jaapii"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/brown-rot-of-stone-fruits",
+      "title": "Brown Rot of Stone Fruits : Landscape : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Brown rot, caused by Monilinia fructicola, affects stone fruits including peaches, plums, cherries, and apricots. First seen as brown spots on blossoms in spring; fruit rot appears as small circular brown spots that increase rapidly, with greyish spores in tufts, and infected fruit turn into shrivelled black mummies. Management includes removing mummies, pruning for airflow, and fungicide sprays.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Brown rot",
+        "Brown rot of stone fruits",
+        "blossom blight"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/BrownRotStoneFruits_2019.aspx",
+      "title": "Brown Rot of Stone Fruits",
+      "snippet": "APS educational lesson on brown rot of stone fruits caused by Monilinia species (M. fructicola, M. laxa, M. fructigena). Covers symptoms on blossoms, twigs, and fruit, disease cycle, epidemiology, and management of brown rot affecting peaches, plums, cherries, and apricots.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Brown rot",
+        "Brown rot of stone fruits",
+        "blossom blight"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/publications/5090e/",
+      "title": "Brown Rot of Stone Fruits - University of Maine Cooperative Extension",
+      "snippet": "Brown rot is caused by the fungus Monilinia fructicola; in eastern North America M. fructicola predominates. Brown rot first appears as brown spots on blossoms in spring; infected flower parts turn light brown with buff-colored spores. Fruit rot causes entire fruit to rot, forming mummies. Affects peaches, plums, cherries, apricots and other Prunus species.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Brown rot",
+        "Brown rot of stone fruits",
+        "blossom blight"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/cherry-prunus-spp-brown-rot-blossom-blight-fruit-rot",
+      "title": "Cherry (Prunus spp.)-Brown Rot Blossom Blight and Fruit Rot | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Brown rot blossom blight and fruit rot of cherry caused by Monilinia fructicola and Monilinia laxa. Infected flower parts turn light brown and may develop buff-color (M. fructicola) or gray (M. laxa) spores; M. laxa kills blossoms and spurs. Includes management and fungicide recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Brown rot",
+        "Brown rot blossom blight",
+        "fruit rot"
+      ]
+    },
+    {
+      "url": "https://www.canr.msu.edu/news/cherry_leaf_spot_101_understanding_blumeriella_jaapii_biology_and_managemen",
+      "title": "Cherry leaf spot 101: Understanding Blumeriella jaapii biology and management - MSU Extension",
+      "snippet": "Cherry Leaf Spot (Shothole), caused by Blumeriella jaapii (formerly Coccomyces hiemalis), anamorph Phloeosporella padi, is the most important fungal disease of cherry wherever cherries are grown. Symptoms begin as small reddish to purple circular spots on the leaves; on the underside, extruded masses of white to pink spores are produced during wet conditions. Managed with fungicides from petal fall through midsummer and removal of fallen leaves.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cherry leaf spot",
+        "Shothole",
+        "Blumeriella jaapii",
+        "Phloeosporella padi",
+        "Coccomyces hiemalis"
+      ]
+    },
+    {
+      "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/cherry-leaf-spot.aspx",
+      "title": "Cherry Leaf Spot - University of Arkansas Cooperative Extension Service",
+      "snippet": "Cherry Leaf Spot, caused by Blumeriella jaapii (anamorph Phloeosporella padi), affects cherries and plums. Symptoms are small reddish to purple circular spots; on plums the necrotic lesions may drop out giving a shot-hole appearance. Infected leaves fall prematurely, reducing fruit yields and weakening the tree, with complete defoliation in severe cases. Managed with fungicides and destruction of fallen leaves.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cherry Leaf Spot",
+        "Shothole",
+        "Blumeriella jaapii",
+        "Phloeosporella padi"
+      ]
+    },
+    {
+      "url": "https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.species.9412",
+      "title": "Blumeriella jaapii (cherry leaf spot) - CABI Plantwise Plus Knowledge Bank",
+      "snippet": "Datasheet for Blumeriella jaapii, the cause of cherry leaf spot (anamorph Phloeosporella padi; formerly Coccomyces hiemalis). Covers host range including Prunus cerasus, P. avium and plum, lesion development, spore production, disease cycle with overwintering apothecia on fallen leaves, and management.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Blumeriella jaapii",
+        "cherry leaf spot",
+        "Phloeosporella padi",
+        "Coccomyces hiemalis"
+      ]
+    },
+    {
+      "url": "https://www.canr.msu.edu/ipm/diseases/cherry_leaf_spot",
+      "title": "Cherry leaf spot - MSU Integrated Pest Management",
+      "snippet": "Cherry leaf spot (Blumeriella jaapii) IPM profile. Lesions appear as small purple spots that turn red to brown then black; on leaf undersides white to pink spore masses form in wet conditions. The fungus overwinters in dead leaves where apothecia develop and forcibly eject ascospores starting at petal fall. Severe infection causes yellowing and premature defoliation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cherry leaf spot",
+        "Blumeriella jaapii"
+      ]
+    },
+    {
+      "url": "https://extension.psu.edu/powdery-mildew-of-cherry-and-plum-in-home-fruit-plantings",
+      "title": "Powdery Mildew of Cherry and Plum in Home Fruit Plantings (Penn State Extension)",
+      "snippet": "Powdery mildew of cherry and plum, caused by Podosphaera clandestina (cherry) and Podosphaera tridactyla (plum). Symptoms include superficial white, weblike growth on leaves, shoots, or fruit; infected leaves curl upward and new growth becomes pale and distorted. The fungus overwinters as cleistothecia/chasmothecia on bark and twigs. Management includes pruning, sanitation, and timely fungicide applications.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery Mildew",
+        "Podosphaera clandestina",
+        "Podosphaera tridactyla"
+      ]
+    },
+    {
+      "url": "https://treefruit.wsu.edu/crop-protection/disease-management/cherry-powdery-mildew/",
+      "title": "Cherry Powdery Mildew | WSU Tree Fruit | Washington State University",
+      "snippet": "Cherry powdery mildew is caused by Podosphaera clandestina. Initial symptoms, often 7 to 10 days after the onset of first irrigation, are light, roughly-circular, powdery patches on young susceptible leaves. Infected leaves curl upward; new leaves become progressively smaller, pale, and distorted. The fungus overwinters in buds and as chasmothecia on bark. Infections can be severe during years of low rainfall, high humidity, and warm temperatures (70-80°F).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cherry Powdery Mildew",
+        "Podosphaera clandestina"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/plum/powdery-mildew/",
+      "title": "Powdery Mildew / Plum / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Powdery mildew of plum is caused by Podosphaera tridactyla. On young and mature fruit, circular spots of white fungal growth develop; necrotic, scabby areas appear 10 to 15 days after first symptoms. The pathogen overwinters as cleistothecia on shoots, dead leaves, and bark, with spores released during spring rains. Growth is favored by cool, moist nights and warm days. Management includes fungicide applications at full bloom and on a 10- to 14-day interval.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery Mildew",
+        "Podosphaera tridactyla"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/cherry-prunus-spp-powdery-mildew",
+      "title": "Cherry (Prunus spp.)-Powdery Mildew | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Powdery mildew of cherry (Prunus spp.) caused by Podosphaera clandestina. Marked by superficial, white, weblike growth on leaves, shoots, or fruit. As infection develops, chlorosis, curling, and necrosis occur. Includes pathogen biology, cultural control, and chemical management recommendations.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Powdery Mildew",
+        "Podosphaera clandestina"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/prune-plum-prunus-spp-rust",
+      "title": "Prune and Plum (Prunus spp.)-Rust | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Rust of prune and plum is caused by Tranzschelia discolor. Symptoms are yellow-green lesions on the upper leaf surface with pale brown to cinnamon-colored pustules on the underside; severe infection causes premature defoliation. Includes cultural and chemical management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rust",
+        "Tranzschelia discolor"
+      ]
+    },
+    {
+      "url": "https://www.dpi.nsw.gov.au/agriculture/horticulture/stone-fruit/pests,-diseases-and-disorders/rust",
+      "title": "Rust of stone fruit - NSW Department of Primary Industries",
+      "snippet": "Rust of stone fruit (Tranzschelia discolor) affects apricot, peach, nectarine, plum and cherry. Yellow lesions appear on upper leaf surfaces with rust-colored pustules below, leading to premature leaf fall. Best controlled with sulfur or EBDC fungicides in late summer/early fall.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Rust",
+        "Tranzschelia discolor"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-11-20-2379-PDN",
+      "title": "A Molecular Approach Reveals Tranzschelia discolor as the Causal Agent of Rust on Plum and Peach in Brazil | Plant Disease",
+      "snippet": "Molecular and morphological identification confirms Tranzschelia discolor as the causal agent of rust on Japanese plum and peach, a macrocyclic heteroecious rust producing uredinia and telia on Prunus leaves.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Rust",
+        "Tranzschelia discolor"
+      ]
+    },
+    {
+      "url": "https://www.niab.com/sites/default/files/imce_uploads/PressOffice/plum-best-practice-guide-plum-rust.pdf",
+      "title": "The Best Practice Guide to UK Plum Production – Plum Rust",
+      "snippet": "Plum rust is caused by Tranzschelia discolor (= T. pruni-spinosae). Main symptoms are yellow-green lesions on the upper leaf surface forming pale brown pustules on the underside; severe infection causes premature leaf fall and reduced yield. Anemone is the alternate host.",
+      "source_type": "industry",
+      "diseases_mentioned": [
+        "Plum rust",
+        "Tranzschelia discolor",
+        "Tranzschelia pruni-spinosae"
+      ]
+    },
+    {
+      "url": "https://plantdiseasehandbook.tamu.edu/food-crops/fruit-crops/common-sweet-cherry/",
+      "title": "Common Sweet Cherry | Texas Plant Disease Handbook",
+      "snippet": "Lists diseases of sweet cherry including rust caused by Tranzschelia discolor, with notes on symptoms and management for Prunus stone fruits.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rust",
+        "Tranzschelia discolor"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

@@ -1,5 +1,56 @@
 {
   "crop": "Witch-Hazel",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7048172/",
+      "title": "Identification and Characterization of Gonatobotryum apiculatum Causing Leaf Spot and Blight on Sinowilsonia henryi",
+      "snippet": "Gonatobotryum apiculatum was identified as the causal agent of leaf spot and blight on Sinowilsonia henryi (Hamamelidaceae) based on morphology and sequence analyses. Symptoms, pathogen morphology, and characterization of this Gonatobotryum leaf spot disease are described.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Gonatobotryum leaf spot",
+        "Gonatobotryum apiculatum leaf spot and blight"
+      ]
+    },
+    {
+      "url": "https://fungi.ars.usda.gov/",
+      "title": "USDA Fungal Databases - U.S. National Fungus Collections Fungus-Host-Location Database",
+      "snippet": "The Fungus-Host Distributions database includes reports of fungi (including Gonatobotryum spp.) on vascular plants such as Hamamelis (witch-hazel), with distribution by state and country drawn from over 12,000 literature sources.",
+      "source_type": "USDA",
+      "diseases_mentioned": [
+        "Gonatobotryum maculicola on Hamamelis"
+      ]
+    },
+    {
+      "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=54",
+      "title": "Witchhazel Leaf Spot (Phyllosticta hamamelidis) - Hort Answers, University of Illinois Extension",
+      "snippet": "Spots tend to be irregular brown shaped spots with purplish edges on the upper leaf surface; spots may merge to cause larger brown dead areas (blight). Witch-hazel leaf spot/blight is caused by a fungus; the pathogen overwinters on dead plant material and is spread by wind and rain. Management: rake and remove fallen leaves to reduce inoculum.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Witchhazel leaf spot",
+        "Phyllosticta hamamelidis leaf spot/blight"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phyllosticta-leaf-blotch",
+      "title": "Phyllosticta Leaf Blotch | Landscape | Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Phyllosticta hamamelidis often causes leaf blight on the witchhazels. P. hamamelidis produces small, circular leaf spots that can coalesce to produce large necrotic blotches on infected leaves. The fungus produces tiny, black-colored fruiting bodies (pycnidia) within the necrotic tissue and spores are readily disseminated to healthy foliage during wet weather. Phyllosticta leaf blotch of witch-hazel does not seem to impact the long-term health of infected shrubs.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phyllosticta Leaf Blotch",
+        "Phyllosticta hamamelidis",
+        "Phyllosticta leaf blight"
+      ]
+    },
+    {
+      "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/phyllosticta-leaf-spot-of-ornamentals.html",
+      "title": "Phyllosticta Leaf Spot of Ornamentals | Oklahoma State University Extension",
+      "snippet": "Phyllosticta Leaf Spot of Ornamentals. On deciduous shrubs like witch-hazel and hydrangea, high levels of shade, moisture and humidity often drive disease outbreaks. Symptoms include brownish, black or tan spots with circular rings leading to a darker margin; when spots combine they can form larger blotches and cause the leaf to turn yellow and drop.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phyllosticta Leaf Spot",
+        "Phyllosticta hamamelidis"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

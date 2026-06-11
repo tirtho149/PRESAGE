@@ -1,5 +1,60 @@
 {
   "crop": "Serviceberry",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://extension.psu.edu/amelanchier-diseases",
+      "title": "Amelanchier Diseases",
+      "snippet": "Penn State Extension factsheet providing an informational table showing disease name, symptoms, pathogen/cause, and management of Amelanchier (Shadbush, Serviceberry) diseases, including foliar diseases such as Entomosporium leaf spot and anthracnose.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose",
+        "Entomosporium leaf spot",
+        "Rust",
+        "Fire blight"
+      ]
+    },
+    {
+      "url": "https://portal.ct.gov/-/media/caes/fact-sheets/fungal-leaf-spot-diseases-of-amelanchier-caes.pdf",
+      "title": "Fungal Leaf Spot Diseases of Amelanchier",
+      "snippet": "Connecticut Agricultural Experiment Station (CAES) fact sheet describing the fungal leaf spot diseases of Amelanchier (serviceberry), covering symptoms, causal pathogens, disease conditions, and management for leaf spot and anthracnose-type leaf blights.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fungal leaf spot",
+        "Anthracnose",
+        "Entomosporium leaf spot"
+      ]
+    },
+    {
+      "url": "https://portal.ct.gov/CAES/Plant-Pest-Handbook/pphS/Shadbush-Serviceberry-Amelanchier",
+      "title": "Shadbush, Serviceberry (Amelanchier) — Plant Pest Handbook",
+      "snippet": "CAES Plant Pest Handbook entry for Shadbush/Serviceberry (Amelanchier) listing diseases and insect pests of the host, including leaf blights, anthracnose, leaf spot, rust, and fire blight, with brief symptom and management notes.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Anthracnose",
+        "Leaf blight",
+        "Rust",
+        "Fire blight",
+        "Leaf spot"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/amelanchier-powdery-mildew/",
+      "title": "Amelanchier - Powdery Mildew - University of Maine Cooperative Extension",
+      "snippet": "Powdery mildew on serviceberry (Amelanchier) caused by Podosphaera sp. White powdery growth develops on the leaves; pathogens include Erysiphe, Phyllactinia, and Podosphaera. Maintain plant vigor with sound cultural practices; prune when dormant for an open canopy and better airflow.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery Mildew"
+      ]
+    },
+    {
+      "url": "https://www.picturethisai.com/disease/Amelanchier-arborea-Powdery-mildew.html",
+      "title": "How to Treat Powdery Mildew Disease on Common Serviceberry (Amelanchier arborea)?",
+      "snippet": "Powdery mildew on serviceberry produces white powdery spots or patches on the leaves. Prune away and discard diseased growth, improve air circulation through spacing, and spray with horticultural oils or neem oil for severe infections.",
+      "source_type": "industry",
+      "diseases_mentioned": [
+        "Powdery Mildew"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

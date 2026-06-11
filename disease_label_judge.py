@@ -320,8 +320,21 @@ def judge_crop_disease_map(
             with open(output_json, encoding="utf-8") as f:
                 for r in json.load(f):
                     crop = r.get("crop", "")
-                    if crop and not r.get("parse_error"):
-                        saved[crop] = r
+                    if not crop or r.get("parse_error"):
+                        continue
+                    # A record only counts as complete if its disease
+                    # check actually finished. Earlier runs stored a
+                    # failed Layer-2 call as a nested
+                    # {"parse_error": True} / {"error": ...} inside
+                    # disease_check, which the top-level check above
+                    # missed — so those crops were wrongly skipped on
+                    # resume. Re-judge them instead.
+                    dc = r.get("disease_check") or {}
+                    if dc.get("parse_error") or dc.get("error"):
+                        continue
+                    if not dc.get("skipped") and not dc.get("disease_verdicts"):
+                        continue
+                    saved[crop] = r
             if saved:
                 _log(f"Resuming: {len(saved)} crops already completed — skipping.\n")
         except Exception:
@@ -367,6 +380,13 @@ def judge_crop_disease_map(
             json.dump(all_results, f, indent=2)
         if sleep_sec:
             time.sleep(sleep_sec)
+
+    # Always flush the complete result list. The in-loop write only
+    # fires after a freshly-judged crop, so a run whose trailing crops
+    # are all resumed-from-saved would otherwise leave the on-disk JSON
+    # truncated at the last judged crop, dropping the saved tail.
+    with open(output_json, "w", encoding="utf-8") as f:
+        json.dump(all_results, f, indent=2)
 
     _log(f"\n\nJSON report saved to: {output_json}")
     return all_results

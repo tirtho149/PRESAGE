@@ -1,5 +1,255 @@
 {
   "crop": "Peach",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://ask.ifas.ufl.edu/publication/HS1265",
+      "title": "HS1265/HS1265: Fungal Gummosis in Peach",
+      "snippet": "The fungus Botryosphaeria dothidea causes peach fungal gummosis (PFG), a vascular disease. The most noticeable symptom is gum exudate on stems and branches; earliest symptoms appear on young bark of vigorous trees as small blisters at lenticels. Fusicoccum aesculi is the anamorph of B. dothidea. Includes management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fungal gummosis",
+        "Botryosphaeria dothidea",
+        "Botryosphaeria canker",
+        "Peach fungal gummosis (PFG)"
+      ]
+    },
+    {
+      "url": "https://peaches.caes.uga.edu/research/diseases.html",
+      "title": "Diseases - Research - Peaches - University of Georgia",
+      "snippet": "On peach trees, the earliest symptoms appear on young bark of vigorous trees as small blisters, usually at lenticels; infection occurs late in season. Trees two or three years old have sunken cankers on trunk and major branches with large amounts of gummy exudate ('gumballs'). Caused by Botryosphaeria dothidea.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Botryosphaeria canker",
+        "Fungal gummosis",
+        "Botryosphaeria dothidea"
+      ]
+    },
+    {
+      "url": "https://hgic.clemson.edu/factsheet/peach-diseases/",
+      "title": "Peach Diseases | Home & Garden Information Center (Clemson)",
+      "snippet": "Clemson extension factsheet covering peach diseases. Botryosphaeria fungi colonize plant tissue through wounds, growth cracks, leaf scars, and lenticels; gum exudation (gummosis) on a Botryosphaeria-diseased peach branch is a characteristic symptom. Provides management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Botryosphaeria canker",
+        "Gummosis",
+        "Peach diseases"
+      ]
+    },
+    {
+      "url": "https://www.pubs.ext.vt.edu/450/450-726/450-726.html",
+      "title": "Botryosphaeria Canker and Dieback of Trees and Shrubs in the Landscape | VCE Publications | Virginia Tech",
+      "snippet": "The disease is caused by the fungus Botryosphaeria dothidea, which occurs on a wide variety of woody plants including birch, chestnut, peach, and blueberry. Describes canker, dieback, and gummosis symptoms and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Botryosphaeria canker",
+        "Botryosphaeria dieback",
+        "Botryosphaeria dothidea"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-11-22-2539-A",
+      "title": "Genome Sequence Resource of Botryosphaeria dothidea Strain XNHG241, a Causal Agent of Peach Gummosis | Plant Disease (APS)",
+      "snippet": "Botryosphaeria dothidea is the causal agent of peach gummosis, a vascular disease that limits growth and yield of peach orchards in the southeastern United States. APS Plant Disease genome sequence resource article.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Peach gummosis",
+        "Botryosphaeria dothidea"
+      ]
+    },
+    {
+      "url": "https://www.extension.purdue.edu/extmedia/BP/BP-45-W.pdf",
+      "title": "Brown Rot on Tree Fruit in the Home Orchard — Purdue Extension (BP-45-W)",
+      "snippet": "Infection by the brown rot fungus can cause blossom and twig blight, cankers, and fruit rot on all members of the stone fruit group. Diseased flowers wilt and turn brown but remain attached; infection spreads to twigs causing brownish, oval cankers. Infected fruit turn into shriveled black mummies. The fungus over-winters in mummified fruit and twig cankers.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Brown rot",
+        "blossom blight",
+        "twig blight",
+        "fruit rot"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/peach-prunus-persica-brown-rot",
+      "title": "Peach (Prunus persica)-Brown Rot | Pacific Northwest Pest Management Handbooks",
+      "snippet": "The fungi Monilinia fructicola and M. laxa can incite both a blossom blight, a twig and branch dieback, and a fruit rot of several Prunus spp. Fungi survive year to year on infected twigs, branches, old flower parts, or mummified fruit. Wind and rain blow conidia and ascospores to healthy blossoms in spring. Sanitation and alternation of fungicides are key to management.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Brown rot",
+        "blossom blight",
+        "twig dieback",
+        "fruit rot"
+      ]
+    },
+    {
+      "url": "http://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/brownrot.html",
+      "title": "Brown Rot Blossom and Twig Blight | UC Statewide IPM Program (UC IPM)",
+      "snippet": "The first symptoms of brown rot are the browning and withering of blossoms. Gum commonly exudes at the base of infected flowers. Cankers develop on blighted twigs with tan centers and dark margins. During wet weather, gray or tan clumps of velvety spores form on diseased blossoms or cankers. On ripening peaches, small circular spots enlarge or coalesce.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Brown rot",
+        "blossom blight",
+        "twig blight"
+      ]
+    },
+    {
+      "url": "https://extension.psu.edu/peach-disease-scab",
+      "title": "Peach Disease - Scab",
+      "snippet": "Peach scab is caused by the fungus Cladosporium carpophilum (Venturia carpophila). The pathogen overwinters in small twig lesions on last season's shoots. Conidiospores produced in these cankers during early spring are splashed by rain to young fruits and new shoots, producing dark, round spots surrounded by a yellow halo.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Peach scab",
+        "Cladosporium carpophilum",
+        "Venturia carpophila"
+      ]
+    },
+    {
+      "url": "https://ask.ifas.ufl.edu/publication/HS1249",
+      "title": "HS1249/HS1249: Peach Scab",
+      "snippet": "Peach scab is a disease caused by the fungus Cladosporium carpophilum. The pathogen can infect twigs, leaves, and fruits, where it causes lesions that affect fruit quality and marketability and in extreme cases cause cracking of the fruit and premature fruit drop. Small, greenish, circular spots gradually enlarge and deepen in color to black as spore production begins.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Peach scab",
+        "Cladosporium carpophilum"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/MPMI-11-20-0321-A",
+      "title": "Genome Sequence of Venturia carpophila, the Causal Agent of Peach Scab",
+      "snippet": "Venturia carpophila (synonym Fusicladium carpophilum, Cladosporium carpophilum) is the causal agent of peach scab, also called freckle or black scab. The fungus produces dark brown to black freckles or scabs on the fruit surface and overwinters in twig lesions producing conidial inoculum in spring.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Peach scab",
+        "Venturia carpophila",
+        "Fusicladium carpophilum",
+        "Cladosporium carpophilum",
+        "freckle",
+        "black scab"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Venturia_carpophila",
+      "title": "Venturia carpophila - Wikipedia",
+      "snippet": "Venturia carpophila is a fungus in the family Venturiaceae that causes freckle, black spot, peach scab or black scab of peach. The pathogen also has several synonym names, including Fusicladium carpophilum and Cladosporium carpophilum.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Peach scab",
+        "freckle",
+        "black spot",
+        "black scab",
+        "Venturia carpophila",
+        "Fusicladium carpophilum",
+        "Cladosporium carpophilum"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/m/pn7426-1.html",
+      "title": "Peach Leaf Curl / Home and Landscape / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Peach leaf curl first appears in spring as reddish areas on developing leaves. These areas become thickened and puckered, causing leaves to curl and severely distort. The thickened areas turn yellowish and then grayish white, as velvety spores are produced on the surface by the leaf curl fungus. The peach leaf curl pathogen also infects young green twigs and shoots. The fungus overwinters in bark and bud scales.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Peach leaf curl"
+      ]
+    },
+    {
+      "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/peach-leaf-curl",
+      "title": "Peach Leaf Curl | Yard and Garden — Iowa State University Extension",
+      "snippet": "Peach leaf curl, caused by the fungus Taphrina deformans, affects the blossoms, fruit, leaves, and shoots of peaches and nectarines. Infected leaves become thickened, puckered, and distorted, turning reddish then grayish white as spores form. Management includes dormant-season fungicide applications.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Peach leaf curl"
+      ]
+    },
+    {
+      "url": "https://extension.wvu.edu/lawn-gardening-pests/plant-disease/tree-fruit-disease/peach-leaf-curl",
+      "title": "Peach Leaf Curl | Extension | West Virginia University",
+      "snippet": "Peach leaf curl is a disease caused by the fungus Taphrina deformans. Infected leaves pucker, thicken, and curl, taking on a red or purple tint before turning grayish white. The most effective control is a dormant-season fungicide spray (lime sulfur, copper, or chlorothalonil) applied after leaf fall.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Peach leaf curl"
+      ]
+    },
+    {
+      "url": "https://extension.usu.edu/planthealth/uppdl/files/factsheet/peach-leafcurl.pdf",
+      "title": "Peach Leaf Curl Disease — Utah State University Extension Fact Sheet",
+      "snippet": "Peach leaf curl, caused by Taphrina deformans, produces thickened, puckered, distorted leaves with reddish discoloration. The fungus overwinters in bark and bud scales; manage with dormant copper or lime-sulfur fungicide applications.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Peach leaf curl"
+      ]
+    },
+    {
+      "url": "https://gd.eppo.int/taxon/PCMV00/datasheet",
+      "title": "Peach mosaic virus (PCMV00) [Datasheet] - EPPO Global Database",
+      "snippet": "Peach mosaic virus is a member of the genus Trichovirus. The virus is transmitted by the eriophyid mite Eriophyes insidiosus and by grafting. Symptoms include leaf mottling/mosaic, delayed foliation, flower breaking, and misshapen, deformed fruit of reduced quality.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Peach mosaic virus",
+        "Peach mosaic"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS.1998.82.12.1371",
+      "title": "Biology of the Transmission of Peach Mosaic Virus by Eriophyes insidiosus (Acari: Eriophyidae) | Plant Disease (APS)",
+      "snippet": "Peach mosaic virus is vectored by the eriophyid mite Eriophyes insidiosus. Transmission efficiency by single E. insidiosus was as high as 17%, with a minimum inoculation access period of 3 to 6 hours and acquisition access period of 3 days, consistent with a semipersistent transmission mode. Control of the vector mite restricts spread.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Peach mosaic virus"
+      ]
+    },
+    {
+      "url": "https://www.gardeningknowhow.com/edible/fruits/peach/mosaic-virus-of-peach-trees.htm",
+      "title": "What Is Peach Texas Mosaic Virus: Symptoms Of Mosaic Virus On Peaches | Gardening Know How",
+      "snippet": "Peach mosaic virus (also called Peach Texas mosaic virus) causes light yellow to white mottling and mosaic patterns on leaves, delayed and reduced bloom, flower color breaking, and small, bumpy, deformed fruit. The virus is spread by eriophyid mites and by grafting infected wood; management relies on certified clean stock and mite control.",
+      "source_type": "industry",
+      "diseases_mentioned": [
+        "Peach mosaic virus",
+        "Peach Texas mosaic virus"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/peach/shot-hole-disease/",
+      "title": "Shot Hole Disease / Peach / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Shot hole is managed primarily with fungicide treatments to protect buds and twigs from infection. Spores that land on twigs, buds, blossoms, or young leaves require 24 hours of continuous wetness to cause infection. Wilsonomyces carpophilus survives on infected twigs and buds, with spores produced throughout winter and spread by splashing rain and wind.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Shot hole disease",
+        "Coryneum blight"
+      ]
+    },
+    {
+      "url": "https://extension.usu.edu/pests/ipm/notes_ag/fruit-coryneum-blight",
+      "title": "Coryneum Blight (Shothole) - USU Extension",
+      "snippet": "Coryneum blight is caused by the fungal pathogen Wilsonomyces carpophilus, which was in the past known as Stigmina carpophila or Coryneum beijerinckii. The fungus overwinters, for at least two seasons, in cankers and killed buds. Lesions on leaves develop a shot-hole effect when the central portion drops out.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Coryneum blight",
+        "Shothole",
+        "Stigmina carpophila"
+      ]
+    },
+    {
+      "url": "https://extension.usu.edu/planthealth/research/coryneum-or-shothole-blight.pdf",
+      "title": "Coryneum or Shothole Blight - Utah State University Extension",
+      "snippet": "Shot-hole disease caused by Stigmina carpophila is a major limiting factor in stone fruit production, causing foliage shot hole in spring and early summer; fruit-spotting and cankers on limbs and twigs during autumn rains. On leaves the disease forms small purplish spots with a yellow centre, then turning brown and later developing into a shot-hole effect.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Coryneum blight",
+        "Shothole blight",
+        "Stigmina carpophila"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Shot_hole_disease",
+      "title": "Shot hole disease - Wikipedia",
+      "snippet": "Shot hole blight or shot hole disease is a fungal disease of stone fruits including peach, nectarine, apricot, and almond, caused by Wilsonomyces carpophilus (syn. Stigmina carpophila). Infected leaves develop small purple-brown spots whose centers fall out, creating a shot hole appearance.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Shot hole disease",
+        "Coryneum blight",
+        "Wilsonomyces carpophilus",
+        "Stigmina carpophila"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

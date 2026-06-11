@@ -3,71 +3,72 @@
   "candidate_sources": [
     {
       "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/marssonina-leaf-spot/",
-      "title": "Birch - Marssonina Leaf Spot - Cooperative Extension: Insect Pests, Ticks and Plant Diseases - University of Maine Cooperative Extension",
-      "snippet": "Small dark-brown spots, often with yellow margins, develop on young leaves in spring; spots may coalesce to form larger lesions. The fungus Marssonina betulae overwinters in infected leaf debris and shoots; spores are dispersed by wind and rain, infecting new leaves under wet conditions.",
-      "source_type": "extension_factsheet",
-      "diseases_mentioned": [
-        "Marssonina Leaf Spot",
-        "Marssonina betulae"
-      ]
-    },
-    {
-      "url": "https://purdueplantdoctor.com/factsheet/tree-51",
-      "title": "Identify and Manage Marssonina Leaf Spot on trees and shrubs - Purdue Plant Doctor",
-      "snippet": "Initial symptoms are small black spots that enlarge and join together as a mass of necrotic tissue, with complete defoliation occurring during summer. Marssonina overwinters in cankers on small stems; spores are produced in spring and summer. Pruning out cankered stems and destroying infected leaf litter are the most effective controls.",
+      "title": "Birch - Marssonina Leaf Spot - University of Maine Cooperative Extension",
+      "snippet": "Small dark spots develop on leaves; spots enlarge and coalesce as masses of necrotic tissue, leading to premature defoliation. Pathogen is Marssonina spp. Overwinters in infected leaf debris and shoots; spring spores spread by wind and rain.",
       "source_type": "extension_factsheet",
       "diseases_mentioned": [
         "Marssonina Leaf Spot"
       ]
     },
     {
+      "url": "https://www.forestpests.eu/pest/marssonina-betulae",
+      "title": "Marssonina betulae / Leaf spot pathogen",
+      "snippet": "Marssonina betulae causes leaf spot of birch. Initial symptoms are small black spots that enlarge and join together as a mass of necrotic tissue, with complete defoliation occurring during summer; sometimes bark necrosis and twig canker.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Marssonina leaf spot",
+        "Marssonina betulae"
+      ]
+    },
+    {
+      "url": "https://www.elmsavers.com.au/wp-content/uploads/factsheet/birch_leaf_spot_marssonina_factsheet.pdf",
+      "title": "Birch Leaf Spot. Marssonina Betulae. (Factsheet PDF)",
+      "snippet": "Birch Leaf Spot is a foliar disease caused by Marssonina betulae affecting Birch, Aspen and Cottonwood. Mainly affects European birch (Betula pendula) and cultivars. Dissemination via windborne spores overwintering in dormant buds and twigs. Management: rake fallen leaves, prune cankered stems, fungicide at budbreak.",
+      "source_type": "industry",
+      "diseases_mentioned": [
+        "Birch Leaf Spot",
+        "Marssonina betulae",
+        "Marssonina Leaf Spot"
+      ]
+    },
+    {
       "url": "https://planttalk.colostate.edu/topics/insects-diseases/1476-marssonina-leaf-spot/",
-      "title": "1476 â€“ Marssonina leaf spot â€“ PlantTalk Colorado",
-      "snippet": "Marssonina leaf spot is a fungal disease that produces small dark spots on leaves which may coalesce, leading to premature leaf drop. Management includes raking and destroying fallen leaves and maintaining tree vigor.",
+      "title": "1476 – Marssonina leaf spot – PlantTalk Colorado",
+      "snippet": "Small dark-brown spots, often with yellow margins, develop on young leaves in spring; spots may coalesce into larger lesions and cause premature leaf drop. The fungus overwinters in infected leaf debris on the ground.",
       "source_type": "extension_factsheet",
       "diseases_mentioned": [
         "Marssonina leaf spot"
       ]
     },
     {
-      "url": "https://www.elmsavers.com.au/factsheet/pests-and-diseases/birch-leaf-spot",
-      "title": "Birch Leaf Spot Disease - Elmsavers",
-      "snippet": "Birch Leaf Spot (Marssonina betulae). Small dark-brown spots with yellow margins develop on young leaves; spots coalesce and cause complete defoliation in summer. Mainly affects European birch species such as Betula pendula 'Silver', 'Dalecarlica', and Young's Weeping Birch 'Youngii'.",
-      "source_type": "industry",
+      "url": "https://wiki.bugwood.org/Microsphaera_penicillata",
+      "title": "Microsphaera penicillata - Bugwoodwiki",
+      "snippet": "Microsphaera penicillata (now Erysiphe penicillata) and Phyllactinia guttata produce white mycelial growth on leaves, buds, flowers, and new stems. Symptoms include white powdery growth on either leaf surface, with sparse mycelial growth and dark, spherical chasmothecia obvious especially on the underside of leaves late in the growing season, infecting hosts including Betula (birch) and Alnus (alder).",
+      "source_type": "university_guide",
       "diseases_mentioned": [
-        "Birch Leaf Spot",
-        "Marssonina betulae"
-      ]
-    },
-    {
-      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.40821",
-      "title": "Phyllactinia guttata (powdery mildew of hardwood trees) | CABI Compendium",
-      "snippet": "CABI Compendium datasheet on Phyllactinia guttata covering Identity, Overview, Distribution, Hosts/Species Affected (including Betulaceae: Betula, Carpinus, Corylus, Ostrya), Diagnosis, and Further Information. Causes powdery mildew on a broad range of hardwood trees including birch.",
-      "source_type": "CABI_datasheet",
-      "diseases_mentioned": [
-        "powdery mildew",
+        "Powdery Mildew",
+        "Microsphaera penicillata",
+        "Erysiphe penicillata",
         "Phyllactinia guttata"
       ]
     },
     {
-      "url": "https://wiki.bugwood.org/Phyllactinia_guttata",
-      "title": "Phyllactinia guttata - Bugwoodwiki",
-      "snippet": "Phyllactinia guttata is a species of powdery mildew fungus in the family Erysiphaceae. It causes powdery mildew on leaves and stems of a broad range of hosts including the Betulaceae (Betula, Carpinus, Corylus, Ostrya). White powdery growth occurs on either leaf surface and on catkins; dark spherical chasmothecia form on the underside of leaves late in the growing season; conidia are wind disseminated.",
-      "source_type": "other",
+      "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/powdery-mildew",
+      "title": "Powdery Mildew : Landscape : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Birch (Betula) is a common host in the managed landscape for powdery mildew infections. White to gray powdery patches appear on affected tissues, and infected leaves may show yellowish or purple spots. Infections can reduce growth, cause foliar scorch, premature leaf drop, and stem dieback, though most often the disease is cosmetic.",
+      "source_type": "extension_factsheet",
       "diseases_mentioned": [
-        "powdery mildew",
-        "Phyllactinia guttata"
+        "Powdery Mildew"
       ]
     },
     {
-      "url": "https://www.apsnet.org/edcenter/Pages/PowderyMildew.aspx",
-      "title": "Identification of Powdery Mildew Fungi",
-      "snippet": "APS Education Center resource on identifying powdery mildew fungi. White to gray powdery patches appear on affected plant tissues; on trees and shrubs Phyllactinia is among the most common powdery mildew fungi with birch a common host. White powdery appearance is due to conidia borne in chains; wind-borne spores do not require free water for germination; new conidia produced every 3 to 14 days.",
-      "source_type": "APS_publication",
+      "url": "https://www.invasive.org/browse/detail.cfm?imgnum=5379810",
+      "title": "powdery mildew (Phyllactinia guttata (Wallr.) Lév.)",
+      "snippet": "Powdery mildew on birch is caused by Phyllactinia guttata, a fungus in the Erysiphaceae that produces white to gray powdery patches on leaves and stems of a broad range of hosts including Betula. Dark spherical fruiting bodies (chasmothecia) form on the underside of leaves late in the season.",
+      "source_type": "USDA",
       "diseases_mentioned": [
-        "powdery mildew",
-        "Phyllactinia",
-        "Microsphaera"
+        "Powdery Mildew",
+        "Phyllactinia guttata"
       ]
     }
   ],

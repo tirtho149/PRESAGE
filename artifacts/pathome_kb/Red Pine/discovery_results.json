@@ -1,5 +1,133 @@
 {
   "crop": "Red Pine",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://www.fs.usda.gov/foresthealth/docs/fidls/FIDL-76-HeterobasidionRootDisease.pdf",
+      "title": "Heterobasidion Root Disease in Eastern Conifers (Forest Insect & Disease Leaflet 76)",
+      "snippet": "Hosts commonly show no aboveground symptoms for 1 year or more after they are infected, and more than one-half of the root system of a tree may be killed before aboveground symptoms become apparent. In pines, major indications of Heterobasidion root disease are bark that separates easily from the wood of recently dead roots and silvery white flecks of fungus present at the interface between bark and wood. New infections in managed forests typically start after thinning operations, as freshly cut stumps become infected by airborne spores.",
+      "source_type": "USDA",
+      "diseases_mentioned": [
+        "Heterobasidion root disease",
+        "Annosum root disease",
+        "annosus root rot"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/publications/PlantDisease/BackIssues/Documents/1995Abstracts/PD_79_0859A.htm",
+      "title": "Root Rot of Red Pine Caused by Heterobasidion annosum in Wisconsin (Plant Disease, 1995)",
+      "snippet": "Plant Disease report on root rot of red pine caused by Heterobasidion annosum in Wisconsin, documenting infection, stringy white rot of roots and butt, and disease spread from infected stumps to living red pine.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Root rot of red pine",
+        "Heterobasidion annosum"
+      ]
+    },
+    {
+      "url": "https://tfsweb.tamu.edu/elibrary-item/annosum-root-disease/",
+      "title": "Annosum Root Disease - Texas A&M Forest Service",
+      "snippet": "Annosum root disease (ARD) is caused by the fungus Heterobasidion annosum (formerly Fomes annosus). Dying trees have browning and yellowing foliage, needles growing in tufts, undersized foliage, and reddish to purplish discolored bark; trees may lean or blow over from lack of supporting roots, with stringy white rot of wood in roots and butt. The fungus enters through freshly cut stumps and spreads through root contacts to adjacent living trees.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Annosum root disease",
+        "Heterobasidion annosum",
+        "Fomes annosus"
+      ]
+    },
+    {
+      "url": "https://dnr.wisconsin.gov/topic/foresthealth/annosumrootrot",
+      "title": "Heterobasidion Root Disease (HRD) | Formerly annosum root rot | Wisconsin DNR",
+      "snippet": "Heterobasidion root disease, formerly annosum root rot, is a fungal disease that kills the roots and lower stem of conifers including red pine. Disease typically establishes after thinning when airborne spores colonize freshly cut stumps and then spreads through connected or contacting roots to living trees nearby.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Heterobasidion root disease",
+        "annosum root rot"
+      ]
+    },
+    {
+      "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/diplodia-tip-blight-and-canker",
+      "title": "Diplodia Tip Blight and Canker | Yard and Garden - Iowa State University Extension",
+      "snippet": "Diplodia tip blight is caused by the fungal pathogen Diplodia pinea (also known as Sphaeropsis sapinea). The most conspicuous symptom is brown, stunted new shoots with short, brown needles. Red pine (Pinus resinosa) is susceptible, along with Austrian, Scots, Mugo, and Ponderosa pines. The fungus overwinters in infected needles, bark, cones and needle litter; disease is most severe on trees stressed by drought.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Diplodia tip blight",
+        "Diplodia canker",
+        "Diplodia pinea",
+        "Sphaeropsis sapinea"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-tree-03",
+      "title": "Diplodia Tip Blight of Two-Needled Pines | Ohioline - Ohio State University Extension",
+      "snippet": "Diplodia tip blight, caused by Diplodia pinea (Sphaeropsis sapinea), affects Austrian, Scots, ponderosa, mugo, red, and other 2- and 3-needled pines. Symptoms include browning of needles on new shoots; one of the first indications is the oozing of small drops of resin from the shoot buds. As the disease continues, whole branches may be killed but the needles remain attached.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Diplodia tip blight",
+        "Diplodia pinea",
+        "Sphaeropsis sapinea"
+      ]
+    },
+    {
+      "url": "https://extension.psu.edu/diplodia-sphaeropsis-tip-blight-on-pine",
+      "title": "Diplodia (Sphaeropsis) Tip Blight on Pine - Penn State Extension",
+      "snippet": "Diplodia tip blight is caused by Diplodia pinea (formerly Sphaeropsis sapinea) and infects more than 20 species of two- and three-needled pines including red pine. Treat the crown with fungicide as buds begin to swell at bud break and again 2 weeks later. Labeled fungicides include thiophanate-methyl, mancozeb, and copper hydroxide. Do not use high-nitrogen fertilizers; avoid pruning in wet weather.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Diplodia tip blight",
+        "Sphaeropsis tip blight",
+        "Diplodia pinea",
+        "Sphaeropsis sapinea"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/publications/5102e/",
+      "title": "Diplodia Tip Blight - University of Maine Cooperative Extension",
+      "snippet": "Diplodia tip blight (Diplodia pinea / Sphaeropsis sapinea) causes brown, stunted new shoots with short brown needles and white crusty resin droplets on killed needles and shoot tips. Susceptible hosts include red, Austrian, Scots, and mugo pines. Free moisture is required for infection, so disease is more severe in years with rainy springs.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Diplodia tip blight",
+        "Diplodia pinea",
+        "Sphaeropsis sapinea"
+      ]
+    },
+    {
+      "url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/sirococcus_shoot_blight.htm",
+      "title": "Sirococcus Shoot Blight of Red Pine: Insect & Disease Fact Sheets: Maine Forest Service, Maine DACF",
+      "snippet": "Sirococcus shoot blight of red pine is caused by the fungus Sirococcus conigenus. Infected needles, shoot tips and one-year-old twigs wither, turn brown and fall off; infections on expanding shoots often cause a shepherd's crook. Tiny brown-to-black pycnidia form on infected shoots and needles. The fungus overwinters in infected tissue and spreads by splashing water during cool, wet spring and summer weather.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sirococcus shoot blight",
+        "Sirococcus blight of conifers"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/plant-diseases/sirococcus-blight-conifers",
+      "title": "Sirococcus blight of conifers | UMN Extension",
+      "snippet": "Sirococcus blight is caused by the fungus Sirococcus conigenus, which attacks pine (including red pine), spruce, fir, larch, cedar and Douglas-fir. Infected needles and shoot tips wither and turn brown; shoots may curl into a shepherd's crook. Spores spread during wet periods in spring and summer at 60 to 68 degrees Fahrenheit. In Minnesota the disease causes noticeable problems only in years with consistently cool, wet weather. Management includes avoiding overhead watering and removing infected material.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sirococcus blight of conifers",
+        "Sirococcus shoot blight"
+      ]
+    },
+    {
+      "url": "https://research.fs.usda.gov/treesearch/10778",
+      "title": "Biology and control of Sirococcus shoot blight on red pine | USDA Forest Service Research and Development",
+      "snippet": "Research publication on the biology and control of Sirococcus shoot blight (Sirococcus conigenus / Sirococcus strobilinus) on red pine, covering infection biology, disease cycle, conidial dispersal by rain and irrigation splash, and cultural and chemical control measures relevant to red pine seedlings and nurseries.",
+      "source_type": "USDA",
+      "diseases_mentioned": [
+        "Sirococcus shoot blight",
+        "Sirococcus blight"
+      ]
+    },
+    {
+      "url": "https://rngr.net/publications/forest-nursery-pests/conifer-diseases/sirococcus-shoot-blight/at_download/file",
+      "title": "Forest Nursery Pests — 17. Sirococcus Shoot Blight (Glen R. Stanosz)",
+      "snippet": "Sirococcus shoot blight is caused by fungi formerly referred to as Sirococcus conigenus, most commonly damaging pines (including red pine and lodgepole pine) and spruces. The fungus overwinters in necrotic tissue where pycnidia are produced; conidia disperse with rain and irrigation splash to adjacent seedlings. Management includes avoiding overhead watering and destroying infected seedlings.",
+      "source_type": "USDA",
+      "diseases_mentioned": [
+        "Sirococcus shoot blight"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

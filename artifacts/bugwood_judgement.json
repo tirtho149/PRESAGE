@@ -2554,8 +2554,40 @@
     },
     "disease_check": {
       "crop": "Grape",
-      "error": "Expecting ',' delimiter: line 33 column 6 (char 1329)",
-      "parse_error": true
+      "disease_verdicts": [
+        {
+          "disease": "Powdery Mildew",
+          "verdict": "CORRECT",
+          "reason": "Caused by Erysiphe necator, a major worldwide grape disease."
+        },
+        {
+          "disease": "Black Rot",
+          "verdict": "CORRECT",
+          "reason": "Caused by Guignardia bidwellii, a well-known destructive grape disease."
+        },
+        {
+          "disease": "Gray Mold",
+          "verdict": "CORRECT",
+          "reason": "Botrytis cinerea bunch rot is a major grape disease affecting berries and clusters."
+        },
+        {
+          "disease": "Grape Anthracnose",
+          "verdict": "CORRECT",
+          "reason": "Caused by Elsinoe ampelina, a documented disease of grapevines."
+        },
+        {
+          "disease": "Downy Mildew",
+          "verdict": "CORRECT",
+          "reason": "Caused by Plasmopara viticola, one of the most important grape diseases globally."
+        },
+        {
+          "disease": "Pseudocercospora Leaf Spot",
+          "verdict": "CORRECT",
+          "reason": "Caused by Pseudocercospora vitis (formerly Mycosphaerella angulata), a recognized grape leaf disease."
+        }
+      ],
+      "similar_groups": [],
+      "summary": "All six labels are well-documented grape diseases with distinct causal pathogens and symptomatology. The list represents a coherent and accurate set of major fungal and oomycete diseases of Vitis vinifera with no duplicates or overlapping entries."
     }
   },
   {
@@ -4382,12 +4414,57 @@
       "verdict": "VALID",
       "canonical_name": "Pepper",
       "category": "vegetable",
-      "notes": "Common name may refer to Capsicum (vegetable/spice) or Piper nigrum (spice); ambiguous but standard."
+      "notes": ""
     },
     "disease_check": {
       "crop": "Pepper",
-      "error": "Expecting ',' delimiter: line 48 column 6 (char 2318)",
-      "parse_error": true
+      "disease_verdicts": [
+        {
+          "disease": "Southern Blight",
+          "verdict": "CORRECT",
+          "reason": "Sclerotium rolfsii is a well-documented soilborne disease causing crown/stem rot on pepper."
+        },
+        {
+          "disease": "Phytophthora Blight",
+          "verdict": "CORRECT",
+          "reason": "Phytophthora capsici is one of the most economically important diseases of pepper worldwide."
+        },
+        {
+          "disease": "Tomato Spotted Wilt Virus",
+          "verdict": "CORRECT",
+          "reason": "TSWV (Orthotospovirus) is a major thrips-vectored virus of pepper causing ringspots and necrosis."
+        },
+        {
+          "disease": "Blossom End Rot",
+          "verdict": "CORRECT",
+          "reason": "Well-known calcium-related physiological disorder affecting pepper fruit, analogous to tomato."
+        },
+        {
+          "disease": "Bacterial Spot",
+          "verdict": "CORRECT",
+          "reason": "Xanthomonas euvesicatoria/spp. cause the major foliar/fruit bacterial disease of pepper."
+        },
+        {
+          "disease": "Alternaria Black Molds / Stem Cankers",
+          "verdict": "QUESTIONABLE",
+          "reason": "Alternaria occurs on pepper as fruit rot and leaf spot, but 'Black Molds / Stem Cankers' is a vague compound label not standard for pepper."
+        },
+        {
+          "disease": "Bitter Rot And Anthracnose",
+          "verdict": "QUESTIONABLE",
+          "reason": "Anthracnose (Colletotrichum spp.) is a major pepper fruit disease, but 'Bitter Rot' is the apple/grape name for Colletotrichum and combining them as one label is non-standard for pepper."
+        }
+      ],
+      "similar_groups": [
+        {
+          "diseases": [
+            "Bitter Rot And Anthracnose",
+            "Alternaria Black Molds / Stem Cankers"
+          ],
+          "reason": "Both are compound labels merging multiple distinct fruit-rot/leaf-spot conditions under one heading, which complicates clean disease accounting."
+        }
+      ],
+      "summary": "Five of seven labels are well-established pepper diseases or disorders. Two entries ('Alternaria Black Molds / Stem Cankers' and 'Bitter Rot And Anthracnose') are real pepper-relevant problems but use compound, non-standard naming that mixes symptoms, pathogens, or cross-crop terminology and should be split into discrete disease entries."
     }
   },
   {

@@ -1,5 +1,299 @@
 {
   "crop": "Potato",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://extension.umaine.edu/publications/2493e/",
+      "title": "Bulletin #2493, Potato Facts: Blackleg and Bacterial Soft Rot - University of Maine Cooperative Extension",
+      "snippet": "Soft rot symptoms include soft, wet, rotted, tan or cream-colored tissues, with rot beginning on the tuber surface and progressing inward. Infected tissues are sharply delineated from healthy tissue by dark brown or black margins. Rotting tissue is usually odorless in early stages of decay but develops a foul odor as secondary organisms invade.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial Soft Rot",
+        "Blackleg"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/potato/bacterial-soft-rot-and-blackleg/",
+      "title": "Bacterial Soft Rot and Blackleg / Potato / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Potato soft rot is caused by the bacterium Pectobacterium carotovorum. The bacterium can grow between 32 and 90 degrees F, with optimal growth between 70 and 80 degrees F. Dickeya and Pectobacterium produce enzymes that break down the pectin of plant cell walls, resulting in tissue maceration or decay. Moist, cool conditions enhance blackleg while warmer conditions are optimal for soft rot.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial Soft Rot",
+        "Blackleg"
+      ]
+    },
+    {
+      "url": "https://www.canr.msu.edu/resources/tuber_soft_rot_blackleg_and_aerial_stem_rot_e3335",
+      "title": "Tuber Soft Rot, Blackleg and Aerial Stem Rot - MSU Extension",
+      "snippet": "Tuber soft rot, blackleg and aerial stem rot of potato are caused by Pectobacterium and Dickeya species (formerly Erwinia carotovora and Erwinia chrysanthemi). These bacteria produce pectolytic enzymes causing soft, wet decay of tubers and stems; management relies on certified seed, sanitation and cultural practices.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tuber Soft Rot",
+        "Blackleg",
+        "Aerial Stem Rot"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/potato-solanum-tuberosum-bacterial-soft-rot-blackleg-lenticel-rot",
+      "title": "Potato (Solanum tuberosum)-Bacterial Soft Rot, Blackleg, and Lenticel Rot | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Bacterial soft rot, blackleg, and lenticel rot of potato are caused by soft rot Erwinias (Pectobacterium and Dickeya spp.). Symptoms, disease cycle, and chemical/cultural management options are described for the Pacific Northwest.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Bacterial Soft Rot",
+        "Blackleg",
+        "Lenticel Rot"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/publications/5087e/",
+      "title": "Bulletin #5087, Early Blight of Potatoes and Tomatoes - University of Maine Cooperative Extension",
+      "snippet": "Early blight is caused by the fungal pathogen Alternaria solani. The most characteristic symptom is the bulls-eye pattern of disease lesions on leaves and stems. Early blight often infects the oldest leaves first and progresses upward. Lesions on tubers are circular to irregular and slightly sunken, surrounded by a raised purple to dark brown border.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Early Blight",
+        "Alternaria solani"
+      ]
+    },
+    {
+      "url": "https://www.ndsu.edu/agriculture/extension/publications/early-blight-potato",
+      "title": "Early Blight of Potato | NDSU Agriculture",
+      "snippet": "Early blight of potato is caused by Alternaria solani. Symptoms include bulls-eye-shaped lesions, optimal temperature 82 to 86 °F and relative humidity 80% or higher. Severity is dependent upon foliar wetness from rain, dew or irrigation; plant nutritional status and cultivar susceptibility. Management includes avoiding tuber bruising and balanced nitrogen, potassium, phosphorus.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Early Blight",
+        "Alternaria solani"
+      ]
+    },
+    {
+      "url": "https://vegpath.plantpath.wisc.edu/diseases/potato-early-blight/",
+      "title": "Potato Early Blight - UW Vegetable Pathology",
+      "snippet": "Early blight caused by Alternaria solani. Affected leaves develop circular to angular dark brown lesions 3-4 mm in diameter with concentric rings producing characteristic target-board effect. Lesions sometimes limited by veins giving an angular appearance. On tubers, lesions appear as dark, sunken, cork-like spots with raised margins.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Early Blight",
+        "Alternaria solani"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/potato/early-blight/",
+      "title": "Early Blight / Potato / Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Symptoms first appear as circular dark-brown spots on leaves and stems that develop concentric, target-like rings surrounded by yellow margins. Early foliar symptoms appear near the base of the plant, spreading up to higher leaves. Includes monitoring and management guidelines for potato early blight.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Early Blight",
+        "Alternaria solani"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/fusarium-dry-rot-of-potato/",
+      "title": "Fusarium Dry Rot of Potato | Cornell Vegetables",
+      "snippet": "Dry rot is caused by several fungal species in the genus Fusarium, with the most important dry rot pathogen in the Northeast being Fusarium sambucinum, although Fusarium solani is also present. The first symptoms are dark depressions on the surface of the tuber; internal symptoms show necrotic areas shaded from light to dark chocolate brown or black. Wounds are required for infection.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fusarium dry rot",
+        "Fusarium wilt"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/potato/fusarium-dry-rot-and-seed-piece-decay/",
+      "title": "Fusarium Dry Rot and Seed Piece Decay / Potato / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Lesions caused by F. sambucinum tend to be very dark brown to black and progress through the tuber irregularly (\"tunneling\"). The pathogen infects through wounds; modification of tuber handling to reduce wounding and effective seed treatment are essential. To speed healing, hold tubers at 50-55F with good ventilation and at least 95% relative humidity for 2-3 weeks.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fusarium dry rot",
+        "seed piece decay"
+      ]
+    },
+    {
+      "url": "https://www.canr.msu.edu/resources/potato_diseases_fusarium_dry_rot_e2992",
+      "title": "Potato Diseases: Fusarium Dry Rot - Potato Outreach Program (MSU Extension)",
+      "snippet": "Symptoms include dark depressions on the tuber surface; in large lesions the skin becomes wrinkled in concentric rings as underlying dead tissue desiccates. Rotted cavities are often lined with mycelia and spores of various colors from yellow to white to pink. Caused by Fusarium sambucinum, F. oxysporum and F. solani.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fusarium dry rot"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/potato-solanum-tuberosum-fusarium-dry-rot",
+      "title": "Potato (Solanum tuberosum)-Fusarium Dry Rot | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Fusarium dry rot of potato caused by Fusarium spp.; the pathogens are ubiquitous on tuber surfaces and in soil and cannot breach intact periderm, so wounds are required for infection. Includes management and fungicide seed-treatment recommendations (e.g., Maxim, fludioxonil).",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Fusarium dry rot"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/potato-late-blight",
+      "title": "Potato Late Blight | NC State Extension Publications",
+      "snippet": "Leaf symptoms include circular, necrotic or brown lesions surrounded by collapsed pale or chlorotic tissue. Enlarged, water-soaked or wet and oily-appearing leaf lesions often give rise to sporulation, identifiable by white or gray fuzzy growth. Symptomatic tubers typically have sunken and firm brown lesions. Caused by the oomycete pathogen Phytophthora infestans.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Late blight",
+        "Potato late blight"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/LateBlight.aspx",
+      "title": "Late blight of potato and tomato | APS Education Center",
+      "snippet": "Late blight of potato and tomato is caused by Phytophthora infestans. The disease was responsible for the Irish potato famine. Covers symptoms on leaves, stems and tubers, disease cycle, and management.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Late blight",
+        "Late blight of potato and tomato"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/late-blight",
+      "title": "Late blight of tomato and potato | UMN Extension",
+      "snippet": "Late blight is a potentially devastating disease of tomato and potato, caused by Phytophthora infestans. Late blight favors cool (60-70F), damp conditions. Includes symptom identification and management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Late blight"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/publications/2441e/",
+      "title": "Bulletin #2441, Potato Late Blight | University of Maine Cooperative Extension",
+      "snippet": "Potato late blight, caused by Phytophthora infestans, attacks leaves, stems and tubers. Discusses symptoms, disease development, and fungicide/management strategies.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Late blight",
+        "Potato late blight"
+      ]
+    },
+    {
+      "url": "https://www.canr.msu.edu/resources/potato_diseases_pink_rot_e2993",
+      "title": "Potato Diseases: Pink Rot - MSU Extension",
+      "snippet": "Pink rot, caused by the soilborne oomycete Phytophthora erythroseptica, rots tubers, roots and lower stems, causing wilt and early dying of plants. Infected tubers show water-soaked lesions and turn pink/salmon when cut and exposed to air, with an ammonia-like odor.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pink rot",
+        "Phytophthora erythroseptica",
+        "Phytophthora root and stem rot"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/potato/pink-rot/",
+      "title": "Pink Rot / Potato / Agriculture: Pest Management Guidelines / UC IPM",
+      "snippet": "The soilborne pathogen Phytophthora erythroseptica causes darkened, water-soaked lesions near the stem-end of the tuber, identified by the characteristic pink color and ammonia-like odor. Roots and lower stems may also rot, causing wilt and early dying. Favored by saturated soils and 68-77F.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pink rot",
+        "Phytophthora erythroseptica"
+      ]
+    },
+    {
+      "url": "https://vegpath.plantpath.wisc.edu/diseases/potato-pink-rot/",
+      "title": "Potato Pink Rot - UW Vegetable Pathology",
+      "snippet": "Pink rot of potato is caused by Phytophthora erythroseptica. Infection spreads from the stolon end of tubers; vines can appear stunted or wilted with leaf yellowing as the wilt moves up the stem. Management includes good drainage, crop rotation, and mefenoxam fungicides.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Pink rot",
+        "Phytophthora erythroseptica"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/potato-solanum-tuberosum-pink-rot",
+      "title": "Potato (Solanum tuberosum)-Pink Rot | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Pink rot, caused by Phytophthora erythroseptica, is a soilborne disease that rots tubers and lower stems. Cut tissue turns pink. Management options include soil-applied, foliar, and post-harvest fungicides, and avoiding excessive late-season soil moisture.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pink rot",
+        "Phytophthora erythroseptica"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/rhizoctonia-canker-and-black-scurf-of-potato/",
+      "title": "Rhizoctonia Canker and Black Scurf of Potato | Cornell Vegetables",
+      "snippet": "Rhizoctonia disease of potato, caused by Rhizoctonia solani, produces stem and stolon canker (reddish brown to black sunken lesions on sprouts, stolons, roots and stems) and black scurf (black sclerotia on tuber surfaces). Symptoms include delayed emergence, reduced stands, stunting, leaf rolling and aerial tubers. Management includes certified seed, seed-piece/in-furrow fungicides, shallow planting and crop rotation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rhizoctonia canker",
+        "Black scurf",
+        "Stem canker",
+        "Damping-off"
+      ]
+    },
+    {
+      "url": "https://www.canr.msu.edu/resources/potato_diseases_rhizoctonia_stem_canker_and_black_scurf_e2994",
+      "title": "Potato Diseases: Rhizoctonia Stem Canker and Black Scurf - MSU Extension",
+      "snippet": "Rhizoctonia diseases of potato are caused by the fungus Rhizoctonia solani Kuhn. Stem canker symptoms include reddish brown to black, sunken lesions on sprouts, stolons and roots, with necrosis at sprout tips that may kill emerging plants. As lesions mature they become rough, brown cankers. The black sclerotia on the tuber surface are called black scurf. The disease delays emergence, reduces stands and weakens plants, reducing tuber yield and grade.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rhizoctonia stem canker",
+        "Black scurf"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/potato/stem-and-stolon-canker/",
+      "title": "Stem and Stolon Canker (Black Scurf) / Potato / UC IPM Pest Management Guidelines",
+      "snippet": "Rhizoctonia solani causes stem canker, damping off, black scurf, skin netting and tuber distortions on potato. Inoculum on seed tubers (dark, irregular sclerotia) is sometimes more important than soil inoculum. Symptoms include sprout necrosis, sunken stem and stolon lesions; black scurf is a superficial black incrustation of sclerotia. Disease is favored by wet, cool (55-60F) soils. Management: certified seed, seed/in-furrow fungicides, rapid emergence and 2-3 year rotation out of potatoes.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Stem and stolon canker",
+        "Damping off",
+        "Black scurf"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/publications/2273e/",
+      "title": "Bulletin #2273, Potato Facts: Rhizoctonia Diseases on Potatoes - University of Maine Cooperative Extension",
+      "snippet": "Rhizoctonia diseases on potatoes, caused by Rhizoctonia solani, include stem and stolon canker and black scurf. Covers symptoms (sunken brown-black lesions, sprout death, black sclerotia on tubers), disease cycle and management for potato growers.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rhizoctonia diseases",
+        "Stem canker",
+        "Stolon canker",
+        "Black scurf"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/Rhizoctonia_solani_(Black_scurf_and_stem_canker_in_potato)",
+      "title": "Rhizoctonia solani (Black scurf and stem canker in potato) - Bugwoodwiki",
+      "snippet": "Detailed datasheet on Rhizoctonia solani causing black scurf and stem canker in potato, including pathogen biology, anastomosis group AG-3, symptoms on sprouts, stems, stolons and tubers, disease cycle and integrated management.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Black scurf",
+        "Stem canker",
+        "Rhizoctonia solani"
+      ]
+    },
+    {
+      "url": "https://hort.extension.wisc.edu/articles/tomato-spotted-wilt-of-potato/",
+      "title": "Tomato Spotted Wilt of Potato – Wisconsin Horticulture",
+      "snippet": "A characteristic symptom of TSWV infecting potato is leaf spots with a target appearance similar to early blight, but the spots are smaller and tend to be clustered. Clustering of spots can result in affected leaves having large areas that are completely dark brown to black, more often at the leaf base. The virus is vectored from plant to plant by the piercing-sucking feeding of thrips.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tomato Spotted Wilt Virus (TSWV)",
+        "early blight"
+      ]
+    },
+    {
+      "url": "https://blogs.cornell.edu/livegpath/gallery/potatoes/tomato-spotted-wilt-virus-tswv/",
+      "title": "Tomato spotted wilt virus (TSWV) on potatoes | Long Island Vegetable Health (Cornell)",
+      "snippet": "Tomato spotted wilt virus (TSWV) on potatoes. TSWV is a member of the genus Orthotospovirus, vectored by thrips. Symptoms on potato include necrotic/target-like leaf spots, bronzing, stem necrosis, and the virus can be carried in seed tubers.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tomato spotted wilt virus (TSWV)"
+      ]
+    },
+    {
+      "url": "https://agriculture.vic.gov.au/biosecurity/plant-diseases/vegetable-diseases/tomato-spotted-wilt-virus-in-potatoes",
+      "title": "Tomato spotted wilt virus in potatoes | Agriculture Victoria",
+      "snippet": "TSWV commonly infects potato in warmer regions such as Australia and Argentina, where regulations require potato seed production to be TSWV-free. TSWV can be carried from one potato crop to the next through infected seed (tubers). Thrips transmit the virus; Western flower thrips (Frankliniella occidentalis) and onion thrips (Thrips tabaci) are the main vectors.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Tomato spotted wilt virus (TSWV)"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/tomato-spotted-wilt-virus-on-tomato-and-pepper",
+      "title": "Tomato Spotted Wilt Virus on Tomato and Pepper | NC State Extension Publications",
+      "snippet": "TSWV is a member of the genus Orthotospovirus, vectored by thrips, with one of the widest host ranges among plant viruses, infecting more than 1,000 plant species. In NC it infects crops such as tomatoes, peppers, tobacco, potatoes, eggplants, squashes, lettuce, onions, spinach, and herbs.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tomato Spotted Wilt Virus (TSWV)"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

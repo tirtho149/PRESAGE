@@ -1,5 +1,128 @@
 {
   "crop": "Rose",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/publications/5097e/",
+      "title": "Black Spot of Rose - University of Maine Cooperative Extension",
+      "snippet": "On rose, black spots with fringed margins appear on either leaf surface but predominantly the upper surface of leaves, and infected leaves turn yellow, except for the black spots, and drop from the plant. Caused by the fungus Diplocarpon rosae. Sanitation is critical; removal of fallen leaves and pruning infected canes slows initial spring infections.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black Spot of Rose",
+        "Diplocarpon rosae"
+      ]
+    },
+    {
+      "url": "https://ask.ifas.ufl.edu/publication/PP268",
+      "title": "PP268: Black Spot of Rose - UF/IFAS Extension",
+      "snippet": "Black spot of rose is one of the most common and important diseases of roses throughout the world. Infected leaves exhibit small brown to black leaf spots outlined with feathery, irregular shaped borders; yellow halos form around the spots causing premature leaf drop. The fungus requires free water for infection; spores require at least 7 hours of wetness. Fungicides containing chlorothalonil, copper sulfate, and myclobutanil can be effective.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black Spot of Rose",
+        "Diplocarpon rosae"
+      ]
+    },
+    {
+      "url": "https://extension.umd.edu/resource/black-spot-disease-roses",
+      "title": "Black Spot Disease of Roses - University of Maryland Extension",
+      "snippet": "Black spot disease of roses is caused by the fungus Diplocarpon rosae. Black spots with feathery margins and yellow halos appear on upper leaf surfaces, leading to yellowing and premature defoliation beginning at the bottom of the plant. Management includes sanitation, improving air circulation, keeping foliage dry, and fungicide applications.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black Spot Disease of Roses",
+        "Diplocarpon rosae"
+      ]
+    },
+    {
+      "url": "https://hort.extension.wisc.edu/articles/black-spot/",
+      "title": "Black Spot - Wisconsin Horticulture (Division of Extension)",
+      "snippet": "Black spot is the most important disease of roses, caused by the fungus Diplocarpon rosae. Circular black spots with fringed margins develop on leaves, surrounded by yellow tissue; affected leaves drop prematurely. Conditions favoring disease are wet, humid weather. Management includes sanitation, resistant cultivars, and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Black Spot",
+        "Diplocarpon rosae"
+      ]
+    },
+    {
+      "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/powdery-mildew-on-rose",
+      "title": "Powdery Mildew on Rose - Oklahoma State University",
+      "snippet": "White, powdery fungal growth on leaves, petioles and flower buds, with symptoms including blistering and twisting of leaves. In severe attacks plants become stunted, leaves curl, dry and drop. Caused by Podosphaera pannosa (syn. Sphaerotheca pannosa); the fungus overwinters in infected buds, leaves and twigs.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery Mildew",
+        "Podosphaera pannosa",
+        "Sphaerotheca pannosa"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/rose-rosa-spp-hybrids-powdery-mildew",
+      "title": "Rose (Rosa spp.) and hybrids-Powdery Mildew | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Powdery mildew of rose caused by Podosphaera pannosa. White powdery growth on young leaves, buds and stems; leaves and shoots twisted or distorted. Includes cultural and chemical management recommendations and favorable conditions (temperatures near 70F with high humidity at night).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery Mildew",
+        "Podosphaera pannosa"
+      ]
+    },
+    {
+      "url": "https://plantsciences.tennessee.edu/wp-content/uploads/sites/25/2021/11/UT-Extension-Rose-diseases-Identification-and-management-W833.pdf",
+      "title": "Rose Diseases: Identification and Management (UT Extension W833)",
+      "snippet": "University of Tennessee Extension publication describing rose diseases including powdery mildew (Podosphaera pannosa). Symptoms include white powdery growth on leaves, buds and stems, leaf curling and distortion of new growth; management includes resistant cultivars, sanitation, air circulation and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery Mildew",
+        "Black Spot",
+        "Botrytis Blight",
+        "Rust",
+        "Podosphaera pannosa"
+      ]
+    },
+    {
+      "url": "https://solvepestproblems.oregonstate.edu/plant-problems/roses/powdery-mildew",
+      "title": "Powdery Mildew on Roses | SolvePestProblems - Oregon State University",
+      "snippet": "Oregon State University guide to powdery mildew on roses. White powdery growth on leaves and flower buds; leaves blister, twist, turn yellow or purple and fall prematurely. Fungus thrives at 60-80F with high humidity; describes prevention and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery Mildew"
+      ]
+    },
+    {
+      "url": "https://hgic.clemson.edu/factsheet/rose-rosette-disease-frequently-asked-questions-how-to-identify-it/",
+      "title": "Rose Rosette Disease: Frequently Asked Questions & How to Identify It | Home & Garden Information Center",
+      "snippet": "Rose rosette is caused by the Rose Rosette Virus (RRV), transmitted from plant to plant via the eriophyid mite Phyllocoptes fructiphilus. Symptoms include abnormal red coloration of shoots, shortened internodes, distortion, distorted flower buds, extreme thorniness, witches' broom, and decline.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rose Rosette Disease",
+        "Rose Rosette Virus"
+      ]
+    },
+    {
+      "url": "https://www.pubs.ext.vt.edu/450/450-620/450-620.html",
+      "title": "Rose Rosette Disease | VCE Publications | Virginia Tech",
+      "snippet": "Rose rosette disease (RRD) causes elongated rose shoots, leaf distortion and an unusual red or yellow mottling of the leaves. The virus is carried by the eriophyid mite Phyllocoptes fructiphilus, active May through October and easily carried on air currents. May also be transmitted through grafts.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rose Rosette Disease",
+        "Rose Rosette Virus"
+      ]
+    },
+    {
+      "url": "https://extension.okstate.edu/fact-sheets/rose-rosette-disease",
+      "title": "Rose Rosette Disease - Oklahoma State University",
+      "snippet": "Symptoms include witches' broom (clusters of small shoots), excessive thorniness, abnormal red coloration, and leaf distortion. There are no known treatments and all rose cultivars appear to be susceptible. Management focuses on purchasing clean stock and eradicating nearby multiflora rose.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rose Rosette Disease"
+      ]
+    },
+    {
+      "url": "https://utia.tennessee.edu/publications/wp-content/uploads/sites/269/2024/12/W1284.pdf",
+      "title": "Rose Rosette Disease: A Quick Overview - University of Tennessee Extension",
+      "snippet": "RRD is caused by the rose rosette virus (RRV), an emaravirus (family Emaraviridae) transmitted by the eriophyid mite Phyllocoptes fructiphilus Keifer. Symptoms: rapid shoot elongation, witches' brooms, clustering of small branches, small distorted leaves with red pigmentation. Infected plants often die within one to two years.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rose Rosette Disease",
+        "Rose Rosette Virus"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

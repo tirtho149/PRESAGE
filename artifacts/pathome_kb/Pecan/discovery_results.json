@@ -1,5 +1,74 @@
 {
   "crop": "Pecan",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://site.extension.uga.edu/pecan/2014/06/bot-canker/",
+      "title": "Bot Canker | UGA Pecan Extension",
+      "snippet": "Botryosphaeria canker is caused by a fungus which can infect the tree through wounds like limb breakage, pruning sites, or small cracks. Symptoms of the canker are sunken, cracked areas in the bark which often appear pulled away from the underlying wood, with infected wood appearing black while the bark surrounding the wound site appears grey-white. There are no effective fungicide controls; the best way to stop Bot canker is to paint the affected site with white outdoor latex paint and bleach pruning tools between cuts.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Botryosphaeria canker (Bot canker)",
+        "Diplodia canker"
+      ]
+    },
+    {
+      "url": "https://site.extension.uga.edu/pecan/2015/09/terminal-die-back/",
+      "title": "Terminal die-back | UGA Pecan Extension",
+      "snippet": "Terminal die-back, caused by a fungus in the Botryosphaeriaceae family (Neofusicoccum/Diplodia complex), is expressed initially as a dying or browning of the terminal leaflets on a compound leaf which progresses backward toward the base of the leaf, eventually moving into the leaf rachis and potentially causing the entire compound leaf to die.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Terminal die-back",
+        "Botryosphaeriaceae dieback"
+      ]
+    },
+    {
+      "url": "https://extension.okstate.edu/fact-sheets/pecan-diseases-prevention-and-control",
+      "title": "Pecan Diseases: Prevention and Control - Oklahoma State University",
+      "snippet": "Most pecan diseases are caused by pathogenic fungi that remain dormant during the winter months on twigs, leaves, nut shucks, and bark, either in the tree or on the soil. The factsheet describes symptoms, causal fungi, and management/fungicide strategies for the major fungal diseases of pecan, including dieback and canker-forming Botryosphaeriaceae (Diplodia) fungi.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pecan fungal diseases",
+        "dieback",
+        "canker",
+        "Diplodia/Botryosphaeria"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/PecanScab.aspx",
+      "title": "Pecan Scab",
+      "snippet": "Pecan scab is the most economically significant disease of pecan trees (Carya illinoinensis) in the southeastern United States, caused by Fusicladium effusum (Venturia effusa). The fungus attacks young leaves in spring and nut shucks throughout the summer, producing olive-green to black lesions.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Pecan scab"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/10.1079/cabicompendium.13719",
+      "title": "Fusicladium effusum (pecan scab) | CABI Compendium",
+      "snippet": "CABI Compendium datasheet on Fusicladium effusum, the causal agent of pecan scab. Covers identity, pathogen biology (synonyms Cladosporium caryigenum, Venturia effusa), distribution, hosts, symptoms on leaves/shucks/nuts, and management.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Pecan scab"
+      ]
+    },
+    {
+      "url": "https://extension.msstate.edu/publications/pecan-scab-the-home-landscape",
+      "title": "Pecan Scab in the Home Landscape | Mississippi State University Extension Service",
+      "snippet": "Pecan scab is caused by Venturia effusa and is the most destructive disease affecting pecan in the United States. Symptoms include light brown to black lesions on stems, leaves, shucks and nuts; circular lesions develop 7 to 14 days after infection. Management relies on resistant cultivars and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pecan scab"
+      ]
+    },
+    {
+      "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/scab-on-pecan.html",
+      "title": "Scab on Pecan - OSU Extension - Oklahoma State University",
+      "snippet": "Oklahoma State University Extension factsheet on pecan scab caused by Fusicladium effusum (Cladosporium caryigenum). The fungus infects twigs, leaflets, and shucks, producing small olive-green to black velvety lesions that can coalesce and cause defoliation and reduced nut quality.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pecan scab"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

@@ -1,5 +1,438 @@
 {
   "crop": "Squash",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://content.ces.ncsu.edu/anthracnose-of-cucurbits",
+      "title": "Anthracnose of Cucurbits | NC State Extension Publications",
+      "snippet": "Anthracnose is caused by the fungus Colletotrichum orbiculare. Cantaloupe, squash, and pumpkin are less susceptible but occasionally the disease causes losses on fruit. Leaf lesions first appear near veins as circular, light brown to reddish spots up to 0.4 inches in diameter; centers fall out giving a 'shot-hole' appearance. Infected fruits have black, circular, sunken cankers.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/anthracnose-cucurbits",
+      "title": "Anthracnose of cucurbits | UMN Extension",
+      "snippet": "Anthracnose on cucurbits (cucumber, melon, squash, pumpkin) symptoms, pathogen Colletotrichum orbiculare, disease cycle and management including resistant varieties, crop rotation, clean seed and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://hortnews.extension.iastate.edu/cucurbit-anthracnose",
+      "title": "Cucurbit Anthracnose | Yard and Garden (Iowa State University)",
+      "snippet": "Cucurbit anthracnose, caused by Colletotrichum lagenarium, produces water-soaked to yellow circular spots that develop into dark brown or black irregular spots on leaves, petioles, stems and fruits. Tiny black acervuli form within lesions. Favored by warm, wet weather (optimum ~75°F). Manage with debris removal, resistant varieties, clean treated seed, and two-year crop rotation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/cucurbits-anthracnose",
+      "title": "Cucurbits, Anthracnose : Vegetable : UMass Amherst Center for Agriculture, Food, and the Environment",
+      "snippet": "Anthracnose of cucurbits caused by Colletotrichum orbiculare (syn. C. lagenarium). Symptoms on leaves, stems and fruit; sunken water-soaked fruit spots. Spread by splashing water; managed with rotation, resistant varieties and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/cucurbits/anthracnose/",
+      "title": "Anthracnose / Cucurbits / Pest Management Guidelines | UC Statewide IPM Program (UC IPM)",
+      "snippet": "Anthracnose (Colletotrichum orbiculare / C. lagenarium) of cucurbits. Description of symptoms on foliage and fruit, comments on disease development, and management guidelines.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://blogs.cornell.edu/livegpath/gallery/cucurbits/choanephora-fruit-rot-of-squash-and-pumpkin/",
+      "title": "Choanephora fruit rot of squash and pumpkin | Vegetable Pathology – Long Island Horticultural Research & Extension Center (Cornell)",
+      "snippet": "Choanephora fruit rot of squash and pumpkin. Caused by Choanephora cucurbitarum. Fuzzy gray fungal growth first appears on old flowers and then on fruit; tiny black dots resembling a pincushion can be seen with a hand lens. First appears on dying blossoms still attached to fruits, then spreads to the fruit, usually at the blossom end.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Choanephora fruit rot",
+        "Choanephora cucurbitarum"
+      ]
+    },
+    {
+      "url": "https://extension.umd.edu/resource/choanephora-rot-vegetables",
+      "title": "Choanephora Rot of Vegetables | University of Maryland Extension",
+      "snippet": "Choanephora rot is a disease caused by the fungal pathogen Choanephora cucurbitarum. Warm, humid/wet conditions favor development. The pathogen overwinters on dead plants and in soil and is spread to squash blossoms by bees, cucumber beetles, and splashing water. Remove blossoms that stick to young fruit; remove and discard infected blossoms and fruit.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Choanephora rot",
+        "Choanephora cucurbitarum"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/choanephora-rot",
+      "title": "Choanephora rot | UMN Extension",
+      "snippet": "Choanephora fruit rot (Choanephora cucurbitarum) is most common on summer squashes but may occur on other cucurbits. Senescing flowers are often infected first, serving as a bridge for the fungus to colonize fruit. Fruit symptoms develop from the blossom end as a soft, wet rot; profuse fuzzy growth forms masses of black spores resembling a pincushion. Fungicides are ineffective because new susceptible flowers open every day.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Choanephora rot",
+        "Choanephora fruit rot",
+        "Choanephora cucurbitarum"
+      ]
+    },
+    {
+      "url": "https://veggiescout.mgcafe.uky.edu/choanephora-fruit-rot-cucurbit-crops",
+      "title": "Choanephora Fruit Rot of Cucurbit Crops | Scouting Guides for Problems of Vegetables (University of Kentucky)",
+      "snippet": "Choanephora fruit rot of cucurbit crops, caused by Choanephora cucurbitarum. The disease is worse in wet weather, high temperatures and high humidity. Management includes removing diseased plant material, using mulches to keep fruit off soil, spacing plants for air circulation, and using drip irrigation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Choanephora fruit rot",
+        "Choanephora cucurbitarum"
+      ]
+    },
+    {
+      "url": "https://apps.lucidcentral.org/ppp_v9/text/web_full/entities/cucurbit_wet_rot_144.htm",
+      "title": "Fact sheet - Cucurbit wet rot (144) | Pacific Pests, Pathogens & Weeds (Lucid)",
+      "snippet": "Cucurbit wet rot caused by Choanephora cucurbitarum. Soft wet rot developing from the blossom end of fruit with profuse fuzzy growth forming masses of black spores.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Cucurbit wet rot",
+        "Choanephora cucurbitarum"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/downy-mildew-cucurbits",
+      "title": "Downy mildew of cucumber, melon and squash | UMN Extension",
+      "snippet": "Signs and symptoms of downy mildew typically occur only on leaves, appearing between 3 and 12 days after infection as slightly yellow to bright yellow lesions on the upper leaf surface. On the underside of leaves, there is velvety grey fuzz. Downy mildew in cucurbits is caused by the pathogen Pseudoperonospora cubensis, an oomycete (water mold).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucurbit downy mildew",
+        "Downy mildew"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/cucurbit-downy-mildew",
+      "title": "Cucurbit Downy Mildew | NC State Extension Publications",
+      "snippet": "Cucurbit downy mildew is caused by Pseudoperonospora cubensis. Isolates belonging to clade 1 tend to more frequently infect watermelon, pumpkin, and squash while isolates belonging to clade 2 more frequently infect cucumber and cantaloupe. Symptoms appear as light green or yellow lesions restricted by the leaf veins, later becoming chlorotic and necrotic.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucurbit Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-12-19-0095-DG",
+      "title": "Diagnostic Guide for Cucurbit Downy Mildew | Plant Health Progress",
+      "snippet": "Downy mildew caused by Pseudoperonospora cubensis is one of the most important foliar diseases of cucurbits and occurs worldwide where conditions of temperature and humidity allow its establishment, resulting in major losses to cucumber, melon, squash, pumpkin, watermelon, and other cucurbits.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Cucurbit Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://extension.msstate.edu/publications/cucurbit-downy-mildew",
+      "title": "Cucurbit Downy Mildew | Mississippi State University Extension Service",
+      "snippet": "Cucurbit downy mildew is caused by Pseudoperonospora cubensis, an oomycete water mold. Symptoms begin as slightly yellow to bright yellow lesions on the upper leaf surface, with gray spores (sporangia) giving a fuzzy or downy appearance on the underside of leaves. Management requires resistant cultivars, fungicide applications, and early detection.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cucurbit Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/apsnetfeatures/Pages/CrownFootRotSquash.aspx",
+      "title": "Fusarium Crown and Foot Rot of Squash",
+      "snippet": "Fusarium crown and foot rot of squash is caused by F. solani f. sp. cucurbitae (teleomorph Nectria haematococca). The first symptom noticed in the field is wilting of the leaves, and within several days the entire plant wilts and dies. A distinct necrotic rot of the crown and upper taproot is evident. Two races: Race 1 causes root, stem, and fruit rot worldwide; Race 2 causes only fruit rot. The fungus survives in soil 2-3 years as chlamydospores; a 4-year rotation is often effective.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Fusarium crown and foot rot of squash",
+        "Fusarium fruit rot",
+        "Fusarium wilt"
+      ]
+    },
+    {
+      "url": "https://extension.umd.edu/resource/fusarium-crown-rot-squash",
+      "title": "Fusarium Crown Rot in Squash | University of Maryland Extension",
+      "snippet": "Fusarium crown rot of squash, caused by Fusarium solani f. sp. cucurbitae, causes wilting, crown rot, and fruit rot of squash and pumpkins. Immature seedlings often damp off at the soil line, and more mature plants may show early wilting before dying within a few days, with necrotic rot of the crown and upper taproot.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fusarium crown rot",
+        "damping-off",
+        "Fusarium fruit rot",
+        "Fusarium wilt"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/squash-cucurbita-spp-fusarium-crown-foot-fruit-rot",
+      "title": "Squash (Cucurbita spp.)-Fusarium Crown, Foot, and Fruit Rot | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Fusarium solani f. sp. cucurbitae causes vascular wilt, crown rot and fruit rot of squash and pumpkins, especially Cucurbita maxima types. The fungus survives 2 to 3 years as chlamydospores in soil or debris and can spread by infected seed. Management: rotate out of cucurbits for 4 years, use pathogen-free seed, ensure good drainage, and treat seed with Maxim 4FS.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fusarium crown rot",
+        "Fusarium foot rot",
+        "Fusarium fruit rot",
+        "Fusarium wilt",
+        "damping-off"
+      ]
+    },
+    {
+      "url": "https://ecommons.cornell.edu/server/api/core/bitstreams/2272ac2e-e1b0-437a-a7dc-8f25d37fec11/content",
+      "title": "Diseases of Cucurbits: Fusarium Diseases of Cucurbits Fact Sheet (Page 733.00) - Cornell",
+      "snippet": "Cornell Cooperative Extension fact sheet on Fusarium diseases of cucurbits, covering Fusarium wilt (Fusarium oxysporum f. sp.) and Fusarium crown and foot rot (Fusarium solani f. sp. cucurbitae), including symptoms, pathogen biology, and management for squash and other cucurbit crops.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Fusarium wilt",
+        "Fusarium crown and foot rot",
+        "Fusarium fruit rot"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/squash-cucurbita-spp-gummy-stem-blight-black-rot",
+      "title": "Squash (Cucurbita spp.)-Gummy Stem Blight (Black Rot) | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Squash (Cucurbita spp.)-Gummy Stem Blight (Black Rot). Cause: Stagonosporopsis (Didymella bryoniae) fungi. Symptoms include stem cankers with gummy exudate, leaf lesions, and fruit rot (black rot). Management and cultural control recommendations are provided.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gummy Stem Blight",
+        "Black Rot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-2013-1024-01-DG",
+      "title": "Diagnostic Guide for Gummy Stem Blight and Black Rot on Cucurbits | Plant Health Progress",
+      "snippet": "Diagnostic Guide for Gummy Stem Blight and Black Rot on Cucurbits. Gummy stem blight (foliar/stem phase) and black rot (fruit phase) are caused by Didymella bryoniae (Stagonosporopsis cucurbitacearum). Detailed symptom descriptions, pathogen biology, and diagnostic methods.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Gummy Stem Blight",
+        "Black Rot"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/gummy-stem-blight-and-phoma-blight-on-cucurbits",
+      "title": "Gummy Stem Blight of Cucurbits | NC State Extension Publications",
+      "snippet": "Gummy stem blight causes ovate stem and vine cankers, usually starting near the nodes, with a characteristic brown gummy exudate. Caused by Stagonosporopsis species (formerly Didymella bryoniae). On squash fruit the disease is called black rot. Pathogen is seedborne and soilborne, surviving on debris up to 2 years.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gummy Stem Blight",
+        "Phoma Blight",
+        "Black Rot"
+      ]
+    },
+    {
+      "url": "https://ask.ifas.ufl.edu/publication/PP280",
+      "title": "PP280: Management of Gummy Stem Blight (Black Rot) on Cucurbits in Florida",
+      "snippet": "Management of Gummy Stem Blight (Black Rot) on Cucurbits in Florida. Covers the pathogen Didymella bryoniae, symptoms on leaves, stems and fruit, disease conditions (temperature and leaf wetness), and integrated management including rotation, seed sourcing, and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gummy Stem Blight",
+        "Black Rot"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/gummy-stem-blight-and-black-rot",
+      "title": "Gummy stem blight and black rot | UMN Extension",
+      "snippet": "Gummy stem blight and black rot. Circular, tan to dark brown leaf spots, stem cankers with brown gummy exudate, and fruit rot on cucurbits including squash. Includes identification, biology, and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gummy Stem Blight",
+        "Black Rot"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+      "title": "Phytophthora Blight of Cucurbits | Cornell Vegetables",
+      "snippet": "Phytophthora capsici causes wilting, crown, root, and fruit rot, plant stunting and death on squash and other cucurbits. Because the disease results in a range of symptoms it is often referred to as Phytophthora blight. Infected plant surfaces can be coated with white Phytophthora spores resembling powdered sugar; fruit rot typically starts on the underside of the fruit in contact with the ground.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora blight",
+        "Phytophthora crown rot",
+        "Phytophthora fruit rot",
+        "Phytophthora root rot"
+      ]
+    },
+    {
+      "url": "https://cuccap.org/disease-management/squash/phytophthora-blight/",
+      "title": "Phytophthora blight on Squash and Pumpkins – CucCAP",
+      "snippet": "Symptoms of Phytophthora blight in summer squash can progress rapidly from death of the growing tip to total plant collapse and fruit rot. Following a rainstorm or overhead irrigation, soil containing the pathogen can splash onto the plant's petioles, causing a blighting near or just above the plant's crown.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Phytophthora blight"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0027-FI",
+      "title": "A Diagnostic Guide for Phytophthora capsici Infecting Vegetable Crops | Plant Health Progress",
+      "snippet": "Phytophthora capsici is an oomycete pathogen causing economically important diseases in a wide range of hosts worldwide including cucurbitaceous, solanaceous, and fabaceous crops. This diagnostic guide covers symptoms, signs, and identification on squash and other vegetable crops.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Phytophthora blight",
+        "Phytophthora capsici",
+        "Phytophthora crown rot",
+        "Phytophthora fruit rot"
+      ]
+    },
+    {
+      "url": "https://extension.okstate.edu/fact-sheets/phytophthora-blight-of-cucurbits-and-peppers.html",
+      "title": "Phytophthora Blight of Cucurbits and Peppers | Oklahoma State University",
+      "snippet": "Phytophthora capsici is a soilborne oomycete requiring warm and wet weather for disease development. On squash, crown rot produces elongated soft lesions on the stem near the soil line; fruit develop a soft rot. Overwintering oospores can remain dormant in soil for up to 10 years.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora blight",
+        "Phytophthora crown rot",
+        "Phytophthora fruit rot"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/plectosporium-blight-a-new-disease-of-cucurbit-crops-to-prepare-for/",
+      "title": "Plectosporium Blight: A New Disease of Cucurbit Crops to Prepare For | Cornell Vegetables",
+      "snippet": "Plectosporium blight of cucurbits caused by Plectosporium tabacinum (teleomorph Plectosphaerella cucumerina). On vines, leaf petioles and veins, symptoms are small, white and diamond-shaped lesions; on fruits lesions are small, white, and round. The fungus survives in soil and crop debris for up to 3 years; crop rotation for at least 3 years and improved ventilation reduce disease severity.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Plectosporium blight"
+      ]
+    },
+    {
+      "url": "https://vegcropshotline.org/article/plectosporium-blight-of-pumpkin-2/",
+      "title": "Plectosporium Blight of Pumpkin | Purdue University Vegetable Crops Hotline",
+      "snippet": "Plectosporium blight is a disease of pumpkins and squash caused by the fungus Plectosporium tabacinum, the anamorph of Plectosphaerella cucumerina. White or cream-colored spindle-shaped lesions appear on stems, petioles and leaf veins, and silver russetting/spots on fruit. Cool, wet weather favors disease; survives in soil 3 years.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Plectosporium blight"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/cucurbits-plectosporium",
+      "title": "Cucurbits, Plectosporium | Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Plectosporium blight (white speck) of pumpkins and squash caused by Plectosporium tabacinum. Lesions are small (<1/4 inch) and white; on vines, petioles and leaf veins lesions are diamond to lens-shaped, on fruit and leaves usually round. Lesions coalesce, tissues turn white and brittle. Management: rotate out of cucurbits 4-5 years, good air circulation, drip irrigation, chlorothalonil and strobilurin fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Plectosporium blight",
+        "white speck"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PD-89-0432A",
+      "title": "First Report of Plectosporium Blight on Pumpkin and Squash Caused by Plectosporium tabacinum in New York | Plant Disease",
+      "snippet": "First report of Plectosporium blight on pumpkin and squash caused by Plectosporium tabacinum in New York. Pumpkin and zucchini squash plants showed spindle-shaped lesions on vegetative tissues and silver russetting and spots on fruit, typical of Plectosporium blight.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Plectosporium blight"
+      ]
+    },
+    {
+      "url": "https://veggiescout.ca.uky.edu/plectosporium-blight-cucurbit-crops",
+      "title": "Plectosporium Blight of Cucurbit Crops | Scouting Guides for Problems of Vegetables (University of Kentucky)",
+      "snippet": "Plectosporium blight of cucurbit crops. Scout for diamond-shaped lesions on leaf veins, vines and petioles within the canopy; lesions coalesce until vines and petioles turn white and foliage dies.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Plectosporium blight"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/powdery-mildew-cucurbits",
+      "title": "Powdery mildew of cucurbits | UMN Extension",
+      "snippet": "Powdery mildew causes a white powdery growth on the upper surfaces of leaves and on the stems. Infected areas are stunted and distorted and may drop prematurely. Mainly caused by the fungus Podosphaera xanthii, infects all cucurbits including squash, cucumbers, gourds, watermelons and pumpkins. Symptoms first appear mid to late summer; older leaves are infected first.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+      "title": "Cucurbit Powdery Mildew | Cornell Vegetables",
+      "snippet": "Cucurbit powdery mildew is caused by the fungal pathogens Podosphaera xanthii and Erysiphe cichoracearum. P. xanthii is found more commonly worldwide and is a more aggressive pathogen. Infected leaves die prematurely, reducing yields and lowering fruit quality; winter squash from diseased plants won't store as long. Infection usually begins on older or shaded leaves.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew",
+        "Cucurbit powdery mildew"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/squash-cucurbita-spp-powdery-mildew",
+      "title": "Squash (Cucurbita spp.)-Powdery Mildew | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Squash (Cucurbita spp.) powdery mildew caused by Podosphaera xanthii. White powdery fungal growth on leaves and stems; management includes resistant varieties, cultural practices, and fungicide recommendations for the Pacific Northwest.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/cucurbit-powdery-mildew",
+      "title": "Cucurbit Powdery Mildew | NC State Extension Publications",
+      "snippet": "Cucurbit powdery mildew caused by Podosphaera xanthii and Erysiphe cichoracearum. Infection can occur between 50°F and 90°F with 68°F to 81°F optimum; temperatures above 100°F halt disease. Management via resistant varieties, full sun, spacing for air circulation, and fungicides such as quinoxyfen, myclobutanil, cyflufenamid, and flutriafol.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew",
+        "Cucurbit powdery mildew"
+      ]
+    },
+    {
+      "url": "https://extension.usu.edu/vegetableguide/cucumber-melon-pumpkin-squash/pythium",
+      "title": "Pythium Root and Fruit Rot - USU Extension",
+      "snippet": "Pythium produces blossom end rot symptoms associated with white fungal growth called 'Pythium or cottony leak'. Symptoms include watery, odorless rot. Pythium species are soilborne and can survive indefinitely as thick-walled oospores; zoospores are motile. Management includes drip irrigation, plastic mulch, avoiding poorly drained fields, and mefenoxam soil drenches.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pythium Root Rot",
+        "Pythium Fruit Rot",
+        "Cottony Leak",
+        "Damping-Off"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0042-FI",
+      "title": "A Diagnostic Guide for Pythium Damping-Off and Root and Stem Rot of Cucurbits | Plant Health Progress",
+      "snippet": "Damping-off symptoms include water-soaking and girdling of the hypocotyl and stem. Roots have light-brown, depressed, water-soaked lesions that coalesce. Mature plants wilt and collapse. All major Cucurbitaceae are susceptible, including summer squash, butternut squash, and winter squash. Cool, wet soils favor these fungus-like microorganisms.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Pythium Damping-Off",
+        "Pythium Root Rot",
+        "Pythium Stem Rot"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/squash-cucurbita-spp-pythium-root-rot",
+      "title": "Squash (Cucurbita spp.)-Pythium Root Rot | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Pythium root rot of squash (Cucurbita spp.). Roots show soft watery rot with cortex sloughed off; lower hypocotyl with watery rot. Cool, wet soils favor disease. Management includes well-drained soils, avoiding planting into cold soils, and fungicides such as Previcur Flex.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pythium Root Rot"
+      ]
+    },
+    {
+      "url": "https://veggiescout.ca.uky.edu/southern-blight-cucurbit-crops",
+      "title": "Southern Blight of Cucurbit Crops | Scouting Guides for Problems of Vegetables | University of Kentucky",
+      "snippet": "Cucurbit fruit start rotting on the underside when they are in contact with wet, infested soil. Affected areas are soft and water-soaked and will be covered with a dense mat of white, fan-like fungal growth. Numerous survival structures called sclerotia, generally small (roughly the size of a mustard seed), round, and tan to brown, are associated with the fungal growth. Favored by warm (above 80°F) and nearly saturated soils.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern Blight",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/Sclerotium_rolfsii_(Southern_blight_of_cucurbit)",
+      "title": "Sclerotium rolfsii (Southern blight of cucurbit) - Bugwoodwiki",
+      "snippet": "Southern blight appears as a rot of cucurbit fruit, particularly pumpkin, watermelon, and cantaloupe. Primarily seen on cucumber, muskmelon, pumpkin, and watermelon. Cultural management practices such as deep turning and long rotations are the most feasible and effective tactics; fungicidal control is rarely practical or effective.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Southern blight",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://lgpress.clemson.edu/publication/managing-southern-blight-on-vegetable-crops/",
+      "title": "Managing Southern Blight on Vegetable Crops | Land-Grant Press | Clemson University",
+      "snippet": "Sclerotium rolfsii (Athelia rolfsii) is a necrotrophic, soilborne fungal pathogen that can infect over 500 plant species. Initial symptoms include discolored crown/stem lesion at the soil line, wilting, and plant collapse, with white mycelium and small (1/8 to 1/16 inch) tan spherical sclerotia resembling mustard seeds. Favored by warm, moist soil in summer months.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern Blight",
+        "Sclerotium rolfsii",
+        "Athelia rolfsii"
+      ]
+    },
+    {
+      "url": "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/SPES-325/SPES-325.html",
+      "title": "An Overview of Southern Blight, Caused by Sclerotium rolfsii | VCE Publications | Virginia Tech",
+      "snippet": "Sclerotium rolfsii is a soilborne fungus present in tropical and subtropical regions. Four to five days after infection, small, spherical, white to tan structures with a smooth, hard texture, known as sclerotia, are observed; the sclerotia turn yellow and subsequently dark brown as they mature and range in size from 0.5 to 2 mm in diameter.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern Blight",
+        "Sclerotium rolfsii"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

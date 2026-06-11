@@ -1,5 +1,254 @@
 {
   "crop": "Strawberry",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://content.ces.ncsu.edu/angular-leafspot-of-strawberry",
+      "title": "Angular Leafspot of Strawberry | NC State Extension Publications",
+      "snippet": "Angular leaf spot disease of strawberry is caused by the bacterium Xanthomonas fragariae and is often confused with common leaf spot and leaf scorch diseases. Water-soaked lesions first appear on the lower surface of the leaf, becoming angular as they enlarge and usually delineated by veins.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Angular leaf spot",
+        "common leaf spot",
+        "leaf scorch"
+      ]
+    },
+    {
+      "url": "https://edis.ifas.ufl.edu/publication/pp120",
+      "title": "PP-199/PP120: Angular Leaf Spot of Strawberry - UF/IFAS EDIS",
+      "snippet": "Angular leaf spot (ALS) is a bacterial disease caused by Xanthomonas fragariae, a pathogen highly specific to wild and cultivated strawberry, Fragaria x ananassa, and is an important disease on winter-produced strawberries worldwide. Application of registered copper materials prior to rapid growth may reduce disease; Actigard is also registered and induces plant defences.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Angular leaf spot"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/strawberry/angular-leaf-spot/",
+      "title": "Angular Leaf Spot / Strawberry / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Angular leaf spot is caused by Xanthomonas fragariae. Lesions may exude a viscous yellow substance that is a mass of bacteria, leaving a characteristic white film on the leaf surface upon drying. Angular leaf spot is kept to a minimum by using certified planting materials; registered copper materials prior to rapid growth may reduce disease.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Angular leaf spot"
+      ]
+    },
+    {
+      "url": "https://extension.psu.edu/strawberry-disease-angular-leaf-spot",
+      "title": "Strawberry Disease - Angular Leaf Spot | Penn State Extension",
+      "snippet": "Angular leaf spot of strawberry is caused by the bacterium Xanthomonas fragariae. Water-soaked, angular lesions delineated by veins appear on the lower leaf surface; under moist conditions bacteria exude as a yellow viscous substance.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Angular leaf spot"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.56934",
+      "title": "Xanthomonas fragariae (angular leaf spot of strawberry) | CABI Compendium",
+      "snippet": "Xanthomonas fragariae thrives in humid climates and is most prevalent in climates with cool to moderate temperatures. The pathogen is highly host-specific to strawberry and is considered a quarantine disease by the European Union.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Angular leaf spot"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/anthracnose-fruit-rot-of-strawberry",
+      "title": "Anthracnose Fruit Rot of Strawberry | NC State Extension Publications",
+      "snippet": "Anthracnose fruit rot, caused by fungus in the Colletotrichum acutatum species complex, is an important disease for strawberry worldwide. On green fruit, anthracnose lesions are small, hard, sunken, and dark brown or black; lesions on ripening fruit are larger, hard, sunken, and tan to dark brown. During wet weather, the lesions become covered with sticky, light orange ooze composed of millions of spores (conidia). Fungicides should be used in a protectant or preventative program.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose fruit rot",
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-fru-16",
+      "title": "Anthracnose of Strawberry | Ohioline (Ohio State University Extension)",
+      "snippet": "Anthracnose of strawberry is caused by several species of fungi in the genus Colletotrichum: Colletotrichum acutatum, Colletotrichum fragariae, and Colletotrichum gloeosporioides. Colletotrichum spp. causes several disease symptoms on strawberry plants, including root, fruit, and crown rot, lesions on petioles and runners, and irregular black spots on the leaf. The use of disease-free plants is the most important management strategy for controlling this disease.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose",
+        "Anthracnose fruit rot",
+        "Anthracnose crown rot"
+      ]
+    },
+    {
+      "url": "https://ask.ifas.ufl.edu/publication/PP130",
+      "title": "PP-207/PP130: Anthracnose Fruit Rot of Strawberry | UF/IFAS EDIS",
+      "snippet": "Anthracnose fruit rot lesions appear as dark, sunken spots on infected fruit. Fruit rot is usually associated with Colletotrichum acutatum. Resistance to strobilurin fungicides (Group 11) in Colletotrichum acutatum was first detected in Florida in 2013. During the critical January to March period, protectant fungicides should be applied at higher label rates, and additional fungicides with some curative activity, such as Switch and Miravis Prime, may be needed.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose fruit rot"
+      ]
+    },
+    {
+      "url": "https://edis.ifas.ufl.edu/publication/PP156",
+      "title": "PP-238/PP156: Colletotrichum Crown Rot (Anthracnose Crown Rot) of Strawberry | UF/IFAS EDIS",
+      "snippet": "Colletotrichum crown rot (anthracnose crown rot) of strawberry, caused by Colletotrichum gloeosporioides, affects the crown tissue and can cause wilting and plant collapse. Discusses symptoms, pathogen biology, and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose crown rot",
+        "Colletotrichum crown rot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHYTO-12-18-0454-R",
+      "title": "Anthracnose Fruit and Root Necrosis of Strawberry Are Caused by a Dominant Species Within the Colletotrichum acutatum Species Complex in the United States | Phytopathology (APS)",
+      "snippet": "Anthracnose fruit and root necrosis of strawberry are caused by a dominant species within the Colletotrichum acutatum species complex in the United States. Characterizes the pathogen species complex responsible for fruit rot and root necrosis.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Anthracnose fruit rot",
+        "Anthracnose root necrosis"
+      ]
+    },
+    {
+      "url": "https://ask.ifas.ufl.edu/publication/PP152",
+      "title": "PP230/PP152: Botrytis Fruit Rot or Gray Mold of Strawberry",
+      "snippet": "Botrytis fruit rot (BFR), also known as gray mold, is caused by the fungus Botrytis cinerea and is one of the most important diseases of strawberry in Florida and worldwide. The fungus infects all aerial parts of the plant; however, most economic damage occurs when flowers and fruit are affected, occasionally resulting in yield losses greater than 50%. Most fruit infection occurs during bloom as a latent infection, with symptoms developing near harvest.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Botrytis fruit rot",
+        "Gray mold",
+        "Botrytis cinerea"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/gray-mold-or-botrytis-rot-of-strawberry",
+      "title": "Gray Mold or Botrytis Fruit Rot of Strawberry | NC State Extension Publications",
+      "snippet": "Gray mold is caused by Botrytis cinerea and is the primary disease of concern for strawberries. The most common symptom is fruit rot, with a light gray or brownish lesion developing near the stem end of the fruit, and a grayish, fuzzy mass of spores spreading over the lesion. Botrytis survives on dead plant material and in soil as sclerotia; spores spread by wind and wind-blown rain.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gray mold",
+        "Botrytis fruit rot",
+        "Botrytis cinerea"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-fru-36",
+      "title": "Botrytis Fruit Rot “Gray Mold” of Strawberry, Raspberry, and Blackberry | Ohioline (Ohio State University Extension)",
+      "snippet": "Botrytis fruit rot, also called gray mold, is caused by the fungus Botrytis cinerea. Typical symptoms include a spreading brown rot and fuzzy gray mold on ripening berries. Fuzzy gray sporulation on rotted fruit and leaf tissue is the classic symptom. Frequent rains, high relative humidity, and moderate temperatures are conducive to disease development.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Botrytis fruit rot",
+        "Gray mold",
+        "Botrytis cinerea"
+      ]
+    },
+    {
+      "url": "https://extension.psu.edu/strawberry-disease-gray-mold",
+      "title": "Strawberry Disease - Gray Mold | Penn State Extension",
+      "snippet": "Gray mold (Botrytis cinerea) affects leaves, stems, flowers, and crowns of strawberry. As ripening increases and humidity remains high, a characteristic gray, fuzzy coating produced by the fruiting of the fungus covers the strawberry fruit. The pathogen thrives in cool, humid conditions.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Gray mold",
+        "Botrytis cinerea"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/common-leafspot-of-strawberry",
+      "title": "Common Leafspot of Strawberry | NC State Extension Publications",
+      "snippet": "Common leaf spot symptoms begin as small round purple spots 1/8-inch to 1/4-inch in diameter on upper leaf surfaces. The center of the spots become tan or gray and eventually almost white, while the broad margins remain dark purple. Caused by Mycosphaerella fragariae. Includes pathogen biology and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Common leaf spot",
+        "Mycosphaerella fragariae"
+      ]
+    },
+    {
+      "url": "https://hort.extension.wisc.edu/articles/common-leaf-spot-of-strawberry/",
+      "title": "Common Leaf Spot of Strawberry – Wisconsin Horticulture",
+      "snippet": "Common leaf spot first appears as small, deep purple spots on the upper leaf surface, enlarging to 3–6 mm with the center turning brown then gray to white. Caused by the fungus Mycosphaerella fragariae (asexual stage Ramularia tulasnei). Management includes sanitation, spacing, and fungicides such as captan, myclobutanil, or copper.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Common leaf spot",
+        "Mycosphaerella fragariae",
+        "Ramularia tulasnei"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/strawberry/common-leaf-spot/",
+      "title": "Common Leaf Spot / Strawberry / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Common leaf spot of strawberry, caused by Ramularia tulasnei (Mycosphaerella fragariae). Lesions on petioles, stolons, calyxes, and fruit trusses. Disease development favored by cool, humid, wet conditions; conidia dispersed by splashing water. Includes monitoring and management guidelines.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Common leaf spot",
+        "Ramularia tulasnei",
+        "Mycosphaerella fragariae"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/assets.cce.cornell.edu/attachments/21546/strawleafspotfs.pdf",
+      "title": "Strawberry Leaf Spot – Cornell Cooperative Extension (Heidenreich and Turechek)",
+      "snippet": "Strawberry leaf spot factsheet describing purple spots with tan/white centers on leaves, plus lesions on fruit (black seed), caps, petioles, and runners. Caused by Mycosphaerella fragariae (anamorph Ramularia brunnea). Covers disease cycle and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Strawberry leaf spot",
+        "Common leaf spot",
+        "Mycosphaerella fragariae",
+        "Ramularia brunnea"
+      ]
+    },
+    {
+      "url": "https://ohioline.osu.edu/factsheet/plpath-fru-18",
+      "title": "Phomopsis Leaf Blight and Fruit Rot of Strawberry | Ohioline",
+      "snippet": "Phomopsis leaf blight and fruit rot (soft rot) of strawberry are caused by the fungus Phomopsis obscurans. Symptoms first appear as reddish-purple circular or lens-shaped spots that enlarge into V-shaped lesions with a light brown inner zone and dark brown/purple outer zone. On ripening fruit, lesions form as soft pink spots that turn brown and dry, covered with black pycnidia. Spores ooze under moist conditions and are disseminated by splashing water.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phomopsis leaf blight and fruit rot",
+        "Phomopsis soft rot"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/phomopsis-leaf-blight-of-strawberry",
+      "title": "Phomopsis Leaf Blight of Strawberry | NC State Extension Publications",
+      "snippet": "Phomopsis obscurans is an asexual, disease-causing fungus that infects strawberry leaves, also known as Dendrophoma obscurans. The disease first appears as circular, reddish to purple spots on mature leaves; older lesions develop three color zones—a pale brown/tan center surrounded by a brown ring and a ring of dark brown, red, or purple. Black fungal fruiting structures resembling pepper flakes appear in lesion centers. The fungus remains as a latent infection before symptoms develop later in the season.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phomopsis leaf blight",
+        "Phomopsis obscurans",
+        "Dendrophoma obscurans"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/strawberryphomopsisleafblight.html",
+      "title": "Phomopsis Leaf Blight of Strawberry / Home and Landscape / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Phomopsis leaf blight of strawberry caused by Phomopsis obscurans. Management recommendations include beginning with clean plant material and using proper sanitation. The disease can weaken strawberry plants through destruction of older foliage, reducing yields the following year.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Phomopsis leaf blight",
+        "Phomopsis obscurans"
+      ]
+    },
+    {
+      "url": "https://bnrc.springeropen.com/articles/10.1186/s42269-018-0041-2",
+      "title": "Management of strawberry leaf blight disease caused by Phomopsis obscurans using silicate salts under field conditions | Bulletin of the National Research Centre",
+      "snippet": "Silicon as well as potassium, sodium and calcium silicates could significantly reduce fungal growth, with complete inhibition achieved at 6 g/l. The highest reduction of disease severity was obtained with potassium silicate and calcium silicate applied as soil treatment combined with foliar spray.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "strawberry leaf blight",
+        "Phomopsis obscurans"
+      ]
+    },
+    {
+      "url": "https://ask.ifas.ufl.edu/publication/PP359",
+      "title": "PP359: Leaf Spot Diseases of Strawberry | UF/IFAS Extension",
+      "snippet": "Common leaf spot caused by Mycosphaerella fragariae; the asexual stage Ramularia tulasnei is more common in Florida and produces conidia dispersed by splashing water. Pathogen favored by high humidity and temperatures 50-80°F. Detailed symptoms on leaves, fruit (black seed), petioles, and management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Leaf spot diseases of strawberry",
+        "Common leaf spot",
+        "Mycosphaerella fragariae",
+        "Ramularia tulasnei"
+      ]
+    },
+    {
+      "url": "https://wiki.pestinfo.org/wiki/Ramularia_grevilleana",
+      "title": "Ramularia grevilleana - Pestinfo-Wiki",
+      "snippet": "Ramularia grevilleana (teleomorph Mycosphaerella fragariae) causes leaf spot on strawberry and other Rosaceae. Provides synonymy, taxonomy, host range, and references to the literature on the pathogen.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Ramularia grevilleana",
+        "Mycosphaerella fragariae",
+        "strawberry leaf spot"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

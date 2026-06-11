@@ -1,5 +1,105 @@
 {
   "crop": "Sugar Beet",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://cropwatch.unl.edu/plant-disease/sugarbeet/rhizomania/",
+      "title": "Rhizomania - CropWatch - University of Nebraska–Lincoln",
+      "snippet": "Rhizomania, a virus disease caused by beet necrotic yellow vein virus (BNYVV), is one of the most economically limiting diseases of sugar beets. Classical root symptoms include small, severely stunted taproots with masses of secondary roots giving a 'bearded' appearance; later infections cause a constricted wineglass appearance. BNYVV is a soil-borne virus transmitted by the obligate root plasmodiophorid Polymyxa betae.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rhizomania",
+        "Beet necrotic yellow vein virus (BNYVV)"
+      ]
+    },
+    {
+      "url": "https://extensionpubs.unl.edu/publication/g1842/2008/html/view",
+      "title": "Rhizomania of Sugar Beet - Nebraska Extension Publications (G1842)",
+      "snippet": "Foliar symptoms of rhizomania consist of wilting and varying degrees of yellowing or chlorosis with an erect, upright posture. Systemic infection results in yellow vein banding which may later turn necrotic. First reported in U.S. sugar beets in California in 1984 and identified in Nebraska in 1992.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rhizomania",
+        "Beet necrotic yellow vein virus"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/sugar-beet-beta-vulgaris-rhizomania",
+      "title": "Sugar Beet (Beta vulgaris)-Rhizomania | Pacific Northwest Pest Management Handbooks",
+      "snippet": "BNYVV is responsible for rhizomania, causing proliferation of thin rootlets, a smaller tap root, and reduced sugar content. The virus is transmitted by the soilborne fungus Polymyxa betae, which can survive in infested soil 10 years or more. Management relies on resistant cultivars (Rz1/Rz2 genes) and sanitation to prevent soil movement.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Rhizomania",
+        "Beet necrotic yellow vein virus (BNYVV)"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Beet_necrotic_yellow_vein_virus",
+      "title": "Beet necrotic yellow vein virus - Wikipedia",
+      "snippet": "Beet necrotic yellow vein virus is the type member of the viral genus Benyvirus. Its divided genome consists of four or five rigid rod-shaped particles (about 20 nm in diameter) with three to five molecules of single-stranded RNA. It causes rhizomania of sugar beet and is transmitted by Polymyxa betae.",
+      "source_type": "other",
+      "diseases_mentioned": [
+        "Beet necrotic yellow vein virus",
+        "Rhizomania"
+      ]
+    },
+    {
+      "url": "https://www.ndsu.edu/agriculture/ag-hub/ag-topics/crop-production/crops/sugarbeets/cercospora-leaf-spot-sugarbeet",
+      "title": "Cercospora Leaf Spot in Sugarbeet | NDSU Agriculture",
+      "snippet": "Cercospora leaf spot (CLS), caused by the fungus Cercospora beticola, is the most damaging foliar disease of sugarbeet in Minnesota and North Dakota. Circular spots 0.5-6 mm with brownish to reddish purple border and tan center develop rapidly in warm wet conditions (80-90F day, >60F night). Losses of 40% or more in tonnage and sucrose when uncontrolled. Management: tillage, tolerant varieties, 3-year rotation, fungicide mixtures.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cercospora Leaf Spot",
+        "Cercospora beticola"
+      ]
+    },
+    {
+      "url": "https://extensionpubs.unl.edu/publication/g1753/2013/pdf/view/g1753-2013.pdf",
+      "title": "Cercospora Leaf Spot of Sugar Beet (G1753) | University of Nebraska-Lincoln Extension",
+      "snippet": "Cercospora Leaf Spot of Sugar Beet caused by Cercospora beticola. Dedicated extension factsheet covering symptoms, disease cycle, favorable environmental conditions, and integrated management including resistant varieties, crop rotation, and fungicide use.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cercospora Leaf Spot"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10202088/",
+      "title": "Cercospora leaf spot disease of sugar beet",
+      "snippet": "Cercospora leaf spot is one of the oldest and best-known fungal diseases on sugar beet crops, caused by the fungus Cercospora beticola, and causes significant yield losses every year. More than one-third of the global sugar beet area is affected. Lesions form circular spots with brownish to reddish purple border and tan center; the most effective management combines tolerant varieties with judicious timely fungicide applications.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Cercospora Leaf Spot",
+        "Cercospora beticola"
+      ]
+    },
+    {
+      "url": "https://www.ndsu.edu/agriculture/extension/publications/plant-disease-management-sugarbeet-powdery-mildew",
+      "title": "Plant Disease Management: Sugarbeet Powdery Mildew | NDSU Agriculture",
+      "snippet": "Powdery mildew first shows up on the older, lower leaves, with symptoms appearing as wispy growth of white to light gray threadlike filaments, often radiating from a central point. Sulfur dust provides superior control to liquid applications. Strobilurin (Group 11) fungicides are labeled but Erysiphe betae has developed resistance; no more than one Group 11 application before alternating to a different mode of action.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery Mildew",
+        "Erysiphe betae"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/sugar-beet-beta-vulgaris-powdery-mildew",
+      "title": "Sugar Beet (Beta vulgaris)-Powdery Mildew | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Small, discrete white patches appear on both leaf surfaces, and patches coalesce until white mycelium and spores cover the entire leaf. Sugar beet powdery mildew is particularly damaging in areas with arid climates, causing sugar yield losses of up to 30%. Management based on integrated pest management measures including monitoring, resistant cultivars, and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery Mildew",
+        "Erysiphe betae"
+      ]
+    },
+    {
+      "url": "https://bsppjournals.onlinelibrary.wiley.com/doi/full/10.1046/j.1364-3703.2002.00103.x",
+      "title": "Sugar-beet powdery mildew (Erysiphe betae) - Francis - 2002 - Molecular Plant Pathology",
+      "snippet": "Symptoms appear as dirty white, circular, floury patches on either side of the leaves; under favourable conditions entire leaves, stems, floral parts and pods are affected. Infection normally begins on older leaves near the junction between lamina and petiole. Leaves later become yellow, then purplish brown, and finally necrotic. The pathogen survives overwinter through cleistothecia in crop debris.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Powdery Mildew",
+        "Erysiphe betae"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

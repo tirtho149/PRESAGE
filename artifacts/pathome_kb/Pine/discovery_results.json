@@ -1,5 +1,123 @@
 {
   "crop": "Pine",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://extension.psu.edu/diplodia-sphaeropsis-tip-blight-on-pine",
+      "title": "Diplodia (Sphaeropsis) Tip Blight on Pine",
+      "snippet": "Diplodia tip blight, caused by the fungus Sphaeropsis sapinea, is a destructive disease of pines, especially two- and three-needled species such as Austrian and Scots pine. Symptoms first appear on current-season needles which turn straw-colored, with the fungus killing young succulent shoots; small black fruiting bodies form on needles, shoots, and cone scales. Management includes sanitation and protective fungicide sprays as buds open.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Diplodia tip blight",
+        "Sphaeropsis tip blight",
+        "Sphaeropsis sapinea"
+      ]
+    },
+    {
+      "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/diplodia-tip-blight-and-canker",
+      "title": "Diplodia Tip Blight and Canker | Yard and Garden - Iowa State University Extension",
+      "snippet": "Diplodia tip blight and canker is caused by Diplodia pinea (syn. Sphaeropsis sapinea). The disease causes stunted, brown new shoots, resin-soaked cankers, and black pycnidia (fruiting bodies) on needles and cone scales. It primarily affects Austrian, Scots, and ponderosa pines, especially stressed trees. Pruning infected shoots and fungicide applications at bud break are recommended.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Diplodia tip blight",
+        "Diplodia canker",
+        "Diplodia pinea",
+        "Sphaeropsis sapinea"
+      ]
+    },
+    {
+      "url": "https://portal.ct.gov/CAES/Fact-Sheets/Plant-Pathology/Diplodia-Tip-Blight-Sphaeropsis-Blight",
+      "title": "Diplodia Tip Blight / Sphaeropsis Blight - Connecticut Agricultural Experiment Station (CAES)",
+      "snippet": "Diplodia tip blight (Sphaeropsis blight) can be a destructive disease of pines. The fungus Sphaeropsis sapinea rapidly kills young succulent shoots before needles fully elongate; one of the first signs is oozing of resin droplets from shoot buds in early spring. Cones are infected and bear small black fruiting bodies on the scales. Disease is more damaging on stressed trees.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Diplodia tip blight",
+        "Sphaeropsis blight",
+        "Sphaeropsis sapinea"
+      ]
+    },
+    {
+      "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=48",
+      "title": "Diplodia Tip Blight & Canker (Diplodia pinea (Sphaeropsis sapinea)) - Hort Answers, University of Illinois Extension",
+      "snippet": "Diplodia tip blight and canker is caused by Diplodia pinea (Sphaeropsis sapinea). Infected new shoots are stunted and turn brown with needles dying back; black pycnidia appear at the base of needles and on cones. Austrian and Scots pines are highly susceptible. Management includes sanitation, avoiding stress, and protective fungicides at bud break.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Diplodia tip blight",
+        "Diplodia canker",
+        "Diplodia pinea",
+        "Sphaeropsis sapinea"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
+      "title": "Pine needle rust | UMN Extension",
+      "snippet": "Yellow-to-orange, spore producing structures appear as spots or bands on infected pine needles in early spring, and by early summer, white, tube-like structures rise from the spots and produce spores. Coleosporium is a heteroecious rust fungus requiring two hosts (Pinus spp. and members of the Asteraceae).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pine needle rust",
+        "Coleosporium asterum"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/pine-needle-rust",
+      "title": "Pine Needle Rust : Landscape : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Symptoms appear in early spring as reddish-orange spots on the needles of infected pines. The fungus infects two- and three-needle pines; among the Asteraceae, goldenrod (Solidago) and aster (Aster) are the primary alternate hosts. Pitch pine, jack pine, mugo pine, Austrian, Scots, and Japanese black pine can be affected.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pine needle rust",
+        "Coleosporium"
+      ]
+    },
+    {
+      "url": "http://www.plantpath.cornell.edu/Trees/ColeospRust.html",
+      "title": "Coleosporium needle rust of pine",
+      "snippet": "Needles may develop reddish-orange dots on yellow spots or bands. A month later, flat-sided, white columns (aecia) break open at the sides. C. asterum needs two different host plants to complete its life cycle—one from the Pinaceae family and the other from the Asteraceae family; alternate hosts include aster, goldenrod, and other Compositae.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Coleosporium needle rust",
+        "Coleosporium asterum"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/pine-pinus-spp-needle-rusts",
+      "title": "Pine (Pinus spp.)-Needle Rusts | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Needle rusts of pine caused by Coleosporium spp. Management includes controlling alternate hosts (aster, goldenrod), spacing trees for air circulation, and fungicide application where the disease is a problem.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pine needle rust",
+        "Coleosporium"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/landscape/fact-sheets/ploioderma-needle-cast",
+      "title": "Ploioderma Needle Cast : Landscape : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "The native fungal pathogen Ploioderma lethale causes Ploioderma needle cast of two- and three-needle pines in forests, managed landscapes, and Christmas tree farms. Occurs most often on Austrian pine and pitch pine, with additional hosts including red pine, Japanese black pine, and mugo pine. Symptoms appear in winter and include yellow spots and bands giving needles a mottled appearance. Ploioderma infects newly developing needles in early summer. With no fungicide specifically registered, early scouting and removal of severely infected branches may reduce inoculum.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Ploioderma needle cast",
+        "Ploioderma lethale"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/ploioderma-needle-cast/",
+      "title": "Pine - Ploioderma Needle Cast - Cooperative Extension: Insect Pests, Ticks and Plant Diseases - University of Maine Cooperative Extension",
+      "snippet": "Ploioderma needle cast of pine caused by Ploioderma lethale. Symptoms include needle discoloration, mottling, and premature defoliation where needles are heavily infected; some trees may be killed by repeated severe infestations. Infection of newly developing needles occurs in early summer (June) in the northeast as new growth develops.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Ploioderma needle cast",
+        "Ploioderma lethale"
+      ]
+    },
+    {
+      "url": "https://extension.psu.edu/ploioderma-needle-cast",
+      "title": "Ploioderma Needle Cast - Christmas Trees Weeds, Pests and Diseases | Penn State Extension",
+      "snippet": "Ploioderma needle cast caused by Ploioderma lethale affects Austrian, loblolly, pitch, red, Virginia, Japanese black and most other hard needle pines on the east coast; not known on five-needle pines. Straw to brown colored bands appear in late spring to early summer on second-year needles, needle tips turn brown while bases remain green, with thin black longitudinal fruiting bodies in line on straw colored tissue. Damage usually most severe on lower branches. Prune heavily infected branches; apply first spray when needles emerge from the fascicle and repeat monthly twice more.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Ploioderma needle cast",
+        "Ploioderma lethale",
+        "Lophodermium needle cast"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

@@ -1,5 +1,86 @@
 {
   "crop": "St. Augustinegrass",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/turfgrass/rhizoctonia-blight-brown-patch-large-patch-yellow-patch/",
+      "title": "Rhizoctonia Blight (Brown Patch, Large Patch, Yellow Patch) / Turfgrass / UC IPM Pest Management Guidelines",
+      "snippet": "Large patch disease, also known as brown patch or Rhizoctonia blight, is caused by the pathogen Rhizoctonia solani and affects all warm-season turfgrasses, especially St. Augustinegrass and zoysiagrass. Infection of the lower leaf sheaths by R. solani occurs whenever the temperature of the thatch layer is between 50 and 70 F and continuous moisture is available for at least 48 hours. Cultural practices that improve water and fertility management are useful in preventing the development of Rhizoctonia blight.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Rhizoctonia Blight",
+        "Brown Patch",
+        "Large Patch",
+        "Yellow Patch"
+      ]
+    },
+    {
+      "url": "https://hgic.clemson.edu/factsheet/brown-patch-large-patch-diseases-of-lawns/",
+      "title": "Brown Patch & Large Patch Diseases of Lawns | Home & Garden Information Center, Clemson Cooperative Extension",
+      "snippet": "The disease is caused by the soilborne fungus Rhizoctonia solani. The disease usually begins as small patches that turn yellow and then reddish brown, brown, or straw colored as the leaves die. A soft, dark rot occurs at the base of the leaf and leaves can easily be pulled off the stem; the base of a pulled leaf has a rotted odor. St. Augustinegrass, centipedegrass, bermudagrass, zoysiagrass and cool-season turfgrasses are susceptible.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Brown Patch",
+        "Large Patch",
+        "Rhizoctonia solani"
+      ]
+    },
+    {
+      "url": "https://ask.ifas.ufl.edu/publication/LH044",
+      "title": "SS-PLP-5/LH044: Large Patch (Rhizoctonia Blight) of Turfgrass - Ask IFAS, University of Florida",
+      "snippet": "Large patch, caused by Rhizoctonia solani, is especially problematic in St. Augustinegrass and zoysiagrass. The disease is most likely observed from November through May when temperatures are below 80 F. Excessive moisture levels in the soil, thatch, and lower turf canopy encourage development of large patch; poor drainage, shade, restricted air movement, or excessive irrigation increase severity.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Large Patch",
+        "Rhizoctonia Blight",
+        "Brown Patch"
+      ]
+    },
+    {
+      "url": "https://extension.uga.edu/publications/detail.html?number=C1088",
+      "title": "Identification and Control of Rhizoctonia Large Patch in Georgia | UGA Cooperative Extension (C1088)",
+      "snippet": "Rhizoctonia large patch, caused by Rhizoctonia solani, affects warm-season turfgrasses including St. Augustinegrass. Close inspection of grass blades reveals rotted leaf sheaths near the soil surface. The disease develops rapidly under cooler temperatures and wet conditions in spring and fall.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Rhizoctonia Large Patch",
+        "Brown Patch",
+        "Rhizoctonia solani"
+      ]
+    },
+    {
+      "url": "https://edis.ifas.ufl.edu/publication/PP313",
+      "title": "PP313/PP313: Mosaic Disease of St. Augustinegrass Caused by Sugarcane Mosaic Virus",
+      "snippet": "Lethal Viral Necrosis Disease of Floratam St. Augustinegrass is caused by Sugarcane Mosaic Virus. Symptoms present as blotchy or streaky patterns of yellow and green color; early mosaic patterns become necrotic over time, leading to severe dieback. 'Floratam' exhibits the most severe symptoms; 'Palmetto' and 'Bitterblue' are more resistant. Although symptoms resemble St. Augustine Decline (SAD, caused by Panicum mosaic virus), samples tested positive for Sugarcane Mosaic Virus (SCMV).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sugarcane Mosaic Virus",
+        "Mosaic Disease of St. Augustinegrass",
+        "Lethal Viral Necrosis",
+        "St. Augustine Decline (SAD)",
+        "Panicum mosaic virus"
+      ]
+    },
+    {
+      "url": "https://gardeningsolutions.ifas.ufl.edu/lawns/problems-and-solutions/sugarcane-mosaic-virus-in-florida-turfgrass/",
+      "title": "Sugarcane Mosaic Virus in Florida Turfgrass – Gardening Solutions, UF/IFAS",
+      "snippet": "Sugarcane Mosaic Virus (SCMV) infects St. Augustinegrass in Florida, producing a mosaic of yellow and green blotches on the leaves that can progress to necrosis and dieback. Management focuses on resistant cultivars and sanitation of mowing equipment, as the virus is mechanically transmitted.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sugarcane Mosaic Virus",
+        "SCMV",
+        "mosaic disease"
+      ]
+    },
+    {
+      "url": "https://blogs.ifas.ufl.edu/hillsboroughco/2017/11/01/sugarcane-mosaic-virus-st-augustinegrass/",
+      "title": "Sugarcane Mosaic Virus (SCMV) of St. Augustinegrass - UF/IFAS Extension Hillsborough County",
+      "snippet": "Sugarcane Mosaic Virus (SCMV) of St. Augustinegrass causes mosaic and mottling symptoms that may turn necrotic, with dieback beginning in fall (September–October) and progressing through spring. Although symptoms resemble St. Augustine Decline, affected samples have tested positive for SCMV. 'Floratam' is most susceptible.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Sugarcane Mosaic Virus",
+        "SCMV",
+        "St. Augustine Decline"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

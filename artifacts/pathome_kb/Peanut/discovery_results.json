@@ -1,5 +1,98 @@
 {
   "crop": "Peanut",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://wiki.bugwood.org/Passalora_personata",
+      "title": "Passalora personata - Bugwoodwiki",
+      "snippet": "Late leaf spot of peanut caused by Passalora personata (syn. Cercospora personata, Cercosporidium personatum, Phaeoisariopsis personata, Nothopassalora personata; teleomorph Mycosphaerella berkeleyi). Symptoms consist of dark-brown to black leaf spots visible on both upper and lower leaf surfaces, sporulating mainly on the lower surface; severely affected plants defoliate early and yield is decreased 40-50%.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Late leaf spot of peanut",
+        "Passalora personata",
+        "Cercospora personata",
+        "Nothopassalora personata",
+        "Mycosphaerella berkeleyi"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/early-leaf-spot-of-peanut-1",
+      "title": "Peanut Leaf Spots | NC State Extension Publications",
+      "snippet": "Late leaf spot is caused by Nothopassalora personata (syn. Cercosporidium personatum). Leaf symptoms consist of circular, brown to dark brown lesions, with dark brown to black pin-point spots on both the upper and under side of the leaf surface; sporulation occurs on the bottom of the leaf. Management includes fungicide programs (4 to 7 applications), disease advisories, fungicide rotation, crop rotation and tillage.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Late leaf spot",
+        "Early leaf spot",
+        "Nothopassalora personata",
+        "Passalora arachidicola",
+        "Cercospora arachidicola"
+      ]
+    },
+    {
+      "url": "https://www.aces.edu/blog/topics/crop-production/foliar-diseases-of-peanuts/",
+      "title": "Foliar Diseases of Peanuts - Alabama Cooperative Extension System",
+      "snippet": "Late leaf spot causes dark-brown to black leaf spots (lesions) that penetrate through the leaf and are visible on both the upper and lower leaf surface; the spots may or may not be surrounded by a yellow halo. The higher reproductive rate of N. personata means late leaf spot spreads more rapidly than early leaf spot. Lesions typically become visible 10 to 14 days after infection.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Late leaf spot",
+        "Early leaf spot",
+        "Nothopassalora personata"
+      ]
+    },
+    {
+      "url": "https://apps.lucidcentral.org/pppw_v10/text/web_full/entities/peanut_leaf_spots_036.htm",
+      "title": "Peanut leaf spots (036) - Pacific Pests, Pathogens & Weeds (Lucid)",
+      "snippet": "Peanut early and late leaf spots. Late leaf spot caused by Nothopassalora personata (formerly Phaeoisariopsis/Cercosporidium personatum). Dark brown to black spots, mostly on the lower leaf surface; severe infection causes defoliation. Management by resistant varieties, crop rotation, sanitation and fungicides.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Peanut leaf spots",
+        "Late leaf spot",
+        "Early leaf spot",
+        "Nothopassalora personata"
+      ]
+    },
+    {
+      "url": "https://apps.lucidcentral.org/ppp_v9/text/web_full/entities/peanut_leaf_spots_036.htm",
+      "title": "Fact sheet - Peanut leaf spots (036)",
+      "snippet": "Fact sheet describing peanut leaf spots, including late leaf spot caused by Passalora personata (syn. Phaeoisariopsis personata) and early leaf spot caused by Cercospora arachidicola, with symptoms, spread, and management options.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "late leaf spot",
+        "early leaf spot",
+        "peanut leaf spots"
+      ]
+    },
+    {
+      "url": "https://extension.okstate.edu/fact-sheets/soilborne-blight-diseases-of-peanut.html",
+      "title": "Soilborne Blight Diseases of Peanut | Oklahoma State University",
+      "snippet": "Southern blight, also known as stem rot, is caused by the soilborne fungus Sclerotium rolfsii. Initial symptoms include yellowing and wilting of the main stem, lateral branches, or entire plant, with coarse white strands of mycelium growing in a fan-shaped pattern on lower stems. The fungus survives as small tan to brown sclerotia resembling mustard seeds. Favored by hot, humid conditions; yield losses of 25 percent or more.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern blight",
+        "stem rot"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/Sclerotium_rolfsii_(Southern_stem_rot_of_peanut)",
+      "title": "Sclerotium rolfsii (Southern stem rot of peanut) - Bugwoodwiki",
+      "snippet": "Southern stem rot (southern blight, white mold) of peanut caused by Sclerotium rolfsii. Disease begins with a small, water-soaked lesion on the lower stem at or near the soil surface, spreading rapidly to girdle the stem. White to brown sclerotia form at the base of stems. Signs include coarse white mycelial strands in a fan-shaped pattern.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Southern stem rot",
+        "Southern blight",
+        "white mold"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/SouthernBlight.aspx",
+      "title": "Southern blight, southern stem blight, white mold",
+      "snippet": "Southern blight (southern stem blight, white mold) is caused by Sclerotium rolfsii. The fungus produces abundant white, fluffy mycelium on infected tissues and soil and forms round, brown sclerotia. Management includes crop rotation of two years or more to non-host crops like corn or small grains to prevent build-up of inoculum, deep ploughing, and resistant varieties.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Southern blight",
+        "southern stem blight",
+        "white mold"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

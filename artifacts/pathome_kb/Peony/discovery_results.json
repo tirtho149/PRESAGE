@@ -1,5 +1,102 @@
 {
   "crop": "Peony",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/peony-paeonia-spp-anthracnose",
+      "title": "Peony (Paeonia spp.)-Anthracnose | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Cause: The fungi Gloeosporium sp., found in Oregon, and Colletotrichum sp., found in Washington. Symptoms: Lesions and cankers on all aboveground parts; stem cankers elongate and gray, often causing severe twisting or curling of the stem; pink-colored fruiting structures (acervulus) in cankers. These pathogens overwinter in leaf litter. Management: increase air movement by wide spacing, avoid overhead irrigation, mancozeb-based products (Group M3).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/peony-anthracnose/",
+      "title": "Peony - Anthracnose - Cooperative Extension: Insect Pests, Ticks and Plant Diseases - University of Maine Cooperative Extension",
+      "snippet": "University of Maine Cooperative Extension page dedicated to peony anthracnose, including plant disease diagnostic images and information on symptoms and the causal fungus.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-08-22-1916-PDN",
+      "title": "First Report of Colletotrichum aenigma Causing Anthracnose of Tree Peony in China | Plant Disease",
+      "snippet": "First report of Colletotrichum aenigma causing anthracnose on tree peony (Paeonia ostii) in China; describes symptoms, pathogen isolation, morphological and molecular identification, and pathogenicity.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Anthracnose"
+      ]
+    },
+    {
+      "url": "https://extension.missouri.edu/media/wysiwyg/Extensiondata/Pro/PlantDiagnosticClinic/Docs/BotrytisBlightPeony.pdf",
+      "title": "Botrytis Blight of Peony - University of Missouri Extension (Plant Diagnostic Clinic)",
+      "snippet": "Botrytis blight on peonies is caused by Botrytis paeoniae (early blight/bud blast) and B. cinerea (late blight). Young shoots rot as they emerge or at the base; shoots wilt and fall over with dense velvety gray fungal growth. Flower buds turn brown and fail to open. Thrives in cool, moist conditions (59-68 F).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Botrytis Blight",
+        "early blight",
+        "bud blast",
+        "late blight",
+        "gray mold"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/peony-paeonia-spp-botrytis-blight",
+      "title": "Peony (Paeonia spp.)-Botrytis Blight | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Caused by Botrytis paeoniae and B. cinerea; B. pseudocinerea (resistant to fenhexamid) also found in the Pacific Northwest. Symptoms include rotting young shoots, water-soaked stem lesions, blasted buds, and gray velvety sporulation. Includes cultural and chemical management recommendations.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Botrytis Blight",
+        "gray mold"
+      ]
+    },
+    {
+      "url": "https://hort.extension.wisc.edu/files/2024/04/Peony-Disorders-A2563.pdf",
+      "title": "Peony Disorders: Phytophthora and Botrytis Blights (A2563) - University of Wisconsin-Madison Extension",
+      "snippet": "Botrytis blight (gray mold) of peony is caused by Botrytis paeoniae and B. cinerea. Symptoms include rotted shoots near the soil line covered with gray mold, blackened buds that fail to open, and leaf spots from infected petals. Discusses diagnosis, distinction from Phytophthora blight, and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Botrytis Blight",
+        "gray mold",
+        "Phytophthora Blight"
+      ]
+    },
+    {
+      "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/peony-phytophthora-blight.aspx",
+      "title": "Peony Phytophthora Blight",
+      "snippet": "Symptoms begin as small water-soaked spots on emerging shoots, stems, petioles, buds, or leaves that become dark brown to black, leathery, elongated lesions. A wet rot occurs when crowns and roots are infected, causing the collapse and death of the entire plant. Caused by Phytophthora cactorum. Once symptoms are noticed, chemical treatments are usually not effective; remove all infected plant parts and immediate soil, and resolve drainage issues.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora Blight",
+        "Phytophthora Crown Rot",
+        "Stem Canker",
+        "Phytophthora cactorum"
+      ]
+    },
+    {
+      "url": "https://plantdiseasehandbook.tamu.edu/landscaping/flowers/peony/",
+      "title": "Peony | Texas Plant Disease Handbook",
+      "snippet": "Phytophthora cactorum causes Phytophthora Blight and Stem Canker on peonies. Infected parts are dark brown to black and leathery; cankers appear along the stems and may cause them to fall over, and it may also cause a watery crown rot often destroying the entire plant. Peonies planted in locations with poor drainage may develop the disease.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Phytophthora Blight",
+        "Stem Canker",
+        "Crown Rot",
+        "Phytophthora cactorum"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/phytophthora-blight-and-root-rot-on-annuals-and-herbaceous-perennials",
+      "title": "Phytophthora Blight and Root Rot on Annuals and Herbaceous Perennials | NC State Extension Publications",
+      "snippet": "Phytophthora species are fungal-like, plant-pathogenic oomycetes (water molds) that can persist in soil for several years and cause blight, crown and root rot on herbaceous perennials including peony. Symptoms include water-soaked lesions, wet crown and root rot, and plant collapse, favored by poorly drained, wet soils. Management emphasizes improving drainage and avoiding overwatering.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora Blight",
+        "Root Rot",
+        "Crown Rot"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

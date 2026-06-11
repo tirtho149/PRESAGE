@@ -1,5 +1,107 @@
 {
   "crop": "Scots Pine",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://www.canr.msu.edu/news/brown_spot_needle_blight_in_michigan",
+      "title": "Brown spot needle blight symptoms are showing up in Scots pine - Christmas Trees | MSU Extension",
+      "snippet": "Reddish-brown, resin-soaked spots with yellow margin appear on green needles of Scots pine, most commonly during August and September. Caused by Lecanosticta acicola (formerly Mycosphaerella dearnessii). Infected needles eventually turn fully brown and fall off, leaving limbs bare. Spreads by wind, rain, and contaminated pruning tools; fungicide timing when new needles are half grown (May-June).",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Brown spot needle blight",
+        "Lecanosticta acicola",
+        "Mycosphaerella dearnessii"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/plant-diseases/brown-spot-needle-blight",
+      "title": "Brown spot needle blight | UMN Extension",
+      "snippet": "Brown spot needle blight is caused by the fungal pathogen Lecanosticta acicola. The tips of infected needles turn brown while the base and midsection remain green; infected needles develop brown bands with small black acervuli. Affects Scots, Austrian, ponderosa and other pines. Management includes pruning, sanitation of fallen needles, and fungicide applications.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Brown spot needle blight",
+        "Lecanosticta acicola",
+        "Dothistroma needle blight"
+      ]
+    },
+    {
+      "url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.49057",
+      "title": "Mycosphaerella dearnessii (brown spot needle blight) | CABI Compendium",
+      "snippet": "CABI datasheet for Mycosphaerella dearnessii (anamorph Lecanosticta acicola), the cause of brown spot needle blight of pines. Covers host range including Pinus sylvestris (Scots pine), symptoms of needle necrosis and premature defoliation, distribution, biology and management.",
+      "source_type": "CABI_datasheet",
+      "diseases_mentioned": [
+        "Brown spot needle blight",
+        "Mycosphaerella dearnessii",
+        "Lecanosticta acicola"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/brown-spot-needle-blight",
+      "title": "Brown Spot Needle Blight | UMass Amherst Center for Agriculture, Food, and the Environment",
+      "snippet": "Brown spot needle blight, caused by Lecanosticta acicola, produces reddish-brown spots and bands on infected needles with small black fruiting bodies (acervuli). Affects landscape pines including Scots pine. Includes symptom description, disease cycle, and management recommendations with chlorothalonil-based fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Brown spot needle blight",
+        "Lecanosticta acicola"
+      ]
+    },
+    {
+      "url": "https://extension.psu.edu/diplodia-sphaeropsis-tip-blight-on-pine",
+      "title": "Diplodia (Sphaeropsis) Tip Blight on Pine",
+      "snippet": "Diplodia tip blight is a fungal disease caused by Diplodia sapinea (syn. Sphaeropsis sapinea). The fungus infects more than 20 different two- and three-needled pine species; Austrian pine is most susceptible, although Scots pine, red pine, Mugo pine, and Ponderosa pine are also susceptible. Symptoms include browning of needles on new shoots and resin oozing from buds; fungicide applied at bud break and again 2 weeks later.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Diplodia tip blight",
+        "Sphaeropsis tip blight"
+      ]
+    },
+    {
+      "url": "https://extension.umaine.edu/ipm/ipddl/publications/5102e/",
+      "title": "Diplodia Tip Blight - University of Maine Cooperative Extension",
+      "snippet": "The hallmark symptom of Diplodia tip blight is stunted, brown needles and stems, particularly of new shoots. Needles of infected shoots remain attached, are shorter than average and tan colored. One of the first indications is the oozing of small drops of resin from the shoot buds as growth begins in early spring. More common on trees older than 15 years.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Diplodia tip blight"
+      ]
+    },
+    {
+      "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=48",
+      "title": "Diplodia Tip Blight & Canker (Diplodia pinea (Sphaeropsis sapinea)) - University of Illinois Extension Hort Answers",
+      "snippet": "Diplodia Tip Blight & Canker caused by Diplodia pinea (Sphaeropsis sapinea). Symptoms, pathogen biology, and management for pines including Austrian, Scots, and ponderosa pine. Browning and stunting of new shoots, resin-soaked infected tissue, and black fruiting bodies (pycnidia) at the base of needles and on cones.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Diplodia tip blight",
+        "Diplodia canker"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8396920/",
+      "title": "The Diplodia Tip Blight Pathogen Sphaeropsis sapinea Is the Most Common Fungus in Scots Pines' Mycobiome, Irrespective of Health Status—A Case Study from Germany",
+      "snippet": "The opportunistic pathogen Sphaeropsis sapinea (≡Diplodia sapinea) is one of the most severe pathogens in Scots pine, causing Diplodia tip blight on coniferous tree species. Sphaeropsis sapinea has an endophytic mode in its lifecycle, making it difficult to detect before disease outbreaks; disease symptoms become visible when trees are weakened by stress.",
+      "source_type": "peer_reviewed",
+      "diseases_mentioned": [
+        "Diplodia tip blight"
+      ]
+    },
+    {
+      "url": "https://www.extension.purdue.edu/extmedia/BP/BP-24-W.pdf",
+      "title": "Diplodia Tip Blight of Two-Needle Pines - Purdue Extension",
+      "snippet": "Diplodia tip blight, caused by the fungus Sphaeropsis sapinea (formerly Diplodia pinea), affects two-needle pines including Scots, Austrian, and red pine. The needles of infected shoots remain attached, are shorter than average and tan colored. Black fruiting bodies (pycnidia) form at the needle base.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Diplodia tip blight",
+        "Sphaeropsis sapinea"
+      ]
+    },
+    {
+      "url": "https://www.aces.edu/blog/topics/forestry/diplodia-tip-blight-of-loblolly-pine-symptoms-causes-management/",
+      "title": "Diplodia Tip Blight of Pine: Symptoms, Causes & Management - Alabama Cooperative Extension System",
+      "snippet": "Diplodia tip blight, caused by Sphaeropsis sapinea, causes browning and death of new shoots, stunted needles, and cankers on branches and stems. Trees suffering from chronic drought and other stress are more prone to severe injury. Management includes sanitation pruning and fungicide applications.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Diplodia tip blight",
+        "Sphaeropsis sapinea"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

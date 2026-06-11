@@ -1,5 +1,131 @@
 {
   "crop": "Spinach",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://ag.umass.edu/vegetable/fact-sheets/spinach-cladosporium-leaf-spot",
+      "title": "Spinach, Cladosporium Leaf Spot : Vegetable : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Cladosporium leaf spot is caused by Cladosporium variabile. Early leaf spots are tan colored and expand to 1-3mm in diameter; adjacent spots may coalesce, forming irregular lesions. Velvety dark green-brown sporulation develops within the lesions. Development is favored by cool, humid conditions (optimum 59-68F, RH above 80%). QoI (strobilurin, FRAC 11) fungicides such as Quadris, Reason, and Cabrio are effective; pathogen is seedborne.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cladosporium leaf spot"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/spinach/cladosporium-leaf-spot/",
+      "title": "Cladosporium Leaf Spot / Spinach / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Cladosporium leaf spot is characterized by round, tan leaf spots that rarely exceed 0.25 inch in diameter, with dark green spores and mycelium developing in the centers. Cladosporium variabile is the primary pathogen under cool and moist conditions (optimum 59-68F, RH above 80%). Pathogen is seedborne; hot water and chlorine treatment eradicate it from seed. Fungicides can be used in conventional crops.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Cladosporium leaf spot",
+        "Stemphylium leaf spot"
+      ]
+    },
+    {
+      "url": "https://www.apsnet.org/publications/plantdisease/2012/July/Pages/96_7_1071.2.aspx",
+      "title": "First Report of Cladosporium Leaf Spot of Spinach Caused by Cladosporium variabile in the Winter Spinach Production Region of California and Arizona",
+      "snippet": "First Report of Cladosporium Leaf Spot of Spinach Caused by Cladosporium variabile in the winter spinach production region of California and Arizona. Describes symptoms, pathogen identification, and confirmation of Cladosporium variabile as the causal agent.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Cladosporium leaf spot"
+      ]
+    },
+    {
+      "url": "https://vegcropshotline.org/article/cladosporium-of-spinach/",
+      "title": "Cladosporium of Spinach | Purdue University Vegetable Crops Hotline",
+      "snippet": "Cladosporium of spinach (caused by Cladosporium variabile) produces tan leaf spots that later develop dark sporulation. Discusses symptoms, favorable cool/humid conditions, seedborne nature, and management for spinach growers.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Cladosporium leaf spot"
+      ]
+    },
+    {
+      "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/spinach-downy-mildew/",
+      "title": "Spinach Downy Mildew | Cornell Vegetables",
+      "snippet": "Spinach downy mildew, caused by Peronospora effusa (formerly P. farinosa f. sp. spinaciae), produces chlorotic yellow spots on the upper leaf surface with purplish-gray sporulation on the underside of leaves. Cool, wet conditions favor infection. Management includes resistant cultivars and fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Downy Mildew",
+        "Spinach Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/spinach-downy-mildew",
+      "title": "Spinach Downy Mildew : Vegetable : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Spinach downy mildew often begins as irregular yellow patches on upper leaf surfaces, with purplish-gray sporulation observed on the undersides of leaves. Cool (59-70F), humid conditions are ideal. Management includes row covers, air circulation, drip irrigation, fungicides (mefenoxam), crop rotation, and sanitation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Downy Mildew",
+        "Blue Mold"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/spinach/downy-mildew/",
+      "title": "Downy Mildew / Spinach / Agriculture: Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Downy mildew of spinach is caused by Peronospora effusa. Initial symptoms consist of dull to bright yellow spots that form on cotyledons and leaves of all ages; with time these spots enlarge and become tan and dry. Purplish-gray, fuzzy growth on the underside of leaves is diagnostic. Managed by host resistance and fungicide applications.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/spinach-spinacia-oleracea-downy-mildew",
+      "title": "Spinach (Spinacia oleracea)-Downy Mildew | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Downy mildew of spinach (Spinacia oleracea) caused by Peronospora effusa. Includes symptom description, pathogen biology requiring cool wet conditions, and detailed cultural and chemical management recommendations.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-10-18-1720-FE",
+      "title": "Spinach Downy Mildew: Advances in Our Understanding of the Disease Cycle and Prospects for Disease Management | Plant Disease",
+      "snippet": "Review of spinach downy mildew caused by Peronospora effusa, an oomycete that produces chlorotic spots on the adaxial leaf surface with gray sporulation on the abaxial surface. Covers disease cycle, windborne sporangia, epidemics, and management via host resistance and fungicides.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Downy Mildew",
+        "Spinach Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/spinach-spinacia-oleracea-white-rust",
+      "title": "Spinach (Spinacia oleracea)-White Rust | Pacific Northwest Pest Management Handbooks",
+      "snippet": "White rust of spinach is caused by Albugo occidentalis, an obligate oomycete parasite. Symptoms include yellow lesions on the upper leaf surface and white blister-like pustules on the leaf underside. Leaf surfaces must remain wet 2-3 hours for infection; optimum germination temperature is 54F, disease develops most rapidly at 72F. Management: deep-plow infected residue, three-year rotations, and Actigard 50WG applications.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "White Rust",
+        "Albugo occidentalis"
+      ]
+    },
+    {
+      "url": "https://wiki.bugwood.org/HPIPM:White_Rust_Spinach",
+      "title": "HPIPM:White Rust Spinach - Bugwoodwiki",
+      "snippet": "High Plains IPM datasheet on white rust of spinach caused by Albugo occidentalis. Covers symptoms (yellow chlorotic lesions on upper leaf surface, white pustules underneath), disease cycle, host range, and integrated management including resistant cultivars and fungicides.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "White Rust",
+        "Albugo occidentalis"
+      ]
+    },
+    {
+      "url": "https://plantdiseasehandbook.tamu.edu/food-crops/vegetable-crops/spinach/",
+      "title": "Spinach | Texas Plant Disease Handbook",
+      "snippet": "White rust is the major disease of spinach in Texas, caused by Albugo occidentalis. Symptoms include yellow lesions on the upper surface and white blister-like pustules on the underside of leaves. Disease develops most rapidly at 72F during cool humid nights. Management includes resistant cultivars (races 1, 2, 3), irrigation practices, crop rotation, sanitation, and fungicides such as pyraclostrobin.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "White Rust",
+        "Albugo occidentalis"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/full/10.1094/PDIS-06-16-0905-PDN",
+      "title": "First Report of White Rust (Albugo occidentalis) of Spinach in Mexico | Plant Disease",
+      "snippet": "APS Plant Disease note documenting white rust of spinach caused by Albugo occidentalis, with morphological and molecular identification of the pathogen and description of characteristic white pustules and chlorotic lesions on spinach leaves.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "White Rust",
+        "Albugo occidentalis"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

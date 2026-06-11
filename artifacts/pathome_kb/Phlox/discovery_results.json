@@ -1,5 +1,114 @@
 {
   "crop": "Phlox",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/phlox-downy-mildew",
+      "title": "Phlox-Downy Mildew | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Irregular yellow areas on the leaf and slow-growing, slightly distorted stems are the most common symptoms. White-to-grayish fungal growth on either the lower or upper surfaces of leaves and on newer portions of stem indicate downy mildew. Downy mildew on phlox is caused by the fungus-like organism Peronospora phlogina, which infects only plants in the family Polemoniaceae (Collomia, Gilia, Microsteris, Navarretia, Phlox). Cool, wet conditions favor infection and windborne sporangia development.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Downy Mildew"
+      ]
+    },
+    {
+      "url": "https://extension.psu.edu/addressing-downy-mildew-and-powdery-mildew-in-the-home-garden",
+      "title": "Addressing Downy Mildew and Powdery Mildew in the Home Garden | Penn State Extension",
+      "snippet": "Once infected, it can be difficult to eradicate either downy or powdery mildew, so the focus of the home gardener should be on prevention rather than treatment. Eliminate infected leaves, branches, and flowers; place susceptible plants where there is adequate sunlight and good air circulation to reduce humidity; allow proper plant spacing and prune for better air circulation.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Downy Mildew",
+        "Powdery Mildew"
+      ]
+    },
+    {
+      "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/phlox.aspx",
+      "title": "Phlox | University of Arkansas Cooperative Extension - Plant Health Clinic",
+      "snippet": "Plant Health Clinic disease notes on common diseases of phlox, including mildews. Discusses symptoms such as discolored and distorted foliage, fungal growth on leaf surfaces, and cultural management recommendations to improve air circulation and reduce humidity around susceptible phlox plantings.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Downy Mildew",
+        "Powdery Mildew"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/phlox-powdery-mildew",
+      "title": "Phlox-Powdery Mildew | Pacific Northwest Pest Management Handbooks",
+      "snippet": "The most frequently reported genera causing powdery mildew on phlox are Golovinomyces magnicellulatus and Podosphaera sp., while Golovinomyces cichoracearum (formerly Erysiphe cichoracearum) and Podosphaera macularis have been reported from Oregon and Washington. White or powdery-grey blotches cover foliage and stems. Chasmothecia are formed in late summer. Space plants in full sun; plant resistant cultivars such as 'Shortwood', 'David', 'Jeana', 'Robert Poore'.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-08-20-0070-RV",
+      "title": "Flaming Phlox and the Ubiquitous Powdery Mildew Disease | Plant Health Progress",
+      "snippet": "Golovinomyces magnicellulatus is an obligate host-specific fungal biotroph that causes powdery mildew disease on ornamental plants in the Phlox genus. Because of the plant's high susceptibility and popularity, Phlox growers rely heavily on fungicide treatments throughout the growing season. Annual phlox are more resistant than perennial phlox.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-11-19-2498-PDN",
+      "title": "First Report of Powdery Mildew of Phlox Caused by Golovinomyces magnicellulatus in Tennessee | Plant Disease",
+      "snippet": "First report of powdery mildew of Phlox caused by Golovinomyces magnicellulatus in Tennessee. Describes signs and symptoms including white mycelial growth on leaves and stems, and confirms pathogen identity via morphology and molecular methods.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Powdery mildew"
+      ]
+    },
+    {
+      "url": "https://plantdiseasehandbook.tamu.edu/landscaping/flowers/phlox/",
+      "title": "Phlox | Texas Plant Disease Handbook",
+      "snippet": "Crown rot on Phlox can be caused by Sclerotium spp., Rhizoctonia spp., and Thielaviopsis spp., which cause rotting of the plant at the soil line. Affected plants are often slow-growing or stunted and may show signs of wilting, with foliage that is yellow or red.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Crown rot",
+        "Root rot",
+        "Southern blight (Sclerotium)",
+        "Rhizoctonia rot",
+        "Thielaviopsis black root rot"
+      ]
+    },
+    {
+      "url": "https://portal.ct.gov/CAES/Plant-Pest-Handbook/pphP/Phlox-Phlox",
+      "title": "Phlox (Phlox) | CAES Plant Pest Handbook",
+      "snippet": "Crown rot, root rot, and stem rot of phlox are caused by soilborne fungi including Sclerotium rolfsii, Rhizoctonia, Phytophthora, and Pythium species. Plants wilt, collapse, and die; white mycelium and sclerotia may form at the base of the stem at the soil line.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Crown rot",
+        "Root rot",
+        "Stem rot",
+        "Southern blight",
+        "Phytophthora",
+        "Pythium"
+      ]
+    },
+    {
+      "url": "https://hort.extension.wisc.edu/articles/root-and-crown-rots/",
+      "title": "Root and Crown Rots – Wisconsin Horticulture",
+      "snippet": "Root and crown rots are caused by soilborne fungi and fungus-like organisms such as Phytophthora, Pythium, Rhizoctonia, and Sclerotium. Affected plants are stunted, wilt, and have brown, mushy roots; crowns rot at the soil line. Improve drainage and avoid overwatering to manage.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Root rot",
+        "Crown rot",
+        "Phytophthora",
+        "Pythium",
+        "Rhizoctonia",
+        "Sclerotium"
+      ]
+    },
+    {
+      "url": "https://www.canr.msu.edu/resources/phytophthora-root-and-stem-rot",
+      "title": "Phytophthora root and stem rot - Plant & Pest Diagnostics (MSU)",
+      "snippet": "Phlox is a host for Phytophthora root and stem rot, which causes stem and crown rot, root rot, stunting, wilting, and yellowing. Roots become brown and mushy. The pathogen thrives in saturated, poorly drained soils.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora root and stem rot",
+        "Crown rot",
+        "Root rot"
+      ]
+    }
+  ],
   "search_queries_run": []
 }

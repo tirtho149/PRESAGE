@@ -1,5 +1,299 @@
 {
   "crop": "Pepper",
-  "candidate_sources": [],
+  "candidate_sources": [
+    {
+      "url": "https://ag.umass.edu/vegetable/fact-sheets/solanaceous-alternaria-fruit-rot",
+      "title": "Solanaceous, Alternaria Fruit Rot : Vegetable : Center for Agriculture, Food, and the Environment (CAFE) at UMass Amherst",
+      "snippet": "Lesions may develop at growth cracks, wounds, or on tissue damaged by chilling, sunscald, calcium deficiency, insect injury, or heat. As the disease progresses, lesions enlarge and become sharply sunken and eventually become covered with a dark green to black mold. Black mold is a disease of mature red fruit and may be seen in the field or post-harvest. Field infections occur during periods of excessive moisture late in the season.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Alternaria fruit rot",
+        "black mold"
+      ]
+    },
+    {
+      "url": "https://extension.sdstate.edu/pepper-internal-rot-disease-information-and-research-updates",
+      "title": "Pepper Internal Rot: Disease information and research updates",
+      "snippet": "Pepper internal rot is primarily caused by Alternaria alternata, a common, widespread fungus. When Alternaria colonizes lesions they become chocolate brown to black and the fungus may be evident by a felty, dark brown to black growth.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pepper internal rot",
+        "Alternaria alternata"
+      ]
+    },
+    {
+      "url": "https://extension.umd.edu/resource/alternaria-fruit-or-pod-rot-vegetables",
+      "title": "Alternaria Fruit or Pod Rot - Vegetables | University of Maryland Extension",
+      "snippet": "Alternaria fruit or pod rot generally occurs in fruit having a predisposing injury. The Alternaria species responsible is a weak pathogen and rarely spreads in harvested fruit. Alternaria is favored by cool, wet weather.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Alternaria fruit rot",
+        "Alternaria pod rot"
+      ]
+    },
+    {
+      "url": "https://ipm.cahnr.uconn.edu/minor-diseases-of-pepper/",
+      "title": "Minor Diseases of Pepper | Integrated Pest Management | University of Connecticut",
+      "snippet": "The most commonly associated organism is Alternaria spp. Lesions enlarge and become sunken and become covered with a dark green to black mold on mature pepper fruit.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Alternaria fruit rot",
+        "black mold",
+        "minor diseases of pepper"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/tomato/alternaria-stem-canker/",
+      "title": "Alternaria Stem Canker / Tomato / Pest Management Guidelines / UC Statewide IPM Program (UC IPM)",
+      "snippet": "Dark brown to black cankers with concentric zonation occur on stems near the soil line or aboveground. Cankers enlarge, girdle the stem before harvest, and kill plants. Vascular tissue above and below the cankers exhibits brown streaks; dark areas of dead tissue between leaf veins are caused by a toxin produced by the fungus (Alternaria alternata). Wounding of young plants provides an entry site for infection.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Alternaria stem canker",
+        "Alternaria alternata"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/bacterial-spot-of-pepper-and-tomato",
+      "title": "Bacterial Spot of Pepper and Tomato | NC State Extension Publications",
+      "snippet": "Symptomatic plants often show dark brown or black lesions on all aboveground tissue including fruit, stems, and foliage, with defoliation, fruit spots, and fruit drop being the most important symptoms contributing to yield loss. Caused by four Xanthomonas species. Disease development favored by 75–86°F and high precipitation. Management includes cultural and sanitation practices and chemical control.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial spot of pepper",
+        "Bacterial spot of tomato"
+      ]
+    },
+    {
+      "url": "https://extension.umn.edu/disease-management/bacterial-spot-tomato-and-pepper",
+      "title": "Bacterial spot of tomato and pepper | UMN Extension",
+      "snippet": "Pepper leaves have small (less than 1/8 inch), brown, circular spots that do not have a yellow halo and centers do not fall out. Bacterial spot is caused by Xanthomonas species and affects pepper and tomato. Management includes pathogen-free certified seeds and disease-free transplants.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial spot of tomato",
+        "Bacterial spot of pepper"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-11-21-0140-DG",
+      "title": "Diagnostic Guide for Bacterial Spot of Tomato and Pepper | Plant Health Progress",
+      "snippet": "Bacterial spot of tomato and pepper is caused by four Xanthomonas species: X. euvesicatoria, X. vesicatoria, X. perforans, and X. gardneri. Diagnostic guide covering symptoms, pathogen identification, and management of this worldwide disease.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Bacterial spot of tomato",
+        "Bacterial spot of pepper"
+      ]
+    },
+    {
+      "url": "https://extension.wvu.edu/lawn-gardening-pests/plant-disease/fruit-vegetable-diseases/bacterial-leaf-spot-of-pepper",
+      "title": "Bacterial Leaf Spot of Pepper | Extension | West Virginia University",
+      "snippet": "Bacterial leaf spot of pepper produces small, water-soaked lesions that become tan to reddish-brown, often more numerous at leaf tips and margins. Defoliation occurs under heavy disease pressure. Caused by Xanthomonas. Includes symptoms, pathogen and management information.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Bacterial leaf spot of pepper"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/anthracnose-of-pepper",
+      "title": "Anthracnose of Pepper | NC State Extension Publications",
+      "snippet": "Anthracnose of pepper is caused by a complex of Colletotrichum species (C. truncatum, C. acutatum, C. gloeosporioides, C. scovillei). Fruit lesions are small, depressed, circular, becoming larger with salmon to pink spore masses; centers tan/orange/brown/black with concentric circles, eventually rotting the entire fruit. Pathogen survives on/in seed and overwinters as microsclerotia.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose of pepper",
+        "Colletotrichum fruit rot"
+      ]
+    },
+    {
+      "url": "https://edis.ifas.ufl.edu/publication/PP104",
+      "title": "PP-178/PP104: Anthracnose on Pepper in Florida | UF/IFAS EDIS",
+      "snippet": "Anthracnose on pepper caused by Colletotrichum spp. Circular, sunken lesions producing pink to orange spore masses under humid conditions; latent infections of flowers/developing fruit. Includes pathogen biology and management with disease-free seed, rotation, and fungicide programs.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose on pepper",
+        "Colletotrichum"
+      ]
+    },
+    {
+      "url": "https://vegcropshotline.org/article/anthracnose-management-in-peppers-the-old-and-the-new/",
+      "title": "Anthracnose Management in Peppers – the Old and the New | Purdue University Vegetable Crops Hotline",
+      "snippet": "Caused by several Colletotrichum species (C. acutatum, C. gloeosporioides, C. capsicum, C. coccodes). Circular sunken lesions with pink/orange spore masses; lesions on mature and immature fruit. Management: disease-free seed and transplants, disinfecting trays/tools, avoiding overhead irrigation, crop rotation, scouting, and rotated preventive fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Anthracnose",
+        "Colletotrichum fruit rot"
+      ]
+    },
+    {
+      "url": "https://plantpathology.ces.ncsu.edu/2025/06/be-on-the-lookout-for-pepper-anthracnose-caused-by-colletotrichum-scovillei/",
+      "title": "Be on the Lookout for Pepper Anthracnose Caused by Colletotrichum scovillei | NC State Extension",
+      "snippet": "C. scovillei has reemerged as an aggressive pepper anthracnose pathogen in the southeastern US, able to infect immature (green) fruit with a rapid disease cycle. Thrives in warm, humid environments; frequent rain, dense canopies, and poor air circulation accelerate spread.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Pepper anthracnose",
+        "Colletotrichum scovillei"
+      ]
+    },
+    {
+      "url": "https://ask.ifas.ufl.edu/publication/SS497",
+      "title": "SL 284/SS497: Blossom-End Rot in Bell Pepper: Causes and Prevention",
+      "snippet": "Blossom end rot of pepper is caused by a localized calcium deficiency within pepper fruit and/or environmental stress factors. A water-soaked, light-tan spot develops at the blossom end or bottom side of a fruit, enlarging and becoming dark brown or black and leathery. Drought, salinity and high temperatures promote blossom-end rot.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Blossom-End Rot"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/blossom-end-rot-of-tomato-pepper-and-watermelon",
+      "title": "Blossom-End Rot of Tomato, Pepper, and Watermelon | NC State Extension Publications",
+      "snippet": "Blossom-end rot symptoms begin as a light green or yellow-colored sunken spot and expand to a larger collapsed area that turns black from colonization by saprophytic Alternaria fungal species. In pepper, lesions are frequently on the side of the fruit and look identical to sunscald. Caused by localized calcium deficiency.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Blossom-End Rot",
+        "sunscald"
+      ]
+    },
+    {
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/pepper-capsicum-spp-blossom-end-rot",
+      "title": "Pepper (Capsicum spp.)-Blossom-end Rot | Pacific Northwest Pest Management Handbooks",
+      "snippet": "Blossom-end rot is a physiological disorder of pepper caused by a localized calcium deficiency in the developing fruit, often associated with fluctuations in soil moisture, rapid growth, drought, or high salinity rather than inadequate soil calcium levels.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Blossom-end Rot"
+      ]
+    },
+    {
+      "url": "https://ag.umass.edu/vegetable/fact-sheets/solanaceous-blossom-end-rot",
+      "title": "Solanaceous, Blossom End Rot : Vegetable : UMass Amherst Center for Agriculture, Food, and the Environment",
+      "snippet": "Blossom end rot in solanaceous crops including pepper and tomato is a physiological disorder due to a shortage of calcium in the young fruit. Moisture imbalances or water stress aggravate the problem by interfering with calcium uptake. Excessive nitrogen, especially ammonium form, increases calcium demand.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Blossom End Rot"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/phytophthora-blight-of-peppers",
+      "title": "Phytophthora Blight of Peppers | NC State Extension Publications",
+      "snippet": "The most common symptoms on peppers are crown rot and fruit rot. Elongated, soft lesions occur on the stem close to the soil line; crown rot lesions girdle stems, resulting in rapid wilting and death. Caused by Phytophthora capsici, which overwinters as oospores in soil for over 10 years.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora Blight",
+        "crown rot",
+        "fruit rot"
+      ]
+    },
+    {
+      "url": "https://extension.okstate.edu/fact-sheets/phytophthora-blight-of-cucurbits-and-peppers.html",
+      "title": "Phytophthora Blight of Cucurbits and Peppers | Oklahoma State University",
+      "snippet": "Phytophthora blight, caused by Phytophthora capsici, produces crown rot, root rot, foliar blight, and fruit rot. The pathogen spreads rapidly via water and contaminates irrigation ponds; symptoms first appear in low-lying areas where standing water occurs.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora Blight",
+        "crown rot",
+        "root rot",
+        "fruit rot"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0027-FI",
+      "title": "A Diagnostic Guide for Phytophthora capsici Infecting Vegetable Crops | Plant Health Progress",
+      "snippet": "Diagnostic guide for Phytophthora capsici infecting vegetable crops including pepper, describing symptoms of crown rot, fruit rot, and foliar blight along with pathogen identification and management.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Phytophthora capsici",
+        "Phytophthora Blight"
+      ]
+    },
+    {
+      "url": "https://lgpress.clemson.edu/publication/managing-phytophthora-capsici-diseases-on-vegetables/",
+      "title": "Managing Phytophthora capsici Diseases on Vegetables | Land-Grant Press | Clemson University",
+      "snippet": "Five options help reduce the occurrence and severity of Phytophthora diseases on vegetables: water management, crop rotation, soil management, resistance (in pepper only), and fungicides. Phytophthora blight often begins with a dry, corky canker on the main stem at the soil line.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Phytophthora Blight",
+        "Phytophthora capsici"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/southern-blight-of-vegetable-crops",
+      "title": "Southern Blight of Tomato and Pepper | NC State Extension Publications",
+      "snippet": "On pepper, the most common symptom occurs on the lower stem where it is in contact with the soil, initially as a brown to black lesion near the soil line that develops rapidly and can completely girdle the stem, causing sudden and permanent wilt. Under moist conditions, white mycelium develops on stem lesions along with tan to reddish-brown spherical sclerotia (1 to 2 mm). Management includes cultural practices, crop rotation, and post-transplant SDHI/QoI fungicides.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern Blight",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://extension.umd.edu/resource/southern-blight-problem-peppers",
+      "title": "Southern Blight Problem in Peppers | University of Maryland Extension",
+      "snippet": "The initial symptom on pepper consists of a reddish to tan lesion that develops on the crown at the soil line. The lesion girdles the stem, causing sudden wilt. White mycelium and small round sclerotia (0.3 to 3 mm), initially white turning tan to dark brown, develop. Southern blight is favored by warm (above 80 F) saturated soils, often after heavy rain.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern Blight",
+        "Athelia rolfsii",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/SPES-325/SPES-325.html",
+      "title": "An Overview of Southern Blight, Caused by Sclerotium rolfsii | VCE Publications | Virginia Tech",
+      "snippet": "Southern blight is caused by the soilborne fungus Agroathelia rolfsii (=Sclerotium rolfsii), a necrotrophic pathogen present in tropical and subtropical regions. It infects over 500 plant species including pepper. Symptoms include water-soaked lesions on crown and lower stem in contact with soil, white mycelium, and tan to reddish-brown sclerotia.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern Blight",
+        "Sclerotium rolfsii",
+        "Agroathelia rolfsii"
+      ]
+    },
+    {
+      "url": "https://veggiescout.mgcafe.uky.edu/southern-blight-pepper",
+      "title": "Southern Blight of Pepper | Scouting Guides for Problems of Vegetables (University of Kentucky)",
+      "snippet": "Scouting guide for southern blight of pepper caused by Sclerotium rolfsii, with images of stem girdling lesions at the soil line, white fan-like mycelium, and mustard-seed-sized sclerotia, plus wilt symptoms and management notes.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Southern Blight",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-94-2-0280C",
+      "title": "First Report of Southern Blight of Pepper Caused by Sclerotium rolfsii in Southern Spain | Plant Disease (APS)",
+      "snippet": "First report documenting southern blight of pepper caused by Sclerotium rolfsii in southern Spain, describing crown and stem rot symptoms, white mycelial growth, sclerotia, and pathogen identification.",
+      "source_type": "APS_publication",
+      "diseases_mentioned": [
+        "Southern Blight",
+        "Sclerotium rolfsii"
+      ]
+    },
+    {
+      "url": "https://content.ces.ncsu.edu/tomato-spotted-wilt-virus-on-tomato-and-pepper",
+      "title": "Tomato Spotted Wilt Virus on Tomato and Pepper | NC State Extension Publications",
+      "snippet": "Infected peppers form small brown necrotic spots and/or chlorotic ring spots on the foliage. The fruit can display ringspots or calico patterns appearing from green to red. TSWV is transmitted by thrips (Frankliniella spp.) which acquire the virus as larvae. Includes symptom descriptions, pathogen biology, vector, and management.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tomato Spotted Wilt Virus",
+        "TSWV"
+      ]
+    },
+    {
+      "url": "https://ipm.ucanr.edu/agriculture/peppers/tomato-spotted-wilt/",
+      "title": "Tomato Spotted Wilt / Peppers / Agriculture: Pest Management Guidelines | UC Statewide IPM Program (UC IPM)",
+      "snippet": "Pepper-specific pest management guidelines for Tomato spotted wilt, a Tospovirus transmitted in a persistent manner by thrips. Covers symptoms on pepper foliage and fruit, the western flower thrips vector, resistant varieties carrying the Tsw gene, and integrated management.",
+      "source_type": "university_guide",
+      "diseases_mentioned": [
+        "Tomato Spotted Wilt",
+        "Tomato spotted wilt virus",
+        "TSWV"
+      ]
+    },
+    {
+      "url": "https://extension.usu.edu/planthealth/research/tswv.pdf",
+      "title": "Tomato Spotted Wilt Virus of Tomato & Pepper | Utah State University Extension",
+      "snippet": "Extension factsheet describing Tomato Spotted Wilt Virus (Orthotospovirus) affecting tomato and pepper. Details symptoms including bronzing, necrotic spots, chlorotic ringspots and fruit patterns, thrips transmission by western flower thrips, host range, and management including resistant varieties and thrips control.",
+      "source_type": "extension_factsheet",
+      "diseases_mentioned": [
+        "Tomato Spotted Wilt Virus",
+        "TSWV"
+      ]
+    }
+  ],
   "search_queries_run": []
 }
