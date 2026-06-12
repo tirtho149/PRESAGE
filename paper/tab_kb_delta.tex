@@ -1,0 +1,28 @@
+% Real canonical-vs-delta KB examples (Tomato), from *_delta_validation.md.
+\begin{table*}[t]
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.15}
+\caption{\textbf{Canonical KB vs.\ image-grounded Delta KB} (Tomato). The
+\emph{canonical} column is verbatim, source-cited extension text; the
+\emph{delta} is what a VLM reports from a state-specific \bugwood{} field
+photograph of that disease. \emph{Grounding} rows confirm the canonical claim
+against a real field image; \emph{Refinement} rows show the delta extending,
+re-staging, or adding look-alikes the canonical text omits---the signal the
+inference re-ranker consumes.}
+\label{tab:kb-delta}
+\begin{tabular}{@{}llp{0.36\textwidth}p{0.34\textwidth}l@{}}
+\toprule
+Disease & Field & Canonical KB (cited) & Delta KB (\texttt{image\_shows}) & Type \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{Grounding --- delta confirms canonical against a field image}}\\
+Late Blight & fruit & Dark brown, greasy-to-leathery circular spots. & Tomato fruits with dark brown, greasy-to-leathery circular spots. & match\\
+Anthracnose & sporulation & Masses of salmon-colored sausage-shaped spores may form on the lesion surface. & Salmon-colored sausage-shaped masses forming on the lesion surface. & match\\
+Southern Blight & look-alikes & Tan to reddish-brown spherical sclerotia (1--2\,mm) at the stem base. & Tan to reddish-brown spherical sclerotia (1--2\,mm) at the stem base. & match\\
+\midrule
+\multicolumn{5}{@{}l}{\textit{Refinement --- delta extends / re-stages / adds look-alikes}}\\
+Tomato Leaf Mould & lesion & Pale green / yellowish spots; olive-green mould on the lower leaf surface. & Brown spots clustered near major veins, some discrete. & stage/color\\
+Bacterial Speck & look-alikes & Bacterial spot; spotted wilt; bacterial canker. & Target-spot lesion: central dark-brown area within concentric rings. & added look-alike\\
+\bottomrule
+\end{tabular}
+\end{table*}

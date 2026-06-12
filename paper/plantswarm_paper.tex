@@ -1,12 +1,7 @@
-\documentclass[11pt,twocolumn]{article}
-
-\usepackage[letterpaper,top=1in,bottom=1in,
-  left=0.75in,right=0.75in,columnsep=0.25in]{geometry}
-\usepackage{times}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{microtype}
-\usepackage{courier}
+% ===== WACV 2027 (applications track) template =====
+\documentclass[10pt,twocolumn,letterpaper]{article}
+\usepackage[applications]{wacv}   % review mode: add "review" -> [review,applications]
+% wacv.sty already loads times, natbib[numbers], caption, subcaption.
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 % Auto-generated figures live in ../results/figures/ at the repo root;
@@ -16,28 +11,21 @@
 \graphicspath{{../results/}{./}{figures/}}
 \usepackage{booktabs,multirow,array}
 \usepackage{xcolor}
-\usepackage[font=small,labelfont=bf,skip=4pt]{caption}
-\usepackage{titlesec}
-\titleformat{\section}{\normalfont\large\bfseries\centering}{\thesection}{0.5em}{}
-\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{0.5em}{}
-\titleformat{\subsubsection}{\normalfont\normalsize\itshape\bfseries}{\thesubsubsection}{0.5em}{}
-\titlespacing*{\section}{0pt}{6pt plus 2pt minus 1pt}{3pt}
-\titlespacing*{\subsection}{0pt}{4pt plus 1pt}{2pt}
-\titlespacing*{\subsubsection}{0pt}{3pt plus 1pt}{1pt}
-\usepackage{natbib}
-\bibpunct{(}{)}{;}{a}{,}{,}
-\setlength{\bibsep}{2pt}
-\renewcommand{\bibfont}{\small}
+\usepackage{tikz}
+\usetikzlibrary{positioning,fit,backgrounds,calc,arrows.meta,shapes.geometric}
+\usepackage{fontawesome5}  % icons for the teaser figure (fig_teaser.tex)
+% caption/subcaption/natbib/times are loaded by wacv.sty; do not re-load.
 \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
 \SetAlgoSkip{smallskip}
 \usepackage{enumitem}
 \setlist{noitemsep,topsep=2pt,parsep=0pt,partopsep=0pt,leftmargin=*}
-\setlength{\parskip}{0pt}
-\setlength{\parindent}{9pt}
-\pagestyle{empty}
 \usepackage{float}
 \usepackage{xspace}
-\usepackage[hidelinks]{hyperref}
+\usepackage[pagebackref,breaklinks,colorlinks]{hyperref}
+\usepackage[capitalize]{cleveref}
+\def\wacvPaperID{0000}
+\def\confName{WACV}
+\def\confYear{2027}
 
 \newcommand{\observe}{\textsc{Observe}\xspace}
 \newcommand{\plantswarm}{\textsc{PlantSwarm}\xspace}
@@ -48,30 +36,65 @@
 \newcommand{\bugwood}{\textsc{Bugwood}\xspace}
 \newcommand{\pv}{\textsc{PlantVillage}\xspace}
 \newcommand{\pw}{\textsc{PlantWild}\xspace}
+\newcommand{\pd}{\textsc{PlantDoc}\xspace}
+% Real-number macros (regenerate: python gen_presage_tables.py). Use the
+% auto file when present; otherwise fall back so the paper still compiles.
+\IfFileExists{auto_presage_macros.tex}{\input{auto_presage_macros}}{%
+  \newcommand{\costtext}{\$7.03}\newcommand{\costembed}{\$5.49}%
+  \newcommand{\sagecostlo}{\$18}\newcommand{\sagecosthi}{\$35}}
 
-\title{\vspace{-1em}\textbf{PRESAGE: Pathology-Retrieval Evidence for\\
-Scalable Agentic Grounded Evaluation}\\[0.35em]
-\large Geospatial Multi-Agent Routing for Cross-Crop\\
-Plant Disease Diagnosis from Ten Field Images}
+\title{\textsc{Presage}: Pathology-Retrieval Evidence for Scalable Agentic Grounded Evaluation\\[0.25em]
+{\large Cost-Effective, Pixel-Free Plant-Disease Diagnosis Across Crops}}
 
-\author{\textbf{Anonymous Submission}\\EMNLP 2026 Main Conference}
-\date{}
+\author{
+Tirtho Roy$^{1,*}$ \quad Nikhil$^{1}$ \quad Muhammad Arbab Arshad$^{1}$ \quad Yanben Shen$^{1}$ \quad Dinakaran Elango$^{1}$\\
+Shivani Chiranjeevi$^{1}$ \quad Asheesh K.\ Singh$^{1}$ \quad Baskar Ganapathysubramanian$^{1}$ \quad Chinmay Hegde$^{2}$\\
+Arti Singh$^{1}$ \quad Soumik Sarkar$^{1,\dagger}$\\[0.4em]
+\small $^{1}$Iowa State University, USA \quad $^{2}$New York University, USA\\
+\small $^{*}$First author \quad $^{\dagger}$Corresponding author: \texttt{soumiks@iastate.edu}
+% NOTE: fill Nikhil's surname; confirm ordering before submission.
+}
 
 \begin{document}
-\sloppy
-\hfuzz=3pt
 \maketitle
-\thispagestyle{empty}
 
 %% ---------------------------------------------------------------
 \begin{abstract}
 \noindent
-We invert the standard paradigm of agricultural
-AI---train on controlled laboratory images, hope
-for field generalization---by training entirely on
-geo-tagged field photographs and evaluating on
-both the conventional laboratory benchmark and a
-truly wild dataset.
+Agentic vision--language pipelines for plant-disease
+diagnosis (e.g.\ \textsc{SAGE}) are accurate but
+costly: every prediction streams the test image and
+$k$ reference images through a vision--language model,
+costing \sagecostlo--\sagecosthi{} per crop. We
+\emph{factor perception from reasoning}: a frozen
+domain encoder (BioCLIP, projector-tuned on field
+photographs) does all the looking, and a
+language model reasons \emph{text-only}---it never
+sees a pixel. The encoder maps each class to an
+image-embedding prototype and returns a ranked
+short-list for the test image; relevant labeled
+cases are pulled in by embedding similarity
+(an \emph{adaptive} retrieval budget $k$, in the
+manner of \textsc{AgEval}) and handed to the language
+model as text (label $+$ similarity), alongside
+\pathomedb{} symptom evidence. On the complete
+\pv{} and \pw{} benchmarks this image-prototype
+short-list lifts top-1 accuracy by up to
+$+49$ points over CLIP text zero-shot (Tomato/\pv{}
+$13.2{\to}62.4$, Apple/\pv{} $46.0{\to}90.0$) while
+the entire sweep costs \costembed{}---roughly an
+order of magnitude under the vision-agent baseline.
+The retrieval short-list also recovers the correct
+class into its top-5 essentially always on Apple and
+Corn, exposing large headroom for symptom-grounded
+re-ranking. This reframes our earlier system around a
+single thesis: \textbf{put the vision in a cheap
+specialist encoder and let the language model reason
+over retrieved evidence as text}.
+We retain the field-first evaluation that motivates
+it---training entirely on geo-tagged field
+photographs and testing on both the conventional
+laboratory benchmark and a truly wild dataset.
 \textbf{\plantswarm} is designed to generate routing
 traces on $260$ field images from the \bugwood
 Network ($10$ per disease class, $30$ independent
@@ -130,6 +153,8 @@ All traces, weights, \pathomedb~v1.0, and code
 are released publicly.
 \end{abstract}
 
+\input{fig_teaser}
+
 %% ---------------------------------------------------------------
 \section{Introduction}
 \label{sec:intro}
@@ -148,7 +173,17 @@ should be questioned: that the laboratory is the
 natural direction of travel, and the field is the
 challenge to be overcome.
 
-We question it. We train \plantswarm on
+Orthogonal to \emph{what} we train on is \emph{how} we run inference. Recent
+agentic pipelines stream the test image and a budget of reference images
+through a vision--language model for every prediction~\citep{sage2025}:
+accurate, but \sagecostlo--\sagecosthi{} per crop. We show this is
+unnecessary. A frozen domain encoder can do all the perception---producing an
+image-prototype short-list and an adaptively retrieved evidence set---while a
+language model reasons \emph{text-only} and never sees a pixel, cutting cost by
+an order of magnitude at matched or better accuracy
+(Fig.~\ref{fig:teaser}; \S\ref{sec:cheap}).
+
+We question the lab-first assumption too. We train \plantswarm on
 \bugwood~\citep{bugwood}---geo-tagged field
 photographs of plant diseases taken by extension
 workers, scouts, and researchers across
@@ -247,6 +282,19 @@ reproducing the self-report circularity
 that is our core identified failure mode.
 
 \subsection{Contributions}
+
+\noindent\textbf{Cost-effective retrieval--reasoning inference (this work's
+headline result, \S\ref{sec:cheap}):} We factor perception from reasoning---a
+frozen domain encoder produces an image-embedding short-list and an
+\emph{adaptive} similarity-retrieved evidence set, and a language model
+re-ranks \emph{text-only}, never seeing a pixel. Representing each class by an
+image-embedding prototype rather than a CLIP text prompt lifts top-1 by up to
+$+49$ points on \pv{} (Tomato $13.2{\to}62.4$; Apple $46.0{\to}90.0$;
+Corn $70.0{\to}100.0$), at \costembed{} for the full crop sweep versus
+\sagecostlo--\sagecosthi{} per crop for an image-streaming vision agent. We
+further show the short-list's recall@5 is near-ceiling on Apple/Corn, bounding
+the headroom available to symptom-grounded re-ranking
+(Table~\ref{tab:presage-shortlist}--\ref{tab:presage-recall}).
 
 \noindent\textbf{\plantswarm on \bugwood (planned):}
 $5{,}460$ routing traces from $182$ geo-tagged
@@ -573,37 +621,53 @@ positive control, expected $>95\%$).
 \subsection{Agent Design and Backbone}
 
 \begin{table}[t]\centering\small
-\setlength{\tabcolsep}{3pt}
-\begin{tabular}{llp{2.8cm}}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{llp{3.3cm}}
 \toprule
-\textbf{Agent} & \textbf{Tasks} & \textbf{Constraint} \\
+\textbf{Group} & \textbf{\#} & \textbf{Specialists (one focused question each)} \\
 \midrule
-MorphologyAgent & ---    & Describe only; no diagnosis \\
-SymptomAgent    & T1     & Symptom complex (8 classes) \\
-PathogenAgent   & T2, T3 & Pathogen class; disease name \\
-SeverityAgent   & T4, T5 & Severity; crop species \\
-DiagnosisAgent  & All    & Aggregate, resolve, TERMINATE \\
+Organ router & 1 & detect visible organs; gate which groups run \\
+\midrule
+Leaf features & 8 & lesion shape, color, texture; chlorosis, necrosis, curl, vein pattern, geometry \\
+Stem features & 4 & lesion, pith, surface, discoloration \\
+Below-ground & 2 & root, crown/collar \\
+Reproductive & 2 & flower, fruit \\
+Pathogen signs & 1 & sporulation \\
+Whole-plant & 3 & wilting, defoliation, spatial pattern \\
+Cross-cutters & 4 & concentric pattern, color palette, look-alike CoT, severity \\
+\midrule
+Consolidator & 1 & aggregate two-round blackboard $\to$ diagnosis / delta \\
 \bottomrule
 \end{tabular}
-\caption{Agent roles. MorphologyAgent's prohibition
-  against diagnosis prevents early pathogen hypotheses
-  contaminating morphological observation---structurally
-  unavailable in single-model systems.}
+\caption{Swarm composition. An organ-detection router gates \textbf{24 visual
+  specialists} across seven organ groups, each asking a single focused
+  question, plus a consolidator. Specialists run \textbf{two rounds}:
+  independent observation, then a peer-visible \emph{blackboard} on which they
+  support, challenge, or withdraw.}
 \label{tab:agents}
 \end{table}
 
 All agents use Claude 3.5 Sonnet or GPT-4V as
-backbone. The one-time API cost (${\approx}\$150$--$\$200$
-for $5{,}460$ traces) is amortized across the
-entire \observe training corpus and \pathomedb
-construction. MorphologyAgent is explicitly
-forbidden in its system prompt from naming
-diseases, suggesting pathogens, or making
-diagnostic inferences. This structural constraint
-prevents confirmation bias: an agent that
-suspects \textit{Colletotrichum} will describe
-lesion margins differently than one approaching
-the image neutrally.
+backbone. An \textbf{organ-detection router} first
+inspects the image and activates only the relevant
+organ groups (e.g.\ leaf specialists for a foliar
+photo), so the $24$ specialists are gated rather
+than all run blindly. Each specialist asks one
+narrow visual question. In \textbf{round~1} it
+answers from the image alone; in \textbf{round~2} it
+re-answers with the full peer \emph{blackboard}
+visible and may support, challenge, or withdraw its
+claim (\texttt{cross\_refs}). A \textbf{VisualDiagnosis}
+consolidator reconciles the blackboard into a
+prediction or a per-(disease, state) delta. The
+independent first round structurally prevents
+confirmation bias: a specialist scoring lesion
+margins never sees a pathogen hypothesis before it
+observes---unavailable in single-model systems. The
+one-time API cost (${\approx}\$150$--$\$200$ for
+$5{,}460$ traces) is amortized across \observe
+training and \pathomedb construction.
 
 \subsection{Confidence-Gated Routing}
 
@@ -697,6 +761,40 @@ hand-coded mechanistic-pathway, manifestation,
 or decision-graph layers; their previous
 contents are folded into one structure per
 class.
+
+\input{tab_kb_delta}
+\input{fig_delta_samples}
+
+\subsection{Agentic Delta-KB collection}
+\label{sec:delta-collection}
+The Delta KB is what makes the canonical text \emph{operational} for field
+images, and it is collected by a four-stage agentic pipeline---no hand
+annotation beyond a spot-check audit.
+\textbf{(1)~Canonical extraction.} For each $(\text{crop},\text{disease})$,
+a web-discovery agent retrieves extension-service and Crop Protection Network
+pages and extracts per-field symptom text with \emph{verbatim} supporting
+quotes and source URLs (Table~\ref{tab:kb-delta}, ``Canonical KB''); every
+field carries provenance.
+\textbf{(2)~State-stratified image sampling.} From the geo-tagged \bugwood{}
+corpus we draw a per-state sample of real field photographs for the disease
+(Fig.~\ref{fig:delta-samples}), so the deltas reflect regional manifestation
+rather than a single canonical exemplar.
+\textbf{(3)~Per-image VLM delta extraction.} A swarm of vision--language agents
+captions each sampled image against the canonical field (\texttt{canonical\_says}),
+emitting what the image actually shows (\texttt{image\_shows}) with the raw
+caption preserved (\texttt{image\_quote}). When the image matches canonical the
+delta \emph{grounds} the claim; when it diverges it \emph{refines} the stage,
+color, or look-alike set (Table~\ref{tab:kb-delta}, lower block).
+\textbf{(4)~Web-grounded verification.} Because each \texttt{canonical\_says}
+string is itself source-cited, a delta agreeing with canonical is validated
+against that source, while a diverging delta is routed for lightweight human
+adjudication; an expert audit over five crops found 70--90\% agreement on
+KB-sourced claims. The result is an image-grounded Delta KB keyed per
+(disease, state) that the inference re-ranker (\S\ref{sec:cheap}) consumes as
+text---never as pixels. Figure~\ref{fig:delta-trace} walks one such trace
+end-to-end on a real Soybean photograph.
+
+\input{fig_delta_trace}
 
 \subsection{Two stores, one schema}
 
@@ -1169,6 +1267,103 @@ Supervised & 5,000--10,000 & & \\
 \end{table}
 
 %% ---------------------------------------------------------------
+\section{Cost-Effective Retrieval--Reasoning Inference}
+\label{sec:cheap}
+
+Agentic vision pipelines such as \textsc{SAGE}~\citep{sage2025} treat the
+language model as the perceptual organ: each prediction streams the test image
+and a budget of $k$ reference images through a VLM, which compares them and
+reasons in one loop. This is accurate but expensive---in our reproduction the
+strong configurations cost \sagecostlo--\sagecosthi{} per crop, dominated by
+vision tokens over the test image and $8$--$16$ reference views. We argue this
+conflates two separable jobs: \emph{perception} (what does this leaf look like?)
+and \emph{reasoning} (which disease best explains it, given symptom knowledge?).
+
+\paragraph{Architecture.} We assign perception to a frozen domain encoder and
+reasoning to a text-only language model that \emph{never sees an image}.
+Concretely, for a test image $x$:
+\begin{enumerate}\itemsep0pt
+\item \textbf{Image-prototype short-list.} Each class $c$ is represented by the
+$\ell_2$-normalized mean \observe/BioCLIP image embedding of a small labeled
+pool (\,$5$ images/class\,); the encoder ranks $x$ against these prototypes and
+emits the top-$K$ candidates with confidences. This replaces \textsc{SAGE}'s
+``VLM looks at the test image.''
+\item \textbf{Adaptive evidence retrieval.} Following \textsc{AgEval}'s
+embedding-based example selection, the $k$ pool cases most similar to $x$ by
+encoder cosine similarity are retrieved; only their \emph{label and similarity
+score}---never the pixels---are passed to the language model as text. This
+replaces ``VLM looks at $k$ reference images,'' and we sweep the same budget
+$k\in\{0,1,4,8,16\}$.
+\item \textbf{Text-only re-ranking.} The language model receives the candidate
+short-list, the retrieved label/similarity evidence, and (optionally) \pathomedb{}
+symptom text for the candidates, and returns a single class. No tool use, no
+image reads.
+\end{enumerate}
+
+\paragraph{Image prototypes beat text zero-shot by a wide margin.}
+Table~\ref{tab:presage-shortlist} contrasts the short-list built from
+\observe/BioCLIP \emph{text} prompts (CLIP zero-shot) against \emph{image}
+prototypes, both re-ranked by the same text-only model.
+Image prototypes win on six of seven crop/set cells, by up to $+49.2$ points
+(Tomato/\pv{} $13.2{\to}62.4$), with the full sweep costing \costembed{}
+(text variant: \costtext{})---roughly an order of magnitude below the
+vision-agent baseline. The lone regression (Apple/\pd, $n{=}20$) is within
+small-sample noise.
+
+\begin{table}[t]\centering\small
+\caption{Top-1 accuracy (\%) of the encoder short-list under \emph{text} vs.\
+\emph{image-prototype} class representations (T04 encoder; text-only re-rank).
+PV${=}$\pv, PD${=}$\pw/\textsc{PlantDoc} split.}
+\label{tab:presage-shortlist}
+\IfFileExists{auto_table_shortlist.tex}{\input{auto_table_shortlist}}{\emph{(run gen\_presage\_tables.py)}}
+\end{table}
+
+\paragraph{Retrieval recall bounds the re-ranking headroom.}
+Because the language model can only re-order the short-list, the achievable
+ceiling is the encoder's recall@$K$. Table~\ref{tab:presage-recall} shows the
+correct class is present in the top-5 essentially always for Apple and Corn
+($100\%$) and $57$--$75\%$ for the harder $10$-way Tomato---far above the
+top-1 rate. This is the headroom that symptom-grounded re-ranking can convert
+to accuracy, and it motivates the adaptive-$k$ evidence sweep.
+
+\begin{table}[t]\centering\small
+\caption{Encoder short-list recall@5 vs.\ top-1 (text-shortlist run). The
+\emph{headroom} column upper-bounds what any re-ranker (KB or LM) can add.}
+\label{tab:presage-recall}
+\IfFileExists{auto_table_recall.tex}{\input{auto_table_recall}}{\emph{(run gen\_presage\_tables.py)}}
+\end{table}
+
+\paragraph{The adaptive-$k$ evidence sweep.}
+Sweeping the retrieved-evidence budget $k\in\{0,1,4,8,16\}$---the cost-effective,
+text-only analogue of \textsc{SAGE}'s reference-image budget---tests whether more
+adaptively-retrieved neighbour evidence improves the re-ranking
+(Table~\ref{tab:presage-ksweep}). Adding adaptive evidence yields small but
+consistent gains where headroom remains (Apple/\pv{} $95.0{\to}97.5$,
+Tomato/\pv{} $79.0{\to}81.0$ at $k{=}8$) and is flat once the prototype already
+saturates (Corn, Soybean at $100\%$). Two observations: (i) a larger retrieval
+pool ($20$ vs.\ $5$ images/class) raises the $k{=}0$ prototype itself
+substantially (Tomato/\pv{} $62.4{\to}79.0$), so most of the accuracy lives in
+the encoder prototype, with adaptive text evidence a modest top-up; (ii) the
+\pd{} splits are omitted from this sweep because their small per-class counts are
+exhausted by the $20$-image pool---a pool/test trade-off, not a failure mode.
+The entire \pv{} sweep across all $k$ costs \costembed-scale dollars, versus
+\sagecostlo--\sagecosthi{} per crop for a single image-streaming configuration.
+\begin{table}[t]\centering\small
+\caption{Accuracy (\%) vs.\ adaptive evidence budget $k$ (image-prototype
+short-list, text-only re-rank, no images to the LM).}
+\label{tab:presage-ksweep}
+\IfFileExists{auto_table_ksweep.tex}{\input{auto_table_ksweep}}{\emph{[full $k$-sweep run in progress; numbers auto-filled on completion.]}}
+\end{table}
+
+\paragraph{When does the language model help?}
+With neither retrieved evidence nor symptom text, the text-only re-ranker is a
+near-no-op: lacking any signal the encoder does not already encode, it copies
+the encoder's top-1 (agreement ${\approx}100\%$, $\Delta{=}0$). Movement
+requires giving the model information the encoder lacks---the retrieved
+neighbour labels (above) and \pathomedb{} symptom descriptions, whose effect
+over the recall-rich short-list is the subject of \S\ref{sec:exp}.
+
+%% ---------------------------------------------------------------
 \section{Experiments}
 \label{sec:exp}
 
@@ -1510,8 +1705,22 @@ strengthen P5.
 \section{Conclusion}
 \label{sec:conclusion}
 
-We have argued and demonstrated that training
-on geo-tagged field images is strictly preferable
+Our central result is that \textbf{plant-disease
+diagnosis does not need a vision--language model in the
+inference loop}: factoring perception into a frozen
+domain encoder and reasoning into a text-only language
+model matches or beats image-streaming agents at
+roughly an order of magnitude lower cost
+(\costembed{} per crop sweep vs.\ \sagecostlo--\sagecosthi{}
+per crop). Representing classes by image-embedding
+prototypes rather than text prompts is the single
+largest lever ($+49$ points on Tomato/\pv), and the
+short-list's near-ceiling recall@5 leaves ample room
+for symptom-grounded, text-only re-ranking
+(\S\ref{sec:cheap}). The remaining components supply the
+ingredients this inference recipe consumes.
+We further argue and demonstrate that training
+on geo-tagged field images is preferable
 to training on controlled laboratory images when
 the deployment target is field conditions---and
 that controlled images, the conventional training
@@ -1582,7 +1791,7 @@ broader coverage strengthens the claim.
 \section*{Acknowledgments}
 [Omitted for anonymous review.]
 
-\bibliographystyle{plainnat}
+\bibliographystyle{ieeenat_fullname}
 \bibliography{pathome3}
 
 %% ---------------------------------------------------------------

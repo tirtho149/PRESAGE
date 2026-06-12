@@ -1,0 +1,289 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\providecommand \oddpage@label [2]{}
+\citation{mohanty2016plantvillage}
+\citation{sage2025}
+\citation{bugwood}
+\citation{guo2025deepseek}
+\@writefile{toc}{\contentsline {section}{\numberline {1}\hskip -1em.~Introduction}{2}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{2}{\texorpdfstring {\hskip -1em.~}{}Introduction}{section.1}{}}
+\newlabel{sec:intro@cref}{{[section][1][]1}{[1][2][]2}{}{}{}}
+\@writefile{brf}{\backcite{mohanty2016plantvillage}{{2}{1}{section.1}}}
+\@writefile{brf}{\backcite{sage2025}{{2}{1}{section.1}}}
+\@writefile{brf}{\backcite{bugwood}{{2}{1}{section.1}}}
+\@writefile{toc}{\contentsline {paragraph}{The data-efficiency design.}{2}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{The geospatial design.}{2}{section*.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {\textsc  {Presage} overview.} \textbf  {Curation} (top): web pages become a source-cited canonical KB (335 crops, 1{,}251 diseases) with an expert audit; geo-tagged field images are deduped, filtered, and---per (disease, state)---captioned by a VLM into image-grounded \emph  {deltas}. \textbf  {Cost-effective inference} (bottom): we factor perception from reasoning. A frozen encoder embeds the test image into an image-prototype short-list (near-ceiling recall@5); the $k$ visually nearest labelled cases are retrieved \emph  {adaptively} and passed---as label$+$similarity \emph  {text}---to a language model that re-ranks using that evidence plus Delta-KB symptoms. The LLM \textbf  {never sees a pixel}, cutting per-crop cost from \$18--35 (image-streaming agents) to a few dollars for the entire sweep.}}{3}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:teaser}{{1}{3}{\textbf {\textsc {Presage} overview.} \textbf {Curation} (top): web pages become a source-cited canonical KB (335 crops, 1{,}251 diseases) with an expert audit; geo-tagged field images are deduped, filtered, and---per (disease, state)---captioned by a VLM into image-grounded \emph {deltas}. \textbf {Cost-effective inference} (bottom): we factor perception from reasoning. A frozen encoder embeds the test image into an image-prototype short-list (near-ceiling recall@5); the $k$ visually nearest labelled cases are retrieved \emph {adaptively} and passed---as label$+$similarity \emph {text}---to a language model that re-ranks using that evidence plus Delta-KB symptoms. The LLM \textbf {never sees a pixel}, cutting per-crop cost from \$18--35 (image-streaming agents) to a few dollars for the entire sweep}{figure.caption.1}{}}
+\newlabel{fig:teaser@cref}{{[figure][1][]1}{[1][2][]3}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Why not a single large reasoning model?}{3}{section*.4}\protected@file@percent }
+\@writefile{brf}{\backcite{guo2025deepseek}{{3}{1}{section*.4}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}\hskip -1em.~Contributions}{3}{subsection.1.1}\protected@file@percent }
+\citation{mohanty2016plantvillage}
+\citation{sage2025}
+\citation{tqwei2024mvpdr}
+\citation{tqwei2024snapdiagnose}
+\citation{chatdemeter2025}
+\citation{lu2026dytopo}
+\citation{agentnet2025}
+\citation{yao2024tot}
+\citation{selfref2025icml}
+\citation{chen2023reconcile}
+\citation{kuhn2023semantic}
+\citation{chen2021decision}
+\citation{guo2025deepseek}
+\citation{hu2022lora}
+\citation{bugwood}
+\@writefile{toc}{\contentsline {section}{\numberline {2}\hskip -1em.~Related Work}{4}{section.2}\protected@file@percent }
+\newlabel{sec:related}{{2}{4}{\texorpdfstring {\hskip -1em.~}{}Related Work}{section.2}{}}
+\newlabel{sec:related@cref}{{[section][2][]2}{[1][4][]4}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Plant disease AI.}{4}{section*.5}\protected@file@percent }
+\@writefile{brf}{\backcite{mohanty2016plantvillage}{{4}{2}{section*.5}}}
+\@writefile{brf}{\backcite{sage2025}{{4}{2}{section*.5}}}
+\@writefile{brf}{\backcite{tqwei2024mvpdr}{{4}{2}{section*.5}}}
+\@writefile{brf}{\backcite{tqwei2024snapdiagnose}{{4}{2}{section*.5}}}
+\@writefile{brf}{\backcite{chatdemeter2025}{{4}{2}{section*.5}}}
+\@writefile{toc}{\contentsline {paragraph}{Multi-agent LLM systems.}{4}{section*.6}\protected@file@percent }
+\@writefile{brf}{\backcite{lu2026dytopo}{{4}{2}{section*.6}}}
+\@writefile{brf}{\backcite{agentnet2025}{{4}{2}{section*.6}}}
+\@writefile{brf}{\backcite{yao2024tot}{{4}{2}{section*.6}}}
+\@writefile{toc}{\contentsline {paragraph}{Uncertainty quantification.}{4}{section*.7}\protected@file@percent }
+\@writefile{brf}{\backcite{selfref2025icml}{{4}{2}{section*.7}}}
+\@writefile{brf}{\backcite{chen2023reconcile}{{4}{2}{section*.7}}}
+\@writefile{brf}{\backcite{kuhn2023semantic}{{4}{2}{section*.7}}}
+\@writefile{toc}{\contentsline {paragraph}{Offline RL for VLMs.}{4}{section*.8}\protected@file@percent }
+\@writefile{brf}{\backcite{chen2021decision}{{4}{2}{section*.8}}}
+\@writefile{brf}{\backcite{guo2025deepseek}{{4}{2}{section*.8}}}
+\@writefile{brf}{\backcite{hu2022lora}{{4}{2}{section*.8}}}
+\@writefile{toc}{\contentsline {paragraph}{Geospatial agricultural data.}{4}{section*.9}\protected@file@percent }
+\@writefile{brf}{\backcite{bugwood}{{4}{2}{section*.9}}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}\hskip -1em.~Theoretical Framing}{4}{section.3}\protected@file@percent }
+\newlabel{sec:theory}{{3}{4}{\texorpdfstring {\hskip -1em.~}{}Theoretical Framing}{section.3}{}}
+\newlabel{sec:theory@cref}{{[section][3][]3}{[1][4][]4}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}\hskip -1em.~Self-Report Circularity and Behavioral Signals}{4}{subsection.3.1}\protected@file@percent }
+\citation{bugwood}
+\citation{mohanty2016plantvillage}
+\citation{plantwild}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}\hskip -1em.~The Routing MDP with Geospatial State}{5}{subsection.3.2}\protected@file@percent }
+\newlabel{eq:optimal}{{1}{5}{\texorpdfstring {\hskip -1em.~}{}The Routing MDP with Geospatial State}{equation.1}{}}
+\newlabel{eq:optimal@cref}{{[equation][1][]1}{[1][5][]5}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}\hskip -1em.~Geospatial Bayesian Prior}{5}{subsection.3.3}\protected@file@percent }
+\newlabel{eq:geoprior}{{2}{5}{\texorpdfstring {\hskip -1em.~}{}Geospatial Bayesian Prior}{equation.2}{}}
+\newlabel{eq:geoprior@cref}{{[equation][2][]2}{[1][5][]5}{}{}{}}
+\newlabel{eq:density}{{3}{5}{\texorpdfstring {\hskip -1em.~}{}Geospatial Bayesian Prior}{equation.3}{}}
+\newlabel{eq:density@cref}{{[equation][3][]3}{[1][5][]5}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}\hskip -1em.~Falsifiable Predictions}{5}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}\hskip -1em.~Data}{5}{section.4}\protected@file@percent }
+\newlabel{sec:data}{{4}{5}{\texorpdfstring {\hskip -1em.~}{}Data}{section.4}{}}
+\newlabel{sec:data@cref}{{[section][4][]4}{[1][5][]5}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}\hskip -1em.~Training: Bugwood IPMNet CSV}{5}{subsection.4.1}\protected@file@percent }
+\@writefile{brf}{\backcite{bugwood}{{5}{4.1}{subsection.4.1}}}
+\@writefile{toc}{\contentsline {paragraph}{Filtering.}{5}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Per-class budget and split.}{5}{section*.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}\hskip -1em.~Evaluation: Full PlantVillage (Easy)}{5}{subsection.4.2}\protected@file@percent }
+\@writefile{brf}{\backcite{mohanty2016plantvillage}{{5}{4.2}{subsection.4.2}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}\hskip -1em.~Evaluation: Full PlantWild (Hard)}{5}{subsection.4.3}\protected@file@percent }
+\@writefile{brf}{\backcite{plantwild}{{5}{4.3}{subsection.4.3}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}\hskip -1em.~Diagnostic Tasks}{6}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.~PlantSwarm}{6}{section.5}\protected@file@percent }
+\newlabel{sec:plantswarm}{{5}{6}{\texorpdfstring {\hskip -1em.~}{}PlantSwarm}{section.5}{}}
+\newlabel{sec:plantswarm@cref}{{[section][5][]5}{[1][6][]6}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}\hskip -1em.~Agent Design and Backbone}{6}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}\hskip -1em.~Confidence-Gated Routing}{6}{subsection.5.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Swarm composition. An organ-detection router gates \textbf  {24 visual specialists} across seven organ groups, each asking a single focused question, plus a consolidator. Specialists run \textbf  {two rounds}: independent observation, then a peer-visible \emph  {blackboard} on which they support, challenge, or withdraw.}}{6}{table.caption.12}\protected@file@percent }
+\newlabel{tab:agents}{{1}{6}{Swarm composition. An organ-detection router gates \textbf {24 visual specialists} across seven organ groups, each asking a single focused question, plus a consolidator. Specialists run \textbf {two rounds}: independent observation, then a peer-visible \emph {blackboard} on which they support, challenge, or withdraw}{table.caption.12}{}}
+\newlabel{tab:agents@cref}{{[table][1][]1}{[1][6][]6}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}\hskip -1em.~Trace Generation at 30 Runs per Image}{6}{subsection.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Representative geo-tagged \textsc  {Bugwood}\xspace  {} field photographs (Tomato) that the swarm captions to extract per-(disease, state) \emph  {deltas}. Unlike studio benchmark images, these carry realistic clutter, lighting, and viewpoint---the distribution the encoder is tuned on and the deltas describe.}}{7}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:delta-samples}{{2}{7}{Representative geo-tagged \bugwood {} field photographs (Tomato) that the swarm captions to extract per-(disease, state) \emph {deltas}. Unlike studio benchmark images, these carry realistic clutter, lighting, and viewpoint---the distribution the encoder is tuned on and the deltas describe}{figure.caption.14}{}}
+\newlabel{fig:delta-samples@cref}{{[figure][2][]2}{[1][7][]7}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}\hskip -1em.~Routing Trace Schema}{7}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}\hskip -1em.~PathomeDB Construction}{7}{section.6}\protected@file@percent }
+\newlabel{sec:pathomedb}{{6}{7}{\texorpdfstring {\hskip -1em.~}{}PathomeDB Construction}{section.6}{}}
+\newlabel{sec:pathomedb@cref}{{[section][6][]6}{[1][7][]7}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}\hskip -1em.~Agentic Delta-KB collection}{7}{subsection.6.1}\protected@file@percent }
+\newlabel{sec:delta-collection}{{6.1}{7}{\texorpdfstring {\hskip -1em.~}{}Agentic Delta-KB collection}{subsection.6.1}{}}
+\newlabel{sec:delta-collection@cref}{{[subsection][1][6]6.1}{[1][7][]7}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}\hskip -1em.~Two stores, one schema}{7}{subsection.6.2}\protected@file@percent }
+\citation{sage2025}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces \textbf  {Canonical KB vs.\ image-grounded Delta KB} (Tomato). The \emph  {canonical} column is verbatim, source-cited extension text; the \emph  {delta} is what a VLM reports from a state-specific \textsc  {Bugwood}\xspace  {} field photograph of that disease. \emph  {Grounding} rows confirm the canonical claim against a real field image; \emph  {Refinement} rows show the delta extending, re-staging, or adding look-alikes the canonical text omits---the signal the inference re-ranker consumes.}}{8}{table.caption.13}\protected@file@percent }
+\newlabel{tab:kb-delta}{{2}{8}{\textbf {Canonical KB vs.\ image-grounded Delta KB} (Tomato). The \emph {canonical} column is verbatim, source-cited extension text; the \emph {delta} is what a VLM reports from a state-specific \bugwood {} field photograph of that disease. \emph {Grounding} rows confirm the canonical claim against a real field image; \emph {Refinement} rows show the delta extending, re-staging, or adding look-alikes the canonical text omits---the signal the inference re-ranker consumes}{table.caption.13}{}}
+\newlabel{tab:kb-delta@cref}{{[table][2][]2}{[1][7][]8}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Delta KB that \emph  {adds} to canonical --- step by step.} A real trace for \emph  {Soybean / Cercospora Blight} on one geo-tagged Alabama \textsc  {Bugwood}\xspace  {} photograph (\#5581645). \textbf  {(1)} the cited canonical text only says ``light purple\dots  bronze''; \textbf  {(2)} the organ router fires the leaf specialists, which on the two-round blackboard report tan/chocolate-brown centres, concentric target rings, and a chlorotic halo; \textbf  {(3)} the consolidated \emph  {delta} therefore \emph  {extends} canonical with morphology it omitted (a stage/color refinement, not mere captioning); \textbf  {(4)} the \textsc  {Claude} web verifier assigns a status and attaches a \texttt  {web\_support} \{url, quote\} citation, leaving the refinement \emph  {provisional} for human adjudication. Both canonical and delta thus carry their own verifiable source.}}{8}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:delta-trace}{{3}{8}{\textbf {Delta KB that \emph {adds} to canonical --- step by step.} A real trace for \emph {Soybean / Cercospora Blight} on one geo-tagged Alabama \bugwood {} photograph (\#5581645). \textbf {(1)} the cited canonical text only says ``light purple\dots bronze''; \textbf {(2)} the organ router fires the leaf specialists, which on the two-round blackboard report tan/chocolate-brown centres, concentric target rings, and a chlorotic halo; \textbf {(3)} the consolidated \emph {delta} therefore \emph {extends} canonical with morphology it omitted (a stage/color refinement, not mere captioning); \textbf {(4)} the \textsc {Claude} web verifier assigns a status and attaches a \texttt {web\_support} \{url, quote\} citation, leaving the refinement \emph {provisional} for human adjudication. Both canonical and delta thus carry their own verifiable source}{figure.caption.15}{}}
+\newlabel{fig:delta-trace@cref}{{[figure][3][]3}{[1][7][]8}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}\hskip -1em.~Phase~0: Claude-headless visual seeding}{8}{subsection.6.3}\protected@file@percent }
+\newlabel{sec:claudeseed}{{6.3}{8}{\texorpdfstring {\hskip -1em.~}{}Phase~0: Claude-headless visual seeding}{subsection.6.3}{}}
+\newlabel{sec:claudeseed@cref}{{[subsection][3][6]6.3}{[1][8][]8}{}{}{}}
+\@writefile{brf}{\backcite{sage2025}{{9}{6.3}{subsection.6.3}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}\hskip -1em.~Phase~0R: web-grounded delta verification}{9}{subsection.6.4}\protected@file@percent }
+\newlabel{sec:phase0r-verifier}{{6.4}{9}{\texorpdfstring {\hskip -1em.~}{}Phase~0R: web-grounded delta verification}{subsection.6.4}{}}
+\newlabel{sec:phase0r-verifier@cref}{{[subsection][4][6]6.4}{[1][9][]9}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}\hskip -1em.~Build: layering the CSV onto the seed}{9}{subsection.6.5}\protected@file@percent }
+\citation{radford2021learning}
+\citation{johnson2019billion}
+\citation{qwen2vl}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.6}\hskip -1em.~Reference library}{10}{subsection.6.6}\protected@file@percent }
+\newlabel{sec:refs}{{6.6}{10}{\texorpdfstring {\hskip -1em.~}{}Reference library}{subsection.6.6}{}}
+\newlabel{sec:refs@cref}{{[subsection][6][6]6.6}{[1][10][]10}{}{}{}}
+\@writefile{brf}{\backcite{radford2021learning}{{10}{6.6}{subsection.6.6}}}
+\@writefile{brf}{\backcite{johnson2019billion}{{10}{6.6}{subsection.6.6}}}
+\newlabel{eq:retrieval}{{6}{10}{\texorpdfstring {\hskip -1em.~}{}Reference library}{equation.6}{}}
+\newlabel{eq:retrieval@cref}{{[equation][6][]6}{[1][10][]10}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.7}\hskip -1em.~Phase~3: Swarm-derived enhancement}{10}{subsection.6.7}\protected@file@percent }
+\newlabel{sec:swarmobs}{{6.7}{10}{\texorpdfstring {\hskip -1em.~}{}Phase~3: Swarm-derived enhancement}{subsection.6.7}{}}
+\newlabel{sec:swarmobs@cref}{{[subsection][7][6]6.7}{[1][10][]10}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.8}\hskip -1em.~Geo prior at state granularity}{10}{subsection.6.8}\protected@file@percent }
+\newlabel{sec:geoprior}{{6.8}{10}{\texorpdfstring {\hskip -1em.~}{}Geo prior at state granularity}{subsection.6.8}{}}
+\newlabel{sec:geoprior@cref}{{[subsection][8][6]6.8}{[1][10][]10}{}{}{}}
+\newlabel{eq:density}{{7}{10}{\texorpdfstring {\hskip -1em.~}{}Geo prior at state granularity}{equation.7}{}}
+\newlabel{eq:density@cref}{{[equation][7][]7}{[1][10][]10}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}\hskip -1em.~OBSERVE}{10}{section.7}\protected@file@percent }
+\newlabel{sec:observe}{{7}{10}{\texorpdfstring {\hskip -1em.~}{}OBSERVE}{section.7}{}}
+\newlabel{sec:observe@cref}{{[section][7][]7}{[1][10][]10}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}\hskip -1em.~Architecture}{10}{subsection.7.1}\protected@file@percent }
+\@writefile{brf}{\backcite{qwen2vl}{{10}{7.1}{subsection.7.1}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}\hskip -1em.~Overconfidence Detection}{10}{subsection.7.2}\protected@file@percent }
+\newlabel{eq:oc}{{8}{10}{\texorpdfstring {\hskip -1em.~}{}Overconfidence Detection}{equation.8}{}}
+\newlabel{eq:oc@cref}{{[equation][8][]8}{[1][10][]10}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}\hskip -1em.~Training}{10}{subsection.7.3}\protected@file@percent }
+\citation{chen2021decision}
+\citation{guo2025deepseek}
+\citation{sage2025}
+\@writefile{brf}{\backcite{chen2021decision}{{11}{7.3}{subsection.7.3}}}
+\@writefile{brf}{\backcite{guo2025deepseek}{{11}{7.3}{subsection.7.3}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}\hskip -1em.~Active Learning for Cross-Crop Convergence}{11}{subsection.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}\hskip -1em.~Cost-Effective Retrieval--Reasoning Inference}{11}{section.8}\protected@file@percent }
+\newlabel{sec:cheap}{{8}{11}{\texorpdfstring {\hskip -1em.~}{}Cost-Effective Retrieval--Reasoning Inference}{section.8}{}}
+\newlabel{sec:cheap@cref}{{[section][8][]8}{[1][11][]11}{}{}{}}
+\@writefile{brf}{\backcite{sage2025}{{11}{8}{section.8}}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Cross-crop active learning convergence. Geospatial prior from \textsc  {PathomeDB}\xspace  Layer~3 reduces zero-shot query rate by providing pre-calibrated routing before any crop-specific labeled example is seen.}}{11}{table.caption.16}\protected@file@percent }
+\newlabel{tab:active}{{3}{11}{Cross-crop active learning convergence. Geospatial prior from \pathomedb Layer~3 reduces zero-shot query rate by providing pre-calibrated routing before any crop-specific labeled example is seen}{table.caption.16}{}}
+\newlabel{tab:active@cref}{{[table][3][]3}{[1][11][]11}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Architecture.}{11}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Image prototypes beat text zero-shot by a wide margin.}{11}{section*.18}\protected@file@percent }
+\citation{guo2025deepseek}
+\citation{tqwei2024mvpdr}
+\citation{tqwei2024snapdiagnose}
+\citation{sage2025}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Top-1 accuracy (\%) of the encoder short-list under \emph  {text} vs.\ \emph  {image-prototype} class representations (T04 encoder; text-only re-rank). PV${=}$\textsc  {PlantVillage}\xspace  , PD${=}$\textsc  {PlantWild}\xspace  /\textsc  {PlantDoc} split.}}{12}{table.caption.19}\protected@file@percent }
+\newlabel{tab:presage-shortlist}{{4}{12}{Top-1 accuracy (\%) of the encoder short-list under \emph {text} vs.\\emph {image-prototype} class representations (T04 encoder; text-only re-rank). PV${=}$\pv , PD${=}$\pw /\textsc {PlantDoc} split}{table.caption.19}{}}
+\newlabel{tab:presage-shortlist@cref}{{[table][4][]4}{[1][12][]12}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Encoder short-list recall@5 vs.\ top-1 (text-shortlist run). The \emph  {headroom} column upper-bounds what any re-ranker (KB or LM) can add.}}{12}{table.caption.21}\protected@file@percent }
+\newlabel{tab:presage-recall}{{5}{12}{Encoder short-list recall@5 vs.\ top-1 (text-shortlist run). The \emph {headroom} column upper-bounds what any re-ranker (KB or LM) can add}{table.caption.21}{}}
+\newlabel{tab:presage-recall@cref}{{[table][5][]5}{[1][12][]12}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Retrieval recall bounds the re-ranking headroom.}{12}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{The adaptive-$k$ evidence sweep.}{12}{section*.22}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Accuracy (\%) vs.\ adaptive evidence budget $k$ (image-prototype short-list, text-only re-rank, no images to the LM).}}{12}{table.caption.23}\protected@file@percent }
+\newlabel{tab:presage-ksweep}{{6}{12}{Accuracy (\%) vs.\ adaptive evidence budget $k$ (image-prototype short-list, text-only re-rank, no images to the LM)}{table.caption.23}{}}
+\newlabel{tab:presage-ksweep@cref}{{[table][6][]6}{[1][12][]12}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Factorial ablation (pre-registered design) over all $5{,}460$ production-scale traces; adjacent variants differ by one component. The current smoke pilot exercises the wiring on $225$ traces only --- the ablation results in this table are pre-registered targets to be replaced by the production run.}}{12}{table.caption.25}\protected@file@percent }
+\newlabel{tab:ablation}{{7}{12}{Factorial ablation (pre-registered design) over all $5{,}460$ production-scale traces; adjacent variants differ by one component. The current smoke pilot exercises the wiring on $225$ traces only --- the ablation results in this table are pre-registered targets to be replaced by the production run}{table.caption.25}{}}
+\newlabel{tab:ablation@cref}{{[table][7][]7}{[1][12][]12}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{When does the language model help?}{12}{section*.24}\protected@file@percent }
+\@writefile{brf}{\backcite{guo2025deepseek}{{13}{\caption@xref {??}{ on input line 1413}}{table.caption.26}}}
+\@writefile{brf}{\backcite{tqwei2024mvpdr}{{13}{\caption@xref {??}{ on input line 1415}}{table.caption.26}}}
+\@writefile{brf}{\backcite{tqwei2024snapdiagnose}{{13}{\caption@xref {??}{ on input line 1417}}{table.caption.26}}}
+\@writefile{brf}{\backcite{sage2025}{{13}{\caption@xref {??}{ on input line 1419}}{table.caption.26}}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces \textsc  {PlantSwarm}\xspace  pre-registered targets and smoke-pilot indicative results on \textsc  {PlantVillage}\xspace  (easy) and \textsc  {PlantWild}\xspace  (hard). \textsc  {PlantVillage}\xspace  and \textsc  {PlantWild}\xspace  are entirely held out: no training images from either dataset. Cells with `---' are pending the production run (Appendix~\ref {app:smoke}). Numbers reported with $\approx $ are smoke-pilot estimates over $n{=}200$ image subsets per benchmark and \emph  {must not} be read as full-benchmark results. TPCP $= \bar  \Omega \,N_\text  {img}/N_\text  {correct}$.}}{13}{table.caption.26}\protected@file@percent }
+\newlabel{tab:plantswarm-main}{{8}{13}{\plantswarm pre-registered targets and smoke-pilot indicative results on \pv (easy) and \pw (hard). \pv and \pw are entirely held out: no training images from either dataset. Cells with `---' are pending the production run (Appendix~\ref {app:smoke}). Numbers reported with $\approx $ are smoke-pilot estimates over $n{=}200$ image subsets per benchmark and \emph {must not} be read as full-benchmark results. TPCP $= \bar \Omega \,N_\text {img}/N_\text {correct}$}{table.caption.26}{}}
+\newlabel{tab:plantswarm-main@cref}{{[table][8][]8}{[1][12][]13}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces \textsc  {Observe}\xspace  pre-registered targets and smoke-pilot indicative results on \textsc  {PlantVillage}\xspace  and \textsc  {PlantWild}\xspace  . Left: ECE and T3 F1 (seen classes) / T3$^\dagger $ ($12$ unseen \textsc  {PlantVillage}\xspace  classes, zero training, \textsc  {PathomeDB}\xspace  pathway transfer only). Right: overconfidence detection, escalation, and token efficiency. Numbers reported with $\approx $ are smoke-pilot estimates over $n{=}200$ image subsets per benchmark; production-scale results on the complete \textsc  {PlantVillage}\xspace  ($54{,}306$) and complete \textsc  {PlantWild}\xspace  are pending the production run (Appendix~\ref {app:smoke}). Until then, the \textbf  {\textsc  {Observe}\xspace  ~(full)} row should be read as: \emph  {`if the production run hits these pre-registered targets, \textsc  {Observe}\xspace  surpasses its \textsc  {PlantSwarm}\xspace  teacher on both benchmarks'}.}}{13}{table.caption.27}\protected@file@percent }
+\newlabel{tab:observe-main}{{9}{13}{\observe pre-registered targets and smoke-pilot indicative results on \pv and \pw . Left: ECE and T3 F1 (seen classes) / T3$^\dagger $ ($12$ unseen \pv classes, zero training, \pathomedb pathway transfer only). Right: overconfidence detection, escalation, and token efficiency. Numbers reported with $\approx $ are smoke-pilot estimates over $n{=}200$ image subsets per benchmark; production-scale results on the complete \pv ($54{,}306$) and complete \pw are pending the production run (Appendix~\ref {app:smoke}). Until then, the \textbf {\observe ~(full)} row should be read as: \emph {`if the production run hits these pre-registered targets, \observe surpasses its \plantswarm teacher on both benchmarks'}}{table.caption.27}{}}
+\newlabel{tab:observe-main@cref}{{[table][9][]9}{[1][12][]13}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}\hskip -1em.~Experiments}{13}{section.9}\protected@file@percent }
+\newlabel{sec:exp}{{9}{13}{\texorpdfstring {\hskip -1em.~}{}Experiments}{section.9}{}}
+\newlabel{sec:exp@cref}{{[section][9][]9}{[1][12][]13}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}\hskip -1em.~PlantSwarm Ablation}{13}{subsection.9.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}\hskip -1em.~PlantSwarm Main Results}{13}{subsection.9.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}\hskip -1em.~OBSERVE Main Results}{13}{subsection.9.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Ablation interpretation (pre-registered + smoke-pilot indicative).}{13}{section*.28}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Zero-shot unseen classes (pre-registered, P5).}{13}{section*.29}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.4}\hskip -1em.~Geospatial Prior Validation (pre-registered targets)}{13}{subsection.9.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Methodology.}{13}{section*.30}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Layer~3 \emph  {pre-registered} validation targets: expected Pearson $r$ between \textsc  {PathomeDB}\xspace  monthly prevalence estimates and EPPO historical outbreak records across five held-out disease classes, stratified by agro-ecological zone. Target mean ${\approx }0.73 \geq 0.70$ (P7). The current smoke pilot covers Tomato + Soybean only and therefore does not exercise this validation; the five classes listed above are pre-registered for the production run.}}{14}{table.caption.31}\protected@file@percent }
+\newlabel{tab:geovalidation}{{10}{14}{Layer~3 \emph {pre-registered} validation targets: expected Pearson $r$ between \pathomedb monthly prevalence estimates and EPPO historical outbreak records across five held-out disease classes, stratified by agro-ecological zone. Target mean ${\approx }0.73 \geq 0.70$ (P7). The current smoke pilot covers Tomato + Soybean only and therefore does not exercise this validation; the five classes listed above are pre-registered for the production run}{table.caption.31}{}}
+\newlabel{tab:geovalidation@cref}{{[table][10][]10}{[1][14][]14}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Uncertainty decomposition and geospatial routing efficiency: \emph  {pre-registered} expected ranges, to be measured by the production run. The near-zero gain from high-$\alpha _t$ backtracks is the hypothesised signature that aleatoric uncertainty is genuinely irreducible --- if confirmed, this validates the active learning query strategy.}}{14}{table.caption.32}\protected@file@percent }
+\newlabel{tab:decomp}{{11}{14}{Uncertainty decomposition and geospatial routing efficiency: \emph {pre-registered} expected ranges, to be measured by the production run. The near-zero gain from high-$\alpha _t$ backtracks is the hypothesised signature that aleatoric uncertainty is genuinely irreducible --- if confirmed, this validates the active learning query strategy}{table.caption.32}{}}
+\newlabel{tab:decomp@cref}{{[table][11][]11}{[1][14][]14}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.5}\hskip -1em.~Epistemic/Aleatoric Decomposition}{14}{subsection.9.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {10}\hskip -1em.~Discussion}{14}{section.10}\protected@file@percent }
+\newlabel{sec:discussion}{{10}{14}{\texorpdfstring {\hskip -1em.~}{}Discussion}{section.10}{}}
+\newlabel{sec:discussion@cref}{{[section][10][]10}{[1][14][]14}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Inverting the paradigm.}{14}{section*.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{One field image per $280$ test images.}{14}{section*.34}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Geospatial grounding is empirical, not editorial.}{14}{section*.35}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Zero-shot transfer via mechanistic pathways.}{14}{section*.36}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Limitations.}{14}{section*.37}\protected@file@percent }
+\bibstyle{ieeenat_fullname}
+\bibdata{pathome3}
+\bibcite{plantwild}{{1}{2024}{{Anonymous}}{{}}}
+\bibcite{agentnet2025}{{2}{2025{}}{{Anonymous}}{{}}}
+\bibcite{chatdemeter2025}{{3}{2025{}}{{Anonymous}}{{}}}
+\bibcite{sage2025}{{4}{2025{}}{{Anonymous}}{{}}}
+\bibcite{selfref2025icml}{{5}{2025{}}{{Anonymous}}{{}}}
+\bibcite{chen2023reconcile}{{6}{2024}{{Chen et~al.}}{{Chen, Saha, and Bansal}}}
+\bibcite{chen2021decision}{{7}{2021}{{Chen et~al.}}{{}}}
+\bibcite{guo2025deepseek}{{8}{2025}{{Guo et~al.}}{{}}}
+\@writefile{toc}{\contentsline {section}{\numberline {11}\hskip -1em.~Conclusion}{15}{section.11}\protected@file@percent }
+\newlabel{sec:conclusion}{{11}{15}{\texorpdfstring {\hskip -1em.~}{}Conclusion}{section.11}{}}
+\newlabel{sec:conclusion@cref}{{[section][11][]11}{[1][15][]15}{}{}{}}
+\bibcite{hu2022lora}{{9}{2022}{{Hu et~al.}}{{}}}
+\bibcite{johnson2019billion}{{10}{2021}{{Johnson et~al.}}{{Johnson, Douze, and J{\'e}gou}}}
+\bibcite{kuhn2023semantic}{{11}{2023}{{Kuhn et~al.}}{{Kuhn, Gal, and Farquhar}}}
+\bibcite{lu2026dytopo}{{12}{2026}{{Lu et~al.}}{{}}}
+\bibcite{mohanty2016plantvillage}{{13}{2016}{{Mohanty et~al.}}{{Mohanty, Hughes, and Salath{\'e}}}}
+\bibcite{bugwood}{{14}{2014}{{Moorhead et~al.}}{{}}}
+\bibcite{radford2021learning}{{15}{2021}{{Radford et~al.}}{{}}}
+\bibcite{qwen2vl}{{16}{2025}{{Team}}{{}}}
+\bibcite{tqwei2024mvpdr}{{17}{2024{}}{{Wei et~al.}}{{}}}
+\bibcite{tqwei2024snapdiagnose}{{18}{2024{}}{{Wei et~al.}}{{}}}
+\bibcite{yao2024tot}{{19}{2023}{{Yao et~al.}}{{Yao, Yu, Zhao, Shafran, Griffiths, Cao, and Narasimhan}}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}\hskip -1em.~Bugwood CSV Filtering}{16}{appendix.A}\protected@file@percent }
+\newlabel{app:selection}{{A}{16}{\texorpdfstring {\hskip -1em.~}{}Bugwood CSV Filtering}{appendix.A}{}}
+\newlabel{app:selection@cref}{{[section][1][]A}{[1][16][]16}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}\hskip -1em.~Geo Prior at State Granularity}{16}{appendix.B}\protected@file@percent }
+\newlabel{app:layer3}{{B}{16}{\texorpdfstring {\hskip -1em.~}{}Geo Prior at State Granularity}{appendix.B}{}}
+\newlabel{app:layer3@cref}{{[section][2][]B}{[1][16][]16}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}\hskip -1em.~Training Configuration}{16}{appendix.C}\protected@file@percent }
+\newlabel{app:training}{{C}{16}{\texorpdfstring {\hskip -1em.~}{}Training Configuration}{appendix.C}{}}
+\newlabel{app:training@cref}{{[section][3][]C}{[1][16][]16}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {D}\hskip -1em.~Falsifiable Predictions}{17}{appendix.D}\protected@file@percent }
+\newlabel{app:predictions}{{D}{17}{\texorpdfstring {\hskip -1em.~}{}Falsifiable Predictions}{appendix.D}{}}
+\newlabel{app:predictions@cref}{{[section][4][]D}{[1][17][]17}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Seven falsifiable predictions. P5 and P7 are new relative to prior formulations.}}{17}{table.caption.42}\protected@file@percent }
+\newlabel{tab:predictions}{{12}{17}{Seven falsifiable predictions. P5 and P7 are new relative to prior formulations}{table.caption.42}{}}
+\newlabel{tab:predictions@cref}{{[table][12][]12}{[1][17][]17}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {E}\hskip -1em.~Smoke Pilot: Tomato + Soybean (2026-05-11)}{17}{appendix.E}\protected@file@percent }
+\newlabel{app:smoke}{{E}{17}{\texorpdfstring {\hskip -1em.~}{}Smoke Pilot: Tomato + Soybean (2026-05-11)}{appendix.E}{}}
+\newlabel{app:smoke@cref}{{[section][5][]E}{[1][17][]17}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Scope.}{17}{section*.43}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Smoke-pilot splits. Train and val are sliced deterministically by \texttt  {Image Number} ascending after per-class dedup; the loader's slice ($\texttt  {[:3]}$ vs $\texttt  {[3:4]}$) yields image-disjoint sets by construction, audited at load via $\mathrm  {set}(\textsc  {train}) \cap \mathrm  {set}(\textsc  {val}) = \emptyset $. Test comes from separate datasets whose image-id schemes cannot collide with Bugwood's \texttt  {bugwood::N}.}}{17}{table.caption.45}\protected@file@percent }
+\newlabel{tab:smoke-splits}{{13}{17}{Smoke-pilot splits. Train and val are sliced deterministically by \texttt {Image Number} ascending after per-class dedup; the loader's slice ($\texttt {[:3]}$ vs $\texttt {[3:4]}$) yields image-disjoint sets by construction, audited at load via $\mathrm {set}(\textsc {train}) \cap \mathrm {set}(\textsc {val}) = \emptyset $. Test comes from separate datasets whose image-id schemes cannot collide with Bugwood's \texttt {bugwood::N}}{table.caption.45}{}}
+\newlabel{tab:smoke-splits@cref}{{[table][13][]13}{[1][17][]17}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Image-disjoint train / val / test splits.}{17}{table.caption.45}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Smoke knobs (\texttt  {smoke/bugwood\_pathome\_smoke.yaml}).}}{17}{table.caption.47}\protected@file@percent }
+\newlabel{tab:smoke-budgets}{{14}{17}{Smoke knobs (\texttt {smoke/bugwood\_pathome\_smoke.yaml})}{table.caption.47}{}}
+\newlabel{tab:smoke-budgets@cref}{{[table][14][]14}{[1][17][]17}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Downscaled budgets vs production.}{17}{table.caption.47}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Phase~4 split is per source-image.}{17}{section*.48}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Runtime and cost.}{17}{section*.49}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{What this pilot validates.}{18}{section*.50}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {F}\hskip -1em.~Auto-generated Implementation Results}{18}{appendix.F}\protected@file@percent }
+\newlabel{app:auto-results}{{F}{18}{\texorpdfstring {\hskip -1em.~}{}Auto-generated Implementation Results}{appendix.F}{}}
+\newlabel{app:auto-results@cref}{{[section][6][]F}{[1][18][]18}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {F.1}\hskip -1em.~Six-step pipeline (current implementation)}{18}{subsection.F.1}\protected@file@percent }
+\newlabel{app:pipeline-six-step}{{F.1}{18}{\texorpdfstring {\hskip -1em.~}{}Six-step pipeline (current implementation)}{subsection.F.1}{}}
+\newlabel{app:pipeline-six-step@cref}{{[subsection][1][6]F.1}{[1][18][]18}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces PathomeDB seed summary.}}{18}{table.caption.51}\protected@file@percent }
+\newlabel{tab:kb_stats}{{15}{18}{PathomeDB seed summary}{table.caption.51}{}}
+\newlabel{tab:kb_stats@cref}{{[table][15][]15}{[1][18][]18}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {F.2}\hskip -1em.~PathomeDB seed summary}{18}{subsection.F.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {F.3}\hskip -1em.~Phase 0R routed-swarm trace stats}{18}{subsection.F.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {F.4}\hskip -1em.~\textsc  {Observe}\xspace  training curves}{18}{subsection.F.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {F.5}\hskip -1em.~\textsc  {Observe}\xspace  held-out evaluation}{18}{subsection.F.5}\protected@file@percent }
+\gdef \@abspage@last{18}

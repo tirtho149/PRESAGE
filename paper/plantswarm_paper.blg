@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99e (TeX Live 2026)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: plantswarm_paper.aux
+The style file: ieeenat_fullname.bst
+Database file #1: pathome3.bib
+You've used 19 entries,
+            2708 wiz_defined-function locations,
+            660 strings with 6838 characters,
+and the built_in function-call counts, 7335 in all, are:
+= -- 604
+> -- 406
+< -- 14
++ -- 146
+- -- 123
+* -- 497
+:= -- 1154
+add.period$ -- 57
+call.type$ -- 19
+change.case$ -- 90
+chr.to.int$ -- 15
+cite$ -- 38
+duplicate$ -- 410
+empty$ -- 686
+format.name$ -- 150
+if$ -- 1547
+int.to.chr$ -- 5
+int.to.str$ -- 1
+missing$ -- 19
+newline$ -- 103
+num.names$ -- 76
+pop$ -- 230
+preamble$ -- 1
+purify$ -- 71
+quote$ -- 0
+skip$ -- 252
+stack$ -- 0
+substring$ -- 75
+swap$ -- 39
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 209
+warning$ -- 0
+while$ -- 60
+width$ -- 0
+write$ -- 238
