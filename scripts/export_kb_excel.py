@@ -13,7 +13,7 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
-from openpyxl.formatting.rule import CellIsRule
+from openpyxl.formatting.rule import CellIsRule, DataBarRule
 
 # Crops to pin to the very top (in this order); everything else alphabetical.
 PRIORITY_CROPS = ["Soybean", "Corn", "Wheat", "Tomato"]
@@ -127,8 +127,9 @@ ws.title = "PRESAGE_KB"
 ws.sheet_properties.outlinePr.summaryBelow = False   # parent above its detail
 r = 1
 
+TYPE_COL = 11   # hidden column K: row type ("canon" / "delta" / "source") for live counts
 def setrow(cells, fillc=None, font=None, align=WRAP, height=None,
-           indent=0, level=0, border=True):
+           indent=0, level=0, border=True, rtype="canon"):
     """Write one row of up to NCOL cells; return the row index used."""
     global r
     for i in range(NCOL):
@@ -145,6 +146,7 @@ def setrow(cells, fillc=None, font=None, align=WRAP, height=None,
             a = Alignment(wrap_text=True, vertical="top", horizontal="left", indent=indent)
         c.alignment = a
         if border: c.border = BORDER
+    ws.cell(row=r, column=TYPE_COL, value=rtype)   # hidden helper for the live dashboard
     if height: ws.row_dimensions[r].height = height
     if level: ws.row_dimensions[r].outline_level = level
     used = r
@@ -198,14 +200,59 @@ banner("PRESAGE PathomeDB — Knowledge Base (canonical + regional deltas)", C_T
 stat = (f"Crops: {n_crops}    Diseases: {n_dz}    Regional deltas: {n_delta}"
         f"    Web-cited deltas: {n_web} ({n_web*100//max(n_delta,1)}%)")
 banner(stat, C_CROP, height=18)
-# legend row
-r += 0
+# ---- LIVE expert-review progress dashboard (frozen at top; updates as verdicts are filled)
+banner("🔬  EXPERT REVIEW PROGRESS   —   live: fills automatically as you pick 'Expert Verdict' values",
+       C_DISEASE, height=20)
+
+def _cc(row, col, val=None, bold=False, fillc=None, color="000000", center=False, mono=False):
+    c = ws.cell(row=row, column=col, value=val)
+    c.font = Font(bold=bold, color=color, name=("Consolas" if mono else "Calibri"),
+                  size=(10 if mono else 11))
+    if fillc: c.fill = fillc
+    c.alignment = Alignment(horizontal="center" if center else "left", vertical="center")
+    return c
+
+# row: links (sources)
+row_L = r
+_cc(r, 1, "🔗 Links (sources) reviewed", bold=True)
+cell_L_rev = _cc(r, 2, center=True, bold=True)
+_cc(r, 3, "of", center=True)
+cell_L_tot = _cc(r, 4, center=True)
+cell_L_pct = _cc(r, 5, center=True, bold=True); cell_L_pct.number_format = "0.0%"
+ws.merge_cells(start_row=r, start_column=6, end_row=r, end_column=10)
+cell_L_bar = _cc(r, 6, mono=True, color="2E7D32")
+ws.row_dimensions[r].height = 18
+r += 1
+# row: all entries
+row_A = r
+_cc(r, 1, "📋 All entries reviewed", bold=True)
+cell_A_rev = _cc(r, 2, center=True, bold=True)
+_cc(r, 3, "of", center=True)
+cell_A_tot = _cc(r, 4, center=True)
+cell_A_pct = _cc(r, 5, center=True, bold=True); cell_A_pct.number_format = "0.0%"
+ws.merge_cells(start_row=r, start_column=6, end_row=r, end_column=10)
+cell_A_bar = _cc(r, 6, mono=True, color="1565C0")
+ws.row_dimensions[r].height = 18
+r += 1
+# row: verdict tally + how-much-left
+row_V = r
+_cc(r, 1, "Verdict tally →", bold=True)
+_cc(r, 2, "✓ Correct", bold=True, fillc=STATUS_FILL["verified"], color=STATUS_FONT["verified"], center=True)
+cell_correct = _cc(r, 3, center=True, bold=True)
+_cc(r, 4, "~ Needs revision", bold=True, fillc=STATUS_FILL["provisional"], color=STATUS_FONT["provisional"], center=True)
+cell_needs = _cc(r, 5, center=True, bold=True)
+_cc(r, 6, "✗ Incorrect", bold=True, fillc=STATUS_FILL["contradictory"], color=STATUS_FONT["contradictory"], center=True)
+cell_incorrect = _cc(r, 7, center=True, bold=True)
+_cc(r, 8, "⏳ Left to do", bold=True)
+cell_left = _cc(r, 9, center=True, bold=True, color="833C00")
+ws.row_dimensions[r].height = 18
+r += 1
+
+# legends
 ws.cell(row=r, column=1, value="Legend (delta status):").font = Font(bold=True)
-legend = list(STATUS_FILL.items())
-for i, (name, fl) in enumerate(legend):
+for i, (name, fl) in enumerate(list(STATUS_FILL.items())):
     c = ws.cell(row=r, column=2 + i, value=name)
-    c.fill = fl
-    c.font = Font(color=STATUS_FONT.get(name, "000000"), bold=True, size=9)
+    c.fill = fl; c.font = Font(color=STATUS_FONT.get(name, "000000"), bold=True, size=9)
     c.alignment = Alignment(horizontal="center")
 ws.row_dimensions[r].height = 16
 r += 1
@@ -229,6 +276,7 @@ for i, name in enumerate(COLS):
 ws.row_dimensions[r].height = 22
 r += 1
 ws.freeze_panes = ws.cell(row=r, column=1)   # freeze everything above the first data row
+DATA_START = r   # first factual row; the dashboard formulas count from here down
 
 # ------------------------------------------------------------------ body
 CANON_FIELDS = [
@@ -308,7 +356,8 @@ for crop, d in tree:
                               dl.get("image_shows", ""), status, src_summary,
                               dl.get("image_quote", ""), "", "",
                               "  |  ".join(notes)],
-                             fillc=STATUS_FILL.get(status, None), indent=3, level=2)
+                             fillc=STATUS_FILL.get(status, None), indent=3, level=2,
+                             rtype="delta")
                 # colour the status cell strongly + status font
                 sc = ws.cell(row=row, column=3)
                 sc.fill = STATUS_FILL.get(status, C_FIELD)
@@ -320,7 +369,7 @@ for crop, d in tree:
                     u = w.get("url", ""); q = w.get("quote", "")
                     lsw = link_status(u); qs = qstatus(f"{base}/web_support[{wi}]")
                     srow = setrow([f"      ↳ source {wi+1}", "", "", u, q, lsw, qs, ""],
-                                  fillc=C_FIELD, indent=4, level=3)
+                                  fillc=C_FIELD, indent=4, level=3, rtype="source")
                     set_link(srow, u)
                     if lsw: ws.cell(row=srow, column=6).fill = LINK_FILL.get(lsw, C_FIELD)
                     if qs: ws.cell(row=srow, column=7).fill = QUOTE_FILL.get(qs, C_FIELD)
@@ -351,10 +400,33 @@ if _data_runs:
     ws.conditional_formatting.add(rng, CellIsRule(operator="equal", formula=['"Incorrect"'],
         fill=fill("FFC7CE"), font=Font(color="9C0006", bold=True)))
 
+# ------------------------------------------------------------------ live dashboard formulas
+Krange = f"$K${DATA_START}:$K$100000"
+Irange = f"$I${DATA_START}:$I$100000"
+cell_L_rev.value = f'=COUNTIFS({Krange},"source",{Irange},"<>")'
+cell_L_tot.value = f'=COUNTIF({Krange},"source")'
+cell_L_pct.value = f'=IFERROR(B{row_L}/D{row_L},0)'
+cell_L_bar.value = f'=REPT("█",ROUND(E{row_L}*40,0))&REPT("░",40-ROUND(E{row_L}*40,0))'
+cell_A_rev.value = f'=COUNTIFS({Krange},"<>",{Irange},"<>")'
+cell_A_tot.value = f'=COUNTIF({Krange},"<>")'
+cell_A_pct.value = f'=IFERROR(B{row_A}/D{row_A},0)'
+cell_A_bar.value = f'=REPT("█",ROUND(E{row_A}*40,0))&REPT("░",40-ROUND(E{row_A}*40,0))'
+cell_correct.value = f'=COUNTIF({Irange},"Correct")'
+cell_needs.value = f'=COUNTIF({Irange},"Needs revision")'
+cell_incorrect.value = f'=COUNTIF({Irange},"Incorrect")'
+cell_left.value = f'=D{row_A}-B{row_A}'
+# graphical data-bars on the % cells (fill grows live with the value)
+ws.conditional_formatting.add(f"E{row_L}", DataBarRule(start_type="num", start_value=0,
+    end_type="num", end_value=1, color="63BE7B"))
+ws.conditional_formatting.add(f"E{row_A}", DataBarRule(start_type="num", start_value=0,
+    end_type="num", end_value=1, color="638EC6"))
+
 # ------------------------------------------------------------------ widths & finish
 for i, w in enumerate(WIDTHS):
     ws.column_dimensions[get_column_letter(i + 1)].width = w
+ws.column_dimensions["K"].hidden = True   # hide the row-type helper column
 ws.sheet_view.showGridLines = False
+wb.calculation.fullCalcOnLoad = True      # recompute the live dashboard the moment it opens
 
 wb.save(OUT)
 print(f"  expert-verification dropdowns on {n_cells} factual rows ({len(_data_runs)} blocks)")
