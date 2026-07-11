@@ -12,6 +12,13 @@ import json, glob, os, collections
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
+from openpyxl.worksheet.datavalidation import DataValidation
+from openpyxl.formatting.rule import CellIsRule
+
+# Crops to pin to the very top (in this order); everything else alphabetical.
+PRIORITY_CROPS = ["Soybean", "Corn", "Wheat", "Tomato"]
+# Expert (plant-pathologist) verification dropdown options.
+EXPERT_OPTIONS = ["Correct", "Needs revision", "Incorrect"]
 
 KB = "artifacts/pathome_kb"
 OUT = "artifacts/PRESAGE_final_registry.xlsx"
@@ -94,11 +101,24 @@ WRAP_L = Alignment(wrap_text=True, vertical="top", horizontal="left")
 
 # ------------------------------------------------------------------ columns
 # A label(indented) | B value/observation | C status | D source url | E quote
-# F link | G quote-check | H notes
+# F link | G quote-check | H notes | I EXPERT VERDICT | J EXPERT COMMENTS
 COLS = ["Item", "Value / Observation", "Status", "Source URL",
-        "Quote (as stored)", "Link", "Quote?", "Notes"]
-WIDTHS = [46, 58, 18, 50, 58, 10, 14, 44]
+        "Quote (as stored)", "Link", "Quote?", "Notes",
+        "Expert Verdict", "Expert Comments"]
+WIDTHS = [46, 58, 18, 50, 58, 10, 14, 44, 18, 32]
 NCOL = len(COLS)
+EXPERT_COL = 9          # column I
+COMMENT_COL = 10        # column J
+_data_runs = []         # contiguous (start_row, end_row) blocks of factual rows for the dropdown
+_run = [None, None]
+def _mark_data(row):
+    if _run[0] is None:
+        _run[0] = row
+    _run[1] = row
+def _close_run():
+    if _run[0] is not None:
+        _data_runs.append((_run[0], _run[1]))
+        _run[0] = _run[1] = None
 
 wb = Workbook()
 ws = wb.active
@@ -113,7 +133,11 @@ def setrow(cells, fillc=None, font=None, align=WRAP, height=None,
     for i in range(NCOL):
         c = ws.cell(row=r, column=i + 1)
         c.value = cells[i] if i < len(cells) else None
-        if fillc: c.fill = fillc
+        # keep the two expert columns white so the dropdown + colour rules read clearly
+        if i in (EXPERT_COL - 1, COMMENT_COL - 1):
+            c.fill = fill("FFFFFF")
+        elif fillc:
+            c.fill = fillc
         if font: c.font = font
         a = align
         if indent and i == 0:
@@ -123,15 +147,22 @@ def setrow(cells, fillc=None, font=None, align=WRAP, height=None,
     if height: ws.row_dimensions[r].height = height
     if level: ws.row_dimensions[r].outline_level = level
     used = r
+    _mark_data(used)          # every setrow() is a factual row -> gets an expert dropdown
     r += 1
     return used
 
 def banner(text, fillc, level=0, height=20):
     global r
-    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=NCOL)
+    _close_run()   # a banner breaks the contiguous factual-row block
+    # merge only across the content columns A:H; leave the two expert columns
+    # (I,J) unmerged so their dropdown / colour rules stay clean.
+    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=NCOL - 2)
     c = ws.cell(row=r, column=1, value=text)
     c.fill = fillc; c.font = WHITE_BOLD
     c.alignment = Alignment(vertical="center", horizontal="left", indent=1)
+    for col in (EXPERT_COL, COMMENT_COL):     # tint the expert cells to match the banner
+        bc = ws.cell(row=r, column=col)
+        bc.fill = fillc
     ws.row_dimensions[r].height = height
     if level: ws.row_dimensions[r].outline_level = level
     r += 1
@@ -154,6 +185,12 @@ for f in files:
                 status_counts[dl.get("verification_status", "")] += 1
                 if dl.get("web_support"):
                     n_web += 1
+
+# pin priority crops to the top (Soybean, Corn, Wheat, Tomato), rest alphabetical
+def _crop_sort_key(item):
+    crop = item[0]
+    return (0, PRIORITY_CROPS.index(crop)) if crop in PRIORITY_CROPS else (1, crop.lower())
+tree.sort(key=_crop_sort_key)
 
 # ------------------------------------------------------------------ header block
 banner("PRESAGE PathomeDB — Knowledge Base (canonical + regional deltas)", C_TITLE, height=26)
@@ -268,12 +305,39 @@ for crop, d in tree:
                 sc.alignment = Alignment(horizontal="center", vertical="top", wrap_text=True)
                 if ls: ws.cell(row=row, column=6).fill = LINK_FILL.get(ls, C_FIELD)
 
+# ------------------------------------------------------------------ expert verification
+_close_run()   # close the final factual-row block
+col = get_column_letter(EXPERT_COL)   # "I"
+# 3-option plant-pathologist dropdown on every factual row (canonical + delta)
+dv = DataValidation(type="list", formula1='"%s"' % ",".join(EXPERT_OPTIONS),
+                    allow_blank=True, showErrorMessage=True)
+dv.promptTitle = "Expert verification"
+dv.prompt = "Plant pathologist: is this entry correct?"
+dv.errorTitle = "Pick one"
+dv.error = "Choose: " + " / ".join(EXPERT_OPTIONS)
+ws.add_data_validation(dv)
+n_cells = 0
+for a, b in _data_runs:
+    dv.add(f"{col}{a}:{col}{b}")
+    n_cells += b - a + 1
+# colour the verdict cell by the expert's choice
+if _data_runs:
+    lo = _data_runs[0][0]; hi = _data_runs[-1][1]
+    rng = f"{col}{lo}:{col}{hi}"
+    ws.conditional_formatting.add(rng, CellIsRule(operator="equal", formula=['"Correct"'],
+        fill=fill("C6EFCE"), font=Font(color="006100", bold=True)))
+    ws.conditional_formatting.add(rng, CellIsRule(operator="equal", formula=['"Needs revision"'],
+        fill=fill("FFF2CC"), font=Font(color="7F6000", bold=True)))
+    ws.conditional_formatting.add(rng, CellIsRule(operator="equal", formula=['"Incorrect"'],
+        fill=fill("FFC7CE"), font=Font(color="9C0006", bold=True)))
+
 # ------------------------------------------------------------------ widths & finish
 for i, w in enumerate(WIDTHS):
     ws.column_dimensions[get_column_letter(i + 1)].width = w
 ws.sheet_view.showGridLines = False
 
 wb.save(OUT)
+print(f"  expert-verification dropdowns on {n_cells} factual rows ({len(_data_runs)} blocks)")
 print(f"WROTE {OUT}")
 print(f"  crops={n_crops}  diseases={n_dz}  deltas={n_delta}  web_cited={n_web}")
 print(f"  status={dict(status_counts)}")
