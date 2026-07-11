@@ -87,7 +87,253 @@
           "alternative_source_url": "https://ipm.ucanr.edu/PMG/GARDEN/PLANTS/DISEASES/botrytis.html",
           "note": "Illinois ('and other species') and UC IPM ('Various Botrytis and Botryotinia species ... most commonly Botrytis cinerea') note multiple causal species; Botrytis cinerea selected as canonical. No NCBI/MycoBank taxonomy validation was provided, so taxonomy_validated is false."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Disease often begins as tiny, almost translucent spots that turn brown and water-soaked",
+              "image_shows": "The leaf lesion has an irregular shape.",
+              "image_quote": "The lesion is irregular.",
+              "image_id": "bugwood::5461118",
+              "verification_status": "verified",
+              "reasoning": "Extension sources explicitly describe Botrytis leaf lesions as irregular in outline, corroborating the observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/botrytis-blight-of-greenhouse-ornamentals",
+                  "quote": "Irregular tan to gray lesions form prior to sporulation on leaves and stems."
+                },
+                {
+                  "url": "https://hgic.clemson.edu/factsheet/gray-mold-botrytis-blight-2/",
+                  "quote": "Infection usually begins as brown to gray circular spots that later become fuzzy when the fungus produces gray masses of spores."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "water-soaked petal spots develop reddish-brown blotches",
+              "image_shows": "The lesion has a dark brown center with a grayish halo.",
+              "image_quote": "The lesion appears to have a brown center with a grayish halo.",
+              "image_id": "bugwood::5461118",
+              "verification_status": "weakly_supported",
+              "reasoning": "A brown lesion center with a grayish sporulating margin is consistent with described brown-to-gray Botrytis spots, but the specific halo pattern is only indirectly supported.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://hgic.clemson.edu/factsheet/gray-mold-botrytis-blight-2/",
+                  "quote": "Infection usually begins as brown to gray circular spots that later become fuzzy when the fungus produces gray masses of spores."
+                },
+                {
+                  "url": "https://ipm.illinois.edu/diseases/rpds/623.pdf",
+                  "quote": "A conspicuous, tan to gray fuzzy mold develops on rotted tissue under humid conditions."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "infected leaves ... become dark, soft, and wilted and die",
+              "image_shows": "Necrotic tissue covers the entire leaf.",
+              "image_quote": "The thick grayish web of mycelium spreads over the leaf.",
+              "image_id": "bugwood::5461118",
+              "verification_status": "weakly_supported",
+              "reasoning": "Sources confirm Botrytis leaf blight can coalesce over large portions of the leaf, supporting extensive necrosis though full-leaf coverage is not specifically documented for hydrangea.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://homegarden.cahnr.uconn.edu/factsheets/hydrangea-diseases-and-pests/",
+                  "quote": "Leaf blights can start when infected floral tissue falls on healthy leaves."
+                },
+                {
+                  "url": "https://hgic.clemson.edu/factsheet/gray-mold-botrytis-blight-2/",
+                  "quote": "These spots may coalesce rapidly and a large portion of the tissue becomes gray-brown."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "concentric rings of different shades of brown may be visible",
+              "image_shows": "The lesion shows a pattern suggestive of concentric rings.",
+              "image_quote": "The lesion has a brown center with a grayish halo, indicating a possible concentric pattern.",
+              "image_id": "bugwood::5461118",
+              "verification_status": "verified",
+              "reasoning": "External extension literature explicitly documents target-like concentric rings on Botrytis lesions, corroborating the observation for this state.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://hgic.clemson.edu/factsheet/gray-mold-botrytis-blight-2/",
+                  "quote": "Lesions expand, with the initial spots growing larger, and may develop a target-like pattern of concentric rings."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "infected ... leaves ... become dark, soft, and wilted and die",
+              "image_shows": "A significant portion of the leaf is affected by gray mold.",
+              "image_quote": "The photo shows a significant portion of the hydrangea leaf affected by gray mold.",
+              "image_id": "bugwood::5461118",
+              "verification_status": "weakly_supported",
+              "reasoning": "Coalescence of lesions over a large portion of tissue is documented, supporting high visible severity.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://hgic.clemson.edu/factsheet/gray-mold-botrytis-blight-2/",
+                  "quote": "These spots may coalesce rapidly and a large portion of the tissue becomes gray-brown."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "chlorosis",
+              "canonical_says": "(not specified)",
+              "image_shows": "No chlorosis is present on the leaf.",
+              "image_quote": "The image shows a close-up of a damaged hydrangea leaf with fungal growth.",
+              "image_id": "bugwood::5461118",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources characterize gray mold as necrotic tan-to-gray/brown soft-rot lesions rather than chlorotic yellowing, so the absence of chlorosis is consistent with the disease's published appearance.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.illinois.edu/plant-problems/gray-mold-botrytis",
+                  "quote": "Symptoms include soft rots and irregular tan to gray lesions that form prior to sporulation on leaves and stems."
+                },
+                {
+                  "url": "https://homegarden.cahnr.uconn.edu/factsheets/hydrangea-diseases-and-pests/",
+                  "quote": "Small water-soaked spots on the petals quickly expand into brown irregular blotches ... brown, withered masses of flowers may be covered with the fuzzy gray growth of the fungus."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf is curling up towards the center.",
+              "image_quote": "The leaf shows curling up towards the center.",
+              "image_id": "bugwood::5461118",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources note leaf distortion of young foliage with Botrytis, giving indirect support for a curled-leaf appearance though it is not a primary hallmark.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.canr.msu.edu/resources/botrytis-blight",
+                  "quote": "Botrytis blight causes symptoms including seedling blight, leaf spots and blight, and distortion of young leaves."
+                },
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/hydrangea-bud-flower-blight",
+                  "quote": "distortion of young leaves is a symptom associated with Botrytis blight"
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf veins appear necrotic and dark.",
+              "image_quote": "The leaf veins appear necrotic and dark, suggesting death.",
+              "image_id": "bugwood::5461118",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension descriptions of vein-bounded spots turning necrotic partly support darkened, necrotic vein-associated tissue, but dark veins as such are not explicitly documented.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/botrytis-blight-of-greenhouse-ornamentals",
+                  "quote": "leaf infection begins as dull, green spots, commonly surrounded by a vein, and the spots rapidly become necrotic lesions"
+                },
+                {
+                  "url": "https://extension.illinois.edu/plant-problems/gray-mold-botrytis",
+                  "quote": "Botrytis causes irregularly-shaped necrotic (dead) areas on leaves"
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape/geometry is difficult to discern.",
+              "image_quote": "Close-up view shows a leaf with visible signs of disease.",
+              "image_id": "bugwood::5461118",
+              "verification_status": "field_observation",
+              "reasoning": "This is an image-legibility remark rather than a disease symptom, so it is plausible and uncontradicted but not externally verifiable.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "on fleshier leaves (e.g. rhododendron) concentric rings of different shades of brown may be visible",
+              "image_shows": "No concentric pattern is visible, arguing against certain look-alikes.",
+              "image_quote": "No concentric pattern is visible in the provided image.",
+              "image_id": "bugwood::5461118",
+              "verification_status": "field_observation",
+              "reasoning": "An image-specific absence of concentric ringing is coherent with canonical (rings only sometimes visible on fleshier leaves) but cannot be corroborated by external photo descriptions.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "novel_plausible"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5461118",
+            "bugwood::5461119",
+            "bugwood::5461120",
+            "bugwood::5461121",
+            "bugwood::5461122",
+            "bugwood::5461123",
+            "bugwood::5461124",
+            "bugwood::5461125",
+            "bugwood::5461126",
+            "bugwood::5461127",
+            "bugwood::5461128",
+            "bugwood::5461129",
+            "bugwood::5461130",
+            "bugwood::5461131"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              12
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 12,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 5,
+              "n_provisional": 5,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 2
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 10,
+              "n_added": 10,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 2,
+            "provisional_count": 2,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Cercospora Fungi",
@@ -159,9 +405,245 @@
           "alternative_source_url": "https://www.lsuagcenter.com/articles/page1502825252460",
           "note": "The LSU AgCenter article does not name the pathogen; canonical name taken from Bugwoodwiki. No NCBI/MycoBank taxonomy validation was provided, so taxonomy_validated is false."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Kentucky": {
+          "state": "Kentucky",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Circular to angular leaf spots about 1/8 to 1/4 inch (3-6 mm) in diameter",
+              "image_shows": "The lesions are irregular and do not follow the veins precisely.",
+              "image_quote": "The lesions have an irregular appearance with varying shapes.",
+              "image_id": "bugwood::5430025",
+              "verification_status": "verified",
+              "reasoning": "Extension sources confirm Cercospora spots become irregular/angular and are not vein-delimited like bacterial spots.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://hyg.ipm.illinois.edu/article.php?id=1311",
+                  "quote": "As spots enlarge, they often become irregular or angular in shape and develop a tan or gray center surrounded by a purple or brown border."
+                },
+                {
+                  "url": "https://www.uaex.uada.edu/publications/pdf/FSA-7570.pdf",
+                  "quote": "Initial spots are purple and small with a circular shape. As spots enlarge, they often become irregular or angular in shape."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "a pale or light brown center and dark margins (a frogeye pattern)",
+              "image_shows": "The photo shows chlorotic lesions with a pale green center and dark brown to nearly black margin.",
+              "image_quote": "The lesion center is a pale green with a dark brown to nearly black margin, and a chlorotic yellow halo.",
+              "image_id": "bugwood::5430025",
+              "verification_status": "verified",
+              "reasoning": "The chlorotic yellow halo around spots is documented by multiple sources and is not stated in the canonical KB, making it a supported regional addition.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.gardenia.net/disease/cercospora-leaf-spot",
+                  "quote": "Many of the spots might be surrounded by a chlorotic halo, which is a yellowish discoloration around the spot."
+                },
+                {
+                  "url": "https://hyg.ipm.illinois.edu/article.php?id=1311",
+                  "quote": "Leaves that are severely spotted often become a yellow-green color."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "brown to gray with dark reddish brown, purplish, or nearly black borders",
+              "image_shows": "The lesions exhibit a pale green center with a darker brown margin.",
+              "image_quote": "The lesion center is a pale green with a dark brown to nearly black margin, and a chlorotic yellow halo.",
+              "image_id": "bugwood::5430025",
+              "verification_status": "weakly_supported",
+              "reasoning": "Dark margin plus chlorotic halo are corroborated, though a pale-green (vs tan/gray) center is only partially consistent with documented lesions.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://hyg.ipm.illinois.edu/article.php?id=1311",
+                  "quote": "the center of these spots on bigleaf hydrangea turns tan or light gray and surrounded by a purple halo."
+                },
+                {
+                  "url": "https://www.gardenia.net/disease/cercospora-leaf-spot",
+                  "quote": "Many of the spots might be surrounded by a chlorotic halo, which is a yellowish discoloration around the spot."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "the lesions are irregular and do not follow the veins",
+              "image_shows": "The lesions are irregular and do not follow the veins precisely.",
+              "image_quote": "The lesions are irregular and do not follow the veins.",
+              "image_id": "bugwood::5430025",
+              "verification_status": "weakly_supported",
+              "reasoning": "Irregular, non-vein-limited spotting is consistent with documented Cercospora morphology, distinguishing it from vein-delimited bacterial spots.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.uaex.uada.edu/publications/pdf/FSA-7570.pdf",
+                  "quote": "As spots enlarge, they often become irregular or angular in shape."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "which may converge to cover much of the leaf surface",
+              "image_shows": "The image shows necrotic tissue that covers the whole leaf.",
+              "image_quote": "The necrotic tissue extends throughout the entire leaf, with spots of dead tissue visible.",
+              "image_id": "bugwood::5430025",
+              "verification_status": "weakly_supported",
+              "reasoning": "Coalescence of spots into extensive whole-leaf necrosis matches documented severe-infection progression.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.lsuagcenter.com/articles/page1502825252460",
+                  "quote": "Severely infected plants may defoliate and often have reduced plant vigor and fewer flowers."
+                },
+                {
+                  "url": "https://www.uaex.uada.edu/publications/pdf/FSA-7570.pdf",
+                  "quote": "Severely infected plants may defoliate and often have reduced plant vigor and fewer flowers."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "which may converge to cover much of the leaf surface",
+              "image_shows": "The majority of the leaf surface is affected by lesions.",
+              "image_quote": "Discrete spots of necrotic tissue.",
+              "image_id": "bugwood::5430025",
+              "verification_status": "weakly_supported",
+              "reasoning": "High lesion coverage of the leaf is consistent with the documented severe stage, though the visual quote notes discrete rather than fully coalesced spots.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.lsuagcenter.com/articles/page1502825252460",
+                  "quote": "Severely infected plants may defoliate and often have reduced plant vigor and fewer flowers."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "Corynespora cassicola (Corynespora leaf spot)",
+              "image_shows": "Target spots with alternating light and dark concentric rings.",
+              "image_quote": "Target spots with alternating light and dark concentric rings.",
+              "image_id": "bugwood::5430025",
+              "verification_status": "verified",
+              "reasoning": "Concentric target rings are the diagnostic hallmark of the Corynespora cassiicola look-alike, which co-occurs with Cercospora on hydrangea.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.tandfonline.com/doi/full/10.1080/07060661.2019.1632934",
+                  "quote": "Lesions further enlarged and formed concentric rings within the spot, demonstrating a target-like appearance."
+                },
+                {
+                  "url": "https://research.fs.usda.gov/treesearch/50645",
+                  "quote": "Corynespora cassiicola and Cercospora sp. have been identified as the most prevalent and destructive leaf-spot pathogens of garden hydrangea in the southeastern USA... they produce very similar symptoms."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "brown to gray with dark reddish brown, purplish, or nearly black borders",
+              "image_shows": "The lesions appear raised and have a rough texture.",
+              "image_quote": "The lesions show a rough, uneven surface.",
+              "image_id": "bugwood::5430025",
+              "verification_status": "novel_plausible",
+              "reasoning": "Extension factsheets describe Cercospora spots as flat brown-to-gray lesions but do note tiny dark stromata forming on the leaf surface, so a rough/raised texture is coherent with the evidence yet not directly corroborated.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape appears to be spade-like, with a broad base tapering to a narrower point.",
+              "image_quote": "The leaf shape is broad with a narrow point, resembling a spade.",
+              "image_id": "bugwood::5430025",
+              "verification_status": "provisional",
+              "reasoning": "This describes host leaf shape rather than a disease symptom, so no extension photo description confirms or contradicts it.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The central leaf shows some curling along the edges, but it's not clear if the entire leaf is curled.",
+              "image_quote": "Some curling along the edges of the central leaf.",
+              "image_id": "bugwood::5430025",
+              "verification_status": "provisional",
+              "reasoning": "Leaf-edge curling is not a documented Cercospora hydrangea symptom, and the observation is hedged, so it is plausible but unsupported and not contradicted.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5430025",
+            "bugwood::5430026",
+            "bugwood::5430027",
+            "bugwood::5430028",
+            "bugwood::5430029",
+            "bugwood::5430030",
+            "bugwood::5430031",
+            "bugwood::5430032",
+            "bugwood::5430033",
+            "bugwood::5430034",
+            "bugwood::5430035",
+            "bugwood::5430036",
+            "bugwood::5430037",
+            "bugwood::5430038",
+            "bugwood::5430055"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              11
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 11,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 7,
+              "n_provisional": 3,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 10,
+              "n_added": 10,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": true,
+            "failure_reason": "claude_query returned None (auth / timeout / empty)",
+            "preserved_count": 3
+          }
+        }
+      }
     }
   ],
   "crop": "Hydrangea",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 2
 }

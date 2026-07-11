@@ -22,14 +22,14 @@
       },
       "visual_symptoms": {
         "summary": {
-          "value": "A postharvest disease of stored citrus fruits resembling blue mold, in which the fungus forms whisker-like coremia measuring 1â€“8 mm.",
+          "value": "A postharvest disease of stored citrus fruits resembling blue mold, in which the fungus forms whisker-like coremia measuring 1\u00e2\u20ac\u201c8 mm.",
           "url": "https://link.springer.com/article/10.1007/s10327-012-0363-0",
-          "quote": "stored fruits of the medium-to-late-ripening citrus variety Shiranuhi ... were found to have a disease similar to blue mold ... it formed whisker-like coremia measuring 1â€“8 mm"
+          "quote": "stored fruits of the medium-to-late-ripening citrus variety Shiranuhi ... were found to have a disease similar to blue mold ... it formed whisker-like coremia measuring 1\u00e2\u20ac\u201c8 mm"
         },
         "diagnostic_features": {
-          "value": "Unlike the blue mold agent Penicillium italicum, it forms distinctive whisker-like coremia measuring 1â€“8 mm.",
+          "value": "Unlike the blue mold agent Penicillium italicum, it forms distinctive whisker-like coremia measuring 1\u00e2\u20ac\u201c8 mm.",
           "url": "https://link.springer.com/article/10.1007/s10327-012-0363-0",
-          "quote": "The fungus causing this disease differed distinctly from the well-known, blue mold agent, Penicillium italicum , because it formed whisker-like coremia measuring 1â€“8 mm."
+          "quote": "The fungus causing this disease differed distinctly from the well-known, blue mold agent, Penicillium italicum , because it formed whisker-like coremia measuring 1\u00e2\u20ac\u201c8 mm."
         },
         "look_alikes": {
           "value": [
@@ -46,7 +46,118 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "California": {
+          "state": "California",
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "it forms distinctive whisker-like coremia measuring 1\u20138 mm",
+              "image_shows": "The white fluffy structure sits atop a darker center of the lesion.",
+              "image_quote": "The top portion of the object has a fluffy, white appearance.",
+              "image_id": "bugwood::1570456",
+              "verification_status": "weakly_supported",
+              "reasoning": "External reports corroborate that the whisker-like coremia bear white/whitish stalks, matching the observed white fluffy sporulating structure.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-06-18-1098-PDN",
+                  "quote": "Distinctive symptoms on sporulated soft lesions are the grayish blue color of the conidial masses and the presence of whisker-like coremia with tall whitish stalks."
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-04-18-0603-PDN",
+                  "quote": "lesions become covered with blue-gray spore mass and coremia with white stalks and mycelia, formed particularly in the outer periphery of the lesion."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The entire circular fruit surface appears to be affected by the fungal growth.",
+              "image_quote": "The photo displays a fungal growth on a fruit surface.",
+              "image_id": "bugwood::1570456",
+              "verification_status": "weakly_supported",
+              "reasoning": "Published extension/APS descriptions confirm circular fungal-growth patches that expand to cover the fruit surface, giving partial support to this generic observation, though it does not capture the diagnostic whisker-like coremia.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://link.springer.com/article/10.1007/s10327-012-0363-0",
+                  "quote": "In the initial stage, light-brown, water-soaked, circular patches with vague borders appear on the fruit surface; the patches expand gradually and a white mycelial mat forms in the center."
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-10-16-1511-PDN",
+                  "quote": "The rotted portion of the fruit is covered with a white, compact fungal growth; the infected area expands and becomes covered with fungal growth, with some fruit becoming shriveled and mummified."
+                }
+              ]
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::1570456",
+            "bugwood::1570457",
+            "bugwood::1570458",
+            "bugwood::1570459",
+            "bugwood::1570460",
+            "bugwood::1570462",
+            "bugwood::1570463",
+            "bugwood::1570464",
+            "bugwood::1570465",
+            "bugwood::1570466",
+            "bugwood::1570467",
+            "bugwood::1570475",
+            "bugwood::1570478",
+            "bugwood::1570566",
+            "bugwood::1570567",
+            "bugwood::1570568",
+            "bugwood::1570726",
+            "bugwood::1570758",
+            "bugwood::1570759"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              4
+            ],
+            "detected_organ_per_pass": [
+              "fruit"
+            ],
+            "n_active_agents_per_pass": [
+              6
+            ],
+            "n_after_agreement": 4,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 1,
+              "n_provisional": 1,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 2
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 2,
+              "n_added": 2,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Green Mold",
@@ -100,7 +211,7 @@
           "Wrap fruit individually in paper to prevent fruit-to-fruit spread during storage and transport",
           "Hot-water treatment of fruit",
           "Alternative methods: antagonistic micro-organisms, plant extracts and essential oils, biofungicides, chitosan and chitosan-based citrus coatings, heat treatments, ionizing and non-ionizing irradiations, food additives, and synthetic elicitors",
-          "Novel photoactive chitosanâ€“riboflavin bioconjugate (CH-RF)",
+          "Novel photoactive chitosan\u00e2\u20ac\u201criboflavin bioconjugate (CH-RF)",
           "Integrating multiple approaches (e.g., biocontrol agents with food additives or heat treatments)"
         ],
         "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2021.833328/full",
@@ -108,9 +219,181 @@
       },
       "confidence": "high",
       "num_sources": 3,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "California": {
+          "state": "California",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "white mycelia and greenish conidia develop, the mycelium breaks down cell walls causing shrinkage into a sunken mummified form",
+              "image_shows": "Fruit is severely decayed with extensive rot, tissue breakdown, and a heavy covering of white fungal growth.",
+              "image_quote": "The lemons are heavily covered with white mold, indicating significant disease presence.",
+              "image_id": "bugwood::1570165",
+              "verification_status": "weakly_supported",
+              "reasoning": "Heavy white surface growth on decayed fruit is consistent with the documented broad band of white mycelium in green mold, though the white phase is mycelium rather than mature (green) spores.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.plantwise.org/KnowledgeBank/datasheet/39570",
+                  "quote": "a circular colony of white mould, up to 4 cm in diameter after 24-36 hours at 24\u00b0C. Green asexual spores (conidia) form at the centre of the colony, surrounded by a broad band of white mycelium."
+                },
+                {
+                  "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2021.833328/full",
+                  "quote": "The mycelium produces enzymes that break down fruit cell walls and initiate shrinkage, resulting in a sunken mummified form."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "A thick non-sporulating mycelium limited by the decaying peel surrounds the green mold spores; rots are white at first and rapidly change to green as spores develop.",
+              "image_shows": "Powdery white surface growth is visible on the infected lemon fruits.",
+              "image_quote": "White powdery growth is visible on the infected lemon fruits.",
+              "image_id": "bugwood::1570165",
+              "verification_status": "weakly_supported",
+              "reasoning": "White powdery growth matches the documented white mycelial margin, but the mature sporulating masses of green mold are olive-green, not white, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/citrusblueandgreenmold.html",
+                  "quote": "It starts infection by creating a white mycelium on damaged fruit that spreads in circles, which is an important diagnostic feature of this pathogen."
+                },
+                {
+                  "url": "https://www.plantwise.org/KnowledgeBank/datasheet/39570",
+                  "quote": "Green asexual spores (conidia) form at the centre of the colony, surrounded by a broad band of white mycelium."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "the mycelium breaks down cell walls causing shrinkage into a sunken mummified form with a soft watery rotted spot",
+              "image_shows": "All lemons are extensively rotted, shriveled, and mostly decomposed with their original shape largely lost.",
+              "image_quote": "The lemons appear shriveled and mostly decomposed, with most of their original shape lost.",
+              "image_id": "bugwood::1570165",
+              "verification_status": "weakly_supported",
+              "reasoning": "Advanced-stage total decomposition and shriveling matches the documented progression to a sunken mummified form, supporting a high-severity observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2021.833328/full",
+                  "quote": "The mycelium produces enzymes that break down fruit cell walls and initiate shrinkage, resulting in a sunken mummified form."
+                },
+                {
+                  "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/citrusblueandgreenmold.html",
+                  "quote": "Blue and green mold... account for the majority of postharvest decay of citrus, rotting fruit entirely into a collapsed, mummified mass."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "Blue mold (Penicillium italicum)",
+              "image_shows": "Powdery white spore masses are visible on the fruits, but no blue-green sporulation distinguishing blue from green mold is described.",
+              "image_quote": "Powdery white spore masses are visible on the fruits.",
+              "image_id": "bugwood::1570165",
+              "verification_status": "weakly_supported",
+              "reasoning": "Published extension/photo sources confirm white mycelium is the shared early stage of both green and blue mold before coloured spores develop, so white spore masses alone do not distinguish the two, corroborating the candidate's look-alike observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/citrusblueandgreenmold.html",
+                  "quote": "In infected fruit, very profuse sporulation can be seen \u2013 fruit is completely covered by white mycelium followed by green and bluish spores of Penicillium digitatum and Penicillium italicum respectively."
+                },
+                {
+                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/penicillium-digitatum",
+                  "quote": "Early symptoms include a soft water-soaked area on the peel, followed by the development of a circular colony of white mould, up to 4 cm diam."
+                }
+              ]
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::1570165",
+            "bugwood::1570166",
+            "bugwood::1570167",
+            "bugwood::1570168",
+            "bugwood::1570169",
+            "bugwood::1570170",
+            "bugwood::1570171",
+            "bugwood::1570172",
+            "bugwood::1570189",
+            "bugwood::1570190",
+            "bugwood::1570191",
+            "bugwood::1570193",
+            "bugwood::1570194",
+            "bugwood::1570285",
+            "bugwood::1570286",
+            "bugwood::1570287",
+            "bugwood::1570288",
+            "bugwood::1570414",
+            "bugwood::1570455",
+            "bugwood::1570760",
+            "bugwood::1570761",
+            "bugwood::1570762",
+            "bugwood::1570763",
+            "bugwood::1570764",
+            "bugwood::1570794",
+            "bugwood::1570805",
+            "bugwood::1570809",
+            "bugwood::1570810",
+            "bugwood::1570813",
+            "bugwood::1570827",
+            "bugwood::1570828",
+            "bugwood::1570829",
+            "bugwood::1570833",
+            "bugwood::1570834",
+            "bugwood::1570836",
+            "bugwood::1578578",
+            "bugwood::1578597"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              4
+            ],
+            "detected_organ_per_pass": [
+              "fruit"
+            ],
+            "n_active_agents_per_pass": [
+              6
+            ],
+            "n_after_agreement": 4,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 3,
+              "n_provisional": 1,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 4,
+              "n_added": 4,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     }
   ],
   "crop": "Lemon",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 2
 }

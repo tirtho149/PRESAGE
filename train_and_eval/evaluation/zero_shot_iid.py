@@ -62,8 +62,11 @@ def zero_shot_classifier(model, classnames, templates, args):
 def accuracy(output, target, topk=(1,)):
     pred = output.topk(max(topk), 1, True, True)[1].t()
     correct = pred.eq(target.view(1, -1).expand_as(pred))
+    # .sum() -> 0-dim tensor; .item() -> Python float. The previous
+    # float(<size-1 ndarray>) form raises "only 0-dimensional arrays can be
+    # converted to Python scalars" under numpy >= 2.0 (keepdim left a 1-D array).
     return dict([
-        (k,float(correct[:k].reshape(-1).float().sum(0, keepdim=True).cpu().numpy()))
+        (k, correct[:k].reshape(-1).float().sum().cpu().item())
         for k in topk
     ])
 

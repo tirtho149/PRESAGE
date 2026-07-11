@@ -51,7 +51,165 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "North Dakota": {
+          "state": "North Dakota",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "a water-soaked canker with cottony white mycelium at the stem base that turns dark and girdles the plant, middle stalk rot",
+              "image_shows": "Lesions and cankers on the outer stem.",
+              "image_quote": "The outer stems show raised, dark, water-soaked lesions.",
+              "image_id": "bugwood::5610150",
+              "verification_status": "verified",
+              "reasoning": "Extension and APS sources confirm Sclerotinia mid-stalk rot produces water-soaked cankers/lesions on the sunflower stem that darken and girdle, directly corroborating the observed outer-stem lesions.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/SclerotiniaSunflower.aspx",
+                  "quote": "For mid-stem rot the fungus produces a tan-colored, water-soaked lesion on the stem of the plants, primarily around the petiole, and these lesions will enlarge over time and will eventually girdle and shred the stem."
+                },
+                {
+                  "url": "https://extension.sdstate.edu/sites/default/files/2021-08/P-00205-10.pdf",
+                  "quote": "Initially, small, water-soaked lesions develop on the plants; the color of the canker may be tan, greyish or green-brown, and as symptoms progress the stalk becomes bleached with whitish mycelia."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "Symptoms include wilting ... and head rot leaving a shredded appearance.",
+              "image_shows": "Extensive wilting and head rot affecting multiple sunflowers.",
+              "image_quote": "The image shows several sunflowers with wilted flower heads and shredded-looking remnants of heads.",
+              "image_id": "bugwood::5610150",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension and APS sources corroborate that Sclerotinia causes plant wilting plus head rot with a bleached, shredded head appearance across affected plants, matching the observed field-wide severity.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/SclerotiniaSunflower.aspx",
+                  "quote": "The fungus can decay the entire receptacle and the seed layer falls away leaving only a bleached, shredded skeleton interspersed with large sclerotia; plants suddenly wilt with upper leaves drooping and the plant dying within four to seven days."
+                },
+                {
+                  "url": "https://www.gov.mb.ca/agriculture/crops/plant-diseases/sclerotinia-sunflowers.html",
+                  "quote": "Sclerotinia in sunflowers causes wilt and head rot, with heads becoming rotted and shredded and the disease most severe in rainy or humid weather during or shortly after flowering."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "a dense, white cottony fungal growth (mycelium) is produced in the stalk",
+              "image_shows": "Water-soaked dark streaks extending from a lesion edge.",
+              "image_quote": "Water-soaked dark streaks extending from lesions are visible on some stems.",
+              "image_id": "bugwood::5610150",
+              "verification_status": "weakly_supported",
+              "reasoning": "Sources indicate Sclerotinia stem lesions enlarge and progress along the stem, giving indirect support for water-soaked discoloration extending from lesion edges, though 'streaks' is not a term used verbatim in the literature.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/SclerotiniaSunflower.aspx",
+                  "quote": "These lesions will enlarge over time and will eventually girdle and shred the stem."
+                },
+                {
+                  "url": "https://extension.sdstate.edu/sites/default/files/2021-08/P-00205-10.pdf",
+                  "quote": "As the disease progresses, secondary symptoms can appear which include wilting, bleaching and shredding of the stem."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Sclerotia ... are an excellent method of pathogen identification; a dense, white cottony fungal growth (mycelium) is produced in the stalk.",
+              "image_shows": "There are no visible signs of pathogen sporulation in the image.",
+              "image_quote": "No white fluffy mycelium, powdery spore masses, black pycnidia, apothecia, or mustard-seed-shaped sclerotia are present.",
+              "image_id": "bugwood::5610150",
+              "verification_status": "field_observation",
+              "reasoning": "Extension sources confirm mycelium/sclerotia are the diagnostic signs, but Sclerotinia can present as wilting and bleached head rot with no visible fungal signs in a given photo, so the noted absence is coherent yet unverifiable and flagged for curator review.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "novel_plausible"
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "(not specified)",
+              "image_shows": "No visible stem pith color, petiole attachment, leg color, or bract length in the image.",
+              "image_quote": "The photo shows sunflowers with wilted flower heads and leaves.",
+              "image_id": "bugwood::5610150",
+              "verification_status": "field_observation",
+              "reasoning": "The candidate only records that look-alike discriminating features are not visible while the photo shows wilted heads/leaves consistent with the disease; no external photo description corroborates or contradicts this image-specific absence.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5610150",
+            "bugwood::5610151",
+            "bugwood::5610152",
+            "bugwood::5610153",
+            "bugwood::5610154",
+            "bugwood::5610155",
+            "bugwood::5610156",
+            "bugwood::5610157",
+            "bugwood::5610158",
+            "bugwood::5610159",
+            "bugwood::5610160",
+            "bugwood::5610161",
+            "bugwood::5610163",
+            "bugwood::5610164",
+            "bugwood::5610165",
+            "bugwood::5610166",
+            "bugwood::5610167",
+            "bugwood::5610168",
+            "bugwood::5610169",
+            "bugwood::5610170"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              5
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 5,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 3,
+              "n_provisional": 2,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 5,
+              "n_added": 5,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 2,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Rust",
@@ -98,9 +256,235 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "North Dakota": {
+          "state": "North Dakota",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Rust pustules (uredia) appear as golden yellow pustules",
+              "image_shows": "In North Dakota the rust appears as small, scattered pustular spots on the leaf rather than confluent lesions.",
+              "image_quote": "The image shows multiple small spots of necrotic tissue on the leaf surface.",
+              "image_id": "bugwood::5610134",
+              "verification_status": "verified",
+              "reasoning": "Sunflower rust forms small pustules scattered across the leaf, consistent with the small-scattered-spot description, though the pustules are pustular rather than purely necrotic.",
+              "swarm_support": 2,
+              "web_support": [
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/sunflower/rust/",
+                  "quote": "Small, reddish brown pustules (uredia) appear on the leaves, and are found on both top and bottom leaf surfaces."
+                },
+                {
+                  "url": "https://www.ndsu.edu/agriculture/ag-hub/ag-topics/crop-production/diseases-insects-and-weeds/crop-diseases/review-sunflower-rust-07",
+                  "quote": "Rust pustules are cinnamon-brown and dusty."
+                }
+              ],
+              "__support__": 2
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Rust pustules (uredia) appear as golden yellow pustules",
+              "image_shows": "The rust lesions are raised and slightly rough where pustules break through the leaf epidermis.",
+              "image_quote": "The surface of the lesions has a raised appearance.",
+              "image_id": "bugwood::5610134",
+              "verification_status": "verified",
+              "reasoning": "Uredial pustules are raised, dusty structures that rupture the epidermis, directly matching the raised, rough-textured observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.ndsu.edu/agriculture/ag-hub/ag-topics/crop-production/diseases-insects-and-weeds/crop-diseases/review-sunflower-rust-07",
+                  "quote": "Rust pustules are cinnamon-brown and dusty, often first found on the leaves in the lower canopy."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Rust pustules (uredia) appear as golden yellow pustules",
+              "image_shows": "Yellowing/chlorosis accompanies the rust infection on the leaf.",
+              "image_quote": "The leaf shows chlorotic yellowing between the veins.",
+              "image_id": "bugwood::5610134",
+              "verification_status": "weakly_supported",
+              "reasoning": "Chlorosis and yellow halos are documented rust symptoms, giving indirect support, though the specific interveinal pattern claimed is not a described rust feature.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/sunflower/rust/",
+                  "quote": "Symptoms of rust infection are first visible as chlorotic lesions on the upper leaf surface, and pustules are often surrounded by yellow halos."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Rust pustules (uredia) appear as golden yellow pustules",
+              "image_shows": "The affected leaf shows a green background with scattered chlorotic spots and brownish-red pustule centers.",
+              "image_quote": "The leaf surface exhibits scattered chlorotic spots and brownish-red centers.",
+              "image_id": "bugwood::5610134",
+              "verification_status": "weakly_supported",
+              "reasoning": "A green leaf bearing chlorotic (yellow-halo) spots with reddish-brown pustule centers matches the documented rust color palette.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/sunflower/rust/",
+                  "quote": "The uredial pustules are often surrounded by yellow halos and are reddish-brown, cinnamon-colored on the leaf surface."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "White rust; Red rust",
+              "image_shows": "The rust lesions are irregular pustules without concentric target-spot rings, distinguishing them from leaf-spot look-alikes.",
+              "image_quote": "The lesions are irregular and do not exhibit a target spot, rings, or chlorotic halo.",
+              "image_id": "bugwood::5610134",
+              "verification_status": "weakly_supported",
+              "reasoning": "Absence of concentric rings/target spots is consistent with rust and helps distinguish it from Alternaria/Septoria leaf spots, though the claim of no chlorotic halo partly conflicts with typical rust halos.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/sunflower/rust/",
+                  "quote": "Rust appears as reddish-brown, cinnamon-colored pustules rather than the concentric ring lesions of leaf spot diseases."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf carries numerous pustules and chlorotic areas indicating substantial rust severity.",
+              "image_quote": "The leaf surface shows scattered chlorotic spots and lesions.",
+              "image_id": "bugwood::5610134",
+              "verification_status": "weakly_supported",
+              "reasoning": "Rust severity is assessed by pustule/chlorosis density on leaves and can become significant, giving indirect support to a high-severity reading of numerous spots.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.ndsu.edu/agriculture/ag-hub/ag-topics/crop-production/diseases-insects-and-weeds/crop-diseases/review-sunflower-rust-07",
+                  "quote": "If rust reaches approximately 1% disease severity on the upper four fully expanded leaves at or before bloom (R5), a fungicide application should be considered."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "Golden yellow pustules (uredia), with Monterey Pine as an alternate host",
+              "image_shows": "The leaf veins appear translucent and paler with minor chlorotic spotting.",
+              "image_quote": "Veins are translucent, paler than the surrounding blade.",
+              "image_id": "bugwood::5610134",
+              "verification_status": "weakly_supported",
+              "reasoning": "Minor chlorotic spotting is corroborated by extension sources describing early chlorotic lesions/spots, though vein translucency itself is not a documented rust sign, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.apsnet.org/edcenter/learningPP/Pages/PHI-P-2023-03-0001.aspx",
+                  "quote": "Symptoms of rust infection are first visible as chlorotic lesions on the upper leaf surface... pale yellow or orange spots."
+                },
+                {
+                  "url": "https://cropwatch.unl.edu/plant-disease/sunflower/rust/",
+                  "quote": "The spots can be red, orange, yellow, or brown, and they break open, releasing rust-colored powdery spores."
+                }
+              ]
+            },
+            {
+              "field": "affected_organs",
+              "canonical_says": "Rust pustules (uredia) appear as golden yellow pustules",
+              "image_shows": "The infected leaf is curling upward toward its center.",
+              "image_quote": "The leaf exhibits up-curling towards the center.",
+              "image_id": "bugwood::5610134",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension/APS sources document that heavily rust-infected sunflower leaves curl and dry, giving partial (severity-dependent) support to the observed up-curling.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.apsnet.org/edcenter/learningPP/Pages/PHI-P-2023-03-0001.aspx",
+                  "quote": "in severe epidemics, leaves will curl and dry, and uredinia and/or telia can be observed on petioles, stems, bracts, and heads"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Puccinia_helianthi",
+                  "quote": "in severe epidemics, leaves will curl and dry"
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf is broad with a prominent central vein (generic sunflower leaf geometry, not disease-specific).",
+              "image_quote": "The leaf has a broad appearance with a prominent central vein.",
+              "image_id": "bugwood::5610134",
+              "verification_status": "field_observation",
+              "reasoning": "This describes generic sunflower leaf morphology unrelated to any rust symptom, so it is plausible and uncontradicted but not a corroborable disease feature.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5610134",
+            "bugwood::5610135",
+            "bugwood::5610136",
+            "bugwood::5610137",
+            "bugwood::5610138",
+            "bugwood::5610139",
+            "bugwood::5610140",
+            "bugwood::5610141",
+            "bugwood::5610142",
+            "bugwood::5610143",
+            "bugwood::5610144",
+            "bugwood::5610145",
+            "bugwood::5610146",
+            "bugwood::5610147",
+            "bugwood::5610148",
+            "bugwood::5610149"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              11
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 11,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 7,
+              "n_provisional": 3,
+              "n_contradictory": 1,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 10,
+              "n_added": 9,
+              "n_overlaps_bumped": 1,
+              "n_upgraded": 1
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     }
   ],
   "crop": "Common Sunflower",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 2
 }

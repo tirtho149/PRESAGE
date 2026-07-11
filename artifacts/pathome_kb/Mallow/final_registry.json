@@ -75,6 +75,7 @@
       ],
       "regional_observations": {
         "Maine": {
+          "state": "Maine",
           "deltas": [
             {
               "field": "lesion_morphology",
@@ -82,9 +83,8 @@
               "image_shows": "The lesions are irregularly shaped.",
               "image_quote": "The lesions are scattered across the leaf surface.",
               "image_id": "bugwood::5476507",
+              "__support__": 1,
               "verification_status": "weakly_supported",
-              "reasoning": "Scattered distribution and coalescence into irregular sections are supported, though individual rust lesions are characteristically circular, so the irregular shape is only partially corroborated.",
-              "swarm_support": 1,
               "web_support": [
                 {
                   "url": "https://portal.ct.gov/caes/plant-pest-handbook/pphh/hollyhock-alcea",
@@ -94,7 +94,8 @@
                   "url": "https://hort.extension.wisc.edu/articles/hollyhock-rust/",
                   "quote": "Over time the spots can grow together and destroy large sections of the leaves."
                 }
-              ]
+              ],
+              "swarm_support": 1
             },
             {
               "field": "lesion_morphology",
@@ -102,9 +103,8 @@
               "image_shows": "The lesion centers are tan, while the margins are chocolate-brown.",
               "image_quote": "The lesion areas have a tan center with chocolate-brown margin.",
               "image_id": "bugwood::5476507",
+              "__support__": 1,
               "verification_status": "weakly_supported",
-              "reasoning": "Tan upper-surface spots and brown pustule coloration are both documented for rust, giving partial support to a tan-centered, brown-margined lesion.",
-              "swarm_support": 1,
               "web_support": [
                 {
                   "url": "https://portal.ct.gov/caes/plant-pest-handbook/pphh/hollyhock-alcea",
@@ -114,7 +114,8 @@
                   "url": "https://www.canr.msu.edu/resources/hollyhock-rust-puccinia-malvacearum",
                   "quote": "turning the leaf over reveals red-orange to brown pustules on the undersides of leaves"
                 }
-              ]
+              ],
+              "swarm_support": 1
             },
             {
               "field": "lesion_morphology",
@@ -122,9 +123,8 @@
               "image_shows": "There are small, dark brown to reddish-brown speckles scattered across the leaf.",
               "image_quote": "The image displays scattered brown necrotic spots on the leaf.",
               "image_id": "bugwood::5476507",
+              "__support__": 1,
               "verification_status": "verified",
-              "reasoning": "Small, scattered reddish-brown to brown spots and pustules are a well-documented hollyhock-rust symptom, strongly matching the described speckling.",
-              "swarm_support": 1,
               "web_support": [
                 {
                   "url": "https://www.canr.msu.edu/resources/hollyhock-rust-puccinia-malvacearum",
@@ -134,7 +134,8 @@
                   "url": "https://portal.ct.gov/caes/plant-pest-handbook/pphh/hollyhock-alcea",
                   "quote": "Symptoms first appear as a pinpoint brown dot which rapidly enlarges into a circular spot"
                 }
-              ]
+              ],
+              "swarm_support": 1
             },
             {
               "field": "diagnostic_features",
@@ -142,15 +143,15 @@
               "image_shows": "The lesions appear to cross the veins.",
               "image_quote": "The yellow-orange spots and lesions seem to extend across the leaf veins.",
               "image_id": "bugwood::5476507",
+              "__support__": 1,
               "verification_status": "weakly_supported",
-              "reasoning": "Rust lesions form as discrete circular spots scattered across the blade rather than being delimited by veins, indirectly consistent with lesions crossing veins.",
-              "swarm_support": 1,
               "web_support": [
                 {
                   "url": "https://portal.ct.gov/caes/plant-pest-handbook/pphh/hollyhock-alcea",
                   "quote": "a pinpoint brown dot which rapidly enlarges into a circular spot"
                 }
-              ]
+              ],
+              "swarm_support": 1
             },
             {
               "field": "severity",
@@ -158,9 +159,8 @@
               "image_shows": "The leaf has many yellow-orange spots, indicating a significant portion of the leaf is affected.",
               "image_quote": "The leaf displays numerous yellow-orange spots.",
               "image_id": "bugwood::5476507",
+              "__support__": 1,
               "verification_status": "weakly_supported",
-              "reasoning": "Numerous coalescing spots covering a significant leaf area is consistent with documented moderate-to-severe rust infection.",
-              "swarm_support": 1,
               "web_support": [
                 {
                   "url": "https://hort.extension.wisc.edu/articles/hollyhock-rust/",
@@ -170,7 +170,8 @@
                   "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hollyhock-rust",
                   "quote": "Over time the spots can grow together and destroy large sections of the leaves."
                 }
-              ]
+              ],
+              "swarm_support": 1
             },
             {
               "field": "other",
@@ -178,9 +179,8 @@
               "image_shows": "The leaf shows curling up towards the tip.",
               "image_quote": "The leaf tips appear to curl upwards.",
               "image_id": "bugwood::5476507",
+              "__support__": 1,
               "verification_status": "novel_plausible",
-              "reasoning": "No source documents leaf curling for hollyhock rust, but it is not contradicted and could accompany the wilting and shriveling of severely infected leaves; flagged for curator review.",
-              "swarm_support": 1,
               "web_support": [
                 {
                   "url": "https://portal.ct.gov/caes/plant-pest-handbook/pphh/hollyhock-alcea",
@@ -206,7 +206,8 @@
                   "inherited": true,
                   "inherited_from": "Hollyhock Rust::Maine"
                 }
-              ]
+              ],
+              "swarm_support": 1
             },
             {
               "field": "lesion_morphology",
@@ -214,9 +215,8 @@
               "image_shows": "The leaf surface has prominent yellow-orange spots with a greenish tint.",
               "image_quote": "There are yellow-orange spots and pale-straw lesions with olive-green periphery.",
               "image_id": "bugwood::5476507",
+              "__support__": 1,
               "verification_status": "novel_plausible",
-              "reasoning": "Yellow-orange and pale-straw spotting is consistent with rust, but an olive-green lesion periphery is not described in the literature, so the distinctive color detail is flagged as novel for review.",
-              "swarm_support": 1,
               "web_support": [
                 {
                   "url": "https://portal.ct.gov/caes/plant-pest-handbook/pphh/hollyhock-alcea",
@@ -242,60 +242,87 @@
                   "inherited": true,
                   "inherited_from": "Hollyhock Rust::Maine"
                 }
+              ],
+              "swarm_support": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The host leaf is ovate/palmately lobed with multiple lobes.",
+              "image_quote": "The leaf shows a palmate division with multiple leaflets.",
+              "image_id": "bugwood::5476507",
+              "verification_status": "verified",
+              "reasoning": "Extension and horticulture sources confirm hollyhock host leaves are rounded and palmately lobed with multiple (5-7) lobes, corroborating the described leaf morphology.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://towerlandscapedesign.com/what-does-hollyhock-leaves-look-like/",
+                  "quote": "Hollyhock leaves have a distinct rounded, heart-shaped form and are palmately lobed with 5-7 lobes radiating out like fingers from the leaf base."
+                },
+                {
+                  "url": "https://ipm.illinois.edu/diseases/rpds/627.pdf",
+                  "quote": "Hollyhock (Alcea rosea) leaves are large, rounded and palmately lobed, the host on which rust pustules develop."
+                }
               ]
             }
           ],
-          "image_ids": [
-            "bugwood::5476507"
+          "__image_ids__": [
+            "bugwood::5476507",
+            "bugwood::5476508",
+            "bugwood::5476509",
+            "bugwood::5476510",
+            "bugwood::5476511",
+            "bugwood::5476512",
+            "bugwood::5476513",
+            "bugwood::5503759",
+            "bugwood::5503760",
+            "bugwood::5503761",
+            "bugwood::5503762",
+            "bugwood::5503763",
+            "bugwood::5503764",
+            "bugwood::5503765"
           ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              10
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 10,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 0,
+              "n_provisional": 1,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 9
+            },
+            "merge": {
+              "n_existing": 7,
+              "n_new_candidates": 1,
+              "n_added": 1,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
           "__verifier_meta__": {
             "failed": false,
-            "verified_count": 5,
-            "provisional_count": 2,
-            "contradictory_count": 2,
-            "duplicates_count": 2,
-            "dropped_contradictory": [
-              {
-                "field": "look_alikes",
-                "canonical_says": "(not specified)",
-                "image_shows": "Target spots with alternating light and dark concentric rings.",
-                "image_quote": "The image shows a target spot with a central dark brown area surrounded by concentric rings of light green and yellow.",
-                "image_id": "bugwood::5476507",
-                "verification_status": "contradictory",
-                "reasoning": "Concentric target-ring lesions are diagnostic of Alternaria leaf spot, a look-alike, and are explicitly distinguished from rust, which produces raised pustules without concentric rings.",
-                "swarm_support": 1,
-                "web_support": [
-                  {
-                    "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=127",
-                    "quote": "spots enlarge until they are about 1/4 to 1/2 inch in diameter and soon develop dark, concentric rings or ridges, giving a target-like appearance"
-                  },
-                  {
-                    "url": "https://portal.ct.gov/caes/plant-pest-handbook/pphh/hollyhock-alcea",
-                    "quote": "raised pustules on the undersides of leaves that release rusty-colored spores ... distinguishes it from Alternaria and other leaf spots, which produce flat lesions with concentric rings rather than raised pustules"
-                  }
-                ]
-              },
-              {
-                "field": "other",
-                "canonical_says": "(not specified)",
-                "image_shows": "The leaf shape is divided into multiple leaflets, suggesting a palmate arrangement.",
-                "image_quote": "The leaf is divided into several leaflets with a central petiole, forming a palmate shape.",
-                "image_id": "bugwood::5476507",
-                "verification_status": "contradictory",
-                "reasoning": "Hollyhock leaves are simple and palmately lobed, not divided into separate leaflets, so the multiple-leaflets description contradicts host morphology.",
-                "swarm_support": 1,
-                "web_support": [
-                  {
-                    "url": "https://www.illinoiswildflowers.info/weeds/plants/hollyhock.htm",
-                    "quote": "The leaves are simple leaves that are alternate, petiolate, and palmately lobed (with 5-7 lobes)."
-                  },
-                  {
-                    "url": "https://plants.ces.ncsu.edu/plants/alcea-rosea/",
-                    "quote": "palmately lobed with 3-7 blunt lobes"
-                  }
-                ]
-              }
-            ]
+            "verified_count": 1,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
           }
         }
       }

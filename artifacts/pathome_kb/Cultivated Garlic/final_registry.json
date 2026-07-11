@@ -56,7 +56,104 @@
           "alternative_source_url": "https://extension.umaine.edu/publications/1204e/",
           "note": "Source lists Helminthosporium allii as a parenthetical synonym/former name of Embellisia allii. No NCBI/MycoBank validation was supplied to confirm the current accepted name."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Brown to black lesions generally underneath the bulb epidermis, typically causing cosmetic damage on the bulb only.",
+              "image_shows": "Elongated fungal conidiophores bearing spores are visible, consistent with the sporulating reproductive structures of the causal fungus.",
+              "image_quote": "Elongated structures resembling fungal conidiophores with spores.",
+              "image_id": "bugwood::5428816",
+              "verification_status": "weakly_supported",
+              "reasoning": "Literature confirms Embellisia allii produces brown geniculate conidiophores bearing conidia, matching the observed elongated conidiophores-with-spores, though the field image itself cannot be independently confirmed.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/abs/10.1094/PDIS-08-11-0684",
+                  "quote": "Conidiophores were geniculate and brown and conidia were borne singly, brown, and ellipsoidal to cylindrical, with two to five but mostly three transverse septa."
+                },
+                {
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/30731835/",
+                  "quote": "Conidiophores were geniculate and brown and conidia were borne singly, brown, and ellipsoidal to cylindrical."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Fungal structures appear against a uniform yellowish background.",
+              "image_quote": "The background is a uniform yellow color.",
+              "image_id": "bugwood::5428816",
+              "verification_status": "field_observation",
+              "reasoning": "The uniform yellow background is a property of the photographic/lab plate, not a disease symptom, so no extension factsheet describes it; it is plausible and not contradicted.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5428816",
+            "bugwood::5428817",
+            "bugwood::5428818",
+            "bugwood::5428819",
+            "bugwood::5428820",
+            "bugwood::5428821",
+            "bugwood::5530345",
+            "bugwood::5530346",
+            "bugwood::5530347",
+            "bugwood::5530348",
+            "bugwood::5530349",
+            "bugwood::5530350",
+            "bugwood::5530351"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "medium"
+            ],
+            "n_raw_per_pass": [
+              4
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 4,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 1,
+              "n_provisional": 1,
+              "n_contradictory": 2,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 2,
+              "n_added": 2,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Gray Molds",
@@ -87,9 +184,9 @@
           "quote": "In the field, plants infected with Botrytis neck rot are stunted, with dead or dying outer leaves. Symptoms of the infection are often first seen at the soil line on the neck as water-soaked lesions. Under warm and wet conditions, the disease progresses quickly, spreading up the leaves and down the neck. At this time, the large, distinct sclerotia may be present around the rotting neck."
         },
         "diagnostic_features": {
-          "value": "Large, distinct black sclerotia (rough black masses of hardened fungal mycelium) as large as Â¾ inch but typically Â¼ inch in diameter form around the rotting neck, with gray mold on or between the garlic scales.",
+          "value": "Large, distinct black sclerotia (rough black masses of hardened fungal mycelium) as large as \u00c2\u00be inch but typically \u00c2\u00bc inch in diameter form around the rotting neck, with gray mold on or between the garlic scales.",
           "url": "https://extension.umaine.edu/publications/1207e/",
-          "quote": "later forming sclerotia (rough black masses of hardened fungal mycelium) as large as Â¾ inch but typically Â¼ inch in diameter"
+          "quote": "later forming sclerotia (rough black masses of hardened fungal mycelium) as large as \u00c2\u00be inch but typically \u00c2\u00bc inch in diameter"
         },
         "look_alikes": {
           "value": [],
@@ -108,7 +205,7 @@
           "Do not plant garlic or other alliums in a field where the pathogen is present.",
           "Allow the tops to mature well, then lift or undercut the garlic.",
           "When topping, keep bruising and mechanical injury to a minimum.",
-          "Store garlic in well-ventilated houses at temperatures of 32Â°F, or just slightly higher.",
+          "Store garlic in well-ventilated houses at temperatures of 32\u00c2\u00b0F, or just slightly higher.",
           "Avoid frequent and excessive irrigation.",
           "Visual inspection of seed garlic with a hand lens may help; examine the basal plate or bottom of garlic for gray mold.",
           "Treat seed (cloves) to reduce incidence of fungi in the seed.",
@@ -154,7 +251,147 @@
           "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/garlic-allium-sativum-neck-rot-gray-mold",
           "note": "PNW lists B. aclada as an additional causal fungus for garlic neck rot; UMaine attributes the disease to Botrytis/Botryotinia porri only."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Large, distinct black sclerotia ... form around the rotting neck, with gray mold on or between the garlic scales.",
+              "image_shows": "White, powdery/fluffy fungal growth on the garlic scales, consistent with the early white-to-gray mycelial (pre-sporulation) stage of Botrytis on Maine garlic.",
+              "image_quote": "White, powdery growth resembling gray mold on the garlic scales.",
+              "image_id": "bugwood::5532153",
+              "verification_status": "weakly_supported",
+              "reasoning": "External sources confirm fluffy white-to-gray mycelium on/between garlic scales as the vegetative stage preceding gray sporulation, so the 'white' fungal growth is partially (not fully 'gray') corroborated.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://hortsense.cahnrs.wsu.edu/fact-sheet/onions-garlic-gray-mold/",
+                  "quote": "In a humid atmosphere, a gray and feltlike growth (where spores are produced) appears on rotting scales, and mycelia may develop between scales."
+                },
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/botrytis-neck-and-bulb-rot/",
+                  "quote": "A grayish mold may be seen between the scales and black spores on the neck of bulbs."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "a gray mold develops on or between the scales and large distinct black sclerotia form around the rotting neck.",
+              "image_shows": "The bulb surface is dominated by white mold with a small fraction of dark brown/black sclerotia, matching the Botrytis white-mold-plus-black-sclerotia color signature.",
+              "image_quote": "The dominant color is white, representing the gray mold, with a very small portion of dark brown/black, likely representing the sclerotia.",
+              "image_id": "bugwood::5532153",
+              "verification_status": "weakly_supported",
+              "reasoning": "The white-mold-with-minor-black-sclerotia color combination is corroborated by extension sources (white/gray mycelium plus dark-brown-to-black sclerotia), though 'dominant white' only partially matches the canonical 'gray' descriptor.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/botrytis-neck-and-bulb-rot/",
+                  "quote": "Dark-brown-to-black sclerotia (the resting bodies of the pathogen) may eventually develop in the neck or between scales."
+                },
+                {
+                  "url": "https://extension.umaine.edu/publications/1207e/",
+                  "quote": "Mold caused by Botrytis porri generally develops on the neck of the garlic plant, later forming sclerotia (rough black masses of hardened fungal mycelium)."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "(not specified)",
+              "image_shows": "White fluffy growth on garlic scales can mimic white rot (Sclerotium cepivorum), which is distinguished from Botrytis by tiny poppy-seed-sized sclerotia versus large black sclerotia.",
+              "image_quote": "The image shows white, powdery growth on the garlic scales.",
+              "image_id": "bugwood::5532153",
+              "verification_status": "weakly_supported",
+              "reasoning": "White fluffy growth on scales is a documented diagnostic overlap with white rot, giving indirect support for a look-alike observation the KB does not currently record.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.rasacreekfarm.com/garlic-diseases-and-pests",
+                  "quote": "Neck rot may persist through storage developing grey mold and large black sclerotia, as opposed to the poppy-seed-sized sclerotia of white rot."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "Mold is localized to only a portion of a single garlic scale, suggesting an early/limited-severity infection in this Maine specimen.",
+              "image_quote": "The image displays a close-up view of a white, fluffy substance consistent with gray mold, affecting a portion of the garlic scale.",
+              "image_id": "bugwood::5532153",
+              "verification_status": "field_observation",
+              "reasoning": "Extension sources confirm gray/white Botrytis mold develops on or between garlic scales, so limited coverage of a single scale is coherent with an early stage, but no published source corroborates a per-photo severity judgment, so it is flagged for curator review.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "novel_plausible"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5532153",
+            "bugwood::5532154",
+            "bugwood::5532155",
+            "bugwood::5532156",
+            "bugwood::5532157",
+            "bugwood::5532158",
+            "bugwood::5532159",
+            "bugwood::5532160",
+            "bugwood::5532161",
+            "bugwood::5532162",
+            "bugwood::5532163",
+            "bugwood::5532176",
+            "bugwood::5532177",
+            "bugwood::5532178",
+            "bugwood::5532179",
+            "bugwood::5532180",
+            "bugwood::5532181",
+            "bugwood::5532182"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              4
+            ],
+            "detected_organ_per_pass": [
+              "flower"
+            ],
+            "n_active_agents_per_pass": [
+              5
+            ],
+            "n_after_agreement": 4,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 3,
+              "n_provisional": 1,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 4,
+              "n_added": 4,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Bread Mold",
@@ -192,7 +429,115 @@
       },
       "confidence": "low",
       "num_sources": 0,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The garlic surface is covered by a dark gray-to-black mold, consistent with the black sporangial growth of the bread-mold pathogen.",
+              "image_quote": "The image shows black mold growth.",
+              "image_id": "bugwood::5485610",
+              "verification_status": "weakly_supported",
+              "reasoning": "Bread mold (Rhizopus stolonifer) produces gray-to-black growth with black sporangia, so a black/dark surface mold is consistent with the disease, though only one swarm run proposed it.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://en.wikipedia.org/wiki/Rhizopus_stolonifer",
+                  "quote": "Colonies initially appear white and cotton-like but quickly darken due to pigmented sporangia, developing a grayish or black surface; the sporangia develop as bulbous black portions."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "(not specified)",
+              "image_shows": "The blue coloration of the mycelia/spores matches Penicillium blue mold, the principal look-alike of bread mold on stored garlic.",
+              "image_quote": "Dark blue mycelia and spores are present on the stem.",
+              "image_id": "bugwood::5485610",
+              "verification_status": "weakly_supported",
+              "reasoning": "Blue/blue-green sporulation is the diagnostic signature of Penicillium blue mold, a documented look-alike of bread mold on garlic, so flagging blue growth as a look-alike is supported.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pnwhandbooks.org/node/2722/print",
+                  "quote": "As disease progresses, a green to blue-green, powdery mold may develop on the surface of the lesions; infected areas of fleshy scales are tan or gray when cut."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "Mold covers a significant portion of the garlic bulb surface, indicating advanced/high-severity colonization.",
+              "image_quote": "Dark blue mycelia and spores are present on the stem.",
+              "image_id": "bugwood::5485610",
+              "verification_status": "field_observation",
+              "reasoning": "Extension factsheets describe bread-mold appearance (white-to-black cottony sporangial growth) but do not quantify colonization severity, so the extent-of-coverage read is a coherent, uncontradicted visual judgment rather than an externally corroborable feature.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5485610",
+            "bugwood::5485611",
+            "bugwood::5485612",
+            "bugwood::5485613",
+            "bugwood::5485614",
+            "bugwood::5485615",
+            "bugwood::5485616",
+            "bugwood::5485617",
+            "bugwood::5485618",
+            "bugwood::5485619",
+            "bugwood::5485620"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              5
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 5,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 2,
+              "n_provisional": 1,
+              "n_contradictory": 2,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 3,
+              "n_added": 3,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Onion Rust",
@@ -230,7 +575,129 @@
       },
       "confidence": "low",
       "num_sources": 0,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image displays spore masses in a dust-like texture.",
+              "image_quote": "The image displays spore masses in a dust-like texture.",
+              "image_id": "bugwood::5459175",
+              "verification_status": "verified",
+              "reasoning": "The dust-like/powdery orange spore mass is the defining sign of rust urediniospores, strongly corroborated by extension sources.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://blogs.cornell.edu/livegpath/gallery/garlic/garlic-rust/",
+                  "quote": "the leaf tissue covering the lesions ruptures and masses of orange, powdery spores (uredospores) become visible as pustules."
+                },
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/garlic-allium-sativum-rust",
+                  "quote": "orange pustules often forming concentric groups on the spot periphery"
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue shows dominant yellow-orange and secondary brown-orange.",
+              "image_quote": "The affected tissue exhibits a mixture of yellow-orange and brown-orange colors.",
+              "image_id": "bugwood::5459175",
+              "verification_status": "verified",
+              "reasoning": "The yellow-orange to brown-orange palette matches the documented uredinia-to-telia color progression of Puccinia allii.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://byf.unl.edu/rust-diseases/",
+                  "quote": "Rust fungi produce spores in 'rusty' (yellow to orange to brown) pustules on leaves, stems, needles, and fruit."
+                },
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/garlic-allium-sativum-rust",
+                  "quote": "lesions ... ranged in color from yellow-orange (uredinia) to black (telia)"
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image shows a high fraction of the visible affected organ displaying signs of disease.",
+              "image_quote": "The photograph captures a significant portion of the leaf cross-section with visible lesions, indicating extensive damage.",
+              "image_id": "bugwood::5459175",
+              "verification_status": "weakly_supported",
+              "reasoning": "High-severity leaf coverage is documented for garlic rust, indirectly supporting the observed extensive affected fraction.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/garlic-allium-sativum-rust",
+                  "quote": "Generally, this garlic rust can cover entire leaves, causing them to die."
+                },
+                {
+                  "url": "https://gardenbetty.com/grrr-garlic-rust-and-how-to-deal/",
+                  "quote": "Leaves on severely affected plants turn yellow, wilt, dry up, and die prematurely."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5459175",
+            "bugwood::5459176",
+            "bugwood::5459177",
+            "bugwood::5459178",
+            "bugwood::5459179",
+            "bugwood::5459180",
+            "bugwood::5459181",
+            "bugwood::5459182",
+            "bugwood::5459183",
+            "bugwood::5459184",
+            "bugwood::5459185",
+            "bugwood::5459186",
+            "bugwood::5459187",
+            "bugwood::5459188",
+            "bugwood::5459189",
+            "bugwood::5459190"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              6
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 6,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 3,
+              "n_provisional": 0,
+              "n_contradictory": 3,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 3,
+              "n_added": 3,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     },
     {
       "disease_name": "White Rot",
@@ -268,9 +735,325 @@
       },
       "confidence": "low",
       "num_sources": 0,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [],
+          "__image_ids__": [
+            "bugwood::5459165",
+            "bugwood::5459166",
+            "bugwood::5459167",
+            "bugwood::5459168",
+            "bugwood::5459169",
+            "bugwood::5459170",
+            "bugwood::5459171",
+            "bugwood::5459172",
+            "bugwood::5459173",
+            "bugwood::5459174"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              3
+            ],
+            "detected_organ_per_pass": [
+              "fruit"
+            ],
+            "n_active_agents_per_pass": [
+              6
+            ],
+            "n_after_agreement": 3,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 0,
+              "n_provisional": 0,
+              "n_contradictory": 3,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 0,
+              "n_added": 0,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        },
+        "New York": {
+          "state": "New York",
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "Small black sclerotia are present on the roots, which is the diagnostic sign of Allium white rot.",
+              "image_quote": "Black specks on the roots resembling sclerotia.",
+              "image_id": "bugwood::5492341",
+              "verification_status": "verified",
+              "reasoning": "Black sclerotia on roots and bulbs are the defining diagnostic sign of Sclerotium cepivorum white rot, corroborated by multiple extension sources.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umaine.edu/publications/2062e/",
+                  "quote": "As the disease progresses, the mycelium becomes more compacted with numerous small, spherical black bodies (sclerotia) forming on this white mat... approximately the size of a pin head or poppy seed."
+                },
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/garlic-allium-sativum-white-rot",
+                  "quote": "Roots are rotted, and a semiwatery rot of bulbs and roots develops with fuzzy white mycelium and small black sclerotia present in the rotted area."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "Black crusty material is present on the surface, plausibly the compacted sclerotial/mycelial crust of white rot though described on the stem rather than the bulb/crown.",
+              "image_quote": "The image displays darkened, textured areas on the stem surface.",
+              "image_id": "bugwood::5492341",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources confirm compacted mycelium with black sclerotia can occur on the lower stem, partially supporting the black crusty surface material though the stem location is less typical than the bulb/basal plate.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://gardenuk.co.uk/problems/allium-white-rot-identification-prevention/",
+                  "quote": "pull the plant and you will see dense white mycelium covering the roots and lower stem. Within this white mould, tiny black spherical sclerotia form, each about 0.5mm in diameter and resembling poppy seeds."
+                },
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/alliums-white-rot",
+                  "quote": "as the disease progresses, the mycelium becomes more compacted with numerous small, spherical black bodies (sclerotia) forming on this white mat."
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The visible garlic bulbs show significant disease symptoms, consistent with the bulb-destroying severity of white rot.",
+              "image_quote": "The entire visible garlic bulbs show significant disease symptoms.",
+              "image_id": "bugwood::5492341",
+              "verification_status": "weakly_supported",
+              "reasoning": "Sources describe white rot as a destructive semi-watery bulb decay that destroys roots, supporting the observed severe, bulb-destroying appearance.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/garlic-allium-sativum-white-rot",
+                  "quote": "The disease results in a semi-watery decay of the bulb scales, and at early stages a fluffy white growth develops around the base of the bulb."
+                },
+                {
+                  "url": "https://gardenuk.co.uk/problems/allium-white-rot-identification-prevention/",
+                  "quote": "The bulb base feels soft and waterlogged. Roots are largely destroyed."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Affected tissue shows a mix of blackened and discolored areas with greenish hues, consistent with blackened sclerotia against remaining green tissue.",
+              "image_quote": "Blackened and discolored stems with greenish hues.",
+              "image_id": "bugwood::5492341",
+              "verification_status": "weakly_supported",
+              "reasoning": "Blackened structures (sclerotia/black specks) on affected garlic tissue are well documented, while the co-occurring greenish hues reflect remaining green plant tissue and are only indirectly supported, so the observation is partially corroborated.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umd.edu/resource/white-rot-onion-and-garlic",
+                  "quote": "the mycelium becomes more compacted with numerous small, spherical black bodies (sclerotia) forming on this white mat. Bulbs of infected plants may appear dark in color and covered with a white, matted \"fuzz\" or black specks."
+                },
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/alliums-white-rot",
+                  "quote": "mycelia growth can cover the entire bulb, with tiny black sclerotia forming on the mycelium."
+                }
+              ]
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5492341"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              7
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 7,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 1,
+              "n_provisional": 3,
+              "n_contradictory": 3,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 4,
+              "n_added": 4,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "Virginia": {
+          "state": "Virginia",
+          "deltas": [
+            {
+              "field": "affected_organs",
+              "canonical_says": "(not specified)",
+              "image_shows": "The photo shows dark brown discoloration on the roots and lower stems.",
+              "image_quote": "The photo shows dark brown discoloration on the roots and lower stems.",
+              "image_id": "bugwood::5487881",
+              "verification_status": "verified",
+              "reasoning": "Root rot and basal (lower-stem) decay are hallmark white-rot symptoms documented by multiple extension sources, directly supporting dark discoloration on roots and lower stems.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/white-rot/",
+                  "quote": "Roots are rotted, and the top of the plant can be pulled out of the ground easily; white fungal mycelium develops around the base of the bulb."
+                },
+                {
+                  "url": "https://extension.umaine.edu/publications/2062e/",
+                  "quote": "The roots begin to rot, and a plant pulled out of the ground will slip easily from the soil because of the lack of root connection."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image shows blackened necrotic tissue at the base of each plant.",
+              "image_quote": "The base of the plants is affected by blackened, necrotic tissue.",
+              "image_id": "bugwood::5487881",
+              "verification_status": "verified",
+              "reasoning": "Blackened necrotic tissue at the plant base is consistent with documented basal decay and the dense black-sclerotial crust that white rot produces at the base.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umd.edu/resource/white-rot-onion-and-garlic",
+                  "quote": "Leaves decay at the base, turn yellow, wilt, and topple over; the bulb undergoes a semi-watery decay and is covered with a crusty layer embedded with thousands of tiny black sclerotia."
+                },
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/garlic-allium-sativum-white-rot",
+                  "quote": "As the disease progresses the mycelium becomes compacted and less conspicuous, with numerous small spherical black sclerotia forming at the base of the plant."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "The photo shows garlic plants with damaged tissues exhibiting various colors.",
+              "image_quote": "The affected tissue shows dominant dark brown and secondary yellow.",
+              "image_id": "bugwood::5487881",
+              "verification_status": "weakly_supported",
+              "reasoning": "Yellowing is a documented white-rot symptom and dark-brown discoloration is consistent with rotting tissue, so the color palette is partially corroborated by the literature.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umd.edu/resource/white-rot-onion-and-garlic",
+                  "quote": "Typical symptoms of white rot include leaf yellowing and dieback; leaves turn yellow, wilt, and topple over, with older leaves collapsing first."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5487881",
+            "bugwood::5487882",
+            "bugwood::5487883"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              5
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 5,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 3,
+              "n_provisional": 1,
+              "n_contradictory": 1,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 4,
+              "n_added": 4,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 1,
+            "duplicates_count": 0,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "(not specified)",
+                "image_shows": "There are lesions present on the outer stem surface.",
+                "image_quote": "The stems show dark and raised lesions at the base.",
+                "image_id": "bugwood::5487881",
+                "verification_status": "contradictory",
+                "reasoning": "White rot characteristically appears as a soft, semi-watery decay with fluffy white mycelium and small black sclerotia at the base, not dark raised lesions on the stem surface.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/white-rot/",
+                    "quote": "At early stages of disease development, a fluffy white growth (the fungal mycelium) is associated with the rot, which develops around the base of the bulb... the mycelium becomes more compacted with numerous small, spherical black bodies (sclerotia)."
+                  },
+                  {
+                    "url": "https://extension.umd.edu/resource/white-rot-onion-and-garlic",
+                    "quote": "Below-ground symptoms include a semiwatery rot of bulbs and roots, with fluffy white mycelium and small black sclerotia at the base."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
     }
   ],
   "crop": "Cultivated Garlic",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 7
 }

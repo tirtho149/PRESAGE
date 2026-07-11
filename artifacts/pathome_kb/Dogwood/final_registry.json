@@ -79,7 +79,444 @@
           "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/dogwood-cornus-spp-anthracnose",
           "note": "Canonical is the union across sources. PNW lists only foliar (leaves) and stem (twigs). UMass adds vascular (chocolate-brown cambium). UNH adds whole-plant impact ('the entire tree may die in two to three years')."
         }
-      ]
+      ],
+      "regional_observations": {
+        "North Carolina": {
+          "state": "North Carolina",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Angular-shaped leaf spots and blotches, marginal leaf scorch, and a complete blight of infected foliage",
+              "image_shows": "Lesions are angular and constrained by (bordered by) the leaf veins.",
+              "image_quote": "The lesions are angular in shape and appear to follow the vein patterns on the leaf.",
+              "image_id": "bugwood::3035061",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources confirm anthracnose lesions are angular and delimited/bordered by leaf veins, matching the vein-constrained detail beyond bare canonical restatement.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.wvu.edu/lawn-gardening-pests/plant-disease/landscape-tree-disease/dogwood-anthracnose",
+                  "quote": "The most common symptoms include brownish discoloration along veins, varying from discrete spots to irregular patches of discoloration bordered by veins."
+                },
+                {
+                  "url": "https://hgic.clemson.edu/factsheet/dogwood-diseases-insect-pests/",
+                  "quote": "Foliar symptoms of infection range from angular-shaped leaf spots and blotches, marginal leaf scorch and a complete blight of infected foliage."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "Foliar symptoms range from angular-shaped leaf spots and blotches...and a complete blight of infected foliage",
+              "image_shows": "Leaf tissue shows brown and black necrotic areas.",
+              "image_quote": "The leaf shows brown and black necrotic tissue.",
+              "image_id": "bugwood::3035061",
+              "verification_status": "weakly_supported",
+              "reasoning": "Brown necrosis/blight of foliage is well documented; the additional black component (fruiting bodies/dead tissue) is only partially corroborated, so support is weak.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://portal.ct.gov/CAES/Fact-Sheets/Plant-Pathology/Dogwood-Anthracnose",
+                  "quote": "In wet weather, these spots can rapidly enlarge and kill the entire leaf."
+                },
+                {
+                  "url": "https://hgic.clemson.edu/factsheet/dogwood-diseases-insect-pests/",
+                  "quote": "Foliar symptoms range from angular-shaped leaf spots and blotches...and a complete blight of infected foliage."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "the leaf blotch often spreads down the midvein giving a wedge-shaped appearance",
+              "image_shows": "Veins appear darkened in affected areas (and translucent in others).",
+              "image_quote": "Veins are translucent in some parts of the leaf and appear darker in other areas.",
+              "image_id": "bugwood::3035061",
+              "verification_status": "weakly_supported",
+              "reasoning": "Brownish/darkened discoloration along veins is documented, supporting the darkened-vein claim; the translucent-vein portion is not corroborated, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.wvu.edu/lawn-gardening-pests/plant-disease/landscape-tree-disease/dogwood-anthracnose",
+                  "quote": "The most common symptoms include brownish discoloration along veins."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "leaf spots are round to blotchy with tan centers and reddish-purple margins",
+              "image_shows": "Lesions appear raised with a rough surface texture.",
+              "image_quote": "The lesions appear raised and have a rough surface.",
+              "image_id": "bugwood::3035061",
+              "verification_status": "field_observation",
+              "reasoning": "Published factsheets describe flat tan blotches (not raised) but note severe infection wrinkles/distorts tissue, so a raised rough texture is coherent yet unconfirmed and warrants curator review.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "novel_plausible"
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Leaf shows interveinal chlorosis with yellowing concentrated between the veins.",
+              "image_quote": "Yellowing is concentrated between the veins.",
+              "image_id": "bugwood::3035061",
+              "verification_status": "field_observation",
+              "reasoning": "Extension descriptions cite tan spots, blotches and marginal scorch rather than interveinal chlorosis, and no source corroborates or explicitly contradicts this pattern for the disease.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Leaves show a mix of ovate and lanceolate forms (host leaf morphology).",
+              "image_quote": "Leaves exhibit a mix of ovate and lanceolate shapes.",
+              "image_id": "bugwood::3035061",
+              "verification_status": "field_observation",
+              "reasoning": "This describes host leaf shape rather than a disease symptom; it is plausible for Cornus foliage but unsupported by any pathology photo description.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::3035061",
+            "bugwood::3035063",
+            "bugwood::3035064",
+            "bugwood::3035065",
+            "bugwood::3035070",
+            "bugwood::3035071",
+            "bugwood::3035072",
+            "bugwood::3035073",
+            "bugwood::3035074"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              10
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 10,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 3,
+              "n_provisional": 3,
+              "n_contradictory": 3,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 6,
+              "n_added": 6,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 3,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Tan leaf spots with distinctive purple borders",
+              "image_shows": "The lesion has a ring-like shape with a reddish-purple margin surrounding a tan center.",
+              "image_quote": "The lesion forms a distinct ring around the central brownish area.",
+              "image_id": "bugwood::5503898",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources corroborate a tan-centered spot bounded by a reddish-purple margin, matching the ring-like lesion described.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://hgic.clemson.edu/factsheet/dogwood-diseases-insect-pests/",
+                  "quote": "Infected leaves have tan spots with purple edges, dry brown margins, or large blotches on them."
+                },
+                {
+                  "url": "https://extension.umd.edu/resource/dogwood-anthracnose",
+                  "quote": "Tan spots with irregular purple margins appear on the leaves in the lower crown in the spring."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "a complete blight of infected foliage; leaf spots are round to blotchy",
+              "image_shows": "The lesion occupies a significant portion of the leaf surface.",
+              "image_quote": "The lesion has a fuzzy texture.",
+              "image_id": "bugwood::5503898",
+              "verification_status": "verified",
+              "reasoning": "External sources confirm lesions enlarge and coalesce to occupy large portions of, or blight, the entire leaf.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umd.edu/resource/dogwood-anthracnose",
+                  "quote": "In wet weather, these spots can rapidly enlarge and kill the entire leaf."
+                },
+                {
+                  "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/spot-anthracnose-on-dogwood.html",
+                  "quote": "Numerous spots may coalesce into large blighted areas... blight the whole leaf."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Tan leaf spots with distinctive purple borders",
+              "image_shows": "Discrete spots of necrotic tissue.",
+              "image_quote": "The lesion has a ring-like shape with a reddish-purple margin surrounding a tan center.",
+              "image_id": "bugwood::5503898",
+              "verification_status": "weakly_supported",
+              "reasoning": "Discrete necrotic leaf spots are documented as the initial foliar symptom, though the description is close to the canonical baseline.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://hgic.clemson.edu/factsheet/dogwood-diseases-insect-pests/",
+                  "quote": "Initial foliar symptoms develop as brown spots up to 1/4 inch in diameter... circular or irregular in shape."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "spread_pattern",
+              "canonical_says": "the leaf blotch often spreads down the midvein giving a wedge-shaped appearance",
+              "image_shows": "The leaf veins show signs of necrosis with a dark, dead appearance.",
+              "image_quote": "Distinctive, dark, circular spots of necrotic tissue with a reddish-purple margin.",
+              "image_id": "bugwood::5503898",
+              "verification_status": "weakly_supported",
+              "reasoning": "Vein-associated necrosis is consistent with canonical midvein blotching and is partially supported by extension descriptions of blotches following the midvein.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://portal.ct.gov/CAES/Fact-Sheets/Plant-Pathology/Dogwood-Anthracnose",
+                  "quote": "Spots enlarge and blotches often follow the midvein and leaf margins as the leaf is killed."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "leaf spots are round to blotchy with tan centers and reddish-purple margins",
+              "image_shows": "The lesion center is tan, the margin is reddish-purple, and there is a chlorotic yellow halo.",
+              "image_quote": "The lesion center is tan with reddish-purple margin and chlorotic yellow halo.",
+              "image_id": "bugwood::5503898",
+              "verification_status": "weakly_supported",
+              "reasoning": "Tan center and reddish-purple margin are strongly supported; the chlorotic yellow halo is only indirectly supported (documented on young dogwood leaves and in related dogwood leaf spots), so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/spot-anthracnose-on-dogwood.html",
+                  "quote": "Spots developing on young leaves may have a yellow halo while those on the mature leaves do not."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "leaf spots are round to blotchy with tan centers and reddish-purple margins",
+              "image_shows": "The lesion appears raised and has a rough, cracked surface texture.",
+              "image_quote": "The lesion is cracked.",
+              "image_id": "bugwood::5503898",
+              "verification_status": "field_observation",
+              "reasoning": "Published extension sources describe Discula dogwood anthracnose leaf lesions as flat tan-centered necrotic blotches whose dead tissue weathers into ragged 'shot holes' (consistent with a cracked look), but none describe raised lesions, so the raised/cracked texture is coherent yet uncorroborated and flagged for curator review.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "novel_plausible"
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "Dogwood (Cornus spp.) - Leaf Spots",
+              "image_shows": "No look-alikes identified.",
+              "image_quote": "(no look-alike suggestions made)",
+              "image_id": "bugwood::5503898",
+              "verification_status": "field_observation",
+              "reasoning": "The candidate asserts the absence of any look-alike, which is a null observation with no visual content to corroborate against published sources.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5503898",
+            "bugwood::5503899",
+            "bugwood::5503900",
+            "bugwood::5503901",
+            "bugwood::5503902",
+            "bugwood::5503903",
+            "bugwood::5503904",
+            "bugwood::5503905",
+            "bugwood::5503906",
+            "bugwood::5503907",
+            "bugwood::5503908"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              9
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 9,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 5,
+              "n_provisional": 3,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 8,
+              "n_added": 8,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 2,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "Virginia": {
+          "state": "Virginia",
+          "deltas": [
+            {
+              "field": "affected_organs",
+              "canonical_says": "Infection moves from leaves to twigs, where cankers develop causing twig dieback... perennial cankers develop on larger branches.",
+              "image_shows": "Lesions are present on the outer stem, indicating stem/branch canker involvement in this Virginia specimen.",
+              "image_quote": "There are lesions present on the outer stem.",
+              "image_id": "bugwood::3035062",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources confirm stem/branch lesions (cankers) are a documented feature of dogwood anthracnose.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://gardenerspath.com/plants/landscape-trees/dogwood-anthracnose/",
+                  "quote": "On the stems and branches, sunken, discolored areas known as cankers may be noticed, and these can lead to branch dieback and reduced vitality of the tree."
+                },
+                {
+                  "url": "https://extension.wvu.edu/lawn-gardening-pests/plant-disease/landscape-tree-disease/dogwood-anthracnose",
+                  "quote": "Affected twigs may show sunken tan to brown spots with purple borders, which eventually enlarge and girdle the twig; the infection spreads into the shoots, main branches, and trunk, causing sunken brown areas (cankers)."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "a complete blight of infected foliage; leaf dieback first occurs in the lower crown and works up the tree.",
+              "image_shows": "The specimen shows dead twigs and reduced foliage indicating significant leaf and twig dieback consistent with advanced severity.",
+              "image_quote": "The image shows dead twigs and reduced foliage, indicating significant leaf and twig dieback.",
+              "image_id": "bugwood::3035062",
+              "verification_status": "verified",
+              "reasoning": "Extension literature strongly documents twig/branch dieback and reduced foliage as hallmark severity indicators of this disease.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.wvu.edu/lawn-gardening-pests/plant-disease/landscape-tree-disease/dogwood-anthracnose",
+                  "quote": "The most characteristic symptom of dogwood anthracnose is yearly twig and branch death beginning in the lower part of the canopy; in fact, the disease was first called 'lower branch dieback.'"
+                },
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/dogwood-cornus-spp-anthracnose",
+                  "quote": "Symptoms include irregular brown blotches with purplish borders on leaves and bracts, lower branch dieback, and trunk cankers that culminate in death of the tree."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "vascular cambium infected with the disease is chocolate brown in contrast to the pale tan color of healthy sapwood.",
+              "image_shows": "Dark streaks are visible through the bark, consistent with subcortical vascular/cambial discoloration though 'translucent bark' is not a documented descriptor.",
+              "image_quote": "There are dark streaks visible through the translucent bark.",
+              "image_id": "bugwood::3035062",
+              "verification_status": "weakly_supported",
+              "reasoning": "Dark discoloration beneath the bark is well documented, giving indirect support, but the specific 'dark streaks through translucent bark' phrasing is not corroborated so support is only partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://gardenerspath.com/plants/landscape-trees/dogwood-anthracnose/",
+                  "quote": "Cankers appear as sunken areas with dark-brown discolored areas beneath bark; right underneath the bark is the cambium layer, and when this tissue is infected by the fungus it takes on a dark brownish-red color."
+                },
+                {
+                  "url": "https://eec.ky.gov/Natural-Resources/Forestry/forest-health/Documents/29.dogwood_anthracnsoe.pdf",
+                  "quote": "As the disease progresses, cankers (detected as dark brown discoloration under the bark) form on the limbs; on older branches, the wood under the bark will appear dark brown in contrast to healthy light-colored wood."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::3035062"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              4
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 4,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 2,
+              "n_provisional": 1,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 3,
+              "n_added": 3,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     },
     {
       "disease_name": "Powdery Mildew",
@@ -145,9 +582,442 @@
           "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/dogwood-cornus-spp-powdery-mildew",
           "note": "Source lists Erysiphe pulchra as the current name with 'Microsphaera penicillata' as the former (synonym) name. The source also names a second causal powdery mildew fungus, Phyllactinia guttata, on dogwood. No NCBI/MycoBank taxonomy validation was supplied."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "A white, very thin, dry growth (mycelium) develops on the leaves...",
+              "image_shows": "The lesion shapes appear as irregular patches.",
+              "image_quote": "The lesion shapes appear as irregular patches.",
+              "image_id": "bugwood::5458827",
+              "verification_status": "verified",
+              "reasoning": "Extension sources describe dogwood powdery mildew lesions as irregular blotches/patches, corroborating the candidate.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ufi.mgcafe.uky.edu/treetalk/planthealth-dogwood-powdery-mildew",
+                  "quote": "Symptoms on leaves include reddish-brown or purplish irregular blotches, yellowing, development of brown patches, scorching of tips and edges, cupping, curling, drooping and premature leaf fall."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "A white, very thin, dry growth (mycelium) develops on the leaves...",
+              "image_shows": "Lesions show a pale-green/brownish center with a reddish-brown margin and yellow halo.",
+              "image_quote": "The left leaf has a pale green center, a deep green margin, and a yellow halo.",
+              "image_id": "bugwood::5458827",
+              "verification_status": "weakly_supported",
+              "reasoning": "Reddish-brown margins and yellowing are consistent with documented mildew lesions, though the distinct haloed structure is only partially typical.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://hyg.ipm.illinois.edu/article.php?id=1246",
+                  "quote": "symptoms on leaves include reddish-brown or purplish irregular blotches, yellowing, development of brown patches"
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "a white, very thin, dry growth (mycelium) somewhat similar to a very dense covering of plant hair on the lower leaf surface",
+              "image_shows": "The texture appears raised with a fuzzy or felty appearance.",
+              "image_quote": "The lesion has a raised, fuzzy, felty appearance.",
+              "image_id": "bugwood::5458827",
+              "verification_status": "weakly_supported",
+              "reasoning": "A raised felty/fuzzy texture matches the dense mycelial 'plant hair' growth of powdery mildew, though the candidate omits the diagnostic white color.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://bygl.osu.edu/node/443",
+                  "quote": "New growth is covered with a fine, white, powdery coating... leaf surfaces can be completely covered with the thin mycelia of powdery mildew."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "The first symptom is often yellow patchy areas on a leaf that become necrotic...",
+              "image_shows": "Discrete spots of necrotic tissue.",
+              "image_quote": "The left leaf has small, scattered patches of brownish necrotic tissue.",
+              "image_id": "bugwood::5458827",
+              "verification_status": "verified",
+              "reasoning": "Necrotic brown patches are a documented progression of dogwood powdery mildew, corroborating the candidate.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://hgic.clemson.edu/factsheet/dogwood-diseases-insect-pests/",
+                  "quote": "The first symptom is often yellow patchy areas on a leaf that become necrotic... development of brown patches and patches of dead tissue."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "Minimal curling on the edges, more pronounced downward curl.",
+              "image_quote": "The right leaf has a more pronounced downward curl.",
+              "image_id": "bugwood::5458827",
+              "verification_status": "verified",
+              "reasoning": "Leaf cupping and curling are explicitly listed as dogwood powdery mildew symptoms, supporting the observed downward curl.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ufi.mgcafe.uky.edu/treetalk/planthealth-dogwood-powdery-mildew",
+                  "quote": "cupping, curling, drooping and premature leaf fall."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "A white, very thin, dry growth (mycelium) develops on the leaves...",
+              "image_shows": "Affected tissue displays a mix of green, brown, and tan colors with reddish-brown margins.",
+              "image_quote": "The left leaf has a pale green center with some brownish discoloration, and the right leaf has a brownish center and a reddish-brown margin.",
+              "image_id": "bugwood::5458827",
+              "verification_status": "weakly_supported",
+              "reasoning": "The brown/tan/reddish-brown palette matches documented mildew discoloration, though green areas reflect unaffected tissue.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://hyg.ipm.illinois.edu/article.php?id=1246",
+                  "quote": "reddish-brown or purplish irregular blotches, yellowing, development of brown patches"
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "leaf surfaces can become completely covered with the thin mycelia of powdery mildew...",
+              "image_shows": "The affected leaf has patches of necrotic tissue and chlorotic areas, indicating significant damage.",
+              "image_quote": "Discrete spots of necrotic tissue.",
+              "image_id": "bugwood::5458827",
+              "verification_status": "verified",
+              "reasoning": "Combined chlorosis plus necrotic patches indicating significant damage is a documented severe presentation of the disease.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://bygl.osu.edu/node/443",
+                  "quote": "Infections cause the loss of water and photosynthetic leaf area which weakens trees and reduces growth... chlorosis, reddish discoloration, marginal leaf scorch, and patches of dead tissue."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Veins appear normal without signs of clearing, necrosis, or crossing lesions.",
+              "image_quote": "Veins are intact and do not display the symptoms of disease progression like clearing or necrosis.",
+              "image_id": "bugwood::5458827",
+              "verification_status": "field_observation",
+              "reasoning": "This is a negative/absence observation about veins; powdery mildew is not characterized by vein clearing or necrosis, so intact veins are plausible and uncontradicted, but no published photo description affirmatively corroborates this specific detail.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The left leaf is rounded and the right leaf is elongated with a longer petiole.",
+              "image_quote": "The left leaf is rounded and the right leaf is elongated.",
+              "image_id": "bugwood::5458827",
+              "verification_status": "field_observation",
+              "reasoning": "This describes ordinary leaf-shape variation rather than a powdery-mildew symptom; it is plausible and not contradicted, but no extension source ties differing leaf shape/petiole length to the disease's visual appearance.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5458827",
+            "bugwood::5458828",
+            "bugwood::5458829",
+            "bugwood::5458830",
+            "bugwood::5458831",
+            "bugwood::5458832",
+            "bugwood::5458833",
+            "bugwood::5458834",
+            "bugwood::5458835",
+            "bugwood::5458836",
+            "bugwood::5458837",
+            "bugwood::5458838",
+            "bugwood::5458839",
+            "bugwood::5458840",
+            "bugwood::5458841",
+            "bugwood::5458842",
+            "bugwood::5458843"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              11
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 11,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 7,
+              "n_provisional": 2,
+              "n_contradictory": 2,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 9,
+              "n_added": 9,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 2,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "Connecticut": {
+          "state": "Connecticut",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "A white, very thin, dry growth (mycelium) develops on the leaves...",
+              "image_shows": "In Connecticut dogwood powdery mildew, foliar lesions present as irregular patches rather than uniform coverage.",
+              "image_quote": "The lesions appear irregular in shape, with some parts being more defined than others.",
+              "image_id": "bugwood::5552428",
+              "verification_status": "verified",
+              "reasoning": "Extension sources explicitly document irregular blotches/patches as a foliar symptom of dogwood powdery mildew.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ufi.mgcafe.uky.edu/treetalk/planthealth-dogwood-powdery-mildew",
+                  "quote": "Symptoms on leaves include reddish-brown or purplish irregular blotches, yellowing, development of brown patches, scorching of tips and edges, cupping, curling, drooping and premature leaf fall."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "A white, very thin, dry growth (mycelium) develops on the leaves...",
+              "image_shows": "Lesion centers show pale green fading to brownish necrotic tints on infected Connecticut dogwood foliage.",
+              "image_quote": "The lesion centers are a mix of pale green and brownish tints, indicating necrosis.",
+              "image_id": "bugwood::5552428",
+              "verification_status": "verified",
+              "reasoning": "The progression from pale-green/yellow patches to brown necrotic tissue is well documented for dogwood powdery mildew.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ufi.mgcafe.uky.edu/treetalk/planthealth-dogwood-powdery-mildew",
+                  "quote": "yellowing, development of brown patches, scorching of tips and edges"
+                },
+                {
+                  "url": "https://plantpathology.mgcafe.uky.edu/files/ppfs-or-w-13.pdf",
+                  "quote": "the first symptom is often yellow patchy areas on a leaf that become necrotic"
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "A white, very thin, dry growth (mycelium) develops on the leaves...",
+              "image_shows": "Affected Connecticut dogwood leaves show chlorosis (yellowing) of tissue alongside the mildew.",
+              "image_quote": "The affected leaf tissue shows a mix of pale green and brownish tints, likely indicating necrosis.",
+              "image_id": "bugwood::5552428",
+              "verification_status": "weakly_supported",
+              "reasoning": "General yellowing/chlorosis is documented for the disease, though the specifically interveinal pattern is not confirmed by sources.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ufi.mgcafe.uky.edu/treetalk/planthealth-dogwood-powdery-mildew",
+                  "quote": "Symptoms on leaves include ... yellowing, development of brown patches"
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "yellow patchy areas on a leaf that become necrotic",
+              "image_shows": "Necrotic (dead) leaf tissue is visible on infected Connecticut dogwood foliage.",
+              "image_quote": "The image shows pale green and brownish tones on the affected leaves, indicative of necrotic tissue.",
+              "image_id": "bugwood::5552428",
+              "verification_status": "verified",
+              "reasoning": "Necrosis of leaf tissue is directly documented as a symptom of dogwood powdery mildew.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plantpathology.mgcafe.uky.edu/files/ppfs-or-w-13.pdf",
+                  "quote": "the first symptom is often yellow patchy areas on a leaf that become necrotic"
+                },
+                {
+                  "url": "https://ufi.mgcafe.uky.edu/treetalk/planthealth-dogwood-powdery-mildew",
+                  "quote": "development of brown patches, scorching of tips and edges"
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Infected Connecticut dogwood leaves curl upward toward the leaf axis.",
+              "image_quote": "The leaves show curling up towards the leaf axis.",
+              "image_id": "bugwood::5552428",
+              "verification_status": "verified",
+              "reasoning": "Leaf cupping/curling and twisting/distortion are explicitly listed symptoms of dogwood powdery mildew.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ufi.mgcafe.uky.edu/treetalk/planthealth-dogwood-powdery-mildew",
+                  "quote": "scorching of tips and edges, cupping, curling, drooping and premature leaf fall"
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "A white, very thin, dry growth (mycelium) develops on the leaves...",
+              "image_shows": "Affected Connecticut dogwood foliage shows a palette of pale green and yellowish areas with scattered brown necrotic spots.",
+              "image_quote": "The affected tissue has a mix of pale green and yellowish areas, with some brown necrotic spots.",
+              "image_id": "bugwood::5552428",
+              "verification_status": "verified",
+              "reasoning": "The mixed yellowing-plus-brown-necrotic-spot color palette matches documented foliar symptoms of the disease.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ufi.mgcafe.uky.edu/treetalk/planthealth-dogwood-powdery-mildew",
+                  "quote": "yellowing, development of brown patches, scorching of tips and edges"
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "A moderate amount of Connecticut dogwood leaf tissue is affected, with small patches of dead tissue.",
+              "image_quote": "Small patches of dead tissue are visible on the leaf surfaces.",
+              "image_id": "bugwood::5552428",
+              "verification_status": "weakly_supported",
+              "reasoning": "Discrete dead patches on leaves are consistent with documented symptoms; overall severity grading is inherently subjective.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ufi.mgcafe.uky.edu/treetalk/planthealth-dogwood-powdery-mildew",
+                  "quote": "development of brown patches, scorching of tips and edges"
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "spread_pattern",
+              "canonical_says": "yellow patchy areas on a leaf that become necrotic",
+              "image_shows": "Lesions on the Connecticut dogwood sample lack any concentric (target-like) ring pattern.",
+              "image_quote": "The lesions have pale green centers, darker green margins, and a yellowish halo.",
+              "image_id": "bugwood::5552428",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources describe powdery-mildew foliar symptoms as irregular yellow/blotchy patches, not concentric target rings (which characterize anthracnose), indirectly supporting the observed absence of ring patterning.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://hgic.clemson.edu/factsheet/dogwood-diseases-insect-pests/",
+                  "quote": "Symptoms on leaves include reddish-brown or purplish irregular blotches, yellowing, development of brown patches, scorching of tips and edges."
+                },
+                {
+                  "url": "https://extension.umd.edu/resource/key-common-problems-dogwoods",
+                  "quote": "Irregular-shaped spots appear between the leaf veins with brown or purplish centers and yellow borders."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "yellow patchy areas on a leaf that become necrotic",
+              "image_shows": "Leaf veins on the Connecticut dogwood sample appear clear, translucent and pale.",
+              "image_quote": "The leaf veins are translucent and pale.",
+              "image_id": "bugwood::5552428",
+              "verification_status": "field_observation",
+              "reasoning": "Extension factsheets describe dogwood powdery mildew as yellowing, purplish/reddish blotches, scorch and white growth but never mention vein clearing/translucency, so the observation is plausible for a single photo yet has no external corroboration and is not directly contradicted.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The dogwood leaves are broad and slightly elongated, resembling a spade.",
+              "image_quote": "Leaves are broad, with a slightly elongated shape.",
+              "image_id": "bugwood::5552428",
+              "verification_status": "field_observation",
+              "reasoning": "This describes generic host-leaf morphology rather than a disease symptom; it is coherent with dogwood (Cornus) foliage but no published disease photo description addresses leaf outline, so it is flagged for curator review.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "novel_plausible"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5552428"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              11
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 11,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 7,
+              "n_provisional": 3,
+              "n_contradictory": 1,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 10,
+              "n_added": 10,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 2,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     }
   ],
   "crop": "Dogwood",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 5
 }

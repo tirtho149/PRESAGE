@@ -110,6 +110,7 @@ def build_eval_csv(
     out_csv: Path,
     limit_per_class: Optional[int] = None,
 ) -> Dict[str, int]:
+    from PIL import Image  # lazy: keep the laptop-side CLI import-light
     norm = _NORMALIZERS[dataset_kind]
     rows: List[Dict[str, str]] = []
     per_class: Counter = Counter()
@@ -133,6 +134,14 @@ def build_eval_csv(
         if limit_per_class is not None:
             files = files[:limit_per_class]
         for f in files:
+            # Drop unreadable files (e.g. a corrupt PlantVillage symlink target)
+            # here so they don't crash a DataLoader worker mid-eval.
+            try:
+                with Image.open(f) as im:
+                    im.verify()
+            except Exception:
+                skipped["unreadable"] += 1
+                continue
             rows.append({
                 "filepath": str(f.relative_to(eval_root)),
                 "class":    class_label,
@@ -166,6 +175,7 @@ def run_eval(
     *,
     model_name: str,
     pretrained: str,
+    arch: str,
     data_root: Path,
     label_csv: Path,
     text_type: str,
@@ -189,11 +199,25 @@ def run_eval(
     from evaluation.params  import parse_args as eval_parse_args
     from evaluation.zero_shot_iid import zero_shot_eval, get_dataloader
 
+    # Local fine-tuned checkpoint (e.g. checkpoints/T04/.../epoch_50.pt):
+    # open_clip's factory treats the first arg as an *architecture name*, so a
+    # .pt path triggers "Model config not found". Rebuild the training arch
+    # (--arch, default hf-hub:imageomics/bioclip → the dual-projector model)
+    # and hand the checkpoint to --pretrained, which load_checkpoint reads
+    # (strict=False), overwriting the base weights. HF-hub / tag inputs pass
+    # through unchanged.
+    if os.path.isfile(model_name):
+        pretrained = model_name
+        model_name = arch
+
     args = eval_parse_args([
         "--model",          model_name,
         "--pretrained",     pretrained,
         "--data_root",      str(data_root),
-        "--label_filename", str(label_csv),
+        # Absolute path: DatasetFromFile joins a *relative* label_filename onto
+        # data_root (evaluation/data.py:101), which would look for the CSV at
+        # <data_root>/<csv> and fail. An absolute path is used as-is.
+        "--label_filename", str(Path(label_csv).resolve()),
         "--text_type",      text_type,
         "--projector_type", projector_type,
         "--batch-size",     str(batch_size),
@@ -235,6 +259,10 @@ def parse_args() -> argparse.Namespace:
                    help="HF hub path or local ckpt name passed to BioCAP")
     p.add_argument("--pretrained", default="",
                    help="Empty for HF hub; openai/laion/etc for fresh inits")
+    p.add_argument("--arch", default="hf-hub:imageomics/bioclip",
+                   help="Architecture used to rebuild the model when --model is "
+                        "a local checkpoint (.pt). Must match the training arch; "
+                        "default is the BioCLIP dual-projector arch.")
     p.add_argument("--crop", default="Tomato")
     p.add_argument("--pv-root", default=None, help="PlantVillage root")
     p.add_argument("--pw-root", default=None, help="PlantWild root")
@@ -274,10 +302,17 @@ def main() -> None:
             print(f"  [{kind}] root not found: {root} — skipping")
             continue
         csv_path = tmp_dir / f"{kind}.csv"
-        stats = build_eval_csv(
-            eval_root=root, dataset_kind=kind, crop=args.crop,
-            out_csv=csv_path, limit_per_class=args.limit_per_class,
-        )
+        try:
+            stats = build_eval_csv(
+                eval_root=root, dataset_kind=kind, crop=args.crop,
+                out_csv=csv_path, limit_per_class=args.limit_per_class,
+            )
+        except SystemExit as e:
+            # e.g. this crop has no folders in this dataset (Soybean ∉ PlantDoc).
+            # Skip just this dataset so the remaining ones + summary.json proceed.
+            print(f"  [{kind}] skipped: {e}")
+            summary["evals"][kind] = {"skipped": str(e)}
+            continue
         print(f"=== {kind} ===")
         print(f"  root      : {root}")
         print(f"  csv       : {csv_path}")
@@ -289,6 +324,7 @@ def main() -> None:
             metrics = run_eval(
                 model_name=args.model,
                 pretrained=args.pretrained,
+                arch=args.arch,
                 data_root=root,
                 label_csv=csv_path,
                 text_type=args.text_type,

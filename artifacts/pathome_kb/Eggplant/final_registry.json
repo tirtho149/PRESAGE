@@ -50,7 +50,421 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "North Carolina": {
+          "state": "North Carolina",
+          "deltas": [],
+          "__image_ids__": [
+            "bugwood::5603706",
+            "bugwood::5603707",
+            "bugwood::5603708",
+            "bugwood::5603709",
+            "bugwood::5603710",
+            "bugwood::5603711",
+            "bugwood::5603712"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              3
+            ],
+            "detected_organ_per_pass": [
+              "fruit"
+            ],
+            "n_active_agents_per_pass": [
+              6
+            ],
+            "n_after_agreement": 3,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 0,
+              "n_provisional": 0,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 3
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 0,
+              "n_added": 0,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        },
+        "Oklahoma": {
+          "state": "Oklahoma",
+          "deltas": [],
+          "__image_ids__": [
+            "bugwood::5511751",
+            "bugwood::5511752",
+            "bugwood::5511753",
+            "bugwood::5511754"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              4
+            ],
+            "detected_organ_per_pass": [
+              "fruit"
+            ],
+            "n_active_agents_per_pass": [
+              6
+            ],
+            "n_after_agreement": 4,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 0,
+              "n_provisional": 0,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 4
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 0,
+              "n_added": 0,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        },
+        "Florida": {
+          "state": "Florida",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "darkened rings may appear in older lesions giving a zonate appearance.",
+              "image_shows": "The image shows a zonate pattern of dark purple and brown on the fruit.",
+              "image_quote": "The photo displays a zonate appearance on the affected eggplant fruit with alternating light and dark rings.",
+              "image_id": "bugwood::5605205",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension and APS sources confirm dark/brown zonate rings and pycnidia on fruit; the 'purple' component is the eggplant's natural fruit color rather than a documented lesion color, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://veggiescout.mgcafe.uky.edu/phomopsis-blight-eggplant",
+                  "quote": "darkened rings may be evident in older lesions, giving them a zonate appearance; these rings are comprised of numerous fungal fruiting bodies (pycnidia) embedded in the diseased tissue."
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-11-16-1560-PDN",
+                  "quote": "fruit rots showing characteristic concentric rings and subepidermal black pycnidia."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5605205",
+            "bugwood::5605206"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              5
+            ],
+            "detected_organ_per_pass": [
+              "fruit"
+            ],
+            "n_active_agents_per_pass": [
+              6
+            ],
+            "n_after_agreement": 5,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 1,
+              "n_provisional": 0,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 4
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 1,
+              "n_added": 1,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        },
+        "South Carolina": {
+          "state": "South Carolina",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "small, circular lesions appear and enlarge rapidly and often coalesce",
+              "image_shows": "The leaf lesion is irregular in shape rather than following the leaf veins.",
+              "image_quote": "The lesion has a jagged edge, not following the leaf veins.",
+              "image_id": "bugwood::5603743",
+              "verification_status": "verified",
+              "reasoning": "Extension and CABI sources confirm foliar Phomopsis lesions become irregular in outline, corroborating the observed jagged, non-vein-following margin.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ephytia.inrae.fr/en/C/7454/Eggplant-Phomopsis-vexans",
+                  "quote": "Leaf spots... circular at first, then irregular, surrounded by a blackish margin."
+                },
+                {
+                  "url": "https://plantwiseplusknowledgebank.org/doi/10.1079/PWKB.Species.40488",
+                  "quote": "leaf spots are conspicuous, irregular in outline and may coalesce."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "darkened rings may appear in older lesions giving a zonate appearance",
+              "image_shows": "The leaf lesion has a brownish-black center, dark green margin, and a chlorotic yellow halo.",
+              "image_quote": "The lesion center is brownish-black, the margin is dark green, and there is a chlorotic yellow halo.",
+              "image_id": "bugwood::5603743",
+              "verification_status": "weakly_supported",
+              "reasoning": "Sources confirm dark-to-brown lesion centers with dark margins and surrounding yellowing, but describe centers as gray/tan rather than brownish-black, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://veggiescout.ca.uky.edu/phomopsis-blight-eggplant",
+                  "quote": "Leaf spots first appear as small gray to brown lesions with light centers."
+                },
+                {
+                  "url": "https://ephytia.inrae.fr/en/C/7454/Eggplant-Phomopsis-vexans",
+                  "quote": "dark green spots... gradually turn brown and necrotize... severely infected leaves become torn, yellow and wither."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "numerous fungal fruiting bodies (pycnidia) embedded in the diseased tissue",
+              "image_shows": "The leaf lesion is sunken/depressed at the center with a raised border and shot-hole necrotic drop-out.",
+              "image_quote": "There is a distinct depression at the center of the lesion with a raised border.",
+              "image_id": "bugwood::5603743",
+              "verification_status": "weakly_supported",
+              "reasoning": "Sunken spots and raised embedded pycnidia are documented, giving partial support to the depressed-center/raised-border texture, though outright shot-hole drop-out is not explicitly described for foliage.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.cabidigitallibrary.org/doi/10.1079/cabicompendium.40488",
+                  "quote": "Initial symptoms include minute sunken spots surrounded by a brownish halo."
+                },
+                {
+                  "url": "https://ephytia.inrae.fr/en/C/7454/Eggplant-Phomopsis-vexans",
+                  "quote": "fruiting bodies called pycnidia can be observed as small, black pimples embedded in the host tissue."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows marginal chlorosis around necrotic holes.",
+              "image_quote": "There is a visible chlorotic yellow halo surrounding the lesion.",
+              "image_id": "bugwood::5603743",
+              "verification_status": "verified",
+              "reasoning": "Multiple sources explicitly document chlorosis/yellowing of infected eggplant foliage surrounding necrotic lesions.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.cabidigitallibrary.org/doi/10.1079/cabicompendium.40488",
+                  "quote": "Diaporthe vexans causes necrotic spots and chlorosis on eggplant leaves."
+                },
+                {
+                  "url": "https://ephytia.inrae.fr/en/C/7454/Eggplant-Phomopsis-vexans",
+                  "quote": "severely infected leaves become torn, yellow and wither."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "small, circular lesions appear and enlarge rapidly and often coalesce",
+              "image_shows": "The leaf bears multiple discrete, isolated patches of necrotic tissue.",
+              "image_quote": "The image displays multiple small, isolated patches of dead tissue.",
+              "image_id": "bugwood::5603743",
+              "verification_status": "verified",
+              "reasoning": "Discrete necrotic leaf spots are the documented early foliar expression of Phomopsis blight before lesions coalesce.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ephytia.inrae.fr/en/C/7454/Eggplant-Phomopsis-vexans",
+                  "quote": "dark green spots... gradually turn brown and necrotize... lesions often become numerous."
+                },
+                {
+                  "url": "https://veggiescout.ca.uky.edu/phomopsis-blight-eggplant",
+                  "quote": "Leaf spots first appear as small gray to brown lesions with light centers."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "darkened rings... covering a large portion of the fruit surface",
+              "image_shows": "The affected leaf tissue shows a mix of dark green, brown, and yellowish hues.",
+              "image_quote": "The lesion center is brownish-black, the margin is dark green, and there is a chlorotic yellow halo.",
+              "image_id": "bugwood::5603743",
+              "verification_status": "verified",
+              "reasoning": "The described green-to-brown-to-yellow color progression matches the documented sequence of Phomopsis foliar lesions turning from dark green to brown with surrounding yellowing.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ephytia.inrae.fr/en/C/7454/Eggplant-Phomopsis-vexans",
+                  "quote": "dark green spots on leaves gradually turn brown and necrotize... leaves become torn, yellow and wither."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "enlarge rapidly and often coalesce, covering a large portion of the fruit surface",
+              "image_shows": "The lesion covers a significant portion of the leaf blade.",
+              "image_quote": "The lesion is irregular in shape and covers a significant portion of the leaf.",
+              "image_id": "bugwood::5603743",
+              "verification_status": "verified",
+              "reasoning": "Sources confirm Phomopsis leaf lesions coalesce to cover large areas of the leaf, supporting the observed high severity.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ephytia.inrae.fr/en/C/7454/Eggplant-Phomopsis-vexans",
+                  "quote": "Lesions often become numerous and cover large areas of leaves."
+                },
+                {
+                  "url": "https://plantwiseplusknowledgebank.org/doi/10.1079/PWKB.Species.40488",
+                  "quote": "leaf spots are conspicuous, irregular in outline and may coalesce."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "darkened rings in older lesions give a zonate appearance",
+              "image_shows": "This leaf lesion shows no concentric-ring pattern, being irregular instead.",
+              "image_quote": "The lesion is irregular and does not exhibit concentric rings.",
+              "image_id": "bugwood::5603743",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension descriptions of the FOLIAR lesion emphasize an irregular outline with a grey center and dark margin rather than the concentric/zonate rings the canonical text reserves for fruit, so the absence of rings on the leaf is supported.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.researchgate.net/publication/345980960_Phomopsis_blight_of_Solanum_melongena_-_BrinjalEggplant",
+                  "quote": "Leaf spots (up to 3 cm diam.) are conspicuous, irregular in outline and may coalesce."
+                },
+                {
+                  "url": "http://ephytia.inra.fr/en/C/7454/Eggplant-Phomopsis-vexans",
+                  "quote": "Brown, round or oval spots develop on the leaf, becoming irregular in shape. The centre becomes grey and contains pycnidia while the margin has a narrow dark brown zone."
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf veins remain green and intact outside the lesion, not directly affected.",
+              "image_quote": "The leaf veins remain green and intact outside the lesion.",
+              "image_id": "bugwood::5603743",
+              "verification_status": "weakly_supported",
+              "reasoning": "Published descriptions portray discrete irregular/round leaf spots that do not follow venation, indirectly supporting that leaf veins outside the lesion stay green and intact.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.researchgate.net/publication/345980960_Phomopsis_blight_of_Solanum_melongena_-_BrinjalEggplant",
+                  "quote": "Leaf spots (up to 3 cm diam.) are conspicuous, irregular in outline and may coalesce."
+                },
+                {
+                  "url": "http://ephytia.inra.fr/en/C/7454/Eggplant-Phomopsis-vexans",
+                  "quote": "Brown, round or oval spots develop on the leaf, becoming irregular in shape."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf is curling upward toward its center.",
+              "image_quote": "The leaf is curled up towards the center.",
+              "image_id": "bugwood::5603743",
+              "verification_status": "field_observation",
+              "reasoning": "Published Phomopsis blight factsheets describe leaf spots (rhomboidal/oval beige-tan lesions, yellowing, withering) but do not mention leaf curling as a symptom, so this photo-posture observation is neither corroborated nor contradicted.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The host leaf has a broad ovate shape narrowing toward the tip.",
+              "image_quote": "The leaf has a broad shape that narrows towards the tip.",
+              "image_id": "bugwood::5603743",
+              "verification_status": "field_observation",
+              "reasoning": "This describes the host eggplant leaf's natural broadly-ovate morphology rather than a disease feature; extension factsheets on Phomopsis blight describe lesions, not overall leaf shape, so there is no disease-source corroboration but nothing contradicts it.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5603743"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              11
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 11,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 7,
+              "n_provisional": 4,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 11,
+              "n_added": 11,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 2,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Phytophthora Blight",
@@ -148,9 +562,213 @@
           "alternative_source_url": "https://blogs.cornell.edu/livegpath/gallery/eggplant/phytophthora-blight-on-eggplant/",
           "note": "Cornell source did not state the pathogen name explicitly (null); pathogen confirmed by UMass and PNW sources."
         }
-      ]
+      ],
+      "regional_observations": {
+        "North Carolina": {
+          "state": "North Carolina",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Roots and stems near the soil line appear water-soaked, dark brown and soft, and whole plants or vines collapse quickly",
+              "image_shows": "A dark, sunken lesion covers a significant portion of the eggplant stem.",
+              "image_quote": "The lesion is dark and sunken.",
+              "image_id": "bugwood::1577159",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources document dark, girdling stem lesions from P. capsici on pepper/eggplant, directly corroborating a dark lesion covering much of the stem.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/home-and-landscape/phytophthora-root-and-crown-rot-on-peppers-and-eggplant/",
+                  "quote": "Stem lesions are first dark green and water soaked, then later dry and turn brown. Dark lesions of the stem may girdle the plant resulting in death."
+                },
+                {
+                  "url": "https://vegpath.plantpath.wisc.edu/diseases/phytophthora-crown-and-fruit-rot/",
+                  "quote": "The lesions girdle the stem, resulting in rapid collapse and death of foliage above the lesion site."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Roots and stems near the soil line appear water-soaked, dark brown and soft",
+              "image_shows": "The affected tissue shows a predominant olive-green color with some tan areas.",
+              "image_quote": "The affected tissue has a predominant olive-green color with some tan areas.",
+              "image_id": "bugwood::1577159",
+              "verification_status": "verified",
+              "reasoning": "The described olive-green-plus-tan palette matches documented P. capsici lesion coloration (early dark olive lesions and expanding light-tan margins).",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://vegpath.plantpath.wisc.edu/diseases/phytophthora-crown-and-fruit-rot/",
+                  "quote": "The lesions are dark olive in the beginning and become dark brown in a few days."
+                },
+                {
+                  "url": "https://ipm.ucanr.edu/home-and-landscape/phytophthora-root-and-crown-rot-on-peppers-and-eggplant/",
+                  "quote": "Fruit rots are irregular in shape and olive green or light green with water soaked borders... the initial lesion is surrounded by a rapidly expanding light tan region."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "In peppers, distinctive black lesions form on stems which remain rigid while foliage and fruit wilt, wither and remain attached",
+              "image_shows": "The stem shows darkened areas suggesting vascular streaking.",
+              "image_quote": "Darkened areas on the stem indicate vascular streaking.",
+              "image_id": "bugwood::1577159",
+              "verification_status": "weakly_supported",
+              "reasoning": "Sources document browning of conductive (vascular) tissue extending into the lower stem, giving indirect support for streak-like vascular discoloration though external 'streaking' per se is not explicitly described.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/home-and-landscape/phytophthora-root-and-crown-rot-on-peppers-and-eggplant/",
+                  "quote": "Cutting infected roots in cross section will reveal a brownish discoloration of the conductive tissue's central core above the lesions. These may extend up into the lower stem."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "whole plants or vines collapse quickly",
+              "image_shows": "The stem exhibits severe discoloration and disease impact consistent with advanced Phytophthora blight.",
+              "image_quote": "The stem exhibits dark brown discoloration and distortion, which are characteristic of Phytophthora blight.",
+              "image_id": "bugwood::1577159",
+              "verification_status": "weakly_supported",
+              "reasoning": "Severe dark-brown stem discoloration and rapid plant decline are well documented, though the specific claim of stem 'distortion' is not corroborated, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/home-and-landscape/phytophthora-root-and-crown-rot-on-peppers-and-eggplant/",
+                  "quote": "Above ground symptoms of rot on peppers or eggplants include rapid wilting and death of affected plants."
+                },
+                {
+                  "url": "https://vegpath.plantpath.wisc.edu/diseases/phytophthora-crown-and-fruit-rot/",
+                  "quote": "Dark-gray to dark-brown, water-soaked spots develop on roots and stems, causing plants to wilt and die."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::1577159",
+            "bugwood::1577160",
+            "bugwood::1577161",
+            "bugwood::1577162",
+            "bugwood::1577163",
+            "bugwood::1577165",
+            "bugwood::1577173",
+            "bugwood::1577174",
+            "bugwood::1577175",
+            "bugwood::1577176",
+            "bugwood::1577177",
+            "bugwood::1577178",
+            "bugwood::1577179",
+            "bugwood::1577909",
+            "bugwood::1578048",
+            "bugwood::1578050",
+            "bugwood::1578405",
+            "bugwood::1578407",
+            "bugwood::1578408",
+            "bugwood::1578409",
+            "bugwood::1578410",
+            "bugwood::1578411",
+            "bugwood::1578412",
+            "bugwood::1578413",
+            "bugwood::1578414",
+            "bugwood::1578415",
+            "bugwood::1578416",
+            "bugwood::1578417",
+            "bugwood::1578418",
+            "bugwood::1578419",
+            "bugwood::1578420",
+            "bugwood::1578421",
+            "bugwood::1578422",
+            "bugwood::1578423",
+            "bugwood::1578424",
+            "bugwood::1578425",
+            "bugwood::1578426",
+            "bugwood::1578427",
+            "bugwood::1578428",
+            "bugwood::1578440",
+            "bugwood::1578441",
+            "bugwood::1578442",
+            "bugwood::1578443",
+            "bugwood::1578444",
+            "bugwood::5603733",
+            "bugwood::5603734",
+            "bugwood::5603735",
+            "bugwood::5603736",
+            "bugwood::5603737",
+            "bugwood::5603738",
+            "bugwood::5603739",
+            "bugwood::5603740",
+            "bugwood::5603741",
+            "bugwood::5603742",
+            "bugwood::5603744",
+            "bugwood::5603745",
+            "bugwood::5603746",
+            "bugwood::5603747",
+            "bugwood::5603748",
+            "bugwood::5603749",
+            "bugwood::5603750",
+            "bugwood::5603751",
+            "bugwood::5603752",
+            "bugwood::5603753",
+            "bugwood::5603754",
+            "bugwood::5603755",
+            "bugwood::5603756",
+            "bugwood::5603757",
+            "bugwood::5603758",
+            "bugwood::5603759",
+            "bugwood::5603760",
+            "bugwood::5604944",
+            "bugwood::5604945",
+            "bugwood::5604948",
+            "bugwood::5604949",
+            "bugwood::5604950",
+            "bugwood::5604951",
+            "bugwood::5604952",
+            "bugwood::5604954",
+            "bugwood::5604955"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              4
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 4,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 4,
+              "n_provisional": 0,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 4,
+              "n_added": 4,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     }
   ],
   "crop": "Eggplant",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 5
 }

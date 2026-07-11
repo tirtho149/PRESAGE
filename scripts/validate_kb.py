@@ -65,6 +65,11 @@ def parse_args() -> argparse.Namespace:
                    help="claude -p --max-turns budget")
     p.add_argument("--dry-run", action="store_true",
                    help="print plan; don't call Claude")
+    p.add_argument("--reverify-uncited", action="store_true",
+                   help="RETRY pass: also re-judge deltas that already carry a "
+                        "verdict but have no web citation (provisional / "
+                        "novel_plausible / unverified). Survivors with still no "
+                        "web support are relabelled 'field_observation'.")
     return p.parse_args()
 
 
@@ -89,9 +94,30 @@ def _flatten_canonical(record: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
+def _is_candidate(d: Dict[str, Any], reverify_uncited: bool) -> bool:
+    """Should the verifier (re)judge this delta now?
+
+    Normal mode: only fresh ``unverified`` deltas are candidates; anything
+    with a real verdict is frozen context.
+
+    ``reverify_uncited`` mode (the retry pass): ALSO re-judge any delta that
+    carries a verdict but has NO web citation (provisional / novel_plausible
+    with ``web_support == []``). A second WebSearch pass can promote it to
+    verified/weakly_supported, drop it as contradictory, or — if still
+    unsupported — it gets relabelled ``field_observation`` afterwards. Deltas
+    that already carry a web citation are never re-judged (frozen context)."""
+    status = (d.get("verification_status") or "").lower()
+    if not status or status == "unverified":
+        return True
+    if reverify_uncited and not d.get("web_support"):
+        return True
+    return False
+
+
 def _gather_unverified_tuples(
     registry: Dict[str, Any],
     crop: str,
+    reverify_uncited: bool = False,
 ) -> List[Dict[str, Any]]:
     """Yield one record per (disease, state) that still has unverified
     deltas. Each record carries the slice of deltas to verify plus the
@@ -105,18 +131,17 @@ def _gather_unverified_tuples(
             if not isinstance(state_block, dict):
                 continue
             deltas = state_block.get("deltas") or []
-            # Split into already-verified (existing context) vs unverified
+            # Split into already-verified (existing context) vs
             # candidates (the ones we need to verify now).
             existing: List[Dict[str, Any]] = []
             candidates: List[Dict[str, Any]] = []
             for d in deltas:
                 if not isinstance(d, dict):
                     continue
-                status = (d.get("verification_status") or "").lower()
-                if status and status not in ("unverified", ""):
-                    existing.append(d)
-                else:
+                if _is_candidate(d, reverify_uncited):
                     candidates.append(d)
+                else:
+                    existing.append(d)
             if not candidates:
                 continue
             tuples.append({
@@ -133,9 +158,29 @@ def _gather_unverified_tuples(
     return tuples
 
 
+def _relabel_field_observations(state_block: Dict[str, Any]) -> int:
+    """After a retry pass, any delta STILL lacking web support is renamed
+    from the generic ``provisional``/``novel_plausible``/``unverified`` to the
+    distinct status ``field_observation`` — image-grounded but not
+    web-corroborated (weakly supported). Records the prior status under
+    ``_prior_status`` so the promotion is auditable. Returns count relabelled.
+    Web-cited deltas are left untouched."""
+    n = 0
+    for d in state_block.get("deltas") or []:
+        if not isinstance(d, dict):
+            continue
+        status = (d.get("verification_status") or "").lower()
+        if status in ("provisional", "novel_plausible", "unverified") and not d.get("web_support"):
+            d["_prior_status"] = status
+            d["verification_status"] = "field_observation"
+            n += 1
+    return n
+
+
 def _apply_verifier_result(
     state_block: Dict[str, Any],
     verifier_result: Dict[str, Any],
+    reverify_uncited: bool = False,
 ) -> str:
     """Fold the verifier result back into this state's delta block.
 
@@ -151,11 +196,10 @@ def _apply_verifier_result(
     existing: List[Dict[str, Any]] = []
     candidates: List[Dict[str, Any]] = []
     for d in state_block.get("deltas") or []:
-        status = (d.get("verification_status") or "").lower()
-        if status and status not in ("unverified", ""):
-            existing.append(d)
-        else:
+        if _is_candidate(d, reverify_uncited):
             candidates.append(d)
+        else:
+            existing.append(d)
 
     if verifier_result.get("_verifier_failed"):
         # Preserve every candidate as unverified — do not drop, do not
@@ -198,6 +242,7 @@ def main() -> None:
             crop_filter = [c.strip() for c in raw_crops.split(",") if c.strip()]
     max_tuples = int(os.environ.get("MAX_TUPLES") or args.max_tuples or 0)
     dry_run = bool(os.environ.get("DRY_RUN") or args.dry_run)
+    reverify_uncited = bool(os.environ.get("REVERIFY_UNCITED") or args.reverify_uncited)
 
     # Discover registries.
     registries: List[Path] = []
@@ -221,6 +266,9 @@ def main() -> None:
     print(f"  crops         : {[r.parent.name for r in registries]}")
     if max_tuples:
         print(f"  max-tuples    : {max_tuples}")
+    if reverify_uncited:
+        print(f"  REVERIFY-UNCITED: on (retry empty-web deltas; "
+              f"survivors -> field_observation)")
     if dry_run:
         print(f"  DRY-RUN       : on")
 
@@ -234,7 +282,7 @@ def main() -> None:
             print(f"  [skip] {reg}: {type(e).__name__}: {e}")
             continue
         crop = data.get("crop") or reg.parent.name
-        tuples = _gather_unverified_tuples(data, crop)
+        tuples = _gather_unverified_tuples(data, crop, reverify_uncited)
         by_reg[reg] = (data, tuples)
         for t in tuples:
             t["_ref_registry"] = data
@@ -263,7 +311,7 @@ def main() -> None:
     # Run the verifier per tuple.
     print()
     print("  --- verifying ---")
-    n_ok = n_failed = n_error = 0
+    n_ok = n_failed = n_error = n_field = 0
     for i, t in enumerate(all_tuples, 1):
         print(f"  [{i}/{len(all_tuples)}] {t['crop']}/{t['disease']}/{t['state']} "
               f"({len(t['candidates'])} candidates)")
@@ -282,10 +330,18 @@ def main() -> None:
             print(f"      [ERROR] {type(e).__name__}: {e}; leaving unverified")
             n_error += 1
             continue
-        if _apply_verifier_result(t["_ref_state"], result) == "failed":
+        if _apply_verifier_result(t["_ref_state"], result, reverify_uncited) == "failed":
             n_failed += 1
         else:
             n_ok += 1
+            # Retry pass: relabel any survivor still lacking web support so it
+            # is named distinctly (field_observation), not silently pooled with
+            # web-cited notes. Only touch tuples the verifier actually judged.
+            if reverify_uncited:
+                relabelled = _relabel_field_observations(t["_ref_state"])
+                if relabelled:
+                    n_field += relabelled
+                    print(f"      -> {relabelled} relabelled field_observation")
 
     # Persist updated registries.
     print()
@@ -303,6 +359,9 @@ def main() -> None:
     print(f"  validate_kb: tuples={len(all_tuples)} "
           f"verified_ok={n_ok} failed={n_failed} error={n_error} "
           f"across {len(written)} registry files.")
+    if reverify_uncited:
+        print(f"  reverify: {n_field} delta(s) relabelled 'field_observation' "
+              f"(retried, still no web support).")
 
     degraded = n_failed + n_error
     if degraded > 0:

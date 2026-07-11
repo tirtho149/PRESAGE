@@ -55,7 +55,217 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Kentucky": {
+          "state": "Kentucky",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "single or groups of yellow spots ... often growing together to form light brown necrotic areas",
+              "image_shows": "Lesions are irregular in shape with some margins constrained by leaf veins.",
+              "image_quote": "The lesions show irregular forms with varying sizes and shapes.",
+              "image_id": "bugwood::5368662",
+              "verification_status": "weakly_supported",
+              "reasoning": "Blue mold lesions lack distinct margins and coalesce irregularly, and vein-associated infections are locally bounded/distorted, giving partial support to irregular, vein-constrained lesion shapes.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://burleytobaccoextension.ca.uky.edu/content/blue-mold-0",
+                  "quote": "Symptoms on tobacco transplants begin as yellowish leaf spots that lack distinct margins."
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/blue-mold-of-tobacco",
+                  "quote": "If infection has occurred near or on a leaf vein, the affected vein becomes reddish-brown, and the area around the vein is yellowed and distorted."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "dense, gray sporulation on the undersides of leaf lesions is characteristic of blue mold",
+              "image_shows": "Some leaf veins show darkening/necrosis.",
+              "image_quote": "The leaf veins are dark, indicating necrosis.",
+              "image_id": "bugwood::5368662",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension and peer-reviewed sources document reddish-brown/darkened veins in blue mold vein and systemic infections, directly corroborating necrotic dark veins.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/blue-mold-of-tobacco",
+                  "quote": "If infection has occurred near or on a leaf vein, the affected vein becomes reddish-brown, and the area around the vein is yellowed and distorted."
+                },
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640408/",
+                  "quote": "Systemically infected transplants will have partially or fully necrotic leaves with darkened veins."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "The presence of the characteristic gray-blue spores on the bottom of leaves distinguishes it from other problems",
+              "image_shows": "No concentric rings or target-spot pattern are present in the lesions.",
+              "image_quote": "No concentric rings or target spots are present.",
+              "image_id": "bugwood::5368662",
+              "verification_status": "verified",
+              "reasoning": "Concentric rings are diagnostic of target spot, not blue mold; the absence of rings is a documented distinguishing feature, so the observation is externally verified.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://kentuckypestnews.wordpress.com/2016/05/03/tobacco-diseases-to-scout-for-blue-mold-and-target-spot/",
+                  "quote": "blue mold does not produce the characteristic concentric ring pattern that target spot does."
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/target-spot-of-tobacco",
+                  "quote": "Expanded lesions form large circular spots of concentric rings, taking on a characteristic 'bullseye' appearance."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "Leaves show severe damage with pale-straw and chocolate-brown discoloration.",
+              "image_quote": "The image shows damaged tobacco leaves with pale straw and chocolate-brown discoloration.",
+              "image_id": "bugwood::5368662",
+              "verification_status": "weakly_supported",
+              "reasoning": "Advanced blue mold produces extensive necrosis with leaves turning light brown and disintegrating, consistent with pale-straw and brown discoloration at high severity.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/blue-mold-of-tobacco",
+                  "quote": "heavily infected leaves become distorted and large portions will disintegrate."
+                },
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640408/",
+                  "quote": "the plants begin to die and turn light brown."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "single or groups of yellow spots appear on older leaves",
+              "image_shows": "Chlorosis/yellowing is present on the tobacco leaves.",
+              "image_quote": "The leaves display interveinal yellowing.",
+              "image_id": "bugwood::5368662",
+              "verification_status": "weakly_supported",
+              "reasoning": "Yellowing/chlorosis is a genuine early blue mold symptom, though the specifically interveinal pattern is not documented, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://burleytobaccoextension.ca.uky.edu/content/blue-mold-0",
+                  "quote": "Symptoms on tobacco transplants begin as yellowish leaf spots that lack distinct margins."
+                },
+                {
+                  "url": "https://kentuckypestnews.wordpress.com/2016/05/03/tobacco-diseases-to-scout-for-blue-mold-and-target-spot/",
+                  "quote": "blue mold causes circular yellow spots on the upper surface of the leaf."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Foliar lesions appear yellow, grey, or bluish ... light brown necrotic areas",
+              "image_shows": "Affected tissue shows a mix of green and brown tones, with green dominating.",
+              "image_quote": "The leaves have a broad, rounded shape.",
+              "image_id": "bugwood::5368662",
+              "verification_status": "weakly_supported",
+              "reasoning": "A mix of green (unaffected leaf) and brown (necrotic lesion) tones with green dominating is consistent with early-stage blue mold lesions on still-green tobacco leaves, though the candidate's own quote describes leaf shape rather than the color mix.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/blue-mold-of-tobacco",
+                  "quote": "Single or groups of yellow spots (lesions) appear on the older, shaded leaves, and often the spots grow together to form light brown, necrotic (dead) areas."
+                },
+                {
+                  "url": "https://burleytobaccoextension.ca.uky.edu/content/blue-mold-0",
+                  "quote": "The disease name comes from the blue-gray fungus that sporulates on the underside of these leaf lesions."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Leaves are broad with a wide base tapering toward the tip.",
+              "image_quote": "The leaves have a large base and narrow tip.",
+              "image_id": "bugwood::5368662",
+              "verification_status": "weakly_supported",
+              "reasoning": "Published tobacco morphology references corroborate broad leaves with tapering tips, though they describe the base as narrowing toward the stalk rather than distinctly 'wide,' giving only partial support to this general (non-disease) leaf-shape observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://seedidguide.idseed.org/fact_sheets/34654/",
+                  "quote": "stem leaves are solitary, simple, egg-shaped, elliptic to elongated teardrop-shaped, with leaf bases that narrow and taper down the short leaf stalk and tips that are acute to tapering"
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Burley_(tobacco)",
+                  "quote": "burley tobacco plants produce large, broad leaves"
+                }
+              ]
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5368662",
+            "bugwood::5368663",
+            "bugwood::5368665",
+            "bugwood::5368895",
+            "bugwood::5368896",
+            "bugwood::5368897",
+            "bugwood::5368898",
+            "bugwood::5424454",
+            "bugwood::5424455",
+            "bugwood::5424456",
+            "bugwood::5424457",
+            "bugwood::5424458",
+            "bugwood::5424459",
+            "bugwood::5424460"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              11
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 11,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 5,
+              "n_provisional": 2,
+              "n_contradictory": 2,
+              "n_duplicates_existing": 2
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 7,
+              "n_added": 7,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Rhizoctonia Damping-Off, Blight And Rot",
@@ -103,7 +313,7 @@
           "Plants with stem lesions should not be transplanted into the field",
           "Sanitation and good growing practices are the best defense against target spot",
           "Maintaining nitrogen within the recommended range of 75 to 125 ppm will help suppress, but not eliminate, this disease",
-          "Steam treatment for used pots and trays (center of stack held at 75 to 80Â°C for one hour)",
+          "Steam treatment for used pots and trays (center of stack held at 75 to 80\u00c2\u00b0C for one hour)",
           "Practices that open the plant canopy, increase air circulation, and reduce leaf wetness",
           "Early harvesting of lower leaves from infected plants",
           "Isolates of T. harzianum can reduce the growth of R. solani and enhance disease control",
@@ -114,7 +324,246 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Kentucky": {
+          "state": "Kentucky",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "expand into large circular spots of concentric rings with a characteristic 'bullseye' appearance",
+              "image_shows": "The lesions appear irregular rather than circular or ring-shaped.",
+              "image_quote": "The lesions have irregular margins and do not follow the leaf veins.",
+              "image_id": "bugwood::5368513",
+              "verification_status": "weakly_supported",
+              "reasoning": "Early-stage and damping-off Rhizoctonia lesions are documented as having irregular margins before any bullseye ring forms, so the irregular appearance is partially corroborated.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://wiki.bugwood.org/Rhizoctonia_solani_(Target_spot_of_Tobacco)",
+                  "quote": "Expanded lesions first become light green, almost transparent, with irregular margins and then form large circular spots of concentric rings."
+                },
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640363/",
+                  "quote": "Disease areas are typically in the form of circular to irregular patches of poorly growing, yellowish and/or stunted seedlings."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "small, round, water-soaked spots ... that expand into large circular spots of concentric rings",
+              "image_shows": "The lesions display various shades of green.",
+              "image_quote": "The affected tissue displays shades of pale-straw and olive-green.",
+              "image_id": "bugwood::5368513",
+              "verification_status": "weakly_supported",
+              "reasoning": "Literature records light-green to yellowing tissue in early Rhizoctonia infection, consistent with the pale-straw and olive-green shades observed.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://wiki.bugwood.org/Rhizoctonia_solani_(Target_spot_of_Tobacco)",
+                  "quote": "Expanded lesions first become light green, almost transparent, with irregular margins."
+                },
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640363/",
+                  "quote": "Water-soaked lesions ... results in yellowing, wilt, and necrosis of foliage."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "small, round, water-soaked spots about 2 to 3 mm in diameter",
+              "image_shows": "The photo shows young seedlings with uniformly pale-green leaves.",
+              "image_quote": "The leaves show a uniform light green color.",
+              "image_id": "bugwood::5368513",
+              "verification_status": "weakly_supported",
+              "reasoning": "Uniform pale/light-green seedlings match the documented yellowish, poorly growing seedling appearance of Rhizoctonia damping-off before lesions coalesce.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640363/",
+                  "quote": "Disease areas are typically in the form of circular to irregular patches of poorly growing, yellowish and/or stunted seedlings."
+                },
+                {
+                  "url": "https://burleytobaccoextension.ca.uky.edu/content/rhizoctonia-damping",
+                  "quote": "Rhizoctonia damping-off ... results in yellowing, wilt, and necrosis of foliage."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "large circular spots of concentric rings, taking on a characteristic 'bullseye' appearance",
+              "image_shows": "No concentric patterns are visible in the image.",
+              "image_quote": "No concentric patterns are visible in the image.",
+              "image_id": "bugwood::5368513",
+              "verification_status": "verified",
+              "reasoning": "The concentric bullseye is the foliar target-spot phase; the damping-off/seedling phase of R. solani produces stem/seedling symptoms without concentric rings, so their absence in a seedling image is expected and corroborated.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://wiki.bugwood.org/Rhizoctonia_solani_(Target_spot_of_Tobacco)",
+                  "quote": "Large circular spots of concentric rings, taking on a characteristic 'bullseye' appearance."
+                },
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640363/",
+                  "quote": "Rhizoctonia damping-off ... begins as water-soaked lesions on lower stems of seedlings; this results in yellowing, wilt, and necrosis of foliage."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue has predominantly light green leaves with some areas showing a slightly darker olive-green hue.",
+              "image_quote": "The leaves show a mix of light green and slightly darker olive-green shades.",
+              "image_id": "bugwood::5368513",
+              "verification_status": "weakly_supported",
+              "reasoning": "A light-green to olive-green palette is consistent with the early chlorotic/light-green tissue documented for Rhizoctonia infection of tobacco.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://wiki.bugwood.org/Rhizoctonia_solani_(Target_spot_of_Tobacco)",
+                  "quote": "Expanded lesions first become light green, almost transparent."
+                },
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640363/",
+                  "quote": "Results in yellowing, wilt, and necrosis of foliage."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "small, round, water-soaked spots ... expand into large circular spots",
+              "image_shows": "The seedlings show pale-straw and olive-green leaves but no visible lesions, chlorosis, or necrosis.",
+              "image_quote": "The affected tissue displays shades of pale-straw and olive-green.",
+              "image_id": "bugwood::5368513",
+              "verification_status": "weakly_supported",
+              "reasoning": "The pale/yellowish seedling coloration without developed lesions matches published seedbed descriptions of yellowish, poorly-growing Rhizoctonia-affected tobacco seedlings, though the absence claim itself is only indirectly supported.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://burleytobaccoextension.ca.uky.edu/content/rhizoctonia-damping",
+                  "quote": "In seed beds, disease areas are typically in the form of circular to irregular patches of poorly growing, yellowish and/or stunted seedlings."
+                },
+                {
+                  "url": "https://wiki.bugwood.org/HPIPM:Damping_Off_Seedling_Blight",
+                  "quote": "Rhizoctonia damping-off begins as water-soaked lesions on lower stems of seedlings; this results in yellowing, wilt, and necrosis of foliage."
+                }
+              ]
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "tissue in the center may drop out giving a shot-hole appearance",
+              "image_shows": "The leaves appear smooth with no visible sunken, raised, or unusual surface texture.",
+              "image_quote": "The leaves are uniformly green and lack any noticeable changes in surface texture.",
+              "image_id": "bugwood::5368513",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources describe foliar symptoms as color change and wilt rather than surface texturing, so a smooth untextured leaf on an early-stage seedling is consistent with the disease.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://burleytobaccoextension.ca.uky.edu/content/rhizoctonia-damping",
+                  "quote": "Rhizoctonia damping-off begins as water-soaked lesions on lower stems of seedlings; this results in yellowing, wilt, and necrosis of foliage."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaves show some distortion, possibly slight curling.",
+              "image_quote": "Leaves appear slightly curled.",
+              "image_id": "bugwood::5368513",
+              "verification_status": "field_observation",
+              "reasoning": "Leaf curling is not a documented Rhizoctonia damping-off symptom but could reflect early wilting captured in the photo, so it is flagged for curator review.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "novel_plausible"
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "light green, almost transparent, with irregular margins",
+              "image_shows": "Leaf veins appear translucent and pale, suggesting vein clearing.",
+              "image_quote": "The veins are translucent and paler than the blade.",
+              "image_id": "bugwood::5368513",
+              "verification_status": "field_observation",
+              "reasoning": "Vein clearing is not described in extension photo references for Rhizoctonia damping-off (it is more typical of viral disease), so it is coherent with the pale-leaf visual but unverified and flagged for review.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "novel_plausible"
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaves are broad and ovate with a length-to-width ratio greater than 1.",
+              "image_quote": "The leaves are broad with rounded tips.",
+              "image_id": "bugwood::5368513",
+              "verification_status": "field_observation",
+              "reasoning": "This describes normal tobacco seedling leaf morphology rather than a disease sign; plausible from the image but not a corroborable disease feature, so flagged for review.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "novel_plausible"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5368513",
+            "bugwood::5368514",
+            "bugwood::5368515",
+            "bugwood::5368516",
+            "bugwood::5368517",
+            "bugwood::5368518",
+            "bugwood::5369029",
+            "bugwood::5369030",
+            "bugwood::5369031",
+            "bugwood::5369032",
+            "bugwood::5424473"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              12
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 12,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 5,
+              "n_provisional": 7,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 12,
+              "n_added": 12,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 3,
+            "contradictory_count": 0,
+            "duplicates_count": 1,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Tomato Spotted Wilt Virus",
@@ -163,9 +612,177 @@
       },
       "confidence": "high",
       "num_sources": 2,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Kentucky": {
+          "state": "Kentucky",
+          "deltas": [
+            {
+              "field": "affected_organs",
+              "canonical_says": "Symptoms vary with plant age; plants are frequently stunted and leaves may become distorted.",
+              "image_shows": "Stem shows discrete necrotic areas alongside leaf damage, indicating TSWV stem involvement in Kentucky burley.",
+              "image_quote": "The stem surface shows necrotic areas and leaf damage, but no galls, blisters, scabs, ooze, or fruiting bodies are present.",
+              "image_id": "bugwood::5368693",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources document brown-to-black necrotic lesions and streaking on TSWV-infected tobacco stems, directly corroborating stem necrosis with absence of fungal fruiting bodies (viral etiology).",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/tomato-spotted-wilt-virus-on-tobacco",
+                  "quote": "Brown to black elongated lesions are observed on the veins, petioles and stems of tobacco plants infected with Tomato Spotted Wilt Virus."
+                },
+                {
+                  "url": "https://burleytobaccoextension.ca.uky.edu/content/tobacco-spotted-wilt-virus-tswv",
+                  "quote": "Black streaking can occur along the stem of TSWV-infected tobacco."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "Symptoms vary with plant age; plants are frequently stunted and leaves may become distorted.",
+              "image_shows": "Leaf tissue exhibits yellowing progressing to necrosis, matching TSWV's yellow-to-rusty-brown lesion progression on Kentucky burley.",
+              "image_quote": "The leaves are showing significant yellowing and necrosis.",
+              "image_id": "bugwood::5368693",
+              "verification_status": "verified",
+              "reasoning": "The yellow-then-necrotic color progression on leaves matches the documented TSWV symptom sequence on tobacco.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/tomato-spotted-wilt-virus-on-tobacco",
+                  "quote": "Zonate necrotic spots and concentric rings on the leaves initially appear yellow but quickly turn rusty brown."
+                },
+                {
+                  "url": "https://burleytobaccoextension.ca.uky.edu/content/tobacco-spotted-wilt-virus-tswv",
+                  "quote": "As the disease progresses, leaves may yellow, wilt, and dry out."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "Symptoms vary with plant age; plants are frequently stunted and leaves may become distorted.",
+              "image_shows": "Advanced severity is visible as extensive necrotic brown leaf areas together with drying of stem sections.",
+              "image_quote": "Necrotic brown areas on leaves and dry stem sections.",
+              "image_id": "bugwood::5368693",
+              "verification_status": "verified",
+              "reasoning": "Extensive leaf necrosis with drying/splitting stem tissue is consistent with documented advanced-stage TSWV severity on tobacco.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/tomato-spotted-wilt-virus-on-tobacco",
+                  "quote": "Streaks may eventually enlarge and result in stem splitting or cracking, and leaves may yellow, wilt, and dry out."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Necrotic (brown) zonate spots and rings on younger leaves that may merge to form larger necrotic areas.",
+              "image_shows": "A discrete necrotic lesion is raised on the outer stem surface, an atypical presentation of TSWV stem necrosis.",
+              "image_quote": "The stem shows signs of necrosis.",
+              "image_id": "bugwood::5368693",
+              "verification_status": "weakly_supported",
+              "reasoning": "Stem necrosis/lesions are documented for TSWV on tobacco, but the described 'raised' morphology differs from the typical sunken elongated streaks, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/tomato-spotted-wilt-virus-on-tobacco",
+                  "quote": "Infected plants have dark streaks and elongated brown-purple lesions, usually around the nodes and petioles."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "Symptoms vary with plant age; plants are frequently stunted and leaves may become distorted.",
+              "image_shows": "The stem appears shriveled and dry with wrinkled surface, consistent with late-stage TSWV stem drying, and shows no fungal signs.",
+              "image_quote": "The stem is dried out with wrinkled skin.",
+              "image_id": "bugwood::5368693",
+              "verification_status": "weakly_supported",
+              "reasoning": "Stem cracking/splitting and drying-out are documented as TSWV progresses, indirectly supporting a shriveled, dry stem lacking fungal fruiting structures (viral etiology).",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/tomato-spotted-wilt-virus-on-tobacco",
+                  "quote": "Streaks may eventually enlarge and result in stem splitting or cracking; leaves may yellow, wilt, and dry out."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "Fusarium wilt",
+              "image_shows": "Yellow-brown necrotic leaf tissue is present, consistent with TSWV rather than clearly differentiating the Fusarium wilt look-alike.",
+              "image_quote": "The affected tissue shows dominant yellow-brown and secondary green.",
+              "image_id": "bugwood::5368693",
+              "verification_status": "weakly_supported",
+              "reasoning": "Yellow-brown necrotic tissue matches documented TSWV coloration and the known confusion with Fusarium wilt, though the observation does not itself provide a distinguishing feature.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://burleytobaccoextension.ca.uky.edu/content/tobacco-spotted-wilt-virus-tswv",
+                  "quote": "Spots initially appear yellow but quickly turn rusty brown; these symptoms are often confused with Fusarium wilt."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5368693",
+            "bugwood::5368694",
+            "bugwood::5368695",
+            "bugwood::5368696",
+            "bugwood::5368812",
+            "bugwood::5368813",
+            "bugwood::5368814",
+            "bugwood::5368909",
+            "bugwood::5368910",
+            "bugwood::5368918",
+            "bugwood::5368919",
+            "bugwood::5368920",
+            "bugwood::5368921",
+            "bugwood::5424478"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              6
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 6,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 6,
+              "n_provisional": 0,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 6,
+              "n_added": 6,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     }
   ],
   "crop": "Burley Tobacco",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 3
 }

@@ -60,7 +60,7 @@
           "Consult the New England Tree Fruit Management Guide for current fungicide recommendations"
         ],
         "url": "https://www.pubs.ext.vt.edu/SPES/spes-614/spes-614.html",
-        "quote": "Growers are encouraged to rotate FRAC groups to alleviate the risk of fungicide resistance development. ... irrigating under the canopy with drip irrigation prevents spore dispersal by water splash. Initial infections can be reduced through resistant cultivar selection and canopy pruning. ... Removal of mummified fruit and diseased twigs from the tree canopies and their destruction is an important step ... Serenade ASO â€“ Bacillus subtilis QST713 DoubleNickel55 â€“ B. amyloliquefaciens D747 Theia â€“ B. subtilis AFS032321 Howler â€“ Pseudomonas chlororaphis AFS009"
+        "quote": "Growers are encouraged to rotate FRAC groups to alleviate the risk of fungicide resistance development. ... irrigating under the canopy with drip irrigation prevents spore dispersal by water splash. Initial infections can be reduced through resistant cultivar selection and canopy pruning. ... Removal of mummified fruit and diseased twigs from the tree canopies and their destruction is an important step ... Serenade ASO \u00e2\u20ac\u201c Bacillus subtilis QST713 DoubleNickel55 \u00e2\u20ac\u201c B. amyloliquefaciens D747 Theia \u00e2\u20ac\u201c B. subtilis AFS032321 Howler \u00e2\u20ac\u201c Pseudomonas chlororaphis AFS009"
       },
       "confidence": "high",
       "num_sources": 3,
@@ -86,7 +86,93 @@
           "alternative_source_url": "https://extension.unh.edu/resource/bitter-rot",
           "note": "UNH record tagged 'Pod' but provided no supporting evidence quote; excluded from canonical. Fruit is the primary affected part across all sources."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "a V-shaped, brown, watery lesion that extends toward the core can be observed",
+              "image_shows": "No discolored areas were observed on the pear stem surface.",
+              "image_quote": "The stem surface has a textured appearance with a network of raised, scale-like structures.",
+              "image_id": "bugwood::5503824",
+              "verification_status": "field_observation",
+              "reasoning": "Extension sources describe bitter rot/anthracnose as fruit lesions and note stem/twig cankers are rare; a clean stem with raised scale-like bark texture is neither a documented symptom nor contradicted, so it is an unsupported-but-plausible negative observation.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "white rot; black rot",
+              "image_shows": "Raised, scale-like structures on the stem could indicate a look-alike rather than the canonical fruit rots.",
+              "image_quote": "The stem surface has a textured appearance with a network of raised, scale-like structures.",
+              "image_id": "bugwood::5503824",
+              "verification_status": "field_observation",
+              "reasoning": "No published source ties raised scale-like stem structures to a bitter-rot look-alike (canonical look-alikes white rot and black rot are fruit rots); the reinterpretation is coherent with the visual evidence but unverified and warrants curator review.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "novel_plausible"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5503824",
+            "bugwood::5503825",
+            "bugwood::5503826",
+            "bugwood::5503827",
+            "bugwood::5503828",
+            "bugwood::5503829",
+            "bugwood::5503830",
+            "bugwood::5503831",
+            "bugwood::5503832",
+            "bugwood::5503833",
+            "bugwood::5503834"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              4
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 4,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 0,
+              "n_provisional": 3,
+              "n_contradictory": 1,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 3,
+              "n_added": 3,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 2,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Pear Scab",
@@ -154,9 +240,224 @@
           "alternative_source_url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/pear-scab/",
           "note": "UMaine records only leaf and fruit signs ('Infected leaves Scab lesions on fruit'); UMass additionally documents shoots, so Stem is retained in the canonical value."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Delaware": {
+          "state": "Delaware",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "lesions start as olive-colored circular spots that transition to dark brown as the infection progresses",
+              "image_shows": "Dark brown scab lesions are present on the surface of the pear fruits.",
+              "image_quote": "Dark brown lesions on the fruits' surfaces.",
+              "image_id": "bugwood::5624791",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources confirm mature pear scab fruit lesions turn dark brown/black, matching the observed dark brown lesions.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/fruit/fact-sheets/pear-ipm-pear-scab",
+                  "quote": "On fruit, pear scab infections are larger and more obvious, again being olive-colored, velvety, circular spots that become more corky and black later in the season."
+                },
+                {
+                  "url": "https://agriculture.vic.gov.au/biosecurity/plant-diseases/fruit-and-nut-diseases/pome-fruits/pear-scab",
+                  "quote": "Symptoms can be seen on infected leaves and fruit as olive green, brown and black, velvety spots."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "Pear scab first appears as small yellow or chlorotic spots ... with larger more obvious patches on fruit; lesions start as olive-colored circular spots that turn dark brown or black",
+              "image_shows": "Brown spots appear on both the leaves and the fruits in the photograph.",
+              "image_quote": "The photo displays green leaves with brown spots and brownish-green fruits.",
+              "image_id": "bugwood::5624791",
+              "verification_status": "verified",
+              "reasoning": "External sources confirm brown scab lesions occur on both leaves and fruit, consistent with the observed brown spots across both organs.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://agriculture.vic.gov.au/biosecurity/plant-diseases/fruit-and-nut-diseases/pome-fruits/pear-scab",
+                  "quote": "Symptoms can be seen on infected leaves and fruit as olive green, brown and black, velvety spots."
+                },
+                {
+                  "url": "https://netreefruit.org/pears/diseases/pear-scab",
+                  "quote": "Fruit infected early in development shows olive-green to brown spots ... Scab lesions on leaves are more visible on the bottom of the leaf and are olive-colored circular spots."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "Four pears show brownish spots and lesions indicating a partial (not fully coalesced) level of infection.",
+              "image_quote": "The image displays four fruits with brownish spots and lesions, indicating partial infection.",
+              "image_id": "bugwood::5624791",
+              "verification_status": "weakly_supported",
+              "reasoning": "Sources confirm fruit can show discrete spotted lesions short of severe cracking/deformity, consistent with the described partial infection, though the specific severity level is image-derived.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/fruit/fact-sheets/pear-ipm-pear-scab",
+                  "quote": "Lesions on immature fruit are small, circular velvety spots, with darker, pinpoint spots developing as the fruit matures."
+                },
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/pear/pear-scab/",
+                  "quote": "The severity of a pear scab infection will depend on the amount of infectious material in the environment."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5624791"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              4
+            ],
+            "detected_organ_per_pass": [
+              "fruit"
+            ],
+            "n_active_agents_per_pass": [
+              6
+            ],
+            "n_after_agreement": 4,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 3,
+              "n_provisional": 1,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 4,
+              "n_added": 4,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 1,
+            "duplicates_count": 0,
+            "dropped_contradictory": [
+              {
+                "field": "look_alikes",
+                "canonical_says": "apple scab",
+                "image_shows": "No lesions specifically consistent with apple scab are visible; the fruit instead shows general signs of decay.",
+                "image_quote": "The fruits show signs of decay.",
+                "image_id": "bugwood::5624791",
+                "verification_status": "contradictory",
+                "reasoning": "Published extension descriptions show pear scab fruit symptoms as distinct dark, corky, scabby, cracked lesions (visually akin to apple scab), not the diffuse general decay/rot the candidate reports, and the existing verified guide notes confirm scab lesions are present on these fruits.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://ag.umass.edu/fruit/fact-sheets/pear-ipm-pear-scab",
+                    "quote": "On fruits, the disease causes dark, scabby lesions leading to cracking and distortion; symptoms appear as olive green, brown and black, velvety spots that become scabby and cracked as they age."
+                  },
+                  {
+                    "url": "https://extension.psu.edu/pear-scab-in-the-home-fruit-planting",
+                    "quote": "On fruit, scab lesions are larger and more obvious, being olive-colored, velvety, circular spots that become more corky and black later in the season; fruit lesions are superficial and the fungus does not extend into the flesh."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "other",
+              "canonical_says": "lesions start as olive-colored circular spots that turn dark brown or black and become soft",
+              "image_shows": "In Maine, scabbed pear fruit presents a blend of green, black, and brown hues on a single fruit.",
+              "image_quote": "The affected fruit has a mix of green, black, and brown colors.",
+              "image_id": "bugwood::5507751",
+              "verification_status": "verified",
+              "reasoning": "The documented olive-green to black to brown progression on scabbed fruit directly corroborates the observed green/black/brown color mix.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/fruit/fact-sheets/pear-ipm-pear-scab",
+                  "quote": "Fruit infections appear as olive-green to black spots; fruit infected early in development shows olive-green to brown spots, which are later russetted and corky."
+                },
+                {
+                  "url": "https://netreefruit.org/pears/diseases/pear-scab",
+                  "quote": "Pear scab infections on fruit are olive-colored, velvety, circular spots that become more corky and black later in the season."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5507751",
+            "bugwood::5507752",
+            "bugwood::5507753",
+            "bugwood::5507754",
+            "bugwood::5507755",
+            "bugwood::5507756",
+            "bugwood::5507757",
+            "bugwood::5507758",
+            "bugwood::5507759",
+            "bugwood::5530850",
+            "bugwood::5530851",
+            "bugwood::5530852",
+            "bugwood::5530853",
+            "bugwood::5530854",
+            "bugwood::5530855",
+            "bugwood::5530856"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              3
+            ],
+            "detected_organ_per_pass": [
+              "fruit"
+            ],
+            "n_active_agents_per_pass": [
+              6
+            ],
+            "n_after_agreement": 3,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 1,
+              "n_provisional": 0,
+              "n_contradictory": 1,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 1,
+              "n_added": 1,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     }
   ],
   "crop": "Common Pear",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 3
 }

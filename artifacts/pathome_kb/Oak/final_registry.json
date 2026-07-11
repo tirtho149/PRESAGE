@@ -1,5 +1,488 @@
 {
-  "diseases": [],
+  "diseases": [
+    {
+      "disease_name": "Cryptocline Fungus",
+      "pathogen_scientific_name": {
+        "value": "Cryptocline betularum",
+        "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+        "quote": "Elm trees are susceptible to a number of different anthracnose fungi, including Ophiognomonia intermedia , Gloeosporium betulae , Cryptocline betularum , and Cylindrosporium sp. Cryptocline is the fungus that we encounter the most frequently on samples submitted to the lab for diagnosis.",
+        "taxonomy_validated": false,
+        "ncbi_url": "",
+        "mycobank_url": ""
+      },
+      "type_of_disease": {
+        "value": "Fungal",
+        "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+        "quote": "Elm trees are susceptible to a number of different anthracnose fungi"
+      },
+      "affected_parts": {
+        "value": [
+          "Foliar"
+        ],
+        "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+        "quote": "Cryptocline is only known to colonize the leaves, so it overwinters in fallen leaf tissue."
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": "Leaf spots start as small, round chlorotic lesions that expand into necrotic spots with a purple/black border and tan or white center; large areas of the leaf blade turn yellow then necrotic before premature leaf drop.",
+          "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+          "quote": "Leaf spots may start as small, round chlorotic lesions that slowly expand over time (Figures 1 & 2). Eventually, a necrotic spot with a purple/black border and tan or white center will form (Figure 3)."
+        },
+        "diagnostic_features": {
+          "value": "Necrotic spot with a purple/black border and tan or white center; lesions developing on a leaf vein follow the vein creating a thin/elongate necrotic lesion instead of being circular; mature lesions are tan with black fungal structures (acervuli) within.",
+          "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+          "quote": "Eventually, a necrotic spot with a purple/black border and tan or white center will form (Figure 3). Lesions may begin to develop on a leaf vein and instead of being circular will follow the vein a little, creating a thin necrotic lesion (Figure 4)."
+        },
+        "look_alikes": {
+          "value": [
+            "Ophiognomonia intermedia",
+            "Gloeosporium betulae",
+            "Cylindrosporium sp."
+          ],
+          "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+          "quote": "Elm trees are susceptible to a number of different anthracnose fungi, including Ophiognomonia intermedia , Gloeosporium betulae , Cryptocline betularum , and Cylindrosporium sp."
+        }
+      },
+      "treatments": {
+        "value": [
+          "removal of the foliage in the fall can reduce inoculum for the following year (though won't eliminate the disease)",
+          "Providing fertilizer (where needed) and water (hot and dry periods) will help mitigate some tree stress, as stress can predispose plants to increased disease severity",
+          "Fungicides are not normally recommended for mature trees as it is impractical to get coverage across the entire canopy, but could be practical in a nursery setting if symptoms are observed and leading to leaf drop"
+        ],
+        "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+        "quote": "Like other leaf spot pathogens that do not infect stems, removal of the foliage in the fall can reduce inoculum for the following year (though won't eliminate the disease). Providing fertilizer (where needed) and water (hot and dry periods) will help mitigate some tree stress, as stress can predispose plants to increased disease severity. Fungicides are not normally recommended for mature trees as it is impractical to get coverage across the entire canopy, but could be practical in a nursery setting if symptoms are observed and leading to leaf drop."
+      },
+      "confidence": "low",
+      "num_sources": 1,
+      "conflicts": [],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "lesions developing on a leaf vein follow the vein creating a thin/elongate necrotic lesion instead of being circular",
+              "image_shows": "The lesion is irregular with a central necrotic area and a boundary that follows the leaf veins.",
+              "image_quote": "The lesion appears elongated and follows the veins.",
+              "image_id": "bugwood::5531861",
+              "verification_status": "verified",
+              "reasoning": "Both the Cryptocline elm reference and oak anthracnose extension sources confirm that vein-associated lesions become elongate and follow the veins, matching the irregular vein-bound lesion seen.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+                  "quote": "Lesions of Cryptocline located on leaf veins create an elongate necrotic lesions instead of the typical round lesions located elsewhere on the leaf."
+                },
+                {
+                  "url": "https://site.extension.uga.edu/fannin-gilmer/2020/07/anthracnose-leaf-spot-on-oaks/",
+                  "quote": "large lesions often follow leaf veins or are delimited by leaf veins."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "necrotic spots with a purple/black border and tan or white center",
+              "image_shows": "The lesion center is a mix of tan and light brown while the margin is dark brown rather than purple/black.",
+              "image_quote": "The lesion center is brownish-tan, the margin is dark brown.",
+              "image_id": "bugwood::5531861",
+              "verification_status": "weakly_supported",
+              "reasoning": "External Cryptocline descriptions support a tan/brown lesion center, but the reported dark-brown margin only partially matches the canonical purple/black border, so support is indirect.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/birch-leaf-spot.aspx",
+                  "quote": "brown spots ranging from 1/8th to 3/8th inch in size to large brown blotches surrounded by yellow tissue."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "mature lesions are tan with black fungal structures (acervuli) within",
+              "image_shows": "The lesion is raised with a rough, uneven surface consistent with erumpent acervuli.",
+              "image_quote": "The lesion surface looks rough and uneven.",
+              "image_id": "bugwood::5531861",
+              "verification_status": "weakly_supported",
+              "reasoning": "A raised, roughened lesion surface is consistent with black erumpent acervuli reported for Cryptocline/anthracnose leaf spots, supporting but not definitively confirming the texture.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+                  "quote": "the spots become black and raised on the surface."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "large areas of the leaf blade turn yellow then necrotic",
+              "image_shows": "Interveinal chlorosis accompanies discrete necrotic spots on the leaf.",
+              "image_quote": "There is chlorosis, specifically interveinal.",
+              "image_id": "bugwood::5531861",
+              "verification_status": "weakly_supported",
+              "reasoning": "Yellowing/chlorosis of the blade with increasing lesion density is documented, though the specifically interveinal distribution is not confirmed by the sources.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://purduelandscapereport.org/article/cryptocline-leaf-spot-anthracnose-of-elm/",
+                  "quote": "As the density of leaf spots increases, the leaf blade turns more yellow."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "lesions developing on a leaf vein follow the vein creating a thin/elongate necrotic lesion",
+              "image_shows": "The veins themselves appear necrotic and discolored where lesions track along them.",
+              "image_quote": "Veins appear necrotic and discolored.",
+              "image_id": "bugwood::5531861",
+              "verification_status": "verified",
+              "reasoning": "Vein-associated necrosis and discoloration is a documented diagnostic feature for oak anthracnose/Cryptocline leaf lesions, corroborating the observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://site.extension.uga.edu/fannin-gilmer/2020/07/anthracnose-leaf-spot-on-oaks/",
+                  "quote": "large lesions often follow leaf veins or are delimited by leaf veins."
+                },
+                {
+                  "url": "https://hyg.ipm.illinois.edu/article.php?id=372",
+                  "quote": "angular necrotic spots on the mature leaf."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "tan or white center; large areas of the leaf blade turn yellow then necrotic",
+              "image_shows": "Affected tissue shows a mix of brownish-tan, dark brown, and olive-green coloration.",
+              "image_quote": "The affected tissue displays a mix of brownish-tan, dark brown, and olive-green colors.",
+              "image_id": "bugwood::5531861",
+              "verification_status": "weakly_supported",
+              "reasoning": "Brown/tan lesion tissue with surrounding yellowing is documented, though the olive-green component is atypical and only partially supported.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/birch-leaf-spot.aspx",
+                  "quote": "brown spots ranging from 1/8th to 3/8th inch in size to large brown blotches surrounded by yellow tissue."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "large areas of the leaf blade turn yellow then necrotic before premature leaf drop",
+              "image_shows": "The leaf shows substantial necrosis and chlorosis distributed as discrete spots.",
+              "image_quote": "Discrete spots of necrotic tissue are visible.",
+              "image_id": "bugwood::5531861",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extensive necrosis with chlorosis and multiple discrete spots is consistent with documented Cryptocline severity leading to premature leaf shed.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/birch-leaf-spot.aspx",
+                  "quote": "large brown blotches surrounded by yellow tissue."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf blade curls upward at the tip.",
+              "image_quote": "The top right part of the leaf is curled upward.",
+              "image_id": "bugwood::5531861",
+              "verification_status": "weakly_supported",
+              "reasoning": "Leaf curling/cupping/distortion is a documented visual symptom of oak anthracnose-type foliar fungi, giving indirect support for the described upward curl though the specific tip direction is not distinctively confirmed.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/anthracnose-trees-and-shrubs",
+                  "quote": "Infected leaves are often distorted, cupped or curled. Severe infection can result in leaf drop in spring."
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/anthracnose",
+                  "quote": "Young leaves become cupped or distorted with necrotic lesions, and large lesions often follow leaf veins or are delimited by leaf veins."
+                }
+              ]
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5531861",
+            "bugwood::5531862",
+            "bugwood::5531863",
+            "bugwood::5531864",
+            "bugwood::5531865",
+            "bugwood::5531866",
+            "bugwood::5531867",
+            "bugwood::5531868",
+            "bugwood::5531869",
+            "bugwood::5531870"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              11
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 11,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 7,
+              "n_provisional": 2,
+              "n_contradictory": 2,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 9,
+              "n_added": 9,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 0,
+            "contradictory_count": 1,
+            "duplicates_count": 0,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "necrotic spots with a purple/black border and tan or white center",
+                "image_shows": "A lesion shows a concentric target-spot pattern with alternating light and dark rings.",
+                "image_quote": "A lesion with a concentric pattern showing a target spot with alternating light and dark rings.",
+                "image_id": "bugwood::5531861",
+                "verification_status": "contradictory",
+                "reasoning": "Published descriptions of oak anthracnose/Cryptocline lesions are irregular vein-delimited necrotic blotches with a single dark border and tan center, not concentric alternating light/dark target rings, which are instead a hallmark of unrelated target-spot pathogens.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://extension.okstate.edu/fact-sheets/anthracnose-and-other-common-leaf-diseases-of-deciduous-shade-trees",
+                    "quote": "Anthracnose causes irregular dead areas on leaf margins, between and across and/or along veins; large lesions often follow leaf veins or are delimited by leaf veins."
+                  },
+                  {
+                    "url": "https://content.ces.ncsu.edu/anthracnose",
+                    "quote": "Young leaves become cupped or distorted with necrotic lesions, and large lesions often follow leaf veins or are delimited by leaf veins."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "source_crops": [
+        "Northern Red Oak"
+      ]
+    },
+    {
+      "disease_name": "Drippy Blight",
+      "pathogen_scientific_name": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "type_of_disease": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "affected_parts": {
+        "value": null,
+        "url": null,
+        "quote": null
+      },
+      "visual_symptoms": {
+        "summary": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "diagnostic_features": {
+          "value": null,
+          "url": null,
+          "quote": null
+        },
+        "look_alikes": {
+          "value": null,
+          "url": null,
+          "quote": null
+        }
+      },
+      "confidence": "low",
+      "num_sources": 0,
+      "conflicts": [],
+      "regional_observations": {
+        "Colorado": {
+          "state": "Colorado",
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "Dead-tissue (necrotic) patterns are present on the foliage.",
+              "image_quote": "Dead-tissue patterns (brown, black, bleached) are visible on the leaves.",
+              "image_id": "bugwood::5567671",
+              "verification_status": "weakly_supported",
+              "reasoning": "Leaf necrosis is indirectly consistent with the documented leaf scorch and blighted foliage of drippy blight, though the exact patterning is not diagnostic.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.fs.fed.us/rmrs/science-spotlights/drippy-blight-new-disease-complex-red-oak",
+                  "quote": "Main symptoms on infected oaks are leaf scorch and premature leaf drop that is followed by dieback of small twigs and the development of branch cankers."
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-12-18-2248-RE",
+                  "quote": "Disease symptoms such as fallen branches and blighted leaves are still present."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Leaves appear curled.",
+              "image_quote": "The leaves show curling up towards the moth.",
+              "image_id": "bugwood::5567671",
+              "verification_status": "provisional",
+              "reasoning": "Published drippy blight descriptions emphasize leaf scorch and premature leaf drop rather than leaf curling, so this image-specific observation has no external corroboration but is not directly contradicted.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Leaf veins appear clear and translucent.",
+              "image_quote": "The leaf veins are translucent and pale.",
+              "image_id": "bugwood::5567671",
+              "verification_status": "provisional",
+              "reasoning": "Translucent veins are not among the documented drippy blight symptoms (ooze, cankers, scorch), so the observation is unsupported but not contradicted by extension literature.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf is spade-shaped with a broad base tapering to a point.",
+              "image_quote": "The leaf has a broad base tapering to a point.",
+              "image_id": "bugwood::5567671",
+              "verification_status": "provisional",
+              "reasoning": "This describes generic leaf morphology rather than any drippy blight sign, so no disease factsheet corroborates or contradicts it.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "No chlorosis is evident in the imaged tissue.",
+              "image_quote": "There are no visible signs of leaf blight.",
+              "image_id": "bugwood::5567671",
+              "verification_status": "novel_plausible",
+              "reasoning": "A negative chlorosis observation is coherent with the disease's foliar symptom being necrotic scorch rather than chlorosis, but no source corroborates this specific image so it is flagged for curator review.",
+              "swarm_support": 1,
+              "web_support": []
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "A raised lesion suggests localized severity.",
+              "image_quote": "The lesion appears raised.",
+              "image_id": "bugwood::5567671",
+              "verification_status": "novel_plausible",
+              "reasoning": "A raised lesion is loosely coherent with drippy blight's canker/scale-associated swellings, but no published photo description confirms this observation, so it is flagged as novel.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5567671",
+            "bugwood::5567672",
+            "bugwood::5567673",
+            "bugwood::5567674",
+            "bugwood::5567675",
+            "bugwood::5567676",
+            "bugwood::5567677",
+            "bugwood::5567678",
+            "bugwood::5567679",
+            "bugwood::5567680",
+            "bugwood::5567681",
+            "bugwood::5567682",
+            "bugwood::5567683",
+            "bugwood::5567684",
+            "bugwood::5567685",
+            "bugwood::5567686",
+            "bugwood::5567687",
+            "bugwood::5567689",
+            "bugwood::5567690",
+            "bugwood::5567695",
+            "bugwood::5567696",
+            "bugwood::5567697",
+            "bugwood::5567698",
+            "bugwood::5567699"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              10
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 10,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 1,
+              "n_provisional": 5,
+              "n_contradictory": 4,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 6,
+              "n_added": 6,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": true,
+            "failure_reason": "claude_query returned None (auth / timeout / empty)",
+            "preserved_count": 5
+          }
+        }
+      },
+      "source_crops": [
+        "Northern Red Oak"
+      ]
+    }
+  ],
   "crop": "Oak",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 2,
+  "merged_from": [
+    "Northern Red Oak"
+  ],
+  "merge_date": "2026-07-10"
 }

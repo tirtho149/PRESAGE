@@ -48,7 +48,7 @@
           "Remove lower branches gradually as the trees mature; never remove more than 1/3 of the canopy at a time.",
           "When planting white pine trees, space plants to promote good air movement around the trees. Redirect lawn sprinklers or irrigation systems to avoid wetting pine needles.",
           "Don't plant eastern white pine and currants or gooseberry together in the landscape unless resistant cultivars are used. Avoid planting white pine in low lying areas or cold pockets.",
-          "Plant resistant varieties â€” 'Paton's Silver Splendor' eastern white pine and resistant gooseberry and currant cultivars are available.",
+          "Plant resistant varieties \u00e2\u20ac\u201d 'Paton's Silver Splendor' eastern white pine and resistant gooseberry and currant cultivars are available.",
           "Eradicating Ribes plants has not worked to eliminate the disease but may help slow the disease spread.",
           "Pruning off the lower branches can help if done before rust symptoms on the branches get within six inches of the trunk; pruned branches can be left since the pathogen cannot survive in dried out tissue.",
           "If symptoms develop within six inches of the trunk, removal of the tree is suggested to help reduce spread of disease."
@@ -66,7 +66,294 @@
           "alternative_source_url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=61",
           "note": "UMN Extension explicitly states whole trees are killed (Whole plant); Illinois Extension lists only foliar (needles) and stem (cankers on branches/trunk) symptoms without a separate whole-plant designation."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "cankers on the main trunk are oval or diamond-shaped, often with a dead branch in the center, oozing sticky clear-to-white sap",
+              "image_shows": "Water-soaked dark streaks extending from a lesion edge are visible through the thin translucent bark over a young pine canker.",
+              "image_quote": "There are dark streaks extending from the lesion edge.",
+              "image_id": "bugwood::5530479",
+              "verification_status": "weakly_supported",
+              "reasoning": "Discoloration and sap-associated streaking at canker margins on thin young bark is indirectly corroborated by extension descriptions of oozing margins and orange discoloration through smooth bark, but the specific dark-streak morphology is not explicitly documented.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/pine-white-white-pine-blister-rust",
+                  "quote": "Clear to amber sap-like material oozes from the margins of cankers in spring, followed by the appearance of small cream-colored to yellow-orange pustules in cracks on the cankered areas."
+                },
+                {
+                  "url": "https://forestpathology.org/rusts/white-pine-blister-rust/",
+                  "quote": "Infections are characterized by diamond-shaped, orange-colored cankers, evident on young stem and branch tissue with thin, smooth bark."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "white-to-yellow blisters releasing powdery orange spores and gummy orange spore droplets",
+              "image_shows": "No visible signs of sporulation (blisters or orange spore masses) are present in this forest-scene photograph.",
+              "image_quote": "The image shows a forest scene with trees and foliage, but there are no visible signs of sporulation.",
+              "image_id": "bugwood::5530479",
+              "verification_status": "field_observation",
+              "reasoning": "This is an absence observation about a single forest-scene photograph rather than a positive visual claim external sources can corroborate; it is plausible and not contradicted by canonical, since blisters/aeciospores appear only seasonally on cankers and would not be visible in a general forest view.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5530479",
+            "bugwood::5530480",
+            "bugwood::5530481",
+            "bugwood::5530482"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              5
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 5,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 1,
+              "n_provisional": 1,
+              "n_contradictory": 1,
+              "n_duplicates_existing": 2
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 2,
+              "n_added": 2,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "Wisconsin": {
+          "state": "Wisconsin",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "branches develop swollen cankers with discolored, cracked bark that ooze sticky sap and form white-to-yellow blisters releasing orange spores",
+              "image_shows": "In this Wisconsin nursery scene, the trays of young plants show no galls, blisters, scabs, ooze, or fruiting bodies on any stem surface.",
+              "image_quote": "The photo does not show any signs of galls, blisters, scabs, ooze, or fruiting bodies on the stem surface.",
+              "image_id": "bugwood::5056088",
+              "verification_status": "field_observation",
+              "reasoning": "A negative observation of asymptomatic nursery seedlings cannot be corroborated against factsheets that describe symptomatic tissue, but it is plausible and not contradicted.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "cankers on the main trunk are oval or diamond-shaped, often with a dead branch in the center, oozing sticky clear-to-white sap",
+              "image_shows": "In this Wisconsin image the stems show no vascular streaks, dark blotches, or water-soaked discoloration.",
+              "image_quote": "No visible stem discoloration patterns such as vascular streaks, dark blotches, or water-soaked streaks.",
+              "image_id": "bugwood::5056088",
+              "verification_status": "field_observation",
+              "reasoning": "The image records an absence of canker/discoloration features on young seedlings, which cannot be positively verified from published symptom photos but is coherent and uncontradicted.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "(not specified)",
+              "image_shows": "The Wisconsin image shows trays of young plants under controlled conditions with no visible disease symptoms that could be mistaken for a look-alike.",
+              "image_quote": "The image shows young plants in trays, with no visible stem structures or symptoms directly relevant to stem discoloration.",
+              "image_id": "bugwood::5056088",
+              "verification_status": "field_observation",
+              "reasoning": "No look-alike appearance is asserted and canonical specifies none, so there is nothing to corroborate; the null observation is plausible and uncontradicted.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The Wisconsin image depicts labeled seedlings in trays with no visible disease severity indicators such as yellowing needles, cankers, or rust spots.",
+              "image_quote": "The image shows young plants in trays, with no visible stem structures or symptoms directly relevant to stem discoloration.",
+              "image_id": "bugwood::5056088",
+              "verification_status": "field_observation",
+              "reasoning": "An absence-of-severity observation on asymptomatic nursery stock cannot be matched to published symptom galleries but is plausible and not contradicted.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5056088",
+            "bugwood::5056089",
+            "bugwood::5056090",
+            "bugwood::5302005"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              5
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 5,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 0,
+              "n_provisional": 4,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 4,
+              "n_added": 4,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 4,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "Minnesota": {
+          "state": "Minnesota",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "branches develop swollen cankers with discolored, cracked bark",
+              "image_shows": "Golden-brown gall-like swellings on the infected pine branches, though the adjacent stem section appears unremarkable.",
+              "image_quote": "The image shows golden-brown galls on the pine branches.",
+              "image_id": "bugwood::1593052",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources confirm WPBR-infected branches swell into spindle-shaped galls, supporting the gall morphology, though the 'golden-brown' color is unverified and the candidate is internally inconsistent about visible stem abnormalities.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/PMG/GARDEN/PLANTS/DISEASES/wtepinerust.html",
+                  "quote": "Infected branches swell into spindle-shaped galls."
+                },
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/pine-white-white-pine-blister-rust",
+                  "quote": "Cankers appear as rough textured, spindle-shaped swellings on branches, and as roughened, necrotic, sometimes diamond-shaped, and sometimes swollen areas on the main stem."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::1593052",
+            "bugwood::5061050",
+            "bugwood::5302009"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              4
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 4,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 1,
+              "n_provisional": 1,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 2
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 2,
+              "n_added": 2,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 1,
+            "duplicates_count": 0,
+            "dropped_contradictory": [
+              {
+                "field": "lesion_morphology",
+                "canonical_says": "cankers ... with discolored, cracked bark that ooze sticky sap",
+                "image_shows": "Water-soaked dark streaks extending from a lesion edge on the stem, a feature not documented for blister rust cankers.",
+                "image_quote": "Water-soaked dark streaking extending from a lesion.",
+                "image_id": "bugwood::1593052",
+                "verification_status": "contradictory",
+                "reasoning": "Published extension photo descriptions characterize blister rust cankers as dry, swollen, cracked, resinous bark; water-soaked dark streaking is a bacterial-disease hallmark not documented for this rust canker, contradicting the observation.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://extension.umn.edu/plant-diseases/white-pine-blister-rust",
+                    "quote": "The branch with dead needles will have a canker which is a swollen area with discolored and cracked bark."
+                  },
+                  {
+                    "url": "https://www.canr.msu.edu/news/white_pine_blister_rust_damage_showing_up",
+                    "quote": "As cankers age, the bark covering them becomes dark, rough, swollen (often with resinosis)."
+                  },
+                  {
+                    "url": "https://ipm.ucanr.edu/agriculture/floriculture-and-ornamental-nurseries/bacterial-leaf-spots-blights-cankers-and-rots/",
+                    "quote": "Bacterial cankers produce water-soaked lesions, while fungal cankers develop dry, cracked areas with characteristic resinous oozing."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "disease_name": "Needle Cast",
@@ -114,7 +401,103 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "The yellowing needles are one-year-old needles.",
+              "image_shows": "Small black fruiting bodies (hysterothecia) are visible on the needles, consistent with Canavirgella sporulation.",
+              "image_quote": "Black dots are visible on the needles.",
+              "image_id": "bugwood::5503567",
+              "verification_status": "verified",
+              "reasoning": "Extension factsheets confirm Canavirgella produces small black fruiting bodies (hysterothecia) on infected needles, directly corroborating the black dots observed.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://portal.ct.gov/CAES/Fact-Sheets/Plant-Pathology/Canavirgella-Needlecast-of-Pine-New-Needlecast-Disease-for-Connecticut",
+                  "quote": "Small black fruiting bodies can be seen on the infected needles... fruiting bodies (called hysterothecia) develop on adaxial surfaces of symptomatic portions of the needles throughout the winter and spring."
+                },
+                {
+                  "url": "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource000986_Rep2312.pdf",
+                  "quote": "This pathogen produces elongated black fruiting structures and causes similar symptoms as Mycosphaerella dearnessii."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "Yellowing, browning, and premature needle loss of white pines; the yellowing needles are one-year-old needles.",
+              "image_shows": "A yellow-orange/brown palette with secondary green (retained needle bases) and black (fruiting bodies) matches documented Canavirgella needle symptomatology.",
+              "image_quote": "Yellow-orange and brown dominate the affected needles, with some green and black spots.",
+              "image_id": "bugwood::5503567",
+              "verification_status": "weakly_supported",
+              "reasoning": "The green (retained needle bases) and black (fruiting bodies) secondary colors alongside dominant yellow-orange/brown are each individually consistent with documented symptoms, giving partial support to the palette.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://portal.ct.gov/CAES/Fact-Sheets/Plant-Pathology/Canavirgella-Needlecast-of-Pine-New-Needlecast-Disease-for-Connecticut",
+                  "quote": "The bases of the symptomatic needles usually remain green... tips of infected needles first appear yellowish-tan and develop a distinct reddish-brown color, and small black fruiting bodies can be seen on the infected needles."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5503567",
+            "bugwood::5503568",
+            "bugwood::5503569",
+            "bugwood::5503570",
+            "bugwood::5503571",
+            "bugwood::5503572",
+            "bugwood::5503573",
+            "bugwood::5503574",
+            "bugwood::5503575",
+            "bugwood::5503576",
+            "bugwood::5503577",
+            "bugwood::5503578",
+            "bugwood::5503579",
+            "bugwood::5503580",
+            "bugwood::5503581"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              6
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 6,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 2,
+              "n_provisional": 0,
+              "n_contradictory": 3,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 2,
+              "n_added": 2,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     },
     {
       "disease_name": "Caliciopsis Canker",
@@ -152,7 +535,456 @@
       },
       "confidence": "low",
       "num_sources": 0,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Georgia": {
+          "state": "Georgia",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "In Georgia white pine, the outer stem bears dark, rough sunken patches consistent with Caliciopsis cankers.",
+              "image_quote": "The image displays dark, rough patches on the outer stem surface, resembling cankers.",
+              "image_id": "bugwood::5458129",
+              "verification_status": "verified",
+              "reasoning": "Blackened, rough, sunken canker bark is a documented hallmark of Caliciopsis canker, matching the observed dark rough patches.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource000999_Rep1148.pdf",
+                  "quote": "older cankers tend to be surrounded by blackened, rough, and sunken bark"
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-08-25-0204-DG",
+                  "quote": "sunken resinous cankers, and bark cracking"
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "Numerous small black dots on the stem correspond to Caliciopsis fruiting bodies, not galls.",
+              "image_quote": "The stem surface has numerous small black dots which appear to be galls.",
+              "image_id": "bugwood::5458129",
+              "verification_status": "verified",
+              "reasoning": "The small black dots match the black pycnidia/perithecia diagnostic of Caliciopsis, though the candidate's 'gall' interpretation is incorrect.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dieback-of-eastern-white-pine",
+                  "quote": "reddish brown depressions in the bark that have small, globose, clustered, black pycnidia and stalked perithecia that arise from a stromatic cushion"
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "Black, round pycnidia-like fruiting structures are visible on the Georgia white pine stem.",
+              "image_quote": "The stem surface has numerous small black dots.",
+              "image_id": "bugwood::5458129",
+              "verification_status": "verified",
+              "reasoning": "Black globose pycnidia and stalked ascomata erupting from the bark are the definitive sporulation structures of Caliciopsis pinea.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dieback-of-eastern-white-pine",
+                  "quote": "small, globose, clustered, black pycnidia and stalked perithecia that arise from a stromatic cushion"
+                },
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7532227/",
+                  "quote": "stromata develop black short-stalked columnar ascomata"
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "Small, dark, round structures stud the bark surface, consistent with Caliciopsis ascomata/pycnidia.",
+              "image_quote": "The stem surface has numerous small, dark, round structures.",
+              "image_id": "bugwood::5458129",
+              "verification_status": "weakly_supported",
+              "reasoning": "The dark round bark structures are consistent with Caliciopsis fruiting bodies, but the observation only restates color/shape without added diagnostic specificity.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dieback-of-eastern-white-pine",
+                  "quote": "small, globose, clustered, black pycnidia and stalked perithecia"
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "Dark, irregularly shaped spots on the stem are consistent with cankers/fruiting bodies rather than galls or blisters.",
+              "image_quote": "The affected tissue shows dark, irregularly shaped spots on the stem.",
+              "image_id": "bugwood::5458129",
+              "verification_status": "weakly_supported",
+              "reasoning": "Dark irregular bark spots are consistent with Caliciopsis cankers, but the candidate's alternative gall/blister framing is unsupported so support is only partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource000999_Rep1148.pdf",
+                  "quote": "older cankers tend to be surrounded by blackened, rough, and sunken bark"
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5458129",
+            "bugwood::5458130",
+            "bugwood::5458506",
+            "bugwood::5458507",
+            "bugwood::5458525"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              6
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 6,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 5,
+              "n_provisional": 1,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 6,
+              "n_added": 6,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 1,
+            "duplicates_count": 0,
+            "dropped_contradictory": [
+              {
+                "field": "severity",
+                "canonical_says": "(not specified)",
+                "image_shows": "The disease appears to affect a high fraction of the visible stem in this Georgia specimen.",
+                "image_quote": "The stem surface has numerous small black dots which appear to be galls.",
+                "image_id": "bugwood::5458129",
+                "verification_status": "contradictory",
+                "reasoning": "The severity claim rests entirely on interpreting the numerous small black dots as galls, but published extension descriptions identify these structures as Caliciopsis fruiting bodies (pycnidia/perithecia/'eyelashes') and reserve 'galls' for the unrelated pine gall rust, so the visual basis is contradicted.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource000999_Rep1148.pdf",
+                    "quote": "Signs of Caliciopsis include small, curved, black-colored stalks or spines that represent spore-bearing structures, often referred to as 'eyelashes'; cankers are reddish brown depressions in the bark with small, globose, clustered, black pycnidia and stalked perithecia arising from a stromatic cushion."
+                  },
+                  {
+                    "url": "https://www.mdpi.com/1999-4907/6/11/4360",
+                    "quote": "The small black structures on Caliciopsis cankers are stalked fruiting bodies (ascocarps/pycnidia and perithecia), not galls; spindle-shaped stem galls are instead a symptom of pine gall rust, a different disease."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "Michigan": {
+          "state": "Michigan",
+          "deltas": [
+            {
+              "field": "affected_organs",
+              "canonical_says": "(not specified)",
+              "image_shows": "The photo depicts a pine tree with significant discoloration and browning of needles.",
+              "image_quote": "The photo shows a high fraction of the tree's foliage affected by browning.",
+              "image_id": "bugwood::5569136",
+              "verification_status": "weakly_supported",
+              "reasoning": "Foliar browning and crown thinning are documented indirect symptoms of the Caliciopsis decline complex, but whole-tree browning is not the diagnostic sign (stem resin cankers are), so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dieback-of-eastern-white-pine",
+                  "quote": "White pines in decline exhibit yellowing/browning needles, premature needle shedding, thinning canopies, resinosis and branch dieback, with Caliciopsis canker an important component of the decline complex."
+                },
+                {
+                  "url": "https://forestrynews.blogs.govdelivery.com/2021/01/05/how-to-look-for-white-pine-bast-scale-and-caliciopsis-canker/",
+                  "quote": "Symptoms include flagging (dead, brown twig tips) and branch mortality, usually beginning on lower branches."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image shows a high fraction of the tree's foliage affected by browning.",
+              "image_quote": "The image shows a mix of orange and brown colors, suggesting disease.",
+              "image_id": "bugwood::5569136",
+              "verification_status": "weakly_supported",
+              "reasoning": "Orange coloration is characteristic of white pine blister rust, a documented Caliciopsis look-alike, so the observed orange/brown palette usefully flags a look-alike distinction.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/white_pine_blister_rust.htm",
+                  "quote": "In spring, white-to-yellow blisters release powdery orange spores and affected needles first turn yellow, then rusty red \u2014 features of white pine blister rust."
+                },
+                {
+                  "url": "https://forestrynews.blogs.govdelivery.com/2021/01/05/how-to-look-for-white-pine-bast-scale-and-caliciopsis-canker/",
+                  "quote": "Caliciopsis canker symptoms can be mistaken for white pine blister rust; confirmation requires the eyelash-like fruiting structures over cankers."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image shows a high fraction of the tree's foliage affected.",
+              "image_quote": "The image shows a mix of orange and brown colors, indicating disease presence.",
+              "image_id": "bugwood::5569136",
+              "verification_status": "weakly_supported",
+              "reasoning": "Crown thinning and branch flagging correlate with Caliciopsis severity, but the literature scores severity by stem resin streaks and cankers rather than foliage-browning fraction, so support is indirect.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.mdpi.com/1999-4907/6/11/4360",
+                  "quote": "External symptoms of Caliciopsis canker include crown thinning, cankers and profuse pitching, with severity greater on nutrient-poor, excessively drained soils."
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-08-25-0204-DG",
+                  "quote": "Symptoms include lower branch flagging, sunken resinous cankers and bark cracking, with severity influenced by environmental stressors such as drought and stand density."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "affected_organs",
+              "canonical_says": "(not specified)",
+              "image_shows": "The crown / collar appears healthy with no visible rot, girdling, or sunken cankers.",
+              "image_quote": "No symptoms of rot, girdling, or sunken cankers are observed.",
+              "image_id": "bugwood::5569136",
+              "verification_status": "field_observation",
+              "reasoning": "This is a negative observation about the specific photo's crown/collar; published factsheets describe Caliciopsis canker as producing sunken resinous cankers and resinosis, so an 'absence of cankers' note is neither corroborated nor directly contradicted by external visual descriptions and cannot be externally verified.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5569136",
+            "bugwood::5582472",
+            "bugwood::5582473",
+            "bugwood::5582474"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              4
+            ],
+            "detected_organ_per_pass": [
+              "crown"
+            ],
+            "n_active_agents_per_pass": [
+              5
+            ],
+            "n_after_agreement": 4,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 3,
+              "n_provisional": 1,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 4,
+              "n_added": 4,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "Virginia": {
+          "state": "Virginia",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion appears raised and sunken.",
+              "image_quote": "The lesion appears to be raised and sunken.",
+              "image_id": "bugwood::5370024",
+              "verification_status": "weakly_supported",
+              "reasoning": "Caliciopsis cankers are documented as depressed/sunken and surrounded by rough, cracked (raised) bark, so the raised-and-sunken description is partially corroborated.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dieback-of-eastern-white-pine",
+                  "quote": "Branch and trunk cankers can appear smooth, depressed and reddish-brown in color. When they occur below the branch whorls, the bark may be especially rough and cracked."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image shows a mix of reddish-brown and white colors.",
+              "image_quote": "The affected area shows a mix of reddish-brown and white colors.",
+              "image_id": "bugwood::5370024",
+              "verification_status": "weakly_supported",
+              "reasoning": "Reddish-brown canker color and whitish streaming resin are both documented Caliciopsis signs, consistent with the observed reddish-brown/white mix.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dieback-of-eastern-white-pine",
+                  "quote": "Branch and trunk cankers can appear smooth, depressed and reddish-brown in color."
+                },
+                {
+                  "url": "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource000999_Rep1148.pdf",
+                  "quote": "The most conspicuous symptom of infection is streaming resin (resinosis) on the trunk and branches."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue has a predominant rusty brown color with some whitish patches.",
+              "image_quote": "The photo shows a branch with lesions indicating disease.",
+              "image_id": "bugwood::5370024",
+              "verification_status": "weakly_supported",
+              "reasoning": "Rusty-brown canker tissue with whitish resin patches matches the documented reddish-brown cankers plus whitish resinosis of Caliciopsis canker.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dieback-of-eastern-white-pine",
+                  "quote": "Branch and trunk cankers can appear smooth, depressed and reddish-brown in color."
+                },
+                {
+                  "url": "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource000999_Rep1148.pdf",
+                  "quote": "The most conspicuous symptom of infection is streaming resin (resinosis) on the trunk and branches."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "type_of_disease",
+              "canonical_says": "(not specified)",
+              "image_shows": "No specific color patterns related to vascular streaking, dark blotches, or water-soaked streaks were identified.",
+              "image_quote": "The affected area shows a mix of reddish-brown and white colors.",
+              "image_id": "bugwood::5370024",
+              "verification_status": "weakly_supported",
+              "reasoning": "Reddish-brown canker tissue plus whitish resin/pitching is corroborated, and the disease indeed presents as cankers/resin rather than vascular streaking or water-soaked streaks, so the negative color-pattern observation is consistent with published descriptions.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dieback-of-eastern-white-pine",
+                  "quote": "Caliciopsis pinea causes smooth, reddish-brown branch and trunk depressions (cankers), which exude resin."
+                },
+                {
+                  "url": "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource000999_Rep1148.pdf",
+                  "quote": "The most conspicuous symptom of infection is streaming resin (resinosis) on the trunk and branches."
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image shows a branch with a canker and some white lichen growth.",
+              "image_quote": "The affected area shows a mix of reddish-brown and white colors.",
+              "image_id": "bugwood::5370024",
+              "verification_status": "weakly_supported",
+              "reasoning": "A canker on a branch is a well-documented visual feature of the disease; the whitish material is consistent with published resin/pitching, though its interpretation as lichen specifically is not externally corroborated, warranting weak rather than full support.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dieback-of-eastern-white-pine",
+                  "quote": "Caliciopsis pinea causes smooth, reddish-brown branch and trunk depressions (cankers), which exude resin."
+                },
+                {
+                  "url": "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource000999_Rep1148.pdf",
+                  "quote": "Profuse pitching is indicative of recent infections and is relatively common in pole size trees with smooth bark."
+                }
+              ]
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5370024",
+            "bugwood::5370026",
+            "bugwood::5370027"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              6
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 6,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 3,
+              "n_provisional": 2,
+              "n_contradictory": 1,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 5,
+              "n_added": 5,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 2,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Stem Rot",
@@ -190,9 +1022,151 @@
       },
       "confidence": "low",
       "num_sources": 0,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "Numerous small, raised and sunken cankers are present on the outer stem of the white pine.",
+              "image_quote": "The outer surface of the stem shows multiple small, raised, and sunken lesions.",
+              "image_id": "bugwood::5528869",
+              "verification_status": "verified",
+              "reasoning": "Multiple bark cankers on the white pine stem are the defining sign of Caliciopsis canker, an emerging stem disease of Pinus strobus in New England/Maine.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.psu.edu/eastern-white-pine-modern-disease-threats-to-a-historically-important-species/",
+                  "quote": "Caliciopsis pinea causes smooth, reddish-brown branch and trunk depressions (cankers), which exude resin."
+                },
+                {
+                  "url": "https://doi.org/10.3390/f6114360",
+                  "quote": "the often multiple elongate, shallow bark cankers caused by the fungus"
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "affected_organs",
+              "canonical_says": "(not specified)",
+              "image_shows": "The stem bears reddish-brown bark with numerous small raised and sunken cankers.",
+              "image_quote": "The image displays a stem with reddish-brown bark and numerous small, raised, and sunken lesions.",
+              "image_id": "bugwood::5528869",
+              "verification_status": "verified",
+              "reasoning": "The reddish-brown bark bearing sunken cankers matches the documented reddish-brown, resin-exuding trunk cankers of Caliciopsis on white pine stems.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.psu.edu/eastern-white-pine-modern-disease-threats-to-a-historically-important-species/",
+                  "quote": "Caliciopsis pinea causes smooth, reddish-brown branch and trunk depressions (cankers), which exude resin."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "Numerous cankers over the stem surface indicate a heavy, advanced infection.",
+              "image_quote": "There are numerous cankers present on the outer stem.",
+              "image_id": "bugwood::5528869",
+              "verification_status": "weakly_supported",
+              "reasoning": "Numerous coalescing stem cankers are consistent with the severe, multi-canker infections documented for Caliciopsis on white pine, though the count itself is a visual inference.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://doi.org/10.3390/f6114360",
+                  "quote": "these infestations result in excessive resin production, leading to serious growth declines and commercial defects in lumber"
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "The stem shows dark streaks running through the bark.",
+              "image_quote": "Dark streaks and streaking visible through the translucent bark.",
+              "image_id": "bugwood::5528869",
+              "verification_status": "weakly_supported",
+              "reasoning": "Dark/black streaking is a documented visual feature of white pine stem-decay conditions, but published sources place the streaks in the wood beneath the bark rather than through the bark itself, so support is only partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://hgic.clemson.edu/factsheet/pine-diseases/",
+                  "quote": "The disease may be recognized by the dead needles at branch or shoot tips, the deep red color of the bark, and the black streaks that occur in the wood."
+                },
+                {
+                  "url": "https://extension.psu.edu/eastern-white-pine-modern-disease-threats-to-a-historically-important-species/",
+                  "quote": "These pathogens are carried by bark beetles, and infect the vascular system of pines, causing blue streaks in the wood, which can usually be seen by peeling away the bark."
+                }
+              ]
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5528869",
+            "bugwood::5528870",
+            "bugwood::5528871",
+            "bugwood::5528872",
+            "bugwood::5528873",
+            "bugwood::5528874",
+            "bugwood::5528875",
+            "bugwood::5528876",
+            "bugwood::5528877",
+            "bugwood::5528878",
+            "bugwood::5528879",
+            "bugwood::5528880",
+            "bugwood::5528881",
+            "bugwood::5528882",
+            "bugwood::5528883"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              5
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 5,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 3,
+              "n_provisional": 1,
+              "n_contradictory": 1,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 4,
+              "n_added": 4,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     }
   ],
   "crop": "Eastern White Pine",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 8
 }

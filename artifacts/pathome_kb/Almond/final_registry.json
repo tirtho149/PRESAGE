@@ -91,7 +91,158 @@
           "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/brown-rot-of-stone-fruits",
           "note": "UMass lists three Monilinia species responsible for the greatest worldwide losses (M. fructicola, M. fructigena, M. laxa)."
         }
-      ]
+      ],
+      "regional_observations": {
+        "California": {
+          "state": "California",
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Shoots killed by brown rot turn mostly brown to tan (versus black for bacterial blast, which produces no visible spores).",
+              "image_shows": "Dead, shriveled flower buds show tan, dry blighted tissue with no galls, blisters, scabs, ooze, or fruiting bodies breaking through the bark.",
+              "image_quote": "The affected area displays shriveled, dry, and tan-colored tissue indicative of fungal blighting.",
+              "image_id": "bugwood::5610459",
+              "verification_status": "weakly_supported",
+              "reasoning": "Tan, dry blighted flower/spur tissue matches documented brown-rot blossom blight, and the absence of galls/scabs/blisters is consistent with a Monilinia (not bacterial or gall-forming) lesion.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/almond/brown-rot-blossom-blight/",
+                  "quote": "Young blossom spurs and associated leaves collapse to form shoot blight; shoots killed by brown rot turn mostly brown to tan, and cankers on blighted twigs have tan centers with dark margins."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Fruit infection first appears as small water-soaked lesions that rapidly expand to consume the entire fruit, and discolored decay spots develop on fruit and nuts.",
+              "image_shows": "Dark, water-soaked streaks extend from a lesion edge, visible through translucent bark.",
+              "image_quote": "There are dark, water-soaked streaks on the stem.",
+              "image_id": "bugwood::5610459",
+              "verification_status": "weakly_supported",
+              "reasoning": "Water-soaked lesion margins are a documented Monilinia sign, though the KB associates them mainly with fruit rather than stem bark, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "http://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/brownrot.html",
+                  "quote": "Infections begin as small light brown, water-soaked lesions that expand as the infection develops, and cankers on blighted twigs have tan centers with dark margins."
+                },
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3763083/",
+                  "quote": "Small water-soaked lesions on the fruits gradually develop to soft rot covered with gray conidia."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "Blossoms and the associated shoots wilt and die, and gum exudes at the base of infected flowers.",
+              "image_shows": "Flower buds are wilted and decaying with significant necrosis, dominated by tan and chocolate-brown coloration.",
+              "image_quote": "The affected tissue shows dominant colors of tan and chocolate-brown, indicating wilting and decay.",
+              "image_id": "bugwood::5610459",
+              "verification_status": "weakly_supported",
+              "reasoning": "Wilting and collapse of blossoms with brown-to-tan necrosis is the characteristic severity signature of brown rot blossom blight.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/almond/brown-rot-blossom-blight/",
+                  "quote": "Young blossom spurs and associated leaves collapse to form shoot blight; shoots killed by brown rot turn mostly brown to tan."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "Bacterial blast, blight, and canker caused by the Pseudomonas syringae bacterium; Citrus brown rot caused by Phytophthora species",
+              "image_shows": "No stem pith color, petiole attachment, or other differentiating structural features are resolvable in the image to separate brown rot from its look-alikes.",
+              "image_quote": "The photo shows a wilted blighted flower bud and leaves without clear stem pith, petiole, leg, or bract features.",
+              "image_id": "bugwood::5610459",
+              "verification_status": "field_observation",
+              "reasoning": "Coherent statement about image ambiguity rather than a positive symptom claim; published sources note the true brown-rot-vs-blast discriminators are spore masses and gumming (not pith/petiole/bract), so the observed absence of resolvable differentiating structures is plausible and uncontradicted but has no external corroboration, warranting curator review.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "novel_plausible"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5610459",
+            "bugwood::5610460",
+            "bugwood::5610461",
+            "bugwood::5610462",
+            "bugwood::5610463",
+            "bugwood::5610465",
+            "bugwood::5610466",
+            "bugwood::5610469",
+            "bugwood::5610470",
+            "bugwood::5610513",
+            "bugwood::5610514",
+            "bugwood::5610515",
+            "bugwood::5610516",
+            "bugwood::5610517",
+            "bugwood::5610518",
+            "bugwood::5610519",
+            "bugwood::5610520",
+            "bugwood::5610521",
+            "bugwood::5610522",
+            "bugwood::5610523",
+            "bugwood::5610524",
+            "bugwood::5610525",
+            "bugwood::5610526",
+            "bugwood::5610527",
+            "bugwood::5610528",
+            "bugwood::5610529",
+            "bugwood::5610530",
+            "bugwood::5610531",
+            "bugwood::5610532",
+            "bugwood::5610533",
+            "bugwood::5610534",
+            "bugwood::5610535",
+            "bugwood::5610536"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              7
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 7,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 3,
+              "n_provisional": 1,
+              "n_contradictory": 3,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 4,
+              "n_added": 4,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Stigmina Fungus",
@@ -129,9 +280,228 @@
       },
       "confidence": "low",
       "num_sources": 0,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "California": {
+          "state": "California",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesions are small and isolated, appearing as multiple holes along the margin.",
+              "image_quote": "The lesions are small holes along the leaf margin.",
+              "image_id": "bugwood::5606505",
+              "verification_status": "weakly_supported",
+              "reasoning": "The 'holes in the leaf' morphology is the defining feature of shot hole, though the literature describes scattered blade lesions rather than a specifically marginal distribution.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/almond/shot-hole/",
+                  "quote": "Spots on young leaves usually fall out, leaving a hole (the shot hole); older leaves retain their lesions."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The lesion centers are tan, while the margins are chocolate-brown.",
+              "image_quote": "The lesion areas show a tan center with a chocolate-brown margin.",
+              "image_id": "bugwood::5606505",
+              "verification_status": "verified",
+              "reasoning": "The tan center with a dark (purplish/brown) margin is the canonical shot hole lesion coloration reported by UC IPM.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/almond/shot-hole/",
+                  "quote": "Leaf lesions begin as tiny reddish specks that enlarge by several millimeters into spots having tan centers and purplish margins."
+                },
+                {
+                  "url": "https://www.thealmonddoctor.com/blog/shot-hole-fungus-on-almond",
+                  "quote": "Leaf infections are characterized by a lesion that is between 1/8\"-1/4\" (3-6 mm) in diameter, with a definitive yellow halo."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image displays necrotic tissue in discrete spots on the leaves.",
+              "image_quote": "There are multiple holes around the margins of the leaves.",
+              "image_id": "bugwood::5606505",
+              "verification_status": "verified",
+              "reasoning": "Discrete necrotic leaf spots that later drop out are the core symptom of shot hole disease and are well documented.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/almond/shot-hole/",
+                  "quote": "Leaf lesions... enlarge... into spots having tan centers and purplish margins... Spots on young leaves usually fall out, leaving a hole."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shape is lanceolate.",
+              "image_quote": "The leaf is narrow and elongated with pointed tips.",
+              "image_id": "bugwood::5606505",
+              "verification_status": "verified",
+              "reasoning": "Almond (Prunus dulcis) foliage is botanically lanceolate, so the host leaf geometry is externally corroborated (though it is host botany, not a disease sign).",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.gardenia.net/plant/prunus-dulcis",
+                  "quote": "The pale green leaves, up to 5 inches long, are simple, alternate, and lanceolate with serrated margins."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf has multiple holes along the margin, indicating significant damage.",
+              "image_quote": "The leaf has numerous holes along its margins.",
+              "image_id": "bugwood::5606505",
+              "verification_status": "weakly_supported",
+              "reasoning": "Numerous coalescing shot holes are consistent with the heavy, defoliating infections shot hole is known to cause in California almonds.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/almond/shot-hole/",
+                  "quote": "It is estimated that 80% of the California almond crop may be infested with shot hole disease, resulting in a potential yield loss of 50-75%."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaves show curling up along their margins.",
+              "image_quote": "The leaves are narrow and elongated with pointed tips.",
+              "image_id": "bugwood::5606505",
+              "verification_status": "field_observation",
+              "reasoning": "Extension descriptions of shot hole document discrete spots and shot holes but do not mention marginal leaf curling, so the observation is unsupported yet not directly contradicted.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf veins show various stages of damage, including clearings and necrosis.",
+              "image_quote": "Leaf veins display both translucent areas and darker, dead sections.",
+              "image_id": "bugwood::5606505",
+              "verification_status": "field_observation",
+              "reasoning": "Published photo descriptions characterize shot hole as discrete round spots rather than vein clearing or vein necrosis, so no evidence corroborates this vein-based observation.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5606505",
+            "bugwood::5606506",
+            "bugwood::5610500",
+            "bugwood::5610501",
+            "bugwood::5610502",
+            "bugwood::5610581",
+            "bugwood::5610587",
+            "bugwood::5610588",
+            "bugwood::5610589",
+            "bugwood::5610590",
+            "bugwood::5610591",
+            "bugwood::5610592",
+            "bugwood::5610593",
+            "bugwood::5610594",
+            "bugwood::5610595",
+            "bugwood::5610596",
+            "bugwood::5610597",
+            "bugwood::5610598",
+            "bugwood::5610599",
+            "bugwood::5610600",
+            "bugwood::5610601",
+            "bugwood::5610602",
+            "bugwood::5610603",
+            "bugwood::5610604",
+            "bugwood::5610605",
+            "bugwood::5610606",
+            "bugwood::5610607",
+            "bugwood::5610608",
+            "bugwood::5610609",
+            "bugwood::5610610",
+            "bugwood::5610611",
+            "bugwood::5610612",
+            "bugwood::5610613"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              11
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 11,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 5,
+              "n_provisional": 4,
+              "n_contradictory": 2,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 9,
+              "n_added": 9,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 2,
+            "contradictory_count": 1,
+            "duplicates_count": 0,
+            "dropped_contradictory": [
+              {
+                "field": "other",
+                "canonical_says": "(not specified)",
+                "image_shows": "Multiple small holes on the leaf margins indicate marginal chlorosis.",
+                "image_quote": "The holes are located on the leaf margin.",
+                "image_id": "bugwood::5606505",
+                "verification_status": "contradictory",
+                "reasoning": "Sources attribute the holes to excised necrotic lesion centers and the yellow/green halo (chlorosis) to a ring around each spot, so equating the holes themselves with marginal chlorosis misinterprets the described appearance.",
+                "swarm_support": 1,
+                "web_support": [
+                  {
+                    "url": "https://ipm.ucanr.edu/agriculture/almond/shot-hole/",
+                    "quote": "Leaf lesions begin as tiny reddish specks that enlarge by several millimeters into spots having tan centers and purplish margins... the lesion drops from the leaf, leaving a hole."
+                  },
+                  {
+                    "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/shothole.html",
+                    "quote": "spots on young leaves commonly having a narrow, light green or yellow margin... their centers turn brown and can drop out, leaving holes."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
     }
   ],
   "crop": "Almond",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 2
 }

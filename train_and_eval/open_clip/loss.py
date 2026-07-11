@@ -125,7 +125,30 @@ class ClipLoss(nn.Module):
         
         return logits_per_image, logits_per_text
 
-    def forward(self, image_features, text_features, logit_scale, output_dict=False):
+    def forward(
+            self,
+            image_features=None,
+            text_features=None,
+            logit_scale=None,
+            image_features_tax=None,
+            image_features_caption=None,
+            logit_scale_caption=None,
+            is_caption=False,
+            output_dict=False,
+            **kwargs,
+    ):
+        # Single-projector path (T08 "Fig3" ablation): the dual-projector
+        # model always emits image_features_tax / image_features_caption, but
+        # without --dual-projector create_loss() hands back a plain ClipLoss.
+        # Collapse to one image embedding so standard CLIP contrastive runs on
+        # a single projector. Prefer the taxonomic head (BioCLIP's native
+        # projection); the caption head is the fallback. Vanilla CLIP still
+        # passes image_features directly. **kwargs absorbs logit_bias* keys.
+        if image_features is None:
+            image_features = (
+                image_features_tax if image_features_tax is not None
+                else image_features_caption
+            )
         device = image_features.device
         logits_per_image, logits_per_text = self.get_logits(image_features, text_features, logit_scale)
 

@@ -70,16 +70,87 @@
       ],
       "regional_observations": {
         "Maine": {
-          "deltas": [],
-          "image_ids": [
-            "bugwood::5503591"
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Under a dissecting scope, individual pseudothecia and pycnidia are evident, with pycnidial necks releasing conidia and visible asci/ascospores.",
+              "image_shows": "Under microscopy the specimen displays elongated, oval-shaped structures resembling the conidia or ascospores of Scorias spongiosa.",
+              "image_quote": "The image shows fungal structures under a microscope, which aligns with the diagnostic features of Sooty Mold.",
+              "image_id": "bugwood::5503591",
+              "verification_status": "verified",
+              "reasoning": "The elongated oval structures match Scorias spongiosa's fusiform hyaline ascospores and pycnidial conidia described in mycological references and the Maine-specific extension record.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.facesoffungi.org/scorias/",
+                  "quote": "Ascospores are fusiform, hyaline, and 2-celled ... measuring 9-20 x 2.5-5.5 \u03bcm."
+                },
+                {
+                  "url": "https://mycoanatomical.com/beech-sooty-mold-scorias-spongiosa/",
+                  "quote": "Asexual conidia are extruded in a slimy matrix in liquid droplets from the pycnidia."
+                },
+                {
+                  "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/alder-sooty-mold/",
+                  "quote": "Alder - Sooty Mold (Scorias spongiosa), University of Maine Cooperative Extension plant disease image record."
+                }
+              ],
+              "__support__": 1
+            }
           ],
+          "__image_ids__": [
+            "bugwood::5503591",
+            "bugwood::5503592",
+            "bugwood::5503593",
+            "bugwood::5503594",
+            "bugwood::5503595",
+            "bugwood::5503596",
+            "bugwood::5503597",
+            "bugwood::5503618",
+            "bugwood::5503619",
+            "bugwood::5503620",
+            "bugwood::5503621"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "medium"
+            ],
+            "n_raw_per_pass": [
+              3
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 3,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 1,
+              "n_provisional": 1,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 2,
+              "n_added": 2,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
           "__verifier_meta__": {
             "failed": false,
             "verified_count": 0,
             "provisional_count": 0,
             "contradictory_count": 0,
-            "duplicates_count": 3,
+            "duplicates_count": 1,
             "dropped_contradictory": []
           }
         }

@@ -58,7 +58,268 @@
           "alternative_source_url": "https://yardandgarden.extension.iastate.edu/article/2006/3-22/swiss.html",
           "note": "Iowa State uses the older name 'Phaeocryptopus gaeumannii'; the Swiss Needle Cast Cooperative (Oregon State) uses the more recent name 'Nothophaeocryptopus gaeumannii'. No taxonomy (NCBI/MycoBank) validation was supplied in the input, so the more recent specialized-source name was selected as canonical but is not independently taxonomy-validated."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "other",
+              "canonical_says": "Infected needles turn yellow-green and brown; tiny black fruiting structures appear as black dots in two rows on the undersides of needles.",
+              "image_shows": "The affected tissue shows black fruiting structures against yellow-discolored needle surface.",
+              "image_quote": "The image shows black spots with a yellow halo.",
+              "image_id": "bugwood::5458844",
+              "verification_status": "weakly_supported",
+              "reasoning": "A black-fruiting-body-on-yellow-needle color palette matches SNC chlorosis plus pseudothecia, though the discrete 'yellow halo' framing is imprecise for this diffuse-discoloration disease.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://sncc.forestry.oregonstate.edu/snc-identification-and-images",
+                  "quote": "Infected needles usually turn off-color (light green to yellow to brown)... generally speckled yellow over the entire length."
+                },
+                {
+                  "url": "https://forestpathology.org/foliage/swiss-needle-cast/",
+                  "quote": "Black pseudothecia that are about 0.1 mm or a bit smaller form in stomata arranged in lines on the lower surface of infected leaves."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Tiny black fruiting structures (pseudothecia) develop in the stomatal cavities and physically block (occlude) needle stomates.",
+              "image_shows": "The black pseudothecia appear slightly raised above the needle surface.",
+              "image_quote": "The image shows numerous black dots that appear to rise above the surrounding leaf surface.",
+              "image_id": "bugwood::5458844",
+              "verification_status": "verified",
+              "reasoning": "Extension/pathology sources describe the spherical pseudothecia as swelling outward and erupting through the stomata, corroborating a slightly raised appearance above the needle surface.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://forestpathology.org/foliage/swiss-needle-cast/",
+                  "quote": "larger pseudothecia are spherical, and begin to swell outward from stomates"
+                },
+                {
+                  "url": "http://www.plantpath.cornell.edu/Trees/SwissNcst.html",
+                  "quote": "The fungus produces minute, spherical, black, fruiting bodies which erupt through stomata on the undersides of the infected needles."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "Infected needles ... turn yellow-green and brown ... producing sparse, chlorotic crowns.",
+              "image_shows": "No direct mention of chlorosis is present in this close-up view.",
+              "image_quote": "The leaf veins are not clearly visible, but the fungal fruiting structures do not appear to affect the leaf veins.",
+              "image_id": "bugwood::5458844",
+              "verification_status": "field_observation",
+              "reasoning": "A vacuous negative observation about veins in a close-up; Douglas-fir needles lack prominent veins and no external source addresses this, so it is plausible and not contradicted but unsupported.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5458844",
+            "bugwood::5458845",
+            "bugwood::5458846",
+            "bugwood::5458847",
+            "bugwood::5458848",
+            "bugwood::5458849",
+            "bugwood::5458850",
+            "bugwood::5458851",
+            "bugwood::5458852",
+            "bugwood::5458853",
+            "bugwood::5458854"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              9
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 9,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 1,
+              "n_provisional": 3,
+              "n_contradictory": 2,
+              "n_duplicates_existing": 3
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 4,
+              "n_added": 4,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "Idaho": {
+          "state": "Idaho",
+          "deltas": [
+            {
+              "field": "affected_organs",
+              "canonical_says": "Infected needles (most visible on inner portions of lower branches) turn yellow-green and brown and then fall off",
+              "image_shows": "The Douglas-fir stem shows no galls, blisters, scabs, exudates, or fruiting bodies emerging through the epidermis, consistent with a strictly foliar disease.",
+              "image_quote": "No visible signs such as galls, blisters, scabs, exudates, or fruiting bodies emerge through the epidermis.",
+              "image_id": "bugwood::1643566",
+              "verification_status": "weakly_supported",
+              "reasoning": "External evidence confirms SNC is strictly foliar/endophytic with no stem involvement, so the absence of stem abnormalities is expected and corroborated.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://en.wikipedia.org/wiki/Nothophaeocryptopus_gaeumannii",
+                  "quote": "Nothophaeocryptopus gaeumannii occurs as an endophyte inside the needles of Douglas-fir; it remains within needle tissue and only impairs function when pseudothecia plug the needle stomates."
+                },
+                {
+                  "url": "https://sncc.forestry.oregonstate.edu/swiss-needle-cast-summary",
+                  "quote": "Swiss needle cast is a foliar disease of Douglas-fir that results in premature foliage loss and reduced growth."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "affected_organs",
+              "canonical_says": "tiny black fruiting structures ... appear as black dots in two rows on the undersides of ... needles",
+              "image_shows": "The stem shows no vascular streaking, dark blotches, or water-soaked streaks, consistent with SNC being confined to needles.",
+              "image_quote": "The stem surface appears uniform without any noticeable color patterns.",
+              "image_id": "bugwood::1643566",
+              "verification_status": "weakly_supported",
+              "reasoning": "SNC does not cause stem discoloration because the pathogen is confined to needle tissue, so the clean stem is consistent with the diagnosis.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://en.wikipedia.org/wiki/Nothophaeocryptopus_gaeumannii",
+                  "quote": "The fungus is a needle endophyte and does not colonize or discolor the stem; disease manifests only in the foliage."
+                },
+                {
+                  "url": "https://sncc.forestry.oregonstate.edu/swiss-needle-cast-summary",
+                  "quote": "Swiss needle cast is a foliar disease of Douglas-fir; symptoms appear on needles, not stems."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Tiny black fruiting structures (pseudothecia) ... appear as black dots in two rows on the undersides ... visible with a hand lens",
+              "image_shows": "No macroscopic pathogen signs (mycelium, spore masses, pycnidia, fruiting bodies) are visible, consistent with SNC pseudothecia being detectable only under magnification.",
+              "image_quote": "No visible pathogen signs such as mycelium, spore masses, pycnidia, fruiting bodies, sclerotia, bacterial ooze, or rust pustules are present in the image.",
+              "image_id": "bugwood::1643566",
+              "verification_status": "weakly_supported",
+              "reasoning": "SNC fruiting bodies are pinpoint pseudothecia visible only with a hand lens, so their absence in a field photograph is expected rather than contradictory.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pnwhandbooks.org/node/2686/print",
+                  "quote": "Diagnostic signs are rows of black pseudothecia (pinpoint-size fruiting structures) on the lower needle surface; a hand lens is helpful, and they may appear as lines of soot to the unaided eye."
+                },
+                {
+                  "url": "https://sncc.forestry.oregonstate.edu/snc-identification-and-images",
+                  "quote": "Proper identification of Nothophaeocryptopus gaeumannii generally requires 10x or higher magnification with a hand lens."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::1643566"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              6
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 6,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 3,
+              "n_provisional": 0,
+              "n_contradictory": 1,
+              "n_duplicates_existing": 2
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 3,
+              "n_added": 3,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        },
+        "Wisconsin": {
+          "state": "Wisconsin",
+          "deltas": [],
+          "__image_ids__": [
+            "bugwood::1406194"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              6
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 6,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 0,
+              "n_provisional": 0,
+              "n_contradictory": 3,
+              "n_duplicates_existing": 3
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 0,
+              "n_added": 0,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     },
     {
       "disease_name": "Rhabdocline Needlecasts",
@@ -109,7 +370,7 @@
           "Space trees properly and prune the lowest canopy branches to promote air flow and good air circulation",
           "Remove weeds around the base of trees, thin canopy, and avoid establishing ground cover plantings to reduce humidity and lingering moisture",
           "Avoid using east-side and Rocky Mountain seed sources; in disease-prone or marginal sites use seed sources with partial resistance (among the most resistant: Shuswap and Pillar Lake)",
-          "Apply fungicides with thorough coverage of all needles; make first application when new growth is 1 to 2 inches long (or once 50% of buds have broken and new growth reaches 0.5 inch) and an additional application 3 weeks later â€” three applications are usually required for good control",
+          "Apply fungicides with thorough coverage of all needles; make first application when new growth is 1 to 2 inches long (or once 50% of buds have broken and new growth reaches 0.5 inch) and an additional application 3 weeks later \u00e2\u20ac\u201d three applications are usually required for good control",
           "Fungicides include: chlorothalonil, copper-based products (copper hydroxide, copper sulfate, copper salts of fatty and/or rosin acids), mancozeb-based products, thiophanate-methyl, azoxystrobin (Heritage/Quadris), and thiophanate-methyl + chlorothalonil mixtures (Spectro 90 WDG), Tourney EZ"
         ],
         "url": "https://ag.umass.edu/landscape/fact-sheets/rhabdocline-needle-cast",
@@ -117,9 +378,323 @@
       },
       "confidence": "high",
       "num_sources": 3,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Idaho": {
+          "state": "Idaho",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "spots enlarge and darken over winter, and by spring coalesce into characteristic dark reddish-brown blotches",
+              "image_shows": "The needles show spots with a smooth (non-swollen) surface texture rather than the raised, split lesions of mature apothecia.",
+              "image_quote": "The lesions appear as smooth, dark reddish-brown patches on the needles.",
+              "image_id": "bugwood::1643562",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources confirm the dark reddish-brown lesion color, and the described smooth non-swollen surface is consistent with a pre-apothecial stage before the blotches 'later swell and split open.'",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.psu.edu/the-douglas-fir-needlecast-blues",
+                  "quote": "The chlorotic spots gradually turn reddish-brown and enlarge, and depending upon the extent of the infection, they can range in size from small, 1- to 2 mm areas, to large brown areas that encompass an entire needle."
+                },
+                {
+                  "url": "https://www.fs.usda.gov/foresthealth/docs/fidls/FIDL-190-RhabdoclineNeedleCast.pdf",
+                  "quote": "Spots become larger and darker during winter, and by spring, many spots coalesce and become deep red-brown with a mottled appearance; the blotches on the underside of the needles later swell and split open to reveal orange-brown fungal structures."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "spots enlarge and darken over winter, and by spring coalesce into characteristic dark reddish-brown blotches",
+              "image_shows": "The overall needle color palette shows small scattered brown spots against a slightly faded (dulled) green background.",
+              "image_quote": "The needles show small, scattered brown spots.",
+              "image_id": "bugwood::1643562",
+              "verification_status": "weakly_supported",
+              "reasoning": "The small scattered brown spots on a dulled green background match the documented early-stage mottled spotting before spots coalesce into full blotches.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.psu.edu/the-douglas-fir-needlecast-blues",
+                  "quote": "Symptoms show up in late summer or fall as yellow or reddish-brown spots on the upper and lower surfaces of the current season's growth. Needles can have one to several spots."
+                },
+                {
+                  "url": "https://www.fs.usda.gov/foresthealth/docs/fidls/FIDL-190-RhabdoclineNeedleCast.pdf",
+                  "quote": "The first evidence of the disease appears as minute yellow spots on upper and lower surfaces of current-year needles that become larger and darker, giving a mottled green, yellow, and brown appearance."
+                }
+              ]
+            },
+            {
+              "field": "affected_organs",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected needles are long, thin, and flat with a linear/lanceolate form typical of Douglas-fir foliage.",
+              "image_quote": "The needles are lanceolate.",
+              "image_id": "bugwood::1643562",
+              "verification_status": "verified",
+              "reasoning": "Extension sources confirm Douglas-fir needles are flat and linear, matching the described foliage morphology of the affected organ.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://blog.irontreeservice.com/tree-diseases-rhabdocline-needle-cast-rhabdocline-pseudotsugae-and-rhabdocline-weirii/",
+                  "quote": "Douglas-fir needles are characteristically flat and linear in shape, which are typical characteristics of fir needles."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The needles show only possible slight distortion, with no clear curling, cupping, or thickening evident.",
+              "image_quote": "No clear evidence of curling, cupping, puckering, blistering, or thickening can be discerned from the image.",
+              "image_id": "bugwood::1643562",
+              "verification_status": "field_observation",
+              "reasoning": "Rhabdocline symptoms described by extension sources are spots and reddish-brown blotches with no mention of curling, cupping, or thickening, so the observed absence of distortion is coherent but lacks direct external corroboration.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "novel_plausible"
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Fruiting bodies (apothecia) appear on each side of the midrib on the needle's lower surface; the needle's epidermis lifts up as a patch and splits open",
+              "image_shows": "No vein clearing or vein necrosis is visible on the needles.",
+              "image_quote": "The image shows green conifer needles without any visible damage to the veins.",
+              "image_id": "bugwood::1643562",
+              "verification_status": "field_observation",
+              "reasoning": "Published descriptions of Rhabdocline involve spots, blotches, and midrib apothecia rather than vein clearing or vein necrosis, so the noted absence of vein damage is coherent with canonical but has no direct external support.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "novel_plausible"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::1643562"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              10
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 10,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 0,
+              "n_provisional": 5,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 5
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 5,
+              "n_added": 5,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 2,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "spots enlarge and darken over winter, and by spring coalesce into characteristic dark reddish-brown (deep red-brown, mottled) blotches",
+              "image_shows": "On these Maine needles the lesions are clearly elongated and narrow along the length of the needle rather than tiny rounded spots.",
+              "image_quote": "The lesions are elongated and narrow.",
+              "image_id": "bugwood::5507099",
+              "verification_status": "verified",
+              "reasoning": "Extension sources describe elongated/banded swellings running lengthwise along the needle, directly corroborating an elongated-narrow lesion appearance.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "http://www.plantpath.cornell.edu/Trees/RhabdoN.html",
+                  "quote": "Elongated swellings appear along the midrib, and the swellings split at maturity to release spores."
+                },
+                {
+                  "url": "https://extension.psu.edu/the-douglas-fir-needlecast-blues",
+                  "quote": "The lesions swell and split lengthwise along the underside of needles in late spring."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Many tiny yellow spots ... coalesce into characteristic dark reddish-brown (deep red-brown, mottled) blotches",
+              "image_shows": "On these Maine needles the affected tissue shows a two-tone pale-straw and chocolate-brown coloration.",
+              "image_quote": "The affected tissue displays shades of pale straw and chocolate brown.",
+              "image_id": "bugwood::5507099",
+              "verification_status": "verified",
+              "reasoning": "Pale straw (yellow-brown) and chocolate brown (reddish-brown) match the documented yellow-to-brown lesion color progression.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.psu.edu/the-douglas-fir-needlecast-blues",
+                  "quote": "Symptoms first appear in late summer to autumn as yellow-brown spots or blotches ... the lesions enlarge and become reddish-brown as the disease progresses."
+                },
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/rhabdocline-needle-cast",
+                  "quote": "A distinctive diagnostic characteristic is the sharp border between the healthy green tissue and the infected brown tissue."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "the needle's epidermis lifts up as a patch and splits open",
+              "image_shows": "On these Maine needles the lesions appear raised, consistent with the swelling of infected tissue.",
+              "image_quote": "The lesions appear elongated and smooth.",
+              "image_id": "bugwood::5507099",
+              "verification_status": "weakly_supported",
+              "reasoning": "The raised/swollen appearance is supported by documented pre-budbreak swelling, though the 'smooth' texture is not specifically corroborated.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "http://www.plantpath.cornell.edu/Trees/RhabdoN.html",
+                  "quote": "in late spring, the lesions begin to swell as the fungus produces fruiting structures below the epidermis."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "causing needle browning and premature defoliation",
+              "image_shows": "On these Maine needles the disease presents as elongated necrotic (dead brown) lesions.",
+              "image_quote": "The lesions appear elongated along the leaf.",
+              "image_id": "bugwood::5507099",
+              "verification_status": "weakly_supported",
+              "reasoning": "Necrotic browning of needle tissue is well documented; the elongated distribution along the needle is consistent with banded lesions.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.psu.edu/the-douglas-fir-needlecast-blues",
+                  "quote": "The lesions enlarge and become reddish-brown as the disease progresses ... causes needle browning and premature defoliation."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "affected_organs",
+              "canonical_says": "(not specified)",
+              "image_shows": "On these Maine specimens the needles are narrow and elongated with pointed tips.",
+              "image_quote": "The leaf exhibits a narrow, elongated shape with pointed tips.",
+              "image_id": "bugwood::5507099",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension plant descriptions confirm Douglas-fir needles are narrow and elongated, though tip descriptions vary between pointed and blunt, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plants.ces.ncsu.edu/plants/pseudotsuga-menziesii/common-name/douglas-fir/",
+                  "quote": "The needles are small, crowded, flat, straight evergreen needles 0.8 to 1.3 in (2 to 3 cm) long, with pointed tips."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "On these Maine needles the midrib/vein remains clear without visible discoloration or lesions.",
+              "image_quote": "The leaf veins appear to be clear, without any visible discoloration or lesions.",
+              "image_id": "bugwood::5507099",
+              "verification_status": "field_observation",
+              "reasoning": "Published sources describe Rhabdocline as mottled surface spots/blotches near the needle apex rather than vein-centered discoloration, so a clear midrib is coherent with the canonical appearance but not affirmatively documented as a diagnostic absence.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "novel_plausible"
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "On these Maine needles the lesions show no concentric (target-like) ring pattern.",
+              "image_quote": "No concentric pattern is visible in the lesions.",
+              "image_id": "bugwood::5507099",
+              "verification_status": "field_observation",
+              "reasoning": "Extension descriptions characterize the lesions as mottled or banded reddish-brown blotches and never as concentric target-like rings, so the absence of concentric rings is consistent with the disease but not stated as an affirmative feature in any source.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "novel_plausible"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5507099",
+            "bugwood::5507100",
+            "bugwood::5507101",
+            "bugwood::5507102",
+            "bugwood::5507103",
+            "bugwood::5507104",
+            "bugwood::5510486",
+            "bugwood::5510487",
+            "bugwood::5510488",
+            "bugwood::5510489",
+            "bugwood::5510490",
+            "bugwood::5510491",
+            "bugwood::5510492",
+            "bugwood::5510493",
+            "bugwood::5510494",
+            "bugwood::5510495"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              11
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 11,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 4,
+              "n_provisional": 3,
+              "n_contradictory": 3,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 7,
+              "n_added": 7,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 2,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     }
   ],
   "crop": "Douglas-Fir",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 5
 }

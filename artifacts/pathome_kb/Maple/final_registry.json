@@ -77,20 +77,362 @@
           "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
           "note": "Additional co-causal pathogen named by UMass within the maple anthracnose fungal complex (spelled 'gleosporoides' in source)."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "acervuli produced in the necrotic spots",
+              "image_shows": "Dark, powdery, granular fruiting structures are visible on the surface of the affected tissue, consistent with acervuli/conidial masses.",
+              "image_quote": "Dark, powdery, granular structures on the surface of the affected tissue.",
+              "image_id": "bugwood::5503766",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension/Bugwood sources confirm dark acervuli and conidial masses form on infected maple tissue, indirectly supporting the observed dark granular surface structures though 'powdery' is a loose match to acervuli.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+                  "quote": "Anthracnose fungi produce asexual spores (conidia) within pads of tissue known as acervuli, which readily form within leaf spots and blotches and can be found on the upper or lower leaf surface and along veins or midribs."
+                },
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-anthracnose",
+                  "quote": "Acervuli usually are produced in the necrotic spots, which may or may not be conspicuous; the fungi produce spore-bearing structures called acervuli that erupt through the plant tissue and are evident as small black dots."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "Dark-colored, irregularly-shaped, angular spots or blotches",
+              "image_shows": "The affected tissue shows a mix of dark and light colors rather than a uniform dark lesion.",
+              "image_quote": "Dark-colored areas are prominent.",
+              "image_id": "bugwood::5503766",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources note maple anthracnose lesions range from tan (light) to black/brown (dark), giving indirect support to a mixed light-and-dark rather than uniformly dark appearance.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+                  "quote": "On Japanese maple, lesions occur along primary veins and leaf margins and the lesions can appear both tan or black in color."
+                },
+                {
+                  "url": "https://hortsense.cahnrs.wsu.edu/fact-sheet/maple-anthracnose/",
+                  "quote": "Japanese maple foliage exhibits tan or black blotches along leaf margins and primary veins."
+                }
+              ]
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5503766",
+            "bugwood::5503767",
+            "bugwood::5503768",
+            "bugwood::5503769",
+            "bugwood::5503770",
+            "bugwood::5503771",
+            "bugwood::5503772",
+            "bugwood::5503773",
+            "bugwood::5503774"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              4
+            ],
+            "detected_organ_per_pass": [
+              "root"
+            ],
+            "n_active_agents_per_pass": [
+              5
+            ],
+            "n_after_agreement": 4,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 1,
+              "n_provisional": 1,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 2
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 2,
+              "n_added": 2,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "Kentucky": {
+          "state": "Kentucky",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "irregularly-shaped, angular spots or blotches occurring primarily along the midrib, primary veins and leaf margins",
+              "image_shows": "Lesions appear irregular with some crossing between the leaf veins rather than staying strictly on them.",
+              "image_quote": "The lesions are irregularly shaped.",
+              "image_id": "bugwood::5405252",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources confirm irregular lesions extend both along and between the veins, supporting the 'crossing veins' detail beyond the canonical along-vein pattern.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+                  "quote": "The lesions grow between veins and on leaf margins."
+                },
+                {
+                  "url": "https://www.canr.msu.edu/news/maple_leaf_blister_and_anthracnose_two_foliar_diseases_that_can_appear_on_s",
+                  "quote": "In all species, irregular, dark brown spots or blotches develop on the leaf margins and along and between the leaf veins."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Dark-colored, irregularly-shaped, angular spots or blotches ... with acervuli produced in the necrotic spots",
+              "image_shows": "Lesions are tan-centered with chocolate-brown margins (a chlorotic yellow halo is also reported but is not typical of anthracnose).",
+              "image_quote": "The lesion centers are tan while the margins are chocolate-brown.",
+              "image_id": "bugwood::5405252",
+              "verification_status": "weakly_supported",
+              "reasoning": "Tan centers and brown margins are well documented for maple anthracnose, though the chlorotic yellow halo is not a described feature, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+                  "quote": "These areas can be tan and paper-thin."
+                },
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-anthracnose",
+                  "quote": "The spots eventually turn tan, reddish-brown or black."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "acervuli produced in the necrotic spots",
+              "image_shows": "Lesion surfaces appear raised and slightly rough, consistent with erupting acervuli/fruiting pads.",
+              "image_quote": "The surface of the lesions has a raised texture.",
+              "image_id": "bugwood::5405252",
+              "verification_status": "weakly_supported",
+              "reasoning": "Raised, rough lesion texture is consistent with acervuli erupting through leaf tissue as described for anthracnose, though not explicitly framed as surface texture.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+                  "quote": "Anthracnose fungi produce asexual spores (conidia) within pads of tissue known as acervuli. The acervuli erupt through the plant tissue."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "irregular necrotic blotches or blights ... vein-associated lesions, discrete necrotic spots",
+              "image_shows": "Irregularly-shaped dark-brown necrotic areas extend inward from the veins throughout the leaf.",
+              "image_quote": "The leaf shows dark brown necrotic areas extending inward from veins.",
+              "image_id": "bugwood::5405252",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources directly corroborate irregular dark-brown necrotic areas developing from the veins outward.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+                  "quote": "Later infections result in irregular necrotic areas along veins or leaf margins."
+                },
+                {
+                  "url": "https://www.canr.msu.edu/news/maple_leaf_blister_and_anthracnose_two_foliar_diseases_that_can_appear_on_s",
+                  "quote": "Irregular, dark brown spots or blotches develop on the leaf margins and along and between the leaf veins."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf edges curl upward, consistent with foliar distortion from anthracnose infection.",
+              "image_quote": "The edges of the leaf curl upwards.",
+              "image_id": "bugwood::5405252",
+              "verification_status": "verified",
+              "reasoning": "Leaf curling/cupping is an explicitly documented symptom of maple anthracnose in young infected foliage.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/anthracnose-trees-and-shrubs",
+                  "quote": "Anthracnose ... results in angular leaf spots, cupping or curling of leaves, and premature defoliation."
+                },
+                {
+                  "url": "https://extension.missouri.edu/media/wysiwyg/Extensiondata/Pro/PlantDiagnosticClinic/Docs/AnthracnoseMapleTree.pdf",
+                  "quote": "Young infected leaves curl or cup in response to the disease."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Dark-colored ... spots or blotches",
+              "image_shows": "Affected tissue shows a mix of dark green, tan, and chocolate-brown coloration.",
+              "image_quote": "The lesion center is tan, the margin is chocolate-brown.",
+              "image_id": "bugwood::5405252",
+              "verification_status": "weakly_supported",
+              "reasoning": "The tan-to-brown color palette against green tissue matches documented anthracnose lesion coloration, though it overlaps with the lesion_color candidate.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-anthracnose",
+                  "quote": "The spots eventually turn tan, reddish-brown or black."
+                },
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+                  "quote": "These areas can be tan and paper-thin."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "Severely diseased trees can defoliate early",
+              "image_shows": "Discolored/necrotic patches cover most of the leaf, indicating advanced disease severity.",
+              "image_quote": "Dark brownish-black lesions cover most of the leaf.",
+              "image_id": "bugwood::5405252",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extensive leaf coverage by lesions is consistent with the documented severe/blighting phase of maple anthracnose.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.missouri.edu/media/wysiwyg/Extensiondata/Pro/PlantDiagnosticClinic/Docs/AnthracnoseMapleTree.pdf",
+                  "quote": "When infection is severe, the fungus enters the petioles and causes entire leaves to appear blighted, browned, and shriveled."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf shows interveinal yellowing (chlorosis) alongside scattered necrotic patches.",
+              "image_quote": "The leaf has scattered patches of necrotic tissue.",
+              "image_id": "bugwood::5405252",
+              "verification_status": "weakly_supported",
+              "reasoning": "The scattered necrotic patches are well corroborated by extension sources, and some yellow/brown discoloration is reported, but interveinal chlorosis is atypical for anthracnose (which is vein- and margin-associated), so support is only partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.missouri.edu/media/wysiwyg/Extensiondata/Pro/PlantDiagnosticClinic/Docs/AnthracnoseMapleTree.pdf",
+                  "quote": "Veins and leaf tips are black with yellow and brown colors below the black."
+                },
+                {
+                  "url": "https://www.uvm.edu/extension/news/common-spring-disease-maple-anthracnose",
+                  "quote": "Irregular, dark brown spots or blotches develop on the leaf margins and along and between the leaf veins."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The individual leaf appears broad with a pointed tip (host leaf-shape observation, not disease-specific).",
+              "image_quote": "The leaf has a broad base tapering towards a more pointed tip.",
+              "image_id": "bugwood::5405252",
+              "verification_status": "provisional",
+              "reasoning": "This is a host leaf-shape observation rather than a disease symptom, so extension disease factsheets neither confirm nor contradict it; it is plausible for a maple leaf and left provisional.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5405252",
+            "bugwood::5405253",
+            "bugwood::5405254",
+            "bugwood::5405255",
+            "bugwood::5405256",
+            "bugwood::5405257",
+            "bugwood::5405258",
+            "bugwood::5405259",
+            "bugwood::5405260",
+            "bugwood::5405261",
+            "bugwood::5405262",
+            "bugwood::5405285",
+            "bugwood::5405286",
+            "bugwood::5405287",
+            "bugwood::5405288",
+            "bugwood::5405289",
+            "bugwood::5405290",
+            "bugwood::5405291",
+            "bugwood::5405292",
+            "bugwood::5405293",
+            "bugwood::5405294",
+            "bugwood::5405295",
+            "bugwood::5405296",
+            "bugwood::5405297",
+            "bugwood::5405298"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              11
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 11,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 7,
+              "n_provisional": 2,
+              "n_contradictory": 2,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 9,
+              "n_added": 9,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": true,
+            "failure_reason": "claude_query returned None (auth / timeout / empty)",
+            "preserved_count": 1
+          }
+        }
+      }
     },
     {
       "disease_name": "Maple Cankers",
       "pathogen_scientific_name": {
         "value": "Eutypella parasitica",
         "url": "https://extension.psu.edu/eutypella-canker-on-maple",
-        "quote": "The fungus Eutypella parasitica kills the growing layer of cells under the barkâ€”the cambium.",
+        "quote": "The fungus Eutypella parasitica kills the growing layer of cells under the bark\u00e2\u20ac\u201dthe cambium.",
         "taxonomy_validated": false
       },
       "type_of_disease": {
         "value": "Fungal",
         "url": "https://extension.psu.edu/eutypella-canker-on-maple",
-        "quote": "The fungus Eutypella parasitica kills the growing layer of cells under the barkâ€”the cambium."
+        "quote": "The fungus Eutypella parasitica kills the growing layer of cells under the bark\u00e2\u20ac\u201dthe cambium."
       },
       "affected_parts": {
         "value": [
@@ -119,18 +461,220 @@
       "treatments": {
         "value": [
           "Remove trees with cankers on the main trunk",
-          "Remove all cankered branches, cutting 4â€“6 inches below the canker, pruning when the weather is dry",
+          "Remove all cankered branches, cutting 4\u00e2\u20ac\u201c6 inches below the canker, pruning when the weather is dry",
           "For highly valuable trees, use a sharp chisel to remove all cankered wood and fungal mat plus 1\" to 1.5\" of surrounding apparently healthy bark and wood",
           "When planning to remove lower limbs, do so when they are less than 1 inch in diameter",
           "When a limb breaks, remove the remains with a clean cut close to the branch collar without damaging the collar",
           "If the collar is damaged or bark is stripped, use a sharp chisel to shape the damaged area into a clean-edged, vertically-oriented oval; do not point the ends and do not damage any callus already formed"
         ],
         "url": "https://extension.psu.edu/eutypella-canker-on-maple",
-        "quote": "Management Remove trees with cankers on the main trunk. Remove all cankered branches, cutting 4â€“6 inches below the canker. Do this pruning when the weather is dry."
+        "quote": "Management Remove trees with cankers on the main trunk. Remove all cankered branches, cutting 4\u00e2\u20ac\u201c6 inches below the canker. Do this pruning when the weather is dry."
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "other",
+              "canonical_says": "black fungal fruiting structures protrude from the bark near the centers of 5-year-old or older cankers",
+              "image_shows": "The affected area shows a dark grayish-black fungal fruiting structure against a light brownish-gray bark substrate.",
+              "image_quote": "The affected area shows a dark grayish-black fungal fruiting structure against a light brownish-gray substrate.",
+              "image_id": "bugwood::5486042",
+              "verification_status": "weakly_supported",
+              "reasoning": "The dark grayish-black fruiting structure against a light brown-gray bark substrate matches literature descriptions of black perithecia protruding from buff/gray maple bark, though the palette detail is only indirectly documented.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://en.wikipedia.org/wiki/Eutypella_parasitica",
+                  "quote": "The pathogen produces black perithecia embedded and slightly protruding from bark on old cankers."
+                },
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/eutypella-canker",
+                  "quote": "Cankers older than 6 years are discolored black at the center, where black, fungal fruiting bodies have formed on the wood."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5486042",
+            "bugwood::5486043",
+            "bugwood::5486044",
+            "bugwood::5486045",
+            "bugwood::5486046",
+            "bugwood::5486047",
+            "bugwood::5486048",
+            "bugwood::5486049",
+            "bugwood::5486050",
+            "bugwood::5486051"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              6
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 6,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 1,
+              "n_provisional": 0,
+              "n_contradictory": 3,
+              "n_duplicates_existing": 2
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 1,
+              "n_added": 1,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        },
+        "New York": {
+          "state": "New York",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "A pronounced bulge of callus develops around the infected area on the trunk or branch ... dead bark remains attached to the canker",
+              "image_shows": "There is a raised and dark lesion on the outer stem.",
+              "image_quote": "The outer surface of the stem shows a dark, raised lesion.",
+              "image_id": "bugwood::1",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources confirm Eutypella cankers present as slightly raised callus areas that darken/discolor, indirectly supporting a dark raised stem lesion.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/eutypella-canker",
+                  "quote": "Broad, slightly raised areas of callus tissue may cause a wave-like appearance on the canker face."
+                },
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/eutypella-canker",
+                  "quote": "Cankers older than 6 years are discolored black at the center."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "dead bark remains attached to the canker (which may be on one side of the trunk or completely girdle the tree)",
+              "image_shows": "The stem surface is rough and mottled with dark brown patches and no galls, ooze or fruiting bodies breaking through the bark.",
+              "image_quote": "The surface appears rough and mottled, with darker and lighter areas.",
+              "image_id": "bugwood::2",
+              "verification_status": "weakly_supported",
+              "reasoning": "Rough, mottled retained bark with no protruding fruiting bodies is consistent with a young canker where dry flinty bark stays attached and fruiting structures have not yet formed.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/eutypella-canker",
+                  "quote": "Dry, flinty bark normally remains attached to the face of the canker for many years."
+                },
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/eutypella-canker",
+                  "quote": "Young cankers are round to elliptical, slightly sunken or flattened and hidden behind bark."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "When bark is removed ... a light tan to cream-colored mat of fungus is observed; black fungal fruiting structures protrude from the bark near the centers of 5-year-old or older cankers",
+              "image_shows": "There are dark blotches with a dark brownish-red color and black spots on the affected area.",
+              "image_quote": "The affected area shows a dark brownish-red color with black spots indicating damage.",
+              "image_id": "bugwood::3",
+              "verification_status": "weakly_supported",
+              "reasoning": "External sources describe dark/black discoloration at the canker center, partially supporting the observed dark brownish-red blotches with black spots.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/eutypella-canker",
+                  "quote": "Cankers older than 6 years are discolored black at the center, where black, fungal fruiting bodies have formed on the wood."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected tissue displays a mix of brown and black colors.",
+              "image_quote": "The affected area shows a dark brownish-red color with black spots indicating damage.",
+              "image_id": "bugwood::5",
+              "verification_status": "weakly_supported",
+              "reasoning": "A brown-and-black color palette matches documented dark/black discoloration of Eutypella canker tissue, providing indirect support.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/eutypella-canker",
+                  "quote": "Cankers older than 6 years are discolored black at the center."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5457969",
+            "bugwood::5457972",
+            "bugwood::5457973"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              6
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 6,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 4,
+              "n_provisional": 1,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 5,
+              "n_added": 5,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 1,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Tar Spot Of Maple",
@@ -176,7 +720,7 @@
       "treatments": {
         "value": [
           "Collect and properly dispose of leaves from affected trees and shrubs each fall (burn where allowed, bury, or hot compost)",
-          "When composting, ensure the pile reaches a high temperature (approximately 140Â°F) and routinely turn the pile",
+          "When composting, ensure the pile reaches a high temperature (approximately 140\u00c2\u00b0F) and routinely turn the pile",
           "Fall/winter raking and sanitation is essential since Rhytisma overwinters on infected leaves",
           "Fungicides containing copper, alone or with mancozeb, are labeled for tar spot control in Wisconsin",
           "If warranted, three fungicide applications: at bud break, when leaves are half expanded, and when fully expanded",
@@ -202,9 +746,107 @@
           "alternative_source_url": "https://extension.psu.edu/maple-diseases",
           "note": "Penn State states no control is necessary; Wisconsin offers both sanitation and a fungicide program; the disease is generally considered cosmetic."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Begins as small (approximately 1/8 inch) yellowish spots on leaves ... as it develops, raised shiny black structures resembling blobs of tar form",
+              "image_shows": "In this Maine specimen the affected tissue is predominantly dark brown with patches of greenish-yellow rather than fully tar-black.",
+              "image_quote": "The affected area displays dark brown tones with greenish-yellow hues.",
+              "image_id": "bugwood::5486052",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources confirm tar spot lesions pass through brown/darkening tones set within a greenish-yellow chlorotic halo, giving partial support to the brown-plus-greenish-yellow palette.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://hort.extension.wisc.edu/articles/tar-spot/",
+                  "quote": "the leaf spots are light green to yellow-green. As the yellow color of the spot deepens, small black flecks begin to develop in the spot."
+                },
+                {
+                  "url": "https://www.independenttree.com/maple-tar-spot/",
+                  "quote": "Black or Brown Spots on Maple Leaves? It's Probably Tar Spot."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "On Norway maple the black structures are typically numerous, small (~1/8 inch) and clustered",
+              "image_shows": "The Maine specimen shows numerous small clustered black tar-like structures, indicating a heavily infected Norway maple leaf.",
+              "image_quote": "The image shows numerous small black structures resembling blobs of tar.",
+              "image_id": "bugwood::5486052",
+              "verification_status": "weakly_supported",
+              "reasoning": "The Maine Forest Service documents Norway maple tar spot in-state and extension sources confirm heavy infections yield numerous clustered small spots, supporting this severity observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/tar_leaf_spot_on_norway_maple.htm",
+                  "quote": "Tar Leaf Spot of Norway Maple (Maine Forest Service Insect & Disease Fact Sheet)."
+                },
+                {
+                  "url": "https://treediseases.cfans.umn.edu/tarspots",
+                  "quote": "When trees are heavily infected, premature leaf shedding can occur, most common where numerous Norway maples are present."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5486052",
+            "bugwood::5486053",
+            "bugwood::5486054",
+            "bugwood::5486056",
+            "bugwood::5486057",
+            "bugwood::5486058",
+            "bugwood::5486059",
+            "bugwood::5486060",
+            "bugwood::5486061",
+            "bugwood::5486062",
+            "bugwood::5486063",
+            "bugwood::5486064"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              4
+            ],
+            "detected_organ_per_pass": [
+              "root"
+            ],
+            "n_active_agents_per_pass": [
+              5
+            ],
+            "n_after_agreement": 4,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 2,
+              "n_provisional": 0,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 2
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 2,
+              "n_added": 2,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     }
   ],
   "crop": "Maple",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 5
 }

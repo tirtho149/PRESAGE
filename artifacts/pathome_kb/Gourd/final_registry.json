@@ -73,7 +73,318 @@
           "alternative_source_url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
           "note": "Cornell records Sphaerotheca fuliginea and S. fusca as previous (synonym) names for Podosphaera xanthii."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Kentucky": {
+          "state": "Kentucky",
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "yellow spots may form on upper leaf surfaces opposite the colonies... infected leaves shrivel and die",
+              "image_shows": "The leaf exhibits chlorosis, with yellowing between veins but the veins themselves remain green.",
+              "image_quote": "The leaf shows chlorosis, with yellowing between veins.",
+              "image_id": "bugwood::5476318",
+              "verification_status": "weakly_supported",
+              "reasoning": "Chlorosis of infected leaves is a documented advanced powdery mildew symptom, though the specific interveinal-with-green-veins pattern is not characteristic, so support is only partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://homegarden.cahnr.uconn.edu/factsheets/powdery-mildew-of-cucurbits/",
+                  "quote": "Affected leaves become dull, chlorotic, and may show some degree of wilting in the afternoon heat; eventually they become brown and papery."
+                },
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/cucurbits/powdery-mildew/",
+                  "quote": "Yellow spots may form on upper leaf surfaces opposite powdery mildew colonies; affected leaves become chlorotic."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "infected leaves shrivel and die, and plants may senesce prematurely",
+              "image_shows": "The leaf displays extensive necrosis across its surface.",
+              "image_quote": "The leaf shows significant damage with extensive necrosis.",
+              "image_id": "bugwood::5476318",
+              "verification_status": "weakly_supported",
+              "reasoning": "Advanced cucurbit powdery mildew turns leaves brown, papery and necrotic, so extensive foliar necrosis is consistent with a late-stage infection.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://homegarden.cahnr.uconn.edu/factsheets/powdery-mildew-of-cucurbits/",
+                  "quote": "Eventually they become brown and papery. Infected leaves shrivel and die; plants may senesce prematurely."
+                },
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/cucurbits/powdery-mildew/",
+                  "quote": "In severe cases the disease causes significant damage, with powdery growth covering the plant, causing premature foliage loss."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "infected leaves shrivel and die",
+              "image_shows": "The leaf shows curling up towards the leaflet tips.",
+              "image_quote": "The leaf displays curling up towards the leaflet tips.",
+              "image_id": "bugwood::5476318",
+              "verification_status": "weakly_supported",
+              "reasoning": "Leaf shriveling/curling is a recognized consequence of powdery mildew as leaves desiccate, giving partial support.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://homegarden.cahnr.uconn.edu/factsheets/powdery-mildew-of-cucurbits/",
+                  "quote": "Infected leaves shrivel and die; plants may senesce prematurely."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "infected leaves shrivel and die, and plants may senesce prematurely",
+              "image_shows": "Significant damage with extensive necrosis and discoloration is visible on the leaf.",
+              "image_quote": "The leaf shows significant necrosis and discoloration.",
+              "image_id": "bugwood::5476318",
+              "verification_status": "weakly_supported",
+              "reasoning": "Significant necrosis and discoloration are consistent with the severe/late-stage damage described for cucurbit powdery mildew.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/cucurbits/powdery-mildew/",
+                  "quote": "A powdery mildew infection causes reductions in plant growth, premature foliage loss, and in severe cases significant damage and plant death."
+                },
+                {
+                  "url": "https://homegarden.cahnr.uconn.edu/factsheets/powdery-mildew-of-cucurbits/",
+                  "quote": "Leaves eventually become brown and papery; infected leaves shrivel and die."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The leaf has a broad, palmate shape with prominent leaflets.",
+              "image_quote": "The leaf shape is broad with multiple leaflets, resembling a spade.",
+              "image_id": "bugwood::5476318",
+              "verification_status": "weakly_supported",
+              "reasoning": "Botanical descriptions confirm gourd/cucurbit foliage is broad and palmately lobed, though 'leaflets' is imprecise since the leaves are simple and lobed rather than compound, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://en.wikipedia.org/wiki/Cucurbita",
+                  "quote": "The typical cultivated Cucurbita species has five-lobed or palmately divided leaves with long petioles, alternately arranged on the stem."
+                },
+                {
+                  "url": "https://www.botanicalrealm.com/plant-identification/gourd-family-cucurbitaceae/",
+                  "quote": "Members of the gourd family typically feature large, palmate leaves that can be lobed or unlobed."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Leaf veins appear clear and translucent rather than necrotic.",
+              "image_quote": "The leaf veins are translucent and not necrotic.",
+              "image_id": "bugwood::5476318",
+              "verification_status": "field_observation",
+              "reasoning": "No extension source describes vein translucency as a powdery mildew feature, but absence of vein necrosis is coherent with early powdery mildew where white colonies and chlorosis precede tissue death, so it is flagged for curator review.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "novel_plausible"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5476318",
+            "bugwood::5476319",
+            "bugwood::5476320",
+            "bugwood::5476321",
+            "bugwood::5476322",
+            "bugwood::5476323",
+            "bugwood::5476324",
+            "bugwood::5476325",
+            "bugwood::5476326",
+            "bugwood::5476327",
+            "bugwood::5476328",
+            "bugwood::5476329",
+            "bugwood::5476330"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              12
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 12,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 4,
+              "n_provisional": 3,
+              "n_contradictory": 5,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 7,
+              "n_added": 7,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 1,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "North Carolina": {
+          "state": "North Carolina",
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "yellow spots may form on upper leaf surfaces opposite the colonies; the first sign is often pale yellow leaf spots",
+              "image_shows": "Chlorotic spots and possibly minor necrotic areas are visible on the leaves.",
+              "image_quote": "The photo shows gourd plants with leaves exhibiting yellowing spots primarily on the upper surfaces of young leaves.",
+              "image_id": "bugwood::1574092",
+              "verification_status": "weakly_supported",
+              "reasoning": "Chlorosis/yellow spotting is externally corroborated as an early powdery-mildew sign, though the 'young leaves' detail runs against the canonical older-leaves-first pattern, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/disease-management/powdery-mildew-cucurbits",
+                  "quote": "Symptoms appear as pale yellow spots on stems, petioles, and leaves; infected leaves gradually turn yellow and may become brown and papery."
+                },
+                {
+                  "url": "https://content.ces.ncsu.edu/cucurbit-powdery-mildew",
+                  "quote": "The first sign of powdery mildew is pale yellow leaf spots on both upper and lower leaf surfaces."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "infected leaves shrivel and die, and plants may senesce prematurely",
+              "image_shows": "Affected tissue shows a mix of green and brown tones with green dominant, consistent with early progression.",
+              "image_quote": "The leaves show a mix of healthy green and browning, indicating disease presence.",
+              "image_id": "bugwood::1574092",
+              "verification_status": "weakly_supported",
+              "reasoning": "Green-with-browning coloration is consistent with documented cucurbit powdery-mildew progression toward yellowing and browning, but the descriptor is nonspecific so support is only partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/disease-management/powdery-mildew-cucurbits",
+                  "quote": "Infected leaves gradually turn yellow and may become brown and papery."
+                },
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/",
+                  "quote": "Severely infected leaves become yellow and then necrotic, dying within a short period."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The gourd leaves are broadly ovate in shape.",
+              "image_quote": "The leaf shape is predominantly ovate.",
+              "image_id": "bugwood::1574092",
+              "verification_status": "verified",
+              "reasoning": "Botanical flora references confirm gourd/Cucurbita foliage is characteristically broadly ovate, corroborating the described leaf shape.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://dev.floranorthamerica.org/Cucurbita",
+                  "quote": "Cucurbita leaves have blade shapes that are suborbiculate to broadly ovate, ovate-lanceolate, reniform, or triangular, usually palmately lobed."
+                },
+                {
+                  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9855390/",
+                  "quote": "Bottle gourd (Lagenaria siceraria) OVATE genes relate to its characteristic ovate leaf and organ morphology."
+                }
+              ]
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "infected leaves shrivel and die",
+              "image_shows": "No leaf necrosis is present in this photograph.",
+              "image_quote": "No leaf necrosis is observed in the image.",
+              "image_id": "bugwood::1574092",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources place leaf necrosis/browning as a late-stage development, so its absence is consistent with the early powdery-mildew progression noted for this photo.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://content.ces.ncsu.edu/cucurbit-powdery-mildew",
+                  "quote": "Powdery mildew first appears as white powdery growth and pale yellow spots; affected leaves become brown and papery only later as the disease advances."
+                },
+                {
+                  "url": "https://ag.umass.edu/vegetable/fact-sheets/cucurbits-powdery-mildew",
+                  "quote": "Leaves eventually become chlorotic and then brown and papery, with necrosis developing as a later stage of infection."
+                }
+              ]
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::1574092",
+            "bugwood::1574096",
+            "bugwood::1574097",
+            "bugwood::1577089"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              10
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 10,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 2,
+              "n_provisional": 2,
+              "n_contradictory": 5,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 4,
+              "n_added": 4,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 2,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Phytophthora Blight",
@@ -139,7 +450,395 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Georgia": {
+          "state": "Georgia",
+          "deltas": [
+            {
+              "field": "severity",
+              "canonical_says": "fruit rot; affected tissue initially appears water-soaked, turns brown, and collapses",
+              "image_shows": "The entire fruit is visibly affected, decaying with dark discoloration and soft rot rather than a localized lesion.",
+              "image_quote": "The fruit is visibly decaying, with dark discoloration and soft rot.",
+              "image_id": "bugwood::1576307",
+              "verification_status": "verified",
+              "reasoning": "Extension sources confirm P. capsici causes cucurbit fruit to rot, darken and collapse completely, matching the whole-fruit soft-rot severity shown.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plantpathology.ces.ncsu.edu/news/are-your-cucurbits-infected-with-phytophthora-capsici/",
+                  "quote": "Fruits can rot and collapse completely and this can occur in the field or post-harvest."
+                },
+                {
+                  "url": "https://blogs.cornell.edu/livegpath/gallery/cucurbits/phytophthora-blight-in-cucurbit-crops/",
+                  "quote": "These lesions expand, coalesce, darken and depress slightly and become covered with dense, white-tan sporulation."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "affected tissue initially appears water-soaked, turns brown ... a white, yeast-like growth of sporangia develops on affected fruit",
+              "image_shows": "The lesion palette combines dark rotted discoloration with an overlying white powdery growth, producing mixed dark and light shades.",
+              "image_quote": "The fruit displays dark discoloration and a white powdery growth.",
+              "image_id": "bugwood::1576307",
+              "verification_status": "weakly_supported",
+              "reasoning": "The dark-plus-white powdery color contrast matches documented dark water-soaked lesions overlaid with powdered-sugar-like white sporulation, though the color-palette framing is only indirectly described in sources.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plantpathology.ces.ncsu.edu/news/are-your-cucurbits-infected-with-phytophthora-capsici/",
+                  "quote": "P. capsici fruit rot symptoms include water-soaked lesions that are covered in white spores that look like powdered sugar."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::1576307"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              3
+            ],
+            "detected_organ_per_pass": [
+              "fruit"
+            ],
+            "n_active_agents_per_pass": [
+              6
+            ],
+            "n_after_agreement": 3,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 2,
+              "n_provisional": 0,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 2,
+              "n_added": 2,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        },
+        "Kentucky": {
+          "state": "Kentucky",
+          "deltas": [
+            {
+              "field": "affected_organs",
+              "canonical_says": "The pathogen causes ... root and crown rot ...",
+              "image_shows": "Root structures show decay and disintegration consistent with advanced Phytophthora root rot in the Kentucky sample.",
+              "image_quote": "There are signs of decay and disintegration consistent with root rot.",
+              "image_id": "bugwood::5430047",
+              "verification_status": "verified",
+              "reasoning": "UK and Wisconsin extension sources confirm P. capsici destroys cucurbit root systems with visible decay/disintegration, corroborating the observed root breakdown.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://veggiescout.ca.uky.edu/phytophthora-blight-cucurbit-crops",
+                  "quote": "In advanced stages, the lateral roots slough off and eventually the entire root system may be destroyed."
+                },
+                {
+                  "url": "https://vegpath.plantpath.wisc.edu/diseases/cucurbit-phytophthora-blight-crown-rot/",
+                  "quote": "Water-soaking develops in the roots, crown and lower stem near the soil line, with tissues becoming soft and turning from healthy white to tan to dark brown."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "affected tissue initially appears water-soaked, turns brown, and collapses",
+              "image_shows": "Affected tissue is dominated by dark brown lesions interspersed with lighter (possibly sporulating) areas.",
+              "image_quote": "Dark brown spots dominate the affected areas.",
+              "image_id": "bugwood::5430047",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources describe P. capsici tissue darkening to tan-to-dark-brown, giving indirect support to the dark-brown-dominant palette while the lighter areas may reflect white sporulation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://veggiescout.ca.uky.edu/phytophthora-blight-cucurbit-crops",
+                  "quote": "tissues becoming soft and turning from healthy white to tan-to dark brown"
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5430047",
+            "bugwood::5430084",
+            "bugwood::5430085",
+            "bugwood::5430086",
+            "bugwood::5430087",
+            "bugwood::5430088",
+            "bugwood::5430089",
+            "bugwood::5430090"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              3
+            ],
+            "detected_organ_per_pass": [
+              "root"
+            ],
+            "n_active_agents_per_pass": [
+              5
+            ],
+            "n_after_agreement": 3,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 2,
+              "n_provisional": 0,
+              "n_contradictory": 1,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 2,
+              "n_added": 2,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        },
+        "North Carolina": {
+          "state": "North Carolina",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "The pathogen causes ... stem lesions ...; affected tissue initially appears water-soaked, turns brown, and collapses",
+              "image_shows": "Dark blotches/lesions are present on the outer stem surface of the gourd.",
+              "image_quote": "Dark blotches are present on the stem.",
+              "image_id": "bugwood::1575130",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources confirm dark brown girdling stem/vine lesions in Phytophthora-blighted cucurbits, corroborating the observed dark stem blotches.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://blogs.cornell.edu/livegpath/gallery/cucurbits/phytophthora-blight-in-cucurbit-crops/",
+                  "quote": "Water-soaked lesions develop on vines that are dark olive in the beginning and become dark brown in a few days; the lesions girdle the stem."
+                },
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+                  "quote": "Brown, girdling lesions form on the vines and leaf petioles."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "affected tissue initially appears water-soaked, turns brown, and collapses",
+              "image_shows": "Water-soaked dark streaks extend from a stem lesion edge.",
+              "image_quote": "Water-soaked dark streaking extending from a lesion edge.",
+              "image_id": "bugwood::1575130",
+              "verification_status": "verified",
+              "reasoning": "Water-soaked dark streaking spreading from stem lesions is a documented hallmark of P. capsici vine infection, supporting the observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://blogs.cornell.edu/livegpath/gallery/cucurbits/phytophthora-blight-in-cucurbit-crops/",
+                  "quote": "Water-soaked lesions develop on vines that are dark olive in the beginning and become dark brown in a few days."
+                },
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/phytophthora-blight",
+                  "quote": "On vines, water-soaked, dark lesions can girdle the stem and cause whole-plant wilt and collapse."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "A white, yeast-like growth made up mostly of sporangia develops on affected tissue; seeing these sporangia is diagnostic",
+              "image_shows": "The stem surface shows scattered dark spots together with a powdery white sporangial growth.",
+              "image_quote": "There are dark blotches present on the stem.",
+              "image_id": "bugwood::1575130",
+              "verification_status": "weakly_supported",
+              "reasoning": "White sporangial growth on affected tissue is well documented (mostly on fruit); its appearance on stem lesions is plausible but less directly attested, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://vegpath.plantpath.wisc.edu/diseases/phytophthora-crown-and-fruit-rot/",
+                  "quote": "Sporangia-covered lesions will have a yeast-like, gray to white appearance."
+                },
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0027-FI",
+                  "quote": "The pathogen usually produces a white yeast-like growth that contains many sporangia, especially under moist conditions."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "Phytophthora infestans (late blight fungus); Pythium fruit rot; Sclerotinia white mold",
+              "image_shows": "A white, powdery growth on the plant tissue could be confused with white-mold look-alikes.",
+              "image_quote": "White, powdery growth on plant tissue.",
+              "image_id": "bugwood::1575130",
+              "verification_status": "weakly_supported",
+              "reasoning": "The white powdery sporangial growth of P. capsici superficially resembles other white molds (e.g., Sclerotinia) and powdery-mildew-like growth, supporting the look-alike confusion but not uniquely.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PHP-02-21-0027-FI",
+                  "quote": "On fruit the pathogen usually produces an abundance of white growth that is mostly spores and resembles yeast or powdered sugar."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "stem lesions",
+              "image_shows": "The image shows a severe infection with lesions and a canker on the outer stem.",
+              "image_quote": "There is a canker present on the outer stem.",
+              "image_id": "bugwood::1575130",
+              "verification_status": "verified",
+              "reasoning": "Extension sources document dark, water-soaked stem lesions/cankers that girdle cucurbit stems, corroborating the severe outer-stem canker appearance.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/phytophthora-blight-of-cucurbits/",
+                  "quote": "Lesions on stems are constricted, darkened, and water-soaked... The lesions girdle the stem, resulting in rapid collapse and death of foliage above the lesion site."
+                },
+                {
+                  "url": "https://vegpath.plantpath.wisc.edu/diseases/phytophthora-crown-and-fruit-rot/",
+                  "quote": "On vines, water-soaked, dark lesions can girdle the stem and cause whole-plant wilt and collapse."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "affected tissue initially appears water-soaked, turns brown",
+              "image_shows": "The scene is a gourd plant with bright-yellow fruit and dark-green leaves with some browning.",
+              "image_quote": "The affected tissue has a mix of bright yellow and dark green with some browning.",
+              "image_id": "bugwood::1575130",
+              "verification_status": "weakly_supported",
+              "reasoning": "Browning of foliage with adjacent yellowing is consistent with documented foliar blight symptoms, but the bright-yellow fruit color is generic and not specifically diagnostic, giving only partial support.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/phytophthora-blight",
+                  "quote": "Foliar symptoms are large, brown, water-soaked spots with irregular margins. Sometimes there is a wilted, yellow border."
+                }
+              ]
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::1575130",
+            "bugwood::1575131",
+            "bugwood::1575153",
+            "bugwood::1575667",
+            "bugwood::1575839",
+            "bugwood::1576486",
+            "bugwood::1576487",
+            "bugwood::1576488",
+            "bugwood::1576489",
+            "bugwood::1576491",
+            "bugwood::1576493",
+            "bugwood::1576498",
+            "bugwood::1577898"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              6
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 6,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 4,
+              "n_provisional": 2,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 6,
+              "n_added": 6,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 2,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "Virginia": {
+          "state": "Virginia",
+          "deltas": [],
+          "__image_ids__": [
+            "bugwood::5411428"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              4
+            ],
+            "detected_organ_per_pass": [
+              "other"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 4,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 0,
+              "n_provisional": 0,
+              "n_contradictory": 3,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 0,
+              "n_added": 0,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     },
     {
       "disease_name": "Fusarium Damping-Off",
@@ -190,7 +889,7 @@
       "treatments": {
         "value": [
           "Sanitize all seed trays, flats, pots and containers; use new ones or thoroughly wash and disinfect old containers",
-          "Use new, pasteurized soil mix or treat media with heat (e.g. 158Â°F/70Â°C for 30 min with aerated steam) to reduce damping-off fungi",
+          "Use new, pasteurized soil mix or treat media with heat (e.g. 158\u00c2\u00b0F/70\u00c2\u00b0C for 30 min with aerated steam) to reduce damping-off fungi",
           "Proper soil preparation for good drainage, structure, aeration, water-holding capacity and nutrition",
           "Use fungicide-treated seed with high germination",
           "Use proper seeding rates to avoid thick stands, poor air movement and low light",
@@ -222,9 +921,62 @@
           "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/squash-cucurbita-spp-damping",
           "note": "Sources emphasize different affected parts; values merged as a union."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Kentucky": {
+          "state": "Kentucky",
+          "deltas": [],
+          "__image_ids__": [
+            "bugwood::5369077",
+            "bugwood::5369078",
+            "bugwood::5369079",
+            "bugwood::5369080",
+            "bugwood::5369081",
+            "bugwood::5369082",
+            "bugwood::5369083",
+            "bugwood::5369084",
+            "bugwood::5369085",
+            "bugwood::5369086"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              3
+            ],
+            "detected_organ_per_pass": [
+              "fruit"
+            ],
+            "n_active_agents_per_pass": [
+              6
+            ],
+            "n_after_agreement": 3,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 0,
+              "n_provisional": 0,
+              "n_contradictory": 3,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 0,
+              "n_added": 0,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     }
   ],
   "crop": "Gourd",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 7
 }

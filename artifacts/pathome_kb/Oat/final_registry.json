@@ -67,6 +67,7 @@
       ],
       "regional_observations": {
         "Maine": {
+          "state": "Maine",
           "deltas": [
             {
               "field": "look_alikes",
@@ -74,9 +75,8 @@
               "image_shows": "Pustules show orange-yellow contents with no concentric rings or target-spot structures, ruling out ring/target-spot foliar diseases.",
               "image_quote": "The image displays numerous pustules and masses of orange-yellow spores on a plant surface.",
               "image_id": "bugwood::5486120",
+              "__support__": 1,
               "verification_status": "weakly_supported",
-              "reasoning": "Concentric-ring/target-spot lesions are diagnostic of ring/leaf-spot diseases, not rust uredinia, so their absence supports crown rust and distinguishes it from look-alikes.",
-              "swarm_support": 1,
               "web_support": [
                 {
                   "url": "https://plantix.net/en/library/plant-diseases/100339/ring-spot/",
@@ -86,7 +86,8 @@
                   "url": "https://ipm.ucanr.edu/agriculture/small-grains/leaf-rusts-of-wheat-and-barley-crown-rust-of-oats/",
                   "quote": "Pustules on oats are oblong and orange. The lack of ragged edges on pustules of leaf rusts distinguishes them from stem rusts."
                 }
-              ]
+              ],
+              "swarm_support": 1
             },
             {
               "field": "severity",
@@ -94,9 +95,8 @@
               "image_shows": "A high fraction of the visible organ is covered by orange-yellow uredinia, indicating heavy/severe foliar infection.",
               "image_quote": "The image shows a high fraction of the visible affected organ showing disease.",
               "image_id": "bugwood::5486120",
+              "__support__": 1,
               "verification_status": "weakly_supported",
-              "reasoning": "Literature documents heavy/severe foliar coverage by crown rust uredinia, corroborating the high-severity coverage seen in the image.",
-              "swarm_support": 1,
               "web_support": [
                 {
                   "url": "https://www.ars.usda.gov/midwest-area/stpaul/cereal-disease-lab/docs/cereal-rusts/oat-crown-rust/",
@@ -106,7 +106,8 @@
                   "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/puccinia-coronata",
                   "quote": "Moderate to severe epidemics can reduce grain yield by 10 to 40%, and individual oat fields may suffer total crop failures."
                 }
-              ]
+              ],
+              "swarm_support": 1
             },
             {
               "field": "other",
@@ -114,9 +115,8 @@
               "image_shows": "The substrate/leaf background appears pale straw colored, consistent with a mature or senescing oat leaf.",
               "image_quote": "The image shows a high fraction of the visible affected organ showing disease.",
               "image_id": "bugwood::5486120",
+              "__support__": 1,
               "verification_status": "provisional",
-              "reasoning": "Substrate color is not a documented diagnostic feature and no external source addresses it, but a pale straw background is plausible and not contradicted.",
-              "swarm_support": 1,
               "web_support": [
                 {
                   "url": "https://plantix.net/en/library/plant-diseases/100339/ring-spot/",
@@ -142,19 +142,55 @@
                   "inherited": true,
                   "inherited_from": "Crown Rust::Maine"
                 }
-              ]
+              ],
+              "swarm_support": 1
             }
           ],
-          "image_ids": [
-            "bugwood::5486120"
+          "__image_ids__": [
+            "bugwood::5486120",
+            "bugwood::5486121",
+            "bugwood::5486122",
+            "bugwood::5486123",
+            "bugwood::5486124",
+            "bugwood::5486125",
+            "bugwood::5486126",
+            "bugwood::5486127",
+            "bugwood::5486128",
+            "bugwood::5486129"
           ],
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 2,
-            "provisional_count": 1,
-            "contradictory_count": 0,
-            "duplicates_count": 1,
-            "dropped_contradictory": []
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              4
+            ],
+            "detected_organ_per_pass": [
+              "fruit"
+            ],
+            "n_active_agents_per_pass": [
+              6
+            ],
+            "n_after_agreement": 4,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 0,
+              "n_provisional": 0,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 4
+            },
+            "merge": {
+              "n_existing": 3,
+              "n_new_candidates": 0,
+              "n_added": 0,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
           }
         }
       }

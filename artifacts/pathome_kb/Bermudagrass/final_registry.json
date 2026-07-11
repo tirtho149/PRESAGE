@@ -71,7 +71,59 @@
           "alternative_source_url": "https://ag.umass.edu/turf/fact-sheets/red-thread-pink-patch",
           "note": "UMass limits the pathogen to plant foliage only ('Both pathogens are limited to the plant foliage and individual blades die from the tips down.'), while PSU also includes leaf sheaths and stems."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Mississippi": {
+          "state": "Mississippi",
+          "deltas": [],
+          "__image_ids__": [
+            "bugwood::5592838",
+            "bugwood::5592839",
+            "bugwood::5592840",
+            "bugwood::5592841",
+            "bugwood::5592842",
+            "bugwood::5592843",
+            "bugwood::5592844",
+            "bugwood::5592845",
+            "bugwood::5592846",
+            "bugwood::5592847"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              4
+            ],
+            "detected_organ_per_pass": [
+              "root"
+            ],
+            "n_active_agents_per_pass": [
+              5
+            ],
+            "n_after_agreement": 4,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 0,
+              "n_provisional": 0,
+              "n_contradictory": 4,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 0,
+              "n_added": 0,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     },
     {
       "disease_name": "Rust",
@@ -143,9 +195,158 @@
           "alternative_source_url": "https://site.extension.uga.edu/tattnall/2020/05/leaf-rust-on-bermudagrass/",
           "note": "UGA documents rust damage on leaves only; UC IPM notes infections progress up the stem to younger leaves."
         }
-      ]
+      ],
+      "regional_observations": {
+        "California": {
+          "state": "California",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Rust begins as small, grayish purple pustules on the underside of older leaves ... to expose red-brown uredospores",
+              "image_shows": "No visible leaf lesions are present on the imaged bermudagrass foliage.",
+              "image_quote": "The image shows healthy green grass with no visible leaf lesions.",
+              "image_id": "bugwood::1571167",
+              "verification_status": "field_observation",
+              "reasoning": "Absence-of-lesion observation on a healthy reference photo cannot be externally corroborated, but is coherent with the imaged healthy foliage and not contradicted.",
+              "swarm_support": 2,
+              "web_support": [],
+              "_prior_status": "provisional"
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "pustules on the underside of older leaves that rupture to expose red-brown uredospores",
+              "image_shows": "No lesion surface texture (pustules/ruptures) is visible on the foliage.",
+              "image_quote": "The grass appears healthy with no visible lesions.",
+              "image_id": "bugwood::1571167",
+              "verification_status": "field_observation",
+              "reasoning": "A negative note that no pustule/rupture texture is visible in this asymptomatic image is plausible and uncontradicted, but external photo galleries only depict the disease when present.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "No chlorosis (leaf yellowing) is visible on the imaged foliage.",
+              "image_quote": "Healthy green grass with no visible leaf lesions in the image.",
+              "image_id": "bugwood::1571167",
+              "verification_status": "field_observation",
+              "reasoning": "Absence of chlorosis in a uniformly green healthy image is plausible and uncontradicted, but cannot be externally verified as a negative observation.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "No leaf curling is visible; blades appear flat and uniform.",
+              "image_quote": "The leaves appear healthy with uniform green color.",
+              "image_id": "bugwood::1571167",
+              "verification_status": "field_observation",
+              "reasoning": "Flat uniform blades with no curling is consistent with the healthy imaged foliage and not contradicted, but is a negative observation lacking external corroboration.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "No vein clearing or vein-associated necrosis is visible on the blades.",
+              "image_quote": "Healthy green grass blades are visible.",
+              "image_id": "bugwood::1571167",
+              "verification_status": "field_observation",
+              "reasoning": "Absence of vein clearing/necrosis on a healthy blade is plausible and uncontradicted, but such a negative cannot be verified against published photo descriptions.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Bermudagrass blades appear narrow and elongated in the image.",
+              "image_quote": "Lanceolate leaves are long and narrow.",
+              "image_id": "bugwood::1571167",
+              "verification_status": "field_observation",
+              "reasoning": "Narrow elongated blades describe normal bermudagrass leaf morphology rather than a disease symptom; coherent with the image but unverified, so flag for curator review.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "novel_plausible"
+            },
+            {
+              "field": "severity",
+              "canonical_says": "Rust ... followed by premature leaf senescence and death",
+              "image_shows": "No visible disease severity is expressed in the imaged canopy.",
+              "image_quote": "The image shows healthy green grass with no visible signs of disease.",
+              "image_id": "bugwood::1571167",
+              "verification_status": "field_observation",
+              "reasoning": "A zero-severity reading on an asymptomatic canopy is plausible and uncontradicted, but the absence of disease in one photo is not something external factsheets can corroborate.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::1571167",
+            "bugwood::1571168",
+            "bugwood::1571282",
+            "bugwood::1571283",
+            "bugwood::1571284",
+            "bugwood::1571285",
+            "bugwood::1571286",
+            "bugwood::1571287",
+            "bugwood::1571288",
+            "bugwood::1571289",
+            "bugwood::1571290",
+            "bugwood::1571291",
+            "bugwood::1572114"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              10
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 10,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 0,
+              "n_provisional": 8,
+              "n_contradictory": 2,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 8,
+              "n_added": 7,
+              "n_overlaps_bumped": 1,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 7,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        }
+      }
     }
   ],
   "crop": "Bermudagrass",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 2
 }

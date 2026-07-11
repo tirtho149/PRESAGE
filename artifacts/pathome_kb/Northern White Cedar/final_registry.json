@@ -83,7 +83,156 @@
           "alternative_source_url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
           "note": "Treatment list is a union of both sources; Maine quote: 'Application of fungicides to manage the disease is rarely necessary.  A copper fungicide (Bordeaux Mix) or mancozeb (Dithane) should be effective if applied early in the season, when susceptible foliage is developing.'"
         }
-      ]
+      ],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Small, bleached light-brown to tan spots appear first on the upper surface of one-year-old leaves",
+              "image_shows": "The lesions are circular.",
+              "image_quote": "The lesion is circular.",
+              "image_id": "bugwood::5504853",
+              "verification_status": "weakly_supported",
+              "reasoning": "Sources describe small discrete spots and circular apothecial pustules on the leaf surface, giving partial support to a circular lesion outline.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "http://forestrydev.org/diseases/CTD/Group/Needle/needle1_e.html",
+                  "quote": "Symptoms on mature foliage first appear as several small, cream-coloured spots on the upper surface of individual cedar leaves."
+                },
+                {
+                  "url": "https://www.cabi.org/isc/datasheet/18896",
+                  "quote": "apothecia within the brown leaflets become conspicuous as golden-olive to dark-brown, circular pustules."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Small, bleached light-brown to tan spots appear first on the upper surface of one-year-old leaves",
+              "image_shows": "The lesion center is tan, with the margins appearing chocolate-brown.",
+              "image_quote": "The lesion centers are tan, with the margins appearing chocolate-brown.",
+              "image_id": "bugwood::5504853",
+              "verification_status": "weakly_supported",
+              "reasoning": "The tan lesion center is well documented, but the chocolate-brown margin detail is only indirectly supported, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
+                  "quote": "Symptoms first appear as light-brown areas on the individual scale-like leaves, and individual leaves are killed by the fungus and turn a light tan to gray color."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Small, bleached light-brown to tan spots appear first on the upper surface of one-year-old leaves",
+              "image_shows": "The affected tissue displays tan centers, chocolate-brown margins, and pale-straw chlorotic halos.",
+              "image_quote": "The lesion center is brown, the margin is dark brown, and there is a chlorotic yellow halo.",
+              "image_id": "bugwood::5504853",
+              "verification_status": "weakly_supported",
+              "reasoning": "Tan centers and brown margins are corroborated by extension sources, but the pale-straw chlorotic halo is not documented, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
+                  "quote": "Symptoms first appear as light-brown areas on the individual scale-like leaves ... individual leaves turn a light tan to gray color."
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Didymascella_thujina",
+                  "quote": "Light-brown to tan spots appear on the leaves, and large brown fruiting structures (apothecia) form in the center of these spots."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "one or several brown to black fruiting structures (apothecia) form in the center of the spots",
+              "image_shows": "Dark brown lesions on the leaf tissue.",
+              "image_quote": "Dark brownish-black patches are present.",
+              "image_id": "bugwood::5504853",
+              "verification_status": "weakly_supported",
+              "reasoning": "Dark brown to black patches are consistent with the maturing apothecia and blackened infected foliage described in extension literature.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "http://forestrydev.org/diseases/CTD/Group/Needle/needle1_e.html",
+                  "quote": "Fruiting bodies (apothecia) become readily visible by June as olive-brown (maturing to black) spots on the upper surface of infected leaves."
+                },
+                {
+                  "url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
+                  "quote": "bleached spots followed by brown or black cushion-like fungal fruiting bodies."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "Leaves are curled up.",
+              "image_quote": "leaves are curled up",
+              "image_id": "bugwood::5504853",
+              "verification_status": "provisional",
+              "reasoning": "Curled foliage is not a documented feature of cedar leaf blight on scale-leaved Thuja and no extension photo description corroborates it, but it is not contradicted so it is left provisional.",
+              "swarm_support": 1,
+              "web_support": []
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5504853",
+            "bugwood::5504854",
+            "bugwood::5504855",
+            "bugwood::5504856",
+            "bugwood::5504857",
+            "bugwood::5504858",
+            "bugwood::5504859",
+            "bugwood::5504860",
+            "bugwood::5504861",
+            "bugwood::5504862"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              10
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 10,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 4,
+              "n_provisional": 2,
+              "n_contradictory": 2,
+              "n_duplicates_existing": 2
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 6,
+              "n_added": 6,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": true,
+            "failure_reason": "claude_query returned None (auth / timeout / empty)",
+            "preserved_count": 1
+          }
+        }
+      }
     },
     {
       "disease_name": "Arborvitae Needle Blight",
@@ -138,9 +287,105 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "affected_organs",
+              "canonical_says": "Pestalotiopsis ... attacks stems and small branches, whereas Phyllosticta is primarily restricted to the needles.",
+              "image_shows": "The photo displays dark spots on a brownish-orange stem surface.",
+              "image_quote": "The image shows dark spots on the outer surface of the stem.",
+              "image_id": "bugwood::5508877",
+              "verification_status": "verified",
+              "reasoning": "Extension sources confirm that on arborvitae the pathogen attacks stems/twigs and produces visible black, pinhead-sized fruiting bodies dotting the woody surface, corroborating the stem-surface dark spots.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.missouribotanicalgarden.org/gardens-gardening/your-garden/help-for-the-home-gardener/advice-tips-resources/insects-pests-and-problems/diseases/needlecasts/pestalotiopsis-tip",
+                  "quote": "Twig tips can turn brown and have black, pimple-like, pinhead size, fungal fruiting structures dotting the surface."
+                },
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
+                  "quote": "Pestalotiopsis is more aggressive in comparison to Phyllosticta because of its ability to attack stems and small branches."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Pestalotiopsis produces small pads under the epidermis that rupture to form a long black mass of spores and attacks stems and small branches.",
+              "image_shows": "Black spots on the stem surface suggest the presence of pycnidia.",
+              "image_quote": "black dots on the stem surface",
+              "image_id": "bugwood::5508877",
+              "verification_status": "weakly_supported",
+              "reasoning": "Black fruiting/sporulation structures on stems are documented, but on woody tissue these are Pestalotiopsis acervuli rather than Phyllosticta pycnidia, so the sporulation reading is only partially precise.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.missouribotanicalgarden.org/gardens-gardening/your-garden/help-for-the-home-gardener/advice-tips-resources/insects-pests-and-problems/diseases/needlecasts/pestalotiopsis-tip",
+                  "quote": "Twig tips turn brown to tan and when examined closely may have black fruiting bodies (acervuli) of the fungus emerging from the dead tissue; black-brown, pinhead-sized, round fruiting bodies form on the shoots."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5508877",
+            "bugwood::5508878",
+            "bugwood::5508879",
+            "bugwood::5508880",
+            "bugwood::5508881",
+            "bugwood::5508882",
+            "bugwood::5508883",
+            "bugwood::5508884",
+            "bugwood::5508885",
+            "bugwood::5508886",
+            "bugwood::5508887",
+            "bugwood::5508888",
+            "bugwood::5508889",
+            "bugwood::5508890"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              5
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 5,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 2,
+              "n_provisional": 0,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 3
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 2,
+              "n_added": 2,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     }
   ],
   "crop": "Northern White Cedar",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 2
 }

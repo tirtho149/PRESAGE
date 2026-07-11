@@ -27,7 +27,7 @@
           "quote": "In spring or early summer, new needles at the branch tips are green, and the older needles turn brown to purple."
         },
         "diagnostic_features": {
-          "value": "In the following spring, infected needles show rows of tiny black dots on the underside â€” the spore-bearing pycnidia emerging from the stomata, which may be capped with a whitish waxy plug; damage typically starts on the lower branches and moves up the tree.",
+          "value": "In the following spring, infected needles show rows of tiny black dots on the underside \u00e2\u20ac\u201d the spore-bearing pycnidia emerging from the stomata, which may be capped with a whitish waxy plug; damage typically starts on the lower branches and moves up the tree.",
           "url": "https://extension.umaine.edu/ipm/ipddl/publications/5104e/",
           "quote": "In the following spring, needles that were infected the previous year will show rows of tiny black dots on the underside. These are the spore-bearing structures (pycnidia) emerging from the stomata and may be capped with a whitish waxy plug"
         },
@@ -47,12 +47,12 @@
           "Maintain good air circulation; do not overcrowd plants and use the mature tree size as a spacing guide.",
           "Remove the bottom-most branches from the trunk to increase circulation around the canopy.",
           "Do not shear spruce, as shearing creates dense growth that stays wet longer.",
-          "Mulch under trees (3â€“4 inch wood chip layer) and remove weeds to reduce humidity in the lower canopy.",
+          "Mulch under trees (3\u00e2\u20ac\u201c4 inch wood chip layer) and remove weeds to reduce humidity in the lower canopy.",
           "Do not allow sprinklers to wet the needles; water the soil, not the foliage.",
           "Keep trees healthy and vigorous by watering during drought.",
           "Use proper pruning technique: prune only when needles are dry, prune healthy trees first, and sterilize shears with 70% rubbing alcohol.",
           "Remove unhealthy trees or stumps that may serve as a disease reservoir.",
-          "Apply protective fungicides (chlorothalonil, copper hydroxide, mancozeb, azoxystrobin, propiconazole, thiophanate-methyl, copper salts of fatty/rosin acids, or phosphorous acid): make a first application in spring/early summer when new needles are about half (one inch) their mature length, and a second 3â€“4 weeks later."
+          "Apply protective fungicides (chlorothalonil, copper hydroxide, mancozeb, azoxystrobin, propiconazole, thiophanate-methyl, copper salts of fatty/rosin acids, or phosphorous acid): make a first application in spring/early summer when new needles are about half (one inch) their mature length, and a second 3\u00e2\u20ac\u201c4 weeks later."
         ],
         "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
         "quote": "Fungicides with the active ingredient chlorothalonil, copper hydroxide or mancozeb will protect new spruce needles from infection by Rhizosphaera. Make one application in spring or early summer when the new needles have grown to half their mature length. Make a second application 3 to 4 weeks later."
@@ -67,7 +67,282 @@
           "alternative_source_url": "https://extension.umaine.edu/ipm/ipddl/publications/5104e/",
           "note": "Spelling variant. UMaine spells it 'kalkhofii'; 'kalkhoffii' (UMN) is retained as canonical. No NCBI/MycoBank validation was supplied."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Vermont": {
+          "state": "Vermont",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "older needles turn brown to purple and eventually fall off",
+              "image_shows": "In Vermont material the browning is concentrated near the needle tips rather than only on older interior needles.",
+              "image_quote": "The image shows needle tips turning brown.",
+              "image_id": "bugwood::5395259",
+              "verification_status": "weakly_supported",
+              "reasoning": "Needle browning is a well-documented Rhizosphaera symptom, so the observed brown discoloration is supported, though the tip-localized pattern is atypical (tips normally stay green).",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+                  "quote": "Disease symptoms include a browning or purpling of needles, which eventually drop from the tree leaving bare patches."
+                },
+                {
+                  "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/rhizosphaera-needle-cast",
+                  "quote": "Infected needles take on a yellow mottled appearance, then turn brown and drop from the stem."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "older needles turn brown to purple",
+              "image_shows": "Vermont needles show dark brown with an orange cast, extending the canonical brown-to-purple palette.",
+              "image_quote": "The photo shows dark brown and orange discoloration on the needles.",
+              "image_id": "bugwood::5395259",
+              "verification_status": "weakly_supported",
+              "reasoning": "Dark brown discoloration is strongly documented; the orange component overlaps reddish/off-color descriptions but orange is not a specifically named hallmark, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://hort.extension.wisc.edu/articles/rhizosphaera-needle-cast/",
+                  "quote": "Infected needles first become mottled or off-color, then turn brown to purplish-brown before dropping."
+                },
+                {
+                  "url": "https://forestrynews.blogs.govdelivery.com/2017/06/28/rhizosphaera-needlecast-on-balsam-fir/",
+                  "quote": "On balsam fir the disease produces chlorotic, off-color needles that drop prematurely, giving the tree a thin appearance."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "severity",
+              "canonical_says": "leaving infected trees thin or see-through",
+              "image_shows": "A significant portion of the needles in the Vermont photo are affected, consistent with extensive canopy thinning.",
+              "image_quote": "The photo shows dark brown and orange discoloration on the needles.",
+              "image_id": "bugwood::5395259",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources document that infection causes substantial needle loss and canopy thinning, consistent with a significant fraction of affected needles.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+                  "quote": "Infected needles drop from the tree, and repeated infections can severely thin the canopy and even kill branches."
+                },
+                {
+                  "url": "https://forestrynews.blogs.govdelivery.com/2017/06/28/rhizosphaera-needlecast-on-balsam-fir/",
+                  "quote": "Needles drop off prematurely, giving the tree a thin appearance."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "infected needles show rows of tiny black dots on the underside \u2014 the spore-bearing pycnidia",
+              "image_shows": "No diagnostic vein pattern or pycnidia is resolvable in the Vermont image; the needle appears essentially healthy.",
+              "image_quote": "The needles appear to be generally healthy with no obvious vein clearing or necrosis.",
+              "image_id": "bugwood::5395259",
+              "verification_status": "weakly_supported",
+              "reasoning": "External sources confirm pycnidia are only resolvable with magnification (10X hand lens) and vein clearing is not a Rhizosphaera trait, so a field photo showing no resolvable pycnidia and no vein clearing is consistent with published descriptions.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+                  "quote": "Rows of small, black spheres form along the length of infected needles and are visible with a 10X hand lens."
+                },
+                {
+                  "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/rhizosphaera-needle-cast",
+                  "quote": "Small black fruiting structures (pycnidia) can be seen under slight magnification on infected needles the spring after an infection."
+                }
+              ]
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The Vermont needles are long, narrow, and flat (lanceolate-linear), consistent with Abies balsamea foliage rather than any disease trait.",
+              "image_quote": "The needles are lanceolate, long, and narrow.",
+              "image_id": "bugwood::5395259",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension/reference sources confirm balsam fir needles are flat, long, and narrow (linear), supporting the candidate's foliage-shape observation, though 'lanceolate' is looser than the standard 'linear' term and the trait describes the host rather than the disease.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://plants.ces.ncsu.edu/plants/abies-balsamea/common-name/balsam-fir/",
+                  "quote": "The needles are flat and 1/2 to 1 inch long, with rounded tips. They are described as linear-shaped, with entire margins."
+                },
+                {
+                  "url": "https://en.wikipedia.org/wiki/Abies_balsamea",
+                  "quote": "the leaves are flat and needle-like, 15 to 30 mm long, dark green above, with two white stomatal bands below."
+                }
+              ]
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5395259"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "medium"
+            ],
+            "n_raw_per_pass": [
+              7
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 7,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 3,
+              "n_provisional": 2,
+              "n_contradictory": 1,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 5,
+              "n_added": 5,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "infected needles show rows of tiny black dots on the underside \u2014 the spore-bearing pycnidia ... which may be capped with a whitish waxy plug",
+              "image_shows": "The infected structure appears smooth with a waxy surface.",
+              "image_quote": "The structure appears smooth and has a waxy appearance.",
+              "image_id": "bugwood::5476427",
+              "verification_status": "verified",
+              "reasoning": "Multiple extension sources describe Rhizosphaera pycnidia/spores as smooth (versus fuzzy Stigmina), with white waxy caps, corroborating the smooth waxy texture.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/stigmina-needle-cast",
+                  "quote": "Rhizosphaera produces a smooth, black spore-bearing structure with gelatinous and clear to cream-colored extruding spore masses."
+                },
+                {
+                  "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/rhizosphaera-needle-cast",
+                  "quote": "Rhizosphaera spores will appear smooth and rounded with clean edges, distinguishing them from other needle cast diseases."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "pycnidia emerging from the stomata, which may be capped with a whitish waxy plug",
+              "image_shows": "The fungal structure appears white/lighter than the surrounding needle surface.",
+              "image_quote": "The fungal structure is distinctively lighter than the surrounding area.",
+              "image_id": "bugwood::5476427",
+              "verification_status": "weakly_supported",
+              "reasoning": "A lighter/white appearance is consistent with the documented white waxy cap on emerging pycnidia and white stomatal wax, though the dominant diagnostic structures are black, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://barron.extension.wisc.edu/files/2023/02/Colorado-Blue-Sprue-and-Conifers-Disorders-Rhizosphaera-Needle-Cast.pdf",
+                  "quote": "pycnidia appear as tiny raised, grayish bumps topped with white waxy caps ... sometimes capped by a white, waxy discharge that is pushed from the pore."
+                },
+                {
+                  "url": "https://pubs.nmsu.edu/_h/H163/index.html",
+                  "quote": "each needle has parallel rows of stomata (pores), which appear white when healthy, but when infected ... small black pycnidia protrude through the stomata."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "older needles turn brown to purple and eventually fall off",
+              "image_shows": "The needle lesion is elongated, long, narrow, and oval-shaped.",
+              "image_quote": "The lesion is long, narrow, oval-shaped.",
+              "image_id": "bugwood::5476427",
+              "verification_status": "weakly_supported",
+              "reasoning": "Rhizosphaera lesions present as bands running along the length of the narrow needle, consistent with an elongated/oval lesion shape, giving indirect support.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.russelltreeexperts.com/arbor-ed/rhizosphaera-needle-cast-causes-symptoms-management",
+                  "quote": "The first symptom that appears is a faint yellow band on a needle, which expands and changes from yellow to brown to reddish brown or purple."
+                },
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+                  "quote": "Rows of small, black spheres form along the length of infected needles."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5476427",
+            "bugwood::5476428",
+            "bugwood::5476429",
+            "bugwood::5476430",
+            "bugwood::5476431",
+            "bugwood::5476432",
+            "bugwood::5507673",
+            "bugwood::5507674",
+            "bugwood::5507675",
+            "bugwood::5507676",
+            "bugwood::5507677",
+            "bugwood::5507678",
+            "bugwood::5507679",
+            "bugwood::5507680",
+            "bugwood::5507681",
+            "bugwood::5507682"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "medium"
+            ],
+            "n_raw_per_pass": [
+              5
+            ],
+            "detected_organ_per_pass": [
+              "other"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 5,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 3,
+              "n_provisional": 0,
+              "n_contradictory": 2,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 3,
+              "n_added": 3,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     },
     {
       "disease_name": "Fir-Fern Rust",
@@ -120,9 +395,64 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [],
+          "__image_ids__": [
+            "bugwood::5476442",
+            "bugwood::5476443",
+            "bugwood::5476444",
+            "bugwood::5476445",
+            "bugwood::5476446",
+            "bugwood::5476447",
+            "bugwood::5476448",
+            "bugwood::5476449",
+            "bugwood::5476450",
+            "bugwood::5476451",
+            "bugwood::5476452",
+            "bugwood::5476453"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              2
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 2,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 0,
+              "n_provisional": 0,
+              "n_contradictory": 1,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 0,
+              "n_added": 0,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     }
   ],
   "crop": "Balsam Fir",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 3
 }

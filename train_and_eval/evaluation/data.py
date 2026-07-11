@@ -2,7 +2,11 @@ import os
 import random
 import json
 import pandas as pd
-from PIL import Image
+from PIL import Image, ImageFile
+
+# Some PlantVillage/PlantDoc JPEGs are truncated; allow PIL to load them
+# instead of raising UnidentifiedImageError / OSError in DataLoader workers.
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 from torchvision import datasets
 from torch.utils.data import Dataset, DataLoader
 import imageomics.naming_eval as naming_eval
@@ -83,7 +87,7 @@ class SeenData(datasets.ImageFolder):
 
 def img_loader(filepath):
     img = Image.open(filepath)
-    if img.mode in ("RGBA", "P"):
+    if img.mode != "RGB":
         img = img.convert("RGB")
     return img
 

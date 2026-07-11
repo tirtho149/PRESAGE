@@ -72,6 +72,7 @@
       ],
       "regional_observations": {
         "Maine": {
+          "state": "Maine",
           "deltas": [
             {
               "field": "diagnostic_features",
@@ -79,22 +80,83 @@
               "image_shows": "The image displays numerous small black spots and spots with white centers on the stem surface.",
               "image_quote": "There are numerous small black spots on the outer stem surface.",
               "image_id": "bugwood::5506003",
-              "verification_status": "novel_plausible",
-              "reasoning": "The 'black spots with white centers' detail is absent from canonical and unsupported by external sources, but is coherent with sporulating pycnidia exuding pale spore masses; flag for curator review.",
+              "verification_status": "verified",
+              "reasoning": "Extension sources confirm black pycnidia are abundant on spruce stems and rupture to release white spore masses, matching the black spots with white centers on the stem surface.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://wiki.bugwood.org/Sirococcus_Shoot_Blight",
+                  "quote": "Pycnidia are sometimes numerous on needle bases and below the fascicle sheaths of dead pine needles, but on spruces may be more abundant on dead stems."
+                },
+                {
+                  "url": "https://extension.umn.edu/plant-diseases/sirococcus-blight-conifers",
+                  "quote": "The fungus produces small black pads of tissue on the diseased needles and shoots, and when moisture and humidity are abundant, the pads rupture to release large masses of spores."
+                }
+              ]
+            },
+            {
+              "field": "severity",
+              "canonical_says": "(not specified)",
+              "image_shows": "A high fraction of the visible affected stem/organ displays the disease signs.",
+              "image_quote": "Numerous small black spots and spots with white centers are visible on the stem surface.",
+              "image_id": "bugwood::5506003",
+              "verification_status": "provisional",
+              "reasoning": "The extent/coverage of signs in a single photograph is not a visual attribute described by extension factsheets, so it cannot be externally corroborated though it is plausible and not contradicted.",
               "swarm_support": 1,
               "web_support": []
             }
           ],
-          "image_ids": [
-            "bugwood::5506003"
+          "__image_ids__": [
+            "bugwood::5506003",
+            "bugwood::5506004",
+            "bugwood::5506005",
+            "bugwood::5506006",
+            "bugwood::5506007",
+            "bugwood::5506008",
+            "bugwood::5506009",
+            "bugwood::5506010",
+            "bugwood::5506011",
+            "bugwood::5506012",
+            "bugwood::5506013"
           ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              5
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 5,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 0,
+              "n_provisional": 1,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 4
+            },
+            "merge": {
+              "n_existing": 1,
+              "n_new_candidates": 1,
+              "n_added": 1,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
           "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 1,
-            "contradictory_count": 0,
-            "duplicates_count": 5,
-            "dropped_contradictory": []
+            "failed": true,
+            "failure_reason": "claude_query returned None (auth / timeout / empty)",
+            "preserved_count": 1
           }
         }
       }

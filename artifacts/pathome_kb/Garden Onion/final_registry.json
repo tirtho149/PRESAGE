@@ -53,7 +53,102 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Colorado": {
+          "state": "Colorado",
+          "deltas": [
+            {
+              "field": "other",
+              "canonical_says": "Yellow to straw-colored lesions on onion leaves and scapes, with dry, elongated lesions or flecks",
+              "image_shows": "The onion stem surfaces show no galls, blisters, scabs, ooze, or fruiting bodies, consistent with IYSV being a virus rather than a fungal or bacterial pathogen.",
+              "image_quote": "There are no abnormalities like galls, blisters, scabs, ooze, or fruiting bodies on the stem surfaces.",
+              "image_id": "bugwood::5360005",
+              "verification_status": "weakly_supported",
+              "reasoning": "IYSV is a tospovirus (viral), so the documented absence of galls, ooze, and fruiting bodies is indirectly corroborated by references confirming its viral etiology, which does not produce such structures.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6638421/",
+                  "quote": "Iris yellow spot virus (IYSV) is in the genus Tospovirus, family Bunyaviridae, with a single-stranded, tri-segmented RNA genome."
+                },
+                {
+                  "url": "https://wiki.bugwood.org/HPIPM:Onion_Iris_Yellow_Spot",
+                  "quote": "The pathogen is a tospovirus that is transmitted by the onion thrips, Thrips tabaci."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Lesions may be diamond-shaped, but this occurs more commonly on scapes than on leaves.",
+              "image_shows": "The stems appear uniformly green with no vascular streaking, dark blotches, or water-soaked streaks, consistent with IYSV being a foliar-lesion virus rather than a vascular or bacterial disease.",
+              "image_quote": "The stems appear uniformly green without visible patterns indicative of discoloration.",
+              "image_id": "bugwood::5360005",
+              "verification_status": "weakly_supported",
+              "reasoning": "IYSV produces discrete foliar/scape lesions rather than vascular streaking or water-soaking, so the observed absence of vascular discoloration is indirectly consistent with the documented symptomatology.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/iris-yellow-spot/",
+                  "quote": "Symptoms of iris yellow spot on onion include yellow to straw-colored lesions on leaves and scapes, and dry, elongated lesions or flecks that may resemble severe thrips feeding injury."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5360005",
+            "bugwood::5360006",
+            "bugwood::5367573",
+            "bugwood::5367579",
+            "bugwood::5367586",
+            "bugwood::5367589",
+            "bugwood::5367590",
+            "bugwood::5429811",
+            "bugwood::5429812",
+            "bugwood::5429813",
+            "bugwood::5429814",
+            "bugwood::5429815",
+            "bugwood::5498720",
+            "bugwood::5498721"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              5
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 5,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 2,
+              "n_provisional": 0,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 3
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 2,
+              "n_added": 2,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     },
     {
       "disease_name": "Fusarium Damping-Off",
@@ -104,7 +199,103 @@
       },
       "confidence": "medium",
       "num_sources": 1,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Colorado": {
+          "state": "Colorado",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "tissue at the soil line shrinks and aboveground parts wilt and fall over",
+              "image_shows": "In Colorado onion seedlings, Fusarium damping-off manifests as dry, dead leaf sheaths at the soil line.",
+              "image_quote": "The image shows dry, dead leaf sheaths at the soil line.",
+              "image_id": "bugwood::5474191",
+              "verification_status": "verified",
+              "reasoning": "Extension sources confirm Fusarium kills onion seedlings at the soil line with rapid tissue shrinking/necrosis, consistent with dry dead leaf sheaths at that point.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.colostate.edu/resource/soil-borne-diseases-of-onion/",
+                  "quote": "Plants often are infected at the soil line or slightly below, and the tissue shrinks rapidly while the aboveground parts wilt and fall over."
+                },
+                {
+                  "url": "https://wiki.bugwood.org/HPIPM:Onion_Damping_Off,_Seedling_Blight",
+                  "quote": "A brown rot develops on roots and lower stems at or below the soil line, and infected seedlings quickly wilt and collapse."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "Infection at the soil line or slightly below with rapid tissue shrinking",
+              "image_shows": "Affected stems show water-soaked dark streaks extending from soil-line lesions.",
+              "image_quote": "Water-soaked dark streaks extending from lesions are visible on the stem surface.",
+              "image_id": "bugwood::5474191",
+              "verification_status": "weakly_supported",
+              "reasoning": "Water-soaked lesions are documented for Fusarium damping-off, but the specific dark streaking pattern on onion stems is only indirectly supported, so partial support.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://diagnosis.ces.ncsu.edu/soybean/disorder/detail/fusarium-damping-off",
+                  "quote": "Fusarium causes water-soaked lesions on the hypocotyl and/or on the cotyledons."
+                },
+                {
+                  "url": "https://extension.colostate.edu/resource/soil-borne-diseases-of-onion/",
+                  "quote": "Damping-off caused by Fusarium spp. is often a post-emergence damping-off in which the pathogens attack seedlings at the soil line."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5474191",
+            "bugwood::5474192",
+            "bugwood::5474193",
+            "bugwood::5474194",
+            "bugwood::5474195",
+            "bugwood::5474196",
+            "bugwood::5474197",
+            "bugwood::5474198",
+            "bugwood::5474199",
+            "bugwood::5474200",
+            "bugwood::5498719"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              6
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 6,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 2,
+              "n_provisional": 0,
+              "n_contradictory": 1,
+              "n_duplicates_existing": 3
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 2,
+              "n_added": 2,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     },
     {
       "disease_name": "Purple Blotch",
@@ -157,8 +348,8 @@
           "Reduce hours of leaf wetness by plant spacing and density, as well as irrigation management.",
           "Avoid dense plantings of late maturing varieties.",
           "Avoid injuring onions during production.",
-          "Undercut roots and harvest at full maturity in dry weather; properly cure bulbs in the field, lifting and drying several days before topping with ambient to warm (90 to 95Â°F) air.",
-          "Maintain storage temperatures near 32Â°F with 70% or less relative humidity.",
+          "Undercut roots and harvest at full maturity in dry weather; properly cure bulbs in the field, lifting and drying several days before topping with ambient to warm (90 to 95\u00c2\u00b0F) air.",
+          "Maintain storage temperatures near 32\u00c2\u00b0F with 70% or less relative humidity.",
           "Plant tolerant or resistant varieties. 'Fiesta' is tolerant.",
           "Use fungicides as soon as the disease is confirmed/occurs to prevent further spread.",
           "Copper fungicides/products (Group M1) are registered but not highly effective and not recommended as stand-alone materials.",
@@ -203,7 +394,82 @@
           "alternative_source_url": "https://extension.usu.edu/pests/ipm/notes_ag/veg-purple-blotch",
           "note": "USU and PNW describe symptoms only on leaves (foliar), while Bugwood states the pathogen 'can infect all above-ground parts of the plant in addition to the bulb.' Canonical reflects the broader Bugwood description."
         }
-      ]
+      ],
+      "regional_observations": {
+        "Maine": {
+          "state": "Maine",
+          "deltas": [
+            {
+              "field": "severity",
+              "canonical_says": "in severe cases lesions coalesce to blight the entire leaf, which then wilts and dies",
+              "image_shows": "Numerous small, elongated lesions cover a significant portion of the visible leaf surface, indicating advanced foliar severity.",
+              "image_quote": "The image displays numerous small, elongated lesions that cover a significant portion of the visible leaf surface.",
+              "image_id": "bugwood::5530483",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources confirm purple blotch lesions enlarge and coalesce to cover and blight much of the leaf, indirectly supporting the observed dense elongated-lesion coverage as a severity signal.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://www.canr.msu.edu/news/downy_mildew_and_purple_blotch_are_here_in_michigan_onion_fields",
+                  "quote": "In severe cases, lesions enlarge and coalesce to blight the entire leaf; lesions can coalesce, girdle the leaf, and cause tip dieback."
+                },
+                {
+                  "url": "https://extension.usu.edu/vegetableguide/onion/purple-blotch-stemphylium-leaf-blight",
+                  "quote": "Under favorable conditions these lesions enlarge, coalesce, become zonate, and may girdle the entire leaf, which then yellows and wilts."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5530483",
+            "bugwood::5530484",
+            "bugwood::5530485",
+            "bugwood::5530486",
+            "bugwood::5530487",
+            "bugwood::5530488",
+            "bugwood::5530489",
+            "bugwood::5530490",
+            "bugwood::5530491",
+            "bugwood::5530492",
+            "bugwood::5530493"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              4
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 4,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 1,
+              "n_provisional": 0,
+              "n_contradictory": 2,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 1,
+              "n_added": 1,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     },
     {
       "disease_name": "Black Mold",
@@ -258,7 +524,7 @@
           "Store bulbs in clean stores and cover them with Cement and Zeolite as an eco-friendly alternative to synthetic fungicides."
         ],
         "url": "https://pnwhandbooks.org/plantdisease/host-disease/onion-allium-cepa-black-mold",
-        "quote": "Cultural control Plant seed free of Aspergillus niger . Promptly and adequately dry bulbs after harvest, but avoid using heated air, which favors the occurrence of black mold. Storing bulbs at low temperatures (35Ã‚Â°F to 55Ã‚Â°F) and low humidity controls black mold if bulbs are cured properly. Avoid bruising bulbs during handling. Control other foliar diseases in the field."
+        "quote": "Cultural control Plant seed free of Aspergillus niger . Promptly and adequately dry bulbs after harvest, but avoid using heated air, which favors the occurrence of black mold. Storing bulbs at low temperatures (35\u00c3\u201a\u00c2\u00b0F to 55\u00c3\u201a\u00c2\u00b0F) and low humidity controls black mold if bulbs are cured properly. Avoid bruising bulbs during handling. Control other foliar diseases in the field."
       },
       "confidence": "high",
       "num_sources": 3,
@@ -280,11 +546,86 @@
         {
           "field": "treatments (storage conditions)",
           "canonical_value": "Store at low temperatures (35-55 F) and low humidity (PNW)",
-          "alternative_value": "Storage at 20-25 Â°C and relative humidity of 70-80% (Nature)",
+          "alternative_value": "Storage at 20-25 \u00c2\u00b0C and relative humidity of 70-80% (Nature)",
           "alternative_source_url": "https://www.nature.com/articles/s41598-024-53849-9",
           "note": "Recommended storage temperature/humidity ranges differ substantially between the extension handbook and the journal article."
         }
-      ]
+      ],
+      "regional_observations": {
+        "California": {
+          "state": "California",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "masses of powdery black spores arranged as streaks along veins on and between the outer dry scales",
+              "image_shows": "In this California sample the infection presents as small, scattered dark spots speckled across a predominantly white bulb surface rather than continuous vein-aligned streaks.",
+              "image_quote": "The photo displays a Garden Onion with a predominantly white surface, speckled with small, scattered dark spots.",
+              "image_id": "bugwood::1571308",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources confirm early/mild black mold shows discrete black spots on the outer scale surface, so scattered dark spots on a white bulb are consistent with a mild-stage infection.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.usu.edu/planthealth/ipm/notes_ag/veg-black-mold",
+                  "quote": "Mild infections appear as black spots or streaks around the top of the onion and possibly on the sides, or the whole neck area may be black."
+                },
+                {
+                  "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/onion-black-mold.aspx",
+                  "quote": "Symptoms include black discoloration on the neck, shallow black lesions on the outer scales, and streaks of black underneath the outer scales."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::1571308",
+            "bugwood::1571309",
+            "bugwood::1571310",
+            "bugwood::1571311",
+            "bugwood::1571312",
+            "bugwood::1571410",
+            "bugwood::1571411",
+            "bugwood::1571412",
+            "bugwood::1571413",
+            "bugwood::1572471",
+            "bugwood::1572472"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "medium"
+            ],
+            "n_raw_per_pass": [
+              3
+            ],
+            "detected_organ_per_pass": [
+              "fruit"
+            ],
+            "n_active_agents_per_pass": [
+              6
+            ],
+            "n_after_agreement": 3,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 1,
+              "n_provisional": 0,
+              "n_contradictory": 1,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 1,
+              "n_added": 1,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          }
+        }
+      }
     },
     {
       "disease_name": "Downy Mildew",
@@ -367,7 +708,422 @@
           "alternative_source_url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/downy-mildew/",
           "note": "Only PNW characterizes the pathogen type, describing P. destructor as a 'fungus-like microorganism' (i.e., an oomycete); UC IPM does not state a disease type."
         }
-      ]
+      ],
+      "regional_observations": {
+        "California": {
+          "state": "California",
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Signs of Peronospora destructor appear on older leaf surfaces as fine, furry, grayish-white (grayish violet) growths when leaves are wet or humidity is very high.",
+              "image_shows": "A white powdery/grayish growth is present on the green stem, consistent with P. destructor sporulation on the stem surface.",
+              "image_quote": "The image shows a green stem with a white powdery growth.",
+              "image_id": "bugwood::1570865",
+              "verification_status": "weakly_supported",
+              "reasoning": "Grayish-white sporulation of P. destructor is documented and can occur on stems/seed stalks (color ranges white-to-gray-to-violet), though the classic texture is furry/downy rather than truly powdery, so support is partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://vegpath.plantpath.wisc.edu/diseases/onion-downy-mildew/",
+                  "quote": "When leaves are wet, or when humidity is very high, signs of Peronospora destructor are visible on the surface of older leaves as fine, furry, grayish-white growths."
+                },
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/onion-allium-cepa-downy-mildew",
+                  "quote": "As spots enlarge, often girdling the leaves, a grayish violet furry mold develops on the spot's surface. These symptoms can also be seen on seed stalks and flowers."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Signs of Peronospora destructor appear on older leaf surfaces as fine, furry, grayish-white growths when leaves are wet or humidity is very high.",
+              "image_shows": "The stem surface has a fine, slightly fuzzy texture with a faint powdery coating, consistent with early P. destructor sporangial growth (not powdery mildew).",
+              "image_quote": "The stem surface appears smooth with a slight powdery coating.",
+              "image_id": "bugwood::1570865",
+              "verification_status": "weakly_supported",
+              "reasoning": "A fine fuzzy surface texture is consistent with downy (furry) sporangial growth of P. destructor, but the candidate's attribution to powdery mildew is a look-alike confusion, so support is only partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://vegpath.plantpath.wisc.edu/diseases/onion-downy-mildew/",
+                  "quote": "When leaves are wet, or when humidity is very high, signs of Peronospora destructor are visible on the surface of older leaves as fine, furry, grayish-white growths."
+                },
+                {
+                  "url": "https://cropnuts.com/difference-between-powdery-mildew-and-downy-mildew/",
+                  "quote": "Downy mildew ... looks like mats of fluffy growth ... the color varies from white to gray to purple."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "affected_organs",
+              "canonical_says": "Foliar; Stem; Seed",
+              "image_shows": "A noticeable lesion is visible on the green onion stalk/scape, consistent with downy mildew lesions that develop on seed stalks.",
+              "image_quote": "The image shows a green onion stalk with a noticeable lesion, suggesting some form of disease or damage.",
+              "image_id": "bugwood::1570865",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources confirm downy mildew produces lesions on onion seed stalks/scapes, supporting a stalk lesion as consistent with the disease, though the candidate does not distinguish it from the named look-alikes.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/onion-allium-cepa-downy-mildew",
+                  "quote": "Slightly pale spots develop first on leaves or seed stalks, later taking on a light brown or purplish shade. As spots enlarge, often girdling the leaves, a grayish violet furry mold develops on the spot's surface."
+                },
+                {
+                  "url": "https://vegpath.plantpath.wisc.edu/diseases/onion-downy-mildew/",
+                  "quote": "Lesion-weakened seed stems may break, causing seed to shrivel."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "Signs of Peronospora destructor appear on older leaf surfaces as fine, furry, grayish-white growths when leaves are wet or humidity is very high.",
+              "image_shows": "No mycelium, spore masses, fruiting bodies, sclerotia, or bacterial ooze are visible; the stem appears smooth with no active fungal growth.",
+              "image_quote": "The stem appears smooth with no visible signs of fungal growth.",
+              "image_id": "bugwood::1570865",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension sources confirm that visible grayish-white/violet sporulation forms only under wet or highly humid conditions and is absent when dry, so a smooth surface with no visible fungal growth is consistent with a dry-condition photograph of the disease.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/downy-mildew/",
+                  "quote": "When leaves are wet, or when humidity is very high, signs of Peronospora destructor are visible on the surface of older leaves as fine, furry, grayish-white growths; no spores are produced when conditions are dry."
+                },
+                {
+                  "url": "https://extension.colostate.edu/resource/botrytis-downy-mildew-and-purple-blotch-of-onion/",
+                  "quote": "Downy mildew occurs as pale, elongated patches on older leaves that become covered with a violet-gray fuzzy growth only during moist periods, so in dry conditions the lesions appear without the characteristic sporulation."
+                }
+              ]
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::1570865",
+            "bugwood::1571061",
+            "bugwood::1571062",
+            "bugwood::1571063",
+            "bugwood::1571065",
+            "bugwood::1571066",
+            "bugwood::1571067",
+            "bugwood::1571068",
+            "bugwood::1571069",
+            "bugwood::1571075",
+            "bugwood::1571076",
+            "bugwood::1571077",
+            "bugwood::1571159",
+            "bugwood::1571160",
+            "bugwood::1571161",
+            "bugwood::1571165"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              5
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 5,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 3,
+              "n_provisional": 1,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 4,
+              "n_added": 4,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "Colorado": {
+          "state": "Colorado",
+          "deltas": [
+            {
+              "field": "affected_organs",
+              "canonical_says": "Foliar; Stem; Seed",
+              "image_shows": "The image displays rows of green onion plants without visible abnormalities on the stem surface.",
+              "image_quote": "The stems of the plants are uniformly green without any signs of galls, blisters, scabs, ooze, or fruiting bodies.",
+              "image_id": "bugwood::5362218",
+              "verification_status": "field_observation",
+              "reasoning": "Downy mildew produces fuzzy foliar sporulation rather than galls/scabs/ooze, so their absence is consistent, but no published photo corroborates a symptomless onion image, making this a plausible but unverified negative observation.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "lesions may turn violet-to-purple",
+              "image_shows": "The image shows onion plants with no visible discoloration patterns on the stems.",
+              "image_quote": "There are no visible galls, blisters, scabs, exudates, or fruiting bodies breaking through the bark/epidermis.",
+              "image_id": "bugwood::5362218",
+              "verification_status": "field_observation",
+              "reasoning": "Absence of the canonical violet-to-purple discoloration in this particular photo is plausible (the symptom is stage- and humidity-dependent) and is not contradicted by extension sources, but no published photo corroborates a symptomless view.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            },
+            {
+              "field": "look_alikes",
+              "canonical_says": "Purple blotch; Stemphylium leaf blight",
+              "image_shows": "The image shows rows of onion plants without visible signs of mycelium or other pathogens that would support either the canonical disease or the look-alikes.",
+              "image_quote": "The image shows rows of onions without any visible signs of mycelium, spore masses, pycnidia, fruiting bodies, sclerotia, bacterial ooze, or rust pustules.",
+              "image_id": "bugwood::5362218",
+              "verification_status": "field_observation",
+              "reasoning": "The observation that no diagnostic fungal or bacterial structures separating downy mildew from its look-alikes are visible is a plausible negative finding not contradicted by literature, but no published photo affirmatively supports a symptomless image.",
+              "swarm_support": 1,
+              "web_support": [],
+              "_prior_status": "provisional"
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5362218",
+            "bugwood::5362222"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "medium"
+            ],
+            "n_raw_per_pass": [
+              5
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 5,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 0,
+              "n_provisional": 3,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 2
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 3,
+              "n_added": 3,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 3,
+            "contradictory_count": 0,
+            "duplicates_count": 0,
+            "dropped_contradictory": []
+          }
+        },
+        "Georgia": {
+          "state": "Georgia",
+          "deltas": [
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "lesions sometimes showing a violet-to-purple color; leaf tissue becomes pale green, then tan to brown or yellow",
+              "image_shows": "In Georgia onion, downy mildew lesions run elongated along the tubular leaf rather than as discrete round spots.",
+              "image_quote": "The lesion stretches horizontally across the leaf, suggesting an elongated shape.",
+              "image_id": "bugwood::5435588",
+              "verification_status": "verified",
+              "reasoning": "The Georgia first-report and extension sources explicitly describe downy mildew lesions as elongated along older onion leaves, directly corroborating the observation.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/30841183/",
+                  "quote": "localized areas in a commercial field of Vidalia sweet onions in Toombs County, GA, exhibited symptoms that included elongated pale to light tan lesions on older leaves as well as some totally collapsed leaves."
+                },
+                {
+                  "url": "https://vegpath.plantpath.wisc.edu/diseases/onion-downy-mildew/",
+                  "quote": "It first infects older leaves, occurring as pale, elongated patches that may have a grayish-violet fuzzy growth."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "leaf tissue becomes pale green, then tan to brown or yellow",
+              "image_shows": "Georgia downy-mildew lesions present a light-tan lesion center consistent with the pale-to-tan progression.",
+              "image_quote": "The image shows a tan center surrounded by a chlorotic yellow halo.",
+              "image_id": "bugwood::5435588",
+              "verification_status": "weakly_supported",
+              "reasoning": "Light-tan lesion color is supported by the Georgia report, though the discrete chlorotic-halo framing is more typical of the purple-blotch look-alike, so support is only partial.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/30841183/",
+                  "quote": "elongated pale to light tan lesions on older leaves as well as some totally collapsed leaves."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "fine, furry, grayish-white (grayish violet) growths appear on the surface of older leaves",
+              "image_shows": "The lesion surface appears raised/rough, consistent with a downy-mildew sporulation mat on the leaf.",
+              "image_quote": "The surface of the lesion has a raised appearance.",
+              "image_id": "bugwood::5435588",
+              "verification_status": "weakly_supported",
+              "reasoning": "The furry grayish-violet sporulation mat characteristic of downy mildew can appear raised and rough on the leaf surface, giving indirect support.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://vegpath.plantpath.wisc.edu/diseases/onion-downy-mildew/",
+                  "quote": "pale, elongated patches that may have a grayish-violet fuzzy growth appear early in the morning during moist periods."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "leaf tissue becomes pale green, then tan to brown or yellow",
+              "image_shows": "The infected onion leaf shows chlorosis/yellowing surrounding the lesion.",
+              "image_quote": "The lesion has a chlorotic yellow halo surrounding it.",
+              "image_id": "bugwood::5435588",
+              "verification_status": "weakly_supported",
+              "reasoning": "Chlorosis/yellowing of infected leaves is a documented downy-mildew symptom, though the discrete-halo pattern is less specific to this disease.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.colostate.edu/resource/botrytis-downy-mildew-and-purple-blotch-of-onion/",
+                  "quote": "affected leaves become pale green then yellow and can fold over and collapse."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "then tan to brown or yellow, and finally collapses",
+              "image_shows": "The lesion shows a pale-green center progressing to a darker brown necrotic margin.",
+              "image_quote": "The lesion appears with a pale green center, transitioning to a darker brown margin, with a chlorotic yellow halo.",
+              "image_id": "bugwood::5435588",
+              "verification_status": "weakly_supported",
+              "reasoning": "The pale-green-to-brown necrotic progression matches documented downy-mildew lesion development, though the concentric margin/halo detail is not specific to this pathogen.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://vegpath.plantpath.wisc.edu/diseases/onion-downy-mildew/",
+                  "quote": "Irregular foliar lesions begin as pale-green, then progress to yellow or brown necrotic tissue."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "and finally collapses",
+              "image_shows": "The infected onion leaf curls/folds toward the center, consistent with leaf folding and collapse.",
+              "image_quote": "The leaf exhibits up-curling towards the center.",
+              "image_id": "bugwood::5435588",
+              "verification_status": "weakly_supported",
+              "reasoning": "Leaf folding/curling toward collapse is a documented downy-mildew progression, giving partial support to the observed leaf curl.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://extension.colostate.edu/resource/botrytis-downy-mildew-and-purple-blotch-of-onion/",
+                  "quote": "affected leaves become pale green then yellow and can fold over and collapse."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "other",
+              "canonical_says": "(not specified)",
+              "image_shows": "The affected onion leaf is elongated/linear in form.",
+              "image_quote": "The leaf has an elongated, lanceolate appearance.",
+              "image_id": "bugwood::5435588",
+              "verification_status": "weakly_supported",
+              "reasoning": "Extension photo descriptions confirm downy-mildew lesions and affected tissue run elongated along the linear onion leaf, giving partial/indirect support to the elongated-form observation, though a linear leaf is also baseline onion anatomy.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://vegpath.plantpath.wisc.edu/diseases/onion-downy-mildew/",
+                  "quote": "The disease presents with elongated pale to light tan lesions on older leaves; symptoms begin as elongated, pale yellow lesions."
+                },
+                {
+                  "url": "https://ipm.ucanr.edu/agriculture/onion-and-garlic/downy-mildew/",
+                  "quote": "Downy mildew symptoms appear on older leaves as elongated patches that vary in size and are slightly paler than the rest of the foliage."
+                }
+              ]
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5435588",
+            "bugwood::5435589",
+            "bugwood::5435590"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "high"
+            ],
+            "n_raw_per_pass": [
+              12
+            ],
+            "detected_organ_per_pass": [
+              "leaf"
+            ],
+            "n_active_agents_per_pass": [
+              11
+            ],
+            "n_after_agreement": 12,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 6,
+              "n_provisional": 2,
+              "n_contradictory": 3,
+              "n_duplicates_existing": 1
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 8,
+              "n_added": 8,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 1,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 1,
+            "dropped_contradictory": []
+          }
+        }
+      }
     },
     {
       "disease_name": "Onion Yellows Phytoplasma",
@@ -405,9 +1161,138 @@
       },
       "confidence": "low",
       "num_sources": 0,
-      "conflicts": []
+      "conflicts": [],
+      "regional_observations": {
+        "Colorado": {
+          "state": "Colorado",
+          "deltas": [
+            {
+              "field": "diagnostic_features",
+              "canonical_says": "(not specified)",
+              "image_shows": "No visible pathogen signs such as mycelium, spore masses, pycnidia, fruiting bodies, sclerotia, bacterial ooze, or rust pustules are present in the image.",
+              "image_quote": "The image shows healthy onion leaves without any visible signs of pathogen activity such as mycelium, spore masses, pycnidia, fruiting bodies, sclerotia, bacterial ooze, or rust pustules.",
+              "image_id": "bugwood::5474121",
+              "verification_status": "verified",
+              "reasoning": "Phytoplasmas are wall-less, phloem-limited bacteria that produce no spores or fruiting bodies, so the absence of sporulation/fungal signs is strongly consistent with this pathogen's biology.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://en.wikipedia.org/wiki/Phytoplasma",
+                  "quote": "Phytoplasma have no flagella, and produce no spores; they don't produce any sort of fruiting bodies, nor are they transferred by air or contact with tissues."
+                },
+                {
+                  "url": "https://www.rhs.org.uk/disease/phytoplasmas",
+                  "quote": "Phytoplasmas are phloem-limited, wall-less bacteria (Mollicutes) distinct from fungal pathogens, which produce spores and fruiting bodies."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "No evidence of vascular streaking, dark blotches, or water-soaked streaks on the stem surface was observed.",
+              "image_quote": "The stem surface appears normal without vascular streaking, dark blotches, or water-soaked streaks.",
+              "image_id": "bugwood::5474121",
+              "verification_status": "weakly_supported",
+              "reasoning": "Onion yellows presents as foliar yellowing/twisting/stunting and floral abnormalities, not stem vascular streaking or water-soaked blotches, so the absence of such stem lesions is consistent with the disease profile.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://wiki.bugwood.org/HPIPM:Onion_Aster_Yellows",
+                  "quote": "On onion, leaves are small, twisted and yellow, and flower stems are abnormally elongated with malformed sterile floral clusters."
+                },
+                {
+                  "url": "https://agsci.colostate.edu/agbio/ipm-pests/aster-leafhopper-and-aster-yellows/",
+                  "quote": "Aster yellows symptoms include yellowing and stunting of foliage rather than surface vascular streaking or water-soaked lesions."
+                }
+              ],
+              "__support__": 1
+            },
+            {
+              "field": "lesion_morphology",
+              "canonical_says": "(not specified)",
+              "image_shows": "The image displays green garden onion plants with no visible abnormalities on the stem surfaces.",
+              "image_quote": "The stem surfaces appear smooth and unblemished.",
+              "image_id": "bugwood::5474121",
+              "verification_status": "weakly_supported",
+              "reasoning": "Diagnostic onion-yellows symptoms are foliar and floral, so smooth unblemished pseudostem surfaces are indirectly consistent with the disease not producing stem-surface abnormalities.",
+              "swarm_support": 1,
+              "web_support": [
+                {
+                  "url": "https://wiki.bugwood.org/HPIPM:Onion_Aster_Yellows",
+                  "quote": "On onion, leaves are small, twisted and yellow; the characteristic symptoms are foliar rather than stem-surface lesions."
+                },
+                {
+                  "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2019.01349/full",
+                  "quote": "Phytoplasma diseases are characterized by little leaves, phyllody, virescence, yellowing and witches' brooms rather than stem-surface lesions."
+                }
+              ],
+              "__support__": 1
+            }
+          ],
+          "__image_ids__": [
+            "bugwood::5474121",
+            "bugwood::5474122",
+            "bugwood::5474123",
+            "bugwood::5474124",
+            "bugwood::5474125",
+            "bugwood::5474126",
+            "bugwood::5474127",
+            "bugwood::5474128",
+            "bugwood::5474129",
+            "bugwood::5474130",
+            "bugwood::5474131",
+            "bugwood::5474132",
+            "bugwood::5474133",
+            "bugwood::5474134"
+          ],
+          "__swarm_meta__": {
+            "granularity": "routed",
+            "n_runs": 1,
+            "agreement_min": 1,
+            "temperature": 0.8,
+            "similarity_threshold": 0.4,
+            "kappa_per_pass": [
+              "medium"
+            ],
+            "n_raw_per_pass": [
+              5
+            ],
+            "detected_organ_per_pass": [
+              "stem"
+            ],
+            "n_active_agents_per_pass": [
+              8
+            ],
+            "n_after_agreement": 5,
+            "verifier": {
+              "enabled": true,
+              "n_verified": 3,
+              "n_provisional": 2,
+              "n_contradictory": 0,
+              "n_duplicates_existing": 0
+            },
+            "merge": {
+              "n_existing": 0,
+              "n_new_candidates": 5,
+              "n_added": 5,
+              "n_overlaps_bumped": 0,
+              "n_upgraded": 0
+            }
+          },
+          "__verifier_meta__": {
+            "failed": false,
+            "verified_count": 0,
+            "provisional_count": 0,
+            "contradictory_count": 0,
+            "duplicates_count": 2,
+            "dropped_contradictory": []
+          }
+        }
+      }
     }
   ],
   "crop": "Garden Onion",
-  "generated_date": "2026-06-10"
+  "generated_date": "2026-06-10",
+  "regional_observations_count": 8
 }
