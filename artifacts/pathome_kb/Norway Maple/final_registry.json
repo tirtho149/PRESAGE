@@ -1,984 +1,991 @@
 {
-  "diseases": [
+ "diseases": [
+  {
+   "disease_name": "Anthracnose",
+   "pathogen_scientific_name": {
+    "value": "Aureobasidium apocryptum",
+    "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+    "quote": "Scientific Name Aureobasidium apocryptum",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://www.uvm.edu/extension/news/common-spring-disease-maple-anthracnose",
+    "quote": "a common spring fungal disease called maple anthracnose"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem"
+    ],
+    "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+    "quote": "Symptoms on twigs and buds are less common on maples but under high disease pressure, tender shoots may be killed."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Dark-colored, irregularly-shaped, angular spots or blotches occur primarily along the midrib, primary veins and leaf margins; lesions may enlarge and coalesce, killing large areas of leaves, and in severe cases defoliation and twig dieback can occur.",
+     "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+     "quote": "in general the symptoms are characterized by dark-colored, irregularly-shaped, angular spots or blotches that occur primarily along the midrib, primary veins and leaf margins"
+    },
+    "diagnostic_features": {
+     "value": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins; on sugar maple, large brown blotches along primary veins; on Japanese maple, tan or black lesions along primary veins and leaf margins. The fungus can be distinguished microscopically by one-celled, colorless conidia in groups of four to eight on the tips of short, broad conidiophores.",
+     "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+     "quote": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins. On sugar maple, lesions occur along primary veins and appear as large, brown blotches. On Japanese maple, lesions occur along primary veins and leaf margins and the lesions can appear both tan or black in color."
+    },
+    "look_alikes": {
+     "value": [
+      "leaf scorch caused by drought and heat injury",
+      "Discula campestris",
+      "Discula umbrinella",
+      "Monostichella histeroidea",
+      "Phyllosticta minima",
+      "oak anthracnose (Quercus sp.)",
+      "ash anthracnose (Fraxinus sp.)",
+      "sycamore anthracnose (Plantanus sp.)"
+     ],
+     "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+     "quote": "Symptoms of maple anthracnose caused by A. apocryptum may be confused with leaf scorch caused by drought and heat injury. ... Other fungi that cause anthracnose on maple, Discula campestris , Discula umbrinella , and Monostichella histeroidea , also produces acervuli, but the condia are quite distinct. ... Yet another pathogen of maple, Phyllosticta minima , produces pycnidia."
+    }
+   },
+   "treatments": {
+    "value": [
+     "Rake/remove and destroy fallen infected leaves (primary inoculum source) to reduce the pathogen and prevent overwintering",
+     "Avoid overhead irrigation and splashing water to reduce free moisture on foliage and limit spread",
+     "If disease is severe, prune out infected shoots",
+     "Maintain tree vigor through adequate fertilization, watering during drought, mulching and pruning",
+     "Apply lime if soil pH is too low",
+     "Apply labeled fungicides to protect susceptible/nursery trees (e.g. copper hydroxide + mancozeb, thiabendazole, mancozeb, propiconazole), with the first application at or just before bud break and continued through spring"
+    ],
+    "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+    "quote": "avoid overhead irrigation of ornamental maples to reduce free moisture on the foliage. Infected leaves are the primary source of inoculum and should be removed from the site. If the disease is severe, infected shoots should be pruned out"
+   },
+   "confidence": "high",
+   "num_sources": 3,
+   "conflicts": [
     {
-      "disease_name": "Anthracnose",
-      "pathogen_scientific_name": {
-        "value": "Aureobasidium apocryptum",
-        "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
-        "quote": "Scientific Name Aureobasidium apocryptum",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://www.uvm.edu/extension/news/common-spring-disease-maple-anthracnose",
-        "quote": "a common spring fungal disease called maple anthracnose"
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem"
-        ],
-        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-        "quote": "Symptoms on twigs and buds are less common on maples but under high disease pressure, tender shoots may be killed."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Dark-colored, irregularly-shaped, angular spots or blotches occur primarily along the midrib, primary veins and leaf margins; lesions may enlarge and coalesce, killing large areas of leaves, and in severe cases defoliation and twig dieback can occur.",
-          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-          "quote": "in general the symptoms are characterized by dark-colored, irregularly-shaped, angular spots or blotches that occur primarily along the midrib, primary veins and leaf margins"
-        },
-        "diagnostic_features": {
-          "value": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins; on sugar maple, large brown blotches along primary veins; on Japanese maple, tan or black lesions along primary veins and leaf margins. The fungus can be distinguished microscopically by one-celled, colorless conidia in groups of four to eight on the tips of short, broad conidiophores.",
-          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-          "quote": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins. On sugar maple, lesions occur along primary veins and appear as large, brown blotches. On Japanese maple, lesions occur along primary veins and leaf margins and the lesions can appear both tan or black in color."
-        },
-        "look_alikes": {
-          "value": [
-            "leaf scorch caused by drought and heat injury",
-            "Discula campestris",
-            "Discula umbrinella",
-            "Monostichella histeroidea",
-            "Phyllosticta minima",
-            "oak anthracnose (Quercus sp.)",
-            "ash anthracnose (Fraxinus sp.)",
-            "sycamore anthracnose (Plantanus sp.)"
-          ],
-          "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
-          "quote": "Symptoms of maple anthracnose caused by A. apocryptum may be confused with leaf scorch caused by drought and heat injury. ... Other fungi that cause anthracnose on maple, Discula campestris , Discula umbrinella , and Monostichella histeroidea , also produces acervuli, but the condia are quite distinct. ... Yet another pathogen of maple, Phyllosticta minima , produces pycnidia."
-        }
-      },
-      "treatments": {
-        "value": [
-          "Rake/remove and destroy fallen infected leaves (primary inoculum source) to reduce the pathogen and prevent overwintering",
-          "Avoid overhead irrigation and splashing water to reduce free moisture on foliage and limit spread",
-          "If disease is severe, prune out infected shoots",
-          "Maintain tree vigor through adequate fertilization, watering during drought, mulching and pruning",
-          "Apply lime if soil pH is too low",
-          "Apply labeled fungicides to protect susceptible/nursery trees (e.g. copper hydroxide + mancozeb, thiabendazole, mancozeb, propiconazole), with the first application at or just before bud break and continued through spring"
-        ],
-        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-        "quote": "avoid overhead irrigation of ornamental maples to reduce free moisture on the foliage. Infected leaves are the primary source of inoculum and should be removed from the site. If the disease is severe, infected shoots should be pruned out"
-      },
-      "confidence": "high",
-      "num_sources": 3,
-      "conflicts": [
-        {
-          "field": "affected_parts",
-          "canonical_value": "[\"Foliar\", \"Stem\"]",
-          "alternative_value": "[\"Foliar\"]",
-          "alternative_source_url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
-          "note": "UVM and UMass report both foliar and stem/twig/shoot involvement under high disease pressure; Bugwoodwiki describes A. apocryptum strictly as a foliar pathogen."
-        },
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Aureobasidium apocryptum",
-          "alternative_value": "Several fungal pathogens (genus not specified)",
-          "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-          "note": "Maple anthracnose is caused by several fungal pathogens; Bugwoodwiki names A. apocryptum as one of them. UVM and UMass do not name a single causal species. No NCBI/MycoBank validation was supplied to confirm the accepted name."
-        }
-      ],
-      "regional_observations": {
-        "Kentucky": {
-          "state": "Kentucky",
-          "deltas": [
-            {
-              "field": "affected_organs",
-              "canonical_says": "Dark-colored, irregularly-shaped, angular spots or blotches occur primarily along the midrib, primary veins and leaf margins",
-              "image_shows": "Irregularly-shaped necrotic areas extend inward from the leaf veins.",
-              "image_quote": "Lesions appear as narrow, dark streaks along the veins.",
-              "image_id": "bugwood::5430489",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension sources corroborate vein-associated necrosis extending from the veins, though the description overlaps heavily with canonical text.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://content.ces.ncsu.edu/common-disease-pests-of-maple-in-north-carolina",
-                  "quote": "Necrotic spots many times associated with major leaf veins are characteristic of maple anthracnose."
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-                  "quote": "Lesions often have distinct margins and are located along leaf veins, where water may linger and promote fungal growth."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Dark-colored, irregularly-shaped, angular spots or blotches occur primarily along the midrib, primary veins and leaf margins",
-              "image_shows": "Affected tissue shows a mix of dark brown and tan coloration on the leaf surface.",
-              "image_quote": "Lesion center is brown, margin is tan.",
-              "image_id": "bugwood::5430489",
-              "verification_status": "weakly_supported",
-              "reasoning": "Tan-and-brown papery lesion coloration is consistent with documented maple anthracnose, giving partial external support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://content.ces.ncsu.edu/common-disease-pests-of-maple-in-north-carolina",
-                  "quote": "Typical anthracnose lesions are delineated by the veination pattern of the leaves, and these areas can be tan and paper-thin."
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-                  "quote": "Anthracnose produces irregular, papery tan or brown dead patches that follow leaf veins."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "lesions may enlarge and coalesce, killing large areas of leaves, and in severe cases defoliation and twig dieback can occur",
-              "image_shows": "The leaf displays numerous lesions indicating a heavy, visually apparent disease burden.",
-              "image_quote": "The photo displays numerous dark brown and rust-orange lesions on a Norway Maple leaf.",
-              "image_id": "bugwood::5430489",
-              "verification_status": "weakly_supported",
-              "reasoning": "Numerous coalescing lesions matches documented severe-case anthracnose, though the rust-orange hue is atypical and only weakly supported.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-                  "quote": "Under ideal environmental conditions, the disease can be more serious, leading to premature defoliation and contributing to the decline of stressed and weakened trees."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "narrow, purplish-black streaks along leaf veins",
-              "image_shows": "The leaf shows curling upward along the veins.",
-              "image_quote": "The image shows purplish-black streaks along the veins.",
-              "image_id": "bugwood::5430489",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension factsheets document leaf cupping/curling and distortion as an anthracnose symptom, indirectly supporting the observed upward curling along the veins.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umd.edu/resource/anthracnose-diseases-shade-trees",
-                  "quote": "Anthracnose is a common fungal disease of shade trees that results in leaf spots, cupping or curling of leaves and early leaf drop. Infected leaves are often distorted, cupped or curled."
-                },
-                {
-                  "url": "https://portal.ct.gov/-/media/CAES/DOCUMENTS/Publications/Fact_Sheets/Plant_Pathology_and_Ecology/ANTHRACNOSEDISEASESOFTREES060311Rpdf.pdf",
-                  "quote": "The symptoms are shriveled leaves, discolored streaks on leaf veins, and curled leaves with brown spots caused by the fungus."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf has a broad blade with a medium-length petiole relative to the blade.",
-              "image_quote": "The leaf has a broad shape with a medium-length petiole.",
-              "image_id": "bugwood::5430489",
-              "verification_status": "novel_plausible",
-              "reasoning": "This describes generic maple leaf morphology (blade and petiole proportions) rather than any disease symptom, so it is coherent with the host but has no disease-appearance evidence to verify.",
-              "swarm_support": 1,
-              "web_support": []
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5430489",
-            "bugwood::5430491"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              10
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 10,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 3,
-              "n_provisional": 2,
-              "n_contradictory": 3,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 5,
-              "n_added": 5,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": true,
-            "failure_reason": "claude_query returned None (auth / timeout / empty)",
-            "preserved_count": 1
-          }
-        },
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins",
-              "image_shows": "The lesions are elongated along the leaf.",
-              "image_quote": "The lesions are clearly elongated along the leaf.",
-              "image_id": "bugwood::5529720",
-              "verification_status": "verified",
-              "reasoning": "Extension sources confirm Norway maple anthracnose lesions are narrow, elongated streaks running along the veins, matching the elongated shape observed.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-                  "quote": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins."
-                },
-                {
-                  "url": "https://www.uvm.edu/extension/news/common-spring-disease-maple-anthracnose",
-                  "quote": "Symptoms appear as scattered, sharply defined reddish-brown dead areas formed on or near leaf veins."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Dark-colored, irregularly-shaped, angular spots or blotches",
-              "image_shows": "The lesions display a deep brown color.",
-              "image_quote": "The affected tissue displays dark brown lesions.",
-              "image_id": "bugwood::5529720",
-              "verification_status": "verified",
-              "reasoning": "Multiple extension sources describe the lesions as dark/reddish-brown, corroborating the deep brown color observed.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.uvm.edu/extension/news/common-spring-disease-maple-anthracnose",
-                  "quote": "Symptoms are visible as scattered, sharply defined reddish-brown dead areas on or near leaf veins."
-                },
-                {
-                  "url": "https://content.ces.ncsu.edu/common-disease-pests-of-maple-in-north-carolina",
-                  "quote": "Irregular, dark brown spots or blotches develop on the leaf margins and along and between the leaf veins."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "narrow, purplish-black streaks along leaf veins",
-              "image_shows": "No concentric ring pattern is visible in the lesions, consistent with anthracnose rather than a target/leaf-spot look-alike.",
-              "image_quote": "No concentric pattern is visible in the image.",
-              "image_id": "bugwood::5529720",
-              "verification_status": "weakly_supported",
-              "reasoning": "References indicate anthracnose lacks the concentric rings seen in maple leaf-spot diseases, so the absence of concentric patterning is consistent with an anthracnose diagnosis.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://portal.ct.gov/-/media/CAES/DOCUMENTS/Publications/Fact_Sheets/Plant_Pathology_and_Ecology/commondiseasesofmaplespdf.pdf",
-                  "quote": "Anthracnose is characterized by angular spots and blotches that follow leaf veins and margins, without the concentric ring pattern typical of other maple leaf spots."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "leaf scorch; Discula spp.; Phyllosticta minima; oak/ash/sycamore anthracnose",
-              "image_shows": "Absence of concentric ring patterning helps distinguish this from target/leaf-spot look-alikes.",
-              "image_quote": "No concentric pattern is visible in the image.",
-              "image_id": "bugwood::5529720",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension guidance uses concentric rings to separate leaf-spot look-alikes from anthracnose, so the noted absence of rings weakly supports ruling out those look-alikes.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://portal.ct.gov/-/media/CAES/DOCUMENTS/Publications/Fact_Sheets/Plant_Pathology_and_Ecology/commondiseasesofmaplespdf.pdf",
-                  "quote": "Some maple leaf spots are dark brown with diffuse, concentric ring patterns, whereas anthracnose follows the veins without concentric zones."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Dark-colored, irregularly-shaped, angular spots or blotches",
-              "image_shows": "The affected tissue mixes dark purplish-black lesion color with pale straw-colored dead tissue.",
-              "image_quote": "The lesion shows a purplish-black streak along the midrib.",
-              "image_id": "bugwood::5529720",
-              "verification_status": "weakly_supported",
-              "reasoning": "The purplish-black component matches documented Norway maple lesion color, while the pale straw (killed tissue) coloring is a plausible unverified addition, giving partial support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-                  "quote": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Dark-colored, irregularly-shaped, angular spots or blotches",
-              "image_shows": "The lesion texture appears smooth (flat, not raised).",
-              "image_quote": "The lesion is elongated and appears smooth.",
-              "image_id": "bugwood::5529720",
-              "verification_status": "weakly_supported",
-              "reasoning": "Anthracnose lesions are described as flat, thin, papery spots/blotches (unlike the raised puckering of maple leaf blister), so a smooth flat non-raised texture is consistent with published descriptions.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.canr.msu.edu/news/maple_leaf_blister_and_anthracnose_two_foliar_diseases_that_can_appear_on_s",
-                  "quote": "these areas can be tan and paper-thin"
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-                  "quote": "dark-colored, irregularly-shaped, angular spots or blotches occur primarily along the midrib, primary veins and leaf margins"
-                }
-              ]
-            },
-            {
-              "field": "spread_pattern",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shows curling along the leaf veins.",
-              "image_quote": "The lesions are clearly elongated along the leaf.",
-              "image_id": "bugwood::5529720",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension sources document leaf curling/distortion (especially where dead tissue along veins interrupts growth) as a recognized anthracnose symptom, supporting the observed curling.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.canr.msu.edu/news/maple_leaf_blister_and_anthracnose_two_foliar_diseases_that_can_appear_on_s",
-                  "quote": "if the leaves are very young when infected, they can become curled and distorted with only a portion of each leaf dying"
-                },
-                {
-                  "url": "https://extension.umd.edu/resource/anthracnose-diseases-shade-trees",
-                  "quote": "Symptoms of anthracnose typically include spotted, blotched, or distorted leaves"
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5529720",
-            "bugwood::5529721",
-            "bugwood::5529722",
-            "bugwood::5529723",
-            "bugwood::5529724",
-            "bugwood::5529725",
-            "bugwood::5529726",
-            "bugwood::5529727",
-            "bugwood::5529728",
-            "bugwood::5510520",
-            "bugwood::5510521",
-            "bugwood::5510522",
-            "bugwood::5510523",
-            "bugwood::5510524",
-            "bugwood::5510525",
-            "bugwood::5510526"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              12
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 12,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 5,
-              "n_provisional": 3,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 8,
-              "n_added": 8,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 2,
-            "provisional_count": 0,
-            "contradictory_count": 1,
-            "duplicates_count": 0,
-            "dropped_contradictory": [
-              {
-                "field": "diagnostic_features",
-                "canonical_says": "narrow, purplish-black streaks along leaf veins",
-                "image_shows": "The leaf veins themselves appear normal and healthy with no vein clearing or necrosis.",
-                "image_quote": "The veins are well-defined and healthy.",
-                "image_id": "bugwood::5529720",
-                "verification_status": "contradictory",
-                "reasoning": "Published descriptions state Norway maple anthracnose produces necrotic purplish-black streaks/lesions along the veins, which contradicts a claim that the veins are entirely normal, healthy, and free of necrosis.",
-                "swarm_support": 1,
-                "web_support": [
-                  {
-                    "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-                    "quote": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins"
-                  },
-                  {
-                    "url": "https://extension.umd.edu/resource/anthracnose-diseases-shade-trees",
-                    "quote": "Infection of leaf tissue often results in brown lesions and spots associated with major leaf veins"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        "Delaware": {
-          "state": "Delaware",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "angular spots or blotches occur primarily along the midrib, primary veins and leaf margins",
-              "image_shows": "The leaf shows brown necrotic areas extending inward from the veins and along the leaf margin.",
-              "image_quote": "Brown necrotic areas extending inward from the veins and along the leaf margin.",
-              "image_id": "bugwood::5614235",
-              "verification_status": "verified",
-              "reasoning": "Brown necrosis radiating from veins and along leaf margins is the core, well-documented anthracnose lesion pattern.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.canr.msu.edu/news/maple_leaf_blister_and_anthracnose_two_foliar_diseases_that_can_appear_on_s",
-                  "quote": "The symptoms of maple anthracnose include irregular, dark brown spots or blotches that develop on the leaf margins and along and between the leaf veins."
-                },
-                {
-                  "url": "https://extension.umd.edu/resource/anthracnose-diseases-shade-trees",
-                  "quote": "Brown necrotic tissue develops along leaf veins, which leads to premature leaf drop."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaves show curling up towards the center.",
-              "image_quote": "The leaves are curled up towards the center.",
-              "image_id": "bugwood::5614235",
-              "verification_status": "verified",
-              "reasoning": "Curling/cupping of young infected leaves is an explicitly documented anthracnose symptom not captured by the canonical text.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umd.edu/resource/anthracnose-diseases-shade-trees",
-                  "quote": "if the leaves are very young when infected, they can become curled and distorted, and young infected leaves curl or cup in response to the disease, while mature leaves do not."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesions appear raised and have a slightly rough surface.",
-              "image_quote": "The surface of the lesions is textured.",
-              "image_id": "bugwood::5614235",
-              "verification_status": "weakly_supported",
-              "reasoning": "Acervuli erupting through the epidermis plausibly produce the raised, roughened lesion surface, though the described texture is only indirect evidence.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
-                  "quote": "A. apocryptum forms small acervuli (40-70 \u00b5m in diameter) that erupt through the epidermis of the maple leaf."
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-                  "quote": "inconspicuous light brown acervuli located on the lower surfaces of lesions, especially along veins."
-                },
-                {
-                  "url": "https://www.uvm.edu/extension/news/common-spring-disease-maple-anthracnose",
-                  "quote": "the entire tree may be defoliated in the spring or early summer."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shape is complex with multiple lobes, suggesting a spade-like or digitate structure.",
-              "image_quote": "The leaf has multiple lobes with pointed tips.",
-              "image_id": "bugwood::5614235",
-              "verification_status": "verified",
-              "reasoning": "The multi-lobed, sharply pointed leaf outline is the correct host morphology for Norway maple, confirming host identity.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://en.wikipedia.org/wiki/Acer_platanoides",
-                  "quote": "palmately lobed with five lobes ... the lobes each bear one to three side teeth, and an otherwise smooth margin."
-                },
-                {
-                  "url": "https://extension.usu.edu/forestry/tree-identification/maples/norway-maple",
-                  "quote": "5 to 7 palmate, sharply pointed lobes."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesions exhibit a concentric pattern with dark brown centers transitioning to yellow-green halos.",
-              "image_quote": "The central area of the lesions appears green, the margins are dark brown, and there is a chlorotic yellow halo around the lesions.",
-              "image_id": "bugwood::5614235",
-              "verification_status": "weakly_supported",
-              "reasoning": "Diffuse concentric ring patterns and haloed margins are a documented (though not universal) anthracnose lesion form, giving partial support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://content.ces.ncsu.edu/common-disease-pests-of-maple-in-north-carolina",
-                  "quote": "Some anthracnose spots on maple are dark brown and have diffuse, concentric ring patterns and irregular margins."
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-                  "quote": "Gray halos surround infected tissues."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Dark-colored, irregularly-shaped, angular spots or blotches",
-              "image_shows": "The affected tissue displays a mix of green, yellow, and brown colors.",
-              "image_quote": "The central area of the lesions appears green, the margins are dark brown, and there is a chlorotic yellow halo around the lesions.",
-              "image_id": "bugwood::5614235",
-              "verification_status": "weakly_supported",
-              "reasoning": "The green (healthy) / yellow (chlorotic halo) / brown (necrotic lesion) mix is consistent with documented anthracnose lesion-plus-halo coloration.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-                  "quote": "Gray halos surround infected tissues."
-                },
-                {
-                  "url": "https://www.canr.msu.edu/news/maple_leaf_blister_and_anthracnose_two_foliar_diseases_that_can_appear_on_s",
-                  "quote": "irregular, dark brown spots or blotches that develop on the leaf margins."
-                },
-                {
-                  "url": "https://extension.umd.edu/resource/anthracnose-diseases-shade-trees",
-                  "quote": "Brown necrotic tissue develops along leaf veins."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "lesions may enlarge and coalesce, killing large areas of leaves, and in severe cases defoliation and twig dieback can occur",
-              "image_shows": "The majority of the leaf surface is affected by lesions and chlorosis.",
-              "image_quote": "The majority of the leaf surface is affected by lesions and chlorosis.",
-              "image_id": "bugwood::5614235",
-              "verification_status": "verified",
-              "reasoning": "Extensive leaf-surface involvement matches the documented capacity of anthracnose lesions to coalesce and cover large leaf areas under favorable conditions.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.uvm.edu/extension/news/common-spring-disease-maple-anthracnose",
-                  "quote": "Under optimum disease conditions (cool, wet, rainy spring weather), the entire tree may be defoliated in the spring or early summer."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins",
-              "image_shows": "The lesion centers are tan while the margins are chocolate-brown.",
-              "image_quote": "The lesion centers are tan while the margins are chocolate-brown.",
-              "image_id": "bugwood::5614235",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension factsheets document tan dead areas with darker brown margins as a maple anthracnose lesion pattern, giving partial (species-general rather than Norway-maple-specific) support for tan centers with chocolate-brown margins.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.missouri.edu/media/wysiwyg/Extensiondata/Pro/PlantDiagnosticClinic/Docs/AnthracnoseMapleTree.pdf",
-                  "quote": "large, irregular dead areas on the leaf that are often V-shaped or delineated by the veins. These areas can be tan and paper-thin."
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-                  "quote": "dark-colored, irregularly-shaped, angular spots or blotches ... Japanese maples tend to develop reddish-brown to light tan blotches."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The photo shows chlorotic yellowing in interveinal regions of the leaves.",
-              "image_quote": "The yellowing is interveinal, meaning it occurs between the veins, while the veins remain green.",
-              "image_id": "bugwood::5614235",
-              "verification_status": "provisional",
-              "reasoning": "Interveinal chlorosis is not a described feature of maple anthracnose (whose damage follows the veins), so it is neither corroborated nor clearly contradicted as an incidental leaf appearance and is left provisional.",
-              "swarm_support": 1,
-              "web_support": []
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins",
-              "image_shows": "The veins are not clearing (translucent) nor are they necrotic (dark).",
-              "image_quote": "The veins remain green while the lesions are along the veins.",
-              "image_id": "bugwood::5614235",
-              "verification_status": "novel_plausible",
-              "reasoning": "A negative observation that veins themselves remain green while vein-associated lesions form is coherent with the canonical vein-following lesion pattern but is not directly documented, so it is flagged for curator review.",
-              "swarm_support": 1,
-              "web_support": []
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf width is roughly equal to the length, indicating a nearly square or slightly elongated shape.",
-              "image_quote": "The leaf appears to be nearly square in outline.",
-              "image_id": "bugwood::5614235",
-              "verification_status": "provisional",
-              "reasoning": "This is a leaf-shape/morphology observation unrelated to disease appearance and cannot be corroborated against pathology sources, so it remains provisional.",
-              "swarm_support": 1,
-              "web_support": []
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The petiole length is significantly shorter than the blade length, as the leaf extends far beyond its stem attachment.",
-              "image_quote": "The leaf blade extends well past the petiole attachment.",
-              "image_id": "bugwood::5614235",
-              "verification_status": "provisional",
-              "reasoning": "A leaf-proportion observation with no bearing on disease symptomatology and not addressed by extension photo descriptions, so it remains provisional.",
-              "swarm_support": 1,
-              "web_support": []
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "There are visible notches at the tips of the lobes.",
-              "image_quote": "Notches are present at the tips of the lobes.",
-              "image_id": "bugwood::5614235",
-              "verification_status": "provisional",
-              "reasoning": "A description of leaf lobe morphology rather than a disease symptom, which cannot be corroborated as a visual sign of anthracnose, so it remains provisional.",
-              "swarm_support": 1,
-              "web_support": []
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5614235"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              14
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 14,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 7,
-              "n_provisional": 6,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 13,
-              "n_added": 13,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": true,
-            "failure_reason": "claude_query returned None (auth / timeout / empty)",
-            "preserved_count": 5
-          }
-        }
-      }
+     "field": "affected_parts",
+     "canonical_value": "[\"Foliar\", \"Stem\"]",
+     "alternative_value": "[\"Foliar\"]",
+     "alternative_source_url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+     "note": "UVM and UMass report both foliar and stem/twig/shoot involvement under high disease pressure; Bugwoodwiki describes A. apocryptum strictly as a foliar pathogen."
     },
     {
-      "disease_name": "Cristulariella Leaf Spot",
-      "pathogen_scientific_name": {
-        "value": "Cristulariella sp.",
-        "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/cristulariella-leaf/",
-        "quote": "Cristulariella sp.",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "",
-        "url": "",
-        "quote": ""
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar"
-        ],
-        "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/cristulariella-leaf/",
-        "quote": "Maple &#8211; Cristulariella Leaf Spot"
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "A leaf spot disease of maple (including variegated maple and boxelder), with conidia bearing globose cells observed on infected leaves.",
-          "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/cristulariella-leaf/",
-          "quote": "Sample 2: Leaf spot closeup Sample 2: Variegated maple infected leaves Sample 1: Boxelder Infected leaves"
-        },
-        "diagnostic_features": {
-          "value": "Conidia with globose cells",
-          "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/cristulariella-leaf/",
-          "quote": "Sample 1: Conidia with globose cells"
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [],
-        "url": "",
-        "quote": ""
-      },
-      "confidence": "low",
-      "num_sources": 1,
-      "conflicts": [],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "A leaf spot disease of maple ... with conidia bearing globose cells observed on infected leaves",
-              "image_shows": "The lesion has an irregular shape with a rough, jagged border.",
-              "image_quote": "The lesion appears raised with a rough texture.",
-              "image_id": "bugwood::5503885",
-              "verification_status": "verified",
-              "reasoning": "Extension literature explicitly describes Cristulariella leaf spots as circular OR irregularly-shaped, corroborating the irregular jagged lesion outline (though the 'raised' descriptor is unconfirmed).",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.npdn.org/newsletter/2023/02/pv_tips_zone_identifying_zonate_leaf_spot",
-                  "quote": "watersoaked, greenish-gray, circular or irregularly-shaped leaf spots develop, which may be accompanied by a chlorotic halo."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "A leaf spot disease of maple ... with conidia bearing globose cells observed on infected leaves",
-              "image_shows": "The lesion displays a tan center, a chocolate-brown margin, and a chlorotic yellow halo.",
-              "image_quote": "The lesion center is brownish-tan, the margin is darker brown, and there is a chlorotic yellow halo.",
-              "image_id": "bugwood::5503885",
-              "verification_status": "verified",
-              "reasoning": "The tan-center / darker-brown-margin / chlorotic-halo color scheme matches the documented zonate-leaf-spot lesion coloration.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.npdn.org/newsletter/2023/02/pv_tips_zone_identifying_zonate_leaf_spot",
-                  "quote": "Spots eventually produce alternating concentric bands of lighter and darker tissue ... which may be accompanied by a chlorotic halo."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "A leaf spot disease of maple ... with conidia bearing globose cells observed on infected leaves",
-              "image_shows": "The photo shows chlorosis around the lesion.",
-              "image_quote": "The affected tissue displays shades of tan, chocolate-brown, and pale-straw, with a greenish substrate.",
-              "image_id": "bugwood::5503885",
-              "verification_status": "verified",
-              "reasoning": "A chlorotic halo surrounding the lesion is an explicitly documented feature of Cristulariella zonate leaf spot.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.npdn.org/newsletter/2023/02/pv_tips_zone_identifying_zonate_leaf_spot",
-                  "quote": "circular or irregularly-shaped leaf spots develop, which may be accompanied by a chlorotic halo."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion appears to cover the whole leaf.",
-              "image_quote": "The image shows significant tissue damage consistent with a leaf spot disease, with the affected area comprising over half of the visible leaf.",
-              "image_id": "bugwood::5503885",
-              "verification_status": "verified",
-              "reasoning": "Coalescing lesions covering much of the leaf surface is a documented late-stage severity of this disease under cool, wet conditions.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://en.wikipedia.org/wiki/Cristulariella_depraedans",
-                  "quote": "these lesions expand and coalesce and much of the leaf surface may be affected."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Conidia with globose cells",
-              "image_shows": "The lesion displays a pattern suggestive of concentric rings with alternating light and dark shades.",
-              "image_quote": "There is a visible alternation between lighter and darker concentric rings in the lesion.",
-              "image_id": "bugwood::5503885",
-              "verification_status": "verified",
-              "reasoning": "Alternating concentric light/dark rings are the defining ('zonate/target') diagnostic hallmark of Cristulariella leaf spot, strongly corroborated.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.npdn.org/newsletter/2023/02/pv_tips_zone_identifying_zonate_leaf_spot",
-                  "quote": "Spots eventually produce alternating concentric bands of lighter and darker tissue, giving these lesions their common zonate or target appearance."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "A leaf spot disease of maple ... with conidia bearing globose cells observed on infected leaves",
-              "image_shows": "The affected tissue displays a mix of brownish-tan, dark brown, and chlorotic yellow colors.",
-              "image_quote": "The lesion center is brownish-tan, the margin is darker brown, and there is a chlorotic yellow halo.",
-              "image_id": "bugwood::5503885",
-              "verification_status": "verified",
-              "reasoning": "The brownish-tan / dark-brown / chlorotic-yellow palette matches documented lesion coloration (partial overlap with the lesion-color candidate).",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.npdn.org/newsletter/2023/02/pv_tips_zone_identifying_zonate_leaf_spot",
-                  "quote": "alternating concentric bands of lighter and darker tissue ... accompanied by a chlorotic halo."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shows curling up towards the center of the lesion.",
-              "image_quote": "The leaf curling up towards the center is evident.",
-              "image_id": "bugwood::5503885",
-              "verification_status": "weakly_supported",
-              "reasoning": "Documented wilting of infected leaves is consistent with localized curling around lesions, giving indirect support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://en.wikipedia.org/wiki/Cristulariella_depraedans",
-                  "quote": "the leaves later wilting and falling from the tree early ... At some stage the leaves wilt and eventually fall prematurely."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Conidia with globose cells",
-              "image_shows": "The lesion has an irregular shape with a rough, jagged border.",
-              "image_quote": "The leaf veins are cleared (translucent).",
-              "image_id": "bugwood::5503885",
-              "verification_status": "weakly_supported",
-              "reasoning": "Literature reports a 'vein pattern' symptom from coalescing lesions, giving indirect support to the observed vein clearing.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://en.wikipedia.org/wiki/Cristulariella_depraedans",
-                  "quote": "Coalescing lesions produce a vein pattern or a leaf scorch symptom."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected leaf shows extensive necrotic tissue covering more than half of the visible leaf area.",
-              "image_quote": "The necrotic tissue covers the whole leaf.",
-              "image_id": "bugwood::5503885",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extensive necrosis over half the leaf is plausible for advanced coalesced infection, though 'slight to moderate' is the more typical documented severity (partial support).",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://en.wikipedia.org/wiki/Cristulariella_depraedans",
-                  "quote": "much of the leaf surface may be affected ... This disease can cause slight to moderate defoliation."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "A leaf spot disease of maple ... with conidia bearing globose cells observed on infected leaves",
-              "image_shows": "The lesion appears raised with a cracked surface texture.",
-              "image_quote": "The surface of the lesion has a raised, cracked appearance.",
-              "image_id": "bugwood::5503885",
-              "verification_status": "novel_plausible",
-              "reasoning": "Published descriptions note tan/grey concentric-ringed spots with white cone-shaped fruiting bodies but no raised/cracked surface texture; unsupported yet coherent with the fruiting-body texture, so flagged for curator review.",
-              "swarm_support": 1,
-              "web_support": []
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5503885",
-            "bugwood::5503886",
-            "bugwood::5503887",
-            "bugwood::5503888",
-            "bugwood::5503889",
-            "bugwood::5503890",
-            "bugwood::5503891",
-            "bugwood::5503892",
-            "bugwood::5503893",
-            "bugwood::5503894",
-            "bugwood::5503895",
-            "bugwood::5503896",
-            "bugwood::5503897"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 9,
-              "n_provisional": 2,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 11,
-              "n_added": 11,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": true,
-            "failure_reason": "claude_query returned None (auth / timeout / empty)",
-            "preserved_count": 1
-          }
-        }
-      }
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Aureobasidium apocryptum",
+     "alternative_value": "Several fungal pathogens (genus not specified)",
+     "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+     "note": "Maple anthracnose is caused by several fungal pathogens; Bugwoodwiki names A. apocryptum as one of them. UVM and UMass do not name a single causal species. No NCBI/MycoBank validation was supplied to confirm the accepted name."
     }
-  ],
-  "crop": "Norway Maple",
-  "generated_date": "2026-06-10",
-  "regional_observations_count": 4
+   ],
+   "regional_observations": {
+    "Kentucky": {
+     "state": "Kentucky",
+     "deltas": [
+      {
+       "field": "affected_organs",
+       "canonical_says": "Dark-colored, irregularly-shaped, angular spots or blotches occur primarily along the midrib, primary veins and leaf margins",
+       "image_shows": "Irregularly-shaped necrotic areas extend inward from the leaf veins.",
+       "image_quote": "Lesions appear as narrow, dark streaks along the veins.",
+       "image_id": "bugwood::5430489",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension sources corroborate vein-associated necrosis extending from the veins, though the description overlaps heavily with canonical text.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://content.ces.ncsu.edu/common-disease-pests-of-maple-in-north-carolina",
+         "quote": "Necrotic spots many times associated with major leaf veins are characteristic of maple anthracnose."
+        },
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+         "quote": "Lesions often have distinct margins and are located along leaf veins, where water may linger and promote fungal growth."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Dark-colored, irregularly-shaped, angular spots or blotches occur primarily along the midrib, primary veins and leaf margins",
+       "image_shows": "Affected tissue shows a mix of dark brown and tan coloration on the leaf surface.",
+       "image_quote": "Lesion center is brown, margin is tan.",
+       "image_id": "bugwood::5430489",
+       "verification_status": "weakly_supported",
+       "reasoning": "Tan-and-brown papery lesion coloration is consistent with documented maple anthracnose, giving partial external support.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://content.ces.ncsu.edu/common-disease-pests-of-maple-in-north-carolina",
+         "quote": "Typical anthracnose lesions are delineated by the veination pattern of the leaves, and these areas can be tan and paper-thin."
+        },
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+         "quote": "Anthracnose produces irregular, papery tan or brown dead patches that follow leaf veins."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "lesions may enlarge and coalesce, killing large areas of leaves, and in severe cases defoliation and twig dieback can occur",
+       "image_shows": "The leaf displays numerous lesions indicating a heavy, visually apparent disease burden.",
+       "image_quote": "The photo displays numerous dark brown and rust-orange lesions on a Norway Maple leaf.",
+       "image_id": "bugwood::5430489",
+       "verification_status": "weakly_supported",
+       "reasoning": "Numerous coalescing lesions matches documented severe-case anthracnose, though the rust-orange hue is atypical and only weakly supported.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+         "quote": "Under ideal environmental conditions, the disease can be more serious, leading to premature defoliation and contributing to the decline of stressed and weakened trees."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "narrow, purplish-black streaks along leaf veins",
+       "image_shows": "The leaf shows curling upward along the veins.",
+       "image_quote": "The image shows purplish-black streaks along the veins.",
+       "image_id": "bugwood::5430489",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension factsheets document leaf cupping/curling and distortion as an anthracnose symptom, indirectly supporting the observed upward curling along the veins.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umd.edu/resource/anthracnose-diseases-shade-trees",
+         "quote": "Anthracnose is a common fungal disease of shade trees that results in leaf spots, cupping or curling of leaves and early leaf drop. Infected leaves are often distorted, cupped or curled."
+        },
+        {
+         "url": "https://portal.ct.gov/-/media/CAES/DOCUMENTS/Publications/Fact_Sheets/Plant_Pathology_and_Ecology/ANTHRACNOSEDISEASESOFTREES060311Rpdf.pdf",
+         "quote": "The symptoms are shriveled leaves, discolored streaks on leaf veins, and curled leaves with brown spots caused by the fungus."
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf has a broad blade with a medium-length petiole relative to the blade.",
+       "image_quote": "The leaf has a broad shape with a medium-length petiole.",
+       "image_id": "bugwood::5430489",
+       "verification_status": "field_observation",
+       "reasoning": "This describes generic maple leaf morphology (blade and petiole proportions) rather than any disease symptom, so it is coherent with the host but has no disease-appearance evidence to verify.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5430489",
+      "bugwood::5430491"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       10
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 10,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 3,
+       "n_provisional": 2,
+       "n_contradictory": 3,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 5,
+       "n_added": 5,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": true,
+      "failure_reason": "claude_query returned None (auth / timeout / empty)",
+      "preserved_count": 1
+     }
+    },
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins",
+       "image_shows": "The lesions are elongated along the leaf.",
+       "image_quote": "The lesions are clearly elongated along the leaf.",
+       "image_id": "bugwood::5529720",
+       "verification_status": "verified",
+       "reasoning": "Extension sources confirm Norway maple anthracnose lesions are narrow, elongated streaks running along the veins, matching the elongated shape observed.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+         "quote": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins."
+        },
+        {
+         "url": "https://www.uvm.edu/extension/news/common-spring-disease-maple-anthracnose",
+         "quote": "Symptoms appear as scattered, sharply defined reddish-brown dead areas formed on or near leaf veins."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Dark-colored, irregularly-shaped, angular spots or blotches",
+       "image_shows": "The lesions display a deep brown color.",
+       "image_quote": "The affected tissue displays dark brown lesions.",
+       "image_id": "bugwood::5529720",
+       "verification_status": "verified",
+       "reasoning": "Multiple extension sources describe the lesions as dark/reddish-brown, corroborating the deep brown color observed.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.uvm.edu/extension/news/common-spring-disease-maple-anthracnose",
+         "quote": "Symptoms are visible as scattered, sharply defined reddish-brown dead areas on or near leaf veins."
+        },
+        {
+         "url": "https://content.ces.ncsu.edu/common-disease-pests-of-maple-in-north-carolina",
+         "quote": "Irregular, dark brown spots or blotches develop on the leaf margins and along and between the leaf veins."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "narrow, purplish-black streaks along leaf veins",
+       "image_shows": "No concentric ring pattern is visible in the lesions, consistent with anthracnose rather than a target/leaf-spot look-alike.",
+       "image_quote": "No concentric pattern is visible in the image.",
+       "image_id": "bugwood::5529720",
+       "verification_status": "weakly_supported",
+       "reasoning": "References indicate anthracnose lacks the concentric rings seen in maple leaf-spot diseases, so the absence of concentric patterning is consistent with an anthracnose diagnosis.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://portal.ct.gov/-/media/CAES/DOCUMENTS/Publications/Fact_Sheets/Plant_Pathology_and_Ecology/commondiseasesofmaplespdf.pdf",
+         "quote": "Anthracnose is characterized by angular spots and blotches that follow leaf veins and margins, without the concentric ring pattern typical of other maple leaf spots."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "leaf scorch; Discula spp.; Phyllosticta minima; oak/ash/sycamore anthracnose",
+       "image_shows": "Absence of concentric ring patterning helps distinguish this from target/leaf-spot look-alikes.",
+       "image_quote": "No concentric pattern is visible in the image.",
+       "image_id": "bugwood::5529720",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension guidance uses concentric rings to separate leaf-spot look-alikes from anthracnose, so the noted absence of rings weakly supports ruling out those look-alikes.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://portal.ct.gov/-/media/CAES/DOCUMENTS/Publications/Fact_Sheets/Plant_Pathology_and_Ecology/commondiseasesofmaplespdf.pdf",
+         "quote": "Some maple leaf spots are dark brown with diffuse, concentric ring patterns, whereas anthracnose follows the veins without concentric zones."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Dark-colored, irregularly-shaped, angular spots or blotches",
+       "image_shows": "The affected tissue mixes dark purplish-black lesion color with pale straw-colored dead tissue.",
+       "image_quote": "The lesion shows a purplish-black streak along the midrib.",
+       "image_id": "bugwood::5529720",
+       "verification_status": "weakly_supported",
+       "reasoning": "The purplish-black component matches documented Norway maple lesion color, while the pale straw (killed tissue) coloring is a plausible unverified addition, giving partial support.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+         "quote": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Dark-colored, irregularly-shaped, angular spots or blotches",
+       "image_shows": "The lesion texture appears smooth (flat, not raised).",
+       "image_quote": "The lesion is elongated and appears smooth.",
+       "image_id": "bugwood::5529720",
+       "verification_status": "weakly_supported",
+       "reasoning": "Anthracnose lesions are described as flat, thin, papery spots/blotches (unlike the raised puckering of maple leaf blister), so a smooth flat non-raised texture is consistent with published descriptions.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.canr.msu.edu/news/maple_leaf_blister_and_anthracnose_two_foliar_diseases_that_can_appear_on_s",
+         "quote": "these areas can be tan and paper-thin"
+        },
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+         "quote": "dark-colored, irregularly-shaped, angular spots or blotches occur primarily along the midrib, primary veins and leaf margins"
+        }
+       ]
+      },
+      {
+       "field": "spread_pattern",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf shows curling along the leaf veins.",
+       "image_quote": "The lesions are clearly elongated along the leaf.",
+       "image_id": "bugwood::5529720",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension sources document leaf curling/distortion (especially where dead tissue along veins interrupts growth) as a recognized anthracnose symptom, supporting the observed curling.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.canr.msu.edu/news/maple_leaf_blister_and_anthracnose_two_foliar_diseases_that_can_appear_on_s",
+         "quote": "if the leaves are very young when infected, they can become curled and distorted with only a portion of each leaf dying"
+        },
+        {
+         "url": "https://extension.umd.edu/resource/anthracnose-diseases-shade-trees",
+         "quote": "Symptoms of anthracnose typically include spotted, blotched, or distorted leaves"
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5529720",
+      "bugwood::5529721",
+      "bugwood::5529722",
+      "bugwood::5529723",
+      "bugwood::5529724",
+      "bugwood::5529725",
+      "bugwood::5529726",
+      "bugwood::5529727",
+      "bugwood::5529728",
+      "bugwood::5510520",
+      "bugwood::5510521",
+      "bugwood::5510522",
+      "bugwood::5510523",
+      "bugwood::5510524",
+      "bugwood::5510525",
+      "bugwood::5510526"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       12
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 12,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 5,
+       "n_provisional": 3,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 8,
+       "n_added": 8,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 2,
+      "provisional_count": 0,
+      "contradictory_count": 1,
+      "duplicates_count": 0,
+      "dropped_contradictory": [
+       {
+        "field": "diagnostic_features",
+        "canonical_says": "narrow, purplish-black streaks along leaf veins",
+        "image_shows": "The leaf veins themselves appear normal and healthy with no vein clearing or necrosis.",
+        "image_quote": "The veins are well-defined and healthy.",
+        "image_id": "bugwood::5529720",
+        "verification_status": "contradictory",
+        "reasoning": "Published descriptions state Norway maple anthracnose produces necrotic purplish-black streaks/lesions along the veins, which contradicts a claim that the veins are entirely normal, healthy, and free of necrosis.",
+        "swarm_support": 1,
+        "web_support": [
+         {
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+          "quote": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins"
+         },
+         {
+          "url": "https://extension.umd.edu/resource/anthracnose-diseases-shade-trees",
+          "quote": "Infection of leaf tissue often results in brown lesions and spots associated with major leaf veins"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    "Delaware": {
+     "state": "Delaware",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "angular spots or blotches occur primarily along the midrib, primary veins and leaf margins",
+       "image_shows": "The leaf shows brown necrotic areas extending inward from the veins and along the leaf margin.",
+       "image_quote": "Brown necrotic areas extending inward from the veins and along the leaf margin.",
+       "image_id": "bugwood::5614235",
+       "verification_status": "verified",
+       "reasoning": "Brown necrosis radiating from veins and along leaf margins is the core, well-documented anthracnose lesion pattern.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.canr.msu.edu/news/maple_leaf_blister_and_anthracnose_two_foliar_diseases_that_can_appear_on_s",
+         "quote": "The symptoms of maple anthracnose include irregular, dark brown spots or blotches that develop on the leaf margins and along and between the leaf veins."
+        },
+        {
+         "url": "https://extension.umd.edu/resource/anthracnose-diseases-shade-trees",
+         "quote": "Brown necrotic tissue develops along leaf veins, which leads to premature leaf drop."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaves show curling up towards the center.",
+       "image_quote": "The leaves are curled up towards the center.",
+       "image_id": "bugwood::5614235",
+       "verification_status": "verified",
+       "reasoning": "Curling/cupping of young infected leaves is an explicitly documented anthracnose symptom not captured by the canonical text.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umd.edu/resource/anthracnose-diseases-shade-trees",
+         "quote": "if the leaves are very young when infected, they can become curled and distorted, and young infected leaves curl or cup in response to the disease, while mature leaves do not."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "(not specified)",
+       "image_shows": "The lesions appear raised and have a slightly rough surface.",
+       "image_quote": "The surface of the lesions is textured.",
+       "image_id": "bugwood::5614235",
+       "verification_status": "weakly_supported",
+       "reasoning": "Acervuli erupting through the epidermis plausibly produce the raised, roughened lesion surface, though the described texture is only indirect evidence.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+         "quote": "A. apocryptum forms small acervuli (40-70 µm in diameter) that erupt through the epidermis of the maple leaf."
+        },
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+         "quote": "inconspicuous light brown acervuli located on the lower surfaces of lesions, especially along veins."
+        },
+        {
+         "url": "https://www.uvm.edu/extension/news/common-spring-disease-maple-anthracnose",
+         "quote": "the entire tree may be defoliated in the spring or early summer."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf shape is complex with multiple lobes, suggesting a spade-like or digitate structure.",
+       "image_quote": "The leaf has multiple lobes with pointed tips.",
+       "image_id": "bugwood::5614235",
+       "verification_status": "verified",
+       "reasoning": "The multi-lobed, sharply pointed leaf outline is the correct host morphology for Norway maple, confirming host identity.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://en.wikipedia.org/wiki/Acer_platanoides",
+         "quote": "palmately lobed with five lobes ... the lobes each bear one to three side teeth, and an otherwise smooth margin."
+        },
+        {
+         "url": "https://extension.usu.edu/forestry/tree-identification/maples/norway-maple",
+         "quote": "5 to 7 palmate, sharply pointed lobes."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The lesions exhibit a concentric pattern with dark brown centers transitioning to yellow-green halos.",
+       "image_quote": "The central area of the lesions appears green, the margins are dark brown, and there is a chlorotic yellow halo around the lesions.",
+       "image_id": "bugwood::5614235",
+       "verification_status": "weakly_supported",
+       "reasoning": "Diffuse concentric ring patterns and haloed margins are a documented (though not universal) anthracnose lesion form, giving partial support.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://content.ces.ncsu.edu/common-disease-pests-of-maple-in-north-carolina",
+         "quote": "Some anthracnose spots on maple are dark brown and have diffuse, concentric ring patterns and irregular margins."
+        },
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+         "quote": "Gray halos surround infected tissues."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Dark-colored, irregularly-shaped, angular spots or blotches",
+       "image_shows": "The affected tissue displays a mix of green, yellow, and brown colors.",
+       "image_quote": "The central area of the lesions appears green, the margins are dark brown, and there is a chlorotic yellow halo around the lesions.",
+       "image_id": "bugwood::5614235",
+       "verification_status": "weakly_supported",
+       "reasoning": "The green (healthy) / yellow (chlorotic halo) / brown (necrotic lesion) mix is consistent with documented anthracnose lesion-plus-halo coloration.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+         "quote": "Gray halos surround infected tissues."
+        },
+        {
+         "url": "https://www.canr.msu.edu/news/maple_leaf_blister_and_anthracnose_two_foliar_diseases_that_can_appear_on_s",
+         "quote": "irregular, dark brown spots or blotches that develop on the leaf margins."
+        },
+        {
+         "url": "https://extension.umd.edu/resource/anthracnose-diseases-shade-trees",
+         "quote": "Brown necrotic tissue develops along leaf veins."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "lesions may enlarge and coalesce, killing large areas of leaves, and in severe cases defoliation and twig dieback can occur",
+       "image_shows": "The majority of the leaf surface is affected by lesions and chlorosis.",
+       "image_quote": "The majority of the leaf surface is affected by lesions and chlorosis.",
+       "image_id": "bugwood::5614235",
+       "verification_status": "verified",
+       "reasoning": "Extensive leaf-surface involvement matches the documented capacity of anthracnose lesions to coalesce and cover large leaf areas under favorable conditions.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.uvm.edu/extension/news/common-spring-disease-maple-anthracnose",
+         "quote": "Under optimum disease conditions (cool, wet, rainy spring weather), the entire tree may be defoliated in the spring or early summer."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins",
+       "image_shows": "The lesion centers are tan while the margins are chocolate-brown.",
+       "image_quote": "The lesion centers are tan while the margins are chocolate-brown.",
+       "image_id": "bugwood::5614235",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension factsheets document tan dead areas with darker brown margins as a maple anthracnose lesion pattern, giving partial (species-general rather than Norway-maple-specific) support for tan centers with chocolate-brown margins.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.missouri.edu/media/wysiwyg/Extensiondata/Pro/PlantDiagnosticClinic/Docs/AnthracnoseMapleTree.pdf",
+         "quote": "large, irregular dead areas on the leaf that are often V-shaped or delineated by the veins. These areas can be tan and paper-thin."
+        },
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+         "quote": "dark-colored, irregularly-shaped, angular spots or blotches ... Japanese maples tend to develop reddish-brown to light tan blotches."
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The photo shows chlorotic yellowing in interveinal regions of the leaves.",
+       "image_quote": "The yellowing is interveinal, meaning it occurs between the veins, while the veins remain green.",
+       "image_id": "bugwood::5614235",
+       "verification_status": "field_observation",
+       "reasoning": "Interveinal chlorosis is not a described feature of maple anthracnose (whose damage follows the veins), so it is neither corroborated nor clearly contradicted as an incidental leaf appearance and is left provisional.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Lesions on Norway maple tend to be narrow, purplish-black streaks along leaf veins",
+       "image_shows": "The veins are not clearing (translucent) nor are they necrotic (dark).",
+       "image_quote": "The veins remain green while the lesions are along the veins.",
+       "image_id": "bugwood::5614235",
+       "verification_status": "field_observation",
+       "reasoning": "A negative observation that veins themselves remain green while vein-associated lesions form is coherent with the canonical vein-following lesion pattern but is not directly documented, so it is flagged for curator review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf width is roughly equal to the length, indicating a nearly square or slightly elongated shape.",
+       "image_quote": "The leaf appears to be nearly square in outline.",
+       "image_id": "bugwood::5614235",
+       "verification_status": "field_observation",
+       "reasoning": "This is a leaf-shape/morphology observation unrelated to disease appearance and cannot be corroborated against pathology sources, so it remains provisional.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The petiole length is significantly shorter than the blade length, as the leaf extends far beyond its stem attachment.",
+       "image_quote": "The leaf blade extends well past the petiole attachment.",
+       "image_id": "bugwood::5614235",
+       "verification_status": "field_observation",
+       "reasoning": "A leaf-proportion observation with no bearing on disease symptomatology and not addressed by extension photo descriptions, so it remains provisional.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "There are visible notches at the tips of the lobes.",
+       "image_quote": "Notches are present at the tips of the lobes.",
+       "image_id": "bugwood::5614235",
+       "verification_status": "field_observation",
+       "reasoning": "A description of leaf lobe morphology rather than a disease symptom, which cannot be corroborated as a visual sign of anthracnose, so it remains provisional.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5614235"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       14
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 14,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 7,
+       "n_provisional": 6,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 13,
+       "n_added": 13,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": true,
+      "failure_reason": "claude_query returned None (auth / timeout / empty)",
+      "preserved_count": 5
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Cristulariella Leaf Spot",
+   "pathogen_scientific_name": {
+    "value": "Cristulariella sp.",
+    "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/cristulariella-leaf/",
+    "quote": "Cristulariella sp.",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "",
+    "url": "",
+    "quote": ""
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar"
+    ],
+    "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/cristulariella-leaf/",
+    "quote": "Maple &#8211; Cristulariella Leaf Spot"
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "A leaf spot disease of maple (including variegated maple and boxelder), with conidia bearing globose cells observed on infected leaves.",
+     "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/cristulariella-leaf/",
+     "quote": "Sample 2: Leaf spot closeup Sample 2: Variegated maple infected leaves Sample 1: Boxelder Infected leaves"
+    },
+    "diagnostic_features": {
+     "value": "Conidia with globose cells",
+     "url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/cristulariella-leaf/",
+     "quote": "Sample 1: Conidia with globose cells"
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
+    }
+   },
+   "treatments": {
+    "value": [],
+    "url": "",
+    "quote": ""
+   },
+   "confidence": "low",
+   "num_sources": 1,
+   "conflicts": [],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "A leaf spot disease of maple ... with conidia bearing globose cells observed on infected leaves",
+       "image_shows": "The lesion has an irregular shape with a rough, jagged border.",
+       "image_quote": "The lesion appears raised with a rough texture.",
+       "image_id": "bugwood::5503885",
+       "verification_status": "verified",
+       "reasoning": "Extension literature explicitly describes Cristulariella leaf spots as circular OR irregularly-shaped, corroborating the irregular jagged lesion outline (though the 'raised' descriptor is unconfirmed).",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.npdn.org/newsletter/2023/02/pv_tips_zone_identifying_zonate_leaf_spot",
+         "quote": "watersoaked, greenish-gray, circular or irregularly-shaped leaf spots develop, which may be accompanied by a chlorotic halo."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "A leaf spot disease of maple ... with conidia bearing globose cells observed on infected leaves",
+       "image_shows": "The lesion displays a tan center, a chocolate-brown margin, and a chlorotic yellow halo.",
+       "image_quote": "The lesion center is brownish-tan, the margin is darker brown, and there is a chlorotic yellow halo.",
+       "image_id": "bugwood::5503885",
+       "verification_status": "verified",
+       "reasoning": "The tan-center / darker-brown-margin / chlorotic-halo color scheme matches the documented zonate-leaf-spot lesion coloration.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.npdn.org/newsletter/2023/02/pv_tips_zone_identifying_zonate_leaf_spot",
+         "quote": "Spots eventually produce alternating concentric bands of lighter and darker tissue ... which may be accompanied by a chlorotic halo."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "A leaf spot disease of maple ... with conidia bearing globose cells observed on infected leaves",
+       "image_shows": "The photo shows chlorosis around the lesion.",
+       "image_quote": "The affected tissue displays shades of tan, chocolate-brown, and pale-straw, with a greenish substrate.",
+       "image_id": "bugwood::5503885",
+       "verification_status": "verified",
+       "reasoning": "A chlorotic halo surrounding the lesion is an explicitly documented feature of Cristulariella zonate leaf spot.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.npdn.org/newsletter/2023/02/pv_tips_zone_identifying_zonate_leaf_spot",
+         "quote": "circular or irregularly-shaped leaf spots develop, which may be accompanied by a chlorotic halo."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "The lesion appears to cover the whole leaf.",
+       "image_quote": "The image shows significant tissue damage consistent with a leaf spot disease, with the affected area comprising over half of the visible leaf.",
+       "image_id": "bugwood::5503885",
+       "verification_status": "verified",
+       "reasoning": "Coalescing lesions covering much of the leaf surface is a documented late-stage severity of this disease under cool, wet conditions.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://en.wikipedia.org/wiki/Cristulariella_depraedans",
+         "quote": "these lesions expand and coalesce and much of the leaf surface may be affected."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Conidia with globose cells",
+       "image_shows": "The lesion displays a pattern suggestive of concentric rings with alternating light and dark shades.",
+       "image_quote": "There is a visible alternation between lighter and darker concentric rings in the lesion.",
+       "image_id": "bugwood::5503885",
+       "verification_status": "verified",
+       "reasoning": "Alternating concentric light/dark rings are the defining ('zonate/target') diagnostic hallmark of Cristulariella leaf spot, strongly corroborated.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.npdn.org/newsletter/2023/02/pv_tips_zone_identifying_zonate_leaf_spot",
+         "quote": "Spots eventually produce alternating concentric bands of lighter and darker tissue, giving these lesions their common zonate or target appearance."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "A leaf spot disease of maple ... with conidia bearing globose cells observed on infected leaves",
+       "image_shows": "The affected tissue displays a mix of brownish-tan, dark brown, and chlorotic yellow colors.",
+       "image_quote": "The lesion center is brownish-tan, the margin is darker brown, and there is a chlorotic yellow halo.",
+       "image_id": "bugwood::5503885",
+       "verification_status": "verified",
+       "reasoning": "The brownish-tan / dark-brown / chlorotic-yellow palette matches documented lesion coloration (partial overlap with the lesion-color candidate).",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.npdn.org/newsletter/2023/02/pv_tips_zone_identifying_zonate_leaf_spot",
+         "quote": "alternating concentric bands of lighter and darker tissue ... accompanied by a chlorotic halo."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf shows curling up towards the center of the lesion.",
+       "image_quote": "The leaf curling up towards the center is evident.",
+       "image_id": "bugwood::5503885",
+       "verification_status": "weakly_supported",
+       "reasoning": "Documented wilting of infected leaves is consistent with localized curling around lesions, giving indirect support.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://en.wikipedia.org/wiki/Cristulariella_depraedans",
+         "quote": "the leaves later wilting and falling from the tree early ... At some stage the leaves wilt and eventually fall prematurely."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Conidia with globose cells",
+       "image_shows": "The lesion has an irregular shape with a rough, jagged border.",
+       "image_quote": "The leaf veins are cleared (translucent).",
+       "image_id": "bugwood::5503885",
+       "verification_status": "weakly_supported",
+       "reasoning": "Literature reports a 'vein pattern' symptom from coalescing lesions, giving indirect support to the observed vein clearing.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://en.wikipedia.org/wiki/Cristulariella_depraedans",
+         "quote": "Coalescing lesions produce a vein pattern or a leaf scorch symptom."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "The affected leaf shows extensive necrotic tissue covering more than half of the visible leaf area.",
+       "image_quote": "The necrotic tissue covers the whole leaf.",
+       "image_id": "bugwood::5503885",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extensive necrosis over half the leaf is plausible for advanced coalesced infection, though 'slight to moderate' is the more typical documented severity (partial support).",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://en.wikipedia.org/wiki/Cristulariella_depraedans",
+         "quote": "much of the leaf surface may be affected ... This disease can cause slight to moderate defoliation."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "A leaf spot disease of maple ... with conidia bearing globose cells observed on infected leaves",
+       "image_shows": "The lesion appears raised with a cracked surface texture.",
+       "image_quote": "The surface of the lesion has a raised, cracked appearance.",
+       "image_id": "bugwood::5503885",
+       "verification_status": "field_observation",
+       "reasoning": "Published descriptions note tan/grey concentric-ringed spots with white cone-shaped fruiting bodies but no raised/cracked surface texture; unsupported yet coherent with the fruiting-body texture, so flagged for curator review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5503885",
+      "bugwood::5503886",
+      "bugwood::5503887",
+      "bugwood::5503888",
+      "bugwood::5503889",
+      "bugwood::5503890",
+      "bugwood::5503891",
+      "bugwood::5503892",
+      "bugwood::5503893",
+      "bugwood::5503894",
+      "bugwood::5503895",
+      "bugwood::5503896",
+      "bugwood::5503897"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 9,
+       "n_provisional": 2,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 11,
+       "n_added": 11,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": true,
+      "failure_reason": "claude_query returned None (auth / timeout / empty)",
+      "preserved_count": 1
+     }
+    }
+   }
+  }
+ ],
+ "crop": "Norway Maple",
+ "generated_date": "2026-06-10",
+ "regional_observations_count": 4
 }

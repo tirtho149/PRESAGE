@@ -1,628 +1,636 @@
 {
-  "diseases": [
-    {
-      "disease_name": "Rhizosphaera Needle Cast",
-      "pathogen_scientific_name": {
-        "value": "Rhizosphaera kalkhoffii",
-        "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
-        "quote": "Rhizosphaera needle cast is caused by the fungus Rhizosphaera kalkhoffii .",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
-        "quote": "Rhizosphaera needle cast is a fungal disease of spruce trees"
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar"
-        ],
-        "url": "https://pubs.nmsu.edu/_h/H163/index.html",
-        "quote": "Symptoms of the disease are discoloration of the needles (Figure 1), needle drop, and eventual defoliation"
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Needles become discolored \u00e2\u20ac\u201d new needles at branch tips stay green while older needles turn brown to purple (yellow in July, reddish-purple in August), eventually turning brown and falling off; infected trees look thin or see-through with many bare branches, and damage starts on the lower branches and moves up the tree.",
-          "url": "https://pubs.nmsu.edu/_h/H163/index.html",
-          "quote": "Infected needles turn yellow in July and then reddish-purple in August. The needles eventually turn brown and fall off one or more branches."
-        },
-        "diagnostic_features": {
-          "value": "Tiny brown to black spots called pycnidia (fruiting bodies) emerge from the stomata on the needles, arranged in neat rows/lines and visible with a hand lens (10X); the disease attacks the oldest needles in the lower canopy first and progresses upward, giving the appearance of death from the bottom up and inside out.",
-          "url": "https://pubs.nmsu.edu/_h/H163/index.html",
-          "quote": "The fungus can sometimes be seen with a hand lens (10X) as tiny brown to black spots called pycnidia, or fruiting bodies, emerging from stomata (pores) on the needles (Figure 3)."
-        },
-        "look_alikes": {
-          "value": [
-            "Several other fungi cause symptoms very similar to Rhizosphaera"
-          ],
-          "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
-          "quote": "Several other fungi cause symptoms very similar to Rhizosphaera and correct identification is important."
-        }
-      },
-      "treatments": {
-        "value": [
-          "Do not plant Colorado blue spruce (Picea pungens) or other spruce not well adapted to local conditions; plant more resistant Norway (P. abies) or white spruce (P. glauca)",
-          "Plant spruce trees on sites with acidic, moist, well drained soils and full sun, preferably grown from local seed sources",
-          "Do not overcrowd plants; use the mature size of the tree as a spacing guide, and remove the bottom-most branches to increase air circulation around the canopy",
-          "Do not shear spruce, as shearing creates dense, compact growth that stays wet longer",
-          "Remove weeds under trees and maintain a 3-4 inch wood chip mulch layer (leaving a 2 inch gap from the trunk); avoid wetting needles with sprinkler irrigation",
-          "Plant only healthy trees and avoid planting new trees next to established trees",
-          "Sterilize pruning shears with 70% isopropyl alcohol or another disinfectant between cuts and between trees",
-          "Clean up fallen needles from infected trees, seal in a plastic bag and dispose of them",
-          "Apply protectant fungicides containing chlorothalonil, copper hydroxide, mancozeb, thiophanate-methyl, or Bordeaux mixture 8-8-100; first application when new needles are about half their mature length and a second 3 to 4 weeks later"
-        ],
-        "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
-        "quote": "Fungicides with the active ingredient chlorothalonil, copper hydroxide or mancozeb will protect new spruce needles from infection by Rhizosphaera. Make one application in spring or early summer when the new needles have grown to half their mature length. Make a second application 3 to 4 weeks later."
-      },
-      "confidence": "high",
-      "num_sources": 2,
-      "conflicts": [
-        {
-          "field": "visual_symptoms.diagnostic_features",
-          "canonical_value": "Tiny brown to black spots called pycnidia emerging from stomata on the needles (NMSU)",
-          "alternative_value": "Tiny black bumps arranged in neat rows on infected needles (UMN)",
-          "alternative_source_url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
-          "note": "Both sources describe the same spore-producing structures with complementary detail; NMSU selected as canonical for the more specific term (pycnidia / emerging from stomata) while UMN contributes the diagnostic 'neat rows' arrangement."
-        },
-        {
-          "field": "treatments",
-          "canonical_value": "Fungicides containing chlorothalonil, copper hydroxide or mancozeb (UMN)",
-          "alternative_value": "Bordeaux mixture 8-8-100 or fungicides containing chlorothalonil or thiophanate-methyl (NMSU)",
-          "alternative_source_url": "https://pubs.nmsu.edu/_h/H163/index.html",
-          "note": "Sources recommend overlapping but non-identical fungicide active ingredients; both timing instructions agree (first at half-developed needles, second ~3-4 weeks later). All listed actives merged into the union of treatments."
-        }
-      ],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [],
-          "__image_ids__": [
-            "bugwood::5529654",
-            "bugwood::5529655",
-            "bugwood::5529656",
-            "bugwood::5529657",
-            "bugwood::5529658",
-            "bugwood::5529659",
-            "bugwood::5529660",
-            "bugwood::5529661",
-            "bugwood::5529662"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              3
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 3,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 0,
-              "n_provisional": 0,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 0,
-              "n_added": 0,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        },
-        "Minnesota": {
-          "state": "Minnesota",
-          "deltas": [],
-          "__image_ids__": [
-            "bugwood::1406191",
-            "bugwood::1406192"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              3
-            ],
-            "detected_organ_per_pass": [
-              "crown"
-            ],
-            "n_active_agents_per_pass": [
-              5
-            ],
-            "n_after_agreement": 3,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 0,
-              "n_provisional": 0,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 0,
-              "n_added": 0,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        },
-        "North Dakota": {
-          "state": "North Dakota",
-          "deltas": [],
-          "__image_ids__": [
-            "bugwood::5190099"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              4
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 4,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 0,
-              "n_provisional": 0,
-              "n_contradictory": 3,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 0,
-              "n_added": 0,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        },
-        "Wisconsin": {
-          "state": "Wisconsin",
-          "deltas": [
-            {
-              "field": "severity",
-              "canonical_says": "infected trees look thin or see-through with many bare branches, and damage starts on the lower branches and moves up",
-              "image_shows": "A significant portion of the conifer's needles show discoloration, indicating advanced/moderate-to-severe infection in this Wisconsin specimen.",
-              "image_quote": "Needles are primarily red with some green, suggesting discoloration.",
-              "image_id": "bugwood::1406190",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extensive needle discoloration is consistent with documented moderate-to-severe Rhizosphaera progression, though the photo alone gives only an indirect severity read.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/rhizosphaera-needle-cast/",
-                  "quote": "Infected needles turn yellow in July and then reddish-purple in August, and the needles eventually turn brown and fall off one or more branches."
-                },
-                {
-                  "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
-                  "quote": "The first noticeable symptom is purpling or browning and loss of the innermost needles on lower branches of spruce trees."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Tiny brown to black spots called pycnidia (fruiting bodies) emerge from the stomata on the needles, arranged in neat rows/lines",
-              "image_shows": "No clear necrosis or clearing along needle 'veins' is visible, so the diagnostic pycnidial rows cannot be confirmed from this image.",
-              "image_quote": "The needles display red and green hues.",
-              "image_id": "bugwood::1406190",
-              "verification_status": "weakly_supported",
-              "reasoning": "The observed red-and-green needle coloration matches documented reddish-purple older needles beside still-green tips, and sources agree the pycnidial rows require a 10X hand lens, supporting that they cannot be confirmed from a field photo.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pubs.nmsu.edu/_h/H163/index.html",
-                  "quote": "Infected needles turn yellow in July and then reddish-purple in August ... new needles at branch tips remain green."
-                },
-                {
-                  "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
-                  "quote": "The fungus can sometimes be seen with a hand lens (10X) as tiny brown to black spots called pycnidia ... in rows on the underside of the needle."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The needles are long, narrow, pointed and lanceolate \u2014 a host-morphology note not specific to the disease.",
-              "image_quote": "The needles are slender and taper to a fine point.",
-              "image_id": "bugwood::1406190",
-              "verification_status": "weakly_supported",
-              "reasoning": "The slender, sharply-pointed needle form is corroborated by extension/reference sources, but the note is host morphology (not disease-specific) and 'lanceolate' is an imprecise term for four-sided acicular spruce needles, so support is partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://en.wikipedia.org/wiki/Blue_spruce",
-                  "quote": "Needles are 1.25\" long, four-sided with a very sharp point; the species name 'pungens' is from the Latin for sharp, as in a puncture wound."
-                },
-                {
-                  "url": "https://naturalresources.extension.iastate.edu/forestry/iowa_trees/trees/colorado_blue_spruce.html",
-                  "quote": "The needles usually stick out evenly from all sides of the twig, nearly at right angles, and are nearly straight, stiff and sharp."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::1406190"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              7
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 7,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 1,
-              "n_provisional": 2,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 3,
-              "n_added": 3,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+ "diseases": [
+  {
+   "disease_name": "Rhizosphaera Needle Cast",
+   "pathogen_scientific_name": {
+    "value": "Rhizosphaera kalkhoffii",
+    "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+    "quote": "Rhizosphaera needle cast is caused by the fungus Rhizosphaera kalkhoffii .",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+    "quote": "Rhizosphaera needle cast is a fungal disease of spruce trees"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar"
+    ],
+    "url": "https://pubs.nmsu.edu/_h/H163/index.html",
+    "quote": "Symptoms of the disease are discoloration of the needles (Figure 1), needle drop, and eventual defoliation"
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Needles become discolored â€” new needles at branch tips stay green while older needles turn brown to purple (yellow in July, reddish-purple in August), eventually turning brown and falling off; infected trees look thin or see-through with many bare branches, and damage starts on the lower branches and moves up the tree.",
+     "url": "https://pubs.nmsu.edu/_h/H163/index.html",
+     "quote": "Infected needles turn yellow in July and then reddish-purple in August. The needles eventually turn brown and fall off one or more branches."
     },
-    {
-      "disease_name": "Ceropsora Weirii",
-      "pathogen_scientific_name": {
-        "value": "Ceropsora weirii",
-        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
-        "quote": "is caused by the fungal pathogen Ceropsora weirii (formerly Chrysomyxa ) (Aime and McTaggart 2020)",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
-        "quote": "is caused by the fungal pathogen Ceropsora weirii"
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar"
-        ],
-        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
-        "quote": "In late winter to early spring, orange to yellow spots or bands appear on infected one year old needles (Sinclair and Lyon 2005)."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "In late winter to early spring, orange to yellow spots or bands appear on infected one year old needles; as conditions warm, the bands swell into waxy, yellow-orange pustules containing masses of spores, and infected needles may become rusty brown and drop during the summer.",
-          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
-          "quote": "In late winter to early spring, orange to yellow spots or bands appear on infected one year old needles (Sinclair and Lyon 2005). At first, they may be hard to detect, but when conditions warm and bud break approaches, the bands swell to produce waxy, yellow-orange pustules containing masses of spores."
-        },
-        "diagnostic_features": {
-          "value": "Waxy, yellow-orange pustules containing masses of spores form on one year old needles and erupt at bud break to release yellow-orange spores; after sporulation needles may become rusty brown and drop during the summer, with severity often highest on lower canopy branches.",
-          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
-          "quote": "the bands swell to produce waxy, yellow-orange pustules containing masses of spores. At bud break, the pustules erupt and the yellow-orange spores are dispersed by wind and rain"
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Fungicide application to newly developing needles shortly after budbreak can suppress new infections",
-          "Copper-based fungicides, such as copper hydroxide and copper octanoate, should be effective against C. weirii",
-          "Removing infected one year old needles to reduce inoculum in late winter or early spring prior to the release of spores"
-        ],
-        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
-        "quote": "Fungicide application to newly developing needles shortly after budbreak can suppress new infections. Copper-based fungicides, such as copper hydroxide and copper octanoate, should be effective against C. weirii ."
-      },
-      "confidence": "medium",
-      "num_sources": 1,
-      "conflicts": [
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Ceropsora weirii",
-          "alternative_value": "Chrysomyxa weirii",
-          "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
-          "note": "Source notes the pathogen was formerly classified in genus Chrysomyxa; reclassified to Ceropsora per Aime and McTaggart 2020. No NCBI/MycoBank taxonomy validation was provided to confirm the currently accepted name."
-        }
-      ],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Waxy, yellow-orange pustules containing masses of spores form on one year old needles and erupt at bud break to release yellow-orange spores",
-              "image_shows": "There are no visible signs of sporulation in the photo.",
-              "image_quote": "There are no visible signs of sporulation in the photo.",
-              "image_id": "bugwood::5505742",
-              "verification_status": "field_observation",
-              "reasoning": "A negative observation about the absence of sporulation in one photograph cannot be corroborated by external factsheets, but it is plausible since pre-sporulation infected needles show only orange-yellow bands before pustules erupt at bud break.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5505742",
-            "bugwood::5505743",
-            "bugwood::5505744",
-            "bugwood::5505745",
-            "bugwood::5505746",
-            "bugwood::5505747",
-            "bugwood::5505748",
-            "bugwood::5505749",
-            "bugwood::5505750",
-            "bugwood::5505751"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "medium"
-            ],
-            "n_raw_per_pass": [
-              4
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 4,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 0,
-              "n_provisional": 1,
-              "n_contradictory": 3,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 1,
-              "n_added": 1,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 1,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "New York": {
-          "state": "New York",
-          "deltas": [],
-          "__image_ids__": [
-            "bugwood::5458655",
-            "bugwood::5458656",
-            "bugwood::5458657",
-            "bugwood::5458658",
-            "bugwood::5458659"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "medium"
-            ],
-            "n_raw_per_pass": [
-              0
-            ],
-            "detected_organ_per_pass": [
-              "other"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 0,
-            "verifier": {
-              "enabled": true
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 0,
-              "n_added": 0,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        }
-      }
+    "diagnostic_features": {
+     "value": "Tiny brown to black spots called pycnidia (fruiting bodies) emerge from the stomata on the needles, arranged in neat rows/lines and visible with a hand lens (10X); the disease attacks the oldest needles in the lower canopy first and progresses upward, giving the appearance of death from the bottom up and inside out.",
+     "url": "https://pubs.nmsu.edu/_h/H163/index.html",
+     "quote": "The fungus can sometimes be seen with a hand lens (10X) as tiny brown to black spots called pycnidia, or fruiting bodies, emerging from stomata (pores) on the needles (Figure 3)."
     },
-    {
-      "disease_name": "Spruce Needle Rusts",
-      "pathogen_scientific_name": {
-        "value": "",
-        "url": "",
-        "quote": "",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
-        "quote": "This disease is caused by fungi from several species of the genus Chrysomyxa ."
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar"
-        ],
-        "url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
-        "quote": "Young needles on infected trees turn yellow."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Current-year needles at the tips of branches turn yellow, and severely infected trees take on a tan to pinkish look; pale orange to white tube-like projections release powdery orange spores.",
-          "url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
-          "quote": "Needles at the tips of the branches (current year needles) turn yellow. Pale orange to white, tube-like projections appear on infected needles in July or August and release powdery, orange spores. Severely infected trees may have a tan to pinkish look."
-        },
-        "diagnostic_features": {
-          "value": "Pale orange to white, tube-like projections appear on infected needles in July or August and release powdery, orange spores; some species can cause witches' brooms (clumps of small weak branches arising from one point on a large branch).",
-          "url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
-          "quote": "Pale orange to white, tube-like projections appear on infected needles in July or August and release powdery, orange spores. ... Some species of rust can cause witches' brooms. These are clumps of small weak branches arising from one point on a large branch."
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Reduce moisture on needles by redirecting lawn sprinklers away from spruce trees",
-          "Space spruce trees to allow good air circulation around the tree",
-          "Prune out and destroy witches' brooms present in the tree",
-          "Remove all alternate host plants within 1000 feet of spruce trees"
-        ],
-        "url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
-        "quote": "Reduce moisture on needles by redirecting lawn sprinklers away from spruce trees. Space spruce trees to allow good air circulation around the tree. Prune out and destroy witches' brooms present in the tree. Remove all alternate host plants within 1000 feet of spruce trees."
-      },
-      "confidence": "medium",
-      "num_sources": 1,
-      "conflicts": [],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Pale orange to white, tube-like projections appear on infected needles in July or August and release powdery, orange spores",
-              "image_shows": "The image displays a fungal lesion with prominent pale orange central mass surrounded by white radial structures.",
-              "image_quote": "The central mass is pale orange.",
-              "image_id": "bugwood::5505976",
-              "verification_status": "weakly_supported",
-              "reasoning": "Sources confirm an orange spore mass set within pale/whitish aecial structures, supporting the orange-center/white-surround color palette, though the specific 'radial structures' framing is not documented.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
-                  "quote": "Symptoms on spruce first appear as whitish blisters (aecia) on the surface of the current season's needles in midsummer, which burst open and reveal distinctive yellow-orange spores (aeciospores)."
-                },
-                {
-                  "url": "https://ag.umass.edu/landscape/fact-sheets/spruce-needle-rust",
-                  "quote": "The bands swell to produce waxy, yellow-orange pustules containing masses of rust-colored spores."
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5505976",
-            "bugwood::5505977",
-            "bugwood::5505978",
-            "bugwood::5505979",
-            "bugwood::5505980",
-            "bugwood::5505981",
-            "bugwood::5505982",
-            "bugwood::5505983",
-            "bugwood::5505984",
-            "bugwood::5505985",
-            "bugwood::5505986",
-            "bugwood::5505987",
-            "bugwood::5505988",
-            "bugwood::5505989",
-            "bugwood::5505990",
-            "bugwood::5505991"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              3
-            ],
-            "detected_organ_per_pass": [
-              "flower"
-            ],
-            "n_active_agents_per_pass": [
-              5
-            ],
-            "n_after_agreement": 3,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 1,
-              "n_provisional": 0,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 1,
-              "n_added": 1,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        }
-      }
+    "look_alikes": {
+     "value": [
+      "Several other fungi cause symptoms very similar to Rhizosphaera"
+     ],
+     "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+     "quote": "Several other fungi cause symptoms very similar to Rhizosphaera and correct identification is important."
     }
-  ],
-  "crop": "Blue Spruce",
-  "generated_date": "2026-06-10",
-  "regional_observations_count": 7
+   },
+   "treatments": {
+    "value": [
+     "Do not plant Colorado blue spruce (Picea pungens) or other spruce not well adapted to local conditions; plant more resistant Norway (P. abies) or white spruce (P. glauca)",
+     "Plant spruce trees on sites with acidic, moist, well drained soils and full sun, preferably grown from local seed sources",
+     "Do not overcrowd plants; use the mature size of the tree as a spacing guide, and remove the bottom-most branches to increase air circulation around the canopy",
+     "Do not shear spruce, as shearing creates dense, compact growth that stays wet longer",
+     "Remove weeds under trees and maintain a 3-4 inch wood chip mulch layer (leaving a 2 inch gap from the trunk); avoid wetting needles with sprinkler irrigation",
+     "Plant only healthy trees and avoid planting new trees next to established trees",
+     "Sterilize pruning shears with 70% isopropyl alcohol or another disinfectant between cuts and between trees",
+     "Clean up fallen needles from infected trees, seal in a plastic bag and dispose of them",
+     "Apply protectant fungicides containing chlorothalonil, copper hydroxide, mancozeb, thiophanate-methyl, or Bordeaux mixture 8-8-100; first application when new needles are about half their mature length and a second 3 to 4 weeks later"
+    ],
+    "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+    "quote": "Fungicides with the active ingredient chlorothalonil, copper hydroxide or mancozeb will protect new spruce needles from infection by Rhizosphaera. Make one application in spring or early summer when the new needles have grown to half their mature length. Make a second application 3 to 4 weeks later."
+   },
+   "confidence": "high",
+   "num_sources": 2,
+   "conflicts": [
+    {
+     "field": "visual_symptoms.diagnostic_features",
+     "canonical_value": "Tiny brown to black spots called pycnidia emerging from stomata on the needles (NMSU)",
+     "alternative_value": "Tiny black bumps arranged in neat rows on infected needles (UMN)",
+     "alternative_source_url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+     "note": "Both sources describe the same spore-producing structures with complementary detail; NMSU selected as canonical for the more specific term (pycnidia / emerging from stomata) while UMN contributes the diagnostic 'neat rows' arrangement."
+    },
+    {
+     "field": "treatments",
+     "canonical_value": "Fungicides containing chlorothalonil, copper hydroxide or mancozeb (UMN)",
+     "alternative_value": "Bordeaux mixture 8-8-100 or fungicides containing chlorothalonil or thiophanate-methyl (NMSU)",
+     "alternative_source_url": "https://pubs.nmsu.edu/_h/H163/index.html",
+     "note": "Sources recommend overlapping but non-identical fungicide active ingredients; both timing instructions agree (first at half-developed needles, second ~3-4 weeks later). All listed actives merged into the union of treatments."
+    }
+   ],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [],
+     "__image_ids__": [
+      "bugwood::5529654",
+      "bugwood::5529655",
+      "bugwood::5529656",
+      "bugwood::5529657",
+      "bugwood::5529658",
+      "bugwood::5529659",
+      "bugwood::5529660",
+      "bugwood::5529661",
+      "bugwood::5529662"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       3
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 3,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 0,
+       "n_provisional": 0,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 0,
+       "n_added": 0,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    },
+    "Minnesota": {
+     "state": "Minnesota",
+     "deltas": [],
+     "__image_ids__": [
+      "bugwood::1406191",
+      "bugwood::1406192"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       3
+      ],
+      "detected_organ_per_pass": [
+       "crown"
+      ],
+      "n_active_agents_per_pass": [
+       5
+      ],
+      "n_after_agreement": 3,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 0,
+       "n_provisional": 0,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 0,
+       "n_added": 0,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    },
+    "North Dakota": {
+     "state": "North Dakota",
+     "deltas": [],
+     "__image_ids__": [
+      "bugwood::5190099"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       4
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 4,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 0,
+       "n_provisional": 0,
+       "n_contradictory": 3,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 0,
+       "n_added": 0,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    },
+    "Wisconsin": {
+     "state": "Wisconsin",
+     "deltas": [
+      {
+       "field": "severity",
+       "canonical_says": "infected trees look thin or see-through with many bare branches, and damage starts on the lower branches and moves up",
+       "image_shows": "A significant portion of the conifer's needles show discoloration, indicating advanced/moderate-to-severe infection in this Wisconsin specimen.",
+       "image_quote": "Needles are primarily red with some green, suggesting discoloration.",
+       "image_id": "bugwood::1406190",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extensive needle discoloration is consistent with documented moderate-to-severe Rhizosphaera progression, though the photo alone gives only an indirect severity read.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+         "quote": "Damage typically starts on the lower branches and moves up the tree.",
+         "_repaired_from": {
+          "prev_url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+          "prev_quote": "The first noticeable symptom is purpling or browning and loss of the innermost needles on lower branches of spruce trees."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Tiny brown to black spots called pycnidia (fruiting bodies) emerge from the stomata on the needles, arranged in neat rows/lines",
+       "image_shows": "No clear necrosis or clearing along needle 'veins' is visible, so the diagnostic pycnidial rows cannot be confirmed from this image.",
+       "image_quote": "The needles display red and green hues.",
+       "image_id": "bugwood::1406190",
+       "verification_status": "weakly_supported",
+       "reasoning": "The observed red-and-green needle coloration matches documented reddish-purple older needles beside still-green tips, and sources agree the pycnidial rows require a 10X hand lens, supporting that they cannot be confirmed from a field photo.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pubs.nmsu.edu/_h/H163/index.html",
+         "quote": "Infected needles turn yellow in July and then reddish-purple in August ... new needles at branch tips remain green."
+        },
+        {
+         "url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+         "quote": "Tiny black bumps can be seen arranged in neat rows on infected needles.",
+         "_repaired_from": {
+          "prev_url": "https://extension.umn.edu/plant-diseases/rhizosphaera-needle-cast",
+          "prev_quote": "The fungus can sometimes be seen with a hand lens (10X) as tiny brown to black spots called pycnidia ... in rows on the underside of the needle."
+         }
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The needles are long, narrow, pointed and lanceolate — a host-morphology note not specific to the disease.",
+       "image_quote": "The needles are slender and taper to a fine point.",
+       "image_id": "bugwood::1406190",
+       "verification_status": "weakly_supported",
+       "reasoning": "The slender, sharply-pointed needle form is corroborated by extension/reference sources, but the note is host morphology (not disease-specific) and 'lanceolate' is an imprecise term for four-sided acicular spruce needles, so support is partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://en.wikipedia.org/wiki/Blue_spruce",
+         "quote": "The specific epithet pungens means \"sharply pointed\", referring to the leaves.",
+         "_repaired_from": {
+          "prev_url": "https://en.wikipedia.org/wiki/Blue_spruce",
+          "prev_quote": "Needles are 1.25\" long, four-sided with a very sharp point; the species name 'pungens' is from the Latin for sharp, as in a puncture wound."
+         }
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::1406190"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       7
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 7,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 1,
+       "n_provisional": 2,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 3,
+       "n_added": 3,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Ceropsora Weirii",
+   "pathogen_scientific_name": {
+    "value": "Ceropsora weirii",
+    "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
+    "quote": "is caused by the fungal pathogen Ceropsora weirii (formerly Chrysomyxa ) (Aime and McTaggart 2020)",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
+    "quote": "is caused by the fungal pathogen Ceropsora weirii"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar"
+    ],
+    "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
+    "quote": "In late winter to early spring, orange to yellow spots or bands appear on infected one year old needles (Sinclair and Lyon 2005)."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "In late winter to early spring, orange to yellow spots or bands appear on infected one year old needles; as conditions warm, the bands swell into waxy, yellow-orange pustules containing masses of spores, and infected needles may become rusty brown and drop during the summer.",
+     "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
+     "quote": "In late winter to early spring, orange to yellow spots or bands appear on infected one year old needles (Sinclair and Lyon 2005). At first, they may be hard to detect, but when conditions warm and bud break approaches, the bands swell to produce waxy, yellow-orange pustules containing masses of spores."
+    },
+    "diagnostic_features": {
+     "value": "Waxy, yellow-orange pustules containing masses of spores form on one year old needles and erupt at bud break to release yellow-orange spores; after sporulation needles may become rusty brown and drop during the summer, with severity often highest on lower canopy branches.",
+     "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
+     "quote": "the bands swell to produce waxy, yellow-orange pustules containing masses of spores. At bud break, the pustules erupt and the yellow-orange spores are dispersed by wind and rain"
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
+    }
+   },
+   "treatments": {
+    "value": [
+     "Fungicide application to newly developing needles shortly after budbreak can suppress new infections",
+     "Copper-based fungicides, such as copper hydroxide and copper octanoate, should be effective against C. weirii",
+     "Removing infected one year old needles to reduce inoculum in late winter or early spring prior to the release of spores"
+    ],
+    "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
+    "quote": "Fungicide application to newly developing needles shortly after budbreak can suppress new infections. Copper-based fungicides, such as copper hydroxide and copper octanoate, should be effective against C. weirii ."
+   },
+   "confidence": "medium",
+   "num_sources": 1,
+   "conflicts": [
+    {
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Ceropsora weirii",
+     "alternative_value": "Chrysomyxa weirii",
+     "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/spruce-needle-rust",
+     "note": "Source notes the pathogen was formerly classified in genus Chrysomyxa; reclassified to Ceropsora per Aime and McTaggart 2020. No NCBI/MycoBank taxonomy validation was provided to confirm the currently accepted name."
+    }
+   ],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Waxy, yellow-orange pustules containing masses of spores form on one year old needles and erupt at bud break to release yellow-orange spores",
+       "image_shows": "There are no visible signs of sporulation in the photo.",
+       "image_quote": "There are no visible signs of sporulation in the photo.",
+       "image_id": "bugwood::5505742",
+       "verification_status": "field_observation",
+       "reasoning": "A negative observation about the absence of sporulation in one photograph cannot be corroborated by external factsheets, but it is plausible since pre-sporulation infected needles show only orange-yellow bands before pustules erupt at bud break.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5505742",
+      "bugwood::5505743",
+      "bugwood::5505744",
+      "bugwood::5505745",
+      "bugwood::5505746",
+      "bugwood::5505747",
+      "bugwood::5505748",
+      "bugwood::5505749",
+      "bugwood::5505750",
+      "bugwood::5505751"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "medium"
+      ],
+      "n_raw_per_pass": [
+       4
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 4,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 0,
+       "n_provisional": 1,
+       "n_contradictory": 3,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 1,
+       "n_added": 1,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 1,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "New York": {
+     "state": "New York",
+     "deltas": [],
+     "__image_ids__": [
+      "bugwood::5458655",
+      "bugwood::5458656",
+      "bugwood::5458657",
+      "bugwood::5458658",
+      "bugwood::5458659"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "medium"
+      ],
+      "n_raw_per_pass": [
+       0
+      ],
+      "detected_organ_per_pass": [
+       "other"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 0,
+      "verifier": {
+       "enabled": true
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 0,
+       "n_added": 0,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Spruce Needle Rusts",
+   "pathogen_scientific_name": {
+    "value": "",
+    "url": "",
+    "quote": "",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
+    "quote": "This disease is caused by fungi from several species of the genus Chrysomyxa ."
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar"
+    ],
+    "url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
+    "quote": "Young needles on infected trees turn yellow."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Current-year needles at the tips of branches turn yellow, and severely infected trees take on a tan to pinkish look; pale orange to white tube-like projections release powdery orange spores.",
+     "url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
+     "quote": "Needles at the tips of the branches (current year needles) turn yellow. Pale orange to white, tube-like projections appear on infected needles in July or August and release powdery, orange spores. Severely infected trees may have a tan to pinkish look."
+    },
+    "diagnostic_features": {
+     "value": "Pale orange to white, tube-like projections appear on infected needles in July or August and release powdery, orange spores; some species can cause witches' brooms (clumps of small weak branches arising from one point on a large branch).",
+     "url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
+     "quote": "Pale orange to white, tube-like projections appear on infected needles in July or August and release powdery, orange spores. ... Some species of rust can cause witches' brooms. These are clumps of small weak branches arising from one point on a large branch."
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
+    }
+   },
+   "treatments": {
+    "value": [
+     "Reduce moisture on needles by redirecting lawn sprinklers away from spruce trees",
+     "Space spruce trees to allow good air circulation around the tree",
+     "Prune out and destroy witches' brooms present in the tree",
+     "Remove all alternate host plants within 1000 feet of spruce trees"
+    ],
+    "url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
+    "quote": "Reduce moisture on needles by redirecting lawn sprinklers away from spruce trees. Space spruce trees to allow good air circulation around the tree. Prune out and destroy witches' brooms present in the tree. Remove all alternate host plants within 1000 feet of spruce trees."
+   },
+   "confidence": "medium",
+   "num_sources": 1,
+   "conflicts": [],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Pale orange to white, tube-like projections appear on infected needles in July or August and release powdery, orange spores",
+       "image_shows": "The image displays a fungal lesion with prominent pale orange central mass surrounded by white radial structures.",
+       "image_quote": "The central mass is pale orange.",
+       "image_id": "bugwood::5505976",
+       "verification_status": "weakly_supported",
+       "reasoning": "Sources confirm an orange spore mass set within pale/whitish aecial structures, supporting the orange-center/white-surround color palette, though the specific 'radial structures' framing is not documented.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
+         "quote": "Pale orange to white, tube-like projections appear on infected needles in July or August and release powdery, orange spores.",
+         "_repaired_from": {
+          "prev_url": "https://extension.umn.edu/plant-diseases/spruce-needle-rust",
+          "prev_quote": "Symptoms on spruce first appear as whitish blisters (aecia) on the surface of the current season's needles in midsummer, which burst open and reveal distinctive yellow-orange spores (aeciospores)."
+         }
+        },
+        {
+         "url": "https://ag.umass.edu/landscape/fact-sheets/spruce-needle-rust",
+         "quote": "The bands swell to produce waxy, yellow-orange pustules containing masses of rust-colored spores."
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5505976",
+      "bugwood::5505977",
+      "bugwood::5505978",
+      "bugwood::5505979",
+      "bugwood::5505980",
+      "bugwood::5505981",
+      "bugwood::5505982",
+      "bugwood::5505983",
+      "bugwood::5505984",
+      "bugwood::5505985",
+      "bugwood::5505986",
+      "bugwood::5505987",
+      "bugwood::5505988",
+      "bugwood::5505989",
+      "bugwood::5505990",
+      "bugwood::5505991"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       3
+      ],
+      "detected_organ_per_pass": [
+       "flower"
+      ],
+      "n_active_agents_per_pass": [
+       5
+      ],
+      "n_after_agreement": 3,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 1,
+       "n_provisional": 0,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 1,
+       "n_added": 1,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    }
+   }
+  }
+ ],
+ "crop": "Blue Spruce",
+ "generated_date": "2026-06-10",
+ "regional_observations_count": 7
 }

@@ -1,1838 +1,1833 @@
 {
-  "diseases": [
-    {
-      "disease_name": "Southern Blight",
-      "pathogen_scientific_name": {
-        "value": "Sclerotium rolfsii",
-        "url": "https://ag.umass.edu/greenhouse-floriculture/photos/hosta-sclerotium-crown-rot",
-        "quote": "Sclerotium crown rot is caused by the fungus Sclerotium rolfsii",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hosta-petiole-and-crown-rot",
-        "quote": "caused by the fungus Sclerotium rolfsii"
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem",
-          "Whole plant",
-          "Root"
-        ],
-        "url": "https://ag.umass.edu/greenhouse-floriculture/photos/hosta-sclerotium-crown-rot",
-        "quote": "Initial above-ground symptoms can include discoloration of lower leaves, wilting, and collapse. These are often followed by plant death. ... Sclerotium rolfsii is soil-borne and attacks plants at or below the soil line."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Symptoms include marginal yellowing and browning of leaves beginning with the lower leaves, progressing to entire discoloration, wilting, and collapse, with rotted petiole bases and mushy crowns; a white mat of fungus and tiny spherical sclerotia appear at the crown and soil surface.",
-          "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hosta-petiole-and-crown-rot",
-          "quote": "Symptoms of the disease include marginal yellowing and browning of the leaves, beginning with the lower leaves. As the disease progresses, the leaves discolor entirely and wilt. In the final stages of the disease, most of the leaves completely collapse and lay flat on the ground."
-        },
-        "diagnostic_features": {
-          "value": "Because the bases of the petioles are rotted, the leaves can be easily pulled away from the crown; a white mat of fungus (mycelium) fans out from the infected crown across the soil surface, and thousands of tiny, spherical sclerotia (BB to pepper grounds in size, white to brick red) are present in the rotted crown.",
-          "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hosta-petiole-and-crown-rot",
-          "quote": "Look a bit closer and you can see thousands of tiny, spherical sclerotia in the rotted crown. Sclerotia of S. rolfsii are somewhere between BB's and pepper grounds in size and vary in color from white (newly developed) to brick red."
-        },
-        "look_alikes": {
-          "value": [
-            "Other basal stem rots such as those caused by Rhizoctonia or other fungi"
-          ],
-          "url": "https://ag.umass.edu/greenhouse-floriculture/photos/hosta-sclerotium-crown-rot",
-          "quote": "Symptoms are easily confused with other basal stem rots such as those caused by Rhizoctonia or other fungi."
-        }
-      },
-      "treatments": {
-        "value": [
-          "Dig up/dig and burn or remove hostas showing crown rot symptoms.",
-          "Thoroughly scrape and/or wash soil from all tools used in infested soil, then sterilize tools in a 10% solution of household bleach.",
-          "Buy disease-free plants / use only pathogen free stock.",
-          "Plant nonhost species into holes from which sick hostas have been excavated.",
-          "Follow good Integrated Pest Management practices to avoid fungicide applications.",
-          "Solarize or otherwise pasteurize soil before planting.",
-          "Remove soil from affected area and replace with new or sterilized soil.",
-          "Avoid overwatering and provide good soil drainage, for example, by planting in raised beds.",
-          "Rhizomes or bulbs can be treated with hot water to eliminate the fungus.",
-          "Soil drenches of fungicides (Cleary's 3336, Terraclor) around the base of plants before infection can prevent disease development (but will not cure affected plants).",
-          "Amendment of the soil with biological control agents such as MycoStop, PlantShield, SoilGard, or YieldShield may offer some control."
-        ],
-        "url": "https://ag.umass.edu/greenhouse-floriculture/photos/hosta-sclerotium-crown-rot",
-        "quote": "Dig and burn plants that are seriously infected. Solarize or otherwise pasteurize soil before planting. Remove soil from affected area and replace with new or sterilized soil. Use only pathogen free stock. Avoid overwatering and provide good soil drainage, for example, by planting in raised beds. ... Rhizomes or bulbs can be treated with hot water to eliminate the fungus. Soil drenches of fungicides (Cleary's 3336, Terraclor) around the base of plants before infection can prevent disease development (but will not cure affected plants). Amendment of the soil with biological control agents such as MycoStop, PlantShield,SoilGard, or YieldShield may offer some control."
-      },
-      "confidence": "high",
-      "num_sources": 2,
-      "conflicts": [
-        {
-          "field": "disease_name",
-          "canonical_value": "Sclerotium Crown Rot",
-          "alternative_value": "Hosta Petiole and Crown Rot",
-          "alternative_source_url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hosta-petiole-and-crown-rot",
-          "note": "Both names refer to the same Sclerotium rolfsii crown/petiole rot on hosta. Iowa State labels it 'Hosta Petiole and Crown Rot'; UMass uses the pathogen-based 'Sclerotium crown rot'. Both are rank-5 university extension sources."
-        },
-        {
-          "field": "affected_parts",
-          "canonical_value": "Foliar, Stem, Whole plant, Root (union)",
-          "alternative_value": "Iowa State: Foliar/Stem/Whole plant; UMass: Foliar/Whole plant/Root",
-          "alternative_source_url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hosta-petiole-and-crown-rot",
-          "note": "Sources emphasize different plant parts; canonical value is the union. Both agree the pathogen attacks the crown at/below the soil line."
-        }
-      ],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "thousands of tiny, spherical sclerotia (BB to pepper grounds in size, white to brick red) are present in the rotted crown",
-              "image_shows": "Mustard-seed-shaped resting structures are visible, consistent with S. rolfsii sclerotia rather than airborne spores.",
-              "image_quote": "The image shows mustard-seed-shaped resting structures that are characteristic of sclerotia.",
-              "image_id": "bugwood::5459286",
-              "verification_status": "verified",
-              "reasoning": "Multiple extension sources corroborate that S. rolfsii produces mustard-seed-shaped sclerotia (resting structures, not spores), directly supporting the observed morphology; the 'sporulation' label is reframed to diagnostic_features since this fungus rarely sporulates.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://ag.umass.edu/greenhouse-floriculture/photos/hosta-sclerotium-crown-rot",
-                  "quote": "Sclerotia look like mustard seeds on the soil surface surrounding the crown of a rotted plant."
-                },
-                {
-                  "url": "https://www.canr.msu.edu/resources/sclerotium_or_southern_blight",
-                  "quote": "Light to dark brown sclerotia are tiny, hard, resting bodies that resemble mustard seeds."
-                },
-                {
-                  "url": "https://en.wikipedia.org/wiki/Agroathelia_rolfsii",
-                  "quote": "Sclerotium rolfsii rarely produces spores, so dispersal by air movement is not significant."
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5459286",
-            "bugwood::5459287",
-            "bugwood::5459288",
-            "bugwood::5459289",
-            "bugwood::5459290",
-            "bugwood::5459291",
-            "bugwood::5459292",
-            "bugwood::5459293",
-            "bugwood::5459294",
-            "bugwood::5459295"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              4
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 4,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 1,
-              "n_provisional": 0,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 1,
-              "n_added": 1,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        }
-      }
+ "diseases": [
+  {
+   "disease_name": "Southern Blight",
+   "pathogen_scientific_name": {
+    "value": "Sclerotium rolfsii",
+    "url": "https://ag.umass.edu/greenhouse-floriculture/photos/hosta-sclerotium-crown-rot",
+    "quote": "Sclerotium crown rot is caused by the fungus Sclerotium rolfsii",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hosta-petiole-and-crown-rot",
+    "quote": "caused by the fungus Sclerotium rolfsii"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem",
+     "Whole plant",
+     "Root"
+    ],
+    "url": "https://ag.umass.edu/greenhouse-floriculture/photos/hosta-sclerotium-crown-rot",
+    "quote": "Initial above-ground symptoms can include discoloration of lower leaves, wilting, and collapse. These are often followed by plant death. ... Sclerotium rolfsii is soil-borne and attacks plants at or below the soil line."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Symptoms include marginal yellowing and browning of leaves beginning with the lower leaves, progressing to entire discoloration, wilting, and collapse, with rotted petiole bases and mushy crowns; a white mat of fungus and tiny spherical sclerotia appear at the crown and soil surface.",
+     "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hosta-petiole-and-crown-rot",
+     "quote": "Symptoms of the disease include marginal yellowing and browning of the leaves, beginning with the lower leaves. As the disease progresses, the leaves discolor entirely and wilt. In the final stages of the disease, most of the leaves completely collapse and lay flat on the ground."
     },
-    {
-      "disease_name": "Hosta Virus X",
-      "pathogen_scientific_name": {
-        "value": "Hosta virus X",
-        "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
-        "quote": "HVX is caused by a plant virus of the same name (i.e.,  Hosta virus X ).",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Viral",
-        "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
-        "quote": "Hosta virus X (HVX) is the most common viral disease to infect hostas in Maine."
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Whole plant"
-        ],
-        "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
-        "quote": "The most common symptoms of this disease are a bleeding of color out from the veins of the leaves and blue or dark green mottling on the leaves (Figure 1)."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Symptoms include bleeding of color out from the leaf veins, blue or dark green mottling on the leaves, leaf distortion (puckering and twisting), ring spots, flecks, zipper marks, stunted growth, and occasionally necrotic lesions.",
-          "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
-          "quote": "The most common symptoms of this disease are a bleeding of color out from the veins of the leaves and blue or dark green mottling on the leaves (Figure 1). HVX can also cause distortion in the leaves such as puckering and twisting as well as ring spots, flecks and zipper marks. Infected plants will also have more stunted growth than that of healthy plants. Occasionally, the leaves will develop necrotic lesions."
-        },
-        "diagnostic_features": {
-          "value": "Bleeding of color out from the veins of the leaves and blue or dark green mottling, along with zipper marks, ring spots, and flecks; symptoms are easier to distinguish in gold-colored cultivars, and holding an infected leaf up to the light versus a healthy leaf aids identification.",
-          "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
-          "quote": "The most common symptoms of this disease are a bleeding of color out from the veins of the leaves and blue or dark green mottling on the leaves (Figure 1). HVX can also cause distortion in the leaves such as puckering and twisting as well as ring spots, flecks and zipper marks."
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Carefully inspect any plants for color bleeding and leaf mottling before purchasing; avoid buying plants with symptoms of HVX.",
-          "When purchasing hostas (especially expensive ones), consider requesting that the seller provide proof that the plants are HVX-free.",
-          "Send samples to a diagnostic lab when HVX is suspected; virus testing kits are available and relatively inexpensive.",
-          "Before planting new plants, isolate them from any other hostas for at least 1 week (up to several weeks) and watch for symptom development.",
-          "Remove and destroy all plants that test positive or show symptoms \u00e2\u20ac\u201d burn (where allowed) or landfill/throw away in their own trash bags. Do NOT compost.",
-          "Disinfest tools that may have contacted infected plants; for home gardeners, thoroughly scrubbing tools in hot soapy water is generally sufficient.",
-          "Professionals may use disinfectants such as Zerotol, KleenGrow, Physan, or Virkon after removing all organic matter from tools; or treat items for at least one minute with Alconox plus SLS/SDS, or trisodium phosphate solution.",
-          "Wash hands thoroughly with soap and water (for at least one minute) before and after working with the plants.",
-          "Minimize wounding that could release sap and provide an entry point for HVX.",
-          "Note: normal sterilization with 70% rubbing alcohol is NOT effective for HVX management."
-        ],
-        "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
-        "quote": "The only way to eliminate the disease is to destroy infected plants (and any associated plant debris) by burning (where allowed by local ordinance) or landfilling.  DO NOT compost hostas with HVX."
-      },
-      "confidence": "high",
-      "num_sources": 3,
-      "conflicts": [
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Hosta virus X",
-          "alternative_value": "null (not stated)",
-          "alternative_source_url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
-          "note": "U Maine and Purdue do not state a formal pathogen name; Wisconsin specifies the virus name is identical to the disease name. No NCBI/MycoBank validation was supplied, so taxonomy_validated is false."
-        }
-      ],
-      "regional_observations": {
-        "Michigan": {
-          "state": "Michigan",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "bleeding of color out from the leaf veins, blue or dark green mottling",
-              "image_shows": "The lesions are elongated along the leaf, running narrow and parallel to the main vein.",
-              "image_quote": "The lesions are narrow and extend parallel to the leaf's main vein.",
-              "image_id": "bugwood::5483106",
-              "verification_status": "weakly_supported",
-              "reasoning": "HVX 'ink-bleed' discoloration documented to follow and run along the leaf veins, matching narrow lesions parallel to the main vein.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hyg.ipm.illinois.edu/article.php?id=926",
-                  "quote": "Color changes in the leaf pigmentation appear as mosaic, circular, color break or 'ink-bleed' (localized discoloration along the leaf veins) patterns."
-                },
-                {
-                  "url": "https://americanhostasociety.org/blog/hosta-virus-hvx/",
-                  "quote": "These markings usually follow the leaf veins and bleed out into surrounding tissue giving the plant a mottled appearance."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "blue or dark green mottling on the leaves",
-              "image_shows": "Lesion centers are a pale green-yellow while the margins stay a deeper, richer green.",
-              "image_quote": "The central areas exhibit a pale yellow-green hue, while the edges maintain a darker, richer green.",
-              "image_id": "bugwood::5483106",
-              "verification_status": "weakly_supported",
-              "reasoning": "The green-and-yellow contrast with deeper green retained at margins/veins is consistent with documented HVX mottling and ink-bleed vein-following discoloration.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
-                  "quote": "green and yellow mottling of leaf blades, puckering, circular discolored areas (called ringspots)"
-                },
-                {
-                  "url": "https://hyg.ipm.illinois.edu/article.php?id=926",
-                  "quote": "'ink-bleed' (localized discoloration along the leaf veins) patterns."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "Distinct interveinal chlorosis with bright yellowing between the leaf veins.",
-              "image_quote": "Leaves exhibit bright yellow patterns between veins.",
-              "image_id": "bugwood::5483106",
-              "verification_status": "verified",
-              "reasoning": "Peer-reviewed and extension sources explicitly list interveinal chlorosis / angular yellowing as a documented HVX foliar symptom.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.tandfonline.com/doi/full/10.1080/07060661.2020.1736638",
-                  "quote": "Various virus-like symptoms including mosaic, interveinal chlorosis, vein clearing, leaf deformation and ringspots have been observed on infected hosta cultivars."
-                },
-                {
-                  "url": "https://hyg.ipm.illinois.edu/article.php?id=331",
-                  "quote": "HVX causes angular patches of yellowing."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Bleeding of color out from the veins of the leaves and blue or dark green mottling",
-              "image_shows": "Leaf veins appear translucent and paler than the blade, indicating vein clearing.",
-              "image_quote": "The veins are translucent and paler than the blade, suggesting vein clearing.",
-              "image_id": "bugwood::5483106",
-              "verification_status": "verified",
-              "reasoning": "Vein clearing is explicitly documented in peer-reviewed literature as an observed HVX symptom, corroborating the translucent/pale vein observation.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.tandfonline.com/doi/full/10.1080/07060661.2020.1736638",
-                  "quote": "Various virus-like symptoms including mosaic, interveinal chlorosis, vein clearing, leaf deformation and ringspots have been observed on infected hosta cultivars."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf lesions appear smooth and unblemished, with no roughness or fuzzy fungal growth.",
-              "image_quote": "The surface of the leaves looks unblemished without any signs of roughness or fuzziness.",
-              "image_id": "bugwood::5483106",
-              "verification_status": "field_observation",
-              "reasoning": "HVX is a viral disease that produces no fungal fruiting structures, so absence of fuzzy growth is coherent, but published photos note tissue can also appear lumpy/puckered so the 'smooth, unblemished' claim is unconfirmed and flagged for curator review.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "novel_plausible"
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaves are broad with a length-to-width ratio greater than 1, resembling a spade shape.",
-              "image_quote": "The leaves are broad with a length-to-width ratio greater than 1, resembling a spade shape.",
-              "image_id": "bugwood::5483106",
-              "verification_status": "field_observation",
-              "reasoning": "This describes the host hosta's normal broad spade-shaped leaf morphology rather than a disease symptom, so no extension factsheet corroborates it as a diagnostic feature, but it is not contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5483106"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              9
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 9,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 4,
-              "n_provisional": 2,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 6,
-              "n_added": 6,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 2,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "blue or dark green mottling on the leaves ... occasionally necrotic lesions",
-              "image_shows": "The lesions have a pale green center with chlorotic yellowing and appear smooth and not raised on the leaf surface.",
-              "image_quote": "The lesions appear smooth and not raised.",
-              "image_id": "bugwood::5462726",
-              "verification_status": "weakly_supported",
-              "reasoning": "HVX symptoms are flat color changes/mottling rather than raised fungal lesions, so a smooth, non-raised, pale-green discoloration is consistent with viral etiology.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
-                  "quote": "color changes appear as mosaic, mottled, circular or 'ink-bleed' (localized discoloration along the leaf veins) patterns"
-                },
-                {
-                  "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
-                  "quote": "light or dark green discolorations along leaf veins, green and yellow mottling of leaf blades"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "green and yellow mottling of leaf blades",
-              "image_shows": "The leaves exhibit chlorosis with a yellowing pattern in the interveinal areas.",
-              "image_quote": "The yellowing occurs in the interveinal areas.",
-              "image_id": "bugwood::5462726",
-              "verification_status": "weakly_supported",
-              "reasoning": "Green-and-yellow chlorotic mottling of the leaf blade is documented for HVX, giving partial support to an interveinal yellowing observation.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
-                  "quote": "green and yellow mottling of leaf blades, puckering, circular discolored areas (called ringspots)"
-                },
-                {
-                  "url": "https://pddc.wisc.edu/2015/07/24/hosta-virus-x/",
-                  "quote": "green and yellow mottling of leaf blades"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "stunted growth, and occasionally necrotic lesions",
-              "image_shows": "Two hosta leaves show combined interveinal chlorosis, leaf bleaching, and small necrotic spots indicating a moderate symptom load.",
-              "image_quote": "The left leaf has interveinal chlorosis with yellowing between the veins while the veins remain green.",
-              "image_id": "bugwood::5462726",
-              "verification_status": "weakly_supported",
-              "reasoning": "The combination of chlorotic mottling plus small necrotic spots falls within the documented HVX symptom range, so the severity description is partially corroborated.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
-                  "quote": "green and yellow mottling of leaf blades, puckering, circular discolored areas (called ringspots), and in some cases, wilting and tissue death (necrosis)"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "ring spots, flecks ... occasionally necrotic lesions",
-              "image_shows": "Scattered lesions with no clear pattern suggest irregularly shaped spots rather than the circular ringspots typical of HVX.",
-              "image_quote": "The lesions appear scattered across the leaves with no clear pattern, suggesting they might be irregularly shaped.",
-              "image_id": "bugwood::5462726",
-              "verification_status": "weakly_supported",
-              "reasoning": "Irregular, scattered (non-ringspot) yellow-green discolorations are a documented HVX mottling pattern, so the described irregular spots are partially corroborated.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://purduelandscapereport.org/article/hosta-virus-x/",
-                  "quote": "mosaic mottling characterized by irregular yellow-green discolorations"
-                },
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
-                  "quote": "green and yellow mottling of leaf blades, puckering, circular discolored areas (called ringspots)"
-                }
-              ]
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "occasionally necrotic lesions",
-              "image_shows": "Dark necrotic spots are present on the leaf surface that do not follow the natural vein patterns.",
-              "image_quote": "Dark spots are observed on the leaves, which do not follow the natural vein patterns.",
-              "image_id": "bugwood::5462726",
-              "verification_status": "weakly_supported",
-              "reasoning": "Discrete necrotic (brown/dead) spots are documented for HVX; the added detail that they do not follow veins is plausible but not specifically confirmed, so support is partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
-                  "quote": "circular discolored areas (called ringspots), and in some cases, wilting and tissue death (necrosis)"
-                },
-                {
-                  "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/hosta-virus-x",
-                  "quote": "Certain cultivars may only express small necrotic (brown/dead) spots"
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "blue or dark green mottling on the leaves",
-              "image_shows": "Affected tissue shows two roughly equal dominant colors, pale-yellow and olive-green.",
-              "image_quote": "The leaves show significant chlorosis with a pale-yellow center and an olive-green margin.",
-              "image_id": "bugwood::5462726",
-              "verification_status": "verified",
-              "reasoning": "The two-tone pale-yellow and olive-green appearance matches the extension-documented green-and-yellow mottling characteristic of HVX.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
-                  "quote": "green and yellow mottling of leaf blades"
-                },
-                {
-                  "url": "https://www.canr.msu.edu/resources/hosta-virus-x-hvx",
-                  "quote": "green and yellow mottling of leaf blades"
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaves have a long, narrow base tapering towards a wider apex.",
-              "image_quote": "The leaves have a long, narrow base tapering towards a wider apex.",
-              "image_id": "bugwood::5462726",
-              "verification_status": "field_observation",
-              "reasoning": "This describes generic hosta leaf shape/morphology rather than any Hosta Virus X symptom; extension factsheets describe HVX by mottling, ringspots, and puckering, not overall leaf outline, so the observation is plausible background but unsupported as a diagnostic visual feature.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5462726",
-            "bugwood::5528561"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 3,
-              "n_provisional": 4,
-              "n_contradictory": 3,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 7,
-              "n_added": 7,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 1,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "Minnesota": {
-          "state": "Minnesota",
-          "deltas": [
-            {
-              "field": "severity",
-              "canonical_says": "occasionally necrotic lesions",
-              "image_shows": "No necrotic/dead tissue is present, consistent with an early or mild (non-necrotic) presentation.",
-              "image_quote": "The plant appears healthy with variegated leaves, and there are no indications of dead tissue in any specific distribution.",
-              "image_id": "bugwood::5439698",
-              "verification_status": "weakly_supported",
-              "reasoning": "Necrosis is only an occasional/heavy-infection symptom, so its absence is consistent with HVX literature rather than contradicting it.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
-                  "quote": "symptoms... can include... in some cases, wilting and tissue death (necrosis)."
-                },
-                {
-                  "url": "https://hyg.ipm.illinois.edu/article.php?id=926",
-                  "quote": "Not all HVX infected plants display symptoms... necrosis occurs in heavier infection."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "ring spots, flecks, zipper marks... occasionally necrotic lesions",
-              "image_shows": "Discolored areas are irregular in shape rather than distinctly circular.",
-              "image_quote": "The leaf lesions are irregular in shape.",
-              "image_id": "bugwood::5439698",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension sources describe HVX discolorations as irregular green/blue mottling and blotches that bleed from veins, supporting the irregular (non-circular) shape, though circular ringspots are also a listed feature so support is partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.canr.msu.edu/resources/hosta-virus-x-hvx",
-                  "quote": "The most common symptoms of hosta virus X are mottling and irregular green or blue color on leaves, with the mottling appearing to 'bleed out' from the main leaf veins into surrounding tissue."
-                },
-                {
-                  "url": "https://pddc.wisc.edu/2015/07/24/hosta-virus-x/",
-                  "quote": "These signs can appear as subtle light or dark green streaks and blotches that may blend like ink on wet paper."
-                }
-              ]
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "leaf distortion (puckering and twisting)",
-              "image_shows": "The affected leaf surface reads as smooth rather than distorted.",
-              "image_quote": "The leaf lesions are smooth.",
-              "image_id": "bugwood::5439698",
-              "verification_status": "weakly_supported",
-              "reasoning": "Sources indicate puckering/distortion develops progressively, so a smooth (non-distorted) leaf surface is consistent with an early/mild presentation, giving indirect support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pddc.wisc.edu/2015/07/24/hosta-virus-x/",
-                  "quote": "Early symptoms of hosta virus X include green or blue spots that give the leaves a mottled appearance, but the leaves may become twisted, puckered, or distorted as the disease progresses."
-                },
-                {
-                  "url": "https://www.canr.msu.edu/resources/hosta_virus_x",
-                  "quote": "After long-term infection, leaves can be stunted, twisted or puckered."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "ring spots",
-              "image_shows": "No concentric ringspot patterns are visible in the image.",
-              "image_quote": "No concentric patterns are visible in the image.",
-              "image_id": "bugwood::5439698",
-              "verification_status": "weakly_supported",
-              "reasoning": "Ringspots are only one of several optional HVX symptoms ('in some cases'), so their absence in a single photo is consistent with published variability and not contradictory.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
-                  "quote": "Symptoms can include ... circular discolored areas (called ringspots), and in some cases, wilting and tissue death."
-                },
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/hosta-viruses",
-                  "quote": "Hosta Virus X affects different hosta cultivars in different ways, so it is impossible to give a definitive description of symptoms."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "Leaves are broad and spade-shaped with a wide base narrowing to a rounded/pointed tip.",
-              "image_quote": "The leaves are broad with a pointed tip, resembling a spade shape.",
-              "image_id": "bugwood::5439698",
-              "verification_status": "field_observation",
-              "reasoning": "This describes normal hosta host-leaf morphology rather than a disease symptom; it is coherent with the plant's typical broad heart/spade-shaped foliage but has no disease-specific corroboration, so flag for curator review.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "novel_plausible"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5439698"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 1,
-              "n_provisional": 4,
-              "n_contradictory": 5,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 5,
-              "n_added": 5,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 2,
-            "provisional_count": 1,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "Ohio": {
-          "state": "Ohio",
-          "deltas": [
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "blue or dark green mottling on the leaves",
-              "image_shows": "The affected tissue displays a mosaic of vibrant green and pale-yellow areas indicative of mottling/chlorosis.",
-              "image_quote": "The leaves show a mosaic pattern with green and yellowish-green areas.",
-              "image_id": "bugwood::5482592",
-              "verification_status": "verified",
-              "reasoning": "Green-and-yellow mosaic mottling is the hallmark diagnostic sign of HVX and is directly corroborated by extension sources.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
-                  "quote": "Symptoms can include light or dark green discolorations along leaf veins, green and yellow mottling of leaf blades, puckering, circular discolored areas (called ringspots)."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "occasionally necrotic lesions",
-              "image_shows": "The leaf displays necrotic tissue as brown and black areas scattered across the blade.",
-              "image_quote": "The necrotic tissue appears as brown and black areas scattered across the leaf.",
-              "image_id": "bugwood::5482592",
-              "verification_status": "weakly_supported",
-              "reasoning": "Necrosis is a documented but occasional HVX symptom, so scattered brown/black necrotic tissue is partially supported though not virus-specific.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
-                  "quote": "in some cases, wilting and tissue death (necrosis)."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "blue or dark green mottling on the leaves",
-              "image_shows": "The leaves display a yellowing pattern with interveinal chlorosis.",
-              "image_quote": "The leaves display a yellowing pattern with interveinal chlorosis.",
-              "image_id": "bugwood::5482592",
-              "verification_status": "weakly_supported",
-              "reasoning": "Yellowing/chlorosis is consistent with documented HVX yellow mottling, though the strictly interveinal distribution is not specifically characteristic of the virus.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
-                  "quote": "green and yellow mottling of leaf blades"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "green and yellow mottling ... blue or dark green mottling on the leaves",
-              "image_shows": "A large portion of the leaf shows the mosaic mottling pattern.",
-              "image_quote": "The leaf exhibits a mosaic pattern of green and yellowish-green areas.",
-              "image_id": "bugwood::5482592",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extensive green/yellow mottling across the leaf blade is a documented HVX symptom, so the severity/extent observation is supported, though the color-mosaic content partly overlaps existing notes.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
-                  "quote": "green and yellow mottling of leaf blades ... the mottling appears to 'bleed out' from the main leaf veins into surrounding tissue"
-                },
-                {
-                  "url": "https://www.canr.msu.edu/resources/hosta-virus-x-hvx",
-                  "quote": "The most common symptoms of hosta virus X are mottling and irregular green or blue color on leaves"
-                }
-              ]
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion texture appears smooth, not raised, fuzzy, felty, waxy, or water-soaked.",
-              "image_quote": "The lesion is not raised, fuzzy, felty, waxy, or water-soaked.",
-              "image_id": "bugwood::5482592",
-              "verification_status": "weakly_supported",
-              "reasoning": "HVX is a viral mottling/discoloration disease and published photos show flat mottling and ink-bleed rather than raised, fuzzy, felty, waxy or water-soaked (fungal/bacterial) lesion textures, indirectly supporting the negative texture description.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
-                  "quote": "green and yellow mottling of leaf blades, puckering, circular discolored areas (called ringspots)"
-                },
-                {
-                  "url": "https://americanhostasociety.org/blog/hosta-virus-hvx/",
-                  "quote": "The most common visual symptom is blue or green markings on a light colored leaf. These markings usually follow the leaf veins and bleed out into surrounding tissue giving the plant a mottled appearance."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf is broad with a slightly elongated base resembling a spade.",
-              "image_quote": "The leaf has a broad base with an elongated shape.",
-              "image_id": "bugwood::5482592",
-              "verification_status": "field_observation",
-              "reasoning": "This describes the host leaf's overall shape (a generic broad, spade-like hosta leaf) rather than a disease symptom, so it is coherent with the image but has no disease-specific corroboration and is flagged for curator review.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "novel_plausible"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5482592",
-            "bugwood::5482593",
-            "bugwood::5482594",
-            "bugwood::5482595",
-            "bugwood::5482596",
-            "bugwood::5482597"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 3,
-              "n_provisional": 4,
-              "n_contradictory": 3,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 7,
-              "n_added": 7,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 1,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "Virginia": {
-          "state": "Virginia",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "bleeding of color out from the leaf veins ... zipper marks",
-              "image_shows": "The lesion is elongated along the leaf, parallel to the veins.",
-              "image_quote": "The lesion extends parallel to the leaf's veins, indicating its elongated nature.",
-              "image_id": "bugwood::5408669",
-              "verification_status": "weakly_supported",
-              "reasoning": "Elongation parallel to the veins is consistent with the vein-following 'ink-bleed' discoloration that is the hallmark HVX symptom.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.hostalibrary.org/firstlook/HVXsymptoms.htm",
-                  "quote": "Ink bleed is a darker discoloration that typically occurs in the veins of a hosta and is among the most common symptoms of HVX."
-                },
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
-                  "quote": "These markings usually follow the leaf veins and bleed out into surrounding tissue giving the plant a mottled appearance."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "leaf distortion (puckering and twisting)",
-              "image_shows": "The leaf shows curling downwards towards the leaf margins.",
-              "image_quote": "The leaf's edges curl slightly downwards.",
-              "image_id": "bugwood::5408669",
-              "verification_status": "weakly_supported",
-              "reasoning": "Downward marginal curling is a plausible expression of the puckering/distortion/twisting deformation documented for HVX, though not diagnostic on its own.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hyg.ipm.illinois.edu/article.php?id=926",
-                  "quote": "Other general HVX symptoms include: stunting, puckering, distortion, twisting, and necrosis."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Bleeding of color out from the veins of the leaves and blue or dark green mottling",
-              "image_shows": "The leaf veins show mild chlorosis but do not appear to be clearing or necrotic.",
-              "image_quote": "The veins are slightly paler than the surrounding leaf tissue.",
-              "image_id": "bugwood::5408669",
-              "verification_status": "weakly_supported",
-              "reasoning": "Mild vein-associated color change (paler veins) is an early, non-necrotic form of the vein-following discoloration characteristic of HVX.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
-                  "quote": "light or dark green discolorations along leaf veins ... these markings usually follow the leaf veins and bleed out into surrounding tissue."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "blue or dark green mottling on the leaves",
-              "image_shows": "The leaf exhibits chlorosis with a clear interveinal pattern.",
-              "image_quote": "The leaf veins are chlorotic and appear lighter compared to the rest of the leaf.",
-              "image_id": "bugwood::5408669",
-              "verification_status": "weakly_supported",
-              "reasoning": "HVX produces vein-associated chlorotic/light-green discolorations and mottling, partially supporting a chlorotic-vein appearance, though a strict interveinal pattern is not the classic vein-centered HVX signature.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.canr.msu.edu/resources/hosta-virus-x-hvx",
-                  "quote": "symptoms can include light or dark green discolorations along leaf veins, green and yellow mottling of leaf blades"
-                },
-                {
-                  "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
-                  "quote": "a bleeding of color out from the veins of the leaves and blue or dark green mottling on the leaves"
-                }
-              ]
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "ring spots, flecks",
-              "image_shows": "The leaf displays a pattern where the chlorotic yellow halo surrounds a necrotic center, forming concentric circles.",
-              "image_quote": "The lesion appears to have a pale green center with a darker green margin and a chlorotic yellow halo.",
-              "image_id": "bugwood::5408669",
-              "verification_status": "weakly_supported",
-              "reasoning": "HVX is documented to cause circular ringspots and occasional necrosis, giving partial support to a concentric ring lesion, though the sharply target-like necrotic-center morphology is more typical of fungal leaf spots than HVX.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
-                  "quote": "circular discolored areas (called ringspots), and in some cases, wilting and tissue death (necrosis)"
-                },
-                {
-                  "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
-                  "quote": "ring spots, flecks and zipper marks ... occasionally necrotic lesions"
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shape is broad with a rounded apex, resembling a spade.",
-              "image_quote": "The leaf has a broad base tapering to a rounded apex.",
-              "image_id": "bugwood::5408669",
-              "verification_status": "provisional",
-              "reasoning": "This describes the normal hosta leaf outline rather than any HVX symptom, so it is plausible and uncontradicted but has no disease-specific evidence to corroborate.",
-              "swarm_support": 1,
-              "web_support": []
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5408669",
-            "bugwood::5408670",
-            "bugwood::5408671",
-            "bugwood::5408672",
-            "bugwood::5408673",
-            "bugwood::5408674",
-            "bugwood::5408675",
-            "bugwood::5479828",
-            "bugwood::5479834",
-            "bugwood::5479841"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              9
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 9,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 3,
-              "n_provisional": 3,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 6,
-              "n_added": 6,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": true,
-            "failure_reason": "claude_query returned None (auth / timeout / empty)",
-            "preserved_count": 1
-          }
-        },
-        "Wisconsin": {
-          "state": "Wisconsin",
-          "deltas": [
-            {
-              "field": "severity",
-              "canonical_says": "blue or dark green mottling on the leaves ... occasionally necrotic lesions",
-              "image_shows": "The leaves show mottling, with some areas appearing darker than others, suggesting disease.",
-              "image_quote": "Yellowing between the veins on younger leaves.",
-              "image_id": "bugwood::5460051",
-              "verification_status": "verified",
-              "reasoning": "Visible mottling with darker patches is the single most characteristic HVX sign and is corroborated by multiple extension sources.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pddc.wisc.edu/2015/07/24/hosta-virus-x/",
-                  "quote": "The most common symptoms of this disease are a bleeding of color out from the veins of the leaves and blue or dark green mottling on the leaves."
-                },
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
-                  "quote": "The most common symptoms of hosta virus X are mottling and irregular green or blue color on leaves, with the mottling appearing to 'bleed out' from the main leaf veins into surrounding tissue."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "(not specified)",
-              "image_shows": "No concentric rings or target-spot pattern is present in the lesions, arguing against a fungal leaf-spot look-alike.",
-              "image_quote": "No concentric rings or target spots are present.",
-              "image_id": "bugwood::5460051",
-              "verification_status": "weakly_supported",
-              "reasoning": "Fungal look-alikes (anthracnose, Cercospora) typically show concentric rings within lesions, so the documented absence of concentric patterning is partial support for a viral rather than fungal etiology.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hyg.ipm.illinois.edu/article.php?id=803",
-                  "quote": "As the spots enlarge, cinnamon to dark tan rings can sometimes be seen within the lesions."
-                },
-                {
-                  "url": "https://hyg.ipm.illinois.edu/pastpest/199815b.html",
-                  "quote": "Anthracnose ... symptoms appear as large, irregularly shaped, tan to brown spots with dark borders."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "green and yellow mottling of leaf blades",
-              "image_shows": "There is a distinct yellowing pattern between the veins (interveinal) on the leaves.",
-              "image_quote": "The leaves exhibit a yellowish tinge between the veins.",
-              "image_id": "bugwood::5460051",
-              "verification_status": "verified",
-              "reasoning": "Extension factsheets explicitly document green-and-yellow interveinal mottling/chlorosis of HVX leaf blades, corroborating the interveinal yellowing seen.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pddc.wisc.edu/2015/07/24/hosta-virus-x/",
-                  "quote": "green and yellow mottling of leaf blades"
-                },
-                {
-                  "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
-                  "quote": "Mosaic, mottling, chlorotic spotting, interveinal chlorosis between secondary veins and leaf desiccation have also been found."
-                }
-              ]
-            },
-            {
-              "field": "severity",
-              "canonical_says": "blue or dark green mottling on the leaves",
-              "image_shows": "The affected tissue is green with some yellowing between the veins on younger leaves.",
-              "image_quote": "The image shows yellowing between the veins on the younger leaves.",
-              "image_id": "bugwood::5460051",
-              "verification_status": "verified",
-              "reasoning": "Green tissue with interveinal yellowing matches documented HVX green/yellow mottling and interveinal chlorosis of the leaf blade.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pddc.wisc.edu/2015/07/24/hosta-virus-x/",
-                  "quote": "green and yellow mottling of leaf blades"
-                },
-                {
-                  "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
-                  "quote": "interveinal chlorosis between secondary veins ... have also been found"
-                }
-              ]
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "occasionally necrotic lesions",
-              "image_shows": "The leaf lesion texture appears smooth.",
-              "image_quote": "The leaf lesion texture seems smooth.",
-              "image_id": "bugwood::5460051",
-              "verification_status": "novel_plausible",
-              "reasoning": "No published source describes HVX lesion texture as smooth; sources instead note lumpy/puckered tissue, so smoothness is unverified but coherent as a single-image detail for curator review.",
-              "swarm_support": 1,
-              "web_support": []
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "holding an infected leaf up to the light versus a healthy leaf aids identification",
-              "image_shows": "The leaf veins appear translucent, indicating vein clearing.",
-              "image_quote": "Leaf veins are translucent, suggesting they are clearing.",
-              "image_id": "bugwood::5460051",
-              "verification_status": "novel_plausible",
-              "reasoning": "Vein clearing is not explicitly documented for HVX (which typically darkens along veins), but translucent veins are coherent with the hold-to-the-light diagnostic and not contradicted, so flag for review.",
-              "swarm_support": 1,
-              "web_support": []
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaves are broad with pointed tips, resembling a spade shape.",
-              "image_quote": "The leaves have a broad base tapering to a long, narrow point.",
-              "image_id": "bugwood::5460051",
-              "verification_status": "provisional",
-              "reasoning": "Describes host leaf shape rather than a disease symptom; plausible for hosta foliage and not contradicted, but no symptom source applies.",
-              "swarm_support": 1,
-              "web_support": []
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5460051",
-            "bugwood::5460052",
-            "bugwood::5460053",
-            "bugwood::5460054",
-            "bugwood::5505054",
-            "bugwood::5598389"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              10
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 10,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 2,
-              "n_provisional": 5,
-              "n_contradictory": 2,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 7,
-              "n_added": 7,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": true,
-            "failure_reason": "claude_query returned None (auth / timeout / empty)",
-            "preserved_count": 3
-          }
-        }
-      }
+    "diagnostic_features": {
+     "value": "Because the bases of the petioles are rotted, the leaves can be easily pulled away from the crown; a white mat of fungus (mycelium) fans out from the infected crown across the soil surface, and thousands of tiny, spherical sclerotia (BB to pepper grounds in size, white to brick red) are present in the rotted crown.",
+     "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hosta-petiole-and-crown-rot",
+     "quote": "Look a bit closer and you can see thousands of tiny, spherical sclerotia in the rotted crown. Sclerotia of S. rolfsii are somewhere between BB's and pepper grounds in size and vary in color from white (newly developed) to brick red."
     },
-    {
-      "disease_name": "Tobacco Rattle Virus",
-      "pathogen_scientific_name": {
-        "value": "",
-        "url": "",
-        "quote": "",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Viral",
-        "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
-        "quote": "Tobacco rattle virus (TRV) is a plant virus with a large host range"
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Root",
-          "Whole plant"
-        ],
-        "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
-        "quote": "removing whole plants, including roots, is necessary to eliminate the virus"
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting; on ornamental hosts line patterns and ringspots are most common, though infected plants may be asymptomatic.",
-          "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
-          "quote": "Symptoms of TRV include ringspots (Figs. 1, 2, and 3), line patterns (Fig. 4), mosaic, mottle (Fig. 5), necrotic lesions, and stunting. On ornamental hosts, line patterns and ringspot symptoms are most commonly observed."
-        },
-        "diagnostic_features": {
-          "value": "Line patterns and ringspot symptoms most commonly observed on ornamental hosts; symptoms typically not distributed uniformly on plants and are typically expressed under cooler environmental conditions.",
-          "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
-          "quote": "Line patterns and other symptoms of TRV are typically not distributed uniformly on plants, but a TRV infection may be systemic"
-        },
-        "look_alikes": {
-          "value": [
-            "a variety of other viruses/diseases"
-          ],
-          "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
-          "quote": "This disease may look like a variety of other viruses/ diseases."
-        }
-      },
-      "treatments": {
-        "value": [
-          "Plants diagnosed with TRV should be removed to avoid spread to other susceptible plant hosts.",
-          "Removing whole plants, including roots, is necessary to eliminate the virus from a greenhouse or landscape.",
-          "Avoid planting susceptible plants in a landscape, garden, or field where TRV has been diagnosed.",
-          "Manage weeds, as many (e.g. lambs' quarters, hairy nightshade, broadleaf plantain) are hosts to TRV and may carry the virus.",
-          "Use disease-free seed.",
-          "Propagate and/or make divisions from disease-free stock plants and disinfect tools frequently and between plants when propagating.",
-          "Wash hands in hot soapy water between plants or wear disposable gloves and change them between plants."
-        ],
-        "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
-        "quote": "Plants diagnosed with TRV should be removed to avoid spread to other susceptible plant hosts. ... There are no controls for stubby root nematodes in the home landscape/garden, so avoid planting susceptible plants in a landscape, garden, or field where TRV has been diagnosed. Manage weeds ... Use disease-free seed. Propagate and/or make divisions from disease-free stock plants and disinfect tools frequently and between plants when propagating (Table 2). Wash hands in hot soapy water between plants or, even better, wear disposable gloves and change them between plants."
-      },
-      "confidence": "high",
-      "num_sources": 2,
-      "conflicts": [],
-      "regional_observations": {
-        "Michigan": {
-          "state": "Michigan",
-          "deltas": [
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Line patterns and ringspot symptoms most commonly observed on ornamental hosts",
-              "image_shows": "The leaf exhibits a chlorotic line pattern of alternating green and yellow stripes, characteristic of Tobacco Rattle Virus.",
-              "image_quote": "The leaf shows a line pattern along the veins.",
-              "image_id": "bugwood::5483108",
-              "verification_status": "verified",
-              "reasoning": "Multiple extension sources confirm chlorotic (yellow/green) line patterns as a common TRV symptom on ornamental hosts.",
-              "swarm_support": 2,
-              "web_support": [
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/tobacco-rattle/",
-                  "quote": "Infected plants may exhibit mottling, yellow ring spots or line patterns, localized chlorotic (yellow) spots or streaks, necrotic lesions, or leaves with notches."
-                },
-                {
-                  "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/tobacco-rattle-virus-trv",
-                  "quote": "On ornamental hosts, line patterns and ringspot symptoms are most commonly observed."
-                }
-              ],
-              "__support__": 2
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting",
-              "image_shows": "The lesion is elongated and follows the leaf's natural venation, consistent with a wavy line pattern.",
-              "image_quote": "The lesion appears to follow the leaf's natural venation.",
-              "image_id": "bugwood::5483108",
-              "verification_status": "weakly_supported",
-              "reasoning": "TRV line patterns are described as elongated/wavy and can run along leaf tissue, giving partial support to the vein-following lesion shape.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/tobacco-rattle-virus-trv",
-                  "quote": "Symptoms on leaves can vary from ring spots to a wavy line pattern to a mosaic or mottled pattern."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "type_of_disease",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf lesion is smooth and lacks raised, fuzzy, felty, or waxy texture, consistent with a viral rather than fungal etiology.",
-              "image_quote": "The leaf texture looks uniform and lacks any signs of being raised, fuzzy, felty, or waxy.",
-              "image_id": "bugwood::5483108",
-              "verification_status": "weakly_supported",
-              "reasoning": "A smooth, non-fungal leaf surface is consistent with the viral nature of TRV, which produces no fruiting structures or surface mycelium.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.sdstate.edu/tobacco-rattle-virus",
-                  "quote": "TRV is transmitted by several species of stubby-root nematodes; Plant Disease Clinics use molecular methods to test for this virus."
-                },
-                {
-                  "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
-                  "quote": "Tobacco Rattle Virus (TRV) on Ornamental Plants."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "infected plants may be asymptomatic",
-              "image_shows": "The lesion area and most of the leaf are a bright, vibrant green with no dark discoloration.",
-              "image_quote": "The leaf is mostly a vibrant green.",
-              "image_id": "bugwood::5483108",
-              "verification_status": "novel_plausible",
-              "reasoning": "A mostly-green leaf lacking dark discoloration is coherent with TRV symptoms being non-uniform or asymptomatic, but no published photo description corroborates this specific appearance, so it is flagged for curator review.",
-              "swarm_support": 1,
-              "web_support": []
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf veins appear normal with no vein clearing, translucency, or necrosis.",
-              "image_quote": "The leaf veins are not showing any translucent or darkened areas.",
-              "image_id": "bugwood::5483108",
-              "verification_status": "provisional",
-              "reasoning": "Extension sources describe TRV as line patterns/ringspots rather than vein clearing, so absence of vein symptoms is plausible and uncontradicted but has no direct published corroboration.",
-              "swarm_support": 1,
-              "web_support": []
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf is broad and rounded with a spade-like shape, consistent with hosta foliage rather than a disease feature.",
-              "image_quote": "The leaf is broad and rounded, akin to a spade.",
-              "image_id": "bugwood::5483108",
-              "verification_status": "novel_plausible",
-              "reasoning": "This describes normal hosta leaf morphology rather than a disease symptom; it is coherent with the host but has no disease-source corroboration, so it is flagged for curator review.",
-              "swarm_support": 1,
-              "web_support": []
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5483108",
-            "bugwood::5483109"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              10
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 10,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 4,
-              "n_provisional": 4,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 8,
-              "n_added": 7,
-              "n_overlaps_bumped": 1,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": true,
-            "failure_reason": "claude_query returned None (auth / timeout / empty)",
-            "preserved_count": 3
-          }
-        },
-        "Ohio": {
-          "state": "Ohio",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting.",
-              "image_shows": "An elongated lesion runs along the length of the leaf, consistent with the streak/line-pattern form of TRV on ornamental hosts.",
-              "image_quote": "The lesion appears to follow the length of the leaf.",
-              "image_id": "bugwood::5482619",
-              "verification_status": "weakly_supported",
-              "reasoning": "TRV on ornamentals produces line patterns and streaks, which matches an elongated lesion running along the leaf, though 'elongated' is only an indirect match.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
-                  "quote": "infected plants may exhibit ... yellow ring spots or line patterns, localized chlorotic spots or streaks, necrotic lesions"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting; on ornamental hosts line patterns and ringspots are most common.",
-              "image_shows": "The leaf displays a mosaic pattern of chlorotic areas across the center and margins.",
-              "image_quote": "The leaf shows a mosaic pattern with chlorotic areas.",
-              "image_id": "bugwood::5482619",
-              "verification_status": "verified",
-              "reasoning": "Mosaic and chlorotic spotting are explicitly documented TRV foliar symptoms on ornamental hosts.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
-                  "quote": "Symptoms of TRV include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting ... localized chlorotic spots or streaks"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting.",
-              "image_shows": "Discrete necrotic spots occur at the leaf margin.",
-              "image_quote": "Discrete spots of necrotic tissue.",
-              "image_id": "bugwood::5482619",
-              "verification_status": "verified",
-              "reasoning": "Necrotic lesions/dead spots on leaves are an explicitly documented TRV symptom, corroborating discrete marginal necrosis.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
-                  "quote": "necrotic lesions (dead spots)"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting.",
-              "image_shows": "The leaf combines mosaic/mottling chlorosis with discrete necrotic spots, indicating moderate multi-symptom severity.",
-              "image_quote": "The central part of the leaf shows a healthy green color, while the edges are white, and there are discrete spots of necrotic tissue.",
-              "image_id": "bugwood::5482619",
-              "verification_status": "weakly_supported",
-              "reasoning": "The co-occurring mosaic/mottle and necrotic spotting matches documented TRV symptom combinations, though the 'raised edges' element is not supported.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
-                  "quote": "Symptoms of TRV include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Line patterns and ringspot symptoms most commonly observed on ornamental hosts.",
-              "image_shows": "The leaf shows a target-like spot with alternating light and dark concentric rings.",
-              "image_quote": "The leaf shows a target-like spot with alternating light and dark concentric rings.",
-              "image_id": "bugwood::5482619",
-              "verification_status": "verified",
-              "reasoning": "Concentric ring / ringspot patterns are a documented TRV symptom on hosta, directly matching the observed target-like concentric rings.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.extension.iastate.edu/news/2007/feb/071502.htm",
-                  "quote": "They produce mottling, yellowing, browning and areas with concentric yellowish rings."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting.",
-              "image_shows": "The lesion appears smooth and flat rather than raised.",
-              "image_quote": "The lesion is elongated and has a smooth surface.",
-              "image_id": "bugwood::5482619",
-              "verification_status": "weakly_supported",
-              "reasoning": "TRV symptoms are flat viral discolorations (ringspots, line patterns, mottle, streaks) rather than raised lesions, so a smooth/flat surface is consistent with documented appearance.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/tobacco-rattle/",
-                  "quote": "Symptoms on leaves can vary from ring spots to a wavy line pattern to a mosaic or mottled pattern."
-                },
-                {
-                  "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/tobacco-rattle-virus-trv",
-                  "quote": "Mottling, mosaic, brown or yellow lesions, ringspots, streaks, and leaf deformities may occur."
-                }
-              ]
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting.",
-              "image_shows": "Affected tissue shows two dominant colors, olive-green and white.",
-              "image_quote": "The central part of the leaf shows a healthy green color, while the edges are white.",
-              "image_id": "bugwood::5482619",
-              "verification_status": "weakly_supported",
-              "reasoning": "A two-tone light/dark leaf coloration is consistent with the mottling and chlorotic-vs-green blotching documented for TRV, though the specific olive-green/white pairing is not exactly matched.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://vocal.media/fyi/hosta-viruses-hvx-hosta-hvw-hosta-and-tobacco-rattle-virus-hosta",
-                  "quote": "infected plants may exhibit mottling (i.e., blotchy light and dark discoloration of leaf tissue), yellow ring spots or line patterns, localized chlorotic (i.e., yellow) spots or streaks."
-                }
-              ]
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting.",
-              "image_shows": "The leaf center is green while the margins are white.",
-              "image_quote": "The central part of the leaf shows a healthy green color, while the edges are white.",
-              "image_id": "bugwood::5482619",
-              "verification_status": "novel_plausible",
-              "reasoning": "A green-center/white-margin distribution is coherent with TRV chlorotic mottling but could equally reflect normal hosta cultivar variegation, so it warrants curator review.",
-              "swarm_support": 1,
-              "web_support": []
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf curls upward at the tip.",
-              "image_quote": "The leaf tips appear to curl upwards.",
-              "image_id": "bugwood::5482619",
-              "verification_status": "novel_plausible",
-              "reasoning": "TRV is documented to cause leaf deformities, so upward tip curling is plausible but not specifically corroborated for hosta.",
-              "swarm_support": 1,
-              "web_support": []
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Line patterns and ringspot symptoms most commonly observed on ornamental hosts.",
-              "image_shows": "The leaf veins appear translucent, suggesting vein clearing.",
-              "image_quote": "The leaf veins are translucent compared to the rest of the leaf.",
-              "image_id": "bugwood::5482619",
-              "verification_status": "novel_plausible",
-              "reasoning": "Vein clearing is a general viral symptom but is not specifically documented for TRV on hosta (whose hallmark is line patterns/ringspots), so it is flagged for review.",
-              "swarm_support": 1,
-              "web_support": []
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf is broad with a rounded apex, a spade-like form.",
-              "image_quote": "The leaf shape is broad with a rounded apex, suggesting a spade-like form.",
-              "image_id": "bugwood::5482619",
-              "verification_status": "novel_plausible",
-              "reasoning": "This describes normal hosta leaf morphology rather than a disease symptom, so it is coherent with the host but carries no diagnostic support.",
-              "swarm_support": 1,
-              "web_support": []
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5482619",
-            "bugwood::5482620",
-            "bugwood::5482621",
-            "bugwood::5482622",
-            "bugwood::5482623",
-            "bugwood::5482624"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 5,
-              "n_provisional": 6,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 11,
-              "n_added": 11,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": true,
-            "failure_reason": "claude_query returned None (auth / timeout / empty)",
-            "preserved_count": 4
-          }
-        },
-        "Wisconsin": {
-          "state": "Wisconsin",
-          "deltas": [
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Line patterns and ringspot symptoms most commonly observed on ornamental hosts",
-              "image_shows": "The lesions form a target-like concentric pattern: a chlorotic center ringed by a yellow halo and a darker green margin.",
-              "image_quote": "The lesion center is light green and appears chlorotic, while the margin is a darker green, and there is a halo of chlorotic yellow around the lesion.",
-              "image_id": "bugwood::5460009",
-              "verification_status": "verified",
-              "reasoning": "Concentric chlorotic-center/yellow-halo target appearance is the textbook TRV ringspot, the single most-documented ornamental-host symptom.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/tobacco-rattle-virus-trv",
-                  "quote": "The most-common associated symptom for ornamentals is ringspot on leaves; plants may have foliar symptoms, including mottling, discolored ring spots, or wavy line patterns."
-                },
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/tobacco-rattle/",
-                  "quote": "Infected plants may exhibit yellow ring spots or line patterns, localized chlorotic spots or streaks."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "on ornamental hosts line patterns and ringspots are most common",
-              "image_shows": "The lesion has a light-green chlorotic center, a darker green margin, and a surrounding chlorotic-yellow halo.",
-              "image_quote": "The lesion center is light green and appears chlorotic, with a darker green margin and a chlorotic yellow halo.",
-              "image_id": "bugwood::5460009",
-              "verification_status": "weakly_supported",
-              "reasoning": "The chlorotic center with yellow halo is consistent with documented TRV chlorotic/yellow ringspot coloration, though the exact halo structure is not itemized in sources.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/tobacco-rattle/",
-                  "quote": "Infected plants may exhibit mottling, yellow ring spots or line patterns, localized chlorotic (yellow) spots or streaks."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting",
-              "image_shows": "The affected tissue is dominated by pale-straw and light-green coloration.",
-              "image_quote": "The lesion center is light green and appears chlorotic, while the margin is a darker green, and there is a halo of chlorotic yellow around the lesion.",
-              "image_id": "bugwood::5460009",
-              "verification_status": "weakly_supported",
-              "reasoning": "Pale-straw/light-green palette matches the chlorotic (yellowing) mottle/mosaic coloration documented for TRV on ornamentals.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
-                  "quote": "Plants may have foliar symptoms including mottling, chlorotic or necrotic local lesions, ringspots or line patterns."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "on ornamental hosts line patterns and ringspots are most common",
-              "image_shows": "Chlorotic spots and line patterns affect a significant fraction of the visible hosta leaf.",
-              "image_quote": "The leaf shows interveinal chlorosis with yellowing occurring between the veins while the veins remain green.",
-              "image_id": "bugwood::5460009",
-              "verification_status": "weakly_supported",
-              "reasoning": "Presence of chlorotic spots and line patterns is documented TRV symptomatology, though canonical notes distribution is typically patchy rather than uniform, so the extent claim is only partially supported.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/tobacco-rattle-virus-trv",
-                  "quote": "On ornamental hosts, line patterns and ringspot symptoms are most commonly observed."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaves are cupped with the edges curling upward.",
-              "image_quote": "The leaves have a cupped appearance with the edges curling upwards.",
-              "image_id": "bugwood::5460009",
-              "verification_status": "weakly_supported",
-              "reasoning": "Upward cupping is a form of the leaf distortion documented for TRV on hosta, but cupping is also a classic herbicide/other look-alike, so support is only indirect.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/tobacco-rattle-virus-trv",
-                  "quote": "On hosta specifically, symptoms can include distorted or stunted growth and reduced plant vigor."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting",
-              "image_shows": "The lesion outline is irregular rather than a clean ring or spot.",
-              "image_quote": "The image shows a pattern that deviates from uniformity, suggesting an irregular shape.",
-              "image_id": "bugwood::5460009",
-              "verification_status": "weakly_supported",
-              "reasoning": "TRV foliar markings include irregular mottling/line patterns with a variable degree of distortion, so a non-clean, irregular lesion outline is consistent with documented appearance.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/tobacco-rattle/",
-                  "quote": "Infected plants may exhibit mottling (blotchy light and dark discoloration of leaf tissue), yellow ring spots or line patterns, localized chlorotic spots or streaks, necrotic lesions, or leaves with notches."
-                },
-                {
-                  "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/tobacco-rattle-virus",
-                  "quote": "On leaves, symptoms range from necrosis to all kinds of yellow markings (blotching, mottling, mosaic, ringspot), often accompanied by a variable degree of distortion."
-                }
-              ]
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Line patterns and ringspot symptoms most commonly observed on ornamental hosts",
-              "image_shows": "The leaf shows interveinal chlorosis, with yellowing between the veins while the veins stay green.",
-              "image_quote": "The leaves display a pattern of interveinal chlorosis.",
-              "image_id": "bugwood::5460009",
-              "verification_status": "weakly_supported",
-              "reasoning": "Chlorotic mottling with interveinal chlorotic areas is documented in TRV/co-infected ornamentals, giving indirect support for an interveinal yellowing pattern with retained green veins.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11209033/",
-                  "quote": "plants infected... showed interveinal chlorotic mottle areas (faint to bright) scattered in their foliage."
-                },
-                {
-                  "url": "https://hort.extension.wisc.edu/articles/tobacco-rattle/",
-                  "quote": "Infected plants may exhibit mottling (blotchy light and dark discoloration of leaf tissue)... localized chlorotic (yellow) spots or streaks."
-                }
-              ]
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting",
-              "image_shows": "The lesion surface texture appears smooth.",
-              "image_quote": "The lesion is light green and appears chlorotic, while the margin is a darker green, and there is a halo of chlorotic yellow around the lesion.",
-              "image_id": "bugwood::5460009",
-              "verification_status": "novel_plausible",
-              "reasoning": "As a virus, TRV produces flat discolorations (ringspots, mottle, line patterns) rather than raised fungal fruiting textures, so a smooth surface is coherent with the etiology though no source explicitly describes texture.",
-              "swarm_support": 1,
-              "web_support": []
-            },
-            {
-              "field": "necrosis",
-              "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting",
-              "image_shows": "No dead brown, black, or bleached tissue is visible on the leaves.",
-              "image_quote": "There is no visible dead brown, black, or bleached tissue on the leaves.",
-              "image_id": "bugwood::5460009",
-              "verification_status": "novel_plausible",
-              "reasoning": "On ornamental hosts line patterns and chlorotic ringspots predominate and necrosis is optional, so an absence of dead tissue is plausible and not contradicted, but an absence cannot be positively corroborated by published photos.",
-              "swarm_support": 1,
-              "web_support": []
-            },
-            {
-              "field": "other",
-              "canonical_says": "Line patterns and ringspot symptoms most commonly observed on ornamental hosts",
-              "image_shows": "The leaf veins are translucent and appear normal, showing no vein-associated symptom.",
-              "image_quote": "The leaf veins are translucent, indicating normal appearance.",
-              "image_id": "bugwood::5460009",
-              "verification_status": "novel_plausible",
-              "reasoning": "TRV symptoms are ringspot/line-pattern/mottle rather than vein-clearing or vein-banding, so unaffected veins are consistent with canonical, but the absence of vein symptoms is not directly documentable.",
-              "swarm_support": 1,
-              "web_support": []
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaves show the broad, asymmetrical blade shape characteristic of Hosta species.",
-              "image_quote": "The leaves exhibit a broad, asymmetrical shape typical of Hosta species.",
-              "image_id": "bugwood::5460009",
-              "verification_status": "novel_plausible",
-              "reasoning": "This describes host-plant leaf morphology rather than a disease symptom; it is coherent with a Hosta subject and not contradicted, so it is flagged for curator review as non-diagnostic context.",
-              "swarm_support": 1,
-              "web_support": []
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5460009",
-            "bugwood::5460057",
-            "bugwood::5460058",
-            "bugwood::5460059",
-            "bugwood::5460060"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 5,
-              "n_provisional": 6,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 11,
-              "n_added": 11,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": true,
-            "failure_reason": "claude_query returned None (auth / timeout / empty)",
-            "preserved_count": 4
-          }
-        }
-      }
+    "look_alikes": {
+     "value": [
+      "Other basal stem rots such as those caused by Rhizoctonia or other fungi"
+     ],
+     "url": "https://ag.umass.edu/greenhouse-floriculture/photos/hosta-sclerotium-crown-rot",
+     "quote": "Symptoms are easily confused with other basal stem rots such as those caused by Rhizoctonia or other fungi."
     }
-  ],
-  "crop": "Hosta",
-  "generated_date": "2026-06-10",
-  "regional_observations_count": 10
+   },
+   "treatments": {
+    "value": [
+     "Dig up/dig and burn or remove hostas showing crown rot symptoms.",
+     "Thoroughly scrape and/or wash soil from all tools used in infested soil, then sterilize tools in a 10% solution of household bleach.",
+     "Buy disease-free plants / use only pathogen free stock.",
+     "Plant nonhost species into holes from which sick hostas have been excavated.",
+     "Follow good Integrated Pest Management practices to avoid fungicide applications.",
+     "Solarize or otherwise pasteurize soil before planting.",
+     "Remove soil from affected area and replace with new or sterilized soil.",
+     "Avoid overwatering and provide good soil drainage, for example, by planting in raised beds.",
+     "Rhizomes or bulbs can be treated with hot water to eliminate the fungus.",
+     "Soil drenches of fungicides (Cleary's 3336, Terraclor) around the base of plants before infection can prevent disease development (but will not cure affected plants).",
+     "Amendment of the soil with biological control agents such as MycoStop, PlantShield, SoilGard, or YieldShield may offer some control."
+    ],
+    "url": "https://ag.umass.edu/greenhouse-floriculture/photos/hosta-sclerotium-crown-rot",
+    "quote": "Dig and burn plants that are seriously infected. Solarize or otherwise pasteurize soil before planting. Remove soil from affected area and replace with new or sterilized soil. Use only pathogen free stock. Avoid overwatering and provide good soil drainage, for example, by planting in raised beds. ... Rhizomes or bulbs can be treated with hot water to eliminate the fungus. Soil drenches of fungicides (Cleary's 3336, Terraclor) around the base of plants before infection can prevent disease development (but will not cure affected plants). Amendment of the soil with biological control agents such as MycoStop, PlantShield,SoilGard, or YieldShield may offer some control."
+   },
+   "confidence": "high",
+   "num_sources": 2,
+   "conflicts": [
+    {
+     "field": "disease_name",
+     "canonical_value": "Sclerotium Crown Rot",
+     "alternative_value": "Hosta Petiole and Crown Rot",
+     "alternative_source_url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hosta-petiole-and-crown-rot",
+     "note": "Both names refer to the same Sclerotium rolfsii crown/petiole rot on hosta. Iowa State labels it 'Hosta Petiole and Crown Rot'; UMass uses the pathogen-based 'Sclerotium crown rot'. Both are rank-5 university extension sources."
+    },
+    {
+     "field": "affected_parts",
+     "canonical_value": "Foliar, Stem, Whole plant, Root (union)",
+     "alternative_value": "Iowa State: Foliar/Stem/Whole plant; UMass: Foliar/Whole plant/Root",
+     "alternative_source_url": "https://yardandgarden.extension.iastate.edu/encyclopedia/hosta-petiole-and-crown-rot",
+     "note": "Sources emphasize different plant parts; canonical value is the union. Both agree the pathogen attacks the crown at/below the soil line."
+    }
+   ],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "thousands of tiny, spherical sclerotia (BB to pepper grounds in size, white to brick red) are present in the rotted crown",
+       "image_shows": "Mustard-seed-shaped resting structures are visible, consistent with S. rolfsii sclerotia rather than airborne spores.",
+       "image_quote": "The image shows mustard-seed-shaped resting structures that are characteristic of sclerotia.",
+       "image_id": "bugwood::5459286",
+       "verification_status": "verified",
+       "reasoning": "Multiple extension sources corroborate that S. rolfsii produces mustard-seed-shaped sclerotia (resting structures, not spores), directly supporting the observed morphology; the 'sporulation' label is reframed to diagnostic_features since this fungus rarely sporulates.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://ag.umass.edu/greenhouse-floriculture/photos/hosta-sclerotium-crown-rot",
+         "quote": "Sclerotia look like mustard seeds on the soil surface surrounding the crown of a rotted plant."
+        },
+        {
+         "url": "https://www.canr.msu.edu/resources/sclerotium_or_southern_blight",
+         "quote": "Light to dark brown sclerotia are tiny, hard, resting bodies that resemble mustard seeds."
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5459286",
+      "bugwood::5459287",
+      "bugwood::5459288",
+      "bugwood::5459289",
+      "bugwood::5459290",
+      "bugwood::5459291",
+      "bugwood::5459292",
+      "bugwood::5459293",
+      "bugwood::5459294",
+      "bugwood::5459295"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       4
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 4,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 1,
+       "n_provisional": 0,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 1,
+       "n_added": 1,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Hosta Virus X",
+   "pathogen_scientific_name": {
+    "value": "Hosta virus X",
+    "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+    "quote": "HVX is caused by a plant virus of the same name (i.e.,  Hosta virus X ).",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Viral",
+    "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+    "quote": "Hosta virus X (HVX) is the most common viral disease to infect hostas in Maine."
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Whole plant"
+    ],
+    "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+    "quote": "The most common symptoms of this disease are a bleeding of color out from the veins of the leaves and blue or dark green mottling on the leaves (Figure 1)."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Symptoms include bleeding of color out from the leaf veins, blue or dark green mottling on the leaves, leaf distortion (puckering and twisting), ring spots, flecks, zipper marks, stunted growth, and occasionally necrotic lesions.",
+     "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+     "quote": "The most common symptoms of this disease are a bleeding of color out from the veins of the leaves and blue or dark green mottling on the leaves (Figure 1). HVX can also cause distortion in the leaves such as puckering and twisting as well as ring spots, flecks and zipper marks. Infected plants will also have more stunted growth than that of healthy plants. Occasionally, the leaves will develop necrotic lesions."
+    },
+    "diagnostic_features": {
+     "value": "Bleeding of color out from the veins of the leaves and blue or dark green mottling, along with zipper marks, ring spots, and flecks; symptoms are easier to distinguish in gold-colored cultivars, and holding an infected leaf up to the light versus a healthy leaf aids identification.",
+     "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+     "quote": "The most common symptoms of this disease are a bleeding of color out from the veins of the leaves and blue or dark green mottling on the leaves (Figure 1). HVX can also cause distortion in the leaves such as puckering and twisting as well as ring spots, flecks and zipper marks."
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
+    }
+   },
+   "treatments": {
+    "value": [
+     "Carefully inspect any plants for color bleeding and leaf mottling before purchasing; avoid buying plants with symptoms of HVX.",
+     "When purchasing hostas (especially expensive ones), consider requesting that the seller provide proof that the plants are HVX-free.",
+     "Send samples to a diagnostic lab when HVX is suspected; virus testing kits are available and relatively inexpensive.",
+     "Before planting new plants, isolate them from any other hostas for at least 1 week (up to several weeks) and watch for symptom development.",
+     "Remove and destroy all plants that test positive or show symptoms â€” burn (where allowed) or landfill/throw away in their own trash bags. Do NOT compost.",
+     "Disinfest tools that may have contacted infected plants; for home gardeners, thoroughly scrubbing tools in hot soapy water is generally sufficient.",
+     "Professionals may use disinfectants such as Zerotol, KleenGrow, Physan, or Virkon after removing all organic matter from tools; or treat items for at least one minute with Alconox plus SLS/SDS, or trisodium phosphate solution.",
+     "Wash hands thoroughly with soap and water (for at least one minute) before and after working with the plants.",
+     "Minimize wounding that could release sap and provide an entry point for HVX.",
+     "Note: normal sterilization with 70% rubbing alcohol is NOT effective for HVX management."
+    ],
+    "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+    "quote": "The only way to eliminate the disease is to destroy infected plants (and any associated plant debris) by burning (where allowed by local ordinance) or landfilling.  DO NOT compost hostas with HVX."
+   },
+   "confidence": "high",
+   "num_sources": 3,
+   "conflicts": [
+    {
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Hosta virus X",
+     "alternative_value": "null (not stated)",
+     "alternative_source_url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+     "note": "U Maine and Purdue do not state a formal pathogen name; Wisconsin specifies the virus name is identical to the disease name. No NCBI/MycoBank validation was supplied, so taxonomy_validated is false."
+    }
+   ],
+   "regional_observations": {
+    "Michigan": {
+     "state": "Michigan",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "bleeding of color out from the leaf veins, blue or dark green mottling",
+       "image_shows": "The lesions are elongated along the leaf, running narrow and parallel to the main vein.",
+       "image_quote": "The lesions are narrow and extend parallel to the leaf's main vein.",
+       "image_id": "bugwood::5483106",
+       "verification_status": "weakly_supported",
+       "reasoning": "HVX 'ink-bleed' discoloration documented to follow and run along the leaf veins, matching narrow lesions parallel to the main vein.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hyg.ipm.illinois.edu/article.php?id=926",
+         "quote": "Color changes in the leaf pigmentation appear as mosaic, circular, color break or 'ink-bleed' (localized discoloration along the leaf veins) patterns."
+        },
+        {
+         "url": "https://americanhostasociety.org/blog/hosta-virus-hvx/",
+         "quote": "These markings usually follow the leaf veins and bleed out into surrounding tissue giving the plant a mottled appearance."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "blue or dark green mottling on the leaves",
+       "image_shows": "Lesion centers are a pale green-yellow while the margins stay a deeper, richer green.",
+       "image_quote": "The central areas exhibit a pale yellow-green hue, while the edges maintain a darker, richer green.",
+       "image_id": "bugwood::5483106",
+       "verification_status": "weakly_supported",
+       "reasoning": "The green-and-yellow contrast with deeper green retained at margins/veins is consistent with documented HVX mottling and ink-bleed vein-following discoloration.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+         "quote": "green and yellow mottling of leaf blades, puckering, circular discolored areas (called ringspots)"
+        },
+        {
+         "url": "https://hyg.ipm.illinois.edu/article.php?id=926",
+         "quote": "'ink-bleed' (localized discoloration along the leaf veins) patterns."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "Distinct interveinal chlorosis with bright yellowing between the leaf veins.",
+       "image_quote": "Leaves exhibit bright yellow patterns between veins.",
+       "image_id": "bugwood::5483106",
+       "verification_status": "verified",
+       "reasoning": "Peer-reviewed and extension sources explicitly list interveinal chlorosis / angular yellowing as a documented HVX foliar symptom.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.tandfonline.com/doi/full/10.1080/07060661.2020.1736638",
+         "quote": "Various virus-like symptoms including mosaic, interveinal chlorosis, vein clearing, leaf deformation and ringspots have been observed on infected hosta cultivars."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Bleeding of color out from the veins of the leaves and blue or dark green mottling",
+       "image_shows": "Leaf veins appear translucent and paler than the blade, indicating vein clearing.",
+       "image_quote": "The veins are translucent and paler than the blade, suggesting vein clearing.",
+       "image_id": "bugwood::5483106",
+       "verification_status": "verified",
+       "reasoning": "Vein clearing is explicitly documented in peer-reviewed literature as an observed HVX symptom, corroborating the translucent/pale vein observation.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.tandfonline.com/doi/full/10.1080/07060661.2020.1736638",
+         "quote": "Various virus-like symptoms including mosaic, interveinal chlorosis, vein clearing, leaf deformation and ringspots have been observed on infected hosta cultivars."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf lesions appear smooth and unblemished, with no roughness or fuzzy fungal growth.",
+       "image_quote": "The surface of the leaves looks unblemished without any signs of roughness or fuzziness.",
+       "image_id": "bugwood::5483106",
+       "verification_status": "field_observation",
+       "reasoning": "HVX is a viral disease that produces no fungal fruiting structures, so absence of fuzzy growth is coherent, but published photos note tissue can also appear lumpy/puckered so the 'smooth, unblemished' claim is unconfirmed and flagged for curator review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaves are broad with a length-to-width ratio greater than 1, resembling a spade shape.",
+       "image_quote": "The leaves are broad with a length-to-width ratio greater than 1, resembling a spade shape.",
+       "image_id": "bugwood::5483106",
+       "verification_status": "field_observation",
+       "reasoning": "This describes the host hosta's normal broad spade-shaped leaf morphology rather than a disease symptom, so no extension factsheet corroborates it as a diagnostic feature, but it is not contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5483106"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       9
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 9,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 4,
+       "n_provisional": 2,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 6,
+       "n_added": 6,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 2,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "blue or dark green mottling on the leaves ... occasionally necrotic lesions",
+       "image_shows": "The lesions have a pale green center with chlorotic yellowing and appear smooth and not raised on the leaf surface.",
+       "image_quote": "The lesions appear smooth and not raised.",
+       "image_id": "bugwood::5462726",
+       "verification_status": "weakly_supported",
+       "reasoning": "HVX symptoms are flat color changes/mottling rather than raised fungal lesions, so a smooth, non-raised, pale-green discoloration is consistent with viral etiology.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+         "quote": "color changes appear as mosaic, mottled, circular or 'ink-bleed' (localized discoloration along the leaf veins) patterns"
+        },
+        {
+         "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+         "quote": "light or dark green discolorations along leaf veins, green and yellow mottling of leaf blades"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "green and yellow mottling of leaf blades",
+       "image_shows": "The leaves exhibit chlorosis with a yellowing pattern in the interveinal areas.",
+       "image_quote": "The yellowing occurs in the interveinal areas.",
+       "image_id": "bugwood::5462726",
+       "verification_status": "weakly_supported",
+       "reasoning": "Green-and-yellow chlorotic mottling of the leaf blade is documented for HVX, giving partial support to an interveinal yellowing observation.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+         "quote": "green and yellow mottling of leaf blades, puckering, circular discolored areas (called ringspots)"
+        },
+        {
+         "url": "https://pddc.wisc.edu/2015/07/24/hosta-virus-x/",
+         "quote": "green and yellow mottling of leaf blades"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "stunted growth, and occasionally necrotic lesions",
+       "image_shows": "Two hosta leaves show combined interveinal chlorosis, leaf bleaching, and small necrotic spots indicating a moderate symptom load.",
+       "image_quote": "The left leaf has interveinal chlorosis with yellowing between the veins while the veins remain green.",
+       "image_id": "bugwood::5462726",
+       "verification_status": "weakly_supported",
+       "reasoning": "The combination of chlorotic mottling plus small necrotic spots falls within the documented HVX symptom range, so the severity description is partially corroborated.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+         "quote": "green and yellow mottling of leaf blades, puckering, circular discolored areas (called ringspots), and in some cases, wilting and tissue death (necrosis)"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "ring spots, flecks ... occasionally necrotic lesions",
+       "image_shows": "Scattered lesions with no clear pattern suggest irregularly shaped spots rather than the circular ringspots typical of HVX.",
+       "image_quote": "The lesions appear scattered across the leaves with no clear pattern, suggesting they might be irregularly shaped.",
+       "image_id": "bugwood::5462726",
+       "verification_status": "weakly_supported",
+       "reasoning": "Irregular, scattered (non-ringspot) yellow-green discolorations are a documented HVX mottling pattern, so the described irregular spots are partially corroborated.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://purduelandscapereport.org/article/hosta-virus-x/",
+         "quote": "mosaic mottling characterized by irregular yellow-green discolorations"
+        },
+        {
+         "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+         "quote": "green and yellow mottling of leaf blades, puckering, circular discolored areas (called ringspots)"
+        }
+       ]
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "occasionally necrotic lesions",
+       "image_shows": "Dark necrotic spots are present on the leaf surface that do not follow the natural vein patterns.",
+       "image_quote": "Dark spots are observed on the leaves, which do not follow the natural vein patterns.",
+       "image_id": "bugwood::5462726",
+       "verification_status": "weakly_supported",
+       "reasoning": "Discrete necrotic (brown/dead) spots are documented for HVX; the added detail that they do not follow veins is plausible but not specifically confirmed, so support is partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+         "quote": "circular discolored areas (called ringspots), and in some cases, wilting and tissue death (necrosis)"
+        },
+        {
+         "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/hosta-virus-x",
+         "quote": "Less common symptoms include dried, brown spots and twisted, deformed leaves.",
+         "_repaired_from": {
+          "prev_url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/hosta-virus-x",
+          "prev_quote": "Certain cultivars may only express small necrotic (brown/dead) spots"
+         }
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "blue or dark green mottling on the leaves",
+       "image_shows": "Affected tissue shows two roughly equal dominant colors, pale-yellow and olive-green.",
+       "image_quote": "The leaves show significant chlorosis with a pale-yellow center and an olive-green margin.",
+       "image_id": "bugwood::5462726",
+       "verification_status": "verified",
+       "reasoning": "The two-tone pale-yellow and olive-green appearance matches the extension-documented green-and-yellow mottling characteristic of HVX.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+         "quote": "green and yellow mottling of leaf blades"
+        },
+        {
+         "url": "https://www.canr.msu.edu/resources/hosta-virus-x-hvx",
+         "quote": "green and yellow mottling of leaf blades"
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaves have a long, narrow base tapering towards a wider apex.",
+       "image_quote": "The leaves have a long, narrow base tapering towards a wider apex.",
+       "image_id": "bugwood::5462726",
+       "verification_status": "field_observation",
+       "reasoning": "This describes generic hosta leaf shape/morphology rather than any Hosta Virus X symptom; extension factsheets describe HVX by mottling, ringspots, and puckering, not overall leaf outline, so the observation is plausible background but unsupported as a diagnostic visual feature.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5462726",
+      "bugwood::5528561"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 3,
+       "n_provisional": 4,
+       "n_contradictory": 3,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 7,
+       "n_added": 7,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 1,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "Minnesota": {
+     "state": "Minnesota",
+     "deltas": [
+      {
+       "field": "severity",
+       "canonical_says": "occasionally necrotic lesions",
+       "image_shows": "No necrotic/dead tissue is present, consistent with an early or mild (non-necrotic) presentation.",
+       "image_quote": "The plant appears healthy with variegated leaves, and there are no indications of dead tissue in any specific distribution.",
+       "image_id": "bugwood::5439698",
+       "verification_status": "weakly_supported",
+       "reasoning": "Necrosis is only an occasional/heavy-infection symptom, so its absence is consistent with HVX literature rather than contradicting it.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+         "quote": "symptoms... can include... in some cases, wilting and tissue death (necrosis)."
+        },
+        {
+         "url": "https://hyg.ipm.illinois.edu/article.php?id=926",
+         "quote": "Not all HVX infected plants display symptoms... necrosis occurs in heavier infection."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "ring spots, flecks, zipper marks... occasionally necrotic lesions",
+       "image_shows": "Discolored areas are irregular in shape rather than distinctly circular.",
+       "image_quote": "The leaf lesions are irregular in shape.",
+       "image_id": "bugwood::5439698",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension sources describe HVX discolorations as irregular green/blue mottling and blotches that bleed from veins, supporting the irregular (non-circular) shape, though circular ringspots are also a listed feature so support is partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.canr.msu.edu/resources/hosta-virus-x-hvx",
+         "quote": "The most common symptoms of hosta virus X are mottling and irregular green or blue color on leaves, with the mottling appearing to 'bleed out' from the main leaf veins into surrounding tissue."
+        },
+        {
+         "url": "https://pddc.wisc.edu/2015/07/24/hosta-virus-x/",
+         "quote": "These signs can appear as subtle light or dark green streaks and blotches that may blend like ink on wet paper."
+        }
+       ]
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "leaf distortion (puckering and twisting)",
+       "image_shows": "The affected leaf surface reads as smooth rather than distorted.",
+       "image_quote": "The leaf lesions are smooth.",
+       "image_id": "bugwood::5439698",
+       "verification_status": "weakly_supported",
+       "reasoning": "Sources indicate puckering/distortion develops progressively, so a smooth (non-distorted) leaf surface is consistent with an early/mild presentation, giving indirect support.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pddc.wisc.edu/2015/07/24/hosta-virus-x/",
+         "quote": "Early symptoms of hosta virus X include green or blue spots that give the leaves a mottled appearance, but the leaves may become twisted, puckered, or distorted as the disease progresses."
+        },
+        {
+         "url": "https://www.canr.msu.edu/resources/hosta_virus_x",
+         "quote": "After long-term infection, leaves can be stunted, twisted or puckered."
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "ring spots",
+       "image_shows": "No concentric ringspot patterns are visible in the image.",
+       "image_quote": "No concentric patterns are visible in the image.",
+       "image_id": "bugwood::5439698",
+       "verification_status": "weakly_supported",
+       "reasoning": "Ringspots are only one of several optional HVX symptoms ('in some cases'), so their absence in a single photo is consistent with published variability and not contradictory.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+         "quote": "Symptoms can include ... circular discolored areas (called ringspots), and in some cases, wilting and tissue death."
+        },
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/hosta-viruses",
+         "quote": "Hosta Virus X affects different hosta cultivars in different ways, so it is impossible to give a definitive description of symptoms."
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "Leaves are broad and spade-shaped with a wide base narrowing to a rounded/pointed tip.",
+       "image_quote": "The leaves are broad with a pointed tip, resembling a spade shape.",
+       "image_id": "bugwood::5439698",
+       "verification_status": "field_observation",
+       "reasoning": "This describes normal hosta host-leaf morphology rather than a disease symptom; it is coherent with the plant's typical broad heart/spade-shaped foliage but has no disease-specific corroboration, so flag for curator review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5439698"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 1,
+       "n_provisional": 4,
+       "n_contradictory": 5,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 5,
+       "n_added": 5,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 2,
+      "provisional_count": 1,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "Ohio": {
+     "state": "Ohio",
+     "deltas": [
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "blue or dark green mottling on the leaves",
+       "image_shows": "The affected tissue displays a mosaic of vibrant green and pale-yellow areas indicative of mottling/chlorosis.",
+       "image_quote": "The leaves show a mosaic pattern with green and yellowish-green areas.",
+       "image_id": "bugwood::5482592",
+       "verification_status": "verified",
+       "reasoning": "Green-and-yellow mosaic mottling is the hallmark diagnostic sign of HVX and is directly corroborated by extension sources.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+         "quote": "Symptoms can include light or dark green discolorations along leaf veins, green and yellow mottling of leaf blades, puckering, circular discolored areas (called ringspots)."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "occasionally necrotic lesions",
+       "image_shows": "The leaf displays necrotic tissue as brown and black areas scattered across the blade.",
+       "image_quote": "The necrotic tissue appears as brown and black areas scattered across the leaf.",
+       "image_id": "bugwood::5482592",
+       "verification_status": "weakly_supported",
+       "reasoning": "Necrosis is a documented but occasional HVX symptom, so scattered brown/black necrotic tissue is partially supported though not virus-specific.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+         "quote": "in some cases, wilting and tissue death (necrosis)."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "blue or dark green mottling on the leaves",
+       "image_shows": "The leaves display a yellowing pattern with interveinal chlorosis.",
+       "image_quote": "The leaves display a yellowing pattern with interveinal chlorosis.",
+       "image_id": "bugwood::5482592",
+       "verification_status": "weakly_supported",
+       "reasoning": "Yellowing/chlorosis is consistent with documented HVX yellow mottling, though the strictly interveinal distribution is not specifically characteristic of the virus.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+         "quote": "green and yellow mottling of leaf blades"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "green and yellow mottling ... blue or dark green mottling on the leaves",
+       "image_shows": "A large portion of the leaf shows the mosaic mottling pattern.",
+       "image_quote": "The leaf exhibits a mosaic pattern of green and yellowish-green areas.",
+       "image_id": "bugwood::5482592",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extensive green/yellow mottling across the leaf blade is a documented HVX symptom, so the severity/extent observation is supported, though the color-mosaic content partly overlaps existing notes.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+         "quote": "green and yellow mottling of leaf blades ... the mottling appears to 'bleed out' from the main leaf veins into surrounding tissue"
+        },
+        {
+         "url": "https://www.canr.msu.edu/resources/hosta-virus-x-hvx",
+         "quote": "The most common symptoms of hosta virus X are mottling and irregular green or blue color on leaves"
+        }
+       ]
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The lesion texture appears smooth, not raised, fuzzy, felty, waxy, or water-soaked.",
+       "image_quote": "The lesion is not raised, fuzzy, felty, waxy, or water-soaked.",
+       "image_id": "bugwood::5482592",
+       "verification_status": "weakly_supported",
+       "reasoning": "HVX is a viral mottling/discoloration disease and published photos show flat mottling and ink-bleed rather than raised, fuzzy, felty, waxy or water-soaked (fungal/bacterial) lesion textures, indirectly supporting the negative texture description.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+         "quote": "green and yellow mottling of leaf blades, puckering, circular discolored areas (called ringspots)"
+        },
+        {
+         "url": "https://americanhostasociety.org/blog/hosta-virus-hvx/",
+         "quote": "The most common visual symptom is blue or green markings on a light colored leaf. These markings usually follow the leaf veins and bleed out into surrounding tissue giving the plant a mottled appearance."
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf is broad with a slightly elongated base resembling a spade.",
+       "image_quote": "The leaf has a broad base with an elongated shape.",
+       "image_id": "bugwood::5482592",
+       "verification_status": "field_observation",
+       "reasoning": "This describes the host leaf's overall shape (a generic broad, spade-like hosta leaf) rather than a disease symptom, so it is coherent with the image but has no disease-specific corroboration and is flagged for curator review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5482592",
+      "bugwood::5482593",
+      "bugwood::5482594",
+      "bugwood::5482595",
+      "bugwood::5482596",
+      "bugwood::5482597"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 3,
+       "n_provisional": 4,
+       "n_contradictory": 3,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 7,
+       "n_added": 7,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 1,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "Virginia": {
+     "state": "Virginia",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "bleeding of color out from the leaf veins ... zipper marks",
+       "image_shows": "The lesion is elongated along the leaf, parallel to the veins.",
+       "image_quote": "The lesion extends parallel to the leaf's veins, indicating its elongated nature.",
+       "image_id": "bugwood::5408669",
+       "verification_status": "weakly_supported",
+       "reasoning": "Elongation parallel to the veins is consistent with the vein-following 'ink-bleed' discoloration that is the hallmark HVX symptom.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.hostalibrary.org/firstlook/HVXsymptoms.htm",
+         "quote": "Ink bleed is a darker discoloration that typically occurs in the veins of a hosta and is among the most common symptoms of HVX."
+        },
+        {
+         "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+         "quote": "These markings usually follow the leaf veins and bleed out into surrounding tissue giving the plant a mottled appearance."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "leaf distortion (puckering and twisting)",
+       "image_shows": "The leaf shows curling downwards towards the leaf margins.",
+       "image_quote": "The leaf's edges curl slightly downwards.",
+       "image_id": "bugwood::5408669",
+       "verification_status": "weakly_supported",
+       "reasoning": "Downward marginal curling is a plausible expression of the puckering/distortion/twisting deformation documented for HVX, though not diagnostic on its own.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hyg.ipm.illinois.edu/article.php?id=926",
+         "quote": "Other general HVX symptoms include: stunting, puckering, distortion, twisting, and necrosis."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Bleeding of color out from the veins of the leaves and blue or dark green mottling",
+       "image_shows": "The leaf veins show mild chlorosis but do not appear to be clearing or necrotic.",
+       "image_quote": "The veins are slightly paler than the surrounding leaf tissue.",
+       "image_id": "bugwood::5408669",
+       "verification_status": "weakly_supported",
+       "reasoning": "Mild vein-associated color change (paler veins) is an early, non-necrotic form of the vein-following discoloration characteristic of HVX.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+         "quote": "light or dark green discolorations along leaf veins ... these markings usually follow the leaf veins and bleed out into surrounding tissue."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "blue or dark green mottling on the leaves",
+       "image_shows": "The leaf exhibits chlorosis with a clear interveinal pattern.",
+       "image_quote": "The leaf veins are chlorotic and appear lighter compared to the rest of the leaf.",
+       "image_id": "bugwood::5408669",
+       "verification_status": "weakly_supported",
+       "reasoning": "HVX produces vein-associated chlorotic/light-green discolorations and mottling, partially supporting a chlorotic-vein appearance, though a strict interveinal pattern is not the classic vein-centered HVX signature.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.canr.msu.edu/resources/hosta-virus-x-hvx",
+         "quote": "symptoms can include light or dark green discolorations along leaf veins, green and yellow mottling of leaf blades"
+        },
+        {
+         "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+         "quote": "a bleeding of color out from the veins of the leaves and blue or dark green mottling on the leaves"
+        }
+       ]
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "ring spots, flecks",
+       "image_shows": "The leaf displays a pattern where the chlorotic yellow halo surrounds a necrotic center, forming concentric circles.",
+       "image_quote": "The lesion appears to have a pale green center with a darker green margin and a chlorotic yellow halo.",
+       "image_id": "bugwood::5408669",
+       "verification_status": "weakly_supported",
+       "reasoning": "HVX is documented to cause circular ringspots and occasional necrosis, giving partial support to a concentric ring lesion, though the sharply target-like necrotic-center morphology is more typical of fungal leaf spots than HVX.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+         "quote": "circular discolored areas (called ringspots), and in some cases, wilting and tissue death (necrosis)"
+        },
+        {
+         "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+         "quote": "ring spots, flecks and zipper marks ... occasionally necrotic lesions"
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf shape is broad with a rounded apex, resembling a spade.",
+       "image_quote": "The leaf has a broad base tapering to a rounded apex.",
+       "image_id": "bugwood::5408669",
+       "verification_status": "field_observation",
+       "reasoning": "This describes the normal hosta leaf outline rather than any HVX symptom, so it is plausible and uncontradicted but has no disease-specific evidence to corroborate.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5408669",
+      "bugwood::5408670",
+      "bugwood::5408671",
+      "bugwood::5408672",
+      "bugwood::5408673",
+      "bugwood::5408674",
+      "bugwood::5408675",
+      "bugwood::5479828",
+      "bugwood::5479834",
+      "bugwood::5479841"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       9
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 9,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 3,
+       "n_provisional": 3,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 6,
+       "n_added": 6,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": true,
+      "failure_reason": "claude_query returned None (auth / timeout / empty)",
+      "preserved_count": 1
+     }
+    },
+    "Wisconsin": {
+     "state": "Wisconsin",
+     "deltas": [
+      {
+       "field": "severity",
+       "canonical_says": "blue or dark green mottling on the leaves ... occasionally necrotic lesions",
+       "image_shows": "The leaves show mottling, with some areas appearing darker than others, suggesting disease.",
+       "image_quote": "Yellowing between the veins on younger leaves.",
+       "image_id": "bugwood::5460051",
+       "verification_status": "verified",
+       "reasoning": "Visible mottling with darker patches is the single most characteristic HVX sign and is corroborated by multiple extension sources.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pddc.wisc.edu/2015/07/24/hosta-virus-x/",
+         "quote": "The most common symptoms of this disease are a bleeding of color out from the veins of the leaves and blue or dark green mottling on the leaves."
+        },
+        {
+         "url": "https://hort.extension.wisc.edu/articles/hosta-virus-x/",
+         "quote": "The most common symptoms of hosta virus X are mottling and irregular green or blue color on leaves, with the mottling appearing to 'bleed out' from the main leaf veins into surrounding tissue."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "(not specified)",
+       "image_shows": "No concentric rings or target-spot pattern is present in the lesions, arguing against a fungal leaf-spot look-alike.",
+       "image_quote": "No concentric rings or target spots are present.",
+       "image_id": "bugwood::5460051",
+       "verification_status": "weakly_supported",
+       "reasoning": "Fungal look-alikes (anthracnose, Cercospora) typically show concentric rings within lesions, so the documented absence of concentric patterning is partial support for a viral rather than fungal etiology.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hyg.ipm.illinois.edu/pastpest/199815b.html",
+         "quote": "Look for irregularly shaped tan to brown spots on the leaves.",
+         "_repaired_from": {
+          "prev_url": "https://hyg.ipm.illinois.edu/pastpest/199815b.html",
+          "prev_quote": "Anthracnose ... symptoms appear as large, irregularly shaped, tan to brown spots with dark borders."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "green and yellow mottling of leaf blades",
+       "image_shows": "There is a distinct yellowing pattern between the veins (interveinal) on the leaves.",
+       "image_quote": "The leaves exhibit a yellowish tinge between the veins.",
+       "image_id": "bugwood::5460051",
+       "verification_status": "verified",
+       "reasoning": "Extension factsheets explicitly document green-and-yellow interveinal mottling/chlorosis of HVX leaf blades, corroborating the interveinal yellowing seen.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pddc.wisc.edu/2015/07/24/hosta-virus-x/",
+         "quote": "green and yellow mottling of leaf blades"
+        },
+        {
+         "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+         "quote": "Mosaic, mottling, chlorotic spotting, interveinal chlorosis between secondary veins and leaf desiccation have also been found."
+        }
+       ]
+      },
+      {
+       "field": "severity",
+       "canonical_says": "blue or dark green mottling on the leaves",
+       "image_shows": "The affected tissue is green with some yellowing between the veins on younger leaves.",
+       "image_quote": "The image shows yellowing between the veins on the younger leaves.",
+       "image_id": "bugwood::5460051",
+       "verification_status": "verified",
+       "reasoning": "Green tissue with interveinal yellowing matches documented HVX green/yellow mottling and interveinal chlorosis of the leaf blade.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pddc.wisc.edu/2015/07/24/hosta-virus-x/",
+         "quote": "green and yellow mottling of leaf blades"
+        },
+        {
+         "url": "https://extension.umaine.edu/ipm/ipddl/publications/5064e/",
+         "quote": "interveinal chlorosis between secondary veins ... have also been found"
+        }
+       ]
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "occasionally necrotic lesions",
+       "image_shows": "The leaf lesion texture appears smooth.",
+       "image_quote": "The leaf lesion texture seems smooth.",
+       "image_id": "bugwood::5460051",
+       "verification_status": "field_observation",
+       "reasoning": "No published source describes HVX lesion texture as smooth; sources instead note lumpy/puckered tissue, so smoothness is unverified but coherent as a single-image detail for curator review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "holding an infected leaf up to the light versus a healthy leaf aids identification",
+       "image_shows": "The leaf veins appear translucent, indicating vein clearing.",
+       "image_quote": "Leaf veins are translucent, suggesting they are clearing.",
+       "image_id": "bugwood::5460051",
+       "verification_status": "field_observation",
+       "reasoning": "Vein clearing is not explicitly documented for HVX (which typically darkens along veins), but translucent veins are coherent with the hold-to-the-light diagnostic and not contradicted, so flag for review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaves are broad with pointed tips, resembling a spade shape.",
+       "image_quote": "The leaves have a broad base tapering to a long, narrow point.",
+       "image_id": "bugwood::5460051",
+       "verification_status": "field_observation",
+       "reasoning": "Describes host leaf shape rather than a disease symptom; plausible for hosta foliage and not contradicted, but no symptom source applies.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5460051",
+      "bugwood::5460052",
+      "bugwood::5460053",
+      "bugwood::5460054",
+      "bugwood::5505054",
+      "bugwood::5598389"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       10
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 10,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 2,
+       "n_provisional": 5,
+       "n_contradictory": 2,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 7,
+       "n_added": 7,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": true,
+      "failure_reason": "claude_query returned None (auth / timeout / empty)",
+      "preserved_count": 3
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Tobacco Rattle Virus",
+   "pathogen_scientific_name": {
+    "value": "",
+    "url": "",
+    "quote": "",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Viral",
+    "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+    "quote": "Tobacco rattle virus (TRV) is a plant virus with a large host range"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Root",
+     "Whole plant"
+    ],
+    "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+    "quote": "removing whole plants, including roots, is necessary to eliminate the virus"
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting; on ornamental hosts line patterns and ringspots are most common, though infected plants may be asymptomatic.",
+     "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+     "quote": "Symptoms of TRV include ringspots (Figs. 1, 2, and 3), line patterns (Fig. 4), mosaic, mottle (Fig. 5), necrotic lesions, and stunting. On ornamental hosts, line patterns and ringspot symptoms are most commonly observed."
+    },
+    "diagnostic_features": {
+     "value": "Line patterns and ringspot symptoms most commonly observed on ornamental hosts; symptoms typically not distributed uniformly on plants and are typically expressed under cooler environmental conditions.",
+     "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+     "quote": "Line patterns and other symptoms of TRV are typically not distributed uniformly on plants, but a TRV infection may be systemic"
+    },
+    "look_alikes": {
+     "value": [
+      "a variety of other viruses/diseases"
+     ],
+     "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+     "quote": "This disease may look like a variety of other viruses/ diseases."
+    }
+   },
+   "treatments": {
+    "value": [
+     "Plants diagnosed with TRV should be removed to avoid spread to other susceptible plant hosts.",
+     "Removing whole plants, including roots, is necessary to eliminate the virus from a greenhouse or landscape.",
+     "Avoid planting susceptible plants in a landscape, garden, or field where TRV has been diagnosed.",
+     "Manage weeds, as many (e.g. lambs' quarters, hairy nightshade, broadleaf plantain) are hosts to TRV and may carry the virus.",
+     "Use disease-free seed.",
+     "Propagate and/or make divisions from disease-free stock plants and disinfect tools frequently and between plants when propagating.",
+     "Wash hands in hot soapy water between plants or wear disposable gloves and change them between plants."
+    ],
+    "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+    "quote": "Plants diagnosed with TRV should be removed to avoid spread to other susceptible plant hosts. ... There are no controls for stubby root nematodes in the home landscape/garden, so avoid planting susceptible plants in a landscape, garden, or field where TRV has been diagnosed. Manage weeds ... Use disease-free seed. Propagate and/or make divisions from disease-free stock plants and disinfect tools frequently and between plants when propagating (Table 2). Wash hands in hot soapy water between plants or, even better, wear disposable gloves and change them between plants."
+   },
+   "confidence": "high",
+   "num_sources": 2,
+   "conflicts": [],
+   "regional_observations": {
+    "Michigan": {
+     "state": "Michigan",
+     "deltas": [
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Line patterns and ringspot symptoms most commonly observed on ornamental hosts",
+       "image_shows": "The leaf exhibits a chlorotic line pattern of alternating green and yellow stripes, characteristic of Tobacco Rattle Virus.",
+       "image_quote": "The leaf shows a line pattern along the veins.",
+       "image_id": "bugwood::5483108",
+       "verification_status": "verified",
+       "reasoning": "Multiple extension sources confirm chlorotic (yellow/green) line patterns as a common TRV symptom on ornamental hosts.",
+       "swarm_support": 2,
+       "web_support": [
+        {
+         "url": "https://hort.extension.wisc.edu/articles/tobacco-rattle/",
+         "quote": "Infected plants may exhibit mottling, yellow ring spots or line patterns, localized chlorotic (yellow) spots or streaks, necrotic lesions, or leaves with notches."
+        }
+       ],
+       "__support__": 2
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting",
+       "image_shows": "The lesion is elongated and follows the leaf's natural venation, consistent with a wavy line pattern.",
+       "image_quote": "The lesion appears to follow the leaf's natural venation.",
+       "image_id": "bugwood::5483108",
+       "verification_status": "weakly_supported",
+       "reasoning": "TRV line patterns are described as elongated/wavy and can run along leaf tissue, giving partial support to the vein-following lesion shape.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/tobacco-rattle-virus-trv",
+         "quote": "Symptoms on leaves can vary from ring spots to a wavy line pattern to a mosaic or mottled pattern."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "type_of_disease",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf lesion is smooth and lacks raised, fuzzy, felty, or waxy texture, consistent with a viral rather than fungal etiology.",
+       "image_quote": "The leaf texture looks uniform and lacks any signs of being raised, fuzzy, felty, or waxy.",
+       "image_id": "bugwood::5483108",
+       "verification_status": "weakly_supported",
+       "reasoning": "A smooth, non-fungal leaf surface is consistent with the viral nature of TRV, which produces no fruiting structures or surface mycelium.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.sdstate.edu/tobacco-rattle-virus",
+         "quote": "TRV is transmitted by several species of stubby-root nematodes; Plant Disease Clinics use molecular methods to test for this virus."
+        },
+        {
+         "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+         "quote": "Tobacco Rattle Virus (TRV) on Ornamental Plants."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "infected plants may be asymptomatic",
+       "image_shows": "The lesion area and most of the leaf are a bright, vibrant green with no dark discoloration.",
+       "image_quote": "The leaf is mostly a vibrant green.",
+       "image_id": "bugwood::5483108",
+       "verification_status": "field_observation",
+       "reasoning": "A mostly-green leaf lacking dark discoloration is coherent with TRV symptoms being non-uniform or asymptomatic, but no published photo description corroborates this specific appearance, so it is flagged for curator review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf veins appear normal with no vein clearing, translucency, or necrosis.",
+       "image_quote": "The leaf veins are not showing any translucent or darkened areas.",
+       "image_id": "bugwood::5483108",
+       "verification_status": "field_observation",
+       "reasoning": "Extension sources describe TRV as line patterns/ringspots rather than vein clearing, so absence of vein symptoms is plausible and uncontradicted but has no direct published corroboration.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf is broad and rounded with a spade-like shape, consistent with hosta foliage rather than a disease feature.",
+       "image_quote": "The leaf is broad and rounded, akin to a spade.",
+       "image_id": "bugwood::5483108",
+       "verification_status": "field_observation",
+       "reasoning": "This describes normal hosta leaf morphology rather than a disease symptom; it is coherent with the host but has no disease-source corroboration, so it is flagged for curator review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5483108",
+      "bugwood::5483109"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       10
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 10,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 4,
+       "n_provisional": 4,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 8,
+       "n_added": 7,
+       "n_overlaps_bumped": 1,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": true,
+      "failure_reason": "claude_query returned None (auth / timeout / empty)",
+      "preserved_count": 3
+     }
+    },
+    "Ohio": {
+     "state": "Ohio",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting.",
+       "image_shows": "An elongated lesion runs along the length of the leaf, consistent with the streak/line-pattern form of TRV on ornamental hosts.",
+       "image_quote": "The lesion appears to follow the length of the leaf.",
+       "image_id": "bugwood::5482619",
+       "verification_status": "weakly_supported",
+       "reasoning": "TRV on ornamentals produces line patterns and streaks, which matches an elongated lesion running along the leaf, though 'elongated' is only an indirect match.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+         "quote": "infected plants may exhibit ... yellow ring spots or line patterns, localized chlorotic spots or streaks, necrotic lesions"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting; on ornamental hosts line patterns and ringspots are most common.",
+       "image_shows": "The leaf displays a mosaic pattern of chlorotic areas across the center and margins.",
+       "image_quote": "The leaf shows a mosaic pattern with chlorotic areas.",
+       "image_id": "bugwood::5482619",
+       "verification_status": "verified",
+       "reasoning": "Mosaic and chlorotic spotting are explicitly documented TRV foliar symptoms on ornamental hosts.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+         "quote": "Symptoms of TRV include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting ... localized chlorotic spots or streaks"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting.",
+       "image_shows": "Discrete necrotic spots occur at the leaf margin.",
+       "image_quote": "Discrete spots of necrotic tissue.",
+       "image_id": "bugwood::5482619",
+       "verification_status": "verified",
+       "reasoning": "Necrotic lesions/dead spots on leaves are an explicitly documented TRV symptom, corroborating discrete marginal necrosis.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+         "quote": "necrotic lesions (dead spots)"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting.",
+       "image_shows": "The leaf combines mosaic/mottling chlorosis with discrete necrotic spots, indicating moderate multi-symptom severity.",
+       "image_quote": "The central part of the leaf shows a healthy green color, while the edges are white, and there are discrete spots of necrotic tissue.",
+       "image_id": "bugwood::5482619",
+       "verification_status": "weakly_supported",
+       "reasoning": "The co-occurring mosaic/mottle and necrotic spotting matches documented TRV symptom combinations, though the 'raised edges' element is not supported.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+         "quote": "Symptoms of TRV include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Line patterns and ringspot symptoms most commonly observed on ornamental hosts.",
+       "image_shows": "The leaf shows a target-like spot with alternating light and dark concentric rings.",
+       "image_quote": "The leaf shows a target-like spot with alternating light and dark concentric rings.",
+       "image_id": "bugwood::5482619",
+       "verification_status": "verified",
+       "reasoning": "Concentric ring / ringspot patterns are a documented TRV symptom on hosta, directly matching the observed target-like concentric rings.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.extension.iastate.edu/news/2007/feb/071502.htm",
+         "quote": "They produce mottling, yellowing, browning and areas with concentric yellowish rings."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting.",
+       "image_shows": "The lesion appears smooth and flat rather than raised.",
+       "image_quote": "The lesion is elongated and has a smooth surface.",
+       "image_id": "bugwood::5482619",
+       "verification_status": "weakly_supported",
+       "reasoning": "TRV symptoms are flat viral discolorations (ringspots, line patterns, mottle, streaks) rather than raised lesions, so a smooth/flat surface is consistent with documented appearance.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hort.extension.wisc.edu/articles/tobacco-rattle/",
+         "quote": "Symptoms on leaves can vary from ring spots to a wavy line pattern to a mosaic or mottled pattern."
+        }
+       ]
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting.",
+       "image_shows": "Affected tissue shows two dominant colors, olive-green and white.",
+       "image_quote": "The central part of the leaf shows a healthy green color, while the edges are white.",
+       "image_id": "bugwood::5482619",
+       "verification_status": "weakly_supported",
+       "reasoning": "A two-tone light/dark leaf coloration is consistent with the mottling and chlorotic-vs-green blotching documented for TRV, though the specific olive-green/white pairing is not exactly matched.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://vocal.media/fyi/hosta-viruses-hvx-hosta-hvw-hosta-and-tobacco-rattle-virus-hosta",
+         "quote": "infected plants may exhibit mottling (i.e., blotchy light and dark discoloration of leaf tissue), yellow ring spots or line patterns, localized chlorotic (i.e., yellow) spots or streaks."
+        }
+       ]
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting.",
+       "image_shows": "The leaf center is green while the margins are white.",
+       "image_quote": "The central part of the leaf shows a healthy green color, while the edges are white.",
+       "image_id": "bugwood::5482619",
+       "verification_status": "field_observation",
+       "reasoning": "A green-center/white-margin distribution is coherent with TRV chlorotic mottling but could equally reflect normal hosta cultivar variegation, so it warrants curator review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf curls upward at the tip.",
+       "image_quote": "The leaf tips appear to curl upwards.",
+       "image_id": "bugwood::5482619",
+       "verification_status": "field_observation",
+       "reasoning": "TRV is documented to cause leaf deformities, so upward tip curling is plausible but not specifically corroborated for hosta.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Line patterns and ringspot symptoms most commonly observed on ornamental hosts.",
+       "image_shows": "The leaf veins appear translucent, suggesting vein clearing.",
+       "image_quote": "The leaf veins are translucent compared to the rest of the leaf.",
+       "image_id": "bugwood::5482619",
+       "verification_status": "field_observation",
+       "reasoning": "Vein clearing is a general viral symptom but is not specifically documented for TRV on hosta (whose hallmark is line patterns/ringspots), so it is flagged for review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf is broad with a rounded apex, a spade-like form.",
+       "image_quote": "The leaf shape is broad with a rounded apex, suggesting a spade-like form.",
+       "image_id": "bugwood::5482619",
+       "verification_status": "field_observation",
+       "reasoning": "This describes normal hosta leaf morphology rather than a disease symptom, so it is coherent with the host but carries no diagnostic support.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5482619",
+      "bugwood::5482620",
+      "bugwood::5482621",
+      "bugwood::5482622",
+      "bugwood::5482623",
+      "bugwood::5482624"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 5,
+       "n_provisional": 6,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 11,
+       "n_added": 11,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": true,
+      "failure_reason": "claude_query returned None (auth / timeout / empty)",
+      "preserved_count": 4
+     }
+    },
+    "Wisconsin": {
+     "state": "Wisconsin",
+     "deltas": [
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Line patterns and ringspot symptoms most commonly observed on ornamental hosts",
+       "image_shows": "The lesions form a target-like concentric pattern: a chlorotic center ringed by a yellow halo and a darker green margin.",
+       "image_quote": "The lesion center is light green and appears chlorotic, while the margin is a darker green, and there is a halo of chlorotic yellow around the lesion.",
+       "image_id": "bugwood::5460009",
+       "verification_status": "verified",
+       "reasoning": "Concentric chlorotic-center/yellow-halo target appearance is the textbook TRV ringspot, the single most-documented ornamental-host symptom.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/tobacco-rattle-virus-trv",
+         "quote": "The most-common associated symptom for ornamentals is ringspot on leaves; plants may have foliar symptoms, including mottling, discolored ring spots, or wavy line patterns."
+        },
+        {
+         "url": "https://hort.extension.wisc.edu/articles/tobacco-rattle/",
+         "quote": "Infected plants may exhibit yellow ring spots or line patterns, localized chlorotic spots or streaks."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "on ornamental hosts line patterns and ringspots are most common",
+       "image_shows": "The lesion has a light-green chlorotic center, a darker green margin, and a surrounding chlorotic-yellow halo.",
+       "image_quote": "The lesion center is light green and appears chlorotic, with a darker green margin and a chlorotic yellow halo.",
+       "image_id": "bugwood::5460009",
+       "verification_status": "weakly_supported",
+       "reasoning": "The chlorotic center with yellow halo is consistent with documented TRV chlorotic/yellow ringspot coloration, though the exact halo structure is not itemized in sources.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hort.extension.wisc.edu/articles/tobacco-rattle/",
+         "quote": "Infected plants may exhibit mottling, yellow ring spots or line patterns, localized chlorotic (yellow) spots or streaks."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting",
+       "image_shows": "The affected tissue is dominated by pale-straw and light-green coloration.",
+       "image_quote": "The lesion center is light green and appears chlorotic, while the margin is a darker green, and there is a halo of chlorotic yellow around the lesion.",
+       "image_id": "bugwood::5460009",
+       "verification_status": "weakly_supported",
+       "reasoning": "Pale-straw/light-green palette matches the chlorotic (yellowing) mottle/mosaic coloration documented for TRV on ornamentals.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.pubs.ext.vt.edu/SPES/spes-774.html",
+         "quote": "Plants may have foliar symptoms including mottling, chlorotic or necrotic local lesions, ringspots or line patterns."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "on ornamental hosts line patterns and ringspots are most common",
+       "image_shows": "Chlorotic spots and line patterns affect a significant fraction of the visible hosta leaf.",
+       "image_quote": "The leaf shows interveinal chlorosis with yellowing occurring between the veins while the veins remain green.",
+       "image_id": "bugwood::5460009",
+       "verification_status": "field_observation",
+       "reasoning": "Presence of chlorotic spots and line patterns is documented TRV symptomatology, though canonical notes distribution is typically patchy rather than uniform, so the extent claim is only partially supported.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "weakly_supported"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaves are cupped with the edges curling upward.",
+       "image_quote": "The leaves have a cupped appearance with the edges curling upwards.",
+       "image_id": "bugwood::5460009",
+       "verification_status": "field_observation",
+       "reasoning": "Upward cupping is a form of the leaf distortion documented for TRV on hosta, but cupping is also a classic herbicide/other look-alike, so support is only indirect.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "weakly_supported"
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting",
+       "image_shows": "The lesion outline is irregular rather than a clean ring or spot.",
+       "image_quote": "The image shows a pattern that deviates from uniformity, suggesting an irregular shape.",
+       "image_id": "bugwood::5460009",
+       "verification_status": "weakly_supported",
+       "reasoning": "TRV foliar markings include irregular mottling/line patterns with a variable degree of distortion, so a non-clean, irregular lesion outline is consistent with documented appearance.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hort.extension.wisc.edu/articles/tobacco-rattle/",
+         "quote": "Infected plants may exhibit mottling (blotchy light and dark discoloration of leaf tissue), yellow ring spots or line patterns, localized chlorotic spots or streaks, necrotic lesions, or leaves with notches."
+        },
+        {
+         "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/tobacco-rattle-virus",
+         "quote": "On leaves, symptoms range from necrosis to all kinds of yellow markings (blotching, mottling, mosaic, ringspot), often accompanied by a variable degree of distortion."
+        }
+       ]
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Line patterns and ringspot symptoms most commonly observed on ornamental hosts",
+       "image_shows": "The leaf shows interveinal chlorosis, with yellowing between the veins while the veins stay green.",
+       "image_quote": "The leaves display a pattern of interveinal chlorosis.",
+       "image_id": "bugwood::5460009",
+       "verification_status": "weakly_supported",
+       "reasoning": "Chlorotic mottling with interveinal chlorotic areas is documented in TRV/co-infected ornamentals, giving indirect support for an interveinal yellowing pattern with retained green veins.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11209033/",
+         "quote": "plants infected... showed interveinal chlorotic mottle areas (faint to bright) scattered in their foliage."
+        },
+        {
+         "url": "https://hort.extension.wisc.edu/articles/tobacco-rattle/",
+         "quote": "Infected plants may exhibit mottling (blotchy light and dark discoloration of leaf tissue)... localized chlorotic (yellow) spots or streaks."
+        }
+       ]
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting",
+       "image_shows": "The lesion surface texture appears smooth.",
+       "image_quote": "The lesion is light green and appears chlorotic, while the margin is a darker green, and there is a halo of chlorotic yellow around the lesion.",
+       "image_id": "bugwood::5460009",
+       "verification_status": "field_observation",
+       "reasoning": "As a virus, TRV produces flat discolorations (ringspots, mottle, line patterns) rather than raised fungal fruiting textures, so a smooth surface is coherent with the etiology though no source explicitly describes texture.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      },
+      {
+       "field": "necrosis",
+       "canonical_says": "Symptoms include ringspots, line patterns, mosaic, mottle, necrotic lesions, and stunting",
+       "image_shows": "No dead brown, black, or bleached tissue is visible on the leaves.",
+       "image_quote": "There is no visible dead brown, black, or bleached tissue on the leaves.",
+       "image_id": "bugwood::5460009",
+       "verification_status": "field_observation",
+       "reasoning": "On ornamental hosts line patterns and chlorotic ringspots predominate and necrosis is optional, so an absence of dead tissue is plausible and not contradicted, but an absence cannot be positively corroborated by published photos.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      },
+      {
+       "field": "other",
+       "canonical_says": "Line patterns and ringspot symptoms most commonly observed on ornamental hosts",
+       "image_shows": "The leaf veins are translucent and appear normal, showing no vein-associated symptom.",
+       "image_quote": "The leaf veins are translucent, indicating normal appearance.",
+       "image_id": "bugwood::5460009",
+       "verification_status": "field_observation",
+       "reasoning": "TRV symptoms are ringspot/line-pattern/mottle rather than vein-clearing or vein-banding, so unaffected veins are consistent with canonical, but the absence of vein symptoms is not directly documentable.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaves show the broad, asymmetrical blade shape characteristic of Hosta species.",
+       "image_quote": "The leaves exhibit a broad, asymmetrical shape typical of Hosta species.",
+       "image_id": "bugwood::5460009",
+       "verification_status": "field_observation",
+       "reasoning": "This describes host-plant leaf morphology rather than a disease symptom; it is coherent with a Hosta subject and not contradicted, so it is flagged for curator review as non-diagnostic context.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5460009",
+      "bugwood::5460057",
+      "bugwood::5460058",
+      "bugwood::5460059",
+      "bugwood::5460060"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 5,
+       "n_provisional": 6,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 11,
+       "n_added": 11,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": true,
+      "failure_reason": "claude_query returned None (auth / timeout / empty)",
+      "preserved_count": 4
+     }
+    }
+   }
+  }
+ ],
+ "crop": "Hosta",
+ "generated_date": "2026-06-10",
+ "regional_observations_count": 10
 }

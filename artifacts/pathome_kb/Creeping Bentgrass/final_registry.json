@@ -1,506 +1,521 @@
 {
-  "diseases": [
-    {
-      "disease_name": "Anthracnose",
-      "pathogen_scientific_name": {
-        "value": "Colletotrichum cereale",
-        "url": "https://extension.psu.edu/turfgrass-diseases-anthracnose-causal-fungus-colletotrichum-cereale",
-        "quote": "caused by the fungus Colletotrichum cereale .",
-        "taxonomy_validated": false,
-        "ncbi_url": "",
-        "mycobank_url": ""
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://extension.psu.edu/turfgrass-diseases-anthracnose-causal-fungus-colletotrichum-cereale",
-        "quote": "Anthracnose is a foliar and crown/root rotting disease of golf course turf, caused by the fungus Colletotrichum cereale ."
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Root",
-          "Stem",
-          "Whole plant"
-        ],
-        "url": "https://ag.umass.edu/turf/fact-sheets/anthracnose-foliar-blight-basal-rot",
-        "quote": "The pathogen may cause a foliar blight or a rot of crowns, stolons, and roots."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Foliar blight causes yellowing to reddish brown discoloration of leaves and general thinning of the turf, with leaves dying from their tips down; basal rot causes scattered plants or small patches to turn yellow and die, with a water-soaked black rot of the crown tissue. On annual bluegrass putting greens, symptoms typically appear as bright yellowing of turf in irregular patterns, with patches an inch or two to more than a foot across.",
-          "url": "https://ag.umass.edu/turf/fact-sheets/anthracnose-foliar-blight-basal-rot",
-          "quote": "Symptoms of foliar blight are most evident during the summer stress period and include a yellowing to reddish brown discoloration of leaves and a general thinning of the turf. Leaves die from their tips down."
-        },
-        "diagnostic_features": {
-          "value": "The most reliable diagnostic features are the dark/black coloration at the base of the plant (crowns, roots, and lower stem bases) and the presence of fungal spore-producing structures (acervuli) on stems and leaves, which look like small pin cushions and bear protruding, black, hairlike structures (setae) observable with a hand lens.",
-          "url": "https://ag.umass.edu/turf/fact-sheets/anthracnose-foliar-blight-basal-rot",
-          "quote": "The distinctive fruiting bodies (acervuli) of the fungus with their protruding, black, hairlike structures (setae) can be observed with a hand lens."
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Alleviate conditions that cause turf stress (aeration, redirecting traffic, reduced watering, and tree pruning or removal)",
-          "Adequate / light, frequent nitrogen fertilization (~3.0 lb/1,000 ft2/year) to reduce anthracnose severity on annual bluegrass putting greens, without overstimulating turf during heat stress",
-          "Do not apply nitrogen at high rates during periods of high temperature stress or drought",
-          "Fertilize with complete fertilizers, avoiding deficiencies of potassium and phosphorous; soil test to avoid potassium deficiencies",
-          "Water deeply and infrequently; irrigation at 60-80% of ET is preferred",
-          "Increase mowing height (cutting heights of 0.141 inch) and reduce mowing frequency; avoid mowing below 0.125 inch and scalping",
-          "Lightweight rolling with smooth rollers to maintain green speed",
-          "Light and frequent sand topdressing",
-          "Reduce soil compaction by core aeration in spring and fall; manage thatch",
-          "Modify traffic patterns and move cups frequently",
-          "Minimize leaf wetness by improving air circulation, watering early in the day, and/or dew removal",
-          "Wash mowers thoroughly after mowing areas where disease is active",
-          "Renovate greens with newer, less susceptible bentgrass cultivars",
-          "Preventive fungicide programs (beginning 2-4 weeks before symptoms appear) using penetrant fungicides or penetrant/contact combinations at label rates; preventive applications are more effective than curative",
-          "For basal rot, apply and water in a systemic fungicide to reach the crown, followed by a separate protectant application",
-          "Avoid Group 3 fungicides (DMIs) during the summer stress period to avoid growth regulator effects",
-          "Alternate active ingredients / fungicide classes and mix contact with penetrant fungicides to delay resistance"
-        ],
-        "url": "https://ag.umass.edu/turf/fact-sheets/anthracnose-foliar-blight-basal-rot",
-        "quote": "Alleviate conditions that cause turf stress. Preventive applications of fungicides are recommended where the disease is a chronic problem. Fertilize with complete fertilizers, avoiding deficiencies of potassium and phosphorous."
-      },
-      "confidence": "high",
-      "num_sources": 2,
-      "conflicts": [
-        {
-          "field": "disease_name",
-          "canonical_value": "Anthracnose Foliar Blight and Basal Rot",
-          "alternative_value": "Anthracnose",
-          "alternative_source_url": "https://extension.psu.edu/turfgrass-diseases-anthracnose-causal-fungus-colletotrichum-cereale",
-          "note": "Both are university extension sources (equal authority rank). UMass uses the fuller descriptive name distinguishing the foliar blight and basal rot phases; PSU titles it simply 'Anthracnose'. Same disease and pathogen."
-        }
-      ],
-      "regional_observations": {
-        "Kentucky": {
-          "state": "Kentucky",
-          "deltas": [
-            {
-              "field": "affected_organs",
-              "canonical_says": "The most reliable diagnostic features are the dark/black coloration at the base of the plant (crowns, roots, and lower stem bases)",
-              "image_shows": "The image displays creeping bentgrass roots showing visible rot, confirming root/basal involvement beyond foliar blight.",
-              "image_quote": "The image shows root structures with visible signs of rot.",
-              "image_id": "bugwood::5368457",
-              "verification_status": "verified",
-              "reasoning": "Multiple high-quality sources (APS, Wikipedia) confirm C. cereale causes a rot of crowns, stolons, and roots, corroborating visible root rot.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.apsnet.org/edcenter/pdlessons/Pages/Anthracnoseofturfgrass.aspx",
-                  "quote": "The pathogen may cause a foliar blight or a rot of crowns, stolons, and roots."
-                },
-                {
-                  "url": "https://en.wikipedia.org/wiki/Colletotrichum_cereale",
-                  "quote": "Anthracnose is a foliar and crown/root rotting disease of golf course turf, caused by the fungus Colletotrichum cereale."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "yellowing to reddish brown discoloration of leaves ... a water-soaked black rot of the crown tissue",
-              "image_shows": "The affected tissue is dominated by olive-green and light brown coloration rather than the canonical yellow-to-reddish-brown.",
-              "image_quote": "The affected tissue shows predominantly pale-straw and olive-green colors with a high concentration of water droplets.",
-              "image_id": "bugwood::5368457",
-              "verification_status": "weakly_supported",
-              "reasoning": "Published extension photos confirm anthracnose foliage fades to a pale tan/straw and appears water-soaked, partially corroborating the pale-straw and water-droplet observation, though olive-green is not a documented color.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://content.ces.ncsu.edu/anthracnose-in-turf",
-                  "quote": "the older leaves are often attacked first, with reddish-brown to brown lesions that turn a pale tan color"
-                },
-                {
-                  "url": "https://ipm.ucanr.edu/agriculture/turfgrass/anthracnose/",
-                  "quote": "Lesions first appear small and water-soaked ... older leaf blades are completely water-soaked"
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5368457",
-            "bugwood::5368458",
-            "bugwood::5368459",
-            "bugwood::5368460",
-            "bugwood::5368477",
-            "bugwood::5368478",
-            "bugwood::5368479",
-            "bugwood::5368480",
-            "bugwood::5368787",
-            "bugwood::5368788",
-            "bugwood::5368957",
-            "bugwood::5368958",
-            "bugwood::5368959"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              4
-            ],
-            "detected_organ_per_pass": [
-              "root"
-            ],
-            "n_active_agents_per_pass": [
-              5
-            ],
-            "n_after_agreement": 4,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 1,
-              "n_provisional": 2,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 3,
-              "n_added": 3,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 1,
-            "duplicates_count": 0,
-            "dropped_contradictory": [
-              {
-                "field": "severity",
-                "canonical_says": "scattered plants or small patches to turn yellow and die, with a water-soaked black rot of the crown tissue",
-                "image_shows": "Affected crown tissue in the photo appears pale-straw and olive-green rather than the canonical black water-soaked rot.",
-                "image_quote": "The affected tissue shows predominantly pale-straw and olive-green colors with a high concentration of water droplets.",
-                "image_id": "bugwood::5368457",
-                "verification_status": "contradictory",
-                "reasoning": "Multiple extension factsheets uniformly describe the diagnostic crown/basal appearance of anthracnose as a dark/black water-soaked rot, contradicting the claim that the affected crown tissue is pale-straw and olive-green.",
-                "swarm_support": 1,
-                "web_support": [
-                  {
-                    "url": "https://extension.missouri.edu/publications/ipm1029/3",
-                    "quote": "Crowns, old stems and roots of bentgrass or annual bluegrass appear black due to the presence of mycelial mats and other fungal structures in this tissue; close examination of the infected stem base reveals a water-soaked black rot of the crown tissue."
-                  },
-                  {
-                    "url": "https://ag.umass.edu/turf/fact-sheets/anthracnose-foliar-blight-basal-rot",
-                    "quote": "In the case of basal rot, the leaf sheaths, crowns, and stolons will be dark and rotten."
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      }
+ "diseases": [
+  {
+   "disease_name": "Anthracnose",
+   "pathogen_scientific_name": {
+    "value": "Colletotrichum cereale",
+    "url": "https://extension.psu.edu/turfgrass-diseases-anthracnose-causal-fungus-colletotrichum-cereale",
+    "quote": "caused by the fungus Colletotrichum cereale .",
+    "taxonomy_validated": false,
+    "ncbi_url": "",
+    "mycobank_url": ""
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://extension.psu.edu/turfgrass-diseases-anthracnose-causal-fungus-colletotrichum-cereale",
+    "quote": "Anthracnose is a foliar and crown/root rotting disease of golf course turf, caused by the fungus Colletotrichum cereale ."
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Root",
+     "Stem",
+     "Whole plant"
+    ],
+    "url": "https://ag.umass.edu/turf/fact-sheets/anthracnose-foliar-blight-basal-rot",
+    "quote": "The pathogen may cause a foliar blight or a rot of crowns, stolons, and roots."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Foliar blight causes yellowing to reddish brown discoloration of leaves and general thinning of the turf, with leaves dying from their tips down; basal rot causes scattered plants or small patches to turn yellow and die, with a water-soaked black rot of the crown tissue. On annual bluegrass putting greens, symptoms typically appear as bright yellowing of turf in irregular patterns, with patches an inch or two to more than a foot across.",
+     "url": "https://ag.umass.edu/turf/fact-sheets/anthracnose-foliar-blight-basal-rot",
+     "quote": "Symptoms of foliar blight are most evident during the summer stress period and include a yellowing to reddish brown discoloration of leaves and a general thinning of the turf. Leaves die from their tips down."
     },
-    {
-      "disease_name": "Dollar Spot",
-      "pathogen_scientific_name": {
-        "value": "Clarireedia jacksonii",
-        "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
-        "quote": "caused by the fungus Clarireedia jacksonii",
-        "taxonomy_validated": false,
-        "ncbi_url": "",
-        "mycobank_url": ""
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
-        "quote": "caused by the fungus Clarireedia jacksonii"
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar"
-        ],
-        "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
-        "quote": "Dollar spot is a foliar disease of golf courses, athletic fields, home lawns, parks, and institutional grounds"
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Small, roughly circular bleached/white-to-tan patches of dead turf, silver-dollar sized on closely mowed greens and 1-5 inches (occasionally exceeding 6 inches) on fairways, athletic fields, and lawns; numerous spots may coalesce into large, irregular dead areas.",
-          "url": "https://pnwhandbooks.org/plantdisease/host-disease/lawn-turf-dollar-spot",
-          "quote": "Small, roughly circular, bleached patches develop in the turf. Spots are generally a few inches in diameter but can exceed 6 inches when conditions are favorable. Numerous spots may occur and coalesce into large, irregular dead areas. Leaves develop light yellow to tan lesions with reddish-brown borders or lines."
-        },
-        "diagnostic_features": {
-          "value": "On individual leaves, initial symptoms appear as yellow-green blotches that progress to tan-colored lesions with reddish-brown borders; lesions occur near the middle of the leaf and extend completely across the blade, often with a classic 'hourglass' shape. White mycelia can be observed on diseased leaves in early morning following rainy/dewy periods.",
-          "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
-          "quote": "On individual leaves, initial symptoms appear as yellow-green blotches, which progress to a tan-colored lesion with reddish-brown borders."
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Late spring nitrogen fertilizer applications to minimize dollar spot severity; maintain adequate nitrogen in a balanced nutritional program",
-          "On athletic fields and lawns use slow-release nitrogen; on golf courses quick-release nitrogen can be applied in liquid form at low rates frequently",
-          "Avoid light, frequent waterings; irrigate to apply more water less frequently and wet the entire rootzone",
-          "Water in the morning so turf dries before night",
-          "Remove dew and guttation fluid from foliage (dragging fairways with weighted hoses, dew whips, rollers, or early-morning mowing)",
-          "Daily/lightweight rolling of putting greens, particularly coupled with increased mowing height, to reduce dollar spot activity",
-          "Collect and remove plant debris",
-          "Use resistant cultivars (e.g., creeping bentgrass: Proclamation, Declaration, 007, Barracuda, Luminary, Pin-Up, V8, Memorial, Benchmark DSR)",
-          "Focus on cultural control tactics first; implement a broad-based cultural program to reduce the number of fungicide applications",
-          "Apply fungicides on irrigated turf with persistent dollar spot; early-season applications just before symptoms appear reduce later outbreaks",
-          "Alternate modes of action / tank-mix fungicides from different groups, mix contact and penetrant fungicides, or use only contact fungicides; limit use of any one group",
-          "Specific products (PNW): Group 3 (BioAdvanced Fungus Control, Bonide Infuse, Densicor, Eagle 20 EW, propiconazole products such as Banner MAXX/PropiMax EC), Group 2 (Chipco 26019 FLO), Group M5 (Daconil Weather Stik), Group M3 (Mancozeb - Fore, Manzate, Protect DF), Group 11 (Disarm 480 SC, Fame SC), Group 7 (Emerald, Velista), plus combination fungicides (Armada 50 WDG, Briskway, Concert, Encartis, Exteris Stressgard, Headway, Honor, Interface, Lexicon, Navicon, Pillar G, Premion, Renown, Tartan Stressgard)"
-        ],
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/lawn-turf-dollar-spot",
-        "quote": "Cultural control Fertilize with adequate nitrogen in a balanced nutritional program. ... Avoid light, frequent waterings. ... Water in morning so turf will dry before night. ... Use resistant cultivars. Chemical control Focus on cultural control tactics first. ... Alternate or tank-mix fungicides from different groups that have different modes of action."
-      },
-      "confidence": "high",
-      "num_sources": 2,
-      "conflicts": [
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Clarireedia jacksonii",
-          "alternative_value": "Clarireedia monteithiana",
-          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/lawn-turf-dollar-spot",
-          "note": "Not a true disagreement: C. jacksonii is the causal agent on cool-season turfgrass; PNW notes C. monteithiana causes dollar spot on warm-season turfgrass in the USA. Canonical reflects the cool-season turf context shared by both sources."
-        }
-      ],
-      "regional_observations": {
-        "Kentucky": {
-          "state": "Kentucky",
-          "deltas": [
-            {
-              "field": "affected_organs",
-              "canonical_says": "Foliar",
-              "image_shows": "No crown or collar rot is visible, consistent with dollar spot being confined to leaf tissue rather than crowns or roots.",
-              "image_quote": "No visual evidence of rot, girdling, sunken collar canker, white mycelium, or mustard-seed-shaped sclerotia at the soil line.",
-              "image_id": "bugwood::5369033",
-              "verification_status": "verified",
-              "reasoning": "Extension and reference sources confirm dollar spot is foliar and does not cause crown/collar rot, corroborating the absence of crown signs.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://en.wikipedia.org/wiki/Dollar_spot",
-                  "quote": "The pathogen blights leaf tissues but does not affect turf grass roots or crowns."
-                },
-                {
-                  "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
-                  "quote": "Dollar spot is caused by Clarireedia jacksonii and produces bleached foliar lesions; crowns and roots are not directly attacked."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "White mycelia can be observed on diseased leaves in early morning following rainy/dewy periods.",
-              "image_shows": "No spore masses, pycnidia, fruiting bodies, or sclerotia are visible, consistent with Clarireedia not producing spores.",
-              "image_quote": "The image shows circular patches of green turf, consistent with Dollar Spot. However, there is no visible mycelium, spore masses, pycnidia, fruiting bodies, sclerotia, or bacterial ooze, supporting the peer Blackboard findings.",
-              "image_id": "bugwood::5369033",
-              "verification_status": "verified",
-              "reasoning": "Multiple sources confirm Clarireedia produces no spores/fruiting bodies and mycelium is only visible under dew, so the absence of spore masses and fruiting structures is expected and corroborated.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
-                  "quote": "The fungus does not produce spores; dissemination relies on movement of mycelium or infected leaf debris."
-                },
-                {
-                  "url": "https://www.earthmicrobial.com/blogs/golf/pathogen-profile-clarireedia-spp",
-                  "quote": "Clarireedia does not produce conidia or other spores, and visible mycelium appears only under dew in early morning."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "numerous spots may coalesce into large, irregular dead areas",
-              "image_shows": "Circular grass-covered features appear without clearly visible disease signs, suggesting low or subclinical severity in this photo.",
-              "image_quote": "The image displays circular, grass-covered objects without visible signs of disease.",
-              "image_id": "bugwood::5369033",
-              "verification_status": "field_observation",
-              "reasoning": "Published factsheets describe dollar spot's bleached patches and hourglass leaf lesions but cannot corroborate a specific photo showing low/subclinical severity; the observation is plausible and not contradicted by canonical severity descriptions.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5369033",
-            "bugwood::5369034",
-            "bugwood::5369035",
-            "bugwood::5369036",
-            "bugwood::5369037",
-            "bugwood::5369038",
-            "bugwood::5369039"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "medium"
-            ],
-            "n_raw_per_pass": [
-              4
-            ],
-            "detected_organ_per_pass": [
-              "crown"
-            ],
-            "n_active_agents_per_pass": [
-              5
-            ],
-            "n_after_agreement": 4,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 2,
-              "n_provisional": 2,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 4,
-              "n_added": 4,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 1,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "Missouri": {
-          "state": "Missouri",
-          "deltas": [
-            {
-              "field": "look_alikes",
-              "canonical_says": "(not specified)",
-              "image_shows": "Lack of specific look-alikes makes it difficult to definitively rule out other possibilities.",
-              "image_quote": "The image displays a predominantly olive-green color with tan patches, which aligns with the typical symptoms of dollar spot disease on creeping bentgrass.",
-              "image_id": "bugwood::5516103",
-              "verification_status": "weakly_supported",
-              "reasoning": "The described tan patches on green bentgrass turf are corroborated by extension photo descriptions, but the observation offers no actual look-alike differentiation, so support is only partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.canr.msu.edu/ipm/diseases/dollar-spot",
-                  "quote": "Characteristic symptoms on creeping bentgrass include small (up to 1 inch in diameter), round, tan-colored spots."
-                },
-                {
-                  "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
-                  "quote": "small, circular, straw-colored, sunken spots... on closely mowed turfgrass, such as bentgrass golf greens"
-                }
-              ]
-            },
-            {
-              "field": "severity",
-              "canonical_says": "numerous spots may coalesce into large, irregular dead areas",
-              "image_shows": "Indicative of dollar spot but severity needs further assessment.",
-              "image_quote": "The image displays a predominantly olive-green color with tan patches, indicating the presence of dollar spot.",
-              "image_id": "bugwood::5516103",
-              "verification_status": "weakly_supported",
-              "reasoning": "The tan-patch appearance is corroborated by published photos, but the image does not resolve severity/coalescence, so it is only weakly supported.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.canr.msu.edu/ipm/diseases/dollar-spot",
-                  "quote": "small (up to 1 inch in diameter), round, tan-colored spots. The spots often occur in clusters."
-                },
-                {
-                  "url": "https://content.ces.ncsu.edu/dollar-spot-in-turf",
-                  "quote": "white or tan spots of dead turf about the size of a silver dollar."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "Small, roughly circular bleached/white-to-tan patches of dead turf ... numerous spots may coalesce into large, irregular dead areas",
-              "image_shows": "Possible wilting is suggested but not strong enough for a confident diagnosis.",
-              "image_quote": "The image shows scattered lighter patches on a predominantly green surface.",
-              "image_id": "bugwood::5516103",
-              "verification_status": "weakly_supported",
-              "reasoning": "Scattered lighter (bleached/tan) patches on a green turf surface match published dollar-spot patch appearance, though the description is generic and the suggested wilting is unconfirmed, so support is only partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://content.ces.ncsu.edu/dollar-spot-in-turf",
-                  "quote": "On putting greens, dollar spot appears as round tan to bleached patches ... Small, roughly circular, bleached patches develop in the turf."
-                },
-                {
-                  "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
-                  "quote": "Symptoms on individual grass blades appear as bleached-out or tan lesions ... round tan to bleached patches."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5516103",
-            "bugwood::5516104",
-            "bugwood::5516105",
-            "bugwood::5516107",
-            "bugwood::5516111",
-            "bugwood::5516112"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "medium"
-            ],
-            "n_raw_per_pass": [
-              6
-            ],
-            "detected_organ_per_pass": [
-              "whole_plant"
-            ],
-            "n_active_agents_per_pass": [
-              7
-            ],
-            "n_after_agreement": 6,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 0,
-              "n_provisional": 3,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 3,
-              "n_added": 3,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+    "diagnostic_features": {
+     "value": "The most reliable diagnostic features are the dark/black coloration at the base of the plant (crowns, roots, and lower stem bases) and the presence of fungal spore-producing structures (acervuli) on stems and leaves, which look like small pin cushions and bear protruding, black, hairlike structures (setae) observable with a hand lens.",
+     "url": "https://ag.umass.edu/turf/fact-sheets/anthracnose-foliar-blight-basal-rot",
+     "quote": "The distinctive fruiting bodies (acervuli) of the fungus with their protruding, black, hairlike structures (setae) can be observed with a hand lens."
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
     }
-  ],
-  "crop": "Creeping Bentgrass",
-  "generated_date": "2026-06-10",
-  "regional_observations_count": 3
+   },
+   "treatments": {
+    "value": [
+     "Alleviate conditions that cause turf stress (aeration, redirecting traffic, reduced watering, and tree pruning or removal)",
+     "Adequate / light, frequent nitrogen fertilization (~3.0 lb/1,000 ft2/year) to reduce anthracnose severity on annual bluegrass putting greens, without overstimulating turf during heat stress",
+     "Do not apply nitrogen at high rates during periods of high temperature stress or drought",
+     "Fertilize with complete fertilizers, avoiding deficiencies of potassium and phosphorous; soil test to avoid potassium deficiencies",
+     "Water deeply and infrequently; irrigation at 60-80% of ET is preferred",
+     "Increase mowing height (cutting heights of 0.141 inch) and reduce mowing frequency; avoid mowing below 0.125 inch and scalping",
+     "Lightweight rolling with smooth rollers to maintain green speed",
+     "Light and frequent sand topdressing",
+     "Reduce soil compaction by core aeration in spring and fall; manage thatch",
+     "Modify traffic patterns and move cups frequently",
+     "Minimize leaf wetness by improving air circulation, watering early in the day, and/or dew removal",
+     "Wash mowers thoroughly after mowing areas where disease is active",
+     "Renovate greens with newer, less susceptible bentgrass cultivars",
+     "Preventive fungicide programs (beginning 2-4 weeks before symptoms appear) using penetrant fungicides or penetrant/contact combinations at label rates; preventive applications are more effective than curative",
+     "For basal rot, apply and water in a systemic fungicide to reach the crown, followed by a separate protectant application",
+     "Avoid Group 3 fungicides (DMIs) during the summer stress period to avoid growth regulator effects",
+     "Alternate active ingredients / fungicide classes and mix contact with penetrant fungicides to delay resistance"
+    ],
+    "url": "https://ag.umass.edu/turf/fact-sheets/anthracnose-foliar-blight-basal-rot",
+    "quote": "Alleviate conditions that cause turf stress. Preventive applications of fungicides are recommended where the disease is a chronic problem. Fertilize with complete fertilizers, avoiding deficiencies of potassium and phosphorous."
+   },
+   "confidence": "high",
+   "num_sources": 2,
+   "conflicts": [
+    {
+     "field": "disease_name",
+     "canonical_value": "Anthracnose Foliar Blight and Basal Rot",
+     "alternative_value": "Anthracnose",
+     "alternative_source_url": "https://extension.psu.edu/turfgrass-diseases-anthracnose-causal-fungus-colletotrichum-cereale",
+     "note": "Both are university extension sources (equal authority rank). UMass uses the fuller descriptive name distinguishing the foliar blight and basal rot phases; PSU titles it simply 'Anthracnose'. Same disease and pathogen."
+    }
+   ],
+   "regional_observations": {
+    "Kentucky": {
+     "state": "Kentucky",
+     "deltas": [
+      {
+       "field": "affected_organs",
+       "canonical_says": "The most reliable diagnostic features are the dark/black coloration at the base of the plant (crowns, roots, and lower stem bases)",
+       "image_shows": "The image displays creeping bentgrass roots showing visible rot, confirming root/basal involvement beyond foliar blight.",
+       "image_quote": "The image shows root structures with visible signs of rot.",
+       "image_id": "bugwood::5368457",
+       "verification_status": "verified",
+       "reasoning": "Multiple high-quality sources (APS, Wikipedia) confirm C. cereale causes a rot of crowns, stolons, and roots, corroborating visible root rot.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://en.wikipedia.org/wiki/Colletotrichum_cereale",
+         "quote": "Colletotrichum cereale is a plant disease (fungus) that has been found to cause crown rot anthracnose of turf grass most commonly occurring on golf courses (NC State 2012).",
+         "_repaired_from": {
+          "prev_url": "https://en.wikipedia.org/wiki/Colletotrichum_cereale",
+          "prev_quote": "Anthracnose is a foliar and crown/root rotting disease of golf course turf, caused by the fungus Colletotrichum cereale."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "yellowing to reddish brown discoloration of leaves ... a water-soaked black rot of the crown tissue",
+       "image_shows": "The affected tissue is dominated by olive-green and light brown coloration rather than the canonical yellow-to-reddish-brown.",
+       "image_quote": "The affected tissue shows predominantly pale-straw and olive-green colors with a high concentration of water droplets.",
+       "image_id": "bugwood::5368457",
+       "verification_status": "field_observation",
+       "reasoning": "Published extension photos confirm anthracnose foliage fades to a pale tan/straw and appears water-soaked, partially corroborating the pale-straw and water-droplet observation, though olive-green is not a documented color.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "weakly_supported"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5368457",
+      "bugwood::5368458",
+      "bugwood::5368459",
+      "bugwood::5368460",
+      "bugwood::5368477",
+      "bugwood::5368478",
+      "bugwood::5368479",
+      "bugwood::5368480",
+      "bugwood::5368787",
+      "bugwood::5368788",
+      "bugwood::5368957",
+      "bugwood::5368958",
+      "bugwood::5368959"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       4
+      ],
+      "detected_organ_per_pass": [
+       "root"
+      ],
+      "n_active_agents_per_pass": [
+       5
+      ],
+      "n_after_agreement": 4,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 1,
+       "n_provisional": 2,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 3,
+       "n_added": 3,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 0,
+      "contradictory_count": 1,
+      "duplicates_count": 0,
+      "dropped_contradictory": [
+       {
+        "field": "severity",
+        "canonical_says": "scattered plants or small patches to turn yellow and die, with a water-soaked black rot of the crown tissue",
+        "image_shows": "Affected crown tissue in the photo appears pale-straw and olive-green rather than the canonical black water-soaked rot.",
+        "image_quote": "The affected tissue shows predominantly pale-straw and olive-green colors with a high concentration of water droplets.",
+        "image_id": "bugwood::5368457",
+        "verification_status": "contradictory",
+        "reasoning": "Multiple extension factsheets uniformly describe the diagnostic crown/basal appearance of anthracnose as a dark/black water-soaked rot, contradicting the claim that the affected crown tissue is pale-straw and olive-green.",
+        "swarm_support": 1,
+        "web_support": [
+         {
+          "url": "https://extension.missouri.edu/publications/ipm1029/3",
+          "quote": "Crowns, old stems and roots of bentgrass or annual bluegrass appear black due to the presence of mycelial mats and other fungal structures in this tissue; close examination of the infected stem base reveals a water-soaked black rot of the crown tissue."
+         },
+         {
+          "url": "https://ag.umass.edu/turf/fact-sheets/anthracnose-foliar-blight-basal-rot",
+          "quote": "Close examination of the infected stem base reveals a water-soaked black rot of the crown tissue.",
+          "_repaired_from": {
+           "prev_url": "https://ag.umass.edu/turf/fact-sheets/anthracnose-foliar-blight-basal-rot",
+           "prev_quote": "In the case of basal rot, the leaf sheaths, crowns, and stolons will be dark and rotten."
+          }
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Dollar Spot",
+   "pathogen_scientific_name": {
+    "value": "Clarireedia jacksonii",
+    "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
+    "quote": "caused by the fungus Clarireedia jacksonii",
+    "taxonomy_validated": false,
+    "ncbi_url": "",
+    "mycobank_url": ""
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
+    "quote": "caused by the fungus Clarireedia jacksonii"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar"
+    ],
+    "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
+    "quote": "Dollar spot is a foliar disease of golf courses, athletic fields, home lawns, parks, and institutional grounds"
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Small, roughly circular bleached/white-to-tan patches of dead turf, silver-dollar sized on closely mowed greens and 1-5 inches (occasionally exceeding 6 inches) on fairways, athletic fields, and lawns; numerous spots may coalesce into large, irregular dead areas.",
+     "url": "https://pnwhandbooks.org/plantdisease/host-disease/lawn-turf-dollar-spot",
+     "quote": "Small, roughly circular, bleached patches develop in the turf. Spots are generally a few inches in diameter but can exceed 6 inches when conditions are favorable. Numerous spots may occur and coalesce into large, irregular dead areas. Leaves develop light yellow to tan lesions with reddish-brown borders or lines."
+    },
+    "diagnostic_features": {
+     "value": "On individual leaves, initial symptoms appear as yellow-green blotches that progress to tan-colored lesions with reddish-brown borders; lesions occur near the middle of the leaf and extend completely across the blade, often with a classic 'hourglass' shape. White mycelia can be observed on diseased leaves in early morning following rainy/dewy periods.",
+     "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
+     "quote": "On individual leaves, initial symptoms appear as yellow-green blotches, which progress to a tan-colored lesion with reddish-brown borders."
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
+    }
+   },
+   "treatments": {
+    "value": [
+     "Late spring nitrogen fertilizer applications to minimize dollar spot severity; maintain adequate nitrogen in a balanced nutritional program",
+     "On athletic fields and lawns use slow-release nitrogen; on golf courses quick-release nitrogen can be applied in liquid form at low rates frequently",
+     "Avoid light, frequent waterings; irrigate to apply more water less frequently and wet the entire rootzone",
+     "Water in the morning so turf dries before night",
+     "Remove dew and guttation fluid from foliage (dragging fairways with weighted hoses, dew whips, rollers, or early-morning mowing)",
+     "Daily/lightweight rolling of putting greens, particularly coupled with increased mowing height, to reduce dollar spot activity",
+     "Collect and remove plant debris",
+     "Use resistant cultivars (e.g., creeping bentgrass: Proclamation, Declaration, 007, Barracuda, Luminary, Pin-Up, V8, Memorial, Benchmark DSR)",
+     "Focus on cultural control tactics first; implement a broad-based cultural program to reduce the number of fungicide applications",
+     "Apply fungicides on irrigated turf with persistent dollar spot; early-season applications just before symptoms appear reduce later outbreaks",
+     "Alternate modes of action / tank-mix fungicides from different groups, mix contact and penetrant fungicides, or use only contact fungicides; limit use of any one group",
+     "Specific products (PNW): Group 3 (BioAdvanced Fungus Control, Bonide Infuse, Densicor, Eagle 20 EW, propiconazole products such as Banner MAXX/PropiMax EC), Group 2 (Chipco 26019 FLO), Group M5 (Daconil Weather Stik), Group M3 (Mancozeb - Fore, Manzate, Protect DF), Group 11 (Disarm 480 SC, Fame SC), Group 7 (Emerald, Velista), plus combination fungicides (Armada 50 WDG, Briskway, Concert, Encartis, Exteris Stressgard, Headway, Honor, Interface, Lexicon, Navicon, Pillar G, Premion, Renown, Tartan Stressgard)"
+    ],
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/lawn-turf-dollar-spot",
+    "quote": "Cultural control Fertilize with adequate nitrogen in a balanced nutritional program. ... Avoid light, frequent waterings. ... Water in morning so turf will dry before night. ... Use resistant cultivars. Chemical control Focus on cultural control tactics first. ... Alternate or tank-mix fungicides from different groups that have different modes of action."
+   },
+   "confidence": "high",
+   "num_sources": 2,
+   "conflicts": [
+    {
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Clarireedia jacksonii",
+     "alternative_value": "Clarireedia monteithiana",
+     "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/lawn-turf-dollar-spot",
+     "note": "Not a true disagreement: C. jacksonii is the causal agent on cool-season turfgrass; PNW notes C. monteithiana causes dollar spot on warm-season turfgrass in the USA. Canonical reflects the cool-season turf context shared by both sources."
+    }
+   ],
+   "regional_observations": {
+    "Kentucky": {
+     "state": "Kentucky",
+     "deltas": [
+      {
+       "field": "affected_organs",
+       "canonical_says": "Foliar",
+       "image_shows": "No crown or collar rot is visible, consistent with dollar spot being confined to leaf tissue rather than crowns or roots.",
+       "image_quote": "No visual evidence of rot, girdling, sunken collar canker, white mycelium, or mustard-seed-shaped sclerotia at the soil line.",
+       "image_id": "bugwood::5369033",
+       "verification_status": "verified",
+       "reasoning": "Extension and reference sources confirm dollar spot is foliar and does not cause crown/collar rot, corroborating the absence of crown signs.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://en.wikipedia.org/wiki/Dollar_spot",
+         "quote": "The pathogen blights leaf tissues but does not affect turf grass roots or crowns."
+        },
+        {
+         "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
+         "quote": "Dollar spot is a foliar disease of golf courses, athletic fields, home lawns, parks, and institutional grounds, caused by the fungus Clarireedia jacksonii.",
+         "_repaired_from": {
+          "prev_url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
+          "prev_quote": "Dollar spot is caused by Clarireedia jacksonii and produces bleached foliar lesions; crowns and roots are not directly attacked."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "White mycelia can be observed on diseased leaves in early morning following rainy/dewy periods.",
+       "image_shows": "No spore masses, pycnidia, fruiting bodies, or sclerotia are visible, consistent with Clarireedia not producing spores.",
+       "image_quote": "The image shows circular patches of green turf, consistent with Dollar Spot. However, there is no visible mycelium, spore masses, pycnidia, fruiting bodies, sclerotia, or bacterial ooze, supporting the peer Blackboard findings.",
+       "image_id": "bugwood::5369033",
+       "verification_status": "verified",
+       "reasoning": "Multiple sources confirm Clarireedia produces no spores/fruiting bodies and mycelium is only visible under dew, so the absence of spore masses and fruiting structures is expected and corroborated.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
+         "quote": "The fungus does not produce spores; dissemination relies on movement of mycelium or infected leaf debris."
+        }
+       ],
+       "__support__": 1,
+       "_pruned_urls": [
+        "https://www.earthmicrobial.com/blogs/golf/pathogen-profile-clarireedia-spp"
+       ]
+      },
+      {
+       "field": "severity",
+       "canonical_says": "numerous spots may coalesce into large, irregular dead areas",
+       "image_shows": "Circular grass-covered features appear without clearly visible disease signs, suggesting low or subclinical severity in this photo.",
+       "image_quote": "The image displays circular, grass-covered objects without visible signs of disease.",
+       "image_id": "bugwood::5369033",
+       "verification_status": "field_observation",
+       "reasoning": "Published factsheets describe dollar spot's bleached patches and hourglass leaf lesions but cannot corroborate a specific photo showing low/subclinical severity; the observation is plausible and not contradicted by canonical severity descriptions.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5369033",
+      "bugwood::5369034",
+      "bugwood::5369035",
+      "bugwood::5369036",
+      "bugwood::5369037",
+      "bugwood::5369038",
+      "bugwood::5369039"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "medium"
+      ],
+      "n_raw_per_pass": [
+       4
+      ],
+      "detected_organ_per_pass": [
+       "crown"
+      ],
+      "n_active_agents_per_pass": [
+       5
+      ],
+      "n_after_agreement": 4,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 2,
+       "n_provisional": 2,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 4,
+       "n_added": 4,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 1,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "Missouri": {
+     "state": "Missouri",
+     "deltas": [
+      {
+       "field": "look_alikes",
+       "canonical_says": "(not specified)",
+       "image_shows": "Lack of specific look-alikes makes it difficult to definitively rule out other possibilities.",
+       "image_quote": "The image displays a predominantly olive-green color with tan patches, which aligns with the typical symptoms of dollar spot disease on creeping bentgrass.",
+       "image_id": "bugwood::5516103",
+       "verification_status": "weakly_supported",
+       "reasoning": "The described tan patches on green bentgrass turf are corroborated by extension photo descriptions, but the observation offers no actual look-alike differentiation, so support is only partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.canr.msu.edu/ipm/diseases/dollar-spot",
+         "quote": "Characteristic symptoms on creeping bentgrass include small (up to 1 inch in diameter), round, tan-colored spots."
+        },
+        {
+         "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
+         "quote": "On golf course putting greens mowed at or below 1/8 inch, dollar spot usually appears as white or tan spots of dead turf about the size of a silver dollar (hence the name dollar spot).",
+         "_repaired_from": {
+          "prev_url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
+          "prev_quote": "small, circular, straw-colored, sunken spots... on closely mowed turfgrass, such as bentgrass golf greens"
+         }
+        }
+       ]
+      },
+      {
+       "field": "severity",
+       "canonical_says": "numerous spots may coalesce into large, irregular dead areas",
+       "image_shows": "Indicative of dollar spot but severity needs further assessment.",
+       "image_quote": "The image displays a predominantly olive-green color with tan patches, indicating the presence of dollar spot.",
+       "image_id": "bugwood::5516103",
+       "verification_status": "weakly_supported",
+       "reasoning": "The tan-patch appearance is corroborated by published photos, but the image does not resolve severity/coalescence, so it is only weakly supported.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.canr.msu.edu/ipm/diseases/dollar-spot",
+         "quote": "small (up to 1 inch in diameter), round, tan-colored spots. The spots often occur in clusters."
+        },
+        {
+         "url": "https://content.ces.ncsu.edu/dollar-spot-in-turf",
+         "quote": "On putting green turf, dollar spot appears as small spots, approximately the size of a dollar coin, that are bleached-white or light tan in color.",
+         "_repaired_from": {
+          "prev_url": "https://content.ces.ncsu.edu/dollar-spot-in-turf",
+          "prev_quote": "white or tan spots of dead turf about the size of a silver dollar."
+         }
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "Small, roughly circular bleached/white-to-tan patches of dead turf ... numerous spots may coalesce into large, irregular dead areas",
+       "image_shows": "Possible wilting is suggested but not strong enough for a confident diagnosis.",
+       "image_quote": "The image shows scattered lighter patches on a predominantly green surface.",
+       "image_id": "bugwood::5516103",
+       "verification_status": "weakly_supported",
+       "reasoning": "Scattered lighter (bleached/tan) patches on a green turf surface match published dollar-spot patch appearance, though the description is generic and the suggested wilting is unconfirmed, so support is only partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://content.ces.ncsu.edu/dollar-spot-in-turf",
+         "quote": "On putting green turf, dollar spot appears as small spots, approximately the size of a dollar coin, that are bleached-white or light tan in color.",
+         "_repaired_from": {
+          "prev_url": "https://content.ces.ncsu.edu/dollar-spot-in-turf",
+          "prev_quote": "On putting greens, dollar spot appears as round tan to bleached patches ... Small, roughly circular, bleached patches develop in the turf."
+         }
+        },
+        {
+         "url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
+         "quote": "On individual leaves, initial symptoms appear as yellow-green blotches, which progress to a tan-colored lesion with reddish-brown borders.",
+         "_repaired_from": {
+          "prev_url": "https://extension.psu.edu/turfgrass-diseases-dollar-spot-causal-fungus-clarireedia-jacksonii",
+          "prev_quote": "Symptoms on individual grass blades appear as bleached-out or tan lesions ... round tan to bleached patches."
+         }
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5516103",
+      "bugwood::5516104",
+      "bugwood::5516105",
+      "bugwood::5516107",
+      "bugwood::5516111",
+      "bugwood::5516112"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "medium"
+      ],
+      "n_raw_per_pass": [
+       6
+      ],
+      "detected_organ_per_pass": [
+       "whole_plant"
+      ],
+      "n_active_agents_per_pass": [
+       7
+      ],
+      "n_after_agreement": 6,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 0,
+       "n_provisional": 3,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 3,
+       "n_added": 3,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  }
+ ],
+ "crop": "Creeping Bentgrass",
+ "generated_date": "2026-06-10",
+ "regional_observations_count": 3
 }

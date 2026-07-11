@@ -1,1789 +1,1781 @@
 {
-  "diseases": [
-    {
-      "disease_name": "Dry Bean Rust",
-      "pathogen_scientific_name": {
-        "value": "Uromyces appendiculatus",
-        "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
-        "quote": "Rust is caused by the obligate fungus Uromyces appendiculatus .",
-        "taxonomy_validated": false,
-        "ncbi_url": "",
-        "mycobank_url": ""
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
-        "quote": "Rust is caused by the obligate fungus Uromyces appendiculatus ."
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Pod",
-          "Stem"
-        ],
-        "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
-        "quote": "the characteristic reddish-brown repeating (urediniospores) spore stage develops, usually on leaves. ... Green pods, and occasionally stems and branches, also may become infected and develop typical rust symptoms."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Symptoms begin as small yellow or white slightly raised spots on leaf surfaces that enlarge into reddish-brown pustules (uredinia) about 1/8 inch or smaller; pustules may be surrounded by a yellow border and release rusty spores, and severe infection causes leaves to curl, dry, turn brown, and drop prematurely.",
-          "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
-          "quote": "Symptoms initially appear as small yellow or white slightly raised spots on upper and/or lower leaf surfaces ( Figure 1 ). These spots enlarge and form reddish-brown pustules, also called uredinia, that are about 1/8 inch or smaller and contain thousands of microscopic spores called urediniospores."
-        },
-        "diagnostic_features": {
-          "value": "Rust can be distinguished from other foliar diseases because the rust-colored spores will rub off, while with other foliar diseases, nothing rubs off.",
-          "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
-          "quote": "Rust can be distinguished from other foliar diseases because the rust-colored spores will rub off ( Figure 3 ), while with other foliar diseases, nothing rubs off."
-        },
-        "look_alikes": {
-          "value": [
-            "other foliar diseases"
-          ],
-          "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
-          "quote": "Rust can be distinguished from other foliar diseases because the rust-colored spores will rub off ( Figure 3 ), while with other foliar diseases, nothing rubs off."
-        }
-      },
-      "treatments": {
-        "value": [
-          "Rotate bean with non-host crops / rotate away from any bean for two years to remove sources of inoculum.",
-          "Plow under or bury infected crop residues and bean debris right after harvest.",
-          "Eliminate volunteer bean plants.",
-          "Plant within recommended planting periods (e.g. May 15 to June 15) to reduce late-season exposure to the pathogen.",
-          "Select planting dates and schedule irrigation to avoid long periods of leaf wetness when temperatures are warm (e.g. avoid foliage staying wet at night for more than 10 hours).",
-          "Plant rust-resistant cultivars (available for many market classes including pinto, great northern, small white, red kidney, and black beans), recognizing many races of the fungus exist.",
-          "Avoid over-application of nitrogen and ensure adequate potassium fertilization.",
-          "Disinfect poles used in pole-bean production.",
-          "Scout fields frequently during late vegetative to early pod development for initial rust pustules.",
-          "Apply protectant and/or systemic fungicides such as Maneb/Manex (30-day phi), Endura, Headline, Priaxor, or Vertisan (21-day phi), Bravo/Terranil, Folicur or Quadris (14-day phi), Proline (7-day phi), or Fontelis (0-day phi); consult Cooperative Extension or the latest New England Vegetable Management Guide for current chemical recommendations."
-        ],
-        "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
-        "quote": "Cultural practices such as crop rotation and burial of bean debris will remove potential sources of inoculum. Planting within recommended periods for this region (May 15 to June 15) will reduce late season exposure to high levels of the pathogen ... treatment with a labeled fungicide such as Maneb/Manex (30-day preharvest interval = phi), Endura, Headline, Priaxor, or Vertisan (21 day phi), Bravo/Terranil, Folicur or Quadris (14 day phi), Proline (7 day phi), or Fontelis (0 day phi) should be considered at the first confirmed signs of rust"
-      },
-      "confidence": "high",
-      "num_sources": 3,
-      "conflicts": [
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Uromyces appendiculatus",
-          "alternative_value": "Uromyces phaseoli typica",
-          "alternative_source_url": "https://ipm.cahnr.uconn.edu/bean-rust/",
-          "note": "UConn names the pathogen 'Uromyces phaseoli typica', an older synonym; Nebraska Extension and UMass both use the current accepted name 'Uromyces appendiculatus'. No taxonomy validation records were supplied, so canonical was selected by source agreement (2 of 3)."
-        },
-        {
-          "field": "disease_name",
-          "canonical_value": "Bean Rust",
-          "alternative_value": "Rust of Dry Bean",
-          "alternative_source_url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
-          "note": "Nebraska titles it 'Rust of Dry Bean'; UMass and UConn use 'Bean Rust'. Same disease."
-        },
-        {
-          "field": "affected_parts",
-          "canonical_value": "Foliar, Pod, Stem",
-          "alternative_value": "Foliar only",
-          "alternative_source_url": "https://ipm.cahnr.uconn.edu/bean-rust/",
-          "note": "UConn notes rust can occur on all above-ground parts but emphasizes leaves; Nebraska and UMass explicitly document pod and stem infection."
-        }
-      ],
-      "regional_observations": {
-        "Colorado": {
-          "state": "Colorado",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "small yellow or white slightly raised spots ... that enlarge into reddish-brown pustules ... surrounded by a yellow border",
-              "image_shows": "Brownish lesions with greenish leaf margins on Colorado bean foliage, green tones still dominant.",
-              "image_quote": "The affected tissue has a mix of green and brown tones, with the green being more dominant.",
-              "image_id": "bugwood::5358987",
-              "verification_status": "weakly_supported",
-              "reasoning": "Brown lesion coloration is consistent with rust pustules, but the reported greenish margin differs from the documented yellow halo, so support is only partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.colostate.edu/resource/rust-of-dry-beans/",
-                  "quote": "spots enlarge and form reddish-brown or rust-colored pustules ... may be surrounded by a yellow border"
-                },
-                {
-                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/bean-rust",
-                  "quote": "circular, reddish-brown spots on the underside of leaves that readily identify the disease"
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5358987",
-            "bugwood::5361310",
-            "bugwood::5363578",
-            "bugwood::5363967"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              5
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 5,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 1,
-              "n_provisional": 0,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 1,
-              "n_added": 1,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        },
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "small yellow or white slightly raised spots ... enlarge into reddish-brown pustules (uredinia)",
-              "image_shows": "Lesions appear raised with a rough, granular texture, consistent with erupting rust pustules.",
-              "image_quote": "The lesions display a rough, granular texture.",
-              "image_id": "bugwood::5458625",
-              "verification_status": "verified",
-              "reasoning": "Multiple extension sources describe rust uredinia as slightly raised, powdery pustules that rupture the epidermis, matching the observed rough, granular, raised texture.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/bean_phaseolus_rust_217.htm",
-                  "quote": "Symptoms develop on leaves and pods as pustules of red-brown powdery spores (urediniospores) which rupture the epidermis."
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/bean-rust",
-                  "quote": "small yellow or white slightly raised spots ... enlarge and become more raised to form 1/8 in diameter rust-colored pustules (uredinia)."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "reddish-brown pustules (uredinia) ... release rusty spores",
-              "image_shows": "Dark brown pustules are present on the leaf surface with surrounding lighter green tissue, consistent with maturing/telial-stage rust pustules.",
-              "image_quote": "The photo shows dark brown pustules on the leaf surface.",
-              "image_id": "bugwood::5458625",
-              "verification_status": "weakly_supported",
-              "reasoning": "Reddish-brown uredinia darken to brown/black telial pustules as they mature, so dark brown pustules are consistent with a late-stage bean rust lesion rather than the initial rust color.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/bean-rust",
-                  "quote": "Near the end of the season, pustules undergo a subtle change and form telia containing brownish-black winter spores (teliospores)."
-                },
-                {
-                  "url": "https://cropwatch.unl.edu/plant-disease/dry-bean/rust/",
-                  "quote": "pustules can be surrounded by a halo of yellow chlorotic tissue and may turn darker."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "pustules may be surrounded by a yellow border",
-              "image_shows": "Dark brown lesions are ringed by a light brown to cream-colored margin with a faint chlorotic yellow halo.",
-              "image_quote": "The lesions have a dark brown center with a light brown to cream-colored margin and a faint, chlorotic yellow halo.",
-              "image_id": "bugwood::5458625",
-              "verification_status": "verified",
-              "reasoning": "The observed chlorotic yellow halo around darkened pustules is directly corroborated by extension descriptions of bean rust pustules surrounded by a yellow chlorotic halo.",
-              "swarm_support": 2,
-              "web_support": [
-                {
-                  "url": "https://cropwatch.unl.edu/plant-disease/dry-bean/rust/",
-                  "quote": "Pustules may be surrounded by a halo of yellow chlorotic tissue and may turn darker."
-                },
-                {
-                  "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/bean_phaseolus_rust_217.htm",
-                  "quote": "Circular pustules, 1-2 mm diameter, are light green with distinctive yellow haloes on the top surface."
-                }
-              ],
-              "__support__": 2
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "small yellow or white slightly raised spots ... about 1/8 inch or smaller",
-              "image_shows": "Lesions are small and isolated, scattered across the leaf without a clearly resolvable shape.",
-              "image_quote": "The lesions are scattered across the leaf surface without any particular shape constraint.",
-              "image_id": "bugwood::5458625",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension sources corroborate small, isolated, scattered pustules, though they describe them as circular rather than shapeless, so the shape-neutral phrasing is only partially supported.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://apps.lucidcentral.org/pppw_v10/text/web_full/entities/bean_phaseolus_rust_217.htm",
-                  "quote": "Circular pustules, 1-2 mm diameter ... are scattered over both sides of the leaves, and on the pods."
-                },
-                {
-                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/bean-rust",
-                  "quote": "The pustules take on a reddish-brown color and are scattered irregularly."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5458625",
-            "bugwood::5458626",
-            "bugwood::5458627",
-            "bugwood::5458628",
-            "bugwood::5458629",
-            "bugwood::5458630",
-            "bugwood::5458631",
-            "bugwood::5458632",
-            "bugwood::5458633"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              7
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 7,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 4,
-              "n_provisional": 1,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 5,
-              "n_added": 4,
-              "n_overlaps_bumped": 1,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "New Jersey": {
-          "state": "New Jersey",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "small yellow or white slightly raised spots ... that enlarge into reddish-brown pustules (uredinia) about 1/8 inch or smaller",
-              "image_shows": "Pustules are scattered randomly across the leaf blade rather than being delimited by veins.",
-              "image_quote": "The lesions are scattered across the leaf surface without following specific patterns like venation.",
-              "image_id": "bugwood::1573882",
-              "verification_status": "weakly_supported",
-              "reasoning": "Random, non-vein-delimited scattering is consistent with rust pustules (unlike vein-bound angular leaf spot), though rust pustules are typically circular rather than 'irregular', so support is partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/bean-rust",
-                  "quote": "Symptoms initially appear as small yellow or white slightly raised spots ... which then enlarge and form reddish-brown pustules"
-                },
-                {
-                  "url": "https://plantix.net/en/library/plant-diseases/100032/bean-rust/",
-                  "quote": "First symptoms develop as minute brown to yellow pustules which rupture the epidermis of older leaves, mainly on the underside."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "small yellow or white slightly raised spots ... that enlarge into reddish-brown pustules",
-              "image_shows": "Lesions appear raised with a rough, erumpent surface texture.",
-              "image_quote": "The lesions appear raised and have a rough surface texture.",
-              "image_id": "bugwood::1573882",
-              "verification_status": "verified",
-              "reasoning": "Raised, rough (erumpent, spore-bearing) pustules are the defining texture of rust and are directly corroborated by multiple extension/reference sources.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://gardenerspath.com/plants/vegetables/bean-diseases/",
-                  "quote": "The circular, raised texture and chlorotic halo are defining characteristics of bean rust."
-                },
-                {
-                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/bean-rust",
-                  "quote": "produces raised, reddish-brown pustules surrounded by yellow halos on leaves and pods"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "severe infection causes leaves to curl, dry, turn brown, and drop prematurely",
-              "image_shows": "Brown to black necrotic tissue is present where infection is advanced.",
-              "image_quote": "Areas of brownish discoloration and tissue damage are present on the leaves.",
-              "image_id": "bugwood::1573882",
-              "verification_status": "weakly_supported",
-              "reasoning": "Browning/necrosis of tissue is documented for severe rust infection (drying and browning), though 'black' necrosis is at the darker edge of what sources describe.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.colostate.edu/resource/rust-of-dry-beans/",
-                  "quote": "Severe infection may cause leaves to curl upwards, dry up, turn brown and drop prematurely."
-                },
-                {
-                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/bean-rust",
-                  "quote": "Leaves may become chlorotic and dry, and may fall off earlier."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "severe infection causes leaves to curl, dry, turn brown, and drop prematurely",
-              "image_shows": "Affected leaves curl upward toward the leaf axis under heavy infection.",
-              "image_quote": "Leaves show curling up towards the leaf axis.",
-              "image_id": "bugwood::1573882",
-              "verification_status": "verified",
-              "reasoning": "Upward leaf curling is an explicitly documented sign of severe bean rust and matches the canonical description directly.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.colostate.edu/resource/rust-of-dry-beans/",
-                  "quote": "Severe infection may cause leaves to curl upwards, dry up, turn brown and drop prematurely."
-                },
-                {
-                  "url": "https://ipm.cahnr.uconn.edu/bean-rust/",
-                  "quote": "Severe infection may cause leaves to curl upwards, dry up, turn brown and drop prematurely."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "severe infection causes leaves to curl, dry, turn brown, and drop prematurely",
-              "image_shows": "Chlorosis and pustular lesions are widespread across multiple leaves in the field.",
-              "image_quote": "The photo shows widespread leaf chlorosis and lesions on the common bean plants.",
-              "image_id": "bugwood::1573882",
-              "verification_status": "weakly_supported",
-              "reasoning": "Widespread chlorosis and numerous lesions are consistent with a high-severity rust infection as described by extension sources.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
-                  "quote": "Sometimes the pustules may be so numerous that the whole leaf collapses, turning yellow, drying out, and dropping prematurely."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The bean leaflets are ovate, broadest near the middle and tapering toward the tips.",
-              "image_quote": "The leaves are broadest near the middle, tapering toward the tips.",
-              "image_id": "bugwood::1573882",
-              "verification_status": "weakly_supported",
-              "reasoning": "Botanical sources confirm common bean leaflets are ovate (broadest near middle) with an acuminate tapering apex, corroborating the host leaf-shape observation, though this describes plant morphology rather than a rust symptom.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://plants.ces.ncsu.edu/plants/phaseolus-vulgaris/",
-                  "quote": "Each leaf is composed of 3 ovate (2 dimensional egg-shaped) leaflets, up to 20 cm x 15 cm in size."
-                },
-                {
-                  "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:514191-1/general-information",
-                  "quote": "Leaflets broadly ovate or obovate-rhombic, base rounded or broadly cuneate, apex acuminate."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::1573882",
-            "bugwood::1573883",
-            "bugwood::1573884",
-            "bugwood::1573941",
-            "bugwood::1573942"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 5,
-              "n_provisional": 1,
-              "n_contradictory": 4,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 6,
-              "n_added": 6,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+ "diseases": [
+  {
+   "disease_name": "Dry Bean Rust",
+   "pathogen_scientific_name": {
+    "value": "Uromyces appendiculatus",
+    "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
+    "quote": "Rust is caused by the obligate fungus Uromyces appendiculatus .",
+    "taxonomy_validated": false,
+    "ncbi_url": "",
+    "mycobank_url": ""
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
+    "quote": "Rust is caused by the obligate fungus Uromyces appendiculatus ."
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Pod",
+     "Stem"
+    ],
+    "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
+    "quote": "the characteristic reddish-brown repeating (urediniospores) spore stage develops, usually on leaves. ... Green pods, and occasionally stems and branches, also may become infected and develop typical rust symptoms."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Symptoms begin as small yellow or white slightly raised spots on leaf surfaces that enlarge into reddish-brown pustules (uredinia) about 1/8 inch or smaller; pustules may be surrounded by a yellow border and release rusty spores, and severe infection causes leaves to curl, dry, turn brown, and drop prematurely.",
+     "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
+     "quote": "Symptoms initially appear as small yellow or white slightly raised spots on upper and/or lower leaf surfaces ( Figure 1 ). These spots enlarge and form reddish-brown pustules, also called uredinia, that are about 1/8 inch or smaller and contain thousands of microscopic spores called urediniospores."
     },
-    {
-      "disease_name": "Common Bacterial  Blight Of Beans, Fuscous Blight",
-      "pathogen_scientific_name": {
-        "value": "Xanthomonas campestris pv. phaseoli",
-        "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
-        "quote": "common bacterial blight ( Xanthomonas campestris  pv.  phaseoli )",
-        "taxonomy_validated": false,
-        "ncbi_url": "",
-        "mycobank_url": ""
-      },
-      "type_of_disease": {
-        "value": "Bacterial",
-        "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
-        "quote": "There are three major bacterial diseases of common beans"
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Pod",
-          "Seed",
-          "Whole plant"
-        ],
-        "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
-        "quote": "Common bacterial blight affects bean foliage, pods, and seedlings."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Early foliar symptoms are small, angular, light green, water-soaked or translucent spots that enlarge and merge, with centers becoming dry and brown surrounded by a narrow zone of yellow tissue; pods develop circular, slightly sunken, dark red-brown lesions.",
-          "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
-          "quote": "Early foliar symptoms are small, angular, light green, water-soaked or translucent spots. During warm and wet conditions, these lesions rapidly enlarge and merge. Gradually, the centers of the lesions become dry and brown, and are surrounded by a distinct, narrow zone of yellow tissue."
-        },
-        "diagnostic_features": {
-          "value": "Lesion centers become dry and brown, surrounded by a distinct, narrow zone of yellow tissue; in highly susceptible varieties leaves appear scorched, ragged, and torn; pod lesions are generally circular, slightly sunken, and dark red-brown.",
-          "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
-          "quote": "the centers of the lesions become dry and brown, and are surrounded by a distinct, narrow zone of yellow tissue. In highly susceptible varieties, the lesions continue to expand until the leaves appear scorched, ragged, and torn by wind and rain. Pod symptoms consist of lesions that are generally circular, slightly sunken, and dark red-brown."
-        },
-        "look_alikes": {
-          "value": [
-            "halo blight",
-            "bacterial brown spot"
-          ],
-          "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
-          "quote": "Because chemical control is often less effective against common bacterial blight compared to halo blight and bacterial brown spot, accurate disease diagnosis is important."
-        }
-      },
-      "treatments": {
-        "value": [
-          "Crop rotation and clean tillage (for example, plowing) help reduce the risk of disease by reducing the amount of inoculum in the immediate area.",
-          "Plant only certified, pathogen-free seed from reputable suppliers and produced in semiarid regions.",
-          "Do not enter fields to cultivate or handle plants wet with dew or rain.",
-          "Equipment should be sanitized by spraying with a disinfectant before moving from an infected to a blight-free field.",
-          "Sprays provide good control of bacterial brown spot and halo blight but only moderate control of common blight."
-        ],
-        "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
-        "quote": "Crop rotation and clean tillage (for example, plowing) help reduce the risk of disease by reducing the amount of inoculum in the immediate area. However, plowing may increase soil loss through erosion. Plant only certified, pathogen-free seed from reputable suppliers and produced in semiarid regions. Do not enter fields to cultivate or handle plants wet with dew or rain. Equipment should be sanitized by spraying with a disinfectant before moving from an infected to a blight-free field. Sprays provide good control of bacterial brown spot and halo blight but only moderate control of common blight."
-      },
-      "confidence": "medium",
-      "num_sources": 1,
-      "conflicts": [],
-      "regional_observations": {
-        "Colorado": {
-          "state": "Colorado",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "small, angular, light green, water-soaked or translucent spots",
-              "image_shows": "Colorado leaf lesions are angular and vein-limited (interveinal/vein-bounded).",
-              "image_quote": "The lesions appear angular and vein-limited.",
-              "image_id": "bugwood::5359903",
-              "verification_status": "verified",
-              "reasoning": "Multiple extension sources confirm CBB leaf lesions are angular and develop in interveinal/vein-bounded areas, directly corroborating the angular, vein-limited observation.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.colostate.edu/resource/bacterial-diseases-of-beans/",
-                  "quote": "Early foliar symptoms are small, angular, light green, water-soaked or translucent spots... The spots or lesions develop on the edges or interveinal areas of leaves."
-                },
-                {
-                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/bacterial-diseases-of-beans/",
-                  "quote": "Leaf lesions initially appear as small, angular, light green, water-soaked spots."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "centers becoming dry and brown surrounded by a narrow zone of yellow tissue",
-              "image_shows": "Lesions show tan centers with chocolate-brown margins.",
-              "image_quote": "The lesion centers are tan and the margins are chocolate-brown.",
-              "image_id": "bugwood::5359903",
-              "verification_status": "weakly_supported",
-              "reasoning": "Tan/brown lesion coloration is consistent with CBB necrotic tissue, but sources describe the diagnostic margin as yellow (not chocolate-brown), so support is only partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropwatch.unl.edu/plant-disease/dry-bean/bacterial-blight/",
-                  "quote": "lesions... becoming dried and brown, with a narrow, bright lemon-yellow border of tissue encircling the lesion."
-                },
-                {
-                  "url": "https://edis.ifas.ufl.edu/publication/PP107",
-                  "quote": "the centers of the lesions become dry and brown, and are surrounded by a distinct, narrow zone of yellow tissue."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "surrounded by a narrow zone of yellow tissue",
-              "image_shows": "Chlorosis/yellowing is evident around necrotic leaf tissue in the field.",
-              "image_quote": "Leaf necrosis is evident in the field.",
-              "image_id": "bugwood::5359903",
-              "verification_status": "weakly_supported",
-              "reasoning": "A narrow chlorotic (yellow) zone bordering lesions is a documented CBB feature, giving indirect support, though the candidate's quote actually references necrosis rather than chlorosis.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://edis.ifas.ufl.edu/publication/PP107",
-                  "quote": "surrounded by a distinct, narrow zone of yellow tissue."
-                },
-                {
-                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/bacterial-diseases-of-beans/",
-                  "quote": "a narrow yellow border surrounding lesions."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Lesion centers become dry and brown, surrounded by a distinct, narrow zone of yellow tissue",
-              "image_shows": "Leaf veins appear necrotic with dark, dead tissue.",
-              "image_quote": "Leaf veins appear to be necrotic, showing dark and dead tissue.",
-              "image_id": "bugwood::5359903",
-              "verification_status": "weakly_supported",
-              "reasoning": "Peer-reviewed literature documents reddish-brown/necrotic vein discoloration in systemic CBB infections, supporting the necrotic-vein observation.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8578827/",
-                  "quote": "In systemic infections, a reddish-brown discoloration of the veins with a water-soaking of adjoining interveinal areas may be observed."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "centers becoming dry and brown surrounded by a narrow zone of yellow tissue",
-              "image_shows": "Overall palette is tan lesion centers with olive-green surrounding tissue.",
-              "image_quote": "The affected tissue has tan lesion centers with olive-green surrounding tissue.",
-              "image_id": "bugwood::5359903",
-              "verification_status": "weakly_supported",
-              "reasoning": "Tan lesion centers match CBB necrosis and the surrounding yellow-green tissue is consistent with the documented chlorotic margin, but 'olive-green' is only an approximate match to the described yellow zone.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.colostate.edu/resource/bacterial-diseases-of-beans/",
-                  "quote": "the centers of the lesions become dry and brown, and are surrounded by a distinct, narrow zone of yellow tissue."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "halo blight; bacterial brown spot",
-              "image_shows": "Lesions show no concentric ring patterns, arguing against fungal look-alikes.",
-              "image_quote": "No concentric patterns are visible in the lesions.",
-              "image_id": "bugwood::5359903",
-              "verification_status": "verified",
-              "reasoning": "Reference explicitly states CBB lesions lack concentric rings, directly corroborating the absence of concentric patterns as a distinguishing feature.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://drybeanagronomy.ca/bacterial-blights-common-bacterial-blight-cbb-halo-blight-and-bacterial-brown-spot-bbs/",
-                  "quote": "the necrotic spots do not remain particularly small, and lesions lack concentric rings."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "leaves appear scorched, ragged, and torn",
-              "image_shows": "The field shows extensive browning and necrosis across bean plants.",
-              "image_quote": "The field shows extensive browning and necrosis of the bean plants.",
-              "image_id": "bugwood::5359903",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extensive coalescing browning/necrosis and a burnt field appearance is a documented severe-CBB outcome, supporting the observed field-level severity in Colorado.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8578827/",
-                  "quote": "These spots may merge, giving the leaf a burnt appearance, resulting in the most severe cases in plant defoliation and death."
-                },
-                {
-                  "url": "https://extension.colostate.edu/resource/bacterial-diseases-of-beans/",
-                  "quote": "one of the most common foliar, bacterial diseases of beans in Colorado."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "in highly susceptible varieties leaves appear scorched, ragged, and torn",
-              "image_shows": "Lower leaves show signs of leaf curling.",
-              "image_quote": "The leaves in the image exhibit signs of leaf curling, particularly on the lower leaves.",
-              "image_id": "bugwood::5359903",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension photo descriptions note the necrotic leaf tissue becomes dry, brittle, scorched, ragged and torn, which indirectly supports drying-induced leaf curling/distortion on older lower leaves, though 'curling' is not named as a distinct symptom.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropwatch.unl.edu/plantdisease/drybean/common-blight",
-                  "quote": "The first symptoms of common bacterial blight are small water-soaked spots on the underside of leaves that enlarge and coalesce becoming brown, dry, and brittle."
-                },
-                {
-                  "url": "https://extension.colostate.edu/resource/bacterial-diseases-of-beans/",
-                  "quote": "In highly susceptible varieties, the lesions continue to expand until the leaves appear scorched, ragged, and torn by wind and rain."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5359903",
-            "bugwood::5359904",
-            "bugwood::5359905",
-            "bugwood::5359908",
-            "bugwood::5359911",
-            "bugwood::5359912",
-            "bugwood::5359913",
-            "bugwood::5359914",
-            "bugwood::5359916",
-            "bugwood::5359917",
-            "bugwood::5359918",
-            "bugwood::5359919",
-            "bugwood::5359920",
-            "bugwood::5359921",
-            "bugwood::5359922",
-            "bugwood::5359923",
-            "bugwood::5359924",
-            "bugwood::5359925",
-            "bugwood::5359926",
-            "bugwood::5359927",
-            "bugwood::5359928",
-            "bugwood::5359929",
-            "bugwood::5359930",
-            "bugwood::5359931",
-            "bugwood::5359932",
-            "bugwood::5359933",
-            "bugwood::5359934",
-            "bugwood::5359935",
-            "bugwood::5359936",
-            "bugwood::5359937",
-            "bugwood::5359938",
-            "bugwood::5359939",
-            "bugwood::5359940",
-            "bugwood::5359941",
-            "bugwood::5359942",
-            "bugwood::5359943",
-            "bugwood::5359944",
-            "bugwood::5359945",
-            "bugwood::5359946",
-            "bugwood::5359947"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 7,
-              "n_provisional": 1,
-              "n_contradictory": 2,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 8,
-              "n_added": 8,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+    "diagnostic_features": {
+     "value": "Rust can be distinguished from other foliar diseases because the rust-colored spores will rub off, while with other foliar diseases, nothing rubs off.",
+     "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
+     "quote": "Rust can be distinguished from other foliar diseases because the rust-colored spores will rub off ( Figure 3 ), while with other foliar diseases, nothing rubs off."
     },
-    {
-      "disease_name": "Halo Blight",
-      "pathogen_scientific_name": {
-        "value": "Pseudomonas syringae pv. phaseolicola",
-        "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
-        "quote": "halo blight ( Pseudomonas syringae  pv.  phaseolicola )",
-        "taxonomy_validated": false,
-        "ncbi_url": "",
-        "mycobank_url": ""
-      },
-      "type_of_disease": {
-        "value": "Bacterial",
-        "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
-        "quote": "There are three major bacterial diseases of common beans"
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Pod",
-          "Seed",
-          "Whole plant"
-        ],
-        "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
-        "quote": "Halo blight affects bean foliage, pods, and seedlings."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Leaf symptoms appear as water-soaked spots on the lower surface with a zone of yellow-green tissue (halo) around infection points; severe infection causes generalized systemic chlorosis, and pods show red or brown water-soaked lesions.",
-          "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
-          "quote": "Leaf symptoms appear as water-soaked spots on the lower surface. A zone of yellow-green tissue (halo) appears around the infection points. Infection foci generally remain small. In cases of severe leaf infection, plants develop generalized systemic chlorosis."
-        },
-        "diagnostic_features": {
-          "value": "A zone of yellow-green tissue (halo) around small infection foci, and generalized systemic chlorosis particularly pronounced at 64-73 F (favorable for phaseolotoxin production); mature pod lesions may remain green and exhibit crusty bacterial ooze.",
-          "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
-          "quote": "The systemic chlorosis is particularly pronounced at 64-73?F, temperatures that are favorable for production of the non-host-specific phaseolotoxin. ... As pods mature, and turn yellow, pod lesions may remain green and may exhibit crusty bacterial ooze on the surface."
-        },
-        "look_alikes": {
-          "value": [
-            "common bacterial blight",
-            "bacterial brown spot"
-          ],
-          "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
-          "quote": "Because chemical control is often less effective against common bacterial blight compared to halo blight and bacterial brown spot, accurate disease diagnosis is important."
-        }
-      },
-      "treatments": {
-        "value": [
-          "Crop rotation and clean tillage (for example, plowing) help reduce the risk of disease by reducing the amount of inoculum in the immediate area.",
-          "Plant only certified, pathogen-free seed from reputable suppliers and produced in semiarid regions.",
-          "Do not enter fields to cultivate or handle plants wet with dew or rain.",
-          "Equipment should be sanitized by spraying with a disinfectant before moving from an infected to a blight-free field.",
-          "Sprays provide good control of bacterial brown spot and halo blight but only moderate control of common blight."
-        ],
-        "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
-        "quote": "Crop rotation and clean tillage (for example, plowing) help reduce the risk of disease by reducing the amount of inoculum in the immediate area. ... Plant only certified, pathogen-free seed from reputable suppliers and produced in semiarid regions. Do not enter fields to cultivate or handle plants wet with dew or rain. Equipment should be sanitized by spraying with a disinfectant before moving from an infected to a blight-free field. Sprays provide good control of bacterial brown spot and halo blight but only moderate control of common blight."
-      },
-      "confidence": "medium",
-      "num_sources": 1,
-      "conflicts": [],
-      "regional_observations": {
-        "Colorado": {
-          "state": "Colorado",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "the lesions quickly turn necrotic",
-              "image_shows": "Necrotic tissue is observed on the leaves, appearing as dead brown tissue.",
-              "image_quote": "Dead brown tissue is seen on the leaf margin.",
-              "image_id": "bugwood::5444716",
-              "verification_status": "verified",
-              "reasoning": "Multiple extension sources confirm halo-blight leaf lesions rapidly become necrotic dead brown tissue, especially under Colorado's arid conditions.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropwatch.unl.edu/plant-disease/dry-bean/halo-blight/",
-                  "quote": "Under arid conditions, this infected tissue dies and turns tan-colored and necrotic, and a broad yellow to green halo surrounds the lesion."
-                },
-                {
-                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/bacterial-diseases-of-beans/",
-                  "quote": "These lesions rapidly become necrotic and are visible on both upper and lower leaf surfaces."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaves have a curled appearance with some leaves showing inward curling.",
-              "image_quote": "Some leaves show inward curling.",
-              "image_id": "bugwood::5444716",
-              "verification_status": "verified",
-              "reasoning": "Extension factsheets document leaf distortion and curving/curling of systemically infected leaflets as a recognized halo-blight symptom.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://ag.umass.edu/vegetable/fact-sheets/bean-halo-blight",
-                  "quote": "Infection of expanding leaves may result in leaf distortion."
-                },
-                {
-                  "url": "https://extension.colostate.edu/topic-areas/agriculture/bacterial-diseases-of-beans-2-913/",
-                  "quote": "If infected systemically, young leaflets become curved and chlorotic without the presence of necrotic spots or broad yellow halos."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "water-soaked spots on the lower surface",
-              "image_shows": "Lesions or chlorosis stop at veins.",
-              "image_quote": "Lesions or chlorosis stop at veins.",
-              "image_id": "bugwood::5444716",
-              "verification_status": "weakly_supported",
-              "reasoning": "Sources describe the spots as 'angular,' which is consistent with vein-delimited lesions, giving indirect support to the vein-stopping observation.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropwatch.unl.edu/plant-disease/dry-bean/halo-blight/",
-                  "quote": "Halo blight symptoms first appear as small, angular, water-soaked spots on the undersurfaces of leaves."
-                },
-                {
-                  "url": "https://extension.usu.edu/vegetableguide/legumes/halo-blight",
-                  "quote": "small, angular, water-soaked spots (almost resembling little pin pricks) on the undersurfaces of leaves."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "water-soaked spots ... zone of yellow-green tissue (halo) ... generalized systemic chlorosis",
-              "image_shows": "The affected tissue has a mix of green and yellow hues, with some brownish tints.",
-              "image_quote": "The leaves have a mix of green and yellow hues with brownish tints.",
-              "image_id": "bugwood::5444716",
-              "verification_status": "verified",
-              "reasoning": "The green/yellow/brown hue mix matches published descriptions of green leaf tissue with yellow chlorotic halos and browning lesions.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/bacterial-diseases-of-beans/",
-                  "quote": "As these spots grow and turn brown, a characteristic light green to yellow halo appears around the spots."
-                },
-                {
-                  "url": "https://cropwatch.unl.edu/plant-disease/dry-bean/halo-blight/",
-                  "quote": "In severe infections, the leaves and upper parts of plants turn yellow (chlorotic)."
-                }
-              ]
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesions appear irregular.",
-              "image_quote": "There are various shapes of lesions, some with irregular outlines.",
-              "image_id": "bugwood::5444716",
-              "verification_status": "weakly_supported",
-              "reasoning": "Sources describe angular spots that enlarge and coalesce into numerous reddish-brown lesions, consistent with variable/irregular lesion outlines but not explicitly termed irregular.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/bacterial-diseases-of-beans/",
-                  "quote": "Halo blight symptoms first appear as small, angular, water-soaked spots... eventually developing into numerous small, reddish-brown lesions on the leaves."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaves appear to have an oval shape.",
-              "image_quote": "The leaves are broadest near the base and taper to a point.",
-              "image_id": "bugwood::5444716",
-              "verification_status": "weakly_supported",
-              "reasoning": "This describes the ovate leaflet morphology of the bean plant itself rather than a halo-blight lesion; the shape is botanically corroborated for common bean leaflets but only indirectly, via generic leaf-shape references rather than a disease-specific photo source.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.biomadam.com/leaves-types",
-                  "quote": "Ovate leaves are egg-shaped, but the base is the widest portion. If the wider portion is towards the base, that is an ovate leaf."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5444716",
-            "bugwood::5444717",
-            "bugwood::5444718",
-            "bugwood::5444719",
-            "bugwood::5444720",
-            "bugwood::5444721",
-            "bugwood::5444722",
-            "bugwood::5444723",
-            "bugwood::5444724",
-            "bugwood::5444725",
-            "bugwood::5444726",
-            "bugwood::5444727",
-            "bugwood::5444728"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 3,
-              "n_provisional": 3,
-              "n_contradictory": 2,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 6,
-              "n_added": 6,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
-    },
-    {
-      "disease_name": "Sclerotinia Timber Rot",
-      "pathogen_scientific_name": {
-        "value": "Sclerotinia sclerotiorum",
-        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/white-mold/",
-        "quote": "The fungus that causes white mold, Sclerotinia sclerotiorum , is widely distributed in relatively cool and moist areas throughout the world .",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-snap-phaseolus-vulgaris-white-mold-sclerotinia-rot",
-        "quote": "The fungus, Sclerotinia sclerotiorum , causes white mold."
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem",
-          "Pod",
-          "Root",
-          "Whole plant"
-        ],
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-snap-phaseolus-vulgaris-white-mold-sclerotinia-rot",
-        "quote": "The first symptom is usually water-soaked lesions on stem and pods. The fungus may invade the stem near the soil line, causing a rapid wilting and death of the entire plant, or it may invade pods or branches and foliage that comes in contact with colonized tissue."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "White mold first appears as pale, often bleached, water-soaked (watery) rot lesions on stems, leaves, and pods; white threadlike, cottony mycelium is often visible on rotted tissue under moist conditions, after which affected tissue dries and bleaches to a pale tan, beige, or almost white color and black sclerotia develop.",
-          "url": "https://ipm.ucanr.edu/agriculture/dry-beans/white-mold/",
-          "quote": "White mold first appears as a watery rot on stems, leaves, and pods. White mycelium (threadlike hyphae) is often visible on the surface of rotted tissue under moist conditions."
-        },
-        "diagnostic_features": {
-          "value": "The development of black, irregularly shaped (round to oblong) sclerotia\u00e2\u20ac\u201dcompact masses of mycelia\u00e2\u20ac\u201dwithin the white cottony fungal growth is the best diagnostic feature; sclerotia are white early in development and turn black when fully developed, formed on plant surfaces and inside pods or stems, while affected tissue dries quickly and bleaches to a pale tan, beige, or almost white color.",
-          "url": "https://ipm.ucanr.edu/agriculture/dry-beans/white-mold/",
-          "quote": "The development of black, irregularly shaped sclerotia (compact masses of mycelia) is the best diagnostic feature."
-        },
-        "look_alikes": {
-          "value": [
-            "Phytophthora blight",
-            "Pythium blight"
-          ],
-          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/white-mold/",
-          "quote": "White mold on pepper can be distinguished from Phytophthora blight, which also affects stems, by presence of white cottony fungal growth and sclerotia, additionally, with Phytophthora blight affected stems are darker brown and usually there are also symptoms on leaves and fruit plus the growing tip may be blighted."
-        }
-      },
-      "treatments": {
-        "value": [
-          "Rotate with non-host crops (small grains, corn, rye, wheat, grasses, cereals) for at least 2-3 years, and up to 3-8 years, to reduce soil inoculum and sclerotia populations.",
-          "Use wide row spacing (36 inches recommended) to increase air movement and promote drying of the soil and plant canopy.",
-          "Use management practices that reduce heavy canopies and increase air movement.",
-          "Avoid heavy applications of nitrogen / over-fertilization, which can produce excessive, dense, lush canopies.",
-          "Plant erect, upright, open-canopy (open-base) varieties that hold pods off the ground and do not produce excessive foliage near ground level; resistant bean varieties (including dry bean types) are available.",
-          "Orient bean rows in the direction of the prevailing winds to promote air drainage and drying of plant and soil surfaces.",
-          "Avoid planting the most susceptible crops in fields surrounded by dense woods that restrict air circulation.",
-          "Time irrigations to allow drying of the plant canopy before nightfall and avoid excessive irrigation after petal fall.",
-          "Plant garbanzo beans later (December through early February) rather than early (early November) to avoid heavy canopies that increase humidity.",
-          "Scout and inspect plants for symptoms beginning at emergence/bloom, keeping written notes and photographic records of occurrence and severity.",
-          "Practice good weed control, removing susceptible weeds (in particular ragweed) from the field.",
-          "Avoid wounds and remove affected plants.",
-          "Incorporate debris promptly after harvest and use deep plowing to bury sclerotia and reduce sclerotia production.",
-          "Field flooding during warm temperatures destroys sclerotia.",
-          "Use a timely harvest with rapid cooling and pod storage at 45\u00c2\u00b0F to 50\u00c2\u00b0F for effective postharvest control.",
-          "Apply foliar fungicides starting at early bloom (1% to 10% bloom) in fields with a history of white mold, obtaining thorough coverage with high water volume (50 gallons per acre minimum) and high pressure (100 to 200 psi).",
-          "Conventional fungicides in FRAC groups 1, 2, 3, 7, 11, 12 and 29 are labeled for white mold, in addition to contact fungicides copper and chlorothalonil.",
-          "BOSCALID (Endura) at 8 to 11 oz/A at the beginning of flowering and again at full bloom.",
-          "THIOPHANATE METHYL (Topsin M WSB at 1 to 1.5 lb/A; T-Methyl 4.5F AG / Topsin 4.5 FL at 30 to 40 fl oz/A).",
-          "Blocker 4F (Group 14) at 4 pints/A at planting and again on 2- to 3-week intervals when disease is severe.",
-          "Botran 75W (Group 14) at 2 2/3 lb/A on 7-day intervals.",
-          "Cannonball WG (Group 12) at 7 oz/A when 10% of plants have at least one open blossom.",
-          "Fontelis at 16 to 30 fl oz/A at the beginning of flowering and again at full bloom.",
-          "Luna Privilege at 6.84 fl oz/A on 14-day intervals.",
-          "Rovral 4 Flowable at 1.5 to 2 pints/A when 10% of plants have at least one open bloom.",
-          "Omega 500F (Group 29) at 0.5 to 0.85 pint/A when 10% to 30% of plants have at least one open blossom.",
-          "Switch 62.5WG (Group 12 + 9) at 11 to 14 oz/A.",
-          "Jet-Ag at 0.75 to 3.9 fl oz/5 gal water as a weekly preventative treatment.",
-          "Biological/soil treatments: Contans WG (a parasitic fungus that attacks sclerotia) at 1 to 4 lb/A as a preplant or postharvest treatment.",
-          "Regalia Biofungicide (Group P5) at 1 to 4 quarts/A on 7- to 10-day intervals.",
-          "Double Nickel LC at 1 to 6 quarts/A at planting and again at cultivation.",
-          "Serenade Opti at 14 to 20 oz/A on 7- to 10-day intervals.",
-          "Stargus at 2 to 4 quarts/A plus a nonionic surfactant on 7- to 10-day intervals."
-        ],
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-snap-phaseolus-vulgaris-white-mold-sclerotinia-rot",
-        "quote": "Cultural control Reduce humidity and high-moisture periods within the plant canopy and field. ... Chemical control In fields with a history of white mold, apply fungicide at 1% to 10% bloom ... Biological control Contans WG at 1 to 4 lb/A"
-      },
-      "confidence": "high",
-      "num_sources": 3,
-      "conflicts": [
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Sclerotinia sclerotiorum",
-          "alternative_value": "Sclerotinia trifoliorum",
-          "alternative_source_url": "https://ipm.ucanr.edu/agriculture/dry-beans/white-mold/",
-          "note": "UC IPM lists Sclerotinia trifoliorum as an additional causal species of white mold alongside Sclerotinia sclerotiorum; the Cornell and PNW sources attribute the disease solely to S. sclerotiorum."
-        },
-        {
-          "field": "look_alikes",
-          "canonical_value": "Phytophthora blight (Cornell); Pythium blight (PNW)",
-          "alternative_value": "Pythium blight",
-          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-snap-phaseolus-vulgaris-white-mold-sclerotinia-rot",
-          "note": "Sources cite different confusable diseases \u00e2\u20ac\u201d Cornell distinguishes white mold from Phytophthora blight (on pepper), while PNW notes white mold may be confused with Pythium blight on bean. Both are retained in the look_alikes value array."
-        }
-      ],
-      "regional_observations": {
-        "Colorado": {
-          "state": "Colorado",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "pale, often bleached, water-soaked rot lesions on stems, leaves, and pods",
-              "image_shows": "Lesions are irregularly shaped and extend across leaf veins rather than being vein-delimited.",
-              "image_quote": "The lesions have irregular shapes and some cross the leaf veins.",
-              "image_id": "bugwood::5359769",
-              "verification_status": "weakly_supported",
-              "reasoning": "White mold lesions enlarge as an irregular, non-vein-limited watery rot, consistent with irregular shapes crossing veins.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/white-mold/",
-                  "quote": "Black and irregularly-shaped sclerotia (resting structures of the fungus) form on and within infected plant parts."
-                },
-                {
-                  "url": "https://www.gov.mb.ca/agriculture/crops/plant-diseases/white-mould.html",
-                  "quote": "The first symptoms are brown, water-soaked lesions that enlarge rapidly under cool, moist conditions."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "affected tissue dries and bleaches to a pale tan, beige, or almost white color and black sclerotia develop",
-              "image_shows": "Dead tissue appears as brown-to-black patches on the leaves, consistent with browning and sclerotial darkening.",
-              "image_quote": "There are areas of dead, brown and black tissue on the leaves.",
-              "image_id": "bugwood::5359769",
-              "verification_status": "weakly_supported",
-              "reasoning": "Browning of necrotic leaf tissue plus black sclerotia are documented white mold progression symptoms.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/white-mold/",
-                  "quote": "leaves of severely diseased plants become yellow and eventually turn brown and fall off"
-                },
-                {
-                  "url": "https://extension.colostate.edu/topic-areas/agriculture/white-mold-of-dry-beans-2-918/",
-                  "quote": "Within a week, black sclerotia are formed in the infected tissue."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "affected tissue dries and bleaches to a pale tan, beige, or almost white color",
-              "image_shows": "Tissue color grades from pale yellow and green into brownish tints, matching early bleaching and later browning.",
-              "image_quote": "The affected tissue has a mix of pale yellow and green, with some brownish tints.",
-              "image_id": "bugwood::5359769",
-              "verification_status": "weakly_supported",
-              "reasoning": "A pale-yellow/green to brownish palette is consistent with documented bleaching-then-browning of white mold tissue.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/white-mold/",
-                  "quote": "Initial symptoms on these tissues are pale (often bleached) colored, water-soaked lesions... leaves of severely diseased plants become yellow and eventually turn brown"
-                },
-                {
-                  "url": "https://www.gov.mb.ca/agriculture/crops/plant-diseases/white-mould.html",
-                  "quote": "The lesions eventually become dry, bleached, and shredded."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "Phytophthora blight; Pythium blight",
-              "image_shows": "Lesions lack the concentric ring patterning that would indicate a look-alike leaf spot.",
-              "image_quote": "No concentric pattern was observed in the lesions.",
-              "image_id": "bugwood::5359769",
-              "verification_status": "weakly_supported",
-              "reasoning": "Absence of concentric rings is a useful negative diagnostic since concentric-ringed lesions point to Ascochyta/Alternaria rather than Sclerotinia.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://beanipm.pbgworks.org/fungal-leaf-spots",
-                  "quote": "Bean fungal leaf spots such as Ascochyta and Alternaria produce lesions with a series of conspicuous concentric rings, unlike white mold."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "Leaflets are ovate with pointed (acuminate) tips, a host-morphology detail not tied to the disease.",
-              "image_quote": "The leaves are ovate with pointed tips.",
-              "image_id": "bugwood::5359769",
-              "verification_status": "verified",
-              "reasoning": "Botanical references confirm common bean leaflets are ovate with acuminate (pointed) tips, corroborating this host-morphology observation.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://plants.ces.ncsu.edu/plants/phaseolus-vulgaris/",
-                  "quote": "Beans in this genus have trifoliate compound leaves with ovate to ovate-orbicular leaflets."
-                },
-                {
-                  "url": "https://seedidguide.idseed.org/fact_sheets/33291/",
-                  "quote": "Leaflets are broadly ovate with acuminate apices, which means they have pointed tips; leaflets are ovate, acuminate, 6-15 cm long."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5359769",
-            "bugwood::5361312",
-            "bugwood::5361385"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              10
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 10,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 4,
-              "n_provisional": 1,
-              "n_contradictory": 5,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 5,
-              "n_added": 5,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "Idaho": {
-          "state": "Idaho",
-          "deltas": [
-            {
-              "field": "severity",
-              "canonical_says": "white threadlike, cottony mycelium is often visible on rotted tissue under moist conditions",
-              "image_shows": "Extensive white cottony mycelium spread across the stem and onto surrounding foliage indicates advanced, high-severity infection.",
-              "image_quote": "White cottony mycelium is visible on the plant stems and leaf stalks.",
-              "image_id": "bugwood::5606624",
-              "verification_status": "weakly_supported",
-              "reasoning": "External extension sources confirm cottony mycelium spreads extensively over stems and adjacent foliage in advanced infections, supporting the severity reading, though it partly overlaps canonical description.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropwatch.unl.edu/plant-disease/dry-bean/white-mold/",
-                  "quote": "The cottony mycelium usually produces numerous sclerotia... white cottony mycelium covering affected plant parts."
-                },
-                {
-                  "url": "https://extensionpubs.unl.edu/publication/g1786/2013/html/view",
-                  "quote": "Affected tissues drying, turning brown, and becoming covered with white, cottony mycelium that spreads over the plant under moist conditions."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "Phytophthora blight; Pythium blight",
-              "image_shows": "The lesion shows no vascular streaks, dark blotches, or dark water-soaked streaks, arguing against a Phytophthora/Pythium look-alike.",
-              "image_quote": "There are no visible vascular streaks, dark blotches, or water-soaked streaks extending from lesions.",
-              "image_id": "bugwood::5606624",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension sources confirm white mold is distinguished from Phytophthora/Pythium by bleached stems, white cottony mycelium, and sclerotia rather than the sunken tan-to-brown water-soaked streaks of those look-alikes, indirectly supporting the candidate's negative observation.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.canr.msu.edu/resources/phytophthora-root-and-stem-rot",
-                  "quote": "Pythium and Phytophthora lesions become tan to brown in color as they dry out, whereas white mold produces white cottony mycelia, bleached stems, and sclerotia on infected tissues."
-                },
-                {
-                  "url": "https://beanipm.pbgworks.org/phytophthora-pythium",
-                  "quote": "Infected seedlings develop water-soaked lesions at the soil line, followed by stem rot and collapse; the water-soaked area eventually dries out, becomes somewhat sunken, tan to brown in color."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5606624",
-            "bugwood::5606625",
-            "bugwood::5606626",
-            "bugwood::5606627",
-            "bugwood::5606628",
-            "bugwood::5606630",
-            "bugwood::5606631"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              6
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 6,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 1,
-              "n_provisional": 1,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 2,
-              "n_added": 2,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "North Dakota": {
-          "state": "North Dakota",
-          "deltas": [
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "black, irregularly shaped (round to oblong) sclerotia... formed on plant surfaces and inside pods or stems, while affected tissue dries quickly and bleaches to a pale tan, beige, or almost white color",
-              "image_shows": "A discrete black sclerotium is present on the external surface of a dried, bleached bean stem.",
-              "image_quote": "There is a dark, irregularly shaped sclerotium on the stem.",
-              "image_id": "bugwood::5606932",
-              "verification_status": "verified",
-              "reasoning": "Extension sources confirm black sclerotia form on the external surfaces of dried, bleached bean stems, directly corroborating the witnessed feature.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-dry-phaseolus-vulgaris-white-mold-sclerotinia-rot",
-                  "quote": "When dry, lesions on infected stems and pods are beige to white... They frequently have sclerotia embedded in them both internally and on external surfaces."
-                },
-                {
-                  "url": "https://cropwatch.unl.edu/plant-disease/dry-bean/white-mold/",
-                  "quote": "Infection of stems and branches will cause affected plant parts to wilt and later die, taking on a bleached and dried appearance. The development of black, irregularly shaped sclerotia is the best diagnostic feature of this disease."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "Phytophthora blight; Pythium blight",
-              "image_shows": "The stem shows no Phytophthora/Pythium blight symptoms; the black sclerotium instead points to Sclerotinia rather than the look-alikes.",
-              "image_quote": "The image does not show typical symptoms such as necrotic spots or wilting associated with Phytophthora blight or Pythium blight.",
-              "image_id": "bugwood::5606932",
-              "verification_status": "verified",
-              "reasoning": "Extension references confirm the presence of sclerotia (and absence of typical Phytophthora/Pythium symptoms) is exactly what distinguishes white mold from these look-alikes, supporting the ruling-out observation.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-dry-phaseolus-vulgaris-pythium-diseases-pythium-blight",
-                  "quote": "The lack of sclerotia and the occurrence of the disease well before row closure helps distinguish Pythium wilt from white mold... Beans with Pythium blight... will have no sclerotia present."
-                },
-                {
-                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/white-mold/",
-                  "quote": "White mold... can be distinguished from Phytophthora blight... by presence of white cottony fungal growth and sclerotia; ... Phytophthora does not produce cottony growth or sclerotia."
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5606932",
-            "bugwood::5606933",
-            "bugwood::5606934",
-            "bugwood::5606935",
-            "bugwood::5606936"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              3
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 3,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 2,
-              "n_provisional": 0,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 2,
-              "n_added": 2,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        }
-      }
-    },
-    {
-      "disease_name": "Beet Curly Top Virus",
-      "pathogen_scientific_name": {
-        "value": null,
-        "url": null,
-        "quote": null
-      },
-      "type_of_disease": {
-        "value": null,
-        "url": null,
-        "quote": null
-      },
-      "affected_parts": {
-        "value": null,
-        "url": null,
-        "quote": null
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": null,
-          "url": null,
-          "quote": null
-        },
-        "diagnostic_features": {
-          "value": null,
-          "url": null,
-          "quote": null
-        },
-        "look_alikes": {
-          "value": null,
-          "url": null,
-          "quote": null
-        }
-      },
-      "confidence": "low",
-      "num_sources": 0,
-      "conflicts": [],
-      "regional_observations": {
-        "Colorado": {
-          "state": "Colorado",
-          "deltas": [
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "(not specified)",
-              "image_shows": "The plant exhibits chlorosis with visible leaf curling and deformation.",
-              "image_quote": "The leaves display a yellowish-green coloration with visible leaf curling and deformation.",
-              "image_id": "bugwood::5389464",
-              "verification_status": "verified",
-              "reasoning": "Co-occurring chlorosis, curling, and leaf deformation are the documented hallmark of BCTV in bean.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-all-phaseolus-vulgaris-curly-top",
-                  "quote": "On young plants, the trifoliolate leaves pucker and curl down. General yellowing and death follow."
-                },
-                {
-                  "url": "https://hortsense.cahnrs.wsu.edu/fact-sheet/bean-curly-top-beet-curly-top-virus/",
-                  "quote": "Plants infected with the Beet curly top virus have puckered, wrinkled leaves with edges curled downward."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaves are curled inward/downward, a hallmark of curly top.",
-              "image_quote": "The leaves show significant curling.",
-              "image_id": "bugwood::5389464",
-              "verification_status": "verified",
-              "reasoning": "Leaf curling is the defining symptom of curly top in bean and is directly corroborated.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-all-phaseolus-vulgaris-curly-top",
-                  "quote": "On young plants, the trifoliolate leaves pucker and curl down."
-                },
-                {
-                  "url": "https://ipm.ucanr.edu/agriculture/dry-beans/curly-top/",
-                  "quote": "Leaf symptoms include puckering and a crookneck malformation of the trifoliates."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "(not specified)",
-              "image_shows": "Veins appear translucent and pale, indicating vein clearing.",
-              "image_quote": "Veins are translucent, paler than the surrounding leaf tissue.",
-              "image_id": "bugwood::5389464",
-              "verification_status": "verified",
-              "reasoning": "Vein-clearing (translucent, pale veins) is an explicitly documented BCTV symptom in bean.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-all-phaseolus-vulgaris-curly-top",
-                  "quote": "Brittle, curled leaflets show vein-clearing and vein-swelling, and crinkled upper surfaces."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaves exhibit significant, extensive chlorosis.",
-              "image_quote": "The leaves are visibly yellow and discolored, indicating extensive chlorotic symptoms.",
-              "image_id": "bugwood::5389464",
-              "verification_status": "verified",
-              "reasoning": "General yellowing/chlorosis as a severe systemic response is well documented for BCTV in bean.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-all-phaseolus-vulgaris-curly-top",
-                  "quote": "Older affected plants become yellowed, dwarfed, and bunchy, and pods are stunted."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected leaf tissue is raised and slightly deformed.",
-              "image_quote": "The lesions display irregular shapes with raised edges.",
-              "image_id": "bugwood::5389464",
-              "verification_status": "weakly_supported",
-              "reasoning": "Crinkled, swollen, thickened leaf surfaces are documented, giving indirect support for a raised/deformed texture, though BCTV forms no discrete lesions.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-all-phaseolus-vulgaris-curly-top",
-                  "quote": "Brittle, curled leaflets show vein-clearing and vein-swelling, and crinkled upper surfaces."
-                },
-                {
-                  "url": "https://hortsense.cahnrs.wsu.edu/fact-sheet/bean-curly-top-beet-curly-top-virus/",
-                  "quote": "The leaves become thick and brittle and may turn dark green."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "(not specified)",
-              "image_shows": "The tissue lacks the concentric ring pattern typical of Alternaria/Early Blight, consistent with a viral (non-fungal) etiology.",
-              "image_quote": "No concentric pattern is visible in the lesion.",
-              "image_id": "bugwood::5389464",
-              "verification_status": "weakly_supported",
-              "reasoning": "BCTV is a systemic virus producing curling/puckering rather than concentric ring lesions, so the absence of rings is consistent with the diagnosis and separates it from Alternaria.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://ipm.ucanr.edu/agriculture/dry-beans/curly-top/",
-                  "quote": "Leaf symptoms include puckering and a crookneck malformation of the trifoliates; infected plants are severely stunted and bunched."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "affected_organs",
-              "canonical_says": "(not specified)",
-              "image_shows": "Necrotic tissue is present on the leaves.",
-              "image_quote": "Necrotic tissue is visible on the leaves.",
-              "image_id": "bugwood::5389464",
-              "verification_status": "weakly_supported",
-              "reasoning": "Curly top involves phloem necrosis and eventual tissue death, giving indirect support for necrotic leaf tissue, though extension sources emphasize curling/yellowing over discrete leaf necrosis.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/beet-curly-top-virus",
-                  "quote": "BCTV ... induces cell division and expansion in affected tissues that precedes necrosis and eventual collapse of the phloem, resulting in characteristic leaf curling and vein-swelling symptoms."
-                },
-                {
-                  "url": "https://hortsense.cahnrs.wsu.edu/fact-sheet/bean-curly-top-beet-curly-top-virus/",
-                  "quote": "General yellowing and death follow the initial curling symptoms on young plants."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "There are no visible notches at the leaf tips.",
-              "image_quote": "The leaf tips are notched.",
-              "image_id": "bugwood::5389464",
-              "verification_status": "weakly_supported",
-              "reasoning": "Documented bean-leaflet morphology has entire margins and acuminate (unnotched) tips, so the absence of tip notches is consistent with published descriptions.",
-              "swarm_support": 2,
-              "web_support": [
-                {
-                  "url": "https://climbers.lsa.umich.edu/phaseolus-vulgaris/",
-                  "quote": "leaflets are broadly ovate to elliptical, entire, acuminate ... margins are entire"
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The petiole length is significantly shorter than the blade, about 1:5.",
-              "image_quote": "The petiole is about 1:5 the length of the blade.",
-              "image_id": "bugwood::5389464",
-              "verification_status": "field_observation",
-              "reasoning": "No extension or botanical source quantifies a petiole-to-blade ratio, but the observation is plausible and not contradicted by any published description.",
-              "swarm_support": 2,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "No single tip hair is observed.",
-              "image_quote": "No single tip hair is present.",
-              "image_id": "bugwood::5389464",
-              "verification_status": "field_observation",
-              "reasoning": "Bean leaflets are described as glabrous to pubescent with no distinct terminal tip hair structure noted in sources, so this negative observation is plausible but unverified.",
-              "swarm_support": 2,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5389464",
-            "bugwood::5389465",
-            "bugwood::5389466",
-            "bugwood::5389467",
-            "bugwood::5389468",
-            "bugwood::5389469",
-            "bugwood::5389470",
-            "bugwood::5389471",
-            "bugwood::5389472",
-            "bugwood::5389473",
-            "bugwood::5389476",
-            "bugwood::5389477",
-            "bugwood::5389478",
-            "bugwood::5389479",
-            "bugwood::5495213"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              22
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 22,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 6,
-              "n_provisional": 12,
-              "n_contradictory": 4,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 18,
-              "n_added": 13,
-              "n_overlaps_bumped": 5,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 2,
-            "contradictory_count": 3,
-            "duplicates_count": 0,
-            "dropped_contradictory": [
-              {
-                "field": "other",
-                "canonical_says": "(not specified)",
-                "image_shows": "The leaf shape is broad with a rounded apex, suggesting a spade-like appearance.",
-                "image_quote": "The leaf has a broad, rounded apex.",
-                "image_id": "bugwood::5389464",
-                "verification_status": "contradictory",
-                "reasoning": "Published morphology describes bean-leaflet tips as acute to acuminate (pointed), contradicting the claimed rounded apex.",
-                "swarm_support": 1,
-                "web_support": [
-                  {
-                    "url": "https://climbers.lsa.umich.edu/phaseolus-vulgaris/",
-                    "quote": "leaflets are broadly ovate to elliptical, entire, acuminate ... tips are acute to tapering (acuminate)"
-                  }
-                ]
-              },
-              {
-                "field": "other",
-                "canonical_says": "(not specified)",
-                "image_shows": "The length-to-width ratio is approximately 1:1, indicating a relatively square shape.",
-                "image_quote": "The leaf is approximately 1:1 in length-to-width ratio.",
-                "image_id": "bugwood::5389464",
-                "verification_status": "contradictory",
-                "reasoning": "Ovate bean leaflets are consistently longer than broad (documented dimensions give ratios well above 1:1), contradicting a roughly square 1:1 shape.",
-                "swarm_support": 2,
-                "web_support": [
-                  {
-                    "url": "https://climbers.lsa.umich.edu/phaseolus-vulgaris/",
-                    "quote": "leaflets are broadly ovate to elliptical ... 4-16 cm long and 2.5-11 cm broad"
-                  }
-                ]
-              },
-              {
-                "field": "other",
-                "canonical_says": "(not specified)",
-                "image_shows": "The leaf margin exhibits fine serration along the edges.",
-                "image_quote": "The leaf margins are serrated.",
-                "image_id": "bugwood::5389464",
-                "verification_status": "contradictory",
-                "reasoning": "Bean-leaflet margins are documented as entire (smooth), directly contradicting the claimed fine serration.",
-                "swarm_support": 2,
-                "web_support": [
-                  {
-                    "url": "https://climbers.lsa.umich.edu/phaseolus-vulgaris/",
-                    "quote": "leaflets are broadly ovate to elliptical, entire, acuminate ... margins are entire"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      }
+    "look_alikes": {
+     "value": [
+      "other foliar diseases"
+     ],
+     "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
+     "quote": "Rust can be distinguished from other foliar diseases because the rust-colored spores will rub off ( Figure 3 ), while with other foliar diseases, nothing rubs off."
     }
-  ],
-  "crop": "Common Bean",
-  "generated_date": "2026-06-10",
-  "regional_observations_count": 9
+   },
+   "treatments": {
+    "value": [
+     "Rotate bean with non-host crops / rotate away from any bean for two years to remove sources of inoculum.",
+     "Plow under or bury infected crop residues and bean debris right after harvest.",
+     "Eliminate volunteer bean plants.",
+     "Plant within recommended planting periods (e.g. May 15 to June 15) to reduce late-season exposure to the pathogen.",
+     "Select planting dates and schedule irrigation to avoid long periods of leaf wetness when temperatures are warm (e.g. avoid foliage staying wet at night for more than 10 hours).",
+     "Plant rust-resistant cultivars (available for many market classes including pinto, great northern, small white, red kidney, and black beans), recognizing many races of the fungus exist.",
+     "Avoid over-application of nitrogen and ensure adequate potassium fertilization.",
+     "Disinfect poles used in pole-bean production.",
+     "Scout fields frequently during late vegetative to early pod development for initial rust pustules.",
+     "Apply protectant and/or systemic fungicides such as Maneb/Manex (30-day phi), Endura, Headline, Priaxor, or Vertisan (21-day phi), Bravo/Terranil, Folicur or Quadris (14-day phi), Proline (7-day phi), or Fontelis (0-day phi); consult Cooperative Extension or the latest New England Vegetable Management Guide for current chemical recommendations."
+    ],
+    "url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
+    "quote": "Cultural practices such as crop rotation and burial of bean debris will remove potential sources of inoculum. Planting within recommended periods for this region (May 15 to June 15) will reduce late season exposure to high levels of the pathogen ... treatment with a labeled fungicide such as Maneb/Manex (30-day preharvest interval = phi), Endura, Headline, Priaxor, or Vertisan (21 day phi), Bravo/Terranil, Folicur or Quadris (14 day phi), Proline (7 day phi), or Fontelis (0 day phi) should be considered at the first confirmed signs of rust"
+   },
+   "confidence": "high",
+   "num_sources": 3,
+   "conflicts": [
+    {
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Uromyces appendiculatus",
+     "alternative_value": "Uromyces phaseoli typica",
+     "alternative_source_url": "https://ipm.cahnr.uconn.edu/bean-rust/",
+     "note": "UConn names the pathogen 'Uromyces phaseoli typica', an older synonym; Nebraska Extension and UMass both use the current accepted name 'Uromyces appendiculatus'. No taxonomy validation records were supplied, so canonical was selected by source agreement (2 of 3)."
+    },
+    {
+     "field": "disease_name",
+     "canonical_value": "Bean Rust",
+     "alternative_value": "Rust of Dry Bean",
+     "alternative_source_url": "https://extensionpubs.unl.edu/publication/g1766/na/html/view",
+     "note": "Nebraska titles it 'Rust of Dry Bean'; UMass and UConn use 'Bean Rust'. Same disease."
+    },
+    {
+     "field": "affected_parts",
+     "canonical_value": "Foliar, Pod, Stem",
+     "alternative_value": "Foliar only",
+     "alternative_source_url": "https://ipm.cahnr.uconn.edu/bean-rust/",
+     "note": "UConn notes rust can occur on all above-ground parts but emphasizes leaves; Nebraska and UMass explicitly document pod and stem infection."
+    }
+   ],
+   "regional_observations": {
+    "Colorado": {
+     "state": "Colorado",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "small yellow or white slightly raised spots ... that enlarge into reddish-brown pustules ... surrounded by a yellow border",
+       "image_shows": "Brownish lesions with greenish leaf margins on Colorado bean foliage, green tones still dominant.",
+       "image_quote": "The affected tissue has a mix of green and brown tones, with the green being more dominant.",
+       "image_id": "bugwood::5358987",
+       "verification_status": "weakly_supported",
+       "reasoning": "Brown lesion coloration is consistent with rust pustules, but the reported greenish margin differs from the documented yellow halo, so support is only partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.colostate.edu/resource/rust-of-dry-beans/",
+         "quote": "spots enlarge and form reddish-brown or rust-colored pustules ... may be surrounded by a yellow border"
+        },
+        {
+         "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/bean-rust",
+         "quote": "circular, reddish-brown spots on the underside of leaves that readily identify the disease"
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5358987",
+      "bugwood::5361310",
+      "bugwood::5363578",
+      "bugwood::5363967"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       5
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 5,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 1,
+       "n_provisional": 0,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 1,
+       "n_added": 1,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    },
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "small yellow or white slightly raised spots ... enlarge into reddish-brown pustules (uredinia)",
+       "image_shows": "Lesions appear raised with a rough, granular texture, consistent with erupting rust pustules.",
+       "image_quote": "The lesions display a rough, granular texture.",
+       "image_id": "bugwood::5458625",
+       "verification_status": "verified",
+       "reasoning": "Multiple extension sources describe rust uredinia as slightly raised, powdery pustules that rupture the epidermis, matching the observed rough, granular, raised texture.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/bean_phaseolus_rust_217.htm",
+         "quote": "Later, the pustules rupture producing reddish-brown powdery spore masses.",
+         "_repaired_from": {
+          "prev_url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/bean_phaseolus_rust_217.htm",
+          "prev_quote": "Symptoms develop on leaves and pods as pustules of red-brown powdery spores (urediniospores) which rupture the epidermis."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "reddish-brown pustules (uredinia) ... release rusty spores",
+       "image_shows": "Dark brown pustules are present on the leaf surface with surrounding lighter green tissue, consistent with maturing/telial-stage rust pustules.",
+       "image_quote": "The photo shows dark brown pustules on the leaf surface.",
+       "image_id": "bugwood::5458625",
+       "verification_status": "weakly_supported",
+       "reasoning": "Reddish-brown uredinia darken to brown/black telial pustules as they mature, so dark brown pustules are consistent with a late-stage bean rust lesion rather than the initial rust color.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/bean-rust",
+         "quote": "Near the end of the season, pustules undergo a subtle change and form telia containing brownish-black winter spores (teliospores)."
+        },
+        {
+         "url": "https://cropwatch.unl.edu/plant-disease/dry-bean/rust/",
+         "quote": "Pustules may also be surrounded with a yellow halo.",
+         "_repaired_from": {
+          "prev_url": "https://cropwatch.unl.edu/plant-disease/dry-bean/rust/",
+          "prev_quote": "pustules can be surrounded by a halo of yellow chlorotic tissue and may turn darker."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "pustules may be surrounded by a yellow border",
+       "image_shows": "Dark brown lesions are ringed by a light brown to cream-colored margin with a faint chlorotic yellow halo.",
+       "image_quote": "The lesions have a dark brown center with a light brown to cream-colored margin and a faint, chlorotic yellow halo.",
+       "image_id": "bugwood::5458625",
+       "verification_status": "verified",
+       "reasoning": "The observed chlorotic yellow halo around darkened pustules is directly corroborated by extension descriptions of bean rust pustules surrounded by a yellow chlorotic halo.",
+       "swarm_support": 2,
+       "web_support": [
+        {
+         "url": "https://cropwatch.unl.edu/plant-disease/dry-bean/rust/",
+         "quote": "Pustules may also be surrounded with a yellow halo.",
+         "_repaired_from": {
+          "prev_url": "https://cropwatch.unl.edu/plant-disease/dry-bean/rust/",
+          "prev_quote": "Pustules may be surrounded by a halo of yellow chlorotic tissue and may turn darker."
+         }
+        },
+        {
+         "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/bean_phaseolus_rust_217.htm",
+         "quote": "Circular pustules, 1-2 mm diameter, are light green with distinctive yellow haloes on the top surface."
+        }
+       ],
+       "__support__": 2
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "small yellow or white slightly raised spots ... about 1/8 inch or smaller",
+       "image_shows": "Lesions are small and isolated, scattered across the leaf without a clearly resolvable shape.",
+       "image_quote": "The lesions are scattered across the leaf surface without any particular shape constraint.",
+       "image_id": "bugwood::5458625",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension sources corroborate small, isolated, scattered pustules, though they describe them as circular rather than shapeless, so the shape-neutral phrasing is only partially supported.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://apps.lucidcentral.org/pppw_v10/text/web_full/entities/bean_phaseolus_rust_217.htm",
+         "quote": "Circular pustules, 1-2 mm diameter ... are scattered over both sides of the leaves, and on the pods."
+        },
+        {
+         "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/bean-rust",
+         "quote": "The pustules take on a reddish-brown color and are scattered irregularly."
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5458625",
+      "bugwood::5458626",
+      "bugwood::5458627",
+      "bugwood::5458628",
+      "bugwood::5458629",
+      "bugwood::5458630",
+      "bugwood::5458631",
+      "bugwood::5458632",
+      "bugwood::5458633"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       7
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 7,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 4,
+       "n_provisional": 1,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 5,
+       "n_added": 4,
+       "n_overlaps_bumped": 1,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "New Jersey": {
+     "state": "New Jersey",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "small yellow or white slightly raised spots ... that enlarge into reddish-brown pustules (uredinia) about 1/8 inch or smaller",
+       "image_shows": "Pustules are scattered randomly across the leaf blade rather than being delimited by veins.",
+       "image_quote": "The lesions are scattered across the leaf surface without following specific patterns like venation.",
+       "image_id": "bugwood::1573882",
+       "verification_status": "weakly_supported",
+       "reasoning": "Random, non-vein-delimited scattering is consistent with rust pustules (unlike vein-bound angular leaf spot), though rust pustules are typically circular rather than 'irregular', so support is partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://plantix.net/en/library/plant-diseases/100032/bean-rust/",
+         "quote": "First symptoms develop as minute brown to yellow pustules which rupture the epidermis of older leaves, mainly on the underside."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "small yellow or white slightly raised spots ... that enlarge into reddish-brown pustules",
+       "image_shows": "Lesions appear raised with a rough, erumpent surface texture.",
+       "image_quote": "The lesions appear raised and have a rough surface texture.",
+       "image_id": "bugwood::1573882",
+       "verification_status": "verified",
+       "reasoning": "Raised, rough (erumpent, spore-bearing) pustules are the defining texture of rust and are directly corroborated by multiple extension/reference sources.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://gardenerspath.com/plants/vegetables/bean-diseases/",
+         "quote": "Bean rust, caused by the fungus Uromyces appendiculatus, produces raised, reddish-brown pustules surrounded by yellow halos on leaves and pods.",
+         "_repaired_from": {
+          "prev_url": "https://gardenerspath.com/plants/vegetables/bean-diseases/",
+          "prev_quote": "The circular, raised texture and chlorotic halo are defining characteristics of bean rust."
+         }
+        },
+        {
+         "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/bean-rust",
+         "quote": "produces raised, reddish-brown pustules surrounded by yellow halos on leaves and pods"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "severe infection causes leaves to curl, dry, turn brown, and drop prematurely",
+       "image_shows": "Brown to black necrotic tissue is present where infection is advanced.",
+       "image_quote": "Areas of brownish discoloration and tissue damage are present on the leaves.",
+       "image_id": "bugwood::1573882",
+       "verification_status": "weakly_supported",
+       "reasoning": "Browning/necrosis of tissue is documented for severe rust infection (drying and browning), though 'black' necrosis is at the darker edge of what sources describe.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.colostate.edu/resource/rust-of-dry-beans/",
+         "quote": "Severe infection may cause leaves to curl upwards, dry up, turn brown and drop prematurely."
+        },
+        {
+         "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/bean-rust",
+         "quote": "Leaves may become chlorotic and dry, and may fall off earlier."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "severe infection causes leaves to curl, dry, turn brown, and drop prematurely",
+       "image_shows": "Affected leaves curl upward toward the leaf axis under heavy infection.",
+       "image_quote": "Leaves show curling up towards the leaf axis.",
+       "image_id": "bugwood::1573882",
+       "verification_status": "verified",
+       "reasoning": "Upward leaf curling is an explicitly documented sign of severe bean rust and matches the canonical description directly.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.colostate.edu/resource/rust-of-dry-beans/",
+         "quote": "Severe infection may cause leaves to curl upwards, dry up, turn brown and drop prematurely."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "severe infection causes leaves to curl, dry, turn brown, and drop prematurely",
+       "image_shows": "Chlorosis and pustular lesions are widespread across multiple leaves in the field.",
+       "image_quote": "The photo shows widespread leaf chlorosis and lesions on the common bean plants.",
+       "image_id": "bugwood::1573882",
+       "verification_status": "field_observation",
+       "reasoning": "Widespread chlorosis and numerous lesions are consistent with a high-severity rust infection as described by extension sources.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "weakly_supported"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The bean leaflets are ovate, broadest near the middle and tapering toward the tips.",
+       "image_quote": "The leaves are broadest near the middle, tapering toward the tips.",
+       "image_id": "bugwood::1573882",
+       "verification_status": "weakly_supported",
+       "reasoning": "Botanical sources confirm common bean leaflets are ovate (broadest near middle) with an acuminate tapering apex, corroborating the host leaf-shape observation, though this describes plant morphology rather than a rust symptom.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://plants.ces.ncsu.edu/plants/phaseolus-vulgaris/",
+         "quote": "Ternate in shape; three broadly ovate leaflets per leaf.",
+         "_repaired_from": {
+          "prev_url": "https://plants.ces.ncsu.edu/plants/phaseolus-vulgaris/",
+          "prev_quote": "Each leaf is composed of 3 ovate (2 dimensional egg-shaped) leaflets, up to 20 cm x 15 cm in size."
+         }
+        },
+        {
+         "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:514191-1/general-information",
+         "quote": "Leaflets 3, 4.5–15 × 2.5–6.5 cm, ovate or ovate-rhombic, the laterals oblique, all leaflets acuminate, ± rounded at the base, pubescent; petiole 4–9 cm long; rhachis 10–24 mm long; petiolules 1.5–2.5 mm long; stipules 4 mm long, lanceolate, ribbed.",
+         "_repaired_from": {
+          "prev_url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:514191-1/general-information",
+          "prev_quote": "Leaflets broadly ovate or obovate-rhombic, base rounded or broadly cuneate, apex acuminate."
+         }
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::1573882",
+      "bugwood::1573883",
+      "bugwood::1573884",
+      "bugwood::1573941",
+      "bugwood::1573942"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 5,
+       "n_provisional": 1,
+       "n_contradictory": 4,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 6,
+       "n_added": 6,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Common Bacterial  Blight Of Beans, Fuscous Blight",
+   "pathogen_scientific_name": {
+    "value": "Xanthomonas campestris pv. phaseoli",
+    "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+    "quote": "common bacterial blight ( Xanthomonas campestris  pv.  phaseoli )",
+    "taxonomy_validated": false,
+    "ncbi_url": "",
+    "mycobank_url": ""
+   },
+   "type_of_disease": {
+    "value": "Bacterial",
+    "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+    "quote": "There are three major bacterial diseases of common beans"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Pod",
+     "Seed",
+     "Whole plant"
+    ],
+    "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+    "quote": "Common bacterial blight affects bean foliage, pods, and seedlings."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Early foliar symptoms are small, angular, light green, water-soaked or translucent spots that enlarge and merge, with centers becoming dry and brown surrounded by a narrow zone of yellow tissue; pods develop circular, slightly sunken, dark red-brown lesions.",
+     "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+     "quote": "Early foliar symptoms are small, angular, light green, water-soaked or translucent spots. During warm and wet conditions, these lesions rapidly enlarge and merge. Gradually, the centers of the lesions become dry and brown, and are surrounded by a distinct, narrow zone of yellow tissue."
+    },
+    "diagnostic_features": {
+     "value": "Lesion centers become dry and brown, surrounded by a distinct, narrow zone of yellow tissue; in highly susceptible varieties leaves appear scorched, ragged, and torn; pod lesions are generally circular, slightly sunken, and dark red-brown.",
+     "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+     "quote": "the centers of the lesions become dry and brown, and are surrounded by a distinct, narrow zone of yellow tissue. In highly susceptible varieties, the lesions continue to expand until the leaves appear scorched, ragged, and torn by wind and rain. Pod symptoms consist of lesions that are generally circular, slightly sunken, and dark red-brown."
+    },
+    "look_alikes": {
+     "value": [
+      "halo blight",
+      "bacterial brown spot"
+     ],
+     "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+     "quote": "Because chemical control is often less effective against common bacterial blight compared to halo blight and bacterial brown spot, accurate disease diagnosis is important."
+    }
+   },
+   "treatments": {
+    "value": [
+     "Crop rotation and clean tillage (for example, plowing) help reduce the risk of disease by reducing the amount of inoculum in the immediate area.",
+     "Plant only certified, pathogen-free seed from reputable suppliers and produced in semiarid regions.",
+     "Do not enter fields to cultivate or handle plants wet with dew or rain.",
+     "Equipment should be sanitized by spraying with a disinfectant before moving from an infected to a blight-free field.",
+     "Sprays provide good control of bacterial brown spot and halo blight but only moderate control of common blight."
+    ],
+    "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+    "quote": "Crop rotation and clean tillage (for example, plowing) help reduce the risk of disease by reducing the amount of inoculum in the immediate area. However, plowing may increase soil loss through erosion. Plant only certified, pathogen-free seed from reputable suppliers and produced in semiarid regions. Do not enter fields to cultivate or handle plants wet with dew or rain. Equipment should be sanitized by spraying with a disinfectant before moving from an infected to a blight-free field. Sprays provide good control of bacterial brown spot and halo blight but only moderate control of common blight."
+   },
+   "confidence": "medium",
+   "num_sources": 1,
+   "conflicts": [],
+   "regional_observations": {
+    "Colorado": {
+     "state": "Colorado",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "small, angular, light green, water-soaked or translucent spots",
+       "image_shows": "Colorado leaf lesions are angular and vein-limited (interveinal/vein-bounded).",
+       "image_quote": "The lesions appear angular and vein-limited.",
+       "image_id": "bugwood::5359903",
+       "verification_status": "verified",
+       "reasoning": "Multiple extension sources confirm CBB leaf lesions are angular and develop in interveinal/vein-bounded areas, directly corroborating the angular, vein-limited observation.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/bacterial-diseases-of-beans/",
+         "quote": "Leaf lesions initially appear as small, angular, light green, water-soaked spots."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "centers becoming dry and brown surrounded by a narrow zone of yellow tissue",
+       "image_shows": "Lesions show tan centers with chocolate-brown margins.",
+       "image_quote": "The lesion centers are tan and the margins are chocolate-brown.",
+       "image_id": "bugwood::5359903",
+       "verification_status": "weakly_supported",
+       "reasoning": "Tan/brown lesion coloration is consistent with CBB necrotic tissue, but sources describe the diagnostic margin as yellow (not chocolate-brown), so support is only partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropwatch.unl.edu/plant-disease/dry-bean/bacterial-blight/",
+         "quote": "A narrow yellow border surrounding lesions also characterizes these spots.",
+         "_repaired_from": {
+          "prev_url": "https://cropwatch.unl.edu/plant-disease/dry-bean/bacterial-blight/",
+          "prev_quote": "lesions... becoming dried and brown, with a narrow, bright lemon-yellow border of tissue encircling the lesion."
+         }
+        },
+        {
+         "url": "https://edis.ifas.ufl.edu/publication/PP107",
+         "quote": "the centers of the lesions become dry and brown, and are surrounded by a distinct, narrow zone of yellow tissue."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "surrounded by a narrow zone of yellow tissue",
+       "image_shows": "Chlorosis/yellowing is evident around necrotic leaf tissue in the field.",
+       "image_quote": "Leaf necrosis is evident in the field.",
+       "image_id": "bugwood::5359903",
+       "verification_status": "weakly_supported",
+       "reasoning": "A narrow chlorotic (yellow) zone bordering lesions is a documented CBB feature, giving indirect support, though the candidate's quote actually references necrosis rather than chlorosis.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://edis.ifas.ufl.edu/publication/PP107",
+         "quote": "surrounded by a distinct, narrow zone of yellow tissue."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Lesion centers become dry and brown, surrounded by a distinct, narrow zone of yellow tissue",
+       "image_shows": "Leaf veins appear necrotic with dark, dead tissue.",
+       "image_quote": "Leaf veins appear to be necrotic, showing dark and dead tissue.",
+       "image_id": "bugwood::5359903",
+       "verification_status": "weakly_supported",
+       "reasoning": "Peer-reviewed literature documents reddish-brown/necrotic vein discoloration in systemic CBB infections, supporting the necrotic-vein observation.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8578827/",
+         "quote": "In systemic infections, a reddish-brown discoloration of the veins with a water-soaking of adjoining interveinal areas may be observed."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "centers becoming dry and brown surrounded by a narrow zone of yellow tissue",
+       "image_shows": "Overall palette is tan lesion centers with olive-green surrounding tissue.",
+       "image_quote": "The affected tissue has tan lesion centers with olive-green surrounding tissue.",
+       "image_id": "bugwood::5359903",
+       "verification_status": "field_observation",
+       "reasoning": "Tan lesion centers match CBB necrosis and the surrounding yellow-green tissue is consistent with the documented chlorotic margin, but 'olive-green' is only an approximate match to the described yellow zone.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "weakly_supported"
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "halo blight; bacterial brown spot",
+       "image_shows": "Lesions show no concentric ring patterns, arguing against fungal look-alikes.",
+       "image_quote": "No concentric patterns are visible in the lesions.",
+       "image_id": "bugwood::5359903",
+       "verification_status": "field_observation",
+       "reasoning": "Reference explicitly states CBB lesions lack concentric rings, directly corroborating the absence of concentric patterns as a distinguishing feature.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "verified"
+      },
+      {
+       "field": "severity",
+       "canonical_says": "leaves appear scorched, ragged, and torn",
+       "image_shows": "The field shows extensive browning and necrosis across bean plants.",
+       "image_quote": "The field shows extensive browning and necrosis of the bean plants.",
+       "image_id": "bugwood::5359903",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extensive coalescing browning/necrosis and a burnt field appearance is a documented severe-CBB outcome, supporting the observed field-level severity in Colorado.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8578827/",
+         "quote": "These spots may merge, giving the leaf a burnt appearance, resulting in the most severe cases in plant defoliation and death."
+        },
+        {
+         "url": "https://extension.colostate.edu/resource/bacterial-diseases-of-beans/",
+         "quote": "one of the most common foliar, bacterial diseases of beans in Colorado."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "in highly susceptible varieties leaves appear scorched, ragged, and torn",
+       "image_shows": "Lower leaves show signs of leaf curling.",
+       "image_quote": "The leaves in the image exhibit signs of leaf curling, particularly on the lower leaves.",
+       "image_id": "bugwood::5359903",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension photo descriptions note the necrotic leaf tissue becomes dry, brittle, scorched, ragged and torn, which indirectly supports drying-induced leaf curling/distortion on older lower leaves, though 'curling' is not named as a distinct symptom.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropwatch.unl.edu/plantdisease/drybean/common-blight",
+         "quote": "The first symptoms seen with common bacterial blight are small water-soaked spots on the underside of leaves.",
+         "_repaired_from": {
+          "prev_url": "https://cropwatch.unl.edu/plantdisease/drybean/common-blight",
+          "prev_quote": "The first symptoms of common bacterial blight are small water-soaked spots on the underside of leaves that enlarge and coalesce becoming brown, dry, and brittle."
+         }
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5359903",
+      "bugwood::5359904",
+      "bugwood::5359905",
+      "bugwood::5359908",
+      "bugwood::5359911",
+      "bugwood::5359912",
+      "bugwood::5359913",
+      "bugwood::5359914",
+      "bugwood::5359916",
+      "bugwood::5359917",
+      "bugwood::5359918",
+      "bugwood::5359919",
+      "bugwood::5359920",
+      "bugwood::5359921",
+      "bugwood::5359922",
+      "bugwood::5359923",
+      "bugwood::5359924",
+      "bugwood::5359925",
+      "bugwood::5359926",
+      "bugwood::5359927",
+      "bugwood::5359928",
+      "bugwood::5359929",
+      "bugwood::5359930",
+      "bugwood::5359931",
+      "bugwood::5359932",
+      "bugwood::5359933",
+      "bugwood::5359934",
+      "bugwood::5359935",
+      "bugwood::5359936",
+      "bugwood::5359937",
+      "bugwood::5359938",
+      "bugwood::5359939",
+      "bugwood::5359940",
+      "bugwood::5359941",
+      "bugwood::5359942",
+      "bugwood::5359943",
+      "bugwood::5359944",
+      "bugwood::5359945",
+      "bugwood::5359946",
+      "bugwood::5359947"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 7,
+       "n_provisional": 1,
+       "n_contradictory": 2,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 8,
+       "n_added": 8,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Halo Blight",
+   "pathogen_scientific_name": {
+    "value": "Pseudomonas syringae pv. phaseolicola",
+    "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+    "quote": "halo blight ( Pseudomonas syringae  pv.  phaseolicola )",
+    "taxonomy_validated": false,
+    "ncbi_url": "",
+    "mycobank_url": ""
+   },
+   "type_of_disease": {
+    "value": "Bacterial",
+    "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+    "quote": "There are three major bacterial diseases of common beans"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Pod",
+     "Seed",
+     "Whole plant"
+    ],
+    "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+    "quote": "Halo blight affects bean foliage, pods, and seedlings."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Leaf symptoms appear as water-soaked spots on the lower surface with a zone of yellow-green tissue (halo) around infection points; severe infection causes generalized systemic chlorosis, and pods show red or brown water-soaked lesions.",
+     "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+     "quote": "Leaf symptoms appear as water-soaked spots on the lower surface. A zone of yellow-green tissue (halo) appears around the infection points. Infection foci generally remain small. In cases of severe leaf infection, plants develop generalized systemic chlorosis."
+    },
+    "diagnostic_features": {
+     "value": "A zone of yellow-green tissue (halo) around small infection foci, and generalized systemic chlorosis particularly pronounced at 64-73 F (favorable for phaseolotoxin production); mature pod lesions may remain green and exhibit crusty bacterial ooze.",
+     "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+     "quote": "The systemic chlorosis is particularly pronounced at 64-73?F, temperatures that are favorable for production of the non-host-specific phaseolotoxin. ... As pods mature, and turn yellow, pod lesions may remain green and may exhibit crusty bacterial ooze on the surface."
+    },
+    "look_alikes": {
+     "value": [
+      "common bacterial blight",
+      "bacterial brown spot"
+     ],
+     "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+     "quote": "Because chemical control is often less effective against common bacterial blight compared to halo blight and bacterial brown spot, accurate disease diagnosis is important."
+    }
+   },
+   "treatments": {
+    "value": [
+     "Crop rotation and clean tillage (for example, plowing) help reduce the risk of disease by reducing the amount of inoculum in the immediate area.",
+     "Plant only certified, pathogen-free seed from reputable suppliers and produced in semiarid regions.",
+     "Do not enter fields to cultivate or handle plants wet with dew or rain.",
+     "Equipment should be sanitized by spraying with a disinfectant before moving from an infected to a blight-free field.",
+     "Sprays provide good control of bacterial brown spot and halo blight but only moderate control of common blight."
+    ],
+    "url": "https://extension.illinois.edu/plant-problems/bacterial-diseases-beans",
+    "quote": "Crop rotation and clean tillage (for example, plowing) help reduce the risk of disease by reducing the amount of inoculum in the immediate area. ... Plant only certified, pathogen-free seed from reputable suppliers and produced in semiarid regions. Do not enter fields to cultivate or handle plants wet with dew or rain. Equipment should be sanitized by spraying with a disinfectant before moving from an infected to a blight-free field. Sprays provide good control of bacterial brown spot and halo blight but only moderate control of common blight."
+   },
+   "confidence": "medium",
+   "num_sources": 1,
+   "conflicts": [],
+   "regional_observations": {
+    "Colorado": {
+     "state": "Colorado",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "the lesions quickly turn necrotic",
+       "image_shows": "Necrotic tissue is observed on the leaves, appearing as dead brown tissue.",
+       "image_quote": "Dead brown tissue is seen on the leaf margin.",
+       "image_id": "bugwood::5444716",
+       "verification_status": "verified",
+       "reasoning": "Multiple extension sources confirm halo-blight leaf lesions rapidly become necrotic dead brown tissue, especially under Colorado's arid conditions.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropwatch.unl.edu/plant-disease/dry-bean/halo-blight/",
+         "quote": "Under arid conditions, this infected tissue dies and turns tan-colored and necrotic.",
+         "_repaired_from": {
+          "prev_url": "https://cropwatch.unl.edu/plant-disease/dry-bean/halo-blight/",
+          "prev_quote": "Under arid conditions, this infected tissue dies and turns tan-colored and necrotic, and a broad yellow to green halo surrounds the lesion."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaves have a curled appearance with some leaves showing inward curling.",
+       "image_quote": "Some leaves show inward curling.",
+       "image_id": "bugwood::5444716",
+       "verification_status": "verified",
+       "reasoning": "Extension factsheets document leaf distortion and curving/curling of systemically infected leaflets as a recognized halo-blight symptom.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://ag.umass.edu/vegetable/fact-sheets/bean-halo-blight",
+         "quote": "Infection of expanding leaves may result in leaf distortion."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "water-soaked spots on the lower surface",
+       "image_shows": "Lesions or chlorosis stop at veins.",
+       "image_quote": "Lesions or chlorosis stop at veins.",
+       "image_id": "bugwood::5444716",
+       "verification_status": "weakly_supported",
+       "reasoning": "Sources describe the spots as 'angular,' which is consistent with vein-delimited lesions, giving indirect support to the vein-stopping observation.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.usu.edu/vegetableguide/legumes/halo-blight",
+         "quote": "small, angular, water-soaked spots (almost resembling little pin pricks) on the undersurfaces of leaves."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "water-soaked spots ... zone of yellow-green tissue (halo) ... generalized systemic chlorosis",
+       "image_shows": "The affected tissue has a mix of green and yellow hues, with some brownish tints.",
+       "image_quote": "The leaves have a mix of green and yellow hues with brownish tints.",
+       "image_id": "bugwood::5444716",
+       "verification_status": "verified",
+       "reasoning": "The green/yellow/brown hue mix matches published descriptions of green leaf tissue with yellow chlorotic halos and browning lesions.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/bacterial-diseases-of-beans/",
+         "quote": "Greenish-yellow halos, highly variable in size, subsequently develop around these spots (Figures 7 and 8).",
+         "_repaired_from": {
+          "prev_url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/bacterial-diseases-of-beans/",
+          "prev_quote": "As these spots grow and turn brown, a characteristic light green to yellow halo appears around the spots."
+         }
+        }
+       ]
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The lesions appear irregular.",
+       "image_quote": "There are various shapes of lesions, some with irregular outlines.",
+       "image_id": "bugwood::5444716",
+       "verification_status": "weakly_supported",
+       "reasoning": "Sources describe angular spots that enlarge and coalesce into numerous reddish-brown lesions, consistent with variable/irregular lesion outlines but not explicitly termed irregular.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/bacterial-diseases-of-beans/",
+         "quote": "Halo blight symptoms first appear as small, angular, water-soaked spots... eventually developing into numerous small, reddish-brown lesions on the leaves."
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaves appear to have an oval shape.",
+       "image_quote": "The leaves are broadest near the base and taper to a point.",
+       "image_id": "bugwood::5444716",
+       "verification_status": "weakly_supported",
+       "reasoning": "This describes the ovate leaflet morphology of the bean plant itself rather than a halo-blight lesion; the shape is botanically corroborated for common bean leaflets but only indirectly, via generic leaf-shape references rather than a disease-specific photo source.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.biomadam.com/leaves-types",
+         "quote": "Ovate leaves are egg-shaped, but the base is the widest portion. If the wider portion is towards the base, that is an ovate leaf."
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5444716",
+      "bugwood::5444717",
+      "bugwood::5444718",
+      "bugwood::5444719",
+      "bugwood::5444720",
+      "bugwood::5444721",
+      "bugwood::5444722",
+      "bugwood::5444723",
+      "bugwood::5444724",
+      "bugwood::5444725",
+      "bugwood::5444726",
+      "bugwood::5444727",
+      "bugwood::5444728"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 3,
+       "n_provisional": 3,
+       "n_contradictory": 2,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 6,
+       "n_added": 6,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Sclerotinia Timber Rot",
+   "pathogen_scientific_name": {
+    "value": "Sclerotinia sclerotiorum",
+    "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/white-mold/",
+    "quote": "The fungus that causes white mold, Sclerotinia sclerotiorum , is widely distributed in relatively cool and moist areas throughout the world .",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-snap-phaseolus-vulgaris-white-mold-sclerotinia-rot",
+    "quote": "The fungus, Sclerotinia sclerotiorum , causes white mold."
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem",
+     "Pod",
+     "Root",
+     "Whole plant"
+    ],
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-snap-phaseolus-vulgaris-white-mold-sclerotinia-rot",
+    "quote": "The first symptom is usually water-soaked lesions on stem and pods. The fungus may invade the stem near the soil line, causing a rapid wilting and death of the entire plant, or it may invade pods or branches and foliage that comes in contact with colonized tissue."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "White mold first appears as pale, often bleached, water-soaked (watery) rot lesions on stems, leaves, and pods; white threadlike, cottony mycelium is often visible on rotted tissue under moist conditions, after which affected tissue dries and bleaches to a pale tan, beige, or almost white color and black sclerotia develop.",
+     "url": "https://ipm.ucanr.edu/agriculture/dry-beans/white-mold/",
+     "quote": "White mold first appears as a watery rot on stems, leaves, and pods. White mycelium (threadlike hyphae) is often visible on the surface of rotted tissue under moist conditions."
+    },
+    "diagnostic_features": {
+     "value": "The development of black, irregularly shaped (round to oblong) sclerotiaâ€”compact masses of myceliaâ€”within the white cottony fungal growth is the best diagnostic feature; sclerotia are white early in development and turn black when fully developed, formed on plant surfaces and inside pods or stems, while affected tissue dries quickly and bleaches to a pale tan, beige, or almost white color.",
+     "url": "https://ipm.ucanr.edu/agriculture/dry-beans/white-mold/",
+     "quote": "The development of black, irregularly shaped sclerotia (compact masses of mycelia) is the best diagnostic feature."
+    },
+    "look_alikes": {
+     "value": [
+      "Phytophthora blight",
+      "Pythium blight"
+     ],
+     "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/white-mold/",
+     "quote": "White mold on pepper can be distinguished from Phytophthora blight, which also affects stems, by presence of white cottony fungal growth and sclerotia, additionally, with Phytophthora blight affected stems are darker brown and usually there are also symptoms on leaves and fruit plus the growing tip may be blighted."
+    }
+   },
+   "treatments": {
+    "value": [
+     "Rotate with non-host crops (small grains, corn, rye, wheat, grasses, cereals) for at least 2-3 years, and up to 3-8 years, to reduce soil inoculum and sclerotia populations.",
+     "Use wide row spacing (36 inches recommended) to increase air movement and promote drying of the soil and plant canopy.",
+     "Use management practices that reduce heavy canopies and increase air movement.",
+     "Avoid heavy applications of nitrogen / over-fertilization, which can produce excessive, dense, lush canopies.",
+     "Plant erect, upright, open-canopy (open-base) varieties that hold pods off the ground and do not produce excessive foliage near ground level; resistant bean varieties (including dry bean types) are available.",
+     "Orient bean rows in the direction of the prevailing winds to promote air drainage and drying of plant and soil surfaces.",
+     "Avoid planting the most susceptible crops in fields surrounded by dense woods that restrict air circulation.",
+     "Time irrigations to allow drying of the plant canopy before nightfall and avoid excessive irrigation after petal fall.",
+     "Plant garbanzo beans later (December through early February) rather than early (early November) to avoid heavy canopies that increase humidity.",
+     "Scout and inspect plants for symptoms beginning at emergence/bloom, keeping written notes and photographic records of occurrence and severity.",
+     "Practice good weed control, removing susceptible weeds (in particular ragweed) from the field.",
+     "Avoid wounds and remove affected plants.",
+     "Incorporate debris promptly after harvest and use deep plowing to bury sclerotia and reduce sclerotia production.",
+     "Field flooding during warm temperatures destroys sclerotia.",
+     "Use a timely harvest with rapid cooling and pod storage at 45Â°F to 50Â°F for effective postharvest control.",
+     "Apply foliar fungicides starting at early bloom (1% to 10% bloom) in fields with a history of white mold, obtaining thorough coverage with high water volume (50 gallons per acre minimum) and high pressure (100 to 200 psi).",
+     "Conventional fungicides in FRAC groups 1, 2, 3, 7, 11, 12 and 29 are labeled for white mold, in addition to contact fungicides copper and chlorothalonil.",
+     "BOSCALID (Endura) at 8 to 11 oz/A at the beginning of flowering and again at full bloom.",
+     "THIOPHANATE METHYL (Topsin M WSB at 1 to 1.5 lb/A; T-Methyl 4.5F AG / Topsin 4.5 FL at 30 to 40 fl oz/A).",
+     "Blocker 4F (Group 14) at 4 pints/A at planting and again on 2- to 3-week intervals when disease is severe.",
+     "Botran 75W (Group 14) at 2 2/3 lb/A on 7-day intervals.",
+     "Cannonball WG (Group 12) at 7 oz/A when 10% of plants have at least one open blossom.",
+     "Fontelis at 16 to 30 fl oz/A at the beginning of flowering and again at full bloom.",
+     "Luna Privilege at 6.84 fl oz/A on 14-day intervals.",
+     "Rovral 4 Flowable at 1.5 to 2 pints/A when 10% of plants have at least one open bloom.",
+     "Omega 500F (Group 29) at 0.5 to 0.85 pint/A when 10% to 30% of plants have at least one open blossom.",
+     "Switch 62.5WG (Group 12 + 9) at 11 to 14 oz/A.",
+     "Jet-Ag at 0.75 to 3.9 fl oz/5 gal water as a weekly preventative treatment.",
+     "Biological/soil treatments: Contans WG (a parasitic fungus that attacks sclerotia) at 1 to 4 lb/A as a preplant or postharvest treatment.",
+     "Regalia Biofungicide (Group P5) at 1 to 4 quarts/A on 7- to 10-day intervals.",
+     "Double Nickel LC at 1 to 6 quarts/A at planting and again at cultivation.",
+     "Serenade Opti at 14 to 20 oz/A on 7- to 10-day intervals.",
+     "Stargus at 2 to 4 quarts/A plus a nonionic surfactant on 7- to 10-day intervals."
+    ],
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-snap-phaseolus-vulgaris-white-mold-sclerotinia-rot",
+    "quote": "Cultural control Reduce humidity and high-moisture periods within the plant canopy and field. ... Chemical control In fields with a history of white mold, apply fungicide at 1% to 10% bloom ... Biological control Contans WG at 1 to 4 lb/A"
+   },
+   "confidence": "high",
+   "num_sources": 3,
+   "conflicts": [
+    {
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Sclerotinia sclerotiorum",
+     "alternative_value": "Sclerotinia trifoliorum",
+     "alternative_source_url": "https://ipm.ucanr.edu/agriculture/dry-beans/white-mold/",
+     "note": "UC IPM lists Sclerotinia trifoliorum as an additional causal species of white mold alongside Sclerotinia sclerotiorum; the Cornell and PNW sources attribute the disease solely to S. sclerotiorum."
+    },
+    {
+     "field": "look_alikes",
+     "canonical_value": "Phytophthora blight (Cornell); Pythium blight (PNW)",
+     "alternative_value": "Pythium blight",
+     "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-snap-phaseolus-vulgaris-white-mold-sclerotinia-rot",
+     "note": "Sources cite different confusable diseases â€” Cornell distinguishes white mold from Phytophthora blight (on pepper), while PNW notes white mold may be confused with Pythium blight on bean. Both are retained in the look_alikes value array."
+    }
+   ],
+   "regional_observations": {
+    "Colorado": {
+     "state": "Colorado",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "pale, often bleached, water-soaked rot lesions on stems, leaves, and pods",
+       "image_shows": "Lesions are irregularly shaped and extend across leaf veins rather than being vein-delimited.",
+       "image_quote": "The lesions have irregular shapes and some cross the leaf veins.",
+       "image_id": "bugwood::5359769",
+       "verification_status": "weakly_supported",
+       "reasoning": "White mold lesions enlarge as an irregular, non-vein-limited watery rot, consistent with irregular shapes crossing veins.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/white-mold/",
+         "quote": "Black and irregularly-shaped sclerotia (resting structures of the fungus) form on and within infected plant parts."
+        },
+        {
+         "url": "https://www.gov.mb.ca/agriculture/crops/plant-diseases/white-mould.html",
+         "quote": "The first symptoms are brown, water-soaked lesions that enlarge rapidly under cool, moist conditions."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "affected tissue dries and bleaches to a pale tan, beige, or almost white color and black sclerotia develop",
+       "image_shows": "Dead tissue appears as brown-to-black patches on the leaves, consistent with browning and sclerotial darkening.",
+       "image_quote": "There are areas of dead, brown and black tissue on the leaves.",
+       "image_id": "bugwood::5359769",
+       "verification_status": "weakly_supported",
+       "reasoning": "Browning of necrotic leaf tissue plus black sclerotia are documented white mold progression symptoms.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/white-mold/",
+         "quote": "leaves of severely diseased plants become yellow and eventually turn brown and fall off"
+        },
+        {
+         "url": "https://extension.colostate.edu/topic-areas/agriculture/white-mold-of-dry-beans-2-918/",
+         "quote": "Within a week, black sclerotia are formed in the infected tissue."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "affected tissue dries and bleaches to a pale tan, beige, or almost white color",
+       "image_shows": "Tissue color grades from pale yellow and green into brownish tints, matching early bleaching and later browning.",
+       "image_quote": "The affected tissue has a mix of pale yellow and green, with some brownish tints.",
+       "image_id": "bugwood::5359769",
+       "verification_status": "weakly_supported",
+       "reasoning": "A pale-yellow/green to brownish palette is consistent with documented bleaching-then-browning of white mold tissue.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/white-mold/",
+         "quote": "Initial symptoms on these tissues are pale (often bleached) colored, water-soaked lesions... leaves of severely diseased plants become yellow and eventually turn brown"
+        },
+        {
+         "url": "https://www.gov.mb.ca/agriculture/crops/plant-diseases/white-mould.html",
+         "quote": "The lesions eventually become dry, bleached, and shredded."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "Phytophthora blight; Pythium blight",
+       "image_shows": "Lesions lack the concentric ring patterning that would indicate a look-alike leaf spot.",
+       "image_quote": "No concentric pattern was observed in the lesions.",
+       "image_id": "bugwood::5359769",
+       "verification_status": "weakly_supported",
+       "reasoning": "Absence of concentric rings is a useful negative diagnostic since concentric-ringed lesions point to Ascochyta/Alternaria rather than Sclerotinia.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://beanipm.pbgworks.org/fungal-leaf-spots",
+         "quote": "Bean fungal leaf spots such as Ascochyta and Alternaria produce lesions with a series of conspicuous concentric rings, unlike white mold."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "Leaflets are ovate with pointed (acuminate) tips, a host-morphology detail not tied to the disease.",
+       "image_quote": "The leaves are ovate with pointed tips.",
+       "image_id": "bugwood::5359769",
+       "verification_status": "verified",
+       "reasoning": "Botanical references confirm common bean leaflets are ovate with acuminate (pointed) tips, corroborating this host-morphology observation.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://plants.ces.ncsu.edu/plants/phaseolus-vulgaris/",
+         "quote": "Ternate in shape; three broadly ovate leaflets per leaf.",
+         "_repaired_from": {
+          "prev_url": "https://plants.ces.ncsu.edu/plants/phaseolus-vulgaris/",
+          "prev_quote": "Beans in this genus have trifoliate compound leaves with ovate to ovate-orbicular leaflets."
+         }
+        },
+        {
+         "url": "https://seedidguide.idseed.org/fact_sheets/33291/",
+         "quote": "Leaflets are broadly ovate with acuminate apices, which means they have pointed tips; leaflets are ovate, acuminate, 6-15 cm long."
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5359769",
+      "bugwood::5361312",
+      "bugwood::5361385"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       10
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 10,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 4,
+       "n_provisional": 1,
+       "n_contradictory": 5,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 5,
+       "n_added": 5,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "Idaho": {
+     "state": "Idaho",
+     "deltas": [
+      {
+       "field": "severity",
+       "canonical_says": "white threadlike, cottony mycelium is often visible on rotted tissue under moist conditions",
+       "image_shows": "Extensive white cottony mycelium spread across the stem and onto surrounding foliage indicates advanced, high-severity infection.",
+       "image_quote": "White cottony mycelium is visible on the plant stems and leaf stalks.",
+       "image_id": "bugwood::5606624",
+       "verification_status": "weakly_supported",
+       "reasoning": "External extension sources confirm cottony mycelium spreads extensively over stems and adjacent foliage in advanced infections, supporting the severity reading, though it partly overlaps canonical description.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropwatch.unl.edu/plant-disease/dry-bean/white-mold/",
+         "quote": "The cottony mycelium usually produces numerous sclerotia... white cottony mycelium covering affected plant parts."
+        },
+        {
+         "url": "https://extensionpubs.unl.edu/publication/g1786/2013/html/view",
+         "quote": "Affected tissues drying, turning brown, and becoming covered with white, cottony mycelium that spreads over the plant under moist conditions."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "Phytophthora blight; Pythium blight",
+       "image_shows": "The lesion shows no vascular streaks, dark blotches, or dark water-soaked streaks, arguing against a Phytophthora/Pythium look-alike.",
+       "image_quote": "There are no visible vascular streaks, dark blotches, or water-soaked streaks extending from lesions.",
+       "image_id": "bugwood::5606624",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension sources confirm white mold is distinguished from Phytophthora/Pythium by bleached stems, white cottony mycelium, and sclerotia rather than the sunken tan-to-brown water-soaked streaks of those look-alikes, indirectly supporting the candidate's negative observation.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.canr.msu.edu/resources/phytophthora-root-and-stem-rot",
+         "quote": "Pythium and Phytophthora lesions become tan to brown in color as they dry out, whereas white mold produces white cottony mycelia, bleached stems, and sclerotia on infected tissues."
+        },
+        {
+         "url": "https://beanipm.pbgworks.org/phytophthora-pythium",
+         "quote": "Infected seedlings develop water-soaked lesions at the soil line, followed by stem rot and collapse; the water-soaked area eventually dries out, becomes somewhat sunken, tan to brown in color."
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5606624",
+      "bugwood::5606625",
+      "bugwood::5606626",
+      "bugwood::5606627",
+      "bugwood::5606628",
+      "bugwood::5606630",
+      "bugwood::5606631"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       6
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 6,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 1,
+       "n_provisional": 1,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 2,
+       "n_added": 2,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "North Dakota": {
+     "state": "North Dakota",
+     "deltas": [
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "black, irregularly shaped (round to oblong) sclerotia... formed on plant surfaces and inside pods or stems, while affected tissue dries quickly and bleaches to a pale tan, beige, or almost white color",
+       "image_shows": "A discrete black sclerotium is present on the external surface of a dried, bleached bean stem.",
+       "image_quote": "There is a dark, irregularly shaped sclerotium on the stem.",
+       "image_id": "bugwood::5606932",
+       "verification_status": "verified",
+       "reasoning": "Extension sources confirm black sclerotia form on the external surfaces of dried, bleached bean stems, directly corroborating the witnessed feature.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-dry-phaseolus-vulgaris-white-mold-sclerotinia-rot",
+         "quote": "When dry, lesions on infected stems and pods are beige to white... They frequently have sclerotia embedded in them both internally and on external surfaces."
+        },
+        {
+         "url": "https://cropwatch.unl.edu/plant-disease/dry-bean/white-mold/",
+         "quote": "Infection of stems and branches will cause affected plant parts to wilt and later die, taking on a bleached and dried appearance. The development of black, irregularly shaped sclerotia is the best diagnostic feature of this disease."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "Phytophthora blight; Pythium blight",
+       "image_shows": "The stem shows no Phytophthora/Pythium blight symptoms; the black sclerotium instead points to Sclerotinia rather than the look-alikes.",
+       "image_quote": "The image does not show typical symptoms such as necrotic spots or wilting associated with Phytophthora blight or Pythium blight.",
+       "image_id": "bugwood::5606932",
+       "verification_status": "verified",
+       "reasoning": "Extension references confirm the presence of sclerotia (and absence of typical Phytophthora/Pythium symptoms) is exactly what distinguishes white mold from these look-alikes, supporting the ruling-out observation.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-dry-phaseolus-vulgaris-pythium-diseases-pythium-blight",
+         "quote": "The lack of sclerotia and the occurrence of the disease well before row closure helps distinguish Pythium wilt from white mold... Beans with Pythium blight... will have no sclerotia present."
+        },
+        {
+         "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/white-mold/",
+         "quote": "White mold... can be distinguished from Phytophthora blight... by presence of white cottony fungal growth and sclerotia; ... Phytophthora does not produce cottony growth or sclerotia."
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5606932",
+      "bugwood::5606933",
+      "bugwood::5606934",
+      "bugwood::5606935",
+      "bugwood::5606936"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       3
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 3,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 2,
+       "n_provisional": 0,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 2,
+       "n_added": 2,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Beet Curly Top Virus",
+   "pathogen_scientific_name": {
+    "value": null,
+    "url": null,
+    "quote": null
+   },
+   "type_of_disease": {
+    "value": null,
+    "url": null,
+    "quote": null
+   },
+   "affected_parts": {
+    "value": null,
+    "url": null,
+    "quote": null
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": null,
+     "url": null,
+     "quote": null
+    },
+    "diagnostic_features": {
+     "value": null,
+     "url": null,
+     "quote": null
+    },
+    "look_alikes": {
+     "value": null,
+     "url": null,
+     "quote": null
+    }
+   },
+   "confidence": "low",
+   "num_sources": 0,
+   "conflicts": [],
+   "regional_observations": {
+    "Colorado": {
+     "state": "Colorado",
+     "deltas": [
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "(not specified)",
+       "image_shows": "The plant exhibits chlorosis with visible leaf curling and deformation.",
+       "image_quote": "The leaves display a yellowish-green coloration with visible leaf curling and deformation.",
+       "image_id": "bugwood::5389464",
+       "verification_status": "verified",
+       "reasoning": "Co-occurring chlorosis, curling, and leaf deformation are the documented hallmark of BCTV in bean.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-all-phaseolus-vulgaris-curly-top",
+         "quote": "On young plants, the trifoliolate leaves pucker and curl down. General yellowing and death follow."
+        },
+        {
+         "url": "https://hortsense.cahnrs.wsu.edu/fact-sheet/bean-curly-top-beet-curly-top-virus/",
+         "quote": "Plants infected with the Beet curly top virus have puckered, wrinkled leaves with edges curled downward."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaves are curled inward/downward, a hallmark of curly top.",
+       "image_quote": "The leaves show significant curling.",
+       "image_id": "bugwood::5389464",
+       "verification_status": "verified",
+       "reasoning": "Leaf curling is the defining symptom of curly top in bean and is directly corroborated.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-all-phaseolus-vulgaris-curly-top",
+         "quote": "On young plants, the trifoliolate leaves pucker and curl down."
+        },
+        {
+         "url": "https://ipm.ucanr.edu/agriculture/dry-beans/curly-top/",
+         "quote": "Leaf symptoms include puckering and a crookneck malformation of the trifoliates."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "(not specified)",
+       "image_shows": "Veins appear translucent and pale, indicating vein clearing.",
+       "image_quote": "Veins are translucent, paler than the surrounding leaf tissue.",
+       "image_id": "bugwood::5389464",
+       "verification_status": "verified",
+       "reasoning": "Vein-clearing (translucent, pale veins) is an explicitly documented BCTV symptom in bean.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-all-phaseolus-vulgaris-curly-top",
+         "quote": "Brittle, curled leaflets show vein-clearing and vein-swelling, and crinkled upper surfaces."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaves exhibit significant, extensive chlorosis.",
+       "image_quote": "The leaves are visibly yellow and discolored, indicating extensive chlorotic symptoms.",
+       "image_id": "bugwood::5389464",
+       "verification_status": "verified",
+       "reasoning": "General yellowing/chlorosis as a severe systemic response is well documented for BCTV in bean.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-all-phaseolus-vulgaris-curly-top",
+         "quote": "Older affected plants become yellowed, dwarfed, and bunchy, and pods are stunted."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The affected leaf tissue is raised and slightly deformed.",
+       "image_quote": "The lesions display irregular shapes with raised edges.",
+       "image_id": "bugwood::5389464",
+       "verification_status": "weakly_supported",
+       "reasoning": "Crinkled, swollen, thickened leaf surfaces are documented, giving indirect support for a raised/deformed texture, though BCTV forms no discrete lesions.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/bean-all-phaseolus-vulgaris-curly-top",
+         "quote": "Brittle, curled leaflets show vein-clearing and vein-swelling, and crinkled upper surfaces."
+        },
+        {
+         "url": "https://hortsense.cahnrs.wsu.edu/fact-sheet/bean-curly-top-beet-curly-top-virus/",
+         "quote": "The leaves become thick and brittle and may turn dark green."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "(not specified)",
+       "image_shows": "The tissue lacks the concentric ring pattern typical of Alternaria/Early Blight, consistent with a viral (non-fungal) etiology.",
+       "image_quote": "No concentric pattern is visible in the lesion.",
+       "image_id": "bugwood::5389464",
+       "verification_status": "weakly_supported",
+       "reasoning": "BCTV is a systemic virus producing curling/puckering rather than concentric ring lesions, so the absence of rings is consistent with the diagnosis and separates it from Alternaria.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://ipm.ucanr.edu/agriculture/dry-beans/curly-top/",
+         "quote": "Leaf symptoms include puckering and a crookneck malformation of the trifoliates; infected plants are severely stunted and bunched."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "affected_organs",
+       "canonical_says": "(not specified)",
+       "image_shows": "Necrotic tissue is present on the leaves.",
+       "image_quote": "Necrotic tissue is visible on the leaves.",
+       "image_id": "bugwood::5389464",
+       "verification_status": "weakly_supported",
+       "reasoning": "Curly top involves phloem necrosis and eventual tissue death, giving indirect support for necrotic leaf tissue, though extension sources emphasize curling/yellowing over discrete leaf necrosis.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/beet-curly-top-virus",
+         "quote": "BCTV ... induces cell division and expansion in affected tissues that precedes necrosis and eventual collapse of the phloem, resulting in characteristic leaf curling and vein-swelling symptoms."
+        },
+        {
+         "url": "https://hortsense.cahnrs.wsu.edu/fact-sheet/bean-curly-top-beet-curly-top-virus/",
+         "quote": "General yellowing and death follow the initial curling symptoms on young plants."
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "There are no visible notches at the leaf tips.",
+       "image_quote": "The leaf tips are notched.",
+       "image_id": "bugwood::5389464",
+       "verification_status": "weakly_supported",
+       "reasoning": "Documented bean-leaflet morphology has entire margins and acuminate (unnotched) tips, so the absence of tip notches is consistent with published descriptions.",
+       "swarm_support": 2,
+       "web_support": [
+        {
+         "url": "https://climbers.lsa.umich.edu/phaseolus-vulgaris/",
+         "quote": "leaflets are broadly ovate to elliptical, entire, acuminate ... margins are entire"
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The petiole length is significantly shorter than the blade, about 1:5.",
+       "image_quote": "The petiole is about 1:5 the length of the blade.",
+       "image_id": "bugwood::5389464",
+       "verification_status": "field_observation",
+       "reasoning": "No extension or botanical source quantifies a petiole-to-blade ratio, but the observation is plausible and not contradicted by any published description.",
+       "swarm_support": 2,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "No single tip hair is observed.",
+       "image_quote": "No single tip hair is present.",
+       "image_id": "bugwood::5389464",
+       "verification_status": "field_observation",
+       "reasoning": "Bean leaflets are described as glabrous to pubescent with no distinct terminal tip hair structure noted in sources, so this negative observation is plausible but unverified.",
+       "swarm_support": 2,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5389464",
+      "bugwood::5389465",
+      "bugwood::5389466",
+      "bugwood::5389467",
+      "bugwood::5389468",
+      "bugwood::5389469",
+      "bugwood::5389470",
+      "bugwood::5389471",
+      "bugwood::5389472",
+      "bugwood::5389473",
+      "bugwood::5389476",
+      "bugwood::5389477",
+      "bugwood::5389478",
+      "bugwood::5389479",
+      "bugwood::5495213"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       22
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 22,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 6,
+       "n_provisional": 12,
+       "n_contradictory": 4,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 18,
+       "n_added": 13,
+       "n_overlaps_bumped": 5,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 2,
+      "contradictory_count": 3,
+      "duplicates_count": 0,
+      "dropped_contradictory": [
+       {
+        "field": "other",
+        "canonical_says": "(not specified)",
+        "image_shows": "The leaf shape is broad with a rounded apex, suggesting a spade-like appearance.",
+        "image_quote": "The leaf has a broad, rounded apex.",
+        "image_id": "bugwood::5389464",
+        "verification_status": "contradictory",
+        "reasoning": "Published morphology describes bean-leaflet tips as acute to acuminate (pointed), contradicting the claimed rounded apex.",
+        "swarm_support": 1,
+        "web_support": [
+         {
+          "url": "https://climbers.lsa.umich.edu/phaseolus-vulgaris/",
+          "quote": "leaflets are broadly ovate to elliptical, entire, acuminate ... tips are acute to tapering (acuminate)"
+         }
+        ]
+       },
+       {
+        "field": "other",
+        "canonical_says": "(not specified)",
+        "image_shows": "The length-to-width ratio is approximately 1:1, indicating a relatively square shape.",
+        "image_quote": "The leaf is approximately 1:1 in length-to-width ratio.",
+        "image_id": "bugwood::5389464",
+        "verification_status": "contradictory",
+        "reasoning": "Ovate bean leaflets are consistently longer than broad (documented dimensions give ratios well above 1:1), contradicting a roughly square 1:1 shape.",
+        "swarm_support": 2,
+        "web_support": [
+         {
+          "url": "https://climbers.lsa.umich.edu/phaseolus-vulgaris/",
+          "quote": "leaflets are broadly ovate to elliptical ... 4-16 cm long and 2.5-11 cm broad"
+         }
+        ]
+       },
+       {
+        "field": "other",
+        "canonical_says": "(not specified)",
+        "image_shows": "The leaf margin exhibits fine serration along the edges.",
+        "image_quote": "The leaf margins are serrated.",
+        "image_id": "bugwood::5389464",
+        "verification_status": "contradictory",
+        "reasoning": "Bean-leaflet margins are documented as entire (smooth), directly contradicting the claimed fine serration.",
+        "swarm_support": 2,
+        "web_support": [
+         {
+          "url": "https://climbers.lsa.umich.edu/phaseolus-vulgaris/",
+          "quote": "leaflets are broadly ovate to elliptical, entire, acuminate ... margins are entire"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  }
+ ],
+ "crop": "Common Bean",
+ "generated_date": "2026-06-10",
+ "regional_observations_count": 9
 }

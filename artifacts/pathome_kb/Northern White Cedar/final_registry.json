@@ -1,391 +1,390 @@
 {
-  "diseases": [
+ "diseases": [
+  {
+   "disease_name": "Needle Blight Of Cedar",
+   "pathogen_scientific_name": {
+    "value": "Didymascella thujina",
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
+    "quote": "Cause Didymascella thujina , a fungus.",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
+    "quote": "Didymascella thujina , a fungus."
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar"
+    ],
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
+    "quote": "Light-brown to tan spots appear on the leaves, and large brown fruiting structures of the fungus (apothecia) form in the center of these spots."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Small, bleached light-brown to tan spots appear first on the upper surface of one-year-old leaves; one or several brown to black fruiting structures (apothecia) form in the center of the spots in late spring; leaves turn brown and drop in fall, while infected leaves remaining on the tree turn ashy gray.",
+     "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
+     "quote": "Small, bleached spots on the upper surface of one-year-old leaves appear first. One or several brown to black fruiting structures (apothecia) appear on the small leaves in late spring. Leaves turn brown and drop in fall. Infected leaves that remain on the tree turn ashy gray."
+    },
+    "diagnostic_features": {
+     "value": "Apothecia are embedded in the leaf tissues and the entire structure drops out, leaving deep pits; the disease progression gives the appearance of having been scorched by fire.",
+     "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
+     "quote": "Apothecia are imbedded in leaf tissues; the entire structure drops out, leaving deep pits. The disease progression gives the appearance of having been scorched by fire."
+    },
+    "look_alikes": {
+     "value": [
+      "Pseudocercospora thujina (formerly Coryneum thujinum)"
+     ],
+     "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
+     "quote": "Can also be confused with the minor problem caused by Pseudocercospora thujina (formerly Coryneum thujinum )."
+    }
+   },
+   "treatments": {
+    "value": [
+     "Application of fungicides to manage the disease is rarely necessary",
+     "A copper fungicide (Bordeaux Mix) or mancozeb (Dithane) should be effective if applied early in the season, when susceptible foliage is developing",
+     "Propagate from disease-free stock plants",
+     "Use seed from British Columbia coastal, low-elevation populations",
+     "Space nursery plants and time irrigation to promote rapid drying of foliage",
+     "Do not grow susceptible cultivars downwind of infected hedges, windbreaks, or nearby stands of native western red cedar",
+     "Pruning out and burning affected twigs is of limited use",
+     "Remove plant debris from seed before seeding",
+     "Apply fungicides during wet periods in spring and fall to protect healthy foliage",
+     "Banner MAXX at 5 to 8 fl oz/100 gal water can be used if not phytotoxic to plants",
+     "Topas (propiconazole) registered in British Columbia for use every 4 weeks during the growing season to a maximum of six applications (Group 3 fungicide, 12-hr reentry)",
+     "Bordeaux or fixed-copper sprays (such as CuPRO 5000 at 1.5 to 2 lb/A) in spring and early summer (48-hr reentry)",
+     "Mancozeb-based products applied as regular sprays late March through May and late August through October (Group M3, 24-hr reentry)",
+     "Tebuject 16 registered for tree injections, number of capsules based on tree size"
+    ],
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
+    "quote": "Cultural control Propagate from disease-free stock plants. Use seed from British Columbia coastal, low-elevation populations. Space nursery plants and time irrigation to promote rapid drying of foliage. Do not grow susceptible cultivars downwind of infected hedges, windbreaks, or nearby stands of native western red cedar. Pruning out and burning affected twigs is of limited use. Remove plant debris from seed before seeding. Chemical control Apply during wet periods in spring and fall to protect healthy foliage."
+   },
+   "confidence": "high",
+   "num_sources": 2,
+   "conflicts": [
     {
-      "disease_name": "Needle Blight Of Cedar",
-      "pathogen_scientific_name": {
-        "value": "Didymascella thujina",
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
-        "quote": "Cause Didymascella thujina , a fungus.",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
-        "quote": "Didymascella thujina , a fungus."
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar"
-        ],
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
-        "quote": "Light-brown to tan spots appear on the leaves, and large brown fruiting structures of the fungus (apothecia) form in the center of these spots."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Small, bleached light-brown to tan spots appear first on the upper surface of one-year-old leaves; one or several brown to black fruiting structures (apothecia) form in the center of the spots in late spring; leaves turn brown and drop in fall, while infected leaves remaining on the tree turn ashy gray.",
-          "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
-          "quote": "Small, bleached spots on the upper surface of one-year-old leaves appear first. One or several brown to black fruiting structures (apothecia) appear on the small leaves in late spring. Leaves turn brown and drop in fall. Infected leaves that remain on the tree turn ashy gray."
-        },
-        "diagnostic_features": {
-          "value": "Apothecia are embedded in the leaf tissues and the entire structure drops out, leaving deep pits; the disease progression gives the appearance of having been scorched by fire.",
-          "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
-          "quote": "Apothecia are imbedded in leaf tissues; the entire structure drops out, leaving deep pits. The disease progression gives the appearance of having been scorched by fire."
-        },
-        "look_alikes": {
-          "value": [
-            "Pseudocercospora thujina (formerly Coryneum thujinum)"
-          ],
-          "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
-          "quote": "Can also be confused with the minor problem caused by Pseudocercospora thujina (formerly Coryneum thujinum )."
-        }
-      },
-      "treatments": {
-        "value": [
-          "Application of fungicides to manage the disease is rarely necessary",
-          "A copper fungicide (Bordeaux Mix) or mancozeb (Dithane) should be effective if applied early in the season, when susceptible foliage is developing",
-          "Propagate from disease-free stock plants",
-          "Use seed from British Columbia coastal, low-elevation populations",
-          "Space nursery plants and time irrigation to promote rapid drying of foliage",
-          "Do not grow susceptible cultivars downwind of infected hedges, windbreaks, or nearby stands of native western red cedar",
-          "Pruning out and burning affected twigs is of limited use",
-          "Remove plant debris from seed before seeding",
-          "Apply fungicides during wet periods in spring and fall to protect healthy foliage",
-          "Banner MAXX at 5 to 8 fl oz/100 gal water can be used if not phytotoxic to plants",
-          "Topas (propiconazole) registered in British Columbia for use every 4 weeks during the growing season to a maximum of six applications (Group 3 fungicide, 12-hr reentry)",
-          "Bordeaux or fixed-copper sprays (such as CuPRO 5000 at 1.5 to 2 lb/A) in spring and early summer (48-hr reentry)",
-          "Mancozeb-based products applied as regular sprays late March through May and late August through October (Group M3, 24-hr reentry)",
-          "Tebuject 16 registered for tree injections, number of capsules based on tree size"
-        ],
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/cedar-western-red-thuja-plicata-leaf-blight-keithia-blight",
-        "quote": "Cultural control Propagate from disease-free stock plants. Use seed from British Columbia coastal, low-elevation populations. Space nursery plants and time irrigation to promote rapid drying of foliage. Do not grow susceptible cultivars downwind of infected hedges, windbreaks, or nearby stands of native western red cedar. Pruning out and burning affected twigs is of limited use. Remove plant debris from seed before seeding. Chemical control Apply during wet periods in spring and fall to protect healthy foliage."
-      },
-      "confidence": "high",
-      "num_sources": 2,
-      "conflicts": [
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Didymascella thujina",
-          "alternative_value": "Keithia thujina",
-          "alternative_source_url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
-          "note": "Maine Forest Service lists Keithia thujina as a synonym of the accepted name Didymascella thujina: 'Cedar Leaf Blight Didymascella thujina [= Keithia thujina ]'."
-        },
-        {
-          "field": "affected_parts",
-          "canonical_value": "Foliar",
-          "alternative_value": "Foliar, Stem",
-          "alternative_source_url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
-          "note": "Maine Forest Service indicates twigs are also affected/shed ('Heavily-infected needles and twigs are shed later in the fall'), implying stem involvement, whereas PNW restricts symptoms to foliage."
-        },
-        {
-          "field": "treatments",
-          "canonical_value": "PNW Handbook cultural + chemical program (merged)",
-          "alternative_value": "Maine: fungicide application rarely necessary; copper (Bordeaux Mix) or mancozeb (Dithane) if applied early",
-          "alternative_source_url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
-          "note": "Treatment list is a union of both sources; Maine quote: 'Application of fungicides to manage the disease is rarely necessary.  A copper fungicide (Bordeaux Mix) or mancozeb (Dithane) should be effective if applied early in the season, when susceptible foliage is developing.'"
-        }
-      ],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Small, bleached light-brown to tan spots appear first on the upper surface of one-year-old leaves",
-              "image_shows": "The lesions are circular.",
-              "image_quote": "The lesion is circular.",
-              "image_id": "bugwood::5504853",
-              "verification_status": "weakly_supported",
-              "reasoning": "Sources describe small discrete spots and circular apothecial pustules on the leaf surface, giving partial support to a circular lesion outline.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "http://forestrydev.org/diseases/CTD/Group/Needle/needle1_e.html",
-                  "quote": "Symptoms on mature foliage first appear as several small, cream-coloured spots on the upper surface of individual cedar leaves."
-                },
-                {
-                  "url": "https://www.cabi.org/isc/datasheet/18896",
-                  "quote": "apothecia within the brown leaflets become conspicuous as golden-olive to dark-brown, circular pustules."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Small, bleached light-brown to tan spots appear first on the upper surface of one-year-old leaves",
-              "image_shows": "The lesion center is tan, with the margins appearing chocolate-brown.",
-              "image_quote": "The lesion centers are tan, with the margins appearing chocolate-brown.",
-              "image_id": "bugwood::5504853",
-              "verification_status": "weakly_supported",
-              "reasoning": "The tan lesion center is well documented, but the chocolate-brown margin detail is only indirectly supported, so support is partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
-                  "quote": "Symptoms first appear as light-brown areas on the individual scale-like leaves, and individual leaves are killed by the fungus and turn a light tan to gray color."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Small, bleached light-brown to tan spots appear first on the upper surface of one-year-old leaves",
-              "image_shows": "The affected tissue displays tan centers, chocolate-brown margins, and pale-straw chlorotic halos.",
-              "image_quote": "The lesion center is brown, the margin is dark brown, and there is a chlorotic yellow halo.",
-              "image_id": "bugwood::5504853",
-              "verification_status": "weakly_supported",
-              "reasoning": "Tan centers and brown margins are corroborated by extension sources, but the pale-straw chlorotic halo is not documented, so support is partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
-                  "quote": "Symptoms first appear as light-brown areas on the individual scale-like leaves ... individual leaves turn a light tan to gray color."
-                },
-                {
-                  "url": "https://en.wikipedia.org/wiki/Didymascella_thujina",
-                  "quote": "Light-brown to tan spots appear on the leaves, and large brown fruiting structures (apothecia) form in the center of these spots."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "one or several brown to black fruiting structures (apothecia) form in the center of the spots",
-              "image_shows": "Dark brown lesions on the leaf tissue.",
-              "image_quote": "Dark brownish-black patches are present.",
-              "image_id": "bugwood::5504853",
-              "verification_status": "weakly_supported",
-              "reasoning": "Dark brown to black patches are consistent with the maturing apothecia and blackened infected foliage described in extension literature.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "http://forestrydev.org/diseases/CTD/Group/Needle/needle1_e.html",
-                  "quote": "Fruiting bodies (apothecia) become readily visible by June as olive-brown (maturing to black) spots on the upper surface of infected leaves."
-                },
-                {
-                  "url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
-                  "quote": "bleached spots followed by brown or black cushion-like fungal fruiting bodies."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "Leaves are curled up.",
-              "image_quote": "leaves are curled up",
-              "image_id": "bugwood::5504853",
-              "verification_status": "provisional",
-              "reasoning": "Curled foliage is not a documented feature of cedar leaf blight on scale-leaved Thuja and no extension photo description corroborates it, but it is not contradicted so it is left provisional.",
-              "swarm_support": 1,
-              "web_support": []
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5504853",
-            "bugwood::5504854",
-            "bugwood::5504855",
-            "bugwood::5504856",
-            "bugwood::5504857",
-            "bugwood::5504858",
-            "bugwood::5504859",
-            "bugwood::5504860",
-            "bugwood::5504861",
-            "bugwood::5504862"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              10
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 10,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 4,
-              "n_provisional": 2,
-              "n_contradictory": 2,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 6,
-              "n_added": 6,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": true,
-            "failure_reason": "claude_query returned None (auth / timeout / empty)",
-            "preserved_count": 1
-          }
-        }
-      }
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Didymascella thujina",
+     "alternative_value": "Keithia thujina",
+     "alternative_source_url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
+     "note": "Maine Forest Service lists Keithia thujina as a synonym of the accepted name Didymascella thujina: 'Cedar Leaf Blight Didymascella thujina [= Keithia thujina ]'."
     },
     {
-      "disease_name": "Arborvitae Needle Blight",
-      "pathogen_scientific_name": {
-        "value": "Pestalotiopsis and Phyllosticta",
-        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
-        "quote": "Arborvitae needle blight is caused by the fungal pathogens  Pestalotiopsis  and  Phyllosticta .",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
-        "quote": "Arborvitae needle blight is caused by the fungal pathogens  Pestalotiopsis  and  Phyllosticta ."
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem"
-        ],
-        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
-        "quote": "Arborvitae infected by Phyllosticta  typically have blighted needle tips and/or discolored (pale green to yellow) needles ... Overall, Pestalotiopsis can likely be described as more aggressive in comparison to Phyllosticta because of its ability to attack stems and small branches."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Phyllosticta-infected arborvitae show blighted needle tips and pale green to yellow, desiccated-looking needles, with infections progressing from tip toward the base; Pestalotiopsis causes browning and dieback that can kill small branches.",
-          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
-          "quote": "Arborvitae infected by Phyllosticta  typically have blighted needle tips and/or discolored (pale green to yellow) needles that may appear desiccated. Infections often initiate at the needle tip and progress towards the base."
-        },
-        "diagnostic_features": {
-          "value": "During wet, mild weather black pads of fungal tissue (pycnidia) rupture through the needle epidermis to release spores; Pestalotiopsis produces small pads under the epidermis that rupture to form a long black mass of spores and attacks stems and small branches, whereas Phyllosticta is primarily restricted to the needles.",
-          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
-          "quote": "During wet and mild weather, black pads of fungal tissue (pycnidia) rupture through the epidermis on symptomatic needles to release large volumes of spores (conidia) ... Pestalotiopsis produces small pads of fungal tissue underneath the epidermis, and when moisture is abundant the pads ruptures through, producing a long black mass of spores. ... Phyllosticta , meanwhile, is primarily restricted to the needles."
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Prune and discard as many infected plant parts as possible",
-          "Avoid pruning during wet weather, when the fungus is most actively producing and disseminating spores",
-          "Avoid watering with overhead sprinklers that wet the foliage",
-          "Use drip irrigation or hand-watering of newly planted trees",
-          "Apply fungicides labeled for use on ornamentals (copper hydroxide, copper salts of fatty and rosin acids, metconazole, propiconazole, thiophanate-methyl and mancozeb)",
-          "Use fungicides preventatively to limit infections on the current year's growth in the spring",
-          "Use proper spacing and planting techniques to alleviate predisposing stresses"
-        ],
-        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
-        "quote": "The best course of action for management of any needle and shoot blight pathogen is to prune and discard as many infected plant parts as much as possible. ... Avoid pruning during wet weather ... Avoid watering with overhead sprinklers that wet the foliage ... Drip irrigation or hand-watering of newly planted trees is preferable. ... Fungicides labeled for use on ornamentals in Massachusetts that may have utility against both pathogens include: copper hydroxide, copper salts of fatty and rosin acids, metconaozle, propiconazole, thiophanate-methyl and mancozeb. Fungicides should be used as a preventative measure to limit infections on the current year's growth in the spring. ... Proper spacing and planting techniques can alleviate some of the predisposing stresses"
-      },
-      "confidence": "medium",
-      "num_sources": 1,
-      "conflicts": [],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "affected_organs",
-              "canonical_says": "Pestalotiopsis ... attacks stems and small branches, whereas Phyllosticta is primarily restricted to the needles.",
-              "image_shows": "The photo displays dark spots on a brownish-orange stem surface.",
-              "image_quote": "The image shows dark spots on the outer surface of the stem.",
-              "image_id": "bugwood::5508877",
-              "verification_status": "verified",
-              "reasoning": "Extension sources confirm that on arborvitae the pathogen attacks stems/twigs and produces visible black, pinhead-sized fruiting bodies dotting the woody surface, corroborating the stem-surface dark spots.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.missouribotanicalgarden.org/gardens-gardening/your-garden/help-for-the-home-gardener/advice-tips-resources/insects-pests-and-problems/diseases/needlecasts/pestalotiopsis-tip",
-                  "quote": "Twig tips can turn brown and have black, pimple-like, pinhead size, fungal fruiting structures dotting the surface."
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
-                  "quote": "Pestalotiopsis is more aggressive in comparison to Phyllosticta because of its ability to attack stems and small branches."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Pestalotiopsis produces small pads under the epidermis that rupture to form a long black mass of spores and attacks stems and small branches.",
-              "image_shows": "Black spots on the stem surface suggest the presence of pycnidia.",
-              "image_quote": "black dots on the stem surface",
-              "image_id": "bugwood::5508877",
-              "verification_status": "weakly_supported",
-              "reasoning": "Black fruiting/sporulation structures on stems are documented, but on woody tissue these are Pestalotiopsis acervuli rather than Phyllosticta pycnidia, so the sporulation reading is only partially precise.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.missouribotanicalgarden.org/gardens-gardening/your-garden/help-for-the-home-gardener/advice-tips-resources/insects-pests-and-problems/diseases/needlecasts/pestalotiopsis-tip",
-                  "quote": "Twig tips turn brown to tan and when examined closely may have black fruiting bodies (acervuli) of the fungus emerging from the dead tissue; black-brown, pinhead-sized, round fruiting bodies form on the shoots."
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5508877",
-            "bugwood::5508878",
-            "bugwood::5508879",
-            "bugwood::5508880",
-            "bugwood::5508881",
-            "bugwood::5508882",
-            "bugwood::5508883",
-            "bugwood::5508884",
-            "bugwood::5508885",
-            "bugwood::5508886",
-            "bugwood::5508887",
-            "bugwood::5508888",
-            "bugwood::5508889",
-            "bugwood::5508890"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              5
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 5,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 2,
-              "n_provisional": 0,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 2,
-              "n_added": 2,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        }
-      }
+     "field": "affected_parts",
+     "canonical_value": "Foliar",
+     "alternative_value": "Foliar, Stem",
+     "alternative_source_url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
+     "note": "Maine Forest Service indicates twigs are also affected/shed ('Heavily-infected needles and twigs are shed later in the fall'), implying stem involvement, whereas PNW restricts symptoms to foliage."
+    },
+    {
+     "field": "treatments",
+     "canonical_value": "PNW Handbook cultural + chemical program (merged)",
+     "alternative_value": "Maine: fungicide application rarely necessary; copper (Bordeaux Mix) or mancozeb (Dithane) if applied early",
+     "alternative_source_url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
+     "note": "Treatment list is a union of both sources; Maine quote: 'Application of fungicides to manage the disease is rarely necessary.  A copper fungicide (Bordeaux Mix) or mancozeb (Dithane) should be effective if applied early in the season, when susceptible foliage is developing.'"
     }
-  ],
-  "crop": "Northern White Cedar",
-  "generated_date": "2026-06-10",
-  "regional_observations_count": 2
+   ],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Small, bleached light-brown to tan spots appear first on the upper surface of one-year-old leaves",
+       "image_shows": "The lesions are circular.",
+       "image_quote": "The lesion is circular.",
+       "image_id": "bugwood::5504853",
+       "verification_status": "weakly_supported",
+       "reasoning": "Sources describe small discrete spots and circular apothecial pustules on the leaf surface, giving partial support to a circular lesion outline.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.cabi.org/isc/datasheet/18896",
+         "quote": "apothecia within the brown leaflets become conspicuous as golden-olive to dark-brown, circular pustules."
+        }
+       ],
+       "__support__": 1,
+       "_pruned_urls": [
+        "http://forestrydev.org/diseases/CTD/Group/Needle/needle1_e.html"
+       ]
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Small, bleached light-brown to tan spots appear first on the upper surface of one-year-old leaves",
+       "image_shows": "The lesion center is tan, with the margins appearing chocolate-brown.",
+       "image_quote": "The lesion centers are tan, with the margins appearing chocolate-brown.",
+       "image_id": "bugwood::5504853",
+       "verification_status": "weakly_supported",
+       "reasoning": "The tan lesion center is well documented, but the chocolate-brown margin detail is only indirectly supported, so support is partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
+         "quote": "Symptoms first appear as light-brown areas on the individual scale-like leaves, and individual leaves are killed by the fungus and turn a light tan to gray color."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Small, bleached light-brown to tan spots appear first on the upper surface of one-year-old leaves",
+       "image_shows": "The affected tissue displays tan centers, chocolate-brown margins, and pale-straw chlorotic halos.",
+       "image_quote": "The lesion center is brown, the margin is dark brown, and there is a chlorotic yellow halo.",
+       "image_id": "bugwood::5504853",
+       "verification_status": "weakly_supported",
+       "reasoning": "Tan centers and brown margins are corroborated by extension sources, but the pale-straw chlorotic halo is not documented, so support is partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
+         "quote": "Symptoms first appear as light-brown areas on the individual scale-like leaves ... individual leaves turn a light tan to gray color."
+        },
+        {
+         "url": "https://en.wikipedia.org/wiki/Didymascella_thujina",
+         "quote": "Light-brown to tan spots appear on the leaves, and large brown fruiting structures (apothecia) form in the center of these spots."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "one or several brown to black fruiting structures (apothecia) form in the center of the spots",
+       "image_shows": "Dark brown lesions on the leaf tissue.",
+       "image_quote": "Dark brownish-black patches are present.",
+       "image_id": "bugwood::5504853",
+       "verification_status": "weakly_supported",
+       "reasoning": "Dark brown to black patches are consistent with the maturing apothecia and blackened infected foliage described in extension literature.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.maine.gov/dacf/mfs/forest_health/diseases/cedar_leaf_blight.htm",
+         "quote": "bleached spots followed by brown or black cushion-like fungal fruiting bodies."
+        }
+       ],
+       "__support__": 1,
+       "_pruned_urls": [
+        "http://forestrydev.org/diseases/CTD/Group/Needle/needle1_e.html"
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "Leaves are curled up.",
+       "image_quote": "leaves are curled up",
+       "image_id": "bugwood::5504853",
+       "verification_status": "field_observation",
+       "reasoning": "Curled foliage is not a documented feature of cedar leaf blight on scale-leaved Thuja and no extension photo description corroborates it, but it is not contradicted so it is left provisional.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5504853",
+      "bugwood::5504854",
+      "bugwood::5504855",
+      "bugwood::5504856",
+      "bugwood::5504857",
+      "bugwood::5504858",
+      "bugwood::5504859",
+      "bugwood::5504860",
+      "bugwood::5504861",
+      "bugwood::5504862"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       10
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 10,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 4,
+       "n_provisional": 2,
+       "n_contradictory": 2,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 6,
+       "n_added": 6,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": true,
+      "failure_reason": "claude_query returned None (auth / timeout / empty)",
+      "preserved_count": 1
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Arborvitae Needle Blight",
+   "pathogen_scientific_name": {
+    "value": "Pestalotiopsis and Phyllosticta",
+    "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
+    "quote": "Arborvitae needle blight is caused by the fungal pathogens  Pestalotiopsis  and  Phyllosticta .",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
+    "quote": "Arborvitae needle blight is caused by the fungal pathogens  Pestalotiopsis  and  Phyllosticta ."
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem"
+    ],
+    "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
+    "quote": "Arborvitae infected by Phyllosticta  typically have blighted needle tips and/or discolored (pale green to yellow) needles ... Overall, Pestalotiopsis can likely be described as more aggressive in comparison to Phyllosticta because of its ability to attack stems and small branches."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Phyllosticta-infected arborvitae show blighted needle tips and pale green to yellow, desiccated-looking needles, with infections progressing from tip toward the base; Pestalotiopsis causes browning and dieback that can kill small branches.",
+     "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
+     "quote": "Arborvitae infected by Phyllosticta  typically have blighted needle tips and/or discolored (pale green to yellow) needles that may appear desiccated. Infections often initiate at the needle tip and progress towards the base."
+    },
+    "diagnostic_features": {
+     "value": "During wet, mild weather black pads of fungal tissue (pycnidia) rupture through the needle epidermis to release spores; Pestalotiopsis produces small pads under the epidermis that rupture to form a long black mass of spores and attacks stems and small branches, whereas Phyllosticta is primarily restricted to the needles.",
+     "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
+     "quote": "During wet and mild weather, black pads of fungal tissue (pycnidia) rupture through the epidermis on symptomatic needles to release large volumes of spores (conidia) ... Pestalotiopsis produces small pads of fungal tissue underneath the epidermis, and when moisture is abundant the pads ruptures through, producing a long black mass of spores. ... Phyllosticta , meanwhile, is primarily restricted to the needles."
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
+    }
+   },
+   "treatments": {
+    "value": [
+     "Prune and discard as many infected plant parts as possible",
+     "Avoid pruning during wet weather, when the fungus is most actively producing and disseminating spores",
+     "Avoid watering with overhead sprinklers that wet the foliage",
+     "Use drip irrigation or hand-watering of newly planted trees",
+     "Apply fungicides labeled for use on ornamentals (copper hydroxide, copper salts of fatty and rosin acids, metconazole, propiconazole, thiophanate-methyl and mancozeb)",
+     "Use fungicides preventatively to limit infections on the current year's growth in the spring",
+     "Use proper spacing and planting techniques to alleviate predisposing stresses"
+    ],
+    "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
+    "quote": "The best course of action for management of any needle and shoot blight pathogen is to prune and discard as many infected plant parts as much as possible. ... Avoid pruning during wet weather ... Avoid watering with overhead sprinklers that wet the foliage ... Drip irrigation or hand-watering of newly planted trees is preferable. ... Fungicides labeled for use on ornamentals in Massachusetts that may have utility against both pathogens include: copper hydroxide, copper salts of fatty and rosin acids, metconaozle, propiconazole, thiophanate-methyl and mancozeb. Fungicides should be used as a preventative measure to limit infections on the current year's growth in the spring. ... Proper spacing and planting techniques can alleviate some of the predisposing stresses"
+   },
+   "confidence": "medium",
+   "num_sources": 1,
+   "conflicts": [],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "affected_organs",
+       "canonical_says": "Pestalotiopsis ... attacks stems and small branches, whereas Phyllosticta is primarily restricted to the needles.",
+       "image_shows": "The photo displays dark spots on a brownish-orange stem surface.",
+       "image_quote": "The image shows dark spots on the outer surface of the stem.",
+       "image_id": "bugwood::5508877",
+       "verification_status": "verified",
+       "reasoning": "Extension sources confirm that on arborvitae the pathogen attacks stems/twigs and produces visible black, pinhead-sized fruiting bodies dotting the woody surface, corroborating the stem-surface dark spots.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.missouribotanicalgarden.org/gardens-gardening/your-garden/help-for-the-home-gardener/advice-tips-resources/insects-pests-and-problems/diseases/needlecasts/pestalotiopsis-tip",
+         "quote": "Twig tips can turn brown and have black, pimple-like, pinhead size, fungal fruiting structures dotting the surface."
+        },
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/arborvitae-needle-blight",
+         "quote": "Pestalotiopsis is more aggressive in comparison to Phyllosticta because of its ability to attack stems and small branches."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Pestalotiopsis produces small pads under the epidermis that rupture to form a long black mass of spores and attacks stems and small branches.",
+       "image_shows": "Black spots on the stem surface suggest the presence of pycnidia.",
+       "image_quote": "black dots on the stem surface",
+       "image_id": "bugwood::5508877",
+       "verification_status": "weakly_supported",
+       "reasoning": "Black fruiting/sporulation structures on stems are documented, but on woody tissue these are Pestalotiopsis acervuli rather than Phyllosticta pycnidia, so the sporulation reading is only partially precise.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.missouribotanicalgarden.org/gardens-gardening/your-garden/help-for-the-home-gardener/advice-tips-resources/insects-pests-and-problems/diseases/needlecasts/pestalotiopsis-tip",
+         "quote": "Twig tips turn brown to tan and when examined closely may have black fruiting bodies (acervuli) of the fungus emerging from the dead tissue; black-brown, pinhead-sized, round fruiting bodies form on the shoots."
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5508877",
+      "bugwood::5508878",
+      "bugwood::5508879",
+      "bugwood::5508880",
+      "bugwood::5508881",
+      "bugwood::5508882",
+      "bugwood::5508883",
+      "bugwood::5508884",
+      "bugwood::5508885",
+      "bugwood::5508886",
+      "bugwood::5508887",
+      "bugwood::5508888",
+      "bugwood::5508889",
+      "bugwood::5508890"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       5
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 5,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 2,
+       "n_provisional": 0,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 2,
+       "n_added": 2,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    }
+   }
+  }
+ ],
+ "crop": "Northern White Cedar",
+ "generated_date": "2026-06-10",
+ "regional_observations_count": 2
 }

@@ -1,1173 +1,1169 @@
 {
-  "diseases": [
-    {
-      "disease_name": "Fusarium Wilts, Blights, Rots And Damping-Off",
-      "pathogen_scientific_name": {
-        "value": "Fusarium sambucinum",
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
-        "quote": "The fungus, Fusarium sambucinum (teleomorph: Gibberella pulicaris ), survives in soil and diseased plants",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
-        "quote": "The fungus, Fusarium sambucinum (teleomorph: Gibberella pulicaris )"
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem",
-          "Root"
-        ],
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
-        "quote": "Canker disease leads to yellowing of leaves and generally unthrifty growth. Affected bines wilt rapidly and suddenly... Cankers can be found on rhizomes of affected plants."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Yellowing of leaves and unthrifty growth, with affected bines wilting rapidly and suddenly (often at flowering or in hot weather); the bine base is typically swollen and may have a longitudinal split, and bines detach easily from the crown.",
-          "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
-          "quote": "Canker disease leads to yellowing of leaves and generally unthrifty growth. Affected bines wilt rapidly and suddenly; often at flowering or during hot weather. Bines can detach and readily break from the crown with a gentle tug."
-        },
-        "diagnostic_features": {
-          "value": "Swollen bine base with a narrow, tapered/rounded point of attachment to the crown (only a few central vascular elements connect bine to crown), bines that break off with a gentle tug, sometimes a longitudinal split in the cortical area, and an absence of vascular discoloration.",
-          "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
-          "quote": "The point of bine attachment to the crown usually is tapered or rounded off so that only a few central vascular elements connect the bine to the crown... The bine's base is typically swollen because carbohydrate movement has been inhibited; sometimes affected stems have a longitudinal split in the colonized cortical area of the bine. Vascular discoloration does not seem to be associated with the disease."
-        },
-        "look_alikes": {
-          "value": [
-            "Verticillium wilt"
-          ],
-          "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
-          "quote": "Wilted bines could potentially be confused with wilt caused by Verticillium species. The pattern of necrosis on leaves and vascular discoloration associated with Verticillium infection differentiates Verticillium wilt from canker."
-        }
-      },
-      "treatments": {
-        "value": [
-          "Avoid injury to hop plants.",
-          "Chemical pruning in the spring reduced canker disease severity compared to mechanical pruning, but no difference was detected in Oregon field studies.",
-          "Hilling up the plants enhances adventitious root growth above cankered bine portions, which can help maintain bine vigor and cone yield.",
-          "Reduce crown wetness by hilling higher relative to rill irrigation ditches, by removing sucker growth that could shade the crown, and by reducing mulch.",
-          "Lime to increase soil pH above 7.",
-          "Maintain the higher pH by using less ammonium-based nitrogen fertilizer; use nitrate-based fertilizer instead.",
-          "Mefenoxam applications are not an effective chemical treatment for Fusarium canker based on studies by OSU.",
-          "Asperello at 1.5 to 10.7 oz/A on 7- to 10-day intervals as a foliar spray or at 0.1 to 0.7 oz/100 gal water on 8- to 12-week intervals for chemigation at 2,000 to 5,000 gal/A.",
-          "Bio-Tam 2 at 2.5 to 3 lb/A as a banded ground spray or at 2.5 to 5 lb/A on 14- to 21-day intervals for chemigation.",
-          "Bexfond at 7 to 14 fl oz/A for soil applications via drenches, in-furrow applications, drip irrigation, or sprays, followed by irrigation, reapply on 4-week intervals.",
-          "Theia at 1 to 5 lb/A for soil applications via drenches, in-furrow applications, drip irrigation, or sprays, followed by irrigation."
-        ],
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
-        "quote": "Avoid injury to hop plants. Studies by OSU and the USDA-ARS in the state of Washington showed that chemical pruning in the spring reduced canker disease severity compared to mechanical pruning... Lime to increase soil pH above 7. Maintain the higher pH by using less ammonium-based nitrogen fertilizer; use nitrate-based fertilizer instead."
-      },
-      "confidence": "medium",
-      "num_sources": 1,
-      "conflicts": [],
-      "regional_observations": {
-        "Idaho": {
-          "state": "Idaho",
-          "deltas": [],
-          "__image_ids__": [
-            "bugwood::5393236",
-            "bugwood::5393237",
-            "bugwood::5393238",
-            "bugwood::5393239",
-            "bugwood::5393240",
-            "bugwood::5393241"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              3
-            ],
-            "detected_organ_per_pass": [
-              "fruit"
-            ],
-            "n_active_agents_per_pass": [
-              6
-            ],
-            "n_after_agreement": 3,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 0,
-              "n_provisional": 0,
-              "n_contradictory": 2,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 0,
-              "n_added": 0,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        },
-        "Oregon": {
-          "state": "Oregon",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "the bine base is typically swollen and may have a longitudinal split",
-              "image_shows": "Sunken and rough lesion on the outer stem.",
-              "image_quote": "The outer part of the stem shows a sunken and rough lesion.",
-              "image_id": "bugwood::5394149",
-              "verification_status": "weakly_supported",
-              "reasoning": "Cankering/lesions on affected bines are documented for hop Fusarium canker, giving indirect support for a sunken, rough stem lesion, though canonical emphasizes swelling rather than a sunken canker.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
-                  "quote": "Symptoms on affected stems include cankering, swelling, and girdling at the base of affected bines, which eventually leads to wilting and subsequent dieback of entire bines."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "Yellowing of leaves and unthrifty growth ... affected bines wilting rapidly and suddenly",
-              "image_shows": "Tan and chocolate-brown colors on the diseased leaves.",
-              "image_quote": "The photo shows affected leaves and stems with colors typical of Fusarium wilt, including chlorotic and necrotic areas.",
-              "image_id": "bugwood::5394149",
-              "verification_status": "weakly_supported",
-              "reasoning": "Documented foliar chlorosis and necrosis indirectly support tan/chocolate-brown (necrotic) leaf coloration, though the specific hues are not explicitly described in the literature.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.agriculturejournals.cz/pdfs/pps/2002/11/19.pdf",
-                  "quote": "The interrupted delivery of water and nutrients to the terminal plant parts causes chlorosis, necrosis and wilting first of the apical leaves and then of lower leaves."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "the bine base is typically swollen and may have a longitudinal split",
-              "image_shows": "Brownish-yellow discoloration on the stem.",
-              "image_quote": "The stem surface shows brownish-yellow discoloration.",
-              "image_id": "bugwood::5394149",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension source documents reddish-brown mold and cankering on the outer lower stem surface, giving partial support to a brownish discoloration on the stem, though the yellow component is not explicitly described.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
-                  "quote": "Affected bines may be covered with whitish-pink to reddish-brown mold produced during growth and sporulation by the fungus on the outer portion of the lower stem."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5394149",
-            "bugwood::5394150",
-            "bugwood::5394169",
-            "bugwood::5394170",
-            "bugwood::5394171",
-            "bugwood::5394172",
-            "bugwood::5394173",
-            "bugwood::5394174",
-            "bugwood::5394175",
-            "bugwood::5394176",
-            "bugwood::5394177",
-            "bugwood::5394178",
-            "bugwood::5394179",
-            "bugwood::5394180"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              6
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 6,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 2,
-              "n_provisional": 1,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 3,
-              "n_added": 3,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "Washington": {
-          "state": "Washington",
-          "deltas": [
-            {
-              "field": "look_alikes",
-              "canonical_says": "Verticillium wilt",
-              "image_shows": "A significant fraction of the visible bines appear wilted, consistent with the wilt symptom shared by the Verticillium look-alike.",
-              "image_quote": "The photo shows a significant fraction of the visible bines affected by wilting.",
-              "image_id": "bugwood::5393914",
-              "verification_status": "weakly_supported",
-              "reasoning": "Verticillium wilt is confirmed as the key visual look-alike, but the image only shows generic wilting and cannot itself distinguish the two, so support is partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
-                  "quote": "Unlike Fusarium canker, the aerial parts of the plant affected by Verticillium wilt remain firmly anchored, whereas the bine affected by Fusarium canker is detached or can be detached readily from the crown, with the point of bine attachment usually tapered or rounded off."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "Wilting affects a significant fraction of the visible bines in this Washington photo.",
-              "image_quote": "The photo shows a significant fraction of the visible bines affected by wilting.",
-              "image_id": "bugwood::5393914",
-              "verification_status": "weakly_supported",
-              "reasoning": "Incidence is normally sporadic (~5%) but documented outbreaks reach ~75% of plants, so a significant affected fraction is plausible and supported for severe cases.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
-                  "quote": "The incidence of hop canker in the field is sporadic, not every bine on a hill is affected."
-                },
-                {
-                  "url": "https://extension.oregonstate.edu/news/rising-fusarium-canker-raises-concerns-oregon-hop-growers",
-                  "quote": "A disease that generally affected 5% of crop plants was affecting 75% in that field."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "Yellowing of leaves and unthrifty growth",
-              "image_shows": "Foliage shows a mix of yellowish-green and brownish hues on the leaf surfaces.",
-              "image_quote": "The affected area shows a mix of yellowish-green and brownish hues on the leaf surfaces.",
-              "image_id": "bugwood::5393914",
-              "verification_status": "weakly_supported",
-              "reasoning": "Yellowing foliage is a documented symptom and browning is consistent with rapid wilting/senescence, giving partial support to the color observation.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
-                  "quote": "The affected bine wilts rapidly and suddenly, often at flowering or during hot weather, and can be detached readily from the crown with a gentle tug."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "Yellowing of leaves and unthrifty growth",
-              "image_shows": "Foliage is largely green with some browning along the leaf edges.",
-              "image_quote": "The image displays green foliage with some browning edges.",
-              "image_id": "bugwood::5393914",
-              "verification_status": "weakly_supported",
-              "reasoning": "Browning along leaf margins is consistent with the foliar necrosis/browning documented for Fusarium canker of hops, though the 'largely green' emphasis only partially matches the canonical chlorosis description.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.gardeningknowhow.com/edible/vegetables/hops/hops-plant-diseases.htm",
-                  "quote": "the leaves then turn brown and the interior of the leaves slowly die off"
-                },
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
-                  "quote": "Fusarium canker symptoms include wilting, cankers in the crown, foliar necrosis and death of infected plants"
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5393914"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "medium"
-            ],
-            "n_raw_per_pass": [
-              6
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 6,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 3,
-              "n_provisional": 1,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 4,
-              "n_added": 4,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+ "diseases": [
+  {
+   "disease_name": "Fusarium Wilts, Blights, Rots And Damping-Off",
+   "pathogen_scientific_name": {
+    "value": "Fusarium sambucinum",
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
+    "quote": "The fungus, Fusarium sambucinum (teleomorph: Gibberella pulicaris ), survives in soil and diseased plants",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
+    "quote": "The fungus, Fusarium sambucinum (teleomorph: Gibberella pulicaris )"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem",
+     "Root"
+    ],
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
+    "quote": "Canker disease leads to yellowing of leaves and generally unthrifty growth. Affected bines wilt rapidly and suddenly... Cankers can be found on rhizomes of affected plants."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Yellowing of leaves and unthrifty growth, with affected bines wilting rapidly and suddenly (often at flowering or in hot weather); the bine base is typically swollen and may have a longitudinal split, and bines detach easily from the crown.",
+     "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
+     "quote": "Canker disease leads to yellowing of leaves and generally unthrifty growth. Affected bines wilt rapidly and suddenly; often at flowering or during hot weather. Bines can detach and readily break from the crown with a gentle tug."
     },
-    {
-      "disease_name": "Apple Mosaic Virus",
-      "pathogen_scientific_name": {
-        "value": "",
-        "url": "",
-        "quote": "",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Viral",
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
-        "quote": "ApMV, an ilarvirus previously known in hop as prunus necrotic ringspot virus , can cause up to 30% loss in cone production and also decrease alpha acid levels, but ApMV effects are varietal dependent."
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem",
-          "Whole plant"
-        ],
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
-        "quote": "Foliar symptoms include chlorotic or necrotic arcs and rings or necrotic line patterns. Leaves often have a crisp and leathery texture as well and there may be curling of the leaf margins. Plants usually are stunted with shortened internodes and sidearms and may have difficulty climbing."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Foliar symptoms include chlorotic or necrotic arcs and rings or necrotic line patterns; leaves often have a crisp, leathery texture with curling margins, and plants are stunted with shortened internodes and sidearms.",
-          "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
-          "quote": "Foliar symptoms include chlorotic or necrotic arcs and rings or necrotic line patterns. Leaves often have a crisp and leathery texture as well and there may be curling of the leaf margins."
-        },
-        "diagnostic_features": {
-          "value": "Chlorotic or necrotic arcs and rings or necrotic line patterns; symptoms are suppressed in hot weather and appear during cool weather, so they may occur in leaves of a certain age but not in younger or older leaves.",
-          "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
-          "quote": "Symptoms usually are suppressed in hot weather and appear during cool weather. Consequently, symptoms may occur in leaves of a certain age but not in younger or older leaves."
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Exclusion is an important means of virus control.",
-          "Use virus-tested stock certified to be free of viruses.",
-          "Clean rootstock is available from the Clean Plant Center Northwest at https://cpcnw.wsu.edu/",
-          "Plant where hops have not been grown before or in fields where all hop plants have died out.",
-          "General sanitation for disease control.",
-          "Work/harvest diseased yards last.",
-          "Clean equipment between yards, particularly during early season operations.",
-          "Currently, it is recommended that equipment be cleaned by first washing to remove plant debris and then with a 5% to 10% bleach solution for at least a few seconds to upwards of 10 minutes.",
-          "Destroy plants that are severely stunted or yellowed."
-        ],
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
-        "quote": "Exclusion is an important means of virus control. Use virus-tested stock certified to be free of viruses. Clean rootstock is available from the Clean Plant Center Northwest at https://cpcnw.wsu.edu/ Plant where hops have not been grown before or in fields where all hop plants have died out. General sanitation for disease control. Work/harvest diseased yards last. Clean equipment between yards, particularly during early season operations. Destroy plants that are severely stunted or yellowed."
-      },
-      "confidence": "medium",
-      "num_sources": 1,
-      "conflicts": [
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Apple mosaic virus (ApMV)",
-          "alternative_value": "Prunus necrotic ringspot virus",
-          "note": "Source notes ApMV in hop was previously known as prunus necrotic ringspot virus.",
-          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases"
-        }
-      ],
-      "regional_observations": {
-        "Oregon": {
-          "state": "Oregon",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "chlorotic or necrotic arcs and rings or necrotic line patterns",
-              "image_shows": "The chlorotic areas form irregular patches not confined to the veins rather than discrete arcs or rings.",
-              "image_quote": "The leaf has chlorotic areas that are not confined to the veins, indicating an irregular shape.",
-              "image_id": "bugwood::5393335",
-              "verification_status": "weakly_supported",
-              "reasoning": "ApMV is documented to produce large amorphous/irregular chlorotic areas between veins in addition to rings, so an irregular non-vein-confined lesion is consistent but not the classic ring form.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/apple-mosaic-virus",
-                  "quote": "large amorphous chlorotic areas appear between leaf veins"
-                },
-                {
-                  "url": "https://www.canr.msu.edu/news/virus_visible_in_michigan_hopyards",
-                  "quote": "Apple mosaic virus induces chlorotic rings or arcs that can become necrotic. Frequently, these merge to create oak leaf-line patterns on leaves."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "chlorotic or necrotic arcs and rings or necrotic line patterns",
-              "image_shows": "Affected tissue is predominantly pale-straw (chlorotic) with rust-orange necrotic mottling, consistent with chlorotic rings progressing to necrosis.",
-              "image_quote": "The dominant color is pale-straw, representing approximately 70% of the affected tissue, with a secondary color of rust-orange making up around 30%.",
-              "image_id": "bugwood::5393335",
-              "verification_status": "weakly_supported",
-              "reasoning": "The pale-straw (chlorotic) plus rust-orange (necrotic) palette matches the documented chlorosis-to-necrosis progression of ApMV, though the described center/margin/halo target structure is more fungal-like.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.canr.msu.edu/news/virus_visible_in_michigan_hopyards",
-                  "quote": "Apple mosaic virus induces chlorotic rings or arcs that can become necrotic."
-                },
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
-                  "quote": "Foliar symptoms include chlorotic or necrotic arcs and rings or necrotic line patterns."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Foliar symptoms include chlorotic ... arcs and rings",
-              "image_shows": "Leaf tissue shows pale yellow-green chlorosis across affected areas.",
-              "image_quote": "The dominant color is pale-straw, representing approximately 70% of the affected tissue.",
-              "image_id": "bugwood::5393335",
-              "verification_status": "verified",
-              "reasoning": "Pale yellow-green chlorosis of foliage is a well-documented, corroborated hallmark of ApMV on hop.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
-                  "quote": "Foliar symptoms include chlorotic or necrotic arcs and rings or necrotic line patterns."
-                },
-                {
-                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/apple-mosaic-virus",
-                  "quote": "large amorphous chlorotic areas appear between leaf veins"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "chlorotic or necrotic arcs and rings or necrotic line patterns",
-              "image_shows": "Necrotic tissue is present on the leaf, consistent with chlorotic areas advancing to necrosis.",
-              "image_quote": "Necrotic tissue is visible on the leaf.",
-              "image_id": "bugwood::5393335",
-              "verification_status": "verified",
-              "reasoning": "Necrosis is documented as the later stage of ApMV chlorotic rings, so visible necrotic tissue is corroborated.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.canr.msu.edu/news/virus_visible_in_michigan_hopyards",
-                  "quote": "Apple mosaic virus induces chlorotic rings or arcs that can become necrotic."
-                },
-                {
-                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/apple-mosaic-virus",
-                  "quote": "after exposure to summer heat, diseased lesions may change to necrotic spots"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Chlorotic or necrotic arcs and rings or necrotic line patterns",
-              "image_shows": "Veins remain green and unaffected with no vein clearing or vein necrosis, consistent with interveinal chlorosis.",
-              "image_quote": "The leaf veins are not translucent or darkened.",
-              "image_id": "bugwood::5393335",
-              "verification_status": "weakly_supported",
-              "reasoning": "ApMV foliar symptoms are interveinal/amorphous chlorotic patterns rather than vein clearing, so normal (green, non-necrotic) veins are consistent with the disease.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/apple-mosaic-virus",
-                  "quote": "chlorosis develops along leaf veins resulting in reticulated appearance or large amorphous chlorotic areas appear between leaf veins"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "chlorotic or necrotic arcs and rings or necrotic line patterns",
-              "image_shows": "Affected tissue shows mixed green tones with yellow chlorosis and brown necrosis.",
-              "image_quote": "The affected tissue displays a mix of green tones with patches of yellowing and brown discoloration.",
-              "image_id": "bugwood::5393335",
-              "verification_status": "weakly_supported",
-              "reasoning": "A green/yellow/brown palette matches the documented chlorosis-plus-necrosis mosaic of ApMV foliage.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
-                  "quote": "Foliar symptoms include chlorotic or necrotic arcs and rings or necrotic line patterns."
-                },
-                {
-                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/apple-mosaic-virus",
-                  "quote": "after exposure to summer heat, diseased lesions may change to necrotic spots"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "A significant portion of the leaf surface is affected with interveinal chlorosis, indicating high symptom severity.",
-              "image_quote": "The leaf shows interveinal chlorosis with yellowing occurring between the veins while the veins remain green.",
-              "image_id": "bugwood::5393335",
-              "verification_status": "verified",
-              "reasoning": "ApMV is documented as a severe hop virus with extensive interveinal chlorosis, supporting a high-severity, widely-affected leaf observation.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
-                  "quote": "It is a severe virus on hops, and can reduce both yield and quality of the cone crop."
-                },
-                {
-                  "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/apple-mosaic-virus",
-                  "quote": "large amorphous chlorotic areas appear between leaf veins"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Chlorotic or necrotic arcs and rings",
-              "image_shows": "No concentric/target-spot pattern is present in this lesion.",
-              "image_quote": "The lesion is irregular and does not exhibit a target spot, rings, or chlorotic halo.",
-              "image_id": "bugwood::5393335",
-              "verification_status": "weakly_supported",
-              "reasoning": "ApMV on hops produces chlorotic/necrotic arcs and oak-leaf line patterns rather than concentric target-spot rings, so the absence of a target-spot pattern is indirectly consistent with the disease's published appearance.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
-                  "quote": "Apple mosaic virus induces chlorotic rings or arcs that can become necrotic, and frequently these merge to create oak leaf-line patterns on leaves."
-                },
-                {
-                  "url": "https://www.canr.msu.edu/news/virus_visible_in_michigan_hopyards",
-                  "quote": "Foliar symptoms include chlorotic or necrotic arcs and rings or necrotic line patterns."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf is broad with pointed tips suggesting an ovate form.",
-              "image_quote": "The leaf is broad and pointed, indicating an ovate shape.",
-              "image_id": "bugwood::5393335",
-              "verification_status": "field_observation",
-              "reasoning": "This describes the leaf's natural shape rather than any Apple mosaic virus symptom, so it is not corroborable as a disease visual feature; it is plausible in the photo but unsupported as diagnostic and not contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5393335",
-            "bugwood::5393336",
-            "bugwood::5393337",
-            "bugwood::5393338",
-            "bugwood::5393339",
-            "bugwood::5393340",
-            "bugwood::5393341",
-            "bugwood::5393342",
-            "bugwood::5393343",
-            "bugwood::5393344",
-            "bugwood::5393345"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 7,
-              "n_provisional": 2,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 9,
-              "n_added": 9,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 1,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+    "diagnostic_features": {
+     "value": "Swollen bine base with a narrow, tapered/rounded point of attachment to the crown (only a few central vascular elements connect bine to crown), bines that break off with a gentle tug, sometimes a longitudinal split in the cortical area, and an absence of vascular discoloration.",
+     "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
+     "quote": "The point of bine attachment to the crown usually is tapered or rounded off so that only a few central vascular elements connect the bine to the crown... The bine's base is typically swollen because carbohydrate movement has been inhibited; sometimes affected stems have a longitudinal split in the colonized cortical area of the bine. Vascular discoloration does not seem to be associated with the disease."
     },
-    {
-      "disease_name": "Powdery Mildew",
-      "pathogen_scientific_name": {
-        "value": "Podosphaera macularis",
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
-        "quote": "Powdery mildew is caused by a fungus, Podosphaera macularis (formerly Sphaerotheca humuli )",
-        "taxonomy_validated": false,
-        "ncbi_url": "",
-        "mycobank_url": ""
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
-        "quote": "Powdery mildew is caused by a fungus, Podosphaera macularis"
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem",
-          "Whole plant"
-        ],
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
-        "quote": "new shoots can be covered with the powdery mildew fungus, and the entire shoot may appear white. These \"flagshoots\" produce conidia... Secondary infections on susceptible leaves appear as whitish, powdery spots on either the upper or lower leaf surface... Flowers and cones of susceptible varieties may be infected."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "New shoots can be entirely covered with the fungus and appear white (\"flagshoots\"); secondary infections on leaves appear as whitish, powdery spots on upper or lower leaf surfaces, sometimes preceded by a small blister. Infected cones are stunted, malformed, and mature rapidly, and infected areas on cones become red to blackish if chasmothecia are produced.",
-          "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
-          "quote": "new shoots can be covered with the powdery mildew fungus, and the entire shoot may appear white. These \"flagshoots\" produce conidia, which initiate secondary infections. Secondary infections on susceptible leaves appear as whitish, powdery spots on either the upper or lower leaf surface. Entire leaf surfaces can be covered with powdery mildew. Depending on the hop variety and leaf age, initially a small blister may form before the fungus is visible."
-        },
-        "diagnostic_features": {
-          "value": "White, circular powdery colonies on leaves; entire white shoots (flagshoots) typical in spring; infected cones are stunted, malformed, and mature rapidly, leading to cone shatter, with infected areas becoming red to blackish if chasmothecia are produced.",
-          "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
-          "quote": "Note the white, circular colonies... Flag shoots, such as the one above, are typical in the spring... Infected cones are stunted, malformed, and mature rapidly, leading to cone shatter and uneven crop maturity... Infected areas on cones become red to blackish if chasmothecia are produced."
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Reduce or eliminate infected buds and flag shoots by crowning, harrowing, burning, etc. Treating before shoots emerge reduces early-season spread within a field.",
-          "Completely removing green tissue during preparation for training reduces spore load and subsequent secondary spread.",
-          "Maintain adequate nitrogen levels but do not over-apply because more succulent tissue is more susceptible.",
-          "Scout yards regularly for signs of powdery mildew.",
-          "Control bottom growth after training, mechanically or with burn-back herbicides, etc., in order to reduce active colonies.",
-          "Strip lower leaves up to about 4 ft in order to break the \"green bridge\" that facilitates powdery mildew's climb up in the canopy.",
-          "Early harvest can reduce powdery mildew losses in fields with high disease pressure.",
-          "Remove seedlings from around harvesting shed and hop dryer. Remove pole plants. Eliminate feral hops.",
-          "Protect regrowth against infection or remove shoot regrowth (mow, desiccate, flail, flame, etc.).",
-          "Replace highly susceptible varieties.",
-          "Thorough spray coverage is essential to protect hop plants; spray every row. Apply protective fungicides before disease is reproducing and spreading.",
-          "Bicarbonates are registered to control powdery mildew (Bi-Carb Old Fashioned Fungicide, HO Carb-O-Nator, Kaligreen, MilStop SP, Vacres).",
-          "Demethylation-inhibiting (DMI) Fungicides (Group 3) are labeled for use. Alternate or tank-mix with a non-Group 3 fungicide for resistance management (Procure 480SC, Rally 40WSP, Rhyme, Sonoma 40WSP, Tebustar 3.6L, Tebuzol 3.6F, Topguard).",
-          "Luna Experience (Group 7 + 3), Luna Sensation (Group 7 + 11), Magister SC (Group 39).",
-          "Oils are labeled to control hop powdery mildew (IAP Organic 440 Spray Oil, JMS Stylet Oil, 440 Superior Spray Oil, Trilogy).",
-          "Quintec (Group 13).",
-          "Regalia Biofungicide (Group P5).",
-          "Strobilurin fungicides (Group 11) are labeled for use (Flint Extra, Pristine).",
-          "Sulfur formulations are registered for hop (Microthiol Disperss, Proganic Micronized Sulfur); primarily a protectant and must be applied before infection.",
-          "Torino (Group U6).",
-          "Biological control (Actinovate AG, Double Nickel LC, Ecoswing, Romeo, Sonata) \u00e2\u20ac\u201d efficacy unknown in the Pacific Northwest."
-        ],
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
-        "quote": "Cultural control These management strategies aim to reduce overwintering and buildup of early-season disease inoculum... Chemical control Thorough spray coverage is essential to protect hop plants; spray every row. Apply protective fungicides before disease is reproducing and spreading."
-      },
-      "confidence": "medium",
-      "num_sources": 1,
-      "conflicts": [
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Podosphaera macularis",
-          "alternative_value": "Sphaerotheca humuli",
-          "note": "Source notes Podosphaera macularis was formerly named Sphaerotheca humuli.",
-          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew"
-        }
-      ],
-      "regional_observations": {
-        "Oregon": {
-          "state": "Oregon",
-          "deltas": [
-            {
-              "field": "spread_pattern",
-              "canonical_says": "secondary infections on leaves appear as whitish, powdery spots on upper or lower leaf surfaces",
-              "image_shows": "Powdery colonies are scattered across the leaf surface without an organized pattern.",
-              "image_quote": "The lesions appear scattered across the leaf surface.",
-              "image_id": "bugwood::5393352",
-              "verification_status": "verified",
-              "reasoning": "Extension sources describe discrete roughly circular colonies distributed across the leaf, matching a scattered, patternless distribution.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.canr.msu.edu/news/managing-hop-powdery-mildew-in-michigan",
-                  "quote": "Mildew colonies on adaxial leaf surfaces are discrete, roughly circular, white in color, and 2 to 3 mm in size."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "New shoots can be entirely covered with the fungus and appear white",
-              "image_shows": "The majority of the leaf surface is covered by powdery growth, indicating heavy infection.",
-              "image_quote": "The leaves are mostly covered with the whitish, powdery substance.",
-              "image_id": "bugwood::5393352",
-              "verification_status": "verified",
-              "reasoning": "Literature confirms colonies coalesce and can cover the entire leaf surface under severe infection, supporting the high-severity coverage observed.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
-                  "quote": "entire leaf surfaces can be covered with powdery mildew; under favorable conditions colonies enlarge and coalesce, blighting larger sections of foliage."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "No leaf necrosis is present, consistent with a superficial surface infection.",
-              "image_quote": "The photo shows powdery mildew, not necrosis.",
-              "image_id": "bugwood::5393352",
-              "verification_status": "weakly_supported",
-              "reasoning": "Powdery mildew is a superficial colonizer that does not invade tissue, so the absence of necrosis is consistent with, and weakly supported by, the pathogen's biology.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://gardeningsolutions.ifas.ufl.edu/care/pests-and-diseases/diseases/powdery-vs-downy/",
-                  "quote": "Powdery mildew remains on the surface and does not invade plant tissues."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "Leaves show a distorted shape with curled/up-curling edges.",
-              "image_quote": "The leaves show up-curling along the edges.",
-              "image_id": "bugwood::5393352",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension sources document leaf curling/distortion on hop plants infected with powdery mildew, though they describe downward rather than up-curling, giving partial support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hops.cals.cornell.edu/ipm/",
-                  "quote": "The bines are stunted with short internodes in both cases and possess brittle, downward curling, chlorotic leaves."
-                },
-                {
-                  "url": "https://www.gardeningknowhow.com/edible/vegetables/hops/hops-plant-diseases.htm",
-                  "quote": "In severe cases, new shoots can be covered with the powdery mildew fungus, and the entire shoot may appear white; shoot growth is slow with stunted, curling leaves."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "No chlorosis is present on the infected leaves.",
-              "image_quote": "The photo shows leaves with a powdery mildew infection, but no chlorosis.",
-              "image_id": "bugwood::5393352",
-              "verification_status": "field_observation",
-              "reasoning": "Extension sources note hop powdery mildew often produces chlorotic spots (especially opposite underside colonies) but chlorosis is not obligatory, so an absence of chlorosis in a superficial upper-surface infection is plausible and not contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf is broad with a base tapering to a pointed, ovate tip.",
-              "image_quote": "The leaf has a broad base tapering towards a pointed tip.",
-              "image_id": "bugwood::5393352",
-              "verification_status": "field_observation",
-              "reasoning": "This describes incidental host leaf morphology rather than a disease symptom; it is coherent with the visual evidence but unsupported by disease factsheets, so it is flagged for curator review.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "novel_plausible"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5393352",
-            "bugwood::5393353",
-            "bugwood::5393354",
-            "bugwood::5393900",
-            "bugwood::5393901",
-            "bugwood::5393902",
-            "bugwood::5393903",
-            "bugwood::5393904",
-            "bugwood::5393905",
-            "bugwood::5393906",
-            "bugwood::5393907"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              10
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 10,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 3,
-              "n_provisional": 3,
-              "n_contradictory": 2,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 6,
-              "n_added": 6,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 2,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "Virginia": {
-          "state": "Virginia",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "whitish, powdery spots ... sometimes preceded by a small blister",
-              "image_shows": "In Virginia hop foliage the infected leaves show curling toward the margins.",
-              "image_quote": "Leaves appear to curl up towards the leaf margins.",
-              "image_id": "bugwood::5393916",
-              "verification_status": "weakly_supported",
-              "reasoning": "Leaf curling/distortion is a documented hop powdery mildew symptom, though literature describes downward rather than upward curling, so support is partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.canr.msu.edu/news/managing-hop-powdery-mildew-in-michigan",
-                  "quote": "The bines are stunted with short internodes ... and possess brittle, downward curling, chlorotic leaves."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "secondary infections on leaves appear as whitish, powdery spots on upper or lower leaf surfaces",
-              "image_shows": "The majority of leaves in this Virginia sample are covered with whitish powdery spots, indicating high foliar severity.",
-              "image_quote": "The leaves are mostly covered with white, powdery spots.",
-              "image_id": "bugwood::5393916",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extensive whitish powdery coverage of most leaves is consistent with documented high-severity hop powdery mildew, though the photo-specific extent itself cannot be web-verified.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.canr.msu.edu/news/managing-hop-powdery-mildew-in-michigan",
-                  "quote": "Entire leaf surfaces can be covered with powdery mildew."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "chlorosis",
-              "canonical_says": "(not specified)",
-              "image_shows": "No chlorosis is visible on the affected Virginia leaves despite powdery mildew coverage.",
-              "image_quote": "The photo shows powdery mildew covering the leaves, but there is no chlorosis visible.",
-              "image_id": "bugwood::5393916",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension sources characterize hop powdery mildew primarily by white powdery colonies rather than chlorotic yellowing, so an absence of chlorosis is consistent with published photo descriptions.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
-                  "quote": "Secondary infections on susceptible leaves appear as whitish, powdery spots on either the upper or lower leaf surface; the disease is characterized by white powdery colonies rather than yellow discoloration."
-                },
-                {
-                  "url": "https://www.canr.msu.edu/news/managing-hop-powdery-mildew-in-michigan",
-                  "quote": "Mildew colonies on leaf surfaces are discrete, roughly circular, white in color, and 2 to 3 mm in size."
-                }
-              ]
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "White, circular powdery colonies on leaves",
-              "image_shows": "No concentric ring patterns are present in the Virginia lesions, helping rule out target-spot look-alikes.",
-              "image_quote": "No concentric patterns are visible in the lesions.",
-              "image_id": "bugwood::5393916",
-              "verification_status": "weakly_supported",
-              "reasoning": "Published descriptions characterize hop powdery mildew as white, round powdery colonies with no mention of concentric zonation, so the absence of concentric rings is consistent with (indirectly supports) the diagnosis.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
-                  "quote": "Secondary lesions ... first appear as raised blisters, which quickly develop into white, round colonies."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The hop leaves in the Virginia image are ovate with serrated edges.",
-              "image_quote": "Leaf shape is ovate.",
-              "image_id": "bugwood::5393916",
-              "verification_status": "field_observation",
-              "reasoning": "This is a botanical host-leaf observation (coarsely lobed, serrate-margined hop foliage) unrelated to the disease symptom; it is coherent and uncontradicted but not a pathology feature, so flag for curator review.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "novel_plausible"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5393916"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              10
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 10,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 2,
-              "n_provisional": 4,
-              "n_contradictory": 2,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 6,
-              "n_added": 6,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 1,
-            "contradictory_count": 1,
-            "duplicates_count": 0,
-            "dropped_contradictory": [
-              {
-                "field": "lesion_morphology",
-                "canonical_says": "whitish, powdery spots on upper or lower leaf surfaces, sometimes preceded by a small blister",
-                "image_shows": "The Virginia lesions have a pale-straw center with a slightly darker gray margin and a whitish halo.",
-                "image_quote": "The pale-straw color of the whitish powdery spots on the leaves matches the description of the fungal growth seen in the image.",
-                "image_id": "bugwood::5393916",
-                "verification_status": "contradictory",
-                "reasoning": "Published photo descriptions of hop powdery mildew show uniformly white, round, powdery colonies, not a zonate lesion with a pale-straw center and darker gray margin, so the described morphology contradicts the disease's appearance.",
-                "swarm_support": 1,
-                "web_support": [
-                  {
-                    "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
-                    "quote": "Secondary infections on susceptible leaves appear as whitish, powdery spots ... which quickly develop into white, round colonies."
-                  },
-                  {
-                    "url": "https://www.canr.msu.edu/news/managing-hop-powdery-mildew-in-michigan",
-                    "quote": "a small blister may form before the fungus is visible ... the fungus becoming visible as ... white, round colonies."
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        "Washington": {
-          "state": "Washington",
-          "deltas": [
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "White, circular powdery colonies on leaves; entire white shoots (flagshoots) typical in spring; infected cones are stunted, malformed, and mature rapidly...",
-              "image_shows": "The affected hop cone shows disease but no visible white sporulating colonies.",
-              "image_quote": "The hop cone shows signs of disease, but there are no visible signs of sporulation.",
-              "image_id": "bugwood::5393908",
-              "verification_status": "weakly_supported",
-              "reasoning": "Late-infected cones commonly show reddish/discolored diseased tissue without visible white sporulating colonies, consistent with the observed absence of sporulation on a diseased cone.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
-                  "quote": "Infected burrs and cones can support white fungal colonies or may exhibit a reddish discoloration if infected later in development."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "affected_organs",
-              "canonical_says": "(not specified)",
-              "image_shows": "No fruits (cones) are visible in this image.",
-              "image_quote": "No fruits are visible in the image, thus no fruit-related deltas can be provided.",
-              "image_id": "bugwood::5393908",
-              "verification_status": "field_observation",
-              "reasoning": "This is a negative statement about the content of one specific photograph (absence of cones) that cannot be corroborated or contradicted by external factsheets; it is plausible and not contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5393908",
-            "bugwood::5393911",
-            "bugwood::5393912",
-            "bugwood::5393913",
-            "bugwood::5393915",
-            "bugwood::5393917",
-            "bugwood::5393920",
-            "bugwood::5393921",
-            "bugwood::5393922",
-            "bugwood::5393924",
-            "bugwood::5393925",
-            "bugwood::5393926",
-            "bugwood::5393927",
-            "bugwood::5393928",
-            "bugwood::5393929",
-            "bugwood::5393930",
-            "bugwood::5393931",
-            "bugwood::5393932",
-            "bugwood::5393933",
-            "bugwood::5393934",
-            "bugwood::5393935",
-            "bugwood::5393936",
-            "bugwood::5393937",
-            "bugwood::5393938",
-            "bugwood::5393939",
-            "bugwood::5393940",
-            "bugwood::5393941",
-            "bugwood::5393942",
-            "bugwood::5393943",
-            "bugwood::5393944",
-            "bugwood::5393945",
-            "bugwood::5393946",
-            "bugwood::5393947",
-            "bugwood::5393948",
-            "bugwood::5393949",
-            "bugwood::5393950",
-            "bugwood::5393951",
-            "bugwood::5393952",
-            "bugwood::5393953",
-            "bugwood::5393954",
-            "bugwood::5393955",
-            "bugwood::5393956",
-            "bugwood::5393957",
-            "bugwood::5393958",
-            "bugwood::5393959",
-            "bugwood::5393960",
-            "bugwood::5393961"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              5
-            ],
-            "detected_organ_per_pass": [
-              "fruit"
-            ],
-            "n_active_agents_per_pass": [
-              6
-            ],
-            "n_after_agreement": 5,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 1,
-              "n_provisional": 1,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 2,
-              "n_added": 2,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 1,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+    "look_alikes": {
+     "value": [
+      "Verticillium wilt"
+     ],
+     "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
+     "quote": "Wilted bines could potentially be confused with wilt caused by Verticillium species. The pattern of necrosis on leaves and vascular discoloration associated with Verticillium infection differentiates Verticillium wilt from canker."
     }
-  ],
-  "crop": "Hops",
-  "generated_date": "2026-06-10",
-  "regional_observations_count": 7
+   },
+   "treatments": {
+    "value": [
+     "Avoid injury to hop plants.",
+     "Chemical pruning in the spring reduced canker disease severity compared to mechanical pruning, but no difference was detected in Oregon field studies.",
+     "Hilling up the plants enhances adventitious root growth above cankered bine portions, which can help maintain bine vigor and cone yield.",
+     "Reduce crown wetness by hilling higher relative to rill irrigation ditches, by removing sucker growth that could shade the crown, and by reducing mulch.",
+     "Lime to increase soil pH above 7.",
+     "Maintain the higher pH by using less ammonium-based nitrogen fertilizer; use nitrate-based fertilizer instead.",
+     "Mefenoxam applications are not an effective chemical treatment for Fusarium canker based on studies by OSU.",
+     "Asperello at 1.5 to 10.7 oz/A on 7- to 10-day intervals as a foliar spray or at 0.1 to 0.7 oz/100 gal water on 8- to 12-week intervals for chemigation at 2,000 to 5,000 gal/A.",
+     "Bio-Tam 2 at 2.5 to 3 lb/A as a banded ground spray or at 2.5 to 5 lb/A on 14- to 21-day intervals for chemigation.",
+     "Bexfond at 7 to 14 fl oz/A for soil applications via drenches, in-furrow applications, drip irrigation, or sprays, followed by irrigation, reapply on 4-week intervals.",
+     "Theia at 1 to 5 lb/A for soil applications via drenches, in-furrow applications, drip irrigation, or sprays, followed by irrigation."
+    ],
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
+    "quote": "Avoid injury to hop plants. Studies by OSU and the USDA-ARS in the state of Washington showed that chemical pruning in the spring reduced canker disease severity compared to mechanical pruning... Lime to increase soil pH above 7. Maintain the higher pH by using less ammonium-based nitrogen fertilizer; use nitrate-based fertilizer instead."
+   },
+   "confidence": "medium",
+   "num_sources": 1,
+   "conflicts": [],
+   "regional_observations": {
+    "Idaho": {
+     "state": "Idaho",
+     "deltas": [],
+     "__image_ids__": [
+      "bugwood::5393236",
+      "bugwood::5393237",
+      "bugwood::5393238",
+      "bugwood::5393239",
+      "bugwood::5393240",
+      "bugwood::5393241"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       3
+      ],
+      "detected_organ_per_pass": [
+       "fruit"
+      ],
+      "n_active_agents_per_pass": [
+       6
+      ],
+      "n_after_agreement": 3,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 0,
+       "n_provisional": 0,
+       "n_contradictory": 2,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 0,
+       "n_added": 0,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    },
+    "Oregon": {
+     "state": "Oregon",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "the bine base is typically swollen and may have a longitudinal split",
+       "image_shows": "Sunken and rough lesion on the outer stem.",
+       "image_quote": "The outer part of the stem shows a sunken and rough lesion.",
+       "image_id": "bugwood::5394149",
+       "verification_status": "weakly_supported",
+       "reasoning": "Cankering/lesions on affected bines are documented for hop Fusarium canker, giving indirect support for a sunken, rough stem lesion, though canonical emphasizes swelling rather than a sunken canker.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
+         "quote": "Symptoms on affected stems include cankering, swelling, and girdling at the base of affected bines, which eventually leads to wilting and subsequent dieback of entire bines."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "Yellowing of leaves and unthrifty growth ... affected bines wilting rapidly and suddenly",
+       "image_shows": "Tan and chocolate-brown colors on the diseased leaves.",
+       "image_quote": "The photo shows affected leaves and stems with colors typical of Fusarium wilt, including chlorotic and necrotic areas.",
+       "image_id": "bugwood::5394149",
+       "verification_status": "weakly_supported",
+       "reasoning": "Documented foliar chlorosis and necrosis indirectly support tan/chocolate-brown (necrotic) leaf coloration, though the specific hues are not explicitly described in the literature.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.agriculturejournals.cz/pdfs/pps/2002/11/19.pdf",
+         "quote": "The interrupted delivery of water and nutrients to the terminal plant parts causes chlorosis, necrosis and wilting first of the apical leaves and then of lower leaves."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "the bine base is typically swollen and may have a longitudinal split",
+       "image_shows": "Brownish-yellow discoloration on the stem.",
+       "image_quote": "The stem surface shows brownish-yellow discoloration.",
+       "image_id": "bugwood::5394149",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension source documents reddish-brown mold and cankering on the outer lower stem surface, giving partial support to a brownish discoloration on the stem, though the yellow component is not explicitly described.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
+         "quote": "Affected bines may be covered with whitish-pink to reddish-brown mold produced during growth and sporulation by the fungus on the outer portion of the lower stem."
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5394149",
+      "bugwood::5394150",
+      "bugwood::5394169",
+      "bugwood::5394170",
+      "bugwood::5394171",
+      "bugwood::5394172",
+      "bugwood::5394173",
+      "bugwood::5394174",
+      "bugwood::5394175",
+      "bugwood::5394176",
+      "bugwood::5394177",
+      "bugwood::5394178",
+      "bugwood::5394179",
+      "bugwood::5394180"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       6
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 6,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 2,
+       "n_provisional": 1,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 3,
+       "n_added": 3,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "Washington": {
+     "state": "Washington",
+     "deltas": [
+      {
+       "field": "look_alikes",
+       "canonical_says": "Verticillium wilt",
+       "image_shows": "A significant fraction of the visible bines appear wilted, consistent with the wilt symptom shared by the Verticillium look-alike.",
+       "image_quote": "The photo shows a significant fraction of the visible bines affected by wilting.",
+       "image_id": "bugwood::5393914",
+       "verification_status": "weakly_supported",
+       "reasoning": "Verticillium wilt is confirmed as the key visual look-alike, but the image only shows generic wilting and cannot itself distinguish the two, so support is partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
+         "quote": "Unlike Fusarium canker, the aerial parts of the plant affected by Verticillium wilt remain firmly anchored, whereas the bine affected by Fusarium canker is detached or can be detached readily from the crown, with the point of bine attachment usually tapered or rounded off."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "Wilting affects a significant fraction of the visible bines in this Washington photo.",
+       "image_quote": "The photo shows a significant fraction of the visible bines affected by wilting.",
+       "image_id": "bugwood::5393914",
+       "verification_status": "weakly_supported",
+       "reasoning": "Incidence is normally sporadic (~5%) but documented outbreaks reach ~75% of plants, so a significant affected fraction is plausible and supported for severe cases.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
+         "quote": "The incidence of hop canker in the field is sporadic, not every bine on a hill is affected."
+        },
+        {
+         "url": "https://extension.oregonstate.edu/news/rising-fusarium-canker-raises-concerns-oregon-hop-growers",
+         "quote": "A disease that generally affected 5% of crop plants was affecting 75% in that field."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "Yellowing of leaves and unthrifty growth",
+       "image_shows": "Foliage shows a mix of yellowish-green and brownish hues on the leaf surfaces.",
+       "image_quote": "The affected area shows a mix of yellowish-green and brownish hues on the leaf surfaces.",
+       "image_id": "bugwood::5393914",
+       "verification_status": "weakly_supported",
+       "reasoning": "Yellowing foliage is a documented symptom and browning is consistent with rapid wilting/senescence, giving partial support to the color observation.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
+         "quote": "The affected bine wilts rapidly and suddenly, often at flowering or during hot weather, and can be detached readily from the crown with a gentle tug."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "Yellowing of leaves and unthrifty growth",
+       "image_shows": "Foliage is largely green with some browning along the leaf edges.",
+       "image_quote": "The image displays green foliage with some browning edges.",
+       "image_id": "bugwood::5393914",
+       "verification_status": "weakly_supported",
+       "reasoning": "Browning along leaf margins is consistent with the foliar necrosis/browning documented for Fusarium canker of hops, though the 'largely green' emphasis only partially matches the canonical chlorosis description.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.gardeningknowhow.com/edible/vegetables/hops/hops-plant-diseases.htm",
+         "quote": "the leaves then turn brown and the interior of the leaves slowly die off"
+        },
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-fusarium-canker-wilt",
+         "quote": "Fusarium canker symptoms include wilting, cankers in the crown, foliar necrosis and death of infected plants"
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5393914"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "medium"
+      ],
+      "n_raw_per_pass": [
+       6
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 6,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 3,
+       "n_provisional": 1,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 4,
+       "n_added": 4,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Apple Mosaic Virus",
+   "pathogen_scientific_name": {
+    "value": "",
+    "url": "",
+    "quote": "",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Viral",
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
+    "quote": "ApMV, an ilarvirus previously known in hop as prunus necrotic ringspot virus , can cause up to 30% loss in cone production and also decrease alpha acid levels, but ApMV effects are varietal dependent."
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem",
+     "Whole plant"
+    ],
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
+    "quote": "Foliar symptoms include chlorotic or necrotic arcs and rings or necrotic line patterns. Leaves often have a crisp and leathery texture as well and there may be curling of the leaf margins. Plants usually are stunted with shortened internodes and sidearms and may have difficulty climbing."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Foliar symptoms include chlorotic or necrotic arcs and rings or necrotic line patterns; leaves often have a crisp, leathery texture with curling margins, and plants are stunted with shortened internodes and sidearms.",
+     "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
+     "quote": "Foliar symptoms include chlorotic or necrotic arcs and rings or necrotic line patterns. Leaves often have a crisp and leathery texture as well and there may be curling of the leaf margins."
+    },
+    "diagnostic_features": {
+     "value": "Chlorotic or necrotic arcs and rings or necrotic line patterns; symptoms are suppressed in hot weather and appear during cool weather, so they may occur in leaves of a certain age but not in younger or older leaves.",
+     "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
+     "quote": "Symptoms usually are suppressed in hot weather and appear during cool weather. Consequently, symptoms may occur in leaves of a certain age but not in younger or older leaves."
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
+    }
+   },
+   "treatments": {
+    "value": [
+     "Exclusion is an important means of virus control.",
+     "Use virus-tested stock certified to be free of viruses.",
+     "Clean rootstock is available from the Clean Plant Center Northwest at https://cpcnw.wsu.edu/",
+     "Plant where hops have not been grown before or in fields where all hop plants have died out.",
+     "General sanitation for disease control.",
+     "Work/harvest diseased yards last.",
+     "Clean equipment between yards, particularly during early season operations.",
+     "Currently, it is recommended that equipment be cleaned by first washing to remove plant debris and then with a 5% to 10% bleach solution for at least a few seconds to upwards of 10 minutes.",
+     "Destroy plants that are severely stunted or yellowed."
+    ],
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
+    "quote": "Exclusion is an important means of virus control. Use virus-tested stock certified to be free of viruses. Clean rootstock is available from the Clean Plant Center Northwest at https://cpcnw.wsu.edu/ Plant where hops have not been grown before or in fields where all hop plants have died out. General sanitation for disease control. Work/harvest diseased yards last. Clean equipment between yards, particularly during early season operations. Destroy plants that are severely stunted or yellowed."
+   },
+   "confidence": "medium",
+   "num_sources": 1,
+   "conflicts": [
+    {
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Apple mosaic virus (ApMV)",
+     "alternative_value": "Prunus necrotic ringspot virus",
+     "note": "Source notes ApMV in hop was previously known as prunus necrotic ringspot virus.",
+     "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases"
+    }
+   ],
+   "regional_observations": {
+    "Oregon": {
+     "state": "Oregon",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "chlorotic or necrotic arcs and rings or necrotic line patterns",
+       "image_shows": "The chlorotic areas form irregular patches not confined to the veins rather than discrete arcs or rings.",
+       "image_quote": "The leaf has chlorotic areas that are not confined to the veins, indicating an irregular shape.",
+       "image_id": "bugwood::5393335",
+       "verification_status": "weakly_supported",
+       "reasoning": "ApMV is documented to produce large amorphous/irregular chlorotic areas between veins in addition to rings, so an irregular non-vein-confined lesion is consistent but not the classic ring form.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/apple-mosaic-virus",
+         "quote": "large amorphous chlorotic areas appear between leaf veins"
+        },
+        {
+         "url": "https://www.canr.msu.edu/news/virus_visible_in_michigan_hopyards",
+         "quote": "Apple mosaic virus induces chlorotic rings or arcs that can become necrotic. Frequently, these merge to create oak leaf-line patterns on leaves."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "chlorotic or necrotic arcs and rings or necrotic line patterns",
+       "image_shows": "Affected tissue is predominantly pale-straw (chlorotic) with rust-orange necrotic mottling, consistent with chlorotic rings progressing to necrosis.",
+       "image_quote": "The dominant color is pale-straw, representing approximately 70% of the affected tissue, with a secondary color of rust-orange making up around 30%.",
+       "image_id": "bugwood::5393335",
+       "verification_status": "weakly_supported",
+       "reasoning": "The pale-straw (chlorotic) plus rust-orange (necrotic) palette matches the documented chlorosis-to-necrosis progression of ApMV, though the described center/margin/halo target structure is more fungal-like.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.canr.msu.edu/news/virus_visible_in_michigan_hopyards",
+         "quote": "Apple mosaic virus induces chlorotic rings or arcs that can become necrotic."
+        },
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
+         "quote": "Foliar symptoms include chlorotic or necrotic arcs and rings or necrotic line patterns."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Foliar symptoms include chlorotic ... arcs and rings",
+       "image_shows": "Leaf tissue shows pale yellow-green chlorosis across affected areas.",
+       "image_quote": "The dominant color is pale-straw, representing approximately 70% of the affected tissue.",
+       "image_id": "bugwood::5393335",
+       "verification_status": "verified",
+       "reasoning": "Pale yellow-green chlorosis of foliage is a well-documented, corroborated hallmark of ApMV on hop.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
+         "quote": "Foliar symptoms include chlorotic or necrotic arcs and rings or necrotic line patterns."
+        },
+        {
+         "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/apple-mosaic-virus",
+         "quote": "large amorphous chlorotic areas appear between leaf veins"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "chlorotic or necrotic arcs and rings or necrotic line patterns",
+       "image_shows": "Necrotic tissue is present on the leaf, consistent with chlorotic areas advancing to necrosis.",
+       "image_quote": "Necrotic tissue is visible on the leaf.",
+       "image_id": "bugwood::5393335",
+       "verification_status": "verified",
+       "reasoning": "Necrosis is documented as the later stage of ApMV chlorotic rings, so visible necrotic tissue is corroborated.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.canr.msu.edu/news/virus_visible_in_michigan_hopyards",
+         "quote": "Apple mosaic virus induces chlorotic rings or arcs that can become necrotic."
+        },
+        {
+         "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/apple-mosaic-virus",
+         "quote": "after exposure to summer heat, diseased lesions may change to necrotic spots"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Chlorotic or necrotic arcs and rings or necrotic line patterns",
+       "image_shows": "Veins remain green and unaffected with no vein clearing or vein necrosis, consistent with interveinal chlorosis.",
+       "image_quote": "The leaf veins are not translucent or darkened.",
+       "image_id": "bugwood::5393335",
+       "verification_status": "weakly_supported",
+       "reasoning": "ApMV foliar symptoms are interveinal/amorphous chlorotic patterns rather than vein clearing, so normal (green, non-necrotic) veins are consistent with the disease.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/apple-mosaic-virus",
+         "quote": "chlorosis develops along leaf veins resulting in reticulated appearance or large amorphous chlorotic areas appear between leaf veins"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "chlorotic or necrotic arcs and rings or necrotic line patterns",
+       "image_shows": "Affected tissue shows mixed green tones with yellow chlorosis and brown necrosis.",
+       "image_quote": "The affected tissue displays a mix of green tones with patches of yellowing and brown discoloration.",
+       "image_id": "bugwood::5393335",
+       "verification_status": "weakly_supported",
+       "reasoning": "A green/yellow/brown palette matches the documented chlorosis-plus-necrosis mosaic of ApMV foliage.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
+         "quote": "Foliar symptoms include chlorotic or necrotic arcs and rings or necrotic line patterns."
+        },
+        {
+         "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/apple-mosaic-virus",
+         "quote": "after exposure to summer heat, diseased lesions may change to necrotic spots"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "A significant portion of the leaf surface is affected with interveinal chlorosis, indicating high symptom severity.",
+       "image_quote": "The leaf shows interveinal chlorosis with yellowing occurring between the veins while the veins remain green.",
+       "image_id": "bugwood::5393335",
+       "verification_status": "verified",
+       "reasoning": "ApMV is documented as a severe hop virus with extensive interveinal chlorosis, supporting a high-severity, widely-affected leaf observation.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
+         "quote": "It is a severe virus on hops, and can reduce both yield and quality of the cone crop."
+        },
+        {
+         "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/apple-mosaic-virus",
+         "quote": "large amorphous chlorotic areas appear between leaf veins"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Chlorotic or necrotic arcs and rings",
+       "image_shows": "No concentric/target-spot pattern is present in this lesion.",
+       "image_quote": "The lesion is irregular and does not exhibit a target spot, rings, or chlorotic halo.",
+       "image_id": "bugwood::5393335",
+       "verification_status": "weakly_supported",
+       "reasoning": "ApMV on hops produces chlorotic/necrotic arcs and oak-leaf line patterns rather than concentric target-spot rings, so the absence of a target-spot pattern is indirectly consistent with the disease's published appearance.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-virus-diseases",
+         "quote": "Apple mosaic virus induces chlorotic rings or arcs that can become necrotic, and frequently these merge to create oak leaf-line patterns on leaves."
+        },
+        {
+         "url": "https://www.canr.msu.edu/news/virus_visible_in_michigan_hopyards",
+         "quote": "Foliar symptoms include chlorotic or necrotic arcs and rings or necrotic line patterns."
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf is broad with pointed tips suggesting an ovate form.",
+       "image_quote": "The leaf is broad and pointed, indicating an ovate shape.",
+       "image_id": "bugwood::5393335",
+       "verification_status": "field_observation",
+       "reasoning": "This describes the leaf's natural shape rather than any Apple mosaic virus symptom, so it is not corroborable as a disease visual feature; it is plausible in the photo but unsupported as diagnostic and not contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5393335",
+      "bugwood::5393336",
+      "bugwood::5393337",
+      "bugwood::5393338",
+      "bugwood::5393339",
+      "bugwood::5393340",
+      "bugwood::5393341",
+      "bugwood::5393342",
+      "bugwood::5393343",
+      "bugwood::5393344",
+      "bugwood::5393345"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 7,
+       "n_provisional": 2,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 9,
+       "n_added": 9,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 1,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Powdery Mildew",
+   "pathogen_scientific_name": {
+    "value": "Podosphaera macularis",
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
+    "quote": "Powdery mildew is caused by a fungus, Podosphaera macularis (formerly Sphaerotheca humuli )",
+    "taxonomy_validated": false,
+    "ncbi_url": "",
+    "mycobank_url": ""
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
+    "quote": "Powdery mildew is caused by a fungus, Podosphaera macularis"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem",
+     "Whole plant"
+    ],
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
+    "quote": "new shoots can be covered with the powdery mildew fungus, and the entire shoot may appear white. These \"flagshoots\" produce conidia... Secondary infections on susceptible leaves appear as whitish, powdery spots on either the upper or lower leaf surface... Flowers and cones of susceptible varieties may be infected."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "New shoots can be entirely covered with the fungus and appear white (\"flagshoots\"); secondary infections on leaves appear as whitish, powdery spots on upper or lower leaf surfaces, sometimes preceded by a small blister. Infected cones are stunted, malformed, and mature rapidly, and infected areas on cones become red to blackish if chasmothecia are produced.",
+     "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
+     "quote": "new shoots can be covered with the powdery mildew fungus, and the entire shoot may appear white. These \"flagshoots\" produce conidia, which initiate secondary infections. Secondary infections on susceptible leaves appear as whitish, powdery spots on either the upper or lower leaf surface. Entire leaf surfaces can be covered with powdery mildew. Depending on the hop variety and leaf age, initially a small blister may form before the fungus is visible."
+    },
+    "diagnostic_features": {
+     "value": "White, circular powdery colonies on leaves; entire white shoots (flagshoots) typical in spring; infected cones are stunted, malformed, and mature rapidly, leading to cone shatter, with infected areas becoming red to blackish if chasmothecia are produced.",
+     "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
+     "quote": "Note the white, circular colonies... Flag shoots, such as the one above, are typical in the spring... Infected cones are stunted, malformed, and mature rapidly, leading to cone shatter and uneven crop maturity... Infected areas on cones become red to blackish if chasmothecia are produced."
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
+    }
+   },
+   "treatments": {
+    "value": [
+     "Reduce or eliminate infected buds and flag shoots by crowning, harrowing, burning, etc. Treating before shoots emerge reduces early-season spread within a field.",
+     "Completely removing green tissue during preparation for training reduces spore load and subsequent secondary spread.",
+     "Maintain adequate nitrogen levels but do not over-apply because more succulent tissue is more susceptible.",
+     "Scout yards regularly for signs of powdery mildew.",
+     "Control bottom growth after training, mechanically or with burn-back herbicides, etc., in order to reduce active colonies.",
+     "Strip lower leaves up to about 4 ft in order to break the \"green bridge\" that facilitates powdery mildew's climb up in the canopy.",
+     "Early harvest can reduce powdery mildew losses in fields with high disease pressure.",
+     "Remove seedlings from around harvesting shed and hop dryer. Remove pole plants. Eliminate feral hops.",
+     "Protect regrowth against infection or remove shoot regrowth (mow, desiccate, flail, flame, etc.).",
+     "Replace highly susceptible varieties.",
+     "Thorough spray coverage is essential to protect hop plants; spray every row. Apply protective fungicides before disease is reproducing and spreading.",
+     "Bicarbonates are registered to control powdery mildew (Bi-Carb Old Fashioned Fungicide, HO Carb-O-Nator, Kaligreen, MilStop SP, Vacres).",
+     "Demethylation-inhibiting (DMI) Fungicides (Group 3) are labeled for use. Alternate or tank-mix with a non-Group 3 fungicide for resistance management (Procure 480SC, Rally 40WSP, Rhyme, Sonoma 40WSP, Tebustar 3.6L, Tebuzol 3.6F, Topguard).",
+     "Luna Experience (Group 7 + 3), Luna Sensation (Group 7 + 11), Magister SC (Group 39).",
+     "Oils are labeled to control hop powdery mildew (IAP Organic 440 Spray Oil, JMS Stylet Oil, 440 Superior Spray Oil, Trilogy).",
+     "Quintec (Group 13).",
+     "Regalia Biofungicide (Group P5).",
+     "Strobilurin fungicides (Group 11) are labeled for use (Flint Extra, Pristine).",
+     "Sulfur formulations are registered for hop (Microthiol Disperss, Proganic Micronized Sulfur); primarily a protectant and must be applied before infection.",
+     "Torino (Group U6).",
+     "Biological control (Actinovate AG, Double Nickel LC, Ecoswing, Romeo, Sonata) â€” efficacy unknown in the Pacific Northwest."
+    ],
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
+    "quote": "Cultural control These management strategies aim to reduce overwintering and buildup of early-season disease inoculum... Chemical control Thorough spray coverage is essential to protect hop plants; spray every row. Apply protective fungicides before disease is reproducing and spreading."
+   },
+   "confidence": "medium",
+   "num_sources": 1,
+   "conflicts": [
+    {
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Podosphaera macularis",
+     "alternative_value": "Sphaerotheca humuli",
+     "note": "Source notes Podosphaera macularis was formerly named Sphaerotheca humuli.",
+     "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew"
+    }
+   ],
+   "regional_observations": {
+    "Oregon": {
+     "state": "Oregon",
+     "deltas": [
+      {
+       "field": "spread_pattern",
+       "canonical_says": "secondary infections on leaves appear as whitish, powdery spots on upper or lower leaf surfaces",
+       "image_shows": "Powdery colonies are scattered across the leaf surface without an organized pattern.",
+       "image_quote": "The lesions appear scattered across the leaf surface.",
+       "image_id": "bugwood::5393352",
+       "verification_status": "verified",
+       "reasoning": "Extension sources describe discrete roughly circular colonies distributed across the leaf, matching a scattered, patternless distribution.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.canr.msu.edu/news/managing-hop-powdery-mildew-in-michigan",
+         "quote": "Mildew colonies on adaxial leaf surfaces are discrete, roughly circular, white in color, and 2 to 3 mm in size."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "New shoots can be entirely covered with the fungus and appear white",
+       "image_shows": "The majority of the leaf surface is covered by powdery growth, indicating heavy infection.",
+       "image_quote": "The leaves are mostly covered with the whitish, powdery substance.",
+       "image_id": "bugwood::5393352",
+       "verification_status": "verified",
+       "reasoning": "Literature confirms colonies coalesce and can cover the entire leaf surface under severe infection, supporting the high-severity coverage observed.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
+         "quote": "entire leaf surfaces can be covered with powdery mildew; under favorable conditions colonies enlarge and coalesce, blighting larger sections of foliage."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "No leaf necrosis is present, consistent with a superficial surface infection.",
+       "image_quote": "The photo shows powdery mildew, not necrosis.",
+       "image_id": "bugwood::5393352",
+       "verification_status": "field_observation",
+       "reasoning": "Powdery mildew is a superficial colonizer that does not invade tissue, so the absence of necrosis is consistent with, and weakly supported by, the pathogen's biology.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "weakly_supported"
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "Leaves show a distorted shape with curled/up-curling edges.",
+       "image_quote": "The leaves show up-curling along the edges.",
+       "image_id": "bugwood::5393352",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension sources document leaf curling/distortion on hop plants infected with powdery mildew, though they describe downward rather than up-curling, giving partial support.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://hops.cals.cornell.edu/ipm/",
+         "quote": "The bines are stunted with short internodes in both cases and possess brittle, downward curling, chlorotic leaves."
+        },
+        {
+         "url": "https://www.gardeningknowhow.com/edible/vegetables/hops/hops-plant-diseases.htm",
+         "quote": "In severe cases, new shoots can be covered with the powdery mildew fungus, and the entire shoot may appear white; shoot growth is slow with stunted, curling leaves."
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "No chlorosis is present on the infected leaves.",
+       "image_quote": "The photo shows leaves with a powdery mildew infection, but no chlorosis.",
+       "image_id": "bugwood::5393352",
+       "verification_status": "field_observation",
+       "reasoning": "Extension sources note hop powdery mildew often produces chlorotic spots (especially opposite underside colonies) but chlorosis is not obligatory, so an absence of chlorosis in a superficial upper-surface infection is plausible and not contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf is broad with a base tapering to a pointed, ovate tip.",
+       "image_quote": "The leaf has a broad base tapering towards a pointed tip.",
+       "image_id": "bugwood::5393352",
+       "verification_status": "field_observation",
+       "reasoning": "This describes incidental host leaf morphology rather than a disease symptom; it is coherent with the visual evidence but unsupported by disease factsheets, so it is flagged for curator review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5393352",
+      "bugwood::5393353",
+      "bugwood::5393354",
+      "bugwood::5393900",
+      "bugwood::5393901",
+      "bugwood::5393902",
+      "bugwood::5393903",
+      "bugwood::5393904",
+      "bugwood::5393905",
+      "bugwood::5393906",
+      "bugwood::5393907"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       10
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 10,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 3,
+       "n_provisional": 3,
+       "n_contradictory": 2,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 6,
+       "n_added": 6,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 2,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "Virginia": {
+     "state": "Virginia",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "whitish, powdery spots ... sometimes preceded by a small blister",
+       "image_shows": "In Virginia hop foliage the infected leaves show curling toward the margins.",
+       "image_quote": "Leaves appear to curl up towards the leaf margins.",
+       "image_id": "bugwood::5393916",
+       "verification_status": "weakly_supported",
+       "reasoning": "Leaf curling/distortion is a documented hop powdery mildew symptom, though literature describes downward rather than upward curling, so support is partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.canr.msu.edu/news/managing-hop-powdery-mildew-in-michigan",
+         "quote": "The bines are stunted with short internodes ... and possess brittle, downward curling, chlorotic leaves."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "secondary infections on leaves appear as whitish, powdery spots on upper or lower leaf surfaces",
+       "image_shows": "The majority of leaves in this Virginia sample are covered with whitish powdery spots, indicating high foliar severity.",
+       "image_quote": "The leaves are mostly covered with white, powdery spots.",
+       "image_id": "bugwood::5393916",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extensive whitish powdery coverage of most leaves is consistent with documented high-severity hop powdery mildew, though the photo-specific extent itself cannot be web-verified.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.canr.msu.edu/news/managing-hop-powdery-mildew-in-michigan",
+         "quote": "Entire leaf surfaces can be covered with powdery mildew."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "chlorosis",
+       "canonical_says": "(not specified)",
+       "image_shows": "No chlorosis is visible on the affected Virginia leaves despite powdery mildew coverage.",
+       "image_quote": "The photo shows powdery mildew covering the leaves, but there is no chlorosis visible.",
+       "image_id": "bugwood::5393916",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension sources characterize hop powdery mildew primarily by white powdery colonies rather than chlorotic yellowing, so an absence of chlorosis is consistent with published photo descriptions.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
+         "quote": "Secondary infections on susceptible leaves appear as whitish, powdery spots on either the upper or lower leaf surface; the disease is characterized by white powdery colonies rather than yellow discoloration."
+        },
+        {
+         "url": "https://www.canr.msu.edu/news/managing-hop-powdery-mildew-in-michigan",
+         "quote": "Mildew colonies on leaf surfaces are discrete, roughly circular, white in color, and 2 to 3 mm in size."
+        }
+       ]
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "White, circular powdery colonies on leaves",
+       "image_shows": "No concentric ring patterns are present in the Virginia lesions, helping rule out target-spot look-alikes.",
+       "image_quote": "No concentric patterns are visible in the lesions.",
+       "image_id": "bugwood::5393916",
+       "verification_status": "weakly_supported",
+       "reasoning": "Published descriptions characterize hop powdery mildew as white, round powdery colonies with no mention of concentric zonation, so the absence of concentric rings is consistent with (indirectly supports) the diagnosis.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
+         "quote": "Secondary lesions ... first appear as raised blisters, which quickly develop into white, round colonies."
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The hop leaves in the Virginia image are ovate with serrated edges.",
+       "image_quote": "Leaf shape is ovate.",
+       "image_id": "bugwood::5393916",
+       "verification_status": "field_observation",
+       "reasoning": "This is a botanical host-leaf observation (coarsely lobed, serrate-margined hop foliage) unrelated to the disease symptom; it is coherent and uncontradicted but not a pathology feature, so flag for curator review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5393916"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       10
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 10,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 2,
+       "n_provisional": 4,
+       "n_contradictory": 2,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 6,
+       "n_added": 6,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 1,
+      "contradictory_count": 1,
+      "duplicates_count": 0,
+      "dropped_contradictory": [
+       {
+        "field": "lesion_morphology",
+        "canonical_says": "whitish, powdery spots on upper or lower leaf surfaces, sometimes preceded by a small blister",
+        "image_shows": "The Virginia lesions have a pale-straw center with a slightly darker gray margin and a whitish halo.",
+        "image_quote": "The pale-straw color of the whitish powdery spots on the leaves matches the description of the fungal growth seen in the image.",
+        "image_id": "bugwood::5393916",
+        "verification_status": "contradictory",
+        "reasoning": "Published photo descriptions of hop powdery mildew show uniformly white, round, powdery colonies, not a zonate lesion with a pale-straw center and darker gray margin, so the described morphology contradicts the disease's appearance.",
+        "swarm_support": 1,
+        "web_support": [
+         {
+          "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
+          "quote": "Secondary infections on susceptible leaves appear as whitish, powdery spots ... which quickly develop into white, round colonies."
+         },
+         {
+          "url": "https://www.canr.msu.edu/news/managing-hop-powdery-mildew-in-michigan",
+          "quote": "a small blister may form before the fungus is visible ... the fungus becoming visible as ... white, round colonies."
+         }
+        ]
+       }
+      ]
+     }
+    },
+    "Washington": {
+     "state": "Washington",
+     "deltas": [
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "White, circular powdery colonies on leaves; entire white shoots (flagshoots) typical in spring; infected cones are stunted, malformed, and mature rapidly...",
+       "image_shows": "The affected hop cone shows disease but no visible white sporulating colonies.",
+       "image_quote": "The hop cone shows signs of disease, but there are no visible signs of sporulation.",
+       "image_id": "bugwood::5393908",
+       "verification_status": "weakly_supported",
+       "reasoning": "Late-infected cones commonly show reddish/discolored diseased tissue without visible white sporulating colonies, consistent with the observed absence of sporulation on a diseased cone.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/hop-humulus-lupulus-powdery-mildew",
+         "quote": "Infected burrs and cones can support white fungal colonies or may exhibit a reddish discoloration if infected later in development."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "affected_organs",
+       "canonical_says": "(not specified)",
+       "image_shows": "No fruits (cones) are visible in this image.",
+       "image_quote": "No fruits are visible in the image, thus no fruit-related deltas can be provided.",
+       "image_id": "bugwood::5393908",
+       "verification_status": "field_observation",
+       "reasoning": "This is a negative statement about the content of one specific photograph (absence of cones) that cannot be corroborated or contradicted by external factsheets; it is plausible and not contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5393908",
+      "bugwood::5393911",
+      "bugwood::5393912",
+      "bugwood::5393913",
+      "bugwood::5393915",
+      "bugwood::5393917",
+      "bugwood::5393920",
+      "bugwood::5393921",
+      "bugwood::5393922",
+      "bugwood::5393924",
+      "bugwood::5393925",
+      "bugwood::5393926",
+      "bugwood::5393927",
+      "bugwood::5393928",
+      "bugwood::5393929",
+      "bugwood::5393930",
+      "bugwood::5393931",
+      "bugwood::5393932",
+      "bugwood::5393933",
+      "bugwood::5393934",
+      "bugwood::5393935",
+      "bugwood::5393936",
+      "bugwood::5393937",
+      "bugwood::5393938",
+      "bugwood::5393939",
+      "bugwood::5393940",
+      "bugwood::5393941",
+      "bugwood::5393942",
+      "bugwood::5393943",
+      "bugwood::5393944",
+      "bugwood::5393945",
+      "bugwood::5393946",
+      "bugwood::5393947",
+      "bugwood::5393948",
+      "bugwood::5393949",
+      "bugwood::5393950",
+      "bugwood::5393951",
+      "bugwood::5393952",
+      "bugwood::5393953",
+      "bugwood::5393954",
+      "bugwood::5393955",
+      "bugwood::5393956",
+      "bugwood::5393957",
+      "bugwood::5393958",
+      "bugwood::5393959",
+      "bugwood::5393960",
+      "bugwood::5393961"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       5
+      ],
+      "detected_organ_per_pass": [
+       "fruit"
+      ],
+      "n_active_agents_per_pass": [
+       6
+      ],
+      "n_after_agreement": 5,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 1,
+       "n_provisional": 1,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 2,
+       "n_added": 2,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 1,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  }
+ ],
+ "crop": "Hops",
+ "generated_date": "2026-06-10",
+ "regional_observations_count": 7
 }

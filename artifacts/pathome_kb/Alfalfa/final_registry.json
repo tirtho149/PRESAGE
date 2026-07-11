@@ -1,1731 +1,1687 @@
 {
-  "diseases": [
+ "diseases": [
+  {
+   "disease_name": "Downy Mildew",
+   "pathogen_scientific_name": {
+    "value": "Peronospora trifoliorum",
+    "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
+    "quote": "caused by the oomycete (not a true fungus) pathogen Peronospora trifoliorum",
+    "taxonomy_validated": false,
+    "ncbi_url": "",
+    "mycobank_url": ""
+   },
+   "type_of_disease": {
+    "value": "Oomycete",
+    "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
+    "quote": "Downy mildew is primarily caused by the oomycete (not a true fungus) pathogen Peronospora trifoliorum"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem",
+     "Seed",
+     "Whole plant"
+    ],
+    "url": "https://pubs.nmsu.edu/_a/A326/index.html",
+    "quote": "The disease begins as chlorotic spots on the leaflets. ... Infected stems are usually a little larger than non-infected stems ... particularly troublesome on newly germinating seedlings. Infected seedlings are weakened ... Seedling death"
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "The disease begins as chlorotic spots on the leaflets that may enlarge to cover the entire leaflet, with leaflets becoming twisted and margins curling down; infected stems are thickened with bunchy, rosette-like growth at their tips, and a white to grayish downy growth appears on the underside of infected leaflets.",
+     "url": "https://pubs.nmsu.edu/_a/A326/index.html",
+     "quote": "The disease begins as chlorotic spots on the leaflets. As the disease progresses, these chlorotic areas may enlarge and eventually cover the entire leaflet. Infected leaflets become twisted and the margins curl down. Infected stems are usually a little larger than non-infected stems and produce bunchy, rosette-like growth at their tips. The tell-tale sign of downy mildew is the production of a white to grayish downy growth on the underside of infected leaflets."
+    },
+    "diagnostic_features": {
+     "value": "The tell-tale sign of downy mildew is the production of a white to grayish downy growth on the underside of infected leaflets.",
+     "url": "https://pubs.nmsu.edu/_a/A326/index.html",
+     "quote": "The tell-tale sign of downy mildew is the production of a white to grayish downy growth on the underside of infected leaflets."
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
+    }
+   },
+   "treatments": {
+    "value": [
+     "Plant resistant/tolerant alfalfa cultivars (resistant varieties available for P. trifoliorum)",
+     "Fungicide seed treatments with metalaxyl or mefenoxam to manage seedling infection",
+     "Do not delay the first spring cutting; harvest early to remove inoculum and susceptible tissue and reduce losses",
+     "Cutting reduces humidity in the canopy, lowering infection risk",
+     "Spring seeding is recommended where fall infections are common"
+    ],
+    "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
+    "quote": "Resistant alfalfa cultivars are available to economically manage downy mildew. Fungicide seed treatments such as metalaxyl and mefenoxam effectively manage seedling downy mildew. When downy mildew is severe, do not delay the first harvest."
+   },
+   "confidence": "high",
+   "num_sources": 4,
+   "conflicts": [
     {
-      "disease_name": "Downy Mildew",
-      "pathogen_scientific_name": {
-        "value": "Peronospora trifoliorum",
-        "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
-        "quote": "caused by the oomycete (not a true fungus) pathogen Peronospora trifoliorum",
-        "taxonomy_validated": false,
-        "ncbi_url": "",
-        "mycobank_url": ""
+     "field": "type_of_disease",
+     "canonical_value": "Oomycete",
+     "alternative_value": "Fungal",
+     "alternative_source_url": "https://pubs.nmsu.edu/_a/A326/index.html",
+     "note": "NMSU describes downy mildew as a 'fungal disease', but Crop Protection Network and USU Extension correctly classify the pathogen as an oomycete (Oomycota), more closely related to algae than true fungi. Canonical value reflects current taxonomy (2 sources agree on Oomycete)."
+    },
+    {
+     "field": "disease_name",
+     "canonical_value": "Downy Mildew of Alfalfa",
+     "alternative_value": "Downy Mildew on Alfalfa / Downy Mildew",
+     "alternative_source_url": "https://ipm.ucanr.edu/agriculture/alfalfa/downy-mildew/",
+     "note": "Minor naming variants across sources ('Downy Mildew on Alfalfa' at NMSU, 'Downy Mildew' at UC IPM); all refer to the same disease."
+    }
+   ],
+   "regional_observations": {
+    "California": {
+     "state": "California",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
+       "image_shows": "The lesion is irregular.",
+       "image_quote": "The lesions on the leaf are green and irregularly shaped.",
+       "image_id": "bugwood::1572537",
+       "verification_status": "field_observation",
+       "reasoning": "Downy mildew produces irregular light-green chlorotic blotches rather than discrete round spots, consistent with the observed irregular green lesion, though the early green (not yet yellow) stage gives only partial support.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "weakly_supported"
       },
-      "type_of_disease": {
-        "value": "Oomycete",
-        "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
-        "quote": "Downy mildew is primarily caused by the oomycete (not a true fungus) pathogen Peronospora trifoliorum"
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
+       "image_shows": "The dominant color is pale-straw with a secondary green indicating the healthy parts of the leaf.",
+       "image_quote": "The photo shows chlorotic spots with a pale-straw background and secondary green indicating the healthy parts of the leaf.",
+       "image_id": "bugwood::1572537",
+       "verification_status": "verified",
+       "reasoning": "The pale-straw/bleached chlorotic upper surface against remaining green healthy tissue matches the mottled-yellow bleached appearance documented for alfalfa downy mildew.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://ipm.ucanr.edu/agriculture/alfalfa/downy-mildew/",
+         "quote": "The upper surface of leaves infected with downy mildew becomes lighter in color, in some cases almost a mottled yellow.",
+         "_repaired_from": {
+          "prev_url": "https://ipm.ucanr.edu/agriculture/alfalfa/downy-mildew/",
+          "prev_quote": "Infected upper leaf surfaces are bleached in appearance."
+         }
+        }
+       ],
+       "__support__": 1
       },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem",
-          "Seed",
-          "Whole plant"
-        ],
-        "url": "https://pubs.nmsu.edu/_a/A326/index.html",
-        "quote": "The disease begins as chlorotic spots on the leaflets. ... Infected stems are usually a little larger than non-infected stems ... particularly troublesome on newly germinating seedlings. Infected seedlings are weakened ... Seedling death"
+      {
+       "field": "severity",
+       "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
+       "image_shows": "The leaf has patches of necrotic tissue.",
+       "image_quote": "Necrotic tissue is present but not specifically localized to the tip, margin, or discrete spots.",
+       "image_id": "bugwood::1572537",
+       "verification_status": "field_observation",
+       "reasoning": "Diffuse (non-discrete) necrosis is consistent with late-stage downy mildew chlorotic tissue drying out, but necrosis is a secondary/late symptom rather than a diagnostic hallmark, so support is partial.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "weakly_supported"
       },
-      "visual_symptoms": {
-        "summary": {
-          "value": "The disease begins as chlorotic spots on the leaflets that may enlarge to cover the entire leaflet, with leaflets becoming twisted and margins curling down; infected stems are thickened with bunchy, rosette-like growth at their tips, and a white to grayish downy growth appears on the underside of infected leaflets.",
-          "url": "https://pubs.nmsu.edu/_a/A326/index.html",
-          "quote": "The disease begins as chlorotic spots on the leaflets. As the disease progresses, these chlorotic areas may enlarge and eventually cover the entire leaflet. Infected leaflets become twisted and the margins curl down. Infected stems are usually a little larger than non-infected stems and produce bunchy, rosette-like growth at their tips. The tell-tale sign of downy mildew is the production of a white to grayish downy growth on the underside of infected leaflets."
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
+       "image_shows": "The affected tissue has a mix of green and yellow tones, with the green being dominant.",
+       "image_quote": "The lesion center is a pale green with chlorotic yellowing.",
+       "image_id": "bugwood::1572537",
+       "verification_status": "field_observation",
+       "reasoning": "A green-to-yellow color palette with pale-green chlorotic centers matches the light-green-to-yellow-green blotch progression documented for downy mildew.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "weakly_supported"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf shape is broad with pointed tips, resembling an ovate form.",
+       "image_quote": "The leaf has a broad base tapering towards a pointed tip.",
+       "image_id": "bugwood::1572537",
+       "verification_status": "weakly_supported",
+       "reasoning": "Alfalfa leaflets are described as oblong-to-ovate, matching the ovate form, though extension descriptions note a truncate/rounded outer edge rather than a sharply pointed tip, so support is partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.illinoiswildflowers.info/weeds/plants/alfalfa.htm",
+         "quote": "Each leaflet is oblanceolate or obovate, wedged-shaped at the base and nearly truncate at its outer edge; typically oblong to ovate in shape."
         },
-        "diagnostic_features": {
-          "value": "The tell-tale sign of downy mildew is the production of a white to grayish downy growth on the underside of infected leaflets.",
+        {
+         "url": "https://biologyinsights.com/what-does-alfalfa-look-like-a-visual-identification/",
+         "quote": "Alfalfa has alternate compound leaves that are trifoliate, meaning each leaf comprises three separate small leaflets."
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf veins are not translucent or dark.",
+       "image_quote": "The leaf veins are not translucent or dark.",
+       "image_id": "bugwood::1572537",
+       "verification_status": "field_observation",
+       "reasoning": "Published extension descriptions of alfalfa downy mildew center on chlorotic leaf blotches and downy underside growth and say nothing about vein translucency or darkening, so this negative observation is plausible and uncontradicted but unsupported.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::1572537",
+      "bugwood::1572538",
+      "bugwood::1572539",
+      "bugwood::1572540",
+      "bugwood::1572541",
+      "bugwood::1572542",
+      "bugwood::1572543",
+      "bugwood::1572544"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       10
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 10,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 4,
+       "n_provisional": 2,
+       "n_contradictory": 3,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 6,
+       "n_added": 6,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 1,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "Minnesota": {
+     "state": "Minnesota",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
+       "image_shows": "Lesions present as irregular patches rather than discrete round spots.",
+       "image_quote": "The leaf lesions appear as irregular patches.",
+       "image_id": "bugwood::5624658",
+       "verification_status": "field_observation",
+       "reasoning": "Extension sources describe irregular chlorotic 'blotches' that enlarge across the leaflet, partially corroborating the 'irregular patches' morphology beyond canonical discrete spots.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "weakly_supported"
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
+       "image_shows": "Lesions show a pale-yellowish center, darker green margin, and chlorotic yellow halo.",
+       "image_quote": "The lesions exhibit a pale-yellowish center with a slightly darker green margin and a chlorotic yellow halo.",
+       "image_id": "bugwood::5624658",
+       "verification_status": "field_observation",
+       "reasoning": "The pale-to-yellow chlorotic coloration matches documented light-green-to-yellow-green blotches, though the specific concentric center/margin/halo structure is only partially corroborated.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "weakly_supported"
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
+       "image_shows": "Chlorotic yellowing appears in interveinal patches across otherwise green leaflets.",
+       "image_quote": "Leaflets show yellowing between the veins.",
+       "image_id": "bugwood::5624658",
+       "verification_status": "field_observation",
+       "reasoning": "General chlorotic yellowing of leaflets is well documented, though the specifically interveinal distribution is only weakly supported by the sources.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "weakly_supported"
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "(not specified)",
+       "image_shows": "Lesions lack concentric ring patterns.",
+       "image_quote": "No concentric patterns are visible in the lesions.",
+       "image_id": "bugwood::5624658",
+       "verification_status": "weakly_supported",
+       "reasoning": "Published descriptions depict downy mildew as diffuse chlorotic blotches rather than ringed target-type lesions, indirectly supporting the absence of concentric rings.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pubs.nmsu.edu/_a/A326/index.html",
+         "quote": "The disease begins as chlorotic spots on the leaflets.",
+         "_repaired_from": {
+          "prev_url": "https://pubs.nmsu.edu/_a/A326/index.html",
+          "prev_quote": "The disease begins as chlorotic spots on the leaflets that may enlarge to cover the entire leaflet"
+         }
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "Affected leaflets have a lanceolate shape.",
+       "image_quote": "The leaf shape is lanceolate.",
+       "image_id": "bugwood::5624658",
+       "verification_status": "field_observation",
+       "reasoning": "Leaflet outline is a host morphology trait, not a downy-mildew symptom, and no extension source corroborates a lanceolate shape as diagnostic, so it is left unverified but not contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5624658",
+      "bugwood::5624659",
+      "bugwood::5624660",
+      "bugwood::5624663"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       9
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 9,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 3,
+       "n_provisional": 3,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 6,
+       "n_added": 6,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 1,
+      "contradictory_count": 1,
+      "duplicates_count": 0,
+      "dropped_contradictory": [
+       {
+        "field": "diagnostic_features",
+        "canonical_says": "white to grayish downy growth on the underside of infected leaflets",
+        "image_shows": "Leaf veins appear translucent and pale, suggesting vein clearing.",
+        "image_quote": "Leaf veins appear translucent and pale, indicating vein clearing.",
+        "image_id": "bugwood::5624658",
+        "verification_status": "contradictory",
+        "reasoning": "Extension descriptions of alfalfa downy mildew report diffuse chlorotic blotches and downy growth rather than vein clearing, which is documented as a symptom of viral (mosaic) infection, so the claimed diagnostic feature contradicts the disease's published appearance.",
+        "swarm_support": 1,
+        "web_support": [
+         {
+          "url": "https://en.wikipedia.org/wiki/Peronospora_trifoliorum",
+          "quote": "The primary symptoms of Peronospora trifoliorum are chlorotic leaf blotches that range from light green to yellow-green to gray-green; rolled or downturned leaves; and thickened, stunted stems ending in rosette-like growths."
+         },
+         {
           "url": "https://pubs.nmsu.edu/_a/A326/index.html",
           "quote": "The tell-tale sign of downy mildew is the production of a white to grayish downy growth on the underside of infected leaflets."
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Plant resistant/tolerant alfalfa cultivars (resistant varieties available for P. trifoliorum)",
-          "Fungicide seed treatments with metalaxyl or mefenoxam to manage seedling infection",
-          "Do not delay the first spring cutting; harvest early to remove inoculum and susceptible tissue and reduce losses",
-          "Cutting reduces humidity in the canopy, lowering infection risk",
-          "Spring seeding is recommended where fall infections are common"
-        ],
-        "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
-        "quote": "Resistant alfalfa cultivars are available to economically manage downy mildew. Fungicide seed treatments such as metalaxyl and mefenoxam effectively manage seedling downy mildew. When downy mildew is severe, do not delay the first harvest."
-      },
-      "confidence": "high",
-      "num_sources": 4,
-      "conflicts": [
+         },
+         {
+          "url": "https://agriculture.vic.gov.au/biosecurity/plant-diseases/grain-pulses-and-cereal-diseases/alfalfa-mosaic-virus",
+          "quote": "plants with viral infections display virus-like symptoms including mottling, chlorosis, vein clearing, and bright yellow blotches"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    "Wisconsin": {
+     "state": "Wisconsin",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
+       "image_shows": "The chlorotic lesions on this Wisconsin sample are irregular rather than discrete circular spots.",
+       "image_quote": "The lesions have an irregular appearance.",
+       "image_id": "bugwood::5624657",
+       "verification_status": "weakly_supported",
+       "reasoning": "Downy mildew produces diffuse irregular chlorotic blotches rather than defined spots, so an irregular lesion shape is consistent with the pathogen.",
+       "swarm_support": 1,
+       "web_support": [
         {
-          "field": "type_of_disease",
-          "canonical_value": "Oomycete",
-          "alternative_value": "Fungal",
-          "alternative_source_url": "https://pubs.nmsu.edu/_a/A326/index.html",
-          "note": "NMSU describes downy mildew as a 'fungal disease', but Crop Protection Network and USU Extension correctly classify the pathogen as an oomycete (Oomycota), more closely related to algae than true fungi. Canonical value reflects current taxonomy (2 sources agree on Oomycete)."
-        },
-        {
-          "field": "disease_name",
-          "canonical_value": "Downy Mildew of Alfalfa",
-          "alternative_value": "Downy Mildew on Alfalfa / Downy Mildew",
-          "alternative_source_url": "https://ipm.ucanr.edu/agriculture/alfalfa/downy-mildew/",
-          "note": "Minor naming variants across sources ('Downy Mildew on Alfalfa' at NMSU, 'Downy Mildew' at UC IPM); all refer to the same disease."
+         "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
+         "quote": "Symptoms range from yellow leaf spots to entire leaf and shoot yellowing; the upper surface becomes mottled/lighter, consistent with diffuse irregular chlorotic blotches rather than well-defined round lesions."
         }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
+       "image_shows": "The Wisconsin leaflets show chlorosis covering a large portion of the leaf surface, indicating moderate-to-high foliar severity.",
+       "image_quote": "The leaflets exhibit interveinal chlorosis with yellowing between the veins while the veins remain green.",
+       "image_id": "bugwood::5624657",
+       "verification_status": "field_observation",
+       "reasoning": "Extensive chlorosis across the leaflet is well documented for downy mildew, though the specific interveinal (green-vein) pattern is not a distinguishing feature and is only partially corroborated.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "weakly_supported"
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "chlorotic spots ... may enlarge to cover the entire leaflet",
+       "image_shows": "The affected Wisconsin tissue is dominated by pale-yellow and olive-green coloration in roughly equal proportion.",
+       "image_quote": "The leaves show significant chlorotic spots covering a large portion of the visible leaf surface.",
+       "image_id": "bugwood::5624657",
+       "verification_status": "field_observation",
+       "reasoning": "The pale-yellow / olive-green palette matches the documented light-green to yellow-green to gray-green chlorotic blotches of downy mildew.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "weakly_supported"
+      },
+      {
+       "field": "severity",
+       "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
+       "image_shows": "The Wisconsin leaf shows chlorotic spots bordered by dark-brown edges.",
+       "image_quote": "The lesion center is light green and the margin is dark brown.",
+       "image_id": "bugwood::5624657",
+       "verification_status": "weakly_supported",
+       "reasoning": "Chlorosis with a light-green center is a genuine downy-mildew feature and is well supported, but the dark-brown margin is atypical for downy mildew (more consistent with a leaf-spot look-alike), so support is only partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
+         "quote": "Symptoms range from yellow leaf spots to entire leaf and shoot yellowing.",
+         "_repaired_from": {
+          "prev_url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
+          "prev_quote": "Symptoms range from yellow leaf spots to entire leaf and shoot yellowing (chlorosis is the primary upper-surface symptom)."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
+       "image_shows": "Irregular necrotic areas are present in the Wisconsin leaf, some extending inward from the veins.",
+       "image_quote": "The image shows irregular necrotic areas within the leaf, some extending inward from veins.",
+       "image_id": "bugwood::5624657",
+       "verification_status": "field_observation",
+       "reasoning": "Sources describe primarily diffuse chlorosis that can eventually dry out, giving only indirect/partial support for necrotic areas and none for a vein-delimited pattern.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "weakly_supported"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The host leaf is a compound (trifoliate-type) leaf divided into multiple leaflets, consistent with alfalfa.",
+       "image_quote": "The image shows a compound leaf structure.",
+       "image_id": "bugwood::5624657",
+       "verification_status": "verified",
+       "reasoning": "Extension sources consistently describe alfalfa foliage in terms of multiple leaflets, corroborating the compound trifoliolate leaf structure shown.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://en.wikipedia.org/wiki/Peronospora_trifoliorum",
+         "quote": "Peronospora trifoliorum ... is an oomycete plant pathogen infecting alfalfa."
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf veins of the Wisconsin sample appear normal and translucent with no vein clearing or vein-associated necrosis.",
+       "image_quote": "The leaf veins are translucent, indicating normal health.",
+       "image_id": "bugwood::5624657",
+       "verification_status": "field_observation",
+       "reasoning": "Published descriptions of alfalfa downy mildew emphasize chlorotic blotches rather than vein clearing or vein necrosis, so an absence of vein-associated symptoms is coherent with canonical but is a negative observation not directly documented by any photo source.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5624657"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
       ],
-      "regional_observations": {
-        "California": {
-          "state": "California",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
-              "image_shows": "The lesion is irregular.",
-              "image_quote": "The lesions on the leaf are green and irregularly shaped.",
-              "image_id": "bugwood::1572537",
-              "verification_status": "weakly_supported",
-              "reasoning": "Downy mildew produces irregular light-green chlorotic blotches rather than discrete round spots, consistent with the observed irregular green lesion, though the early green (not yet yellow) stage gives only partial support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
-                  "quote": "The primary symptoms of Peronospora trifoliorum are chlorotic leaf blotches that range from light green to yellow-green to gray-green."
-                },
-                {
-                  "url": "https://extension.usu.edu/crops/research/downy-mildew-of-alfalfa",
-                  "quote": "Early stage symptoms include a light green blotchy area on the leaf surface."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
-              "image_shows": "The dominant color is pale-straw with a secondary green indicating the healthy parts of the leaf.",
-              "image_quote": "The photo shows chlorotic spots with a pale-straw background and secondary green indicating the healthy parts of the leaf.",
-              "image_id": "bugwood::1572537",
-              "verification_status": "verified",
-              "reasoning": "The pale-straw/bleached chlorotic upper surface against remaining green healthy tissue matches the mottled-yellow bleached appearance documented for alfalfa downy mildew.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
-                  "quote": "The upper surface of infected leaves turns light green, in some cases almost a mottled yellow."
-                },
-                {
-                  "url": "https://ipm.ucanr.edu/agriculture/alfalfa/downy-mildew/",
-                  "quote": "Infected upper leaf surfaces are bleached in appearance."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
-              "image_shows": "The leaf has patches of necrotic tissue.",
-              "image_quote": "Necrotic tissue is present but not specifically localized to the tip, margin, or discrete spots.",
-              "image_id": "bugwood::1572537",
-              "verification_status": "weakly_supported",
-              "reasoning": "Diffuse (non-discrete) necrosis is consistent with late-stage downy mildew chlorotic tissue drying out, but necrosis is a secondary/late symptom rather than a diagnostic hallmark, so support is partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.usu.edu/crops/research/downy-mildew-of-alfalfa",
-                  "quote": "In time the area will turn yellow and eventually may dry out."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
-              "image_shows": "The affected tissue has a mix of green and yellow tones, with the green being dominant.",
-              "image_quote": "The lesion center is a pale green with chlorotic yellowing.",
-              "image_id": "bugwood::1572537",
-              "verification_status": "weakly_supported",
-              "reasoning": "A green-to-yellow color palette with pale-green chlorotic centers matches the light-green-to-yellow-green blotch progression documented for downy mildew.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
-                  "quote": "Chlorotic leaf blotches that range from light green to yellow-green to gray-green."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shape is broad with pointed tips, resembling an ovate form.",
-              "image_quote": "The leaf has a broad base tapering towards a pointed tip.",
-              "image_id": "bugwood::1572537",
-              "verification_status": "weakly_supported",
-              "reasoning": "Alfalfa leaflets are described as oblong-to-ovate, matching the ovate form, though extension descriptions note a truncate/rounded outer edge rather than a sharply pointed tip, so support is partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.illinoiswildflowers.info/weeds/plants/alfalfa.htm",
-                  "quote": "Each leaflet is oblanceolate or obovate, wedged-shaped at the base and nearly truncate at its outer edge; typically oblong to ovate in shape."
-                },
-                {
-                  "url": "https://biologyinsights.com/what-does-alfalfa-look-like-a-visual-identification/",
-                  "quote": "Alfalfa has alternate compound leaves that are trifoliate, meaning each leaf comprises three separate small leaflets."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf veins are not translucent or dark.",
-              "image_quote": "The leaf veins are not translucent or dark.",
-              "image_id": "bugwood::1572537",
-              "verification_status": "field_observation",
-              "reasoning": "Published extension descriptions of alfalfa downy mildew center on chlorotic leaf blotches and downy underside growth and say nothing about vein translucency or darkening, so this negative observation is plausible and uncontradicted but unsupported.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::1572537",
-            "bugwood::1572538",
-            "bugwood::1572539",
-            "bugwood::1572540",
-            "bugwood::1572541",
-            "bugwood::1572542",
-            "bugwood::1572543",
-            "bugwood::1572544"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              10
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 10,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 4,
-              "n_provisional": 2,
-              "n_contradictory": 3,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 6,
-              "n_added": 6,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 1,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "Minnesota": {
-          "state": "Minnesota",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
-              "image_shows": "Lesions present as irregular patches rather than discrete round spots.",
-              "image_quote": "The leaf lesions appear as irregular patches.",
-              "image_id": "bugwood::5624658",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension sources describe irregular chlorotic 'blotches' that enlarge across the leaflet, partially corroborating the 'irregular patches' morphology beyond canonical discrete spots.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
-                  "quote": "The primary symptoms are chlorotic leaf blotches that range from light green to yellow-green to gray-green."
-                },
-                {
-                  "url": "https://extension.usu.edu/crops/research/downy-mildew-of-alfalfa",
-                  "quote": "Chlorotic areas may enlarge and eventually cover the entire leaflet."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
-              "image_shows": "Lesions show a pale-yellowish center, darker green margin, and chlorotic yellow halo.",
-              "image_quote": "The lesions exhibit a pale-yellowish center with a slightly darker green margin and a chlorotic yellow halo.",
-              "image_id": "bugwood::5624658",
-              "verification_status": "weakly_supported",
-              "reasoning": "The pale-to-yellow chlorotic coloration matches documented light-green-to-yellow-green blotches, though the specific concentric center/margin/halo structure is only partially corroborated.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
-                  "quote": "Chlorotic leaf blotches range from light green to yellow-green to gray-green."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
-              "image_shows": "Chlorotic yellowing appears in interveinal patches across otherwise green leaflets.",
-              "image_quote": "Leaflets show yellowing between the veins.",
-              "image_id": "bugwood::5624658",
-              "verification_status": "weakly_supported",
-              "reasoning": "General chlorotic yellowing of leaflets is well documented, though the specifically interveinal distribution is only weakly supported by the sources.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
-                  "quote": "New growth becomes pale green to yellowish green with chlorotic blotches."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "(not specified)",
-              "image_shows": "Lesions lack concentric ring patterns.",
-              "image_quote": "No concentric patterns are visible in the lesions.",
-              "image_id": "bugwood::5624658",
-              "verification_status": "weakly_supported",
-              "reasoning": "Published descriptions depict downy mildew as diffuse chlorotic blotches rather than ringed target-type lesions, indirectly supporting the absence of concentric rings.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.usu.edu/crops/research/downy-mildew-of-alfalfa",
-                  "quote": "chlorotic leaf blotches that range from light green to yellow-green to gray-green; rolled or downturned leaves"
-                },
-                {
-                  "url": "https://pubs.nmsu.edu/_a/A326/index.html",
-                  "quote": "The disease begins as chlorotic spots on the leaflets that may enlarge to cover the entire leaflet"
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "Affected leaflets have a lanceolate shape.",
-              "image_quote": "The leaf shape is lanceolate.",
-              "image_id": "bugwood::5624658",
-              "verification_status": "field_observation",
-              "reasoning": "Leaflet outline is a host morphology trait, not a downy-mildew symptom, and no extension source corroborates a lanceolate shape as diagnostic, so it is left unverified but not contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5624658",
-            "bugwood::5624659",
-            "bugwood::5624660",
-            "bugwood::5624663"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              9
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 9,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 3,
-              "n_provisional": 3,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 6,
-              "n_added": 6,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 1,
-            "contradictory_count": 1,
-            "duplicates_count": 0,
-            "dropped_contradictory": [
-              {
-                "field": "diagnostic_features",
-                "canonical_says": "white to grayish downy growth on the underside of infected leaflets",
-                "image_shows": "Leaf veins appear translucent and pale, suggesting vein clearing.",
-                "image_quote": "Leaf veins appear translucent and pale, indicating vein clearing.",
-                "image_id": "bugwood::5624658",
-                "verification_status": "contradictory",
-                "reasoning": "Extension descriptions of alfalfa downy mildew report diffuse chlorotic blotches and downy growth rather than vein clearing, which is documented as a symptom of viral (mosaic) infection, so the claimed diagnostic feature contradicts the disease's published appearance.",
-                "swarm_support": 1,
-                "web_support": [
-                  {
-                    "url": "https://en.wikipedia.org/wiki/Peronospora_trifoliorum",
-                    "quote": "The primary symptoms of Peronospora trifoliorum are chlorotic leaf blotches that range from light green to yellow-green to gray-green; rolled or downturned leaves; and thickened, stunted stems ending in rosette-like growths."
-                  },
-                  {
-                    "url": "https://pubs.nmsu.edu/_a/A326/index.html",
-                    "quote": "The tell-tale sign of downy mildew is the production of a white to grayish downy growth on the underside of infected leaflets."
-                  },
-                  {
-                    "url": "https://agriculture.vic.gov.au/biosecurity/plant-diseases/grain-pulses-and-cereal-diseases/alfalfa-mosaic-virus",
-                    "quote": "plants with viral infections display virus-like symptoms including mottling, chlorosis, vein clearing, and bright yellow blotches"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        "Wisconsin": {
-          "state": "Wisconsin",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
-              "image_shows": "The chlorotic lesions on this Wisconsin sample are irregular rather than discrete circular spots.",
-              "image_quote": "The lesions have an irregular appearance.",
-              "image_id": "bugwood::5624657",
-              "verification_status": "weakly_supported",
-              "reasoning": "Downy mildew produces diffuse irregular chlorotic blotches rather than defined spots, so an irregular lesion shape is consistent with the pathogen.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
-                  "quote": "Symptoms range from yellow leaf spots to entire leaf and shoot yellowing; the upper surface becomes mottled/lighter, consistent with diffuse irregular chlorotic blotches rather than well-defined round lesions."
-                },
-                {
-                  "url": "https://extension.usu.edu/crops/research/downy-mildew-of-alfalfa",
-                  "quote": "chlorotic leaf blotches that range from light green to yellow-green to gray-green (blotchy, irregular)."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
-              "image_shows": "The Wisconsin leaflets show chlorosis covering a large portion of the leaf surface, indicating moderate-to-high foliar severity.",
-              "image_quote": "The leaflets exhibit interveinal chlorosis with yellowing between the veins while the veins remain green.",
-              "image_id": "bugwood::5624657",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extensive chlorosis across the leaflet is well documented for downy mildew, though the specific interveinal (green-vein) pattern is not a distinguishing feature and is only partially corroborated.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
-                  "quote": "chlorotic areas may enlarge and eventually cover the entire leaflet, and symptoms range to entire leaf and shoot yellowing."
-                },
-                {
-                  "url": "https://pubs.nmsu.edu/_a/A326/index.html",
-                  "quote": "The upper surface of leaves infected with downy mildew becomes lighter in color, in some cases almost a mottled yellow."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "chlorotic spots ... may enlarge to cover the entire leaflet",
-              "image_shows": "The affected Wisconsin tissue is dominated by pale-yellow and olive-green coloration in roughly equal proportion.",
-              "image_quote": "The leaves show significant chlorotic spots covering a large portion of the visible leaf surface.",
-              "image_id": "bugwood::5624657",
-              "verification_status": "weakly_supported",
-              "reasoning": "The pale-yellow / olive-green palette matches the documented light-green to yellow-green to gray-green chlorotic blotches of downy mildew.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.usu.edu/crops/research/downy-mildew-of-alfalfa",
-                  "quote": "chlorotic leaf blotches that range from light green to yellow-green to gray-green."
-                },
-                {
-                  "url": "https://pubs.nmsu.edu/_a/A326/index.html",
-                  "quote": "the upper surface becomes lighter in color, in some cases almost a mottled yellow."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
-              "image_shows": "The Wisconsin leaf shows chlorotic spots bordered by dark-brown edges.",
-              "image_quote": "The lesion center is light green and the margin is dark brown.",
-              "image_id": "bugwood::5624657",
-              "verification_status": "weakly_supported",
-              "reasoning": "Chlorosis with a light-green center is a genuine downy-mildew feature and is well supported, but the dark-brown margin is atypical for downy mildew (more consistent with a leaf-spot look-alike), so support is only partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
-                  "quote": "Symptoms range from yellow leaf spots to entire leaf and shoot yellowing (chlorosis is the primary upper-surface symptom)."
-                },
-                {
-                  "url": "https://extension.usu.edu/crops/research/downy-mildew-of-alfalfa",
-                  "quote": "chlorotic leaf blotches that range from light green to yellow-green to gray-green."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "chlorotic spots on the leaflets that may enlarge to cover the entire leaflet",
-              "image_shows": "Irregular necrotic areas are present in the Wisconsin leaf, some extending inward from the veins.",
-              "image_quote": "The image shows irregular necrotic areas within the leaf, some extending inward from veins.",
-              "image_id": "bugwood::5624657",
-              "verification_status": "weakly_supported",
-              "reasoning": "Sources describe primarily diffuse chlorosis that can eventually dry out, giving only indirect/partial support for necrotic areas and none for a vein-delimited pattern.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.usu.edu/crops/research/downy-mildew-of-alfalfa",
-                  "quote": "in time the area will turn yellow and eventually may dry out"
-                },
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
-                  "quote": "chlorotic leaf blotches that range from light green to yellow-green to gray-green"
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The host leaf is a compound (trifoliate-type) leaf divided into multiple leaflets, consistent with alfalfa.",
-              "image_quote": "The image shows a compound leaf structure.",
-              "image_id": "bugwood::5624657",
-              "verification_status": "verified",
-              "reasoning": "Extension sources consistently describe alfalfa foliage in terms of multiple leaflets, corroborating the compound trifoliolate leaf structure shown.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/downy-mildew-of-alfalfa",
-                  "quote": "The disease begins as chlorotic spots on the leaflets ... these chlorotic areas may enlarge and eventually cover the entire leaflet."
-                },
-                {
-                  "url": "https://en.wikipedia.org/wiki/Peronospora_trifoliorum",
-                  "quote": "Peronospora trifoliorum ... is an oomycete plant pathogen infecting alfalfa."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf veins of the Wisconsin sample appear normal and translucent with no vein clearing or vein-associated necrosis.",
-              "image_quote": "The leaf veins are translucent, indicating normal health.",
-              "image_id": "bugwood::5624657",
-              "verification_status": "field_observation",
-              "reasoning": "Published descriptions of alfalfa downy mildew emphasize chlorotic blotches rather than vein clearing or vein necrosis, so an absence of vein-associated symptoms is coherent with canonical but is a negative observation not directly documented by any photo source.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "novel_plausible"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5624657"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              10
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 10,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 4,
-              "n_provisional": 3,
-              "n_contradictory": 2,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 7,
-              "n_added": 7,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 1,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
+      "n_raw_per_pass": [
+       10
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 10,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 4,
+       "n_provisional": 3,
+       "n_contradictory": 2,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 7,
+       "n_added": 7,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
       }
-    },
-    {
-      "disease_name": "Stemphylium Leaf Spot",
-      "pathogen_scientific_name": {
-        "value": "Stemphylium botryosum",
-        "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-        "quote": "The most important causal pathogen is S. botryosum , which has two distinct biotypes that cause disease within differing temperature regimes.",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "",
-        "url": "",
-        "quote": ""
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem"
-        ],
-        "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-        "quote": "Symptoms caused by the W-T biotype include brown, oval-shaped leaf lesions with dark margins and yellow halos. Lesions can grow to cover much of the leaf and concentric rings develop. Dark stem discoloration and early defoliation can also occur."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "The disease produces leaf lesions whose appearance depends on the biotype: W-T causes brown, oval lesions with dark margins and yellow halos that may develop concentric rings, while C-T causes small, irregular, light-colored lesions with dark margins.",
-          "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-          "quote": "Symptoms caused by the W-T biotype include brown, oval-shaped leaf lesions with dark margins and yellow halos. Lesions can grow to cover much of the leaf and concentric rings develop. Dark stem discoloration and early defoliation can also occur. Lesions caused by the C-T biotype are small, irregular-shaped, and light-colored with dark margins."
-        },
-        "diagnostic_features": {
-          "value": "Two distinct lesion types by biotype: W-T lesions are brown, oval-shaped with dark margins, yellow halos, and concentric rings that expand to cover much of the leaf; C-T lesions are small, irregular-shaped, light-colored with dark margins and do not expand.",
-          "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-          "quote": "Symptoms caused by the W-T biotype include brown, oval-shaped leaf lesions with dark margins and yellow halos. Lesions can grow to cover much of the leaf and concentric rings develop. ... Lesions caused by the C-T biotype are small, irregular-shaped, and light-colored with dark margins. Unlike the W-T biotype, lesion expansion does not occur."
-        },
-        "look_alikes": {
-          "value": [
-            "Common (Pseudopeziza) Leaf Spot",
-            "Downy Mildew",
-            "Rusts",
-            "Bacterial Leaf Spot",
-            "Yellow Leaf Blotch",
-            "Summer Black Stem",
-            "Spring Black Stem",
-            "Lepto Leaf Spot"
-          ],
-          "url": "https://ipm.ca.uky.edu/alflsp",
-          "quote": "Common Leaf Spot, Downy Mildew, Rusts, Bacterial Leaf Spot, Yellow Leaf Blotch, Stemphylium Leaf Spot, and Summer and Spring Black Stem and Lepto Leaf Spot all cause symptoms called \"leaf spot\"."
-        }
-      },
-      "treatments": {
-        "value": [
-          "Alfalfa cultivars with low to moderate Stemphylium leaf blight resistance exist.",
-          "Consider early harvest to reduce leaf loss if Stemphylium leaf spot is severe."
-        ],
-        "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-        "quote": "Alfalfa cultivars with low to moderate Stemphylium leaf blight resistance exist. Consider early harvest to reduce leaf loss if Stemphylium leaf spot is severe."
-      },
-      "confidence": "medium",
-      "num_sources": 2,
-      "conflicts": [],
-      "regional_observations": {
-        "California": {
-          "state": "California",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "C-T causes small, irregular, light-colored lesions with dark margins",
-              "image_shows": "The lesion centers are tan and the margins are chocolate-brown.",
-              "image_quote": "The lesion centers are tan and the margins are chocolate-brown.",
-              "image_id": "bugwood::1572545",
-              "verification_status": "verified",
-              "reasoning": "Extension sources explicitly describe tan lesion centers bounded by a dark/brown border, matching the observed tan-center chocolate-brown-margin coloration.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-                  "quote": "A tan center and a dark border around an irregularly shaped lesion distinguish Stemphylium leaf spot from other leaf spot diseases."
-                },
-                {
-                  "url": "https://ipm.ucanr.edu/agriculture/alfalfa/stemphyllium-leaf-spot/",
-                  "quote": "Stemphylium leaf spot is distinguished by a tan center and a dark border around an irregularly shaped lesion."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "brown, oval lesions with dark margins and yellow halos",
-              "image_shows": "The photo shows chlorotic lesions with light tan to cream centers and brownish-red margins.",
-              "image_quote": "The image shows a lesion with a chlorotic yellow halo.",
-              "image_id": "bugwood::1572545",
-              "verification_status": "verified",
-              "reasoning": "Chlorotic/yellow halos around lesions are documented for the W-T biotype, and the tan-to-cream centers with brown margins add state-specific color detail beyond the canonical.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-                  "quote": "Symptoms caused by the W-T biotype include brown, oval-shaped leaf lesions with dark margins and yellow halos."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "brown, oval lesions with dark margins",
-              "image_shows": "There are brown, tan, and chocolate-brown spots on the leaf.",
-              "image_quote": "The image displays necrotic tissue in discrete spots on the leaf.",
-              "image_id": "bugwood::1572545",
-              "verification_status": "verified",
-              "reasoning": "Discrete brown necrotic leaf spots are the defining symptom of the disease, directly corroborated by extension descriptions.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-                  "quote": "The most noticeable symptom is formation of oval-to-elongate brown lesions with lighter centers, enlarging to form concentric light and dark brown zones."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "C-T causes small, irregular, light-colored lesions with dark margins",
-              "image_shows": "The affected tissue displays a mix of green, tan, and brown colors.",
-              "image_quote": "The lesion centers are light tan to cream, with brownish-red margins and chlorotic yellow halos.",
-              "image_id": "bugwood::1572545",
-              "verification_status": "verified",
-              "reasoning": "The tan-to-brown lesion coloration against green foliage matches the documented tan-centered, dark-bordered brown lesions.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-                  "quote": "A tan center and a dark border around an irregularly shaped lesion distinguish Stemphylium leaf spot from other leaf spot diseases."
-                },
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-                  "quote": "The most noticeable symptom is formation of oval-to-elongate brown lesions with lighter centers, enlarging to form concentric light and dark brown zones."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "Common (Pseudopeziza) Leaf Spot; Downy Mildew; Rusts; Bacterial Leaf Spot; ...",
-              "image_shows": "The lesions have chlorotic halos surrounding necrotic centers.",
-              "image_quote": "The leaf has lesions with concentric rings and chlorotic halos.",
-              "image_id": "bugwood::1572545",
-              "verification_status": "verified",
-              "reasoning": "The tan/necrotic center ringed by a chlorotic halo is the feature extension sources cite for distinguishing Stemphylium from look-alike alfalfa leaf spots.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://ipm.ucanr.edu/agriculture/alfalfa/stemphyllium-leaf-spot/",
-                  "quote": "Stemphylium leaf spot is distinguished by a tan center and a dark border around an irregularly shaped lesion."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified for texture)",
-              "image_shows": "The lesions appear raised and have a slightly rough texture.",
-              "image_quote": "The surface of the lesions is textured.",
-              "image_id": "bugwood::1572545",
-              "verification_status": "weakly_supported",
-              "reasoning": "No source describes raised lesions, but sporulation in lesion centers and a soot-like mold on older lesions plausibly produce the observed textured surface, giving indirect support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-                  "quote": "New spores will form in the center of the leaf spot. Older lesions can be covered with a soot-like mold."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "Consider early harvest to reduce leaf loss if Stemphylium leaf spot is severe.",
-              "image_shows": "The lesions cover approximately half of the leaf.",
-              "image_quote": "The lesions are irregularly shaped and cover a significant portion of the leaf.",
-              "image_id": "bugwood::1572545",
-              "verification_status": "weakly_supported",
-              "reasoning": "Sources confirm lesions can enlarge to cover much of the leaf, consistent with the ~half-leaf coverage observed, though defoliation occurs only under heavy pressure.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://ipm.ucanr.edu/agriculture/alfalfa/stemphyllium-leaf-spot/",
-                  "quote": "Lesions can grow to cover much of the leaf and concentric rings develop, and dark stem discoloration and early defoliation can also occur."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf apex is curled up.",
-              "image_quote": "The leaf shows curling up towards the tip.",
-              "image_id": "bugwood::1572545",
-              "verification_status": "field_observation",
-              "reasoning": "Leaf-tip curling is a generic morphological/postural detail not described in any extension factsheet as a Stemphylium leaf spot symptom, but it is plausible in a field photo and not contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf veins display translucence and dark spots, indicating possible necrosis.",
-              "image_quote": "Leaf veins show some translucent areas and dark spots.",
-              "image_id": "bugwood::1572545",
-              "verification_status": "field_observation",
-              "reasoning": "Dark necrotic spotting is coherent with the canonical brown/dark lesions of Stemphylium leaf spot, but 'vein translucence' specifically is not documented in published photo descriptions, so it is flagged for curator review.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "novel_plausible"
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf is rounded with pointed tips.",
-              "image_quote": "The leaf shape is rounded with pointed tips.",
-              "image_id": "bugwood::1572545",
-              "verification_status": "field_observation",
-              "reasoning": "This merely describes the host leaflet's natural shape rather than any disease sign, so no disease source corroborates it, though it is plausible and not contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::1572545",
-            "bugwood::1572546",
-            "bugwood::1572547",
-            "bugwood::1572548",
-            "bugwood::1572549",
-            "bugwood::1572550",
-            "bugwood::1572552"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              12
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 12,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 7,
-              "n_provisional": 3,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 10,
-              "n_added": 10,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 3,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "Minnesota": {
-          "state": "Minnesota",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "C-T causes small, irregular, light-colored lesions with dark margins",
-              "image_shows": "The lesion centers are tan and the margins are dark brown.",
-              "image_quote": "The lesions have tan centers with dark brown margins.",
-              "image_id": "bugwood::5625761",
-              "verification_status": "verified",
-              "reasoning": "Multiple extension sources describe the diagnostic tan/white center with a dark brown border, directly corroborating the observed lesion coloration.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://ipm.ca.uky.edu/alflsp",
-                  "quote": "A tan center and a dark border around an irregularly shaped lesion distinguish Stemphylium leaf spot from other leafspot diseases."
-                },
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/alfalfa-medicago-sativa-leaf-spots-blotches",
-                  "quote": "Initial symptoms consist of white to tan spots with a brown border, 2 to 3 mm in diameter, circular to oval."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "lesions ... with dark margins",
-              "image_shows": "The dark brown lesion margins represent necrotic border tissue.",
-              "image_quote": "The image shows pale yellowish-white lesions with dark brown margins.",
-              "image_id": "bugwood::5625761",
-              "verification_status": "weakly_supported",
-              "reasoning": "The documented dark/brown lesion border is necrotic tissue, so the dark-margin necrosis observation is indirectly supported though not stated as 'necrosis' verbatim.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-                  "quote": "Stemphylium leaf spot lesions are irregularly shaped, brown, with a darker border surrounded by a yellow halo."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "spread_pattern",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesions extend across leaf veins rather than being confined between them.",
-              "image_quote": "The image shows leaf lesions crossing the leaf veins.",
-              "image_id": "bugwood::5625761",
-              "verification_status": "weakly_supported",
-              "reasoning": "Stemphylium lesions are irregular, enlarge, coalesce and cover much of the leaf (unlike vein-limited Pseudopeziza spots), consistent with lesions crossing veins.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/alfalfa-medicago-sativa-leaf-spots-blotches",
-                  "quote": "enlarging to 5 to 8 mm in diameter. Large lesions often coalesce."
-                },
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-                  "quote": "lesions can grow to cover much of the leaf with concentric rings developing"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaves curl upward toward the stem.",
-              "image_quote": "The image shows leaf curling up towards the stem.",
-              "image_id": "bugwood::5625761",
-              "verification_status": "field_observation",
-              "reasoning": "Upward leaf curling is not described as a Stemphylium leaf spot symptom in any extension source, but it is a plausible incidental posture of the photographed plant and is not contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The alfalfa leaflets are rounded with slightly pointed tips.",
-              "image_quote": "The leaf tips are slightly pointed.",
-              "image_id": "bugwood::5625761",
-              "verification_status": "field_observation",
-              "reasoning": "Rounded leaflets with slightly pointed tips describe normal alfalfa leaf morphology rather than a disease feature; no source ties this to Stemphylium leaf spot but it is plausible and uncontradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5625761",
-            "bugwood::5625762"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              10
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 10,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 3,
-              "n_provisional": 3,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 6,
-              "n_added": 6,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 2,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "Wisconsin": {
-          "state": "Wisconsin",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "C-T causes small, irregular, light-colored lesions with dark margins",
-              "image_shows": "Wisconsin lesions appear irregular in outline rather than cleanly oval.",
-              "image_quote": "The lesions are irregular in shape, with some touching the leaf veins.",
-              "image_id": "bugwood::5625763",
-              "verification_status": "verified",
-              "reasoning": "Extension source explicitly describes Stemphylium leaf spot lesions as irregularly shaped, matching the image.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-                  "quote": "A tan center and a dark border around an irregularly shaped lesion distinguish Stemphylium leaf spot from other leafspot diseases."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "brown, oval lesions with dark margins and yellow halos",
-              "image_shows": "Wisconsin lesions show tan centers with chocolate-brown margins and chlorotic yellow halos.",
-              "image_quote": "The lesion centers are tan, the margins are chocolate-brown, and there is a chlorotic yellow halo.",
-              "image_id": "bugwood::5625763",
-              "verification_status": "verified",
-              "reasoning": "Tan/lighter centers, dark brown margins, and yellow halos are all documented Stemphylium lesion features.",
-              "swarm_support": 2,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-                  "quote": "A tan center and a dark border around an irregularly shaped lesion distinguish Stemphylium leaf spot from other leafspot diseases."
-                },
-                {
-                  "url": "https://ipm.ucanr.edu/agriculture/alfalfa/stemphyllium-leaf-spot/",
-                  "quote": "Oval-to-elongate brown lesions with lighter centers, enlarging to form concentric light and dark brown zones; W-T biotype lesions have dark margins and yellow halos."
-                }
-              ],
-              "__support__": 2
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "yellow halos that may develop concentric rings",
-              "image_shows": "Chlorotic halos surround the lesions in the Wisconsin sample.",
-              "image_quote": "Lesions have chlorotic halos.",
-              "image_id": "bugwood::5625763",
-              "verification_status": "verified",
-              "reasoning": "Yellow/chlorotic halos around lesions are a documented Stemphylium symptom.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-                  "quote": "Symptoms caused by the W-T biotype include brown, oval-shaped leaf lesions with dark margins and yellow halos."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "concentric rings that expand to cover much of the leaf",
-              "image_shows": "Wisconsin lesions form a target-like pattern of alternating light and dark concentric rings.",
-              "image_quote": "The lesions show a target-like pattern with alternating light and dark concentric rings.",
-              "image_id": "bugwood::5625763",
-              "verification_status": "verified",
-              "reasoning": "The disease is literally known as 'target spot' with concentric light/dark zones, directly supporting the observed target pattern.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://ipm.ucanr.edu/agriculture/alfalfa/stemphyllium-leaf-spot/",
-                  "quote": "Also called 'target spot'; the most noticeable symptom is formation of oval-to-elongate brown lesions with lighter centers, enlarging to form concentric light and dark brown zones."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "concentric rings that expand to cover much of the leaf",
-              "image_shows": "Lesions in the Wisconsin image cover a large area of the affected leaves.",
-              "image_quote": "The photo shows leaf lesions affecting a significant portion of the leaves.",
-              "image_id": "bugwood::5625763",
-              "verification_status": "verified",
-              "reasoning": "Coalescing lesions covering much of the leaf are documented for Stemphylium, supporting the observed high leaf coverage.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-                  "quote": "Lesions can grow to cover much of the leaf; large lesions often coalesced and infected leaves defoliate."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "Necrotic tissue extends across the Wisconsin leaf surface inward from the veins.",
-              "image_quote": "Necrotic tissue is present across the leaf surface, extending inward from the veins.",
-              "image_id": "bugwood::5625763",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extensive coalescing necrosis is documented, though the specific 'inward from the veins' progression is not directly corroborated.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-                  "quote": "Lesions can grow to cover much of the leaf; large lesions often coalesced; leaves with multiple infections often defoliate."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "Leaflets in the Wisconsin sample curl upward toward their edges.",
-              "image_quote": "The leaflets have a tendency to curl upwards.",
-              "image_id": "bugwood::5625763",
-              "verification_status": "field_observation",
-              "reasoning": "Extension/CPN factsheets describe Stemphylium lesion color and shape but do not document upward leaflet curling, so the observation is plausible and uncontradicted but unsupported.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "C-T lesions are small, irregular-shaped, light-colored with dark margins",
-              "image_shows": "Some Wisconsin lesions cross leaf veins while others stop at them.",
-              "image_quote": "Lesions appear irregular.",
-              "image_id": "bugwood::5625763",
-              "verification_status": "field_observation",
-              "reasoning": "Sources confirm Stemphylium lesions are irregularly shaped, which is coherent with lesions crossing some veins, but the specific vein-crossing behavior is not documented, so it is flagged for curator review.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "novel_plausible"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5625763"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 7,
-              "n_provisional": 4,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 11,
-              "n_added": 10,
-              "n_overlaps_bumped": 1,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 2,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
-    },
-    {
-      "disease_name": "Summer Black Stem",
-      "pathogen_scientific_name": {
-        "value": "Cercospora medicaginis",
-        "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
-        "quote": "Summer black stem and leaf spot is caused by the fungus Cercospora medicaginis .",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
-        "quote": "Summer black stem and leaf spot is caused by the fungus Cercospora medicaginis ."
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem"
-        ],
-        "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
-        "quote": "Irregular, brown lesions with yellow halos form on leaves and can be observed on both leaf surfaces. ... Stems initially show small, dark lesions that may grow to cover large portions of the stem."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "The most obvious symptom is premature defoliation from the base of the stem upward, with leaf spots appearing first; leaf spots begin as brown areas with a wavy margin, turning gray or silvery as spores are produced, often surrounded by a diffuse yellow margin, and brown lesions also form on stems.",
-          "url": "https://ipm.ucanr.edu/agriculture/alfalfa/summer-black-stem-and-leaf-spot/",
-          "quote": "Defoliation from the base of the stem to the top is the most obvious symptom, but leaf spots usually appear first. Leaf spots begin as brown areas with a wavy margin. As spores on the surface of the spot are produced, the color of the spot appears gray or silvery. A diffuse yellow margin often surrounds the spot. Brown lesions also form on stems."
-        },
-        "diagnostic_features": {
-          "value": "Ash-gray, roughly circular leaf spots surrounded by a diffuse yellow margin, which are quite distinct and can be distinguished from other leaf spot diseases once familiar.",
-          "url": "https://extensionpubs.unl.edu/publication/g2079/2011/html/view",
-          "quote": "the leaf spots ... become ash-gray, roughly circular, and surrounded by a diffuse yellow margin (Figure 3) . These spots are quite distinct and once familiar with them, can easily be distinguished from those of other leaf spot diseases."
-        },
-        "look_alikes": {
-          "value": [
-            "Common (Pseudopeziza) Leaf Spot",
-            "Downy Mildew",
-            "Rusts",
-            "Bacterial Leaf Spot",
-            "Yellow Leaf Blotch",
-            "Stemphylium Leaf Spot",
-            "Spring Black Stem",
-            "Lepto Leaf Spot"
-          ],
-          "url": "https://ipm.ca.uky.edu/alflsp",
-          "quote": "Common Leaf Spot, Downy Mildew, Rusts, Bacterial Leaf Spot, Yellow Leaf Blotch, Stemphylium Leaf Spot, and Summer and Spring Black Stem and Lepto Leaf Spot all cause symptoms called \"leaf spot\"."
-        }
-      },
-      "treatments": {
-        "value": [
-          "Avoid planting particularly susceptible alfalfa cultivars.",
-          "Harvest early, when flower buds first appear / before extensive defoliation occurs, to minimize losses.",
-          "Scout fields regularly during the growing season for early detection of disease so that timely adjustment of cutting schedules can be made.",
-          "Adjusting the cutting schedule to disease development is the most practical and economical means of management in established stands.",
-          "A copper hydroxide fungicide can be applied 10 to 14 days or earlier before harvesting the second and third cuttings."
-        ],
-        "url": "https://extensionpubs.unl.edu/publication/g2079/2011/html/view",
-        "quote": "Scout fields regularly during the growing season for early detection of disease so that timely adjustment of cutting schedules can be made. Adjusting the cutting schedule to disease development is the most practical and economical means of management in established stands. A copper hydroxide fungicide can be applied 10 to 14 days or earlier before harvesting the second and third cuttings."
-      },
-      "confidence": "high",
-      "num_sources": 4,
-      "conflicts": [],
-      "regional_observations": {
-        "Kentucky": {
-          "state": "Kentucky",
-          "deltas": [
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Ash-gray, roughly circular leaf spots surrounded by a diffuse yellow margin ... as spores are produced.",
-              "image_shows": "Under magnification the sporulating structures appear as numerous thin, straight, filamentous elements consistent with Cercospora conidia.",
-              "image_quote": "The image displays numerous long, slender, and straight fungal hyphae.",
-              "image_id": "bugwood::5429972",
-              "verification_status": "weakly_supported",
-              "reasoning": "The long, slender, straight filaments seen during sporulation match the documented filiform-to-acicular conidia of Cercospora medicaginis, giving partial/indirect support though the swarm mislabels them as hyphae.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://plantpathologyquarantine.org/pdf/PPQ1_1__No3.pdf",
-                  "quote": "Cercospora is characterized by hyaline, filiform to acicular and multiseptate conidia ... straight to slightly curved."
-                },
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
-                  "quote": "As spores on the surface of the spot are produced, the color of the spot appears gray or silvery."
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5429972",
-            "bugwood::5429973",
-            "bugwood::5429974",
-            "bugwood::5429975",
-            "bugwood::5429995",
-            "bugwood::5429996",
-            "bugwood::5429997",
-            "bugwood::5429998",
-            "bugwood::5429999",
-            "bugwood::5430001",
-            "bugwood::5430002",
-            "bugwood::5430003",
-            "bugwood::5430004",
-            "bugwood::5430005"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              3
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 3,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 1,
-              "n_provisional": 1,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 2,
-              "n_added": 2,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 1,
-            "dropped_contradictory": []
-          }
-        },
-        "Minnesota": {
-          "state": "Minnesota",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "leaf spots begin as brown areas with a wavy margin ... roughly circular",
-              "image_shows": "Irregular shapes with uneven borders, some crossing leaf veins.",
-              "image_quote": "The lesions show a mix of round and angular forms that occasionally overlap vein structures.",
-              "image_id": "bugwood::5626289",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension sources describe the lesions as irregular brown spots, partially supporting non-circular uneven borders, though angular vein-crossing forms are not specifically documented.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
-                  "quote": "Irregular, brown lesions with yellow halos form on leaves and can be observed on both leaf surfaces."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "often surrounded by a diffuse yellow margin",
-              "image_shows": "Dark brown center, tan margin, and chlorotic yellow halo.",
-              "image_quote": "The lesion center is dark brown and the margin is tan with a chlorotic yellow halo.",
-              "image_id": "bugwood::5626289",
-              "verification_status": "weakly_supported",
-              "reasoning": "The brown lesion with a diffuse yellow halo is corroborated, though the dark-brown/tan target-like center is more typical of the Stemphylium look-alike than mature ash-gray Cercospora lesions.",
-              "swarm_support": 2,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
-                  "quote": "The leaf spots are brown at first ... surrounded by a diffuse yellow margin."
-                }
-              ],
-              "__support__": 2
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "brown lesions also form on stems ... often surrounded by a diffuse yellow margin",
-              "image_shows": "Scattered dark brown lesions rimmed by chlorotic yellow spotting on the leaf.",
-              "image_quote": "Dark brown lesions are visible around the yellow spots on the leaf.",
-              "image_id": "bugwood::5626289",
-              "verification_status": "weakly_supported",
-              "reasoning": "Brown lesions accompanied by yellow chlorosis are documented for Summer Black Stem, supporting this observation.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
-                  "quote": "Irregular, brown lesions with yellow halos form on leaves."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "premature defoliation from the base of the stem upward",
-              "image_shows": "A significant portion of the leaf area is affected by lesions.",
-              "image_quote": "The dark brown lesions and pale yellow spots dominate the leaf surfaces.",
-              "image_id": "bugwood::5626289",
-              "verification_status": "verified",
-              "reasoning": "Multiple sources confirm heavy infection produces extensive leaf involvement and defoliation, supporting the high visible severity.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.cropscience.bayer.us/articles/channel/late-season-alfalfa-diseases",
-                  "quote": "Heavy infection of the stems can be severe enough to cause extensive defoliation and eventually kill the plant."
-                },
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
-                  "quote": "Defoliation can occur when leaves have as few as two lesions."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "turning gray or silvery as spores are produced",
-              "image_shows": "Lesion surfaces appear rough in texture.",
-              "image_quote": "The lesions appear to have a rough texture.",
-              "image_id": "bugwood::5626289",
-              "verification_status": "weakly_supported",
-              "reasoning": "Spore masses produced on the spot surface (which turn it gray/silvery) plausibly give a rough surface texture, so the observation is indirectly supported.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
-                  "quote": "as spores on the surface of the spot are produced, the color of the spot appears gray or silvery"
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "Interveinal yellowing between the leaf veins.",
-              "image_quote": "The leaves display interveinal yellowing.",
-              "image_id": "bugwood::5626289",
-              "verification_status": "field_observation",
-              "reasoning": "Sources describe yellow margins/halos around discrete leaf spots rather than diffuse interveinal chlorosis, so this pattern is unsupported but not directly contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "Leaflets curling upward toward their edges.",
-              "image_quote": "The leaflets have a tendency to curl upwards.",
-              "image_id": "bugwood::5626289",
-              "verification_status": "field_observation",
-              "reasoning": "No extension source describes leaflet curling as a symptom of this disease, but it is not contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "other",
-              "canonical_says": "Ash-gray, roughly circular leaf spots surrounded by a diffuse yellow margin",
-              "image_shows": "Necrosis and dark spotting concentrated along the leaf veins.",
-              "image_quote": "The leaf veins show signs of necrosis with dark spots.",
-              "image_id": "bugwood::5626289",
-              "verification_status": "field_observation",
-              "reasoning": "Lesions are documented as roughly circular with yellow margins rather than vein-restricted, though lesions can cross veins, so vein-associated necrosis is coherent but unverified and flagged for review.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "novel_plausible"
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "Host leaflets are broad with a slightly rounded shape.",
-              "image_quote": "The leaves are broad, with a slightly rounded shape.",
-              "image_id": "bugwood::5626289",
-              "verification_status": "field_observation",
-              "reasoning": "This describes host leaflet morphology rather than a disease sign and is not addressed by the pathology sources, so it remains unverified but plausible.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5626289"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              12
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 12,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 5,
-              "n_provisional": 5,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 10,
-              "n_added": 9,
-              "n_overlaps_bumped": 1,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 4,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "Wisconsin": {
-          "state": "Wisconsin",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "leaf spots begin as brown areas with a wavy margin, turning gray or silvery as spores are produced",
-              "image_shows": "The lesions appear irregular in shape.",
-              "image_quote": "Irregular shapes with no clear constraint by leaf veins.",
-              "image_id": "bugwood::5626290",
-              "verification_status": "verified",
-              "reasoning": "Extension source explicitly describes summer black stem lesions as irregular in shape, directly corroborating the candidate.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
-                  "quote": "Irregular, brown lesions with yellow halos form on leaves and can be observed on both leaf surfaces."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "leaf spots appearing first; leaf spots begin as brown areas",
-              "image_shows": "The photo shows multiple small dark discrete necrotic spots on the leaves.",
-              "image_quote": "Discrete spots of necrotic tissue.",
-              "image_id": "bugwood::5626290",
-              "verification_status": "weakly_supported",
-              "reasoning": "Discrete brown necrotic leaf spots are the hallmark foliar symptom of the disease, so the observation is consistent though it adds little beyond canonical leaf-spotting.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
-                  "quote": "Irregular, brown lesions with yellow halos form on leaves and can be observed on both leaf surfaces."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "leaf spots begin as brown areas with a wavy margin",
-              "image_shows": "Brown leaf spots, some with a wavy margin, are present.",
-              "image_quote": "The leaf spots exhibit concentric rings and a wavy margin.",
-              "image_id": "bugwood::5626290",
-              "verification_status": "weakly_supported",
-              "reasoning": "The wavy-margined brown spots match Cercospora, but the concentric-ring detail is characteristic of the Stemphylium look-alike rather than summer black stem, so support is partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
-                  "quote": "Leaf spots begin as brown areas with a wavy margin."
-                },
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
-                  "quote": "oval-to-elongate brown lesions with lighter centers, enlarging to form concentric light and dark brown zones"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "premature defoliation from the base of the stem upward",
-              "image_shows": "The majority of the leaf surface is affected by lesions and marginal yellowing.",
-              "image_quote": "The leaves show numerous dark brown spots and yellowing margins.",
-              "image_id": "bugwood::5626290",
-              "verification_status": "weakly_supported",
-              "reasoning": "Heavy leaf coverage with numerous spots and marginal yellowing is consistent with the high-severity, defoliation-prone nature of the disease documented by extension sources.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
-                  "quote": "Defoliation can occur when leaves have as few as two lesions."
-                },
-                {
-                  "url": "https://www.cropscience.bayer.us/articles/channel/late-season-alfalfa-diseases",
-                  "quote": "Severe stem infection can cause defoliation and plant death."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "leaf spots begin as brown areas ... turning gray or silvery ... surrounded by a diffuse yellow margin",
-              "image_shows": "Lesions have dark brown centers with olive-green margins.",
-              "image_quote": "Dark brown centers contrast with olive-green margins.",
-              "image_id": "bugwood::5626290",
-              "verification_status": "weakly_supported",
-              "reasoning": "The dark brown centers match documented early brown leaf spots, but 'olive-green margins' is not documented (sources describe a diffuse yellow, not olive, margin), so only partial support.",
-              "swarm_support": 2,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
-                  "quote": "Leaf spots begin as brown areas with a wavy margin, and as spores on the surface of the spot are produced, the color appears gray or silvery, with a diffuse yellow margin."
-                }
-              ]
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "turning gray or silvery as spores are produced",
-              "image_shows": "Lesions appear raised with a slightly rough texture.",
-              "image_quote": "The lesions show slight discoloration and irregularities on the leaf surface.",
-              "image_id": "bugwood::5626290",
-              "verification_status": "weakly_supported",
-              "reasoning": "Surface sporulation producing a gray felt-like covering plausibly reads as a raised, slightly rough texture, giving indirect support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
-                  "quote": "As spores on the surface of the spot are produced, the color of the spot appears gray or silvery; a gray, felt-like covering forms under damp conditions."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "Some leaves curl upward at their tips.",
-              "image_quote": "The tips of some leaves curl upwards.",
-              "image_id": "bugwood::5626290",
-              "verification_status": "field_observation",
-              "reasoning": "Upward leaf-tip curl is not mentioned in any extension/IPM description of Summer Black Stem's appearance, but is a plausible incidental observation and is not contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Ash-gray, roughly circular leaf spots surrounded by a diffuse yellow margin",
-              "image_shows": "Leaf veins show clearing and darkening/necrosis.",
-              "image_quote": "The veins are translucent in some areas and darkened in others.",
-              "image_id": "bugwood::5626290",
-              "verification_status": "field_observation",
-              "reasoning": "Published visual descriptions characterize this disease by ash-gray circular leaf spots, not vein clearing/darkening, so the observation lacks support but is not explicitly contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The alfalfa leaflets are ovate with pointed tips.",
-              "image_quote": "The leaves are pointed at the ends.",
-              "image_id": "bugwood::5626290",
-              "verification_status": "field_observation",
-              "reasoning": "This describes generic alfalfa leaflet shape rather than a disease symptom; it is plausible host morphology but unsupported by disease-specific sources and not contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "Common Leaf Spot; Downy Mildew; Rusts; Stemphylium Leaf Spot; Spring Black Stem",
-              "image_shows": "No direct look-alike could be visually confirmed in the image.",
-              "image_quote": "No specific look-alike confirmation.",
-              "image_id": "bugwood::5626290",
-              "verification_status": "field_observation",
-              "reasoning": "A null non-claim asserting no look-alike was confirmed; nothing to corroborate externally and nothing contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5626290"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              12
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 12,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 4,
-              "n_provisional": 7,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 11,
-              "n_added": 10,
-              "n_overlaps_bumped": 1,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 4,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 1,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
     }
-  ],
-  "crop": "Alfalfa",
-  "generated_date": "2026-06-10",
-  "regional_observations_count": 9
+   }
+  },
+  {
+   "disease_name": "Stemphylium Leaf Spot",
+   "pathogen_scientific_name": {
+    "value": "Stemphylium botryosum",
+    "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+    "quote": "The most important causal pathogen is S. botryosum , which has two distinct biotypes that cause disease within differing temperature regimes.",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "",
+    "url": "",
+    "quote": ""
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem"
+    ],
+    "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+    "quote": "Symptoms caused by the W-T biotype include brown, oval-shaped leaf lesions with dark margins and yellow halos. Lesions can grow to cover much of the leaf and concentric rings develop. Dark stem discoloration and early defoliation can also occur."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "The disease produces leaf lesions whose appearance depends on the biotype: W-T causes brown, oval lesions with dark margins and yellow halos that may develop concentric rings, while C-T causes small, irregular, light-colored lesions with dark margins.",
+     "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+     "quote": "Symptoms caused by the W-T biotype include brown, oval-shaped leaf lesions with dark margins and yellow halos. Lesions can grow to cover much of the leaf and concentric rings develop. Dark stem discoloration and early defoliation can also occur. Lesions caused by the C-T biotype are small, irregular-shaped, and light-colored with dark margins."
+    },
+    "diagnostic_features": {
+     "value": "Two distinct lesion types by biotype: W-T lesions are brown, oval-shaped with dark margins, yellow halos, and concentric rings that expand to cover much of the leaf; C-T lesions are small, irregular-shaped, light-colored with dark margins and do not expand.",
+     "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+     "quote": "Symptoms caused by the W-T biotype include brown, oval-shaped leaf lesions with dark margins and yellow halos. Lesions can grow to cover much of the leaf and concentric rings develop. ... Lesions caused by the C-T biotype are small, irregular-shaped, and light-colored with dark margins. Unlike the W-T biotype, lesion expansion does not occur."
+    },
+    "look_alikes": {
+     "value": [
+      "Common (Pseudopeziza) Leaf Spot",
+      "Downy Mildew",
+      "Rusts",
+      "Bacterial Leaf Spot",
+      "Yellow Leaf Blotch",
+      "Summer Black Stem",
+      "Spring Black Stem",
+      "Lepto Leaf Spot"
+     ],
+     "url": "https://ipm.ca.uky.edu/alflsp",
+     "quote": "Common Leaf Spot, Downy Mildew, Rusts, Bacterial Leaf Spot, Yellow Leaf Blotch, Stemphylium Leaf Spot, and Summer and Spring Black Stem and Lepto Leaf Spot all cause symptoms called \"leaf spot\"."
+    }
+   },
+   "treatments": {
+    "value": [
+     "Alfalfa cultivars with low to moderate Stemphylium leaf blight resistance exist.",
+     "Consider early harvest to reduce leaf loss if Stemphylium leaf spot is severe."
+    ],
+    "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+    "quote": "Alfalfa cultivars with low to moderate Stemphylium leaf blight resistance exist. Consider early harvest to reduce leaf loss if Stemphylium leaf spot is severe."
+   },
+   "confidence": "medium",
+   "num_sources": 2,
+   "conflicts": [],
+   "regional_observations": {
+    "California": {
+     "state": "California",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "C-T causes small, irregular, light-colored lesions with dark margins",
+       "image_shows": "The lesion centers are tan and the margins are chocolate-brown.",
+       "image_quote": "The lesion centers are tan and the margins are chocolate-brown.",
+       "image_id": "bugwood::1572545",
+       "verification_status": "verified",
+       "reasoning": "Extension sources explicitly describe tan lesion centers bounded by a dark/brown border, matching the observed tan-center chocolate-brown-margin coloration.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+         "quote": "Lesions caused by the C-T biotype are small, irregular-shaped, and light-colored with dark margins.",
+         "_repaired_from": {
+          "prev_url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+          "prev_quote": "A tan center and a dark border around an irregularly shaped lesion distinguish Stemphylium leaf spot from other leaf spot diseases."
+         }
+        },
+        {
+         "url": "https://ipm.ucanr.edu/agriculture/alfalfa/stemphyllium-leaf-spot/",
+         "quote": "Stemphylium leaf spot is distinguished by a tan center and a dark border around an irregularly shaped lesion."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "brown, oval lesions with dark margins and yellow halos",
+       "image_shows": "The photo shows chlorotic lesions with light tan to cream centers and brownish-red margins.",
+       "image_quote": "The image shows a lesion with a chlorotic yellow halo.",
+       "image_id": "bugwood::1572545",
+       "verification_status": "verified",
+       "reasoning": "Chlorotic/yellow halos around lesions are documented for the W-T biotype, and the tan-to-cream centers with brown margins add state-specific color detail beyond the canonical.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+         "quote": "Symptoms caused by the W-T biotype include brown, oval-shaped leaf lesions with dark margins and yellow halos."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "brown, oval lesions with dark margins",
+       "image_shows": "There are brown, tan, and chocolate-brown spots on the leaf.",
+       "image_quote": "The image displays necrotic tissue in discrete spots on the leaf.",
+       "image_id": "bugwood::1572545",
+       "verification_status": "verified",
+       "reasoning": "Discrete brown necrotic leaf spots are the defining symptom of the disease, directly corroborated by extension descriptions.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+         "quote": "Symptoms caused by the W-T biotype include brown, oval-shaped leaf lesions with dark margins and yellow halos.",
+         "_repaired_from": {
+          "prev_url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+          "prev_quote": "The most noticeable symptom is formation of oval-to-elongate brown lesions with lighter centers, enlarging to form concentric light and dark brown zones."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "C-T causes small, irregular, light-colored lesions with dark margins",
+       "image_shows": "The affected tissue displays a mix of green, tan, and brown colors.",
+       "image_quote": "The lesion centers are light tan to cream, with brownish-red margins and chlorotic yellow halos.",
+       "image_id": "bugwood::1572545",
+       "verification_status": "verified",
+       "reasoning": "The tan-to-brown lesion coloration against green foliage matches the documented tan-centered, dark-bordered brown lesions.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+         "quote": "Lesions caused by the C-T biotype are small, irregular-shaped, and light-colored with dark margins.",
+         "_repaired_from": {
+          "prev_url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+          "prev_quote": "A tan center and a dark border around an irregularly shaped lesion distinguish Stemphylium leaf spot from other leaf spot diseases."
+         }
+        },
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+         "quote": "Symptoms caused by the W-T biotype include brown, oval-shaped leaf lesions with dark margins and yellow halos.",
+         "_repaired_from": {
+          "prev_url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+          "prev_quote": "The most noticeable symptom is formation of oval-to-elongate brown lesions with lighter centers, enlarging to form concentric light and dark brown zones."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "Common (Pseudopeziza) Leaf Spot; Downy Mildew; Rusts; Bacterial Leaf Spot; ...",
+       "image_shows": "The lesions have chlorotic halos surrounding necrotic centers.",
+       "image_quote": "The leaf has lesions with concentric rings and chlorotic halos.",
+       "image_id": "bugwood::1572545",
+       "verification_status": "verified",
+       "reasoning": "The tan/necrotic center ringed by a chlorotic halo is the feature extension sources cite for distinguishing Stemphylium from look-alike alfalfa leaf spots.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://ipm.ucanr.edu/agriculture/alfalfa/stemphyllium-leaf-spot/",
+         "quote": "Stemphylium leaf spot is distinguished by a tan center and a dark border around an irregularly shaped lesion."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified for texture)",
+       "image_shows": "The lesions appear raised and have a slightly rough texture.",
+       "image_quote": "The surface of the lesions is textured.",
+       "image_id": "bugwood::1572545",
+       "verification_status": "field_observation",
+       "reasoning": "No source describes raised lesions, but sporulation in lesion centers and a soot-like mold on older lesions plausibly produce the observed textured surface, giving indirect support.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "weakly_supported"
+      },
+      {
+       "field": "severity",
+       "canonical_says": "Consider early harvest to reduce leaf loss if Stemphylium leaf spot is severe.",
+       "image_shows": "The lesions cover approximately half of the leaf.",
+       "image_quote": "The lesions are irregularly shaped and cover a significant portion of the leaf.",
+       "image_id": "bugwood::1572545",
+       "verification_status": "field_observation",
+       "reasoning": "Sources confirm lesions can enlarge to cover much of the leaf, consistent with the ~half-leaf coverage observed, though defoliation occurs only under heavy pressure.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "weakly_supported"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf apex is curled up.",
+       "image_quote": "The leaf shows curling up towards the tip.",
+       "image_id": "bugwood::1572545",
+       "verification_status": "field_observation",
+       "reasoning": "Leaf-tip curling is a generic morphological/postural detail not described in any extension factsheet as a Stemphylium leaf spot symptom, but it is plausible in a field photo and not contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf veins display translucence and dark spots, indicating possible necrosis.",
+       "image_quote": "Leaf veins show some translucent areas and dark spots.",
+       "image_id": "bugwood::1572545",
+       "verification_status": "field_observation",
+       "reasoning": "Dark necrotic spotting is coherent with the canonical brown/dark lesions of Stemphylium leaf spot, but 'vein translucence' specifically is not documented in published photo descriptions, so it is flagged for curator review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf is rounded with pointed tips.",
+       "image_quote": "The leaf shape is rounded with pointed tips.",
+       "image_id": "bugwood::1572545",
+       "verification_status": "field_observation",
+       "reasoning": "This merely describes the host leaflet's natural shape rather than any disease sign, so no disease source corroborates it, though it is plausible and not contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::1572545",
+      "bugwood::1572546",
+      "bugwood::1572547",
+      "bugwood::1572548",
+      "bugwood::1572549",
+      "bugwood::1572550",
+      "bugwood::1572552"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       12
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 12,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 7,
+       "n_provisional": 3,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 10,
+       "n_added": 10,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 3,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "Minnesota": {
+     "state": "Minnesota",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "C-T causes small, irregular, light-colored lesions with dark margins",
+       "image_shows": "The lesion centers are tan and the margins are dark brown.",
+       "image_quote": "The lesions have tan centers with dark brown margins.",
+       "image_id": "bugwood::5625761",
+       "verification_status": "verified",
+       "reasoning": "Multiple extension sources describe the diagnostic tan/white center with a dark brown border, directly corroborating the observed lesion coloration.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/alfalfa-medicago-sativa-leaf-spots-blotches",
+         "quote": "Initial symptoms consist of white to tan spots with a brown border, 2 to 3 mm in diameter, circular to oval."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "lesions ... with dark margins",
+       "image_shows": "The dark brown lesion margins represent necrotic border tissue.",
+       "image_quote": "The image shows pale yellowish-white lesions with dark brown margins.",
+       "image_id": "bugwood::5625761",
+       "verification_status": "weakly_supported",
+       "reasoning": "The documented dark/brown lesion border is necrotic tissue, so the dark-margin necrosis observation is indirectly supported though not stated as 'necrosis' verbatim.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+         "quote": "Symptoms caused by the W-T biotype include brown, oval-shaped leaf lesions with dark margins and yellow halos.",
+         "_repaired_from": {
+          "prev_url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+          "prev_quote": "Stemphylium leaf spot lesions are irregularly shaped, brown, with a darker border surrounded by a yellow halo."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "spread_pattern",
+       "canonical_says": "(not specified)",
+       "image_shows": "The lesions extend across leaf veins rather than being confined between them.",
+       "image_quote": "The image shows leaf lesions crossing the leaf veins.",
+       "image_id": "bugwood::5625761",
+       "verification_status": "weakly_supported",
+       "reasoning": "Stemphylium lesions are irregular, enlarge, coalesce and cover much of the leaf (unlike vein-limited Pseudopeziza spots), consistent with lesions crossing veins.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/alfalfa-medicago-sativa-leaf-spots-blotches",
+         "quote": "enlarging to 5 to 8 mm in diameter. Large lesions often coalesce."
+        },
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+         "quote": "lesions can grow to cover much of the leaf with concentric rings developing"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaves curl upward toward the stem.",
+       "image_quote": "The image shows leaf curling up towards the stem.",
+       "image_id": "bugwood::5625761",
+       "verification_status": "field_observation",
+       "reasoning": "Upward leaf curling is not described as a Stemphylium leaf spot symptom in any extension source, but it is a plausible incidental posture of the photographed plant and is not contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The alfalfa leaflets are rounded with slightly pointed tips.",
+       "image_quote": "The leaf tips are slightly pointed.",
+       "image_id": "bugwood::5625761",
+       "verification_status": "field_observation",
+       "reasoning": "Rounded leaflets with slightly pointed tips describe normal alfalfa leaf morphology rather than a disease feature; no source ties this to Stemphylium leaf spot but it is plausible and uncontradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5625761",
+      "bugwood::5625762"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       10
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 10,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 3,
+       "n_provisional": 3,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 6,
+       "n_added": 6,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 2,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "Wisconsin": {
+     "state": "Wisconsin",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "C-T causes small, irregular, light-colored lesions with dark margins",
+       "image_shows": "Wisconsin lesions appear irregular in outline rather than cleanly oval.",
+       "image_quote": "The lesions are irregular in shape, with some touching the leaf veins.",
+       "image_id": "bugwood::5625763",
+       "verification_status": "verified",
+       "reasoning": "Extension source explicitly describes Stemphylium leaf spot lesions as irregularly shaped, matching the image.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+         "quote": "Lesions caused by the C-T biotype are small, irregular-shaped, and light-colored with dark margins.",
+         "_repaired_from": {
+          "prev_url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+          "prev_quote": "A tan center and a dark border around an irregularly shaped lesion distinguish Stemphylium leaf spot from other leafspot diseases."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "brown, oval lesions with dark margins and yellow halos",
+       "image_shows": "Wisconsin lesions show tan centers with chocolate-brown margins and chlorotic yellow halos.",
+       "image_quote": "The lesion centers are tan, the margins are chocolate-brown, and there is a chlorotic yellow halo.",
+       "image_id": "bugwood::5625763",
+       "verification_status": "verified",
+       "reasoning": "Tan/lighter centers, dark brown margins, and yellow halos are all documented Stemphylium lesion features.",
+       "swarm_support": 2,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+         "quote": "Lesions caused by the C-T biotype are small, irregular-shaped, and light-colored with dark margins.",
+         "_repaired_from": {
+          "prev_url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+          "prev_quote": "A tan center and a dark border around an irregularly shaped lesion distinguish Stemphylium leaf spot from other leafspot diseases."
+         }
+        }
+       ],
+       "__support__": 2
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "yellow halos that may develop concentric rings",
+       "image_shows": "Chlorotic halos surround the lesions in the Wisconsin sample.",
+       "image_quote": "Lesions have chlorotic halos.",
+       "image_id": "bugwood::5625763",
+       "verification_status": "verified",
+       "reasoning": "Yellow/chlorotic halos around lesions are a documented Stemphylium symptom.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+         "quote": "Symptoms caused by the W-T biotype include brown, oval-shaped leaf lesions with dark margins and yellow halos."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "concentric rings that expand to cover much of the leaf",
+       "image_shows": "Wisconsin lesions form a target-like pattern of alternating light and dark concentric rings.",
+       "image_quote": "The lesions show a target-like pattern with alternating light and dark concentric rings.",
+       "image_id": "bugwood::5625763",
+       "verification_status": "field_observation",
+       "reasoning": "The disease is literally known as 'target spot' with concentric light/dark zones, directly supporting the observed target pattern.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "verified"
+      },
+      {
+       "field": "severity",
+       "canonical_says": "concentric rings that expand to cover much of the leaf",
+       "image_shows": "Lesions in the Wisconsin image cover a large area of the affected leaves.",
+       "image_quote": "The photo shows leaf lesions affecting a significant portion of the leaves.",
+       "image_id": "bugwood::5625763",
+       "verification_status": "verified",
+       "reasoning": "Coalescing lesions covering much of the leaf are documented for Stemphylium, supporting the observed high leaf coverage.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+         "quote": "Lesions can grow to cover much of the leaf; large lesions often coalesced and infected leaves defoliate."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "Necrotic tissue extends across the Wisconsin leaf surface inward from the veins.",
+       "image_quote": "Necrotic tissue is present across the leaf surface, extending inward from the veins.",
+       "image_id": "bugwood::5625763",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extensive coalescing necrosis is documented, though the specific 'inward from the veins' progression is not directly corroborated.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/stemphylium-leaf-spot-of-alfalfa",
+         "quote": "Lesions can grow to cover much of the leaf; large lesions often coalesced; leaves with multiple infections often defoliate."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "Leaflets in the Wisconsin sample curl upward toward their edges.",
+       "image_quote": "The leaflets have a tendency to curl upwards.",
+       "image_id": "bugwood::5625763",
+       "verification_status": "field_observation",
+       "reasoning": "Extension/CPN factsheets describe Stemphylium lesion color and shape but do not document upward leaflet curling, so the observation is plausible and uncontradicted but unsupported.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "C-T lesions are small, irregular-shaped, light-colored with dark margins",
+       "image_shows": "Some Wisconsin lesions cross leaf veins while others stop at them.",
+       "image_quote": "Lesions appear irregular.",
+       "image_id": "bugwood::5625763",
+       "verification_status": "field_observation",
+       "reasoning": "Sources confirm Stemphylium lesions are irregularly shaped, which is coherent with lesions crossing some veins, but the specific vein-crossing behavior is not documented, so it is flagged for curator review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5625763"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 7,
+       "n_provisional": 4,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 11,
+       "n_added": 10,
+       "n_overlaps_bumped": 1,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 2,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Summer Black Stem",
+   "pathogen_scientific_name": {
+    "value": "Cercospora medicaginis",
+    "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+    "quote": "Summer black stem and leaf spot is caused by the fungus Cercospora medicaginis .",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+    "quote": "Summer black stem and leaf spot is caused by the fungus Cercospora medicaginis ."
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem"
+    ],
+    "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+    "quote": "Irregular, brown lesions with yellow halos form on leaves and can be observed on both leaf surfaces. ... Stems initially show small, dark lesions that may grow to cover large portions of the stem."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "The most obvious symptom is premature defoliation from the base of the stem upward, with leaf spots appearing first; leaf spots begin as brown areas with a wavy margin, turning gray or silvery as spores are produced, often surrounded by a diffuse yellow margin, and brown lesions also form on stems.",
+     "url": "https://ipm.ucanr.edu/agriculture/alfalfa/summer-black-stem-and-leaf-spot/",
+     "quote": "Defoliation from the base of the stem to the top is the most obvious symptom, but leaf spots usually appear first. Leaf spots begin as brown areas with a wavy margin. As spores on the surface of the spot are produced, the color of the spot appears gray or silvery. A diffuse yellow margin often surrounds the spot. Brown lesions also form on stems."
+    },
+    "diagnostic_features": {
+     "value": "Ash-gray, roughly circular leaf spots surrounded by a diffuse yellow margin, which are quite distinct and can be distinguished from other leaf spot diseases once familiar.",
+     "url": "https://extensionpubs.unl.edu/publication/g2079/2011/html/view",
+     "quote": "the leaf spots ... become ash-gray, roughly circular, and surrounded by a diffuse yellow margin (Figure 3) . These spots are quite distinct and once familiar with them, can easily be distinguished from those of other leaf spot diseases."
+    },
+    "look_alikes": {
+     "value": [
+      "Common (Pseudopeziza) Leaf Spot",
+      "Downy Mildew",
+      "Rusts",
+      "Bacterial Leaf Spot",
+      "Yellow Leaf Blotch",
+      "Stemphylium Leaf Spot",
+      "Spring Black Stem",
+      "Lepto Leaf Spot"
+     ],
+     "url": "https://ipm.ca.uky.edu/alflsp",
+     "quote": "Common Leaf Spot, Downy Mildew, Rusts, Bacterial Leaf Spot, Yellow Leaf Blotch, Stemphylium Leaf Spot, and Summer and Spring Black Stem and Lepto Leaf Spot all cause symptoms called \"leaf spot\"."
+    }
+   },
+   "treatments": {
+    "value": [
+     "Avoid planting particularly susceptible alfalfa cultivars.",
+     "Harvest early, when flower buds first appear / before extensive defoliation occurs, to minimize losses.",
+     "Scout fields regularly during the growing season for early detection of disease so that timely adjustment of cutting schedules can be made.",
+     "Adjusting the cutting schedule to disease development is the most practical and economical means of management in established stands.",
+     "A copper hydroxide fungicide can be applied 10 to 14 days or earlier before harvesting the second and third cuttings."
+    ],
+    "url": "https://extensionpubs.unl.edu/publication/g2079/2011/html/view",
+    "quote": "Scout fields regularly during the growing season for early detection of disease so that timely adjustment of cutting schedules can be made. Adjusting the cutting schedule to disease development is the most practical and economical means of management in established stands. A copper hydroxide fungicide can be applied 10 to 14 days or earlier before harvesting the second and third cuttings."
+   },
+   "confidence": "high",
+   "num_sources": 4,
+   "conflicts": [],
+   "regional_observations": {
+    "Kentucky": {
+     "state": "Kentucky",
+     "deltas": [
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Ash-gray, roughly circular leaf spots surrounded by a diffuse yellow margin ... as spores are produced.",
+       "image_shows": "Under magnification the sporulating structures appear as numerous thin, straight, filamentous elements consistent with Cercospora conidia.",
+       "image_quote": "The image displays numerous long, slender, and straight fungal hyphae.",
+       "image_id": "bugwood::5429972",
+       "verification_status": "weakly_supported",
+       "reasoning": "The long, slender, straight filaments seen during sporulation match the documented filiform-to-acicular conidia of Cercospora medicaginis, giving partial/indirect support though the swarm mislabels them as hyphae.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://plantpathologyquarantine.org/pdf/PPQ1_1__No3.pdf",
+         "quote": "Cercospora is characterized by hyaline, filiform to acicular and multiseptate conidia ... straight to slightly curved."
+        },
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+         "quote": "Presence of fungal spores cause lesions to turn silvery.",
+         "_repaired_from": {
+          "prev_url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+          "prev_quote": "As spores on the surface of the spot are produced, the color of the spot appears gray or silvery."
+         }
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5429972",
+      "bugwood::5429973",
+      "bugwood::5429974",
+      "bugwood::5429975",
+      "bugwood::5429995",
+      "bugwood::5429996",
+      "bugwood::5429997",
+      "bugwood::5429998",
+      "bugwood::5429999",
+      "bugwood::5430001",
+      "bugwood::5430002",
+      "bugwood::5430003",
+      "bugwood::5430004",
+      "bugwood::5430005"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       3
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 3,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 1,
+       "n_provisional": 1,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 2,
+       "n_added": 2,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 1,
+      "dropped_contradictory": []
+     }
+    },
+    "Minnesota": {
+     "state": "Minnesota",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "leaf spots begin as brown areas with a wavy margin ... roughly circular",
+       "image_shows": "Irregular shapes with uneven borders, some crossing leaf veins.",
+       "image_quote": "The lesions show a mix of round and angular forms that occasionally overlap vein structures.",
+       "image_id": "bugwood::5626289",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension sources describe the lesions as irregular brown spots, partially supporting non-circular uneven borders, though angular vein-crossing forms are not specifically documented.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+         "quote": "Irregular, brown lesions with yellow halos form on leaves and can be observed on both leaf surfaces."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "often surrounded by a diffuse yellow margin",
+       "image_shows": "Dark brown center, tan margin, and chlorotic yellow halo.",
+       "image_quote": "The lesion center is dark brown and the margin is tan with a chlorotic yellow halo.",
+       "image_id": "bugwood::5626289",
+       "verification_status": "weakly_supported",
+       "reasoning": "The brown lesion with a diffuse yellow halo is corroborated, though the dark-brown/tan target-like center is more typical of the Stemphylium look-alike than mature ash-gray Cercospora lesions.",
+       "swarm_support": 2,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+         "quote": "Irregular, brown lesions with yellow halos form on leaves and can be observed on both leaf surfaces.",
+         "_repaired_from": {
+          "prev_url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+          "prev_quote": "The leaf spots are brown at first ... surrounded by a diffuse yellow margin."
+         }
+        }
+       ],
+       "__support__": 2
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "brown lesions also form on stems ... often surrounded by a diffuse yellow margin",
+       "image_shows": "Scattered dark brown lesions rimmed by chlorotic yellow spotting on the leaf.",
+       "image_quote": "Dark brown lesions are visible around the yellow spots on the leaf.",
+       "image_id": "bugwood::5626289",
+       "verification_status": "weakly_supported",
+       "reasoning": "Brown lesions accompanied by yellow chlorosis are documented for Summer Black Stem, supporting this observation.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+         "quote": "Irregular, brown lesions with yellow halos form on leaves."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "premature defoliation from the base of the stem upward",
+       "image_shows": "A significant portion of the leaf area is affected by lesions.",
+       "image_quote": "The dark brown lesions and pale yellow spots dominate the leaf surfaces.",
+       "image_id": "bugwood::5626289",
+       "verification_status": "verified",
+       "reasoning": "Multiple sources confirm heavy infection produces extensive leaf involvement and defoliation, supporting the high visible severity.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+         "quote": "Defoliation can occur when leaves have as few as two lesions."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "turning gray or silvery as spores are produced",
+       "image_shows": "Lesion surfaces appear rough in texture.",
+       "image_quote": "The lesions appear to have a rough texture.",
+       "image_id": "bugwood::5626289",
+       "verification_status": "weakly_supported",
+       "reasoning": "Spore masses produced on the spot surface (which turn it gray/silvery) plausibly give a rough surface texture, so the observation is indirectly supported.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+         "quote": "Presence of fungal spores cause lesions to turn silvery.",
+         "_repaired_from": {
+          "prev_url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+          "prev_quote": "as spores on the surface of the spot are produced, the color of the spot appears gray or silvery"
+         }
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "Interveinal yellowing between the leaf veins.",
+       "image_quote": "The leaves display interveinal yellowing.",
+       "image_id": "bugwood::5626289",
+       "verification_status": "field_observation",
+       "reasoning": "Sources describe yellow margins/halos around discrete leaf spots rather than diffuse interveinal chlorosis, so this pattern is unsupported but not directly contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "Leaflets curling upward toward their edges.",
+       "image_quote": "The leaflets have a tendency to curl upwards.",
+       "image_id": "bugwood::5626289",
+       "verification_status": "field_observation",
+       "reasoning": "No extension source describes leaflet curling as a symptom of this disease, but it is not contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "other",
+       "canonical_says": "Ash-gray, roughly circular leaf spots surrounded by a diffuse yellow margin",
+       "image_shows": "Necrosis and dark spotting concentrated along the leaf veins.",
+       "image_quote": "The leaf veins show signs of necrosis with dark spots.",
+       "image_id": "bugwood::5626289",
+       "verification_status": "field_observation",
+       "reasoning": "Lesions are documented as roughly circular with yellow margins rather than vein-restricted, though lesions can cross veins, so vein-associated necrosis is coherent but unverified and flagged for review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "Host leaflets are broad with a slightly rounded shape.",
+       "image_quote": "The leaves are broad, with a slightly rounded shape.",
+       "image_id": "bugwood::5626289",
+       "verification_status": "field_observation",
+       "reasoning": "This describes host leaflet morphology rather than a disease sign and is not addressed by the pathology sources, so it remains unverified but plausible.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5626289"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       12
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 12,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 5,
+       "n_provisional": 5,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 10,
+       "n_added": 9,
+       "n_overlaps_bumped": 1,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 4,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "Wisconsin": {
+     "state": "Wisconsin",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "leaf spots begin as brown areas with a wavy margin, turning gray or silvery as spores are produced",
+       "image_shows": "The lesions appear irregular in shape.",
+       "image_quote": "Irregular shapes with no clear constraint by leaf veins.",
+       "image_id": "bugwood::5626290",
+       "verification_status": "verified",
+       "reasoning": "Extension source explicitly describes summer black stem lesions as irregular in shape, directly corroborating the candidate.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+         "quote": "Irregular, brown lesions with yellow halos form on leaves and can be observed on both leaf surfaces."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "leaf spots appearing first; leaf spots begin as brown areas",
+       "image_shows": "The photo shows multiple small dark discrete necrotic spots on the leaves.",
+       "image_quote": "Discrete spots of necrotic tissue.",
+       "image_id": "bugwood::5626290",
+       "verification_status": "weakly_supported",
+       "reasoning": "Discrete brown necrotic leaf spots are the hallmark foliar symptom of the disease, so the observation is consistent though it adds little beyond canonical leaf-spotting.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+         "quote": "Irregular, brown lesions with yellow halos form on leaves and can be observed on both leaf surfaces."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "leaf spots begin as brown areas with a wavy margin",
+       "image_shows": "Brown leaf spots, some with a wavy margin, are present.",
+       "image_quote": "The leaf spots exhibit concentric rings and a wavy margin.",
+       "image_id": "bugwood::5626290",
+       "verification_status": "weakly_supported",
+       "reasoning": "The wavy-margined brown spots match Cercospora, but the concentric-ring detail is characteristic of the Stemphylium look-alike rather than summer black stem, so support is partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+         "quote": "Irregular, brown lesions with yellow halos form on leaves and can be observed on both leaf surfaces.",
+         "_repaired_from": {
+          "prev_url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+          "prev_quote": "Leaf spots begin as brown areas with a wavy margin."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "premature defoliation from the base of the stem upward",
+       "image_shows": "The majority of the leaf surface is affected by lesions and marginal yellowing.",
+       "image_quote": "The leaves show numerous dark brown spots and yellowing margins.",
+       "image_id": "bugwood::5626290",
+       "verification_status": "weakly_supported",
+       "reasoning": "Heavy leaf coverage with numerous spots and marginal yellowing is consistent with the high-severity, defoliation-prone nature of the disease documented by extension sources.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+         "quote": "Defoliation can occur when leaves have as few as two lesions."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "leaf spots begin as brown areas ... turning gray or silvery ... surrounded by a diffuse yellow margin",
+       "image_shows": "Lesions have dark brown centers with olive-green margins.",
+       "image_quote": "Dark brown centers contrast with olive-green margins.",
+       "image_id": "bugwood::5626290",
+       "verification_status": "weakly_supported",
+       "reasoning": "The dark brown centers match documented early brown leaf spots, but 'olive-green margins' is not documented (sources describe a diffuse yellow, not olive, margin), so only partial support.",
+       "swarm_support": 2,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+         "quote": "Irregular, brown lesions with yellow halos form on leaves and can be observed on both leaf surfaces.",
+         "_repaired_from": {
+          "prev_url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+          "prev_quote": "Leaf spots begin as brown areas with a wavy margin, and as spores on the surface of the spot are produced, the color appears gray or silvery, with a diffuse yellow margin."
+         }
+        }
+       ]
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "turning gray or silvery as spores are produced",
+       "image_shows": "Lesions appear raised with a slightly rough texture.",
+       "image_quote": "The lesions show slight discoloration and irregularities on the leaf surface.",
+       "image_id": "bugwood::5626290",
+       "verification_status": "weakly_supported",
+       "reasoning": "Surface sporulation producing a gray felt-like covering plausibly reads as a raised, slightly rough texture, giving indirect support.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+         "quote": "Presence of fungal spores cause lesions to turn silvery.",
+         "_repaired_from": {
+          "prev_url": "https://cropprotectionnetwork.org/encyclopedia/summer-black-stem-and-leaf-spot-of-alfalfa",
+          "prev_quote": "As spores on the surface of the spot are produced, the color of the spot appears gray or silvery; a gray, felt-like covering forms under damp conditions."
+         }
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "Some leaves curl upward at their tips.",
+       "image_quote": "The tips of some leaves curl upwards.",
+       "image_id": "bugwood::5626290",
+       "verification_status": "field_observation",
+       "reasoning": "Upward leaf-tip curl is not mentioned in any extension/IPM description of Summer Black Stem's appearance, but is a plausible incidental observation and is not contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Ash-gray, roughly circular leaf spots surrounded by a diffuse yellow margin",
+       "image_shows": "Leaf veins show clearing and darkening/necrosis.",
+       "image_quote": "The veins are translucent in some areas and darkened in others.",
+       "image_id": "bugwood::5626290",
+       "verification_status": "field_observation",
+       "reasoning": "Published visual descriptions characterize this disease by ash-gray circular leaf spots, not vein clearing/darkening, so the observation lacks support but is not explicitly contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The alfalfa leaflets are ovate with pointed tips.",
+       "image_quote": "The leaves are pointed at the ends.",
+       "image_id": "bugwood::5626290",
+       "verification_status": "field_observation",
+       "reasoning": "This describes generic alfalfa leaflet shape rather than a disease symptom; it is plausible host morphology but unsupported by disease-specific sources and not contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "Common Leaf Spot; Downy Mildew; Rusts; Stemphylium Leaf Spot; Spring Black Stem",
+       "image_shows": "No direct look-alike could be visually confirmed in the image.",
+       "image_quote": "No specific look-alike confirmation.",
+       "image_id": "bugwood::5626290",
+       "verification_status": "field_observation",
+       "reasoning": "A null non-claim asserting no look-alike was confirmed; nothing to corroborate externally and nothing contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5626290"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       12
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 12,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 4,
+       "n_provisional": 7,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 11,
+       "n_added": 10,
+       "n_overlaps_bumped": 1,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 4,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  }
+ ],
+ "crop": "Alfalfa",
+ "generated_date": "2026-06-10",
+ "regional_observations_count": 9
 }

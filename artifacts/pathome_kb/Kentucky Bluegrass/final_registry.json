@@ -1,539 +1,523 @@
 {
-  "diseases": [
+ "diseases": [
+  {
+   "disease_name": "Ascochyta Fungi",
+   "pathogen_scientific_name": {
+    "value": "Ascochyta",
+    "url": "https://wiki.bugwood.org/Ascochyta_(leaf_blight_of_turfgrass)",
+    "quote": "Scientific Name Ascochyta",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://turfpathology.ces.ncsu.edu/news/ascochyta-leaf-blight-uncommon-sometimes-devastating/",
+    "quote": "Ascochyta leaf blight is caused by nearly 80 different species of Ascochyta . This fungus has been documented on many turfgrasses"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar"
+    ],
+    "url": "https://turfpathology.ces.ncsu.edu/news/ascochyta-leaf-blight-uncommon-sometimes-devastating/",
+    "quote": "The pathogen only attacks the foliage; therefore, damage is seldom permanent and recovery is quick under favorable growing conditions."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Large irregular patches of turf rapidly turn straw-colored and appear dead, with leaves exhibiting bleached tip dieback extending approximately a third to halfway down the leaf blade.",
+     "url": "https://extension.colostate.edu/resource/ascochyta-leaf-blight-of-turf/",
+     "quote": "Large irregular patches of turf rapidly turn a straw-color and appear dead. ... Leaves infected with the Ascochyta fungus often exhibit a bleached tip dieback that extends approximately a third to halfway down the leaf blade."
+    },
+    "diagnostic_features": {
+     "value": "Bleached tip dieback with an abrupt, slightly pinched margin between healthy and diseased tissue (lacking the dark brown to purple banding of dollar spot), and minute yellow to dark brown flask-shaped pycnidia peppered throughout the dead leaves.",
+     "url": "https://extension.colostate.edu/resource/ascochyta-leaf-blight-of-turf/",
+     "quote": "The margin between healthy and diseased tissue is abrupt and slightly pinched but doesn't have the dark brown to purple banding that is characteristic of another disease called dollar spot. ... The Ascochyta fungus produces minute yellow to dark brown, flask-shaped fungal fruiting bodies called pycnidia in diseased leaf tissue. These fruiting bodies, which are easier to view with the aid of a hand lens, are peppered throughout the dead leaves and can be very useful as a diagnostic feature."
+    },
+    "look_alikes": {
+     "value": [
+      "drought stress",
+      "dollar spot",
+      "heat stress"
+     ],
+     "url": "https://extension.colostate.edu/resource/ascochyta-leaf-blight-of-turf/",
+     "quote": "The overall appearance of the disease may resemble drought stress, except that the symptoms of Ascochyta blight appear quickly ... doesn't have the dark brown to purple banding that is characteristic of another disease called dollar spot. ... These leaf symptoms resemble heat or drought stress."
+    }
+   },
+   "treatments": {
+    "value": [
+     "Irrigate in the early morning hours (deep and infrequent) only when needed to prevent drought stress.",
+     "Reduce thatch and promote water penetration through the soil by yearly aerification.",
+     "Avoid excessive applications of nitrogen fertilizer, especially in spring; use slow-release nitrogen fertilizers and keep N below 1 lb/M.",
+     "Maintain a balanced fertilization program.",
+     "Maintain grass height at recommended levels (between 2.5 and 3 inches for Kentucky bluegrass).",
+     "Mow on a regular schedule with sharp mower blades when the canopy is dry, and collect clippings when the disease is active.",
+     "Avoid mowing during wet weather, and reduce mowing frequency / increase mowing height during outbreaks.",
+     "Maintain uniform soil moisture and verify irrigation uniformity to avoid drought stress.",
+     "Fungicides are not typically warranted; affected turf usually recovers after conducive conditions pass. If used, QoI and DMI fungicides are likely effective."
+    ],
+    "url": "https://extension.colostate.edu/resource/ascochyta-leaf-blight-of-turf/",
+    "quote": "Reduce thatch and promote water penetration through the soil by yearly aerification. Maintain grass height between 2 1/2 and 3 inches. Minimize wounding of the leaf blades by maintaining sharp mower blades. Avoid mowing during wet weather, especially when Ascochyta blight is active. Reduce mowing frequency and increase mowing height during Ascochyta outbreaks. ... Maintain a balanced fertilization program. ... Avoid excessive applications of nitrogen fertilizer, especially in spring. ... Try to maintain uniform soil moisture. ... Although several fungicides will inhibit Ascochyta growth, they can be expensive and difficult to apply."
+   },
+   "confidence": "high",
+   "num_sources": 5,
+   "conflicts": [
     {
-      "disease_name": "Ascochyta Fungi",
-      "pathogen_scientific_name": {
-        "value": "Ascochyta",
-        "url": "https://wiki.bugwood.org/Ascochyta_(leaf_blight_of_turfgrass)",
-        "quote": "Scientific Name Ascochyta",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://turfpathology.ces.ncsu.edu/news/ascochyta-leaf-blight-uncommon-sometimes-devastating/",
-        "quote": "Ascochyta leaf blight is caused by nearly 80 different species of Ascochyta . This fungus has been documented on many turfgrasses"
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar"
-        ],
-        "url": "https://turfpathology.ces.ncsu.edu/news/ascochyta-leaf-blight-uncommon-sometimes-devastating/",
-        "quote": "The pathogen only attacks the foliage; therefore, damage is seldom permanent and recovery is quick under favorable growing conditions."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Large irregular patches of turf rapidly turn straw-colored and appear dead, with leaves exhibiting bleached tip dieback extending approximately a third to halfway down the leaf blade.",
-          "url": "https://extension.colostate.edu/resource/ascochyta-leaf-blight-of-turf/",
-          "quote": "Large irregular patches of turf rapidly turn a straw-color and appear dead. ... Leaves infected with the Ascochyta fungus often exhibit a bleached tip dieback that extends approximately a third to halfway down the leaf blade."
-        },
-        "diagnostic_features": {
-          "value": "Bleached tip dieback with an abrupt, slightly pinched margin between healthy and diseased tissue (lacking the dark brown to purple banding of dollar spot), and minute yellow to dark brown flask-shaped pycnidia peppered throughout the dead leaves.",
-          "url": "https://extension.colostate.edu/resource/ascochyta-leaf-blight-of-turf/",
-          "quote": "The margin between healthy and diseased tissue is abrupt and slightly pinched but doesn't have the dark brown to purple banding that is characteristic of another disease called dollar spot. ... The Ascochyta fungus produces minute yellow to dark brown, flask-shaped fungal fruiting bodies called pycnidia in diseased leaf tissue. These fruiting bodies, which are easier to view with the aid of a hand lens, are peppered throughout the dead leaves and can be very useful as a diagnostic feature."
-        },
-        "look_alikes": {
-          "value": [
-            "drought stress",
-            "dollar spot",
-            "heat stress"
-          ],
-          "url": "https://extension.colostate.edu/resource/ascochyta-leaf-blight-of-turf/",
-          "quote": "The overall appearance of the disease may resemble drought stress, except that the symptoms of Ascochyta blight appear quickly ... doesn't have the dark brown to purple banding that is characteristic of another disease called dollar spot. ... These leaf symptoms resemble heat or drought stress."
-        }
-      },
-      "treatments": {
-        "value": [
-          "Irrigate in the early morning hours (deep and infrequent) only when needed to prevent drought stress.",
-          "Reduce thatch and promote water penetration through the soil by yearly aerification.",
-          "Avoid excessive applications of nitrogen fertilizer, especially in spring; use slow-release nitrogen fertilizers and keep N below 1 lb/M.",
-          "Maintain a balanced fertilization program.",
-          "Maintain grass height at recommended levels (between 2.5 and 3 inches for Kentucky bluegrass).",
-          "Mow on a regular schedule with sharp mower blades when the canopy is dry, and collect clippings when the disease is active.",
-          "Avoid mowing during wet weather, and reduce mowing frequency / increase mowing height during outbreaks.",
-          "Maintain uniform soil moisture and verify irrigation uniformity to avoid drought stress.",
-          "Fungicides are not typically warranted; affected turf usually recovers after conducive conditions pass. If used, QoI and DMI fungicides are likely effective."
-        ],
-        "url": "https://extension.colostate.edu/resource/ascochyta-leaf-blight-of-turf/",
-        "quote": "Reduce thatch and promote water penetration through the soil by yearly aerification. Maintain grass height between 2 1/2 and 3 inches. Minimize wounding of the leaf blades by maintaining sharp mower blades. Avoid mowing during wet weather, especially when Ascochyta blight is active. Reduce mowing frequency and increase mowing height during Ascochyta outbreaks. ... Maintain a balanced fertilization program. ... Avoid excessive applications of nitrogen fertilizer, especially in spring. ... Try to maintain uniform soil moisture. ... Although several fungicides will inhibit Ascochyta growth, they can be expensive and difficult to apply."
-      },
-      "confidence": "high",
-      "num_sources": 5,
-      "conflicts": [
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Ascochyta",
-          "alternative_value": "Ascochyta spp.",
-          "alternative_source_url": "https://extension.missouri.edu/programs/turfgrass-science/turfgrass-disease-profiles/ascochyta-leaf-blight",
-          "note": "Only Bugwoodwiki provides a scientific name field (genus 'Ascochyta'). Other sources refer to 'Ascochyta spp.' in prose. No NCBI/MycoBank taxonomy validation was supplied; the genus is given because nearly 80 Ascochyta species have been documented on turfgrass (per NC State Extension)."
-        },
-        {
-          "field": "visual_symptoms.diagnostic_features",
-          "canonical_value": "Bleached tip dieback with an abrupt, slightly pinched margin between healthy and diseased tissue (lacking the dark brown to purple banding of dollar spot), and minute yellow to dark brown flask-shaped pycnidia peppered throughout the dead leaves.",
-          "alternative_value": "Pycnidia appear as small brown or black freckles on infected leaves; blighting girdles the leaf from the tip down, producing straw-colored irregular patches.",
-          "alternative_source_url": "https://extension.missouri.edu/programs/turfgrass-science/turfgrass-disease-profiles/ascochyta-leaf-blight",
-          "note": "Sources describe pycnidia color differently: CSU says 'yellow to dark brown, flask-shaped'; MU says 'small brown or black freckles'; NC State says 'brownish, red, or black'; Bugwoodwiki says 'yellow brown, rust brown, or brick red, 70-200 micrometers'. These are consistent (variable pigmentation in pycnidia) rather than contradictory."
-        }
-      ],
-      "regional_observations": {
-        "Missouri": {
-          "state": "Missouri",
-          "deltas": [
-            {
-              "field": "affected_organs",
-              "canonical_says": "Foliar; leaves exhibiting bleached tip dieback",
-              "image_shows": "The crown/collar appears to be dry with no visible rot, girdling, sunken cankers, white mycelium, or mustard-seed-shaped sclerotia.",
-              "image_quote": "No signs of crown rot, girdling, sunken cankers, white mycelium, or mustard-seed-shaped sclerotia are visible.",
-              "image_id": "bugwood::5516071",
-              "__support__": 1,
-              "verification_status": "weakly_supported",
-              "web_support": [
-                {
-                  "url": "https://turf.unl.edu/news/ascochyta-leaf-blight/",
-                  "quote": "Blighting is usually restricted to the leaves; bluegrass crowns and roots typically are not killed."
-                },
-                {
-                  "url": "https://extension.missouri.edu/programs/turfgrass-science/turfgrass-disease-profiles/ascochyta-leaf-blight",
-                  "quote": "Large irregular patches of turf rapidly turn a straw-color and appear dead... blighting is usually restricted to the leaves."
-                }
-              ],
-              "swarm_support": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "turf rapidly turn straw-colored and appear dead",
-              "image_shows": "The affected tissue shows a mix of tan and olive-green colors.",
-              "image_quote": "The image shows large irregular patches of turf turning straw-colored and appearing dead.",
-              "image_id": "bugwood::5516071",
-              "__support__": 1,
-              "verification_status": "novel_plausible",
-              "web_support": [
-                {
-                  "url": "https://turf.unl.edu/news/ascochyta-leaf-blight/",
-                  "quote": "Blighting is usually restricted to the leaves; bluegrass crowns and roots typically are not killed.",
-                  "inherited": true,
-                  "inherited_from": "Ascochyta Fungi::Missouri"
-                },
-                {
-                  "url": "https://extension.missouri.edu/programs/turfgrass-science/turfgrass-disease-profiles/ascochyta-leaf-blight",
-                  "quote": "Large irregular patches of turf rapidly turn a straw-color and appear dead... blighting is usually restricted to the leaves.",
-                  "inherited": true,
-                  "inherited_from": "Ascochyta Fungi::Missouri"
-                }
-              ],
-              "swarm_support": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "Large irregular patches of turf rapidly turn straw-colored and appear dead",
-              "image_shows": "Extensive straw-colored patches indicating severe damage.",
-              "image_quote": "The affected grass shows significant areas of straw-colored and dead patches.",
-              "image_id": "bugwood::5516071",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension sources confirm the disease produces large, extensive straw-colored patches that can be severe/devastating, so the visible severity is corroborated, though sources note injury is usually temporary.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.missouri.edu/programs/turfgrass-science/turfgrass-disease-profiles/ascochyta-leaf-blight",
-                  "quote": "Large irregular patches of turf rapidly turn a straw-color and appear dead, with the disease appearing to resemble drought stress, except that the symptoms appear quickly (sometimes overnight)."
-                },
-                {
-                  "url": "https://turfpathology.ces.ncsu.edu/news/ascochyta-leaf-blight-uncommon-sometimes-devastating/",
-                  "quote": "Ascochyta Leaf Blight - Uncommon & Sometimes Devastating."
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5516071",
-            "bugwood::5516072",
-            "bugwood::5516073",
-            "bugwood::5516074",
-            "bugwood::5516075",
-            "bugwood::5516076",
-            "bugwood::5516077",
-            "bugwood::5516078",
-            "bugwood::5516079",
-            "bugwood::5516080",
-            "bugwood::5516081",
-            "bugwood::5516082"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              4
-            ],
-            "detected_organ_per_pass": [
-              "crown"
-            ],
-            "n_active_agents_per_pass": [
-              5
-            ],
-            "n_after_agreement": 4,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 1,
-              "n_provisional": 0,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 2,
-              "n_new_candidates": 1,
-              "n_added": 1,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        }
-      }
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Ascochyta",
+     "alternative_value": "Ascochyta spp.",
+     "alternative_source_url": "https://extension.missouri.edu/programs/turfgrass-science/turfgrass-disease-profiles/ascochyta-leaf-blight",
+     "note": "Only Bugwoodwiki provides a scientific name field (genus 'Ascochyta'). Other sources refer to 'Ascochyta spp.' in prose. No NCBI/MycoBank taxonomy validation was supplied; the genus is given because nearly 80 Ascochyta species have been documented on turfgrass (per NC State Extension)."
     },
     {
-      "disease_name": "Spring Dead Spot",
-      "pathogen_scientific_name": {
-        "value": "Ophiosphaerella herpotricha",
-        "url": "https://wiki.bugwood.org/Ophiosphaerella_(spring_dead_spot_on_bermudagrass)",
-        "quote": "Scientific Name Ophiosphaerella herpotricha",
-        "taxonomy_validated": false,
-        "mycobank_url": "",
-        "ncbi_url": ""
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://wiki.bugwood.org/Ophiosphaerella_(spring_dead_spot_on_bermudagrass)",
-        "quote": "Kingdom Fungi Phylum Ascomycota"
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem",
-          "Root"
-        ],
-        "url": "https://wiki.bugwood.org/Ophiosphaerella_(spring_dead_spot_on_bermudagrass)",
-        "quote": "The turfgrass in these patches is often completely dead, with infested roots, stolons, and rhizomes appearing black, brittle and severely rotted."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "The disease appears as randomly distributed, straw-colored, mostly circular patches ranging from a few inches to several feet in diameter, with completely dead turfgrass and black, brittle, rotted roots, stolons, and rhizomes.",
-          "url": "https://wiki.bugwood.org/Ophiosphaerella_(spring_dead_spot_on_bermudagrass)",
-          "quote": "The disease appears as randomly distributed, straw-colored, mostly circular patches ranging from a few inches to several feet in diameter. The turfgrass in these patches is often completely dead, with infested roots, stolons, and rhizomes appearing black, brittle and severely rotted."
-        },
-        "diagnostic_features": {
-          "value": "Black brittle roots, rhizomes, and stolons surrounded by a dark network of hyphae; symptoms first evident in spring as uninfected turfgrass breaks dormancy and greens up.",
-          "url": "https://wiki.bugwood.org/Ophiosphaerella_(spring_dead_spot_on_bermudagrass)",
-          "quote": "Spring dead spot is most often diagnosed based on symptom timing combined with the observation of black brittle roots, rhizomes, and stolons surrounded by a dark network of hyphae."
-        },
-        "look_alikes": {
-          "value": [
-            "necrotic ring spot"
-          ],
-          "url": "https://wiki.bugwood.org/Ophiosphaerella_(spring_dead_spot_on_bermudagrass)",
-          "quote": "Ophiosphaerella spp. also cause disease on alternative hosts, such as necrotic ring spot caused by O. korrae on Kentucky bluegrass and fescues."
-        }
-      },
-      "treatments": {
-        "value": [
-          "proper nitrogen fertility",
-          "regular cultivation practices and soil pH modification",
-          "Increasing mowing height prior to winter dormancy",
-          "use of acidifying fertilizer sources, such as ammonium sulfate",
-          "calcium nitrate applications (for O. korrae)",
-          "routine hollow-tine aerification and verticutting",
-          "use of bermudagrass cultivars with improved cold tolerance (e.g., 'Midfield', 'Midlawn', 'Tifsport')"
-        ],
-        "url": "https://wiki.bugwood.org/Ophiosphaerella_(spring_dead_spot_on_bermudagrass)",
-        "quote": "Management of the disease with cultural practices centers on proper nitrogen fertility, regular cultivation practices and soil pH modification... Increasing mowing height prior to winter dormancy may reduce spring dead spot severity in some vegetative cultivars... The use of acidifying fertilizer sources, such as ammonium sulfate, has reduced spring dead spot incidence caused by O. herpotricha. Conversely, spring dead spot caused by O. korrae may be reduced with calcium nitrate applications... Cultivation practices, such as routine hollow-tine aerification and verticutting, that improve drainage and cause rhizome and stolon regrowth have also been demonstrated to reduce spring dead spot incidence... Some of the cold tolerant cultivars that have demonstrated partial spring dead spot resistance include 'Midfield', 'Midlawn', and 'Tifsport'"
-      },
-      "confidence": "medium",
-      "num_sources": 1,
-      "conflicts": [],
-      "regional_observations": {
-        "Colorado": {
-          "state": "Colorado",
-          "deltas": [
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The image does not display any clear signs of wilting.",
-              "image_quote": "The lawn is uniformly green with no visible signs of wilting or diseases.",
-              "image_id": "bugwood::5389426",
-              "__support__": 1,
-              "verification_status": "provisional",
-              "web_support": [
-                {
-                  "url": "https://extension.okstate.edu/fact-sheets/spring-dead-spot-of-bermudagrass",
-                  "quote": "Dead spots may be from 6 inches to as large as 3 feet in diameter and recur in the same spot, increasing in size by up to several inches each season.",
-                  "inherited": true,
-                  "inherited_from": "Spring Dead Spot::*"
-                },
-                {
-                  "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
-                  "quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas.",
-                  "inherited": true,
-                  "inherited_from": "Spring Dead Spot::*"
-                }
-              ],
-              "swarm_support": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The image shows a healthy lawn with no visible signs of defoliation or bare petioles.",
-              "image_quote": "The image shows a healthy lawn with no visible signs of defoliation or bare petioles.",
-              "image_id": "bugwood::5389426",
-              "__support__": 1,
-              "verification_status": "provisional",
-              "web_support": [
-                {
-                  "url": "https://extension.okstate.edu/fact-sheets/spring-dead-spot-of-bermudagrass",
-                  "quote": "Dead spots may be from 6 inches to as large as 3 feet in diameter and recur in the same spot, increasing in size by up to several inches each season.",
-                  "inherited": true,
-                  "inherited_from": "Spring Dead Spot::*"
-                },
-                {
-                  "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
-                  "quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas.",
-                  "inherited": true,
-                  "inherited_from": "Spring Dead Spot::*"
-                }
-              ],
-              "swarm_support": 1
-            },
-            {
-              "field": "spread_pattern",
-              "canonical_says": "randomly distributed... mostly circular patches ranging from a few inches to several feet in diameter",
-              "image_shows": "The damage is not visible in the photo; the grass appears uniformly green.",
-              "image_quote": "The image shows a healthy lawn with no signs of disease such as brown patches or blackened roots.",
-              "image_id": "bugwood::5389426",
-              "__support__": 1,
-              "verification_status": "provisional",
-              "web_support": [
-                {
-                  "url": "https://extension.okstate.edu/fact-sheets/spring-dead-spot-of-bermudagrass",
-                  "quote": "Dead spots may be from 6 inches to as large as 3 feet in diameter and recur in the same spot, increasing in size by up to several inches each season.",
-                  "inherited": true,
-                  "inherited_from": "Spring Dead Spot::*"
-                },
-                {
-                  "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
-                  "quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas.",
-                  "inherited": true,
-                  "inherited_from": "Spring Dead Spot::*"
-                }
-              ],
-              "swarm_support": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "straw-colored, mostly circular patches... completely dead turfgrass and black, brittle, rotted roots",
-              "image_shows": "The affected area has a uniform green appearance.",
-              "image_quote": "The affected area is a uniform green lawn with some areas showing signs of discoloration.",
-              "image_id": "bugwood::5389426",
-              "__support__": 1,
-              "verification_status": "provisional",
-              "web_support": [
-                {
-                  "url": "https://extension.okstate.edu/fact-sheets/spring-dead-spot-of-bermudagrass",
-                  "quote": "Dead spots may be from 6 inches to as large as 3 feet in diameter and recur in the same spot, increasing in size by up to several inches each season.",
-                  "inherited": true,
-                  "inherited_from": "Spring Dead Spot::*"
-                },
-                {
-                  "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
-                  "quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas.",
-                  "inherited": true,
-                  "inherited_from": "Spring Dead Spot::*"
-                }
-              ],
-              "swarm_support": 1
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "necrotic ring spot",
-              "image_shows": "The image shows a uniformly green lawn without any visible signs of the disease mentioned in the canonical KB text.",
-              "image_quote": "The image shows a healthy lawn with no visible signs of disease such as brown patches or blackened roots.",
-              "image_id": "bugwood::5389426",
-              "__support__": 1,
-              "verification_status": "provisional",
-              "web_support": [
-                {
-                  "url": "https://extension.okstate.edu/fact-sheets/spring-dead-spot-of-bermudagrass",
-                  "quote": "Dead spots may be from 6 inches to as large as 3 feet in diameter and recur in the same spot, increasing in size by up to several inches each season.",
-                  "inherited": true,
-                  "inherited_from": "Spring Dead Spot::*"
-                },
-                {
-                  "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
-                  "quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas.",
-                  "inherited": true,
-                  "inherited_from": "Spring Dead Spot::*"
-                }
-              ],
-              "swarm_support": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5389426",
-            "bugwood::5389428",
-            "bugwood::5393074",
-            "bugwood::5393075",
-            "bugwood::5393076",
-            "bugwood::5393077",
-            "bugwood::5393078",
-            "bugwood::5393079",
-            "bugwood::5393116",
-            "bugwood::5393117"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "medium"
-            ],
-            "n_raw_per_pass": [
-              4
-            ],
-            "detected_organ_per_pass": [
-              "whole_plant"
-            ],
-            "n_active_agents_per_pass": [
-              7
-            ],
-            "n_after_agreement": 4,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 0,
-              "n_provisional": 0,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 4
-            },
-            "merge": {
-              "n_existing": 5,
-              "n_new_candidates": 0,
-              "n_added": 0,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        },
-        "Pennsylvania": {
-          "state": "Pennsylvania",
-          "deltas": [
-            {
-              "field": "severity",
-              "canonical_says": "patches ranging from a few inches to several feet in diameter, with completely dead turfgrass",
-              "image_shows": "The image shows patches of dead grass, indicating significant damage.",
-              "image_quote": "The photo displays a large area of affected turfgrass with widespread necrosis.",
-              "image_id": "bugwood::5333010",
-              "__support__": 1,
-              "verification_status": "weakly_supported",
-              "web_support": [
-                {
-                  "url": "https://extension.okstate.edu/fact-sheets/spring-dead-spot-of-bermudagrass",
-                  "quote": "Dead spots may be from 6 inches to as large as 3 feet in diameter and recur in the same spot, increasing in size by up to several inches each season."
-                },
-                {
-                  "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
-                  "quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas."
-                }
-              ],
-              "swarm_support": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "straw-colored, mostly circular patches ... with completely dead turfgrass",
-              "image_shows": "Patches show a mixture of pale-straw and olive-green colors, consistent with dead turf interspersed with recovering/surviving green plants.",
-              "image_quote": "The affected area consists of patches of dead grass and live, sparse green grass.",
-              "image_id": "bugwood::5333010",
-              "verification_status": "weakly_supported",
-              "reasoning": "The straw-plus-green mixture is corroborated by extension descriptions of dead straw/tan patches interspersed with surviving or recovering green turf (frog-eye), so it is partially supported.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://content.ces.ncsu.edu/spring-dead-spot-in-turf",
-                  "quote": "As the patches expand, the centers are sometimes re-established with bermudagrass or weedy species, resulting in a ring-like appearance."
-                },
-                {
-                  "url": "https://plantpathology.mgcafe.uky.edu/files/ppfs-or-t-13.pdf",
-                  "quote": "Regrowth may occur in the center of patches, resulting in tufts of healthy plants (a 'frog-eye' appearance), with turf bleached/tan surrounding surviving green plants."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "necrotic ring spot",
-              "image_shows": "Affected areas are dominated by tan and pale-straw colors with a small proportion of darker green surrounding the damaged regions.",
-              "image_quote": "The affected tissue has tan and pale-straw colors dominating the patchy areas, with a small proportion of darker green surrounding the damaged regions.",
-              "image_id": "bugwood::5333010",
-              "verification_status": "weakly_supported",
-              "reasoning": "Tan/pale-straw dead tissue ringed by darker green matches the documented light-tan matted dead grass with green frog-eye/surrounding healthy turf that also characterizes the look-alike necrotic ring spot on Kentucky bluegrass.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://hgic.clemson.edu/factsheet/spring-dead-spot/",
-                  "quote": "Turf has a bleached, whitish color, becoming tan to brown as the dead tissue ages."
-                },
-                {
-                  "url": "http://ipm.illinois.edu/diseases/series400/rpd408/",
-                  "quote": "Dead grass that is light tan and matted, and many patches will have a tuft of apparently healthy grass in the center, often referred to as the 'frog-eye' symptom."
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5333010"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              5
-            ],
-            "detected_organ_per_pass": [
-              "whole_plant"
-            ],
-            "n_active_agents_per_pass": [
-              7
-            ],
-            "n_after_agreement": 5,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 2,
-              "n_provisional": 0,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 1,
-              "n_new_candidates": 2,
-              "n_added": 2,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        }
-      }
+     "field": "visual_symptoms.diagnostic_features",
+     "canonical_value": "Bleached tip dieback with an abrupt, slightly pinched margin between healthy and diseased tissue (lacking the dark brown to purple banding of dollar spot), and minute yellow to dark brown flask-shaped pycnidia peppered throughout the dead leaves.",
+     "alternative_value": "Pycnidia appear as small brown or black freckles on infected leaves; blighting girdles the leaf from the tip down, producing straw-colored irregular patches.",
+     "alternative_source_url": "https://extension.missouri.edu/programs/turfgrass-science/turfgrass-disease-profiles/ascochyta-leaf-blight",
+     "note": "Sources describe pycnidia color differently: CSU says 'yellow to dark brown, flask-shaped'; MU says 'small brown or black freckles'; NC State says 'brownish, red, or black'; Bugwoodwiki says 'yellow brown, rust brown, or brick red, 70-200 micrometers'. These are consistent (variable pigmentation in pycnidia) rather than contradictory."
     }
-  ],
-  "crop": "Kentucky Bluegrass",
-  "generated_date": "2026-05-27",
-  "regional_observations_count": 3
+   ],
+   "regional_observations": {
+    "Missouri": {
+     "state": "Missouri",
+     "deltas": [
+      {
+       "field": "affected_organs",
+       "canonical_says": "Foliar; leaves exhibiting bleached tip dieback",
+       "image_shows": "The crown/collar appears to be dry with no visible rot, girdling, sunken cankers, white mycelium, or mustard-seed-shaped sclerotia.",
+       "image_quote": "No signs of crown rot, girdling, sunken cankers, white mycelium, or mustard-seed-shaped sclerotia are visible.",
+       "image_id": "bugwood::5516071",
+       "__support__": 1,
+       "verification_status": "weakly_supported",
+       "web_support": [
+        {
+         "url": "https://extension.missouri.edu/programs/turfgrass-science/turfgrass-disease-profiles/ascochyta-leaf-blight",
+         "quote": "Symptoms include leaf chlorosis and blighting that generally girdles the leaf from the tip down and results in straw-colored, irregular patches of varying sizes.",
+         "_repaired_from": {
+          "prev_url": "https://extension.missouri.edu/programs/turfgrass-science/turfgrass-disease-profiles/ascochyta-leaf-blight",
+          "prev_quote": "Large irregular patches of turf rapidly turn a straw-color and appear dead... blighting is usually restricted to the leaves."
+         }
+        }
+       ],
+       "swarm_support": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "turf rapidly turn straw-colored and appear dead",
+       "image_shows": "The affected tissue shows a mix of tan and olive-green colors.",
+       "image_quote": "The image shows large irregular patches of turf turning straw-colored and appearing dead.",
+       "image_id": "bugwood::5516071",
+       "__support__": 1,
+       "verification_status": "novel_plausible",
+       "web_support": [
+        {
+         "url": "https://extension.missouri.edu/programs/turfgrass-science/turfgrass-disease-profiles/ascochyta-leaf-blight",
+         "quote": "Symptoms include leaf chlorosis and blighting that generally girdles the leaf from the tip down and results in straw-colored, irregular patches of varying sizes.",
+         "inherited": true,
+         "inherited_from": "Ascochyta Fungi::Missouri",
+         "_repaired_from": {
+          "prev_url": "https://extension.missouri.edu/programs/turfgrass-science/turfgrass-disease-profiles/ascochyta-leaf-blight",
+          "prev_quote": "Large irregular patches of turf rapidly turn a straw-color and appear dead... blighting is usually restricted to the leaves."
+         }
+        }
+       ],
+       "swarm_support": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "Large irregular patches of turf rapidly turn straw-colored and appear dead",
+       "image_shows": "Extensive straw-colored patches indicating severe damage.",
+       "image_quote": "The affected grass shows significant areas of straw-colored and dead patches.",
+       "image_id": "bugwood::5516071",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension sources confirm the disease produces large, extensive straw-colored patches that can be severe/devastating, so the visible severity is corroborated, though sources note injury is usually temporary.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://turfpathology.ces.ncsu.edu/news/ascochyta-leaf-blight-uncommon-sometimes-devastating/",
+         "quote": "Ascochyta Leaf Blight - Uncommon & Sometimes Devastating."
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5516071",
+      "bugwood::5516072",
+      "bugwood::5516073",
+      "bugwood::5516074",
+      "bugwood::5516075",
+      "bugwood::5516076",
+      "bugwood::5516077",
+      "bugwood::5516078",
+      "bugwood::5516079",
+      "bugwood::5516080",
+      "bugwood::5516081",
+      "bugwood::5516082"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       4
+      ],
+      "detected_organ_per_pass": [
+       "crown"
+      ],
+      "n_active_agents_per_pass": [
+       5
+      ],
+      "n_after_agreement": 4,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 1,
+       "n_provisional": 0,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 2,
+       "n_new_candidates": 1,
+       "n_added": 1,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Spring Dead Spot",
+   "pathogen_scientific_name": {
+    "value": "Ophiosphaerella herpotricha",
+    "url": "https://wiki.bugwood.org/Ophiosphaerella_(spring_dead_spot_on_bermudagrass)",
+    "quote": "Scientific Name Ophiosphaerella herpotricha",
+    "taxonomy_validated": false,
+    "mycobank_url": "",
+    "ncbi_url": ""
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://wiki.bugwood.org/Ophiosphaerella_(spring_dead_spot_on_bermudagrass)",
+    "quote": "Kingdom Fungi Phylum Ascomycota"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem",
+     "Root"
+    ],
+    "url": "https://wiki.bugwood.org/Ophiosphaerella_(spring_dead_spot_on_bermudagrass)",
+    "quote": "The turfgrass in these patches is often completely dead, with infested roots, stolons, and rhizomes appearing black, brittle and severely rotted."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "The disease appears as randomly distributed, straw-colored, mostly circular patches ranging from a few inches to several feet in diameter, with completely dead turfgrass and black, brittle, rotted roots, stolons, and rhizomes.",
+     "url": "https://wiki.bugwood.org/Ophiosphaerella_(spring_dead_spot_on_bermudagrass)",
+     "quote": "The disease appears as randomly distributed, straw-colored, mostly circular patches ranging from a few inches to several feet in diameter. The turfgrass in these patches is often completely dead, with infested roots, stolons, and rhizomes appearing black, brittle and severely rotted."
+    },
+    "diagnostic_features": {
+     "value": "Black brittle roots, rhizomes, and stolons surrounded by a dark network of hyphae; symptoms first evident in spring as uninfected turfgrass breaks dormancy and greens up.",
+     "url": "https://wiki.bugwood.org/Ophiosphaerella_(spring_dead_spot_on_bermudagrass)",
+     "quote": "Spring dead spot is most often diagnosed based on symptom timing combined with the observation of black brittle roots, rhizomes, and stolons surrounded by a dark network of hyphae."
+    },
+    "look_alikes": {
+     "value": [
+      "necrotic ring spot"
+     ],
+     "url": "https://wiki.bugwood.org/Ophiosphaerella_(spring_dead_spot_on_bermudagrass)",
+     "quote": "Ophiosphaerella spp. also cause disease on alternative hosts, such as necrotic ring spot caused by O. korrae on Kentucky bluegrass and fescues."
+    }
+   },
+   "treatments": {
+    "value": [
+     "proper nitrogen fertility",
+     "regular cultivation practices and soil pH modification",
+     "Increasing mowing height prior to winter dormancy",
+     "use of acidifying fertilizer sources, such as ammonium sulfate",
+     "calcium nitrate applications (for O. korrae)",
+     "routine hollow-tine aerification and verticutting",
+     "use of bermudagrass cultivars with improved cold tolerance (e.g., 'Midfield', 'Midlawn', 'Tifsport')"
+    ],
+    "url": "https://wiki.bugwood.org/Ophiosphaerella_(spring_dead_spot_on_bermudagrass)",
+    "quote": "Management of the disease with cultural practices centers on proper nitrogen fertility, regular cultivation practices and soil pH modification... Increasing mowing height prior to winter dormancy may reduce spring dead spot severity in some vegetative cultivars... The use of acidifying fertilizer sources, such as ammonium sulfate, has reduced spring dead spot incidence caused by O. herpotricha. Conversely, spring dead spot caused by O. korrae may be reduced with calcium nitrate applications... Cultivation practices, such as routine hollow-tine aerification and verticutting, that improve drainage and cause rhizome and stolon regrowth have also been demonstrated to reduce spring dead spot incidence... Some of the cold tolerant cultivars that have demonstrated partial spring dead spot resistance include 'Midfield', 'Midlawn', and 'Tifsport'"
+   },
+   "confidence": "medium",
+   "num_sources": 1,
+   "conflicts": [],
+   "regional_observations": {
+    "Colorado": {
+     "state": "Colorado",
+     "deltas": [
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The image does not display any clear signs of wilting.",
+       "image_quote": "The lawn is uniformly green with no visible signs of wilting or diseases.",
+       "image_id": "bugwood::5389426",
+       "__support__": 1,
+       "verification_status": "provisional",
+       "web_support": [
+        {
+         "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+         "quote": "Spring dead spot symptoms appear in circular patches from 6 inches to several feet in diameter that remain dormant as the turf greens up in the spring.",
+         "inherited": true,
+         "inherited_from": "Spring Dead Spot::*",
+         "_repaired_from": {
+          "prev_url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+          "prev_quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas."
+         }
+        }
+       ],
+       "swarm_support": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The image shows a healthy lawn with no visible signs of defoliation or bare petioles.",
+       "image_quote": "The image shows a healthy lawn with no visible signs of defoliation or bare petioles.",
+       "image_id": "bugwood::5389426",
+       "__support__": 1,
+       "verification_status": "provisional",
+       "web_support": [
+        {
+         "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+         "quote": "Spring dead spot symptoms appear in circular patches from 6 inches to several feet in diameter that remain dormant as the turf greens up in the spring.",
+         "inherited": true,
+         "inherited_from": "Spring Dead Spot::*",
+         "_repaired_from": {
+          "prev_url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+          "prev_quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas."
+         }
+        }
+       ],
+       "swarm_support": 1
+      },
+      {
+       "field": "spread_pattern",
+       "canonical_says": "randomly distributed... mostly circular patches ranging from a few inches to several feet in diameter",
+       "image_shows": "The damage is not visible in the photo; the grass appears uniformly green.",
+       "image_quote": "The image shows a healthy lawn with no signs of disease such as brown patches or blackened roots.",
+       "image_id": "bugwood::5389426",
+       "__support__": 1,
+       "verification_status": "provisional",
+       "web_support": [
+        {
+         "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+         "quote": "Spring dead spot symptoms appear in circular patches from 6 inches to several feet in diameter that remain dormant as the turf greens up in the spring.",
+         "inherited": true,
+         "inherited_from": "Spring Dead Spot::*",
+         "_repaired_from": {
+          "prev_url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+          "prev_quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas."
+         }
+        }
+       ],
+       "swarm_support": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "straw-colored, mostly circular patches... completely dead turfgrass and black, brittle, rotted roots",
+       "image_shows": "The affected area has a uniform green appearance.",
+       "image_quote": "The affected area is a uniform green lawn with some areas showing signs of discoloration.",
+       "image_id": "bugwood::5389426",
+       "__support__": 1,
+       "verification_status": "provisional",
+       "web_support": [
+        {
+         "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+         "quote": "The roots, stolons, and rhizomes are dark and rotten in affected areas.",
+         "inherited": true,
+         "inherited_from": "Spring Dead Spot::*",
+         "_repaired_from": {
+          "prev_url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+          "prev_quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas."
+         }
+        }
+       ],
+       "swarm_support": 1
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "necrotic ring spot",
+       "image_shows": "The image shows a uniformly green lawn without any visible signs of the disease mentioned in the canonical KB text.",
+       "image_quote": "The image shows a healthy lawn with no visible signs of disease such as brown patches or blackened roots.",
+       "image_id": "bugwood::5389426",
+       "__support__": 1,
+       "verification_status": "provisional",
+       "web_support": [
+        {
+         "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+         "quote": "The roots, stolons, and rhizomes are dark and rotten in affected areas.",
+         "inherited": true,
+         "inherited_from": "Spring Dead Spot::*",
+         "_repaired_from": {
+          "prev_url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+          "prev_quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas."
+         }
+        }
+       ],
+       "swarm_support": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5389426",
+      "bugwood::5389428",
+      "bugwood::5393074",
+      "bugwood::5393075",
+      "bugwood::5393076",
+      "bugwood::5393077",
+      "bugwood::5393078",
+      "bugwood::5393079",
+      "bugwood::5393116",
+      "bugwood::5393117"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "medium"
+      ],
+      "n_raw_per_pass": [
+       4
+      ],
+      "detected_organ_per_pass": [
+       "whole_plant"
+      ],
+      "n_active_agents_per_pass": [
+       7
+      ],
+      "n_after_agreement": 4,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 0,
+       "n_provisional": 0,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 4
+      },
+      "merge": {
+       "n_existing": 5,
+       "n_new_candidates": 0,
+       "n_added": 0,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    },
+    "Pennsylvania": {
+     "state": "Pennsylvania",
+     "deltas": [
+      {
+       "field": "severity",
+       "canonical_says": "patches ranging from a few inches to several feet in diameter, with completely dead turfgrass",
+       "image_shows": "The image shows patches of dead grass, indicating significant damage.",
+       "image_quote": "The photo displays a large area of affected turfgrass with widespread necrosis.",
+       "image_id": "bugwood::5333010",
+       "__support__": 1,
+       "verification_status": "weakly_supported",
+       "web_support": [
+        {
+         "url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+         "quote": "The roots, stolons, and rhizomes are dark and rotten in affected areas.",
+         "_repaired_from": {
+          "prev_url": "https://www.turffiles.ncsu.edu/diseases-in-turf/spring-dead-spot-in-turf/",
+          "prev_quote": "When the turf greens up, circular patches of dead, bleached grass are apparent; the roots and stolons are severely rotted in these areas."
+         }
+        }
+       ],
+       "swarm_support": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "straw-colored, mostly circular patches ... with completely dead turfgrass",
+       "image_shows": "Patches show a mixture of pale-straw and olive-green colors, consistent with dead turf interspersed with recovering/surviving green plants.",
+       "image_quote": "The affected area consists of patches of dead grass and live, sparse green grass.",
+       "image_id": "bugwood::5333010",
+       "verification_status": "weakly_supported",
+       "reasoning": "The straw-plus-green mixture is corroborated by extension descriptions of dead straw/tan patches interspersed with surviving or recovering green turf (frog-eye), so it is partially supported.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://content.ces.ncsu.edu/spring-dead-spot-in-turf",
+         "quote": "As the patches expand, the centers are sometimes re-established with bermudagrass or weedy species, resulting in a ring-like appearance."
+        },
+        {
+         "url": "https://plantpathology.mgcafe.uky.edu/files/ppfs-or-t-13.pdf",
+         "quote": "Regrowth may occur in the center of patches, resulting in tufts of healthy plants (a 'frog-eye' appearance), with turf bleached/tan surrounding surviving green plants."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "necrotic ring spot",
+       "image_shows": "Affected areas are dominated by tan and pale-straw colors with a small proportion of darker green surrounding the damaged regions.",
+       "image_quote": "The affected tissue has tan and pale-straw colors dominating the patchy areas, with a small proportion of darker green surrounding the damaged regions.",
+       "image_id": "bugwood::5333010",
+       "verification_status": "weakly_supported",
+       "reasoning": "Tan/pale-straw dead tissue ringed by darker green matches the documented light-tan matted dead grass with green frog-eye/surrounding healthy turf that also characterizes the look-alike necrotic ring spot on Kentucky bluegrass.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "http://ipm.illinois.edu/diseases/series400/rpd408/",
+         "quote": "The most characteristic symptom on Kentucky bluegrass in many areas of the United States is a roughly circular, doughnut-shaped area of dead or stunted grass up to 2 or 3 feet across, with tufts of apparently healthy grass in the center, giving a \"frogeye\" pattern (Figure 2).",
+         "_repaired_from": {
+          "prev_url": "http://ipm.illinois.edu/diseases/series400/rpd408/",
+          "prev_quote": "Dead grass that is light tan and matted, and many patches will have a tuft of apparently healthy grass in the center, often referred to as the 'frog-eye' symptom."
+         }
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5333010"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       5
+      ],
+      "detected_organ_per_pass": [
+       "whole_plant"
+      ],
+      "n_active_agents_per_pass": [
+       7
+      ],
+      "n_after_agreement": 5,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 2,
+       "n_provisional": 0,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 1,
+       "n_new_candidates": 2,
+       "n_added": 2,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    }
+   }
+  }
+ ],
+ "crop": "Kentucky Bluegrass",
+ "generated_date": "2026-05-27",
+ "regional_observations_count": 3
 }

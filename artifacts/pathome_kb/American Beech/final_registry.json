@@ -1,952 +1,967 @@
 {
-  "diseases": [
+ "diseases": [
+  {
+   "disease_name": "Neonectria Coccinea",
+   "pathogen_scientific_name": {
+    "value": "Neonectria faginata",
+    "url": "https://content.ces.ncsu.edu/beech-bark-disease",
+    "quote": "There are two species of Neonectria fungi that contribute to BBD: the native N. galligena and the non-native N. faginata (sometimes referred to as N. coccinea var. faginata).",
+    "taxonomy_validated": false,
+    "ncbi_url": "",
+    "mycobank_url": ""
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://content.ces.ncsu.edu/beech-bark-disease",
+    "quote": "a combination of feeding damage by a scale insect and cankers caused by a fungal pathogen"
+   },
+   "affected_parts": {
+    "value": [
+     "Stem",
+     "Vascular"
+    ],
+    "url": "https://content.ces.ncsu.edu/beech-bark-disease",
+    "quote": "Upon settling, beech scales use their specialized mouthparts to penetrate the bark and suck sap from the phloem of beech trees. As this occurs, areas of the tree become damaged, creating fissures."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Signs and symptoms include white woolly scale insects on the bark, orange cankers with rough callous edges that may exude a red-brown fluid, and small bright red fungal fruiting bodies (perithecia) on the bark in fall; severe infection causes girdling, stem breakage, and death.",
+     "url": "https://content.ces.ncsu.edu/beech-bark-disease",
+     "quote": "Scale insects ( Fig. 1 ), cankers ( Fig 2 , 3 ), and fungal fruiting bodies ( Fig. 4 ) are some signs and symptoms of BBD."
+    },
+    "diagnostic_features": {
+     "value": "Adult beech scale insects are round, soft-bodied, and yellow, often noticed due to the white, woolly substance they create; cankers may appear orange with rough edges and may exude a red-brown fluid; fungal perithecia are small and bright red, produced in clusters as superficial perithecia (each about 0.25 mm diameter), while irregular, blocky bark indicates a host resistance response.",
+     "url": "https://content.ces.ncsu.edu/beech-bark-disease",
+     "quote": "These cankers may appear orange, and edges of the cankers become rough as the tree creates callous tissue. Cankers may also exude a red-brown fluid which seeps down the bark . Further, fruiting bodies (perithecia) of the fungi are often present on bark in the fall. These perithecia are small and bright red in color."
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
+    }
+   },
+   "treatments": {
+    "value": [
+     "Insecticides may be used to prevent infection, more effective if timed for the crawler stage before it develops a protective waxy covering",
+     "Scale insects may be mechanically removed from landscape trees",
+     "Care for landscape trees properly to improve overall tree health",
+     "Promote and breed/plant resistant beech trees in forests",
+     "Report suspected cases of BBD to the North Carolina Forest Service - Forest Health Branch",
+     "Silvicultural selective harvesting of larger beech (about 45% basal area reduction) to improve overstory growth of sugar maple and birch"
+    ],
+    "url": "https://content.ces.ncsu.edu/beech-bark-disease",
+    "quote": "Since BBD begins with feeding by the beech scale insect, insecticides may be used to prevent infection. These insecticides are more effective if timed for the crawler stage because this stage does not yet have a protective waxy covering. Scale insects may also be mechanically removed from landscape trees."
+   },
+   "confidence": "high",
+   "num_sources": 2,
+   "conflicts": [
     {
-      "disease_name": "Neonectria Coccinea",
-      "pathogen_scientific_name": {
-        "value": "Neonectria faginata",
-        "url": "https://content.ces.ncsu.edu/beech-bark-disease",
-        "quote": "There are two species of Neonectria fungi that contribute to BBD: the native N. galligena and the non-native N. faginata (sometimes referred to as N. coccinea var. faginata).",
-        "taxonomy_validated": false,
-        "ncbi_url": "",
-        "mycobank_url": ""
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://content.ces.ncsu.edu/beech-bark-disease",
-        "quote": "a combination of feeding damage by a scale insect and cankers caused by a fungal pathogen"
-      },
-      "affected_parts": {
-        "value": [
-          "Stem",
-          "Vascular"
-        ],
-        "url": "https://content.ces.ncsu.edu/beech-bark-disease",
-        "quote": "Upon settling, beech scales use their specialized mouthparts to penetrate the bark and suck sap from the phloem of beech trees. As this occurs, areas of the tree become damaged, creating fissures."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Signs and symptoms include white woolly scale insects on the bark, orange cankers with rough callous edges that may exude a red-brown fluid, and small bright red fungal fruiting bodies (perithecia) on the bark in fall; severe infection causes girdling, stem breakage, and death.",
-          "url": "https://content.ces.ncsu.edu/beech-bark-disease",
-          "quote": "Scale insects ( Fig. 1 ), cankers ( Fig 2 , 3 ), and fungal fruiting bodies ( Fig. 4 ) are some signs and symptoms of BBD."
-        },
-        "diagnostic_features": {
-          "value": "Adult beech scale insects are round, soft-bodied, and yellow, often noticed due to the white, woolly substance they create; cankers may appear orange with rough edges and may exude a red-brown fluid; fungal perithecia are small and bright red, produced in clusters as superficial perithecia (each about 0.25 mm diameter), while irregular, blocky bark indicates a host resistance response.",
-          "url": "https://content.ces.ncsu.edu/beech-bark-disease",
-          "quote": "These cankers may appear orange, and edges of the cankers become rough as the tree creates callous tissue. Cankers may also exude a red-brown fluid which seeps down the bark . Further, fruiting bodies (perithecia) of the fungi are often present on bark in the fall. These perithecia are small and bright red in color."
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Insecticides may be used to prevent infection, more effective if timed for the crawler stage before it develops a protective waxy covering",
-          "Scale insects may be mechanically removed from landscape trees",
-          "Care for landscape trees properly to improve overall tree health",
-          "Promote and breed/plant resistant beech trees in forests",
-          "Report suspected cases of BBD to the North Carolina Forest Service - Forest Health Branch",
-          "Silvicultural selective harvesting of larger beech (about 45% basal area reduction) to improve overstory growth of sugar maple and birch"
-        ],
-        "url": "https://content.ces.ncsu.edu/beech-bark-disease",
-        "quote": "Since BBD begins with feeding by the beech scale insect, insecticides may be used to prevent infection. These insecticides are more effective if timed for the crawler stage because this stage does not yet have a protective waxy covering. Scale insects may also be mechanically removed from landscape trees."
-      },
-      "confidence": "high",
-      "num_sources": 2,
-      "conflicts": [
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Neonectria faginata",
-          "alternative_value": "Neonectria coccinea var. faginata",
-          "alternative_source_url": "https://content.ces.ncsu.edu/beech-bark-disease",
-          "note": "Same source notes N. faginata is 'sometimes referred to as N. coccinea var. faginata'. It also names a second contributing species, native N. galligena (N. ditissima). No taxonomy validation records were supplied, so the name is unverified (taxonomy_validated=false)."
-        },
-        {
-          "field": "affected_parts",
-          "canonical_value": "Stem, Vascular",
-          "alternative_value": "Stem",
-          "alternative_source_url": "https://forestpathology.org/canker/beech-bark/",
-          "note": "Forest Pathology lists only the stem ('Cankers on beech are typically diffuse and spreading'); NC State additionally implicates vascular/phloem tissue ('suck sap from the phloem'). Canonical takes the union."
-        }
-      ],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "orange cankers with rough callous edges",
-              "image_shows": "In Maine, affected beech trunks show numerous small, round, raised pock-mark-like bumps scattered across the bark surface.",
-              "image_quote": "The stem surface has numerous small, round, raised bumps scattered across its length.",
-              "image_id": "bugwood::1406128",
-              "verification_status": "verified",
-              "reasoning": "Multiple extension/pathology sources describe circular raised pock-marked callus formations covering BBD-affected beech trunks, matching the observed raised bumps.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://forestpathology.org/canker/beech-bark/",
-                  "quote": "woundwood and callus form under the bark causing a pock-marked and deformed outer appearance. Often, circular raised pock-marked formations in the callus cover the trunk."
-                },
-                {
-                  "url": "https://content.ces.ncsu.edu/beech-bark-disease",
-                  "quote": "Scattered cankers with diffuse margins develop, and woundwood and callus form under the bark causing a pock-marked and deformed outer appearance."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "white woolly scale insects on the bark ... orange cankers ... red-brown fluid",
-              "image_shows": "Affected Maine beech bark presents a mixture of white (scale wax), grayish (native bark), and brownish (ooze/canker) hues.",
-              "image_quote": "The affected stem tissue has a mixture of white, grayish, and brownish hues.",
-              "image_id": "bugwood::1406128",
-              "verification_status": "weakly_supported",
-              "reasoning": "White scale wax against gray beech bark with reddish-brown ooze plausibly produces the described white/gray/brown color mixture, but sources do not describe this exact color combination directly, so support is only partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.maine.gov/DACF/mfs/forest_health/diseases/beech_bark_disease.htm",
-                  "quote": "White patches on the bark are groupings of beech scale insects covered with a protective, feathery wax coating ... A reddish-brown fluid will ooze from the wound site."
-                },
-                {
-                  "url": "https://content.ces.ncsu.edu/beech-bark-disease",
-                  "quote": "These cankers may appear orange ... Cankers may also exude a red-brown fluid which seeps down the bark."
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::1406128"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              4
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 4,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 2,
-              "n_provisional": 0,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 2,
-              "n_added": 2,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        },
-        "Michigan": {
-          "state": "Michigan",
-          "deltas": [
-            {
-              "field": "other",
-              "canonical_says": "severe infection causes girdling, stem breakage, and death",
-              "image_shows": "Localized wilting is observed on some trees.",
-              "image_quote": "The tree on the right side has a significant portion without leaves.",
-              "image_id": "bugwood::5042088",
-              "verification_status": "weakly_supported",
-              "reasoning": "Girdling cankers cut off water and nutrient flow, producing crown thinning and foliar decline, so localized wilting-like loss of foliage is indirectly but plausibly supported rather than a classic named symptom.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.maine.gov/dacf/mfs/forest_health/documents/beech_bark_disease.pdf",
-                  "quote": "As cankers spread under the bark, branch and crown dieback occur, progressively worsening and resulting in tree death."
-                },
-                {
-                  "url": "https://www.canr.msu.edu/news/is_it_beech_bark_disease",
-                  "quote": "The crown will thin, and by the end of the year most leaves will have turned yellow."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "severe infection causes girdling, stem breakage, and death",
-              "image_shows": "Defoliation is evident with some branches bare and others still leafy.",
-              "image_quote": "The tree on the right side lacks leaves.",
-              "image_id": "bugwood::5042088",
-              "verification_status": "verified",
-              "reasoning": "Branch and crown dieback with reduced/sparse canopy is a well-documented BBD symptom, directly corroborating the bare-branch defoliation seen in the image.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.maine.gov/dacf/mfs/forest_health/documents/beech_bark_disease.pdf",
-                  "quote": "Foliage may become small, sparse and yellowed."
-                },
-                {
-                  "url": "https://ohioline.osu.edu/factsheet/plpath-tree-09",
-                  "quote": "diseased trees will show smaller, yellowing leaves and reduced canopy."
-                },
-                {
-                  "url": "https://tsusinvasives.org/home/database/nectria-coccinea-var-faginata-and-n-galligena",
-                  "quote": "Large trees are the first to become diseased and to exhibit crown dieback."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "spread_pattern",
-              "canonical_says": "(not specified)",
-              "image_shows": "Damage progresses top-down, with dieback concentrated in the upper crown while lower foliage remains healthy.",
-              "image_quote": "The damage is top-down, with healthy leaves at the bottom transitioning to dead or dying leaves at the top.",
-              "image_id": "bugwood::5042088",
-              "verification_status": "weakly_supported",
-              "reasoning": "BBD decline manifests as crown (upper-canopy) dieback, which is consistent with a top-down damage gradient, though the precise top-to-bottom sequence is not explicitly stated in the literature.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://tsusinvasives.org/home/database/nectria-coccinea-var-faginata-and-n-galligena",
-                  "quote": "Large trees are the first to become diseased and to exhibit crown dieback."
-                },
-                {
-                  "url": "https://ohioline.osu.edu/factsheet/plpath-tree-09",
-                  "quote": "diseased trees will show smaller, yellowing leaves and reduced canopy."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "cankers may appear orange with rough edges and may exude a red-brown fluid",
-              "image_shows": "Affected canopy shows a mix of green and brown tones with some reddish-brown foliage.",
-              "image_quote": "The affected area features a mix of green and brown tones, with some reddish-brown leaves.",
-              "image_id": "bugwood::5042088",
-              "verification_status": "weakly_supported",
-              "reasoning": "Declining trees show a green-to-yellow/brown foliage mix as leaves die back, partly supporting the observed palette, though the specific reddish-brown leaf tone is not distinctly documented for BBD foliage.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.canr.msu.edu/news/is_it_beech_bark_disease",
-                  "quote": "The crown will thin, and by the end of the year most leaves will have turned yellow."
-                },
-                {
-                  "url": "https://www.maine.gov/dacf/mfs/forest_health/documents/beech_bark_disease.pdf",
-                  "quote": "Foliage may become small, sparse and yellowed."
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5042088",
-            "bugwood::5048062",
-            "bugwood::5048063",
-            "bugwood::5048070",
-            "bugwood::5048071",
-            "bugwood::5048072",
-            "bugwood::5048073",
-            "bugwood::5048075",
-            "bugwood::5048077",
-            "bugwood::5048078",
-            "bugwood::5048080",
-            "bugwood::5048081",
-            "bugwood::5048082",
-            "bugwood::5048085",
-            "bugwood::5048087",
-            "bugwood::5048088",
-            "bugwood::5048089",
-            "bugwood::5048092",
-            "bugwood::5048093",
-            "bugwood::5048094",
-            "bugwood::5048098",
-            "bugwood::5048099",
-            "bugwood::5048100",
-            "bugwood::5049005",
-            "bugwood::5251060",
-            "bugwood::5251061"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              5
-            ],
-            "detected_organ_per_pass": [
-              "whole_plant"
-            ],
-            "n_active_agents_per_pass": [
-              7
-            ],
-            "n_after_agreement": 5,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 4,
-              "n_provisional": 1,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 5,
-              "n_added": 5,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 1,
-            "dropped_contradictory": []
-          }
-        },
-        "West Virginia": {
-          "state": "West Virginia",
-          "deltas": [
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "No visible wilting symptoms.",
-              "image_quote": "The image does not display a plant with wilting symptoms.",
-              "image_id": "bugwood::758085",
-              "verification_status": "field_observation",
-              "reasoning": "Absence-of-symptom observation from an off-topic image (person with maps/papers); no external evidence can corroborate a negative and canonical is not contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "affected_organs",
-              "canonical_says": "(not specified)",
-              "image_shows": "No direct visual evidence of defoliation.",
-              "image_quote": "No visible signs of leaf drop or petiole detachment are observed.",
-              "image_id": "bugwood::758085",
-              "verification_status": "field_observation",
-              "reasoning": "Negative observation from an image not depicting a diseased beech; absence cannot be verified against factsheets and is not contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "spread_pattern",
-              "canonical_says": "(not specified)",
-              "image_shows": "No visible signs of diseased American Beech plants or their damage.",
-              "image_quote": "The photo shows a person working with maps and papers, indicating a static indoor setting with no visible damage distribution patterns.",
-              "image_id": "bugwood::758085",
-              "verification_status": "field_observation",
-              "reasoning": "The witness image shows an indoor scene with no plant present, so no visual disease appearance exists to corroborate or contradict.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "(not specified)",
-              "image_shows": "No visible plant symptoms related to the disease.",
-              "image_quote": "No visible plant or plant symptoms related to the disease are present in the photo.",
-              "image_id": "bugwood::758085",
-              "verification_status": "field_observation",
-              "reasoning": "Negative observation of an off-topic image; no external source can verify the absence of symptoms and canonical is not contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::758085",
-            "bugwood::758086",
-            "bugwood::758087",
-            "bugwood::758090",
-            "bugwood::758091",
-            "bugwood::758092"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "medium"
-            ],
-            "n_raw_per_pass": [
-              4
-            ],
-            "detected_organ_per_pass": [
-              "whole_plant"
-            ],
-            "n_active_agents_per_pass": [
-              7
-            ],
-            "n_after_agreement": 4,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 0,
-              "n_provisional": 4,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 4,
-              "n_added": 4,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 4,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Neonectria faginata",
+     "alternative_value": "Neonectria coccinea var. faginata",
+     "alternative_source_url": "https://content.ces.ncsu.edu/beech-bark-disease",
+     "note": "Same source notes N. faginata is 'sometimes referred to as N. coccinea var. faginata'. It also names a second contributing species, native N. galligena (N. ditissima). No taxonomy validation records were supplied, so the name is unverified (taxonomy_validated=false)."
     },
     {
-      "disease_name": "Beech Leaf Disease",
-      "pathogen_scientific_name": {
-        "value": null,
-        "url": null,
-        "quote": null
-      },
-      "type_of_disease": {
-        "value": null,
-        "url": null,
-        "quote": null
-      },
-      "affected_parts": {
-        "value": null,
-        "url": null,
-        "quote": null
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": null,
-          "url": null,
-          "quote": null
-        },
-        "diagnostic_features": {
-          "value": null,
-          "url": null,
-          "quote": null
-        },
-        "look_alikes": {
-          "value": null,
-          "url": null,
-          "quote": null
-        }
-      },
-      "confidence": "low",
-      "num_sources": 0,
-      "conflicts": [],
-      "regional_observations": {
-        "New York": {
-          "state": "New York",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion shapes appear to be angular, constrained by the leaf veins.",
-              "image_quote": "The lesions have a distinct angular shape that follows the veins.",
-              "image_id": "bugwood::5619864",
-              "verification_status": "weakly_supported",
-              "reasoning": "BLD's characteristic interveinal banding is bounded by leaf veins, so an angular, vein-following pattern is consistent, though these are bands rather than discrete lesions.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.psu.edu/beech-leaf-disease",
-                  "quote": "The symptoms are a dark green discoloration and a thickening of leaf tissue between the infected veins. This creates a striped or banded appearance."
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
-                  "quote": "Symptoms of BLD appear as dark-colored, interveinal banding on the foliage."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesions appear raised and have a slightly rough surface.",
-              "image_quote": "The surface of the lesions has a raised texture.",
-              "image_id": "bugwood::5619864",
-              "verification_status": "weakly_supported",
-              "reasoning": "BLD thickens interveinal tissue producing raised, leathery bands, consistent with a raised/rough surface.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
-                  "quote": "thickening of the leaves and a general 'leathery' texture"
-                },
-                {
-                  "url": "https://mortonarb.org/plant-and-protect/tree-plant-care/plant-care-resources/beech-leaf-disease/",
-                  "quote": "a darkening and thickening of leaf tissue between leaf veins"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "The photo shows chlorosis on American Beech leaves.",
-              "image_quote": "The image shows diseased American Beech leaves with a mix of green, yellow, and brown hues.",
-              "image_id": "bugwood::5619864",
-              "verification_status": "weakly_supported",
-              "reasoning": "As BLD progresses leaves lose vigor and discolor toward yellow/brown, consistent with the described chlorosis and mixed hues.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.frontiersin.org/journals/forests-and-global-change/articles/10.3389/ffgc.2023.1146742/full",
-                  "quote": "physiological impacts of beech leaf disease across a gradient of symptom severity among understory American beech"
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
-                  "quote": "premature leaf shedding and death of the buds and subsequent branch dieback"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "Necrotic tissue is present on the leaves, appearing as dead brown tissue.",
-              "image_quote": "Dead brown tissue is visible on the leaf margin.",
-              "image_id": "bugwood::5619864",
-              "verification_status": "weakly_supported",
-              "reasoning": "Advanced BLD infection leads to leaf browning, tissue death, and shedding, consistent with the observed marginal necrosis.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
-                  "quote": "leaves become leathery and crinkled ... premature leaf shedding"
-                },
-                {
-                  "url": "https://extension.psu.edu/beech-leaf-disease",
-                  "quote": "As the disease progresses, buds die, branches dieback, the tree declines and eventually dies."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "Leaves show curling up towards the tip.",
-              "image_quote": "The image shows leaves curling up towards the tip.",
-              "image_id": "bugwood::5619864",
-              "verification_status": "verified",
-              "reasoning": "Cupping, curling, and distortion of foliage is a hallmark diagnostic symptom of BLD, directly corroborated by multiple extension sources.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
-                  "quote": "cupping, curling and distortion of the foliage"
-                },
-                {
-                  "url": "https://mortonarb.org/plant-and-protect/tree-plant-care/plant-care-resources/beech-leaf-disease/",
-                  "quote": "Leaves may also appear crinkled, distorted, and small in size."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "Leaf tissue is dead, brown, and bleached, indicating necrosis.",
-              "image_quote": "Leaf tissue is dead, brown, and bleached, indicating necrosis.",
-              "image_id": "bugwood::5619864",
-              "verification_status": "weakly_supported",
-              "reasoning": "Severe BLD produces dead, browned, desiccated leaf tissue prior to shedding, consistent with the observed necrosis and bleaching.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.psu.edu/beech-leaf-disease",
-                  "quote": "As the disease progresses, buds die, branches dieback, the tree declines and eventually dies."
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
-                  "quote": "In severe cases leaves become leathery and crinkled ... premature leaf shedding"
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5619864",
-            "bugwood::5620043",
-            "bugwood::5620044",
-            "bugwood::5620045",
-            "bugwood::5620046",
-            "bugwood::5620047",
-            "bugwood::5620048",
-            "bugwood::5620049",
-            "bugwood::5620050",
-            "bugwood::5620051",
-            "bugwood::5620052",
-            "bugwood::5620053"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 6,
-              "n_provisional": 1,
-              "n_contradictory": 4,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 7,
-              "n_added": 7,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 1,
-            "duplicates_count": 0,
-            "dropped_contradictory": [
-              {
-                "field": "lesion_morphology",
-                "canonical_says": "(not specified)",
-                "image_shows": "The lesion centers are tan, while the margins are chocolate-brown.",
-                "image_quote": "The lesion areas show a tan center with a chocolate-brown margin.",
-                "image_id": "bugwood::5619864",
-                "verification_status": "contradictory",
-                "reasoning": "Published extension sources describe BLD as dark interveinal banding with thickened, leathery, curled tissue, not discrete tan-centered chocolate-brown-margined lesions, which are the pattern of fungal leaf spot/anthracnose.",
-                "swarm_support": 1,
-                "web_support": [
-                  {
-                    "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
-                    "quote": "Symptoms of BLD include dark-colored, interveinal banding on the foliage, cupping, curling and distortion of the foliage, thickening of the leaves and a general 'leathery' texture."
-                  },
-                  {
-                    "url": "https://www.michigan.gov/invasives/id-report/disease/beech-leaf-disease",
-                    "quote": "BLD is identifiable by foliar symptoms including thick, dark green bands between secondary veins and/or curling and crinkling of the entire leaf; bands chlorose and become yellow and/or senesce and turn brown."
-                  },
-                  {
-                    "url": "https://www.nps.gov/articles/000/bld-mistaken-identity.htm",
-                    "quote": "A tan-centered, brown-margined discrete leaf spot pattern is characteristic of fungal leaf spot/anthracnose rather than the interveinal banding of beech leaf disease."
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        "Ohio": {
-          "state": "Ohio",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesions appear to follow the vein pattern, suggesting they are angular.",
-              "image_quote": "The lesions are bordered by the leaf veins.",
-              "image_id": "bugwood::5619698",
-              "verification_status": "verified",
-              "reasoning": "Vein-bordered, angular interveinal lesions match BLD's diagnostic banding confined between lateral veins.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
-                  "quote": "Symptoms of the disease include dark striping or banding between the leaf veins which is noticeable from below."
-                },
-                {
-                  "url": "https://en.wikipedia.org/wiki/Beech_leaf_disease",
-                  "quote": "Early symptoms include dark stripes or bands between lateral veins of leaves."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion center is a darker green compared to the margin.",
-              "image_quote": "The central areas of the lesions appear more vividly green than the edges.",
-              "image_id": "bugwood::5619698",
-              "verification_status": "verified",
-              "reasoning": "Darker-green interveinal centers are the defining dark-green banding signature of BLD.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.michigan.gov/invasives/id-report/disease/beech-leaf-disease",
-                  "quote": "BLD is easily recognized by its distinctive dark green interveinal banding pattern on symptomatic leaves."
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
-                  "quote": "The striping is formed by a darkening and thickening of leaf tissue between leaf veins."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion texture appears to be raised.",
-              "image_quote": "The lesions on the leaves have raised edges.",
-              "image_id": "bugwood::5619698",
-              "verification_status": "verified",
-              "reasoning": "Raised/thickened banded tissue is documented as the leathery, puckered thickening characteristic of BLD.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
-                  "quote": "The striping is formed by a darkening and thickening of leaf tissue between leaf veins."
-                },
-                {
-                  "url": "https://en.wikipedia.org/wiki/Beech_leaf_disease",
-                  "quote": "thickening of the leaves and a general \"leathery\" texture"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "Discrete spots of necrotic tissue.",
-              "image_quote": "The leaf has yellowish-green streaks and patches that appear to be necrotic.",
-              "image_id": "bugwood::5619698",
-              "verification_status": "weakly_supported",
-              "reasoning": "Necrotic leaf tissue is a documented advanced BLD symptom, though discrete spotting is less specific than banding.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
-                  "quote": "advanced symptoms including leaf curling and dead and dying leaf tissue"
-                },
-                {
-                  "url": "https://en.wikipedia.org/wiki/Beech_leaf_disease",
-                  "quote": "More severe symptoms include leaf distortion, such as curling, puckering, thickening and the development of a leathery texture or necrotic (dead) leaf tissue."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "affected_organs",
-              "canonical_says": "(not specified)",
-              "image_shows": "leaves are curled up",
-              "image_quote": "Leaves are tightly curled upwards.",
-              "image_id": "bugwood::5619698",
-              "verification_status": "verified",
-              "reasoning": "Leaf curling/cupping is an established BLD foliar symptom.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://en.wikipedia.org/wiki/Beech_leaf_disease",
-                  "quote": "cupping, curling and distortion of the foliage"
-                },
-                {
-                  "url": "https://extension.psu.edu/beech-leaf-disease",
-                  "quote": "leaf distortion, such as curling, puckering, thickening"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "affected_organs",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaves show curling up towards the leaf margins.",
-              "image_quote": "Leaves appear to curl up towards the leaf margins.",
-              "image_id": "bugwood::5619698",
-              "verification_status": "verified",
-              "reasoning": "Marginal curling/cupping is consistent with documented BLD leaf distortion.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://en.wikipedia.org/wiki/Beech_leaf_disease",
-                  "quote": "cupping, curling and distortion of the foliage"
-                },
-                {
-                  "url": "https://extension.psu.edu/beech-leaf-disease",
-                  "quote": "leaf distortion, such as curling, puckering, thickening"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected leaf has a mix of green and yellow hues.",
-              "image_quote": "The leaves exhibit both vibrant green and faded yellow colors.",
-              "image_id": "bugwood::5619698",
-              "verification_status": "weakly_supported",
-              "reasoning": "A mixed green-and-yellow palette is consistent with dark-green banding plus later chlorotic progression, though non-specific.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.michigan.gov/invasives/id-report/disease/beech-leaf-disease",
-                  "quote": "BLD is easily recognized by its distinctive dark green interveinal banding pattern on symptomatic leaves."
-                },
-                {
-                  "url": "https://en.wikipedia.org/wiki/Beech_leaf_disease",
-                  "quote": "Symptoms progress from leaf banding to ... premature leaf shedding"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected tissue has distinct areas of varying green shades.",
-              "image_quote": "The leaf lesions have a darker green center compared to the lighter green margin.",
-              "image_id": "bugwood::5619698",
-              "verification_status": "verified",
-              "reasoning": "Alternating darker- and lighter-green banded tissue is the core visual signature of BLD.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.michigan.gov/invasives/id-report/disease/beech-leaf-disease",
-                  "quote": "BLD is easily recognized by its distinctive dark green interveinal banding pattern on symptomatic leaves."
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
-                  "quote": "The striping is formed by a darkening and thickening of leaf tissue between leaf veins."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "The image does not show necrotic brown, black, or bleached tissue.",
-              "image_quote": "No visible signs of dead tissue in brown, black, or bleached color.",
-              "image_id": "bugwood::5619698",
-              "verification_status": "weakly_supported",
-              "reasoning": "Early-stage BLD is characterized by dark green interveinal banding rather than necrosis, so the absence of necrotic tissue is consistent with a documented early symptomatic leaf.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://njaes.rutgers.edu/E376/",
-                  "quote": "The first signs of beech leaf disease are striping or banding (darkening) between leaf veins... The darkened area is slightly raised and is thicker than the rest of the leaf tissue."
-                },
-                {
-                  "url": "https://mortonarb.org/plant-and-protect/tree-plant-care/plant-care-resources/beech-leaf-disease/",
-                  "quote": "The earliest symptom is dark green banding between leaf veins... as the infection progresses, leaves may develop chlorosis or yellowing between the veins."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5619698",
-            "bugwood::5619699",
-            "bugwood::5619700",
-            "bugwood::5619701",
-            "bugwood::5619702",
-            "bugwood::5619703",
-            "bugwood::5619705",
-            "bugwood::5619706",
-            "bugwood::5619707",
-            "bugwood::5619708",
-            "bugwood::5619709",
-            "bugwood::5620041"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              17
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 17,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 8,
-              "n_provisional": 2,
-              "n_contradictory": 7,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 10,
-              "n_added": 10,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 0,
-            "contradictory_count": 1,
-            "duplicates_count": 0,
-            "dropped_contradictory": [
-              {
-                "field": "diagnostic_features",
-                "canonical_says": "(not specified)",
-                "image_shows": "Veins are clear and translucent.",
-                "image_quote": "The leaf shows distinct vein clearing, with veins appearing translucent.",
-                "image_id": "bugwood::5619698",
-                "verification_status": "contradictory",
-                "reasoning": "Published factsheets describe the BLD diagnostic feature as dark, opaque interveinal banding (bands opaque against translucent tissue), not translucent/cleared veins, so the vein-clearing description contradicts the documented appearance.",
-                "swarm_support": 1,
-                "web_support": [
-                  {
-                    "url": "https://njaes.rutgers.edu/E376/",
-                    "quote": "When held up against a light source like the sky, the infected 'bands' between the parallel veins appear opaque against the translucent unaffected tissue."
-                  },
-                  {
-                    "url": "https://www.davey.com/insect-disease-resource-center/beech-leaf-disease/",
-                    "quote": "The first signs are striping or banding (darkening) between leaf veins, giving foliage a distinctive appearance."
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      }
+     "field": "affected_parts",
+     "canonical_value": "Stem, Vascular",
+     "alternative_value": "Stem",
+     "alternative_source_url": "https://forestpathology.org/canker/beech-bark/",
+     "note": "Forest Pathology lists only the stem ('Cankers on beech are typically diffuse and spreading'); NC State additionally implicates vascular/phloem tissue ('suck sap from the phloem'). Canonical takes the union."
     }
-  ],
-  "crop": "American Beech",
-  "generated_date": "2026-06-10",
-  "regional_observations_count": 5
+   ],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "orange cankers with rough callous edges",
+       "image_shows": "In Maine, affected beech trunks show numerous small, round, raised pock-mark-like bumps scattered across the bark surface.",
+       "image_quote": "The stem surface has numerous small, round, raised bumps scattered across its length.",
+       "image_id": "bugwood::1406128",
+       "verification_status": "field_observation",
+       "reasoning": "Multiple extension/pathology sources describe circular raised pock-marked callus formations covering BBD-affected beech trunks, matching the observed raised bumps.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "verified"
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "white woolly scale insects on the bark ... orange cankers ... red-brown fluid",
+       "image_shows": "Affected Maine beech bark presents a mixture of white (scale wax), grayish (native bark), and brownish (ooze/canker) hues.",
+       "image_quote": "The affected stem tissue has a mixture of white, grayish, and brownish hues.",
+       "image_id": "bugwood::1406128",
+       "verification_status": "weakly_supported",
+       "reasoning": "White scale wax against gray beech bark with reddish-brown ooze plausibly produces the described white/gray/brown color mixture, but sources do not describe this exact color combination directly, so support is only partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.maine.gov/DACF/mfs/forest_health/diseases/beech_bark_disease.htm",
+         "quote": "White patches on the bark are groupings of beech scale insects covered with a protective, feathery wax coating ... A reddish-brown fluid will ooze from the wound site."
+        },
+        {
+         "url": "https://content.ces.ncsu.edu/beech-bark-disease",
+         "quote": "These cankers may appear orange ... Cankers may also exude a red-brown fluid which seeps down the bark."
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::1406128"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       4
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 4,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 2,
+       "n_provisional": 0,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 2,
+       "n_added": 2,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    },
+    "Michigan": {
+     "state": "Michigan",
+     "deltas": [
+      {
+       "field": "other",
+       "canonical_says": "severe infection causes girdling, stem breakage, and death",
+       "image_shows": "Localized wilting is observed on some trees.",
+       "image_quote": "The tree on the right side has a significant portion without leaves.",
+       "image_id": "bugwood::5042088",
+       "verification_status": "weakly_supported",
+       "reasoning": "Girdling cankers cut off water and nutrient flow, producing crown thinning and foliar decline, so localized wilting-like loss of foliage is indirectly but plausibly supported rather than a classic named symptom.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.maine.gov/dacf/mfs/forest_health/documents/beech_bark_disease.pdf",
+         "quote": "As cankers spread under the bark, branch and crown dieback occur, progressively worsening and resulting in tree death."
+        },
+        {
+         "url": "https://www.canr.msu.edu/news/is_it_beech_bark_disease",
+         "quote": "The crown will thin, and by the end of the year most leaves will have turned yellow."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "severe infection causes girdling, stem breakage, and death",
+       "image_shows": "Defoliation is evident with some branches bare and others still leafy.",
+       "image_quote": "The tree on the right side lacks leaves.",
+       "image_id": "bugwood::5042088",
+       "verification_status": "verified",
+       "reasoning": "Branch and crown dieback with reduced/sparse canopy is a well-documented BBD symptom, directly corroborating the bare-branch defoliation seen in the image.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.maine.gov/dacf/mfs/forest_health/documents/beech_bark_disease.pdf",
+         "quote": "Foliage may become small, sparse and yellowed."
+        },
+        {
+         "url": "https://ohioline.osu.edu/factsheet/plpath-tree-09",
+         "quote": "diseased trees will show smaller, yellowing leaves and reduced canopy."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "spread_pattern",
+       "canonical_says": "(not specified)",
+       "image_shows": "Damage progresses top-down, with dieback concentrated in the upper crown while lower foliage remains healthy.",
+       "image_quote": "The damage is top-down, with healthy leaves at the bottom transitioning to dead or dying leaves at the top.",
+       "image_id": "bugwood::5042088",
+       "verification_status": "weakly_supported",
+       "reasoning": "BBD decline manifests as crown (upper-canopy) dieback, which is consistent with a top-down damage gradient, though the precise top-to-bottom sequence is not explicitly stated in the literature.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://ohioline.osu.edu/factsheet/plpath-tree-09",
+         "quote": "diseased trees will show smaller, yellowing leaves and reduced canopy."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "cankers may appear orange with rough edges and may exude a red-brown fluid",
+       "image_shows": "Affected canopy shows a mix of green and brown tones with some reddish-brown foliage.",
+       "image_quote": "The affected area features a mix of green and brown tones, with some reddish-brown leaves.",
+       "image_id": "bugwood::5042088",
+       "verification_status": "weakly_supported",
+       "reasoning": "Declining trees show a green-to-yellow/brown foliage mix as leaves die back, partly supporting the observed palette, though the specific reddish-brown leaf tone is not distinctly documented for BBD foliage.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.canr.msu.edu/news/is_it_beech_bark_disease",
+         "quote": "The crown will thin, and by the end of the year most leaves will have turned yellow."
+        },
+        {
+         "url": "https://www.maine.gov/dacf/mfs/forest_health/documents/beech_bark_disease.pdf",
+         "quote": "Foliage may become small, sparse and yellowed."
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5042088",
+      "bugwood::5048062",
+      "bugwood::5048063",
+      "bugwood::5048070",
+      "bugwood::5048071",
+      "bugwood::5048072",
+      "bugwood::5048073",
+      "bugwood::5048075",
+      "bugwood::5048077",
+      "bugwood::5048078",
+      "bugwood::5048080",
+      "bugwood::5048081",
+      "bugwood::5048082",
+      "bugwood::5048085",
+      "bugwood::5048087",
+      "bugwood::5048088",
+      "bugwood::5048089",
+      "bugwood::5048092",
+      "bugwood::5048093",
+      "bugwood::5048094",
+      "bugwood::5048098",
+      "bugwood::5048099",
+      "bugwood::5048100",
+      "bugwood::5049005",
+      "bugwood::5251060",
+      "bugwood::5251061"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       5
+      ],
+      "detected_organ_per_pass": [
+       "whole_plant"
+      ],
+      "n_active_agents_per_pass": [
+       7
+      ],
+      "n_after_agreement": 5,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 4,
+       "n_provisional": 1,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 5,
+       "n_added": 5,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 1,
+      "dropped_contradictory": []
+     }
+    },
+    "West Virginia": {
+     "state": "West Virginia",
+     "deltas": [
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "No visible wilting symptoms.",
+       "image_quote": "The image does not display a plant with wilting symptoms.",
+       "image_id": "bugwood::758085",
+       "verification_status": "field_observation",
+       "reasoning": "Absence-of-symptom observation from an off-topic image (person with maps/papers); no external evidence can corroborate a negative and canonical is not contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "affected_organs",
+       "canonical_says": "(not specified)",
+       "image_shows": "No direct visual evidence of defoliation.",
+       "image_quote": "No visible signs of leaf drop or petiole detachment are observed.",
+       "image_id": "bugwood::758085",
+       "verification_status": "field_observation",
+       "reasoning": "Negative observation from an image not depicting a diseased beech; absence cannot be verified against factsheets and is not contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "spread_pattern",
+       "canonical_says": "(not specified)",
+       "image_shows": "No visible signs of diseased American Beech plants or their damage.",
+       "image_quote": "The photo shows a person working with maps and papers, indicating a static indoor setting with no visible damage distribution patterns.",
+       "image_id": "bugwood::758085",
+       "verification_status": "field_observation",
+       "reasoning": "The witness image shows an indoor scene with no plant present, so no visual disease appearance exists to corroborate or contradict.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "(not specified)",
+       "image_shows": "No visible plant symptoms related to the disease.",
+       "image_quote": "No visible plant or plant symptoms related to the disease are present in the photo.",
+       "image_id": "bugwood::758085",
+       "verification_status": "field_observation",
+       "reasoning": "Negative observation of an off-topic image; no external source can verify the absence of symptoms and canonical is not contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::758085",
+      "bugwood::758086",
+      "bugwood::758087",
+      "bugwood::758090",
+      "bugwood::758091",
+      "bugwood::758092"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "medium"
+      ],
+      "n_raw_per_pass": [
+       4
+      ],
+      "detected_organ_per_pass": [
+       "whole_plant"
+      ],
+      "n_active_agents_per_pass": [
+       7
+      ],
+      "n_after_agreement": 4,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 0,
+       "n_provisional": 4,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 4,
+       "n_added": 4,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 4,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Beech Leaf Disease",
+   "pathogen_scientific_name": {
+    "value": null,
+    "url": null,
+    "quote": null
+   },
+   "type_of_disease": {
+    "value": null,
+    "url": null,
+    "quote": null
+   },
+   "affected_parts": {
+    "value": null,
+    "url": null,
+    "quote": null
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": null,
+     "url": null,
+     "quote": null
+    },
+    "diagnostic_features": {
+     "value": null,
+     "url": null,
+     "quote": null
+    },
+    "look_alikes": {
+     "value": null,
+     "url": null,
+     "quote": null
+    }
+   },
+   "confidence": "low",
+   "num_sources": 0,
+   "conflicts": [],
+   "regional_observations": {
+    "New York": {
+     "state": "New York",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The lesion shapes appear to be angular, constrained by the leaf veins.",
+       "image_quote": "The lesions have a distinct angular shape that follows the veins.",
+       "image_id": "bugwood::5619864",
+       "verification_status": "weakly_supported",
+       "reasoning": "BLD's characteristic interveinal banding is bounded by leaf veins, so an angular, vein-following pattern is consistent, though these are bands rather than discrete lesions.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.psu.edu/beech-leaf-disease",
+         "quote": "BLD is easily to recognizes by its distinctive dark green interveinal banding pattern on symptomatic leaves.",
+         "_repaired_from": {
+          "prev_url": "https://extension.psu.edu/beech-leaf-disease",
+          "prev_quote": "The symptoms are a dark green discoloration and a thickening of leaf tissue between the infected veins. This creates a striped or banded appearance."
+         }
+        },
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
+         "quote": "Symptoms of BLD appear as dark-colored, interveinal banding on the foliage."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The lesions appear raised and have a slightly rough surface.",
+       "image_quote": "The surface of the lesions has a raised texture.",
+       "image_id": "bugwood::5619864",
+       "verification_status": "weakly_supported",
+       "reasoning": "BLD thickens interveinal tissue producing raised, leathery bands, consistent with a raised/rough surface.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
+         "quote": "thickening of the leaves and a general 'leathery' texture"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "The photo shows chlorosis on American Beech leaves.",
+       "image_quote": "The image shows diseased American Beech leaves with a mix of green, yellow, and brown hues.",
+       "image_id": "bugwood::5619864",
+       "verification_status": "weakly_supported",
+       "reasoning": "As BLD progresses leaves lose vigor and discolor toward yellow/brown, consistent with the described chlorosis and mixed hues.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.frontiersin.org/journals/forests-and-global-change/articles/10.3389/ffgc.2023.1146742/full",
+         "quote": "physiological impacts of beech leaf disease across a gradient of symptom severity among understory American beech"
+        },
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
+         "quote": "premature leaf shedding; and (v) death of the buds and subsequent branch dieback resulting in death of the tree.",
+         "_repaired_from": {
+          "prev_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
+          "prev_quote": "premature leaf shedding and death of the buds and subsequent branch dieback"
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "Necrotic tissue is present on the leaves, appearing as dead brown tissue.",
+       "image_quote": "Dead brown tissue is visible on the leaf margin.",
+       "image_id": "bugwood::5619864",
+       "verification_status": "weakly_supported",
+       "reasoning": "Advanced BLD infection leads to leaf browning, tissue death, and shedding, consistent with the observed marginal necrosis.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
+         "quote": "thickening of the leaves and a general \"leathery\" texture; (iv) premature leaf shedding",
+         "_repaired_from": {
+          "prev_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
+          "prev_quote": "leaves become leathery and crinkled ... premature leaf shedding"
+         }
+        },
+        {
+         "url": "https://extension.psu.edu/beech-leaf-disease",
+         "quote": "This damages the next generation of leaves; repeated damage will kill infected beech.",
+         "_repaired_from": {
+          "prev_url": "https://extension.psu.edu/beech-leaf-disease",
+          "prev_quote": "As the disease progresses, buds die, branches dieback, the tree declines and eventually dies."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "Leaves show curling up towards the tip.",
+       "image_quote": "The image shows leaves curling up towards the tip.",
+       "image_id": "bugwood::5619864",
+       "verification_status": "verified",
+       "reasoning": "Cupping, curling, and distortion of foliage is a hallmark diagnostic symptom of BLD, directly corroborated by multiple extension sources.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
+         "quote": "cupping, curling and distortion of the foliage"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "Leaf tissue is dead, brown, and bleached, indicating necrosis.",
+       "image_quote": "Leaf tissue is dead, brown, and bleached, indicating necrosis.",
+       "image_id": "bugwood::5619864",
+       "verification_status": "weakly_supported",
+       "reasoning": "Severe BLD produces dead, browned, desiccated leaf tissue prior to shedding, consistent with the observed necrosis and bleaching.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.psu.edu/beech-leaf-disease",
+         "quote": "This damages the next generation of leaves; repeated damage will kill infected beech.",
+         "_repaired_from": {
+          "prev_url": "https://extension.psu.edu/beech-leaf-disease",
+          "prev_quote": "As the disease progresses, buds die, branches dieback, the tree declines and eventually dies."
+         }
+        },
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
+         "quote": "thickening of the leaves and a general \"leathery\" texture; (iv) premature leaf shedding",
+         "_repaired_from": {
+          "prev_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
+          "prev_quote": "In severe cases leaves become leathery and crinkled ... premature leaf shedding"
+         }
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5619864",
+      "bugwood::5620043",
+      "bugwood::5620044",
+      "bugwood::5620045",
+      "bugwood::5620046",
+      "bugwood::5620047",
+      "bugwood::5620048",
+      "bugwood::5620049",
+      "bugwood::5620050",
+      "bugwood::5620051",
+      "bugwood::5620052",
+      "bugwood::5620053"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 6,
+       "n_provisional": 1,
+       "n_contradictory": 4,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 7,
+       "n_added": 7,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 0,
+      "contradictory_count": 1,
+      "duplicates_count": 0,
+      "dropped_contradictory": [
+       {
+        "field": "lesion_morphology",
+        "canonical_says": "(not specified)",
+        "image_shows": "The lesion centers are tan, while the margins are chocolate-brown.",
+        "image_quote": "The lesion areas show a tan center with a chocolate-brown margin.",
+        "image_id": "bugwood::5619864",
+        "verification_status": "contradictory",
+        "reasoning": "Published extension sources describe BLD as dark interveinal banding with thickened, leathery, curled tissue, not discrete tan-centered chocolate-brown-margined lesions, which are the pattern of fungal leaf spot/anthracnose.",
+        "swarm_support": 1,
+        "web_support": [
+         {
+          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
+          "quote": "Symptoms of BLD appear as: (i) dark-colored, interveinal banding on the foliage; (ii) cupping, curling and distortion of the foliage; (iii) thickening of the leaves and a general \"leathery\" texture",
+          "_repaired_from": {
+           "prev_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
+           "prev_quote": "Symptoms of BLD include dark-colored, interveinal banding on the foliage, cupping, curling and distortion of the foliage, thickening of the leaves and a general 'leathery' texture."
+          }
+         },
+         {
+          "url": "https://www.michigan.gov/invasives/id-report/disease/beech-leaf-disease",
+          "quote": "Striping - bands of thickened, dark green tissue between the leaf veins.",
+          "_repaired_from": {
+           "prev_url": "https://www.michigan.gov/invasives/id-report/disease/beech-leaf-disease",
+           "prev_quote": "BLD is identifiable by foliar symptoms including thick, dark green bands between secondary veins and/or curling and crinkling of the entire leaf; bands chlorose and become yellow and/or senesce and turn brown."
+          }
+         },
+         {
+          "_unsupported_citation_removed": {
+           "prev_url": "https://www.nps.gov/articles/000/bld-mistaken-identity.htm",
+           "prev_quote": "A tan-centered, brown-margined discrete leaf spot pattern is characteristic of fungal leaf spot/anthracnose rather than the interveinal banding of beech leaf disease."
+          },
+          "citation_status": "field_observation"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    "Ohio": {
+     "state": "Ohio",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The lesions appear to follow the vein pattern, suggesting they are angular.",
+       "image_quote": "The lesions are bordered by the leaf veins.",
+       "image_id": "bugwood::5619698",
+       "verification_status": "verified",
+       "reasoning": "Vein-bordered, angular interveinal lesions match BLD's diagnostic banding confined between lateral veins.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
+         "quote": "Symptoms of BLD appear as: (i) dark-colored, interveinal banding on the foliage",
+         "_repaired_from": {
+          "prev_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
+          "prev_quote": "Symptoms of the disease include dark striping or banding between the leaf veins which is noticeable from below."
+         }
+        },
+        {
+         "url": "https://en.wikipedia.org/wiki/Beech_leaf_disease",
+         "quote": "The symptoms of the disease appear as a dark green, interveinal banding pattern on the lower canopy foliage, eventually spreading throughout the tree.",
+         "_repaired_from": {
+          "prev_url": "https://en.wikipedia.org/wiki/Beech_leaf_disease",
+          "prev_quote": "Early symptoms include dark stripes or bands between lateral veins of leaves."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The lesion center is a darker green compared to the margin.",
+       "image_quote": "The central areas of the lesions appear more vividly green than the edges.",
+       "image_id": "bugwood::5619698",
+       "verification_status": "verified",
+       "reasoning": "Darker-green interveinal centers are the defining dark-green banding signature of BLD.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.michigan.gov/invasives/id-report/disease/beech-leaf-disease",
+         "quote": "Striping - bands of thickened, dark green tissue between the leaf veins.",
+         "_repaired_from": {
+          "prev_url": "https://www.michigan.gov/invasives/id-report/disease/beech-leaf-disease",
+          "prev_quote": "BLD is easily recognized by its distinctive dark green interveinal banding pattern on symptomatic leaves."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The lesion texture appears to be raised.",
+       "image_quote": "The lesions on the leaves have raised edges.",
+       "image_id": "bugwood::5619698",
+       "verification_status": "field_observation",
+       "reasoning": "Raised/thickened banded tissue is documented as the leathery, puckered thickening characteristic of BLD.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "verified"
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "Discrete spots of necrotic tissue.",
+       "image_quote": "The leaf has yellowish-green streaks and patches that appear to be necrotic.",
+       "image_id": "bugwood::5619698",
+       "verification_status": "weakly_supported",
+       "reasoning": "Necrotic leaf tissue is a documented advanced BLD symptom, though discrete spotting is less specific than banding.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
+         "quote": "(ii) cupping, curling and distortion of the foliage; (iii) thickening of the leaves and a general \"leathery\" texture; (iv) premature leaf shedding; and (v) death of the buds and subsequent branch dieback resulting in death of the tree.",
+         "_repaired_from": {
+          "prev_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/beech-leaf-disease",
+          "prev_quote": "advanced symptoms including leaf curling and dead and dying leaf tissue"
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "affected_organs",
+       "canonical_says": "(not specified)",
+       "image_shows": "leaves are curled up",
+       "image_quote": "Leaves are tightly curled upwards.",
+       "image_id": "bugwood::5619698",
+       "verification_status": "verified",
+       "reasoning": "Leaf curling/cupping is an established BLD foliar symptom.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.psu.edu/beech-leaf-disease",
+         "quote": "Under high levels of infection, leaf symptoms become more pronounced; leaves become leathery and crinkled.",
+         "_repaired_from": {
+          "prev_url": "https://extension.psu.edu/beech-leaf-disease",
+          "prev_quote": "leaf distortion, such as curling, puckering, thickening"
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "affected_organs",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaves show curling up towards the leaf margins.",
+       "image_quote": "Leaves appear to curl up towards the leaf margins.",
+       "image_id": "bugwood::5619698",
+       "verification_status": "verified",
+       "reasoning": "Marginal curling/cupping is consistent with documented BLD leaf distortion.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.psu.edu/beech-leaf-disease",
+         "quote": "Under high levels of infection, leaf symptoms become more pronounced; leaves become leathery and crinkled.",
+         "_repaired_from": {
+          "prev_url": "https://extension.psu.edu/beech-leaf-disease",
+          "prev_quote": "leaf distortion, such as curling, puckering, thickening"
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The affected leaf has a mix of green and yellow hues.",
+       "image_quote": "The leaves exhibit both vibrant green and faded yellow colors.",
+       "image_id": "bugwood::5619698",
+       "verification_status": "weakly_supported",
+       "reasoning": "A mixed green-and-yellow palette is consistent with dark-green banding plus later chlorotic progression, though non-specific.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.michigan.gov/invasives/id-report/disease/beech-leaf-disease",
+         "quote": "Striping - bands of thickened, dark green tissue between the leaf veins.",
+         "_repaired_from": {
+          "prev_url": "https://www.michigan.gov/invasives/id-report/disease/beech-leaf-disease",
+          "prev_quote": "BLD is easily recognized by its distinctive dark green interveinal banding pattern on symptomatic leaves."
+         }
+        },
+        {
+         "url": "https://en.wikipedia.org/wiki/Beech_leaf_disease",
+         "quote": "Symptoms progress from leaf banding to ... premature leaf shedding"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The affected tissue has distinct areas of varying green shades.",
+       "image_quote": "The leaf lesions have a darker green center compared to the lighter green margin.",
+       "image_id": "bugwood::5619698",
+       "verification_status": "verified",
+       "reasoning": "Alternating darker- and lighter-green banded tissue is the core visual signature of BLD.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.michigan.gov/invasives/id-report/disease/beech-leaf-disease",
+         "quote": "Striping - bands of thickened, dark green tissue between the leaf veins.",
+         "_repaired_from": {
+          "prev_url": "https://www.michigan.gov/invasives/id-report/disease/beech-leaf-disease",
+          "prev_quote": "BLD is easily recognized by its distinctive dark green interveinal banding pattern on symptomatic leaves."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "The image does not show necrotic brown, black, or bleached tissue.",
+       "image_quote": "No visible signs of dead tissue in brown, black, or bleached color.",
+       "image_id": "bugwood::5619698",
+       "verification_status": "weakly_supported",
+       "reasoning": "Early-stage BLD is characterized by dark green interveinal banding rather than necrosis, so the absence of necrotic tissue is consistent with a documented early symptomatic leaf.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://njaes.rutgers.edu/E376/",
+         "quote": "The infected banding can become thickened, hardened, and sometimes discolored or yellowed.",
+         "_repaired_from": {
+          "prev_url": "https://njaes.rutgers.edu/E376/",
+          "prev_quote": "The first signs of beech leaf disease are striping or banding (darkening) between leaf veins... The darkened area is slightly raised and is thicker than the rest of the leaf tissue."
+         }
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5619698",
+      "bugwood::5619699",
+      "bugwood::5619700",
+      "bugwood::5619701",
+      "bugwood::5619702",
+      "bugwood::5619703",
+      "bugwood::5619705",
+      "bugwood::5619706",
+      "bugwood::5619707",
+      "bugwood::5619708",
+      "bugwood::5619709",
+      "bugwood::5620041"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       17
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 17,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 8,
+       "n_provisional": 2,
+       "n_contradictory": 7,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 10,
+       "n_added": 10,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 0,
+      "contradictory_count": 1,
+      "duplicates_count": 0,
+      "dropped_contradictory": [
+       {
+        "field": "diagnostic_features",
+        "canonical_says": "(not specified)",
+        "image_shows": "Veins are clear and translucent.",
+        "image_quote": "The leaf shows distinct vein clearing, with veins appearing translucent.",
+        "image_id": "bugwood::5619698",
+        "verification_status": "contradictory",
+        "reasoning": "Published factsheets describe the BLD diagnostic feature as dark, opaque interveinal banding (bands opaque against translucent tissue), not translucent/cleared veins, so the vein-clearing description contradicts the documented appearance.",
+        "swarm_support": 1,
+        "web_support": [
+         {
+          "url": "https://njaes.rutgers.edu/E376/",
+          "quote": "When held up against a light source like the sky, the infected 'bands' between the parallel veins appear opaque against the translucent unaffected tissue."
+         },
+         {
+          "url": "https://www.davey.com/insect-disease-resource-center/beech-leaf-disease/",
+          "quote": "The first signs are striping or banding (darkening) between leaf veins, giving foliage a distinctive appearance."
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  }
+ ],
+ "crop": "American Beech",
+ "generated_date": "2026-06-10",
+ "regional_observations_count": 5
 }

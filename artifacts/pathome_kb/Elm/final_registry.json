@@ -1,1447 +1,1452 @@
 {
-  "diseases": [
-    {
-      "disease_name": "Bacterial Leaf Scorch",
-      "pathogen_scientific_name": {
-        "value": "Xylella fastidiosa",
-        "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
-        "quote": "The organism, Xylella fastidiosa, is a small gram negative bacterium with no flagella.",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Bacterial",
-        "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
-        "quote": "The pathogen is a bacterium that grows inside the plant's vascular tissue where it blocks water movement from the roots."
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Vascular"
-        ],
-        "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
-        "quote": "grows inside the plant's vascular tissue where it blocks water movement from the roots. ... Symptoms typically appear in mid to late summer on lower branches as irregular marginal browning on interior leaves."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Symptoms appear in mid to late summer on lower branches as irregular marginal browning on interior leaves, progressing along the branch toward the tip; scorched areas may have a yellow halo, with reduced growth and dieback in severely infected plants.",
-          "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
-          "quote": "Symptoms typically appear in mid to late summer on lower branches as irregular marginal browning on interior leaves. Symptoms progress along the branch towards the tip."
-        },
-        "diagnostic_features": {
-          "value": "BLS symptoms first appear on the lower branches and on the older interior leaves, and scorched areas may have a yellow halo around them depending on the tree species; this distinguishes it from drought scorch, which is more uniform and first appears near the upper branches and on younger leaves near the tips.",
-          "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
-          "quote": "BLS symptoms first appear on the lower branches and on the older interior leaves. Drought scorch symptoms will be more uniform and will first appear near the upper branches and on the younger leaves near the tips of the branches."
-        },
-        "look_alikes": {
-          "value": [
-            "drought",
-            "environmental stress",
-            "root diseases",
-            "drought scorch"
-          ],
-          "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
-          "quote": "These symptoms are sometimes mistaken for drought, environmental stress, or root diseases. Bacterial scorch symptoms differ from drought scorch symptoms."
-        }
-      },
-      "treatments": {
-        "value": [
-          "There are no treatments for bacterial leaf scorch.",
-          "Infected trees may continue to persist in the landscape if symptomatic branches and dead wood is pruned out promptly.",
-          "Antibiotic trunk injections, administered by a licensed arborist, have shown promise but they only relieve symptoms and don't provide a cure."
-        ],
-        "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
-        "quote": "There are no treatments for bacterial leaf scorch. However, infected trees may continue to persist in the landscape if symptomatic branches and dead wood is pruned out promptly. Antibiotic trunk injections, administered by a licensed arborist, have shown promise but they only relieve symptoms and don't provide a cure."
-      },
-      "confidence": "low",
-      "num_sources": 1,
-      "conflicts": [],
-      "regional_observations": {
-        "New York": {
-          "state": "New York",
-          "deltas": [],
-          "__image_ids__": [
-            "bugwood::5457955",
-            "bugwood::5458668",
-            "bugwood::5458669"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 0,
-              "n_provisional": 0,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 0,
-              "n_added": 0,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        },
-        "Oklahoma": {
-          "state": "Oklahoma",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "scorched areas may have a yellow halo",
-              "image_shows": "Lesion centers are tan with chocolate-brown margins bordered by chlorotic yellow halos.",
-              "image_quote": "The lesion centers are tan, with chocolate-brown margins and chlorotic yellow halos.",
-              "image_id": "bugwood::5511735",
-              "verification_status": "verified",
-              "reasoning": "Extension and APS sources corroborate tan/brown marginal necrosis with a reddish-brown band and distinct yellow (chlorotic) halo.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://web.extension.illinois.edu/hortanswers/detailProblem.cfm?PathogenID=84",
-                  "quote": "light brown dead tissue along the leaf margin frequently bordered by narrow to wide zones of dark reddish brown tissue, and the dead tissue separated from green tissue by a narrow but distinct yellow border"
-                },
-                {
-                  "url": "https://www.apsnet.org/edcenter/apsnetfeatures/Pages/BacterialLeafScorch.aspx",
-                  "quote": "necrotic with a narrow band of chlorotic or reddish brown tissue separating the necrotic and healthy tissues"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "scorched areas may have a yellow halo",
-              "image_shows": "Chlorosis is present along the leaf margins.",
-              "image_quote": "There is marginal chlorosis present.",
-              "image_id": "bugwood::5511735",
-              "verification_status": "verified",
-              "reasoning": "Marginal chlorosis (chlorotic halo bordering the scorch) is a documented hallmark of elm BLS.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
-                  "quote": "there is often an area of yellow leaf tissue between the scorched leaf edge and the healthy green leaf tissue"
-                },
-                {
-                  "url": "https://plantclinic.tamu.edu/calendar2019/oleanderxylella/bacterial-leaf-scorch-on-elms/",
-                  "quote": "elms develop a distinct undulating marginal necrosis bordered by a chlorotic halo"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "irregular marginal browning on interior leaves, progressing along the branch toward the tip",
-              "image_shows": "Brown necrotic tissue runs along the leaf margins and progresses inward toward the veins.",
-              "image_quote": "Leaf necrosis is seen along the margins, progressing inward from the leaf tip.",
-              "image_id": "bugwood::5511735",
-              "verification_status": "verified",
-              "reasoning": "APS confirms marginal necrosis that advances inward toward the midvein, matching the observation.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.apsnet.org/edcenter/apsnetfeatures/Pages/BacterialLeafScorch.aspx",
-                  "quote": "Necrosis progresses from the leaf tips and margins toward the midvein and petiole"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "Affected leaves curl downward, particularly at the edges.",
-              "image_quote": "The leaves appear to be curled downward, particularly at the edges.",
-              "image_id": "bugwood::5511735",
-              "verification_status": "weakly_supported",
-              "reasoning": "Leaf curling is reported as an associated symptom, giving partial support though not specific to downward edge curl.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
-                  "quote": "affected leaves may curl and drop prematurely"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "scorched areas may have a yellow halo",
-              "image_shows": "Affected foliage shows a mix of green, tan, and yellow hues.",
-              "image_quote": "The leaves have varying shades of green, with some leaves showing tan and yellow discoloration.",
-              "image_id": "bugwood::5511735",
-              "verification_status": "weakly_supported",
-              "reasoning": "A green/tan/yellow palette is consistent with green healthy tissue, tan-brown scorch, and the yellow chlorotic border described for BLS.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://web.extension.illinois.edu/hortanswers/detailProblem.cfm?PathogenID=84",
-                  "quote": "light brown dead tissue along the leaf margin ... separated from green tissue by a narrow but distinct yellow border"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "reduced growth and dieback in severely infected plants",
-              "image_shows": "Extensive leaf damage is evident across the foliage.",
-              "image_quote": "The photo shows a tree with significant leaf damage, indicating bacterial leaf scorch.",
-              "image_id": "bugwood::5511735",
-              "verification_status": "weakly_supported",
-              "reasoning": "Severe, progressive leaf damage is documented for elm BLS, giving partial support to a visible-severity observation.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.apsnet.org/edcenter/apsnetfeatures/Pages/BacterialLeafScorch.aspx",
-                  "quote": "As the disease progresses over several years, branches die and the tree declines"
-                },
-                {
-                  "url": "https://extension.psu.edu/bacterial-leaf-scorch",
-                  "quote": "Leaf symptoms develop in midsummer and progress in severity toward fall"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "Leaf veins appear translucent and paler than the surrounding blade.",
-              "image_quote": "Veins are translucent, paler than the blade.",
-              "image_id": "bugwood::5511735",
-              "verification_status": "field_observation",
-              "reasoning": "Published extension descriptions of elm BLS document marginal browning progressing toward the veins with chlorotic yellow halos but do not mention translucent or paler veins; the observation is not corroborated yet not directly contradicted, so it remains provisional.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5511735",
-            "bugwood::5511736",
-            "bugwood::5511755",
-            "bugwood::5511756",
-            "bugwood::5511757",
-            "bugwood::5511758",
-            "bugwood::5511759"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 6,
-              "n_provisional": 1,
-              "n_contradictory": 3,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 7,
-              "n_added": 7,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 1,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+ "diseases": [
+  {
+   "disease_name": "Bacterial Leaf Scorch",
+   "pathogen_scientific_name": {
+    "value": "Xylella fastidiosa",
+    "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
+    "quote": "The organism, Xylella fastidiosa, is a small gram negative bacterium with no flagella.",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Bacterial",
+    "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
+    "quote": "The pathogen is a bacterium that grows inside the plant's vascular tissue where it blocks water movement from the roots."
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Vascular"
+    ],
+    "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
+    "quote": "grows inside the plant's vascular tissue where it blocks water movement from the roots. ... Symptoms typically appear in mid to late summer on lower branches as irregular marginal browning on interior leaves."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Symptoms appear in mid to late summer on lower branches as irregular marginal browning on interior leaves, progressing along the branch toward the tip; scorched areas may have a yellow halo, with reduced growth and dieback in severely infected plants.",
+     "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
+     "quote": "Symptoms typically appear in mid to late summer on lower branches as irregular marginal browning on interior leaves. Symptoms progress along the branch towards the tip."
     },
-    {
-      "disease_name": "Black Spot Of Elm",
-      "pathogen_scientific_name": {
-        "value": "Stegophora ulmea",
-        "url": "https://purduelandscapereport.org/article/7528/",
-        "quote": "is caused by the fungus Stegophora ulmea",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
-        "quote": "A fungal disease called Elm Black Spot is an important foliar disease in North American elms"
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem"
-        ],
-        "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
-        "quote": "an important foliar disease in North American elms (Ulmus spp.) ... Besides infecting the leaves, this fungus can infect and girdle petioles and shoots."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Symptoms begin as small whitish or yellowish flecks or blotches on the upper leaf surface that enlarge with black specks inside; these specks merge into irregular black stomata 0.5 to 3.0 mm in diameter surrounded by a yellow-white band of dead tissue.",
-          "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
-          "quote": "Symptoms start as small, whitish, or yellowish flecks or blotches on the upper surface of the leaf that later enlarge with black specks developing inside. These black specks can merge to form a single, irregular-shaped stomata that is 0.5 to 3.0 mm in diameter. In general, individual stomata remain separate surrounded by a yellow-white band of dead tissue"
-        },
-        "diagnostic_features": {
-          "value": "Raised black fungal fruiting bodies (stromata) form within the leaf spots, giving the leaf a bumpy texture as if dotted with tar; black specks merge into single irregular stomata 0.5 to 3.0 mm in diameter surrounded by a yellow-white band of dead tissue, and successive seasons of twig blighting can cause witches' broom.",
-          "url": "https://purduelandscapereport.org/article/7528/",
-          "quote": "These fungal structures are raised and will give the leaf a bumpy texture. As more spots develop and coalesce, they will create white areas of dead tissue that can eventually turn brown."
-        },
-        "look_alikes": {
-          "value": [
-            "Rhytisma tar spot",
-            "Dutch elm disease (DED)"
-          ],
-          "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
-          "quote": "sometimes these stomata can grow so close together to appear to cover the entire discolored area. When this happens, the symptoms can look like Rhytisma tar spot."
-        }
-      },
-      "treatments": {
-        "value": [
-          "Remove infected leaf debris and dead shoots; rake up leaf litter and prune out infected stems to remove inoculum for the following season.",
-          "Avoid overhead irrigation and close spacing of cuttings and young trees.",
-          "Chemical control / fungicides are generally not warranted for large, mature trees in landscapes since full foliage coverage is impractical and damage is not usually severe.",
-          "For small nursery trees, preventive fungicide applications (e.g. mancozeb, copper, or chlorothalonil) may be made starting at budbreak in spring and continued at regular intervals until leaves are fully developed, especially where overhead irrigation is used."
-        ],
-        "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
-        "quote": "Management of this disease includes removing infected leaf debris and dead shoots. Avoid overhead irrigation and close spacing of cuttings and young trees. Chemical control of this disease is generally not warranted for large trees. For small nursery trees, preventive fungicide applications of chemicals such as mancozeb, copper, or chemicals with the active ingredient chlorothalonil may be made starting at budbreak in the spring and continuing at regular intervals until leaves are fully developed."
-      },
-      "confidence": "high",
-      "num_sources": 2,
-      "conflicts": [
-        {
-          "field": "disease_name",
-          "canonical_value": "Elm Black Spot",
-          "alternative_value": "Black Spot of Elm (also called elm anthracnose)",
-          "alternative_source_url": "https://purduelandscapereport.org/article/7528/",
-          "note": "Purdue uses 'Black Spot of Elm' and notes the synonym 'elm anthracnose'; Arkansas uses 'Elm Black Spot'. Same disease and pathogen."
-        },
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Stegophora ulmea",
-          "alternative_value": "Stegophora (syn. Gnomonia) ulmea",
-          "alternative_source_url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
-          "note": "Arkansas lists Gnomonia ulmea as a synonym of Stegophora ulmea."
-        }
-      ],
-      "regional_observations": {
-        "Kentucky": {
-          "state": "Kentucky",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "these specks merge into irregular black stomata 0.5 to 3.0 mm in diameter surrounded by a yellow-white band of dead tissue",
-              "image_shows": "Irregular distribution across the leaf surface without a specific vein constraint.",
-              "image_quote": "The lesions appear irregular.",
-              "image_id": "bugwood::5368937",
-              "verification_status": "weakly_supported",
-              "reasoning": "Sources confirm the lesions form large irregularly shaped blotches rather than a vein-delimited pattern, supporting the irregular distribution.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://purduelandscapereport.org/article/7528/",
-                  "quote": "When numerous leaf spots are present, they can coalesce to form large, irregularly shaped, foliar blotches that are surrounded by a yellow to white border of necrotic tissue."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "small whitish or yellowish flecks or blotches ... enlarge with black specks inside ... surrounded by a yellow-white band of dead tissue",
-              "image_shows": "Dark brown centers and black margins surrounded by a chlorotic yellow halo.",
-              "image_quote": "The lesion center is dark brown and the margin is black with a chlorotic yellow halo.",
-              "image_id": "bugwood::5368937",
-              "verification_status": "weakly_supported",
-              "reasoning": "Tan/brown lesion centers with a yellow-white border are documented; the darkened center and yellow halo align with reported symptoms.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
-                  "quote": "Tan to brown irregularly shaped spots or blotches appear on young leaves ... surrounded by a yellow to white border of necrotic tissue."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "surrounded by a yellow-white band of dead tissue",
-              "image_shows": "Chlorosis around the edges and scattered across the surface.",
-              "image_quote": "The leaf shows chlorosis around the edges and scattered across the surface.",
-              "image_id": "bugwood::5368937",
-              "verification_status": "weakly_supported",
-              "reasoning": "Chlorotic spotting on the upper leaf surface is documented, giving partial support to scattered chlorosis though generalized marginal chlorosis is not specifically described.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
-                  "quote": "spores that will infect newly unfolding leaves leading to chlorotic leaf spots or blotches on the upper leaf surface."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "irregular black stomata 0.5 to 3.0 mm in diameter surrounded by a yellow-white band of dead tissue",
-              "image_shows": "Numerous dark brown spots, some of which appear to be necrotic, spreading across the leaf surface.",
-              "image_quote": "The leaf has numerous dark brown spots, some of which appear to be necrotic, spreading across the leaf surface.",
-              "image_id": "bugwood::5368937",
-              "verification_status": "verified",
-              "reasoning": "Numerous dark/brown necrotic spots coalescing and spreading across the leaf are directly corroborated by multiple extension sources.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://purduelandscapereport.org/article/7528/",
-                  "quote": "they can coalesce to form large, irregularly shaped, foliar blotches that are surrounded by a yellow to white border of necrotic tissue."
-                },
-                {
-                  "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
-                  "quote": "Tan to brown irregularly shaped spots or blotches appear on young leaves."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shows curling up towards the leaflet edge.",
-              "image_quote": "The leaf appears to have a curled-up appearance.",
-              "image_id": "bugwood::5368937",
-              "verification_status": "verified",
-              "reasoning": "Leaf curling/cupping is an explicitly documented symptom of Stegophora ulmea infection, so the curled appearance is verified.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
-                  "quote": "infected leaves are often distorted, cupped or curled."
-                },
-                {
-                  "url": "https://texasforestinfo.tamu.edu/TreeMD/Search/SearchByNameDetailedPestInfo?PestScientificName=Stegophora+ulmea",
-                  "quote": "Most anthracnose fungi ... sometimes cause leaf distortion and premature defoliation."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "spread_pattern",
-              "canonical_says": "black specks merge into single irregular stomata ... surrounded by a yellow-white band of dead tissue",
-              "image_shows": "Lesions appear to cross the veins.",
-              "image_quote": "The lesions are irregular and spread across the leaf surface.",
-              "image_id": "bugwood::5368937",
-              "verification_status": "weakly_supported",
-              "reasoning": "Coalescing irregular blotches that are not vein-delimited are consistent with lesions extending across veins, giving indirect support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://purduelandscapereport.org/article/7528/",
-                  "quote": "they can coalesce to form large, irregularly shaped, foliar blotches."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "Rhytisma tar spot; Dutch elm disease (DED)",
-              "image_shows": "No concentric patterns are visible in the lesions.",
-              "image_quote": "The lesions are irregular and raised, with a raised texture.",
-              "image_id": "bugwood::5368937",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension/reference sources describe the spots as raised, tarlike, irregular black masses with no mention of concentric zonation, indirectly supporting the observed absence of concentric patterns.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://en.wikipedia.org/wiki/Stegophora_ulmea",
-                  "quote": "Usually several acervuli and stromata develop very close together and may coalesce to irregular black masses up to 5 mm wide, surrounded by a narrow band of whitish dead tissue."
-                },
-                {
-                  "url": "https://wiki.bugwood.org/HPIPM:Stegophora_ulmea",
-                  "quote": "Black fungal fruiting bodies will develop within the affected tissue, making it seem like the leaves have been dotted with tar. These fungal structures are raised and will give the leaf a bumpy texture."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shape appears to be spade-like with a broad base tapering to a pointed tip.",
-              "image_quote": "The leaf has a broad base tapering to a pointed tip.",
-              "image_id": "bugwood::5368937",
-              "verification_status": "field_observation",
-              "reasoning": "This describes host leaf outline/shape rather than any disease symptom, so extension photo descriptions of black spot lesions neither corroborate nor contradict it; plausible for elm foliage but unsupported as a disease feature.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5368937",
-            "bugwood::5368938",
-            "bugwood::5368939",
-            "bugwood::5368940"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              9
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 9,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 6,
-              "n_provisional": 2,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 8,
-              "n_added": 8,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 1,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "these specks merge into irregular black stomata 0.5 to 3.0 mm in diameter surrounded by a yellow-white band of dead tissue",
-              "image_shows": "Lesions are irregular in shape and some cross the leaf veins.",
-              "image_quote": "The lesions appear raised and irregularly shaped, some crossing leaf veins.",
-              "image_id": "bugwood::5528783",
-              "verification_status": "verified",
-              "reasoning": "External sources confirm black-spot lesions coalesce into irregular masses and are associated with (cross) leaf veins.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://wiki.bugwood.org/HPIPM:Stegophora_ulmea",
-                  "quote": "several acervuli and stromata develop very close together and may coalesce to irregular black masses up to 5 mm wide, surrounded by a narrow band of whitish dead tissue"
-                },
-                {
-                  "url": "https://texasforestinfo.tamu.edu/TreeMD/Search/SearchByNameDetailedPestInfo?PestScientificName=Stegophora+ulmea",
-                  "quote": "Most anthracnose fungi cause blotchy, necrotic spots on leaves associated with veins"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "small whitish or yellowish flecks ... enlarge with black specks inside ... surrounded by a yellow-white band of dead tissue",
-              "image_shows": "Lesions show a dark brown-to-black center with a cream/light-brown margin and a pale yellow halo.",
-              "image_quote": "The lesions display a dark brownish-black color in the center with a pale straw to beige margin.",
-              "image_id": "bugwood::5528783",
-              "verification_status": "weakly_supported",
-              "reasoning": "The dark center plus pale margin and yellow halo matches the black lesion with yellow-white necrotic border, though 'dark brown' vs the canonical black is only a partial match.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://purduelandscapereport.org/article/7528/",
-                  "quote": "over time, the spots become black and raised on the surface"
-                },
-                {
-                  "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/black-spot-of-elm.html",
-                  "quote": "they can coalesce to form large, irregularly shaped, foliar blotches that are surrounded by a yellow to white border of necrotic tissue"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf is curling upward toward the veins.",
-              "image_quote": "The leaf shows curling up towards the leaf veins.",
-              "image_id": "bugwood::5528783",
-              "verification_status": "weakly_supported",
-              "reasoning": "Leaf curling/distortion is documented as an occasional symptom of elm anthracnose (Stegophora), though canonical KB does not mention it.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://texasforestinfo.tamu.edu/TreeMD/Search/SearchByNameDetailedPestInfo?PestScientificName=Stegophora+ulmea",
-                  "quote": "Most anthracnose fungi cause blotchy, necrotic spots on leaves associated with veins and sometimes cause leaf distortion and premature defoliation"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "affected_organs",
-              "canonical_says": "affected_parts: Foliar; Stem",
-              "image_shows": "Leaf veins show necrosis with darkened, dead tissue.",
-              "image_quote": "The leaf veins show signs of necrosis with darkened and dead tissue.",
-              "image_id": "bugwood::5528783",
-              "verification_status": "weakly_supported",
-              "reasoning": "Vein-associated necrosis and petiole/vein infection are documented for Stegophora, supporting the observed vein necrosis.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://texasforestinfo.tamu.edu/TreeMD/Search/SearchByNameDetailedPestInfo?PestScientificName=Stegophora+ulmea",
-                  "quote": "Most anthracnose fungi cause blotchy, necrotic spots on leaves associated with veins"
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/elm-anthracnose",
-                  "quote": "Stegophora can also infect leaf petioles and twigs"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "black specks merge into single irregular stomata 0.5 to 3.0 mm in diameter surrounded by a yellow-white band of dead tissue",
-              "image_shows": "Numerous raised black structures cover more than half of the leaf surface.",
-              "image_quote": "The photo shows a large number of raised black structures covering more than half of the leaf.",
-              "image_id": "bugwood::5528783",
-              "verification_status": "weakly_supported",
-              "reasoning": "Heavy, extensive coverage of coalescing black spots is documented as a severe-infection pattern for this disease.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/black-spot-of-elm.html",
-                  "quote": "When numerous leaf spots are present, they can coalesce to form large, irregularly shaped, foliar blotches"
-                },
-                {
-                  "url": "https://wiki.bugwood.org/HPIPM:Stegophora_ulmea",
-                  "quote": "Heavy spotting causes leaf yellowing and early defoliation in wet seasons"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "small whitish or yellowish flecks ... black specks inside ... surrounded by a yellow-white band of dead tissue",
-              "image_shows": "Affected tissue is roughly 60% dark brown, 30% black, and 10% tan substrate.",
-              "image_quote": "The affected tissue has a mix of dark brown and black lesions with a tan substrate.",
-              "image_id": "bugwood::5528783",
-              "verification_status": "weakly_supported",
-              "reasoning": "Published sources confirm black (and dark, coalescing) lesions surrounded by a pale whitish band of dead tissue, giving partial support to the dark-brown/black/tan color breakdown though the exact proportions are not documented.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/black-spot-of-elm.html",
-                  "quote": "Over time, the spots become black and raised on the surface ... surrounded by a yellow to white border of necrotic tissue."
-                },
-                {
-                  "url": "https://wiki.bugwood.org/HPIPM:Stegophora_ulmea",
-                  "quote": "may coalesce to irregular black masses ... surrounded by a narrow band of whitish dead tissue."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf is elongated with a length-to-width ratio greater than 1.",
-              "image_quote": "The leaf has an elongated shape with a noticeable length-to-width ratio.",
-              "image_id": "bugwood::5528783",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension and identification sources confirm elm leaves are ovate/oblong-elliptic and notably elongated (length-to-width ratio roughly 1.5:1 to <2:1, i.e. >1), so the observed elongated leaf shape is corroborated, though it reflects general elm leaf morphology rather than a disease-specific symptom.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://plants.ces.ncsu.edu/plants/ulmus-americana/",
-                  "quote": "The American elm has rough-textured, ovate-elliptic, dark green leaves (4 to 6 inches long) with toothed margins, asymmetrical bases, and a long, slightly curved point."
-                },
-                {
-                  "url": "https://leafyplace.com/elm-tree-types-bark-leaves/",
-                  "quote": "Each leaf has an oblong shape and a serrated margin that tapers to a sharp point at the apex; a genuine ovate leaf will have a length-to-width ratio that ranges from 1.5:1 to less than 2:1, and species with ovate leaves include elm trees."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5528783",
-            "bugwood::5528784",
-            "bugwood::5528785",
-            "bugwood::5528786",
-            "bugwood::5528787",
-            "bugwood::5528788"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              10
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 10,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 5,
-              "n_provisional": 2,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 7,
-              "n_added": 7,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "Virginia": {
-          "state": "Virginia",
-          "deltas": [
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Raised black fungal fruiting bodies (stromata) form within the leaf spots, giving the leaf a bumpy texture as if dotted with tar.",
-              "image_shows": "Lesions have a raised surface texture in the Virginia specimen.",
-              "image_quote": "The leaf lesion appears raised.",
-              "image_id": "bugwood::5411357",
-              "verification_status": "verified",
-              "reasoning": "Multiple extension sources confirm black spot lesions become raised/bumpy as stromata develop, directly corroborating the raised texture.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/black-spot-of-elm.html",
-                  "quote": "over time, the spots become black and raised on the surface."
-                },
-                {
-                  "url": "https://purduelandscapereport.org/article/7528/",
-                  "quote": "Black fungal fruiting bodies will develop within the affected tissue... these fungal structures are raised and will give the leaf a bumpy texture."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "black specks merge into single irregular stomata... surrounded by a yellow-white band of dead tissue.",
-              "image_shows": "Brownish-black patches of necrotic/fungal tissue are visible on the leaf.",
-              "image_quote": "There are dark brownish-black patches on the leaf, indicating fungal growth.",
-              "image_id": "bugwood::5411357",
-              "verification_status": "verified",
-              "reasoning": "Brownish-black necrotic patches match the described coalescing black stromatal masses of Stegophora ulmea.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://wiki.bugwood.org/HPIPM:Stegophora_ulmea",
-                  "quote": "several acervuli and stromata develop very close together and may coalesce to irregular black masses up to 5 mm wide, surrounded by a narrow band of whitish dead tissue."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "small whitish or yellowish flecks... enlarge with black specks inside... surrounded by a yellow-white band of dead tissue.",
-              "image_shows": "Lesions have dark brown centers and margins with a yellow-green halo.",
-              "image_quote": "The lesion center appears dark brown. The lesion margin is dark brown. There is a yellow halo around the lesion.",
-              "image_id": "bugwood::5411357",
-              "verification_status": "weakly_supported",
-              "reasoning": "The yellow halo is strongly documented and dark-brown darkening spots are consistent with the intermediate stage before full blackening, giving partial support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://portal.ct.gov/CAES/Plant-Pest-Handbook/pphE/Elm-Ulmus",
-                  "quote": "Small, yellow spots first appear on upper leaf surfaces early in the season, gradually darken and finally appear as raised, black spots with yellow haloes."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "surrounded by a yellow-white band of dead tissue.",
-              "image_shows": "Marginal chlorosis / yellowing accompanies the lesions.",
-              "image_quote": "The leaf shows signs of chlorosis with dark brown spots and a yellow-green halo around the margins.",
-              "image_id": "bugwood::5411357",
-              "verification_status": "weakly_supported",
-              "reasoning": "Chlorosis/yellowing around lesions and leaf margins is consistent with the documented yellow necrotic borders and heavy-spotting leaf yellowing.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/black-spot-of-elm.html",
-                  "quote": "large, irregularly shaped, foliar blotches that are surrounded by a yellow to white border of necrotic tissue."
-                },
-                {
-                  "url": "https://portal.ct.gov/CAES/Plant-Pest-Handbook/pphE/Elm-Ulmus",
-                  "quote": "Heavy spotting causes leaf yellowing and early defoliation in wet seasons."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "Leaf apex is curled upward on the infected leaf.",
-              "image_quote": "The leaf apex is curled up, indicating a possible response to stress.",
-              "image_id": "bugwood::5411357",
-              "verification_status": "weakly_supported",
-              "reasoning": "Leaf distortion/curling is a documented secondary effect of numerous coalescing black-spot lesions, giving indirect support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://portal.ct.gov/CAES/Plant-Pest-Handbook/pphE/Elm-Ulmus",
-                  "quote": "When the spots are numerous, they coalesce and cause some distortion of the leaf."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "Affected tissue displays a green, brown, and black color palette.",
-              "image_quote": "The affected tissue has green, brown, and black colors.",
-              "image_id": "bugwood::5411357",
-              "verification_status": "weakly_supported",
-              "reasoning": "The green (healthy tissue), brown (necrosis), and black (stromata) palette is consistent with documented lesion progression.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/black-spot-of-elm.html",
-                  "quote": "small, circular, yellow-colored leaf spots... over time, the spots become black and raised on the surface."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "Rhytisma tar spot; Dutch elm disease (DED)",
-              "image_shows": "Brown-centered lesions with a yellow-green halo are consistent with black spot of elm rather than a look-alike.",
-              "image_quote": "The lesion center is brown, the margin is dark brown, and there is a yellow-green halo around the margin.",
-              "image_id": "bugwood::5411357",
-              "verification_status": "weakly_supported",
-              "reasoning": "The observed dark spots with yellow halo match black spot of elm's documented appearance, supporting the disease identification over look-alikes.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://portal.ct.gov/CAES/Plant-Pest-Handbook/pphE/Elm-Ulmus",
-                  "quote": "gradually darken and finally appear as raised, black spots with yellow haloes."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "Lesions cover more than half of the visible leaf area.",
-              "image_quote": "The leaf has dark brown lesions with a yellow-green halo, covering more than half of the visible leaf area.",
-              "image_id": "bugwood::5411357",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extensive coverage of over half the leaf is consistent with documented severe infections where lesions coalesce into large blotches.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/black-spot-of-elm.html",
-                  "quote": "When numerous leaf spots are present, they can coalesce to form large, irregularly shaped, foliar blotches."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "Leaf veins appear normal with no clearing or necrosis.",
-              "image_quote": "The leaf veins appear normal without any signs of clearing or necrosis.",
-              "image_id": "bugwood::5411357",
-              "verification_status": "field_observation",
-              "reasoning": "Extension factsheets describe black spot of elm as discrete leaf spots/stromata with no vein clearing or vein necrosis reported, so a normal-vein observation is coherent and uncontradicted but has no direct published corroboration.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected leaf has a lanceolate shape with a pointed tip.",
-              "image_quote": "The leaf exhibits a lanceolate shape with a pointed tip.",
-              "image_id": "bugwood::5411357",
-              "verification_status": "field_observation",
-              "reasoning": "This describes host-leaf shape rather than a disease symptom; elm leaves commonly have a pointed (acuminate) tip but no black-spot factsheet corroborates a specific lanceolate leaf form, so it is plausible and uncontradicted but unsupported.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5411357",
-            "bugwood::5411358"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              12
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 12,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 8,
-              "n_provisional": 2,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 10,
-              "n_added": 10,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 2,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+    "diagnostic_features": {
+     "value": "BLS symptoms first appear on the lower branches and on the older interior leaves, and scorched areas may have a yellow halo around them depending on the tree species; this distinguishes it from drought scorch, which is more uniform and first appears near the upper branches and on younger leaves near the tips.",
+     "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
+     "quote": "BLS symptoms first appear on the lower branches and on the older interior leaves. Drought scorch symptoms will be more uniform and will first appear near the upper branches and on the younger leaves near the tips of the branches."
     },
-    {
-      "disease_name": "Dutch Elm Disease",
-      "pathogen_scientific_name": {
-        "value": "Ophiostoma ulmi and Ophiostoma novo-ulmi",
-        "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
-        "quote": "Dutch elm disease is caused by two closely related fungi, Ophiostoma ulmi and Ophiostoma novo-ulmi.",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
-        "quote": "An invasive fungal pathogen causes the disease and occurs throughout Minnesota."
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem",
-          "Vascular",
-          "Root",
-          "Whole plant"
-        ],
-        "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
-        "quote": "Leaves on one or more branches in the outer crown of the tree turn yellow, wilt and then turn brown. ... Once in the tree's vascular system, the fungal spores are carried up the tree with the flow of water. ... the fungus can reach the root system in the first season of infection. ... Dutch elm disease (DED) causes wilt and death in all elm species native to Minnesota."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Yellow foliage appears on one or more branches in the outer crown from late spring to midsummer, soon becoming wilted and brown (\"flagging\"), with yellowing and wilting progressing down the infected branch toward the trunk; fallen leaves may be strewn over the lawn in spring or summer.",
-          "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=82",
-          "quote": "The first symptom observed in American elm is yellow foliage on one or more branches, from late spring to midsummer. The affected foliage soon becomes wilted and brown; this symptom is called \"flagging.\""
-        },
-        "diagnostic_features": {
-          "value": "Wilted and brown foliage on individual branches called \"flagging,\" with brown discoloration/streaking of the sapwood visible when the bark is removed on recently wilted branches.",
-          "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
-          "quote": "If the bark is removed, brown streaking can be seen along the sapwood of wilted branches."
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Manage by eliminating bark beetle breeding sites: promptly remove dead or dying elm wood with intact bark.",
-          "Remove DED-infected branches the same year infection starts, before the disease moves into the main stem, cutting at least 5 feet (preferably 10 feet) below the last sign of streaking in the sapwood.",
-          "Properly dispose of elm wood by burying, debarking, burning, or chipping.",
-          "Sever root grafts between infected and adjacent elms (e.g., with a vibratory plow or trenching to 3-4 feet deep) before removing the infected tree.",
-          "Take down trees with many infected branches.",
-          "Choose Dutch elm disease-resistant cultivars for new or replacement plantings.",
-          "Preventative fungicide injection treatments (e.g., thiabendazole, propiconazole) can protect highly valuable trees, but are expensive and regarded as a temporary measure.",
-          "Without community-wide sanitation, Dutch elm disease is almost impossible to control."
-        ],
-        "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
-        "quote": "Reduce the number of breeding sites available to the beetles by promptly removing dead or dying elm wood with intact bark. ... Fungicides with the active ingredients thiabendazole and propiconazole are effective against DED."
-      },
-      "confidence": "high",
-      "num_sources": 2,
-      "conflicts": [
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Ophiostoma ulmi and Ophiostoma novo-ulmi",
-          "alternative_value": "Ophiostoma ulmi [formerly Ceratocystis ulmi] and O. novo-ulmi",
-          "alternative_source_url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=82",
-          "note": "Illinois Extension notes the outdated/former name Ceratocystis ulmi for Ophiostoma ulmi. Both sources agree the disease is caused by O. ulmi and O. novo-ulmi."
-        }
-      ],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "brown discoloration/streaking of the sapwood visible when the bark is removed on recently wilted branches",
-              "image_shows": "In cross-section the light-colored pith is ringed by brown-stained outer vascular tissue, matching the classic DED pattern of discoloration confined to the outer sapwood.",
-              "image_quote": "The internal cross-section shows a white pith surrounded by brown outer vascular tissue.",
-              "image_id": "bugwood::5458855",
-              "verification_status": "verified",
-              "reasoning": "Multiple extension/APS sources confirm DED discoloration is confined to the outer sapwood ring with the pith staying light, exactly as described.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.apsnet.org/edcenter/disandpath/fungalasco/pdlessons/Pages/DutchElm.aspx",
-                  "quote": "In cross section, vascular discoloration appears as a brown ring in the outer sapwood of the wilting and dying branches, appearing as a circle of brown dots or a ring."
-                },
-                {
-                  "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
-                  "quote": "A cross-section often shows either a broken or continuous brown ring in outer growth rings."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "brown discoloration/streaking of the sapwood visible when the bark is removed on recently wilted branches",
-              "image_shows": "The stem cross-section shows dark discolored blotches in the wood, consistent with the brown dots/ring that DED produces in the outer sapwood.",
-              "image_quote": "There are dark blotches present.",
-              "image_id": "bugwood::5458855",
-              "verification_status": "weakly_supported",
-              "reasoning": "The 'dark blotches' morphology is loosely consistent with the documented brown dots/ring of DED but is described imprecisely, so support is only partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.maine.gov/dacf/mfs/forest_health/documents/Dutch_Elm_Disease_MFS_FactSheet.pdf",
-                  "quote": "Cutting across the twig should reveal a ring of dark brown staining in the outer wood; brown discoloration looks like a circle of brown dots in cross section."
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5458855",
-            "bugwood::5458856",
-            "bugwood::5458857",
-            "bugwood::5458858",
-            "bugwood::5458859",
-            "bugwood::5458860",
-            "bugwood::5458861",
-            "bugwood::5458862",
-            "bugwood::5458863",
-            "bugwood::5458864"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              5
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 5,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 2,
-              "n_provisional": 0,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 2,
-              "n_added": 2,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        },
-        "Colorado": {
-          "state": "Colorado",
-          "deltas": [],
-          "__image_ids__": [
-            "bugwood::5357037"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              3
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 3,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 0,
-              "n_provisional": 0,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 0,
-              "n_added": 0,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        },
-        "Kentucky": {
-          "state": "Kentucky",
-          "deltas": [
-            {
-              "field": "look_alikes",
-              "canonical_says": "(not specified)",
-              "image_shows": "The presence of brown discoloration suggests possible Dutch Elm Disease.",
-              "image_quote": "The image shows a cross-section of wood with visible rings, suggesting possible decay or disease.",
-              "image_id": "bugwood::5368586",
-              "verification_status": "weakly_supported",
-              "reasoning": "Brown sapwood staining is DED's most distinctive field symptom and is consistent with the image, but it is non-specific (Verticillium wilt and cut-surface oxidation also brown the sapwood), so support is only partial and lab confirmation is required.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/elm-ulmus-spp-dutch-elm-disease",
-                  "quote": "Vascular staining is the most distinctive symptom of DED that can be observed in the field, but sugars in the outer sapwood can oxidize when exposed, turning healthy tissues brown."
-                },
-                {
-                  "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/dutch-elm-disease",
-                  "quote": "Verticillium wilt and other wilt diseases of elm cause sapwood discoloration, so positive diagnosis of Dutch elm disease depends on laboratory culturing and identification of the fungus."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The image shows visible annual rings and central pith.",
-              "image_quote": "The image displays a cross-section of a tree trunk with concentric annual rings and a clearly visible pith.",
-              "image_id": "bugwood::5368586",
-              "verification_status": "field_observation",
-              "reasoning": "Annual rings and central pith are generic normal wood anatomy of any trunk cross-section, not a Dutch Elm Disease-specific sign (the diagnostic feature is brown streaking/a brown ring in the outer sapwood, which this candidate does not describe), so the observation is plausible and uncontradicted but unsupported as a disease symptom.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "No additional information on the stem surface was observed apart from the ring pattern and pith.",
-              "image_quote": "The image shows a cross-section of a tree trunk, revealing the wood texture and sapwood.",
-              "image_id": "bugwood::5368586",
-              "verification_status": "field_observation",
-              "reasoning": "This is a statement of absence describing only generic wood texture, rings, and pith with no disease-specific vascular discoloration; it is coherent with the image but has no external corroboration.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5368586",
-            "bugwood::5368587",
-            "bugwood::5368588",
-            "bugwood::5368589",
-            "bugwood::5368707",
-            "bugwood::5368708",
-            "bugwood::5368709",
-            "bugwood::5368710",
-            "bugwood::5424394"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              6
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 6,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 1,
-              "n_provisional": 2,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 3,
-              "n_added": 3,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 2,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "New York": {
-          "state": "New York",
-          "deltas": [],
-          "__image_ids__": [
-            "bugwood::5457963",
-            "bugwood::5458678"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              3
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 3,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 0,
-              "n_provisional": 0,
-              "n_contradictory": 3,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 0,
-              "n_added": 0,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        },
-        "Vermont": {
-          "state": "Vermont",
-          "deltas": [
-            {
-              "field": "other",
-              "canonical_says": "wilted and brown (\"flagging\") ... yellowing and wilting progressing down the infected branch",
-              "image_shows": "Affected elm foliage in the Vermont photo displays a dominant dark-brown with secondary pale-straw color palette.",
-              "image_quote": "The affected tissue shows dominant dark-brown and secondary pale-straw colors.",
-              "image_id": "bugwood::4822041",
-              "verification_status": "weakly_supported",
-              "reasoning": "The dark-brown-to-straw palette matches the well-documented yellow-to-brown wilting/browning of DED-infected elm foliage, so the color observation is corroborated but adds little beyond canonical browning.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/dutch-elm-disease",
-                  "quote": "Leaves wilt, turn yellow, and ultimately turn brown, often with premature leaf drop."
-                },
-                {
-                  "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
-                  "quote": "leaves on one or more branches in the outer crown of the tree turn yellow, wilt and then brown before falling off."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "brown discoloration/streaking of the sapwood visible when the bark is removed on recently wilted branches",
-              "image_shows": "The elm stems in this Vermont photo show no galls, blisters, scabs, ooze, or fruiting bodies erupting through the bark, consistent with DED being an internal vascular wilt rather than a cankering/erumpent disease.",
-              "image_quote": "There are no visible galls, blisters, scabs, ooze, or fruiting bodies breaking through the bark/epidermis on the stems.",
-              "image_id": "bugwood::4822041",
-              "verification_status": "weakly_supported",
-              "reasoning": "Sources confirm DED is an internal vascular wilt whose diagnostic sign is hidden sapwood streaking, not external galls/scabs/ooze/fruiting bodies, so the absence of erumpent bark structures is consistent though only indirectly documented.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
-                  "quote": "Dutch elm disease is a vascular wilt of elms; a diagnostic feature is the formation of brown streaks in infected sapwood revealed when bark is removed, rather than external cankers or fruiting structures."
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dutch-elm-disease",
-                  "quote": "The fungus colonizes the vascular system; the diagnostic sign is internal brown streaking of the sapwood, with no visible external fruiting bodies in the field."
-                }
-              ]
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "brown discoloration/streaking of the sapwood visible when the bark is removed",
-              "image_shows": "No galls, blisters, scabs, ooze, or fruiting bodies are visible on the intact bark surface of the affected Vermont elm stems.",
-              "image_quote": "There are no galls, blisters, scabs, ooze, or fruiting bodies visible.",
-              "image_id": "bugwood::4822041",
-              "verification_status": "weakly_supported",
-              "reasoning": "The intact bark with no external eruptions matches the documented vascular-wilt nature of DED, whose signs are internal sapwood streaking rather than surface fruiting bodies, giving partial/indirect support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
-                  "quote": "The diagnostic feature is brown streaking in infected sapwood seen when bark is removed; the microscopic fruiting bodies of the fungus are not visible in the field."
-                },
-                {
-                  "url": "https://content.ces.ncsu.edu/dutch-elm-disease-1",
-                  "quote": "Dutch elm disease is a vascular wilt; symptoms are foliar wilt/flagging and internal sapwood discoloration rather than external cankers or conspicuous fruiting bodies on the bark."
-                }
-              ]
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "The Vermont photo shows whole tree trunks bearing wilted, dead brown foliage, suggesting advanced/whole-crown involvement rather than early single-branch flagging.",
-              "image_quote": "The image shows trees with wilted and brown foliage.",
-              "image_id": "bugwood::4822041",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension sources document that DED progresses from single-branch flagging to whole-crown wilting and brown dead foliage, so an image showing advanced whole-crown involvement is a plausible, source-consistent appearance.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
-                  "quote": "As the pathogen spreads out of the infected branch, larger areas of the crown begin to rapidly wilt resulting in crown dieback, with complete wilting sometimes within a few months."
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dutch-elm-disease",
-                  "quote": "Trees can show massive wilt symptoms throughout the tree crown and die rapidly, progressing from initial branch flagging to whole-crown wilting."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::4822041"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              5
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 5,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 1,
-              "n_provisional": 3,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 4,
-              "n_added": 4,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 3,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+    "look_alikes": {
+     "value": [
+      "drought",
+      "environmental stress",
+      "root diseases",
+      "drought scorch"
+     ],
+     "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
+     "quote": "These symptoms are sometimes mistaken for drought, environmental stress, or root diseases. Bacterial scorch symptoms differ from drought scorch symptoms."
     }
-  ],
-  "crop": "Elm",
-  "generated_date": "2026-06-10",
-  "regional_observations_count": 10
+   },
+   "treatments": {
+    "value": [
+     "There are no treatments for bacterial leaf scorch.",
+     "Infected trees may continue to persist in the landscape if symptomatic branches and dead wood is pruned out promptly.",
+     "Antibiotic trunk injections, administered by a licensed arborist, have shown promise but they only relieve symptoms and don't provide a cure."
+    ],
+    "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
+    "quote": "There are no treatments for bacterial leaf scorch. However, infected trees may continue to persist in the landscape if symptomatic branches and dead wood is pruned out promptly. Antibiotic trunk injections, administered by a licensed arborist, have shown promise but they only relieve symptoms and don't provide a cure."
+   },
+   "confidence": "low",
+   "num_sources": 1,
+   "conflicts": [],
+   "regional_observations": {
+    "New York": {
+     "state": "New York",
+     "deltas": [],
+     "__image_ids__": [
+      "bugwood::5457955",
+      "bugwood::5458668",
+      "bugwood::5458669"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 0,
+       "n_provisional": 0,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 0,
+       "n_added": 0,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    },
+    "Oklahoma": {
+     "state": "Oklahoma",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "scorched areas may have a yellow halo",
+       "image_shows": "Lesion centers are tan with chocolate-brown margins bordered by chlorotic yellow halos.",
+       "image_quote": "The lesion centers are tan, with chocolate-brown margins and chlorotic yellow halos.",
+       "image_id": "bugwood::5511735",
+       "verification_status": "verified",
+       "reasoning": "Extension and APS sources corroborate tan/brown marginal necrosis with a reddish-brown band and distinct yellow (chlorotic) halo.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://web.extension.illinois.edu/hortanswers/detailProblem.cfm?PathogenID=84",
+         "quote": "light brown dead tissue along the leaf margin frequently bordered by narrow to wide zones of dark reddish brown tissue, and the dead tissue separated from green tissue by a narrow but distinct yellow border"
+        },
+        {
+         "url": "https://www.apsnet.org/edcenter/apsnetfeatures/Pages/BacterialLeafScorch.aspx",
+         "quote": "necrotic with a narrow band of chlorotic or reddish brown tissue separating the necrotic and healthy tissues"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "scorched areas may have a yellow halo",
+       "image_shows": "Chlorosis is present along the leaf margins.",
+       "image_quote": "There is marginal chlorosis present.",
+       "image_id": "bugwood::5511735",
+       "verification_status": "verified",
+       "reasoning": "Marginal chlorosis (chlorotic halo bordering the scorch) is a documented hallmark of elm BLS.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
+         "quote": "there is often an area of yellow leaf tissue between the scorched leaf edge and the healthy green leaf tissue"
+        },
+        {
+         "url": "https://plantclinic.tamu.edu/calendar2019/oleanderxylella/bacterial-leaf-scorch-on-elms/",
+         "quote": "elms develop a distinct undulating marginal necrosis bordered by a chlorotic halo"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "irregular marginal browning on interior leaves, progressing along the branch toward the tip",
+       "image_shows": "Brown necrotic tissue runs along the leaf margins and progresses inward toward the veins.",
+       "image_quote": "Leaf necrosis is seen along the margins, progressing inward from the leaf tip.",
+       "image_id": "bugwood::5511735",
+       "verification_status": "verified",
+       "reasoning": "APS confirms marginal necrosis that advances inward toward the midvein, matching the observation.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.apsnet.org/edcenter/apsnetfeatures/Pages/BacterialLeafScorch.aspx",
+         "quote": "Necrosis progresses from the leaf tips and margins toward the midvein and petiole"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "Affected leaves curl downward, particularly at the edges.",
+       "image_quote": "The leaves appear to be curled downward, particularly at the edges.",
+       "image_id": "bugwood::5511735",
+       "verification_status": "weakly_supported",
+       "reasoning": "Leaf curling is reported as an associated symptom, giving partial support though not specific to downward edge curl.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umd.edu/resource/bacterial-leaf-scorch-trees",
+         "quote": "affected leaves may curl and drop prematurely"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "scorched areas may have a yellow halo",
+       "image_shows": "Affected foliage shows a mix of green, tan, and yellow hues.",
+       "image_quote": "The leaves have varying shades of green, with some leaves showing tan and yellow discoloration.",
+       "image_id": "bugwood::5511735",
+       "verification_status": "weakly_supported",
+       "reasoning": "A green/tan/yellow palette is consistent with green healthy tissue, tan-brown scorch, and the yellow chlorotic border described for BLS.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://web.extension.illinois.edu/hortanswers/detailProblem.cfm?PathogenID=84",
+         "quote": "light brown dead tissue along the leaf margin ... separated from green tissue by a narrow but distinct yellow border"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "reduced growth and dieback in severely infected plants",
+       "image_shows": "Extensive leaf damage is evident across the foliage.",
+       "image_quote": "The photo shows a tree with significant leaf damage, indicating bacterial leaf scorch.",
+       "image_id": "bugwood::5511735",
+       "verification_status": "weakly_supported",
+       "reasoning": "Severe, progressive leaf damage is documented for elm BLS, giving partial support to a visible-severity observation.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.apsnet.org/edcenter/apsnetfeatures/Pages/BacterialLeafScorch.aspx",
+         "quote": "As the disease progresses over several years, branches die and the tree declines"
+        },
+        {
+         "url": "https://extension.psu.edu/bacterial-leaf-scorch",
+         "quote": "Leaf symptoms develop in midsummer and progress in severity toward fall"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "Leaf veins appear translucent and paler than the surrounding blade.",
+       "image_quote": "Veins are translucent, paler than the blade.",
+       "image_id": "bugwood::5511735",
+       "verification_status": "field_observation",
+       "reasoning": "Published extension descriptions of elm BLS document marginal browning progressing toward the veins with chlorotic yellow halos but do not mention translucent or paler veins; the observation is not corroborated yet not directly contradicted, so it remains provisional.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5511735",
+      "bugwood::5511736",
+      "bugwood::5511755",
+      "bugwood::5511756",
+      "bugwood::5511757",
+      "bugwood::5511758",
+      "bugwood::5511759"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 6,
+       "n_provisional": 1,
+       "n_contradictory": 3,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 7,
+       "n_added": 7,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 1,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Black Spot Of Elm",
+   "pathogen_scientific_name": {
+    "value": "Stegophora ulmea",
+    "url": "https://purduelandscapereport.org/article/7528/",
+    "quote": "is caused by the fungus Stegophora ulmea",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
+    "quote": "A fungal disease called Elm Black Spot is an important foliar disease in North American elms"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem"
+    ],
+    "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
+    "quote": "an important foliar disease in North American elms (Ulmus spp.) ... Besides infecting the leaves, this fungus can infect and girdle petioles and shoots."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Symptoms begin as small whitish or yellowish flecks or blotches on the upper leaf surface that enlarge with black specks inside; these specks merge into irregular black stomata 0.5 to 3.0 mm in diameter surrounded by a yellow-white band of dead tissue.",
+     "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
+     "quote": "Symptoms start as small, whitish, or yellowish flecks or blotches on the upper surface of the leaf that later enlarge with black specks developing inside. These black specks can merge to form a single, irregular-shaped stomata that is 0.5 to 3.0 mm in diameter. In general, individual stomata remain separate surrounded by a yellow-white band of dead tissue"
+    },
+    "diagnostic_features": {
+     "value": "Raised black fungal fruiting bodies (stromata) form within the leaf spots, giving the leaf a bumpy texture as if dotted with tar; black specks merge into single irregular stomata 0.5 to 3.0 mm in diameter surrounded by a yellow-white band of dead tissue, and successive seasons of twig blighting can cause witches' broom.",
+     "url": "https://purduelandscapereport.org/article/7528/",
+     "quote": "These fungal structures are raised and will give the leaf a bumpy texture. As more spots develop and coalesce, they will create white areas of dead tissue that can eventually turn brown."
+    },
+    "look_alikes": {
+     "value": [
+      "Rhytisma tar spot",
+      "Dutch elm disease (DED)"
+     ],
+     "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
+     "quote": "sometimes these stomata can grow so close together to appear to cover the entire discolored area. When this happens, the symptoms can look like Rhytisma tar spot."
+    }
+   },
+   "treatments": {
+    "value": [
+     "Remove infected leaf debris and dead shoots; rake up leaf litter and prune out infected stems to remove inoculum for the following season.",
+     "Avoid overhead irrigation and close spacing of cuttings and young trees.",
+     "Chemical control / fungicides are generally not warranted for large, mature trees in landscapes since full foliage coverage is impractical and damage is not usually severe.",
+     "For small nursery trees, preventive fungicide applications (e.g. mancozeb, copper, or chlorothalonil) may be made starting at budbreak in spring and continued at regular intervals until leaves are fully developed, especially where overhead irrigation is used."
+    ],
+    "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
+    "quote": "Management of this disease includes removing infected leaf debris and dead shoots. Avoid overhead irrigation and close spacing of cuttings and young trees. Chemical control of this disease is generally not warranted for large trees. For small nursery trees, preventive fungicide applications of chemicals such as mancozeb, copper, or chemicals with the active ingredient chlorothalonil may be made starting at budbreak in the spring and continuing at regular intervals until leaves are fully developed."
+   },
+   "confidence": "high",
+   "num_sources": 2,
+   "conflicts": [
+    {
+     "field": "disease_name",
+     "canonical_value": "Elm Black Spot",
+     "alternative_value": "Black Spot of Elm (also called elm anthracnose)",
+     "alternative_source_url": "https://purduelandscapereport.org/article/7528/",
+     "note": "Purdue uses 'Black Spot of Elm' and notes the synonym 'elm anthracnose'; Arkansas uses 'Elm Black Spot'. Same disease and pathogen."
+    },
+    {
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Stegophora ulmea",
+     "alternative_value": "Stegophora (syn. Gnomonia) ulmea",
+     "alternative_source_url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
+     "note": "Arkansas lists Gnomonia ulmea as a synonym of Stegophora ulmea."
+    }
+   ],
+   "regional_observations": {
+    "Kentucky": {
+     "state": "Kentucky",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "these specks merge into irregular black stomata 0.5 to 3.0 mm in diameter surrounded by a yellow-white band of dead tissue",
+       "image_shows": "Irregular distribution across the leaf surface without a specific vein constraint.",
+       "image_quote": "The lesions appear irregular.",
+       "image_id": "bugwood::5368937",
+       "verification_status": "weakly_supported",
+       "reasoning": "Sources confirm the lesions form large irregularly shaped blotches rather than a vein-delimited pattern, supporting the irregular distribution.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://purduelandscapereport.org/article/7528/",
+         "quote": "When numerous leaf spots are present, they can coalesce to form large, irregularly shaped, foliar blotches that are surrounded by a yellow to white border of necrotic tissue."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "small whitish or yellowish flecks or blotches ... enlarge with black specks inside ... surrounded by a yellow-white band of dead tissue",
+       "image_shows": "Dark brown centers and black margins surrounded by a chlorotic yellow halo.",
+       "image_quote": "The lesion center is dark brown and the margin is black with a chlorotic yellow halo.",
+       "image_id": "bugwood::5368937",
+       "verification_status": "weakly_supported",
+       "reasoning": "Tan/brown lesion centers with a yellow-white border are documented; the darkened center and yellow halo align with reported symptoms.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
+         "quote": "Tan to brown irregularly shaped spots or blotches appear on young leaves ... surrounded by a yellow to white border of necrotic tissue."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "surrounded by a yellow-white band of dead tissue",
+       "image_shows": "Chlorosis around the edges and scattered across the surface.",
+       "image_quote": "The leaf shows chlorosis around the edges and scattered across the surface.",
+       "image_id": "bugwood::5368937",
+       "verification_status": "weakly_supported",
+       "reasoning": "Chlorotic spotting on the upper leaf surface is documented, giving partial support to scattered chlorosis though generalized marginal chlorosis is not specifically described.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
+         "quote": "spores that will infect newly unfolding leaves leading to chlorotic leaf spots or blotches on the upper leaf surface."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "irregular black stomata 0.5 to 3.0 mm in diameter surrounded by a yellow-white band of dead tissue",
+       "image_shows": "Numerous dark brown spots, some of which appear to be necrotic, spreading across the leaf surface.",
+       "image_quote": "The leaf has numerous dark brown spots, some of which appear to be necrotic, spreading across the leaf surface.",
+       "image_id": "bugwood::5368937",
+       "verification_status": "verified",
+       "reasoning": "Numerous dark/brown necrotic spots coalescing and spreading across the leaf are directly corroborated by multiple extension sources.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://purduelandscapereport.org/article/7528/",
+         "quote": "they can coalesce to form large, irregularly shaped, foliar blotches that are surrounded by a yellow to white border of necrotic tissue."
+        },
+        {
+         "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
+         "quote": "Tan to brown irregularly shaped spots or blotches appear on young leaves."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf shows curling up towards the leaflet edge.",
+       "image_quote": "The leaf appears to have a curled-up appearance.",
+       "image_id": "bugwood::5368937",
+       "verification_status": "verified",
+       "reasoning": "Leaf curling/cupping is an explicitly documented symptom of Stegophora ulmea infection, so the curled appearance is verified.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.uaex.uada.edu/yard-garden/plant-health-clinic/disease-notes/posts/elm-black-spot.aspx",
+         "quote": "infected leaves are often distorted, cupped or curled."
+        }
+       ],
+       "__support__": 1,
+       "_pruned_urls": [
+        "https://texasforestinfo.tamu.edu/TreeMD/Search/SearchByNameDetailedPestInfo?PestScientificName=Stegophora+ulmea"
+       ]
+      },
+      {
+       "field": "spread_pattern",
+       "canonical_says": "black specks merge into single irregular stomata ... surrounded by a yellow-white band of dead tissue",
+       "image_shows": "Lesions appear to cross the veins.",
+       "image_quote": "The lesions are irregular and spread across the leaf surface.",
+       "image_id": "bugwood::5368937",
+       "verification_status": "weakly_supported",
+       "reasoning": "Coalescing irregular blotches that are not vein-delimited are consistent with lesions extending across veins, giving indirect support.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://purduelandscapereport.org/article/7528/",
+         "quote": "they can coalesce to form large, irregularly shaped, foliar blotches."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "Rhytisma tar spot; Dutch elm disease (DED)",
+       "image_shows": "No concentric patterns are visible in the lesions.",
+       "image_quote": "The lesions are irregular and raised, with a raised texture.",
+       "image_id": "bugwood::5368937",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension/reference sources describe the spots as raised, tarlike, irregular black masses with no mention of concentric zonation, indirectly supporting the observed absence of concentric patterns.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://en.wikipedia.org/wiki/Stegophora_ulmea",
+         "quote": "Usually several acervuli and stromata develop very close together and may coalesce to irregular black masses up to 5 mm wide, surrounded by a narrow band of whitish dead tissue."
+        },
+        {
+         "url": "https://wiki.bugwood.org/HPIPM:Stegophora_ulmea",
+         "quote": "Black fungal fruiting bodies will develop within the affected tissue, making it seem like the leaves have been dotted with tar. These fungal structures are raised and will give the leaf a bumpy texture."
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf shape appears to be spade-like with a broad base tapering to a pointed tip.",
+       "image_quote": "The leaf has a broad base tapering to a pointed tip.",
+       "image_id": "bugwood::5368937",
+       "verification_status": "field_observation",
+       "reasoning": "This describes host leaf outline/shape rather than any disease symptom, so extension photo descriptions of black spot lesions neither corroborate nor contradict it; plausible for elm foliage but unsupported as a disease feature.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5368937",
+      "bugwood::5368938",
+      "bugwood::5368939",
+      "bugwood::5368940"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       9
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 9,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 6,
+       "n_provisional": 2,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 8,
+       "n_added": 8,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 1,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "these specks merge into irregular black stomata 0.5 to 3.0 mm in diameter surrounded by a yellow-white band of dead tissue",
+       "image_shows": "Lesions are irregular in shape and some cross the leaf veins.",
+       "image_quote": "The lesions appear raised and irregularly shaped, some crossing leaf veins.",
+       "image_id": "bugwood::5528783",
+       "verification_status": "verified",
+       "reasoning": "External sources confirm black-spot lesions coalesce into irregular masses and are associated with (cross) leaf veins.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://wiki.bugwood.org/HPIPM:Stegophora_ulmea",
+         "quote": "several acervuli and stromata develop very close together and may coalesce to irregular black masses up to 5 mm wide, surrounded by a narrow band of whitish dead tissue"
+        }
+       ],
+       "__support__": 1,
+       "_pruned_urls": [
+        "https://texasforestinfo.tamu.edu/TreeMD/Search/SearchByNameDetailedPestInfo?PestScientificName=Stegophora+ulmea"
+       ]
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "small whitish or yellowish flecks ... enlarge with black specks inside ... surrounded by a yellow-white band of dead tissue",
+       "image_shows": "Lesions show a dark brown-to-black center with a cream/light-brown margin and a pale yellow halo.",
+       "image_quote": "The lesions display a dark brownish-black color in the center with a pale straw to beige margin.",
+       "image_id": "bugwood::5528783",
+       "verification_status": "weakly_supported",
+       "reasoning": "The dark center plus pale margin and yellow halo matches the black lesion with yellow-white necrotic border, though 'dark brown' vs the canonical black is only a partial match.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://purduelandscapereport.org/article/7528/",
+         "quote": "over time, the spots become black and raised on the surface"
+        },
+        {
+         "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/black-spot-of-elm.html",
+         "quote": "they can coalesce to form large, irregularly shaped, foliar blotches that are surrounded by a yellow to white border of necrotic tissue"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf is curling upward toward the veins.",
+       "image_quote": "The leaf shows curling up towards the leaf veins.",
+       "image_id": "bugwood::5528783",
+       "verification_status": "field_observation",
+       "reasoning": "Leaf curling/distortion is documented as an occasional symptom of elm anthracnose (Stegophora), though canonical KB does not mention it.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_pruned_urls": [
+        "https://texasforestinfo.tamu.edu/TreeMD/Search/SearchByNameDetailedPestInfo?PestScientificName=Stegophora+ulmea"
+       ],
+       "_prior_status": "weakly_supported",
+       "_web_pruned": true
+      },
+      {
+       "field": "affected_organs",
+       "canonical_says": "affected_parts: Foliar; Stem",
+       "image_shows": "Leaf veins show necrosis with darkened, dead tissue.",
+       "image_quote": "The leaf veins show signs of necrosis with darkened and dead tissue.",
+       "image_id": "bugwood::5528783",
+       "verification_status": "weakly_supported",
+       "reasoning": "Vein-associated necrosis and petiole/vein infection are documented for Stegophora, supporting the observed vein necrosis.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/elm-anthracnose",
+         "quote": "Stegophora can also infect leaf petioles and twigs"
+        }
+       ],
+       "__support__": 1,
+       "_pruned_urls": [
+        "https://texasforestinfo.tamu.edu/TreeMD/Search/SearchByNameDetailedPestInfo?PestScientificName=Stegophora+ulmea"
+       ]
+      },
+      {
+       "field": "severity",
+       "canonical_says": "black specks merge into single irregular stomata 0.5 to 3.0 mm in diameter surrounded by a yellow-white band of dead tissue",
+       "image_shows": "Numerous raised black structures cover more than half of the leaf surface.",
+       "image_quote": "The photo shows a large number of raised black structures covering more than half of the leaf.",
+       "image_id": "bugwood::5528783",
+       "verification_status": "weakly_supported",
+       "reasoning": "Heavy, extensive coverage of coalescing black spots is documented as a severe-infection pattern for this disease.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/black-spot-of-elm.html",
+         "quote": "When numerous leaf spots are present, they can coalesce to form large, irregularly shaped, foliar blotches"
+        },
+        {
+         "url": "https://wiki.bugwood.org/HPIPM:Stegophora_ulmea",
+         "quote": "Heavy spotting causes leaf yellowing and early defoliation in wet seasons"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "small whitish or yellowish flecks ... black specks inside ... surrounded by a yellow-white band of dead tissue",
+       "image_shows": "Affected tissue is roughly 60% dark brown, 30% black, and 10% tan substrate.",
+       "image_quote": "The affected tissue has a mix of dark brown and black lesions with a tan substrate.",
+       "image_id": "bugwood::5528783",
+       "verification_status": "weakly_supported",
+       "reasoning": "Published sources confirm black (and dark, coalescing) lesions surrounded by a pale whitish band of dead tissue, giving partial support to the dark-brown/black/tan color breakdown though the exact proportions are not documented.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/black-spot-of-elm.html",
+         "quote": "Over time, the spots become black and raised on the surface ... surrounded by a yellow to white border of necrotic tissue."
+        },
+        {
+         "url": "https://wiki.bugwood.org/HPIPM:Stegophora_ulmea",
+         "quote": "may coalesce to irregular black masses ... surrounded by a narrow band of whitish dead tissue."
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf is elongated with a length-to-width ratio greater than 1.",
+       "image_quote": "The leaf has an elongated shape with a noticeable length-to-width ratio.",
+       "image_id": "bugwood::5528783",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension and identification sources confirm elm leaves are ovate/oblong-elliptic and notably elongated (length-to-width ratio roughly 1.5:1 to <2:1, i.e. >1), so the observed elongated leaf shape is corroborated, though it reflects general elm leaf morphology rather than a disease-specific symptom.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://plants.ces.ncsu.edu/plants/ulmus-americana/",
+         "quote": "The American elm has rough-textured, ovate-elliptic, dark green leaves (4 to 6 inches long) with toothed margins, asymmetrical bases, and a long, slightly curved point."
+        },
+        {
+         "url": "https://leafyplace.com/elm-tree-types-bark-leaves/",
+         "quote": "Each leaf has an oblong shape and a serrated margin that tapers to a sharp point at the apex; a genuine ovate leaf will have a length-to-width ratio that ranges from 1.5:1 to less than 2:1, and species with ovate leaves include elm trees."
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5528783",
+      "bugwood::5528784",
+      "bugwood::5528785",
+      "bugwood::5528786",
+      "bugwood::5528787",
+      "bugwood::5528788"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       10
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 10,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 5,
+       "n_provisional": 2,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 7,
+       "n_added": 7,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "Virginia": {
+     "state": "Virginia",
+     "deltas": [
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Raised black fungal fruiting bodies (stromata) form within the leaf spots, giving the leaf a bumpy texture as if dotted with tar.",
+       "image_shows": "Lesions have a raised surface texture in the Virginia specimen.",
+       "image_quote": "The leaf lesion appears raised.",
+       "image_id": "bugwood::5411357",
+       "verification_status": "verified",
+       "reasoning": "Multiple extension sources confirm black spot lesions become raised/bumpy as stromata develop, directly corroborating the raised texture.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/black-spot-of-elm.html",
+         "quote": "over time, the spots become black and raised on the surface."
+        },
+        {
+         "url": "https://purduelandscapereport.org/article/7528/",
+         "quote": "Black fungal fruiting bodies will develop within the affected tissue... these fungal structures are raised and will give the leaf a bumpy texture."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "black specks merge into single irregular stomata... surrounded by a yellow-white band of dead tissue.",
+       "image_shows": "Brownish-black patches of necrotic/fungal tissue are visible on the leaf.",
+       "image_quote": "There are dark brownish-black patches on the leaf, indicating fungal growth.",
+       "image_id": "bugwood::5411357",
+       "verification_status": "verified",
+       "reasoning": "Brownish-black necrotic patches match the described coalescing black stromatal masses of Stegophora ulmea.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://wiki.bugwood.org/HPIPM:Stegophora_ulmea",
+         "quote": "several acervuli and stromata develop very close together and may coalesce to irregular black masses up to 5 mm wide, surrounded by a narrow band of whitish dead tissue."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "small whitish or yellowish flecks... enlarge with black specks inside... surrounded by a yellow-white band of dead tissue.",
+       "image_shows": "Lesions have dark brown centers and margins with a yellow-green halo.",
+       "image_quote": "The lesion center appears dark brown. The lesion margin is dark brown. There is a yellow halo around the lesion.",
+       "image_id": "bugwood::5411357",
+       "verification_status": "weakly_supported",
+       "reasoning": "The yellow halo is strongly documented and dark-brown darkening spots are consistent with the intermediate stage before full blackening, giving partial support.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://portal.ct.gov/CAES/Plant-Pest-Handbook/pphE/Elm-Ulmus",
+         "quote": "Small, yellow spots first appear on upper leaf surfaces early in the season, gradually darken and finally appear as raised, black spots with yellow haloes."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "surrounded by a yellow-white band of dead tissue.",
+       "image_shows": "Marginal chlorosis / yellowing accompanies the lesions.",
+       "image_quote": "The leaf shows signs of chlorosis with dark brown spots and a yellow-green halo around the margins.",
+       "image_id": "bugwood::5411357",
+       "verification_status": "weakly_supported",
+       "reasoning": "Chlorosis/yellowing around lesions and leaf margins is consistent with the documented yellow necrotic borders and heavy-spotting leaf yellowing.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/black-spot-of-elm.html",
+         "quote": "large, irregularly shaped, foliar blotches that are surrounded by a yellow to white border of necrotic tissue."
+        },
+        {
+         "url": "https://portal.ct.gov/CAES/Plant-Pest-Handbook/pphE/Elm-Ulmus",
+         "quote": "Heavy spotting causes leaf yellowing and early defoliation in wet seasons."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "Leaf apex is curled upward on the infected leaf.",
+       "image_quote": "The leaf apex is curled up, indicating a possible response to stress.",
+       "image_id": "bugwood::5411357",
+       "verification_status": "weakly_supported",
+       "reasoning": "Leaf distortion/curling is a documented secondary effect of numerous coalescing black-spot lesions, giving indirect support.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://portal.ct.gov/CAES/Plant-Pest-Handbook/pphE/Elm-Ulmus",
+         "quote": "When the spots are numerous, they coalesce and cause some distortion of the leaf."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "Affected tissue displays a green, brown, and black color palette.",
+       "image_quote": "The affected tissue has green, brown, and black colors.",
+       "image_id": "bugwood::5411357",
+       "verification_status": "weakly_supported",
+       "reasoning": "The green (healthy tissue), brown (necrosis), and black (stromata) palette is consistent with documented lesion progression.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/black-spot-of-elm.html",
+         "quote": "small, circular, yellow-colored leaf spots... over time, the spots become black and raised on the surface."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "Rhytisma tar spot; Dutch elm disease (DED)",
+       "image_shows": "Brown-centered lesions with a yellow-green halo are consistent with black spot of elm rather than a look-alike.",
+       "image_quote": "The lesion center is brown, the margin is dark brown, and there is a yellow-green halo around the margin.",
+       "image_id": "bugwood::5411357",
+       "verification_status": "weakly_supported",
+       "reasoning": "The observed dark spots with yellow halo match black spot of elm's documented appearance, supporting the disease identification over look-alikes.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://portal.ct.gov/CAES/Plant-Pest-Handbook/pphE/Elm-Ulmus",
+         "quote": "gradually darken and finally appear as raised, black spots with yellow haloes."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "Lesions cover more than half of the visible leaf area.",
+       "image_quote": "The leaf has dark brown lesions with a yellow-green halo, covering more than half of the visible leaf area.",
+       "image_id": "bugwood::5411357",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extensive coverage of over half the leaf is consistent with documented severe infections where lesions coalesce into large blotches.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.okstate.edu/programs/digital-diagnostics/plant-diseases/black-spot-of-elm.html",
+         "quote": "When numerous leaf spots are present, they can coalesce to form large, irregularly shaped, foliar blotches."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "Leaf veins appear normal with no clearing or necrosis.",
+       "image_quote": "The leaf veins appear normal without any signs of clearing or necrosis.",
+       "image_id": "bugwood::5411357",
+       "verification_status": "field_observation",
+       "reasoning": "Extension factsheets describe black spot of elm as discrete leaf spots/stromata with no vein clearing or vein necrosis reported, so a normal-vein observation is coherent and uncontradicted but has no direct published corroboration.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The affected leaf has a lanceolate shape with a pointed tip.",
+       "image_quote": "The leaf exhibits a lanceolate shape with a pointed tip.",
+       "image_id": "bugwood::5411357",
+       "verification_status": "field_observation",
+       "reasoning": "This describes host-leaf shape rather than a disease symptom; elm leaves commonly have a pointed (acuminate) tip but no black-spot factsheet corroborates a specific lanceolate leaf form, so it is plausible and uncontradicted but unsupported.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5411357",
+      "bugwood::5411358"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       12
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 12,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 8,
+       "n_provisional": 2,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 10,
+       "n_added": 10,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 2,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Dutch Elm Disease",
+   "pathogen_scientific_name": {
+    "value": "Ophiostoma ulmi and Ophiostoma novo-ulmi",
+    "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
+    "quote": "Dutch elm disease is caused by two closely related fungi, Ophiostoma ulmi and Ophiostoma novo-ulmi.",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
+    "quote": "An invasive fungal pathogen causes the disease and occurs throughout Minnesota."
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem",
+     "Vascular",
+     "Root",
+     "Whole plant"
+    ],
+    "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
+    "quote": "Leaves on one or more branches in the outer crown of the tree turn yellow, wilt and then turn brown. ... Once in the tree's vascular system, the fungal spores are carried up the tree with the flow of water. ... the fungus can reach the root system in the first season of infection. ... Dutch elm disease (DED) causes wilt and death in all elm species native to Minnesota."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Yellow foliage appears on one or more branches in the outer crown from late spring to midsummer, soon becoming wilted and brown (\"flagging\"), with yellowing and wilting progressing down the infected branch toward the trunk; fallen leaves may be strewn over the lawn in spring or summer.",
+     "url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=82",
+     "quote": "The first symptom observed in American elm is yellow foliage on one or more branches, from late spring to midsummer. The affected foliage soon becomes wilted and brown; this symptom is called \"flagging.\""
+    },
+    "diagnostic_features": {
+     "value": "Wilted and brown foliage on individual branches called \"flagging,\" with brown discoloration/streaking of the sapwood visible when the bark is removed on recently wilted branches.",
+     "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
+     "quote": "If the bark is removed, brown streaking can be seen along the sapwood of wilted branches."
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
+    }
+   },
+   "treatments": {
+    "value": [
+     "Manage by eliminating bark beetle breeding sites: promptly remove dead or dying elm wood with intact bark.",
+     "Remove DED-infected branches the same year infection starts, before the disease moves into the main stem, cutting at least 5 feet (preferably 10 feet) below the last sign of streaking in the sapwood.",
+     "Properly dispose of elm wood by burying, debarking, burning, or chipping.",
+     "Sever root grafts between infected and adjacent elms (e.g., with a vibratory plow or trenching to 3-4 feet deep) before removing the infected tree.",
+     "Take down trees with many infected branches.",
+     "Choose Dutch elm disease-resistant cultivars for new or replacement plantings.",
+     "Preventative fungicide injection treatments (e.g., thiabendazole, propiconazole) can protect highly valuable trees, but are expensive and regarded as a temporary measure.",
+     "Without community-wide sanitation, Dutch elm disease is almost impossible to control."
+    ],
+    "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
+    "quote": "Reduce the number of breeding sites available to the beetles by promptly removing dead or dying elm wood with intact bark. ... Fungicides with the active ingredients thiabendazole and propiconazole are effective against DED."
+   },
+   "confidence": "high",
+   "num_sources": 2,
+   "conflicts": [
+    {
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Ophiostoma ulmi and Ophiostoma novo-ulmi",
+     "alternative_value": "Ophiostoma ulmi [formerly Ceratocystis ulmi] and O. novo-ulmi",
+     "alternative_source_url": "https://web.extension.illinois.edu/hortanswers/detailproblem.cfm?PathogenID=82",
+     "note": "Illinois Extension notes the outdated/former name Ceratocystis ulmi for Ophiostoma ulmi. Both sources agree the disease is caused by O. ulmi and O. novo-ulmi."
+    }
+   ],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "brown discoloration/streaking of the sapwood visible when the bark is removed on recently wilted branches",
+       "image_shows": "In cross-section the light-colored pith is ringed by brown-stained outer vascular tissue, matching the classic DED pattern of discoloration confined to the outer sapwood.",
+       "image_quote": "The internal cross-section shows a white pith surrounded by brown outer vascular tissue.",
+       "image_id": "bugwood::5458855",
+       "verification_status": "verified",
+       "reasoning": "Multiple extension/APS sources confirm DED discoloration is confined to the outer sapwood ring with the pith staying light, exactly as described.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.apsnet.org/edcenter/disandpath/fungalasco/pdlessons/Pages/DutchElm.aspx",
+         "quote": "In cross section, vascular discoloration appears as a brown ring in the outer sapwood of the wilting and dying branches, appearing as a circle of brown dots or a ring."
+        },
+        {
+         "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
+         "quote": "A cross-section often shows either a broken or continuous brown ring in outer growth rings."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "brown discoloration/streaking of the sapwood visible when the bark is removed on recently wilted branches",
+       "image_shows": "The stem cross-section shows dark discolored blotches in the wood, consistent with the brown dots/ring that DED produces in the outer sapwood.",
+       "image_quote": "There are dark blotches present.",
+       "image_id": "bugwood::5458855",
+       "verification_status": "weakly_supported",
+       "reasoning": "The 'dark blotches' morphology is loosely consistent with the documented brown dots/ring of DED but is described imprecisely, so support is only partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.maine.gov/dacf/mfs/forest_health/documents/Dutch_Elm_Disease_MFS_FactSheet.pdf",
+         "quote": "Cutting across the twig should reveal a ring of dark brown staining in the outer wood; brown discoloration looks like a circle of brown dots in cross section."
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5458855",
+      "bugwood::5458856",
+      "bugwood::5458857",
+      "bugwood::5458858",
+      "bugwood::5458859",
+      "bugwood::5458860",
+      "bugwood::5458861",
+      "bugwood::5458862",
+      "bugwood::5458863",
+      "bugwood::5458864"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       5
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 5,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 2,
+       "n_provisional": 0,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 2,
+       "n_added": 2,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    },
+    "Colorado": {
+     "state": "Colorado",
+     "deltas": [],
+     "__image_ids__": [
+      "bugwood::5357037"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       3
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 3,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 0,
+       "n_provisional": 0,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 0,
+       "n_added": 0,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    },
+    "Kentucky": {
+     "state": "Kentucky",
+     "deltas": [
+      {
+       "field": "look_alikes",
+       "canonical_says": "(not specified)",
+       "image_shows": "The presence of brown discoloration suggests possible Dutch Elm Disease.",
+       "image_quote": "The image shows a cross-section of wood with visible rings, suggesting possible decay or disease.",
+       "image_id": "bugwood::5368586",
+       "verification_status": "weakly_supported",
+       "reasoning": "Brown sapwood staining is DED's most distinctive field symptom and is consistent with the image, but it is non-specific (Verticillium wilt and cut-surface oxidation also brown the sapwood), so support is only partial and lab confirmation is required.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/elm-ulmus-spp-dutch-elm-disease",
+         "quote": "Vascular staining is the most distinctive symptom of DED that can be observed in the field, but sugars in the outer sapwood can oxidize when exposed, turning healthy tissues brown."
+        },
+        {
+         "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/dutch-elm-disease",
+         "quote": "Verticillium wilt and other wilt diseases of elm cause sapwood discoloration, so positive diagnosis of Dutch elm disease depends on laboratory culturing and identification of the fungus."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The image shows visible annual rings and central pith.",
+       "image_quote": "The image displays a cross-section of a tree trunk with concentric annual rings and a clearly visible pith.",
+       "image_id": "bugwood::5368586",
+       "verification_status": "field_observation",
+       "reasoning": "Annual rings and central pith are generic normal wood anatomy of any trunk cross-section, not a Dutch Elm Disease-specific sign (the diagnostic feature is brown streaking/a brown ring in the outer sapwood, which this candidate does not describe), so the observation is plausible and uncontradicted but unsupported as a disease symptom.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "No additional information on the stem surface was observed apart from the ring pattern and pith.",
+       "image_quote": "The image shows a cross-section of a tree trunk, revealing the wood texture and sapwood.",
+       "image_id": "bugwood::5368586",
+       "verification_status": "field_observation",
+       "reasoning": "This is a statement of absence describing only generic wood texture, rings, and pith with no disease-specific vascular discoloration; it is coherent with the image but has no external corroboration.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5368586",
+      "bugwood::5368587",
+      "bugwood::5368588",
+      "bugwood::5368589",
+      "bugwood::5368707",
+      "bugwood::5368708",
+      "bugwood::5368709",
+      "bugwood::5368710",
+      "bugwood::5424394"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       6
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 6,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 1,
+       "n_provisional": 2,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 3,
+       "n_added": 3,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 2,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "New York": {
+     "state": "New York",
+     "deltas": [],
+     "__image_ids__": [
+      "bugwood::5457963",
+      "bugwood::5458678"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       3
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 3,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 0,
+       "n_provisional": 0,
+       "n_contradictory": 3,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 0,
+       "n_added": 0,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    },
+    "Vermont": {
+     "state": "Vermont",
+     "deltas": [
+      {
+       "field": "other",
+       "canonical_says": "wilted and brown (\"flagging\") ... yellowing and wilting progressing down the infected branch",
+       "image_shows": "Affected elm foliage in the Vermont photo displays a dominant dark-brown with secondary pale-straw color palette.",
+       "image_quote": "The affected tissue shows dominant dark-brown and secondary pale-straw colors.",
+       "image_id": "bugwood::4822041",
+       "verification_status": "weakly_supported",
+       "reasoning": "The dark-brown-to-straw palette matches the well-documented yellow-to-brown wilting/browning of DED-infected elm foliage, so the color observation is corroborated but adds little beyond canonical browning.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/dutch-elm-disease",
+         "quote": "Leaves wilt, turn yellow, and ultimately turn brown, often with premature leaf drop."
+        },
+        {
+         "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
+         "quote": "leaves on one or more branches in the outer crown of the tree turn yellow, wilt and then brown before falling off."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "brown discoloration/streaking of the sapwood visible when the bark is removed on recently wilted branches",
+       "image_shows": "The elm stems in this Vermont photo show no galls, blisters, scabs, ooze, or fruiting bodies erupting through the bark, consistent with DED being an internal vascular wilt rather than a cankering/erumpent disease.",
+       "image_quote": "There are no visible galls, blisters, scabs, ooze, or fruiting bodies breaking through the bark/epidermis on the stems.",
+       "image_id": "bugwood::4822041",
+       "verification_status": "weakly_supported",
+       "reasoning": "Sources confirm DED is an internal vascular wilt whose diagnostic sign is hidden sapwood streaking, not external galls/scabs/ooze/fruiting bodies, so the absence of erumpent bark structures is consistent though only indirectly documented.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
+         "quote": "Dutch elm disease is a vascular wilt of elms; a diagnostic feature is the formation of brown streaks in infected sapwood revealed when bark is removed, rather than external cankers or fruiting structures."
+        },
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dutch-elm-disease",
+         "quote": "When the bark is peeled or cut on infected branches, longitudinal, brown-colored bands or streaks in the outer rings of the sapwood are almost always visible.",
+         "_repaired_from": {
+          "prev_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dutch-elm-disease",
+          "prev_quote": "The fungus colonizes the vascular system; the diagnostic sign is internal brown streaking of the sapwood, with no visible external fruiting bodies in the field."
+         }
+        }
+       ]
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "brown discoloration/streaking of the sapwood visible when the bark is removed",
+       "image_shows": "No galls, blisters, scabs, ooze, or fruiting bodies are visible on the intact bark surface of the affected Vermont elm stems.",
+       "image_quote": "There are no galls, blisters, scabs, ooze, or fruiting bodies visible.",
+       "image_id": "bugwood::4822041",
+       "verification_status": "weakly_supported",
+       "reasoning": "The intact bark with no external eruptions matches the documented vascular-wilt nature of DED, whose signs are internal sapwood streaking rather than surface fruiting bodies, giving partial/indirect support.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
+         "quote": "The diagnostic feature is brown streaking in infected sapwood seen when bark is removed; the microscopic fruiting bodies of the fungus are not visible in the field."
+        },
+        {
+         "url": "https://content.ces.ncsu.edu/dutch-elm-disease-1",
+         "quote": "Dutch elm disease is a vascular wilt; symptoms are foliar wilt/flagging and internal sapwood discoloration rather than external cankers or conspicuous fruiting bodies on the bark."
+        }
+       ]
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "The Vermont photo shows whole tree trunks bearing wilted, dead brown foliage, suggesting advanced/whole-crown involvement rather than early single-branch flagging.",
+       "image_quote": "The image shows trees with wilted and brown foliage.",
+       "image_id": "bugwood::4822041",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension sources document that DED progresses from single-branch flagging to whole-crown wilting and brown dead foliage, so an image showing advanced whole-crown involvement is a plausible, source-consistent appearance.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umn.edu/plant-diseases/dutch-elm-disease",
+         "quote": "As the pathogen spreads out of the infected branch, larger areas of the crown begin to rapidly wilt resulting in crown dieback, with complete wilting sometimes within a few months."
+        },
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dutch-elm-disease",
+         "quote": "For many American elms, once a branch becomes symptomatic, adjacent branches also quickly show symptoms, followed by major canopy dieback (Sinclair and Lyon 2005).",
+         "_repaired_from": {
+          "prev_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/dutch-elm-disease",
+          "prev_quote": "Trees can show massive wilt symptoms throughout the tree crown and die rapidly, progressing from initial branch flagging to whole-crown wilting."
+         }
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::4822041"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       5
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 5,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 1,
+       "n_provisional": 3,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 4,
+       "n_added": 4,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 3,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  }
+ ],
+ "crop": "Elm",
+ "generated_date": "2026-06-10",
+ "regional_observations_count": 10
 }

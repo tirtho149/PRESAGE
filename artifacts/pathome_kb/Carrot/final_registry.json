@@ -1,502 +1,514 @@
 {
-  "diseases": [
+ "diseases": [
+  {
+   "disease_name": "Alternaria Blight",
+   "pathogen_scientific_name": {
+    "value": "Alternaria dauci",
+    "url": "https://ipm.ucanr.edu/agriculture/carrot/alternaria-leaf-blight/",
+    "quote": "The pathogen, Alternaria dauci, is seedborne and survives on and is spread with carrot seed.",
+    "taxonomy_validated": false,
+    "ncbi_url": "",
+    "mycobank_url": ""
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/carrot-leaf-blight-diseases-and-their-management/",
+    "quote": "Carrot leaf blights are caused by two fungal pathogens, Alternaria dauci and Cercospora carotae"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Seed",
+     "Root",
+     "Stem"
+    ],
+    "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+    "quote": "A. dauci causes leaf spot and blight... A. dauci occurs on the seed as spores and within the seed as dormant mycelium and/or spores... Initially, infection may occur on the petioles as shallow, black lesions which later spread into the crown and down the root."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Foliar symptoms first appear along leaflet margins (and on older/lower leaves) as greenish-brown, water-soaked lesions which enlarge, turn brown to black, and often develop a yellow halo or margin; under favorable conditions lesions coalesce giving leaves a scorched/blighted appearance, and when about 40% of a leaf is infected it yellows, collapses, and dies.",
+     "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+     "quote": "Foliar symptoms of A. dauci first appear along leaflet margins as greenish-brown, water-soaked lesions which enlarge, turn brown to black, and often develop a yellow halo. Older leaves are more susceptible to infection. When about 40% of the leaf is infected, the leaf yellows, collapses, and dies."
+    },
+    "diagnostic_features": {
+     "value": "Greenish-brown, water-soaked lesions beginning along leaflet margins and on older/lower leaves that turn brown to black with a yellow halo; common, elongate petiole lesions that can quickly girdle and kill entire leaves; at advanced stages leaves have a scorched appearance and weakened tops break during mechanical harvest.",
+     "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+     "quote": "first appear along leaflet margins as greenish-brown, water-soaked lesions which enlarge, turn brown to black, and often develop a yellow halo... Petiole lesions are common, elongate, and can quickly kill entire leaves."
+    },
+    "look_alikes": {
+     "value": [
+      "Cercospora leaf blight",
+      "Bacterial leaf blight"
+     ],
+     "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/carrot-leaf-blight-diseases-and-their-management/",
+     "quote": "Compared to Cercospora leaf blight, the lesions of Alternaria dauci are more evident initially on the lower, older leaves"
+    }
+   },
+   "treatments": {
+    "value": [
+     "Plant Alternaria-indexed / certified pathogen-free seed and treat seed with a hot water dip (122Â°F / 50Â°C for 20-25 minutes) or fungicide",
+     "Practice rotations out of carrots (2-year minimum; 3-4 years recommended) and avoid continuous carrot culture",
+     "Turn under / promptly incorporate carrot residue by tillage or plowing to hasten decomposition of debris and reduce inoculum",
+     "Do not plant new fields near existing fields with blight symptoms",
+     "Use resistant/tolerant cultivars (e.g. Bolero, Carson, Ithaca, Calgary, Waltham-Hi-Color, Orlando Gold, Hi-Color 9)",
+     "Reduce leaf wetness and soil moisture (wider row spacing, break compacted layers, raised ridges, furrow irrigation) and keep carrots vigorously growing and free from injury",
+     "Apply first fungicide spray at ~25% disease incidence threshold and continue based on severity/weather, using spray forecast models (e.g. Tom-Cast) and alternating fungicide chemistries",
+     "Foliar fungicides/biologicals: azoxystrobin (Quadris), chlorothalonil (Bravo Weather Stik), iprodione (Rovral 4F), pyraclostrobin (Cabrio EG), pyraclostrobin/fluxapyroxad (Merivon), trifloxystrobin (Flint Extra), penthiopyrad (Fontelis), boscalid (Endura), polyoxin D zinc salt (Ph-D), Bacillus subtilis / Serenade ASO (organic-acceptable)"
+    ],
+    "url": "https://ipm.ucanr.edu/agriculture/carrot/alternaria-leaf-blight/",
+    "quote": "Planting Alternaria -indexed seed or treating seed in a hot water dip is very important. Turn under carrot residue by tillage or plowing to hasten decomposition of debris ... Practice 2-year rotations and avoid continuous carrot culture. ... apply fungicides when the first blight symptoms appear, at biweekly intervals"
+   },
+   "confidence": "high",
+   "num_sources": 3,
+   "conflicts": [
     {
-      "disease_name": "Alternaria Blight",
-      "pathogen_scientific_name": {
-        "value": "Alternaria dauci",
-        "url": "https://ipm.ucanr.edu/agriculture/carrot/alternaria-leaf-blight/",
-        "quote": "The pathogen, Alternaria dauci, is seedborne and survives on and is spread with carrot seed.",
-        "taxonomy_validated": false,
-        "ncbi_url": "",
-        "mycobank_url": ""
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/carrot-leaf-blight-diseases-and-their-management/",
-        "quote": "Carrot leaf blights are caused by two fungal pathogens, Alternaria dauci and Cercospora carotae"
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Seed",
-          "Root",
-          "Stem"
-        ],
-        "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
-        "quote": "A. dauci causes leaf spot and blight... A. dauci occurs on the seed as spores and within the seed as dormant mycelium and/or spores... Initially, infection may occur on the petioles as shallow, black lesions which later spread into the crown and down the root."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Foliar symptoms first appear along leaflet margins (and on older/lower leaves) as greenish-brown, water-soaked lesions which enlarge, turn brown to black, and often develop a yellow halo or margin; under favorable conditions lesions coalesce giving leaves a scorched/blighted appearance, and when about 40% of a leaf is infected it yellows, collapses, and dies.",
-          "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
-          "quote": "Foliar symptoms of A. dauci first appear along leaflet margins as greenish-brown, water-soaked lesions which enlarge, turn brown to black, and often develop a yellow halo. Older leaves are more susceptible to infection. When about 40% of the leaf is infected, the leaf yellows, collapses, and dies."
-        },
-        "diagnostic_features": {
-          "value": "Greenish-brown, water-soaked lesions beginning along leaflet margins and on older/lower leaves that turn brown to black with a yellow halo; common, elongate petiole lesions that can quickly girdle and kill entire leaves; at advanced stages leaves have a scorched appearance and weakened tops break during mechanical harvest.",
-          "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
-          "quote": "first appear along leaflet margins as greenish-brown, water-soaked lesions which enlarge, turn brown to black, and often develop a yellow halo... Petiole lesions are common, elongate, and can quickly kill entire leaves."
-        },
-        "look_alikes": {
-          "value": [
-            "Cercospora leaf blight",
-            "Bacterial leaf blight"
-          ],
-          "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/carrot-leaf-blight-diseases-and-their-management/",
-          "quote": "Compared to Cercospora leaf blight, the lesions of Alternaria dauci are more evident initially on the lower, older leaves"
-        }
-      },
-      "treatments": {
-        "value": [
-          "Plant Alternaria-indexed / certified pathogen-free seed and treat seed with a hot water dip (122\u00c2\u00b0F / 50\u00c2\u00b0C for 20-25 minutes) or fungicide",
-          "Practice rotations out of carrots (2-year minimum; 3-4 years recommended) and avoid continuous carrot culture",
-          "Turn under / promptly incorporate carrot residue by tillage or plowing to hasten decomposition of debris and reduce inoculum",
-          "Do not plant new fields near existing fields with blight symptoms",
-          "Use resistant/tolerant cultivars (e.g. Bolero, Carson, Ithaca, Calgary, Waltham-Hi-Color, Orlando Gold, Hi-Color 9)",
-          "Reduce leaf wetness and soil moisture (wider row spacing, break compacted layers, raised ridges, furrow irrigation) and keep carrots vigorously growing and free from injury",
-          "Apply first fungicide spray at ~25% disease incidence threshold and continue based on severity/weather, using spray forecast models (e.g. Tom-Cast) and alternating fungicide chemistries",
-          "Foliar fungicides/biologicals: azoxystrobin (Quadris), chlorothalonil (Bravo Weather Stik), iprodione (Rovral 4F), pyraclostrobin (Cabrio EG), pyraclostrobin/fluxapyroxad (Merivon), trifloxystrobin (Flint Extra), penthiopyrad (Fontelis), boscalid (Endura), polyoxin D zinc salt (Ph-D), Bacillus subtilis / Serenade ASO (organic-acceptable)"
-        ],
-        "url": "https://ipm.ucanr.edu/agriculture/carrot/alternaria-leaf-blight/",
-        "quote": "Planting Alternaria -indexed seed or treating seed in a hot water dip is very important. Turn under carrot residue by tillage or plowing to hasten decomposition of debris ... Practice 2-year rotations and avoid continuous carrot culture. ... apply fungicides when the first blight symptoms appear, at biweekly intervals"
-      },
-      "confidence": "high",
-      "num_sources": 3,
-      "conflicts": [
-        {
-          "field": "treatments.first_fungicide_timing",
-          "canonical_value": "Apply first fungicide at 25% disease incidence threshold",
-          "alternative_value": "Apply fungicides when the first blight symptoms appear, at biweekly intervals",
-          "alternative_source_url": "https://ipm.ucanr.edu/agriculture/carrot/alternaria-leaf-blight/",
-          "note": "UMass and Cornell cite a 25% disease incidence threshold; UC IPM recommends spraying at first symptom onset on biweekly intervals."
-        },
-        {
-          "field": "rotation_length",
-          "canonical_value": "2-year minimum rotation out of carrots",
-          "alternative_value": "3-4 year rotations",
-          "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
-          "note": "UC IPM and Cornell recommend a 2-year minimum rotation; UMass recommends relatively long rotations of 3-4 years."
-        }
-      ],
-      "regional_observations": {
-        "North Carolina": {
-          "state": "North Carolina",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "lesions ... enlarge, turn brown to black, and often develop a yellow halo; common, elongate petiole lesions",
-              "image_shows": "The lesions appear elongated along the leaf margins.",
-              "image_quote": "The lesions extend along the leaf margins.",
-              "image_id": "bugwood::1578086",
-              "verification_status": "verified",
-              "reasoning": "Extension sources confirm A. dauci lesions arise along leaflet margins and become elongated, matching the candidate.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/carrot-leaf-blight-diseases-and-their-management/",
-                  "quote": "Alternaria leaf blight lesions are small and commonly found on the margins and tips of carrot leaflets, irregular in shape, dark brown to black in color."
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
-                  "quote": "As the infection progresses, the lesions become elongated in shape on the leaf blade and turn darker brown to black."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "lesions ... enlarge, turn brown to black ... leaves yellow, collapse, and die",
-              "image_shows": "Significant necrosis with brown spots and edges curling.",
-              "image_quote": "The leaves exhibit signs of necrosis with brown spots and edges curling, suggesting significant damage.",
-              "image_id": "bugwood::1578086",
-              "verification_status": "weakly_supported",
-              "reasoning": "Brown necrotic spotting and leaflet shriveling are documented; the curling detail is consistent with shriveling but not explicitly described, so support is partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/carrot-leaf-blight-diseases-and-their-management/",
-                  "quote": "Under favorable conditions the lesions coalesce giving the leaf a blighted appearance, and eventually the leaflets may shrivel and die."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "when about 40% of a leaf is infected it yellows, collapses, and dies; scorched/blighted appearance",
-              "image_shows": "A large portion of the leaf is affected by the disease.",
-              "image_quote": "The photo shows a significant portion of the leaf affected by the disease.",
-              "image_id": "bugwood::1578086",
-              "verification_status": "weakly_supported",
-              "reasoning": "A large affected leaf area is consistent with the documented coalescing/blighting severity, though 'significant portion' is a generic severity statement.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
-                  "quote": "The lesions become numerous and expand until they coalesce, giving the leaf a blighted (burned) appearance; when about 40% of the leaf is infected it yellows, collapses, and dies."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaflets curl up toward the leaf axis.",
-              "image_quote": "Leaves appear to curl up towards the central stem.",
-              "image_id": "bugwood::1578086",
-              "verification_status": "weakly_supported",
-              "reasoning": "Leaflet shriveling is documented and can manifest as curling, giving indirect support to the curl observation.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/carrot-leaf-blight-diseases-and-their-management/",
-                  "quote": "Eventually the leaflets may shrivel and die."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "(not specified)",
-              "image_shows": "Target spots with alternating light and dark concentric rings.",
-              "image_quote": "Target spots with concentric rings are present.",
-              "image_id": "bugwood::1578086",
-              "verification_status": "weakly_supported",
-              "reasoning": "Some sources describe concentric-ring/target lesions for A. dauci, but authoritative extension descriptions emphasize irregular dark lesions with yellow halos, so support is only partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://plantlyze.com/blog/carrot-diseases",
-                  "quote": "Lesions enlarge and may develop concentric rings or halos giving a characteristic target appearance."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "lesions ... turn brown to black, and often develop a yellow halo",
-              "image_shows": "The lesions appear raised with a slightly rough surface texture.",
-              "image_quote": "The surface of the lesions has a raised texture.",
-              "image_id": "bugwood::1578086",
-              "verification_status": "weakly_supported",
-              "reasoning": "Sporulation of A. dauci gives lesions a fuzzy/textured surface, indirectly supporting a rough texture, though 'raised' is not explicitly documented.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://vegpath.plantpath.wisc.edu/diseases/carrot-alternaria-and-cercospora-leaf-blights/",
-                  "quote": "Yellow halos may appear around the spots as they darken, and as conidia form, there may be a fuzzy look to the spots themselves."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "Leaf veins appear normal, with no clearing or vein-associated necrosis.",
-              "image_quote": "The leaf veins are translucent, indicating normal health.",
-              "image_id": "bugwood::1578086",
-              "verification_status": "field_observation",
-              "reasoning": "Published sources describe Alternaria lesions as beginning along leaflet margins rather than along veins, so absence of vein-associated necrosis is coherent with the disease but is a negative observation with no direct external corroboration.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "novel_plausible"
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "Leaflet/leaf geometry is lanceolate with an ~3:1 length-to-width ratio and pointed tips.",
-              "image_quote": "The leaf tips are sharp and pointy, with a length-to-width ratio of approximately 3:1.",
-              "image_id": "bugwood::1578086",
-              "verification_status": "field_observation",
-              "reasoning": "This describes host leaflet-segment geometry rather than a disease symptom, so extension photo galleries provide no disease-specific corroboration though the shape is plausible for carrot foliage.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "Cercospora leaf blight; Bacterial leaf blight",
-              "image_shows": "No look-alike diseases were detected in the image.",
-              "image_quote": "No look-alikes detected.",
-              "image_id": "bugwood::1578086",
-              "verification_status": "field_observation",
-              "reasoning": "A null observation (absence of look-alikes) is not contradicted by and is coherent with the canonical description, but no external source can corroborate a per-image absence claim.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "novel_plausible"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::1578086",
-            "bugwood::1578087",
-            "bugwood::1578088",
-            "bugwood::1578089",
-            "bugwood::5506549",
-            "bugwood::5506550",
-            "bugwood::5506551",
-            "bugwood::5506552",
-            "bugwood::5506553",
-            "bugwood::5506554",
-            "bugwood::5506555"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              12
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 12,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 5,
-              "n_provisional": 4,
-              "n_contradictory": 2,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 9,
-              "n_added": 9,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 3,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+     "field": "treatments.first_fungicide_timing",
+     "canonical_value": "Apply first fungicide at 25% disease incidence threshold",
+     "alternative_value": "Apply fungicides when the first blight symptoms appear, at biweekly intervals",
+     "alternative_source_url": "https://ipm.ucanr.edu/agriculture/carrot/alternaria-leaf-blight/",
+     "note": "UMass and Cornell cite a 25% disease incidence threshold; UC IPM recommends spraying at first symptom onset on biweekly intervals."
     },
     {
-      "disease_name": "Alternaria Black Molds / Stem Cankers",
-      "pathogen_scientific_name": {
-        "value": "Alternaria radicina",
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
-        "quote": "The fungus, Alternaria radicina (formerly Stemphylium radicinum ), can be seedborne or may overwinter in crop refuse.",
-        "taxonomy_validated": false,
-        "ncbi_url": "",
-        "mycobank_url": ""
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
-        "quote": "The fungus, Alternaria radicina (formerly Stemphylium radicinum )"
-      },
-      "affected_parts": {
-        "value": [
-          "Root",
-          "Seed",
-          "Foliar",
-          "Vascular",
-          "Stem"
-        ],
-        "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
-        "quote": "necrosis of roots and crowns, foliar blight, seed/umbel blight, and storage rot... lesions on petioles can extend to the vascular system and cause yellowing, wilting, and plant death."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Causes seed decay, damping-off, blackened hypocotyls and deformed roots; small to extensive black lesions develop on the root surface with a well-defined border between infected and healthy tissue, and a dry, mealy, black decay develops on roots held in storage. Foliar symptoms are less severe than those of A. dauci.",
-          "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
-          "quote": "A. radicina causes seed decay, damping-off, blackened hypocotyls, and deformed roots. A dry, mealy, black decay may develop when carrot roots are held in storage. Foliar symptoms caused by A. radicina are less severe than those caused by A. dauci"
-        },
-        "diagnostic_features": {
-          "value": "Black lesions on the root surface with a well-defined border between infected and healthy tissues that may not penetrate deeply and enlarge slowly even near freezing; dry, mealy, black storage decay; blackened hypocotyls and deformed roots; petiole lesions extending to the vascular system causing yellowing, wilting, and plant death.",
-          "url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
-          "quote": "black lesions on the root surface, with a well-defined border between infected and healthy tissues. Such lesions may not penetrate deeply. Lesions may enlarge slowly in colder temperatures, even those near freezing."
-        },
-        "look_alikes": {
-          "value": [
-            "Alternaria Leaf Blight (Alternaria dauci)"
-          ],
-          "url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
-          "quote": "Under certain environmental conditions, A. radicina can cause a foliar blight similar to the Alternaria leaf blight incited by A. dauci."
-        }
-      },
-      "treatments": {
-        "value": [
-          "Use pathogen-free seed and, for seed crops, obtain transplant carrots free of Alternaria infection",
-          "Eradicate A. radicina from seed with a hot water treatment (122\u00c2\u00b0F for 30 min)",
-          "Rotate out of carrots for at least 1 year (3-4 years recommended) since refuse is the main overwintering route",
-          "Plow under / promptly incorporate crop debris soon after harvest",
-          "Irrigate so that carrots are dry by nightfall",
-          "Plant tolerant cultivars (e.g. Improved Half Long Chantenay, K-2043)",
-          "Control storage rot by washing, culling, minimizing wounding/breakage, and storing at 0-1\u00c2\u00b0C",
-          "Fungicides: Rovral / iprodione (e.g. Rovral 4 Flowable, Iprodione 4L AG, Meteor), copper products (Bordeaux 6-6-100, C-O-C-S WDG), mancozeb products (Dithane F45 Rainshield, Roper DF Rainshield), Nevado 4F seed treatment (WA/ID only)"
-        ],
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
-        "quote": "Use pathogen-free seed. Irrigate so that carrots are dry by nightfall. Rotation out of carrots for at least 1 year is important because refuse is the main way the organisms overwinter. Plow under crop debris soon after harvest."
-      },
-      "confidence": "high",
-      "num_sources": 2,
-      "conflicts": [
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Alternaria radicina",
-          "alternative_value": "Stemphylium radicinum",
-          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
-          "note": "Stemphylium radicinum is listed by PNW as a former (synonym/outdated) name for the current accepted name Alternaria radicina. No NCBI/MycoBank validation was supplied to confirm the accepted name."
-        },
-        {
-          "field": "disease_name",
-          "canonical_value": "Alternaria Black Rot",
-          "alternative_value": "Black Rot (carrot black root rot)",
-          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
-          "note": "UMass labels it 'Alternaria Black Rot / Alternaria Rot'; PNW labels it 'Black Rot (carrot black root rot)'. Same pathogen (A. radicina)."
-        },
-        {
-          "field": "rotation_length",
-          "canonical_value": "At least 1 year out of carrots",
-          "alternative_value": "3-4 year rotations",
-          "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
-          "note": "PNW recommends rotation out of carrots for at least 1 year; UMass recommends relatively long rotations of 3-4 years."
-        }
-      ],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "small to extensive black lesions develop on the root surface with a well-defined border between infected and healthy tissue",
-              "image_shows": "A dark, irregular mass with a rough, granular texture is present on the stem/petiole surface.",
-              "image_quote": "A dark, irregular mass with a rough, granular texture is present on the stem surface.",
-              "image_id": "bugwood::5505448",
-              "verification_status": "verified",
-              "reasoning": "The dark, granular mass on the stem/petiole matches documented olive-black velvety conidial masses that A. radicina forms on petiole lesions, so it is strongly corroborated.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://plantwiseplusknowledgebank.org/doi/10.1079/pwkb.species.4524",
-                  "quote": "dark, velvety masses of conidia forming on the affected petioles and other plant parts under conditions of high moisture and suitable temperatures"
-                },
-                {
-                  "url": "https://apsjournals.apsnet.org/doi/pdf/10.1094/PDIS.2004.88.8.776",
-                  "quote": "The fungus sporulates on root, leaf, and petiole lesions."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "small to extensive black lesions develop on the root surface with a well-defined border between infected and healthy tissue",
-              "image_shows": "The stem/petiole surface shows a mottled brown lesioned area rather than clean tissue.",
-              "image_quote": "The stem surface has a mottled appearance with a mix of darker and lighter brown tones.",
-              "image_id": "bugwood::5505448",
-              "verification_status": "weakly_supported",
-              "reasoning": "Brownish mottled discoloration on the petiole/crown is consistent with the dark, shallow petiole lesions described for black rot, but the generic coloration gives only partial support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://ipm.ucanr.edu/agriculture/carrot/black-rot-black-crown/",
-                  "quote": "The primary lesions of older plants begin at the base of the petiole whence a dark, usually shallow, lesion spreads into the crown and sides of the root."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "petiole lesions extending to the vascular system causing yellowing, wilting, and plant death",
-              "image_shows": "Dark streaks and a mottled texture run along the stem/petiole surface.",
-              "image_quote": "Dark streaks and a mottled texture are visible.",
-              "image_id": "bugwood::5505448",
-              "verification_status": "weakly_supported",
-              "reasoning": "Dark streaking on the petiole is consistent with canonical petiole lesions that spread into the crown/vascular tissue, but streaking is not itself uniquely diagnostic, giving only indirect support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://ipm.ucanr.edu/agriculture/carrot/black-rot-black-crown/",
-                  "quote": "The primary lesions of older plants begin at the base of the petiole whence a dark, usually shallow, lesion spreads into the crown and sides of the root."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "A significant fraction of the visible stem/petiole organ is covered by dark lesion tissue.",
-              "image_quote": "The image shows a close-up of a stem with a dark, irregular mass with a rough, granular texture.",
-              "image_id": "bugwood::5505448",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extensive coverage of an organ is documented for severe black rot infections (whole plants can become covered in olive-black conidia), supporting a high-severity reading of the image.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://plantwiseplusknowledgebank.org/doi/10.1079/pwkb.species.4524",
-                  "quote": "Plants that are severely attacked wither completely and may become covered with olive-black patches of conidia."
-                },
-                {
-                  "url": "https://apsjournals.apsnet.org/doi/pdf/10.1094/PDIS.2004.88.8.776",
-                  "quote": "The fungus sporulates on root, leaf, and petiole lesions."
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5505448",
-            "bugwood::5505449",
-            "bugwood::5505450",
-            "bugwood::5505451",
-            "bugwood::5505452",
-            "bugwood::5505453",
-            "bugwood::5505454",
-            "bugwood::5505455",
-            "bugwood::5505456",
-            "bugwood::5505457"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              5
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 5,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 4,
-              "n_provisional": 0,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 4,
-              "n_added": 4,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        }
-      }
+     "field": "rotation_length",
+     "canonical_value": "2-year minimum rotation out of carrots",
+     "alternative_value": "3-4 year rotations",
+     "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+     "note": "UC IPM and Cornell recommend a 2-year minimum rotation; UMass recommends relatively long rotations of 3-4 years."
     }
-  ],
-  "crop": "Carrot",
-  "generated_date": "2026-06-10",
-  "regional_observations_count": 2
+   ],
+   "regional_observations": {
+    "North Carolina": {
+     "state": "North Carolina",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "lesions ... enlarge, turn brown to black, and often develop a yellow halo; common, elongate petiole lesions",
+       "image_shows": "The lesions appear elongated along the leaf margins.",
+       "image_quote": "The lesions extend along the leaf margins.",
+       "image_id": "bugwood::1578086",
+       "verification_status": "verified",
+       "reasoning": "Extension sources confirm A. dauci lesions arise along leaflet margins and become elongated, matching the candidate.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/carrot-leaf-blight-diseases-and-their-management/",
+         "quote": "Alternaria leaf blight lesions are small and commonly found on the margins and tips of carrot leaflets.",
+         "_repaired_from": {
+          "prev_url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/carrot-leaf-blight-diseases-and-their-management/",
+          "prev_quote": "Alternaria leaf blight lesions are small and commonly found on the margins and tips of carrot leaflets, irregular in shape, dark brown to black in color."
+         }
+        },
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+         "quote": "Foliar symptoms of A. dauci first appear along leaflet margins as greenish-brown, water-soaked lesions which enlarge, turn brown to black, and often develop a yellow halo.",
+         "_repaired_from": {
+          "prev_url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+          "prev_quote": "As the infection progresses, the lesions become elongated in shape on the leaf blade and turn darker brown to black."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "lesions ... enlarge, turn brown to black ... leaves yellow, collapse, and die",
+       "image_shows": "Significant necrosis with brown spots and edges curling.",
+       "image_quote": "The leaves exhibit signs of necrosis with brown spots and edges curling, suggesting significant damage.",
+       "image_id": "bugwood::1578086",
+       "verification_status": "weakly_supported",
+       "reasoning": "Brown necrotic spotting and leaflet shriveling are documented; the curling detail is consistent with shriveling but not explicitly described, so support is partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/carrot-leaf-blight-diseases-and-their-management/",
+         "quote": "Under favorable conditions the lesions coalesce giving the leaf a blighted appearance, and eventually the leaflets may shrivel and die."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "when about 40% of a leaf is infected it yellows, collapses, and dies; scorched/blighted appearance",
+       "image_shows": "A large portion of the leaf is affected by the disease.",
+       "image_quote": "The photo shows a significant portion of the leaf affected by the disease.",
+       "image_id": "bugwood::1578086",
+       "verification_status": "weakly_supported",
+       "reasoning": "A large affected leaf area is consistent with the documented coalescing/blighting severity, though 'significant portion' is a generic severity statement.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+         "quote": "The lesions become numerous and expand until they coalesce, giving the leaf a blighted (burned) appearance; when about 40% of the leaf is infected it yellows, collapses, and dies."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaflets curl up toward the leaf axis.",
+       "image_quote": "Leaves appear to curl up towards the central stem.",
+       "image_id": "bugwood::1578086",
+       "verification_status": "weakly_supported",
+       "reasoning": "Leaflet shriveling is documented and can manifest as curling, giving indirect support to the curl observation.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.vegetables.cornell.edu/pest-management/disease-factsheets/carrot-leaf-blight-diseases-and-their-management/",
+         "quote": "Eventually the leaflets may shrivel and die."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "(not specified)",
+       "image_shows": "Target spots with alternating light and dark concentric rings.",
+       "image_quote": "Target spots with concentric rings are present.",
+       "image_id": "bugwood::1578086",
+       "verification_status": "weakly_supported",
+       "reasoning": "Some sources describe concentric-ring/target lesions for A. dauci, but authoritative extension descriptions emphasize irregular dark lesions with yellow halos, so support is only partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://plantlyze.com/blog/carrot-diseases",
+         "quote": "Lesions enlarge and may develop concentric rings or halos giving a characteristic target appearance."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "lesions ... turn brown to black, and often develop a yellow halo",
+       "image_shows": "The lesions appear raised with a slightly rough surface texture.",
+       "image_quote": "The surface of the lesions has a raised texture.",
+       "image_id": "bugwood::1578086",
+       "verification_status": "field_observation",
+       "reasoning": "Sporulation of A. dauci gives lesions a fuzzy/textured surface, indirectly supporting a rough texture, though 'raised' is not explicitly documented.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "weakly_supported"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "Leaf veins appear normal, with no clearing or vein-associated necrosis.",
+       "image_quote": "The leaf veins are translucent, indicating normal health.",
+       "image_id": "bugwood::1578086",
+       "verification_status": "field_observation",
+       "reasoning": "Published sources describe Alternaria lesions as beginning along leaflet margins rather than along veins, so absence of vein-associated necrosis is coherent with the disease but is a negative observation with no direct external corroboration.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "Leaflet/leaf geometry is lanceolate with an ~3:1 length-to-width ratio and pointed tips.",
+       "image_quote": "The leaf tips are sharp and pointy, with a length-to-width ratio of approximately 3:1.",
+       "image_id": "bugwood::1578086",
+       "verification_status": "field_observation",
+       "reasoning": "This describes host leaflet-segment geometry rather than a disease symptom, so extension photo galleries provide no disease-specific corroboration though the shape is plausible for carrot foliage.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "Cercospora leaf blight; Bacterial leaf blight",
+       "image_shows": "No look-alike diseases were detected in the image.",
+       "image_quote": "No look-alikes detected.",
+       "image_id": "bugwood::1578086",
+       "verification_status": "field_observation",
+       "reasoning": "A null observation (absence of look-alikes) is not contradicted by and is coherent with the canonical description, but no external source can corroborate a per-image absence claim.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::1578086",
+      "bugwood::1578087",
+      "bugwood::1578088",
+      "bugwood::1578089",
+      "bugwood::5506549",
+      "bugwood::5506550",
+      "bugwood::5506551",
+      "bugwood::5506552",
+      "bugwood::5506553",
+      "bugwood::5506554",
+      "bugwood::5506555"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       12
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 12,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 5,
+       "n_provisional": 4,
+       "n_contradictory": 2,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 9,
+       "n_added": 9,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 3,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Alternaria Black Molds / Stem Cankers",
+   "pathogen_scientific_name": {
+    "value": "Alternaria radicina",
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
+    "quote": "The fungus, Alternaria radicina (formerly Stemphylium radicinum ), can be seedborne or may overwinter in crop refuse.",
+    "taxonomy_validated": false,
+    "ncbi_url": "",
+    "mycobank_url": ""
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
+    "quote": "The fungus, Alternaria radicina (formerly Stemphylium radicinum )"
+   },
+   "affected_parts": {
+    "value": [
+     "Root",
+     "Seed",
+     "Foliar",
+     "Vascular",
+     "Stem"
+    ],
+    "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+    "quote": "necrosis of roots and crowns, foliar blight, seed/umbel blight, and storage rot... lesions on petioles can extend to the vascular system and cause yellowing, wilting, and plant death."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Causes seed decay, damping-off, blackened hypocotyls and deformed roots; small to extensive black lesions develop on the root surface with a well-defined border between infected and healthy tissue, and a dry, mealy, black decay develops on roots held in storage. Foliar symptoms are less severe than those of A. dauci.",
+     "url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+     "quote": "A. radicina causes seed decay, damping-off, blackened hypocotyls, and deformed roots. A dry, mealy, black decay may develop when carrot roots are held in storage. Foliar symptoms caused by A. radicina are less severe than those caused by A. dauci"
+    },
+    "diagnostic_features": {
+     "value": "Black lesions on the root surface with a well-defined border between infected and healthy tissues that may not penetrate deeply and enlarge slowly even near freezing; dry, mealy, black storage decay; blackened hypocotyls and deformed roots; petiole lesions extending to the vascular system causing yellowing, wilting, and plant death.",
+     "url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
+     "quote": "black lesions on the root surface, with a well-defined border between infected and healthy tissues. Such lesions may not penetrate deeply. Lesions may enlarge slowly in colder temperatures, even those near freezing."
+    },
+    "look_alikes": {
+     "value": [
+      "Alternaria Leaf Blight (Alternaria dauci)"
+     ],
+     "url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
+     "quote": "Under certain environmental conditions, A. radicina can cause a foliar blight similar to the Alternaria leaf blight incited by A. dauci."
+    }
+   },
+   "treatments": {
+    "value": [
+     "Use pathogen-free seed and, for seed crops, obtain transplant carrots free of Alternaria infection",
+     "Eradicate A. radicina from seed with a hot water treatment (122Â°F for 30 min)",
+     "Rotate out of carrots for at least 1 year (3-4 years recommended) since refuse is the main overwintering route",
+     "Plow under / promptly incorporate crop debris soon after harvest",
+     "Irrigate so that carrots are dry by nightfall",
+     "Plant tolerant cultivars (e.g. Improved Half Long Chantenay, K-2043)",
+     "Control storage rot by washing, culling, minimizing wounding/breakage, and storing at 0-1Â°C",
+     "Fungicides: Rovral / iprodione (e.g. Rovral 4 Flowable, Iprodione 4L AG, Meteor), copper products (Bordeaux 6-6-100, C-O-C-S WDG), mancozeb products (Dithane F45 Rainshield, Roper DF Rainshield), Nevado 4F seed treatment (WA/ID only)"
+    ],
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
+    "quote": "Use pathogen-free seed. Irrigate so that carrots are dry by nightfall. Rotation out of carrots for at least 1 year is important because refuse is the main way the organisms overwinter. Plow under crop debris soon after harvest."
+   },
+   "confidence": "high",
+   "num_sources": 2,
+   "conflicts": [
+    {
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Alternaria radicina",
+     "alternative_value": "Stemphylium radicinum",
+     "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
+     "note": "Stemphylium radicinum is listed by PNW as a former (synonym/outdated) name for the current accepted name Alternaria radicina. No NCBI/MycoBank validation was supplied to confirm the accepted name."
+    },
+    {
+     "field": "disease_name",
+     "canonical_value": "Alternaria Black Rot",
+     "alternative_value": "Black Rot (carrot black root rot)",
+     "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/carrot-daucus-carota-black-rot",
+     "note": "UMass labels it 'Alternaria Black Rot / Alternaria Rot'; PNW labels it 'Black Rot (carrot black root rot)'. Same pathogen (A. radicina)."
+    },
+    {
+     "field": "rotation_length",
+     "canonical_value": "At least 1 year out of carrots",
+     "alternative_value": "3-4 year rotations",
+     "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/vegetable/fact-sheets/carrot-alternaria-leaf-blight",
+     "note": "PNW recommends rotation out of carrots for at least 1 year; UMass recommends relatively long rotations of 3-4 years."
+    }
+   ],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "small to extensive black lesions develop on the root surface with a well-defined border between infected and healthy tissue",
+       "image_shows": "A dark, irregular mass with a rough, granular texture is present on the stem/petiole surface.",
+       "image_quote": "A dark, irregular mass with a rough, granular texture is present on the stem surface.",
+       "image_id": "bugwood::5505448",
+       "verification_status": "verified",
+       "reasoning": "The dark, granular mass on the stem/petiole matches documented olive-black velvety conidial masses that A. radicina forms on petiole lesions, so it is strongly corroborated.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://plantwiseplusknowledgebank.org/doi/10.1079/pwkb.species.4524",
+         "quote": "dark, velvety masses of conidia forming on the affected petioles and other plant parts under conditions of high moisture and suitable temperatures"
+        },
+        {
+         "url": "https://apsjournals.apsnet.org/doi/pdf/10.1094/PDIS.2004.88.8.776",
+         "quote": "The fungus sporulates on root, leaf, and petiole lesions."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "small to extensive black lesions develop on the root surface with a well-defined border between infected and healthy tissue",
+       "image_shows": "The stem/petiole surface shows a mottled brown lesioned area rather than clean tissue.",
+       "image_quote": "The stem surface has a mottled appearance with a mix of darker and lighter brown tones.",
+       "image_id": "bugwood::5505448",
+       "verification_status": "weakly_supported",
+       "reasoning": "Brownish mottled discoloration on the petiole/crown is consistent with the dark, shallow petiole lesions described for black rot, but the generic coloration gives only partial support.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://ipm.ucanr.edu/agriculture/carrot/black-rot-black-crown/",
+         "quote": "Black rot of carrots caused by Alternaria radicina starts in the crown with black lesions on the base of the petioles.",
+         "_repaired_from": {
+          "prev_url": "https://ipm.ucanr.edu/agriculture/carrot/black-rot-black-crown/",
+          "prev_quote": "The primary lesions of older plants begin at the base of the petiole whence a dark, usually shallow, lesion spreads into the crown and sides of the root."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "petiole lesions extending to the vascular system causing yellowing, wilting, and plant death",
+       "image_shows": "Dark streaks and a mottled texture run along the stem/petiole surface.",
+       "image_quote": "Dark streaks and a mottled texture are visible.",
+       "image_id": "bugwood::5505448",
+       "verification_status": "weakly_supported",
+       "reasoning": "Dark streaking on the petiole is consistent with canonical petiole lesions that spread into the crown/vascular tissue, but streaking is not itself uniquely diagnostic, giving only indirect support.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://ipm.ucanr.edu/agriculture/carrot/black-rot-black-crown/",
+         "quote": "Black rot of carrots caused by Alternaria radicina starts in the crown with black lesions on the base of the petioles.",
+         "_repaired_from": {
+          "prev_url": "https://ipm.ucanr.edu/agriculture/carrot/black-rot-black-crown/",
+          "prev_quote": "The primary lesions of older plants begin at the base of the petiole whence a dark, usually shallow, lesion spreads into the crown and sides of the root."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "A significant fraction of the visible stem/petiole organ is covered by dark lesion tissue.",
+       "image_quote": "The image shows a close-up of a stem with a dark, irregular mass with a rough, granular texture.",
+       "image_id": "bugwood::5505448",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extensive coverage of an organ is documented for severe black rot infections (whole plants can become covered in olive-black conidia), supporting a high-severity reading of the image.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://plantwiseplusknowledgebank.org/doi/10.1079/pwkb.species.4524",
+         "quote": "Plants that are severely attacked wither completely and may become covered with olive-black patches of conidia."
+        },
+        {
+         "url": "https://apsjournals.apsnet.org/doi/pdf/10.1094/PDIS.2004.88.8.776",
+         "quote": "The fungus sporulates on root, leaf, and petiole lesions."
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5505448",
+      "bugwood::5505449",
+      "bugwood::5505450",
+      "bugwood::5505451",
+      "bugwood::5505452",
+      "bugwood::5505453",
+      "bugwood::5505454",
+      "bugwood::5505455",
+      "bugwood::5505456",
+      "bugwood::5505457"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       5
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 5,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 4,
+       "n_provisional": 0,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 4,
+       "n_added": 4,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    }
+   }
+  }
+ ],
+ "crop": "Carrot",
+ "generated_date": "2026-06-10",
+ "regional_observations_count": 2
 }

@@ -1,543 +1,540 @@
 {
-  "diseases": [
-    {
-      "disease_name": "Anthracnose",
-      "pathogen_scientific_name": {
-        "value": "Aureobasidium apocryptum",
-        "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
-        "quote": "Scientific Name Aureobasidium apocryptum",
-        "taxonomy_validated": false,
-        "ncbi_url": "",
-        "mycobank_url": ""
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
-        "quote": "Aureobasidium apocryptum is an asexual fungus that causes a common non-fatal leaf blight on many species of maple."
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem"
-        ],
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-anthracnose",
-        "quote": "Usually there are vein-associated lesions, discrete necrotic spots, and/or irregular necrotic blotches or blights. ... Twig cankers or lesions also can develop where fungi can overwinter."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Symptoms are characterized by dark-colored, irregularly-shaped, angular spots or blotches that occur primarily along the midrib, primary veins and leaf margins; they appear in late spring or summer as scattered, sharply defined reddish-brown dead areas on or near leaf veins, may enlarge and coalesce to kill large areas of leaves, cause twisting/crinkling/malformation, and severely diseased trees can defoliate early.",
-          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-          "quote": "in general the symptoms are characterized by dark-colored, irregularly-shaped, angular spots or blotches that occur primarily along the midrib, primary veins and leaf margins."
-        },
-        "diagnostic_features": {
-          "value": "Lesions occur primarily along the midrib, primary veins and leaf margins (narrow, purplish-black streaks on Norway maple; large brown blotches on sugar maple; tan or black lesions on Japanese maple); acervuli (spore pads) form within leaf spots and blotches. A. apocryptum is distinguished from other maple pathogens by its formation of one-celled, colorless conidia in groups of four to eight on the tips of short, broad conidiophores.",
-          "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
-          "quote": "A. apocryptum can be distinguished from other pathogens of maple by its formation of one-celled, colorless conidia in groups of four to eight on the tips of short, broad conidiophores."
-        },
-        "look_alikes": {
-          "value": [
-            "leaf scorch caused by drought and heat injury",
-            "Discula campestris",
-            "Discula umbrinella",
-            "Monostichella histeroidea",
-            "Phyllosticta minima",
-            "angular spots due to Kabatiella sp."
-          ],
-          "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
-          "quote": "Symptoms of maple anthracnose caused by A. apocryptum may be confused with leaf scorch caused by drought and heat injury. ... Other fungi that cause anthracnose on maple, Discula campestris , Discula umbrinella , and Monostichella histeroidea , also produces acervuli, but the condia are quite distinct. ... Yet another pathogen of maple, Phyllosticta minima , produces pycnidia."
-        }
-      },
-      "treatments": {
-        "value": [
-          "Avoid overhead irrigation/splashing water and time irrigation to minimize the time leaves are wet, reducing free moisture on the foliage",
-          "Rake up, remove and destroy fallen/infected leaves (primary source of inoculum; prevents over-wintering)",
-          "Prune out infected shoots and remove/destroy twig cankers during dormant pruning",
-          "Maintain tree vigor through adequate fertilization, watering, mulching and pruning; water and fertilize defoliated trees; apply lime if soil pH is too low",
-          "Avoid dense plantings in nurseries",
-          "Apply labeled fungicides to protect susceptible/nursery trees, with the first application at or just before bud break and continued through spring",
-          "Labeled active ingredients/products: copper hydroxide + mancozeb, thiabendazole, mancozeb (Fore 80WP Rainshield, Protect DF), propiconazole (Banner MAXX, Tebuject 16), thiophanate-methyl (Cleary's 3336 EG, OHP 6672), chlorothalonil (Daconil Weather Stik, Bonide Fung-onil), Armada 50 WDG, Spectro 90 WDG, Tourney EZ"
-        ],
-        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-        "quote": "avoid overhead irrigation of ornamental maples to reduce free moisture on the foliage. Infected leaves are the primary source of inoculum and should be removed from the site. If the disease is severe, infected shoots should be pruned out... The following products are labeled for use against anthracnose of maple: copper hydroxide + mancozeb, thiabendazole, mancozeb and propiconazole. The first application should be made at or just before bud break"
-      },
-      "confidence": "high",
-      "num_sources": 3,
-      "conflicts": [
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Aureobasidium apocryptum",
-          "alternative_value": "Discula sp. and Aureobasidium apocryptum",
-          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-anthracnose",
-          "note": "Maple anthracnose is caused by several foliar fungi; PNW lists Discula sp. alongside A. apocryptum. UMass notes the synonym Kabatiella apocrypta and also lists Discula campestris and Colletotrichum gleosporoides as causal agents. No taxonomy validation data was supplied, so taxonomy_validated is false."
-        },
-        {
-          "field": "affected_parts",
-          "canonical_value": "Foliar, Stem",
-          "alternative_value": "Foliar",
-          "alternative_source_url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
-          "note": "Bugwood describes A. apocryptum as a foliar pathogen only; UMass and PNW note twig/shoot involvement under high disease pressure."
-        }
-      ],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "affected_organs",
-              "canonical_says": "Lesions occur primarily along the midrib, primary veins and leaf margins",
-              "image_shows": "There is a canker present on the outer stem.",
-              "image_quote": "The outer surface of the stem shows a sunken and rough lesion.",
-              "image_id": "bugwood::5503749",
-              "verification_status": "verified",
-              "reasoning": "Multiple extension sources confirm maple anthracnose produces twig/stem cankers where the fungus overwinters, supporting a sunken stem lesion as a state-specific addition to the primarily foliar canonical.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
-                  "quote": "The disease occasionally causes twig cankers, where the fungus can overwinter, and cankers may also girdle twigs, causing tip dieback."
-                },
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-anthracnose",
-                  "quote": "The range of symptoms includes leaf spots, blighted leaves and young shoots, cankers, and dieback of young twigs and branches."
-                },
-                {
-                  "url": "https://hgic.clemson.edu/factsheet/maple-diseases-insect-pests/",
-                  "quote": "Twig cankers or lesions can develop where fungi can overwinter."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "dark-colored, irregularly-shaped, angular spots or blotches",
-              "image_shows": "The affected tissue shows a mix of dark brown and light brown tones.",
-              "image_quote": "The main affected area displays shades of dark brown and light brown.",
-              "image_id": "bugwood::5503749",
-              "verification_status": "weakly_supported",
-              "reasoning": "Sources describe both dark (reddish-brown/black) lesion tissue and light brown acervuli/tan margins, giving partial support to the observed dark-brown/light-brown mix.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umn.edu/plant-diseases/anthracnose-trees-and-shrubs",
-                  "quote": "the spots enlarge and eventually turn tan, reddish-brown or black."
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
-                  "quote": "Signs of infection include inconspicuous light brown acervuli located on the lower surfaces of lesions, especially along veins."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "may enlarge and coalesce to kill large areas of leaves ... severely diseased trees can defoliate early",
-              "image_shows": "The photo shows a high fraction of the leaf's surface area affected by Anthracnose lesions.",
-              "image_quote": "The lesions are clearly visible, covering a significant portion of the leaf surface.",
-              "image_id": "bugwood::5503749",
-              "verification_status": "verified",
-              "reasoning": "Extension sources confirm that severe maple anthracnose lesions coalesce to affect large portions of leaf surface, corroborating the high-severity visual observation.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.canr.msu.edu/news/maple_anthracnose",
-                  "quote": "Infected leaves fall when the petiole is girdled or when several lesions enlarge and coalesce to form large, dead blotches."
-                },
-                {
-                  "url": "https://extension.umd.edu/resource/anthracnose-diseases-shade-trees",
-                  "quote": "Trees with severe anthracnose infection exhibit a scorched or blighted appearance."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "acervuli (spore pads) form within leaf spots and blotches",
-              "image_shows": "There are multiple small yellowish specks on the stem surface, which appear to be exudates.",
-              "image_quote": "There are multiple small yellowish specks on the stem surface, which appear to be exudates.",
-              "image_id": "bugwood::5503749",
-              "verification_status": "novel_plausible",
-              "reasoning": "Extension sources describe maple-anthracnose stem/twig fruiting structures (acervuli) as small black dots with colorless conidia rather than yellowish exudate specks, so the observation is unsupported for maple anthracnose specifically, but it is coherent with anthracnose spore-mass formation and not directly contradicted, warranting curator review.",
-              "swarm_support": 1,
-              "web_support": []
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5503749",
-            "bugwood::5503750",
-            "bugwood::5503751",
-            "bugwood::5503752",
-            "bugwood::5503753",
-            "bugwood::5503754",
-            "bugwood::5503755",
-            "bugwood::5503756",
-            "bugwood::5503757",
-            "bugwood::5503758"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              6
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 6,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 3,
-              "n_provisional": 1,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 4,
-              "n_added": 4,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": true,
-            "failure_reason": "claude_query returned None (auth / timeout / empty)",
-            "preserved_count": 1
-          }
-        }
-      }
+ "diseases": [
+  {
+   "disease_name": "Anthracnose",
+   "pathogen_scientific_name": {
+    "value": "Aureobasidium apocryptum",
+    "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+    "quote": "Scientific Name Aureobasidium apocryptum",
+    "taxonomy_validated": false,
+    "ncbi_url": "",
+    "mycobank_url": ""
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+    "quote": "Aureobasidium apocryptum is an asexual fungus that causes a common non-fatal leaf blight on many species of maple."
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem"
+    ],
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-anthracnose",
+    "quote": "Usually there are vein-associated lesions, discrete necrotic spots, and/or irregular necrotic blotches or blights. ... Twig cankers or lesions also can develop where fungi can overwinter."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Symptoms are characterized by dark-colored, irregularly-shaped, angular spots or blotches that occur primarily along the midrib, primary veins and leaf margins; they appear in late spring or summer as scattered, sharply defined reddish-brown dead areas on or near leaf veins, may enlarge and coalesce to kill large areas of leaves, cause twisting/crinkling/malformation, and severely diseased trees can defoliate early.",
+     "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+     "quote": "in general the symptoms are characterized by dark-colored, irregularly-shaped, angular spots or blotches that occur primarily along the midrib, primary veins and leaf margins."
     },
-    {
-      "disease_name": "Phomopsis Cankers And Twig Blights",
-      "pathogen_scientific_name": {
-        "value": "",
-        "url": "",
-        "quote": "",
-        "taxonomy_validated": false,
-        "ncbi_url": "",
-        "mycobank_url": ""
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phomopsis-canker",
-        "quote": "Cankering fungi like Phomopsis attack the phloem, cambium, and outer sapwood of woody plants (Sinclair and Lyon 2005)."
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem"
-        ],
-        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phomopsis-canker",
-        "quote": "Phomopsis can cause cankers of young shoots, small stems and branches, and occasionally primary branches and the main trunk of trees and shrubs (Sinclair and Lyon 2005)."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Infected woody plants show thinning canopies, browning and prematurely shedding foliage, scattered branch dieback, and eruptive cankers on the bark, sometimes with sunken sap-stained lesions and oozing sap; in many cases the only symptoms are leaf wilting and canopy dieback.",
-          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phomopsis-canker",
-          "quote": "Typical symptoms of infection include thinning canopies, browning and prematurely shedding foliage, scattered branch dieback, and eruptive cankers on the bark. There may also be sunken lesions on shoots and branches with sap-stained bark, along with cracking, splitting, and sloughing bark or oozing sap near the canker site (Sinclair and Lyon 2005)."
-        },
-        "diagnostic_features": {
-          "value": "After establishing in the canopy, the pathogen produces an abundance of small, black-colored pads of fungal tissue (pycnidia) that erupt through the bark to release cream-colored spore tendrils (cirrhi).",
-          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phomopsis-canker",
-          "quote": "After Phomopsis has established within the canopy, it produces an abundance of small, black-colored pads of fungal tissue (pycnidia) that erupt through the bark to release cream-colored spore tendrils (cirrhi)."
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Minimize stresses that predispose woody plants to infection and maintain high plant vigor",
-          "Irrigate susceptible trees and shrubs at regular intervals during extended dry periods to minimize drought stress",
-          "Fertilize if soil nutrients are lacking and mulch the root zone to retain soil moisture",
-          "Limit mechanical wounds (e.g. string trimmers) and avoid needless damage to canopy and roots",
-          "Avoid excessive pruning, especially on recently transplanted plants, and avoid pruning during wet spring periods",
-          "Perform regular sanitation pruning to remove dead twigs; prune cankered stems/branches at least 6-12 inches away from blighted tissue and remove diseased material from the site",
-          "Sanitize pruning tools after working with infected or suspected plants",
-          "Apply registered fungicides in spring to protect newly developing tissues (azoxystrobin, captan, copper salts of fatty and rosin acids, copper hydroxide, mancozeb, metconazole, phosphites, propiconazole, tebuconazole, thiophanate-methyl); avoid application on actively flowering plants to protect pollinators"
-        ],
-        "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phomopsis-canker",
-        "quote": "Pruning of cankered stems and branches, at least 6-12 inches away from the blighted tissue (if possible), and removal of the diseased material from the site is the best management practice. ... Fungicides registered for use against Phomopsis include: azoxystrobin captan, copper salts of fatty and rosin acids, copper hydroxide, mancozeb, metconazole, phosphites, propiconazole, tebuconazole, and thiophanate-methyl."
-      },
-      "confidence": "medium",
-      "num_sources": 1,
-      "conflicts": [],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "small, black-colored pads of fungal tissue (pycnidia) that erupt through the bark to release cream-colored spore tendrils (cirrhi)",
-              "image_shows": "In this Maine specimen the spore tendrils erupting through the bark appear distinctly yellowish rather than cream-white.",
-              "image_quote": "The image shows numerous small, yellowish, thread-like structures erupting through the bark.",
-              "image_id": "bugwood::5528657",
-              "verification_status": "verified",
-              "reasoning": "Extension sources confirm Phomopsis spore tendrils erupting through bark can be cream-to-yellow under moist conditions, corroborating the observed yellowish thread-like cirrhi.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://plantpath.caes.uga.edu/content/dam/caes-subsite/plant-pathology/extension-pdfs/PDL-Fungi-phomopsis.pdf",
-                  "quote": "Black, globe-shaped pycnidia... erupt through the epidermis, with a small opening (ostiole) at the apex from which spores are often extruded in cream to yellow-colored spore tendrils under moist conditions."
-                },
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phomopsis-canker",
-                  "quote": "Black, pimplelike fruiting bodies (pycnidia) can be observed erupting through the bark, and each pycnidium produces a curling tendril of asexual spores (conidia) that are gelatinous, stringlike, and cream colored to white."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "eruptive cankers on the bark, sometimes with sunken sap-stained lesions",
-              "image_shows": "The bark bears numerous small black pycnidial spots surrounded by yellowish spore-tendril growth.",
-              "image_quote": "The bark displays numerous small black spots with surrounding yellowish growth, indicating the presence of fungal pycnidia.",
-              "image_id": "bugwood::5528657",
-              "verification_status": "weakly_supported",
-              "reasoning": "The black spots are consistent with documented pycnidia and the surrounding yellowish growth matches the yellow spore tendrils extruded under moist conditions, giving indirect support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://plantpath.caes.uga.edu/content/dam/caes-subsite/plant-pathology/extension-pdfs/PDL-Fungi-phomopsis.pdf",
-                  "quote": "Black, globe-shaped pycnidia... erupt through the epidermis... from which spores are often extruded in cream to yellow-colored spore tendrils under moist conditions."
-                },
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-branch-cankers",
-                  "quote": "Phomopsis sp. is one of several fungi found in maple branch cankers, and the pathogen is more common on trees and shrubs with thin bark and dense canopies where shade and free moisture linger, such as Japanese maple."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected bark region combines brown, grayish-white, and black tones.",
-              "image_quote": "The affected area shows brown, grayish-white, and black colors.",
-              "image_id": "bugwood::5528657",
-              "verification_status": "verified",
-              "reasoning": "Extension sources describe Phomopsis-affected bark as a combination of brown-to-black discoloration mixed with whitish/bleached tones plus black pycnidia, corroborating the brown, grayish-white, and black mix.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://ipm.ucanr.edu/agriculture/walnut/botryosphaeria-dieback/",
-                  "quote": "Irregular black to dark brown bark discoloration mixed with whitish areas of bleached wood is a characteristic sign of infection."
-                },
-                {
-                  "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/phomopsiscan.html",
-                  "quote": "Cutting away the bark reveals the discolored, brown to black cortical and cambial tissues; small, black-colored pads of fungal tissue (pycnidia) erupt through the bark."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5528657",
-            "bugwood::5528658",
-            "bugwood::5528659",
-            "bugwood::5528660",
-            "bugwood::5528661",
-            "bugwood::5528662",
-            "bugwood::5528663",
-            "bugwood::5528664",
-            "bugwood::5528665",
-            "bugwood::5528666",
-            "bugwood::5528667",
-            "bugwood::5528668",
-            "bugwood::5528669",
-            "bugwood::5528670",
-            "bugwood::5528671"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              6
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 6,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 2,
-              "n_provisional": 1,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 3,
-              "n_added": 3,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+    "diagnostic_features": {
+     "value": "Lesions occur primarily along the midrib, primary veins and leaf margins (narrow, purplish-black streaks on Norway maple; large brown blotches on sugar maple; tan or black lesions on Japanese maple); acervuli (spore pads) form within leaf spots and blotches. A. apocryptum is distinguished from other maple pathogens by its formation of one-celled, colorless conidia in groups of four to eight on the tips of short, broad conidiophores.",
+     "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+     "quote": "A. apocryptum can be distinguished from other pathogens of maple by its formation of one-celled, colorless conidia in groups of four to eight on the tips of short, broad conidiophores."
     },
-    {
-      "disease_name": "Powdery Mildew",
-      "pathogen_scientific_name": {
-        "value": "Phyllactinia marissallii",
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
-        "quote": "Phyllactinia marissallii , a fungus that attacks only maple.",
-        "taxonomy_validated": false,
-        "ncbi_url": "",
-        "mycobank_url": ""
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
-        "quote": "Phyllactinia marissallii , a fungus that attacks only maple."
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar"
-        ],
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
-        "quote": "A white fungal growth often occurs with small black fruiting bodies (chasmothecia), on the undersides of mature leaves."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "A white fungal growth occurs with small black fruiting bodies (chasmothecia) on the undersides of mature leaves; white colonies/patches can cover the leaf surface.",
-          "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
-          "quote": "A white fungal growth often occurs with small black fruiting bodies (chasmothecia), on the undersides of mature leaves."
-        },
-        "diagnostic_features": {
-          "value": "Phyllactinia sp. typically have very sparsely growing mycelia and colonies can be difficult to detect, while Sawadaea sp. have more obvious robust colonies; S. tulansnei has white mycelium in irregular, discrete, scattered spots or almost continuously on the upper leaf surfaces and on some petioles.",
-          "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
-          "quote": "Phyllactinia sp. typically have very sparsely growing mycelia and colonies can be difficult to detect while Sawadaea sp. have more obvious robust colonies. S. tulansnei was described as having white mycelium present in irregular, discrete, scattered spots or almost continuously on the upper surfaces of leaves and also was present on some petioles."
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Apply fungicides preventively before symptoms develop, at 7- to 14-day intervals (shorter when conditions favor disease); alternate or tank-mix products from different FRAC groups to manage resistance",
-          "Note most fungicides are not labeled for trees used for syrup production",
-          "Registered chemical products: Armada 50 WDG, Avelyo, Banner MAXX, Eagle 20 EW, Heritage, Insignia SC, Magus, Myclobutanil 20 EW T&O, Orkestra, Seido, Spectracide Immunox, Tourney EZ, Trinity, and Safer Brand Garden Fungicide (0.4% sulfur)",
-          "Biological control: Cease or Rhapsody (Bacillus subtilis strain QST 713) at 2 to 8 quarts/100 gal water, registered for Japanese Maple"
-        ],
-        "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
-        "quote": "Chemical control Most of these fungicides are not labeled for use on trees to be used for syrup production. Fungicides will do best when used before symptoms develop. Few materials have good eradicant activity. Use at 7- to 14-day intervals"
-      },
-      "confidence": "medium",
-      "num_sources": 1,
-      "conflicts": [],
-      "regional_observations": {
-        "New York": {
-          "state": "New York",
-          "deltas": [
-            {
-              "field": "look_alikes",
-              "canonical_says": "A white fungal growth occurs with small black fruiting bodies (chasmothecia) on the undersides of mature leaves; white colonies/patches can cover the leaf surface.",
-              "image_shows": "The isolated black spot with a lighter halo is atypical of powdery mildew, which produces diffuse white surface growth, and is more consistent with a leaf-spot/tar-spot look-alike.",
-              "image_quote": "There is a small, dark circular spot with a lighter halo around it.",
-              "image_id": "bugwood::5519034",
-              "verification_status": "weakly_supported",
-              "reasoning": "External sources confirm a discrete black spot with a halo is more consistent with a tar-spot/leaf-spot look-alike than with the diffuse white growth of true powdery mildew, supporting the candidate's flagged discrepancy.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.independenttree.com/maple-tar-spot/",
-                  "quote": "Tar spot is a foliar disease of maple that results in tarry black lesions on the leaves, with the black spots becoming raised and surrounded by yellow margins."
-                },
-                {
-                  "url": "https://worldofgardenplants.com/how-do-you-treat-fungus-on-a-japanese-maple/",
-                  "quote": "Powdery mildew looks like white, dusty growth on the surfaces of leaves rather than a discrete spot."
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5519034",
-            "bugwood::5519035",
-            "bugwood::5519036",
-            "bugwood::5519037",
-            "bugwood::5519038",
-            "bugwood::5519042",
-            "bugwood::5519043",
-            "bugwood::5519044",
-            "bugwood::5519045",
-            "bugwood::5519046"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              4
-            ],
-            "detected_organ_per_pass": [
-              "fruit"
-            ],
-            "n_active_agents_per_pass": [
-              6
-            ],
-            "n_after_agreement": 4,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 1,
-              "n_provisional": 1,
-              "n_contradictory": 2,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 2,
-              "n_added": 2,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 1,
-            "dropped_contradictory": []
-          }
-        }
-      }
+    "look_alikes": {
+     "value": [
+      "leaf scorch caused by drought and heat injury",
+      "Discula campestris",
+      "Discula umbrinella",
+      "Monostichella histeroidea",
+      "Phyllosticta minima",
+      "angular spots due to Kabatiella sp."
+     ],
+     "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+     "quote": "Symptoms of maple anthracnose caused by A. apocryptum may be confused with leaf scorch caused by drought and heat injury. ... Other fungi that cause anthracnose on maple, Discula campestris , Discula umbrinella , and Monostichella histeroidea , also produces acervuli, but the condia are quite distinct. ... Yet another pathogen of maple, Phyllosticta minima , produces pycnidia."
     }
-  ],
-  "crop": "Japanese Maple",
-  "generated_date": "2026-06-10",
-  "regional_observations_count": 3
+   },
+   "treatments": {
+    "value": [
+     "Avoid overhead irrigation/splashing water and time irrigation to minimize the time leaves are wet, reducing free moisture on the foliage",
+     "Rake up, remove and destroy fallen/infected leaves (primary source of inoculum; prevents over-wintering)",
+     "Prune out infected shoots and remove/destroy twig cankers during dormant pruning",
+     "Maintain tree vigor through adequate fertilization, watering, mulching and pruning; water and fertilize defoliated trees; apply lime if soil pH is too low",
+     "Avoid dense plantings in nurseries",
+     "Apply labeled fungicides to protect susceptible/nursery trees, with the first application at or just before bud break and continued through spring",
+     "Labeled active ingredients/products: copper hydroxide + mancozeb, thiabendazole, mancozeb (Fore 80WP Rainshield, Protect DF), propiconazole (Banner MAXX, Tebuject 16), thiophanate-methyl (Cleary's 3336 EG, OHP 6672), chlorothalonil (Daconil Weather Stik, Bonide Fung-onil), Armada 50 WDG, Spectro 90 WDG, Tourney EZ"
+    ],
+    "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+    "quote": "avoid overhead irrigation of ornamental maples to reduce free moisture on the foliage. Infected leaves are the primary source of inoculum and should be removed from the site. If the disease is severe, infected shoots should be pruned out... The following products are labeled for use against anthracnose of maple: copper hydroxide + mancozeb, thiabendazole, mancozeb and propiconazole. The first application should be made at or just before bud break"
+   },
+   "confidence": "high",
+   "num_sources": 3,
+   "conflicts": [
+    {
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Aureobasidium apocryptum",
+     "alternative_value": "Discula sp. and Aureobasidium apocryptum",
+     "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-anthracnose",
+     "note": "Maple anthracnose is caused by several foliar fungi; PNW lists Discula sp. alongside A. apocryptum. UMass notes the synonym Kabatiella apocrypta and also lists Discula campestris and Colletotrichum gleosporoides as causal agents. No taxonomy validation data was supplied, so taxonomy_validated is false."
+    },
+    {
+     "field": "affected_parts",
+     "canonical_value": "Foliar, Stem",
+     "alternative_value": "Foliar",
+     "alternative_source_url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+     "note": "Bugwood describes A. apocryptum as a foliar pathogen only; UMass and PNW note twig/shoot involvement under high disease pressure."
+    }
+   ],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "affected_organs",
+       "canonical_says": "Lesions occur primarily along the midrib, primary veins and leaf margins",
+       "image_shows": "There is a canker present on the outer stem.",
+       "image_quote": "The outer surface of the stem shows a sunken and rough lesion.",
+       "image_id": "bugwood::5503749",
+       "verification_status": "verified",
+       "reasoning": "Multiple extension sources confirm maple anthracnose produces twig/stem cankers where the fungus overwinters, supporting a sunken stem lesion as a state-specific addition to the primarily foliar canonical.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://wiki.bugwood.org/Aureobasidium_apocryptum_(Anthracnose_on_maple)",
+         "quote": "The disease occasionally causes twig cankers, where the fungus can overwinter, and cankers may also girdle twigs, causing tip dieback."
+        },
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-anthracnose",
+         "quote": "The range of symptoms includes leaf spots, blighted leaves and young shoots, cankers, and dieback of young twigs and branches."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "dark-colored, irregularly-shaped, angular spots or blotches",
+       "image_shows": "The affected tissue shows a mix of dark brown and light brown tones.",
+       "image_quote": "The main affected area displays shades of dark brown and light brown.",
+       "image_id": "bugwood::5503749",
+       "verification_status": "weakly_supported",
+       "reasoning": "Sources describe both dark (reddish-brown/black) lesion tissue and light brown acervuli/tan margins, giving partial support to the observed dark-brown/light-brown mix.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umn.edu/plant-diseases/anthracnose-trees-and-shrubs",
+         "quote": "the spots enlarge and eventually turn tan, reddish-brown or black."
+        },
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/maple-anthracnose",
+         "quote": "Signs of infection include inconspicuous light brown acervuli located on the lower surfaces of lesions, especially along veins."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "may enlarge and coalesce to kill large areas of leaves ... severely diseased trees can defoliate early",
+       "image_shows": "The photo shows a high fraction of the leaf's surface area affected by Anthracnose lesions.",
+       "image_quote": "The lesions are clearly visible, covering a significant portion of the leaf surface.",
+       "image_id": "bugwood::5503749",
+       "verification_status": "verified",
+       "reasoning": "Extension sources confirm that severe maple anthracnose lesions coalesce to affect large portions of leaf surface, corroborating the high-severity visual observation.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.canr.msu.edu/news/maple_anthracnose",
+         "quote": "Infected leaves fall when the petiole is girdled or when several lesions enlarge and coalesce to form large, dead blotches."
+        },
+        {
+         "url": "https://extension.umd.edu/resource/anthracnose-diseases-shade-trees",
+         "quote": "Trees with severe anthracnose infection exhibit a scorched or blighted appearance."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "acervuli (spore pads) form within leaf spots and blotches",
+       "image_shows": "There are multiple small yellowish specks on the stem surface, which appear to be exudates.",
+       "image_quote": "There are multiple small yellowish specks on the stem surface, which appear to be exudates.",
+       "image_id": "bugwood::5503749",
+       "verification_status": "field_observation",
+       "reasoning": "Extension sources describe maple-anthracnose stem/twig fruiting structures (acervuli) as small black dots with colorless conidia rather than yellowish exudate specks, so the observation is unsupported for maple anthracnose specifically, but it is coherent with anthracnose spore-mass formation and not directly contradicted, warranting curator review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5503749",
+      "bugwood::5503750",
+      "bugwood::5503751",
+      "bugwood::5503752",
+      "bugwood::5503753",
+      "bugwood::5503754",
+      "bugwood::5503755",
+      "bugwood::5503756",
+      "bugwood::5503757",
+      "bugwood::5503758"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       6
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 6,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 3,
+       "n_provisional": 1,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 4,
+       "n_added": 4,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": true,
+      "failure_reason": "claude_query returned None (auth / timeout / empty)",
+      "preserved_count": 1
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Phomopsis Cankers And Twig Blights",
+   "pathogen_scientific_name": {
+    "value": "",
+    "url": "",
+    "quote": "",
+    "taxonomy_validated": false,
+    "ncbi_url": "",
+    "mycobank_url": ""
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phomopsis-canker",
+    "quote": "Cankering fungi like Phomopsis attack the phloem, cambium, and outer sapwood of woody plants (Sinclair and Lyon 2005)."
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem"
+    ],
+    "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phomopsis-canker",
+    "quote": "Phomopsis can cause cankers of young shoots, small stems and branches, and occasionally primary branches and the main trunk of trees and shrubs (Sinclair and Lyon 2005)."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Infected woody plants show thinning canopies, browning and prematurely shedding foliage, scattered branch dieback, and eruptive cankers on the bark, sometimes with sunken sap-stained lesions and oozing sap; in many cases the only symptoms are leaf wilting and canopy dieback.",
+     "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phomopsis-canker",
+     "quote": "Typical symptoms of infection include thinning canopies, browning and prematurely shedding foliage, scattered branch dieback, and eruptive cankers on the bark. There may also be sunken lesions on shoots and branches with sap-stained bark, along with cracking, splitting, and sloughing bark or oozing sap near the canker site (Sinclair and Lyon 2005)."
+    },
+    "diagnostic_features": {
+     "value": "After establishing in the canopy, the pathogen produces an abundance of small, black-colored pads of fungal tissue (pycnidia) that erupt through the bark to release cream-colored spore tendrils (cirrhi).",
+     "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phomopsis-canker",
+     "quote": "After Phomopsis has established within the canopy, it produces an abundance of small, black-colored pads of fungal tissue (pycnidia) that erupt through the bark to release cream-colored spore tendrils (cirrhi)."
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
+    }
+   },
+   "treatments": {
+    "value": [
+     "Minimize stresses that predispose woody plants to infection and maintain high plant vigor",
+     "Irrigate susceptible trees and shrubs at regular intervals during extended dry periods to minimize drought stress",
+     "Fertilize if soil nutrients are lacking and mulch the root zone to retain soil moisture",
+     "Limit mechanical wounds (e.g. string trimmers) and avoid needless damage to canopy and roots",
+     "Avoid excessive pruning, especially on recently transplanted plants, and avoid pruning during wet spring periods",
+     "Perform regular sanitation pruning to remove dead twigs; prune cankered stems/branches at least 6-12 inches away from blighted tissue and remove diseased material from the site",
+     "Sanitize pruning tools after working with infected or suspected plants",
+     "Apply registered fungicides in spring to protect newly developing tissues (azoxystrobin, captan, copper salts of fatty and rosin acids, copper hydroxide, mancozeb, metconazole, phosphites, propiconazole, tebuconazole, thiophanate-methyl); avoid application on actively flowering plants to protect pollinators"
+    ],
+    "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phomopsis-canker",
+    "quote": "Pruning of cankered stems and branches, at least 6-12 inches away from the blighted tissue (if possible), and removal of the diseased material from the site is the best management practice. ... Fungicides registered for use against Phomopsis include: azoxystrobin captan, copper salts of fatty and rosin acids, copper hydroxide, mancozeb, metconazole, phosphites, propiconazole, tebuconazole, and thiophanate-methyl."
+   },
+   "confidence": "medium",
+   "num_sources": 1,
+   "conflicts": [],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "small, black-colored pads of fungal tissue (pycnidia) that erupt through the bark to release cream-colored spore tendrils (cirrhi)",
+       "image_shows": "In this Maine specimen the spore tendrils erupting through the bark appear distinctly yellowish rather than cream-white.",
+       "image_quote": "The image shows numerous small, yellowish, thread-like structures erupting through the bark.",
+       "image_id": "bugwood::5528657",
+       "verification_status": "verified",
+       "reasoning": "Extension sources confirm Phomopsis spore tendrils erupting through bark can be cream-to-yellow under moist conditions, corroborating the observed yellowish thread-like cirrhi.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://plantpath.caes.uga.edu/content/dam/caes-subsite/plant-pathology/extension-pdfs/PDL-Fungi-phomopsis.pdf",
+         "quote": "Black, globe-shaped pycnidia... erupt through the epidermis, with a small opening (ostiole) at the apex from which spores are often extruded in cream to yellow-colored spore tendrils under moist conditions."
+        },
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/phomopsis-canker",
+         "quote": "Black, pimplelike fruiting bodies (pycnidia) can be observed erupting through the bark, and each pycnidium produces a curling tendril of asexual spores (conidia) that are gelatinous, stringlike, and cream colored to white."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "eruptive cankers on the bark, sometimes with sunken sap-stained lesions",
+       "image_shows": "The bark bears numerous small black pycnidial spots surrounded by yellowish spore-tendril growth.",
+       "image_quote": "The bark displays numerous small black spots with surrounding yellowish growth, indicating the presence of fungal pycnidia.",
+       "image_id": "bugwood::5528657",
+       "verification_status": "weakly_supported",
+       "reasoning": "The black spots are consistent with documented pycnidia and the surrounding yellowish growth matches the yellow spore tendrils extruded under moist conditions, giving indirect support.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://plantpath.caes.uga.edu/content/dam/caes-subsite/plant-pathology/extension-pdfs/PDL-Fungi-phomopsis.pdf",
+         "quote": "Black, globe-shaped pycnidia... erupt through the epidermis... from which spores are often extruded in cream to yellow-colored spore tendrils under moist conditions."
+        },
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-branch-cankers",
+         "quote": "Phomopsis sp. is one of several fungi found in maple branch cankers, and the pathogen is more common on trees and shrubs with thin bark and dense canopies where shade and free moisture linger, such as Japanese maple."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The affected bark region combines brown, grayish-white, and black tones.",
+       "image_quote": "The affected area shows brown, grayish-white, and black colors.",
+       "image_id": "bugwood::5528657",
+       "verification_status": "verified",
+       "reasoning": "Extension sources describe Phomopsis-affected bark as a combination of brown-to-black discoloration mixed with whitish/bleached tones plus black pycnidia, corroborating the brown, grayish-white, and black mix.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/phomopsiscan.html",
+         "quote": "Once a Phomopsis species becomes established in a stem, black, pimplelike fruiting bodies (pycnidia) can be observed erupting through the bark.",
+         "_repaired_from": {
+          "prev_url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/phomopsiscan.html",
+          "prev_quote": "Cutting away the bark reveals the discolored, brown to black cortical and cambial tissues; small, black-colored pads of fungal tissue (pycnidia) erupt through the bark."
+         }
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5528657",
+      "bugwood::5528658",
+      "bugwood::5528659",
+      "bugwood::5528660",
+      "bugwood::5528661",
+      "bugwood::5528662",
+      "bugwood::5528663",
+      "bugwood::5528664",
+      "bugwood::5528665",
+      "bugwood::5528666",
+      "bugwood::5528667",
+      "bugwood::5528668",
+      "bugwood::5528669",
+      "bugwood::5528670",
+      "bugwood::5528671"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       6
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 6,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 2,
+       "n_provisional": 1,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 3,
+       "n_added": 3,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Powdery Mildew",
+   "pathogen_scientific_name": {
+    "value": "Phyllactinia marissallii",
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
+    "quote": "Phyllactinia marissallii , a fungus that attacks only maple.",
+    "taxonomy_validated": false,
+    "ncbi_url": "",
+    "mycobank_url": ""
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
+    "quote": "Phyllactinia marissallii , a fungus that attacks only maple."
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar"
+    ],
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
+    "quote": "A white fungal growth often occurs with small black fruiting bodies (chasmothecia), on the undersides of mature leaves."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "A white fungal growth occurs with small black fruiting bodies (chasmothecia) on the undersides of mature leaves; white colonies/patches can cover the leaf surface.",
+     "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
+     "quote": "A white fungal growth often occurs with small black fruiting bodies (chasmothecia), on the undersides of mature leaves."
+    },
+    "diagnostic_features": {
+     "value": "Phyllactinia sp. typically have very sparsely growing mycelia and colonies can be difficult to detect, while Sawadaea sp. have more obvious robust colonies; S. tulansnei has white mycelium in irregular, discrete, scattered spots or almost continuously on the upper leaf surfaces and on some petioles.",
+     "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
+     "quote": "Phyllactinia sp. typically have very sparsely growing mycelia and colonies can be difficult to detect while Sawadaea sp. have more obvious robust colonies. S. tulansnei was described as having white mycelium present in irregular, discrete, scattered spots or almost continuously on the upper surfaces of leaves and also was present on some petioles."
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
+    }
+   },
+   "treatments": {
+    "value": [
+     "Apply fungicides preventively before symptoms develop, at 7- to 14-day intervals (shorter when conditions favor disease); alternate or tank-mix products from different FRAC groups to manage resistance",
+     "Note most fungicides are not labeled for trees used for syrup production",
+     "Registered chemical products: Armada 50 WDG, Avelyo, Banner MAXX, Eagle 20 EW, Heritage, Insignia SC, Magus, Myclobutanil 20 EW T&O, Orkestra, Seido, Spectracide Immunox, Tourney EZ, Trinity, and Safer Brand Garden Fungicide (0.4% sulfur)",
+     "Biological control: Cease or Rhapsody (Bacillus subtilis strain QST 713) at 2 to 8 quarts/100 gal water, registered for Japanese Maple"
+    ],
+    "url": "https://pnwhandbooks.org/plantdisease/host-disease/maple-acer-spp-powdery-mildew",
+    "quote": "Chemical control Most of these fungicides are not labeled for use on trees to be used for syrup production. Fungicides will do best when used before symptoms develop. Few materials have good eradicant activity. Use at 7- to 14-day intervals"
+   },
+   "confidence": "medium",
+   "num_sources": 1,
+   "conflicts": [],
+   "regional_observations": {
+    "New York": {
+     "state": "New York",
+     "deltas": [
+      {
+       "field": "look_alikes",
+       "canonical_says": "A white fungal growth occurs with small black fruiting bodies (chasmothecia) on the undersides of mature leaves; white colonies/patches can cover the leaf surface.",
+       "image_shows": "The isolated black spot with a lighter halo is atypical of powdery mildew, which produces diffuse white surface growth, and is more consistent with a leaf-spot/tar-spot look-alike.",
+       "image_quote": "There is a small, dark circular spot with a lighter halo around it.",
+       "image_id": "bugwood::5519034",
+       "verification_status": "weakly_supported",
+       "reasoning": "External sources confirm a discrete black spot with a halo is more consistent with a tar-spot/leaf-spot look-alike than with the diffuse white growth of true powdery mildew, supporting the candidate's flagged discrepancy.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.independenttree.com/maple-tar-spot/",
+         "quote": "Tar spot is a foliar disease of maple that results in tarry black lesions on the leaves, with the black spots becoming raised and surrounded by yellow margins."
+        },
+        {
+         "url": "https://worldofgardenplants.com/how-do-you-treat-fungus-on-a-japanese-maple/",
+         "quote": "Powdery mildew looks like white, dusty growth on the surfaces of leaves rather than a discrete spot."
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5519034",
+      "bugwood::5519035",
+      "bugwood::5519036",
+      "bugwood::5519037",
+      "bugwood::5519038",
+      "bugwood::5519042",
+      "bugwood::5519043",
+      "bugwood::5519044",
+      "bugwood::5519045",
+      "bugwood::5519046"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       4
+      ],
+      "detected_organ_per_pass": [
+       "fruit"
+      ],
+      "n_active_agents_per_pass": [
+       6
+      ],
+      "n_after_agreement": 4,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 1,
+       "n_provisional": 1,
+       "n_contradictory": 2,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 2,
+       "n_added": 2,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 1,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  }
+ ],
+ "crop": "Japanese Maple",
+ "generated_date": "2026-06-10",
+ "regional_observations_count": 3
 }

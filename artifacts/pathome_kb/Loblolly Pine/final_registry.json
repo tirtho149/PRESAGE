@@ -1,760 +1,759 @@
 {
-  "diseases": [
-    {
-      "disease_name": "Pine Needle Rusts",
-      "pathogen_scientific_name": {
-        "value": "Coleosporium asterum",
-        "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
-        "quote": "Pine needle rust is caused by the fungus Coleosporium asterum .",
-        "taxonomy_validated": false,
-        "ncbi_url": "",
-        "mycobank_url": ""
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
-        "quote": "Pine needle rust is caused by the fungus Coleosporium asterum ."
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar"
-        ],
-        "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
-        "quote": "Yellow-to-orange spots or bands appear on green needles in spring. Needles turn partly or completely yellow."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "On pines, yellow-to-orange spots or bands appear on green needles in spring, needles turn yellow, and tiny raised white tubes form and break open to release powdery orange spores. On asters, yellow leaf spots appear on the upper leaf surface with raised orange spore-filled pustules and powdery yellow-orange spores on the lower leaf surface.",
-          "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
-          "quote": "Yellow-to-orange spots or bands appear on green needles in spring. Needles turn partly or completely yellow. In late spring to early summer, tiny, raised, white tubes form on needles breaking open to release powdery, orange spores."
-        },
-        "diagnostic_features": {
-          "value": "Reddish-orange spots on pine needles with swelling pads of fungal tissue that rupture to release flattened white spore-bearing structures (aecia); because the base of the needles remains green, infected needles are often retained in the canopy. On aster and goldenrod hosts, orange spots and blotches appear.",
-          "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/pine-needle-rust",
-          "quote": "Because the base of the needles remains green, infected needles are often retained in the canopy. Aeciospores disperse to infect the foliage of aster and goldenrod (among other Asteraceae), producing orange spots and blotches a few weeks later."
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Pine needle rust is a minor stress on the tree and no management is required.",
-          "Increase the vigor of infected trees by watering during dry conditions and mulching to conserve water.",
-          "Removal of alternative hosts such as wild or cultivated species of aster (Aster), goldenrod (Solidago) and several other members of the daisy or aster family (Asteraceae) from the immediate area of the trees will reduce infections of pines.",
-          "In areas with large numbers of wild asters, plant conifers resistant to needle rusts like spruce, white pine or balsam fir.",
-          "Avoid planting members of the Asteraceae (specifically asters and goldenrods) near two- and three-needle pines.",
-          "Chemical management to control rust diseases is notoriously difficult and is not recommended.",
-          "Provide good air circulation; do not crowd plants.",
-          "Practice good weed control so lower needles are not kept moist for extended periods of time.",
-          "For high-value trees, remove and destroy fallen needles that collect in branch crotches and on the ground.",
-          "Protect trees in late summer when telia are seen on alternate hosts.",
-          "Armada 50 WDG at 9 oz/100 gal water. Do not use a silicone-based surfactant. Not for nursery or greenhouse use. Group 3 + 11 fungicide. 12-hr reentry.",
-          "Heritage at 1 to 4 oz/100 gal water plus a non-silicone-based wetter sticker. Registered for conifers including Christmas trees. Group 11 fungicide. 4-hr reentry."
-        ],
-        "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
-        "quote": "Pine needle rust is a minor stress on the tree and no management is required. Increase the vigor of infected trees by watering during dry conditions and mulching to conserve water. Removal of alternative hosts such as wild or cultivated species of aster ( Aster ), goldenrod ( Solidago )&nbsp;and several other members of the daisy or aster family (Asteraceae) from the immediate area of the trees will reduce infections of pines. In areas with large numbers of wild asters, plant conifers resistant to needle rusts like spruce, white pine or balsam fir."
-      },
-      "confidence": "high",
-      "num_sources": 3,
-      "conflicts": [
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Coleosporium asterum",
-          "alternative_value": "Coleosporium",
-          "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/pine-needle-rust",
-          "note": "UMass identifies the pathogen only to genus (Coleosporium); UMN and PNW Handbook specify the species Coleosporium asterum. No NCBI/MycoBank validation was supplied."
-        },
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Coleosporium asterum",
-          "alternative_value": "Coleosporium pacificum; Coleosporium jonesii",
-          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/pine-pinus-spp-needle-rusts",
-          "note": "PNW Handbook reports three rust fungi causing pine needle rust depending on region/alternate host: C. asterum (aster, goldenrod), C. pacificum (tarweed), and C. jonesii (Ribes spp.)."
-        }
-      ],
-      "regional_observations": {
-        "Arkansas": {
-          "state": "Arkansas",
-          "deltas": [
-            {
-              "field": "severity",
-              "canonical_says": "Pine needle rust is a minor stress on the tree and no management is required.",
-              "image_shows": "A large portion of the pine needles is covered with yellow-orange spots and powdery orange spores, indicating extensive but non-lethal foliar involvement.",
-              "image_quote": "The image shows powdery spore masses consistent with the diagnostic features of Pine Needle Rusts.",
-              "image_id": "bugwood::1503021",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension sources corroborate that infections can appear extensive and conspicuous across needles while remaining a minor stress, supporting the visible-severity observation.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/pine-needle-rust",
-                  "quote": "Despite its highly conspicuous appearance, pine needle rust causes only minor damage to infected pines."
-                },
-                {
-                  "url": "https://hgic.clemson.edu/factsheet/pine-diseases/",
-                  "quote": "White to orange-white blisters erupt along the length of pine needles that have been infected."
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::1503021",
-            "bugwood::1503021"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              4
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 4,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 1,
-              "n_provisional": 0,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 1,
-              "n_added": 1,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        },
-        "Kentucky": {
-          "state": "Kentucky",
-          "deltas": [
-            {
-              "field": "other",
-              "canonical_says": "yellow-to-orange spots... tiny raised white tubes form and break open to release powdery orange spores",
-              "image_shows": "The visible palette is dominated by white with secondary orange, consistent with white aecial tubes and orange spore-bearing swellings on the needles.",
-              "image_quote": "white fragmented structures and orange-colored swellings",
-              "image_id": "bugwood::5566712",
-              "verification_status": "verified",
-              "reasoning": "A white-plus-orange palette (white aecial columns, orange spots/spores) is explicitly documented for Coleosporium needle rust by multiple extension sources.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
-                  "quote": "tiny, raised, white tubes form on needles breaking open to release powdery, orange spores"
-                },
-                {
-                  "url": "http://www.plantpath.cornell.edu/Trees/ColeospRust.html",
-                  "quote": "white, tube-like structures rise from the spots and produce spores"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "swelling pads of fungal tissue that rupture to release flattened white spore-bearing structures (aecia)",
-              "image_shows": "Powdery white sporulating masses are present on the pine needles.",
-              "image_quote": "powdery white spore masses",
-              "image_id": "bugwood::5566712",
-              "verification_status": "weakly_supported",
-              "reasoning": "White sporulating aecial columns on the needles are well documented, but the released powdery spores are actually orange, so the location is corroborated while the spore color is only partially supported.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
-                  "quote": "tiny, raised, white tubes form on needles breaking open to release powdery, orange spores"
-                },
-                {
-                  "url": "http://www.plantpath.cornell.edu/Trees/ColeospRust.html",
-                  "quote": "flat-sided, white columns break open at the sides (aecia)"
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5566712",
-            "bugwood::5566714",
-            "bugwood::5566715",
-            "bugwood::5566716",
-            "bugwood::5566718",
-            "bugwood::5566719",
-            "bugwood::5566720"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              6
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 6,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 2,
-              "n_provisional": 0,
-              "n_contradictory": 3,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 2,
-              "n_added": 2,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        },
-        "Arizona": {
-          "state": "Arizona",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "tiny raised white tubes form and break open to release powdery orange spores",
-              "image_shows": "The lesions appear raised and have a slightly rough texture.",
-              "image_quote": "The lesions show distinct raised, textured areas.",
-              "image_id": "bugwood::1503022",
-              "verification_status": "verified",
-              "reasoning": "Raised, rough texture is directly corroborated by the swelling fungal pads and raised aecial columns described for Coleosporium needle rust.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/pine-needle-rust",
-                  "quote": "yellow-to-orange spots appear on needles in spring, with tiny raised white tubes that release powdery orange spores"
-                },
-                {
-                  "url": "http://www.plantpath.cornell.edu/Trees/ColeospRust.html",
-                  "quote": "the pads rupture, allowing flattened white spore-bearing structures (aecia) to emerge; flat-sided, white columns break open at the sides"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "yellow-to-orange spots or bands appear on green needles ... tiny raised white tubes form",
-              "image_shows": "The affected tissue has white and off-white structures on a yellowish-green leaf surface.",
-              "image_quote": "The lesion center is light brown and the margin is off-white.",
-              "image_id": "bugwood::1503022",
-              "verification_status": "weakly_supported",
-              "reasoning": "White/off-white structures on a yellowish-green needle are consistent with white aecial tubes on chlorotic tissue, though the brown lesion-center detail is only partly rust-typical.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/pine-needle-rust",
-                  "quote": "yellow-to-orange spots appear on needles in spring, with tiny raised white tubes that release powdery orange spores"
-                },
-                {
-                  "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
-                  "quote": "Symptoms consist of yellow spots on the needles ... followed by whitish blisters and orange spores"
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "yellow-to-orange spots or bands appear on green needles in spring",
-              "image_shows": "The lesions are elongated along the length of the needles.",
-              "image_quote": "The lesions are seen extending along the length of the needles.",
-              "image_id": "bugwood::1503022",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension sources describe the rust lesions as yellow/orange bands on needles, and bands running along the narrow needle are consistent with an elongated appearance, giving partial support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "http://www.plantpath.cornell.edu/Trees/ColeospRust.html",
-                  "quote": "Coleosporium spp. cause brown, reddish, or yellow bands or spots on needles."
-                },
-                {
-                  "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
-                  "quote": "Yellow-to-orange, spore producing structures appear as spots or bands on infected pine needles in early spring."
-                }
-              ]
-            },
-            {
-              "field": "necrosis",
-              "canonical_says": "needles turn yellow ... the base of the needles remains green, infected needles are often retained",
-              "image_shows": "Discrete spots of necrotic tissue are visible along the margins of the pine needles.",
-              "image_quote": "The image displays distinct patches of dead tissue on the leaf.",
-              "image_id": "bugwood::1503022",
-              "verification_status": "provisional",
-              "reasoning": "Sources describe yellow/orange spots and bands with needle bases staying green rather than discrete marginal necrotic patches, so the observation is not corroborated but is not clearly contradicted for aging infected needles.",
-              "swarm_support": 1,
-              "web_support": []
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "tiny raised white tubes form and break open to release powdery orange spores",
-              "image_shows": "Leaf distortion with curled-up structures is observed.",
-              "image_quote": "The image shows leaf distortion with curled-up structures.",
-              "image_id": "bugwood::1503022",
-              "verification_status": "novel_plausible",
-              "reasoning": "The white flat-sided columnar aecia that break open at the sides could plausibly read as curled-up structures, but no source describes leaf distortion, so this is coherent but unverified and flagged for review.",
-              "swarm_support": 1,
-              "web_support": []
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaves have a long, slender appearance.",
-              "image_quote": "The leaves have a long, slender appearance.",
-              "image_id": "bugwood::1503022",
-              "verification_status": "novel_plausible",
-              "reasoning": "The long, slender form simply describes the pine needle host morphology rather than a disease symptom, so it is plausible but not a corroborable disease appearance.",
-              "swarm_support": 1,
-              "web_support": []
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::1503022",
-            "bugwood::1503022"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 2,
-              "n_provisional": 4,
-              "n_contradictory": 3,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 6,
-              "n_added": 6,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": true,
-            "failure_reason": "claude_query returned None (auth / timeout / empty)",
-            "preserved_count": 3
-          }
-        },
-        "Virginia": {
-          "state": "Virginia",
-          "deltas": [
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "The infection appears advanced, with significant reddish-orange patches and white tubes indicating substantial disease presence.",
-              "image_quote": "The image shows reddish-orange patches and white tubes on the stem, indicating significant disease presence.",
-              "image_id": "bugwood::5479858",
-              "verification_status": "weakly_supported",
-              "reasoning": "The named visual features (reddish-orange patches and white tubes) are strongly corroborated as characteristic of pine needle rust, but the 'advanced/significant severity' inference is a subjective judgment not directly assessable from factsheets, and the structures form on needles rather than the stem as the quote states.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
-                  "quote": "In late spring to early summer, tiny, raised, white tubes form on needles breaking open to release powdery, orange spores... symptoms appear in early spring as reddish-orange spots on the needles of infected pines."
-                },
-                {
-                  "url": "http://www.plantpath.cornell.edu/Trees/ColeospRust.html",
-                  "quote": "By early summer, white, tube-like structures rise from the spots and produce spores... needles develop reddish-orange dots on yellow spots or bands."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5479858",
-            "bugwood::5479859",
-            "bugwood::5479927",
-            "bugwood::5479928",
-            "bugwood::5479931"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              6
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 6,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 0,
-              "n_provisional": 1,
-              "n_contradictory": 2,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 1,
-              "n_added": 1,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+ "diseases": [
+  {
+   "disease_name": "Pine Needle Rusts",
+   "pathogen_scientific_name": {
+    "value": "Coleosporium asterum",
+    "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
+    "quote": "Pine needle rust is caused by the fungus Coleosporium asterum .",
+    "taxonomy_validated": false,
+    "ncbi_url": "",
+    "mycobank_url": ""
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
+    "quote": "Pine needle rust is caused by the fungus Coleosporium asterum ."
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar"
+    ],
+    "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
+    "quote": "Yellow-to-orange spots or bands appear on green needles in spring. Needles turn partly or completely yellow."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "On pines, yellow-to-orange spots or bands appear on green needles in spring, needles turn yellow, and tiny raised white tubes form and break open to release powdery orange spores. On asters, yellow leaf spots appear on the upper leaf surface with raised orange spore-filled pustules and powdery yellow-orange spores on the lower leaf surface.",
+     "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
+     "quote": "Yellow-to-orange spots or bands appear on green needles in spring. Needles turn partly or completely yellow. In late spring to early summer, tiny, raised, white tubes form on needles breaking open to release powdery, orange spores."
     },
-    {
-      "disease_name": "Leptographium Root Disease",
-      "pathogen_scientific_name": {
-        "value": "Leptographium procerum",
-        "url": "https://www.forestpests.org/gfcbook/leptographium.html",
-        "quote": "to assess the relationship between Leptographium procerum and southern pine beetle infestations",
-        "taxonomy_validated": false,
-        "ncbi_url": "",
-        "mycobank_url": ""
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://www.forestpests.org/gfcbook/leptographium.html",
-        "quote": "The fungus causes the disease known as white pine root decline"
-      },
-      "affected_parts": {
-        "value": [
-          "Root",
-          "Foliar"
-        ],
-        "url": "https://www.forestpests.org/gfcbook/leptographium.html",
-        "quote": "High Leptographium incidence was also statistically related to decreased resin flow, poor root condition, radial growth reduction, foliar transparency and crown density."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Trees show thin, often tufted crowns that are slightly off-colored.",
-          "url": "https://www.forestpests.org/gfcbook/leptographium.html",
-          "quote": "Many of the southern pine beetle infested stands in the two counties had trees with thin often tufted crowns that were slightly off-colored"
-        },
-        "diagnostic_features": {
-          "value": "",
-          "url": "",
-          "quote": ""
-        },
-        "look_alikes": {
-          "value": [
-            "littleleaf disease caused by Phytophthora cinnamomi"
-          ],
-          "url": "https://www.forestpests.org/gfcbook/leptographium.html",
-          "quote": "The symptoms closely resembled those associated with littleleaf disease caused by Phytophthora cinnamomi"
-        }
-      },
-      "treatments": {
-        "value": [],
-        "url": "",
-        "quote": ""
-      },
-      "confidence": "medium",
-      "num_sources": 1,
-      "conflicts": [],
-      "regional_observations": {
-        "Alabama": {
-          "state": "Alabama",
-          "deltas": [
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Trees show thin, often tufted crowns that are slightly off-colored.",
-              "image_shows": "The stem/bark shows no galls, blisters, scabs, ooze, or fruiting bodies breaking through the bark, consistent with a root disease whose diagnostic signs occur belowground rather than on the stem surface.",
-              "image_quote": "The tree's stem appears clean and free from any unusual surface features.",
-              "image_id": "bugwood::5439864",
-              "verification_status": "weakly_supported",
-              "reasoning": "Literature confirms Leptographium root disease produces no stem-surface signs (no galls/fruiting bodies/ooze on bark), so a clean stem is consistent with the disease and corroborated by external sources.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.forestpests.org/gfcbook/leptographium.html",
-                  "quote": "Infected primary roots will have blue-stain and resin-soaked lesions caused by the Leptographium fungi; the diagnostic signs are on the roots and root collar rather than the stem surface."
-                },
-                {
-                  "url": "https://wiki.bugwood.org/Archive:Gfcfactsheets/Leptographium_Root_Disease_(Loblolly_Pine_Decline)",
-                  "quote": "Trees with L. procerum infection often have thin, frequently tufted crowns that are slightly off-colored; the pathogen colonizes roots, not the outer stem bark."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "Trees show thin, often tufted crowns that are slightly off-colored.",
-              "image_shows": "The external stem shows no vascular streaking, dark blotches, or water-soaked streaks, matching the fact that Leptographium staining occurs in root-collar sapwood and roots rather than on the visible stem.",
-              "image_quote": "The stem surface appears normal.",
-              "image_id": "bugwood::5439864",
-              "verification_status": "weakly_supported",
-              "reasoning": "External evidence places the characteristic staining in root-collar sapwood and roots, so the absence of visible stem discoloration is expected and consistent with the disease.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.srs.fs.usda.gov/pubs/gtr/gtr_srs048/article/gtr_srs048-hess01.pdf",
-                  "quote": "Stands exhibiting decline are characterized by sparse crowns, short and chlorotic needles, reduced radial growth, woody roots with resinous bark wounds and stained sapwood."
-                },
-                {
-                  "url": "https://www.forestpests.org/gfcbook/leptographium.html",
-                  "quote": "The vertical black/blue staining diagnostic of the disease occurs in root and root-collar sapwood, not on the external stem surface."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "Trees show thin, often tufted crowns that are slightly off-colored.",
-              "image_shows": "The crown is thin and off-colored with sparse foliage and pale-straw colored needles, indicating advanced crown decline severity.",
-              "image_quote": "The tree displays pale-straw colored needles and exposed branches.",
-              "image_id": "bugwood::5439864",
-              "verification_status": "weakly_supported",
-              "reasoning": "The sparse-foliage, pale-straw (chlorotic) needle severity description goes beyond canonical and is directly corroborated by literature reporting sparse crowns and short chlorotic needles in declining stands.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.srs.fs.usda.gov/pubs/gtr/gtr_srs048/article/gtr_srs048-hess01.pdf",
-                  "quote": "Stands of loblolly pine exhibiting decline symptoms are characterized by sparse crowns, short and chlorotic needles, and reduced radial growth."
-                },
-                {
-                  "url": "https://wiki.bugwood.org/Archive:Gfcfactsheets/Leptographium_Root_Disease_(Loblolly_Pine_Decline)",
-                  "quote": "Declining trees show thin, tufted, off-colored crowns; L. procerum was significantly associated with increasing crown symptom severity."
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5439864",
-            "bugwood::5439865",
-            "bugwood::5439866",
-            "bugwood::5439867",
-            "bugwood::5439868",
-            "bugwood::5439869",
-            "bugwood::5439870",
-            "bugwood::5439871",
-            "bugwood::5439864",
-            "bugwood::5439865",
-            "bugwood::5439866",
-            "bugwood::5439867",
-            "bugwood::5439868",
-            "bugwood::5439869",
-            "bugwood::5439870",
-            "bugwood::5439871"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              5
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 5,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 3,
-              "n_provisional": 0,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 3,
-              "n_added": 3,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        }
-      }
+    "diagnostic_features": {
+     "value": "Reddish-orange spots on pine needles with swelling pads of fungal tissue that rupture to release flattened white spore-bearing structures (aecia); because the base of the needles remains green, infected needles are often retained in the canopy. On aster and goldenrod hosts, orange spots and blotches appear.",
+     "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/pine-needle-rust",
+     "quote": "Because the base of the needles remains green, infected needles are often retained in the canopy. Aeciospores disperse to infect the foliage of aster and goldenrod (among other Asteraceae), producing orange spots and blotches a few weeks later."
     },
-    {
-      "disease_name": "Wood Decay Fungi",
-      "pathogen_scientific_name": {
-        "value": "Porodaedalea pini",
-        "url": "https://edis.ifas.ufl.edu/fr425",
-        "quote": "Red Heart Disease in Pines caused by Porodaedalea (Phellinus) pini in Florida",
-        "taxonomy_validated": false,
-        "ncbi_url": "",
-        "mycobank_url": ""
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://edis.ifas.ufl.edu/fr425",
-        "quote": "Porodaedalea pini , more commonly known by its former names Phellinus pini and Fomes pini , is one of the most important wood-decaying fungi in pine forests"
-      },
-      "affected_parts": {
-        "value": [
-          "Stem"
-        ],
-        "url": "https://edis.ifas.ufl.edu/fr425",
-        "quote": "the presence of conks (fungal fruiting bodies) on the stem, usually emerging from branch stubs or knots of the infected trees"
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "The infected pine shows reddish-brown decay with \"white pocket\" in the heartwood, and shelf-like, hoof-shaped conks (fruiting bodies) on the stem emerging from branch stubs or knots.",
-          "url": "https://edis.ifas.ufl.edu/fr425",
-          "quote": "The infected pine tree shows the typical symptom of reddish-brown decay, with &quot;white pocket&quot; in the heartwood (Figure 1) causing considerable loss of heartwood volume"
-        },
-        "diagnostic_features": {
-          "value": "Conks are shelf-like, hoof-shaped, usually 4 to 10 cm in diameter; the upper surface is ridged, red-brown to dark-brown, often showing concentric rings, while the underside is almond-yellow with pores. Within the stem the fungus causes reddish decay in concentric circles (\"red ring rot\") and advanced infection shows spindle-shaped white pockets in the heartwood (\"white pocket rot\").",
-          "url": "https://edis.ifas.ufl.edu/fr425",
-          "quote": "Conks are shelf-like, hoof-shaped, usually 4 to 10 cm (1.6 to 4 inches) in diameter (Figure 2). The upper surface of a conk is ridged, red-brown to dark-brown, often showing concentric rings, while the underside is almond-yellow with pores."
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Infected pines in public areas should be checked frequently and be removed by a certified arborist if the trees are structurally unstable.",
-          "Infected trees should be harvested before the progress of disease has significantly decreased their economic value.",
-          "In pine plantations, infected trees should be removed to reduce spore production.",
-          "Reducing the rotation age need only be considered in areas where the disease occurs frequently.",
-          "Preventing unnecessary injuries to trees while logging and pruning is the most effective way to prevent the disease."
-        ],
-        "url": "https://edis.ifas.ufl.edu/fr425",
-        "quote": "Avoidance of unnecessary wounds is the most effective way to prevent new infections of this disease."
-      },
-      "confidence": "medium",
-      "num_sources": 1,
-      "conflicts": [
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Porodaedalea pini",
-          "alternative_value": "Phellinus pini; Fomes pini",
-          "alternative_source_url": "https://edis.ifas.ufl.edu/fr425",
-          "note": "The source notes Porodaedalea pini was formerly known as Phellinus pini and Fomes pini. No NCBI/MycoBank validation was supplied to confirm the current accepted name; canonical retained as stated by the source."
-        }
-      ],
-      "regional_observations": {
-        "North Carolina": {
-          "state": "North Carolina",
-          "deltas": [
-            {
-              "field": "other",
-              "canonical_says": "shelf-like, hoof-shaped conks (fruiting bodies) on the stem emerging from branch stubs or knots",
-              "image_shows": "The stem surface shows a rough, textured pine-bark appearance, but no conks, red ring rot, or white pocket are visible to confirm active decay.",
-              "image_quote": "The stem surface appears to have a rough, textured appearance consistent with wood decay.",
-              "image_id": "bugwood::5434332",
-              "verification_status": "provisional",
-              "reasoning": "The candidate reports an absence of the diagnostic conks/red-ring/white-pocket features and only a generic rough bark texture, which is plausible (extension sources note fruiting bodies are not always present on decayed trees) but is not itself a corroborated diagnostic visual feature of wood decay, so no external support confirms it.",
-              "swarm_support": 1,
-              "web_support": []
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5434332",
-            "bugwood::5434333",
-            "bugwood::5434334",
-            "bugwood::5434335",
-            "bugwood::5434336",
-            "bugwood::5434337",
-            "bugwood::5434338",
-            "bugwood::5434339",
-            "bugwood::5434340",
-            "bugwood::5434341"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              2
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 2,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 0,
-              "n_provisional": 1,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 1,
-              "n_added": 1,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": true,
-            "failure_reason": "claude_query returned None (auth / timeout / empty)",
-            "preserved_count": 1
-          }
-        }
-      }
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
     }
-  ],
-  "crop": "Loblolly Pine",
-  "generated_date": "2026-06-10",
-  "regional_observations_count": 6
+   },
+   "treatments": {
+    "value": [
+     "Pine needle rust is a minor stress on the tree and no management is required.",
+     "Increase the vigor of infected trees by watering during dry conditions and mulching to conserve water.",
+     "Removal of alternative hosts such as wild or cultivated species of aster (Aster), goldenrod (Solidago) and several other members of the daisy or aster family (Asteraceae) from the immediate area of the trees will reduce infections of pines.",
+     "In areas with large numbers of wild asters, plant conifers resistant to needle rusts like spruce, white pine or balsam fir.",
+     "Avoid planting members of the Asteraceae (specifically asters and goldenrods) near two- and three-needle pines.",
+     "Chemical management to control rust diseases is notoriously difficult and is not recommended.",
+     "Provide good air circulation; do not crowd plants.",
+     "Practice good weed control so lower needles are not kept moist for extended periods of time.",
+     "For high-value trees, remove and destroy fallen needles that collect in branch crotches and on the ground.",
+     "Protect trees in late summer when telia are seen on alternate hosts.",
+     "Armada 50 WDG at 9 oz/100 gal water. Do not use a silicone-based surfactant. Not for nursery or greenhouse use. Group 3 + 11 fungicide. 12-hr reentry.",
+     "Heritage at 1 to 4 oz/100 gal water plus a non-silicone-based wetter sticker. Registered for conifers including Christmas trees. Group 11 fungicide. 4-hr reentry."
+    ],
+    "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
+    "quote": "Pine needle rust is a minor stress on the tree and no management is required. Increase the vigor of infected trees by watering during dry conditions and mulching to conserve water. Removal of alternative hosts such as wild or cultivated species of aster ( Aster ), goldenrod ( Solidago )&nbsp;and several other members of the daisy or aster family (Asteraceae) from the immediate area of the trees will reduce infections of pines. In areas with large numbers of wild asters, plant conifers resistant to needle rusts like spruce, white pine or balsam fir."
+   },
+   "confidence": "high",
+   "num_sources": 3,
+   "conflicts": [
+    {
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Coleosporium asterum",
+     "alternative_value": "Coleosporium",
+     "alternative_source_url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/pine-needle-rust",
+     "note": "UMass identifies the pathogen only to genus (Coleosporium); UMN and PNW Handbook specify the species Coleosporium asterum. No NCBI/MycoBank validation was supplied."
+    },
+    {
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Coleosporium asterum",
+     "alternative_value": "Coleosporium pacificum; Coleosporium jonesii",
+     "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/pine-pinus-spp-needle-rusts",
+     "note": "PNW Handbook reports three rust fungi causing pine needle rust depending on region/alternate host: C. asterum (aster, goldenrod), C. pacificum (tarweed), and C. jonesii (Ribes spp.)."
+    }
+   ],
+   "regional_observations": {
+    "Arkansas": {
+     "state": "Arkansas",
+     "deltas": [
+      {
+       "field": "severity",
+       "canonical_says": "Pine needle rust is a minor stress on the tree and no management is required.",
+       "image_shows": "A large portion of the pine needles is covered with yellow-orange spots and powdery orange spores, indicating extensive but non-lethal foliar involvement.",
+       "image_quote": "The image shows powdery spore masses consistent with the diagnostic features of Pine Needle Rusts.",
+       "image_id": "bugwood::1503021",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension sources corroborate that infections can appear extensive and conspicuous across needles while remaining a minor stress, supporting the visible-severity observation.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/pine-needle-rust",
+         "quote": "Despite its highly conspicuous appearance, pine needle rust causes only minor damage to infected pines."
+        },
+        {
+         "url": "https://hgic.clemson.edu/factsheet/pine-diseases/",
+         "quote": "White to orange-white blisters erupt along the length of pine needles that have been infected."
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::1503021",
+      "bugwood::1503021"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       4
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 4,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 1,
+       "n_provisional": 0,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 1,
+       "n_added": 1,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    },
+    "Kentucky": {
+     "state": "Kentucky",
+     "deltas": [
+      {
+       "field": "other",
+       "canonical_says": "yellow-to-orange spots... tiny raised white tubes form and break open to release powdery orange spores",
+       "image_shows": "The visible palette is dominated by white with secondary orange, consistent with white aecial tubes and orange spore-bearing swellings on the needles.",
+       "image_quote": "white fragmented structures and orange-colored swellings",
+       "image_id": "bugwood::5566712",
+       "verification_status": "verified",
+       "reasoning": "A white-plus-orange palette (white aecial columns, orange spots/spores) is explicitly documented for Coleosporium needle rust by multiple extension sources.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
+         "quote": "tiny, raised, white tubes form on needles breaking open to release powdery, orange spores"
+        }
+       ],
+       "__support__": 1,
+       "_pruned_urls": [
+        "http://www.plantpath.cornell.edu/Trees/ColeospRust.html"
+       ]
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "swelling pads of fungal tissue that rupture to release flattened white spore-bearing structures (aecia)",
+       "image_shows": "Powdery white sporulating masses are present on the pine needles.",
+       "image_quote": "powdery white spore masses",
+       "image_id": "bugwood::5566712",
+       "verification_status": "weakly_supported",
+       "reasoning": "White sporulating aecial columns on the needles are well documented, but the released powdery spores are actually orange, so the location is corroborated while the spore color is only partially supported.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
+         "quote": "tiny, raised, white tubes form on needles breaking open to release powdery, orange spores"
+        }
+       ],
+       "__support__": 1,
+       "_pruned_urls": [
+        "http://www.plantpath.cornell.edu/Trees/ColeospRust.html"
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5566712",
+      "bugwood::5566714",
+      "bugwood::5566715",
+      "bugwood::5566716",
+      "bugwood::5566718",
+      "bugwood::5566719",
+      "bugwood::5566720"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       6
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 6,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 2,
+       "n_provisional": 0,
+       "n_contradictory": 3,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 2,
+       "n_added": 2,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    },
+    "Arizona": {
+     "state": "Arizona",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "tiny raised white tubes form and break open to release powdery orange spores",
+       "image_shows": "The lesions appear raised and have a slightly rough texture.",
+       "image_quote": "The lesions show distinct raised, textured areas.",
+       "image_id": "bugwood::1503022",
+       "verification_status": "verified",
+       "reasoning": "Raised, rough texture is directly corroborated by the swelling fungal pads and raised aecial columns described for Coleosporium needle rust.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/pine-needle-rust",
+         "quote": "yellow-to-orange spots appear on needles in spring, with tiny raised white tubes that release powdery orange spores"
+        }
+       ],
+       "__support__": 1,
+       "_pruned_urls": [
+        "http://www.plantpath.cornell.edu/Trees/ColeospRust.html"
+       ]
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "yellow-to-orange spots or bands appear on green needles ... tiny raised white tubes form",
+       "image_shows": "The affected tissue has white and off-white structures on a yellowish-green leaf surface.",
+       "image_quote": "The lesion center is light brown and the margin is off-white.",
+       "image_id": "bugwood::1503022",
+       "verification_status": "weakly_supported",
+       "reasoning": "White/off-white structures on a yellowish-green needle are consistent with white aecial tubes on chlorotic tissue, though the brown lesion-center detail is only partly rust-typical.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/pine-needle-rust",
+         "quote": "yellow-to-orange spots appear on needles in spring, with tiny raised white tubes that release powdery orange spores"
+        },
+        {
+         "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
+         "quote": "Symptoms consist of yellow spots on the needles ... followed by whitish blisters and orange spores"
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "yellow-to-orange spots or bands appear on green needles in spring",
+       "image_shows": "The lesions are elongated along the length of the needles.",
+       "image_quote": "The lesions are seen extending along the length of the needles.",
+       "image_id": "bugwood::1503022",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension sources describe the rust lesions as yellow/orange bands on needles, and bands running along the narrow needle are consistent with an elongated appearance, giving partial support.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
+         "quote": "Yellow-to-orange, spore producing structures appear as spots or bands on infected pine needles in early spring."
+        }
+       ],
+       "_pruned_urls": [
+        "http://www.plantpath.cornell.edu/Trees/ColeospRust.html"
+       ]
+      },
+      {
+       "field": "necrosis",
+       "canonical_says": "needles turn yellow ... the base of the needles remains green, infected needles are often retained",
+       "image_shows": "Discrete spots of necrotic tissue are visible along the margins of the pine needles.",
+       "image_quote": "The image displays distinct patches of dead tissue on the leaf.",
+       "image_id": "bugwood::1503022",
+       "verification_status": "field_observation",
+       "reasoning": "Sources describe yellow/orange spots and bands with needle bases staying green rather than discrete marginal necrotic patches, so the observation is not corroborated but is not clearly contradicted for aging infected needles.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "tiny raised white tubes form and break open to release powdery orange spores",
+       "image_shows": "Leaf distortion with curled-up structures is observed.",
+       "image_quote": "The image shows leaf distortion with curled-up structures.",
+       "image_id": "bugwood::1503022",
+       "verification_status": "field_observation",
+       "reasoning": "The white flat-sided columnar aecia that break open at the sides could plausibly read as curled-up structures, but no source describes leaf distortion, so this is coherent but unverified and flagged for review.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaves have a long, slender appearance.",
+       "image_quote": "The leaves have a long, slender appearance.",
+       "image_id": "bugwood::1503022",
+       "verification_status": "field_observation",
+       "reasoning": "The long, slender form simply describes the pine needle host morphology rather than a disease symptom, so it is plausible but not a corroborable disease appearance.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::1503022",
+      "bugwood::1503022"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 2,
+       "n_provisional": 4,
+       "n_contradictory": 3,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 6,
+       "n_added": 6,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": true,
+      "failure_reason": "claude_query returned None (auth / timeout / empty)",
+      "preserved_count": 3
+     }
+    },
+    "Virginia": {
+     "state": "Virginia",
+     "deltas": [
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "The infection appears advanced, with significant reddish-orange patches and white tubes indicating substantial disease presence.",
+       "image_quote": "The image shows reddish-orange patches and white tubes on the stem, indicating significant disease presence.",
+       "image_id": "bugwood::5479858",
+       "verification_status": "weakly_supported",
+       "reasoning": "The named visual features (reddish-orange patches and white tubes) are strongly corroborated as characteristic of pine needle rust, but the 'advanced/significant severity' inference is a subjective judgment not directly assessable from factsheets, and the structures form on needles rather than the stem as the quote states.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umn.edu/plant-diseases/pine-needle-rust",
+         "quote": "In late spring to early summer, tiny, raised, white tubes form on needles breaking open to release powdery, orange spores... symptoms appear in early spring as reddish-orange spots on the needles of infected pines."
+        }
+       ],
+       "_pruned_urls": [
+        "http://www.plantpath.cornell.edu/Trees/ColeospRust.html"
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5479858",
+      "bugwood::5479859",
+      "bugwood::5479927",
+      "bugwood::5479928",
+      "bugwood::5479931"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       6
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 6,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 0,
+       "n_provisional": 1,
+       "n_contradictory": 2,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 1,
+       "n_added": 1,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Leptographium Root Disease",
+   "pathogen_scientific_name": {
+    "value": "Leptographium procerum",
+    "url": "https://www.forestpests.org/gfcbook/leptographium.html",
+    "quote": "to assess the relationship between Leptographium procerum and southern pine beetle infestations",
+    "taxonomy_validated": false,
+    "ncbi_url": "",
+    "mycobank_url": ""
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://www.forestpests.org/gfcbook/leptographium.html",
+    "quote": "The fungus causes the disease known as white pine root decline"
+   },
+   "affected_parts": {
+    "value": [
+     "Root",
+     "Foliar"
+    ],
+    "url": "https://www.forestpests.org/gfcbook/leptographium.html",
+    "quote": "High Leptographium incidence was also statistically related to decreased resin flow, poor root condition, radial growth reduction, foliar transparency and crown density."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Trees show thin, often tufted crowns that are slightly off-colored.",
+     "url": "https://www.forestpests.org/gfcbook/leptographium.html",
+     "quote": "Many of the southern pine beetle infested stands in the two counties had trees with thin often tufted crowns that were slightly off-colored"
+    },
+    "diagnostic_features": {
+     "value": "",
+     "url": "",
+     "quote": ""
+    },
+    "look_alikes": {
+     "value": [
+      "littleleaf disease caused by Phytophthora cinnamomi"
+     ],
+     "url": "https://www.forestpests.org/gfcbook/leptographium.html",
+     "quote": "The symptoms closely resembled those associated with littleleaf disease caused by Phytophthora cinnamomi"
+    }
+   },
+   "treatments": {
+    "value": [],
+    "url": "",
+    "quote": ""
+   },
+   "confidence": "medium",
+   "num_sources": 1,
+   "conflicts": [],
+   "regional_observations": {
+    "Alabama": {
+     "state": "Alabama",
+     "deltas": [
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Trees show thin, often tufted crowns that are slightly off-colored.",
+       "image_shows": "The stem/bark shows no galls, blisters, scabs, ooze, or fruiting bodies breaking through the bark, consistent with a root disease whose diagnostic signs occur belowground rather than on the stem surface.",
+       "image_quote": "The tree's stem appears clean and free from any unusual surface features.",
+       "image_id": "bugwood::5439864",
+       "verification_status": "weakly_supported",
+       "reasoning": "Literature confirms Leptographium root disease produces no stem-surface signs (no galls/fruiting bodies/ooze on bark), so a clean stem is consistent with the disease and corroborated by external sources.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.forestpests.org/gfcbook/leptographium.html",
+         "quote": "Infected primary roots will have blue-stain and resin-soaked lesions caused by the Leptographium fungi; the diagnostic signs are on the roots and root collar rather than the stem surface."
+        },
+        {
+         "url": "https://wiki.bugwood.org/Archive:Gfcfactsheets/Leptographium_Root_Disease_(Loblolly_Pine_Decline)",
+         "quote": "Trees with L. procerum infection often have thin, frequently tufted crowns that are slightly off-colored; the pathogen colonizes roots, not the outer stem bark."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "Trees show thin, often tufted crowns that are slightly off-colored.",
+       "image_shows": "The external stem shows no vascular streaking, dark blotches, or water-soaked streaks, matching the fact that Leptographium staining occurs in root-collar sapwood and roots rather than on the visible stem.",
+       "image_quote": "The stem surface appears normal.",
+       "image_id": "bugwood::5439864",
+       "verification_status": "weakly_supported",
+       "reasoning": "External evidence places the characteristic staining in root-collar sapwood and roots, so the absence of visible stem discoloration is expected and consistent with the disease.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.srs.fs.usda.gov/pubs/gtr/gtr_srs048/article/gtr_srs048-hess01.pdf",
+         "quote": "Stands exhibiting decline are characterized by sparse crowns, short and chlorotic needles, reduced radial growth, woody roots with resinous bark wounds and stained sapwood."
+        },
+        {
+         "url": "https://www.forestpests.org/gfcbook/leptographium.html",
+         "quote": "The vertical black/blue staining diagnostic of the disease occurs in root and root-collar sapwood, not on the external stem surface."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "Trees show thin, often tufted crowns that are slightly off-colored.",
+       "image_shows": "The crown is thin and off-colored with sparse foliage and pale-straw colored needles, indicating advanced crown decline severity.",
+       "image_quote": "The tree displays pale-straw colored needles and exposed branches.",
+       "image_id": "bugwood::5439864",
+       "verification_status": "weakly_supported",
+       "reasoning": "The sparse-foliage, pale-straw (chlorotic) needle severity description goes beyond canonical and is directly corroborated by literature reporting sparse crowns and short chlorotic needles in declining stands.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.srs.fs.usda.gov/pubs/gtr/gtr_srs048/article/gtr_srs048-hess01.pdf",
+         "quote": "Stands of loblolly pine exhibiting decline symptoms are characterized by sparse crowns, short and chlorotic needles, and reduced radial growth."
+        },
+        {
+         "url": "https://wiki.bugwood.org/Archive:Gfcfactsheets/Leptographium_Root_Disease_(Loblolly_Pine_Decline)",
+         "quote": "Declining trees show thin, tufted, off-colored crowns; L. procerum was significantly associated with increasing crown symptom severity."
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5439864",
+      "bugwood::5439865",
+      "bugwood::5439866",
+      "bugwood::5439867",
+      "bugwood::5439868",
+      "bugwood::5439869",
+      "bugwood::5439870",
+      "bugwood::5439871",
+      "bugwood::5439864",
+      "bugwood::5439865",
+      "bugwood::5439866",
+      "bugwood::5439867",
+      "bugwood::5439868",
+      "bugwood::5439869",
+      "bugwood::5439870",
+      "bugwood::5439871"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       5
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 5,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 3,
+       "n_provisional": 0,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 3,
+       "n_added": 3,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Wood Decay Fungi",
+   "pathogen_scientific_name": {
+    "value": "Porodaedalea pini",
+    "url": "https://edis.ifas.ufl.edu/fr425",
+    "quote": "Red Heart Disease in Pines caused by Porodaedalea (Phellinus) pini in Florida",
+    "taxonomy_validated": false,
+    "ncbi_url": "",
+    "mycobank_url": ""
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://edis.ifas.ufl.edu/fr425",
+    "quote": "Porodaedalea pini , more commonly known by its former names Phellinus pini and Fomes pini , is one of the most important wood-decaying fungi in pine forests"
+   },
+   "affected_parts": {
+    "value": [
+     "Stem"
+    ],
+    "url": "https://edis.ifas.ufl.edu/fr425",
+    "quote": "the presence of conks (fungal fruiting bodies) on the stem, usually emerging from branch stubs or knots of the infected trees"
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "The infected pine shows reddish-brown decay with \"white pocket\" in the heartwood, and shelf-like, hoof-shaped conks (fruiting bodies) on the stem emerging from branch stubs or knots.",
+     "url": "https://edis.ifas.ufl.edu/fr425",
+     "quote": "The infected pine tree shows the typical symptom of reddish-brown decay, with &quot;white pocket&quot; in the heartwood (Figure 1) causing considerable loss of heartwood volume"
+    },
+    "diagnostic_features": {
+     "value": "Conks are shelf-like, hoof-shaped, usually 4 to 10 cm in diameter; the upper surface is ridged, red-brown to dark-brown, often showing concentric rings, while the underside is almond-yellow with pores. Within the stem the fungus causes reddish decay in concentric circles (\"red ring rot\") and advanced infection shows spindle-shaped white pockets in the heartwood (\"white pocket rot\").",
+     "url": "https://edis.ifas.ufl.edu/fr425",
+     "quote": "Conks are shelf-like, hoof-shaped, usually 4 to 10 cm (1.6 to 4 inches) in diameter (Figure 2). The upper surface of a conk is ridged, red-brown to dark-brown, often showing concentric rings, while the underside is almond-yellow with pores."
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
+    }
+   },
+   "treatments": {
+    "value": [
+     "Infected pines in public areas should be checked frequently and be removed by a certified arborist if the trees are structurally unstable.",
+     "Infected trees should be harvested before the progress of disease has significantly decreased their economic value.",
+     "In pine plantations, infected trees should be removed to reduce spore production.",
+     "Reducing the rotation age need only be considered in areas where the disease occurs frequently.",
+     "Preventing unnecessary injuries to trees while logging and pruning is the most effective way to prevent the disease."
+    ],
+    "url": "https://edis.ifas.ufl.edu/fr425",
+    "quote": "Avoidance of unnecessary wounds is the most effective way to prevent new infections of this disease."
+   },
+   "confidence": "medium",
+   "num_sources": 1,
+   "conflicts": [
+    {
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Porodaedalea pini",
+     "alternative_value": "Phellinus pini; Fomes pini",
+     "alternative_source_url": "https://edis.ifas.ufl.edu/fr425",
+     "note": "The source notes Porodaedalea pini was formerly known as Phellinus pini and Fomes pini. No NCBI/MycoBank validation was supplied to confirm the current accepted name; canonical retained as stated by the source."
+    }
+   ],
+   "regional_observations": {
+    "North Carolina": {
+     "state": "North Carolina",
+     "deltas": [
+      {
+       "field": "other",
+       "canonical_says": "shelf-like, hoof-shaped conks (fruiting bodies) on the stem emerging from branch stubs or knots",
+       "image_shows": "The stem surface shows a rough, textured pine-bark appearance, but no conks, red ring rot, or white pocket are visible to confirm active decay.",
+       "image_quote": "The stem surface appears to have a rough, textured appearance consistent with wood decay.",
+       "image_id": "bugwood::5434332",
+       "verification_status": "field_observation",
+       "reasoning": "The candidate reports an absence of the diagnostic conks/red-ring/white-pocket features and only a generic rough bark texture, which is plausible (extension sources note fruiting bodies are not always present on decayed trees) but is not itself a corroborated diagnostic visual feature of wood decay, so no external support confirms it.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5434332",
+      "bugwood::5434333",
+      "bugwood::5434334",
+      "bugwood::5434335",
+      "bugwood::5434336",
+      "bugwood::5434337",
+      "bugwood::5434338",
+      "bugwood::5434339",
+      "bugwood::5434340",
+      "bugwood::5434341"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       2
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 2,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 0,
+       "n_provisional": 1,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 1,
+       "n_added": 1,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": true,
+      "failure_reason": "claude_query returned None (auth / timeout / empty)",
+      "preserved_count": 1
+     }
+    }
+   }
+  }
+ ],
+ "crop": "Loblolly Pine",
+ "generated_date": "2026-06-10",
+ "regional_observations_count": 6
 }

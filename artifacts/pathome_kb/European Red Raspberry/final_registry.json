@@ -1,502 +1,514 @@
 {
-  "diseases": [
-    {
-      "disease_name": "Rust",
-      "pathogen_scientific_name": {
-        "value": "Phragmidium rubi-idaei",
-        "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
-        "quote": "Yellow Rust of Red Raspberry Phragmidium rubi-idaei",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
-        "quote": "the yellow rust fungus infects only red raspberry"
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem"
-        ],
-        "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
-        "quote": "Yellow spots develop on the upper surface of infected leaves during spring. ... The yellow rust fungus overwinters as teliospores on bark and any leaves remaining on floricanes (fruiting canes)."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Small orange to yellow raised spots (spermagonia) develop on the upper leaf surface in spring, surrounded by larger yellowish orange pustules (aecia) near the ground; orange to yellow pustules (uredinia) appear on the leaf underside in June and July and later darken to black teliospores.",
-          "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
-          "quote": "Yellow spots develop on the upper surface of infected leaves during spring. Spots initially are very small, orange to yellow, and slightly raised bumps ( spermagonia , photograph by Peter R. Bristow). Around these spots develop larger, yellowish orange pustules (aecia) commonly on raspberry leaves near the ground. ... In June and July, orange to yellow pustules (uredinia) appear on the underside of infected leaves. These structures later darken to become black teliospores"
-        },
-        "diagnostic_features": {
-          "value": "The appearance of aecia on the top of leaves early in the growing season generally distinguishes yellow rust from late leaf rust; season of appearance and which caneberry types are affected help distinguish the rust, though expert spore examination may be required.",
-          "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
-          "quote": "The appearance of aecia on the top of leaves early in the growing season generally distinguishes yellow rust from late leaf rust, Pucciniastrum americanum , which infects red and purple raspberries."
-        },
-        "look_alikes": {
-          "value": [
-            "late leaf rust (Pucciniastrum americanum)",
-            "cane and leaf rust",
-            "orange rust"
-          ],
-          "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
-          "quote": "Note that cane and leaf rust , late leaf rust , and orange rust also infect caneberries. These diseases can produce symptoms similar to those of yellow rust"
-        }
-      },
-      "treatments": {
-        "value": [
-          "Grow raspberries where they will receive full sun.",
-          "Plant them on a raised berm or mound of soil to improve air circulation around the plants.",
-          "Remove any wild caneberries near those grown for fruit because they can be alternative hosts from which the pathogen can spread.",
-          "Control weeds to improve air circulation and reduce humidity around plants.",
-          "Any method of pruning and trellising that improves air circulation around caneberries helps to reduce yellow rust.",
-          "The dry conditions in a macrotunnel (hoop house covered with clear plastic) greatly limit yellow rust if the tunnels are constructed before environmental conditions favor rust infections.",
-          "After harvest, cultivate to bury debris or dispose of it away from caneberries.",
-          "Remove fruiting canes after harvest.",
-          "Complete removal of floricanes and the first flush of primocane helps to control this disease because it removes most sources of pathogen inoculum",
-          "Stripping leaves from primocanes in the fall will also reduce overwintering inoculum.",
-          "spraying Bordeaux mixture or another copper fungicide may be warranted during the delayed dormant season, which is once buds appear and swell before they open",
-          "a fixed copper fungicide or myclobutanil can be sprayed during the first bloom"
-        ],
-        "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
-        "quote": "Grow raspberries where they will receive full sun. Plant them on a raised berm or mound of soil to improve air circulation around the plants. Remove any wild caneberries near those grown for fruit ... If the fungus was abundant the previous growing season, spraying Bordeaux mixture or another copper fungicide may be warranted during the delayed dormant season ... Alternatively or in addition, a fixed copper fungicide or myclobutanil can be sprayed during the first bloom."
-      },
-      "confidence": "high",
-      "num_sources": 2,
-      "conflicts": [],
-      "regional_observations": {
-        "New York": {
-          "state": "New York",
-          "deltas": [
-            {
-              "field": "affected_organs",
-              "canonical_says": "affected_parts: Foliar; Stem",
-              "image_shows": "In New York, raspberry yellow rust can also involve the fruit, with small orange to yellow lesions on the berries beyond the canonical foliar/stem scope.",
-              "image_quote": "The image shows red raspberry fruit with small orange to yellow lesions.",
-              "image_id": "bugwood::5484087",
-              "verification_status": "weakly_supported",
-              "reasoning": "External sources confirm Phragmidium rubi-idaei can affect fruit (rare drupelet spore structures and uneven ripening), giving partial support to a fruit observation outside the canonical foliar/stem scope, though fruit infection is uncommon and mainly attributed to look-alike late leaf rust.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.forestpests.eu/pest/phragmidium-rubi-idaei",
-                  "quote": "Spermogonia, aecia, uredinia and telia are formed on leaves of primocanes and fruiting canes, occasionally also on petioles, sepals, and rarely on drupelets of fruits."
-                },
-                {
-                  "url": "https://www.rhs.org.uk/disease/raspberry-rust",
-                  "quote": "On the fruits this pathogen causes uneven ripening; fruit often dies on the canes before maturing if leaves on fruiting laterals are attacked early."
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5484087"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              4
-            ],
-            "detected_organ_per_pass": [
-              "fruit"
-            ],
-            "n_active_agents_per_pass": [
-              6
-            ],
-            "n_after_agreement": 4,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 1,
-              "n_provisional": 0,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 1,
-              "n_added": 1,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        },
-        "California": {
-          "state": "California",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "orange to yellow pustules (uredinia)... small orange to yellow raised spots (spermagonia) develop on the upper leaf surface",
-              "image_shows": "The lesion texture appears slightly raised.",
-              "image_quote": "The lesions are irregular and appear raised.",
-              "image_id": "bugwood::5622049",
-              "verification_status": "verified",
-              "reasoning": "Multiple extension sources confirm rust pustules on raspberry leaves are slightly raised, directly corroborating the observed raised texture.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
-                  "quote": "At first the spots are very small, yellow to orange and slightly raised (spermagonia)."
-                },
-                {
-                  "url": "https://www.rhs.org.uk/disease/raspberry-rust",
-                  "quote": "clusters of slightly raised, yellow pustules appear on the upper leaf surface."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "orange to yellow pustules (uredinia) appear on the leaf underside... later darken to black teliospores",
-              "image_shows": "The image shows necrotic tissue on the leaf surface.",
-              "image_quote": "There are scattered brown spots on the leaf.",
-              "image_id": "bugwood::5622049",
-              "verification_status": "weakly_supported",
-              "reasoning": "Rust pustules darken to brown/black late-season and cause tissue decline/leaf drop, giving indirect support for scattered brown/necrotic spots.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
-                  "quote": "In late summer and autumn, the orange pustules are gradually replaced by black pustules containing overwintering teliospores."
-                },
-                {
-                  "url": "https://www.rhs.org.uk/disease/raspberry-rust",
-                  "quote": "Severe infection may lead to premature shedding of leaves."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "orange to yellow pustules (uredinia)... small orange to yellow raised spots",
-              "image_shows": "The leaf surface has green areas with brown and yellowish lesions.",
-              "image_quote": "The leaf surface displays green areas with scattered brown and yellowish lesions.",
-              "image_id": "bugwood::5622049",
-              "verification_status": "weakly_supported",
-              "reasoning": "The yellowish lesions on green leaf tissue match documented rust coloration; browning is consistent with older/darkening pustules, giving partial support.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
-                  "quote": "yellow spotting on the upper leaf surface... yellow to orange pustules on the bottom side of the leaf in midsummer, with these darkening to black by late summer to autumn."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "orange to yellow pustules (uredinia) appear on the leaf underside... later darken to black teliospores",
-              "image_shows": "The leaf has patches of yellowing and necrosis.",
-              "image_quote": "Leaf lesions with a green center, brown margin, and chlorotic yellow halo.",
-              "image_id": "bugwood::5622049",
-              "verification_status": "weakly_supported",
-              "reasoning": "Yellowing progressing to brown necrosis on affected leaves is documented for yellow rust, though the described concentric green-center/brown-margin lesion is more leaf-spot-like, so support is only partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
-                  "quote": "Leaves severely affected by yellow rust can dry out, die, and prematurely drop."
-                },
-                {
-                  "url": "https://hortsense.cahnrs.wsu.edu/fact-sheet/raspberry-yellow-rust/",
-                  "quote": "Yellow spots may eventually turn brown before leaves die in the fall."
-                }
-              ]
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "The appearance of aecia on the top of leaves early in the growing season generally distinguishes yellow rust from late leaf rust",
-              "image_shows": "Veins appear normal without signs of clearing or necrosis.",
-              "image_quote": "The leaf veins are not translucent or darkened.",
-              "image_id": "bugwood::5622049",
-              "verification_status": "field_observation",
-              "reasoning": "Extension photo descriptions of raspberry rust depict raised orange-yellow spots and pustules but say nothing about vein clearing or vein necrosis, so this absence observation is plausible and uncontradicted but not directly corroborated.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "late leaf rust (Pucciniastrum americanum); cane and leaf rust; orange rust",
-              "image_shows": "No concentric pattern is visible in the lesions.",
-              "image_quote": "No concentric pattern is visible in the lesions.",
-              "image_id": "bugwood::5622049",
-              "verification_status": "field_observation",
-              "reasoning": "Concentric target-like rings are typical of anthracnose/target-spot look-alikes rather than rust, and no published rust photo description explicitly notes the absence of concentric lesions, so this remains plausible but unsupported.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5622049",
-            "bugwood::5622050",
-            "bugwood::5622051",
-            "bugwood::5622052",
-            "bugwood::5622053",
-            "bugwood::5622054",
-            "bugwood::5622056",
-            "bugwood::5622057",
-            "bugwood::5622058",
-            "bugwood::5622059",
-            "bugwood::5622061",
-            "bugwood::5622062",
-            "bugwood::5622063",
-            "bugwood::5622064",
-            "bugwood::5622065",
-            "bugwood::5622066",
-            "bugwood::5622067",
-            "bugwood::5622068",
-            "bugwood::5622069",
-            "bugwood::5622070",
-            "bugwood::5622071",
-            "bugwood::5622072",
-            "bugwood::5622073",
-            "bugwood::5622075",
-            "bugwood::5622076",
-            "bugwood::5622077",
-            "bugwood::5622079",
-            "bugwood::5622080"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 3,
-              "n_provisional": 6,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 9,
-              "n_added": 9,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 2,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
-    },
-    {
-      "disease_name": "Gnomonia Cane Canker",
-      "pathogen_scientific_name": {
-        "value": null,
-        "url": null,
-        "quote": null
-      },
-      "type_of_disease": {
-        "value": null,
-        "url": null,
-        "quote": null
-      },
-      "affected_parts": {
-        "value": null,
-        "url": null,
-        "quote": null
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": null,
-          "url": null,
-          "quote": null
-        },
-        "diagnostic_features": {
-          "value": null,
-          "url": null,
-          "quote": null
-        },
-        "look_alikes": {
-          "value": null,
-          "url": null,
-          "quote": null
-        }
-      },
-      "confidence": "low",
-      "num_sources": 0,
-      "conflicts": [],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "There is a canker present on the outer stem.",
-              "image_quote": "The lesion appears as a sunken area with rough texture.",
-              "image_id": "bugwood::5508363",
-              "verification_status": "weakly_supported",
-              "reasoning": "A canker/lesion on the cane is a documented hallmark of Gnomonia cane canker, though the specific 'sunken, rough' texture is only partially corroborated.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-11-21-2397-PDN",
-                  "quote": "Symptoms consist of dark-brown lesions in the petioles, tips, and intermediate zones of the canes, finally causing the leaves, canes, and lateral shoots to die."
-                },
-                {
-                  "url": "https://blogs.cornell.edu/berrytool/2020/12/10/raspberry-canker-diseases/",
-                  "quote": "Raspberry canker diseases produce lesions and cankers on the canes."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "affected_organs",
-              "canonical_says": "(not specified)",
-              "image_shows": "The pith is white and the outer vascular tissue is brown.",
-              "image_quote": "The central area of the stem is a white pith surrounded by brown outer tissue.",
-              "image_id": "bugwood::5508363",
-              "verification_status": "weakly_supported",
-              "reasoning": "Browning of the outer vascular tissue surrounding the pith is consistent with documented vascular/pith necrosis in Rubus cane canker.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-11-21-2397-PDN",
-                  "quote": "Cane lesions with necrosis extending into the vascular tissue and pith."
-                },
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/raspberry-rubus-spp-cane-blight",
-                  "quote": "Scrape the affected cane with a knife to expose vascular tissue; healthy tissue should be moist and light green, while the canker will be orangish-red."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "(not specified)",
-              "image_shows": "The photo shows a pycnidium-like structure with a dark center surrounded by lighter tissue, consistent with Gnomonia Cane Canker.",
-              "image_quote": "There is a small dark spot surrounded by lighter tissue, resembling a pycnidium.",
-              "image_id": "bugwood::5508363",
-              "verification_status": "verified",
-              "reasoning": "Dark pycnidia/perithecia embedded in lighter cane tissue are an established diagnostic fruiting structure for Rubus cane cankers including Gnomonia.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://ipm.illinois.edu/diseases/rpds/709.pdf",
-                  "quote": "Speck-sized, black reproductive bodies (pycnidia) of the fungus develop in the dead bark; later black pustules containing perithecia form on the lesion."
-                },
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/raspberry-rubus-spp-cane-blight",
-                  "quote": "Blighted canes show black specks containing the fungal fruiting bodies."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "A small, white, circular area appears to be a gall, with a textured surface and dense tissue surrounding it.",
-              "image_quote": "The image shows a distinct, pale, circular structure with a raised edge and textured inner surface.",
-              "image_id": "bugwood::5508363",
-              "verification_status": "field_observation",
-              "reasoning": "No published extension/APS source describes galls in Gnomonia cane canker (fruiting bodies/pycnidia and brown-purple lesions are reported instead), so the pale circular structure is plausible as a fruiting body but the gall interpretation is unsupported and not citably contradicted.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected tissue has a predominant olive-green color with some tan areas.",
-              "image_quote": "The central area is predominantly olive-green with some tan edges.",
-              "image_id": "bugwood::5508363",
-              "verification_status": "field_observation",
-              "reasoning": "Published descriptions of Gnomoniopsis cane lesions cite brown-to-purple/dark-brown coloration rather than olive-green, so the described color has no external support but is not directly contradicted by any photo caption I located.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5508363",
-            "bugwood::5508364",
-            "bugwood::5508365",
-            "bugwood::5508366",
-            "bugwood::5508367",
-            "bugwood::5508368",
-            "bugwood::5508369",
-            "bugwood::5508370",
-            "bugwood::5508371",
-            "bugwood::5508372"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              7
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 7,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 3,
-              "n_provisional": 3,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 6,
-              "n_added": 6,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 2,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+ "diseases": [
+  {
+   "disease_name": "Rust",
+   "pathogen_scientific_name": {
+    "value": "Phragmidium rubi-idaei",
+    "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+    "quote": "Phragmidium rubi-idaei",
+    "taxonomy_validated": false,
+    "_repaired_from": {
+     "prev_url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+     "prev_quote": "Yellow Rust of Red Raspberry Phragmidium rubi-idaei"
     }
-  ],
-  "crop": "European Red Raspberry",
-  "generated_date": "2026-06-10",
-  "regional_observations_count": 3
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+    "quote": "the yellow rust fungus infects only red raspberry"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem"
+    ],
+    "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+    "quote": "Yellow spots develop on the upper surface of infected leaves during spring. ... The yellow rust fungus overwinters as teliospores on bark and any leaves remaining on floricanes (fruiting canes)."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Small orange to yellow raised spots (spermagonia) develop on the upper leaf surface in spring, surrounded by larger yellowish orange pustules (aecia) near the ground; orange to yellow pustules (uredinia) appear on the leaf underside in June and July and later darken to black teliospores.",
+     "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+     "quote": "Yellow spots develop on the upper surface of infected leaves during spring. Spots initially are very small, orange to yellow, and slightly raised bumps ( spermagonia , photograph by Peter R. Bristow). Around these spots develop larger, yellowish orange pustules (aecia) commonly on raspberry leaves near the ground. ... In June and July, orange to yellow pustules (uredinia) appear on the underside of infected leaves. These structures later darken to become black teliospores"
+    },
+    "diagnostic_features": {
+     "value": "The appearance of aecia on the top of leaves early in the growing season generally distinguishes yellow rust from late leaf rust; season of appearance and which caneberry types are affected help distinguish the rust, though expert spore examination may be required.",
+     "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+     "quote": "The appearance of aecia on the top of leaves early in the growing season generally distinguishes yellow rust from late leaf rust, Pucciniastrum americanum , which infects red and purple raspberries."
+    },
+    "look_alikes": {
+     "value": [
+      "late leaf rust (Pucciniastrum americanum)",
+      "cane and leaf rust",
+      "orange rust"
+     ],
+     "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+     "quote": "Note that cane and leaf rust , late leaf rust , and orange rust also infect caneberries. These diseases can produce symptoms similar to those of yellow rust"
+    }
+   },
+   "treatments": {
+    "value": [
+     "Grow raspberries where they will receive full sun.",
+     "Plant them on a raised berm or mound of soil to improve air circulation around the plants.",
+     "Remove any wild caneberries near those grown for fruit because they can be alternative hosts from which the pathogen can spread.",
+     "Control weeds to improve air circulation and reduce humidity around plants.",
+     "Any method of pruning and trellising that improves air circulation around caneberries helps to reduce yellow rust.",
+     "The dry conditions in a macrotunnel (hoop house covered with clear plastic) greatly limit yellow rust if the tunnels are constructed before environmental conditions favor rust infections.",
+     "After harvest, cultivate to bury debris or dispose of it away from caneberries.",
+     "Remove fruiting canes after harvest.",
+     "Complete removal of floricanes and the first flush of primocane helps to control this disease because it removes most sources of pathogen inoculum",
+     "Stripping leaves from primocanes in the fall will also reduce overwintering inoculum.",
+     "spraying Bordeaux mixture or another copper fungicide may be warranted during the delayed dormant season, which is once buds appear and swell before they open",
+     "a fixed copper fungicide or myclobutanil can be sprayed during the first bloom"
+    ],
+    "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+    "quote": "Grow raspberries where they will receive full sun. Plant them on a raised berm or mound of soil to improve air circulation around the plants. Remove any wild caneberries near those grown for fruit ... If the fungus was abundant the previous growing season, spraying Bordeaux mixture or another copper fungicide may be warranted during the delayed dormant season ... Alternatively or in addition, a fixed copper fungicide or myclobutanil can be sprayed during the first bloom."
+   },
+   "confidence": "high",
+   "num_sources": 2,
+   "conflicts": [],
+   "regional_observations": {
+    "New York": {
+     "state": "New York",
+     "deltas": [
+      {
+       "field": "affected_organs",
+       "canonical_says": "affected_parts: Foliar; Stem",
+       "image_shows": "In New York, raspberry yellow rust can also involve the fruit, with small orange to yellow lesions on the berries beyond the canonical foliar/stem scope.",
+       "image_quote": "The image shows red raspberry fruit with small orange to yellow lesions.",
+       "image_id": "bugwood::5484087",
+       "verification_status": "weakly_supported",
+       "reasoning": "External sources confirm Phragmidium rubi-idaei can affect fruit (rare drupelet spore structures and uneven ripening), giving partial support to a fruit observation outside the canonical foliar/stem scope, though fruit infection is uncommon and mainly attributed to look-alike late leaf rust.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.forestpests.eu/pest/phragmidium-rubi-idaei",
+         "quote": "Spermogonia, aecia, uredinia and telia are formed on leaves of primocanes and fruiting canes, occasionally also on petioles, sepals, and rarely on drupelets of fruits."
+        },
+        {
+         "url": "https://www.rhs.org.uk/disease/raspberry-rust",
+         "quote": "On the fruits this pathogen causes uneven ripening; fruit often dies on the canes before maturing if leaves on fruiting laterals are attacked early."
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5484087"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       4
+      ],
+      "detected_organ_per_pass": [
+       "fruit"
+      ],
+      "n_active_agents_per_pass": [
+       6
+      ],
+      "n_after_agreement": 4,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 1,
+       "n_provisional": 0,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 1,
+       "n_added": 1,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    },
+    "California": {
+     "state": "California",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "orange to yellow pustules (uredinia)... small orange to yellow raised spots (spermagonia) develop on the upper leaf surface",
+       "image_shows": "The lesion texture appears slightly raised.",
+       "image_quote": "The lesions are irregular and appear raised.",
+       "image_id": "bugwood::5622049",
+       "verification_status": "verified",
+       "reasoning": "Multiple extension sources confirm rust pustules on raspberry leaves are slightly raised, directly corroborating the observed raised texture.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+         "quote": "At first the spots are very small, yellow to orange and slightly raised (spermagonia)."
+        },
+        {
+         "url": "https://www.rhs.org.uk/disease/raspberry-rust",
+         "quote": "clusters of slightly raised, yellow pustules appear on the upper leaf surface."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "orange to yellow pustules (uredinia) appear on the leaf underside... later darken to black teliospores",
+       "image_shows": "The image shows necrotic tissue on the leaf surface.",
+       "image_quote": "There are scattered brown spots on the leaf.",
+       "image_id": "bugwood::5622049",
+       "verification_status": "weakly_supported",
+       "reasoning": "Rust pustules darken to brown/black late-season and cause tissue decline/leaf drop, giving indirect support for scattered brown/necrotic spots.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+         "quote": "These structures later darken to become black teliospores that are an overwintering stage of the fungus.",
+         "_repaired_from": {
+          "prev_url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+          "prev_quote": "In late summer and autumn, the orange pustules are gradually replaced by black pustules containing overwintering teliospores."
+         }
+        },
+        {
+         "url": "https://www.rhs.org.uk/disease/raspberry-rust",
+         "quote": "Severe infection may lead to premature shedding of leaves."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "orange to yellow pustules (uredinia)... small orange to yellow raised spots",
+       "image_shows": "The leaf surface has green areas with brown and yellowish lesions.",
+       "image_quote": "The leaf surface displays green areas with scattered brown and yellowish lesions.",
+       "image_id": "bugwood::5622049",
+       "verification_status": "weakly_supported",
+       "reasoning": "The yellowish lesions on green leaf tissue match documented rust coloration; browning is consistent with older/darkening pustules, giving partial support.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+         "quote": "Yellow spots develop on the upper surface of infected leaves during spring.",
+         "_repaired_from": {
+          "prev_url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+          "prev_quote": "yellow spotting on the upper leaf surface... yellow to orange pustules on the bottom side of the leaf in midsummer, with these darkening to black by late summer to autumn."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "orange to yellow pustules (uredinia) appear on the leaf underside... later darken to black teliospores",
+       "image_shows": "The leaf has patches of yellowing and necrosis.",
+       "image_quote": "Leaf lesions with a green center, brown margin, and chlorotic yellow halo.",
+       "image_id": "bugwood::5622049",
+       "verification_status": "weakly_supported",
+       "reasoning": "Yellowing progressing to brown necrosis on affected leaves is documented for yellow rust, though the described concentric green-center/brown-margin lesion is more leaf-spot-like, so support is only partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://ipm.ucanr.edu/PMG/GARDEN/FRUIT/DISEASE/yellowrust.html",
+         "quote": "Leaves severely affected by yellow rust can dry out, die, and prematurely drop."
+        },
+        {
+         "url": "https://hortsense.cahnrs.wsu.edu/fact-sheet/raspberry-yellow-rust/",
+         "quote": "Yellow spots may eventually turn brown before leaves die in the fall."
+        }
+       ]
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "The appearance of aecia on the top of leaves early in the growing season generally distinguishes yellow rust from late leaf rust",
+       "image_shows": "Veins appear normal without signs of clearing or necrosis.",
+       "image_quote": "The leaf veins are not translucent or darkened.",
+       "image_id": "bugwood::5622049",
+       "verification_status": "field_observation",
+       "reasoning": "Extension photo descriptions of raspberry rust depict raised orange-yellow spots and pustules but say nothing about vein clearing or vein necrosis, so this absence observation is plausible and uncontradicted but not directly corroborated.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "late leaf rust (Pucciniastrum americanum); cane and leaf rust; orange rust",
+       "image_shows": "No concentric pattern is visible in the lesions.",
+       "image_quote": "No concentric pattern is visible in the lesions.",
+       "image_id": "bugwood::5622049",
+       "verification_status": "field_observation",
+       "reasoning": "Concentric target-like rings are typical of anthracnose/target-spot look-alikes rather than rust, and no published rust photo description explicitly notes the absence of concentric lesions, so this remains plausible but unsupported.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5622049",
+      "bugwood::5622050",
+      "bugwood::5622051",
+      "bugwood::5622052",
+      "bugwood::5622053",
+      "bugwood::5622054",
+      "bugwood::5622056",
+      "bugwood::5622057",
+      "bugwood::5622058",
+      "bugwood::5622059",
+      "bugwood::5622061",
+      "bugwood::5622062",
+      "bugwood::5622063",
+      "bugwood::5622064",
+      "bugwood::5622065",
+      "bugwood::5622066",
+      "bugwood::5622067",
+      "bugwood::5622068",
+      "bugwood::5622069",
+      "bugwood::5622070",
+      "bugwood::5622071",
+      "bugwood::5622072",
+      "bugwood::5622073",
+      "bugwood::5622075",
+      "bugwood::5622076",
+      "bugwood::5622077",
+      "bugwood::5622079",
+      "bugwood::5622080"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 3,
+       "n_provisional": 6,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 9,
+       "n_added": 9,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 2,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Gnomonia Cane Canker",
+   "pathogen_scientific_name": {
+    "value": null,
+    "url": null,
+    "quote": null
+   },
+   "type_of_disease": {
+    "value": null,
+    "url": null,
+    "quote": null
+   },
+   "affected_parts": {
+    "value": null,
+    "url": null,
+    "quote": null
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": null,
+     "url": null,
+     "quote": null
+    },
+    "diagnostic_features": {
+     "value": null,
+     "url": null,
+     "quote": null
+    },
+    "look_alikes": {
+     "value": null,
+     "url": null,
+     "quote": null
+    }
+   },
+   "confidence": "low",
+   "num_sources": 0,
+   "conflicts": [],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "There is a canker present on the outer stem.",
+       "image_quote": "The lesion appears as a sunken area with rough texture.",
+       "image_id": "bugwood::5508363",
+       "verification_status": "weakly_supported",
+       "reasoning": "A canker/lesion on the cane is a documented hallmark of Gnomonia cane canker, though the specific 'sunken, rough' texture is only partially corroborated.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-11-21-2397-PDN",
+         "quote": "Symptoms consist of dark-brown lesions in the petioles, tips, and intermediate zones of the canes, finally causing the leaves, canes, and lateral shoots to die."
+        },
+        {
+         "url": "https://blogs.cornell.edu/berrytool/2020/12/10/raspberry-canker-diseases/",
+         "quote": "Raspberry canker diseases produce lesions and cankers on the canes."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "affected_organs",
+       "canonical_says": "(not specified)",
+       "image_shows": "The pith is white and the outer vascular tissue is brown.",
+       "image_quote": "The central area of the stem is a white pith surrounded by brown outer tissue.",
+       "image_id": "bugwood::5508363",
+       "verification_status": "weakly_supported",
+       "reasoning": "Browning of the outer vascular tissue surrounding the pith is consistent with documented vascular/pith necrosis in Rubus cane canker.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-11-21-2397-PDN",
+         "quote": "Cane lesions with necrosis extending into the vascular tissue and pith."
+        },
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/raspberry-rubus-spp-cane-blight",
+         "quote": "Scrape the affected cane with a knife to expose vascular tissue; healthy tissue should be moist and light green, while the canker will be orangish-red."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "(not specified)",
+       "image_shows": "The photo shows a pycnidium-like structure with a dark center surrounded by lighter tissue, consistent with Gnomonia Cane Canker.",
+       "image_quote": "There is a small dark spot surrounded by lighter tissue, resembling a pycnidium.",
+       "image_id": "bugwood::5508363",
+       "verification_status": "verified",
+       "reasoning": "Dark pycnidia/perithecia embedded in lighter cane tissue are an established diagnostic fruiting structure for Rubus cane cankers including Gnomonia.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://ipm.illinois.edu/diseases/rpds/709.pdf",
+         "quote": "Speck-sized, black reproductive bodies (pycnidia) of the fungus develop in the dead bark; later black pustules containing perithecia form on the lesion."
+        },
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/raspberry-rubus-spp-cane-blight",
+         "quote": "Blighted canes show black specks containing the fungal fruiting bodies."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "A small, white, circular area appears to be a gall, with a textured surface and dense tissue surrounding it.",
+       "image_quote": "The image shows a distinct, pale, circular structure with a raised edge and textured inner surface.",
+       "image_id": "bugwood::5508363",
+       "verification_status": "field_observation",
+       "reasoning": "No published extension/APS source describes galls in Gnomonia cane canker (fruiting bodies/pycnidia and brown-purple lesions are reported instead), so the pale circular structure is plausible as a fruiting body but the gall interpretation is unsupported and not citably contradicted.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The affected tissue has a predominant olive-green color with some tan areas.",
+       "image_quote": "The central area is predominantly olive-green with some tan edges.",
+       "image_id": "bugwood::5508363",
+       "verification_status": "field_observation",
+       "reasoning": "Published descriptions of Gnomoniopsis cane lesions cite brown-to-purple/dark-brown coloration rather than olive-green, so the described color has no external support but is not directly contradicted by any photo caption I located.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5508363",
+      "bugwood::5508364",
+      "bugwood::5508365",
+      "bugwood::5508366",
+      "bugwood::5508367",
+      "bugwood::5508368",
+      "bugwood::5508369",
+      "bugwood::5508370",
+      "bugwood::5508371",
+      "bugwood::5508372"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       7
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 7,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 3,
+       "n_provisional": 3,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 6,
+       "n_added": 6,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 2,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  }
+ ],
+ "crop": "European Red Raspberry",
+ "generated_date": "2026-06-10",
+ "regional_observations_count": 3
 }

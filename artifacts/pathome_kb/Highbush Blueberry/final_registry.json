@@ -1,1636 +1,1620 @@
 {
-  "diseases": [
-    {
-      "disease_name": "Anthracnose",
-      "pathogen_scientific_name": {
-        "value": "Colletotrichum acutatum",
-        "url": "https://www.umass.edu/agriculture-food-environment/fruit/fact-sheets/blueberry-ipm-anthracnose-ripe-rot",
-        "quote": "Blueberry Anthracnose is caused by the fungus Colletotrichum acutatum.",
-        "taxonomy_validated": false,
-        "ncbi_url": "",
-        "mycobank_url": ""
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://content.ces.ncsu.edu/anthracnose-fruit-rot-of-blueberries",
-        "quote": "Anthracnose fruit rot is a common fungal disease of blueberries in all growing regions of the U.S."
-      },
-      "affected_parts": {
-        "value": [
-          "Fruit",
-          "Foliar",
-          "Stem",
-          "Seed"
-        ],
-        "url": "https://www.umass.edu/agriculture-food-environment/fruit/fact-sheets/blueberry-ipm-anthracnose-ripe-rot",
-        "quote": "Blueberry Anthracnose (aka \u00e2\u20ac\u02dcripe rot\u00e2\u20ac\u2122), primarily damages fruit but may also infect twigs and spurs."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "The first symptoms are fruit softening and shriveled areas near the calyx (blossom) end, followed by small sticky orange/salmon spore masses (conidia) that grow and can envelop the whole fruit.",
-          "url": "https://content.ces.ncsu.edu/anthracnose-fruit-rot-of-blueberries",
-          "quote": "The first visible symptoms are fruit softening and the development of shriveled areas near the calyx (blossom) end of the fruit. Small orange spots begin to appear in these shriveled areas shortly after initial symptom development and continue to grow in size and number."
-        },
-        "diagnostic_features": {
-          "value": "Infected fruit shows bright pink to salmon/orange spore masses (conidia) produced from acervuli that break through the fruit's skin at the blossom end, typically appearing on mature fruit after ripening (\"ripe rot\"); sunken lesions develop and neighboring berries may be infected yet remain asymptomatic.",
-          "url": "https://www.umass.edu/agriculture-food-environment/fruit/fact-sheets/blueberry-ipm-anthracnose-ripe-rot",
-          "quote": "Infected fruit shows bright pink spore masses at the blossom end. Stem cankers with raised purple margins can occur but are rare."
-        },
-        "look_alikes": {
-          "value": [
-            "Phomopsis canker and twig blight",
-            "Botrytis blossom blight"
-          ],
-          "url": "https://njaes.rutgers.edu/FS1361/",
-          "quote": "These symptoms can often be confused with other fungal diseases of highbush blueberry, including Phomopsis canker and twig blight and Botrytis blossom blight."
-        }
-      },
-      "treatments": {
-        "value": [
-          "Select less susceptible / resistant cultivars before planting (e.g. 'Elliott', 'Legacy', 'Reveille'; moderately resistant 'Draper'/'Elliott'); emphasize cultivars with dry stem scars and those that drop bud scales earlier in spring",
-          "Prune bushes and use wide plant spacing to open the canopy and improve airflow, reducing moisture duration and humidity; selectively prune off dead buds, pedicels, twigs, trusses, and canes (in fall/winter) and remove/destroy prunings",
-          "Use drip irrigation to avoid wetting aerial plant parts; if using overhead irrigation, water early in the day so plants dry before nightfall",
-          "Harvest frequently (at least every 7 days) to limit overripe fruit; do not harvest or handle fruit when wet",
-          "Refrigerate/cool harvested fruit promptly (around 35\u00c2\u00b0F / 2\u00c2\u00b0C within two hours of harvest; forced-air cooling for palletized fruit) to reduce postharvest fruit rots",
-          "Keep equipment and containers clean and dry before contact with berries",
-          "Apply preventative fungicides when scouting and weather indicate risk; sprays beginning at full bloom and repeating every 7-14 days through harvest are most effective",
-          "Rotate fungicide active ingredients from different FRAC groups to avoid resistance development",
-          "Scout fields beginning at bloom and consult prior-year scouting records; monitor weather to identify likely infection periods"
-        ],
-        "url": "https://content.ces.ncsu.edu/anthracnose-fruit-rot-of-blueberries",
-        "quote": "Preventative fungicides can be used to minimize the sources of infection in the field. Sprays beginning at full bloom and repeating every 7-14 days through harvest are most effective"
-      },
-      "confidence": "high",
-      "num_sources": 3,
-      "conflicts": [
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Colletotrichum acutatum",
-          "alternative_value": "Colletotrichum acutatum and Colletotrichum gloeosporioides",
-          "alternative_source_url": "https://content.ces.ncsu.edu/anthracnose-fruit-rot-of-blueberries",
-          "note": "NC State attributes the disease to two species complexes, C. acutatum and C. gloeosporioides, rather than C. acutatum alone."
-        },
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Colletotrichum acutatum",
-          "alternative_value": "Colletotrichum fioriniae",
-          "alternative_source_url": "https://njaes.rutgers.edu/FS1361/",
-          "note": "Rutgers identifies C. fioriniae (a member of the C. acutatum species complex) as the primary causal organism in New Jersey, with other species from the C. gloeosporioides complex also able to infect. No NCBI/MycoBank validation was supplied to resolve the canonical name."
-        }
-      ],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "severity",
-              "canonical_says": "small sticky orange/salmon spore masses (conidia) that grow and can envelop the whole fruit",
-              "image_shows": "In this Maine sample the fruit shows advanced ripe rot with shriveling and lesions covering more than half of the visible berry surface.",
-              "image_quote": "The fruit is dry and shriveled with visible lesions.",
-              "image_id": "bugwood::5503875",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension sources confirm ripening berries shrivel and develop expanding sunken lesions that can envelop much of the fruit, giving indirect support to the high-severity surface-coverage claim.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://content.ces.ncsu.edu/anthracnose-fruit-rot-of-blueberries",
-                  "quote": "Symptoms appear as the fruit begins to ripen, including shriveling, development of sunken lesions, soft, rotted fruit, and eruption of orange- or salmon-colored spore masses on the blossom end of the fruit."
-                },
-                {
-                  "url": "https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/agriculture-and-seafood/animal-and-crops/plant-health/phu-blueberry-anthracnosess.pdf",
-                  "quote": "The infected areas may shrivel with time. Within a few days, bright salmon-orange coloured, wet spore masses can be seen on the shrunken areas."
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5503875",
-            "bugwood::5503876",
-            "bugwood::5503877",
-            "bugwood::5503878",
-            "bugwood::5503879",
-            "bugwood::5503880",
-            "bugwood::5503881",
-            "bugwood::5503882",
-            "bugwood::5503883",
-            "bugwood::5503884"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              5
-            ],
-            "detected_organ_per_pass": [
-              "fruit"
-            ],
-            "n_active_agents_per_pass": [
-              6
-            ],
-            "n_after_agreement": 5,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 1,
-              "n_provisional": 0,
-              "n_contradictory": 2,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 1,
-              "n_added": 1,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        },
-        "North Carolina": {
-          "state": "North Carolina",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "fruit softening and shriveled areas near the calyx (blossom) end",
-              "image_shows": "The fruit is dry and shriveled with visible brown spots rather than soft.",
-              "image_quote": "The fruit appears mummified and dry, with shriveled skin.",
-              "image_id": "bugwood::5607081",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension sources confirm anthracnose-infected berries shrivel dry (rather than ooze) under low-humidity conditions, corroborating a dry shriveled fruit.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/agriculture-and-seafood/animal-and-crops/plant-health/phu-blueberry-anthracnosess.pdf",
-                  "quote": "Sporulation causes gelatinous orange ooze to form on the outer surface of the berry under humid conditions; under dryer conditions, the fruit simply shrivel."
-                },
-                {
-                  "url": "https://content.ces.ncsu.edu/anthracnose-fruit-rot-of-blueberries",
-                  "quote": "Initial symptoms usually appear near the calyx (blossom)-end on ripe fruit as dark, sunken areas and the infected areas may shrivel with time."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "bright pink to salmon/orange spore masses (conidia) produced from acervuli that break through the fruit's skin",
-              "image_shows": "No visible orange/salmon spore masses are present on the shriveled fruit.",
-              "image_quote": "The image shows a shriveled blueberry with no signs of spore masses.",
-              "image_id": "bugwood::5607081",
-              "verification_status": "weakly_supported",
-              "reasoning": "Absence of sporulation is consistent with anthracnose under dry conditions, where infected fruit shrivel without producing the characteristic orange spore masses.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/agriculture-and-seafood/animal-and-crops/plant-health/phu-blueberry-anthracnosess.pdf",
-                  "quote": "under dryer conditions, the fruit simply shrivel ... the spore masses may look wet or dry, depending on the relative humidity and their age."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "The fruit is fully shriveled and covered in brownish spots, indicating advanced/severe infection.",
-              "image_quote": "The blueberry is shriveled and covered in brownish spots, indicating significant disease.",
-              "image_id": "bugwood::5607081",
-              "verification_status": "weakly_supported",
-              "reasoning": "Complete shriveling reflects an advanced disease stage, and sources describe progressive shriveling as a late-stage/severe symptom of the rot.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://content.ces.ncsu.edu/anthracnose-fruit-rot-of-blueberries",
-                  "quote": "the infected areas may shrivel with time"
-                },
-                {
-                  "url": "https://www.canr.msu.edu/blueberries/uploads/files/E3039.pdf",
-                  "quote": "Preharvest fruit losses of 10 to 20 percent and postharvest losses of up to 100 percent have been reported."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected fruit shows a predominant blue-gray color with only minor brownish spots.",
-              "image_quote": "The affected area has a predominant blue-gray color with minor brownish spots.",
-              "image_id": "bugwood::5607081",
-              "verification_status": "field_observation",
-              "reasoning": "Extension sources describe anthracnose ripe rot as sunken/softened fruit with orange-salmon spore masses at the blossom end, not a blue-gray coloration; the described blue-gray tone matches a berry's natural bloom and is neither corroborated nor directly contradicted as a disease sign.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5607081",
-            "bugwood::5607082",
-            "bugwood::5607083",
-            "bugwood::5607084",
-            "bugwood::5607085",
-            "bugwood::5607086",
-            "bugwood::5607087",
-            "bugwood::5607088",
-            "bugwood::5607089"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              5
-            ],
-            "detected_organ_per_pass": [
-              "fruit"
-            ],
-            "n_active_agents_per_pass": [
-              6
-            ],
-            "n_after_agreement": 5,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 3,
-              "n_provisional": 1,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 4,
-              "n_added": 4,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 1,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+ "diseases": [
+  {
+   "disease_name": "Anthracnose",
+   "pathogen_scientific_name": {
+    "value": "Colletotrichum acutatum",
+    "url": "https://www.umass.edu/agriculture-food-environment/fruit/fact-sheets/blueberry-ipm-anthracnose-ripe-rot",
+    "quote": "Blueberry Anthracnose is caused by the fungus Colletotrichum acutatum.",
+    "taxonomy_validated": false,
+    "ncbi_url": "",
+    "mycobank_url": ""
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://content.ces.ncsu.edu/anthracnose-fruit-rot-of-blueberries",
+    "quote": "Anthracnose fruit rot is a common fungal disease of blueberries in all growing regions of the U.S."
+   },
+   "affected_parts": {
+    "value": [
+     "Fruit",
+     "Foliar",
+     "Stem",
+     "Seed"
+    ],
+    "url": "https://www.umass.edu/agriculture-food-environment/fruit/fact-sheets/blueberry-ipm-anthracnose-ripe-rot",
+    "quote": "Blueberry Anthracnose (aka â€˜ripe rotâ€™), primarily damages fruit but may also infect twigs and spurs."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "The first symptoms are fruit softening and shriveled areas near the calyx (blossom) end, followed by small sticky orange/salmon spore masses (conidia) that grow and can envelop the whole fruit.",
+     "url": "https://content.ces.ncsu.edu/anthracnose-fruit-rot-of-blueberries",
+     "quote": "The first visible symptoms are fruit softening and the development of shriveled areas near the calyx (blossom) end of the fruit. Small orange spots begin to appear in these shriveled areas shortly after initial symptom development and continue to grow in size and number."
     },
-    {
-      "disease_name": "Blueberry Leaf Rust",
-      "pathogen_scientific_name": {
-        "value": "Thekopsora minima",
-        "url": "https://ask.ifas.ufl.edu/publication/PP385",
-        "quote": "In Florida, the fungus Thekopsora minima causes leaf rust on SHB.",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://ask.ifas.ufl.edu/publication/PP385",
-        "quote": "information for Florida blueberry growers on the disease cycle, symptoms, and integrated management of this fungal leaf disease"
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar"
-        ],
-        "url": "https://ask.ifas.ufl.edu/publication/PP385",
-        "quote": "Leaf rust symptoms are initially observed as small, somewhat angular yellow spots, turning red to black on the upper surfaces of leaves."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "First symptoms are small, chlorotic to yellow spots; spots on the upper leaf surface turn reddish-brown and leaves may die if spots coalesce and become necrotic. On the leaf underside, yellowish-orange pustules (uredinia) develop that turn rusty-red with age, and infected leaves usually drop prematurely.",
-          "url": "https://pnwhandbooks.org/plantdisease/host-disease/blueberry-vaccinium-corymbosum-rust",
-          "quote": "The first symptoms observe include small, chlorotic to yellow spots. Spots on the upper surface of the leaf turn reddish-brown. The entire leaf may die if numerous spots coalesce and become necrotic. On the underside of the leaf, opposite upper leaf symptoms, yellowish-orange pustules (uredinia) develop that turn rusty-red with age. Infected leaves usually drop prematurely."
-        },
-        "diagnostic_features": {
-          "value": "Dusty clumps of yellow-, orange-, or rust-colored spores (urediniospores) on the underside of the leaf, opposite the upper leaf lesions; when present these spores distinguish leaf rust from all other leaf spot diseases. Lesions can be limited by larger leaf veins, resulting in lesions with parallel straight or angular sides.",
-          "url": "https://ask.ifas.ufl.edu/publication/PP385",
-          "quote": "When present, these spores are a key feature distinguishing leaf rust from all other leaf spot diseases (Figure 2)."
-        },
-        "look_alikes": {
-          "value": [
-            "Other leaf spot diseases"
-          ],
-          "url": "https://ask.ifas.ufl.edu/publication/PP385",
-          "quote": "these spores are a key feature distinguishing leaf rust from all other leaf spot diseases"
-        }
-      },
-      "treatments": {
-        "value": [
-          "Integrate horticultural and chemical methods to reduce the impact of the disease.",
-          "Use drip irrigation instead of overhead irrigation where and whenever possible.",
-          "When overhead irrigation is necessary, time the application to avoid extended periods of leaf wetness and to occur after dew formation in early morning hours.",
-          "Plant spacing, maintenance pruning to increase airflow in the canopy, and controlling weeds in row middles.",
-          "Remove hemlocks upwind from where blueberry is grown.",
-          "Grow less susceptible cultivars.",
-          "Prompt removal and disposal of fallen leaves may be helpful.",
-          "Make repeated fungicide applications to maintain a protective residue on the leaves; scout during post-bloom and early fall periods.",
-          "Chemical control: start when leaves first begin to break bud and unfold; continue at regular intervals during wet weather.",
-          "chlorothalonil (e.g., Bravo TM / Bravo Weather Stik, Group M5; after harvest only) applications for rust management can begin late fall, before bloom.",
-          "Proline TM / Proline 480 SC (prothioconazole), an excellent DMI choice for rust (seven-day PHI).",
-          "Quilt Xcel TM / QuiltXcel (azoxystrobin and propiconazole, Group 3 + 11).",
-          "Propulse TM (fluopyram and prothioconazole, Group 3 + 7).",
-          "Other DMIs with longer preharvest intervals if rust increases before bloom (e.g., Indar TM, Tilt TM).",
-          "Quash TM for flare-ups closer to harvest.",
-          "Quadris Flowable / Quadris Top and Pristine TM have rust efficacy and make good rotation partners with a DMI product.",
-          "Consider tank mixing a captan product with Quadris Flowable or Pristine TM.",
-          "Bordeaux 8-8-100 plus spreader-sticker; copper products (e.g., Kocide 50 DF, Nu-Cop 50 DF) \u00e2\u20ac\u201d not for use in the spring.",
-          "Inspire Super (Group 3 + 9).",
-          "Regalia (Group P5) \u00e2\u20ac\u201d may be used day of harvest.",
-          "Organic management options include copper products and plant-based horticultural oils.",
-          "Biological control: Sonata (Bacillus pumilis strain QST 2808) plus a spreader-sticker; may be applied up to and including the day of harvest.",
-          "Fungicides with different modes of action should be used in rotation or in a tank mix as part of an integrated postharvest foliage management strategy."
-        ],
-        "url": "https://ask.ifas.ufl.edu/publication/PP385",
-        "quote": "The best strategies to efficiently manage rust integrate horticultural and chemical methods to reduce the impact of the disease"
-      },
-      "confidence": "high",
-      "num_sources": 2,
-      "conflicts": [
-        {
-          "field": "pathogen_scientific_name",
-          "canonical_value": "Thekopsora minima",
-          "alternative_value": "Thekopsora minima and Naohidemyces vaccinii (both formerly Pucciniastrum vaccinii)",
-          "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/blueberry-vaccinium-corymbosum-rust",
-          "note": "The UF/IFAS source attributes Florida SHB leaf rust to Thekopsora minima alone; the PNW handbook lists two causal fungi (Thekopsora minima and Naohidemyces vaccinii), both formerly classified as Pucciniastrum vaccinii. No taxonomy validation was supplied to adjudicate."
-        }
-      ],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "spots on the upper leaf surface turn reddish-brown",
-              "image_shows": "The lesion center appears tan, the margins are chocolate-brown, and there is a chlorotic yellow halo.",
-              "image_quote": "The central area has a tan coloration, surrounded by chocolate-brown margins with a chlorotic yellow halo.",
-              "image_id": "bugwood::5476485",
-              "verification_status": "weakly_supported",
-              "reasoning": "The yellow halo and darkened brown lesion margin are corroborated by extension sources, though the specific tan center is a plausible state-specific color refinement.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://content.ces.ncsu.edu/leaf-diseases-of-blueberry",
-                  "quote": "Early symptoms are roughly circular yellow spots that later develop brown, necrotic centers; lesions darken with age, often surrounded by a yellow halo."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "yellowish-orange pustules (uredinia) develop that turn rusty-red with age",
-              "image_shows": "The lesion appears raised and has a rough texture.",
-              "image_quote": "The lesion surface looks uneven and has a raised appearance.",
-              "image_id": "bugwood::5476485",
-              "verification_status": "weakly_supported",
-              "reasoning": "Rust uredinia erupt as raised, roughened powdery sori, so a raised rough texture is consistent with pustule development, though the candidate does not specify leaf surface.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/blueberry-vaccinium-corymbosum-rust",
-                  "quote": "Yellowish-orange pustules (uredinia) develop on the underside of leaves and turn rusty red with age; urediniospore walls are finely and evenly roughened with flat or rounded warts."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "leaves may die if spots coalesce and become necrotic",
-              "image_shows": "The lesion appears to have necrotic tissue extending inward from a vein.",
-              "image_quote": "The central part of the lesion appears dark brown, the margins are light tan, and there is a bright yellow halo around the lesion.",
-              "image_id": "bugwood::5476485",
-              "verification_status": "weakly_supported",
-              "reasoning": "Necrotic brown centers with a yellow halo are documented for rust and the vein-associated necrosis is consistent with the vein-limited lesion habit.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.unh.edu/resource/blueberry-leaf-rust",
-                  "quote": "Entire leaves may turn brown, die, and drop prematurely if infections are severe; spots turn reddish-brown and develop brown necrotic centers."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "yellowish-orange pustules (uredinia) develop that turn rusty-red",
-              "image_shows": "The affected tissue has prominent yellowish-orange pustules, a dark brown central area, and a light tan outer margin.",
-              "image_quote": "There is a bright yellow halo around the lesion.",
-              "image_id": "bugwood::5476485",
-              "verification_status": "verified",
-              "reasoning": "The yellowish-orange pustule color palette is the definitive diagnostic feature of blueberry leaf rust and is strongly corroborated by multiple extension sources.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.unh.edu/resource/blueberry-leaf-rust",
-                  "quote": "Yellow-orange powdery rust pustules develop on the underside of leaves about mid-summer."
-                },
-                {
-                  "url": "https://content.ces.ncsu.edu/leaf-diseases-of-blueberry",
-                  "quote": "Brightly colored yellow-to-orange spores are produced on the underside of the leaf, opposite the lesions on the upper leaf surface."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "Other leaf spot diseases",
-              "image_shows": "The lesion exhibits a bullseye pattern with alternating light and dark rings, resembling target spot rather than rust.",
-              "image_quote": "The lesion has a circular pattern with a dark outer ring and a lighter inner ring.",
-              "image_id": "bugwood::5476485",
-              "verification_status": "weakly_supported",
-              "reasoning": "A concentric bull's-eye is characteristic of the look-alike target spot (Corynespora cassiicola), so flagging it correctly identifies a differential rather than rust itself.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://ask.ifas.ufl.edu/publication/PP348",
-                  "quote": "Target spot lesions form concentric rings of varying colors as they expand, resulting in a target or bull's-eye pattern, and can be confused with early anthracnose."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "leaves may die if spots coalesce and become necrotic",
-              "image_shows": "The lesion occupies a significant portion of the visible leaf surface, indicating high severity.",
-              "image_quote": "The photo shows a large area of the leaf affected by the disease.",
-              "image_id": "bugwood::5476485",
-              "verification_status": "weakly_supported",
-              "reasoning": "Coalescing lesions covering a large leaf area is consistent with the documented high-severity, defoliating stage of leaf rust.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.unh.edu/resource/blueberry-leaf-rust",
-                  "quote": "Severe rust infections cause premature defoliation; lesions may coalesce, leading to premature leaf drop and weakening of the plant."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shows curling upward toward the center of the lesion.",
-              "image_quote": "Leaf curling up towards the center of the lesion.",
-              "image_id": "bugwood::5476485",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension factsheets document that rust-infected blueberry leaves curl, supporting the observed curling though the specific upward-toward-lesion-center orientation is not explicitly described.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.unh.edu/resource/blueberry-leaf-rust",
-                  "quote": "Infected leaves might curl and entire leaves may die and drop prematurely; edges of leaves in advanced infections may have dead, brown edges which may curl before dropping."
-                },
-                {
-                  "url": "https://ask.ifas.ufl.edu/publication/PP385",
-                  "quote": "Infected leaves might curl."
-                }
-              ]
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "(not specified)",
-              "image_shows": "Leaf veins appear translucent and pale, suggesting vein clearing.",
-              "image_quote": "The veins are visible and appear translucent.",
-              "image_id": "bugwood::5476485",
-              "verification_status": "field_observation",
-              "reasoning": "No extension or APS source describes vein clearing or translucent veins for blueberry leaf rust; the described appearance is not corroborated but is not directly contradicted, so it remains provisional.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5476485",
-            "bugwood::5476486",
-            "bugwood::5476487",
-            "bugwood::5476488",
-            "bugwood::5476489",
-            "bugwood::5476490",
-            "bugwood::5504945",
-            "bugwood::5504946",
-            "bugwood::5504947",
-            "bugwood::5504948",
-            "bugwood::5504949",
-            "bugwood::5504950",
-            "bugwood::5504951",
-            "bugwood::5504952",
-            "bugwood::5504953",
-            "bugwood::5504954",
-            "bugwood::5504955",
-            "bugwood::5504956"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 6,
-              "n_provisional": 2,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 8,
-              "n_added": 8,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 1,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+    "diagnostic_features": {
+     "value": "Infected fruit shows bright pink to salmon/orange spore masses (conidia) produced from acervuli that break through the fruit's skin at the blossom end, typically appearing on mature fruit after ripening (\"ripe rot\"); sunken lesions develop and neighboring berries may be infected yet remain asymptomatic.",
+     "url": "https://www.umass.edu/agriculture-food-environment/fruit/fact-sheets/blueberry-ipm-anthracnose-ripe-rot",
+     "quote": "Infected fruit shows bright pink spore masses at the blossom end. Stem cankers with raised purple margins can occur but are rare."
     },
-    {
-      "disease_name": "Mummy Berry",
-      "pathogen_scientific_name": {
-        "value": "Monilinia vaccinii-corymbosi",
-        "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
-        "quote": "Mummy berry is caused by the fungus Monilinia vaccinii-corymbosi.",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
-        "quote": "Mummy berry is a fungal disease common among blueberry species in North America."
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem"
-        ],
-        "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
-        "quote": "Mummy berry is a disease of blueberry that affects both leaf shoots and berries."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Infected shoots wilt with browning of the midrib and veins, and a mass of ash-gray conidia forms along the leaf midrib; infected berries turn salmon-pink (or pink/cream) with soft deteriorating skin and a hard fungal structure inside, eventually drying to whitish-gray hard mummies that fall to the ground.",
-          "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
-          "quote": "The next visible symptom occurs at harvest, when infected berries (mummies) turn a salmon-pink color, with soft deteriorating skin and a hard fungal structure (pseudosclerotium) inside."
-        },
-        "diagnostic_features": {
-          "value": "Berries do not turn blue but instead turn pink or salmon-colored, with soft deteriorating skin and a hard fungal structure (pseudosclerotium) inside; blighted leaf shoots produce a mass of ash-gray conidia along the leaf midrib; cup-shaped apothecia (\"mummy cups\") emerge from old infected berries on the ground in spring.",
-          "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
-          "quote": "A further diagnostic sign of the pathogen is the production of a mass of ash-gray conidia (spores) along the midrib of the leaves on blighted leaf shoots."
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Raking, cultivating, and/or mulching underneath blueberry bushes can bury mummies and reduce further spread",
-          "Rotating between different active ingredients prevents the evolution of fungicide resistance",
-          "Planting only disease-free, dormant plants",
-          "Sanitation can be used to reduce the incidence and severity of disease by removing or burying the overwintering mummies",
-          "Hand raking or the use of a leaf blower around bushes can be used to move mummies to the aisles between rows where they can be disked under or collected with a bagging mower",
-          "Mulch applied 3-4 inches deep underneath bushes will prevent mummies from emerging in Spring",
-          "Fungicides are used at leaf emergence to prevent primary (leaf shoot) infection, and again during bloom to prevent secondary (flower) infection",
-          "Plant resistant cultivars (rabbiteye: Premier, Columbus, Powderblue; southern highbush: Legacy, O'Neal, Star; northern highbush: Duke, Elliot)"
-        ],
-        "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
-        "quote": "Fungicides are used at leaf emergence to prevent primary (leaf shoot) infection, and again during bloom to prevent secondary (flower) infection."
-      },
-      "confidence": "medium",
-      "num_sources": 1,
-      "conflicts": [],
-      "regional_observations": {
-        "New Jersey": {
-          "state": "New Jersey",
-          "deltas": [
-            {
-              "field": "other",
-              "canonical_says": "infected berries turn salmon-pink (or pink/cream) with soft deteriorating skin and a hard fungal structure inside",
-              "image_shows": "Image color composition is dominated by pale-green (~70%) with white internal regions (~25%).",
-              "image_quote": "The berries are green with visible internal structures.",
-              "image_id": "bugwood::5607026",
-              "verification_status": "verified",
-              "reasoning": "Extension factsheets confirm that infected berries in the early green stage look outwardly green while revealing white/cream spongy fungal growth internally, matching the candidate's green berry with white internal regions.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
-                  "quote": "During early berry development, diseased fruits look like healthy ones; if cut open, however, the spongy white fungal growth can be seen within the carpels."
-                },
-                {
-                  "url": "https://ohioline.osu.edu/factsheet/plpath-fru-46",
-                  "quote": "Young infected berries that appear healthy and green may be cut open to expose spongy white fungal growth in the seed area."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5607026",
-            "bugwood::5607027"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              3
-            ],
-            "detected_organ_per_pass": [
-              "fruit"
-            ],
-            "n_active_agents_per_pass": [
-              6
-            ],
-            "n_after_agreement": 3,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 0,
-              "n_provisional": 1,
-              "n_contradictory": 2,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 1,
-              "n_added": 1,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        },
-        "Oregon": {
-          "state": "Oregon",
-          "deltas": [],
-          "__image_ids__": [
-            "bugwood::5607093",
-            "bugwood::5607094",
-            "bugwood::5607095",
-            "bugwood::5607096",
-            "bugwood::5607097",
-            "bugwood::5607098",
-            "bugwood::5607099"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              4
-            ],
-            "detected_organ_per_pass": [
-              "fruit"
-            ],
-            "n_active_agents_per_pass": [
-              6
-            ],
-            "n_after_agreement": 4,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 0,
-              "n_provisional": 1,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 1,
-              "n_added": 1,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 0,
-            "contradictory_count": 1,
-            "duplicates_count": 0,
-            "dropped_contradictory": [
-              {
-                "field": "look_alikes",
-                "canonical_says": "Berries do not turn blue but instead turn pink or salmon-colored ... eventually drying to whitish-gray hard mummies",
-                "image_shows": "The photo shows blueberries with dark spots, consistent with mummy berry infection.",
-                "image_quote": "The image shows a cluster of blueberries with a grayish hue and dark spots, which is indicative of the Mummy Berry disease.",
-                "image_id": "bugwood::5607093",
-                "verification_status": "contradictory",
-                "reasoning": "Published extension descriptions characterize mummy-berry fruit as pink/salmon to tan/gray shriveled hard mummies, not berries bearing 'dark spots'; the claimed dark-spot appearance is not a diagnostic feature of this disease and contradicts the sources.",
-                "swarm_support": 1,
-                "web_support": [
-                  {
-                    "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
-                    "quote": "Infected berries turn a salmon-pink color, with soft deteriorating skin and a hard fungal structure inside."
-                  },
-                  {
-                    "url": "https://www.aces.edu/blog/topics/crop-production/mummy-berry-blueberry/",
-                    "quote": "berries may attain nearly full size before turning pink, tan, or gray and shriveling into hard mummies."
-                  },
-                  {
-                    "url": "https://ohioline.osu.edu/factsheet/plpath-fru-46",
-                    "quote": "Mature mummified berries are gray, shriveled, and hard."
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        "North Carolina": {
-          "state": "North Carolina",
-          "deltas": [
-            {
-              "field": "affected_organs",
-              "canonical_says": "infected berries turn salmon-pink (or pink/cream) with soft deteriorating skin and a hard fungal structure inside",
-              "image_shows": "The stem surface appears mostly healthy.",
-              "image_quote": "The berries are pinkish with soft deteriorating skin.",
-              "image_id": "bugwood::5482684",
-              "verification_status": "verified",
-              "reasoning": "The pinkish berry with soft deteriorating skin is a diagnostic mummy-berry fruit symptom directly corroborated by NC State and UNH extension photo descriptions.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
-                  "quote": "At harvest, infected berries (mummies) turn a salmon-pink color, with soft deteriorating skin and a hard fungal structure (pseudosclerotium) inside."
-                },
-                {
-                  "url": "https://extension.unh.edu/resource/mummy-berry",
-                  "quote": "When berries start to ripen, infected berries appear pinkish tan and slightly ridged, feel rubbery, and contain a gray to black fungal mass inside."
-                }
-              ]
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "berries turn pink or salmon-colored, with soft deteriorating skin and a hard fungal structure (pseudosclerotium) inside",
-              "image_shows": "No fungal structures are present.",
-              "image_quote": "There are no visible signs of pathogen sporulation like mycelium, spore masses, pycnidia, fruiting bodies, sclerotia, or bacterial ooze.",
-              "image_id": "bugwood::5482684",
-              "verification_status": "weakly_supported",
-              "reasoning": "On infected berries the fungal mass (pseudosclerotium) is internal rather than an external spore mass, so the absence of visible external sporulation on a fruit photo is consistent with extension descriptions (conidia form on blighted shoots, not on berries).",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.unh.edu/resource/mummy-berry",
-                  "quote": "During early berry development, diseased fruits look like healthy ones; if cut open, however, the spongy white fungal growth can be seen within the carpels."
-                },
-                {
-                  "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
-                  "quote": "infected berries (mummies) turn a salmon-pink color, with soft deteriorating skin and a hard fungal structure (pseudosclerotium) inside."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5482684",
-            "bugwood::5482685",
-            "bugwood::5482686",
-            "bugwood::5482687",
-            "bugwood::5482689",
-            "bugwood::5482690",
-            "bugwood::5482691",
-            "bugwood::5607045",
-            "bugwood::5607046",
-            "bugwood::5607047",
-            "bugwood::5607048",
-            "bugwood::5607049",
-            "bugwood::5607050",
-            "bugwood::5607051",
-            "bugwood::5607052",
-            "bugwood::5607053",
-            "bugwood::5607054",
-            "bugwood::5607056",
-            "bugwood::5607057",
-            "bugwood::5607058",
-            "bugwood::5607059",
-            "bugwood::5607060",
-            "bugwood::5607067",
-            "bugwood::5607068",
-            "bugwood::5607069",
-            "bugwood::5607070",
-            "bugwood::5607071",
-            "bugwood::5607072",
-            "bugwood::5607077",
-            "bugwood::5607079",
-            "bugwood::5607100",
-            "bugwood::5607101",
-            "bugwood::5607102",
-            "bugwood::5607103",
-            "bugwood::5607104",
-            "bugwood::5607105",
-            "bugwood::5607106",
-            "bugwood::5607107",
-            "bugwood::5607108",
-            "bugwood::5607109",
-            "bugwood::5607110",
-            "bugwood::5607111",
-            "bugwood::5607112",
-            "bugwood::5607113",
-            "bugwood::5607114",
-            "bugwood::5607115",
-            "bugwood::5607116",
-            "bugwood::5607117",
-            "bugwood::5607118",
-            "bugwood::5607119"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              6
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 6,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 0,
-              "n_provisional": 3,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 2
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 3,
-              "n_added": 3,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 2,
-            "provisional_count": 0,
-            "contradictory_count": 1,
-            "duplicates_count": 0,
-            "dropped_contradictory": [
-              {
-                "field": "severity",
-                "canonical_says": "infected berries turn salmon-pink (or pink/cream) with soft deteriorating skin",
-                "image_shows": "The image shows green berries with brown lesions on the outer stem surface.",
-                "image_quote": "The berries are not turning blue but instead turning pink or salmon-colored, with soft deteriorating skin and a hard fungal structure inside.",
-                "image_id": "bugwood::5482684",
-                "verification_status": "contradictory",
-                "reasoning": "Mummy-berry-infected fruit turn pink/salmon-tan and shrivel rather than presenting as green berries bearing brown lesions on an outer stem surface, so the described visual appearance contradicts published symptom descriptions.",
-                "swarm_support": 1,
-                "web_support": [
-                  {
-                    "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
-                    "quote": "At harvest, infected berries (mummies) turn a salmon-pink color, with soft deteriorating skin and a hard fungal structure (pseudosclerotium) inside."
-                  },
-                  {
-                    "url": "https://extension.unh.edu/resource/mummy-berry",
-                    "quote": "Secondary infections cause fruit to turn pink, tan, or grey and shrivel into hard mummies."
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "disease_name": "Phomopsis Cankers And Twig Blights",
-      "pathogen_scientific_name": {
-        "value": "Phomopsis vaccinii",
-        "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-        "quote": "Dieback symptoms of twig blight of blueberry, caused by the fungus Phomopsis vaccinii.",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-        "quote": "Twig blight is a fungal disease"
-      },
-      "affected_parts": {
-        "value": [
-          "Stem",
-          "Vascular"
-        ],
-        "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-        "quote": "conidia become trapped in opening buds, germinate, and infect the vascular system"
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Individual buds turn brown and die, followed by browning and necrosis of bark around the bud as the fungus spreads into the twig, causing dieback of fruit-bearing twigs.",
-          "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-          "quote": "Individual buds turn brown and die, followed by browning and necrosis of bark around the bud as the fungus spreads from the blighted bud into the twig."
-        },
-        "diagnostic_features": {
-          "value": "The disease stops progressing after killing the twig (6-10 inches) and does not progress further down the stem to infect older wood; pycnidia are evident in diseased tissues.",
-          "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-          "quote": "The disease stops progressing after killing the twig (6-10 inches), and does not progress further down the stem to infect older wood."
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Pruning can be performed to remove infected twigs prior to spore release in the spring",
-          "Commercial growers who mow bushes in June and July after harvest (topping) will also benefit from the removal of blighted twigs",
-          "Careful cultivar selection can greatly reduce the amount of twig blight experienced; newer cultivars (Legacy, New Hanover, O'Neal, Star, Farthing) are generally resistant to twig blight",
-          "Chemical control can be achieved by spraying labeled fungicides from budbreak through bloom on a 7-14 day interval"
-        ],
-        "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-        "quote": "1. Pruning can be performed to remove infected twigs prior to spore release in the spring. This will decrease the amount of disease inoculum present at budbreak."
-      },
-      "confidence": "high",
-      "num_sources": 2,
-      "conflicts": [
-        {
-          "field": "disease_name",
-          "canonical_value": "Twig Blight of Blueberry",
-          "alternative_value": "Phomopsis Canker and Twig Blight",
-          "alternative_source_url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/blueberry-phomopsis-canker-and-twig-blight/",
-          "note": "University of Maine titles this disease 'Phomopsis Canker and Twig Blight' (combining the twig blight and cane canker stages of Phomopsis vaccinii); NCSU names the twig blight stage 'Twig Blight of Blueberry'. Merged as the same Phomopsis disease."
-        },
-        {
-          "field": "visual_symptoms.diagnostic_features",
-          "canonical_value": "The disease stops progressing after killing the twig (6-10 inches) and does not progress further down the stem to infect older wood; pycnidia are evident in diseased tissues.",
-          "alternative_value": "Pycnidia evident in diseased tissues",
-          "alternative_source_url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/blueberry-phomopsis-canker-and-twig-blight/",
-          "note": "UMaine contributes the diagnostic sign of pycnidia in diseased tissues; NCSU contributes the twig-killing/dieback diagnostic. Both incorporated into the canonical value."
-        }
-      ],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "browning and necrosis of bark around the bud as the fungus spreads into the twig",
-              "image_shows": "Dark, sunken cankers with greenish spots are present on the mid-stem rather than only at the twig tip.",
-              "image_quote": "The lesion is dark and sunken, with greenish spots, located on the mid-stem.",
-              "image_id": "bugwood::5459134",
-              "verification_status": "weakly_supported",
-              "reasoning": "Dark, sunken stem cankers on 1-3 year-old wood are well documented, but the 'greenish' coloration is not corroborated (literature describes reddish-brown/gray/silvery), so support is partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/blueberry-vaccinium-corymbosum-twig-blight",
-                  "quote": "Large (5-15 cm), reddish brown, oval-shaped lesions can be seen on 1-3 year-old stems."
-                },
-                {
-                  "url": "https://ohioline.osu.edu/factsheet/plpath-fru-45",
-                  "quote": "Cankers are seen as elongated, flattened areas... the sunken necrotic area spreads as the disease progresses."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "pycnidia are evident in diseased tissues",
-              "image_shows": "Fruiting bodies erupt through the bark surface accompanied by dark streaks of discoloration.",
-              "image_quote": "There are multiple small, greenish-brown spots on the stem surface, resembling fruiting bodies breaking through the bark.",
-              "image_id": "bugwood::5459134",
-              "verification_status": "weakly_supported",
-              "reasoning": "Pycnidia erupting through the bark are documented, but they are described as black (not greenish-brown), so the eruption pattern is supported while the color detail is not.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://ohioline.osu.edu/factsheet/plpath-fru-45",
-                  "quote": "Tissue around the canker can appear silvery and speckled with black dots... small, dark, pimple-like pycnidia (fungal fruiting bodies)."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected tissue shows a prominent olive-green hue with rust-orange and dark-brown patches.",
-              "image_quote": "The affected tissue displays a mix of colors including olive-green, rust-orange, and dark brown.",
-              "image_id": "bugwood::5459134",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension sources document a mottled multicolor appearance of Phomopsis-affected stems (green healthy tissue interspersed with brown, plus reddish-brown lesions), which partially corroborates the described olive-green/rust-orange/dark-brown patches without confirming that exact color trio in one view.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/agriculture-and-seafood/animal-and-crops/plant-health/phomopsis-blueberry.pdf",
-                  "quote": "Infected stems often have a mottled pattern of green, healthy tissues, interspersed with brown discolouration just beneath the bark."
-                },
-                {
-                  "url": "https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/agriculture-and-seafood/animal-and-crops/plant-health/phomopsis-blueberry.pdf",
-                  "quote": "Large (5-15 cm), reddish brown, oval-shaped lesions can be seen on 1-3 year-old stems."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5459134",
-            "bugwood::5459136",
-            "bugwood::5459138",
-            "bugwood::5459140",
-            "bugwood::5459142",
-            "bugwood::5459144",
-            "bugwood::5459146",
-            "bugwood::5459148",
-            "bugwood::5459150",
-            "bugwood::5459151",
-            "bugwood::5459152",
-            "bugwood::5459153",
-            "bugwood::5459154",
-            "bugwood::5459155",
-            "bugwood::5459156"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              6
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 6,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 2,
-              "n_provisional": 1,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 3
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 3,
-              "n_added": 3,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
-    },
-    {
-      "disease_name": "Diaporthe Vaccinii Shear",
-      "pathogen_scientific_name": {
-        "value": "Phomopsis vaccinii",
-        "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-        "quote": "Phomopsis vaccinii also causes a fruit rot on blueberry at harvest in North Carolina.",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-        "quote": "Fruit rot caused by Phomopsis vaccinii, the same fungus that causes twig blight of blueberry."
-      },
-      "affected_parts": {
-        "value": [
-          "Fruit"
-        ],
-        "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-        "quote": "Phomopsis vaccinii also causes a fruit rot on blueberry at harvest in North Carolina."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Infected berries become very soft and may split, resulting in leakage of juice.",
-          "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-          "quote": "Infected berries become very soft and may split resulting in leakage of juice."
-        },
-        "diagnostic_features": {
-          "value": "",
-          "url": "",
-          "quote": ""
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Most other varieties can be grown with minimal loss due to the fruit rot stage if fruit is harvested in a timely fashion to avoid overripe fruit on the bush",
-          "In North Carolina, fruiting bushes should be harvested every 7 days or less"
-        ],
-        "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-        "quote": "Most other varieties can be grown with minimal loss due to the fruit rot stage if fruit is harvested in a timely fashion to avoid overripe fruit on the bush. In North Carolina, fruiting bushes should be harvested every 7 days or less."
-      },
-      "confidence": "medium",
-      "num_sources": 1,
-      "conflicts": [],
-      "regional_observations": {
-        "New Jersey": {
-          "state": "New Jersey",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Infected berries become very soft and may split, resulting in leakage of juice.",
-              "image_shows": "Berries show dark spotting/discoloration in addition to soft rot.",
-              "image_quote": "The photo shows blueberries with varying stages of ripeness, including soft rot and dark spots.",
-              "image_id": "bugwood::5607020",
-              "verification_status": "weakly_supported",
-              "reasoning": "Reddish-brown discoloration of infected berries is documented, giving partial support to the observed dark spotting beyond plain soft rot.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2024.1428769/full",
-                  "quote": "Infected fruits turn reddish-brown, soft, mushy, often splitting and causing leakage of juice."
-                },
-                {
-                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11333449/",
-                  "quote": "Infected fruit are characterized initially by white mycelia on the calyx and cream-colored spore droplets as infection progresses, with fruit becoming reddish-brown and soft."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "Berries display visible lesions and necrosis, indicating advanced/severe infection.",
-              "image_quote": "The image shows blueberries with visible lesions and necrosis.",
-              "image_id": "bugwood::5607020",
-              "verification_status": "weakly_supported",
-              "reasoning": "Lesions and necrosis are documented hallmarks of Diaporthe vaccinii, though the cited sources describe them chiefly on twigs/stems rather than on fruit, so support is partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-                  "quote": "Infected, current-year shoots wilt within 4 days and become covered with minute lesions; necrosis spreads into the stem tissue."
-                },
-                {
-                  "url": "https://gd.eppo.int/taxon/DIAPVA/datasheet",
-                  "quote": "Diaporthe vaccinii causes stem canker, twig blight, and fruit rot in Vaccinium species, with necrotic tissue development."
-                }
-              ],
-              "__support__": 1
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5607020",
-            "bugwood::5607021",
-            "bugwood::5607023",
-            "bugwood::5607024",
-            "bugwood::5607025",
-            "bugwood::5607028"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "medium"
-            ],
-            "n_raw_per_pass": [
-              3
-            ],
-            "detected_organ_per_pass": [
-              "fruit"
-            ],
-            "n_active_agents_per_pass": [
-              6
-            ],
-            "n_after_agreement": 3,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 2,
-              "n_provisional": 0,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 2,
-              "n_added": 2,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          }
-        },
-        "North Carolina": {
-          "state": "North Carolina",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The stem has peeling bark with visible canker-like lesions.",
-              "image_quote": "The bark appears to be peeling and showing signs of decay.",
-              "image_id": "bugwood::5607075",
-              "verification_status": "weakly_supported",
-              "reasoning": "Phomopsis vaccinii is documented to produce stem cankers and canker-like lesions on blueberry canes, though the specific 'peeling bark' descriptor is not a documented hallmark, so support is partial.",
-              "swarm_support": 2,
-              "web_support": [
-                {
-                  "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-                  "quote": "Cankers are seen as elongated, flattened areas that become covered with small, pinpoint-sized fruiting bodies (pycnidia); twig blight symptoms include dark brown lesions and death of young twigs."
-                },
-                {
-                  "url": "https://www.canr.msu.edu/uploads/files/Phomopsis%20canker%20and%20twig%20blight.pdf",
-                  "quote": "A sunken or flattened area (canker) is often present at the base of the cane."
-                }
-              ],
-              "__support__": 2
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The stem surface shows peeling bark with a mix of tan and chocolate-brown tones.",
-              "image_quote": "The affected area shows a mix of tan and chocolate-brown tones.",
-              "image_id": "bugwood::5607075",
-              "verification_status": "weakly_supported",
-              "reasoning": "Brown/necrotic bark discoloration is a documented Phomopsis symptom that partially matches the tan-to-chocolate-brown tones described.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-                  "quote": "Individual buds turn brown and die, followed by browning and necrosis of bark as the fungus spreads into the twig; twig blight produces dark brown lesions."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The photo shows a tree trunk with peeling bark displaying various shades.",
-              "image_quote": "The bark displays a mix of greyish tones with hints of reddish-brown.",
-              "image_id": "bugwood::5607075",
-              "verification_status": "weakly_supported",
-              "reasoning": "The greyish tone loosely matches the documented silvery-gray appearance of Phomopsis canker tissue, but the reddish-brown peeling 'tree trunk' framing is not a documented feature, so support is weak.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://bpb-us-e1.wpmucdn.com/blogs.cornell.edu/dist/0/7265/files/2017/01/BB-canker-fast-fact-26jbmk6.pdf",
-                  "quote": "Tissue around the canker can appear silvery/gray and speckled with black dots; circular lesions are gray and flat in appearance."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "The image shows a close-up of a stem with peeling bark and brownish discoloration.",
-              "image_quote": "The bark is peeling and there are brownish areas indicating possible disease.",
-              "image_id": "bugwood::5607075",
-              "verification_status": "weakly_supported",
-              "reasoning": "The brownish diseased bark is consistent with documented Phomopsis symptoms, but no external source quantifies the visual severity, so support is only partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-                  "quote": "Symptoms include browning and necrosis of bark and dark brown lesions on affected twigs and stems."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "(not specified)",
-              "image_shows": "No visible stem pith color, petiole attachment, leg color, or bract length in the image.",
-              "image_quote": "The photo shows a close-up of a tree trunk with visible bark peeling off in patches, indicating some form of disease.",
-              "image_id": "bugwood::5607075",
-              "verification_status": "field_observation",
-              "reasoning": "The candidate is a non-informative negation (absence of pith color, petiole, leg color, bract length) that published photo galleries cannot corroborate or contradict, though it is not inconsistent with the bark/stem symptoms Diaporthe produces on blueberry.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5607075",
-            "bugwood::5607076",
-            "bugwood::5607078",
-            "bugwood::5607120",
-            "bugwood::5607121"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              6
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 6,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 5,
-              "n_provisional": 1,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 6,
-              "n_added": 5,
-              "n_overlaps_bumped": 1,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 1,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
-    },
-    {
-      "disease_name": "Twig Canker",
-      "pathogen_scientific_name": {
-        "value": null,
-        "url": null,
-        "quote": null
-      },
-      "type_of_disease": {
-        "value": null,
-        "url": null,
-        "quote": null
-      },
-      "affected_parts": {
-        "value": null,
-        "url": null,
-        "quote": null
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": null,
-          "url": null,
-          "quote": null
-        },
-        "diagnostic_features": {
-          "value": null,
-          "url": null,
-          "quote": null
-        },
-        "look_alikes": {
-          "value": null,
-          "url": null,
-          "quote": null
-        }
-      },
-      "confidence": "low",
-      "num_sources": 0,
-      "conflicts": [],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "Dark, round nodule-like bodies stud the stem surface within the diseased tissue.",
-              "image_quote": "The image shows dark, round nodules on the stem surface.",
-              "image_id": "bugwood::5535512",
-              "verification_status": "weakly_supported",
-              "reasoning": "Dark round nodules on the stem are consistent with the dark, pimple-like pycnidia (fruiting bodies) documented on blueberry twig cankers.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/blueberry-vaccinium-corymbosum-fusicoccum-canker-godronia-canker",
-                  "quote": "Small, dark pimple-like pycnidia can frequently be found in the canker."
-                },
-                {
-                  "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-                  "quote": "Circular lesions, gray and flat in appearance form around fruit buds, producing fungal fruiting bodies called pycnidia."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The stem bears dark, raised canker-like lesions.",
-              "image_quote": "The image shows dark, raised lesions resembling cankers.",
-              "image_id": "bugwood::5535512",
-              "verification_status": "verified",
-              "reasoning": "Dark, raised canker lesions on the stem directly match the defining canker/lesion symptomatology of blueberry twig canker described by extension sources.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/blueberry-vaccinium-corymbosum-fusicoccum-canker-godronia-canker",
-                  "quote": "As these cankers enlarge, the centers usually become gray and margins turn reddish-brown or dark-brown, giving the canker a bull's-eye appearance."
-                },
-                {
-                  "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-                  "quote": "Individual buds turn brown and die, followed by browning and necrosis of bark around the bud as the fungus spreads from the blighted bud into the twig."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "diagnostic_features",
-              "canonical_says": "(not specified)",
-              "image_shows": "Dark, round fruiting-body-like structures on the stem surface indicate sporulation.",
-              "image_quote": "The image shows dark, round galls on the stem surface.",
-              "image_id": "bugwood::5535512",
-              "verification_status": "weakly_supported",
-              "reasoning": "If the dark round surface bodies are pycnidia, they are the sporulation structures of twig canker, giving indirect support; the 'galls' wording is imprecise but the fruiting-body morphology is corroborated.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-                  "quote": "Circular lesions, gray and flat in appearance form around fruit buds, producing fungal fruiting bodies called pycnidia."
-                },
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/blueberry-vaccinium-corymbosum-fusicoccum-canker-godronia-canker",
-                  "quote": "Small, dark pimple-like pycnidia can frequently be found in the canker."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "Affected tissue is dominantly dark grayish-black with brownish-tan spots on a brownish-golden background.",
-              "image_quote": "The affected tissue shows dominant dark grayish-black and secondary brownish-tan spots on a brownish-golden substrate.",
-              "image_id": "bugwood::5535512",
-              "verification_status": "weakly_supported",
-              "reasoning": "The gray-black centers with brownish-tan margins match the documented gray-center, reddish/dark-brown-margin coloration of blueberry cankers.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/blueberry-vaccinium-corymbosum-fusicoccum-canker-godronia-canker",
-                  "quote": "As these cankers enlarge, the centers usually become gray and margins turn reddish-brown or dark-brown, giving the canker a bull's-eye appearance."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "(not specified)",
-              "image_shows": "Dark, round galls on the stem could be confused with a distinct gall-forming agent rather than canker.",
-              "image_quote": "The stem surface has multiple dark, round galls.",
-              "image_id": "bugwood::5535512",
-              "verification_status": "weakly_supported",
-              "reasoning": "Round stem galls are the signature of blueberry stem gall wasp, a genuine look-alike that can be mistaken for canker swellings, so galls are supportable specifically as a look-alike.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://blogs.cornell.edu/berrytool/berry-pests/blueberry-stem-gall-wasp/",
-                  "quote": "Blueberry stem gall wasp (Hemadas nubilipennis) cause swellings (galls) on canes; older galls appear gray and corky and often have exit holes."
-                },
-                {
-                  "url": "https://www.canr.msu.edu/blueberries/uploads/files/BlueberryStemGallWasp-WEB-final.pdf",
-                  "quote": "Female wasps lay eggs in the blueberry stems, triggering excessive tissue growth (the galls)."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "Dark lesions cover more than half of the visible twig, indicating high local severity.",
-              "image_quote": "The photo shows multiple black lesions covering more than half of the twig.",
-              "image_id": "bugwood::5535512",
-              "verification_status": "weakly_supported",
-              "reasoning": "Extension factsheets describe dark necrotic cankers that spread and can girdle/kill an entire twig, consistent with extensive dark lesions covering much of a twig, though the specific >50% coverage is a photo-level reading not independently quantified.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
-                  "quote": "Wounds that are infected can result in girdling cankers that kill the entire twig; cankers are seen as elongated, flattened areas that become covered with small, pinpoint-sized fruiting bodies."
-                },
-                {
-                  "url": "https://extension.psu.edu/phomopsis-canker-and-twig-blight-in-blueberries-in-home-fruit-plantings",
-                  "quote": "A necrotic, brown lesion forms on the twig around the blighted bud, and the sunken necrotic area spreads as the disease progresses."
-                }
-              ]
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5535512",
-            "bugwood::5535513",
-            "bugwood::5535514",
-            "bugwood::5535515",
-            "bugwood::5535516",
-            "bugwood::5535517",
-            "bugwood::5535518",
-            "bugwood::5535519",
-            "bugwood::5535520",
-            "bugwood::5535521",
-            "bugwood::5535522",
-            "bugwood::5535523"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              7
-            ],
-            "detected_organ_per_pass": [
-              "stem"
-            ],
-            "n_active_agents_per_pass": [
-              8
-            ],
-            "n_after_agreement": 7,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 5,
-              "n_provisional": 1,
-              "n_contradictory": 1,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 6,
-              "n_added": 6,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 0,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+    "look_alikes": {
+     "value": [
+      "Phomopsis canker and twig blight",
+      "Botrytis blossom blight"
+     ],
+     "url": "https://njaes.rutgers.edu/FS1361/",
+     "quote": "These symptoms can often be confused with other fungal diseases of highbush blueberry, including Phomopsis canker and twig blight and Botrytis blossom blight."
     }
-  ],
-  "crop": "Highbush Blueberry",
-  "generated_date": "2026-06-10",
-  "regional_observations_count": 10
+   },
+   "treatments": {
+    "value": [
+     "Select less susceptible / resistant cultivars before planting (e.g. 'Elliott', 'Legacy', 'Reveille'; moderately resistant 'Draper'/'Elliott'); emphasize cultivars with dry stem scars and those that drop bud scales earlier in spring",
+     "Prune bushes and use wide plant spacing to open the canopy and improve airflow, reducing moisture duration and humidity; selectively prune off dead buds, pedicels, twigs, trusses, and canes (in fall/winter) and remove/destroy prunings",
+     "Use drip irrigation to avoid wetting aerial plant parts; if using overhead irrigation, water early in the day so plants dry before nightfall",
+     "Harvest frequently (at least every 7 days) to limit overripe fruit; do not harvest or handle fruit when wet",
+     "Refrigerate/cool harvested fruit promptly (around 35Â°F / 2Â°C within two hours of harvest; forced-air cooling for palletized fruit) to reduce postharvest fruit rots",
+     "Keep equipment and containers clean and dry before contact with berries",
+     "Apply preventative fungicides when scouting and weather indicate risk; sprays beginning at full bloom and repeating every 7-14 days through harvest are most effective",
+     "Rotate fungicide active ingredients from different FRAC groups to avoid resistance development",
+     "Scout fields beginning at bloom and consult prior-year scouting records; monitor weather to identify likely infection periods"
+    ],
+    "url": "https://content.ces.ncsu.edu/anthracnose-fruit-rot-of-blueberries",
+    "quote": "Preventative fungicides can be used to minimize the sources of infection in the field. Sprays beginning at full bloom and repeating every 7-14 days through harvest are most effective"
+   },
+   "confidence": "high",
+   "num_sources": 3,
+   "conflicts": [
+    {
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Colletotrichum acutatum",
+     "alternative_value": "Colletotrichum acutatum and Colletotrichum gloeosporioides",
+     "alternative_source_url": "https://content.ces.ncsu.edu/anthracnose-fruit-rot-of-blueberries",
+     "note": "NC State attributes the disease to two species complexes, C. acutatum and C. gloeosporioides, rather than C. acutatum alone."
+    },
+    {
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Colletotrichum acutatum",
+     "alternative_value": "Colletotrichum fioriniae",
+     "alternative_source_url": "https://njaes.rutgers.edu/FS1361/",
+     "note": "Rutgers identifies C. fioriniae (a member of the C. acutatum species complex) as the primary causal organism in New Jersey, with other species from the C. gloeosporioides complex also able to infect. No NCBI/MycoBank validation was supplied to resolve the canonical name."
+    }
+   ],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "severity",
+       "canonical_says": "small sticky orange/salmon spore masses (conidia) that grow and can envelop the whole fruit",
+       "image_shows": "In this Maine sample the fruit shows advanced ripe rot with shriveling and lesions covering more than half of the visible berry surface.",
+       "image_quote": "The fruit is dry and shriveled with visible lesions.",
+       "image_id": "bugwood::5503875",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension sources confirm ripening berries shrivel and develop expanding sunken lesions that can envelop much of the fruit, giving indirect support to the high-severity surface-coverage claim.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://content.ces.ncsu.edu/anthracnose-fruit-rot-of-blueberries",
+         "quote": "Symptoms appear as the fruit begins to ripen, including shriveling, development of sunken lesions, soft, rotted fruit, and eruption of orange- or salmon-colored spore masses on the blossom end of the fruit."
+        },
+        {
+         "url": "https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/agriculture-and-seafood/animal-and-crops/plant-health/phu-blueberry-anthracnosess.pdf",
+         "quote": "The infected areas may shrivel with time. Within a few days, bright salmon-orange coloured, wet spore masses can be seen on the shrunken areas."
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5503875",
+      "bugwood::5503876",
+      "bugwood::5503877",
+      "bugwood::5503878",
+      "bugwood::5503879",
+      "bugwood::5503880",
+      "bugwood::5503881",
+      "bugwood::5503882",
+      "bugwood::5503883",
+      "bugwood::5503884"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       5
+      ],
+      "detected_organ_per_pass": [
+       "fruit"
+      ],
+      "n_active_agents_per_pass": [
+       6
+      ],
+      "n_after_agreement": 5,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 1,
+       "n_provisional": 0,
+       "n_contradictory": 2,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 1,
+       "n_added": 1,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    },
+    "North Carolina": {
+     "state": "North Carolina",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "fruit softening and shriveled areas near the calyx (blossom) end",
+       "image_shows": "The fruit is dry and shriveled with visible brown spots rather than soft.",
+       "image_quote": "The fruit appears mummified and dry, with shriveled skin.",
+       "image_id": "bugwood::5607081",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension sources confirm anthracnose-infected berries shrivel dry (rather than ooze) under low-humidity conditions, corroborating a dry shriveled fruit.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/agriculture-and-seafood/animal-and-crops/plant-health/phu-blueberry-anthracnosess.pdf",
+         "quote": "Sporulation causes gelatinous orange ooze to form on the outer surface of the berry under humid conditions; under dryer conditions, the fruit simply shrivel."
+        },
+        {
+         "url": "https://content.ces.ncsu.edu/anthracnose-fruit-rot-of-blueberries",
+         "quote": "Initial symptoms usually appear near the calyx (blossom)-end on ripe fruit as dark, sunken areas and the infected areas may shrivel with time."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "bright pink to salmon/orange spore masses (conidia) produced from acervuli that break through the fruit's skin",
+       "image_shows": "No visible orange/salmon spore masses are present on the shriveled fruit.",
+       "image_quote": "The image shows a shriveled blueberry with no signs of spore masses.",
+       "image_id": "bugwood::5607081",
+       "verification_status": "weakly_supported",
+       "reasoning": "Absence of sporulation is consistent with anthracnose under dry conditions, where infected fruit shrivel without producing the characteristic orange spore masses.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/agriculture-and-seafood/animal-and-crops/plant-health/phu-blueberry-anthracnosess.pdf",
+         "quote": "under dryer conditions, the fruit simply shrivel ... the spore masses may look wet or dry, depending on the relative humidity and their age."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "The fruit is fully shriveled and covered in brownish spots, indicating advanced/severe infection.",
+       "image_quote": "The blueberry is shriveled and covered in brownish spots, indicating significant disease.",
+       "image_id": "bugwood::5607081",
+       "verification_status": "weakly_supported",
+       "reasoning": "Complete shriveling reflects an advanced disease stage, and sources describe progressive shriveling as a late-stage/severe symptom of the rot.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://content.ces.ncsu.edu/anthracnose-fruit-rot-of-blueberries",
+         "quote": "the infected areas may shrivel with time"
+        },
+        {
+         "url": "https://www.canr.msu.edu/blueberries/uploads/files/E3039.pdf",
+         "quote": "Preharvest fruit losses of 10 to 20 percent and postharvest losses of up to 100 percent have been reported."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The affected fruit shows a predominant blue-gray color with only minor brownish spots.",
+       "image_quote": "The affected area has a predominant blue-gray color with minor brownish spots.",
+       "image_id": "bugwood::5607081",
+       "verification_status": "field_observation",
+       "reasoning": "Extension sources describe anthracnose ripe rot as sunken/softened fruit with orange-salmon spore masses at the blossom end, not a blue-gray coloration; the described blue-gray tone matches a berry's natural bloom and is neither corroborated nor directly contradicted as a disease sign.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5607081",
+      "bugwood::5607082",
+      "bugwood::5607083",
+      "bugwood::5607084",
+      "bugwood::5607085",
+      "bugwood::5607086",
+      "bugwood::5607087",
+      "bugwood::5607088",
+      "bugwood::5607089"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       5
+      ],
+      "detected_organ_per_pass": [
+       "fruit"
+      ],
+      "n_active_agents_per_pass": [
+       6
+      ],
+      "n_after_agreement": 5,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 3,
+       "n_provisional": 1,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 4,
+       "n_added": 4,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 1,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Blueberry Leaf Rust",
+   "pathogen_scientific_name": {
+    "value": "Thekopsora minima",
+    "url": "https://ask.ifas.ufl.edu/publication/PP385",
+    "quote": "In Florida, the fungus Thekopsora minima causes leaf rust on SHB.",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://ask.ifas.ufl.edu/publication/PP385",
+    "quote": "information for Florida blueberry growers on the disease cycle, symptoms, and integrated management of this fungal leaf disease"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar"
+    ],
+    "url": "https://ask.ifas.ufl.edu/publication/PP385",
+    "quote": "Leaf rust symptoms are initially observed as small, somewhat angular yellow spots, turning red to black on the upper surfaces of leaves."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "First symptoms are small, chlorotic to yellow spots; spots on the upper leaf surface turn reddish-brown and leaves may die if spots coalesce and become necrotic. On the leaf underside, yellowish-orange pustules (uredinia) develop that turn rusty-red with age, and infected leaves usually drop prematurely.",
+     "url": "https://pnwhandbooks.org/plantdisease/host-disease/blueberry-vaccinium-corymbosum-rust",
+     "quote": "The first symptoms observe include small, chlorotic to yellow spots. Spots on the upper surface of the leaf turn reddish-brown. The entire leaf may die if numerous spots coalesce and become necrotic. On the underside of the leaf, opposite upper leaf symptoms, yellowish-orange pustules (uredinia) develop that turn rusty-red with age. Infected leaves usually drop prematurely."
+    },
+    "diagnostic_features": {
+     "value": "Dusty clumps of yellow-, orange-, or rust-colored spores (urediniospores) on the underside of the leaf, opposite the upper leaf lesions; when present these spores distinguish leaf rust from all other leaf spot diseases. Lesions can be limited by larger leaf veins, resulting in lesions with parallel straight or angular sides.",
+     "url": "https://ask.ifas.ufl.edu/publication/PP385",
+     "quote": "When present, these spores are a key feature distinguishing leaf rust from all other leaf spot diseases (Figure 2)."
+    },
+    "look_alikes": {
+     "value": [
+      "Other leaf spot diseases"
+     ],
+     "url": "https://ask.ifas.ufl.edu/publication/PP385",
+     "quote": "these spores are a key feature distinguishing leaf rust from all other leaf spot diseases"
+    }
+   },
+   "treatments": {
+    "value": [
+     "Integrate horticultural and chemical methods to reduce the impact of the disease.",
+     "Use drip irrigation instead of overhead irrigation where and whenever possible.",
+     "When overhead irrigation is necessary, time the application to avoid extended periods of leaf wetness and to occur after dew formation in early morning hours.",
+     "Plant spacing, maintenance pruning to increase airflow in the canopy, and controlling weeds in row middles.",
+     "Remove hemlocks upwind from where blueberry is grown.",
+     "Grow less susceptible cultivars.",
+     "Prompt removal and disposal of fallen leaves may be helpful.",
+     "Make repeated fungicide applications to maintain a protective residue on the leaves; scout during post-bloom and early fall periods.",
+     "Chemical control: start when leaves first begin to break bud and unfold; continue at regular intervals during wet weather.",
+     "chlorothalonil (e.g., Bravo TM / Bravo Weather Stik, Group M5; after harvest only) applications for rust management can begin late fall, before bloom.",
+     "Proline TM / Proline 480 SC (prothioconazole), an excellent DMI choice for rust (seven-day PHI).",
+     "Quilt Xcel TM / QuiltXcel (azoxystrobin and propiconazole, Group 3 + 11).",
+     "Propulse TM (fluopyram and prothioconazole, Group 3 + 7).",
+     "Other DMIs with longer preharvest intervals if rust increases before bloom (e.g., Indar TM, Tilt TM).",
+     "Quash TM for flare-ups closer to harvest.",
+     "Quadris Flowable / Quadris Top and Pristine TM have rust efficacy and make good rotation partners with a DMI product.",
+     "Consider tank mixing a captan product with Quadris Flowable or Pristine TM.",
+     "Bordeaux 8-8-100 plus spreader-sticker; copper products (e.g., Kocide 50 DF, Nu-Cop 50 DF) â€” not for use in the spring.",
+     "Inspire Super (Group 3 + 9).",
+     "Regalia (Group P5) â€” may be used day of harvest.",
+     "Organic management options include copper products and plant-based horticultural oils.",
+     "Biological control: Sonata (Bacillus pumilis strain QST 2808) plus a spreader-sticker; may be applied up to and including the day of harvest.",
+     "Fungicides with different modes of action should be used in rotation or in a tank mix as part of an integrated postharvest foliage management strategy."
+    ],
+    "url": "https://ask.ifas.ufl.edu/publication/PP385",
+    "quote": "The best strategies to efficiently manage rust integrate horticultural and chemical methods to reduce the impact of the disease"
+   },
+   "confidence": "high",
+   "num_sources": 2,
+   "conflicts": [
+    {
+     "field": "pathogen_scientific_name",
+     "canonical_value": "Thekopsora minima",
+     "alternative_value": "Thekopsora minima and Naohidemyces vaccinii (both formerly Pucciniastrum vaccinii)",
+     "alternative_source_url": "https://pnwhandbooks.org/plantdisease/host-disease/blueberry-vaccinium-corymbosum-rust",
+     "note": "The UF/IFAS source attributes Florida SHB leaf rust to Thekopsora minima alone; the PNW handbook lists two causal fungi (Thekopsora minima and Naohidemyces vaccinii), both formerly classified as Pucciniastrum vaccinii. No taxonomy validation was supplied to adjudicate."
+    }
+   ],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "spots on the upper leaf surface turn reddish-brown",
+       "image_shows": "The lesion center appears tan, the margins are chocolate-brown, and there is a chlorotic yellow halo.",
+       "image_quote": "The central area has a tan coloration, surrounded by chocolate-brown margins with a chlorotic yellow halo.",
+       "image_id": "bugwood::5476485",
+       "verification_status": "weakly_supported",
+       "reasoning": "The yellow halo and darkened brown lesion margin are corroborated by extension sources, though the specific tan center is a plausible state-specific color refinement.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://content.ces.ncsu.edu/leaf-diseases-of-blueberry",
+         "quote": "Early symptoms are roughly circular yellow spots that later develop brown, necrotic centers; lesions darken with age, often surrounded by a yellow halo."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "yellowish-orange pustules (uredinia) develop that turn rusty-red with age",
+       "image_shows": "The lesion appears raised and has a rough texture.",
+       "image_quote": "The lesion surface looks uneven and has a raised appearance.",
+       "image_id": "bugwood::5476485",
+       "verification_status": "weakly_supported",
+       "reasoning": "Rust uredinia erupt as raised, roughened powdery sori, so a raised rough texture is consistent with pustule development, though the candidate does not specify leaf surface.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/blueberry-vaccinium-corymbosum-rust",
+         "quote": "Yellowish-orange pustules (uredinia) develop on the underside of leaves and turn rusty red with age; urediniospore walls are finely and evenly roughened with flat or rounded warts."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "leaves may die if spots coalesce and become necrotic",
+       "image_shows": "The lesion appears to have necrotic tissue extending inward from a vein.",
+       "image_quote": "The central part of the lesion appears dark brown, the margins are light tan, and there is a bright yellow halo around the lesion.",
+       "image_id": "bugwood::5476485",
+       "verification_status": "weakly_supported",
+       "reasoning": "Necrotic brown centers with a yellow halo are documented for rust and the vein-associated necrosis is consistent with the vein-limited lesion habit.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.unh.edu/resource/blueberry-leaf-rust",
+         "quote": "Entire leaves may turn brown, die, and drop prematurely if infections are severe; spots turn reddish-brown and develop brown necrotic centers."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "yellowish-orange pustules (uredinia) develop that turn rusty-red",
+       "image_shows": "The affected tissue has prominent yellowish-orange pustules, a dark brown central area, and a light tan outer margin.",
+       "image_quote": "There is a bright yellow halo around the lesion.",
+       "image_id": "bugwood::5476485",
+       "verification_status": "verified",
+       "reasoning": "The yellowish-orange pustule color palette is the definitive diagnostic feature of blueberry leaf rust and is strongly corroborated by multiple extension sources.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.unh.edu/resource/blueberry-leaf-rust",
+         "quote": "Yellow-orange powdery rust pustules develop on the underside of leaves about mid-summer."
+        },
+        {
+         "url": "https://content.ces.ncsu.edu/leaf-diseases-of-blueberry",
+         "quote": "Brightly colored yellow-to-orange spores are produced on the underside of the leaf, opposite the lesions on the upper leaf surface."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "Other leaf spot diseases",
+       "image_shows": "The lesion exhibits a bullseye pattern with alternating light and dark rings, resembling target spot rather than rust.",
+       "image_quote": "The lesion has a circular pattern with a dark outer ring and a lighter inner ring.",
+       "image_id": "bugwood::5476485",
+       "verification_status": "weakly_supported",
+       "reasoning": "A concentric bull's-eye is characteristic of the look-alike target spot (Corynespora cassiicola), so flagging it correctly identifies a differential rather than rust itself.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://ask.ifas.ufl.edu/publication/PP348",
+         "quote": "Target spot lesions form concentric rings of varying colors as they expand, resulting in a target or bull's-eye pattern, and can be confused with early anthracnose."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "leaves may die if spots coalesce and become necrotic",
+       "image_shows": "The lesion occupies a significant portion of the visible leaf surface, indicating high severity.",
+       "image_quote": "The photo shows a large area of the leaf affected by the disease.",
+       "image_id": "bugwood::5476485",
+       "verification_status": "weakly_supported",
+       "reasoning": "Coalescing lesions covering a large leaf area is consistent with the documented high-severity, defoliating stage of leaf rust.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.unh.edu/resource/blueberry-leaf-rust",
+         "quote": "Severe rust infections cause premature defoliation; lesions may coalesce, leading to premature leaf drop and weakening of the plant."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf shows curling upward toward the center of the lesion.",
+       "image_quote": "Leaf curling up towards the center of the lesion.",
+       "image_id": "bugwood::5476485",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension factsheets document that rust-infected blueberry leaves curl, supporting the observed curling though the specific upward-toward-lesion-center orientation is not explicitly described.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.unh.edu/resource/blueberry-leaf-rust",
+         "quote": "Infected leaves might curl and entire leaves may die and drop prematurely; edges of leaves in advanced infections may have dead, brown edges which may curl before dropping."
+        },
+        {
+         "url": "https://ask.ifas.ufl.edu/publication/PP385",
+         "quote": "Infected leaves might curl."
+        }
+       ]
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "(not specified)",
+       "image_shows": "Leaf veins appear translucent and pale, suggesting vein clearing.",
+       "image_quote": "The veins are visible and appear translucent.",
+       "image_id": "bugwood::5476485",
+       "verification_status": "field_observation",
+       "reasoning": "No extension or APS source describes vein clearing or translucent veins for blueberry leaf rust; the described appearance is not corroborated but is not directly contradicted, so it remains provisional.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5476485",
+      "bugwood::5476486",
+      "bugwood::5476487",
+      "bugwood::5476488",
+      "bugwood::5476489",
+      "bugwood::5476490",
+      "bugwood::5504945",
+      "bugwood::5504946",
+      "bugwood::5504947",
+      "bugwood::5504948",
+      "bugwood::5504949",
+      "bugwood::5504950",
+      "bugwood::5504951",
+      "bugwood::5504952",
+      "bugwood::5504953",
+      "bugwood::5504954",
+      "bugwood::5504955",
+      "bugwood::5504956"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 6,
+       "n_provisional": 2,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 8,
+       "n_added": 8,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 1,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Mummy Berry",
+   "pathogen_scientific_name": {
+    "value": "Monilinia vaccinii-corymbosi",
+    "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
+    "quote": "Mummy berry is caused by the fungus Monilinia vaccinii-corymbosi.",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
+    "quote": "Mummy berry is a fungal disease common among blueberry species in North America."
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem"
+    ],
+    "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
+    "quote": "Mummy berry is a disease of blueberry that affects both leaf shoots and berries."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Infected shoots wilt with browning of the midrib and veins, and a mass of ash-gray conidia forms along the leaf midrib; infected berries turn salmon-pink (or pink/cream) with soft deteriorating skin and a hard fungal structure inside, eventually drying to whitish-gray hard mummies that fall to the ground.",
+     "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
+     "quote": "The next visible symptom occurs at harvest, when infected berries (mummies) turn a salmon-pink color, with soft deteriorating skin and a hard fungal structure (pseudosclerotium) inside."
+    },
+    "diagnostic_features": {
+     "value": "Berries do not turn blue but instead turn pink or salmon-colored, with soft deteriorating skin and a hard fungal structure (pseudosclerotium) inside; blighted leaf shoots produce a mass of ash-gray conidia along the leaf midrib; cup-shaped apothecia (\"mummy cups\") emerge from old infected berries on the ground in spring.",
+     "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
+     "quote": "A further diagnostic sign of the pathogen is the production of a mass of ash-gray conidia (spores) along the midrib of the leaves on blighted leaf shoots."
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
+    }
+   },
+   "treatments": {
+    "value": [
+     "Raking, cultivating, and/or mulching underneath blueberry bushes can bury mummies and reduce further spread",
+     "Rotating between different active ingredients prevents the evolution of fungicide resistance",
+     "Planting only disease-free, dormant plants",
+     "Sanitation can be used to reduce the incidence and severity of disease by removing or burying the overwintering mummies",
+     "Hand raking or the use of a leaf blower around bushes can be used to move mummies to the aisles between rows where they can be disked under or collected with a bagging mower",
+     "Mulch applied 3-4 inches deep underneath bushes will prevent mummies from emerging in Spring",
+     "Fungicides are used at leaf emergence to prevent primary (leaf shoot) infection, and again during bloom to prevent secondary (flower) infection",
+     "Plant resistant cultivars (rabbiteye: Premier, Columbus, Powderblue; southern highbush: Legacy, O'Neal, Star; northern highbush: Duke, Elliot)"
+    ],
+    "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
+    "quote": "Fungicides are used at leaf emergence to prevent primary (leaf shoot) infection, and again during bloom to prevent secondary (flower) infection."
+   },
+   "confidence": "medium",
+   "num_sources": 1,
+   "conflicts": [],
+   "regional_observations": {
+    "New Jersey": {
+     "state": "New Jersey",
+     "deltas": [
+      {
+       "field": "other",
+       "canonical_says": "infected berries turn salmon-pink (or pink/cream) with soft deteriorating skin and a hard fungal structure inside",
+       "image_shows": "Image color composition is dominated by pale-green (~70%) with white internal regions (~25%).",
+       "image_quote": "The berries are green with visible internal structures.",
+       "image_id": "bugwood::5607026",
+       "verification_status": "verified",
+       "reasoning": "Extension factsheets confirm that infected berries in the early green stage look outwardly green while revealing white/cream spongy fungal growth internally, matching the candidate's green berry with white internal regions.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
+         "quote": "During early berry development, diseased fruits look like healthy ones; if cut open, however, the spongy white fungal growth can be seen within the carpels."
+        },
+        {
+         "url": "https://ohioline.osu.edu/factsheet/plpath-fru-46",
+         "quote": "Young infected berries that appear healthy and green may be cut open to expose spongy white fungal growth in the seed area."
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5607026",
+      "bugwood::5607027"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       3
+      ],
+      "detected_organ_per_pass": [
+       "fruit"
+      ],
+      "n_active_agents_per_pass": [
+       6
+      ],
+      "n_after_agreement": 3,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 0,
+       "n_provisional": 1,
+       "n_contradictory": 2,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 1,
+       "n_added": 1,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    },
+    "Oregon": {
+     "state": "Oregon",
+     "deltas": [],
+     "__image_ids__": [
+      "bugwood::5607093",
+      "bugwood::5607094",
+      "bugwood::5607095",
+      "bugwood::5607096",
+      "bugwood::5607097",
+      "bugwood::5607098",
+      "bugwood::5607099"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       4
+      ],
+      "detected_organ_per_pass": [
+       "fruit"
+      ],
+      "n_active_agents_per_pass": [
+       6
+      ],
+      "n_after_agreement": 4,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 0,
+       "n_provisional": 1,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 1,
+       "n_added": 1,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 0,
+      "contradictory_count": 1,
+      "duplicates_count": 0,
+      "dropped_contradictory": [
+       {
+        "field": "look_alikes",
+        "canonical_says": "Berries do not turn blue but instead turn pink or salmon-colored ... eventually drying to whitish-gray hard mummies",
+        "image_shows": "The photo shows blueberries with dark spots, consistent with mummy berry infection.",
+        "image_quote": "The image shows a cluster of blueberries with a grayish hue and dark spots, which is indicative of the Mummy Berry disease.",
+        "image_id": "bugwood::5607093",
+        "verification_status": "contradictory",
+        "reasoning": "Published extension descriptions characterize mummy-berry fruit as pink/salmon to tan/gray shriveled hard mummies, not berries bearing 'dark spots'; the claimed dark-spot appearance is not a diagnostic feature of this disease and contradicts the sources.",
+        "swarm_support": 1,
+        "web_support": [
+         {
+          "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
+          "quote": "Infected berries turn a salmon-pink color, with soft deteriorating skin and a hard fungal structure inside."
+         },
+         {
+          "url": "https://www.aces.edu/blog/topics/crop-production/mummy-berry-blueberry/",
+          "quote": "berries may attain nearly full size before turning pink, tan, or gray and shriveling into hard mummies."
+         },
+         {
+          "url": "https://ohioline.osu.edu/factsheet/plpath-fru-46",
+          "quote": "Mature mummified berries are gray, shriveled, and hard."
+         }
+        ]
+       }
+      ]
+     }
+    },
+    "North Carolina": {
+     "state": "North Carolina",
+     "deltas": [
+      {
+       "field": "affected_organs",
+       "canonical_says": "infected berries turn salmon-pink (or pink/cream) with soft deteriorating skin and a hard fungal structure inside",
+       "image_shows": "The stem surface appears mostly healthy.",
+       "image_quote": "The berries are pinkish with soft deteriorating skin.",
+       "image_id": "bugwood::5482684",
+       "verification_status": "verified",
+       "reasoning": "The pinkish berry with soft deteriorating skin is a diagnostic mummy-berry fruit symptom directly corroborated by NC State and UNH extension photo descriptions.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
+         "quote": "At harvest, infected berries (mummies) turn a salmon-pink color, with soft deteriorating skin and a hard fungal structure (pseudosclerotium) inside."
+        }
+       ]
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "berries turn pink or salmon-colored, with soft deteriorating skin and a hard fungal structure (pseudosclerotium) inside",
+       "image_shows": "No fungal structures are present.",
+       "image_quote": "There are no visible signs of pathogen sporulation like mycelium, spore masses, pycnidia, fruiting bodies, sclerotia, or bacterial ooze.",
+       "image_id": "bugwood::5482684",
+       "verification_status": "weakly_supported",
+       "reasoning": "On infected berries the fungal mass (pseudosclerotium) is internal rather than an external spore mass, so the absence of visible external sporulation on a fruit photo is consistent with extension descriptions (conidia form on blighted shoots, not on berries).",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
+         "quote": "infected berries (mummies) turn a salmon-pink color, with soft deteriorating skin and a hard fungal structure (pseudosclerotium) inside."
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5482684",
+      "bugwood::5482685",
+      "bugwood::5482686",
+      "bugwood::5482687",
+      "bugwood::5482689",
+      "bugwood::5482690",
+      "bugwood::5482691",
+      "bugwood::5607045",
+      "bugwood::5607046",
+      "bugwood::5607047",
+      "bugwood::5607048",
+      "bugwood::5607049",
+      "bugwood::5607050",
+      "bugwood::5607051",
+      "bugwood::5607052",
+      "bugwood::5607053",
+      "bugwood::5607054",
+      "bugwood::5607056",
+      "bugwood::5607057",
+      "bugwood::5607058",
+      "bugwood::5607059",
+      "bugwood::5607060",
+      "bugwood::5607067",
+      "bugwood::5607068",
+      "bugwood::5607069",
+      "bugwood::5607070",
+      "bugwood::5607071",
+      "bugwood::5607072",
+      "bugwood::5607077",
+      "bugwood::5607079",
+      "bugwood::5607100",
+      "bugwood::5607101",
+      "bugwood::5607102",
+      "bugwood::5607103",
+      "bugwood::5607104",
+      "bugwood::5607105",
+      "bugwood::5607106",
+      "bugwood::5607107",
+      "bugwood::5607108",
+      "bugwood::5607109",
+      "bugwood::5607110",
+      "bugwood::5607111",
+      "bugwood::5607112",
+      "bugwood::5607113",
+      "bugwood::5607114",
+      "bugwood::5607115",
+      "bugwood::5607116",
+      "bugwood::5607117",
+      "bugwood::5607118",
+      "bugwood::5607119"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       6
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 6,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 0,
+       "n_provisional": 3,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 2
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 3,
+       "n_added": 3,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 2,
+      "provisional_count": 0,
+      "contradictory_count": 1,
+      "duplicates_count": 0,
+      "dropped_contradictory": [
+       {
+        "field": "severity",
+        "canonical_says": "infected berries turn salmon-pink (or pink/cream) with soft deteriorating skin",
+        "image_shows": "The image shows green berries with brown lesions on the outer stem surface.",
+        "image_quote": "The berries are not turning blue but instead turning pink or salmon-colored, with soft deteriorating skin and a hard fungal structure inside.",
+        "image_id": "bugwood::5482684",
+        "verification_status": "contradictory",
+        "reasoning": "Mummy-berry-infected fruit turn pink/salmon-tan and shrivel rather than presenting as green berries bearing brown lesions on an outer stem surface, so the described visual appearance contradicts published symptom descriptions.",
+        "swarm_support": 1,
+        "web_support": [
+         {
+          "url": "https://content.ces.ncsu.edu/mummy-berry-disease-of-blueberry",
+          "quote": "At harvest, infected berries (mummies) turn a salmon-pink color, with soft deteriorating skin and a hard fungal structure (pseudosclerotium) inside."
+         },
+         {
+          "url": "https://extension.unh.edu/resource/mummy-berry",
+          "quote": "Secondary infections cause fruit to turn pink, tan, or grey and shrivel into hard mummies."
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Phomopsis Cankers And Twig Blights",
+   "pathogen_scientific_name": {
+    "value": "Phomopsis vaccinii",
+    "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+    "quote": "Dieback symptoms of twig blight of blueberry, caused by the fungus Phomopsis vaccinii.",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+    "quote": "Twig blight is a fungal disease"
+   },
+   "affected_parts": {
+    "value": [
+     "Stem",
+     "Vascular"
+    ],
+    "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+    "quote": "conidia become trapped in opening buds, germinate, and infect the vascular system"
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Individual buds turn brown and die, followed by browning and necrosis of bark around the bud as the fungus spreads into the twig, causing dieback of fruit-bearing twigs.",
+     "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+     "quote": "Individual buds turn brown and die, followed by browning and necrosis of bark around the bud as the fungus spreads from the blighted bud into the twig."
+    },
+    "diagnostic_features": {
+     "value": "The disease stops progressing after killing the twig (6-10 inches) and does not progress further down the stem to infect older wood; pycnidia are evident in diseased tissues.",
+     "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+     "quote": "The disease stops progressing after killing the twig (6-10 inches), and does not progress further down the stem to infect older wood."
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
+    }
+   },
+   "treatments": {
+    "value": [
+     "Pruning can be performed to remove infected twigs prior to spore release in the spring",
+     "Commercial growers who mow bushes in June and July after harvest (topping) will also benefit from the removal of blighted twigs",
+     "Careful cultivar selection can greatly reduce the amount of twig blight experienced; newer cultivars (Legacy, New Hanover, O'Neal, Star, Farthing) are generally resistant to twig blight",
+     "Chemical control can be achieved by spraying labeled fungicides from budbreak through bloom on a 7-14 day interval"
+    ],
+    "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+    "quote": "1. Pruning can be performed to remove infected twigs prior to spore release in the spring. This will decrease the amount of disease inoculum present at budbreak."
+   },
+   "confidence": "high",
+   "num_sources": 2,
+   "conflicts": [
+    {
+     "field": "disease_name",
+     "canonical_value": "Twig Blight of Blueberry",
+     "alternative_value": "Phomopsis Canker and Twig Blight",
+     "alternative_source_url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/blueberry-phomopsis-canker-and-twig-blight/",
+     "note": "University of Maine titles this disease 'Phomopsis Canker and Twig Blight' (combining the twig blight and cane canker stages of Phomopsis vaccinii); NCSU names the twig blight stage 'Twig Blight of Blueberry'. Merged as the same Phomopsis disease."
+    },
+    {
+     "field": "visual_symptoms.diagnostic_features",
+     "canonical_value": "The disease stops progressing after killing the twig (6-10 inches) and does not progress further down the stem to infect older wood; pycnidia are evident in diseased tissues.",
+     "alternative_value": "Pycnidia evident in diseased tissues",
+     "alternative_source_url": "https://extension.umaine.edu/ipm/ipddl/plant-disease-images/blueberry-phomopsis-canker-and-twig-blight/",
+     "note": "UMaine contributes the diagnostic sign of pycnidia in diseased tissues; NCSU contributes the twig-killing/dieback diagnostic. Both incorporated into the canonical value."
+    }
+   ],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "browning and necrosis of bark around the bud as the fungus spreads into the twig",
+       "image_shows": "Dark, sunken cankers with greenish spots are present on the mid-stem rather than only at the twig tip.",
+       "image_quote": "The lesion is dark and sunken, with greenish spots, located on the mid-stem.",
+       "image_id": "bugwood::5459134",
+       "verification_status": "weakly_supported",
+       "reasoning": "Dark, sunken stem cankers on 1-3 year-old wood are well documented, but the 'greenish' coloration is not corroborated (literature describes reddish-brown/gray/silvery), so support is partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/blueberry-vaccinium-corymbosum-twig-blight",
+         "quote": "Large (5-15 cm), reddish brown, oval-shaped lesions can be seen on 1-3 year-old stems."
+        },
+        {
+         "url": "https://ohioline.osu.edu/factsheet/plpath-fru-45",
+         "quote": "Cankers are seen as elongated, flattened areas... the sunken necrotic area spreads as the disease progresses."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "pycnidia are evident in diseased tissues",
+       "image_shows": "Fruiting bodies erupt through the bark surface accompanied by dark streaks of discoloration.",
+       "image_quote": "There are multiple small, greenish-brown spots on the stem surface, resembling fruiting bodies breaking through the bark.",
+       "image_id": "bugwood::5459134",
+       "verification_status": "field_observation",
+       "reasoning": "Pycnidia erupting through the bark are documented, but they are described as black (not greenish-brown), so the eruption pattern is supported while the color detail is not.",
+       "swarm_support": 1,
+       "web_support": [],
+       "__support__": 1,
+       "_prior_status": "weakly_supported"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The affected tissue shows a prominent olive-green hue with rust-orange and dark-brown patches.",
+       "image_quote": "The affected tissue displays a mix of colors including olive-green, rust-orange, and dark brown.",
+       "image_id": "bugwood::5459134",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension sources document a mottled multicolor appearance of Phomopsis-affected stems (green healthy tissue interspersed with brown, plus reddish-brown lesions), which partially corroborates the described olive-green/rust-orange/dark-brown patches without confirming that exact color trio in one view.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/agriculture-and-seafood/animal-and-crops/plant-health/phomopsis-blueberry.pdf",
+         "quote": "Infected stems often have a mottled pattern of green, healthy tissues, interspersed with brown discolouration just beneath the bark."
+        },
+        {
+         "url": "https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/agriculture-and-seafood/animal-and-crops/plant-health/phomopsis-blueberry.pdf",
+         "quote": "Large (5-15 cm), reddish brown, oval-shaped lesions can be seen on 1-3 year-old stems."
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5459134",
+      "bugwood::5459136",
+      "bugwood::5459138",
+      "bugwood::5459140",
+      "bugwood::5459142",
+      "bugwood::5459144",
+      "bugwood::5459146",
+      "bugwood::5459148",
+      "bugwood::5459150",
+      "bugwood::5459151",
+      "bugwood::5459152",
+      "bugwood::5459153",
+      "bugwood::5459154",
+      "bugwood::5459155",
+      "bugwood::5459156"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       6
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 6,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 2,
+       "n_provisional": 1,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 3
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 3,
+       "n_added": 3,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Diaporthe Vaccinii Shear",
+   "pathogen_scientific_name": {
+    "value": "Phomopsis vaccinii",
+    "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+    "quote": "Phomopsis vaccinii also causes a fruit rot on blueberry at harvest in North Carolina.",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+    "quote": "Fruit rot caused by Phomopsis vaccinii, the same fungus that causes twig blight of blueberry."
+   },
+   "affected_parts": {
+    "value": [
+     "Fruit"
+    ],
+    "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+    "quote": "Phomopsis vaccinii also causes a fruit rot on blueberry at harvest in North Carolina."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Infected berries become very soft and may split, resulting in leakage of juice.",
+     "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+     "quote": "Infected berries become very soft and may split resulting in leakage of juice."
+    },
+    "diagnostic_features": {
+     "value": "",
+     "url": "",
+     "quote": ""
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
+    }
+   },
+   "treatments": {
+    "value": [
+     "Most other varieties can be grown with minimal loss due to the fruit rot stage if fruit is harvested in a timely fashion to avoid overripe fruit on the bush",
+     "In North Carolina, fruiting bushes should be harvested every 7 days or less"
+    ],
+    "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+    "quote": "Most other varieties can be grown with minimal loss due to the fruit rot stage if fruit is harvested in a timely fashion to avoid overripe fruit on the bush. In North Carolina, fruiting bushes should be harvested every 7 days or less."
+   },
+   "confidence": "medium",
+   "num_sources": 1,
+   "conflicts": [],
+   "regional_observations": {
+    "New Jersey": {
+     "state": "New Jersey",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Infected berries become very soft and may split, resulting in leakage of juice.",
+       "image_shows": "Berries show dark spotting/discoloration in addition to soft rot.",
+       "image_quote": "The photo shows blueberries with varying stages of ripeness, including soft rot and dark spots.",
+       "image_id": "bugwood::5607020",
+       "verification_status": "weakly_supported",
+       "reasoning": "Reddish-brown discoloration of infected berries is documented, giving partial support to the observed dark spotting beyond plain soft rot.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2024.1428769/full",
+         "quote": "Infected fruits turn reddish-brown, soft, mushy, often splitting and causing leakage of juice."
+        },
+        {
+         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11333449/",
+         "quote": "Infected fruit are characterized initially by white mycelia on the calyx and cream-colored spore droplets as infection progresses, with fruit becoming reddish-brown and soft."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "Berries display visible lesions and necrosis, indicating advanced/severe infection.",
+       "image_quote": "The image shows blueberries with visible lesions and necrosis.",
+       "image_id": "bugwood::5607020",
+       "verification_status": "weakly_supported",
+       "reasoning": "Lesions and necrosis are documented hallmarks of Diaporthe vaccinii, though the cited sources describe them chiefly on twigs/stems rather than on fruit, so support is partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+         "quote": "Infected, current-year shoots wilt within 4 days and become covered with minute lesions; necrosis spreads into the stem tissue."
+        },
+        {
+         "url": "https://gd.eppo.int/taxon/DIAPVA/datasheet",
+         "quote": "Diaporthe vaccinii causes stem canker, twig blight, and fruit rot in Vaccinium species, with necrotic tissue development."
+        }
+       ],
+       "__support__": 1
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5607020",
+      "bugwood::5607021",
+      "bugwood::5607023",
+      "bugwood::5607024",
+      "bugwood::5607025",
+      "bugwood::5607028"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "medium"
+      ],
+      "n_raw_per_pass": [
+       3
+      ],
+      "detected_organ_per_pass": [
+       "fruit"
+      ],
+      "n_active_agents_per_pass": [
+       6
+      ],
+      "n_after_agreement": 3,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 2,
+       "n_provisional": 0,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 2,
+       "n_added": 2,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     }
+    },
+    "North Carolina": {
+     "state": "North Carolina",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The stem has peeling bark with visible canker-like lesions.",
+       "image_quote": "The bark appears to be peeling and showing signs of decay.",
+       "image_id": "bugwood::5607075",
+       "verification_status": "weakly_supported",
+       "reasoning": "Phomopsis vaccinii is documented to produce stem cankers and canker-like lesions on blueberry canes, though the specific 'peeling bark' descriptor is not a documented hallmark, so support is partial.",
+       "swarm_support": 2,
+       "web_support": [
+        {
+         "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+         "quote": "Cankers are seen as elongated, flattened areas that become covered with small, pinpoint-sized fruiting bodies (pycnidia); twig blight symptoms include dark brown lesions and death of young twigs."
+        },
+        {
+         "url": "https://www.canr.msu.edu/uploads/files/Phomopsis%20canker%20and%20twig%20blight.pdf",
+         "quote": "A sunken or flattened area (canker) is often present at the base of the cane."
+        }
+       ],
+       "__support__": 2
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The stem surface shows peeling bark with a mix of tan and chocolate-brown tones.",
+       "image_quote": "The affected area shows a mix of tan and chocolate-brown tones.",
+       "image_id": "bugwood::5607075",
+       "verification_status": "weakly_supported",
+       "reasoning": "Brown/necrotic bark discoloration is a documented Phomopsis symptom that partially matches the tan-to-chocolate-brown tones described.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+         "quote": "Individual buds turn brown and die, followed by browning and necrosis of bark as the fungus spreads into the twig; twig blight produces dark brown lesions."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The photo shows a tree trunk with peeling bark displaying various shades.",
+       "image_quote": "The bark displays a mix of greyish tones with hints of reddish-brown.",
+       "image_id": "bugwood::5607075",
+       "verification_status": "weakly_supported",
+       "reasoning": "The greyish tone loosely matches the documented silvery-gray appearance of Phomopsis canker tissue, but the reddish-brown peeling 'tree trunk' framing is not a documented feature, so support is weak.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://bpb-us-e1.wpmucdn.com/blogs.cornell.edu/dist/0/7265/files/2017/01/BB-canker-fast-fact-26jbmk6.pdf",
+         "quote": "Tissue around the canker can appear silvery/gray and speckled with black dots; circular lesions are gray and flat in appearance."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "The image shows a close-up of a stem with peeling bark and brownish discoloration.",
+       "image_quote": "The bark is peeling and there are brownish areas indicating possible disease.",
+       "image_id": "bugwood::5607075",
+       "verification_status": "weakly_supported",
+       "reasoning": "The brownish diseased bark is consistent with documented Phomopsis symptoms, but no external source quantifies the visual severity, so support is only partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+         "quote": "Symptoms include browning and necrosis of bark and dark brown lesions on affected twigs and stems."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "(not specified)",
+       "image_shows": "No visible stem pith color, petiole attachment, leg color, or bract length in the image.",
+       "image_quote": "The photo shows a close-up of a tree trunk with visible bark peeling off in patches, indicating some form of disease.",
+       "image_id": "bugwood::5607075",
+       "verification_status": "field_observation",
+       "reasoning": "The candidate is a non-informative negation (absence of pith color, petiole, leg color, bract length) that published photo galleries cannot corroborate or contradict, though it is not inconsistent with the bark/stem symptoms Diaporthe produces on blueberry.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5607075",
+      "bugwood::5607076",
+      "bugwood::5607078",
+      "bugwood::5607120",
+      "bugwood::5607121"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       6
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 6,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 5,
+       "n_provisional": 1,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 6,
+       "n_added": 5,
+       "n_overlaps_bumped": 1,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 1,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Twig Canker",
+   "pathogen_scientific_name": {
+    "value": null,
+    "url": null,
+    "quote": null
+   },
+   "type_of_disease": {
+    "value": null,
+    "url": null,
+    "quote": null
+   },
+   "affected_parts": {
+    "value": null,
+    "url": null,
+    "quote": null
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": null,
+     "url": null,
+     "quote": null
+    },
+    "diagnostic_features": {
+     "value": null,
+     "url": null,
+     "quote": null
+    },
+    "look_alikes": {
+     "value": null,
+     "url": null,
+     "quote": null
+    }
+   },
+   "confidence": "low",
+   "num_sources": 0,
+   "conflicts": [],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "Dark, round nodule-like bodies stud the stem surface within the diseased tissue.",
+       "image_quote": "The image shows dark, round nodules on the stem surface.",
+       "image_id": "bugwood::5535512",
+       "verification_status": "weakly_supported",
+       "reasoning": "Dark round nodules on the stem are consistent with the dark, pimple-like pycnidia (fruiting bodies) documented on blueberry twig cankers.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/blueberry-vaccinium-corymbosum-fusicoccum-canker-godronia-canker",
+         "quote": "Small, dark pimple-like pycnidia can frequently be found in the canker."
+        },
+        {
+         "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+         "quote": "Circular lesions, gray and flat in appearance form around fruit buds, producing fungal fruiting bodies called pycnidia."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The stem bears dark, raised canker-like lesions.",
+       "image_quote": "The image shows dark, raised lesions resembling cankers.",
+       "image_id": "bugwood::5535512",
+       "verification_status": "verified",
+       "reasoning": "Dark, raised canker lesions on the stem directly match the defining canker/lesion symptomatology of blueberry twig canker described by extension sources.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/blueberry-vaccinium-corymbosum-fusicoccum-canker-godronia-canker",
+         "quote": "As these cankers enlarge, the centers usually become gray and margins turn reddish-brown or dark-brown, giving the canker a bull's-eye appearance."
+        },
+        {
+         "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+         "quote": "Individual buds turn brown and die, followed by browning and necrosis of bark around the bud as the fungus spreads from the blighted bud into the twig."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "diagnostic_features",
+       "canonical_says": "(not specified)",
+       "image_shows": "Dark, round fruiting-body-like structures on the stem surface indicate sporulation.",
+       "image_quote": "The image shows dark, round galls on the stem surface.",
+       "image_id": "bugwood::5535512",
+       "verification_status": "weakly_supported",
+       "reasoning": "If the dark round surface bodies are pycnidia, they are the sporulation structures of twig canker, giving indirect support; the 'galls' wording is imprecise but the fruiting-body morphology is corroborated.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+         "quote": "Circular lesions, gray and flat in appearance form around fruit buds, producing fungal fruiting bodies called pycnidia."
+        },
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/blueberry-vaccinium-corymbosum-fusicoccum-canker-godronia-canker",
+         "quote": "Small, dark pimple-like pycnidia can frequently be found in the canker."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "Affected tissue is dominantly dark grayish-black with brownish-tan spots on a brownish-golden background.",
+       "image_quote": "The affected tissue shows dominant dark grayish-black and secondary brownish-tan spots on a brownish-golden substrate.",
+       "image_id": "bugwood::5535512",
+       "verification_status": "weakly_supported",
+       "reasoning": "The gray-black centers with brownish-tan margins match the documented gray-center, reddish/dark-brown-margin coloration of blueberry cankers.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/blueberry-vaccinium-corymbosum-fusicoccum-canker-godronia-canker",
+         "quote": "As these cankers enlarge, the centers usually become gray and margins turn reddish-brown or dark-brown, giving the canker a bull's-eye appearance."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "(not specified)",
+       "image_shows": "Dark, round galls on the stem could be confused with a distinct gall-forming agent rather than canker.",
+       "image_quote": "The stem surface has multiple dark, round galls.",
+       "image_id": "bugwood::5535512",
+       "verification_status": "weakly_supported",
+       "reasoning": "Round stem galls are the signature of blueberry stem gall wasp, a genuine look-alike that can be mistaken for canker swellings, so galls are supportable specifically as a look-alike.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://blogs.cornell.edu/berrytool/berry-pests/blueberry-stem-gall-wasp/",
+         "quote": "Blueberry stem gall wasp (Hemadas nubilipennis) cause swellings (galls) on canes; older galls appear gray and corky and often have exit holes."
+        },
+        {
+         "url": "https://www.canr.msu.edu/blueberries/uploads/files/BlueberryStemGallWasp-WEB-final.pdf",
+         "quote": "Female wasps lay eggs in the blueberry stems, triggering excessive tissue growth (the galls)."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "Dark lesions cover more than half of the visible twig, indicating high local severity.",
+       "image_quote": "The photo shows multiple black lesions covering more than half of the twig.",
+       "image_id": "bugwood::5535512",
+       "verification_status": "weakly_supported",
+       "reasoning": "Extension factsheets describe dark necrotic cankers that spread and can girdle/kill an entire twig, consistent with extensive dark lesions covering much of a twig, though the specific >50% coverage is a photo-level reading not independently quantified.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://content.ces.ncsu.edu/twig-blight-of-blueberry",
+         "quote": "Wounds that are infected can result in girdling cankers that kill the entire twig; cankers are seen as elongated, flattened areas that become covered with small, pinpoint-sized fruiting bodies."
+        }
+       ]
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5535512",
+      "bugwood::5535513",
+      "bugwood::5535514",
+      "bugwood::5535515",
+      "bugwood::5535516",
+      "bugwood::5535517",
+      "bugwood::5535518",
+      "bugwood::5535519",
+      "bugwood::5535520",
+      "bugwood::5535521",
+      "bugwood::5535522",
+      "bugwood::5535523"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       7
+      ],
+      "detected_organ_per_pass": [
+       "stem"
+      ],
+      "n_active_agents_per_pass": [
+       8
+      ],
+      "n_after_agreement": 7,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 5,
+       "n_provisional": 1,
+       "n_contradictory": 1,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 6,
+       "n_added": 6,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 0,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  }
+ ],
+ "crop": "Highbush Blueberry",
+ "generated_date": "2026-06-10",
+ "regional_observations_count": 10
 }

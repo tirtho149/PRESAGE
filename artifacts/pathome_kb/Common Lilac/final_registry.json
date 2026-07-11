@@ -1,490 +1,486 @@
 {
-  "diseases": [
-    {
-      "disease_name": "Anthracnose",
-      "pathogen_scientific_name": {
-        "value": "Colletotrichum sp.",
-        "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
-        "quote": "Colletotrichum species (anthracnose )",
-        "taxonomy_validated": false
-      },
-      "type_of_disease": {
-        "value": "Fungal",
-        "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
-        "quote": "Common Fungal Leaf Spot Pathogens"
-      },
-      "affected_parts": {
-        "value": [
-          "Foliar",
-          "Stem",
-          "Vascular"
-        ],
-        "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
-        "quote": "Vascular discoloration is evident in the infected petioles and corm."
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": "Mainly small, round lesions on leaves and petals which coalesce to form large areas of necrotic tissue; leaves and petals may become completely blighted. On Anemone it causes leaf curl with twisted petioles and pedicels, and on Cyclamen small round brown leaf spots with stunting and deformity.",
-          "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
-          "quote": "On other hosts, Colletotrichum occurs mainly as small, round lesions on leaves and petals which coalesce to form large areas of necrotic tissue. Leaves and petals may become completely blighted."
-        },
-        "diagnostic_features": {
-          "value": "Pink to orange sporulation oozing from lesions, visible under close inspection.",
-          "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
-          "quote": "A diagnostic sign for anthracnose is the presence of pink to orange sporulation oozing from lesions under close inspection."
-        },
-        "look_alikes": {
-          "value": [],
-          "url": "",
-          "quote": ""
-        }
-      },
-      "treatments": {
-        "value": [
-          "Good sanitation practices and reduction of humidity in the greenhouse and around plants are essential to the management of leaf spot diseases.",
-          "Minimize leaf wetness by watering early in the day or sub-irrigating.",
-          "Eliminate overhead watering if possible.",
-          "Provide good air circulation within the plant canopy by proper plant spacing and the use of fans to provide horizontal air flow.",
-          "Grow resistant cultivars when they are available.",
-          "Fungicides are best used preventatively.",
-          "Fungicides include azoxystrobin, chlorothalonil, mancozeb, myclobutanil, pyraclostrobin, thiophanate-methyl, and copper products."
-        ],
-        "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
-        "quote": "Good sanitation practices and reduction of humidity in the greenhouse and around plants are essential to the management of leaf spot diseases."
-      },
-      "confidence": "medium",
-      "num_sources": 1,
-      "conflicts": [],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Mainly small, round lesions on leaves and petals which coalesce to form large areas of necrotic tissue.",
-              "image_shows": "The lesions exhibit a pale-straw center with a sooty black margin and a chlorotic yellow halo.",
-              "image_quote": "The affected tissue displays a mixture of pale-straw, sooty black, and dark olive-green colors.",
-              "image_id": "bugwood::5505952",
-              "verification_status": "verified",
-              "reasoning": "Extension sources corroborate pale/gray-centered lesions with dark margins and a yellow (chlorotic) halo on lilac foliage.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://yardandgarden.extension.iastate.edu/encyclopedia/lilac-pseudocercospora-leaf-spot",
-                  "quote": "Leaves turn yellow, then develop brown, blocky spots that grow and merge."
-                },
-                {
-                  "url": "https://plantpath.caes.uga.edu/content/dam/caes-subsite/plant-pathology/extension-pdfs/PDL-Fungi-colletotrichum.pdf",
-                  "quote": "Eventually, they become circular with gray centers and brown to black margins with round or angular edges."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Mainly small, round lesions on leaves and petals which coalesce to form large areas of necrotic tissue.",
-              "image_shows": "The lesions appear raised and have a slightly rough texture.",
-              "image_quote": "The surface of the lesions has a raised appearance.",
-              "image_id": "bugwood::5505952",
-              "verification_status": "weakly_supported",
-              "reasoning": "A rough/bumpy surface is partially consistent with raised black acervuli fruiting bodies, though anthracnose lesions are usually described as sunken rather than raised, so support is only indirect.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://microbenotes.com/anthracnose/",
-                  "quote": "Tiny, black fruiting structures, called acervuli, form within the lesion; in wet weather, pink or orange spores ooze from these fruiting bodies."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "Mainly small, round lesions on leaves and petals which coalesce to form large areas of necrotic tissue.",
-              "image_shows": "Small, scattered lesions with no clear indication of being circular, angular, irregular, elongated, or v-shaped.",
-              "image_quote": "The lesions appear small and scattered, with no clear indication of being circular, angular, irregular, elongated, or v-shaped.",
-              "image_id": "bugwood::5505952",
-              "verification_status": "weakly_supported",
-              "reasoning": "Published sources confirm small, scattered lesions consistent with the image, though the candidate leaves the precise shape undetermined so support is only partial.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://gardenerspath.com/plants/ornamentals/lilac-diseases/",
-                  "quote": "small, water-soaked lesions appear on the leaves ... the spots start out as teeny little pin-sized spots, but they'll keep growing until they merge with each other"
-                },
-                {
-                  "url": "https://plantpath.caes.uga.edu/content/dam/caes-subsite/plant-pathology/extension-pdfs/PDL-Fungi-colletotrichum.pdf",
-                  "quote": "Small gray-white, usually circular, spots develop on leaves"
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "Mainly small, round lesions on leaves and petals which coalesce to form large areas of necrotic tissue",
-              "image_shows": "No clear chlorosis is visible.",
-              "image_quote": "The image shows numerous small, round lesions on a leaf surface.",
-              "image_id": "bugwood::5505952",
-              "verification_status": "weakly_supported",
-              "reasoning": "Published sources corroborate the small, round leaf lesions the quote describes, and anthracnose lesions are not characterized by chlorosis, making the absence of chlorosis consistent though indirectly supported.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://gardenerspath.com/plants/ornamentals/lilac-diseases/",
-                  "quote": "Leaf spots start small, enlarge and are restricted by veins, eventually causing blight."
-                },
-                {
-                  "url": "https://plantpath.caes.uga.edu/content/dam/caes-subsite/plant-pathology/extension-pdfs/PDL-Fungi-colletotrichum.pdf",
-                  "quote": "Leaf lesions are dark brown to black... initially appearing as small, sunken water-soaked spots."
-                }
-              ]
-            },
-            {
-              "field": "other",
-              "canonical_says": "On Anemone it causes leaf curl with twisted petioles and pedicels.",
-              "image_shows": "No clear curling, cupping, puckering, blistering, or thickening is observed.",
-              "image_quote": "The texture appears raised with a fuzzy surface.",
-              "image_id": "bugwood::5505952",
-              "verification_status": "field_observation",
-              "reasoning": "Canonical leaf curl is described only for Anemone (a different host), so its absence on lilac is coherent, but no source directly documents this negative observation.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "novel_plausible"
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "No clear indication of veins being cleared, necrotic, or normal.",
-              "image_quote": "No clear indication of veins being cleared, necrotic, or normal.",
-              "image_id": "bugwood::5505952",
-              "verification_status": "field_observation",
-              "reasoning": "This is a non-observation of vein state with no visual detail to corroborate or contradict against published photos.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "No leaf shape or petiole length is evident.",
-              "image_quote": "No leaf shape or petiole length is evident.",
-              "image_id": "bugwood::5505952",
-              "verification_status": "field_observation",
-              "reasoning": "A statement of missing leaf-shape/petiole information carries no verifiable visual content against extension sources.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "look_alikes",
-              "canonical_says": "(not specified)",
-              "image_shows": "No concentric patterns are visible in the image.",
-              "image_quote": "No concentric patterns are visible in the image.",
-              "image_id": "bugwood::5505952",
-              "verification_status": "field_observation",
-              "reasoning": "Absence of concentric rings is coherent with anthracnose (which lacks the target-like zonation of Alternaria look-alikes), but no source explicitly describes this negative for lilac anthracnose.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "novel_plausible"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5505952",
-            "bugwood::5505953",
-            "bugwood::5505954",
-            "bugwood::5505955",
-            "bugwood::5505956",
-            "bugwood::5505957",
-            "bugwood::5505958",
-            "bugwood::5505959",
-            "bugwood::5505960",
-            "bugwood::5505961",
-            "bugwood::5505962",
-            "bugwood::5505963"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "medium"
-            ],
-            "n_raw_per_pass": [
-              11
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 11,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 2,
-              "n_provisional": 8,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 1
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 10,
-              "n_added": 10,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 1,
-            "provisional_count": 4,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+ "diseases": [
+  {
+   "disease_name": "Anthracnose",
+   "pathogen_scientific_name": {
+    "value": "Colletotrichum sp.",
+    "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
+    "quote": "Colletotrichum species (anthracnose )",
+    "taxonomy_validated": false
+   },
+   "type_of_disease": {
+    "value": "Fungal",
+    "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
+    "quote": "Common Fungal Leaf Spot Pathogens"
+   },
+   "affected_parts": {
+    "value": [
+     "Foliar",
+     "Stem",
+     "Vascular"
+    ],
+    "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
+    "quote": "Vascular discoloration is evident in the infected petioles and corm."
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": "Mainly small, round lesions on leaves and petals which coalesce to form large areas of necrotic tissue; leaves and petals may become completely blighted. On Anemone it causes leaf curl with twisted petioles and pedicels, and on Cyclamen small round brown leaf spots with stunting and deformity.",
+     "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
+     "quote": "On other hosts, Colletotrichum occurs mainly as small, round lesions on leaves and petals which coalesce to form large areas of necrotic tissue. Leaves and petals may become completely blighted."
     },
-    {
-      "disease_name": "Cladosporium Fungi",
-      "pathogen_scientific_name": {
-        "value": null,
-        "url": null,
-        "quote": null
-      },
-      "type_of_disease": {
-        "value": null,
-        "url": null,
-        "quote": null
-      },
-      "affected_parts": {
-        "value": null,
-        "url": null,
-        "quote": null
-      },
-      "visual_symptoms": {
-        "summary": {
-          "value": null,
-          "url": null,
-          "quote": null
-        },
-        "diagnostic_features": {
-          "value": null,
-          "url": null,
-          "quote": null
-        },
-        "look_alikes": {
-          "value": null,
-          "url": null,
-          "quote": null
-        }
-      },
-      "confidence": "low",
-      "num_sources": 0,
-      "conflicts": [],
-      "regional_observations": {
-        "Maine": {
-          "state": "Maine",
-          "deltas": [
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion shows a dark brown center with a chocolate-brown margin.",
-              "image_quote": "The central part of the lesion is dark brown, while the margin transitions into a chocolate-brown hue.",
-              "image_id": "bugwood::5529700",
-              "verification_status": "weakly_supported",
-              "reasoning": "Dark-brown necrotic lilac leaf spotting is documented, but the specific chocolate-brown marginal transition is not confirmed for Cladosporium specifically.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/lilac-syringa-spp-leaf-spots",
-                  "quote": "Symptoms include light-brown to dark-brown necrotic leaf spots and blights."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf displays necrotic tissue that covers the entire leaf.",
-              "image_quote": "The affected leaf shows significant necrosis.",
-              "image_id": "bugwood::5529700",
-              "verification_status": "weakly_supported",
-              "reasoning": "Coalescing spots progressing to whole-leaf browning is documented for lilac foliar disease, and Cladosporium readily colonizes such senescing/necrotic tissue.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umn.edu/yard-and-garden-news/lilacs-trouble-fungal-disease-returns-minnesota-gardens",
-                  "quote": "Leaves turn yellow, then develop brown, blocky spots that grow and merge, and affected leaves often twist, curl, and drop early."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "other",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf shows curling up towards the tip.",
-              "image_quote": "The leaf is curled up towards its tip.",
-              "image_id": "bugwood::5529700",
-              "verification_status": "verified",
-              "reasoning": "Leaf twisting/curling of infected lilac foliage is explicitly reported by extension sources, directly corroborating the observed curling.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umn.edu/yard-and-garden-news/lilacs-trouble-fungal-disease-returns-minnesota-gardens",
-                  "quote": "Affected leaves often twist, curl, and drop early."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected tissue displays a mix of dark and light colors, with a prominent dark brown center and a purplish margin.",
-              "image_quote": "The lesion appears to have a dark brown center with a purplish margin and a light green to yellowish halo.",
-              "image_id": "bugwood::5529700",
-              "verification_status": "weakly_supported",
-              "reasoning": "Dark-brown lesion centers and a yellow halo are documented for lilac/leaf-spot fungi, though the purplish margin detail is not specifically confirmed for Cladosporium.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://pnwhandbooks.org/plantdisease/host-disease/lilac-syringa-spp-leaf-spots",
-                  "quote": "Symptoms include light-brown to dark-brown necrotic leaf spots and blights."
-                },
-                {
-                  "url": "https://extension.umn.edu/disease-management/alternaria-leaf-blight",
-                  "quote": "Leaf symptoms include round, brown spots... and spots often have a yellow halo."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "severity",
-              "canonical_says": "(not specified)",
-              "image_shows": "The affected leaf shows extensive necrotic tissue covering more than half of its visible area.",
-              "image_quote": "The leaf has necrotic tissue that extends inward from a vein.",
-              "image_id": "bugwood::5529700",
-              "verification_status": "weakly_supported",
-              "reasoning": "Merging spots that produce large necrotic areas covering much of the leaf are documented for lilac foliar disease, supporting the high-severity observation.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://extension.umn.edu/yard-and-garden-news/lilacs-trouble-fungal-disease-returns-minnesota-gardens",
-                  "quote": "Brown, blocky spots that grow and merge... affected leaves often twist, curl, and drop early."
-                }
-              ],
-              "__support__": 1
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The leaf veins show signs of necrosis, appearing dark and dead.",
-              "image_quote": "The leaf has necrotic tissue that extends inward from a vein.",
-              "image_id": "bugwood::5529700",
-              "verification_status": "weakly_supported",
-              "reasoning": "Published descriptions of Cladosporium and lilac foliar leaf spots note vein-associated lesions and vein-restricted necrosis, giving partial support to necrosis extending inward from a vein.",
-              "swarm_support": 1,
-              "web_support": [
-                {
-                  "url": "https://www.sciencedirect.com/science/article/abs/pii/S0261219423003770",
-                  "quote": "elongated brown, velvety lesions are usually formed along leaf veins"
-                },
-                {
-                  "url": "https://yardandgarden.extension.iastate.edu/how-to/late-season-lilac-foliar-diseases",
-                  "quote": "Leaf spots start small, enlarge and are restricted by veins"
-                }
-              ]
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion appears to have a v-margin shape.",
-              "image_quote": "The lesion has a distinct V-shaped appearance at the leaf margin.",
-              "image_id": "bugwood::5529700",
-              "verification_status": "field_observation",
-              "reasoning": "Published Cladosporium leaf-spot descriptions consistently show small circular/round tan lesions rather than V-shaped marginal lesions, so this shape has no external support though it is not firmly contradicted for lilac specifically.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            },
-            {
-              "field": "lesion_morphology",
-              "canonical_says": "(not specified)",
-              "image_shows": "The lesion appears raised and has a rough, uneven surface.",
-              "image_quote": "The texture of the lesion looks raised with visible cracks and irregularities.",
-              "image_id": "bugwood::5529700",
-              "verification_status": "field_observation",
-              "reasoning": "Extension sources describe Cladosporium lesions as flat spots bearing velvety dark-green sporulation, not raised/cracked tissue, so no source corroborates this texture though none directly refute it on lilac.",
-              "swarm_support": 1,
-              "web_support": [],
-              "_prior_status": "provisional"
-            }
-          ],
-          "__image_ids__": [
-            "bugwood::5529700",
-            "bugwood::5529701",
-            "bugwood::5529702",
-            "bugwood::5529703",
-            "bugwood::5529704",
-            "bugwood::5529705",
-            "bugwood::5529706",
-            "bugwood::5529707",
-            "bugwood::5530296",
-            "bugwood::5530297",
-            "bugwood::5530298",
-            "bugwood::5530299",
-            "bugwood::5530300",
-            "bugwood::5530301",
-            "bugwood::5530302",
-            "bugwood::5530303"
-          ],
-          "__swarm_meta__": {
-            "granularity": "routed",
-            "n_runs": 1,
-            "agreement_min": 1,
-            "temperature": 0.8,
-            "similarity_threshold": 0.4,
-            "kappa_per_pass": [
-              "high"
-            ],
-            "n_raw_per_pass": [
-              9
-            ],
-            "detected_organ_per_pass": [
-              "leaf"
-            ],
-            "n_active_agents_per_pass": [
-              11
-            ],
-            "n_after_agreement": 9,
-            "verifier": {
-              "enabled": true,
-              "n_verified": 5,
-              "n_provisional": 4,
-              "n_contradictory": 0,
-              "n_duplicates_existing": 0
-            },
-            "merge": {
-              "n_existing": 0,
-              "n_new_candidates": 9,
-              "n_added": 9,
-              "n_overlaps_bumped": 0,
-              "n_upgraded": 0
-            }
-          },
-          "__verifier_meta__": {
-            "failed": false,
-            "verified_count": 0,
-            "provisional_count": 2,
-            "contradictory_count": 0,
-            "duplicates_count": 0,
-            "dropped_contradictory": []
-          }
-        }
-      }
+    "diagnostic_features": {
+     "value": "Pink to orange sporulation oozing from lesions, visible under close inspection.",
+     "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
+     "quote": "A diagnostic sign for anthracnose is the presence of pink to orange sporulation oozing from lesions under close inspection."
+    },
+    "look_alikes": {
+     "value": [],
+     "url": "",
+     "quote": ""
     }
-  ],
-  "crop": "Common Lilac",
-  "generated_date": "2026-06-10",
-  "regional_observations_count": 2
+   },
+   "treatments": {
+    "value": [
+     "Good sanitation practices and reduction of humidity in the greenhouse and around plants are essential to the management of leaf spot diseases.",
+     "Minimize leaf wetness by watering early in the day or sub-irrigating.",
+     "Eliminate overhead watering if possible.",
+     "Provide good air circulation within the plant canopy by proper plant spacing and the use of fans to provide horizontal air flow.",
+     "Grow resistant cultivars when they are available.",
+     "Fungicides are best used preventatively.",
+     "Fungicides include azoxystrobin, chlorothalonil, mancozeb, myclobutanil, pyraclostrobin, thiophanate-methyl, and copper products."
+    ],
+    "url": "https://ag.umass.edu/greenhouse-floriculture/fact-sheets/leaf-spot-diseases-of-floricultural-crops",
+    "quote": "Good sanitation practices and reduction of humidity in the greenhouse and around plants are essential to the management of leaf spot diseases."
+   },
+   "confidence": "medium",
+   "num_sources": 1,
+   "conflicts": [],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Mainly small, round lesions on leaves and petals which coalesce to form large areas of necrotic tissue.",
+       "image_shows": "The lesions exhibit a pale-straw center with a sooty black margin and a chlorotic yellow halo.",
+       "image_quote": "The affected tissue displays a mixture of pale-straw, sooty black, and dark olive-green colors.",
+       "image_id": "bugwood::5505952",
+       "verification_status": "verified",
+       "reasoning": "Extension sources corroborate pale/gray-centered lesions with dark margins and a yellow (chlorotic) halo on lilac foliage.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://plantpath.caes.uga.edu/content/dam/caes-subsite/plant-pathology/extension-pdfs/PDL-Fungi-colletotrichum.pdf",
+         "quote": "Eventually, they become circular with gray centers and brown to black margins with round or angular edges."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Mainly small, round lesions on leaves and petals which coalesce to form large areas of necrotic tissue.",
+       "image_shows": "The lesions appear raised and have a slightly rough texture.",
+       "image_quote": "The surface of the lesions has a raised appearance.",
+       "image_id": "bugwood::5505952",
+       "verification_status": "weakly_supported",
+       "reasoning": "A rough/bumpy surface is partially consistent with raised black acervuli fruiting bodies, though anthracnose lesions are usually described as sunken rather than raised, so support is only indirect.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://microbenotes.com/anthracnose/",
+         "quote": "This structure produces sticky conidia, is pinkish in appearance, and causes further infection.",
+         "_repaired_from": {
+          "prev_url": "https://microbenotes.com/anthracnose/",
+          "prev_quote": "Tiny, black fruiting structures, called acervuli, form within the lesion; in wet weather, pink or orange spores ooze from these fruiting bodies."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "Mainly small, round lesions on leaves and petals which coalesce to form large areas of necrotic tissue.",
+       "image_shows": "Small, scattered lesions with no clear indication of being circular, angular, irregular, elongated, or v-shaped.",
+       "image_quote": "The lesions appear small and scattered, with no clear indication of being circular, angular, irregular, elongated, or v-shaped.",
+       "image_id": "bugwood::5505952",
+       "verification_status": "weakly_supported",
+       "reasoning": "Published sources confirm small, scattered lesions consistent with the image, though the candidate leaves the precise shape undetermined so support is only partial.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://gardenerspath.com/plants/ornamentals/lilac-diseases/",
+         "quote": "small, water-soaked lesions appear on the leaves ... the spots start out as teeny little pin-sized spots, but they'll keep growing until they merge with each other"
+        },
+        {
+         "url": "https://plantpath.caes.uga.edu/content/dam/caes-subsite/plant-pathology/extension-pdfs/PDL-Fungi-colletotrichum.pdf",
+         "quote": "Small gray-white, usually circular, spots develop on leaves"
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "Mainly small, round lesions on leaves and petals which coalesce to form large areas of necrotic tissue",
+       "image_shows": "No clear chlorosis is visible.",
+       "image_quote": "The image shows numerous small, round lesions on a leaf surface.",
+       "image_id": "bugwood::5505952",
+       "verification_status": "weakly_supported",
+       "reasoning": "Published sources corroborate the small, round leaf lesions the quote describes, and anthracnose lesions are not characterized by chlorosis, making the absence of chlorosis consistent though indirectly supported.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://plantpath.caes.uga.edu/content/dam/caes-subsite/plant-pathology/extension-pdfs/PDL-Fungi-colletotrichum.pdf",
+         "quote": "Leaf lesions are dark brown to black... initially appearing as small, sunken water-soaked spots."
+        }
+       ]
+      },
+      {
+       "field": "other",
+       "canonical_says": "On Anemone it causes leaf curl with twisted petioles and pedicels.",
+       "image_shows": "No clear curling, cupping, puckering, blistering, or thickening is observed.",
+       "image_quote": "The texture appears raised with a fuzzy surface.",
+       "image_id": "bugwood::5505952",
+       "verification_status": "field_observation",
+       "reasoning": "Canonical leaf curl is described only for Anemone (a different host), so its absence on lilac is coherent, but no source directly documents this negative observation.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "No clear indication of veins being cleared, necrotic, or normal.",
+       "image_quote": "No clear indication of veins being cleared, necrotic, or normal.",
+       "image_id": "bugwood::5505952",
+       "verification_status": "field_observation",
+       "reasoning": "This is a non-observation of vein state with no visual detail to corroborate or contradict against published photos.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "No leaf shape or petiole length is evident.",
+       "image_quote": "No leaf shape or petiole length is evident.",
+       "image_id": "bugwood::5505952",
+       "verification_status": "field_observation",
+       "reasoning": "A statement of missing leaf-shape/petiole information carries no verifiable visual content against extension sources.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "look_alikes",
+       "canonical_says": "(not specified)",
+       "image_shows": "No concentric patterns are visible in the image.",
+       "image_quote": "No concentric patterns are visible in the image.",
+       "image_id": "bugwood::5505952",
+       "verification_status": "field_observation",
+       "reasoning": "Absence of concentric rings is coherent with anthracnose (which lacks the target-like zonation of Alternaria look-alikes), but no source explicitly describes this negative for lilac anthracnose.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "novel_plausible"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5505952",
+      "bugwood::5505953",
+      "bugwood::5505954",
+      "bugwood::5505955",
+      "bugwood::5505956",
+      "bugwood::5505957",
+      "bugwood::5505958",
+      "bugwood::5505959",
+      "bugwood::5505960",
+      "bugwood::5505961",
+      "bugwood::5505962",
+      "bugwood::5505963"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "medium"
+      ],
+      "n_raw_per_pass": [
+       11
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 11,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 2,
+       "n_provisional": 8,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 1
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 10,
+       "n_added": 10,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 1,
+      "provisional_count": 4,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  },
+  {
+   "disease_name": "Cladosporium Fungi",
+   "pathogen_scientific_name": {
+    "value": null,
+    "url": null,
+    "quote": null
+   },
+   "type_of_disease": {
+    "value": null,
+    "url": null,
+    "quote": null
+   },
+   "affected_parts": {
+    "value": null,
+    "url": null,
+    "quote": null
+   },
+   "visual_symptoms": {
+    "summary": {
+     "value": null,
+     "url": null,
+     "quote": null
+    },
+    "diagnostic_features": {
+     "value": null,
+     "url": null,
+     "quote": null
+    },
+    "look_alikes": {
+     "value": null,
+     "url": null,
+     "quote": null
+    }
+   },
+   "confidence": "low",
+   "num_sources": 0,
+   "conflicts": [],
+   "regional_observations": {
+    "Maine": {
+     "state": "Maine",
+     "deltas": [
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The lesion shows a dark brown center with a chocolate-brown margin.",
+       "image_quote": "The central part of the lesion is dark brown, while the margin transitions into a chocolate-brown hue.",
+       "image_id": "bugwood::5529700",
+       "verification_status": "weakly_supported",
+       "reasoning": "Dark-brown necrotic lilac leaf spotting is documented, but the specific chocolate-brown marginal transition is not confirmed for Cladosporium specifically.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/lilac-syringa-spp-leaf-spots",
+         "quote": "Symptoms include light-brown to dark-brown necrotic leaf spots and blights."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf displays necrotic tissue that covers the entire leaf.",
+       "image_quote": "The affected leaf shows significant necrosis.",
+       "image_id": "bugwood::5529700",
+       "verification_status": "weakly_supported",
+       "reasoning": "Coalescing spots progressing to whole-leaf browning is documented for lilac foliar disease, and Cladosporium readily colonizes such senescing/necrotic tissue.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umn.edu/yard-and-garden-news/lilacs-trouble-fungal-disease-returns-minnesota-gardens",
+         "quote": "Leaves turn yellow, then develop brown, blocky spots that grow and merge.",
+         "_repaired_from": {
+          "prev_url": "https://extension.umn.edu/yard-and-garden-news/lilacs-trouble-fungal-disease-returns-minnesota-gardens",
+          "prev_quote": "Leaves turn yellow, then develop brown, blocky spots that grow and merge, and affected leaves often twist, curl, and drop early."
+         }
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "other",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf shows curling up towards the tip.",
+       "image_quote": "The leaf is curled up towards its tip.",
+       "image_id": "bugwood::5529700",
+       "verification_status": "verified",
+       "reasoning": "Leaf twisting/curling of infected lilac foliage is explicitly reported by extension sources, directly corroborating the observed curling.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umn.edu/yard-and-garden-news/lilacs-trouble-fungal-disease-returns-minnesota-gardens",
+         "quote": "Affected leaves often twist, curl, and drop early."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The affected tissue displays a mix of dark and light colors, with a prominent dark brown center and a purplish margin.",
+       "image_quote": "The lesion appears to have a dark brown center with a purplish margin and a light green to yellowish halo.",
+       "image_id": "bugwood::5529700",
+       "verification_status": "weakly_supported",
+       "reasoning": "Dark-brown lesion centers and a yellow halo are documented for lilac/leaf-spot fungi, though the purplish margin detail is not specifically confirmed for Cladosporium.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://pnwhandbooks.org/plantdisease/host-disease/lilac-syringa-spp-leaf-spots",
+         "quote": "Symptoms include light-brown to dark-brown necrotic leaf spots and blights."
+        },
+        {
+         "url": "https://extension.umn.edu/disease-management/alternaria-leaf-blight",
+         "quote": "Leaf symptoms include round, brown spots... and spots often have a yellow halo."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "severity",
+       "canonical_says": "(not specified)",
+       "image_shows": "The affected leaf shows extensive necrotic tissue covering more than half of its visible area.",
+       "image_quote": "The leaf has necrotic tissue that extends inward from a vein.",
+       "image_id": "bugwood::5529700",
+       "verification_status": "weakly_supported",
+       "reasoning": "Merging spots that produce large necrotic areas covering much of the leaf are documented for lilac foliar disease, supporting the high-severity observation.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://extension.umn.edu/yard-and-garden-news/lilacs-trouble-fungal-disease-returns-minnesota-gardens",
+         "quote": "Brown, blocky spots that grow and merge... affected leaves often twist, curl, and drop early."
+        }
+       ],
+       "__support__": 1
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The leaf veins show signs of necrosis, appearing dark and dead.",
+       "image_quote": "The leaf has necrotic tissue that extends inward from a vein.",
+       "image_id": "bugwood::5529700",
+       "verification_status": "weakly_supported",
+       "reasoning": "Published descriptions of Cladosporium and lilac foliar leaf spots note vein-associated lesions and vein-restricted necrosis, giving partial support to necrosis extending inward from a vein.",
+       "swarm_support": 1,
+       "web_support": [
+        {
+         "url": "https://www.sciencedirect.com/science/article/abs/pii/S0261219423003770",
+         "quote": "elongated brown, velvety lesions are usually formed along leaf veins"
+        }
+       ]
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The lesion appears to have a v-margin shape.",
+       "image_quote": "The lesion has a distinct V-shaped appearance at the leaf margin.",
+       "image_id": "bugwood::5529700",
+       "verification_status": "field_observation",
+       "reasoning": "Published Cladosporium leaf-spot descriptions consistently show small circular/round tan lesions rather than V-shaped marginal lesions, so this shape has no external support though it is not firmly contradicted for lilac specifically.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      },
+      {
+       "field": "lesion_morphology",
+       "canonical_says": "(not specified)",
+       "image_shows": "The lesion appears raised and has a rough, uneven surface.",
+       "image_quote": "The texture of the lesion looks raised with visible cracks and irregularities.",
+       "image_id": "bugwood::5529700",
+       "verification_status": "field_observation",
+       "reasoning": "Extension sources describe Cladosporium lesions as flat spots bearing velvety dark-green sporulation, not raised/cracked tissue, so no source corroborates this texture though none directly refute it on lilac.",
+       "swarm_support": 1,
+       "web_support": [],
+       "_prior_status": "provisional"
+      }
+     ],
+     "__image_ids__": [
+      "bugwood::5529700",
+      "bugwood::5529701",
+      "bugwood::5529702",
+      "bugwood::5529703",
+      "bugwood::5529704",
+      "bugwood::5529705",
+      "bugwood::5529706",
+      "bugwood::5529707",
+      "bugwood::5530296",
+      "bugwood::5530297",
+      "bugwood::5530298",
+      "bugwood::5530299",
+      "bugwood::5530300",
+      "bugwood::5530301",
+      "bugwood::5530302",
+      "bugwood::5530303"
+     ],
+     "__swarm_meta__": {
+      "granularity": "routed",
+      "n_runs": 1,
+      "agreement_min": 1,
+      "temperature": 0.8,
+      "similarity_threshold": 0.4,
+      "kappa_per_pass": [
+       "high"
+      ],
+      "n_raw_per_pass": [
+       9
+      ],
+      "detected_organ_per_pass": [
+       "leaf"
+      ],
+      "n_active_agents_per_pass": [
+       11
+      ],
+      "n_after_agreement": 9,
+      "verifier": {
+       "enabled": true,
+       "n_verified": 5,
+       "n_provisional": 4,
+       "n_contradictory": 0,
+       "n_duplicates_existing": 0
+      },
+      "merge": {
+       "n_existing": 0,
+       "n_new_candidates": 9,
+       "n_added": 9,
+       "n_overlaps_bumped": 0,
+       "n_upgraded": 0
+      }
+     },
+     "__verifier_meta__": {
+      "failed": false,
+      "verified_count": 0,
+      "provisional_count": 2,
+      "contradictory_count": 0,
+      "duplicates_count": 0,
+      "dropped_contradictory": []
+     }
+    }
+   }
+  }
+ ],
+ "crop": "Common Lilac",
+ "generated_date": "2026-06-10",
+ "regional_observations_count": 2
 }
