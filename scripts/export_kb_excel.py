@@ -94,6 +94,7 @@ QUOTE_FILL = {"quote_found": fill("C6EFCE"), "quote_partial": fill("FFF2CC"),
               "url_dead": fill("FFC7CE"), "url_unfetched_text": fill("E7E6E6")}
 
 WHITE_BOLD = Font(color="FFFFFF", bold=True)
+HYPERLINK_FONT = Font(color="0563C1", underline="single")   # clickable-link look
 THIN = Side(style="thin", color="D9D9D9")
 BORDER = Border(left=THIN, right=THIN, top=THIN, bottom=THIN)
 WRAP = Alignment(wrap_text=True, vertical="top")
@@ -240,6 +241,17 @@ CANON_FIELDS = [
 def qstatus(path):
     return _qc_path.get(path, "")
 
+URL_COL = 4   # column D "Source URL"
+def set_link(row_idx, url):
+    """Make the Source URL cell a real clickable hyperlink to the page."""
+    if not url:
+        return
+    c = ws.cell(row=row_idx, column=URL_COL)
+    c.hyperlink = url
+    c.value = url
+    c.font = HYPERLINK_FONT
+    c.alignment = WRAP_L
+
 for crop, d in tree:
     dzs = d.get("diseases", [])
     ndelt = sum(len(st.get("deltas", []))
@@ -263,6 +275,7 @@ for crop, d in tree:
             qs = qstatus(f"{base}/{key}")
             row = setrow([f"• {label}", val, "", url, quote, ls, qs, ""],
                          fillc=C_FIELD, indent=2, level=2)
+            set_link(row, url)
             if ls: ws.cell(row=row, column=6).fill = LINK_FILL.get(ls, C_FIELD)
             if qs: ws.cell(row=row, column=7).fill = QUOTE_FILL.get(qs, C_FIELD)
         # visual symptoms (summary + diagnostic_features live nested)
@@ -274,6 +287,7 @@ for crop, d in tree:
                 ls = link_status(url); qs = qstatus(f"{base}/visual_symptoms/{sub}")
                 row = setrow([f"• {slabel}", join_list(node.get("value")), "", url, quote, ls, qs, ""],
                              fillc=C_FIELD, indent=2, level=2)
+                set_link(row, url)
                 if ls: ws.cell(row=row, column=6).fill = LINK_FILL.get(ls, C_FIELD)
                 if qs: ws.cell(row=row, column=7).fill = QUOTE_FILL.get(qs, C_FIELD)
         # regional deltas
@@ -281,21 +295,18 @@ for crop, d in tree:
             stname = st.get("state", state)
             for li, dl in enumerate(st.get("deltas", [])):
                 status = dl.get("verification_status", "")
-                ws_entries = dl.get("web_support") or []
-                urls = " | ".join(w.get("url", "") for w in ws_entries if w.get("url"))
-                quotes = " || ".join(w.get("quote", "") for w in ws_entries if w.get("quote"))
-                url_list = [w.get("url") for w in ws_entries if w.get("url")]
-                ls = ""
-                if url_list:
-                    rank = {"dead": 3, "unknown": 2, "blocked": 1, "alive": 0, "unchecked": 0, "": 0}
-                    ls = max((link_status(u) for u in url_list), key=lambda x: rank.get(x, 0))
+                ws_entries = [w for w in (dl.get("web_support") or []) if w.get("url")]
+                nsrc = len(ws_entries)
                 notes = []
                 if dl.get("_prior_status"): notes.append(f"was: {dl['_prior_status']}")
                 if dl.get("image_id"): notes.append(dl["image_id"])
                 if dl.get("reasoning"): notes.append(dl["reasoning"])
                 fld = dl.get("field", "")
+                src_summary = (f"{nsrc} source(s) ↓" if nsrc
+                               else "— no web source (field observation)")
                 row = setrow([f"Δ  {stname} · {fld}",
-                              dl.get("image_shows", ""), status, urls, quotes, ls, "",
+                              dl.get("image_shows", ""), status, src_summary,
+                              dl.get("image_quote", ""), "", "",
                               "  |  ".join(notes)],
                              fillc=STATUS_FILL.get(status, None), indent=3, level=2)
                 # colour the status cell strongly + status font
@@ -303,7 +314,16 @@ for crop, d in tree:
                 sc.fill = STATUS_FILL.get(status, C_FIELD)
                 sc.font = Font(color=STATUS_FONT.get(status, "000000"), bold=True)
                 sc.alignment = Alignment(horizontal="center", vertical="top", wrap_text=True)
-                if ls: ws.cell(row=row, column=6).fill = LINK_FILL.get(ls, C_FIELD)
+                # one clickable sub-row per web source (so EVERY link is tappable)
+                base = f"{crop}/diseases[{di}]/regional_observations/{state}/deltas[{li}]"
+                for wi, w in enumerate(ws_entries):
+                    u = w.get("url", ""); q = w.get("quote", "")
+                    lsw = link_status(u); qs = qstatus(f"{base}/web_support[{wi}]")
+                    srow = setrow([f"      ↳ source {wi+1}", "", "", u, q, lsw, qs, ""],
+                                  fillc=C_FIELD, indent=4, level=3)
+                    set_link(srow, u)
+                    if lsw: ws.cell(row=srow, column=6).fill = LINK_FILL.get(lsw, C_FIELD)
+                    if qs: ws.cell(row=srow, column=7).fill = QUOTE_FILL.get(qs, C_FIELD)
 
 # ------------------------------------------------------------------ expert verification
 _close_run()   # close the final factual-row block
