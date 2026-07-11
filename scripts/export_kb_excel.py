@@ -1,39 +1,47 @@
 #!/usr/bin/env python3
-"""Export the PRESAGE final registry to a single complete Excel workbook.
+"""Export the PRESAGE final registry to ONE fully-visualized, color-coded Excel sheet.
 
-Sheets:
-  1. Summary        — crop/disease/delta counts + verification-status breakdown
-  2. Canonical_KB   — initial/canonical KB, one row per (crop, disease), with source URLs
-  3. Regional_Deltas— per-delta regional observations w/ verification_status + web-cited support
+Single sheet "PRESAGE_KB":
+  - Title + summary stats + colour legend at the top.
+  - Hierarchical, indented body: CROP banner -> DISEASE banner -> canonical fields
+    -> regional deltas. Rows are grouped (outline) so crops/diseases collapse.
+  - Colour-coded by delta verification_status and by link/quote liveness.
+  - Frozen header, wrapped text, tuned column widths.
 """
 import json, glob, os, collections
-import pandas as pd
+from openpyxl import Workbook
+from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
+from openpyxl.utils import get_column_letter
 
 KB = "artifacts/pathome_kb"
 OUT = "artifacts/PRESAGE_final_registry.xlsx"
-LINKCHECK = "artifacts/link_check.json"   # produced by scripts/verify_kb_links.py
+LINKCHECK = "artifacts/link_check.json"
+QUOTECHECK = "artifacts/quote_check.json"
 
-# load link verification (url -> status) if available; else everything = "unchecked"
+# ------------------------------------------------------------------ lookups
 _lc = json.load(open(LINKCHECK)) if os.path.exists(LINKCHECK) else {}
 def link_status(url):
     if not url:
         return ""
     return (_lc.get(url) or {}).get("status", "unchecked")
-def worst_status(urls):
-    """Worst link status across a set of URLs (dead > unknown > blocked > alive)."""
-    rank = {"dead": 3, "unknown": 2, "blocked": 1, "alive": 0, "unchecked": 0, "": 0}
-    if not urls:
-        return ""
-    st = max((link_status(u) for u in urls), key=lambda s: rank.get(s, 0))
-    return st
 
+# path -> quote_status (did the stored quote actually appear on the cited page?)
+_qc_path = {}
+if os.path.exists(QUOTECHECK):
+    for url, rec in json.load(open(QUOTECHECK)).items():
+        for q in rec.get("quotes", []):
+            if q.get("path"):
+                _qc_path[q["path"]] = q.get("quote_status", "")
+
+def join_list(v):
+    if isinstance(v, list):
+        return "; ".join(str(i) for i in v)
+    return "" if v is None else str(v)
 
 def s(x):
-    """Render a value/list/dict field into a readable string."""
     if x is None:
         return ""
     if isinstance(x, dict):
-        # canonical fields look like {"value":..., "url":..., "quote":...} or {"summary": {...}}
         if "value" in x:
             return join_list(x["value"])
         if "summary" in x and isinstance(x["summary"], dict):
@@ -41,132 +49,232 @@ def s(x):
         return json.dumps(x, ensure_ascii=False)
     return join_list(x)
 
+# ------------------------------------------------------------------ styling
+def fill(hex_):
+    return PatternFill("solid", fgColor=hex_)
 
-def join_list(v):
-    if isinstance(v, list):
-        return "; ".join(str(i) for i in v)
-    return "" if v is None else str(v)
+C_TITLE      = fill("1F3864")   # deep navy
+C_CROP       = fill("2E5496")   # blue banner
+C_DISEASE    = fill("8EAADB")   # light-blue banner
+C_HEADER     = fill("44546A")   # table header
+C_FIELD      = fill("F2F2F2")   # canonical field rows (light grey)
+C_LEGEND     = fill("FFFFFF")
+# verification_status colours
+STATUS_FILL = {
+    "verified":          fill("C6EFCE"),   # green
+    "weakly_supported":  fill("E2EFDA"),   # pale green
+    "field_observation": fill("DDEBF7"),   # pale blue
+    "novel_plausible":   fill("FFF2CC"),   # pale yellow
+    "provisional":       fill("FCE4D6"),   # pale orange
+    "unverified":        fill("F8CBAD"),   # orange
+    "contradictory":     fill("FFC7CE"),   # red
+}
+STATUS_FONT = {
+    "verified":          "006100",
+    "weakly_supported":  "375623",
+    "field_observation": "1F4E79",
+    "novel_plausible":   "7F6000",
+    "provisional":       "833C00",
+    "unverified":        "833C00",
+    "contradictory":     "9C0006",
+}
+# link liveness dot colours
+LINK_FILL = {"alive": fill("C6EFCE"), "blocked": fill("FFF2CC"),
+             "dead": fill("FFC7CE"), "unknown": fill("E7E6E6"), "unchecked": fill("FFFFFF")}
+# quote-found colours
+QUOTE_FILL = {"quote_found": fill("C6EFCE"), "quote_partial": fill("FFF2CC"),
+              "quote_not_found": fill("FFC7CE"), "url_blocked": fill("E7E6E6"),
+              "url_dead": fill("FFC7CE"), "url_unfetched_text": fill("E7E6E6")}
 
+WHITE_BOLD = Font(color="FFFFFF", bold=True)
+THIN = Side(style="thin", color="D9D9D9")
+BORDER = Border(left=THIN, right=THIN, top=THIN, bottom=THIN)
+WRAP = Alignment(wrap_text=True, vertical="top")
+WRAP_L = Alignment(wrap_text=True, vertical="top", horizontal="left")
 
-def url_of(x):
-    if isinstance(x, dict):
-        return x.get("url", "")
-    return ""
+# ------------------------------------------------------------------ columns
+# A label(indented) | B value/observation | C status | D source url | E quote
+# F link | G quote-check | H notes
+COLS = ["Item", "Value / Observation", "Status", "Source URL",
+        "Quote (as stored)", "Link", "Quote?", "Notes"]
+WIDTHS = [46, 58, 18, 50, 58, 10, 14, 44]
+NCOL = len(COLS)
 
+wb = Workbook()
+ws = wb.active
+ws.title = "PRESAGE_KB"
+ws.sheet_properties.outlinePr.summaryBelow = False   # parent above its detail
+r = 1
 
-def web_urls(ws):
-    if not ws:
-        return "", ""
-    urls = " | ".join(w.get("url", "") for w in ws if w.get("url"))
-    quotes = " || ".join(w.get("quote", "") for w in ws if w.get("quote"))
-    return urls, quotes
+def setrow(cells, fillc=None, font=None, align=WRAP, height=None,
+           indent=0, level=0, border=True):
+    """Write one row of up to NCOL cells; return the row index used."""
+    global r
+    for i in range(NCOL):
+        c = ws.cell(row=r, column=i + 1)
+        c.value = cells[i] if i < len(cells) else None
+        if fillc: c.fill = fillc
+        if font: c.font = font
+        a = align
+        if indent and i == 0:
+            a = Alignment(wrap_text=True, vertical="top", horizontal="left", indent=indent)
+        c.alignment = a
+        if border: c.border = BORDER
+    if height: ws.row_dimensions[r].height = height
+    if level: ws.row_dimensions[r].outline_level = level
+    used = r
+    r += 1
+    return used
 
+def banner(text, fillc, level=0, height=20):
+    global r
+    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=NCOL)
+    c = ws.cell(row=r, column=1, value=text)
+    c.fill = fillc; c.font = WHITE_BOLD
+    c.alignment = Alignment(vertical="center", horizontal="left", indent=1)
+    ws.row_dimensions[r].height = height
+    if level: ws.row_dimensions[r].outline_level = level
+    r += 1
 
-canon_rows, delta_rows = [], []
-status_counts = {}
-crops = 0
-
-for f in sorted(glob.glob(f"{KB}/*/final_registry.json")):
+# ------------------------------------------------------------------ load data
+files = sorted(glob.glob(f"{KB}/*/final_registry.json"))
+status_counts = collections.Counter()
+n_crops = n_dz = n_delta = n_web = 0
+tree = []   # (crop, registry)
+for f in files:
     d = json.load(open(f))
     crop = d.get("crop", os.path.basename(os.path.dirname(f)))
-    crops += 1
+    tree.append((crop, d))
+    n_crops += 1
     for dz in d.get("diseases", []):
-        canon_rows.append({
-            "crop": crop,
-            "disease": dz.get("disease_name", ""),
-            "pathogen": s(dz.get("pathogen_scientific_name")),
-            "type": s(dz.get("type_of_disease")),
-            "affected_parts": s(dz.get("affected_parts")),
-            "visual_symptoms": s(dz.get("visual_symptoms")),
-            "treatments": s(dz.get("treatments")),
-            "confidence": dz.get("confidence", ""),
-            "num_sources": dz.get("num_sources", ""),
-            "pathogen_source_url": url_of(dz.get("pathogen_scientific_name")),
-            "pathogen_link_status": link_status(url_of(dz.get("pathogen_scientific_name"))),
-            "type_source_url": url_of(dz.get("type_of_disease")),
-            "type_link_status": link_status(url_of(dz.get("type_of_disease"))),
-            "n_conflicts": len(dz.get("conflicts") or []),
-            "n_regional_deltas": sum(len(st.get("deltas", []))
-                                     for st in (dz.get("regional_observations") or {}).values()),
-        })
+        n_dz += 1
         for state, st in (dz.get("regional_observations") or {}).items():
             for dl in st.get("deltas", []):
-                stt = dl.get("verification_status", "")
-                status_counts[stt] = status_counts.get(stt, 0) + 1
-                urls, quotes = web_urls(dl.get("web_support"))
-                _url_list = [w.get("url") for w in (dl.get("web_support") or []) if w.get("url")]
-                _dead = [u for u in _url_list if link_status(u) == "dead"]
-                delta_rows.append({
-                    "crop": crop,
-                    "disease": dz.get("disease_name", ""),
-                    "state": st.get("state", state),
-                    "field": dl.get("field", ""),
-                    "verification_status": stt,
-                    "web_cited": "yes" if dl.get("web_support") else "no",
-                    "canonical_says": dl.get("canonical_says", ""),
-                    "image_shows": dl.get("image_shows", ""),
-                    "image_quote": dl.get("image_quote", ""),
-                    "image_id": dl.get("image_id", ""),
-                    "reasoning": dl.get("reasoning", ""),
-                    "web_link_status": worst_status(_url_list),
-                    "dead_urls": " | ".join(_dead),
-                    "web_support_urls": urls,
-                    "web_support_quotes": quotes,
-                    "swarm_support": json.dumps(dl.get("swarm_support"), ensure_ascii=False)
-                                     if dl.get("swarm_support") else "",
-                    "prior_status": dl.get("_prior_status", ""),
-                })
+                n_delta += 1
+                status_counts[dl.get("verification_status", "")] += 1
+                if dl.get("web_support"):
+                    n_web += 1
 
-canon = pd.DataFrame(canon_rows)
-deltas = pd.DataFrame(delta_rows)
+# ------------------------------------------------------------------ header block
+banner("PRESAGE PathomeDB — Knowledge Base (canonical + regional deltas)", C_TITLE, height=26)
+stat = (f"Crops: {n_crops}    Diseases: {n_dz}    Regional deltas: {n_delta}"
+        f"    Web-cited deltas: {n_web} ({n_web*100//max(n_delta,1)}%)")
+banner(stat, C_CROP, height=18)
+# legend row
+r += 0
+ws.cell(row=r, column=1, value="Legend (delta status):").font = Font(bold=True)
+legend = list(STATUS_FILL.items())
+for i, (name, fl) in enumerate(legend):
+    c = ws.cell(row=r, column=2 + i, value=name)
+    c.fill = fl
+    c.font = Font(color=STATUS_FONT.get(name, "000000"), bold=True, size=9)
+    c.alignment = Alignment(horizontal="center")
+ws.row_dimensions[r].height = 16
+r += 1
+ws.cell(row=r, column=1, value="Legend (link / quote):").font = Font(bold=True)
+for i, (name, fl) in enumerate([("alive", LINK_FILL["alive"]), ("blocked", LINK_FILL["blocked"]),
+                                ("dead", LINK_FILL["dead"]), ("quote_found", QUOTE_FILL["quote_found"]),
+                                ("quote_not_found", QUOTE_FILL["quote_not_found"])]):
+    c = ws.cell(row=r, column=2 + i, value=name)
+    c.fill = fl; c.font = Font(bold=True, size=9); c.alignment = Alignment(horizontal="center")
+ws.row_dimensions[r].height = 16
+r += 1
+r += 1  # spacer
 
-web_cited = int((deltas["web_cited"] == "yes").sum()) if len(deltas) else 0
-summary_rows = [
-    ("Crops", crops),
-    ("Diseases (canonical KB entries)", len(canon)),
-    ("Regional deltas (total)", len(deltas)),
-    ("Regional deltas — web-cited", web_cited),
-    ("Regional deltas — not web-cited", len(deltas) - web_cited),
-    ("", ""),
-    ("--- Delta verification_status breakdown ---", ""),
+# ------------------------------------------------------------------ table header
+hdr_row = r
+for i, name in enumerate(COLS):
+    c = ws.cell(row=r, column=i + 1, value=name)
+    c.fill = C_HEADER; c.font = WHITE_BOLD
+    c.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+    c.border = BORDER
+ws.row_dimensions[r].height = 22
+r += 1
+ws.freeze_panes = ws.cell(row=r, column=1)   # freeze everything above the first data row
+
+# ------------------------------------------------------------------ body
+CANON_FIELDS = [
+    ("Pathogen", "pathogen_scientific_name"),
+    ("Disease type", "type_of_disease"),
+    ("Affected parts", "affected_parts"),
+    ("Treatments", "treatments"),
 ]
-for k in sorted(status_counts, key=lambda x: -status_counts[x]):
-    summary_rows.append((k, status_counts[k]))
 
-# link verification rollup (covers BOTH canonical KB + delta KB urls)
-if _lc:
-    lc_status = collections.Counter(v.get("status", "unchecked") for v in _lc.values())
-    summary_rows += [
-        ("", ""),
-        ("--- Link verification (unique URLs, both KBs) ---", ""),
-        ("URLs alive (2xx/3xx)", lc_status.get("alive", 0)),
-        ("URLs blocked (403/429, bot-blocked but live)", lc_status.get("blocked", 0)),
-        ("URLs DEAD (404/410/DNS)", lc_status.get("dead", 0)),
-        ("URLs unknown (timeout/SSL)", lc_status.get("unknown", 0)),
-        ("URLs total unique", sum(lc_status.values())),
-    ]
-summary = pd.DataFrame(summary_rows, columns=["metric", "count"])
+def qstatus(path):
+    return _qc_path.get(path, "")
 
-# dead-links sheet
-dead_rows = [{"url": u, "code": v.get("code"), "occurrences": v.get("count"),
-              "kinds": ";".join(v.get("kinds", []))}
-             for u, v in sorted(_lc.items()) if v.get("status") == "dead"]
-dead_df = pd.DataFrame(dead_rows) if dead_rows else pd.DataFrame(
-    columns=["url", "code", "occurrences", "kinds"])
+for crop, d in tree:
+    dzs = d.get("diseases", [])
+    ndelt = sum(len(st.get("deltas", []))
+                for dz in dzs for st in (dz.get("regional_observations") or {}).values())
+    banner(f"🌱  {crop}    —    {len(dzs)} disease(s), {ndelt} regional delta(s)", C_CROP, level=0, height=22)
+    for di, dz in enumerate(dzs):
+        name = dz.get("disease_name", "")
+        pth = s(dz.get("pathogen_scientific_name"))
+        typ = s(dz.get("type_of_disease"))
+        banner(f"      🦠  {name}    ·    {pth}    ·    {typ}", C_DISEASE, level=1, height=18)
+        base = f"{crop}/diseases[{di}]"
+        # canonical fields
+        for label, key in CANON_FIELDS:
+            node = dz.get(key)
+            if node is None:
+                continue
+            val = s(node)
+            url = node.get("url", "") if isinstance(node, dict) else ""
+            quote = node.get("quote", "") if isinstance(node, dict) else ""
+            ls = link_status(url)
+            qs = qstatus(f"{base}/{key}")
+            row = setrow([f"• {label}", val, "", url, quote, ls, qs, ""],
+                         fillc=C_FIELD, indent=2, level=2)
+            if ls: ws.cell(row=row, column=6).fill = LINK_FILL.get(ls, C_FIELD)
+            if qs: ws.cell(row=row, column=7).fill = QUOTE_FILL.get(qs, C_FIELD)
+        # visual symptoms (summary + diagnostic_features live nested)
+        vs = dz.get("visual_symptoms") or {}
+        for sub, slabel in [("summary", "Visual symptoms"), ("diagnostic_features", "Diagnostic features")]:
+            node = vs.get(sub)
+            if isinstance(node, dict) and (node.get("value") or node.get("quote")):
+                url = node.get("url", ""); quote = node.get("quote", "")
+                ls = link_status(url); qs = qstatus(f"{base}/visual_symptoms/{sub}")
+                row = setrow([f"• {slabel}", join_list(node.get("value")), "", url, quote, ls, qs, ""],
+                             fillc=C_FIELD, indent=2, level=2)
+                if ls: ws.cell(row=row, column=6).fill = LINK_FILL.get(ls, C_FIELD)
+                if qs: ws.cell(row=row, column=7).fill = QUOTE_FILL.get(qs, C_FIELD)
+        # regional deltas
+        for state, st in (dz.get("regional_observations") or {}).items():
+            stname = st.get("state", state)
+            for li, dl in enumerate(st.get("deltas", [])):
+                status = dl.get("verification_status", "")
+                ws_entries = dl.get("web_support") or []
+                urls = " | ".join(w.get("url", "") for w in ws_entries if w.get("url"))
+                quotes = " || ".join(w.get("quote", "") for w in ws_entries if w.get("quote"))
+                url_list = [w.get("url") for w in ws_entries if w.get("url")]
+                ls = ""
+                if url_list:
+                    rank = {"dead": 3, "unknown": 2, "blocked": 1, "alive": 0, "unchecked": 0, "": 0}
+                    ls = max((link_status(u) for u in url_list), key=lambda x: rank.get(x, 0))
+                notes = []
+                if dl.get("_prior_status"): notes.append(f"was: {dl['_prior_status']}")
+                if dl.get("image_id"): notes.append(dl["image_id"])
+                if dl.get("reasoning"): notes.append(dl["reasoning"])
+                fld = dl.get("field", "")
+                row = setrow([f"Δ  {stname} · {fld}",
+                              dl.get("image_shows", ""), status, urls, quotes, ls, "",
+                              "  |  ".join(notes)],
+                             fillc=STATUS_FILL.get(status, None), indent=3, level=2)
+                # colour the status cell strongly + status font
+                sc = ws.cell(row=row, column=3)
+                sc.fill = STATUS_FILL.get(status, C_FIELD)
+                sc.font = Font(color=STATUS_FONT.get(status, "000000"), bold=True)
+                sc.alignment = Alignment(horizontal="center", vertical="top", wrap_text=True)
+                if ls: ws.cell(row=row, column=6).fill = LINK_FILL.get(ls, C_FIELD)
 
-with pd.ExcelWriter(OUT, engine="openpyxl") as xw:
-    summary.to_excel(xw, sheet_name="Summary", index=False)
-    canon.to_excel(xw, sheet_name="Canonical_KB", index=False)
-    deltas.to_excel(xw, sheet_name="Regional_Deltas", index=False)
-    dead_df.to_excel(xw, sheet_name="Dead_Links", index=False)
-    # widen columns a little for readability
-    for name, df in [("Summary", summary), ("Canonical_KB", canon),
-                     ("Regional_Deltas", deltas), ("Dead_Links", dead_df)]:
-        ws = xw.sheets[name]
-        for i, col in enumerate(df.columns, 1):
-            width = min(60, max(12, int(df[col].astype(str).str.len().quantile(0.9)) + 2)) if len(df) else 20
-            ws.column_dimensions[ws.cell(row=1, column=i).column_letter].width = width
+# ------------------------------------------------------------------ widths & finish
+for i, w in enumerate(WIDTHS):
+    ws.column_dimensions[get_column_letter(i + 1)].width = w
+ws.sheet_view.showGridLines = False
 
+wb.save(OUT)
 print(f"WROTE {OUT}")
-print(f"  crops={crops}  diseases={len(canon)}  deltas={len(deltas)}  web_cited={web_cited}")
-print(f"  status={status_counts}")
+print(f"  crops={n_crops}  diseases={n_dz}  deltas={n_delta}  web_cited={n_web}")
+print(f"  status={dict(status_counts)}")
+print(f"  rows written={r-1}")
